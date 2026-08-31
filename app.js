@@ -637,63 +637,88 @@ const EPOCHS = [
   }
 ];
 const SCHLUESSELMOMENTE = [
-  { year: -3200, title: "Erfindung der Schrift", category: "Erfindung", text: "Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und \xFCbertragbar \u2013 die Voraussetzung f\xFCr Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst." },
-  { year: -508, title: "Geburt der Demokratie in Athen", category: "Politischer Umbruch", text: "Kleisthenes' Reformen schaffen erstmals ein politisches System, in dem B\xFCrger direkt \xFCber ihr Gemeinwesen entscheiden \u2013 ein Ideal, das \xFCber zwei Jahrtausende sp\xE4ter weltweit wirkt." },
-  { year: -218, title: "Hannibal \xFCberquert die Alpen", category: "Wendepunkt im Krieg", text: "Der scheinbar unm\xF6gliche Alpen\xFCbergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung \u2013 h\xE4tte Hannibal Rom eingenommen, w\xE4re die Weltgeschichte grundlegend anders verlaufen." },
-  { year: 33, title: "Entstehung des Christentums", category: "Religion", text: "Aus einer kleinen j\xFCdischen Reformbewegung wird binnen dreier Jahrhunderte die Staatsreligion Roms \u2013 und sp\xE4ter die pr\xE4gende religi\xF6se Kraft des Abendlandes." },
-  { year: 476, title: "Untergang Westroms", category: "Politischer Umbruch", text: "Das Ende der antiken Ordnung in Westeuropa leitet Jahrhunderte politischer Zersplitterung ein, aus denen die heutigen europ\xE4ischen Nationen langsam hervorgehen." },
-  { year: 622, title: "Hidschra und Aufstieg des Islam", category: "Religion", text: "Binnen eines Jahrhunderts nach Mohammeds Auswanderung entsteht ein Reich von Spanien bis Zentralasien \u2013 eine der schnellsten kulturellen Expansionen der Geschichte." },
-  { year: 1215, title: "Magna Carta", category: "Politischer Umbruch", text: "Erstmals wird schriftlich festgehalten, dass auch ein K\xF6nig an Recht gebunden ist \u2013 ein Same, aus dem sp\xE4ter Verfassungsstaat und Rechtsstaatlichkeit erwachsen." },
-  { year: 1347, title: "Der Schwarze Tod", category: "Katastrophe", text: "Ein Drittel der europ\xE4ischen Bev\xF6lkerung stirbt innerhalb weniger Jahre \u2013 der dadurch entstehende Arbeitskr\xE4ftemangel verschiebt langfristig die Machtverh\xE4ltnisse zwischen Adel und einfachem Volk." },
-  { year: 1453, title: "Fall Konstantinopels", category: "Wendepunkt im Krieg", text: "Mit dem Ende des Byzantinischen Reiches verschiebt sich die Machtbalance zwischen Orient und Okzident endg\xFCltig \u2013 zugleich fliehen griechische Gelehrte nach Westeuropa und befeuern die Renaissance." },
-  { year: 1455, title: "Gutenbergs Buchdruck", category: "Erfindung", text: "Innerhalb weniger Jahrzehnte vervielfacht sich die Menge verf\xFCgbarer B\xFCcher in Europa \u2013 ohne den Buchdruck w\xE4ren Reformation und Wissenschaftliche Revolution kaum denkbar gewesen." },
-  { year: 1492, title: "Kolumbus erreicht Amerika", category: "Wendepunkt", text: "Zwei bis dahin getrennte Weltteile treten in dauerhaften Kontakt \u2013 mit enormen Folgen f\xFCr Handel, Migration, Krankheiten und Machtverh\xE4ltnisse, aber auch verheerenden Folgen f\xFCr indigene Bev\xF6lkerungen." },
-  { year: 1517, title: "Beginn der Reformation", category: "Religion", text: "Luthers Thesen spalten die westliche Christenheit dauerhaft und l\xF6sen jahrhundertelange religi\xF6se und politische Konflikte in Europa aus." },
-  { year: 1687, title: "Newtons Principia", category: "Wissenschaft", text: "Mit einem einzigen Werk werden Himmelsmechanik und irdische Physik erstmals unter denselben mathematischen Gesetzen vereint \u2013 Grundstein der modernen Naturwissenschaft." },
-  { year: 1776, title: "US-Unabh\xE4ngigkeitserkl\xE4rung", category: "Politischer Umbruch", text: "Erstmals gr\xFCndet sich ein moderner Staat explizit auf den Prinzipien von Volkssouver\xE4nit\xE4t und unver\xE4u\xDFerlichen Menschenrechten." },
-  { year: 1789, title: "Franz\xF6sische Revolution", category: "Politischer Umbruch", text: "Der Sturz der absoluten Monarchie und die Erkl\xE4rung der Menschenrechte ersch\xFCttern die politische Ordnung ganz Europas und wirken bis in die Gegenwart nach." },
-  { year: 1859, title: "Darwins Evolutionstheorie", category: "Wissenschaft", text: "Die Idee der nat\xFCrlichen Auslese ver\xE4ndert nicht nur die Biologie, sondern auch das philosophische und religi\xF6se Selbstverst\xE4ndnis des Menschen." },
-  { year: 1869, title: "Er\xF6ffnung des Suezkanals", category: "Erfindung", text: "Die k\xFCnstliche Verbindung zweier Meere verk\xFCrzt den Seeweg zwischen Europa und Asien um tausende Kilometer und beschleunigt die Globalisierung des 19. Jahrhunderts." },
-  { year: 1914, title: "Ausbruch des Ersten Weltkriegs", category: "Wendepunkt im Krieg", text: "Ein regionales Attentat l\xF6st durch ein B\xFCndnisgeflecht einen globalen Krieg aus, der vier Gro\xDFreiche zerst\xF6rt und die politische Landkarte des 20. Jahrhunderts neu zeichnet." },
-  { year: 1917, title: "Russische Revolution", category: "Politischer Umbruch", text: "Erstmals \xFCbernimmt eine kommunistische Bewegung dauerhaft die Staatsmacht \u2013 pr\xE4gt Weltpolitik und Ideologiekonflikte f\xFCr das gesamte 20. Jahrhundert." },
-  { year: 1929, title: "Weltwirtschaftskrise", category: "Katastrophe", text: "Der Crash an der Wall Street l\xF6st eine globale Depression aus, die politische Radikalisierung beg\xFCnstigt und den Weg f\xFCr den Zweiten Weltkrieg mit ebnet." },
-  { year: 1945, title: "Erster Einsatz von Atomwaffen", category: "Wendepunkt im Krieg", text: "Die Abw\xFCrfe auf Hiroshima und Nagasaki beenden den Zweiten Weltkrieg und er\xF6ffnen zugleich das nukleare Zeitalter mit permanenter Ausl\xF6schungsgefahr." },
-  { year: 1969, title: "Erste Mondlandung", category: "Erfindung", text: "Der erste Schritt eines Menschen auf einem anderen Himmelsk\xF6rper markiert den technologischen und symbolischen H\xF6hepunkt des Kalten-Kriegs-Wettlaufs ins All." },
-  { year: 1989, title: "Fall der Berliner Mauer", category: "Politischer Umbruch", text: "Friedliche Massenproteste beenden die deutsche und europ\xE4ische Teilung und l\xE4uten das Ende des Kalten Krieges ein." },
-  { year: 1991, title: "Erfindung des World Wide Web", category: "Erfindung", text: "Tim Berners-Lees Konzept macht das Internet einem Massenpublikum zug\xE4nglich und legt den Grundstein der digitalen Vernetzung der Welt." },
-  { year: 2022, title: "Durchbruch generativer KI", category: "Erfindung", text: "Gro\xDFe Sprachmodelle werden erstmals massentauglich \u2013 mit potenziell \xE4hnlich weitreichenden Folgen f\xFCr Arbeit und Wissen wie einst der Buchdruck." },
-  { year: -3100, title: "Vereinigung Ober- und Unter\xE4gyptens", category: "Politischer Umbruch", text: "Menes/Narmer eint zwei K\xF6nigreiche zu einem der ersten Territorialstaaten der Geschichte \u2013 Grundlage f\xFCr 3000 Jahre pharaonische Kontinuit\xE4t." },
-  { year: -1274, title: "Schlacht bei Kadesch & erster Friedensvertrag", category: "Wendepunkt im Krieg", text: "Nach der gr\xF6\xDFten Streitwagenschlacht der Geschichte schlie\xDFen \xC4gypter und Hethiter den \xE4ltesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit." },
-  { year: -776, title: "Erste Olympische Spiele", category: "Kultur", text: "Ein religi\xF6s-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause f\xFCr Wettkampfkultur bis heute." },
-  { year: -221, title: "Erste Reichseinigung Chinas", category: "Politischer Umbruch", text: "Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute." },
-  { year: 1204, title: "Pl\xFCnderung Konstantinopels durch Kreuzfahrer", category: "Wendepunkt im Krieg", text: "Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime \u2013 ein Verrat, der Byzanz dauerhaft schw\xE4cht und den Fall an die Osmanen 1453 vorbereitet." },
-  { year: 1258, title: "Mongolische Zerst\xF6rung Bagdads", category: "Katastrophe", text: "Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der gr\xF6\xDFten kulturellen Katastrophen der Geschichte." },
-  { year: 1492, title: "Fall von Granada", category: "Politischer Umbruch", text: "Das Ende von 800 Jahren islamischer Pr\xE4senz in Spanien f\xE4llt zuf\xE4llig mit dem Beginn der europ\xE4ischen Expansion nach Amerika zusammen." },
-  { year: 1602, title: "Gr\xFCndung der ersten B\xF6rse der Welt", category: "Erfindung", text: "Mit handelbaren VOC-Aktien in Amsterdam entsteht ein v\xF6llig neues Finanzinstrument, das die Grundlage moderner Kapitalm\xE4rkte legt." },
-  { year: 1648, title: "Westf\xE4lischer Friede", category: "Politischer Umbruch", text: "Das Prinzip staatlicher Souver\xE4nit\xE4t wird erstmals v\xF6lkerrechtlich verankert \u2013 Grundstein des bis heute g\xFCltigen internationalen Staatensystems." },
-  { year: 1804, title: "Unabh\xE4ngigkeit Haitis", category: "Politischer Umbruch", text: "Nach dem einzigen erfolgreichen Sklavenaufstand der Geschichte entsteht die erste unabh\xE4ngige Schwarze Republik der Welt." },
-  { year: 1839, title: "Erster Opiumkrieg", category: "Wendepunkt im Krieg", text: "Gro\xDFbritanniens milit\xE4rische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Dem\xFCtigung' ein und verschiebt die globale Machtbalance zugunsten Europas." },
-  { year: 1871, title: "Deutsche Reichsgr\xFCndung", category: "Politischer Umbruch", text: "Die Einigung unter preu\xDFischer F\xFChrung schafft eine neue Gro\xDFmacht im Zentrum Europas und ver\xE4ndert das europ\xE4ische Kr\xE4ftegleichgewicht dauerhaft." },
-  { year: 1905, title: "Russisch-Japanischer Krieg endet", category: "Wendepunkt im Krieg", text: "Erstmals besiegt eine asiatische Macht eine europ\xE4ische Gro\xDFmacht \u2013 ersch\xFCttert den europ\xE4ischen \xDCberlegenheitsglauben und inspiriert Unabh\xE4ngigkeitsbewegungen in ganz Asien." },
-  { year: 1917, title: "Balfour-Deklaration", category: "Politischer Umbruch", text: "Gro\xDFbritannien unterst\xFCtzt erstmals offiziell eine 'nationale Heimst\xE4tte' f\xFCr das j\xFCdische Volk in Pal\xE4stina \u2013 Ausgangspunkt sp\xE4terer Nahostkonflikte." },
-  { year: 1947, title: "Teilung Indiens", category: "Katastrophe", text: "Die \xFCberst\xFCrzte Teilung in Indien und Pakistan l\xF6st eine der gr\xF6\xDFten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus." },
-  { year: 1994, title: "Ende der Apartheid", category: "Politischer Umbruch", text: "Nelson Mandelas friedlicher Macht\xFCbergang gilt weltweit als Modell f\xFCr gewaltfreie \xDCberwindung eines Unrechtssystems." },
-  { year: 105, title: "Erfindung des Papiers", category: "Erfindung", text: "Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend \u2013 \xFCber Jahrhunderte breitet sich diese Beschreibstoff-Revolution allm\xE4hlich bis nach Europa aus." },
-  { year: 868, title: "\xC4ltestes datiertes gedrucktes Buch", category: "Erfindung", text: "Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren \u2013 Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern." },
-  { year: 1044, title: "Erfindung des Schie\xDFpulvers", category: "Erfindung", text: "Chinesische Alchemisten entdecken die explosive Mischung zun\xE4chst f\xFCr medizinische Zwecke \u2013 ihre milit\xE4rische Nutzung ver\xE4ndert binnen Jahrhunderten die Kriegsf\xFChrung weltweit grundlegend." },
-  { year: 1088, title: "Gr\xFCndung der ersten europ\xE4ischen Universit\xE4t", category: "Kultur", text: "Die Universit\xE4t von Bologna entsteht als \xE4lteste durchgehend bestehende Universit\xE4t Europas \u2013 Grundstein institutionalisierter h\xF6herer Bildung." },
-  { year: 1494, title: "Vertrag von Tordesillas", category: "Politischer Umbruch", text: "Spanien und Portugal teilen mit p\xE4pstlichem Segen die au\xDFereurop\xE4ische Welt entlang einer imagin\xE4ren Linie unter sich auf \u2013 ohne jede R\xFCcksicht auf die dort lebenden Bev\xF6lkerungen." },
-  { year: 1500, title: "Der Kolumbianische Austausch", category: "Wendepunkt", text: "Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt \u2013 mit enormen, teils verheerenden \xF6kologischen und demografischen Folgen." },
-  { year: 1555, title: "Augsburger Religionsfrieden", category: "Religion", text: "Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen \u2013 ein fr\xFCher Schritt hin zu religi\xF6ser Koexistenz in Europa." },
-  { year: 1796, title: "Erfindung der Pockenimpfung", category: "Wissenschaft", text: "Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte \u2013 Grundstein der modernen Immunologie und sp\xE4teren Ausrottung der Pocken." },
-  { year: 1815, title: "Wiener Kongress", category: "Politischer Umbruch", text: "Die europ\xE4ischen Gro\xDFm\xE4chte etablieren ein M\xE4chtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Gro\xDFkrieg bewahrt." },
-  { year: 1865, title: "Verfassungsrechtliches Ende der Sklaverei in den USA", category: "Politischer Umbruch", text: "Nach der Emanzipationserkl\xE4rung von 1863, die zun\xE4chst nur Sklaven in den Konf\xF6derierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endg\xFCltig \u2013 tats\xE4chliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg." },
-  { year: 1916, title: "Sykes-Picot-Abkommen", category: "Politischer Umbruch", text: "Gro\xDFbritannien und Frankreich ziehen im Geheimen willk\xFCrliche Grenzen durch den Nahen Osten \u2013 mit Konfliktfolgen, die bis heute sp\xFCrbar sind." },
-  { year: 1945, title: "Gr\xFCndung der Vereinten Nationen", category: "Politischer Umbruch", text: "Als institutionelle Lehre aus zwei Weltkriegen entsteht erstmals eine globale Organisation zur Sicherung von Frieden und internationaler Zusammenarbeit." },
-  { year: 1948, title: "Allgemeine Erkl\xE4rung der Menschenrechte", category: "Politischer Umbruch", text: "Die UN-Generalversammlung verabschiedet erstmals einen universellen, wenn auch rechtlich nicht bindenden Katalog grundlegender Menschenrechte f\xFCr alle Menschen weltweit." },
-  { year: 1960, title: "'Afrikanisches Jahr'", category: "Politischer Umbruch", text: "Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabh\xE4ngigkeit von europ\xE4ischen Kolonialm\xE4chten \u2013 H\xF6hepunkt der weltweiten Dekolonisierungswelle." },
-  { year: 1969, title: "Geburtsstunde des Internets (ARPANET)", category: "Erfindung", text: "Die erste Datenverbindung zwischen zwei Universit\xE4tscomputern legt den technischen Grundstein f\xFCr das sp\xE4tere globale Internet." },
-  { year: 2003, title: "Entschl\xFCsselung des menschlichen Genoms", category: "Wissenschaft", text: "Ein internationales Forschungsprojekt kartiert erstmals vollst\xE4ndig die genetische Bauanleitung des Menschen \u2013 mit weitreichenden Folgen f\xFCr Medizin und Biotechnologie." }
+  {"year":-3200,"title":"Erfindung der Schrift","category":"Erfindung","text":"Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und übertragbar – die Voraussetzung für Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst."},
+  {"year":-508,"title":"Geburt der Demokratie in Athen","category":"Politischer Umbruch","text":"Kleisthenes' Reformen schaffen erstmals ein politisches System, in dem Bürger direkt über ihr Gemeinwesen entscheiden – ein Ideal, das über zwei Jahrtausende später weltweit wirkt."},
+  {"year":-218,"title":"Hannibal überquert die Alpen","category":"Wendepunkt im Krieg","text":"Der scheinbar unmögliche Alpenübergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung – hätte Hannibal Rom eingenommen, wäre die Weltgeschichte grundlegend anders verlaufen."},
+  {"year":33,"title":"Entstehung des Christentums","category":"Religion","text":"Aus einer kleinen jüdischen Reformbewegung wird binnen dreier Jahrhunderte die Staatsreligion Roms – und später die prägende religiöse Kraft des Abendlandes."},
+  {"year":476,"title":"Untergang Westroms","category":"Politischer Umbruch","text":"Das Ende der antiken Ordnung in Westeuropa leitet Jahrhunderte politischer Zersplitterung ein, aus denen die heutigen europäischen Nationen langsam hervorgehen."},
+  {"year":622,"title":"Hidschra und Aufstieg des Islam","category":"Religion","text":"Binnen eines Jahrhunderts nach Mohammeds Auswanderung entsteht ein Reich von Spanien bis Zentralasien – eine der schnellsten kulturellen Expansionen der Geschichte."},
+  {"year":1347,"title":"Der Schwarze Tod","category":"Katastrophe","text":"Ein Drittel der europäischen Bevölkerung stirbt innerhalb weniger Jahre – der dadurch entstehende Arbeitskräftemangel verschiebt langfristig die Machtverhältnisse zwischen Adel und einfachem Volk."},
+  {"year":1453,"title":"Fall Konstantinopels","category":"Wendepunkt im Krieg","text":"Mit dem Ende des Byzantinischen Reiches verschiebt sich die Machtbalance zwischen Orient und Okzident endgültig – zugleich fliehen griechische Gelehrte nach Westeuropa und befeuern die Renaissance."},
+  {"year":1455,"title":"Gutenbergs Buchdruck","category":"Erfindung","text":"Innerhalb weniger Jahrzehnte vervielfacht sich die Menge verfügbarer Bücher in Europa – ohne den Buchdruck wären Reformation und Wissenschaftliche Revolution kaum denkbar gewesen."},
+  {"year":1492,"title":"Kolumbus erreicht Amerika","category":"Wendepunkt","text":"Zwei bis dahin getrennte Weltteile treten in dauerhaften Kontakt – mit enormen Folgen für Handel, Migration, Krankheiten und Machtverhältnisse, aber auch verheerenden Folgen für indigene Bevölkerungen."},
+  {"year":1517,"title":"Beginn der Reformation","category":"Religion","text":"Luthers Thesen spalten die westliche Christenheit dauerhaft und lösen jahrhundertelange religiöse und politische Konflikte in Europa aus."},
+  {"year":1776,"title":"US-Unabhängigkeitserklärung","category":"Politischer Umbruch","text":"Erstmals gründet sich ein moderner Staat explizit auf den Prinzipien von Volkssouveränität und unveräußerlichen Menschenrechten."},
+  {"year":1789,"title":"Französische Revolution","category":"Politischer Umbruch","text":"Der Sturz der absoluten Monarchie und die Erklärung der Menschenrechte erschüttern die politische Ordnung ganz Europas und wirken bis in die Gegenwart nach."},
+  {"year":1859,"title":"Darwins Evolutionstheorie","category":"Wissenschaft","text":"Die Idee der natürlichen Auslese verändert nicht nur die Biologie, sondern auch das philosophische und religiöse Selbstverständnis des Menschen."},
+  {"year":1869,"title":"Eröffnung des Suezkanals","category":"Erfindung","text":"Die künstliche Verbindung zweier Meere verkürzt den Seeweg zwischen Europa und Asien um tausende Kilometer und beschleunigt die Globalisierung des 19. Jahrhunderts."},
+  {"year":1914,"title":"Ausbruch des Ersten Weltkriegs","category":"Wendepunkt im Krieg","text":"Ein regionales Attentat löst durch ein Bündnisgeflecht einen globalen Krieg aus, der vier Großreiche zerstört und die politische Landkarte des 20. Jahrhunderts neu zeichnet."},
+  {"year":1917,"title":"Russische Revolution","category":"Politischer Umbruch","text":"Erstmals übernimmt eine kommunistische Bewegung dauerhaft die Staatsmacht – prägt Weltpolitik und Ideologiekonflikte für das gesamte 20. Jahrhundert."},
+  {"year":1929,"title":"Weltwirtschaftskrise","category":"Katastrophe","text":"Der Crash an der Wall Street löst eine globale Depression aus, die politische Radikalisierung begünstigt und den Weg für den Zweiten Weltkrieg mit ebnet."},
+  {"year":1945,"title":"Erster Einsatz von Atomwaffen","category":"Wendepunkt im Krieg","text":"Die Abwürfe auf Hiroshima und Nagasaki beenden den Zweiten Weltkrieg und eröffnen zugleich das nukleare Zeitalter mit permanenter Auslöschungsgefahr."},
+  {"year":1969,"title":"Erste Mondlandung","category":"Erfindung","text":"Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All."},
+  {"year":1989,"title":"Fall der Berliner Mauer","category":"Politischer Umbruch","text":"Friedliche Massenproteste beenden die deutsche und europäische Teilung und läuten das Ende des Kalten Krieges ein."},
+  {"year":1991,"title":"Erfindung des World Wide Web","category":"Erfindung","text":"Tim Berners-Lees Konzept macht das Internet einem Massenpublikum zugänglich und legt den Grundstein der digitalen Vernetzung der Welt."},
+  {"year":2022,"title":"Durchbruch generativer KI","category":"Erfindung","text":"Große Sprachmodelle werden erstmals massentauglich – mit potenziell ähnlich weitreichenden Folgen für Arbeit und Wissen wie einst der Buchdruck."},
+  {"year":-3100,"title":"Vereinigung Ober- und Unterägyptens","category":"Politischer Umbruch","text":"Menes/Narmer eint zwei Königreiche zu einem der ersten Territorialstaaten der Geschichte – Grundlage für 3000 Jahre pharaonische Kontinuität."},
+  {"year":-1274,"title":"Schlacht bei Kadesch & erster Friedensvertrag","category":"Wendepunkt im Krieg","text":"Nach der größten Streitwagenschlacht der Geschichte schließen Ägypter und Hethiter den ältesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit."},
+  {"year":-776,"title":"Erste Olympische Spiele","category":"Kultur","text":"Ein religiös-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause für Wettkampfkultur bis heute."},
+  {"year":-221,"title":"Erste Reichseinigung Chinas","category":"Politischer Umbruch","text":"Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute."},
+  {"year":1204,"title":"Plünderung Konstantinopels durch Kreuzfahrer","category":"Wendepunkt im Krieg","text":"Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – ein Verrat, der Byzanz dauerhaft schwächt und den Fall an die Osmanen 1453 vorbereitet."},
+  {"year":1258,"title":"Mongolische Zerstörung Bagdads","category":"Katastrophe","text":"Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der größten kulturellen Katastrophen der Geschichte."},
+  {"year":1492,"title":"Fall von Granada","category":"Politischer Umbruch","text":"Das Ende von 800 Jahren islamischer Präsenz in Spanien fällt zufällig mit dem Beginn der europäischen Expansion nach Amerika zusammen."},
+  {"year":1602,"title":"Gründung der ersten Börse der Welt","category":"Erfindung","text":"Mit handelbaren VOC-Aktien in Amsterdam entsteht ein völlig neues Finanzinstrument, das die Grundlage moderner Kapitalmärkte legt."},
+  {"year":1648,"title":"Westfälischer Friede","category":"Politischer Umbruch","text":"Das Prinzip staatlicher Souveränität wird erstmals völkerrechtlich verankert – Grundstein des bis heute gültigen internationalen Staatensystems."},
+  {"year":1839,"title":"Erster Opiumkrieg","category":"Wendepunkt im Krieg","text":"Großbritanniens militärische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Demütigung' ein und verschiebt die globale Machtbalance zugunsten Europas."},
+  {"year":1871,"title":"Deutsche Reichsgründung","category":"Politischer Umbruch","text":"Die Einigung unter preußischer Führung schafft eine neue Großmacht im Zentrum Europas und verändert das europäische Kräftegleichgewicht dauerhaft."},
+  {"year":1905,"title":"Russisch-Japanischer Krieg endet","category":"Wendepunkt im Krieg","text":"Erstmals besiegt eine asiatische Macht eine europäische Großmacht – erschüttert den europäischen Überlegenheitsglauben und inspiriert Unabhängigkeitsbewegungen in ganz Asien."},
+  {"year":1917,"title":"Balfour-Deklaration","category":"Politischer Umbruch","text":"Großbritannien unterstützt erstmals offiziell eine 'nationale Heimstätte' für das jüdische Volk in Palästina – Ausgangspunkt späterer Nahostkonflikte."},
+  {"year":1947,"title":"Teilung Indiens","category":"Katastrophe","text":"Die überstürzte Teilung in Indien und Pakistan löst eine der größten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus."},
+  {"year":105,"title":"Erfindung des Papiers","category":"Erfindung","text":"Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus."},
+  {"year":868,"title":"Ältestes datiertes gedrucktes Buch","category":"Erfindung","text":"Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern."},
+  {"year":1044,"title":"Erfindung des Schießpulvers","category":"Erfindung","text":"Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend."},
+  {"year":1088,"title":"Gründung der ersten europäischen Universität","category":"Kultur","text":"Die Universität von Bologna entsteht als älteste durchgehend bestehende Universität Europas – Grundstein institutionalisierter höherer Bildung."},
+  {"year":1494,"title":"Vertrag von Tordesillas","category":"Politischer Umbruch","text":"Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."},
+  {"year":1500,"title":"Der Kolumbianische Austausch","category":"Wendepunkt","text":"Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen."},
+  {"year":1555,"title":"Augsburger Religionsfrieden","category":"Religion","text":"Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen – ein früher Schritt hin zu religiöser Koexistenz in Europa."},
+  {"year":1796,"title":"Erfindung der Pockenimpfung","category":"Wissenschaft","text":"Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken."},
+  {"year":1815,"title":"Wiener Kongress","category":"Politischer Umbruch","text":"Die europäischen Großmächte etablieren ein Mächtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Großkrieg bewahrt."},
+  {"year":1865,"title":"Verfassungsrechtliches Ende der Sklaverei in den USA","category":"Politischer Umbruch","text":"Nach der Emanzipationserklärung von 1863, die zunächst nur Sklaven in den Konföderierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endgültig – tatsächliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg."},
+  {"year":1916,"title":"Sykes-Picot-Abkommen","category":"Politischer Umbruch","text":"Großbritannien und Frankreich ziehen im Geheimen willkürliche Grenzen durch den Nahen Osten – mit Konfliktfolgen, die bis heute spürbar sind."},
+  {"year":1945,"title":"Gründung der Vereinten Nationen","category":"Politischer Umbruch","text":"Als institutionelle Lehre aus zwei Weltkriegen entsteht erstmals eine globale Organisation zur Sicherung von Frieden und internationaler Zusammenarbeit."},
+  {"year":1960,"title":"'Afrikanisches Jahr'","category":"Politischer Umbruch","text":"Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabhängigkeit von europäischen Kolonialmächten – Höhepunkt der weltweiten Dekolonisierungswelle."},
+  {"year":1969,"title":"Geburtsstunde des Internets (ARPANET)","category":"Erfindung","text":"Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet."},
+  {"year":2003,"title":"Entschlüsselung des menschlichen Genoms","category":"Wissenschaft","text":"Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie."},
+  {"year":-3000,"category":"Erfindung","text":"Das Rad taucht zunächst nicht im Verkehr auf, sondern als Töpferscheibe. Erst später wird daraus das Wagenrad – eine Erfindung, die den Transport von Lasten und damit Handel und Krieg grundlegend verändert.","title":"Rad und Töpferscheibe"},
+  {"year":-1754,"category":"Politischer Umbruch","title":"Kodex Hammurapi","text":"Der babylonische König lässt Rechtssätze in Stein hauen und öffentlich aufstellen. Entscheidend ist weniger der Inhalt als das Prinzip: Recht wird nachprüfbar, weil es geschrieben und sichtbar ist."},
+  {"year":-600,"category":"Erfindung","title":"Erfindung der Münze","text":"In Lydien entstehen erste geprägte Münzen aus Elektron. Geld als genormtes, staatlich garantiertes Tauschmittel macht Handel über Vertrauensgrenzen hinweg möglich."},
+  {"year":-221,"category":"Politischer Umbruch","title":"Einigung Chinas","text":"Qin Shihuangdi vereint die Streitenden Reiche, vereinheitlicht Schrift, Maße, Gewichte und Achsenbreiten. Der administrative Rahmen überdauert die Dynastie um zwei Jahrtausende."},
+  {"year":105,"category":"Erfindung","title":"Papier in China","text":"Dem Hofbeamten Cai Lun wird die Verbesserung der Papierherstellung zugeschrieben. Über die islamische Welt erreicht das Verfahren erst rund tausend Jahre später Europa."},
+  {"year":476,"category":"Wendepunkt","title":"Absetzung des letzten Westkaisers","text":"Odoaker setzt Romulus Augustulus ab. Zeitgenossen sahen darin kaum einen Einschnitt – das Datum wurde erst von späteren Historikern zur Epochengrenze erhoben."},
+  {"year":622,"category":"Religion","title":"Hidschra","text":"Mohammeds Auswanderung von Mekka nach Medina markiert den Beginn der islamischen Zeitrechnung – ein Kalender, der von einem politischen Neuanfang aus zählt, nicht von einer Geburt."},
+  {"year":800,"category":"Politischer Umbruch","title":"Kaiserkrönung Karls des Großen","text":"Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."},
+  {"year":1088,"category":"Kultur","title":"Erste europäische Universität","text":"In Bologna entsteht eine Gemeinschaft von Studenten und Lehrenden mit eigenen Rechten. Aus solchen Korporationen wird die Universität als eigenständige Institution."},
+  {"year":1215,"category":"Politischer Umbruch","title":"Magna Carta","text":"König Johann muss zugestehen, dass auch der Herrscher an Recht gebunden ist – ein Satz, der über Jahrhunderte weiterwirkt, obwohl das Dokument zunächst Adelsinteressen sicherte."},
+  {"year":1440,"category":"Wissenschaft","title":"Der Buchdruck","text":"Gutenbergs bewegliche Lettern senken den Buchpreis binnen weniger Jahrzehnte um zwei Drittel. Wissen wird erstmals in großer Zahl vergleichbar – und damit überprüfbar."},
+  {"year":1543,"category":"Wissenschaft","title":"Kopernikus stellt die Erde beiseite","text":"In 'De revolutionibus' rückt Kopernikus die Sonne ins Zentrum. Der Bruch liegt weniger in der Astronomie als im Selbstbild: Der Mensch wohnt nicht mehr im Mittelpunkt."},
+  {"year":1687,"category":"Wissenschaft","title":"Newtons Principia","text":"Newton zeigt, dass fallende Äpfel und kreisende Planeten denselben Gesetzen folgen. Die Vorstellung, die Natur sei mathematisch beschreibbar, wird zur Grundlage der modernen Wissenschaft."},
+  {"year":1755,"category":"Katastrophe","title":"Erdbeben von Lissabon","text":"Das Beben an Allerheiligen zerstört eine europäische Hauptstadt und erschüttert das theologische Weltbild: Wie lässt sich ein solches Unglück mit einer guten Weltordnung vereinbaren? Die Frage prägt die Aufklärung."},
+  {"year":1796,"category":"Wissenschaft","title":"Erste Pockenimpfung","text":"Edward Jenner nutzt Kuhpocken zum Schutz vor Pocken. Die Pocken bleiben die einzige menschliche Infektionskrankheit, die je vollständig ausgerottet wurde – 1980 erklärt."},
+  {"year":1804,"category":"Politischer Umbruch","title":"Unabhängigkeit Haitis","text":"Aus dem einzigen erfolgreichen Sklavenaufstand der Geschichte geht ein unabhängiger Staat hervor. Die europäischen Mächte und die USA reagieren mit Isolation statt Anerkennung."},
+  {"year":1848,"category":"Politischer Umbruch","title":"Revolutionen von 1848","text":"In fast ganz Europa fordern Bewegungen Verfassungen, Pressefreiheit und nationale Einheit. Fast überall scheitern sie kurzfristig – und setzen langfristig den Rahmen."},
+  {"year":1859,"category":"Wissenschaft","title":"Darwins Entstehung der Arten","text":"Die Idee gemeinsamer Abstammung durch natürliche Auslese stellt den Menschen in die Naturgeschichte statt über sie."},
+  {"year":1865,"category":"Wissenschaft","title":"Mendels Vererbungsregeln","text":"Der Augustinermönch Gregor Mendel beschreibt an Erbsen die Regeln der Vererbung. Seine Arbeit bleibt 35 Jahre unbeachtet, bis sie um 1900 wiederentdeckt wird."},
+  {"year":1867,"category":"Wissenschaft","title":"Antiseptische Chirurgie","text":"Joseph Lister führt Antiseptik in den Operationssaal ein. Zuvor starben Patienten häufiger an der Infektion als am Eingriff."},
+  {"year":1893,"category":"Politischer Umbruch","title":"Erstes Frauenwahlrecht","text":"Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern."},
+  {"year":1903,"category":"Erfindung","title":"Erster Motorflug","text":"Die Brüder Wright halten sich mit einem motorisierten Flugzeug in der Luft. Keine sechs Jahrzehnte später fliegen Menschen zum Mond."},
+  {"year":1928,"category":"Wissenschaft","title":"Entdeckung des Penicillins","text":"Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit."},
+  {"year":1945,"category":"Katastrophe","title":"Hiroshima und Nagasaki","text":"Zum ersten und bisher einzigen Mal werden Kernwaffen im Krieg eingesetzt. Seither prägt die Möglichkeit der Selbstauslöschung die internationale Politik."},
+  {"year":1948,"category":"Politischer Umbruch","title":"Allgemeine Erklärung der Menschenrechte","text":"Die UN-Generalversammlung verabschiedet einen Text, der Rechte nicht an Staatsangehörigkeit knüpft, sondern an das Menschsein – rechtlich zunächst unverbindlich, politisch wirkmächtig."},
+  {"year":1953,"category":"Wissenschaft","title":"Struktur der DNA","text":"Watson und Crick beschreiben die Doppelhelix – wesentlich gestützt auf Röntgenaufnahmen von Rosalind Franklin, deren Beitrag lange nicht angemessen gewürdigt wurde."},
+  {"year":1972,"category":"Wendepunkt","title":"Die Grenzen des Wachstums","text":"Der Bericht an den Club of Rome bringt die Frage, ob unbegrenztes Wachstum auf einem begrenzten Planeten möglich ist, erstmals in die breite Öffentlichkeit."},
+  {"year":1980,"category":"Wissenschaft","title":"Pocken ausgerottet","text":"Die WHO erklärt die Pocken für ausgerottet – der bislang einzige derartige Erfolg bei einer menschlichen Infektionskrankheit."},
+  {"year":1989,"category":"Erfindung","title":"Das World Wide Web","text":"Tim Berners-Lee entwirft am CERN ein System zum Austausch von Forschungsdaten. 1993 gibt das CERN die Software gemeinfrei – die Entscheidung, die seine Ausbreitung ermöglichte."},
+  {"year":1994,"category":"Politischer Umbruch","title":"Ende der Apartheid","text":"Nach den ersten allgemeinen Wahlen Südafrikas wird Nelson Mandela Präsident. Die Wahrheits- und Versöhnungskommission versucht anschließend einen Umgang mit der Vergangenheit ohne Bürgerkrieg."}
 ];
 const FACTS = EPOCHS.flatMap(
   (ep) => ep.events.map((e) => ({ year: e.year, title: e.title, epoch: ep.name, color: ep.color }))
@@ -731,155 +756,175 @@ const SURPRISING_FACTS = [
   "Rom wurde der Legende nach 753 v. Chr. gegr\xFCndet \u2013 das R\xF6mische Reich bestand damit (inklusive Byzanz) \xFCber 2200 Jahre."
 ];
 const QUOTES = [
-  { text: "Ich wei\xDF, dass ich nichts wei\xDF.", author: "Sokrates", year: "5. Jh. v. Chr.", note: "sinngem\xE4\xDF \xFCberliefert durch Platon" },
-  { text: "Veni, vidi, vici. (Ich kam, sah, siegte.)", author: "Julius Caesar", year: "47 v. Chr.", note: "\xFCberliefert durch Sueton" },
-  { text: "Der W\xFCrfel ist gefallen.", author: "Julius Caesar", year: "49 v. Chr.", note: "beim \xDCberschreiten des Rubikon" },
-  { text: "Du hast Macht \xFCber deinen Geist, nicht \xFCber \xE4u\xDFere Ereignisse.", author: "Marc Aurel", year: "2. Jh. n. Chr.", note: "aus den 'Selbstbetrachtungen'" },
-  { text: "Der Weg ist das Ziel.", author: "Konfuzius", year: "zugeschrieben", note: "exakte Quelle unklar" },
-  { text: "Hier stehe ich, ich kann nicht anders.", author: "Martin Luther", year: "1521", note: "zugeschrieben, Reichstag zu Worms" },
-  { text: "Ich wei\xDF, ich habe den K\xF6rper einer schwachen Frau, aber das Herz und den Mut eines K\xF6nigs.", author: "Elisabeth I.", year: "1588", note: "Rede von Tilbury" },
-  { text: "Der Staat bin ich.", author: "Ludwig XIV.", year: "zugeschrieben", note: "Sinnbild des Absolutismus" },
-  { text: "Und sie bewegt sich doch!", author: "Galileo Galilei", year: "1633", note: "apokryph, nach seinem Widerruf" },
-  { text: "Ich missbilige, was du sagst, doch ich w\xFCrde mein Leben daf\xFCr geben, dass du es sagen darfst.", author: "Voltaire (zugeschrieben)", year: "18. Jh.", note: "tats\xE4chlich Formulierung von E. B. Hall" },
-  { text: "Government of the people, by the people, for the people.", author: "Abraham Lincoln", year: "1863", note: "Gettysburg Address" },
-  { text: "Blut und Eisen.", author: "Otto von Bismarck", year: "1862", note: "Rede vor dem preu\xDFischen Abgeordnetenhaus" },
-  { text: "Proletarier aller L\xE4nder, vereinigt euch!", author: "Karl Marx & Friedrich Engels", year: "1848", note: "Schlusssatz des Kommunistischen Manifests" },
-  { text: "Blut, Schwei\xDF und Tr\xE4nen.", author: "Winston Churchill", year: "1940", note: "Antrittsrede als Premierminister" },
-  { text: "Das Einzige, wovor wir uns f\xFCrchten m\xFCssen, ist die Furcht selbst.", author: "Franklin D. Roosevelt", year: "1933", note: "Antrittsrede" },
-  { text: "Frage nicht, was dein Land f\xFCr dich tun kann \u2013 frage, was du f\xFCr dein Land tun kannst.", author: "John F. Kennedy", year: "1961", note: "Antrittsrede" },
-  { text: "I have a dream.", author: "Martin Luther King Jr.", year: "1963", note: "Rede beim Marsch auf Washington" },
-  { text: "Ein kleiner Schritt f\xFCr einen Menschen, ein gro\xDFer Sprung f\xFCr die Menschheit.", author: "Neil Armstrong", year: "1969", note: "erste Mondlandung" },
-  { text: "Es scheint immer unm\xF6glich, bis es vollbracht ist.", author: "Nelson Mandela", year: "zugeschrieben", note: "" },
-  { text: "Sei du selbst die Ver\xE4nderung, die du dir w\xFCnschst f\xFCr diese Welt.", author: "Mahatma Gandhi (zugeschrieben)", year: "", note: "Authentizit\xE4t des genauen Wortlauts umstritten" },
-  { text: "Es gibt nichts Unm\xF6gliches f\xFCr den, der es versucht.", author: "Alexander der Gro\xDFe (zugeschrieben)", year: "", note: "" },
-  { text: "Wir werden entweder einen Weg finden oder einen bauen.", author: "Hannibal (zugeschrieben)", year: "vor der Alpen\xFCberquerung", note: "218 v. Chr." },
-  { text: "Eureka!", author: "Archimedes (zugeschrieben)", year: "3. Jh. v. Chr.", note: "beim Auffinden des Auftriebsprinzips" },
-  { text: "Wir nennen unsere Stadt die Schule von Hellas.", author: "Perikles", year: "5. Jh. v. Chr.", note: "sinngem\xE4\xDF, Thukydides' Grabrede" },
-  { text: "Der Mensch ist von Natur aus ein politisches Wesen.", author: "Aristoteles", year: "4. Jh. v. Chr.", note: "aus der 'Politik'" },
-  { text: "Geh mir aus der Sonne.", author: "Diogenes", year: "4. Jh. v. Chr.", note: "zu Alexander dem Gro\xDFen gesagt" },
-  { text: "Das Leben ist kurz, die Kunst lang.", author: "Hippokrates", year: "5./4. Jh. v. Chr.", note: "" },
-  { text: "Im Krieg ist die Wahrheit das erste Opfer.", author: "Aischylos (zugeschrieben)", year: "5. Jh. v. Chr.", note: "Ursprung umstritten" },
-  { text: "Carpe diem \u2013 nutze den Tag.", author: "Horaz", year: "1. Jh. v. Chr.", note: "aus den Oden" },
-  { text: "Ich sehe das Bessere und billige es, doch ich folge dem Schlechteren.", author: "Ovid", year: "1. Jh. v./n. Chr.", note: "aus den Metamorphosen" },
-  { text: "Sie schaffen eine W\xFCste und nennen es Frieden.", author: "Tacitus (Rede eines Britanniers)", year: "1./2. Jh. n. Chr.", note: "aus 'Agricola'" },
-  { text: "Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.", author: "Laozi", year: "zugeschrieben", note: "sinngem\xE4\xDF aus dem Daodejing" },
-  { text: "Kenne deinen Feind und kenne dich selbst.", author: "Sunzi", year: "zugeschrieben", note: "aus der 'Kunst des Krieges'" },
-  { text: "Gott will es!", author: "Papst Urban II. (\xFCberliefert)", year: "1095", note: "Aufruf zum Ersten Kreuzzug" },
-  { text: "Ich f\xFCrchte, wenn ich einmal tot bin, wird kein Erbe wie ich sein.", author: "Saladin (zugeschrieben)", year: "12. Jh.", note: "" },
-  { text: "Ich habe nicht einmal die H\xE4lfte dessen erz\xE4hlt, was ich gesehen habe.", author: "Marco Polo (zugeschrieben)", year: "auf dem Sterbebett", note: "" },
-  { text: "Ich f\xFCrchte nichts, denn Gott ist mit mir.", author: "Jeanne d'Arc", year: "1431", note: "aus den Prozessprotokollen" },
-  { text: "Lasst, die ihr eintretet, alle Hoffnung fahren.", author: "Dante Alighieri", year: "14. Jh.", note: "aus dem 'Inferno'" },
-  { text: "Ich sterbe als des K\xF6nigs guter Diener, aber zuerst Gottes.", author: "Thomas Morus", year: "1535", note: "vor seiner Hinrichtung \xFCberliefert" },
-  { text: "Es ist besser, gef\xFCrchtet als geliebt zu werden, wenn man nicht beides haben kann.", author: "Niccol\xF2 Machiavelli", year: "1532", note: "sinngem\xE4\xDF, aus 'Der F\xFCrst'" },
-  { text: "Wissen ist Macht.", author: "Francis Bacon (zugeschrieben)", year: "17. Jh.", note: "Scientia potentia est" },
-  { text: "Ich denke, also bin ich.", author: "Ren\xE9 Descartes", year: "1637", note: "Cogito ergo sum" },
-  { text: "Das Herz hat seine Gr\xFCnde, die die Vernunft nicht kennt.", author: "Blaise Pascal", year: "17. Jh.", note: "aus den 'Pens\xE9es'" },
-  { text: "Nichts ist sicher au\xDFer dem Tod und den Steuern.", author: "Benjamin Franklin (zugeschrieben)", year: "1789", note: "" },
-  { text: "Jeder soll nach seiner Fa\xE7on selig werden.", author: "Friedrich der Gro\xDFe", year: "1740", note: "Randnotiz zur Religionsfreiheit" },
-  { text: "Ich werde herrschen oder sterben.", author: "Katharina die Gro\xDFe (zugeschrieben)", year: "18. Jh.", note: "" },
-  { text: "Alle Menschen sind gleich geschaffen.", author: "Thomas Jefferson", year: "1776", note: "aus der US-Unabh\xE4ngigkeitserkl\xE4rung" },
-  { text: "K\xFChnheit, immer wieder K\xFChnheit!", author: "Georges Danton (zugeschrieben)", year: "1792", note: "Rede vor dem Nationalkonvent" },
-  { text: "Der Schrecken ist nichts anderes als die Gerechtigkeit, schnell, streng, unbeugsam.", author: "Maximilien Robespierre", year: "1794", note: "sinngem\xE4\xDF" },
-  { text: "Verzeihung, mein Herr, ich wollte es nicht.", author: "Marie Antoinette", year: "1793", note: "letzte \xFCberlieferte Worte, zu ihrem Henker" },
-  { text: "Ein F\xFChrer ist ein H\xE4ndler der Hoffnung.", author: "Napoleon Bonaparte (zugeschrieben)", year: "", note: "" },
-  { text: "Die Geschichte ist eine Ansammlung von L\xFCgen, auf die man sich geeinigt hat.", author: "Napoleon Bonaparte (zugeschrieben)", year: "", note: "" },
-  { text: "Die Politik ist die Lehre vom M\xF6glichen.", author: "Otto von Bismarck", year: "1867", note: "" },
-  { text: "Man kann alles mit Bajonetten machen, nur nicht auf ihnen sitzen.", author: "Otto von Bismarck (zugeschrieben)", year: "", note: "" },
-  { text: "Man kann nicht alle Menschen f\xFCr immer t\xE4uschen.", author: "Abraham Lincoln (zugeschrieben)", year: "", note: "Echtheit umstritten" },
-  { text: "Mit Bosheit gegen niemanden, mit N\xE4chstenliebe f\xFCr alle.", author: "Abraham Lincoln", year: "1865", note: "zweite Antrittsrede" },
-  { text: "Die Philosophen haben die Welt nur verschieden interpretiert; es kommt aber darauf an, sie zu ver\xE4ndern.", author: "Karl Marx", year: "1845", note: "aus den Feuerbach-Thesen" },
-  { text: "Wir sind nicht am\xFCsiert.", author: "K\xF6nigin Victoria (zugeschrieben)", year: "19. Jh.", note: "Echtheit unbelegt" },
-  { text: "Ich biete weder Sold noch Quartier, ich biete Hunger, Durst, Gewaltm\xE4rsche, Schlachten und Tod.", author: "Giuseppe Garibaldi (zugeschrieben)", year: "1849", note: "" },
-  { text: "Es gibt keine wirkliche Freiheit ohne wirtschaftliche Unabh\xE4ngigkeit.", author: "Susan B. Anthony", year: "19. Jh.", note: "" },
-  { text: "Vertrauen ist gut, Kontrolle ist besser.", author: "Wladimir Lenin (zugeschrieben)", year: "", note: "" },
-  { text: "Du magst dich nicht f\xFCr den Krieg interessieren, aber der Krieg interessiert sich f\xFCr dich.", author: "Leo Trotzki (zugeschrieben)", year: "", note: "" },
-  { text: "Ein Auge um Auge macht am Ende die ganze Welt blind.", author: "Mahatma Gandhi (zugeschrieben)", year: "", note: "" },
-  { text: "Phantasie ist wichtiger als Wissen.", author: "Albert Einstein", year: "1929", note: "aus einem Interview" },
-  { text: "Zwei Dinge sind unendlich: das Universum und die menschliche Dummheit.", author: "Albert Einstein (zugeschrieben)", year: "", note: "" },
-  { text: "Wir werden niemals aufgeben.", author: "Winston Churchill", year: "1940", note: "Rede vor dem Unterhaus" },
-  { text: "Ein Pessimist sieht die Schwierigkeit in jeder Gelegenheit, ein Optimist die Gelegenheit in jeder Schwierigkeit.", author: "Winston Churchill (zugeschrieben)", year: "", note: "Zuschreibung umstritten" },
-  { text: "Ein Datum, das in Schande weiterleben wird.", author: "Franklin D. Roosevelt", year: "1941", note: "Rede zum Kriegseintritt" },
-  { text: "Politische Macht kommt aus den Gewehrl\xE4ufen.", author: "Mao Zedong", year: "1938", note: "sinngem\xE4\xDF" },
-  { text: "Nichts ist kostbarer als Unabh\xE4ngigkeit und Freiheit.", author: "Ho Chi Minh (zugeschrieben)", year: "", note: "" },
-  { text: "Wir m\xFCssen hart sein, ohne unsere Z\xE4rtlichkeit je zu verlieren.", author: "Che Guevara (zugeschrieben)", year: "", note: "" },
-  { text: "Bildung ist die m\xE4chtigste Waffe, um die Welt zu ver\xE4ndern.", author: "Nelson Mandela", year: "", note: "" },
-  { text: "Ich bin bereit zu sterben.", author: "Nelson Mandela", year: "1964", note: "aus seiner Verteidigungsrede im Rivonia-Prozess" },
-  { text: "Ich bin ein Berliner.", author: "John F. Kennedy", year: "1963", note: "Rede vor dem Rathaus Sch\xF6neberg" },
-  { text: "Ungerechtigkeit irgendwo ist eine Bedrohung f\xFCr Gerechtigkeit \xFCberall.", author: "Martin Luther King Jr.", year: "1963", note: "Brief aus dem Gef\xE4ngnis von Birmingham" },
-  { text: "Bildung ist der Reisepass in die Zukunft.", author: "Malcolm X (zugeschrieben)", year: "", note: "" },
-  { text: "Wir k\xF6nnen den Arabern vergeben, unsere Kinder zu t\xF6ten. Wir k\xF6nnen ihnen nicht vergeben, uns zu zwingen, ihre Kinder zu t\xF6ten.", author: "Golda Meir (zugeschrieben)", year: "", note: "" },
-  { text: "Vergebung ist eine Tugend der Tapferen.", author: "Indira Gandhi (zugeschrieben)", year: "", note: "" },
-  { text: "Die Dame ist nicht zum Wenden bereit.", author: "Margaret Thatcher", year: "1980", note: "Parteitagsrede" },
-  { text: "Herr Gorbatschow, rei\xDFen Sie diese Mauer nieder!", author: "Ronald Reagan", year: "1987", note: "Rede am Brandenburger Tor" },
-  { text: "Wer zu sp\xE4t kommt, den bestraft das Leben.", author: "Michail Gorbatschow (zugeschrieben)", year: "1989", note: "" },
-  { text: "Intelligenz ist die F\xE4higkeit, sich an Ver\xE4nderungen anzupassen.", author: "Stephen Hawking (zugeschrieben)", year: "", note: "" },
-  { text: "W\xE4hle einen Beruf, den du liebst, und du wirst nie wieder in deinem Leben arbeiten m\xFCssen.", author: "Konfuzius (oft zugeschrieben)", year: "", note: "Zuschreibung umstritten" },
-  { text: "Wer andere kennt, ist klug. Wer sich selbst kennt, ist erleuchtet.", author: "Laozi (zugeschrieben)", year: "", note: "sinngem\xE4\xDF aus dem Daodejing" },
-  { text: "Der Edle ist gerecht, der Kleine denkt nur an Vorteil.", author: "Konfuzius", year: "", note: "sinngem\xE4\xDF, aus den Analekten" },
-  { text: "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist.", author: "Sprichwort (oft antiken Autoren zugeschrieben)", year: "", note: "Herkunft unsicher" },
-  { text: "Rom wurde nicht an einem Tag erbaut.", author: "Mittelalterliches Sprichwort", year: "12. Jh.", note: "franz\xF6sischen Ursprungs" },
-  { text: "Der Zweck heiligt die Mittel.", author: "Oft Machiavelli zugeschrieben", year: "", note: "so w\xF6rtlich nicht in seinen Schriften belegt" },
-  { text: "Einigkeit macht stark.", author: "\xC4sop (zugeschrieben)", year: "Antike", note: "aus der Fabel vom B\xFCndel St\xE4be" },
-  { text: "Wer den Krieg nicht kennt, kennt den Frieden nicht.", author: "Sunzi (sinngem\xE4\xDF)", year: "", note: "" },
-  { text: "Ein Reich, das gegen sich selbst gespalten ist, kann nicht bestehen.", author: "Abraham Lincoln", year: "1858", note: "'House Divided'-Rede, in Anlehnung an ein Bibelzitat" },
-  { text: "Die Zukunft geh\xF6rt denen, die an die Sch\xF6nheit ihrer Tr\xE4ume glauben.", author: "Eleanor Roosevelt (zugeschrieben)", year: "", note: "Zuschreibung umstritten" },
-  { text: "Wo man B\xFCcher verbrennt, verbrennt man am Ende auch Menschen.", author: "Heinrich Heine", year: "1821", note: "aus 'Almansor', prophetisch mit Blick auf sp\xE4tere NS-B\xFCcherverbrennungen zitiert" },
-  { text: "Der Mensch ist zur Freiheit verurteilt.", author: "Jean-Paul Sartre", year: "20. Jh.", note: "sinngem\xE4\xDF, existenzialistische Kernthese" },
-  { text: "Wissen ohne Gewissen ist nur ein Ruin der Seele.", author: "Fran\xE7ois Rabelais (zugeschrieben)", year: "16. Jh.", note: "" },
-  { text: "Der Mutige stirbt nur einmal, der Feige stirbt tausend Tode.", author: "Sprichwort, teils William Shakespeare zugeschrieben", year: "", note: "sinngem\xE4\xDF aus 'Julius Caesar'" },
-  { text: "Sein oder Nichtsein, das ist hier die Frage.", author: "William Shakespeare", year: "ca. 1600", note: "aus 'Hamlet'" },
-  { text: "Panem et circenses \u2013 Brot und Spiele.", author: "Juvenal", year: "1./2. Jh. n. Chr.", note: "r\xF6mische Gesellschaftskritik" },
-  { text: "Alea iacta est kannte schon Menander vor mir.", author: "Sprichw\xF6rtliche Redewendung", year: "Antike", note: "Caesar zitierte laut Sueton einen griechischen Dichter" },
-  { text: "Wer die Vergangenheit nicht kennt, kann die Gegenwart nicht verstehen.", author: "Sprichwort, oft Historikern zugeschrieben", year: "", note: "sinngem\xE4\xDFe Redewendung" }
+  {"text":"Ich weiß, dass ich nichts weiß.","author":"Sokrates","year":"5. Jh. v. Chr.","note":"sinngemäß überliefert durch Platon"},
+  {"text":"Veni, vidi, vici. (Ich kam, sah, siegte.)","author":"Julius Caesar","year":"47 v. Chr.","note":"überliefert durch Sueton"},
+  {"text":"Der Würfel ist gefallen.","author":"Julius Caesar","year":"49 v. Chr.","note":"beim Überschreiten des Rubikon"},
+  {"text":"Du hast Macht über deinen Geist, nicht über äußere Ereignisse.","author":"Marc Aurel","year":"2. Jh. n. Chr.","note":"aus den 'Selbstbetrachtungen'"},
+  {"text":"Der Weg ist das Ziel.","author":"Konfuzius","year":"zugeschrieben","note":"exakte Quelle unklar"},
+  {"text":"Hier stehe ich, ich kann nicht anders.","author":"Martin Luther","year":"1521","note":"zugeschrieben, Reichstag zu Worms"},
+  {"text":"Ich weiß, ich habe den Körper einer schwachen Frau, aber das Herz und den Mut eines Königs.","author":"Elisabeth I.","year":"1588","note":"Rede von Tilbury"},
+  {"text":"Der Staat bin ich.","author":"Ludwig XIV.","year":"zugeschrieben","note":"Sinnbild des Absolutismus"},
+  {"text":"Und sie bewegt sich doch!","author":"Galileo Galilei","year":"1633","note":"apokryph, nach seinem Widerruf"},
+  {"text":"Ich missbilige, was du sagst, doch ich würde mein Leben dafür geben, dass du es sagen darfst.","author":"Voltaire (zugeschrieben)","year":"18. Jh.","note":"tatsächlich Formulierung von E. B. Hall"},
+  {"text":"Government of the people, by the people, for the people.","author":"Abraham Lincoln","year":"1863","note":"Gettysburg Address"},
+  {"text":"Blut und Eisen.","author":"Otto von Bismarck","year":"1862","note":"Rede vor dem preußischen Abgeordnetenhaus"},
+  {"text":"Proletarier aller Länder, vereinigt euch!","author":"Karl Marx & Friedrich Engels","year":"1848","note":"Schlusssatz des Kommunistischen Manifests"},
+  {"text":"Blut, Schweiß und Tränen.","author":"Winston Churchill","year":"1940","note":"Antrittsrede als Premierminister"},
+  {"text":"Das Einzige, wovor wir uns fürchten müssen, ist die Furcht selbst.","author":"Franklin D. Roosevelt","year":"1933","note":"Antrittsrede"},
+  {"text":"Frage nicht, was dein Land für dich tun kann – frage, was du für dein Land tun kannst.","author":"John F. Kennedy","year":"1961","note":"Antrittsrede"},
+  {"text":"I have a dream.","author":"Martin Luther King Jr.","year":"1963","note":"Rede beim Marsch auf Washington"},
+  {"text":"Ein kleiner Schritt für einen Menschen, ein großer Sprung für die Menschheit.","author":"Neil Armstrong","year":"1969","note":"erste Mondlandung"},
+  {"text":"Es scheint immer unmöglich, bis es vollbracht ist.","author":"Nelson Mandela","year":"zugeschrieben","note":""},
+  {"text":"Sei du selbst die Veränderung, die du dir wünschst für diese Welt.","author":"Mahatma Gandhi (zugeschrieben)","year":"","note":"Authentizität des genauen Wortlauts umstritten"},
+  {"text":"Es gibt nichts Unmögliches für den, der es versucht.","author":"Alexander der Große (zugeschrieben)","year":"","note":""},
+  {"text":"Wir werden entweder einen Weg finden oder einen bauen.","author":"Hannibal (zugeschrieben)","year":"vor der Alpenüberquerung","note":"218 v. Chr."},
+  {"text":"Eureka!","author":"Archimedes (zugeschrieben)","year":"3. Jh. v. Chr.","note":"beim Auffinden des Auftriebsprinzips"},
+  {"text":"Wir nennen unsere Stadt die Schule von Hellas.","author":"Perikles","year":"5. Jh. v. Chr.","note":"sinngemäß, Thukydides' Grabrede"},
+  {"text":"Der Mensch ist von Natur aus ein politisches Wesen.","author":"Aristoteles","year":"4. Jh. v. Chr.","note":"aus der 'Politik'"},
+  {"text":"Geh mir aus der Sonne.","author":"Diogenes","year":"4. Jh. v. Chr.","note":"zu Alexander dem Großen gesagt"},
+  {"text":"Das Leben ist kurz, die Kunst lang.","author":"Hippokrates","year":"5./4. Jh. v. Chr.","note":""},
+  {"text":"Im Krieg ist die Wahrheit das erste Opfer.","author":"Aischylos (zugeschrieben)","year":"5. Jh. v. Chr.","note":"Ursprung umstritten"},
+  {"text":"Carpe diem – nutze den Tag.","author":"Horaz","year":"1. Jh. v. Chr.","note":"aus den Oden"},
+  {"text":"Ich sehe das Bessere und billige es, doch ich folge dem Schlechteren.","author":"Ovid","year":"1. Jh. v./n. Chr.","note":"aus den Metamorphosen"},
+  {"text":"Sie schaffen eine Wüste und nennen es Frieden.","author":"Tacitus (Rede eines Britanniers)","year":"1./2. Jh. n. Chr.","note":"aus 'Agricola'"},
+  {"text":"Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.","author":"Laozi","year":"zugeschrieben","note":"sinngemäß aus dem Daodejing"},
+  {"text":"Kenne deinen Feind und kenne dich selbst.","author":"Sunzi","year":"zugeschrieben","note":"aus der 'Kunst des Krieges'"},
+  {"text":"Gott will es!","author":"Papst Urban II. (überliefert)","year":"1095","note":"Aufruf zum Ersten Kreuzzug"},
+  {"text":"Ich fürchte, wenn ich einmal tot bin, wird kein Erbe wie ich sein.","author":"Saladin (zugeschrieben)","year":"12. Jh.","note":""},
+  {"text":"Ich habe nicht einmal die Hälfte dessen erzählt, was ich gesehen habe.","author":"Marco Polo (zugeschrieben)","year":"auf dem Sterbebett","note":""},
+  {"text":"Ich fürchte nichts, denn Gott ist mit mir.","author":"Jeanne d'Arc","year":"1431","note":"aus den Prozessprotokollen"},
+  {"text":"Lasst, die ihr eintretet, alle Hoffnung fahren.","author":"Dante Alighieri","year":"14. Jh.","note":"aus dem 'Inferno'"},
+  {"text":"Ich sterbe als des Königs guter Diener, aber zuerst Gottes.","author":"Thomas Morus","year":"1535","note":"vor seiner Hinrichtung überliefert"},
+  {"text":"Es ist besser, gefürchtet als geliebt zu werden, wenn man nicht beides haben kann.","author":"Niccolò Machiavelli","year":"1532","note":"sinngemäß, aus 'Der Fürst'"},
+  {"text":"Wissen ist Macht.","author":"Francis Bacon (zugeschrieben)","year":"17. Jh.","note":"Scientia potentia est"},
+  {"text":"Ich denke, also bin ich.","author":"René Descartes","year":"1637","note":"Cogito ergo sum"},
+  {"text":"Das Herz hat seine Gründe, die die Vernunft nicht kennt.","author":"Blaise Pascal","year":"17. Jh.","note":"aus den 'Pensées'"},
+  {"text":"Nichts ist sicher außer dem Tod und den Steuern.","author":"Benjamin Franklin (zugeschrieben)","year":"1789","note":""},
+  {"text":"Jeder soll nach seiner Façon selig werden.","author":"Friedrich der Große","year":"1740","note":"Randnotiz zur Religionsfreiheit"},
+  {"text":"Ich werde herrschen oder sterben.","author":"Katharina die Große (zugeschrieben)","year":"18. Jh.","note":""},
+  {"text":"Alle Menschen sind gleich geschaffen.","author":"Thomas Jefferson","year":"1776","note":"aus der US-Unabhängigkeitserklärung"},
+  {"text":"Kühnheit, immer wieder Kühnheit!","author":"Georges Danton (zugeschrieben)","year":"1792","note":"Rede vor dem Nationalkonvent"},
+  {"text":"Der Schrecken ist nichts anderes als die Gerechtigkeit, schnell, streng, unbeugsam.","author":"Maximilien Robespierre","year":"1794","note":"sinngemäß"},
+  {"text":"Verzeihung, mein Herr, ich wollte es nicht.","author":"Marie Antoinette","year":"1793","note":"letzte überlieferte Worte, zu ihrem Henker"},
+  {"text":"Ein Führer ist ein Händler der Hoffnung.","author":"Napoleon Bonaparte (zugeschrieben)","year":"","note":""},
+  {"text":"Die Geschichte ist eine Ansammlung von Lügen, auf die man sich geeinigt hat.","author":"Napoleon Bonaparte (zugeschrieben)","year":"","note":""},
+  {"text":"Die Politik ist die Lehre vom Möglichen.","author":"Otto von Bismarck","year":"1867","note":""},
+  {"text":"Man kann alles mit Bajonetten machen, nur nicht auf ihnen sitzen.","author":"Otto von Bismarck (zugeschrieben)","year":"","note":""},
+  {"text":"Man kann nicht alle Menschen für immer täuschen.","author":"Abraham Lincoln (zugeschrieben)","year":"","note":"Echtheit umstritten"},
+  {"text":"Mit Bosheit gegen niemanden, mit Nächstenliebe für alle.","author":"Abraham Lincoln","year":"1865","note":"zweite Antrittsrede"},
+  {"text":"Die Philosophen haben die Welt nur verschieden interpretiert; es kommt aber darauf an, sie zu verändern.","author":"Karl Marx","year":"1845","note":"aus den Feuerbach-Thesen"},
+  {"text":"Wir sind nicht amüsiert.","author":"Königin Victoria (zugeschrieben)","year":"19. Jh.","note":"Echtheit unbelegt"},
+  {"text":"Ich biete weder Sold noch Quartier, ich biete Hunger, Durst, Gewaltmärsche, Schlachten und Tod.","author":"Giuseppe Garibaldi (zugeschrieben)","year":"1849","note":""},
+  {"text":"Es gibt keine wirkliche Freiheit ohne wirtschaftliche Unabhängigkeit.","author":"Susan B. Anthony","year":"19. Jh.","note":""},
+  {"text":"Vertrauen ist gut, Kontrolle ist besser.","author":"Wladimir Lenin (zugeschrieben)","year":"","note":""},
+  {"text":"Du magst dich nicht für den Krieg interessieren, aber der Krieg interessiert sich für dich.","author":"Leo Trotzki (zugeschrieben)","year":"","note":""},
+  {"text":"Ein Auge um Auge macht am Ende die ganze Welt blind.","author":"Mahatma Gandhi (zugeschrieben)","year":"","note":""},
+  {"text":"Phantasie ist wichtiger als Wissen.","author":"Albert Einstein","year":"1929","note":"aus einem Interview"},
+  {"text":"Zwei Dinge sind unendlich: das Universum und die menschliche Dummheit.","author":"Albert Einstein (zugeschrieben)","year":"","note":""},
+  {"text":"Wir werden niemals aufgeben.","author":"Winston Churchill","year":"1940","note":"Rede vor dem Unterhaus"},
+  {"text":"Ein Pessimist sieht die Schwierigkeit in jeder Gelegenheit, ein Optimist die Gelegenheit in jeder Schwierigkeit.","author":"Winston Churchill (zugeschrieben)","year":"","note":"Zuschreibung umstritten"},
+  {"text":"Ein Datum, das in Schande weiterleben wird.","author":"Franklin D. Roosevelt","year":"1941","note":"Rede zum Kriegseintritt"},
+  {"text":"Politische Macht kommt aus den Gewehrläufen.","author":"Mao Zedong","year":"1938","note":"sinngemäß"},
+  {"text":"Nichts ist kostbarer als Unabhängigkeit und Freiheit.","author":"Ho Chi Minh (zugeschrieben)","year":"","note":""},
+  {"text":"Wir müssen hart sein, ohne unsere Zärtlichkeit je zu verlieren.","author":"Che Guevara (zugeschrieben)","year":"","note":""},
+  {"text":"Bildung ist die mächtigste Waffe, um die Welt zu verändern.","author":"Nelson Mandela","year":"","note":""},
+  {"text":"Ich bin bereit zu sterben.","author":"Nelson Mandela","year":"1964","note":"aus seiner Verteidigungsrede im Rivonia-Prozess"},
+  {"text":"Ich bin ein Berliner.","author":"John F. Kennedy","year":"1963","note":"Rede vor dem Rathaus Schöneberg"},
+  {"text":"Ungerechtigkeit irgendwo ist eine Bedrohung für Gerechtigkeit überall.","author":"Martin Luther King Jr.","year":"1963","note":"Brief aus dem Gefängnis von Birmingham"},
+  {"text":"Bildung ist der Reisepass in die Zukunft.","author":"Malcolm X (zugeschrieben)","year":"","note":""},
+  {"text":"Wir können den Arabern vergeben, unsere Kinder zu töten. Wir können ihnen nicht vergeben, uns zu zwingen, ihre Kinder zu töten.","author":"Golda Meir (zugeschrieben)","year":"","note":""},
+  {"text":"Vergebung ist eine Tugend der Tapferen.","author":"Indira Gandhi (zugeschrieben)","year":"","note":""},
+  {"text":"Die Dame ist nicht zum Wenden bereit.","author":"Margaret Thatcher","year":"1980","note":"Parteitagsrede"},
+  {"text":"Herr Gorbatschow, reißen Sie diese Mauer nieder!","author":"Ronald Reagan","year":"1987","note":"Rede am Brandenburger Tor"},
+  {"text":"Wer zu spät kommt, den bestraft das Leben.","author":"Michail Gorbatschow (zugeschrieben)","year":"1989","note":""},
+  {"text":"Intelligenz ist die Fähigkeit, sich an Veränderungen anzupassen.","author":"Stephen Hawking (zugeschrieben)","year":"","note":""},
+  {"text":"Wähle einen Beruf, den du liebst, und du wirst nie wieder in deinem Leben arbeiten müssen.","author":"Konfuzius (oft zugeschrieben)","year":"","note":"Zuschreibung umstritten"},
+  {"text":"Wer andere kennt, ist klug. Wer sich selbst kennt, ist erleuchtet.","author":"Laozi (zugeschrieben)","year":"","note":"sinngemäß aus dem Daodejing"},
+  {"text":"Der Edle ist gerecht, der Kleine denkt nur an Vorteil.","author":"Konfuzius","year":"","note":"sinngemäß, aus den Analekten"},
+  {"text":"Sage mir, mit wem du umgehst, und ich sage dir, wer du bist.","author":"Sprichwort (oft antiken Autoren zugeschrieben)","year":"","note":"Herkunft unsicher"},
+  {"text":"Rom wurde nicht an einem Tag erbaut.","author":"Mittelalterliches Sprichwort","year":"12. Jh.","note":"französischen Ursprungs"},
+  {"text":"Der Zweck heiligt die Mittel.","author":"Oft Machiavelli zugeschrieben","year":"","note":"so wörtlich nicht in seinen Schriften belegt"},
+  {"text":"Einigkeit macht stark.","author":"Äsop (zugeschrieben)","year":"Antike","note":"aus der Fabel vom Bündel Stäbe"},
+  {"text":"Wer den Krieg nicht kennt, kennt den Frieden nicht.","author":"Sunzi (sinngemäß)","year":"","note":""},
+  {"text":"Ein Reich, das gegen sich selbst gespalten ist, kann nicht bestehen.","author":"Abraham Lincoln","year":"1858","note":"'House Divided'-Rede, in Anlehnung an ein Bibelzitat"},
+  {"text":"Die Zukunft gehört denen, die an die Schönheit ihrer Träume glauben.","author":"Eleanor Roosevelt (zugeschrieben)","year":"","note":"Zuschreibung umstritten"},
+  {"text":"Wo man Bücher verbrennt, verbrennt man am Ende auch Menschen.","author":"Heinrich Heine","year":"1821","note":"aus 'Almansor', prophetisch mit Blick auf spätere NS-Bücherverbrennungen zitiert"},
+  {"text":"Der Mensch ist zur Freiheit verurteilt.","author":"Jean-Paul Sartre","year":"20. Jh.","note":"sinngemäß, existenzialistische Kernthese"},
+  {"text":"Wissen ohne Gewissen ist nur ein Ruin der Seele.","author":"François Rabelais (zugeschrieben)","year":"16. Jh.","note":""},
+  {"text":"Der Mutige stirbt nur einmal, der Feige stirbt tausend Tode.","author":"Sprichwort, teils William Shakespeare zugeschrieben","year":"","note":"sinngemäß aus 'Julius Caesar'"},
+  {"text":"Sein oder Nichtsein, das ist hier die Frage.","author":"William Shakespeare","year":"ca. 1600","note":"aus 'Hamlet'"},
+  {"text":"Panem et circenses – Brot und Spiele.","author":"Juvenal","year":"1./2. Jh. n. Chr.","note":"römische Gesellschaftskritik"},
+  {"text":"Alea iacta est kannte schon Menander vor mir.","author":"Sprichwörtliche Redewendung","year":"Antike","note":"Caesar zitierte laut Sueton einen griechischen Dichter"},
+  {"text":"Wer die Vergangenheit nicht kennt, kann die Gegenwart nicht verstehen.","author":"Sprichwort, oft Historikern zugeschrieben","year":"","note":"sinngemäße Redewendung"},
+  {"text":"Nicht zu wissen, was vor deiner Geburt geschah, heißt, immer ein Kind zu bleiben.","author":"Marcus Tullius Cicero","year":"46 v. Chr.","note":"aus 'Orator'"},
+  {"text":"Ich habe keinen besonderen Zeitpunkt gewählt. Ich wurde gewählt.","author":"Rosa Parks","year":"1955","note":"sinngemäß, zu ihrer Weigerung, den Sitzplatz zu räumen"},
+  {"text":"Der Mensch ist frei geboren, und überall liegt er in Ketten.","author":"Jean-Jacques Rousseau","year":"1762","note":"Eröffnungssatz des 'Gesellschaftsvertrags'"},
+  {"text":"Habe Mut, dich deines eigenen Verstandes zu bedienen.","author":"Immanuel Kant","year":"1784","note":"Wahlspruch der Aufklärung, nach Horaz' sapere aude"},
+  {"text":"Ein kleiner Schritt für einen Menschen, ein riesiger Sprung für die Menschheit.","author":"Neil Armstrong","year":"1969","note":"Armstrong sagte, er habe 'a man' gesagt; auf der Aufnahme ist das 'a' nicht zu hören"},
+  {"text":"Wir wollen ein Volk von Brüdern sein.","author":"Friedrich Schiller","year":"1804","note":"aus 'Wilhelm Tell'"}
 ];
 const BATTLES = [
-  { year: -490, name: "Schlacht bei Marathon", war: "Perserkriege", text: "Athenische Hopliten schlagen ein zahlenm\xE4\xDFig \xFCberlegenes persisches Heer \u2013 pr\xE4gt bis heute den Begriff 'Marathon'." },
-  { year: -480, name: "Schlacht bei den Thermopylen", war: "Perserkriege", text: "Eine kleine griechische Streitmacht unter dem Spartanerk\xF6nig Leonidas h\xE4lt ein riesiges Perserheer tagelang auf, bevor sie aufgerieben wird." },
-  { year: -331, name: "Schlacht bei Gaugamela", war: "Alexanderz\xFCge", text: "Alexander der Gro\xDFe besiegt das zahlenm\xE4\xDFig weit \xFCberlegene Perserheer unter Darius III. entscheidend und besiegelt den Untergang des Perserreichs." },
-  { year: -216, name: "Schlacht bei Cannae", war: "Zweiter Punischer Krieg", text: "Hannibal vernichtet ein r\xF6misches Heer nahezu vollst\xE4ndig durch eine geniale Doppelumfassung \u2013 bis heute milit\xE4rhistorisches Lehrbeispiel." },
-  { year: -52, name: "Schlacht von Alesia", war: "Gallischer Krieg", text: "Caesar besiegt den gallischen Anf\xFChrer Vercingetorix durch eine doppelte Belagerungsmauer \u2013 entscheidet den Gallischen Krieg zugunsten Roms." },
-  { year: -31, name: "Schlacht bei Actium", war: "R\xF6mischer B\xFCrgerkrieg", text: "Octavian besiegt Marcus Antonius und Kleopatra zur See \u2013 ebnet den Weg zum r\xF6mischen Kaisertum." },
-  { year: 9, name: "Varusschlacht (Teutoburger Wald)", war: "R\xF6misch-Germanische Kriege", text: "Germanische St\xE4mme unter Arminius vernichten drei r\xF6mische Legionen und stoppen die r\xF6mische Expansion nach Germanien dauerhaft." },
-  { year: 732, name: "Schlacht bei Tours und Poitiers", war: "Islamische Expansion", text: "Karl Martell stoppt den arabischen Vormarsch nach Mitteleuropa." },
-  { year: 1066, name: "Schlacht bei Hastings", war: "Normannische Eroberung", text: "Wilhelm der Eroberer besiegt die Angelsachsen und ver\xE4ndert England grundlegend in Sprache, Adel und Recht." },
-  { year: 1187, name: "Schlacht bei Hattin", war: "Kreuzz\xFCge", text: "Saladin vernichtet das Kreuzfahrerheer und erobert kurz darauf Jerusalem zur\xFCck." },
-  { year: 1214, name: "Schlacht bei Bouvines", war: "Franz\xF6sisch-Englischer Konflikt", text: "Frankreichs Sieg st\xE4rkt die k\xF6nigliche Zentralmacht und schw\xE4cht englische Anspr\xFCche auf dem Kontinent." },
-  { year: 1415, name: "Schlacht von Azincourt", war: "Hundertj\xE4hriger Krieg", text: "Englische Langbogensch\xFCtzen unter Heinrich V. vernichten ein zahlenm\xE4\xDFig weit \xFCberlegenes franz\xF6sisches Ritterheer." },
-  { year: 1453, name: "Belagerung Konstantinopels", war: "Osmanische Expansion", text: "Erstmals entscheiden Kanonen eine Belagerung \u2013 das Byzantinische Reich geht endg\xFCltig unter." },
-  { year: 1571, name: "Seeschlacht von Lepanto", war: "Osmanisch-Christliche Kriege", text: "Eine christliche Flottenallianz besiegt die osmanische Flotte \u2013 letzte gro\xDFe Ruderschlacht der Geschichte." },
-  { year: 1588, name: "Untergang der Spanischen Armada", war: "Anglo-Spanischer Krieg", text: "England wehrt die spanische Invasionsflotte ab und etabliert sich als aufstrebende Seemacht." },
-  { year: 1704, name: "Schlacht bei H\xF6chst\xE4dt (Blenheim)", war: "Spanischer Erbfolgekrieg", text: "Ein englisch-\xF6sterreichisches Heer stoppt entscheidend den franz\xF6sischen Vormarsch in S\xFCddeutschland." },
-  { year: 1815, name: "Schlacht bei Waterloo", war: "Napoleonische Kriege", text: "Die endg\xFCltige Niederlage Napoleons gegen eine britisch-preu\xDFische Allianz beendet die napoleonische \xC4ra in Europa." },
-  { year: 1863, name: "Schlacht von Gettysburg", war: "Amerikanischer B\xFCrgerkrieg", text: "Blutigste Schlacht des B\xFCrgerkriegs und milit\xE4rischer Wendepunkt zugunsten der Nordstaaten." },
-  { year: 1870, name: "Schlacht bei Sedan", war: "Deutsch-Franz\xF6sischer Krieg", text: "Preu\xDFens entscheidender Sieg f\xFChrt zur Gefangennahme Napoleons III. und ebnet den Weg zur deutschen Reichsgr\xFCndung." },
-  { year: 1914, name: "Erste Marneschlacht", war: "Erster Weltkrieg", text: "Stoppt den deutschen Vormarsch auf Paris und l\xE4sst den Krieg im Westen zum jahrelangen Stellungskrieg erstarren." },
-  { year: 1916, name: "Schlacht um Verdun", war: "Erster Weltkrieg", text: "Symbol des industrialisierten Massensterbens im Stellungskrieg mit \xFCber 700.000 Opfern." },
-  { year: 1916, name: "Schlacht an der Somme", war: "Erster Weltkrieg", text: "\xDCber eine Million Tote und Verwundete bei minimalem Gel\xE4ndegewinn \u2013 erster Panzereinsatz der Geschichte." },
-  { year: 1942, name: "Schlacht von Midway", war: "Zweiter Weltkrieg (Pazifik)", text: "Entscheidender US-Sieg \xFCber die japanische Flotte, Wendepunkt des Pazifikkriegs." },
-  { year: 1942, name: "Zweite Schlacht von El Alamein", war: "Zweiter Weltkrieg (Nordafrika)", text: "Alliierter Sieg \xFCber Rommels Afrikakorps, Wendepunkt im nordafrikanischen Feldzug." },
-  { year: 1943, name: "Schlacht von Stalingrad", war: "Zweiter Weltkrieg (Ostfront)", text: "Kapitulation der eingekesselten deutschen 6. Armee \u2013 psychologischer und milit\xE4rischer Wendepunkt an der Ostfront." },
-  { year: 1944, name: "Landung in der Normandie (D-Day)", war: "Zweiter Weltkrieg (Westfront)", text: "Gr\xF6\xDFte amphibische Invasion der Geschichte er\xF6ffnet die Westfront gegen NS-Deutschland." },
-  { year: -1457, name: "Schlacht bei Megiddo", war: "\xC4gyptische Expansion", text: "Thutmosis III. besiegt ein kanaanitisches B\xFCndnis \u2013 eine der \xE4ltesten in Detail \xFCberlieferten Schlachten der Geschichte." },
-  { year: -1274, name: "Schlacht bei Kadesch", war: "\xC4gyptisch-Hethitischer Krieg", text: "Gr\xF6\xDFte Streitwagenschlacht der Geschichte zwischen \xC4gyptern unter Ramses II. und Hethitern, endet im \xE4ltesten erhaltenen Friedensvertrag." },
-  { year: -202, name: "Schlacht bei Zama", war: "Zweiter Punischer Krieg", text: "Scipio besiegt Hannibal entscheidend in Nordafrika und beendet Karthagos Gro\xDFmachtstellung endg\xFCltig." },
-  { year: 378, name: "Schlacht von Adrianopel", war: "V\xF6lkerwanderung", text: "Westgoten vernichten ein r\xF6misches Heer und t\xF6ten Kaiser Valens \u2013 Symbol der beginnenden milit\xE4rischen Schw\xE4che Roms." },
-  { year: 1071, name: "Schlacht von Manzikert", war: "Byzantinisch-Seldschukische Kriege", text: "Die vernichtende Niederlage von Byzanz gegen die Seldschuken \xF6ffnet Anatolien t\xFCrkischer Besiedlung und schw\xE4cht Byzanz dauerhaft." },
-  { year: 1097, name: "Schlacht von Dorylaeum", war: "Erster Kreuzzug", text: "Fr\xFChe Kreuzfahrer besiegen ein seldschukisches Heer und sichern den Weg nach Jerusalem." },
-  { year: 1191, name: "Schlacht von Arsuf", war: "Dritter Kreuzzug", text: "Richard L\xF6wenherz besiegt Saladin taktisch geschickt, kann Jerusalem aber letztlich nicht zur\xFCckerobern." },
-  { year: 1260, name: "Schlacht bei Ain Dschalut", war: "Mongolische Expansion", text: "Die \xE4gyptischen Mamluken stoppen erstmals einen mongolischen Vormarsch und retten damit den Nahen Osten vor weiterer mongolischer Eroberung." },
-  { year: 1302, name: "Sporenschlacht von Kortrijk", war: "Franz\xF6sisch-Fl\xE4mischer Krieg", text: "Fl\xE4mische B\xFCrgermilizen besiegen \xFCberraschend das franz\xF6sische Ritterheer \u2013 fr\xFCher Beleg f\xFCr die abnehmende Dominanz schwerer Reiterei." },
-  { year: 1346, name: "Schlacht von Cr\xE9cy", war: "Hundertj\xE4hriger Krieg", text: "Englische Langbogensch\xFCtzen vernichten die Bl\xFCte des franz\xF6sischen Adels \u2013 Wendepunkt in der Kriegstechnik weg von Ritterheeren." },
-  { year: 1529, name: "Erste Belagerung Wiens", war: "Osmanische Expansion", text: "Die Habsburger wehren den osmanischen Vormarsch nach Mitteleuropa knapp ab." },
-  { year: 1683, name: "Schlacht am Kahlenberg (Entsatz Wiens)", war: "Gro\xDFe T\xFCrkenkriege", text: "Ein europ\xE4isches Entsatzheer unter Jan Sobieski beendet die letzte gro\xDFe osmanische Belagerung Wiens endg\xFCltig." },
-  { year: 1709, name: "Schlacht bei Poltawa", war: "Gro\xDFer Nordischer Krieg", text: "Peter der Gro\xDFe besiegt Schweden entscheidend \u2013 Russland l\xF6st Schweden als nordeurop\xE4ische Gro\xDFmacht ab." },
-  { year: 1805, name: "Schlacht bei Trafalgar", war: "Napoleonische Kriege", text: "Admiral Nelson vernichtet die franz\xF6sisch-spanische Flotte und sichert Gro\xDFbritannien die Seeherrschaft f\xFCr ein Jahrhundert." },
-  { year: 1805, name: "Schlacht bei Austerlitz", war: "Napoleonische Kriege", text: "Napoleons taktisches Meisterst\xFCck gegen eine \xF6sterreichisch-russische \xDCbermacht gilt als seine gl\xE4nzendste Schlacht." },
-  { year: 1813, name: "V\xF6lkerschlacht bei Leipzig", war: "Napoleonische Kriege", text: "Die gr\xF6\xDFte Schlacht Europas vor dem 20. Jahrhundert besiegelt Napoleons Niederlage in Deutschland." },
-  { year: 1836, name: "Schlacht von The Alamo", war: "Texanischer Unabh\xE4ngigkeitskrieg", text: "Die Niederlage einer kleinen texanischen Verteidigergruppe wird zum identit\xE4tsstiftenden Mythos im Kampf um die Unabh\xE4ngigkeit von Mexiko." },
-  { year: 1866, name: "Schlacht von K\xF6niggr\xE4tz", war: "Deutscher Krieg", text: "Preu\xDFens Sieg \xFCber \xD6sterreich entscheidet die Vorherrschaft im k\xFCnftigen deutschen Nationalstaat." },
-  { year: 1905, name: "Seeschlacht bei Tsushima", war: "Russisch-Japanischer Krieg", text: "Japan vernichtet die russische Ostseeflotte \u2013 erster Sieg einer asiatischen \xFCber eine europ\xE4ische Gro\xDFmacht zur See." },
-  { year: 1914, name: "Schlacht bei Tannenberg", war: "Erster Weltkrieg", text: "Deutschland f\xFCgt Russland eine schwere Niederlage an der Ostfront zu \u2013 begr\xFCndet den Mythos um Paul von Hindenburg." },
-  { year: 1943, name: "Schlacht bei Kursk", war: "Zweiter Weltkrieg (Ostfront)", text: "Gr\xF6\xDFte Panzerschlacht der Geschichte, endet mit sowjetischem Sieg und dauerhafter strategischer Initiative gegen NS-Deutschland." }
+  {"year":-490,"name":"Schlacht bei Marathon","war":"Perserkriege","text":"Athenische Hopliten schlagen ein zahlenmäßig überlegenes persisches Heer – prägt bis heute den Begriff 'Marathon'."},
+  {"year":-480,"name":"Schlacht bei den Thermopylen","war":"Perserkriege","text":"Eine kleine griechische Streitmacht unter dem Spartanerkönig Leonidas hält ein riesiges Perserheer tagelang auf, bevor sie aufgerieben wird."},
+  {"year":-331,"name":"Schlacht bei Gaugamela","war":"Alexanderzüge","text":"Alexander der Große besiegt das zahlenmäßig weit überlegene Perserheer unter Darius III. entscheidend und besiegelt den Untergang des Perserreichs."},
+  {"year":-216,"name":"Schlacht bei Cannae","war":"Zweiter Punischer Krieg","text":"Hannibal vernichtet ein römisches Heer nahezu vollständig durch eine geniale Doppelumfassung – bis heute militärhistorisches Lehrbeispiel."},
+  {"year":-52,"name":"Schlacht von Alesia","war":"Gallischer Krieg","text":"Caesar besiegt den gallischen Anführer Vercingetorix durch eine doppelte Belagerungsmauer – entscheidet den Gallischen Krieg zugunsten Roms."},
+  {"year":-31,"name":"Schlacht bei Actium","war":"Römischer Bürgerkrieg","text":"Octavian besiegt Marcus Antonius und Kleopatra zur See – ebnet den Weg zum römischen Kaisertum."},
+  {"year":9,"name":"Varusschlacht (Teutoburger Wald)","war":"Römisch-Germanische Kriege","text":"Germanische Stämme unter Arminius vernichten drei römische Legionen und stoppen die römische Expansion nach Germanien dauerhaft."},
+  {"year":732,"name":"Schlacht bei Tours und Poitiers","war":"Islamische Expansion","text":"Karl Martell stoppt den arabischen Vormarsch nach Mitteleuropa."},
+  {"year":1066,"name":"Schlacht bei Hastings","war":"Normannische Eroberung","text":"Wilhelm der Eroberer besiegt die Angelsachsen und verändert England grundlegend in Sprache, Adel und Recht."},
+  {"year":1214,"name":"Schlacht bei Bouvines","war":"Französisch-Englischer Konflikt","text":"Frankreichs Sieg stärkt die königliche Zentralmacht und schwächt englische Ansprüche auf dem Kontinent."},
+  {"year":1415,"name":"Schlacht von Azincourt","war":"Hundertjähriger Krieg","text":"Englische Langbogenschützen unter Heinrich V. vernichten ein zahlenmäßig weit überlegenes französisches Ritterheer."},
+  {"year":1453,"name":"Belagerung Konstantinopels","war":"Osmanische Expansion","text":"Erstmals entscheiden Kanonen eine Belagerung – das Byzantinische Reich geht endgültig unter."},
+  {"year":1588,"name":"Untergang der Spanischen Armada","war":"Anglo-Spanischer Krieg","text":"England wehrt die spanische Invasionsflotte ab und etabliert sich als aufstrebende Seemacht."},
+  {"year":1704,"name":"Schlacht bei Höchstädt (Blenheim)","war":"Spanischer Erbfolgekrieg","text":"Ein englisch-österreichisches Heer stoppt entscheidend den französischen Vormarsch in Süddeutschland."},
+  {"year":1815,"name":"Schlacht bei Waterloo","war":"Napoleonische Kriege","text":"Die endgültige Niederlage Napoleons gegen eine britisch-preußische Allianz beendet die napoleonische Ära in Europa."},
+  {"year":1870,"name":"Schlacht bei Sedan","war":"Deutsch-Französischer Krieg","text":"Preußens entscheidender Sieg führt zur Gefangennahme Napoleons III. und ebnet den Weg zur deutschen Reichsgründung."},
+  {"year":1914,"name":"Erste Marneschlacht","war":"Erster Weltkrieg","text":"Stoppt den deutschen Vormarsch auf Paris und lässt den Krieg im Westen zum jahrelangen Stellungskrieg erstarren."},
+  {"year":1916,"name":"Schlacht um Verdun","war":"Erster Weltkrieg","text":"Symbol des industrialisierten Massensterbens im Stellungskrieg mit über 700.000 Opfern."},
+  {"year":1916,"name":"Schlacht an der Somme","war":"Erster Weltkrieg","text":"Über eine Million Tote und Verwundete bei minimalem Geländegewinn – erster Panzereinsatz der Geschichte."},
+  {"year":1942,"name":"Schlacht von Midway","war":"Zweiter Weltkrieg (Pazifik)","text":"Entscheidender US-Sieg über die japanische Flotte, Wendepunkt des Pazifikkriegs."},
+  {"year":1942,"name":"Zweite Schlacht von El Alamein","war":"Zweiter Weltkrieg (Nordafrika)","text":"Alliierter Sieg über Rommels Afrikakorps, Wendepunkt im nordafrikanischen Feldzug."},
+  {"year":1943,"name":"Schlacht von Stalingrad","war":"Zweiter Weltkrieg (Ostfront)","text":"Kapitulation der eingekesselten deutschen 6. Armee – psychologischer und militärischer Wendepunkt an der Ostfront."},
+  {"year":1944,"name":"Landung in der Normandie (D-Day)","war":"Zweiter Weltkrieg (Westfront)","text":"Größte amphibische Invasion der Geschichte eröffnet die Westfront gegen NS-Deutschland."},
+  {"year":-1457,"name":"Schlacht bei Megiddo","war":"Ägyptische Expansion","text":"Thutmosis III. besiegt ein kanaanitisches Bündnis – eine der ältesten in Detail überlieferten Schlachten der Geschichte."},
+  {"year":-202,"name":"Schlacht bei Zama","war":"Zweiter Punischer Krieg","text":"Scipio besiegt Hannibal entscheidend in Nordafrika und beendet Karthagos Großmachtstellung endgültig."},
+  {"year":378,"name":"Schlacht von Adrianopel","war":"Völkerwanderung","text":"Westgoten vernichten ein römisches Heer und töten Kaiser Valens – Symbol der beginnenden militärischen Schwäche Roms."},
+  {"year":1071,"name":"Schlacht von Manzikert","war":"Byzantinisch-Seldschukische Kriege","text":"Die vernichtende Niederlage von Byzanz gegen die Seldschuken öffnet Anatolien türkischer Besiedlung und schwächt Byzanz dauerhaft."},
+  {"year":1097,"name":"Schlacht von Dorylaeum","war":"Erster Kreuzzug","text":"Frühe Kreuzfahrer besiegen ein seldschukisches Heer und sichern den Weg nach Jerusalem."},
+  {"year":1191,"name":"Schlacht von Arsuf","war":"Dritter Kreuzzug","text":"Richard Löwenherz besiegt Saladin taktisch geschickt, kann Jerusalem aber letztlich nicht zurückerobern."},
+  {"year":1260,"name":"Schlacht bei Ain Dschalut","war":"Mongolische Expansion","text":"Die ägyptischen Mamluken stoppen erstmals einen mongolischen Vormarsch und retten damit den Nahen Osten vor weiterer mongolischer Eroberung."},
+  {"year":1302,"name":"Sporenschlacht von Kortrijk","war":"Französisch-Flämischer Krieg","text":"Flämische Bürgermilizen besiegen überraschend das französische Ritterheer – früher Beleg für die abnehmende Dominanz schwerer Reiterei."},
+  {"year":1346,"name":"Schlacht von Crécy","war":"Hundertjähriger Krieg","text":"Englische Langbogenschützen vernichten die Blüte des französischen Adels – Wendepunkt in der Kriegstechnik weg von Ritterheeren."},
+  {"year":1529,"name":"Erste Belagerung Wiens","war":"Osmanische Expansion","text":"Die Habsburger wehren den osmanischen Vormarsch nach Mitteleuropa knapp ab."},
+  {"year":1683,"name":"Schlacht am Kahlenberg (Entsatz Wiens)","war":"Große Türkenkriege","text":"Ein europäisches Entsatzheer unter Jan Sobieski beendet die letzte große osmanische Belagerung Wiens endgültig."},
+  {"year":1709,"name":"Schlacht bei Poltawa","war":"Großer Nordischer Krieg","text":"Peter der Große besiegt Schweden entscheidend – Russland löst Schweden als nordeuropäische Großmacht ab."},
+  {"year":1805,"name":"Schlacht bei Trafalgar","war":"Napoleonische Kriege","text":"Admiral Nelson vernichtet die französisch-spanische Flotte und sichert Großbritannien die Seeherrschaft für ein Jahrhundert."},
+  {"year":1805,"name":"Schlacht bei Austerlitz","war":"Napoleonische Kriege","text":"Napoleons taktisches Meisterstück gegen eine österreichisch-russische Übermacht gilt als seine glänzendste Schlacht."},
+  {"year":1813,"name":"Völkerschlacht bei Leipzig","war":"Napoleonische Kriege","text":"Die größte Schlacht Europas vor dem 20. Jahrhundert besiegelt Napoleons Niederlage in Deutschland."},
+  {"year":1836,"name":"Schlacht von The Alamo","war":"Texanischer Unabhängigkeitskrieg","text":"Die Niederlage einer kleinen texanischen Verteidigergruppe wird zum identitätsstiftenden Mythos im Kampf um die Unabhängigkeit von Mexiko."},
+  {"year":1866,"name":"Schlacht von Königgrätz","war":"Deutscher Krieg","text":"Preußens Sieg über Österreich entscheidet die Vorherrschaft im künftigen deutschen Nationalstaat."},
+  {"year":1905,"name":"Seeschlacht bei Tsushima","war":"Russisch-Japanischer Krieg","text":"Japan vernichtet die russische Ostseeflotte – erster Sieg einer asiatischen über eine europäische Großmacht zur See."},
+  {"year":1914,"name":"Schlacht bei Tannenberg","war":"Erster Weltkrieg","text":"Deutschland fügt Russland eine schwere Niederlage an der Ostfront zu – begründet den Mythos um Paul von Hindenburg."},
+  {"year":1943,"name":"Schlacht bei Kursk","war":"Zweiter Weltkrieg (Ostfront)","text":"Größte Panzerschlacht der Geschichte, endet mit sowjetischem Sieg und dauerhafter strategischer Initiative gegen NS-Deutschland."},
+  {"year":-1274,"name":"Schlacht bei Kadesch","war":"Ägyptisch-Hethitische Kriege","text":"Ramses II. und der Hethiterkönig Muwatalli II. kämpfen unentschieden – und schließen darauf den ersten überlieferten schriftlichen Friedensvertrag der Geschichte."},
+  {"year":-260,"name":"Schlacht bei Mylae","war":"Erster Punischer Krieg","text":"Rom, bis dahin keine Seemacht, besiegt Karthago zur See – mit Enterbrücken, die den Seekampf in einen Nahkampf verwandeln."},
+  {"year":-53,"name":"Schlacht bei Carrhae","war":"Römisch-Parthische Kriege","text":"Die schwerste römische Niederlage im Osten. Berittene Bogenschützen zeigen die Grenzen der Legion in offenem Gelände."},
+  {"year":260,"name":"Schlacht bei Edessa","war":"Römisch-Sasanidische Kriege","text":"Kaiser Valerian gerät in persische Gefangenschaft – ein Schock für das römische Selbstverständnis."},
+  {"year":751,"name":"Schlacht am Talas","war":"Arabisch-Chinesische Auseinandersetzung","text":"Abbasidische und Tang-Truppen treffen in Zentralasien aufeinander. Der Überlieferung nach gelangte durch chinesische Gefangene das Wissen um die Papierherstellung nach Westen."},
+  {"year":1187,"name":"Schlacht bei Hattin","war":"Kreuzzüge","text":"Saladin schlägt das Kreuzfahrerheer und nimmt kurz darauf Jerusalem ein – Auslöser des Dritten Kreuzzugs."},
+  {"year":1281,"name":"Gescheiterte Mongolen-Invasion Japans","war":"Mongolische Expansion","text":"Ein Taifun zerstört die Invasionsflotte. Die Japaner nennen ihn kamikaze, 'Götterwind' – der Begriff prägt sechs Jahrhunderte später eine ganz andere Bedeutung."},
+  {"year":1571,"name":"Seeschlacht von Lepanto","war":"Osmanisch-Venezianische Kriege","text":"Die letzte große Schlacht von Ruderflotten. Der Sieg der Heiligen Liga bremst die osmanische Seemacht, ändert aber die Kräfteverhältnisse weniger als oft dargestellt."},
+  {"year":1683,"name":"Zweite Wiener Türkenbelagerung","war":"Osmanische Expansion","text":"Das Scheitern vor Wien markiert die Wende der osmanischen Ausdehnung in Europa."},
+  {"year":1757,"name":"Schlacht bei Plassey","war":"Britische Expansion in Indien","text":"Ein vergleichsweise kleines Gefecht mit gewaltigen Folgen: Die Ostindien-Kompanie wird zur Territorialmacht in Bengalen."},
+  {"year":1781,"name":"Belagerung von Yorktown","war":"Amerikanischer Unabhängigkeitskrieg","text":"Die Kapitulation der Briten entscheidet den Krieg – ermöglicht durch die französische Flotte, ohne die der Sieg nicht denkbar gewesen wäre."},
+  {"year":1863,"name":"Schlacht von Gettysburg","war":"Amerikanischer Bürgerkrieg","text":"Die verlustreichste Schlacht des Krieges beendet den Vorstoß der Konföderierten nach Norden."},
+  {"year":1904,"name":"Schlacht von Tsushima","war":"Russisch-Japanischer Krieg","text":"Erstmals in der Neuzeit besiegt eine asiatische Macht eine europäische Großmacht zur See – mit Signalwirkung für antikoloniale Bewegungen weltweit."},
+  {"year":1916,"name":"Schlacht von Verdun","war":"Erster Weltkrieg","text":"Über zehn Monate Materialschlacht ohne nennenswerte Geländegewinne – Sinnbild der Sinnlosigkeit des Stellungskriegs."},
+  {"year":1916,"name":"Skagerrakschlacht","war":"Erster Weltkrieg","text":"Die größte Seeschlacht des Krieges endet taktisch unentschieden, strategisch zugunsten Großbritanniens: Die deutsche Hochseeflotte bleibt danach weitgehend im Hafen."},
+  {"year":1940,"name":"Luftschlacht um England","war":"Zweiter Weltkrieg","text":"Die erste allein in der Luft entschiedene Schlacht der Geschichte verhindert eine deutsche Invasion."},
+  {"year":1942,"name":"Schlacht um Midway","war":"Zweiter Weltkrieg","text":"Der Verlust von vier Flugzeugträgern kehrt das Kräfteverhältnis im Pazifik binnen weniger Tage um."},
+  {"year":1954,"name":"Dien Bien Phu","war":"Indochinakrieg","text":"Die Niederlage beendet die französische Kolonialherrschaft in Indochina – und zeigt, dass gut organisierte Unabhängigkeitsbewegungen europäische Armeen schlagen können."}
 ];
 const COUNTRY_TIMELINES = {
   Deutschland: {
@@ -1022,167 +1067,1723 @@ const COUNTRY_TIMELINES = {
       { year: 1922, title: "Abschaffung des Sultanats", text: "Mustafa Kemal Atat\xFCrk beendet das \xFCber 600 Jahre alte Sultanat." },
       { year: 1923, title: "Gr\xFCndung der Republik T\xFCrkei", text: "Aus den Resten des Osmanischen Reiches entsteht der moderne t\xFCrkische Nationalstaat." }
     ]
+  },
+  "Indien": {
+    "color": "#c17817",
+    "events": [
+      {
+        "year": -2600,
+        "title": "Indus-Kultur",
+        "text": "Eine hochentwickelte Stadtkultur beherrscht von etwa 2600 bis 2000 v. Chr. den Nordwesten des Subkontinents – mit Kanalisation, genormten Ziegeln und einer bis heute nicht entzifferten Schrift."
+      },
+      {
+        "year": -1500,
+        "title": "Vedische Zeit beginnt",
+        "text": "Die ältesten Sanskrittexte, die Veden, entstehen mündlich. Sie bilden die Grundlage der späteren hinduistischen Traditionen."
+      },
+      {
+        "year": -500,
+        "title": "Buddha und Mahavira",
+        "text": "In Nordindien entstehen mit Buddhismus und Jainismus zwei Lehren, die die brahmanische Opferreligion grundsätzlich infrage stellen."
+      },
+      {
+        "year": -321,
+        "title": "Maurya-Reich",
+        "text": "Chandragupta Maurya begründet das erste Großreich des Subkontinents."
+      },
+      {
+        "year": -250,
+        "title": "Ashokas Edikte",
+        "text": "Kaiser Ashoka lässt seine Erlasse in Stein hauen – die frühesten datierbaren Schriftzeugnisse Indiens und ein früher Fall staatlich verkündeter Gewaltlosigkeit."
+      },
+      {
+        "year": 380,
+        "title": "Gupta-Zeit",
+        "text": "Vom späten 4. bis ins späte 5. Jahrhundert erlebt Nordindien unter den Gupta eine Blüte in Mathematik, Astronomie und Literatur; das Dezimalsystem mit Null entsteht in diesem Umfeld."
+      },
+      {
+        "year": 1206,
+        "title": "Sultanat von Delhi",
+        "text": "Nach muslimischen Eroberungen ab etwa 1000 entsteht 1206 das lange bestehende Sultanat von Delhi."
+      },
+      {
+        "year": 1526,
+        "title": "Mogulreich",
+        "text": "Babur begründet die Mogul-Dynastie, unter der Nordindien wirtschaftlich und kulturell zu einer der reichsten Regionen der Welt wird."
+      },
+      {
+        "year": 1556,
+        "title": "Akbar",
+        "text": "Unter Akbar erreicht das Mogulreich seine größte innere Festigkeit; er sucht den Ausgleich zwischen den Religionen seines Reiches."
+      },
+      {
+        "year": 1632,
+        "title": "Bau des Taj Mahal",
+        "text": "Shah Jahan lässt für seine verstorbene Frau Mumtaz Mahal das Grabmal errichten, das zum Sinnbild der Mogulkunst wird."
+      },
+      {
+        "year": 1757,
+        "title": "Schlacht bei Plassey",
+        "text": "Mit dem Sieg bei Plassey wird die Britische Ostindien-Kompanie von einer Handels- zu einer Militärmacht in Bengalen."
+      },
+      {
+        "year": 1857,
+        "title": "Aufstand von 1857",
+        "text": "Ein breiter Aufstand gegen die britische Herrschaft wird bis Ende 1858 niedergeschlagen; die Krone übernimmt die Herrschaft direkt."
+      },
+      {
+        "year": 1930,
+        "title": "Salzmarsch",
+        "text": "Gandhis Marsch ans Meer gegen das britische Salzmonopol macht den gewaltfreien Widerstand weltweit bekannt."
+      },
+      {
+        "year": 1947,
+        "title": "Unabhängigkeit und Teilung",
+        "text": "Am 14./15. August 1947 endet die britische Herrschaft. Die Teilung in Indien und Pakistan löst eine der größten Fluchtbewegungen der Geschichte aus."
+      },
+      {
+        "year": 1950,
+        "title": "Verfassung tritt in Kraft",
+        "text": "Die von B. R. Ambedkar maßgeblich gestaltete Verfassung macht Indien zur Republik und verbietet die Unberührbarkeit."
+      },
+      {
+        "year": 1991,
+        "title": "Wirtschaftliche Öffnung",
+        "text": "Eine Zahlungsbilanzkrise führt zur Abkehr von der staatlich gelenkten Wirtschaft und leitet Jahrzehnte starken Wachstums ein."
+      }
+    ]
+  },
+  "Großbritannien": {
+    "color": "#8a2b3a",
+    "events": [
+      {
+        "year": 43,
+        "title": "Römische Eroberung Britanniens",
+        "text": "Unter Kaiser Claudius beginnt die römische Herrschaft, die rund vier Jahrhunderte dauert."
+      },
+      {
+        "year": 1066,
+        "title": "Normannische Eroberung",
+        "text": "Wilhelm von der Normandie nimmt England ein – Sprache, Adel und Recht der Insel verändern sich grundlegend."
+      },
+      {
+        "year": 1215,
+        "title": "Magna Carta",
+        "text": "Am 15. Juni 1215 gewährt König Johann unter Bürgerkriegsdrohung die Magna Carta. Indem sie den Herrscher dem Recht unterstellt und Freiheiten der 'freien Männer' festhält, wird sie zur Grundlage individueller Rechte im angelsächsischen Rechtsraum."
+      },
+      {
+        "year": 1534,
+        "title": "Bruch mit Rom",
+        "text": "Heinrich VIII. macht sich zum Oberhaupt der englischen Kirche – aus dynastischen, nicht aus theologischen Gründen."
+      },
+      {
+        "year": 1588,
+        "title": "Sieg über die Armada",
+        "text": "Die Abwehr der spanischen Invasionsflotte markiert den Aufstieg Englands zur Seemacht."
+      },
+      {
+        "year": 1649,
+        "title": "Hinrichtung Karls I.",
+        "text": "Nach dem Bürgerkrieg wird ein König durch ein Gericht seines eigenen Landes hingerichtet – in Europa ohne Vorbild."
+      },
+      {
+        "year": 1688,
+        "title": "Glorreiche Revolution",
+        "text": "Der Machtwechsel führt zur Bill of Rights und zur dauerhaften Bindung der Krone an das Parlament."
+      },
+      {
+        "year": 1707,
+        "title": "Union mit Schottland",
+        "text": "England und Schottland stimmen dem Act of Union zu; das Königreich Großbritannien entsteht."
+      },
+      {
+        "year": 1801,
+        "title": "Union mit Irland",
+        "text": "Die Vereinigung mit Irland schafft das Vereinigte Königreich von Großbritannien und Irland."
+      },
+      {
+        "year": 1807,
+        "title": "Verbot des Sklavenhandels",
+        "text": "Großbritannien verbietet den Sklavenhandel mit seinen Kolonien; 1833 folgt die Abschaffung der Sklaverei im Empire."
+      },
+      {
+        "year": 1832,
+        "title": "Reform Act",
+        "text": "Wahlkreise werden neu zugeschnitten und das Wahlrecht erweitert – die Wählerschaft wächst um 57 Prozent auf 217.000. Handwerker, Arbeiter und große Teile der unteren Mittelschicht bleiben weiterhin ausgeschlossen."
+      },
+      {
+        "year": 1928,
+        "title": "Gleiches Wahlrecht für Frauen",
+        "text": "Nach dem Teilwahlrecht von 1918 erhalten Frauen dieselben Bedingungen wie Männer."
+      },
+      {
+        "year": 1947,
+        "title": "Rückzug aus Indien",
+        "text": "Die Unabhängigkeit Indiens leitet das Ende des Empire ein."
+      },
+      {
+        "year": 1948,
+        "title": "Gründung des NHS",
+        "text": "Der National Health Service macht medizinische Versorgung für alle unabhängig vom Einkommen zugänglich."
+      },
+      {
+        "year": 1973,
+        "title": "Beitritt zur EWG",
+        "text": "Großbritannien tritt der Europäischen Wirtschaftsgemeinschaft bei, einer Vorläuferin der Europäischen Union."
+      },
+      {
+        "year": 2020,
+        "title": "Austritt aus der EU",
+        "text": "Nach dem Referendum von 2016 verlässt das Vereinigte Königreich die Europäische Union."
+      }
+    ]
+  },
+  "Spanien": {
+    "color": "#a8571c",
+    "events": [
+      {
+        "year": -218,
+        "title": "Rom erobert Hispanien",
+        "text": "Im Zweiten Punischen Krieg beginnt die römische Herrschaft über die Halbinsel, die Sprache und Recht dauerhaft prägt."
+      },
+      {
+        "year": 711,
+        "title": "Muslimische Eroberung",
+        "text": "Im April oder Mai 711 setzt ein Amazigh-Heer unter Tariq ibn Ziyad über die Straße von Gibraltar; im Juli schlägt es König Roderich entscheidend."
+      },
+      {
+        "year": 718,
+        "title": "Beginn der Reconquista",
+        "text": "Mit der Schlacht von Covadonga um 718 beginnt die christliche Rückeroberung, die erst 1492 endet."
+      },
+      {
+        "year": 756,
+        "title": "Emirat von Córdoba",
+        "text": "Al-Andalus wird zum eigenständigen Zentrum von Wissenschaft, Medizin und Philosophie – über Jahrhunderte eine Brücke antiken Wissens nach Europa."
+      },
+      {
+        "year": 1492,
+        "title": "Granada, Kolumbus, Vertreibung",
+        "text": "Die Katholischen Könige erobern Granada, Kolumbus erreicht Amerika – und im selben Jahr werden die Juden aus Spanien vertrieben."
+      },
+      {
+        "year": 1516,
+        "title": "Habsburger auf dem Thron",
+        "text": "Die Herrschaft der Habsburger beginnt und endet 1700, als Philipp V. als erster Bourbone König wird."
+      },
+      {
+        "year": 1521,
+        "title": "Eroberung Tenochtitlans",
+        "text": "Mit dem Fall der Aztekenhauptstadt beginnt die spanische Herrschaft über weite Teile Amerikas."
+      },
+      {
+        "year": 1588,
+        "title": "Untergang der Armada",
+        "text": "Die Niederlage der Invasionsflotte gegen England markiert den Wendepunkt der spanischen Seemacht."
+      },
+      {
+        "year": 1808,
+        "title": "Napoleon setzt seinen Bruder ein",
+        "text": "Joseph Bonaparte wird auf den Thron gesetzt; im Unabhängigkeitskrieg 1808–1814 befreit sich Spanien mit britischer und portugiesischer Hilfe."
+      },
+      {
+        "year": 1812,
+        "title": "Verfassung von Cádiz",
+        "text": "Eine der ersten liberalen Verfassungen Europas entsteht mitten im Krieg – und wird zum Vorbild weit über Spanien hinaus."
+      },
+      {
+        "year": 1898,
+        "title": "Verlust der letzten Kolonien",
+        "text": "Im Krieg gegen die USA verliert Spanien Kuba, Puerto Rico und die Philippinen – das Ende des überseeischen Reiches."
+      },
+      {
+        "year": 1936,
+        "title": "Bürgerkrieg",
+        "text": "Der Spanische Bürgerkrieg 1936–1939 endet mit dem Sieg der Nationalisten unter General Franco, der bis zu seinem Tod 1975 als Diktator herrscht."
+      },
+      {
+        "year": 1975,
+        "title": "Übergang zur Demokratie",
+        "text": "Nach Francos Tod stellt Juan Carlos I. die Monarchie wieder her und leitet den Übergang ein."
+      },
+      {
+        "year": 1978,
+        "title": "Neue Verfassung",
+        "text": "Die Verfassung von 1978 begründet eine konstitutionelle Monarchie mit weitreichender Selbstverwaltung der Regionen."
+      },
+      {
+        "year": 1986,
+        "title": "Beitritt zur EG",
+        "text": "Der Beitritt zur Europäischen Gemeinschaft besiegelt die Rückkehr Spaniens nach Westeuropa."
+      }
+    ]
+  },
+  "Iran / Persien": {
+    "color": "#7d5ba6",
+    "events": [
+      {
+        "year": -550,
+        "title": "Kyros II. gründet das Achämenidenreich",
+        "text": "Kyros der Große (590–529 v. Chr.) begründet ein Reich, das von der Ägäis bis zum Indus reicht – das größte, das die Welt bis dahin gesehen hatte. Die Dynastie hält von 559 bis 330 v. Chr."
+      },
+      {
+        "year": -539,
+        "title": "Eroberung Babylons",
+        "text": "Kyros erlaubt den nach Babylon verschleppten Judäern die Rückkehr – ein früher Fall bewusst gemäßigter Herrschaftspraxis gegenüber Unterworfenen."
+      },
+      {
+        "year": -486,
+        "title": "Dareios und Xerxes gegen Griechenland",
+        "text": "Die Perserkriege prägen bis heute das europäische Selbstbild – erzählt allerdings fast ausschließlich aus griechischer Sicht."
+      },
+      {
+        "year": -330,
+        "title": "Alexander zerstört Persepolis",
+        "text": "Das Achämenidenreich fällt an Alexander; die Verwaltungsstrukturen überdauern jedoch unter seinen Nachfolgern."
+      },
+      {
+        "year": -247,
+        "title": "Partherreich",
+        "text": "Von 247 v. Chr. bis 224 n. Chr. beherrschen die Parther das iranische Hochland und Mesopotamien – jahrhundertelang Roms ebenbürtiger Gegner im Osten."
+      },
+      {
+        "year": 224,
+        "title": "Sasaniden",
+        "text": "Die Sasaniden (224–651) stürzen die Parther und erneuern das iranische Selbstbewusstsein; der Zoroastrismus wird Staatsreligion."
+      },
+      {
+        "year": 651,
+        "title": "Arabische Eroberung",
+        "text": "Das Sasanidenreich fällt; der Islam wird über Jahrhunderte zur prägenden Religion, die persische Sprache und Kultur bleiben bestehen."
+      },
+      {
+        "year": 1010,
+        "title": "Firdausis Schahname",
+        "text": "Das persische Nationalepos bewahrt die vorislamische Überlieferung und rettet zugleich die persische Sprache."
+      },
+      {
+        "year": 1219,
+        "title": "Mongolensturm",
+        "text": "Die mongolische Eroberung zerstört Städte und Bewässerungssysteme; die Folgen wirken über Generationen."
+      },
+      {
+        "year": 1501,
+        "title": "Safawiden",
+        "text": "Ismail I. begründet die Safawiden-Dynastie (1501–1736) und macht die Zwölferschia zur Staatsreligion – die Grundlage einer eigenständigen iranischen Identität."
+      },
+      {
+        "year": 1796,
+        "title": "Kadscharen",
+        "text": "Unter den Kadscharen gerät das Land im 19. Jahrhundert wirtschaftlich unter die Kontrolle des russischen und des britischen Empire."
+      },
+      {
+        "year": 1906,
+        "title": "Konstitutionelle Revolution",
+        "text": "Eine Verfassungsbewegung erzwingt ein Parlament – früher als in vielen europäischen Staaten."
+      },
+      {
+        "year": 1953,
+        "title": "Sturz Mossadeghs",
+        "text": "Der Sturz des Ministerpräsidenten nach der Verstaatlichung der Ölindustrie, unterstützt von britischen und US-amerikanischen Diensten, belastet das Verhältnis zum Westen bis heute."
+      },
+      {
+        "year": 1979,
+        "title": "Islamische Revolution",
+        "text": "Mohammad Reza Schah Pahlavi wird gestürzt; Ruhollah Chomeini errichtet eine Islamische Republik, westlicher Einfluss wird zurückgedrängt."
+      }
+    ]
+  },
+  "Ägypten": {
+    "color": "#b8860b",
+    "events": [
+      {
+        "year": -3100,
+        "title": "Reichseinigung",
+        "text": "Um 3100 v. Chr. wird der Beginn der 1. Dynastie angesetzt; Ober- und Unterägypten werden unter einem Herrscher vereint – häufig Menes/Narmer zugeschrieben."
+      },
+      {
+        "year": -2543,
+        "title": "Die großen Pyramiden",
+        "text": "Die Pyramiden der 4. Dynastie entstehen zwischen etwa 2543 und 2436 v. Chr. – bis ins Mittelalter die höchsten Bauwerke der Menschheit."
+      },
+      {
+        "year": -1479,
+        "title": "Hatschepsut",
+        "text": "Eine der wenigen Frauen auf dem Thron regiert über zwei Jahrzehnte; ihre Nachfolger versuchen später, ihre Spuren zu tilgen."
+      },
+      {
+        "year": -1353,
+        "title": "Echnaton",
+        "text": "Der Pharao stellt den Kult auf den Sonnengott Aton um – ein früher Versuch, viele Götter durch einen zu ersetzen, der nach seinem Tod rückgängig gemacht wird."
+      },
+      {
+        "year": -1274,
+        "title": "Schlacht bei Kadesch",
+        "text": "Die Schlacht gegen die Hethiter mündet in den ersten überlieferten Friedensvertrag der Geschichte."
+      },
+      {
+        "year": -332,
+        "title": "Alexander und die Ptolemäer",
+        "text": "Alexander gründet Alexandria; unter den griechischen Ptolemäern wird die Stadt zum Zentrum von Bibliothek und Wissenschaft."
+      },
+      {
+        "year": -30,
+        "title": "Römische Provinz",
+        "text": "Mit dem Tod Kleopatras VII. wird Ägypten 30 v. Chr. von Rom erobert und zur Kornkammer des Reiches."
+      },
+      {
+        "year": 639,
+        "title": "Arabische Eroberung",
+        "text": "Zwischen 639 und 642 erobern arabisch-muslimische Heere das bis dahin byzantinische Ägypten; Arabisch verdrängt allmählich das Koptische."
+      },
+      {
+        "year": 969,
+        "title": "Gründung Kairos",
+        "text": "Die Fatimiden gründen Kairo; mit der al-Azhar entsteht eine der ältesten durchgehend bestehenden Hochschulen der Welt."
+      },
+      {
+        "year": 1250,
+        "title": "Mamluken",
+        "text": "Ehemalige Militärsklaven übernehmen die Herrschaft und stoppen 1260 bei Ain Dschalut den mongolischen Vormarsch."
+      },
+      {
+        "year": 1517,
+        "title": "Osmanische Herrschaft",
+        "text": "Ägypten wird osmanische Provinz und bleibt es formal bis ins 19. Jahrhundert."
+      },
+      {
+        "year": 1798,
+        "title": "Napoleons Feldzug",
+        "text": "Der französische Feldzug bringt Wissenschaftler mit – der Fund des Steins von Rosetta ermöglicht später die Entzifferung der Hieroglyphen."
+      },
+      {
+        "year": 1869,
+        "title": "Eröffnung des Suezkanals",
+        "text": "Der Kanal verbindet Mittelmeer und Rotes Meer und macht Ägypten zum strategischen Schlüsselraum – mit erdrückenden Schulden als Kehrseite."
+      },
+      {
+        "year": 1952,
+        "title": "Revolution der Freien Offiziere",
+        "text": "Die Monarchie wird gestürzt; Nasser prägt den arabischen Nationalismus einer Generation."
+      },
+      {
+        "year": 1956,
+        "title": "Suezkrise",
+        "text": "Die Verstaatlichung des Kanals führt zum Krieg mit Großbritannien, Frankreich und Israel – und macht sichtbar, dass die alten Kolonialmächte ihre Macht verloren haben."
+      }
+    ]
+  },
+  "Mexiko & Mesoamerika": {
+    "color": "#2f7d5b",
+    "events": [
+      {
+        "year": -1200,
+        "title": "Olmeken",
+        "text": "Die olmekische Kultur (1200–400 v. Chr.) gilt als erste hochentwickelte Zivilisation Mesoamerikas und legt Muster fest, die Maya und Azteken übernehmen."
+      },
+      {
+        "year": -400,
+        "title": "Frühe Maya-Städte",
+        "text": "Im Tiefland entstehen erste größere Zentren mit Monumentalbauten und Schrift."
+      },
+      {
+        "year": 100,
+        "title": "Teotihuacán",
+        "text": "Im Tal von Mexiko wird Teotihuacán zur Hauptstadt eines politischen und wirtschaftlichen Einflussraums, der weite Teile Mesoamerikas umfasst."
+      },
+      {
+        "year": 250,
+        "title": "Klassische Maya-Zeit",
+        "text": "Die Maya bringen Astronomie, Mathematik, Kalenderrechnung und Hieroglyphenschrift zur höchsten Entfaltung der vorkolumbischen Welt."
+      },
+      {
+        "year": 900,
+        "title": "Ende der klassischen Zeit",
+        "text": "Bis etwa 700–900 enden die klassischen Zentren; über die Ursachen – Dürre, Krieg, Übernutzung – wird bis heute geforscht."
+      },
+      {
+        "year": 1325,
+        "title": "Gründung Tenochtitlans",
+        "text": "Die Mexica gründen ihre Hauptstadt auf einer Insel im Texcoco-See – ein Standort, der Verteidigung und Handel zugleich begünstigt."
+      },
+      {
+        "year": 1428,
+        "title": "Aufstieg der Azteken",
+        "text": "Mit dem Sieg über die rivalisierende Stadt Azcapotzalco werden die Azteken zur beherrschenden Macht Zentralmexikos."
+      },
+      {
+        "year": 1519,
+        "title": "Ankunft der Spanier",
+        "text": "Hernán Cortés landet an der Küste; entscheidend für seinen Erfolg werden Bündnisse mit unterworfenen Völkern und eingeschleppte Seuchen."
+      },
+      {
+        "year": 1521,
+        "title": "Fall Tenochtitlans",
+        "text": "Die Hauptstadt fällt; auf ihren Ruinen entsteht Mexiko-Stadt, und die spanische Kolonialherrschaft beginnt."
+      },
+      {
+        "year": 1531,
+        "title": "Guadalupe",
+        "text": "Die Marienerscheinung von Guadalupe wird zum Bindeglied zwischen indigener und katholischer Frömmigkeit und später zum nationalen Symbol."
+      },
+      {
+        "year": 1810,
+        "title": "Ruf von Dolores",
+        "text": "Der Priester Miguel Hidalgo ruft zum Aufstand gegen die spanische Herrschaft – Beginn des Unabhängigkeitskriegs."
+      },
+      {
+        "year": 1821,
+        "title": "Unabhängigkeit",
+        "text": "Mexiko wird unabhängig; die sozialen Verhältnisse der Kolonialzeit bleiben zunächst weitgehend bestehen."
+      },
+      {
+        "year": 1848,
+        "title": "Verlust der Nordgebiete",
+        "text": "Im Vertrag von Guadalupe Hidalgo verliert Mexiko rund die Hälfte seines Staatsgebiets an die USA."
+      },
+      {
+        "year": 1910,
+        "title": "Mexikanische Revolution",
+        "text": "Der Aufstand gegen die Diktatur Porfirio Díaz' zieht sich über ein Jahrzehnt und mündet in die Verfassung von 1917 mit Landreform und Arbeitsrechten."
+      },
+      {
+        "year": 1968,
+        "title": "Massaker von Tlatelolco",
+        "text": "Kurz vor den Olympischen Spielen lässt die Regierung eine Studentendemonstration niederschießen – ein Bruch im Selbstverständnis des Landes."
+      }
+    ]
   }
 };
 const MYTHEN = [
-  // Antike
-  { category: "Antike", type: "Nuance", title: "Der Trojanische Krieg war reine Erfindung", text: "Homers 'Ilias' ist literarisch stark \xFCberh\xF6ht, doch Ausgrabungen in Hisarlik (T\xFCrkei) durch Heinrich Schliemann belegen eine reale, mehrfach zerst\xF6rte Stadt namens Troja. Ob ein 'Trojanisches Pferd' tats\xE4chlich existierte, bleibt jedoch unbewiesen." },
-  { category: "Antike", type: "Nuance", title: "Bei den Thermopylen k\xE4mpften nur 300 Spartaner", text: "Tats\xE4chlich standen mehrere tausend griechische Verb\xFCndete mit den Spartanern gemeinsam gegen die Perser. Die '300' waren nur die Kerntruppe, die als letzte in einem aussichtslosen Nachhutgefecht standhielt." },
-  { category: "Antike", type: "Mythos", title: "Nero spielte Geige, w\xE4hrend Rom brannte", text: "Die Geige wurde erst rund 1500 Jahre sp\xE4ter erfunden. Manche antiken Quellen berichten sogar, Nero sei bei Brandausbruch gar nicht in Rom gewesen und habe sp\xE4ter den Wiederaufbau organisiert." },
-  { category: "Antike", type: "Nuance", title: "Caligula ernannte sein Pferd zum Senator", text: "Der r\xF6mische Historiker Sueton berichtet dies als Beleg f\xFCr Caligulas Wahnsinn. Moderne Historiker vermuten eher bitteren Spott gegen\xFCber dem Senat als eine tats\xE4chlich vollzogene Ernennung." },
-  { category: "Antike", type: "Nuance", title: "Kleopatra war eine \xE4gyptische Sch\xF6nheitsikone", text: "Kleopatra VII. entstammte der griechisch-makedonischen Ptolem\xE4er-Dynastie, war also keine ethnische \xC4gypterin. Antike Quellen betonen zudem eher ihre Intelligenz, Bildung und Stimme als klassische Sch\xF6nheit." },
-  { category: "Antike", type: "Nuance", title: "Alexander der Gro\xDFe wurde vergiftet", text: "Seine Todesursache ist bis heute ungekl\xE4rt. Historiker diskutieren neben Vergiftung auch Malaria, Typhus oder \xFCberm\xE4\xDFigen Alkoholkonsum \u2013 eine endg\xFCltige Antwort gibt es nicht." },
-  { category: "Antike", type: "Mythos", title: "Atlantis war eine reale versunkene Hochkultur", text: "Atlantis wird erstmals von Platon als philosophisches Gedankenexperiment \xFCber einen idealen und einen dekadenten Staat erw\xE4hnt. Es gibt keinerlei arch\xE4ologischen Beleg f\xFCr seine tats\xE4chliche Existenz." },
-  { category: "Antike", type: "Nuance", title: "Der L\xE4ufer Pheidippides rannte 42 km und starb", text: "Herodot berichtet nur von einem Botenlauf nach Sparta, nicht von einem t\xF6dlichen Lauf \xFCber die Marathon-Distanz. Die moderne Marathondistanz von 42,195 km wurde erst 1908 bei den Olympischen Spielen in London festgelegt." },
-  { category: "Antike", type: "Nuance", title: "Gladiatoren k\xE4mpften immer bis zum Tod", text: "Gladiatoren waren teure Investitionen ihrer Besitzer. Die meisten K\xE4mpfe endeten ohne t\xF6dlichen Ausgang, und die genaue Bedeutung der ber\xFChmten Daumengeste ist unter Historikern bis heute umstritten." },
-  // Mittelalter
-  { category: "Mittelalter", type: "Mythos", title: "Im Mittelalter glaubte man an eine flache Erde", text: "Gebildete Menschen wussten seit der griechischen Antike um die Kugelform der Erde. Auch mittelalterliche Gelehrte lehrten dies an Universit\xE4ten \u2013 der Mythos der 'flachen Erde' entstand erst im 19. Jahrhundert." },
-  { category: "Mittelalter", type: "Mythos", title: "Ritter mussten mit einem Kran aufs Pferd gehoben werden", text: "Vollr\xFCstungen wogen meist nur 20\u201325 kg und waren gut \xFCber den K\xF6rper verteilt. Ritter konnten sich damit frei bewegen, k\xE4mpfen und sogar Purzelb\xE4ume schlagen, wie Experimente moderner R\xFCstungshistoriker zeigen." },
-  { category: "Mittelalter", type: "Mythos", title: "Menschen im Mittelalter wuschen sich nie", text: "\xD6ffentliche Badeh\xE4user waren im Mittelalter weit verbreitet und beliebt. Erst im Zuge der Pestepidemien ab dem 14. Jahrhundert geriet Baden aus Angst vor Ansteckung zunehmend in Verruf." },
-  { category: "Mittelalter", type: "Mythos", title: "Hexenverbrennungen waren typisch f\xFCr das 'finstere' Mittelalter", text: "Die \xFCberw\xE4ltigende Mehrheit der europ\xE4ischen Hexenprozesse und -verbrennungen fand tats\xE4chlich erst in der Fr\xFChen Neuzeit statt, besonders im 16. und 17. Jahrhundert \u2013 nicht im Mittelalter." },
-  { category: "Mittelalter", type: "Mythos", title: "Mittelalterliche Karten warnten mit 'Hier seien Drachen'", text: "Die ber\xFChmte lateinische Formulierung 'hic sunt dracones' ist tats\xE4chlich nur auf einem einzigen erhaltenen Objekt belegt, dem Hunt-Lenox-Globus von ca. 1510 \u2013 nicht auf typischen mittelalterlichen Karten." },
-  { category: "Mittelalter", type: "Mythos", title: "Die Wikinger trugen geh\xF6rnte Helme", text: "Es gibt keinerlei arch\xE4ologische Belege f\xFCr H\xF6rnerhelme bei echten Wikingern. Das Bild wurde im 19. Jahrhundert von Kost\xFCmbildnern der Oper (u.a. f\xFCr Wagners Ring des Nibelungen) erfunden." },
-  { category: "Mittelalter", type: "Mythos", title: "Kolumbus bewies, dass die Erde rund ist", text: "Dies war bereits seit der Antike bekanntes Allgemeinwissen unter Gelehrten. Kolumbus' eigentlicher Streitpunkt mit Experten war die (falsch gesch\xE4tzte, zu kleine) Gr\xF6\xDFe der Erde, nicht ihre Form." },
-  { category: "Mittelalter", type: "Nuance", title: "Vlad der Pf\xE4hler war ein Vampir", text: "Der reale walachische F\xFCrst Vlad III. war ber\xFCchtigt f\xFCr extrem brutale Bestrafungsmethoden, aber keine \xFCbernat\xFCrliche Gestalt. Die Vampirlegende geht auf Bram Stokers Roman 'Dracula' (1897) zur\xFCck, der seinen Namen nur lose verwendete." },
-  // Frühe Neuzeit
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "Marie Antoinette sagte 'Sollen sie doch Kuchen essen'", text: "Dieses Zitat l\xE4sst sich bereits vor Marie Antoinettes Zeit nachweisen und wurde urspr\xFCnglich anderen Adligen zugeschrieben. Es gibt keinen historischen Beleg, dass sie diesen Satz je gesagt hat." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "In Salem wurden Hexen auf dem Scheiterhaufen verbrannt", text: "Bei den ber\xFChmten Hexenprozessen von Salem (1692/93) wurden alle Verurteilten geh\xE4ngt \u2013 niemand wurde verbrannt, anders als es die Popkultur oft darstellt." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "George Washington f\xE4llte als Kind einen Kirschbaum und log nie", text: "Diese moralisierende Anekdote wurde erst nach Washingtons Tod von seinem Biografen Parson Weems erfunden, um ihn als Vorbild ehrlichen Charakters darzustellen." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "Napoleon war au\xDFergew\xF6hnlich klein", text: "Napoleon war mit ca. 1,68 m f\xFCr seine Zeit durchschnittlich gro\xDF. Der Mythos entstand durch eine Verwechslung franz\xF6sischer und englischer Zoll-Ma\xDFeinheiten sowie britische Kriegspropaganda." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Marco Polo erfand seine China-Reise komplett", text: "Manche Historiker bezweifeln einzelne Details seines Berichts (er erw\xE4hnt etwa nie die Chinesische Mauer), doch die Reise als solche und viele seiner Beschreibungen gelten heute als historisch belegt." },
-  { category: "Fr\xFChe Neuzeit", type: "Kuriosum", title: "Piraten trugen Augenklappen wegen Verletzungen", text: "Eine popul\xE4re Theorie besagt, Augenklappen dienten manchen Seeleuten dazu, ein Auge stets an Dunkelheit gew\xF6hnt zu halten, um beim schnellen Wechsel zwischen Deck und dunklem Unterdeck sofort sehen zu k\xF6nnen." },
-  // Moderne
-  { category: "Moderne", type: "Mythos", title: "Einstein ist in der Schule durchgefallen", text: "Albert Einstein war tats\xE4chlich ein exzellenter Sch\xFCler, besonders in Mathematik und Physik. Der Mythos entstand vermutlich durch eine Verwechslung unterschiedlicher Schweizer Notenskalen." },
-  { category: "Moderne", type: "Mythos", title: "Der Fluch des Tutanchamun t\xF6tete die Ausgr\xE4ber", text: "Nach dem Tod von Lord Carnarvon 1923 verbreitete die Boulevardpresse die Legende eines Grabfluchs. Statistisch starben die meisten an der Ausgrabung Beteiligten aber erst Jahrzehnte sp\xE4ter eines nat\xFCrlichen Todes." },
-  { category: "Moderne", type: "Kuriosum", title: "Der Piltdown-Mensch war ein Sensationsfund", text: "1912 als bedeutendes 'fehlendes Bindeglied' der Evolution pr\xE4sentiert, entpuppte sich der Fund 1953 als F\xE4lschung aus einem Menschensch\xE4del und einem Orang-Utan-Kiefer \u2013 einer der ber\xFChmtesten Wissenschaftsbetrugsf\xE4lle der Geschichte." },
-  { category: "Moderne", type: "Mythos", title: "Anastasia Romanov \xFCberlebte die Erschie\xDFung ihrer Familie", text: "Jahrzehntelang befeuerten Hochstaplerinnen wie Anna Anderson diesen Mythos. DNA-Analysen der geborgenen Gebeine best\xE4tigten 2007 zweifelsfrei den Tod aller Familienmitglieder der Zarenfamilie." },
-  { category: "Moderne", type: "Nuance", title: "Rasputin war fast unm\xF6glich zu t\xF6ten", text: "Die dramatische Legende von Vergiftung, Erschie\xDFung und Ertr\xE4nken stammt vor allem aus den unzuverl\xE4ssigen Memoiren seines M\xF6rders Felix Jussupow. Historiker bezweifeln heute viele Details dieser Version." },
-  { category: "Moderne", type: "Kuriosum", title: "Der Fall der Berliner Mauer war minuti\xF6s geplant", text: "Tats\xE4chlich war die Mauer\xF6ffnung 1989 vor allem die Folge eines Kommunikationsfehlers: SED-Funktion\xE4r G\xFCnter Schabowski verk\xFCndete auf einer Pressekonferenz versehentlich sofortige Reisefreiheit." },
-  { category: "Moderne", type: "Mythos", title: "Ninjas trugen stets komplett schwarze Kleidung", text: "Dieses Bild stammt aus Konventionen des japanischen Kabuki-Theaters, wo schwarz gekleidete B\xFChnenhelfer als 'unsichtbar' galten. Reale Ninja trugen meist unauff\xE4llige Alltagskleidung zur Tarnung." },
-  { category: "Moderne", type: "Mythos", title: "Die Chinesische Mauer ist vom Weltall aus mit blo\xDFem Auge sichtbar", text: "Astronauten, darunter mehrere chinesische Taikonauten, haben diesen hartn\xE4ckigen Mythos wiederholt dementiert. Die Mauer ist schlicht zu schmal, um ohne Hilfsmittel aus dem All erkennbar zu sein." },
-  // Übergreifend / Legenden
-  { category: "Legenden", type: "Mythos", title: "Das Bermuda-Dreieck verschluckt \xFCberdurchschnittlich viele Schiffe", text: "Statistische Analysen von Versicherungsdaten zeigen keine erh\xF6hte Vermisstenrate gegen\xFCber anderen stark befahrenen Seegebieten vergleichbarer Gr\xF6\xDFe." },
-  { category: "Legenden", type: "Mythos", title: "Nostradamus sagte konkrete historische Ereignisse voraus", text: "Seine Verse sind bewusst vage, mehrdeutig und metaphernreich formuliert. Vermeintliche 'Treffer' entstehen fast immer durch r\xFCckwirkende Deutung nach bereits eingetretenen Ereignissen." },
-  { category: "Legenden", type: "Mythos", title: "Kolumbus war der erste Europ\xE4er in Amerika", text: "Wikinger unter Leif Eriksson erreichten Neufundland (das sogenannte 'Vinland') bereits um das Jahr 1000 \u2013 rund 500 Jahre vor Kolumbus, wie die Ausgrabungen von L'Anse aux Meadows belegen." },
-  { category: "Legenden", type: "Kuriosum", title: "Napoleon wurde von einer Hasen-Horde angegriffen", text: "Bei einer eigens organisierten Hasenjagd 1807 wandten sich hunderte zuvor gez\xFCchtete, zahme Hasen nicht zur Flucht, sondern liefen auf Napoleon und seine Gesellschaft zu \u2013 die Jagdgesellschaft musste sich regelrecht zur\xFCckziehen." },
-  { category: "Legenden", type: "Kuriosum", title: "Bei den ersten Olympischen Spielen traten Athleten nackt an", text: "Der griechische Begriff 'gymnos' (nackt) ist die Wurzel des Wortes 'Gymnasium'. Athleten traten in Olympia tats\xE4chlich unbekleidet an \u2013 laut \xDCberlieferung auch, um Frauen (denen die Teilnahme als Zuschauerinnen untersagt war) fernzuhalten." },
-  { category: "Legenden", type: "Kuriosum", title: "Ein r\xF6mischer Kaiser bot einen Preis f\xFCr die beste Grimasse", text: "Bei manchen r\xF6mischen Festen gab es tats\xE4chlich Wettbewerbe im Grimassenschneiden ('gymnastik\xE9') als derbe Unterhaltung \u2013 ein fr\xFCher Vorl\xE4ufer heutiger Grimassen-Wettbewerbe." },
-  { category: "Antike", type: "Nuance", title: "Spartaner warfen alle schwachen Babys von einem Felsen", text: "Diese Praxis wird nur von einem einzigen, Jahrhunderte sp\xE4teren Autor (Plutarch) erw\xE4hnt. Ausgrabungen der vermeintlichen St\xE4tte fanden keine Babyskelette, sondern nur Knochen erwachsener M\xE4nner \u2013 vermutlich hingerichteter Verbrecher." },
-  { category: "Antike", type: "Mythos", title: "Julius Caesars Name stammt vom Kaiserschnitt", text: "Seine Mutter Aurelia lebte nachweislich noch Jahrzehnte nach seiner Geburt weiter \u2013 ein Kaiserschnitt war zu dieser Zeit f\xFCr die Mutter praktisch immer t\xF6dlich. Die tats\xE4chliche Namensherkunft ist unklar." },
-  { category: "Antike", type: "Nuance", title: "Caesars letzte Worte waren 'Auch du, mein Sohn Brutus?'", text: "Der Historiker Sueton \xFCberliefert diese Version nur als Ger\xFCcht. Ob Caesar \xFCberhaupt letzte Worte sprach, ist historisch nicht gesichert." },
-  { category: "Antike", type: "Mythos", title: "Die Pyramiden wurden von Sklaven erbaut", text: "Ausgrabungen von Arbeitersiedlungen bei Gizeh zeigen, dass die Pyramiden \xFCberwiegend von bezahlten, gut versorgten Facharbeitern und Bauern w\xE4hrend der Nil\xFCberschwemmungszeit errichtet wurden." },
-  { category: "Antike", type: "Nuance", title: "Kleopatra starb an einem einzigen Schlangenbiss", text: "Schon antike Quellen waren sich uneinig; moderne Toxikologen bezweifeln, dass eine einzelne Schlange einen so kontrollierten, schmerzfreien Tod verursacht haben k\xF6nnte." },
-  { category: "Antike", type: "Mythos", title: "Napoleons Truppen schossen der Sphinx die Nase ab", text: "Zeichnungen aus dem 18. Jahrhundert \u2013 vor Napoleons \xC4gyptenfeldzug \u2013 zeigen die Sphinx bereits ohne Nase. Die Besch\xE4digung geschah vermutlich Jahrhunderte fr\xFCher." },
-  { category: "Antike", type: "Nuance", title: "Sokrates wurde allein wegen echter Gottlosigkeit hingerichtet", text: "Historiker sehen den Prozess auch stark politisch motiviert \u2013 als Abrechnung mit seinen Verbindungen zu unbeliebten aristokratischen Sch\xFClern nach dem Sturz der 'Drei\xDFig Tyrannen'." },
-  { category: "Antike", type: "Nuance", title: "Hannibal verlor alle seine Kriegselefanten in den Alpen", text: "Die meisten Tiere starben tats\xE4chlich an K\xE4lte und Ersch\xF6pfung, doch mindestens ein Elefant \xFCberlebte Berichten zufolge bis nach Italien." },
-  { category: "Antike", type: "Nuance", title: "Archimedes rief 'Heureka' beim Baden aus", text: "Die Anekdote stammt vom r\xF6mischen Autor Vitruv, rund 200 Jahre nach Archimedes' Tod \u2013 zeitgen\xF6ssisch ist sie nicht belegt." },
-  { category: "Antike", type: "Mythos", title: "Der Koloss von Rhodos stand rittlings \xFCber dem Hafeneingang", text: "Diese ber\xFChmte Darstellung stammt erst aus mittelalterlichen und Renaissance-Illustrationen; antike Ingenieure h\xE4tten eine solche Statue technisch kaum errichten k\xF6nnen." },
-  { category: "Antike", type: "Kuriosum", title: "Die Terrakotta-Armee wurde zuf\xE4llig entdeckt", text: "1974 stie\xDFen Bauern beim Brunnenbohren in der chinesischen Provinz Shaanxi zuf\xE4llig auf die \xFCber 8.000 lebensgro\xDFen Tonkrieger des ersten chinesischen Kaisers." },
-  { category: "Antike", type: "Nuance", title: "Bei den Olympischen Spielen herrschte reine Sportlichkeit ohne Politik", text: "W\xE4hrend der Spiele galt zwar ein 'heiliger Frieden' (Ekecheiria), dieser wurde jedoch h\xE4ufig auch f\xFCr diplomatische Zwecke der Stadtstaaten instrumentalisiert." },
-  { category: "Antike", type: "Kuriosum", title: "M\xF6nchtum entstand nur einmal in der Geschichte", text: "Buddhistische und christliche Klostertraditionen entwickelten unabh\xE4ngig voneinander erstaunlich \xE4hnliche Konzepte von Askese, Z\xF6libat und Gemeinschaftsleben." },
-  { category: "Antike", type: "Nuance", title: "Buddha war von Geburt an ein Bettelm\xF6nch", text: "Der \xDCberlieferung nach wurde Siddhartha Gautama als wohlhabender Prinz geboren und wandte sich erst als junger Erwachsener bewusst von Reichtum und Palastleben ab." },
-  { category: "Mittelalter", type: "Mythos", title: "Das 'Recht der ersten Nacht' war weitverbreitete feudale Praxis", text: "Historiker finden kaum verl\xE4ssliche zeitgen\xF6ssische Belege f\xFCr eine systematische Aus\xFCbung dieses angeblichen Rechts; es d\xFCrfte gr\xF6\xDFtenteils sp\xE4tere literarische Erfindung sein." },
-  { category: "Mittelalter", type: "Mythos", title: "Wikinger waren reine Pl\xFCnderer ohne Handelskultur", text: "Wikinger betrieben ausgedehnte Handelsnetzwerke bis nach Byzanz und Bagdad und gr\xFCndeten zahlreiche bis heute bestehende St\xE4dte, darunter Dublin." },
-  { category: "Mittelalter", type: "Nuance", title: "Kreuzritter k\xE4mpften ausschlie\xDFlich aus religi\xF6sem Eifer", text: "Viele Teilnehmer verband mit dem religi\xF6sen Motiv auch die Aussicht auf Landbesitz, Beute, Handelsvorteile und gesellschaftliches Ansehen." },
-  { category: "Mittelalter", type: "Nuance", title: "Der Begriff 'Vandalismus' beweist besondere Zerst\xF6rungswut der Vandalen", text: "Der Begriff wurde erst \xFCber 1000 Jahre sp\xE4ter im 18. Jahrhundert gepr\xE4gt; die historischen Vandalen pl\xFCnderten Rom 455 zwar, richteten aber wohl keine ungew\xF6hnlich systematische Zerst\xF6rung an." },
-  { category: "Mittelalter", type: "Nuance", title: "Attila der Hunne war nur ein ungebildeter Wilder", text: "Zeitgen\xF6ssische Quellen wie der ostr\xF6mische Gesandte Priskos beschreiben ihn auch als \xFCberraschend gen\xFCgsam, diplomatisch geschickt und an r\xF6mischer Kultur interessiert." },
-  { category: "Mittelalter", type: "Nuance", title: "Die Lebenserwartung im Mittelalter betrug generell nur 30 Jahre", text: "Diese Zahl wird stark durch hohe Kindersterblichkeit verzerrt; wer das Erwachsenenalter erreichte, hatte durchaus realistische Chancen auf 60 bis 70 Lebensjahre." },
-  { category: "Mittelalter", type: "Mythos", title: "Marco Polo brachte Nudeln aus China nach Italien", text: "Es gibt Belege f\xFCr Nudelgerichte im Mittelmeerraum bereits vor Marco Polos Reise; die popul\xE4re Legende entstand vermutlich erst im 20. Jahrhundert durch eine amerikanische Werbekampagne." },
-  { category: "Mittelalter", type: "Nuance", title: "Die Magna Carta garantierte allen Engl\xE4ndern Freiheit", text: "Urspr\xFCnglich sch\xFCtzte sie fast ausschlie\xDFlich die Rechte des Adels gegen\xFCber der Krone; erst sp\xE4tere Interpretationen im 17. Jahrhundert weiteten ihre Bedeutung auf allgemeine B\xFCrgerrechte aus." },
-  { category: "Mittelalter", type: "Mythos", title: "Die Assassinen waren durch Haschisch berauschte Auftragsm\xF6rder", text: "Der Name geht vermutlich auf eine abwertende arabische Fremdbezeichnung zur\xFCck; historische Belege f\xFCr systematischen Drogenkonsum der Sekte gelten heute als unzuverl\xE4ssig." },
-  { category: "Mittelalter", type: "Mythos", title: "Im Mittelalter herrschte durchgehender wissenschaftlicher Stillstand", text: "Die Epoche brachte bedeutende Innovationen wie die Brille, mechanische Uhren, den Buchdruck, das Dreifelder-System in der Landwirtschaft und gotische Kathedralbaukunst." },
-  { category: "Mittelalter", type: "Nuance", title: "Die Templerritter wurden wegen erwiesener H\xE4resie vernichtet", text: "Historiker gehen heute \xFCberwiegend davon aus, dass der hoch verschuldete franz\xF6sische K\xF6nig Philipp IV. die Anklagen 1307 vor allem konstruierte, um sich des Verm\xF6gens des Ordens zu bem\xE4chtigen." },
-  { category: "Mittelalter", type: "Nuance", title: "Der Investiturstreit drehte sich nur um religi\xF6se Fragen", text: "Im Kern ging es vor allem um handfeste Macht- und Besitzfragen: wer Bisch\xF6fe \u2013 und damit gro\xDFe L\xE4ndereien \u2013 einsetzen durfte, Kaiser oder Papst." },
-  { category: "Mittelalter", type: "Nuance", title: "Die Hanse war ein fest organisierter Staat", text: "Tats\xE4chlich war die Hanse ein loses, informelles Netzwerk von Kaufleuten und St\xE4dten ohne zentrale Verfassung, gemeinsame Kasse oder feste Mitgliederliste." },
-  { category: "Mittelalter", type: "Mythos", title: "Chinesische Schiffe der Ming-Zeit waren primitive Boote", text: "Admiral Zheng Hes Flotte im fr\xFChen 15. Jahrhundert umfasste Schiffe von bis zu 120 Metern L\xE4nge \u2013 deutlich gr\xF6\xDFer als alle europ\xE4ischen Schiffe dieser Zeit." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "Galileo Galilei wurde wegen seiner Thesen gefoltert", text: "Er wurde 1633 zu Hausarrest verurteilt, jedoch nicht gefoltert. Die Androhung von Folter war zu dieser Zeit ein \xFCbliches, meist nicht vollzogenes Verh\xF6rinstrument der Inquisition." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Die Pilgerv\xE4ter suchten Religionsfreiheit f\xFCr alle", text: "Die Puritaner an Bord der Mayflower suchten vor allem Freiheit f\xFCr die eigene Glaubensgemeinschaft und praktizierten sp\xE4ter selbst erhebliche religi\xF6se Intoleranz gegen\xFCber Andersdenkenden." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Ein Apfel fiel Newton auf den Kopf", text: "Newton selbst erz\xE4hlte sp\xE4ter lediglich, er habe einen fallenden Apfel beobachtet und daraufhin \xFCber Gravitation nachzudenken begonnen \u2013 ein Kopftreffer ist in keiner zeitgen\xF6ssischen Quelle belegt." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Hexenprozesse waren prim\xE4r von der katholischen Kirche getragen", text: "Tats\xE4chlich fanden besonders viele Hexenverfolgungen in protestantischen Gebieten Mitteleuropas statt \u2013 beide Konfessionen beteiligten sich intensiv." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "Die Pest traf vor allem unhygienische arme Bev\xF6lkerungsschichten", text: "Die \xDCbertragung erfolgte prim\xE4r durch Fl\xF6he auf Ratten unabh\xE4ngig vom pers\xF6nlichen Reinlichkeitsgrad; auch wohlhabende Haushalte und Kl\xF6ster waren stark betroffen." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Elisabeth I. blieb aus reiner Prinzipientreue unverheiratet", text: "Ihre Ehelosigkeit war wohl auch eine bewusste politische Strategie, um die eigene Machtposition nicht durch eine Heiratsallianz zu gef\xE4hrden." },
-  { category: "Fr\xFChe Neuzeit", type: "Kuriosum", title: "Peter der Gro\xDFe f\xFChrte eine Bartsteuer zur reinen Geldbeschaffung ein", text: "Die 1698 eingef\xFChrte Steuer diente auch der symbolischen Modernisierung: Wer den traditionellen Bart behalten wollte, musste zahlen und erhielt eine Bart-M\xFCnzmarke als Nachweis." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Die Azteken hielten die Spanier f\xFCr zur\xFCckkehrende G\xF6tter", text: "Diese oft erz\xE4hlte Legende stammt vor allem aus spanischen Quellen nach der Eroberung und wird von vielen Historikern heute als nachtr\xE4gliche Rechtfertigungserz\xE4hlung angezweifelt." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Guy Fawkes handelte aus pers\xF6nlichem Hass allein", text: "Der 'Gunpowder Plot' von 1605 war eine koordinierte katholische Verschw\xF6rung gegen die protestantische Verfolgungspolitik, nicht die Tat eines Einzelnen." },
-  { category: "Fr\xFChe Neuzeit", type: "Kuriosum", title: "Ludwig XIV. badete regelm\xE4\xDFig", text: "Der Sonnenk\xF6nig soll kaum gebadet haben und stattdessen parf\xFCmierte Puder sowie h\xE4ufigen Hemdenwechsel zur K\xF6rperpflege bevorzugt haben \u2013 zeittypisch f\xFCr den europ\xE4ischen Hochadel." },
-  { category: "Fr\xFChe Neuzeit", type: "Mythos", title: "Kolumbus wusste, dass er einen neuen Kontinent entdeckt hatte", text: "Kolumbus glaubte bis zu seinem Tod, ostasiatische Inseln erreicht zu haben; der Kontinentcharakter Amerikas wurde erst durch sp\xE4tere Entdecker wie Amerigo Vespucci erkannt." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Magellan vollendete pers\xF6nlich die erste Weltumsegelung", text: "Magellan starb 1521 auf den Philippinen; nur sein Kapit\xE4n Juan Sebasti\xE1n Elcano und eine Handvoll \xDCberlebender vollendeten tats\xE4chlich die vollst\xE4ndige Weltumsegelung." },
-  { category: "Fr\xFChe Neuzeit", type: "Nuance", title: "Die Boston Tea Party war spontaner Protest w\xFCtender B\xFCrger", text: "Die Aktion von 1773 war eine sorgf\xE4ltig organisierte politische Demonstration der 'Sons of Liberty', bei der sich Teilnehmer bewusst als Native Americans verkleideten." },
-  { category: "Moderne", type: "Nuance", title: "Marie Curie starb direkt an ihrer Radioaktivit\xE4tsforschung", text: "Sie starb 1934 an aplastischer An\xE4mie, vermutlich durch jahrelange Strahlenbelastung \u2013 ihre Laborhefte sind bis heute radioaktiv kontaminiert und werden in bleiausgekleideten Beh\xE4ltern aufbewahrt." },
-  { category: "Moderne", type: "Nuance", title: "Die Titanic wurde offiziell als 'unsinkbar' beworben", text: "Der Begriff 'unsinkbar' wurde vor allem nachtr\xE4glich durch die Presse verbreitet; die White Star Line selbst hatte das Schiff nie offiziell so beworben." },
-  { category: "Moderne", type: "Nuance", title: "Einstein war Mitentwickler der Atombombe", text: "Einstein unterschrieb 1939 lediglich einen warnenden Brief an Pr\xE4sident Roosevelt zur M\xF6glichkeit einer deutschen Atombombe, war selbst aber nie am Manhattan-Projekt beteiligt." },
-  { category: "Moderne", type: "Mythos", title: "Die Spanische Grippe stammte urspr\xFCnglich aus Spanien", text: "Fr\xFChe F\xE4lle sind vermutlich in den USA oder Frankreich dokumentiert; Spanien erhielt den Namen nur, weil es als neutrales Land im Ersten Weltkrieg offen \xFCber die Pandemie berichten durfte." },
-  { category: "Moderne", type: "Nuance", title: "Rosa Parks war einfach nur eine m\xFCde N\xE4herin", text: "Parks war eine langj\xE4hrige, geschulte B\xFCrgerrechtsaktivistin der NAACP; ihre Weigerung war eine bewusste, vorbereitete Form des zivilen Ungehorsams." },
-  { category: "Moderne", type: "Nuance", title: "Churchill war w\xE4hrend des gesamten Krieges unangefochten beliebt", text: "Trotz seines Kriegsruhms verlor seine konservative Partei die Wahlen 1945 deutlich \u2013 viele Briten wollten nach dem Krieg vor allem soziale Reformen statt weiterer Kriegsf\xFChrerpolitik." },
-  { category: "Moderne", type: "Mythos", title: "Die Mondlandung 1969 wurde in einem Studio gef\xE4lscht", text: "Diese Verschw\xF6rungstheorie ist durch \xFCberw\xE4ltigende physikalische Belege widerlegt \u2013 etwa von Astronauten hinterlassene Spiegel auf dem Mond, die bis heute per Laser vermessbar sind." },
-  { category: "Moderne", type: "Mythos", title: "Stalin war der Geburtsname des sowjetischen Diktators", text: "Er wurde als Josef Wissarionowitsch Dschugaschwili geboren; 'Stalin' ('der St\xE4hlerne') war ein sp\xE4ter angenommener Kampfname." },
-  { category: "Moderne", type: "Nuance", title: "Der Kalte Krieg war ein v\xF6llig gewaltfreier Konflikt", text: "Auch wenn die Superm\xE4chte nie direkt gegeneinander k\xE4mpften, verursachten zahlreiche 'Stellvertreterkriege' in Korea, Vietnam und Afghanistan Millionen Tote weltweit." },
-  { category: "Moderne", type: "Kuriosum", title: "Weltweite Zeitzonen gab es schon immer", text: "Erst mit dem Ausbau der Eisenbahn im 19. Jahrhundert wurden standardisierte Zeitzonen notwendig; zuvor hatte praktisch jede Stadt ihre eigene lokale Sonnenzeit." },
-  { category: "Moderne", type: "Nuance", title: "Nelson Mandela galt w\xE4hrend seiner gesamten Haftzeit international als Held", text: "Erst ab den 1980er-Jahren wuchs der internationale Druck gegen die Apartheid deutlich; zuvor stand er in manchen westlichen Regierungen sogar noch auf Terrorlisten." },
-  { category: "Moderne", type: "Kuriosum", title: "Die Berliner Luftbr\xFCcke galt von Anfang an als sicherer Erfolg", text: "Anfangs hielten viele Milit\xE4rexperten eine dauerhafte Luftversorgung von rund zwei Millionen Berlinern f\xFCr technisch kaum durchf\xFChrbar \u2013 die logistische Leistung \xFCbertraf am Ende alle Erwartungen." },
-  { category: "Moderne", type: "Nuance", title: "Anne Franks Tagebuch wurde v\xF6llig unver\xE4ndert ver\xF6ffentlicht", text: "Ihr Vater Otto Frank redigierte nach dem Krieg das Originaltagebuch f\xFCr die erste Ver\xF6ffentlichung leicht, wobei einige pers\xF6nliche Passagen zun\xE4chst gek\xFCrzt wurden." },
-  { category: "Moderne", type: "Kuriosum", title: "Der erste Computer-'Bug' war rein metaphorisch gemeint", text: "1947 fanden Techniker tats\xE4chlich eine echte Motte in einem Relais eines fr\xFChen Harvard-Computers und klebten sie als Kuriosum ins Logbuch \u2013 Ursprung des bis heute gebr\xE4uchlichen Begriffs." },
-  { category: "Moderne", type: "Kuriosum", title: "Die erste E-Mail der Geschichte enthielt eine bedeutungsvolle Botschaft", text: "Die erste jemals versendete E-Mail 1971 durch Ray Tomlinson enthielt nach eigener sp\xE4terer Aussage lediglich eine bedeutungslose Testzeichenfolge wie 'QWERTYUIOP'." },
-  { category: "Legenden", type: "Nuance", title: "K\xF6nig Artus und die Ritter der Tafelrunde sind historisch verb\xFCrgt", text: "Es gibt keine zeitgen\xF6ssischen Belege f\xFCr einen historischen K\xF6nig Artus; die Legende verschmilzt vermutlich mehrere fr\xFChmittelalterliche britannische Kriegsherren mit sp\xE4terer literarischer Ausschm\xFCckung." },
-  { category: "Legenden", type: "Nuance", title: "Robin Hood war eine reale historische Einzelperson", text: "Historiker vermuten eher ein literarisches Sammelbild aus mehreren realen mittelalterlichen Gesetzlosen des 13./14. Jahrhunderts als eine einzelne verb\xFCrgte Figur." },
-  { category: "Legenden", type: "Mythos", title: "Der Heilige Gral ist ein real existierendes Artefakt", text: "Der Gral taucht erstmals in mittelalterlichen Artus-Romanen des 12. Jahrhunderts als literarisches Symbol auf, nicht als historisch belegtes Objekt." },
-  { category: "Legenden", type: "Mythos", title: "El Dorado war eine reale goldene Stadt in S\xFCdamerika", text: "Die Legende geht vermutlich auf ein reales Ritual eines Muisca-Stammesf\xFChrers zur\xFCck und wurde von europ\xE4ischen Eroberern zur Legende einer sagenhaften Goldstadt aufgebauscht, die nie gefunden wurde." },
-  { category: "Legenden", type: "Mythos", title: "Die Osterinsel-Statuen wurden von Au\xDFerirdischen errichtet", text: "Arch\xE4ologische Untersuchungen zeigen, dass die Rapa-Nui-Bev\xF6lkerung die Statuen mit ausgekl\xFCgelten, rein menschlichen Techniken schuf und mutma\xDFlich mittels Seilen 'gehend' transportierte." },
-  { category: "Legenden", type: "Mythos", title: "Prester John, der legend\xE4re christliche K\xF6nig im Osten, war real", text: "Ab dem 12. Jahrhundert kursierten in Europa Briefe eines angeblichen m\xE4chtigen christlichen Priesterk\xF6nigs in Asien oder Afrika \u2013 eine bis heute nie verifizierte Legende." },
-  { category: "Legenden", type: "Kuriosum", title: "Auf Oak Island wurde ein realer Piratenschatz gefunden", text: "Trotz jahrzehntelanger, kostspieliger Suchexpeditionen auf der kanadischen Insel wurde nie ein definitiver historischer Beleg f\xFCr einen vergrabenen Schatz gefunden." },
-  { category: "Legenden", type: "Mythos", title: "Area 51 bewahrt Beweise f\xFCr au\xDFerirdische Besuche auf", text: "Nach jahrzehntelanger Geheimhaltung best\xE4tigten US-Beh\xF6rden, dass die Anlage der geheimen Entwicklung und Erprobung von Aufkl\xE4rungsflugzeugen wie der U-2 und SR-71 diente." },
-  { category: "Legenden", type: "Mythos", title: "Die Illuminaten kontrollieren bis heute im Verborgenen die Weltpolitik", text: "Der historische Illuminatenorden wurde 1776 in Bayern gegr\xFCndet und bereits 1785 von der bayerischen Regierung verboten und faktisch zerschlagen." },
-  { category: "Legenden", type: "Mythos", title: "Yeti und Bigfoot sind wissenschaftlich nachgewiesene Wesen", text: "Trotz zahlreicher angeblicher Sichtungen und Fu\xDFspuren-Funde konnte bislang kein einziger wissenschaftlich verifizierter Beweis f\xFCr die Existenz dieser Kryptiden erbracht werden." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Thomas Edison erfand die Gl\xFChbirne komplett allein", text: "Mehrere Erfinder, darunter Joseph Swan in England, entwickelten parallel funktionsf\xE4hige Gl\xFChlampen; Edisons Leistung lag vor allem in der praxistauglichen Weiterentwicklung und Vermarktung." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Alexander Graham Bell war der unbestrittene alleinige Erfinder des Telefons", text: "Der italienische Erfinder Antonio Meucci entwickelte bereits Jahre zuvor ein \xE4hnliches Ger\xE4t; 2002 erkannte der US-Kongress symbolisch Meuccis fr\xFChen Beitrag an." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Marconi erfand das Radio als Erster und Einziger", text: "Der Erfinder Nikola Tesla hatte zuvor patentierte Grundlagentechnologien entwickelt; 1943 erkannte der US Supreme Court nachtr\xE4glich Teslas vorrangige Patentanspr\xFCche an." },
-  { category: "Wissenschaft & Erfindungen", type: "Kuriosum", title: "Die Dampfmaschine war eine Erfindung des 18. Jahrhunderts", text: "Bereits der antike griechische Erfinder Heron von Alexandria konstruierte im 1. Jahrhundert n. Chr. ein funktionierendes, wenn auch praktisch ungenutztes Dampfturbinen-Spielzeug (Aeolipile)." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Penicillin war die erste erfolgreiche antimikrobielle Behandlung", text: "Bereits Jahrtausende zuvor nutzten \xC4gypter und andere Kulturen empirisch schimmelhaltige Substanzen zur Wundbehandlung, ohne den zugrunde liegenden Wirkmechanismus zu kennen." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Einstein entwickelte die Relativit\xE4tstheorie v\xF6llig isoliert", text: "Er baute wesentlich auf mathematischen Vorarbeiten von Hendrik Lorentz und Henri Poincar\xE9 auf, integrierte diese aber zu einem revolution\xE4r neuen physikalischen Gesamtkonzept." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Darwin war der Erste, der die Evolutionsidee formulierte", text: "Der Naturforscher Alfred Russel Wallace entwickelte unabh\xE4ngig zur gleichen Zeit eine sehr \xE4hnliche Theorie der nat\xFCrlichen Auslese; beide Konzepte wurden 1858 gemeinsam vorgestellt." },
-  { category: "Wissenschaft & Erfindungen", type: "Kuriosum", title: "Computerprogrammierung ist eine Erfindung des 20. Jahrhunderts", text: "Ada Lovelace verfasste bereits 1843 das erste theoretische Computerprogramm f\xFCr Charles Babbages nie fertiggestellte 'Analytical Engine'." },
-  { category: "Wissenschaft & Erfindungen", type: "Kuriosum", title: "Marie Curie war der einzige Nobelpreistr\xE4ger ihrer Familie", text: "Insgesamt erhielten f\xFCnf Mitglieder der Familie Curie/Joliot-Curie \xFCber zwei Generationen hinweg Nobelpreise in Physik oder Chemie." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Louis Pasteur entdeckte als Erster Mikroorganismen", text: "Der niederl\xE4ndische Naturforscher Antonie van Leeuwenhoek beobachtete bereits im 17. Jahrhundert erstmals Mikroorganismen; Pasteurs Pionierleistung war der Nachweis ihrer Rolle bei Krankheiten und G\xE4rung." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Der erste Motorflug der Gebr\xFCder Wright wurde sofort weltweit gefeiert", text: "Der Flug 1903 wurde von der zeitgen\xF6ssischen Presse zun\xE4chst kaum beachtet; erst sp\xE4tere, \xF6ffentlich vorgef\xFChrte Fl\xFCge etablierten den historischen Ruhm der Br\xFCder." },
-  { category: "Wissenschaft & Erfindungen", type: "Kuriosum", title: "Die erste Computermaus war aus Kunststoff", text: "Der Prototyp von Douglas Engelbart 1964 bestand tats\xE4chlich aus einem einfachen Holzgeh\xE4use mit zwei Metallr\xE4dern \u2013 lange vor den heute bekannten Kunststoffm\xE4usen." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "R\xF6ntgenstrahlen wurden gezielt erforscht und entdeckt", text: "Wilhelm Conrad R\xF6ntgen entdeckte die nach ihm benannte Strahlung 1895 eher zuf\xE4llig bei Experimenten mit Kathodenstrahlr\xF6hren und untersuchte das Ph\xE4nomen erst danach systematisch." },
-  { category: "Wissenschaft & Erfindungen", type: "Kuriosum", title: "Der erste Kunststoff wurde f\xFCr die Industrie entwickelt", text: "Das erste vollsynthetische Kunststoff Bakelit wurde 1907 urspr\xFCnglich als Ersatzstoff f\xFCr das knapper werdende Naturmaterial Schellack entwickelt." },
-  { category: "Entdeckungen & Weltreiche", type: "Nuance", title: "Vasco da Gama entdeckte als Erster den Seeweg nach Indien", text: "Arabische und ostafrikanische Seefahrer nutzten bereits Jahrhunderte zuvor etablierte Handelsrouten im Indischen Ozean; da Gamas Neuerung war die erste direkte europ\xE4ische Seeverbindung." },
-  { category: "Entdeckungen & Weltreiche", type: "Nuance", title: "Amerigo Vespucci entdeckte den amerikanischen Kontinent", text: "Vespucci erkannte als einer der Ersten, dass es sich um einen eigenst\xE4ndigen Kontinent handelte \u2013 nach ihm wurde er benannt, entdeckt hatte ihn aber zuvor bereits Kolumbus und noch fr\xFCher die Wikinger." },
-  { category: "Entdeckungen & Weltreiche", type: "Nuance", title: "James Cook entdeckte ein unbewohntes Australien", text: "Aborigines besiedelten den Kontinent bereits seit mindestens 50.000 Jahren; das Konzept 'terra nullius' (niemandes Land), mit dem die britische Krone die Inbesitznahme rechtfertigte, ignorierte diese Realit\xE4t bewusst." },
-  { category: "Entdeckungen & Weltreiche", type: "Kuriosum", title: "Gr\xF6nland hei\xDFt zuf\xE4llig 'gr\xFCnes Land'", text: "Der Sage nach gab der Wikinger Erik der Rote der eisigen Insel diesen positiv klingenden Namen bewusst als Marketingtrick, um mehr Siedler zur Kolonisierung zu gewinnen." },
-  { category: "Entdeckungen & Weltreiche", type: "Mythos", title: "Das R\xF6mische Reich fiel an einem einzigen historischen Datum", text: "Der 'Untergang' 476 n. Chr. markiert nur die Absetzung des letzten westr\xF6mischen Kaisers; das ostr\xF6mische Reich (Byzanz) bestand als direkte Fortsetzung noch fast 1000 Jahre weiter bis 1453." },
-  { category: "Entdeckungen & Weltreiche", type: "Nuance", title: "Das britische Weltreich war das erste, in dem 'die Sonne nie unterging'", text: "Diese Formulierung wurde bereits im 16./17. Jahrhundert f\xFCr das spanische Kolonialreich Karls V. verwendet, das sich ebenfalls \xFCber alle bekannten Erdteile erstreckte." },
-  { category: "Entdeckungen & Weltreiche", type: "Nuance", title: "Die Mongolen hinterlie\xDFen nur Zerst\xF6rung ohne kulturellen Beitrag", text: "Das Mongolenreich f\xF6rderte unter der 'Pax Mongolica' erheblich den Ost-West-Handel entlang der Seidenstra\xDFe sowie den Austausch von Technologien, Ideen und religi\xF6ser Toleranz." },
-  { category: "Entdeckungen & Weltreiche", type: "Kuriosum", title: "Der Panama-Kanal wurde ohne gr\xF6\xDFere menschliche Kosten gebaut", text: "Beim Bau, insbesondere w\xE4hrend der gescheiterten ersten franz\xF6sischen Bauphase, starben sch\xE4tzungsweise \xFCber 20.000 Arbeiter vor allem an Malaria und Gelbfieber." },
-  { category: "Entdeckungen & Weltreiche", type: "Mythos", title: "Die Seidenstra\xDFe war eine einzelne, feste Route", text: "Tats\xE4chlich handelte es sich um ein weitverzweigtes Netzwerk verschiedenster Land- und Seehandelsrouten zwischen Asien, dem Nahen Osten und Europa, die sich \xFCber Jahrhunderte ver\xE4nderten." },
-  { category: "Entdeckungen & Weltreiche", type: "Kuriosum", title: "Kolonialreiche wurden von der gesamten Bev\xF6lkerung des Mutterlandes einhellig unterst\xFCtzt", text: "In vielen europ\xE4ischen L\xE4ndern gab es zeitgen\xF6ssisch durchaus kritische Stimmen und Debatten gegen koloniale Expansion, auch wenn diese oft eine gesellschaftliche Minderheitsposition blieben." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Die Azteken praktizierten nur in geringem Umfang Menschenopfer", text: "Historiker sind sich \xFCber das genaue Ausma\xDF uneinig; spanische Chronisten \xFCbertrieben vermutlich zur moralischen Rechtfertigung der eigenen Eroberung, dennoch belegen Funde zehntausende Opfer \xFCber die Reichsgeschichte." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Die Inka kannten kein Schriftsystem", text: "Sie nutzten ein komplexes Knotenschriftsystem aus gef\xE4rbten Schn\xFCren (Quipu) zur Verwaltung von Zahlen und vermutlich auch narrativen Informationen, dessen vollst\xE4ndige Entschl\xFCsselung bis heute nicht gelungen ist." },
-  { category: "Asien & Amerika", type: "Mythos", title: "Die Maya-Zivilisation verschwand pl\xF6tzlich \xFCber Nacht", text: "Der Niedergang der klassischen Maya-St\xE4dte im 9. Jahrhundert vollzog sich \xFCber Jahrzehnte durch D\xFCrre, Kriege und Ressourcenknappheit; zahlreiche Maya-Gemeinschaften bestehen bis heute fort." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Japan war w\xE4hrend der Sakoku-Zeit vollst\xE4ndig isoliert", text: "\xDCber den k\xFCnstlichen Hafen Dejima unterhielt Japan durchgehend begrenzten, aber bedeutsamen Handel mit niederl\xE4ndischen und chinesischen Kaufleuten." },
-  { category: "Asien & Amerika", type: "Mythos", title: "Dschingis Khans Grab wurde bereits gefunden", text: "Der genaue Bestattungsort des mongolischen Herrschers wurde der \xDCberlieferung nach bewusst geheim gehalten; trotz jahrzehntelanger arch\xE4ologischer Suche wurde sein Grab bis heute nicht identifiziert." },
-  { category: "Asien & Amerika", type: "Mythos", title: "Die Chinesische Mauer ist ein einziges durchgehendes Bauwerk", text: "Tats\xE4chlich besteht sie aus zahlreichen, \xFCber mehr als 2000 Jahre von verschiedenen Dynastien errichteten und oft nicht direkt verbundenen Mauerabschnitten." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Samurai folgten stets einem strengen, jahrhundertealten Ehrenkodex", text: "Der als 'Bushido' bekannte, stark idealisierte Verhaltenskodex wurde in seiner heute bekannten Form \xFCberwiegend erst in der Edo-Zeit und besonders im fr\xFChen 20. Jahrhundert systematisiert." },
-  { category: "Asien & Amerika", type: "Kuriosum", title: "Die Terrakotta-Armee zeigt lauter identische Soldatenfiguren", text: "Jede der \xFCber 8.000 Tonfiguren weist individuell unterschiedliche Gesichtsz\xFCge, Frisuren und Ausr\xFCstungsdetails auf \u2013 vermutlich nach realen Vorbildern der kaiserlichen Armee gestaltet." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Konfuzius war zu Lebzeiten ein hochgeehrter, einflussreicher Berater", text: "Zu Lebzeiten hatte er nur m\xE4\xDFigen politischen Erfolg und wechselnde Anstellungsverh\xE4ltnisse; sein enormer Einfluss entfaltete sich vor allem postum \xFCber Jahrhunderte durch seine Sch\xFCler." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Indien war vor der britischen Kolonialherrschaft stets politisch geeint", text: "Der Subkontinent bestand \xFCber weite Teile seiner Geschichte aus zahlreichen unabh\xE4ngigen K\xF6nigreichen; gr\xF6\xDFere reichsweite Einigungen wie Maurya oder Mogulreich waren eher die Ausnahme." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Gandhi war von Anfang an ein \xFCberzeugter Verfechter gewaltfreien Widerstands", text: "Seine Philosophie des gewaltfreien Widerstands (Satyagraha) entwickelte sich erst schrittweise w\xE4hrend seiner Zeit als Anwalt in S\xFCdafrika, wo er zun\xE4chst f\xFCr eine loyale Einbindung ins britische Empire eintrat." },
-  { category: "Asien & Amerika", type: "Kuriosum", title: "Die Kamikaze-Taifune gegen die Mongolen waren einmaliger Zufall", text: "Bemerkenswerterweise zerst\xF6rten gleich zwei separate schwere Taifune 1274 und erneut 1281 jeweils die mongolischen Invasionsflotten kurz nach deren Ankunft vor Japan." },
-  { category: "Asien & Amerika", type: "Mythos", title: "Die Opiumkriege wurden von China begonnen", text: "Die Kriege 1839\u20131860 gingen von milit\xE4rischen Interventionen Gro\xDFbritanniens und sp\xE4ter Frankreichs aus, nachdem chinesische Beh\xF6rden versucht hatten, den illegalen britischen Opiumhandel zu unterbinden." },
-  { category: "Asien & Amerika", type: "Nuance", title: "Mansa Musa war nur ein regionaler F\xFCrst von geringer Bedeutung", text: "Zeitgen\xF6ssische arabische und europ\xE4ische Quellen beschreiben ihn als einen der reichsten Menschen der damals bekannten Welt; sein Goldreichtum soll 1324 kurzzeitig den Goldpreis in Kairo destabilisiert haben." },
-  { category: "Asien & Amerika", type: "Kuriosum", title: "\xC4thiopien wurde nie von einer europ\xE4ischen Kolonialmacht erobert", text: "\xC4thiopien besiegte 1896 in der Schlacht von Adua eine italienische Invasionsarmee entscheidend und blieb damit neben Liberia die einzige afrikanische Nation, die ihre Unabh\xE4ngigkeit dauerhaft bewahrte." },
-  { category: "Legenden", type: "Mythos", title: "Wilhelm Tell war eine historisch verb\xFCrgte reale Person", text: "Es gibt keine zeitgen\xF6ssischen Quellen f\xFCr Wilhelm Tell aus dem angeblichen 14. Jahrhundert; die Geschichte des Apfelschusses erscheint erstmals rund 200 Jahre sp\xE4ter in Schweizer Chroniken." },
-  { category: "Legenden", type: "Kuriosum", title: "Die Curse of the Hope-Diamant brachte allen Besitzern Ungl\xFCck", text: "Der ber\xFChmte blaue Diamant wird mit zahlreichen Ungl\xFCcksgeschichten seiner fr\xFCheren Besitzer in Verbindung gebracht \u2013 die meisten dieser Anekdoten lassen sich historisch nicht eindeutig belegen." },
-  { category: "Wissenschaft & Erfindungen", type: "Nuance", title: "Kartoffeln waren in Europa von Anfang an ein beliebtes Grundnahrungsmittel", text: "Nach ihrer Einf\xFChrung aus Amerika im 16. Jahrhundert wurden Kartoffeln in weiten Teilen Europas zun\xE4chst misstrauisch be\xE4ugt und teils sogar als giftig oder unrein abgelehnt." },
-  { category: "Entdeckungen & Weltreiche", type: "Kuriosum", title: "Die Wikinger nutzten nur die ber\xFChmten Runensteine zur schriftlichen Kommunikation", text: "Neben monumentalen Runensteinen nutzten Wikinger auch Alltagsritzungen auf Holz und Knochen f\xFCr private Nachrichten, von denen durch Fundorte wie Bergen zahlreiche Beispiele erhalten sind." },
-  { category: "Moderne", type: "Kuriosum", title: "Die Internationale Raumstation ist das teuerste je gebaute Bauwerk", text: "Mit gesch\xE4tzten Baukosten von \xFCber 150 Milliarden US-Dollar gilt die ISS gemeinhin als teuerstes von Menschen je errichtetes einzelnes Bauwerk der Geschichte." },
-  { category: "Antike", type: "Kuriosum", title: "Das antike Rom hatte bereits ein ausgekl\xFCgeltes Fast-Food-System", text: "Sogenannte 'Thermopolien' \u2013 Stra\xDFenimbisse mit eingelassenen Vorratsgef\xE4\xDFen \u2013 waren in r\xF6mischen St\xE4dten wie Pompeji weitverbreitet, da viele einfache Wohnungen \xFCber keine eigene K\xFCche verf\xFCgten." },
-  { category: "Fr\xFChe Neuzeit", type: "Kuriosum", title: "Schachspiel und Politik waren in der Fr\xFChen Neuzeit strikt getrennte Welten", text: "Am Hof Ludwigs XIV. und anderer Monarchen dienten \xF6ffentliche Schachpartien h\xE4ufig als subtile diplomatische Machtdemonstrationen zwischen rivalisierenden Gesandtschaften." },
-  { category: "Moderne", type: "Nuance", title: "Der Eiffelturm war von Anfang an bei den Parisern beliebt", text: "Beim Bau 1889 protestierten zahlreiche prominente Pariser K\xFCnstler und Intellektuelle in einem offenen Brief gegen den Turm als angebliche 'nutzlose und monstr\xF6se' Verschandelung der Stadt." }
+  {"category":"Antike","type":"Nuance","title":"Der Trojanische Krieg war reine Erfindung","text":"Homers 'Ilias' ist literarisch stark überhöht, doch Ausgrabungen in Hisarlik (Türkei) durch Heinrich Schliemann belegen eine reale, mehrfach zerstörte Stadt namens Troja. Ob ein 'Trojanisches Pferd' tatsächlich existierte, bleibt jedoch unbewiesen."},
+  {"category":"Antike","type":"Nuance","title":"Bei den Thermopylen kämpften nur 300 Spartaner","text":"Tatsächlich standen mehrere tausend griechische Verbündete mit den Spartanern gemeinsam gegen die Perser. Die '300' waren nur die Kerntruppe, die als letzte in einem aussichtslosen Nachhutgefecht standhielt."},
+  {"category":"Antike","type":"Mythos","title":"Nero spielte Geige, während Rom brannte","text":"Die Geige wurde erst rund 1500 Jahre später erfunden. Manche antiken Quellen berichten sogar, Nero sei bei Brandausbruch gar nicht in Rom gewesen und habe später den Wiederaufbau organisiert."},
+  {"category":"Antike","type":"Nuance","title":"Caligula ernannte sein Pferd zum Senator","text":"Der römische Historiker Sueton berichtet dies als Beleg für Caligulas Wahnsinn. Moderne Historiker vermuten eher bitteren Spott gegenüber dem Senat als eine tatsächlich vollzogene Ernennung."},
+  {"category":"Antike","type":"Nuance","title":"Kleopatra war eine ägyptische Schönheitsikone","text":"Kleopatra VII. entstammte der griechisch-makedonischen Ptolemäer-Dynastie, war also keine ethnische Ägypterin. Antike Quellen betonen zudem eher ihre Intelligenz, Bildung und Stimme als klassische Schönheit."},
+  {"category":"Antike","type":"Nuance","title":"Alexander der Große wurde vergiftet","text":"Seine Todesursache ist bis heute ungeklärt. Historiker diskutieren neben Vergiftung auch Malaria, Typhus oder übermäßigen Alkoholkonsum – eine endgültige Antwort gibt es nicht."},
+  {"category":"Antike","type":"Mythos","title":"Atlantis war eine reale versunkene Hochkultur","text":"Atlantis wird erstmals von Platon als philosophisches Gedankenexperiment über einen idealen und einen dekadenten Staat erwähnt. Es gibt keinerlei archäologischen Beleg für seine tatsächliche Existenz."},
+  {"category":"Antike","type":"Nuance","title":"Der Läufer Pheidippides rannte 42 km und starb","text":"Herodot berichtet nur von einem Botenlauf nach Sparta, nicht von einem tödlichen Lauf über die Marathon-Distanz. Die moderne Marathondistanz von 42,195 km wurde erst 1908 bei den Olympischen Spielen in London festgelegt."},
+  {"category":"Antike","type":"Nuance","title":"Gladiatoren kämpften immer bis zum Tod","text":"Gladiatoren waren teure Investitionen ihrer Besitzer. Die meisten Kämpfe endeten ohne tödlichen Ausgang, und die genaue Bedeutung der berühmten Daumengeste ist unter Historikern bis heute umstritten."},
+  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter glaubte man an eine flache Erde","text":"Gebildete Menschen wussten seit der griechischen Antike um die Kugelform der Erde. Auch mittelalterliche Gelehrte lehrten dies an Universitäten – der Mythos der 'flachen Erde' entstand erst im 19. Jahrhundert."},
+  {"category":"Mittelalter","type":"Mythos","title":"Ritter mussten mit einem Kran aufs Pferd gehoben werden","text":"Vollrüstungen wogen meist nur 20–25 kg und waren gut über den Körper verteilt. Ritter konnten sich damit frei bewegen, kämpfen und sogar Purzelbäume schlagen, wie Experimente moderner Rüstungshistoriker zeigen."},
+  {"category":"Mittelalter","type":"Mythos","title":"Menschen im Mittelalter wuschen sich nie","text":"Öffentliche Badehäuser waren im Mittelalter weit verbreitet und beliebt. Erst im Zuge der Pestepidemien ab dem 14. Jahrhundert geriet Baden aus Angst vor Ansteckung zunehmend in Verruf."},
+  {"category":"Mittelalter","type":"Mythos","title":"Hexenverbrennungen waren typisch für das 'finstere' Mittelalter","text":"Die überwältigende Mehrheit der europäischen Hexenprozesse und -verbrennungen fand tatsächlich erst in der Frühen Neuzeit statt, besonders im 16. und 17. Jahrhundert – nicht im Mittelalter."},
+  {"category":"Mittelalter","type":"Mythos","title":"Mittelalterliche Karten warnten mit 'Hier seien Drachen'","text":"Die berühmte lateinische Formulierung 'hic sunt dracones' ist tatsächlich nur auf einem einzigen erhaltenen Objekt belegt, dem Hunt-Lenox-Globus von ca. 1510 – nicht auf typischen mittelalterlichen Karten."},
+  {"category":"Mittelalter","type":"Mythos","title":"Die Wikinger trugen gehörnte Helme","text":"Es gibt keinerlei archäologische Belege für Hörnerhelme bei echten Wikingern. Das Bild wurde im 19. Jahrhundert von Kostümbildnern der Oper (u.a. für Wagners Ring des Nibelungen) erfunden."},
+  {"category":"Mittelalter","type":"Mythos","title":"Kolumbus bewies, dass die Erde rund ist","text":"Dies war bereits seit der Antike bekanntes Allgemeinwissen unter Gelehrten. Kolumbus' eigentlicher Streitpunkt mit Experten war die (falsch geschätzte, zu kleine) Größe der Erde, nicht ihre Form."},
+  {"category":"Mittelalter","type":"Nuance","title":"Vlad der Pfähler war ein Vampir","text":"Der reale walachische Fürst Vlad III. war berüchtigt für extrem brutale Bestrafungsmethoden, aber keine übernatürliche Gestalt. Die Vampirlegende geht auf Bram Stokers Roman 'Dracula' (1897) zurück, der seinen Namen nur lose verwendete."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"Marie Antoinette sagte 'Sollen sie doch Kuchen essen'","text":"Dieses Zitat lässt sich bereits vor Marie Antoinettes Zeit nachweisen und wurde ursprünglich anderen Adligen zugeschrieben. Es gibt keinen historischen Beleg, dass sie diesen Satz je gesagt hat."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"In Salem wurden Hexen auf dem Scheiterhaufen verbrannt","text":"Bei den berühmten Hexenprozessen von Salem (1692/93) wurden alle Verurteilten gehängt – niemand wurde verbrannt, anders als es die Popkultur oft darstellt."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"George Washington fällte als Kind einen Kirschbaum und log nie","text":"Diese moralisierende Anekdote wurde erst nach Washingtons Tod von seinem Biografen Parson Weems erfunden, um ihn als Vorbild ehrlichen Charakters darzustellen."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"Napoleon war außergewöhnlich klein","text":"Napoleon war mit ca. 1,68 m für seine Zeit durchschnittlich groß. Der Mythos entstand durch eine Verwechslung französischer und englischer Zoll-Maßeinheiten sowie britische Kriegspropaganda."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Marco Polo erfand seine China-Reise komplett","text":"Manche Historiker bezweifeln einzelne Details seines Berichts (er erwähnt etwa nie die Chinesische Mauer), doch die Reise als solche und viele seiner Beschreibungen gelten heute als historisch belegt."},
+  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Piraten trugen Augenklappen wegen Verletzungen","text":"Eine populäre Theorie besagt, Augenklappen dienten manchen Seeleuten dazu, ein Auge stets an Dunkelheit gewöhnt zu halten, um beim schnellen Wechsel zwischen Deck und dunklem Unterdeck sofort sehen zu können."},
+  {"category":"Moderne","type":"Mythos","title":"Einstein ist in der Schule durchgefallen","text":"Albert Einstein war tatsächlich ein exzellenter Schüler, besonders in Mathematik und Physik. Der Mythos entstand vermutlich durch eine Verwechslung unterschiedlicher Schweizer Notenskalen."},
+  {"category":"Moderne","type":"Mythos","title":"Der Fluch des Tutanchamun tötete die Ausgräber","text":"Nach dem Tod von Lord Carnarvon 1923 verbreitete die Boulevardpresse die Legende eines Grabfluchs. Statistisch starben die meisten an der Ausgrabung Beteiligten aber erst Jahrzehnte später eines natürlichen Todes."},
+  {"category":"Moderne","type":"Kuriosum","title":"Der Piltdown-Mensch war ein Sensationsfund","text":"1912 als bedeutendes 'fehlendes Bindeglied' der Evolution präsentiert, entpuppte sich der Fund 1953 als Fälschung aus einem Menschenschädel und einem Orang-Utan-Kiefer – einer der berühmtesten Wissenschaftsbetrugsfälle der Geschichte."},
+  {"category":"Moderne","type":"Mythos","title":"Anastasia Romanov überlebte die Erschießung ihrer Familie","text":"Jahrzehntelang befeuerten Hochstaplerinnen wie Anna Anderson diesen Mythos. DNA-Analysen der geborgenen Gebeine bestätigten 2007 zweifelsfrei den Tod aller Familienmitglieder der Zarenfamilie."},
+  {"category":"Moderne","type":"Nuance","title":"Rasputin war fast unmöglich zu töten","text":"Die dramatische Legende von Vergiftung, Erschießung und Ertränken stammt vor allem aus den unzuverlässigen Memoiren seines Mörders Felix Jussupow. Historiker bezweifeln heute viele Details dieser Version."},
+  {"category":"Moderne","type":"Kuriosum","title":"Der Fall der Berliner Mauer war minutiös geplant","text":"Tatsächlich war die Maueröffnung 1989 vor allem die Folge eines Kommunikationsfehlers: SED-Funktionär Günter Schabowski verkündete auf einer Pressekonferenz versehentlich sofortige Reisefreiheit."},
+  {"category":"Moderne","type":"Mythos","title":"Ninjas trugen stets komplett schwarze Kleidung","text":"Dieses Bild stammt aus Konventionen des japanischen Kabuki-Theaters, wo schwarz gekleidete Bühnenhelfer als 'unsichtbar' galten. Reale Ninja trugen meist unauffällige Alltagskleidung zur Tarnung."},
+  {"category":"Moderne","type":"Mythos","title":"Die Chinesische Mauer ist vom Weltall aus mit bloßem Auge sichtbar","text":"Astronauten, darunter mehrere chinesische Taikonauten, haben diesen hartnäckigen Mythos wiederholt dementiert. Die Mauer ist schlicht zu schmal, um ohne Hilfsmittel aus dem All erkennbar zu sein."},
+  {"category":"Legenden","type":"Mythos","title":"Das Bermuda-Dreieck verschluckt überdurchschnittlich viele Schiffe","text":"Statistische Analysen von Versicherungsdaten zeigen keine erhöhte Vermisstenrate gegenüber anderen stark befahrenen Seegebieten vergleichbarer Größe."},
+  {"category":"Legenden","type":"Mythos","title":"Nostradamus sagte konkrete historische Ereignisse voraus","text":"Seine Verse sind bewusst vage, mehrdeutig und metaphernreich formuliert. Vermeintliche 'Treffer' entstehen fast immer durch rückwirkende Deutung nach bereits eingetretenen Ereignissen."},
+  {"category":"Legenden","type":"Mythos","title":"Kolumbus war der erste Europäer in Amerika","text":"Wikinger unter Leif Eriksson erreichten Neufundland (das sogenannte 'Vinland') bereits um das Jahr 1000 – rund 500 Jahre vor Kolumbus, wie die Ausgrabungen von L'Anse aux Meadows belegen."},
+  {"category":"Legenden","type":"Kuriosum","title":"Napoleon wurde von einer Hasen-Horde angegriffen","text":"Bei einer eigens organisierten Hasenjagd 1807 wandten sich hunderte zuvor gezüchtete, zahme Hasen nicht zur Flucht, sondern liefen auf Napoleon und seine Gesellschaft zu – die Jagdgesellschaft musste sich regelrecht zurückziehen."},
+  {"category":"Legenden","type":"Kuriosum","title":"Bei den ersten Olympischen Spielen traten Athleten nackt an","text":"Der griechische Begriff 'gymnos' (nackt) ist die Wurzel des Wortes 'Gymnasium'. Athleten traten in Olympia tatsächlich unbekleidet an – laut Überlieferung auch, um Frauen (denen die Teilnahme als Zuschauerinnen untersagt war) fernzuhalten."},
+  {"category":"Legenden","type":"Kuriosum","title":"Ein römischer Kaiser bot einen Preis für die beste Grimasse","text":"Bei manchen römischen Festen gab es tatsächlich Wettbewerbe im Grimassenschneiden ('gymnastiké') als derbe Unterhaltung – ein früher Vorläufer heutiger Grimassen-Wettbewerbe."},
+  {"category":"Antike","type":"Nuance","title":"Spartaner warfen alle schwachen Babys von einem Felsen","text":"Diese Praxis wird nur von einem einzigen, Jahrhunderte späteren Autor (Plutarch) erwähnt. Ausgrabungen der vermeintlichen Stätte fanden keine Babyskelette, sondern nur Knochen erwachsener Männer – vermutlich hingerichteter Verbrecher."},
+  {"category":"Antike","type":"Mythos","title":"Julius Caesars Name stammt vom Kaiserschnitt","text":"Seine Mutter Aurelia lebte nachweislich noch Jahrzehnte nach seiner Geburt weiter – ein Kaiserschnitt war zu dieser Zeit für die Mutter praktisch immer tödlich. Die tatsächliche Namensherkunft ist unklar."},
+  {"category":"Antike","type":"Nuance","title":"Caesars letzte Worte waren 'Auch du, mein Sohn Brutus?'","text":"Der Historiker Sueton überliefert diese Version nur als Gerücht. Ob Caesar überhaupt letzte Worte sprach, ist historisch nicht gesichert."},
+  {"category":"Antike","type":"Mythos","title":"Die Pyramiden wurden von Sklaven erbaut","text":"Ausgrabungen von Arbeitersiedlungen bei Gizeh zeigen, dass die Pyramiden überwiegend von bezahlten, gut versorgten Facharbeitern und Bauern während der Nilüberschwemmungszeit errichtet wurden."},
+  {"category":"Antike","type":"Nuance","title":"Kleopatra starb an einem einzigen Schlangenbiss","text":"Schon antike Quellen waren sich uneinig; moderne Toxikologen bezweifeln, dass eine einzelne Schlange einen so kontrollierten, schmerzfreien Tod verursacht haben könnte."},
+  {"category":"Antike","type":"Mythos","title":"Napoleons Truppen schossen der Sphinx die Nase ab","text":"Zeichnungen aus dem 18. Jahrhundert – vor Napoleons Ägyptenfeldzug – zeigen die Sphinx bereits ohne Nase. Die Beschädigung geschah vermutlich Jahrhunderte früher."},
+  {"category":"Antike","type":"Nuance","title":"Sokrates wurde allein wegen echter Gottlosigkeit hingerichtet","text":"Historiker sehen den Prozess auch stark politisch motiviert – als Abrechnung mit seinen Verbindungen zu unbeliebten aristokratischen Schülern nach dem Sturz der 'Dreißig Tyrannen'."},
+  {"category":"Antike","type":"Nuance","title":"Hannibal verlor alle seine Kriegselefanten in den Alpen","text":"Die meisten Tiere starben tatsächlich an Kälte und Erschöpfung, doch mindestens ein Elefant überlebte Berichten zufolge bis nach Italien."},
+  {"category":"Antike","type":"Nuance","title":"Archimedes rief 'Heureka' beim Baden aus","text":"Die Anekdote stammt vom römischen Autor Vitruv, rund 200 Jahre nach Archimedes' Tod – zeitgenössisch ist sie nicht belegt."},
+  {"category":"Antike","type":"Mythos","title":"Der Koloss von Rhodos stand rittlings über dem Hafeneingang","text":"Diese berühmte Darstellung stammt erst aus mittelalterlichen und Renaissance-Illustrationen; antike Ingenieure hätten eine solche Statue technisch kaum errichten können."},
+  {"category":"Antike","type":"Kuriosum","title":"Die Terrakotta-Armee wurde zufällig entdeckt","text":"1974 stießen Bauern beim Brunnenbohren in der chinesischen Provinz Shaanxi zufällig auf die über 8.000 lebensgroßen Tonkrieger des ersten chinesischen Kaisers."},
+  {"category":"Antike","type":"Nuance","title":"Bei den Olympischen Spielen herrschte reine Sportlichkeit ohne Politik","text":"Während der Spiele galt zwar ein 'heiliger Frieden' (Ekecheiria), dieser wurde jedoch häufig auch für diplomatische Zwecke der Stadtstaaten instrumentalisiert."},
+  {"category":"Antike","type":"Kuriosum","title":"Mönchtum entstand nur einmal in der Geschichte","text":"Buddhistische und christliche Klostertraditionen entwickelten unabhängig voneinander erstaunlich ähnliche Konzepte von Askese, Zölibat und Gemeinschaftsleben."},
+  {"category":"Antike","type":"Nuance","title":"Buddha war von Geburt an ein Bettelmönch","text":"Der Überlieferung nach wurde Siddhartha Gautama als wohlhabender Prinz geboren und wandte sich erst als junger Erwachsener bewusst von Reichtum und Palastleben ab."},
+  {"category":"Mittelalter","type":"Mythos","title":"Das 'Recht der ersten Nacht' war weitverbreitete feudale Praxis","text":"Historiker finden kaum verlässliche zeitgenössische Belege für eine systematische Ausübung dieses angeblichen Rechts; es dürfte größtenteils spätere literarische Erfindung sein."},
+  {"category":"Mittelalter","type":"Mythos","title":"Wikinger waren reine Plünderer ohne Handelskultur","text":"Wikinger betrieben ausgedehnte Handelsnetzwerke bis nach Byzanz und Bagdad und gründeten zahlreiche bis heute bestehende Städte, darunter Dublin."},
+  {"category":"Mittelalter","type":"Nuance","title":"Kreuzritter kämpften ausschließlich aus religiösem Eifer","text":"Viele Teilnehmer verband mit dem religiösen Motiv auch die Aussicht auf Landbesitz, Beute, Handelsvorteile und gesellschaftliches Ansehen."},
+  {"category":"Mittelalter","type":"Nuance","title":"Der Begriff 'Vandalismus' beweist besondere Zerstörungswut der Vandalen","text":"Der Begriff wurde erst über 1000 Jahre später im 18. Jahrhundert geprägt; die historischen Vandalen plünderten Rom 455 zwar, richteten aber wohl keine ungewöhnlich systematische Zerstörung an."},
+  {"category":"Mittelalter","type":"Nuance","title":"Attila der Hunne war nur ein ungebildeter Wilder","text":"Zeitgenössische Quellen wie der oströmische Gesandte Priskos beschreiben ihn auch als überraschend genügsam, diplomatisch geschickt und an römischer Kultur interessiert."},
+  {"category":"Mittelalter","type":"Nuance","title":"Die Lebenserwartung im Mittelalter betrug generell nur 30 Jahre","text":"Diese Zahl wird stark durch hohe Kindersterblichkeit verzerrt; wer das Erwachsenenalter erreichte, hatte durchaus realistische Chancen auf 60 bis 70 Lebensjahre."},
+  {"category":"Mittelalter","type":"Mythos","title":"Marco Polo brachte Nudeln aus China nach Italien","text":"Es gibt Belege für Nudelgerichte im Mittelmeerraum bereits vor Marco Polos Reise; die populäre Legende entstand vermutlich erst im 20. Jahrhundert durch eine amerikanische Werbekampagne."},
+  {"category":"Mittelalter","type":"Nuance","title":"Die Magna Carta garantierte allen Engländern Freiheit","text":"Ursprünglich schützte sie fast ausschließlich die Rechte des Adels gegenüber der Krone; erst spätere Interpretationen im 17. Jahrhundert weiteten ihre Bedeutung auf allgemeine Bürgerrechte aus."},
+  {"category":"Mittelalter","type":"Mythos","title":"Die Assassinen waren durch Haschisch berauschte Auftragsmörder","text":"Der Name geht vermutlich auf eine abwertende arabische Fremdbezeichnung zurück; historische Belege für systematischen Drogenkonsum der Sekte gelten heute als unzuverlässig."},
+  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter herrschte durchgehender wissenschaftlicher Stillstand","text":"Die Epoche brachte bedeutende Innovationen wie die Brille, mechanische Uhren, den Buchdruck, das Dreifelder-System in der Landwirtschaft und gotische Kathedralbaukunst."},
+  {"category":"Mittelalter","type":"Nuance","title":"Die Templerritter wurden wegen erwiesener Häresie vernichtet","text":"Historiker gehen heute überwiegend davon aus, dass der hoch verschuldete französische König Philipp IV. die Anklagen 1307 vor allem konstruierte, um sich des Vermögens des Ordens zu bemächtigen."},
+  {"category":"Mittelalter","type":"Nuance","title":"Der Investiturstreit drehte sich nur um religiöse Fragen","text":"Im Kern ging es vor allem um handfeste Macht- und Besitzfragen: wer Bischöfe – und damit große Ländereien – einsetzen durfte, Kaiser oder Papst."},
+  {"category":"Mittelalter","type":"Nuance","title":"Die Hanse war ein fest organisierter Staat","text":"Tatsächlich war die Hanse ein loses, informelles Netzwerk von Kaufleuten und Städten ohne zentrale Verfassung, gemeinsame Kasse oder feste Mitgliederliste."},
+  {"category":"Mittelalter","type":"Mythos","title":"Chinesische Schiffe der Ming-Zeit waren primitive Boote","text":"Admiral Zheng Hes Flotte im frühen 15. Jahrhundert umfasste Schiffe von bis zu 120 Metern Länge – deutlich größer als alle europäischen Schiffe dieser Zeit."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"Galileo Galilei wurde wegen seiner Thesen gefoltert","text":"Er wurde 1633 zu Hausarrest verurteilt, jedoch nicht gefoltert. Die Androhung von Folter war zu dieser Zeit ein übliches, meist nicht vollzogenes Verhörinstrument der Inquisition."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Pilgerväter suchten Religionsfreiheit für alle","text":"Die Puritaner an Bord der Mayflower suchten vor allem Freiheit für die eigene Glaubensgemeinschaft und praktizierten später selbst erhebliche religiöse Intoleranz gegenüber Andersdenkenden."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenprozesse waren primär von der katholischen Kirche getragen","text":"Tatsächlich fanden besonders viele Hexenverfolgungen in protestantischen Gebieten Mitteleuropas statt – beide Konfessionen beteiligten sich intensiv."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"Die Pest traf vor allem unhygienische arme Bevölkerungsschichten","text":"Die Übertragung erfolgte primär durch Flöhe auf Ratten unabhängig vom persönlichen Reinlichkeitsgrad; auch wohlhabende Haushalte und Klöster waren stark betroffen."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Elisabeth I. blieb aus reiner Prinzipientreue unverheiratet","text":"Ihre Ehelosigkeit war wohl auch eine bewusste politische Strategie, um die eigene Machtposition nicht durch eine Heiratsallianz zu gefährden."},
+  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Peter der Große führte eine Bartsteuer zur reinen Geldbeschaffung ein","text":"Die 1698 eingeführte Steuer diente auch der symbolischen Modernisierung: Wer den traditionellen Bart behalten wollte, musste zahlen und erhielt eine Bart-Münzmarke als Nachweis."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Azteken hielten die Spanier für zurückkehrende Götter","text":"Diese oft erzählte Legende stammt vor allem aus spanischen Quellen nach der Eroberung und wird von vielen Historikern heute als nachträgliche Rechtfertigungserzählung angezweifelt."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Guy Fawkes handelte aus persönlichem Hass allein","text":"Der 'Gunpowder Plot' von 1605 war eine koordinierte katholische Verschwörung gegen die protestantische Verfolgungspolitik, nicht die Tat eines Einzelnen."},
+  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Ludwig XIV. badete regelmäßig","text":"Der Sonnenkönig soll kaum gebadet haben und stattdessen parfümierte Puder sowie häufigen Hemdenwechsel zur Körperpflege bevorzugt haben – zeittypisch für den europäischen Hochadel."},
+  {"category":"Frühe Neuzeit","type":"Mythos","title":"Kolumbus wusste, dass er einen neuen Kontinent entdeckt hatte","text":"Kolumbus glaubte bis zu seinem Tod, ostasiatische Inseln erreicht zu haben; der Kontinentcharakter Amerikas wurde erst durch spätere Entdecker wie Amerigo Vespucci erkannt."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Magellan vollendete persönlich die erste Weltumsegelung","text":"Magellan starb 1521 auf den Philippinen; nur sein Kapitän Juan Sebastián Elcano und eine Handvoll Überlebender vollendeten tatsächlich die vollständige Weltumsegelung."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Boston Tea Party war spontaner Protest wütender Bürger","text":"Die Aktion von 1773 war eine sorgfältig organisierte politische Demonstration der 'Sons of Liberty', bei der sich Teilnehmer bewusst als Native Americans verkleideten."},
+  {"category":"Moderne","type":"Nuance","title":"Marie Curie starb direkt an ihrer Radioaktivitätsforschung","text":"Sie starb 1934 an aplastischer Anämie, vermutlich durch jahrelange Strahlenbelastung – ihre Laborhefte sind bis heute radioaktiv kontaminiert und werden in bleiausgekleideten Behältern aufbewahrt."},
+  {"category":"Moderne","type":"Nuance","title":"Die Titanic wurde offiziell als 'unsinkbar' beworben","text":"Der Begriff 'unsinkbar' wurde vor allem nachträglich durch die Presse verbreitet; die White Star Line selbst hatte das Schiff nie offiziell so beworben."},
+  {"category":"Moderne","type":"Nuance","title":"Einstein war Mitentwickler der Atombombe","text":"Einstein unterschrieb 1939 lediglich einen warnenden Brief an Präsident Roosevelt zur Möglichkeit einer deutschen Atombombe, war selbst aber nie am Manhattan-Projekt beteiligt."},
+  {"category":"Moderne","type":"Mythos","title":"Die Spanische Grippe stammte ursprünglich aus Spanien","text":"Frühe Fälle sind vermutlich in den USA oder Frankreich dokumentiert; Spanien erhielt den Namen nur, weil es als neutrales Land im Ersten Weltkrieg offen über die Pandemie berichten durfte."},
+  {"category":"Moderne","type":"Nuance","title":"Rosa Parks war einfach nur eine müde Näherin","text":"Parks war eine langjährige, geschulte Bürgerrechtsaktivistin der NAACP; ihre Weigerung war eine bewusste, vorbereitete Form des zivilen Ungehorsams."},
+  {"category":"Moderne","type":"Nuance","title":"Churchill war während des gesamten Krieges unangefochten beliebt","text":"Trotz seines Kriegsruhms verlor seine konservative Partei die Wahlen 1945 deutlich – viele Briten wollten nach dem Krieg vor allem soziale Reformen statt weiterer Kriegsführerpolitik."},
+  {"category":"Moderne","type":"Mythos","title":"Die Mondlandung 1969 wurde in einem Studio gefälscht","text":"Diese Verschwörungstheorie ist durch überwältigende physikalische Belege widerlegt – etwa von Astronauten hinterlassene Spiegel auf dem Mond, die bis heute per Laser vermessbar sind."},
+  {"category":"Moderne","type":"Mythos","title":"Stalin war der Geburtsname des sowjetischen Diktators","text":"Er wurde als Josef Wissarionowitsch Dschugaschwili geboren; 'Stalin' ('der Stählerne') war ein später angenommener Kampfname."},
+  {"category":"Moderne","type":"Nuance","title":"Der Kalte Krieg war ein völlig gewaltfreier Konflikt","text":"Auch wenn die Supermächte nie direkt gegeneinander kämpften, verursachten zahlreiche 'Stellvertreterkriege' in Korea, Vietnam und Afghanistan Millionen Tote weltweit."},
+  {"category":"Moderne","type":"Kuriosum","title":"Weltweite Zeitzonen gab es schon immer","text":"Erst mit dem Ausbau der Eisenbahn im 19. Jahrhundert wurden standardisierte Zeitzonen notwendig; zuvor hatte praktisch jede Stadt ihre eigene lokale Sonnenzeit."},
+  {"category":"Moderne","type":"Nuance","title":"Nelson Mandela galt während seiner gesamten Haftzeit international als Held","text":"Erst ab den 1980er-Jahren wuchs der internationale Druck gegen die Apartheid deutlich; zuvor stand er in manchen westlichen Regierungen sogar noch auf Terrorlisten."},
+  {"category":"Moderne","type":"Kuriosum","title":"Die Berliner Luftbrücke galt von Anfang an als sicherer Erfolg","text":"Anfangs hielten viele Militärexperten eine dauerhafte Luftversorgung von rund zwei Millionen Berlinern für technisch kaum durchführbar – die logistische Leistung übertraf am Ende alle Erwartungen."},
+  {"category":"Moderne","type":"Nuance","title":"Anne Franks Tagebuch wurde völlig unverändert veröffentlicht","text":"Ihr Vater Otto Frank redigierte nach dem Krieg das Originaltagebuch für die erste Veröffentlichung leicht, wobei einige persönliche Passagen zunächst gekürzt wurden."},
+  {"category":"Moderne","type":"Kuriosum","title":"Der erste Computer-'Bug' war rein metaphorisch gemeint","text":"1947 fanden Techniker tatsächlich eine echte Motte in einem Relais eines frühen Harvard-Computers und klebten sie als Kuriosum ins Logbuch – Ursprung des bis heute gebräuchlichen Begriffs."},
+  {"category":"Moderne","type":"Kuriosum","title":"Die erste E-Mail der Geschichte enthielt eine bedeutungsvolle Botschaft","text":"Die erste jemals versendete E-Mail 1971 durch Ray Tomlinson enthielt nach eigener späterer Aussage lediglich eine bedeutungslose Testzeichenfolge wie 'QWERTYUIOP'."},
+  {"category":"Legenden","type":"Nuance","title":"König Artus und die Ritter der Tafelrunde sind historisch verbürgt","text":"Es gibt keine zeitgenössischen Belege für einen historischen König Artus; die Legende verschmilzt vermutlich mehrere frühmittelalterliche britannische Kriegsherren mit späterer literarischer Ausschmückung."},
+  {"category":"Legenden","type":"Nuance","title":"Robin Hood war eine reale historische Einzelperson","text":"Historiker vermuten eher ein literarisches Sammelbild aus mehreren realen mittelalterlichen Gesetzlosen des 13./14. Jahrhunderts als eine einzelne verbürgte Figur."},
+  {"category":"Legenden","type":"Mythos","title":"Der Heilige Gral ist ein real existierendes Artefakt","text":"Der Gral taucht erstmals in mittelalterlichen Artus-Romanen des 12. Jahrhunderts als literarisches Symbol auf, nicht als historisch belegtes Objekt."},
+  {"category":"Legenden","type":"Mythos","title":"El Dorado war eine reale goldene Stadt in Südamerika","text":"Die Legende geht vermutlich auf ein reales Ritual eines Muisca-Stammesführers zurück und wurde von europäischen Eroberern zur Legende einer sagenhaften Goldstadt aufgebauscht, die nie gefunden wurde."},
+  {"category":"Legenden","type":"Mythos","title":"Die Osterinsel-Statuen wurden von Außerirdischen errichtet","text":"Archäologische Untersuchungen zeigen, dass die Rapa-Nui-Bevölkerung die Statuen mit ausgeklügelten, rein menschlichen Techniken schuf und mutmaßlich mittels Seilen 'gehend' transportierte."},
+  {"category":"Legenden","type":"Mythos","title":"Prester John, der legendäre christliche König im Osten, war real","text":"Ab dem 12. Jahrhundert kursierten in Europa Briefe eines angeblichen mächtigen christlichen Priesterkönigs in Asien oder Afrika – eine bis heute nie verifizierte Legende."},
+  {"category":"Legenden","type":"Kuriosum","title":"Auf Oak Island wurde ein realer Piratenschatz gefunden","text":"Trotz jahrzehntelanger, kostspieliger Suchexpeditionen auf der kanadischen Insel wurde nie ein definitiver historischer Beleg für einen vergrabenen Schatz gefunden."},
+  {"category":"Legenden","type":"Mythos","title":"Area 51 bewahrt Beweise für außerirdische Besuche auf","text":"Nach jahrzehntelanger Geheimhaltung bestätigten US-Behörden, dass die Anlage der geheimen Entwicklung und Erprobung von Aufklärungsflugzeugen wie der U-2 und SR-71 diente."},
+  {"category":"Legenden","type":"Mythos","title":"Die Illuminaten kontrollieren bis heute im Verborgenen die Weltpolitik","text":"Der historische Illuminatenorden wurde 1776 in Bayern gegründet und bereits 1785 von der bayerischen Regierung verboten und faktisch zerschlagen."},
+  {"category":"Legenden","type":"Mythos","title":"Yeti und Bigfoot sind wissenschaftlich nachgewiesene Wesen","text":"Trotz zahlreicher angeblicher Sichtungen und Fußspuren-Funde konnte bislang kein einziger wissenschaftlich verifizierter Beweis für die Existenz dieser Kryptiden erbracht werden."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Thomas Edison erfand die Glühbirne komplett allein","text":"Mehrere Erfinder, darunter Joseph Swan in England, entwickelten parallel funktionsfähige Glühlampen; Edisons Leistung lag vor allem in der praxistauglichen Weiterentwicklung und Vermarktung."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Alexander Graham Bell war der unbestrittene alleinige Erfinder des Telefons","text":"Der italienische Erfinder Antonio Meucci entwickelte bereits Jahre zuvor ein ähnliches Gerät; 2002 erkannte der US-Kongress symbolisch Meuccis frühen Beitrag an."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Marconi erfand das Radio als Erster und Einziger","text":"Der Erfinder Nikola Tesla hatte zuvor patentierte Grundlagentechnologien entwickelt; 1943 erkannte der US Supreme Court nachträglich Teslas vorrangige Patentansprüche an."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die Dampfmaschine war eine Erfindung des 18. Jahrhunderts","text":"Bereits der antike griechische Erfinder Heron von Alexandria konstruierte im 1. Jahrhundert n. Chr. ein funktionierendes, wenn auch praktisch ungenutztes Dampfturbinen-Spielzeug (Aeolipile)."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Penicillin war die erste erfolgreiche antimikrobielle Behandlung","text":"Bereits Jahrtausende zuvor nutzten Ägypter und andere Kulturen empirisch schimmelhaltige Substanzen zur Wundbehandlung, ohne den zugrunde liegenden Wirkmechanismus zu kennen."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Einstein entwickelte die Relativitätstheorie völlig isoliert","text":"Er baute wesentlich auf mathematischen Vorarbeiten von Hendrik Lorentz und Henri Poincaré auf, integrierte diese aber zu einem revolutionär neuen physikalischen Gesamtkonzept."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Darwin war der Erste, der die Evolutionsidee formulierte","text":"Der Naturforscher Alfred Russel Wallace entwickelte unabhängig zur gleichen Zeit eine sehr ähnliche Theorie der natürlichen Auslese; beide Konzepte wurden 1858 gemeinsam vorgestellt."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Computerprogrammierung ist eine Erfindung des 20. Jahrhunderts","text":"Ada Lovelace verfasste bereits 1843 das erste theoretische Computerprogramm für Charles Babbages nie fertiggestellte 'Analytical Engine'."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Marie Curie war der einzige Nobelpreisträger ihrer Familie","text":"Insgesamt erhielten fünf Mitglieder der Familie Curie/Joliot-Curie über zwei Generationen hinweg Nobelpreise in Physik oder Chemie."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Louis Pasteur entdeckte als Erster Mikroorganismen","text":"Der niederländische Naturforscher Antonie van Leeuwenhoek beobachtete bereits im 17. Jahrhundert erstmals Mikroorganismen; Pasteurs Pionierleistung war der Nachweis ihrer Rolle bei Krankheiten und Gärung."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Der erste Motorflug der Gebrüder Wright wurde sofort weltweit gefeiert","text":"Der Flug 1903 wurde von der zeitgenössischen Presse zunächst kaum beachtet; erst spätere, öffentlich vorgeführte Flüge etablierten den historischen Ruhm der Brüder."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die erste Computermaus war aus Kunststoff","text":"Der Prototyp von Douglas Engelbart 1964 bestand tatsächlich aus einem einfachen Holzgehäuse mit zwei Metallrädern – lange vor den heute bekannten Kunststoffmäusen."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Röntgenstrahlen wurden gezielt erforscht und entdeckt","text":"Wilhelm Conrad Röntgen entdeckte die nach ihm benannte Strahlung 1895 eher zufällig bei Experimenten mit Kathodenstrahlröhren und untersuchte das Phänomen erst danach systematisch."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Der erste Kunststoff wurde für die Industrie entwickelt","text":"Das erste vollsynthetische Kunststoff Bakelit wurde 1907 ursprünglich als Ersatzstoff für das knapper werdende Naturmaterial Schellack entwickelt."},
+  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Vasco da Gama entdeckte als Erster den Seeweg nach Indien","text":"Arabische und ostafrikanische Seefahrer nutzten bereits Jahrhunderte zuvor etablierte Handelsrouten im Indischen Ozean; da Gamas Neuerung war die erste direkte europäische Seeverbindung."},
+  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Amerigo Vespucci entdeckte den amerikanischen Kontinent","text":"Vespucci erkannte als einer der Ersten, dass es sich um einen eigenständigen Kontinent handelte – nach ihm wurde er benannt, entdeckt hatte ihn aber zuvor bereits Kolumbus und noch früher die Wikinger."},
+  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"James Cook entdeckte ein unbewohntes Australien","text":"Aborigines besiedelten den Kontinent bereits seit mindestens 50.000 Jahren; das Konzept 'terra nullius' (niemandes Land), mit dem die britische Krone die Inbesitznahme rechtfertigte, ignorierte diese Realität bewusst."},
+  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Grönland heißt zufällig 'grünes Land'","text":"Der Sage nach gab der Wikinger Erik der Rote der eisigen Insel diesen positiv klingenden Namen bewusst als Marketingtrick, um mehr Siedler zur Kolonisierung zu gewinnen."},
+  {"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Das Römische Reich fiel an einem einzigen historischen Datum","text":"Der 'Untergang' 476 n. Chr. markiert nur die Absetzung des letzten weströmischen Kaisers; das oströmische Reich (Byzanz) bestand als direkte Fortsetzung noch fast 1000 Jahre weiter bis 1453."},
+  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Das britische Weltreich war das erste, in dem 'die Sonne nie unterging'","text":"Diese Formulierung wurde bereits im 16./17. Jahrhundert für das spanische Kolonialreich Karls V. verwendet, das sich ebenfalls über alle bekannten Erdteile erstreckte."},
+  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Die Mongolen hinterließen nur Zerstörung ohne kulturellen Beitrag","text":"Das Mongolenreich förderte unter der 'Pax Mongolica' erheblich den Ost-West-Handel entlang der Seidenstraße sowie den Austausch von Technologien, Ideen und religiöser Toleranz."},
+  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Der Panama-Kanal wurde ohne größere menschliche Kosten gebaut","text":"Beim Bau, insbesondere während der gescheiterten ersten französischen Bauphase, starben schätzungsweise über 20.000 Arbeiter vor allem an Malaria und Gelbfieber."},
+  {"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Die Seidenstraße war eine einzelne, feste Route","text":"Tatsächlich handelte es sich um ein weitverzweigtes Netzwerk verschiedenster Land- und Seehandelsrouten zwischen Asien, dem Nahen Osten und Europa, die sich über Jahrhunderte veränderten."},
+  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Kolonialreiche wurden von der gesamten Bevölkerung des Mutterlandes einhellig unterstützt","text":"In vielen europäischen Ländern gab es zeitgenössisch durchaus kritische Stimmen und Debatten gegen koloniale Expansion, auch wenn diese oft eine gesellschaftliche Minderheitsposition blieben."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken praktizierten nur in geringem Umfang Menschenopfer","text":"Historiker sind sich über das genaue Ausmaß uneinig; spanische Chronisten übertrieben vermutlich zur moralischen Rechtfertigung der eigenen Eroberung, dennoch belegen Funde zehntausende Opfer über die Reichsgeschichte."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Die Inka kannten kein Schriftsystem","text":"Sie nutzten ein komplexes Knotenschriftsystem aus gefärbten Schnüren (Quipu) zur Verwaltung von Zahlen und vermutlich auch narrativen Informationen, dessen vollständige Entschlüsselung bis heute nicht gelungen ist."},
+  {"category":"Asien & Amerika","type":"Mythos","title":"Die Maya-Zivilisation verschwand plötzlich über Nacht","text":"Der Niedergang der klassischen Maya-Städte im 9. Jahrhundert vollzog sich über Jahrzehnte durch Dürre, Kriege und Ressourcenknappheit; zahlreiche Maya-Gemeinschaften bestehen bis heute fort."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Japan war während der Sakoku-Zeit vollständig isoliert","text":"Über den künstlichen Hafen Dejima unterhielt Japan durchgehend begrenzten, aber bedeutsamen Handel mit niederländischen und chinesischen Kaufleuten."},
+  {"category":"Asien & Amerika","type":"Mythos","title":"Dschingis Khans Grab wurde bereits gefunden","text":"Der genaue Bestattungsort des mongolischen Herrschers wurde der Überlieferung nach bewusst geheim gehalten; trotz jahrzehntelanger archäologischer Suche wurde sein Grab bis heute nicht identifiziert."},
+  {"category":"Asien & Amerika","type":"Mythos","title":"Die Chinesische Mauer ist ein einziges durchgehendes Bauwerk","text":"Tatsächlich besteht sie aus zahlreichen, über mehr als 2000 Jahre von verschiedenen Dynastien errichteten und oft nicht direkt verbundenen Mauerabschnitten."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Samurai folgten stets einem strengen, jahrhundertealten Ehrenkodex","text":"Der als 'Bushido' bekannte, stark idealisierte Verhaltenskodex wurde in seiner heute bekannten Form überwiegend erst in der Edo-Zeit und besonders im frühen 20. Jahrhundert systematisiert."},
+  {"category":"Asien & Amerika","type":"Kuriosum","title":"Die Terrakotta-Armee zeigt lauter identische Soldatenfiguren","text":"Jede der über 8.000 Tonfiguren weist individuell unterschiedliche Gesichtszüge, Frisuren und Ausrüstungsdetails auf – vermutlich nach realen Vorbildern der kaiserlichen Armee gestaltet."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Konfuzius war zu Lebzeiten ein hochgeehrter, einflussreicher Berater","text":"Zu Lebzeiten hatte er nur mäßigen politischen Erfolg und wechselnde Anstellungsverhältnisse; sein enormer Einfluss entfaltete sich vor allem postum über Jahrhunderte durch seine Schüler."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Indien war vor der britischen Kolonialherrschaft stets politisch geeint","text":"Der Subkontinent bestand über weite Teile seiner Geschichte aus zahlreichen unabhängigen Königreichen; größere reichsweite Einigungen wie Maurya oder Mogulreich waren eher die Ausnahme."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Gandhi war von Anfang an ein überzeugter Verfechter gewaltfreien Widerstands","text":"Seine Philosophie des gewaltfreien Widerstands (Satyagraha) entwickelte sich erst schrittweise während seiner Zeit als Anwalt in Südafrika, wo er zunächst für eine loyale Einbindung ins britische Empire eintrat."},
+  {"category":"Asien & Amerika","type":"Kuriosum","title":"Die Kamikaze-Taifune gegen die Mongolen waren einmaliger Zufall","text":"Bemerkenswerterweise zerstörten gleich zwei separate schwere Taifune 1274 und erneut 1281 jeweils die mongolischen Invasionsflotten kurz nach deren Ankunft vor Japan."},
+  {"category":"Asien & Amerika","type":"Mythos","title":"Die Opiumkriege wurden von China begonnen","text":"Die Kriege 1839–1860 gingen von militärischen Interventionen Großbritanniens und später Frankreichs aus, nachdem chinesische Behörden versucht hatten, den illegalen britischen Opiumhandel zu unterbinden."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Mansa Musa war nur ein regionaler Fürst von geringer Bedeutung","text":"Zeitgenössische arabische und europäische Quellen beschreiben ihn als einen der reichsten Menschen der damals bekannten Welt; sein Goldreichtum soll 1324 kurzzeitig den Goldpreis in Kairo destabilisiert haben."},
+  {"category":"Asien & Amerika","type":"Kuriosum","title":"Äthiopien wurde nie von einer europäischen Kolonialmacht erobert","text":"Äthiopien besiegte 1896 in der Schlacht von Adua eine italienische Invasionsarmee entscheidend und blieb damit neben Liberia die einzige afrikanische Nation, die ihre Unabhängigkeit dauerhaft bewahrte."},
+  {"category":"Legenden","type":"Mythos","title":"Wilhelm Tell war eine historisch verbürgte reale Person","text":"Es gibt keine zeitgenössischen Quellen für Wilhelm Tell aus dem angeblichen 14. Jahrhundert; die Geschichte des Apfelschusses erscheint erstmals rund 200 Jahre später in Schweizer Chroniken."},
+  {"category":"Legenden","type":"Kuriosum","title":"Die Curse of the Hope-Diamant brachte allen Besitzern Unglück","text":"Der berühmte blaue Diamant wird mit zahlreichen Unglücksgeschichten seiner früheren Besitzer in Verbindung gebracht – die meisten dieser Anekdoten lassen sich historisch nicht eindeutig belegen."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Kartoffeln waren in Europa von Anfang an ein beliebtes Grundnahrungsmittel","text":"Nach ihrer Einführung aus Amerika im 16. Jahrhundert wurden Kartoffeln in weiten Teilen Europas zunächst misstrauisch beäugt und teils sogar als giftig oder unrein abgelehnt."},
+  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Die Wikinger nutzten nur die berühmten Runensteine zur schriftlichen Kommunikation","text":"Neben monumentalen Runensteinen nutzten Wikinger auch Alltagsritzungen auf Holz und Knochen für private Nachrichten, von denen durch Fundorte wie Bergen zahlreiche Beispiele erhalten sind."},
+  {"category":"Moderne","type":"Kuriosum","title":"Die Internationale Raumstation ist das teuerste je gebaute Bauwerk","text":"Mit geschätzten Baukosten von über 150 Milliarden US-Dollar gilt die ISS gemeinhin als teuerstes von Menschen je errichtetes einzelnes Bauwerk der Geschichte."},
+  {"category":"Antike","type":"Kuriosum","title":"Das antike Rom hatte bereits ein ausgeklügeltes Fast-Food-System","text":"Sogenannte 'Thermopolien' – Straßenimbisse mit eingelassenen Vorratsgefäßen – waren in römischen Städten wie Pompeji weitverbreitet, da viele einfache Wohnungen über keine eigene Küche verfügten."},
+  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Schachspiel und Politik waren in der Frühen Neuzeit strikt getrennte Welten","text":"Am Hof Ludwigs XIV. und anderer Monarchen dienten öffentliche Schachpartien häufig als subtile diplomatische Machtdemonstrationen zwischen rivalisierenden Gesandtschaften."},
+  {"category":"Moderne","type":"Nuance","title":"Der Eiffelturm war von Anfang an bei den Parisern beliebt","text":"Beim Bau 1889 protestierten zahlreiche prominente Pariser Künstler und Intellektuelle in einem offenen Brief gegen den Turm als angebliche 'nutzlose und monströse' Verschandelung der Stadt."},
+  {"category":"Antike","type":"Mythos","title":"Die Bibliothek von Alexandria wurde an einem Tag verbrannt","text":"Es gab kein einzelnes Feuer, das die Bibliothek vernichtete. Wahrscheinlicher ist ein Verfall über Jahrhunderte: Brände, Bürgerkriege, ausbleibende Finanzierung und der Wegzug von Gelehrten. Bibliotheken sterben meist an Vernachlässigung, nicht an Flammen."},
+  {"category":"Antike","type":"Nuance","title":"Griechische Statuen waren strahlend weiß","text":"Sie waren bunt bemalt. Farbreste lassen sich mit ultraviolettem Licht und Spektroskopie nachweisen. Das Ideal des weißen Marmors entstand erst, als die Farbe längst verwittert war – und prägte dann rückwirkend das Bild der Antike."},
+  {"category":"Antike","type":"Kuriosum","title":"Römischer Beton wird im Meerwasser fester","text":"Römischer Beton mit Vulkanasche bildet im Kontakt mit Meerwasser Minerale, die Risse schließen. Manche Hafenanlagen stehen nach zweitausend Jahren noch – moderner Portlandbeton hält im Meer selten hundert."},
+  {"category":"Antike","type":"Nuance","title":"Gladiatorenkämpfe endeten fast immer tödlich","text":"Ausgebildete Gladiatoren waren teuer. Die Ausbildung dauerte Jahre, und ein toter Kämpfer bedeutete einen Totalverlust. Viele Kämpfe endeten daher vor dem Tod – was die Grausamkeit der Institution nicht mildert."},
+  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter hielt man die Erde für eine Scheibe","text":"Die Kugelgestalt war seit der Antike bekannt und im mittelalterlichen Europa gelehrte Überzeugung. Der Reichsapfel als Herrschaftszeichen bildet eine Kugel ab. Die Scheiben-Erzählung entstand größtenteils im 19. Jahrhundert."},
+  {"category":"Mittelalter","type":"Nuance","title":"Das Mittelalter war finster und stillstehend","text":"In diesen Jahrhunderten entstanden Universitäten, Buchhaltung, Brille, mechanische Uhr, Windmühle und Hochofen. Der Begriff 'finsteres Mittelalter' stammt von Humanisten, die sich selbst als Wiedererwecker der Antike darstellen wollten."},
+  {"category":"Mittelalter","type":"Mythos","title":"Der Keuschheitsgürtel stammt aus dem Mittelalter","text":"Die erhaltenen Exemplare in Museen stammen fast durchweg aus dem 18. und 19. Jahrhundert. Mehrere große Museen haben ihre Stücke inzwischen aus der Ausstellung genommen oder neu datiert."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Kolumbus wollte beweisen, dass die Erde rund ist","text":"Das war unstrittig. Der Streit ging um den Erdumfang: Die Gelehrten am spanischen Hof rechneten richtig und hielten die Strecke nach Asien für zu weit. Kolumbus rechnete falsch – und stieß auf einen Kontinent, mit dem niemand gerechnet hatte."},
+  {"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenverfolgung war ein Phänomen des Mittelalters","text":"Ihr Höhepunkt lag zwischen 1560 und 1630 – mitten in der Frühen Neuzeit, zeitgleich mit der wissenschaftlichen Revolution. Aufklärung und Verfolgung schließen sich historisch weniger aus, als man annehmen möchte."},
+  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Die Tulpenmanie ruinierte die Niederlande","text":"Die Preise für Tulpenzwiebeln stiegen 1636/37 tatsächlich stark und brachen ein. Der wirtschaftliche Schaden blieb jedoch begrenzt und betraf vor allem einen kleinen Kreis von Händlern – die Erzählung vom nationalen Ruin stammt aus einem populären Buch des 19. Jahrhunderts."},
+  {"category":"Wissenschaft & Erfindungen","type":"Mythos","title":"Ein Apfel fiel Newton auf den Kopf","text":"Newton selbst erzählte von einem fallenden Apfel als Anlass zum Nachdenken über die Schwerkraft – nicht davon, getroffen worden zu sein. Die Geschichte stammt aus Gesprächen seiner letzten Lebensjahre."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Edison erfand die Glühbirne","text":"Vor ihm arbeiteten mehrere Erfinder an Glühlampen. Edisons Leistung lag in einer brauchbaren Kohlefaser, im systematischen Testen tausender Materialien und vor allem im Aufbau eines ganzen Stromversorgungssystems – ohne das die Lampe nutzlos gewesen wäre."},
+  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Rosalind Franklin und die Doppelhelix","text":"Die entscheidende Röntgenaufnahme 'Photo 51' stammte aus Franklins Labor und wurde Watson ohne ihr Wissen gezeigt. Der Nobelpreis 1962 ging an Watson, Crick und Wilkins; Franklin war 1958 gestorben und wurde nicht posthum berücksichtigt."},
+  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Semmelweis wurde für das Händewaschen gefeiert","text":"Ignaz Semmelweis senkte die Sterblichkeit bei Wöchnerinnen drastisch, indem er Händedesinfektion anordnete. Seine Kollegen lehnten ihn ab; er starb 1865 in einer Anstalt. Die Keimtheorie, die ihn bestätigt hätte, setzte sich erst danach durch."},
+  {"category":"Moderne","type":"Nuance","title":"Die Titanic galt als unsinkbar","text":"Die Werft warb nie mit diesem Wort. Die Formulierung stammt aus Fachzeitschriften und wurde vor allem nach dem Untergang zur festen Wendung – ein Fall, in dem die Nachwelt einen Superlativ erfindet, um die Ironie zu vergrößern."},
+  {"category":"Moderne","type":"Mythos","title":"Einstein war schlecht in Mathematik","text":"Er war ein sehr guter Schüler in Mathematik und Physik. Der Irrtum entstand vermutlich durch ein Schweizer Notensystem, in dem die 6 die beste Note ist – gelesen mit deutschem Maßstab wird aus einer Bestnote ein Ungenügend."},
+  {"category":"Moderne","type":"Nuance","title":"Der Erste Weltkrieg begann wegen eines Attentats","text":"Das Attentat von Sarajevo war der Auslöser, nicht die Ursache. Ohne Bündnissysteme, Aufrüstung, imperiale Rivalität und die Erwartung eines kurzen Krieges wäre daraus kaum ein Weltkrieg geworden."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Die Chinesische Mauer ist aus dem All zu sehen","text":"Mit bloßem Auge aus der Erdumlaufbahn ist sie praktisch nicht zu erkennen – sie ist schmal und farblich kaum von der Umgebung abgesetzt. Mehrere Raumfahrer haben das ausdrücklich bestätigt."},
+  {"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken hielten Cortés für einen Gott","text":"Die Erzählung stammt weitgehend aus spanischen Quellen, die Jahrzehnte später entstanden, und aus indigenen Berichten unter spanischer Herrschaft. Ob Moctezuma so dachte, ist in der Forschung höchst umstritten."},
+  {"category":"Asien & Amerika","type":"Kuriosum","title":"Das Inkareich kannte keine Schrift – aber eine Buchhaltung","text":"Mit Quipus, geknoteten Schnüren, verwalteten die Inka Steuern, Vorräte und Bevölkerungszahlen über ein Reich von tausenden Kilometern. Wie viel darüber hinaus in ihnen gespeichert war, ist bis heute nicht vollständig entschlüsselt."},
+  {"category":"Legenden","type":"Mythos","title":"Wikinger trugen Hörnerhelme","text":"Kein einziger archäologischer Fund belegt sie. Das Bild stammt aus der Ausstattung von Wagner-Aufführungen im 19. Jahrhundert und aus der Romantik."},
+  {"category":"Legenden","type":"Nuance","title":"Marie-Antoinette sagte 'Sollen sie doch Kuchen essen'","text":"Der Satz taucht bei Rousseau auf, als sie ein Kind war und noch nicht in Frankreich lebte. Zugeschrieben wurde er ihr erst später – ein Beispiel dafür, wie politische Propaganda Zitate wandern lässt."},
+  {"category":"Legenden","type":"Mythos","title":"Napoleon war auffallend klein","text":"Drei französische Quellen – sein Kammerdiener, General Gourgaud und sein Leibarzt – nennen gut 5 Fuß 2 Zoll. Der französische Zoll maß damals 2,7 cm, der englische 2,54 cm. Umgerechnet ergibt das etwa 1,67 bis 1,70 Meter und damit für einen Franzosen seiner Zeit eher leicht über dem Durchschnitt. Der Irrtum entstand durch die Verwechslung der Maßsysteme, verstärkt durch britische Karikaturen."},
+  {"category":"Legenden","type":"Kuriosum","title":"Der kürzeste Krieg der Geschichte","text":"Der britisch-sansibarische Krieg begann am 27. August 1896 um 9 Uhr und war vor 9:45 Uhr entschieden – je nach Zählung zwischen 38 und 45 Minuten. Auf sansibarischer Seite gab es rund 500 Opfer; die Kürze des Krieges sagt nichts über seine Härte."}
 ];
+const VERTIEFUNGEN = [
+  {
+    "id": "neolithische-revolution",
+    "titel": "Die Neolithische Revolution",
+    "epoche": "steinzeit",
+    "jahr": -9500,
+    "zeitraum": "ab ca. 9500 v. Chr.",
+    "region": "Fruchtbarer Halbmond",
+    "leitsatz": "Der folgenreichste Umbruch der Menschheitsgeschichte war kein Krieg und keine Erfindung, sondern eine veränderte Art, an Nahrung zu kommen.",
+    "vorgeschichte": "Über Hunderttausende von Jahren lebten Menschen als Jäger und Sammler in kleinen, beweglichen Gruppen. Am Ende der letzten Eiszeit wurde das Klima wärmer und beständiger. Im Fruchtbaren Halbmond sammelten die Natufier bereits intensiv Wildpflanzen und besaßen steinerne Sicheln – sie ernteten, bevor sie säten.",
+    "verlauf": "Etwa ab 9500 v. Chr. gingen Menschen im Nahen Osten dazu über, Wildpflanzen gezielt anzubauen und Wildtiere zu halten. Um 12.000 bis 11.000 Jahre vor heute lagen domestizierte Pflanzenformen vor, um 10.000 Jahre vor heute domestizierte Tiere. Im östlichen Fruchtbaren Halbmond begannen Menschen, Ziegen und Schafe zu halten – Gazellen dagegen nicht, obwohl sie zuvor die Hauptbeute gewesen waren. Bis 7000 v. Chr. war eine dörfliche, bäuerliche Lebensweise im Zweistromland und in der Levante fest etabliert.",
+    "folgen": "Sesshaftigkeit erlaubte Vorratshaltung, und Vorräte erlaubten Ungleichheit: Wer speichern kann, kann besitzen, verteilen und beherrschen. Feste Siedlungen, größere Bevölkerungen und komplexere Sozialordnungen folgten. Der Ackerbau entstand später unabhängig auch in China, Mesoamerika, den Anden und Neuguinea – es war kein einmaliger Geistesblitz, sondern eine mehrfach gefundene Antwort.",
+    "strittig": "Lange galt: Ackerbau ernährte mehr Menschen, also wuchs die Bevölkerung. Die Forschung des späten 20. Jahrhunderts kehrte das teilweise um – die Bevölkerung stieg deutlich erst, nachdem die Nahrungsproduktion etabliert war. Ob Ackerbau das Leben zunächst überhaupt verbesserte, ist umstritten: Skelettfunde deuten auf einseitigere Ernährung, mehr Krankheiten und härtere Arbeit als bei Jägern und Sammlern.",
+    "zahlen": [
+      {
+        "wert": "ca. 9500 v. Chr.",
+        "was": "Beginn der Domestikation im Nahen Osten"
+      },
+      {
+        "wert": "7000 v. Chr.",
+        "was": "Bäuerliche Dörfer in Mesopotamien und der Levante fest etabliert"
+      },
+      {
+        "wert": "mind. 5",
+        "was": "unabhängige Entstehungsherde des Ackerbaus weltweit"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Origins of agriculture; Neolithic",
+      "Scientific Reports (Nature): Natufian Epipalaeolithic and Pre-Pottery Neolithic"
+    ]
+  },
+  {
+    "id": "erfindung-schrift",
+    "titel": "Die Erfindung der Schrift",
+    "epoche": "fruehe-hochkulturen",
+    "jahr": -3300,
+    "zeitraum": "ca. 3300–3200 v. Chr.",
+    "region": "Uruk, Südmesopotamien",
+    "leitsatz": "Die Schrift wurde nicht erfunden, um Gedichte festzuhalten, sondern um Gerste zu zählen.",
+    "vorgeschichte": "Im vierten Jahrtausend v. Chr. wuchsen in Südmesopotamien Städte mit gemischter Bevölkerung rasch an. Zur Verwaltung dienten zunächst Tonmarken, mit denen Warenmengen abgebildet wurden. Je größer die Verwaltung, desto weniger reichte dieses System.",
+    "verlauf": "Um 3300 v. Chr. entstanden die ersten Tontafeln, die wirtschaftliche Angaben mit Bildzeichen und Zahlen festhielten. Ton war überall verfügbar, billig und haltbar. Aus den Bildzeichen wurden keilförmige Eindrücke, erzeugt mit einem Griffel aus Schilfrohr – daher der moderne Name Keilschrift, nach dem lateinischen cuneus für Keil. Erfunden wurde sie mit großer Wahrscheinlichkeit von sumerischsprachigen Menschen im Stadtgebiet von Uruk, und zwar für Verwaltungszwecke.",
+    "folgen": "Erst mit der Schrift wird Wissen über die Lebensspanne eines Menschen hinaus speicherbar. Verwaltung, Recht, Vertrag, Kalender, Literatur und schließlich Geschichtsschreibung selbst setzen sie voraus. Die Grenze zwischen Vorgeschichte und Geschichte ist nichts anderes als die Grenze zwischen ungeschriebener und geschriebener Überlieferung.",
+    "strittig": "Die frühesten Tafeln lassen sich nur eingeschränkt lesen, weil viele Zeichen noch nicht eindeutig einer Sprache zuzuordnen sind. Ob die Uruk-Archive den tatsächlichen Anfang zeigen oder bereits eine spätere Phase, in der die Schrift sich durchsetzte, ist offen.",
+    "zahlen": [
+      {
+        "wert": "ca. 3300 v. Chr.",
+        "was": "früheste bekannte beschriftete Tontafeln"
+      },
+      {
+        "wert": "über 250",
+        "was": "europäische Städte mit Druckerpresse 1500 – zum Vergleich, wie lange Schriftverbreitung dauerte"
+      }
+    ],
+    "quellen": [
+      "The Metropolitan Museum of Art: The Origins of Writing",
+      "Encyclopaedia Britannica: Cuneiform"
+    ]
+  },
+  {
+    "id": "bronzezeitkollaps",
+    "titel": "Der Zusammenbruch der Bronzezeit",
+    "epoche": "fruehe-hochkulturen",
+    "jahr": -1200,
+    "zeitraum": "um 1200 v. Chr.",
+    "region": "Östliches Mittelmeer und Vorderasien",
+    "leitsatz": "Eine vernetzte Welt aus Königreichen brach binnen weniger Jahrzehnte zusammen – und die bekannteste Erklärung ist vermutlich die schwächste.",
+    "vorgeschichte": "Um 1300 v. Chr. war das östliche Mittelmeer ein dicht verflochtenes System: mykenische Paläste, das Hethiterreich, Ägypten, die syrisch-levantinischen Städte. Bronze verlangte Zinn und Kupfer aus weit entfernten Quellen – der Wohlstand hing an funktionierendem Fernhandel.",
+    "verlauf": "Innerhalb weniger Jahrzehnte um 1200 v. Chr. endeten die mykenischen Paläste, fiel das Hethiterreich, wurden Handelsstädte zerstört. Ägyptische Reliefs und Texte machen dafür die 'Seevölker' verantwortlich. Baumringdaten und Isotopenmessungen zeigen jedoch eine mehrjährige schwere Dürre um 1198–1196 v. Chr., zeitgleich mit dem hethitischen Zusammenbruch, eingebettet in eine rund 300 Jahre andauernde Verschiebung zu trockenerem, kühlerem Klima.",
+    "folgen": "Schrift ging in Teilen des Raums verloren – die mykenische Linear-B-Schrift verschwand. Es folgten Jahrhunderte, die als 'dunkle' gelten, weil kaum Quellen überliefert sind. Aus den Trümmern gingen später die griechischen Stadtstaaten, das phönizische Alphabet und Israel hervor.",
+    "strittig": "Die Rolle der Seevölker ist umstritten. Die neuere Forschung liest den Zusammenbruch als Systemversagen: Dürre und Missernten führten zu Hunger, Hunger zu Wanderung und Krieg, Krieg zum Abriss der Handelsketten – und jedes Glied verstärkte das nächste. Wer eine einzelne Ursache sucht, wird der Quellenlage nicht gerecht.",
+    "zahlen": [
+      {
+        "wert": "1198–1196 v. Chr.",
+        "was": "belegte mehrjährige Dürre, zeitgleich mit dem Ende des Hethiterreichs"
+      },
+      {
+        "wert": "ca. 300 Jahre",
+        "was": "Dauer der klimatischen Verschiebung zu trockeneren Bedingungen"
+      }
+    ],
+    "quellen": [
+      "Nature: Severe multi-year drought coincident with Hittite collapse around 1198–1196 BC",
+      "Encyclopaedia Britannica: Sea People",
+      "Antiquity (Cambridge): Getting closer to the Late Bronze Age collapse"
+    ]
+  },
+  {
+    "id": "alexanderzug",
+    "titel": "Alexanderzug und Hellenismus",
+    "epoche": "antike",
+    "jahr": -334,
+    "zeitraum": "334–323 v. Chr.",
+    "region": "Von Makedonien bis zum Indus",
+    "leitsatz": "Ein Feldzug von elf Jahren verschob die Grenze griechischer Kultur um mehrere tausend Kilometer nach Osten – und die Folgen überdauerten den Eroberer um Jahrhunderte.",
+    "vorgeschichte": "Das Achämenidenreich war das größte Reich seiner Zeit und hatte die griechischen Stadtstaaten zweimal angegriffen. Alexanders Vater Philipp II. hatte Makedonien zur Militärmacht gemacht und Griechenland unterworfen.",
+    "verlauf": "334 v. Chr. setzte Alexander nach Asien über. Am Granikos und bei Issos schlug er die Truppen des Großkönigs Dareios III. 332 nahm er Syrien, Phönizien, Tyros und Ägypten, wo er Alexandria gründete. Bis 330 hatte er das gesamte Achämenidenreich erobert, und er zog weiter bis an den Indus. Am 13. Juni 323 starb er mit 33 Jahren in Babylon.",
+    "folgen": "Aus dem Zerfall seines Reiches gingen die hellenistischen Königreiche hervor – das makedonische, das seleukidische, das ptolemäische. In ihnen verband sich Griechisches mit Persischem, Semitischem und Ägyptischem. Griechisch wurde für Jahrhunderte die Verkehrssprache des östlichen Mittelmeers; das Neue Testament ist auf Griechisch geschrieben. Bis nach Baktrien und Indien reichten hellenistische Einflüsse.",
+    "strittig": "Ob Alexander eine 'Verschmelzung der Völker' anstrebte oder pragmatisch Herrschaft sicherte, ist eine alte Streitfrage. Er förderte Mischehen und griechische Kultur, behielt aber große Teile der achämenidischen Verwaltung bei und übernahm östliche Hofformen – was bei seinen makedonischen Offizieren auf Widerstand stieß.",
+    "zahlen": [
+      {
+        "wert": "334–330 v. Chr.",
+        "was": "Eroberung des gesamten Achämenidenreichs"
+      },
+      {
+        "wert": "33",
+        "was": "Lebensjahre Alexanders"
+      },
+      {
+        "wert": "13. Juni 323 v. Chr.",
+        "was": "Tod in Babylon"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Alexander the Great; Hellenistic Age"
+    ]
+  },
+  {
+    "id": "seidenstrasse",
+    "titel": "Wie die Seidenstraße entstand",
+    "epoche": "antike",
+    "jahr": -138,
+    "zeitraum": "ab 138 v. Chr.",
+    "region": "China und Zentralasien",
+    "leitsatz": "Die berühmteste Handelsroute der Geschichte begann als gescheiterte diplomatische Mission.",
+    "vorgeschichte": "Die Han-Dynastie stand unter Druck der Xiongnu, eines nomadischen Reitervolks im Norden. Kaiser Wudi suchte Verbündete gegen sie und richtete den Blick nach Westen.",
+    "verlauf": "138 v. Chr. schickte Wudi den Gesandten Zhang Qian zu den Yuezhi in Zentralasien. Zhang Qian geriet in Gefangenschaft der Xiongnu und blieb dort zehn Jahre. Er erreichte sein Ziel dennoch und kehrte nach dreizehn Jahren zurück – ohne das Bündnis, aber mit umfassenden Kenntnissen über Parthien, Indien und die Staaten Zentralasiens. Sein Bericht brachte China erstmals in Kontakt mit den hellenistischen Außenposten, die Alexander hinterlassen hatte. Ab etwa 112 v. Chr. konnte China Expeditionen nach Zentralasien entsenden; Reisende waren bis zur Wüste Taklamakan geschützt. In dieser Zeit entstanden die Routen, die später gemeinsam Seidenstraße genannt wurden.",
+    "folgen": "Nach China kamen bessere Pferde, Weintrauben und Luzerne; nach Westen ging Seide. Wichtiger als die Waren war der Austausch von Techniken, Religionen und Krankheitserregern. Der Buddhismus erreichte China über diese Wege.",
+    "strittig": "Der Begriff 'Seidenstraße' stammt erst aus dem 19. Jahrhundert und suggeriert eine einzelne Route – tatsächlich handelte es sich um ein wechselndes Netz von Wegen, auf denen Waren meist in vielen kurzen Etappen weitergereicht wurden, nicht in einer Karawane von China nach Rom.",
+    "zahlen": [
+      {
+        "wert": "13 Jahre",
+        "was": "Dauer von Zhang Qians Mission, davon 10 in Gefangenschaft"
+      },
+      {
+        "wert": "ab 112 v. Chr.",
+        "was": "regelmäßige Han-Expeditionen nach Zentralasien"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Zhang Qian; Silk Road; History of China – The Han dynasty"
+    ]
+  },
+  {
+    "id": "roemische-republik",
+    "titel": "Das Ende der Römischen Republik",
+    "epoche": "antike",
+    "jahr": -27,
+    "zeitraum": "49–27 v. Chr.",
+    "region": "Rom und Mittelmeerraum",
+    "leitsatz": "Die Republik endete nicht mit ihrer Abschaffung, sondern damit, dass jemand sie dem Namen nach bewahrte.",
+    "vorgeschichte": "Im 1. Jahrhundert v. Chr. war Rom Herr des Mittelmeers, wurde aber von einer Adelsschicht regiert, deren Misswirtschaft offen zutage lag. Die eigentliche Frage war, ob diese Herrschaft fortbestehen oder durch eine Alleinherrschaft ersetzt würde – beide Wege führten durch Bürgerkrieg.",
+    "verlauf": "Caesar errichtete eine Diktatur und begann politische und soziale Reformen; 44 v. Chr. wurde er ermordet. Octavian verbündete sich mit Marcus Antonius und Lepidus zum zweiten Triumvirat, das rasch zerfiel. 31 v. Chr. besiegte Octavian Antonius und Kleopatra bei Actium, 30 v. Chr. war der Krieg entschieden. 27 v. Chr. wurde Octavian zum princeps, zum 'ersten Bürger'.",
+    "folgen": "Der Prinzipat verband monarchische Macht mit republikanischen Formen. Octavian – nun Augustus – wusste, dass die politische Klasse ihn nur als Beender der Bürgerkriege akzeptieren würde, wenn er seine Alleinherrschaft hinter Rückgriffen auf die Tradition verbarg. Senat, Ämter und Wahlen blieben bestehen; die Entscheidungen fielen anderswo.",
+    "strittig": "Ob 27 v. Chr. ein sinnvolles Enddatum ist, wird bestritten. Manche setzen das Ende der Republik schon bei Caesars Diktatur oder gar bei den Gracchen an; andere betonen, dass republikanische Institutionen noch lange real wirkten.",
+    "zahlen": [
+      {
+        "wert": "44 v. Chr.",
+        "was": "Ermordung Caesars"
+      },
+      {
+        "wert": "31 v. Chr.",
+        "was": "Seeschlacht bei Actium"
+      },
+      {
+        "wert": "27 v. Chr.",
+        "was": "Octavian wird princeps – traditionelles Ende der Republik"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Roman Republic; Augustus; Roman Empire"
+    ]
+  },
+  {
+    "id": "ende-westrom",
+    "titel": "476 – das Ende, das keines war",
+    "epoche": "antike",
+    "jahr": 476,
+    "zeitraum": "5. Jahrhundert",
+    "region": "Westliches Mittelmeer",
+    "leitsatz": "Das berühmteste Datum der Weltgeschichte markiert eine Absetzung, die Zeitgenossen kaum bemerkten.",
+    "vorgeschichte": "Im 5. Jahrhundert stand das Weströmische Reich unter dem Druck von Wanderungsbewegungen und Einfällen. Hinzu kamen innere Ursachen: Korruption, Machtmissbrauch, schlecht ausgerüstete und undisziplinierte Truppen und die Abwendung der städtischen Eliten vom öffentlichen Dienst.",
+    "verlauf": "Der römische Heermeister Orestes stürzte Kaiser Julius Nepos und setzte seinen Sohn Romulus Augustulus ein. Als Orestes sein Versprechen brach, den Anführern seiner Truppen Land in Italien zu geben, erhob sich Odoaker gegen ihn und setzte 476 Romulus Augustulus ab. Odoaker beanspruchte keinen Kaisertitel, sondern regierte Italien und erkannte formal die Oberhoheit des oströmischen Kaisers Zenon an.",
+    "folgen": "Im Osten bestand das Römische Reich noch fast tausend Jahre weiter. Im Westen bestanden römisches Recht, Latein, Verwaltungsformen und die Kirche fort – die Nachfolgereiche verstanden sich vielfach als Fortsetzer, nicht als Zerstörer.",
+    "strittig": "Ob 476 überhaupt ein Bruch war, ist die zentrale Debatte. Ob Odoaker eher Befehlshaber eines römischen Heeres oder Anführer eines germanischen Verbands war, ließ sich schon damals nicht mehr klar sagen. Die Forschung streitet, ob man von 'Untergang' oder von 'Transformation' sprechen sollte – das Datum stammt aus späterer Geschichtsschreibung, nicht aus dem Bewusstsein der Zeitgenossen.",
+    "zahlen": [
+      {
+        "wert": "476",
+        "was": "Absetzung des Romulus Augustulus"
+      },
+      {
+        "wert": "1453",
+        "was": "Ende des oströmischen Reiches – fast tausend Jahre später"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Odoacer; Why did the Roman Empire fall?; Barbarian invasions"
+    ]
+  },
+  {
+    "id": "islamische-expansion",
+    "titel": "Die frühislamische Expansion",
+    "epoche": "mittelalter",
+    "jahr": 632,
+    "zeitraum": "632–750",
+    "region": "Von Spanien bis Zentralasien",
+    "leitsatz": "In gut hundert Jahren entstand ein Reich, das von der Iberischen Halbinsel bis an die Grenzen Chinas reichte.",
+    "vorgeschichte": "Das Byzantinische und das Sasanidische Reich hatten sich in jahrzehntelangen Kriegen gegenseitig erschöpft. Auf der Arabischen Halbinsel entstand mit dem Islam eine neue politische und religiöse Ordnung.",
+    "verlauf": "Nach dem Tod Mohammeds 632 begann eine rasche Ausdehnung. Zwischen 634 und 870 wandelte sich der Islam vom Kennzeichen einer kleinen arabischen Herrschaftsschicht zur bestimmenden Religion eines Reiches, das vom westlichen Mittelmeer bis nach Zentralasien reichte. Die Umayyaden (661–750) mit Zentrum in Damaskus setzten die Ausdehnung fort und begründeten eine dynastische Herrschaft, die innerislamisch auf Widerstand stieß. 732 schlug Karl Martell bei Tours ein umayyadisches Heer.",
+    "folgen": "Über Jahrhunderte wurde die islamische Welt zum Vermittler und Weiterentwickler antiken Wissens – Mathematik, Astronomie, Medizin und Philosophie erreichten das lateinische Europa vielfach über arabische Übersetzungen und Kommentare. Al-Andalus blieb bis 1492 muslimisch geprägt.",
+    "strittig": "Die Bedeutung der Schlacht von Tours 732 wird in der älteren Literatur stark überhöht. Sie gilt als Wendepunkt, weil sie die umayyadische Ausdehnung nach Norden stoppte – der Rückzug hatte aber auch Ursachen weit im Süden: Ein großer Amazigh-Aufstand in Nordafrika hatte massive Rückwirkungen auf Al-Andalus.",
+    "zahlen": [
+      {
+        "wert": "632",
+        "was": "Tod Mohammeds, Beginn der Expansion"
+      },
+      {
+        "wert": "661–750",
+        "was": "Umayyaden-Kalifat mit Zentrum Damaskus"
+      },
+      {
+        "wert": "732",
+        "was": "Schlacht von Tours"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Islamic world – Conversion and crystallization 634–870; Caliphate; Battle of Tours; Spain – Muslim Spain"
+    ]
+  },
+  {
+    "id": "mongolisches-reich",
+    "titel": "Das Mongolische Weltreich",
+    "epoche": "mittelalter",
+    "jahr": 1206,
+    "zeitraum": "1206–14. Jahrhundert",
+    "region": "Von Ostasien bis Osteuropa",
+    "leitsatz": "Das größte zusammenhängende Landreich der Geschichte machte Eurasien für ein Jahrhundert durchlässig – für Waren, Wissen und für die Pest.",
+    "vorgeschichte": "Die mongolischen Stämme waren zerstritten. Temüdschin einte sie und wurde 1206 als Dschingis Khan zum Herrscher ausgerufen.",
+    "verlauf": "Von 1206 an dehnte sich das Reich in alle Richtungen aus. Auf seinem Höhepunkt umfasste es etwa 9 Millionen Quadratmeilen – vom Pazifik bis an die Donau und den Persischen Golf. Chinesische, islamische, iranische, zentralasiatische und nomadische Kulturen standen erstmals unter einer Herrschaft. Dschingis Khan starb 1227.",
+    "folgen": "Unter der Pax Mongolica wurden Handelswege geschützt, Zölle vereinheitlicht und Passierscheine (paiza) ausgegeben. Papierherstellung, Druck, Schwarzpulver und Kompass wanderten nach Westen; islamische Astronomie, Medizin, Mathematik und Kartografie nach Osten. Dieselben Wege trugen im 14. Jahrhundert die Pest quer über Eurasien – und untergruben damit die mongolische Herrschaft selbst.",
+    "strittig": "Die Bilanz ist zwiespältig und wird es bleiben: Die Eroberungen waren außerordentlich gewaltsam, ganze Städte wurden ausgelöscht. Zugleich ermöglichte dasselbe Reich einen Austausch von bis dahin unerreichter Sicherheit und Reichweite. Beide Befunde stehen nebeneinander, ohne sich aufzuheben.",
+    "zahlen": [
+      {
+        "wert": "1206",
+        "was": "Dschingis Khan einigt die mongolischen Stämme"
+      },
+      {
+        "wert": "ca. 9 Mio. Quadratmeilen",
+        "was": "größte Ausdehnung – größtes zusammenhängendes Landreich der Geschichte"
+      },
+      {
+        "wert": "1227",
+        "was": "Tod Dschingis Khans"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Mongol empire; Genghis Khan; Pax Mongolica",
+      "The Metropolitan Museum of Art: The Legacy of Genghis Khan"
+    ]
+  },
+  {
+    "id": "schwarzer-tod",
+    "titel": "Der Schwarze Tod",
+    "epoche": "mittelalter",
+    "jahr": 1347,
+    "zeitraum": "1347–1351",
+    "region": "Europa, Nordafrika, Vorderasien",
+    "leitsatz": "Die größte Katastrophe der europäischen Geschichte verbesserte die Lage der Überlebenden – ein Befund, der schwer auszuhalten ist.",
+    "vorgeschichte": "Die Handelswege der Pax Mongolica verbanden Ostasien und das Mittelmeer. Europa war um 1300 dicht besiedelt, die Böden ausgelaugt; Hungersnöte hatten die Bevölkerung geschwächt.",
+    "verlauf": "Zwischen 1347 und 1351 starben schätzungsweise 25 Millionen Menschen in Europa. Die Sterblichkeit schwankte stark nach Region – Schätzungen reichen von 25 bis 70 Prozent, insgesamt etwa 30 bis 60 Prozent der Bevölkerung Europas. In Paris starb rund die Hälfte der 100.000 Einwohner. Städte traf es härter als das Land, weil die Ansteckungsgefahr größer war; unter den Klostergemeinschaften waren die Opferzahlen am höchsten.",
+    "folgen": "Der massive Bevölkerungsverlust erzeugte einen drastischen Arbeitskräftemangel. Lohnarbeiter forderten höhere Löhne, und bis in die 1370er Jahre stiegen die Löhne stark. Bauern verlangten bessere Pachtbedingungen. Nach der Epidemie verbesserten sich die Lebensbedingungen, insbesondere die Ernährungsqualität – und zwar über alle sozialen Schichten hinweg.",
+    "strittig": "Wie stark die Pest die Auflösung der Leibeigenschaft in Westeuropa vorantrieb, ist umstritten; in Osteuropa verstärkte sich die Abhängigkeit der Bauern im selben Zeitraum sogar. Auch die Gesamtzahl der Opfer beruht auf Schätzungen mit erheblicher Unsicherheit.",
+    "zahlen": [
+      {
+        "wert": "ca. 25 Mio.",
+        "was": "geschätzte Tote in Europa 1347–1351"
+      },
+      {
+        "wert": "30–60 %",
+        "was": "Anteil der europäischen Bevölkerung"
+      },
+      {
+        "wert": "1370er",
+        "was": "Jahrzehnt der stärksten Lohnsteigerungen"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Black Death; Black Death – Causes and Effects",
+      "Science (AAAS): From Black Death to fatal flu"
+    ]
+  },
+  {
+    "id": "zheng-he",
+    "titel": "Zheng He und die abgebrochene Seemacht",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1405,
+    "zeitraum": "1405–1433",
+    "region": "Indischer Ozean, Ostafrika",
+    "leitsatz": "Bevor Europa aufbrach, hatte China die größte Flotte der Welt – und stellte die Fahrten ein.",
+    "vorgeschichte": "Der Yongle-Kaiser der Ming-Dynastie wollte Chinas Macht und Kultur nach außen sichtbar machen und fremde Kostbarkeiten an den Hof holen. Mit Zheng He, einem muslimischen Eunuchen am Kaiserhof, stand ein Befehlshaber bereit.",
+    "verlauf": "1405 lief die erste Fahrt aus: rund 27.800 Mann auf 317 Schiffen, darunter 62 sogenannte Schatzschiffe voller Geschenke für Staatsoberhäupter. Zwischen 1405 und 1433 führte Zheng He sieben Fahrten durch Südostasien und über den Indischen Ozean – bis an die Küste Indiens, in den Persischen Golf, ans Rote Meer und an die Ostküste Afrikas. Die siebte und letzte Fahrt verließ China im Winter 1431. Zheng He starb im Frühjahr 1433 in Calicut; die Flotte kehrte im Sommer zurück.",
+    "folgen": "Nach dem Tod des Yongle-Kaisers 1424 setzte sein Nachfolger, der Hongxi-Kaiser, die Seeexpeditionen aus. Zheng He wurde Garnisonskommandant in Nanjing mit der Aufgabe, seine Truppen aufzulösen. China zog sich vom Fernseehandel als Staatsunternehmen zurück – wenige Jahrzehnte, bevor portugiesische Karavellen in denselben Gewässern erschienen.",
+    "strittig": "Warum China abbrach, wird bis heute diskutiert: Kosten, Hofintrigen zwischen Eunuchen und Beamtenschaft, die Verlagerung der Aufmerksamkeit auf die Nordgrenze. Die populäre Deutung, China habe sich damit die Weltherrschaft entgehen lassen, ist eine Rückprojektion – die Fahrten dienten der Repräsentation und dem Tributsystem, nicht der Kolonisierung.",
+    "zahlen": [
+      {
+        "wert": "317",
+        "was": "Schiffe der ersten Fahrt, davon 62 Schatzschiffe"
+      },
+      {
+        "wert": "ca. 27.800",
+        "was": "Mann Besatzung der ersten Fahrt"
+      },
+      {
+        "wert": "7",
+        "was": "Fahrten zwischen 1405 und 1433"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Zheng He; Zheng He's Achievements"
+    ]
+  },
+  {
+    "id": "buchdruck",
+    "titel": "Der Buchdruck",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1450,
+    "zeitraum": "ab ca. 1450",
+    "region": "Mainz und ganz Europa",
+    "leitsatz": "In fünfzig Jahren stieg die Zahl der Bücher in Europa von einigen Tausend auf rund neun Millionen.",
+    "vorgeschichte": "Bücher wurden von Hand abgeschrieben. Ihre Zahl in Europa ließ sich in Tausenden zählen, ihr Preis war für die meisten unerschwinglich. Beweglichen Druck kannte man in Ostasien bereits, ohne dass er sich dort in gleicher Weise durchsetzte.",
+    "verlauf": "Um 1450 entwickelte Johannes Gutenberg in Mainz ein Verfahren, Text von beweglichen Metalllettern zu drucken. Sein wichtigster Beitrag war vermutlich das verstellbare Gießinstrument, mit dem sich Lettern verschiedener Größe genau und in großer Zahl herstellen ließen. 1455 druckte er die nach ihm benannte Bibel. Bis zum Jahr 1500 gab es in über 250 europäischen Städten Druckerpressen.",
+    "folgen": "Bis 1500 waren rund 9 Millionen Bücher in etwa 40.000 Titeln entstanden. In weniger als vierzig Jahren fiel der Buchpreis um zwei Drittel. Lesen wurde erschwinglich, Wissen vergleichbar, Irrtum überprüfbar – und Widerspruch verbreitbar. Bücher aus der Zeit zwischen 1455 und 1501 heißen Inkunabeln, 'Wiegendrucke'.",
+    "strittig": "Ob der Druck Ursache oder Verstärker der folgenden Umbrüche war, wird diskutiert. Unstrittig ist, dass ohne ihn weder die Reformation noch die wissenschaftliche Revolution die Geschwindigkeit erreicht hätten, die sie erreichten.",
+    "zahlen": [
+      {
+        "wert": "ca. 9.000.000",
+        "was": "Bücher in Europa im Jahr 1500, nach 50 Jahren Druck"
+      },
+      {
+        "wert": "ca. 40.000",
+        "was": "verschiedene Titel bis 1500"
+      },
+      {
+        "wert": "über 250",
+        "was": "Städte mit Druckerpresse bis 1500"
+      },
+      {
+        "wert": "−2/3",
+        "was": "Rückgang des Buchpreises in unter 40 Jahren"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Johannes Gutenberg; History of publishing – The age of early printing 1450–1550; Incunabula",
+      "Library of Congress: Incunabula"
+    ]
+  },
+  {
+    "id": "fall-konstantinopel",
+    "titel": "Der Fall Konstantinopels",
+    "epoche": "mittelalter",
+    "jahr": 1453,
+    "zeitraum": "29. Mai 1453",
+    "region": "Bosporus",
+    "leitsatz": "Mauern, die tausend Jahre gehalten hatten, fielen in 55 Tagen – weil sich die Technik geändert hatte.",
+    "vorgeschichte": "Das Byzantinische Reich war auf die Stadt und wenig Umland zusammengeschrumpft. Mehmed II. ließ am Bosporus die Festung Rumelihisarı errichten und schnitt die Stadt von der Seeversorgung aus dem Schwarzen Meer ab.",
+    "verlauf": "Mehmed beauftragte den ungarischen Büchsenmacher Urban mit dem Bau von Geschützen, die stark genug waren, die Landmauer zu brechen. Bis März 1453 standen sie vor der Stadt. Die Belagerung zu Land und zu Wasser dauerte 55 Tage; am 29. Mai 1453 fiel die Stadt.",
+    "folgen": "Mit Konstantinopel verlor das christliche Europa einen Schutzwall; die osmanische Ausdehnung nach Südosteuropa lief fortan ungehindert. Zahlreiche Gelehrte flohen nach Italien und brachten Handschriften und die Tradition griechischer Gelehrsamkeit mit – ein erheblicher Schub für den Humanismus. Mehmed verlegte seine Hauptstadt von Edirne nach Konstantinopel und machte sie zur vielsprachigen Metropole eines vielsprachigen Reiches.",
+    "strittig": "Die verbreitete Erzählung, der Fall der Stadt habe die Handelswege nach Asien abgeschnitten und dadurch die Entdeckungsfahrten ausgelöst, ist stark vereinfacht: Venedig und Genua handelten weiter, und die portugiesischen Fahrten hatten schon vorher begonnen.",
+    "zahlen": [
+      {
+        "wert": "55 Tage",
+        "was": "Dauer der Belagerung"
+      },
+      {
+        "wert": "29. Mai 1453",
+        "was": "Fall der Stadt"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Fall of Constantinople 1453; Mehmed II; Ottoman Empire – Mehmed II",
+      "The Metropolitan Museum of Art: Constantinople after 1261"
+    ]
+  },
+  {
+    "id": "columbian-exchange",
+    "titel": "Der Kolumbianische Austausch",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1492,
+    "zeitraum": "ab 1492",
+    "region": "Atlantik, Amerika, Eurasien, Afrika",
+    "leitsatz": "Die Verbindung zweier bis dahin getrennter Welten war zugleich die größte Bevölkerungskatastrophe der bekannten Geschichte und die Grundlage des modernen Bevölkerungswachstums.",
+    "vorgeschichte": "Amerika und Eurasien waren biologisch seit Jahrtausenden getrennt. Krankheitserreger, Nutzpflanzen und Haustiere hatten sich unabhängig voneinander entwickelt.",
+    "verlauf": "Ab 1492 gelangten eurasische und afrikanische Krankheiten nach Amerika – Pocken, Masern, Grippe. Die indigene Bevölkerung besaß keinerlei Immunität. Zugleich kamen Pferde, Rinder und Schweine nach Amerika, und amerikanische Nutzpflanzen nach Eurasien und Afrika: Mais, Kartoffel, Maniok, Süßkartoffel.",
+    "folgen": "Die Bevölkerungsverluste in Amerika werden auf 50 bis 95 Prozent geschätzt; auf den meisten Inseln war die indigene Bevölkerung bis 1600 um mehr als 99 Prozent zurückgegangen. Seuchen wirkten zusammen mit Hunger, Gewalt, Zwangsumsiedlung und Versklavung. In die Gegenrichtung veränderten Kartoffel und Mais die Ernährung Eurasiens und Afrikas grundlegend und trugen dort zu erheblichem Bevölkerungswachstum bei.",
+    "strittig": "Die Höhe der vorkolonialen Bevölkerung Amerikas und damit das Ausmaß des Verlusts sind Gegenstand anhaltender Forschung; die Schätzungen gehen weit auseinander. Unstrittig ist die Größenordnung der Katastrophe.",
+    "zahlen": [
+      {
+        "wert": "50–95 %",
+        "was": "geschätzter Bevölkerungsrückgang indigener Gesellschaften"
+      },
+      {
+        "wert": "über 99 %",
+        "was": "Rückgang auf den meisten Karibikinseln bis 1600"
+      },
+      {
+        "wert": "Mais, Kartoffel, Maniok",
+        "was": "amerikanische Grundnahrungspflanzen, die nach Eurasien und Afrika gelangten"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Columbian exchange; Why did European diseases cause such a massive decline in Indigenous populations",
+      "Nature Ecology & Evolution: Ecological consequences of post-Columbian indigenous depopulation"
+    ]
+  },
+  {
+    "id": "reformation",
+    "titel": "Die Reformation",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1517,
+    "zeitraum": "ab 31. Oktober 1517",
+    "region": "Heiliges Römisches Reich, dann ganz Europa",
+    "leitsatz": "Eine akademische Streitschrift über Ablässe wurde zur Spaltung der westlichen Christenheit – weil sie gedruckt werden konnte.",
+    "vorgeschichte": "Der Ablasshandel finanzierte kirchliche Bauvorhaben und war vielerorts zum Geschäft geworden. Kritik daran gab es seit Langem; sie blieb folgenlos, weil sie sich nicht verbreiten ließ.",
+    "verlauf": "Am 31. Oktober 1517 veröffentlichte Martin Luther seine 95 Thesen in Wittenberg – 95 Sätze zur akademischen Disputation über Ablässe, die deren Missbrauch kritisierten und die päpstliche Praxis infrage stellten. Innerhalb weniger Monate hatten sie große Teile des Heiligen Römischen Reiches erreicht, darunter Nürnberg und Augsburg. Die Druckerpresse mit beweglichen Lettern, wenige Jahrzehnte zuvor entwickelt, machte aus einem Gelehrtenstreit eine öffentliche Auseinandersetzung.",
+    "folgen": "Luther wurde exkommuniziert; aus der Auseinandersetzung ging der Protestantismus hervor. Der Augsburger Religionsfrieden von 1555 zwang Karl V., jedem Landesherrn im Reich die Wahl zwischen römischem Katholizismus und Luthertum zuzugestehen – die Entscheidung über den Glauben fiel damit beim Fürsten, nicht beim Einzelnen.",
+    "strittig": "Ob Luther die Thesen tatsächlich an die Tür der Schlosskirche schlug, ist historisch nicht gesichert – die Erzählung stammt aus späterer Zeit. Unbestritten ist, dass er sie am 31. Oktober 1517 in Umlauf brachte.",
+    "zahlen": [
+      {
+        "wert": "95",
+        "was": "Thesen"
+      },
+      {
+        "wert": "wenige Monate",
+        "was": "bis zur reichsweiten Verbreitung"
+      },
+      {
+        "wert": "1555",
+        "was": "Augsburger Religionsfrieden"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Reformation; Ninety-five Theses; Lutheranism – History"
+    ]
+  },
+  {
+    "id": "sklavenhandel",
+    "titel": "Transatlantischer Sklavenhandel und Abolition",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1600,
+    "zeitraum": "16. bis 19. Jahrhundert",
+    "region": "Atlantik: Afrika, Amerika, Europa",
+    "leitsatz": "Zwischen 10 und 12 Millionen Menschen wurden verschleppt – und die Abschaffung zog sich über acht Jahrzehnte hin.",
+    "vorgeschichte": "Die Plantagenwirtschaft in Amerika – Zucker, Tabak, Baumwolle – verlangte Arbeitskräfte in einem Ausmaß, das die indigene Bevölkerung nach dem Zusammenbruch durch Seuchen nicht mehr decken konnte.",
+    "verlauf": "Vom 16. bis ins 19. Jahrhundert wurden zwischen 10 und 12 Millionen versklavte Afrikanerinnen und Afrikaner über den Atlantik nach Amerika verschleppt. Der Handel bildete die Grundlage der Plantagenökonomien und war fest in europäische Handels- und Finanzsysteme eingebunden.",
+    "folgen": "Großbritannien verbot 1807 den Sklavenhandel mit seinen Kolonien. 1833 verabschiedete es den Slavery Abolition Act, der 1834 in Kraft trat und in den meisten britischen Kolonien mehr als 800.000 Menschen aus der Sklaverei entließ. In den Vereinigten Staaten schaffte erst der 13. Verfassungszusatz 1865 die Sklaverei ab. Brasilien verbot den Handel 1850, beendete die Sklaverei aber erst 1888.",
+    "strittig": "Die Zahlen beruhen auf der Auswertung von Schiffsregistern und sind für die überlebende Ankunft in Amerika besser belegt als für die Zahl der Verschleppten insgesamt – die Sterblichkeit auf der Überfahrt ist in vielen Fällen nur schätzbar.",
+    "zahlen": [
+      {
+        "wert": "10–12 Mio.",
+        "was": "verschleppte Menschen"
+      },
+      {
+        "wert": "1807",
+        "was": "britisches Verbot des Sklavenhandels"
+      },
+      {
+        "wert": "über 800.000",
+        "was": "Befreite im britischen Empire ab 1834"
+      },
+      {
+        "wert": "1888",
+        "was": "Brasilien – letzte Abschaffung in Amerika"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Transatlantic slave trade – Key Facts; Abolitionism; Transatlantic Slave Trade Timeline",
+      "UNESCO: Slave voyages"
+    ]
+  },
+  {
+    "id": "westfaelischer-friede",
+    "titel": "Der Westfälische Friede",
+    "epoche": "fruehe-neuzeit",
+    "jahr": 1648,
+    "zeitraum": "1648, nach 30 Jahren Krieg",
+    "region": "Münster und Osnabrück",
+    "leitsatz": "Aus dem verheerendsten Krieg der deutschen Geschichte ging die Grundidee des modernen Staates hervor: dass innerhalb der Grenzen niemand von außen mitregiert.",
+    "vorgeschichte": "Der 1618 begonnene Krieg hatte sich von einem Konfessionskonflikt im Reich zu einem europäischen Machtkampf ausgeweitet, in dem Frankreich, Schweden, Spanien und die Habsburger um Vorherrschaft rangen – ausgetragen überwiegend auf deutschem Boden.",
+    "verlauf": "Ab 1644 wurde in den westfälischen Städten Münster und Osnabrück verhandelt – zwischen Kaiser Ferdinand III., den Reichsständen, Frankreich und Schweden. Die Verträge von 1648 beendeten zugleich den Achtzigjährigen Krieg zwischen Spanien und den Niederlanden.",
+    "folgen": "Schweden, Frankreich und ihre Verbündeten erhielten Gebiete. Die Unabhängigkeit der Niederlande und der Schweizerischen Eidgenossenschaft wurde bestätigt. Der Friede erkannte die Souveränität der Reichsstände an und gab ihnen das Recht, Bündnisse zu schließen – was Kaiser und Reichstag schwächte und den letzten Versuch beendete, das Reich zu zentralisieren. Die religiöse Duldung wurde auf Lutheraner und Reformierte ausgedehnt.",
+    "strittig": "Ob 1648 wirklich die Geburtsstunde des Systems souveräner Staaten war, ist umstritten. Ein Teil der Forschung schreibt den Verträgen diese Rolle zu; andere sehen darin eine Rückprojektion des 19. und 20. Jahrhunderts auf ein Vertragswerk, das in erster Linie Reichsrecht ordnete. Die Bevölkerung Deutschlands wurde durch die vielen dort ausgetragenen Schlachten etwa halbiert.",
+    "zahlen": [
+      {
+        "wert": "30",
+        "was": "Kriegsjahre, 1618–1648"
+      },
+      {
+        "wert": "ca. 50 %",
+        "was": "Bevölkerungsverlust in Deutschland"
+      },
+      {
+        "wert": "4 Jahre",
+        "was": "Verhandlungsdauer ab 1644"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Peace of Westphalia; Thirty Years' War; Germany – The Thirty Years War and the Peace of Westphalia"
+    ]
+  },
+  {
+    "id": "industrielle-revolution",
+    "titel": "Die Industrielle Revolution",
+    "epoche": "industrialisierung",
+    "jahr": 1780,
+    "zeitraum": "spätes 18. bis 19. Jahrhundert",
+    "region": "Großbritannien, dann Europa und Nordamerika",
+    "leitsatz": "Zum ersten Mal seit der Sesshaftwerdung wuchs die Produktion schneller als die Bevölkerung – dauerhaft.",
+    "vorgeschichte": "Großbritannien verfügte über Kohle, Kapital, koloniale Absatzmärkte und eine Rechtsordnung, die Investitionen begünstigte. Wasserkraft trieb die frühen Fabriken an und war fast überall reichlich vorhanden – außer im Großraum Manchester, dem Zentrum der Baumwollproduktion.",
+    "verlauf": "Gerade dort, wo Wasserkraft knapp wurde – durch dichte Fabrikbesiedlung an den Wasserläufen und ein trockeneres Klima im 19. Jahrhundert –, wurde die kohlebetriebene Dampfmaschine zur Lösung. 1840 erzeugten britische Dampfmaschinen 620.000 der insgesamt 860.000 Pferdestärken Europas. Eisenbahnen, ursprünglich zum Kohletransport aus Bergwerken entwickelt, wurden ab den 1820er Jahren für den Verkehr zwischen Städten ausgebaut; 1830 eröffnete die erste kommerzielle Strecke zwischen Liverpool und Manchester.",
+    "folgen": "Fabrikorte wie Manchester wuchsen binnen weniger Jahrzehnte von Dörfern zu Städten mit Hunderttausenden Einwohnern. Die Fabrik verdrängte die vorindustrielle Werkstatt. Damit entstanden zugleich eine neue Klasse von Lohnarbeitern, Kinderarbeit im großen Maßstab, Elendsviertel – und die politischen Bewegungen, die darauf antworteten.",
+    "strittig": "Warum die Industrialisierung in Großbritannien begann und nicht in China oder den Niederlanden, ist eine der meistdiskutierten Fragen der Wirtschaftsgeschichte. Kohle, Kolonien, Institutionen, Löhne, Wissenschaft – jede Erklärung hat Anhänger und Kritiker.",
+    "zahlen": [
+      {
+        "wert": "620.000 von 860.000 PS",
+        "was": "britischer Anteil an Europas Dampfkraft 1840"
+      },
+      {
+        "wert": "1830",
+        "was": "erste kommerzielle Eisenbahnstrecke Liverpool–Manchester"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: History of Europe – The Industrial Revolution; City – Industrialization and the modern world",
+      "PNAS: Limited waterpower contributed to rise of steam power in British Cottonopolis"
+    ]
+  },
+  {
+    "id": "franzoesische-revolution",
+    "titel": "Die Französische Revolution",
+    "epoche": "industrialisierung",
+    "jahr": 1789,
+    "zeitraum": "1789–1799",
+    "region": "Frankreich und Europa",
+    "leitsatz": "Am Anfang stand kein Aufstand der Ideen, sondern ein Staatshaushalt, der nicht mehr aufging.",
+    "vorgeschichte": "Frankreichs Beteiligung am amerikanischen Unabhängigkeitskrieg verschärfte eine ohnehin angespannte Finanzlage. Der Finanzkontrolleur Calonne berief im Februar 1787 eine Notabelnversammlung ein, um Reformen vorzuschlagen, die das Defizit über eine Besteuerung der privilegierten Stände beseitigen sollten. Dazu kamen der Vertrauensverlust der Bauern in die Feudalordnung, eine wachsende, von politischer Macht ausgeschlossene Bürgerschicht und die Wirkung der Aufklärungsschriften. Die Monate vor der Einberufung der Generalstände fielen mit der schwersten Versorgungskrise seit Jahren zusammen: Auf eine Frühjahrsdürre folgte im Juli 1788 ein Hagelunwetter, das die Ernte vernichtete.",
+    "verlauf": "Ludwig XVI. berief 1789 die Generalstände aus Klerus, Adel und drittem Stand ein. Am 20. Juni versammelten sich die Abgeordneten in einem Ballhaus und schworen, so lange zusammenzubleiben, bis Frankreich eine Verfassung habe. Am 26. August verabschiedete die Nationalversammlung die Erklärung der Menschen- und Bürgerrechte: Freiheit, Gleichheit, Unverletzlichkeit des Eigentums und das Recht auf Widerstand gegen Unterdrückung.",
+    "folgen": "Die Ereignisse beunruhigten die europäischen Monarchien und führten zum Krieg Frankreichs gegen Österreich, Preußen und Großbritannien. Die Erklärung der Menschen- und Bürgerrechte wurde zum Bezugstext moderner Verfassungen – auch dort, wo die Revolution selbst als Schreckbild galt.",
+    "strittig": "Ob die Revolution notwendig in den Terror führen musste oder ob es Weggabelungen gab, ist die vielleicht am längsten geführte Debatte der Geschichtswissenschaft. Sie ist nicht entschieden und wird es kaum werden.",
+    "zahlen": [
+      {
+        "wert": "Juli 1788",
+        "was": "Hagelunwetter vernichtet die Ernte"
+      },
+      {
+        "wert": "20. Juni 1789",
+        "was": "Ballhausschwur"
+      },
+      {
+        "wert": "26. August 1789",
+        "was": "Erklärung der Menschen- und Bürgerrechte"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: French Revolution; French Revolution – Causes and Effects; Events of 1789; France – The causes of the French Revolution"
+    ]
+  },
+  {
+    "id": "lateinamerika-unabhaengigkeit",
+    "titel": "Lateinamerikas Unabhängigkeit",
+    "epoche": "industrialisierung",
+    "jahr": 1810,
+    "zeitraum": "1808–1826",
+    "region": "Spanisches und portugiesisches Amerika",
+    "leitsatz": "Der Anstoß kam nicht aus Amerika, sondern aus Europa: Napoleon nahm den spanischen König gefangen – und in Amerika stellte sich die Frage, wer nun regiert.",
+    "vorgeschichte": "Die kreolischen Eliten – in Amerika geborene Nachkommen der Spanier – waren wohlhabend, aber von den höchsten Ämtern ausgeschlossen. Die bourbonischen Reformen bedrohten ihren Status. Aufklärungsschriften ließen die Frage nach der Legitimität überlieferter Herrschaft zu.",
+    "verlauf": "Als Napoleon den spanischen König gefangen setzte, entstand eine Legitimitätslücke; kreolische Eliten bildeten eigene Regierungsjuntas. Aus dem Norden kam die Bewegung um Simón Bolívar, aus dem Süden die um José de San Martín. Zwischen 1819 und 1822 befreite Bolívar Neugranada (Kolumbien und Panama), Venezuela und Quito (Ecuador). Mit San Martíns Hilfe folgten Peru 1824 und Bolivien 1825.",
+    "folgen": "Aus dem spanischen Kolonialreich gingen zahlreiche Republiken hervor. Das Ende der spanischen Herrschaft löste jedoch die politischen, sozialen und wirtschaftlichen Probleme nicht: Der Übergang von der Kolonie zum modernen Staat erwies sich als schwierig, und in vielen Ländern folgten Jahrzehnte der Instabilität und der Herrschaft lokaler Machthaber.",
+    "strittig": "Ob es sich um Revolutionen oder um einen Elitenwechsel handelte, ist umstritten: Die soziale Ordnung – Großgrundbesitz, die Stellung der indigenen Bevölkerung, in mehreren Ländern die Sklaverei – überdauerte die Unabhängigkeit vielfach unverändert.",
+    "zahlen": [
+      {
+        "wert": "1808–1826",
+        "was": "Zeitraum der Unabhängigkeitskriege"
+      },
+      {
+        "wert": "1819–1822",
+        "was": "Bolívar befreit drei Territorien"
+      },
+      {
+        "wert": "1824/1825",
+        "was": "Peru und Bolivien"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: History of Latin America – The independence of Latin America; Simón Bolívar; José de San Martín"
+    ]
+  },
+  {
+    "id": "meiji",
+    "titel": "Die Meiji-Restauration",
+    "epoche": "industrialisierung",
+    "jahr": 1868,
+    "zeitraum": "ab 3. Januar 1868",
+    "region": "Japan",
+    "leitsatz": "Ein Land, das sich zwei Jahrhunderte abgeschottet hatte, wurde in einer Generation zur Industriemacht – ausgelöst durch vier fremde Kriegsschiffe.",
+    "vorgeschichte": "Im Juli 1853 lief ein Geschwader US-amerikanischer Kriegsschiffe unter Matthew C. Perry in die Bucht von Uraga ein. Der überlegenen Seemacht gegenüber musste das Shogunat zwei Jahrhunderte der Abschließung (sakoku) beenden und ungleiche Verträge unterzeichnen, die fremden Mächten weitreichende juristische und wirtschaftliche Vorrechte einräumten. Die Unfähigkeit der Tokugawa-Regierung, dem etwas entgegenzusetzen, galt weithin als Zeichen der Schwäche.",
+    "verlauf": "Aus der innenpolitischen Krise erwuchs eine Bewegung zum Sturz des Regimes. Am 3. Januar 1868 setzte ein Staatsstreich in Kyōto den letzten Shogun Tokugawa Yoshinobu ab und rief den jungen Meiji-Kaiser zum Herrscher Japans aus.",
+    "folgen": "Leitziel wurde fukoku-kyōhei – 'Reichtum mehren, Militär stärken'. Der Staat trieb Schlüsselindustrien, Verkehr und Nachrichtenwesen voran. 1872 fuhr die erste Eisenbahn; 1890 verfügte Japan über mehr als 2.250 Kilometer Schienen. Bis 1880 verbanden Telegrafenlinien alle größeren Städte. Kern des Umbruchs war die Zerschlagung der feudalen Sozialordnung und der Aufbau eines Rahmens, in dem kapitalistische Industrialisierung möglich wurde.",
+    "strittig": "Der Begriff 'Restauration' verdeckt, wie radikal der Bruch war: Formal wurde die Kaiserherrschaft wiederhergestellt, tatsächlich entstand ein völlig neuer Staat. Ob die Modernisierung zwangsläufig in Imperialismus münden musste, wird bis heute diskutiert.",
+    "zahlen": [
+      {
+        "wert": "Juli 1853",
+        "was": "Perrys Geschwader in der Bucht von Uraga"
+      },
+      {
+        "wert": "3. Januar 1868",
+        "was": "Staatsstreich in Kyōto"
+      },
+      {
+        "wert": "über 2.250 km",
+        "was": "Eisenbahnnetz bis 1890, ab 1872"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Meiji Restoration; Japan – The opening of Japan; Empire of Japan – The emergence of modern Japan"
+    ]
+  },
+  {
+    "id": "reichsgruendung",
+    "titel": "Die deutsche Reichsgründung",
+    "epoche": "industrialisierung",
+    "jahr": 1871,
+    "zeitraum": "1864–1871",
+    "region": "Mitteleuropa",
+    "leitsatz": "Deutschland wurde nicht durch Reden und Beschlüsse geeint, sondern durch drei geplante Kriege in sieben Jahren.",
+    "vorgeschichte": "Nach dem Scheitern der Revolution von 1848/49 blieb die deutsche Frage offen: Einheit unter preußischer oder unter österreichischer Führung, mit oder ohne Österreich. Die süddeutschen Staaten hielten Abstand zu Preußen.",
+    "verlauf": "Unter Bismarcks Führung gewann Preußen 1864 den Krieg gegen Dänemark, 1866 den Deutschen Krieg gegen Österreich und 1870/71 den Krieg gegen Frankreich. Bismarcks Kalkül, ein Krieg gegen eine scheinbare französische Aggression werde den Partikularismus südlich des Mains überwinden, ging auf: Die Südstaaten traten an die Seite des Nordens, und der gemeinsame Waffengang erzeugte ein Gefühl der Einheit, das der Siegesrausch verstärkte. Am 18. Januar 1871 wurde König Wilhelm I. von Preußen in Versailles zum Deutschen Kaiser proklamiert – im Schloss der französischen Könige.",
+    "folgen": "Frankreich trat das Elsass und den größten Teil Lothringens samt Metz ab und musste fünf Milliarden Franc zahlen; deutsche Truppen blieben bis zur Zahlung im Land. Die französische Vormachtstellung auf dem Kontinent war beendet. Da Napoleon III. den Kirchenstaat nicht mehr schützen konnte, annektierte Italien ihn am 20. September 1870 und vollendete damit seine eigene Einigung. Der Sieg festigte in Deutschland den Glauben an den preußischen Militarismus, der bis 1945 eine bestimmende Kraft blieb.",
+    "strittig": "Ob Bismarck die drei Kriege von langer Hand plante oder Gelegenheiten nutzte, die sich boten, ist eine klassische Streitfrage. Unstrittig ist, dass die Art der Gründung – von oben, militärisch, unter Ausschluss der demokratischen Bewegung – die politische Kultur des Kaiserreichs prägte.",
+    "zahlen": [
+      {
+        "wert": "1864, 1866, 1870/71",
+        "was": "die drei Einigungskriege"
+      },
+      {
+        "wert": "18. Januar 1871",
+        "was": "Kaiserproklamation in Versailles"
+      },
+      {
+        "wert": "5 Mrd. Franc",
+        "was": "französische Reparationszahlung"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Germany – Franco-German conflict and the new German Reich; Otto von Bismarck; Franco-German War; Treaty of Frankfurt"
+    ]
+  },
+  {
+    "id": "julikrise",
+    "titel": "Die Julikrise 1914",
+    "epoche": "moderne",
+    "jahr": 1914,
+    "zeitraum": "28. Juni – 4. August 1914",
+    "region": "Europa",
+    "leitsatz": "Fünf Wochen zwischen einem Attentat und dem Weltkrieg – ein Lehrstück darüber, wie Bündnisse aus einem lokalen Konflikt einen globalen machen.",
+    "vorgeschichte": "Europa war in zwei Bündnissysteme geteilt, den Dreibund und die Triple Entente. Sidney B. Fay nannte als tiefere Ursachen die Bündnissysteme, Militarismus, Imperialismus, Nationalismus und die Presse. Die Polarisierung machte eine Kettenreaktion aus einem örtlichen Konflikt nahezu vorhersehbar.",
+    "verlauf": "Am 28. Juni 1914 erschoss der bosnische Serbe Gavrilo Princip in Sarajevo den österreichisch-ungarischen Thronfolger Franz Ferdinand und dessen Frau Sophie. Die deutsche Führung musste entscheiden, ob sie Österreich-Ungarn fallen ließe oder für dessen Sache gegen die anderen Großmächte eintrat; sie entschied sich, an Österreich-Ungarn festzuhalten – ohne zunächst zu begreifen, dass dies eine Entscheidung für den Krieg war. Am 28. Juli 1914 erklärte Österreich-Ungarn Serbien den Krieg. Binnen einer Woche befand sich fast ganz Europa im Krieg.",
+    "folgen": "Vier Jahre Krieg, der Zusammenbruch von vier Imperien – des deutschen, österreichisch-ungarischen, russischen und osmanischen –, die Russische Revolution und eine Nachkriegsordnung, aus der die Konflikte des folgenden Jahrzehnts erwuchsen.",
+    "strittig": "Die Kriegsschuldfrage ist die am längsten und schärfsten geführte Debatte der neueren Geschichtswissenschaft. Ob Deutschland den Krieg planvoll herbeiführte, ob alle Mächte hineinschlitterten oder ob die Verantwortung ungleich verteilt war – die Positionen haben sich mehrfach verschoben und stehen weiterhin nebeneinander.",
+    "zahlen": [
+      {
+        "wert": "28. Juni 1914",
+        "was": "Attentat von Sarajevo"
+      },
+      {
+        "wert": "28. Juli 1914",
+        "was": "Kriegserklärung an Serbien"
+      },
+      {
+        "wert": "5 Wochen",
+        "was": "vom Attentat zum europäischen Krieg"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: World War I; World War I – Causes and Effects; 20th-century international relations – The war guilt question; German Empire – The outbreak of World War I"
+    ]
+  },
+  {
+    "id": "russische-revolution",
+    "titel": "Die Russische Revolution 1917",
+    "epoche": "moderne",
+    "jahr": 1917,
+    "zeitraum": "Februar und Oktober 1917",
+    "region": "Russisches Reich",
+    "leitsatz": "Zwei Revolutionen in einem Jahr: Die erste stürzte den Zaren, die zweite entschied, wer an seine Stelle trat.",
+    "vorgeschichte": "Die Verwaltung war von Korruption durchzogen, Lebensmittel waren knapp, und der Weltkrieg hatte die russische Wirtschaft ebenso zerrüttet wie den Ruf des Landes als Militärmacht.",
+    "verlauf": "Als sich im Februar (nach altem Kalender) große Teile Petrograds aus Protest gegen die Lebensmittelknappheit erhoben, weigerte sich die Armee, auf die Demonstrierenden zu schießen. Zar Nikolaus II. musste abdanken; eine Provisorische Regierung trat an seine Stelle. Im Oktober alten Stils – November nach westlichem Kalender – übernahmen die Bolschewiki unter Lenin die Regierung, und zwar mit sehr geringem Blutvergießen.",
+    "folgen": "Es folgte der Russische Bürgerkrieg zwischen Bolschewiki und ihren Gegnern, den Weißen. Ausgelöst wurde er durch Russlands schlechtes Abschneiden im Weltkrieg und den Vertrag von Brest-Litowsk, der Gebiete an Deutschland abtrat. Schätzungsweise 10 Millionen Menschen kamen ums Leben, überwiegend Zivilisten, überwiegend durch Krankheit und Hunger. Nach zwei Jahren Kampf setzten sich die Bolschewiki durch.",
+    "strittig": "Ob der Oktober eine Revolution oder ein Staatsstreich war, ist eine Frage der Deutung, nicht der Fakten – die Bolschewiki waren gut organisiert, aber keine Mehrheit. Ebenso umstritten ist, ob die Diktatur in der Ausgangslage angelegt war oder aus dem Bürgerkrieg erwuchs.",
+    "zahlen": [
+      {
+        "wert": "8.–12. März 1917",
+        "was": "Februarrevolution (24.–28. Februar alten Stils)"
+      },
+      {
+        "wert": "November 1917",
+        "was": "Oktoberrevolution nach altem Kalender"
+      },
+      {
+        "wert": "ca. 10 Mio.",
+        "was": "Tote im Bürgerkrieg 1917–1922, meist Zivilisten"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Russian Revolution; February Revolution; Russian Civil War; Russia – The Civil War and War Communism 1918–21"
+    ]
+  },
+  {
+    "id": "weltwirtschaftskrise",
+    "titel": "Die Weltwirtschaftskrise",
+    "epoche": "moderne",
+    "jahr": 1929,
+    "zeitraum": "1929–1939",
+    "region": "weltweit",
+    "leitsatz": "Aus einer gewöhnlichen Rezession wurde die schwerste Wirtschaftskrise der Moderne – und wer den Goldstandard zuerst verließ, erholte sich zuerst.",
+    "vorgeschichte": "In den 1920er Jahren trieb der Ansturm auf Aktien die Kurse weit über den tatsächlichen Wert der Papiere hinaus. Der Goldstandard band die Währungen aneinander und begrenzte den Spielraum der Notenbanken.",
+    "verlauf": "Was im Sommer 1929 in den USA als gewöhnliche Rezession begann, verschärfte sich Ende 1929 dramatisch und dauerte bis Anfang 1933. Als die Kurse im September 1929 fielen, setzte ein Verkaufsansturm ein, und der Aktienmarkt brach ein. Zwischen 1929 und 1933 sank die Industrieproduktion in den USA um fast 47 Prozent, das Bruttoinlandsprodukt um 30 Prozent, die Arbeitslosigkeit stieg auf über 20 Prozent. In den Industrieländern fand Anfang der 1930er Jahre bis zu ein Viertel der Erwerbsbevölkerung keine Arbeit.",
+    "folgen": "Der Goldstandard trug die Krise von den USA in die Welt: Goldabflüsse in die USA drohten die Währungen anderer Länder zu entwerten, deren Notenbanken mit Zinserhöhungen gegensteuerten – was Produktion und Preise weiter drückte und die Arbeitslosigkeit erhöhte. Die Erholung setzte im Wesentlichen mit der Aufgabe des Goldstandards und der folgenden Geldmengenausweitung ein. Großbritannien, das im September 1931 dazu gezwungen wurde, erholte sich früh; die USA, die erst 1933 abwerteten, deutlich später.",
+    "strittig": "Über das Gewicht der einzelnen Ursachen – Börsenkrach, Bankenkrisen, Geldpolitik, Goldstandard, Protektionismus – wird bis heute gestritten. Die Rolle des Goldstandards bei der weltweiten Ausbreitung gilt jedoch als gut belegt.",
+    "zahlen": [
+      {
+        "wert": "−47 %",
+        "was": "US-Industrieproduktion 1929–1933"
+      },
+      {
+        "wert": "über 20 %",
+        "was": "US-Arbeitslosenquote"
+      },
+      {
+        "wert": "bis zu 25 %",
+        "was": "Erwerbslose in Industrieländern Anfang der 1930er"
+      },
+      {
+        "wert": "1931 / 1933",
+        "was": "Aufgabe des Goldstandards in Großbritannien / Abwertung in den USA"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Great Depression; Causes of the Great Depression; Great Depression – Sources of recovery; Economic impact"
+    ]
+  },
+  {
+    "id": "dekolonisation",
+    "titel": "Die Dekolonisation",
+    "epoche": "moderne",
+    "jahr": 1947,
+    "zeitraum": "1945 bis in die 1980er Jahre",
+    "region": "Asien, Afrika, Karibik, Pazifik",
+    "leitsatz": "Innerhalb weniger Jahrzehnte verdreifachte sich die Zahl der Staaten der Erde – und allein 1960 wurden 17 afrikanische Länder unabhängig.",
+    "vorgeschichte": "Der Zweite Weltkrieg hatte die Kolonialmächte geschwächt und ihre moralischen Ansprüche untergraben. In den Kolonien hatten sich seit Langem Unabhängigkeitsbewegungen formiert; viele Kolonialsoldaten kehrten mit veränderten Erwartungen zurück.",
+    "verlauf": "Indien wurde am 14./15. August 1947 unabhängig – zugleich wurde der Subkontinent in Indien und Pakistan geteilt. Großbritannien verließ Palästina 1948 und Ägypten 1956, zog sich in den 1950er und 1960er Jahren aus Afrika zurück, in den 1970er und 1980er Jahren aus Inselprotektoraten und 1997 aus Hongkong. Allein im Jahr 1960 entstanden 17 unabhängige Staaten aus afrikanischen Kolonien; im selben Jahr verabschiedete die UN-Generalversammlung ihre Erklärung über die Gewährung der Unabhängigkeit an koloniale Länder und Völker. Bis Ende 1980 war der größte Teil Afrikas unabhängig.",
+    "folgen": "Die politische Weltkarte wurde neu gezeichnet. Die von Kolonialmächten gezogenen Grenzen blieben jedoch meist bestehen und durchschnitten Sprach- und Siedlungsräume. Wirtschaftliche Abhängigkeiten überdauerten die politische Unabhängigkeit vielfach.",
+    "strittig": "Ob die Kolonialmächte 'gewährten' oder ob ihnen die Unabhängigkeit abgerungen wurde, hängt stark vom Einzelfall ab – zwischen dem weitgehend verhandelten indischen Weg und den Kriegen in Algerien, Kenia oder Angola liegen Welten.",
+    "zahlen": [
+      {
+        "wert": "14./15. August 1947",
+        "was": "Unabhängigkeit Indiens und Teilung"
+      },
+      {
+        "wert": "17",
+        "was": "afrikanische Staaten allein im Jahr 1960"
+      },
+      {
+        "wert": "1960",
+        "was": "UN-Erklärung zur Gewährung der Unabhängigkeit"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Decolonization; Decolonization of Africa; Partition of India; Western colonialism – Decolonization from 1945",
+      "United Nations: Decolonization"
+    ]
+  },
+  {
+    "id": "kubakrise",
+    "titel": "Die Kubakrise",
+    "epoche": "moderne",
+    "jahr": 1962,
+    "zeitraum": "16.–28. Oktober 1962",
+    "region": "Karibik, USA, Sowjetunion",
+    "leitsatz": "Dreizehn Tage, in denen die Welt einem Atomkrieg so nahe war wie nie – und gelöst wurde die Krise auch durch ein Zugeständnis, das 25 Jahre geheim blieb.",
+    "vorgeschichte": "Nach der gescheiterten Invasion in der Schweinebucht suchte Kuba sowjetischen Schutz. Die USA hatten Mittelstreckenraketen vom Typ Jupiter in der Türkei stationiert – in Reichweite der Sowjetunion.",
+    "verlauf": "Im Oktober 1962 fotografierte ein amerikanisches U-2-Aufklärungsflugzeug den Bau sowjetischer Raketenstellungen auf Kuba. Kennedy entschied sich für eine Seeblockade – von ihm 'Quarantäne' genannt –, um weitere sowjetische Militärlieferungen zu verhindern. Die Krise dauerte vom 16. bis zum 28. Oktober.",
+    "folgen": "Öffentlich einigten sich beide Seiten darauf, dass die Sowjetunion die Stellungen abbaut und die USA im Gegenzug zusagen, Kuba nicht anzugreifen. In einer gesonderten Abmachung, die über 25 Jahre geheim blieb, sagten die USA zu, ihre Atomraketen aus der Türkei abzuziehen. Nach der Krise wurde ein direkter Draht zwischen Washington und Moskau eingerichtet.",
+    "strittig": "Wie nahe die Welt tatsächlich am Krieg stand, wird bis heute neu bewertet – erst durch später freigegebene Dokumente wurde bekannt, dass sowjetische U-Boot-Kommandanten vor Ort über nukleare Torpedos verfügten. Die öffentliche Darstellung eines rein amerikanischen Verhandlungserfolgs beruhte auf der Geheimhaltung des Türkei-Zugeständnisses.",
+    "zahlen": [
+      {
+        "wert": "13 Tage",
+        "was": "Dauer der Krise, 16.–28. Oktober 1962"
+      },
+      {
+        "wert": "über 25 Jahre",
+        "was": "Geheimhaltung der Türkei-Abmachung"
+      }
+    ],
+    "quellen": [
+      "John F. Kennedy Presidential Library: Cuban Missile Crisis",
+      "Encyclopaedia Britannica: Cuban missile crisis",
+      "US National Archives: Forty Years Ago – The Cuban Missile Crisis"
+    ]
+  },
+  {
+    "id": "mauerfall",
+    "titel": "Der Mauerfall",
+    "epoche": "moderne",
+    "jahr": 1989,
+    "zeitraum": "9. November 1989",
+    "region": "Berlin, DDR",
+    "leitsatz": "Die Grenze öffnete sich, weil ein Funktionär eine Vorlage vorlas, die er nicht kannte – und auf eine Nachfrage antwortete, ohne die Antwort zu wissen.",
+    "vorgeschichte": "Im Herbst 1989 verließen immer mehr DDR-Bürger das Land über andere Staaten, etwa die Tschechoslowakei. Die Führung wollte diesen Exodus mit neuen Reiseregelungen eindämmen; Massendemonstrationen forderten Reformen.",
+    "verlauf": "Am Abend des 9. November 1989 verlas Günter Schabowski auf einer Pressekonferenz eine Mitteilung, die das Zentralkomitee der SED in seiner Abwesenheit vorbereitet hatte. Gemeint war, dass DDR-Bürger Ausreisevisa zu üblichen Dienstzeiten beantragen sollten. Schabowski schien selbst überrascht; auf die Frage eines Journalisten, ab wann das gelte, antwortete er: soweit ihm bekannt, sofort. Menschenmengen sammelten sich an den Übergängen und verlangten Durchlass. Die Grenzsoldaten waren nicht vorbereitet und ließen sie gehen.",
+    "folgen": "Die Öffnung der Mauer erwies sich als tödlich für die DDR. Immer größere Demonstrationen forderten Mitbestimmung; Egon Krenz wurde durch den reformbereiten Hans Modrow ersetzt, der freie Wahlen versprach. Der Einigungsvertrag wurde im September 1990 von Bundestag und Volkskammer ratifiziert und trat am 3. Oktober 1990 in Kraft: Die DDR trat als fünf neue Länder der Bundesrepublik bei.",
+    "strittig": "Ob Schabowskis Auftritt ein Versehen war oder eine bewusst offen gelassene Formulierung, wird weiterhin diskutiert. Unstrittig ist, dass die Öffnung an diesem Abend nicht geplant war – und dass die Massenbewegung der Wochen zuvor sie erst möglich machte.",
+    "zahlen": [
+      {
+        "wert": "9. November 1989",
+        "was": "Öffnung der Grenzübergänge"
+      },
+      {
+        "wert": "3. Oktober 1990",
+        "was": "Inkrafttreten des Einigungsvertrags"
+      }
+    ],
+    "quellen": [
+      "Encyclopaedia Britannica: Berlin Wall; Germany – The reunification of Germany; German reunification; Egon Krenz"
+    ]
+  },
+  {
+    "id": "world-wide-web",
+    "titel": "Das World Wide Web",
+    "epoche": "moderne",
+    "jahr": 1989,
+    "zeitraum": "1989–1993",
+    "region": "CERN, Genf – dann die Welt",
+    "leitsatz": "Die vielleicht folgenreichste Technik der Gegenwart entstand als Werkzeug zum Austausch von Forschungsdaten – und wurde verschenkt.",
+    "vorgeschichte": "Am CERN arbeiteten Forschende aus vielen Ländern mit unterschiedlichen Rechnern und Formaten. Der Bedarf an automatisiertem Informationsaustausch zwischen Universitäten und Instituten war der eigentliche Anlass.",
+    "verlauf": "Im März 1989 schrieb Tim Berners-Lee den ersten Entwurf für das World Wide Web. Die Grundidee war, Rechner, Datennetze und Hypertext zu einem einfach benutzbaren globalen Informationssystem zu verbinden. Bis Weihnachten desselben Jahres hatte er die Kernbausteine umgesetzt: HTML, HTTP und URL – dazu den ersten Webserver, den ersten Browser und den ersten Editor. Im März 1991 stand die Software CERN-Kollegen zur Verfügung, im August 1991 kündigte er sie in Internet-Newsgroups an.",
+    "folgen": "Am 30. April 1993 stellte das CERN die Web-Software gemeinfrei. Später folgte eine Freigabe unter einer offenen Lizenz, um die Verbreitung sicherer zu maximieren. Diese Entscheidung – die Offenheit als Grundhaltung des Labors – gilt als entscheidender Schritt für die Ausbreitung des Webs.",
+    "strittig": "Web und Internet werden häufig verwechselt. Das Internet als Netzverbund ist deutlich älter; das Web ist ein Dienst darauf. Ob eine kommerzielle Verwertung die Entwicklung gebremst hätte, lässt sich nicht beweisen – dass die Freigabe sie beschleunigte, gilt als unstrittig.",
+    "zahlen": [
+      {
+        "wert": "März 1989",
+        "was": "erster Entwurf von Tim Berners-Lee"
+      },
+      {
+        "wert": "Weihnachten 1989",
+        "was": "HTML, HTTP, URL, Server, Browser und Editor umgesetzt"
+      },
+      {
+        "wert": "30. April 1993",
+        "was": "CERN stellt die Software gemeinfrei"
+      }
+    ],
+    "quellen": [
+      "CERN: A short history of the Web; Web@30",
+      "W3C: The original proposal of the WWW",
+      "Encyclopaedia Britannica: Tim Berners-Lee"
+    ]
+  }
+];
+
+
+/* =========================================================
+   SPEICHER
+
+   Historia hat bisher nichts gespeichert: Quizfortschritt und
+   Lesestand gingen bei jedem Neuladen verloren. Alles liegt im
+   localStorage dieses Browsers, unter dem Präfix "historia.".
+   ========================================================= */
+
+const SPEICHER_PRAEFIX = "historia.";
+
+function speicherLesen(schluessel, ersatz) {
+  try {
+    const roh = localStorage.getItem(SPEICHER_PRAEFIX + schluessel);
+    if (roh === null) return ersatz;
+    const wert = JSON.parse(roh);
+    // Form prüfen: beschädigte Daten dürfen die App nicht umwerfen
+    if (Array.isArray(ersatz) && !Array.isArray(wert)) return ersatz;
+    if (ersatz && typeof ersatz === "object" && !Array.isArray(ersatz) && (typeof wert !== "object" || wert === null || Array.isArray(wert))) return ersatz;
+    return wert;
+  } catch (e) {
+    return ersatz;
+  }
+}
+
+function speicherSchreiben(schluessel, wert) {
+  try {
+    localStorage.setItem(SPEICHER_PRAEFIX + schluessel, JSON.stringify(wert));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+// Zustand, der zwischen Sitzungen erhalten bleibt
+function useGespeichert(schluessel, anfangswert) {
+  const [wert, setWert] = useState(() => speicherLesen(schluessel, anfangswert));
+  const setzen = (neu) => {
+    const ergebnis = typeof neu === "function" ? neu(wert) : neu;
+    setWert(ergebnis);
+    speicherSchreiben(schluessel, ergebnis);
+  };
+  return [wert, setzen];
+}
+
+/* =========================================================
+   VERTIEFUNGEN
+   ========================================================= */
+
+const Layers = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M12 3 2.5 8 12 13l9.5-5L12 3z" }), /* @__PURE__ */ React.createElement("path", { d: "M2.5 16 12 21l9.5-5" }), /* @__PURE__ */ React.createElement("path", { d: "M2.5 12 12 17l9.5-5" }));
+
+function VertiefungAbschnitt({ titel, text }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "mb-5" },
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, titel),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, text)
+  );
+}
+
+function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
+  const epoche = EPOCHS.find((e) => e.id === eintrag.epoche);
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: onBack,
+      className: "flex items-center gap-1.5 text-[#c9a877] hover:text-[#f0d878] mb-4 text-sm"
+    }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu allen Vertiefungen"),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" },
+      /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, eintrag.zeitraum),
+      epoche && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, epoche.name),
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, eintrag.region)
+    ),
+    /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-3" }, eintrag.titel),
+    /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic leading-relaxed border-l-2 border-[#d4af37] pl-4 mb-6" }, eintrag.leitsatz),
+
+    eintrag.zahlen && eintrag.zahlen.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-6" },
+      eintrag.zahlen.map((z, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2" },
+        /* @__PURE__ */ React.createElement("div", { className: "font-mono text-sm text-[#f0d878]" }, z.wert),
+        /* @__PURE__ */ React.createElement("div", { className: "text-xs text-[#b8905a] leading-snug" }, z.was)
+      ))
+    ),
+
+    /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Vorgeschichte", text: eintrag.vorgeschichte }),
+    /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Verlauf", text: eintrag.verlauf }),
+    /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Folgen", text: eintrag.folgen }),
+
+    /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Was strittig ist"),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, eintrag.strittig)
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "mt-6 pt-4 border-t border-[#5c2018]" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Quellen"),
+      /* @__PURE__ */ React.createElement("ul", { className: "text-xs text-[#b8905a] leading-relaxed" },
+        eintrag.quellen.map((q, i) => /* @__PURE__ */ React.createElement("li", { key: i }, "· ", q))
+      )
+    ),
+
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: () => toggleGelesen(eintrag.id),
+      className: `mt-5 flex items-center gap-2 px-3 py-2 rounded text-sm border ${gelesen ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]"}`
+    }, /* @__PURE__ */ React.createElement(Check, { size: 15 }), gelesen ? "Gelesen" : "Als gelesen merken")
+  );
+}
+
+function VertiefungenTab() {
+  const [offen, setOffen] = useState(null);
+  const [epochenFilter, setEpochenFilter] = useState("Alle");
+  const [suche, setSuche] = useState("");
+  const [gelesen, setGelesen] = useGespeichert("vertiefungen.gelesen", []);
+
+  const toggleGelesen = (id) => setGelesen((bisher) => bisher.includes(id) ? bisher.filter((x) => x !== id) : [...bisher, id]);
+
+  if (offen) {
+    const eintrag = VERTIEFUNGEN.find((v) => v.id === offen);
+    if (eintrag) {
+      return /* @__PURE__ */ React.createElement(VertiefungDetail, {
+        eintrag,
+        onBack: () => setOffen(null),
+        gelesen: gelesen.includes(eintrag.id),
+        toggleGelesen
+      });
+    }
+  }
+
+  const q = suche.trim().toLowerCase();
+  const gefiltert = VERTIEFUNGEN.filter((v) => {
+    const passtEpoche = epochenFilter === "Alle" || v.epoche === epochenFilter;
+    const passtSuche = !q || (v.titel + " " + v.leitsatz + " " + v.region + " " + v.zeitraum).toLowerCase().includes(q);
+    return passtEpoche && passtSuche;
+  });
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      VERTIEFUNGEN.length, " ausführliche Darstellungen großer Wendepunkte — mit Vorgeschichte, Verlauf, Folgen und dem, was die Forschung offen lässt."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-4 max-w-2xl" },
+      "Jeder Artikel nennt seine Quellen. Wo Zahlen Schätzungen sind, steht das dabei."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-3 rounded border border-[#5c2018] bg-[#5c1a1e] px-2.5 py-1.5 max-w-md" },
+      /* @__PURE__ */ React.createElement(Search, { size: 15, className: "text-[#8a6238]" }),
+      /* @__PURE__ */ React.createElement("input", {
+        value: suche,
+        onChange: (e) => setSuche(e.target.value),
+        placeholder: "Suchen …",
+        className: "bg-transparent text-sm text-[#e8d5b0] placeholder-[#8a6238] focus:outline-none flex-1"
+      })
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" },
+      ["Alle", ...EPOCHS.map((e) => e.id)].map((id) => /* @__PURE__ */ React.createElement("button", {
+        key: id,
+        onClick: () => setEpochenFilter(id),
+        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${epochenFilter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      }, id === "Alle" ? "Alle" : (EPOCHS.find((e) => e.id === id) || {}).name))
+    ),
+
+    gefiltert.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Nichts gefunden."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
+      gefiltert.map((v) => {
+        const epoche = EPOCHS.find((e) => e.id === v.epoche);
+        const istGelesen = gelesen.includes(v.id);
+        return /* @__PURE__ */ React.createElement("button", {
+          key: v.id,
+          onClick: () => setOffen(v.id),
+          className: "text-left rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 hover:border-[#d4af37] transition-colors"
+        },
+          /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" },
+            /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, v.zeitraum),
+            epoche && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, epoche.name),
+            istGelesen && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#f0d878] border border-[#d4af37] rounded px-1.5 py-0.5" }, "gelesen")
+          ),
+          /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, v.titel),
+          /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, v.leitsatz),
+          /* @__PURE__ */ React.createElement("span", { className: "mt-2 inline-flex items-center gap-1 text-xs text-[#8a6238]" }, "Lesen ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 12 }))
+        );
+      })
+    ),
+
+    gelesen.length > 0 && /* @__PURE__ */ React.createElement("p", { className: "mt-6 text-xs text-[#8a6238]" },
+      gelesen.length, " von ", VERTIEFUNGEN.length, " gelesen. Der Stand bleibt in diesem Browser gespeichert.")
+  );
+}
+
 const NAV = [
   { id: "epochen", label: "Epochen", icon: BookOpen },
+  { id: "vertiefungen", label: "Vertiefungen", icon: Layers },
   { id: "schluessel", label: "Schl\xFCsselmomente", icon: Zap },
   { id: "laender", label: "L\xE4nder-Zeitleisten", icon: Globe },
   { id: "schlachten", label: "Ber\xFChmte Schlachten", icon: Crown },
@@ -1418,6 +3019,8 @@ function LernenTab() {
   const [options, setOptions] = useState([]);
   const [selected, setSelected] = useState(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
+  // Sitzungsstand oben, Gesamtbilanz dauerhaft im Browser
+  const [bilanz, setBilanz] = useGespeichert("lernen.bilanz", { richtig: 0, gesamt: 0 });
   const shuffled = useMemo(() => [...FACTS].sort(() => Math.random() - 0.5), []);
   const current = shuffled[idx % shuffled.length];
   function newQuizQuestion(i) {
@@ -1437,6 +3040,7 @@ function LernenTab() {
   }
   function nextQuiz(correct) {
     setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
+    setBilanz({ richtig: bilanz.richtig + (correct ? 1 : 0), gesamt: bilanz.gesamt + 1 });
     setTimeout(() => {
       const next = idx + 1;
       setIdx(next);
@@ -1465,7 +3069,7 @@ function LernenTab() {
       style: { borderLeft: `4px solid ${current.color}` }
     },
     !flipped ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-3" }, current.epoch), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#e0b84a]" }, current.title), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mt-4" }, "Tippen zum Umdrehen")) : /* @__PURE__ */ React.createElement("p", { className: "font-mono text-3xl", style: { color: current.color } }, formatYear(current.year))
-  ), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mt-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Karte ", idx % shuffled.length + 1, " / ", shuffled.length), /* @__PURE__ */ React.createElement("button", { onClick: nextCard, className: "flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#5c1a1e] text-[#f0d878] border border-[#d4af37] text-sm font-medium" }, "N\xE4chste ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 15 })))), mode === "quiz" && quizYear && /* @__PURE__ */ React.createElement("div", { className: "max-w-md" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mb-2" }, "Punkte: ", score.correct, " / ", score.total), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-6 mb-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, "In welchem Jahr geschah\u2026"), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a]" }, quizYear.title)), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" }, options.map((o, i) => {
+  ), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mt-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Karte ", idx % shuffled.length + 1, " / ", shuffled.length), /* @__PURE__ */ React.createElement("button", { onClick: nextCard, className: "flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#5c1a1e] text-[#f0d878] border border-[#d4af37] text-sm font-medium" }, "N\xE4chste ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 15 })))), mode === "quiz" && quizYear && /* @__PURE__ */ React.createElement("div", { className: "max-w-md" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-3 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Diese Runde: ", score.correct, " / ", score.total, bilanz.gesamt > 0 ? " · insgesamt " + bilanz.richtig + " / " + bilanz.gesamt + " (" + Math.round(bilanz.richtig / bilanz.gesamt * 100) + " %)" : ""), bilanz.gesamt > 0 && /* @__PURE__ */ React.createElement("button", { onClick: () => setBilanz({ richtig: 0, gesamt: 0 }), className: "text-xs text-[#8a6238] underline hover:text-[#e0b84a]" }, "Bilanz zurücksetzen")), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-6 mb-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, "In welchem Jahr geschah\u2026"), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a]" }, quizYear.title)), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" }, options.map((o, i) => {
     const isCorrect = o.year === quizYear.year;
     const isSelected = selected !== null && o.year === selected;
     let cls = "border-[#5c2018] text-[#d8c690]";
@@ -1502,7 +3106,8 @@ function VerblueffendTab() {
   )), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, shown.map((i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4 flex gap-3" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 16, className: "text-[#d4af37] shrink-0 mt-0.5" }), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] leading-relaxed" }, SURPRISING_FACTS[i])))));
 }
 function Historia() {
-  const [tab, setTab] = useState("epochen");
+  // Der zuletzt geoeffnete Bereich bleibt ueber Sitzungen hinweg erhalten.
+  const [tab, setTab] = useGespeichert("reiter", "epochen");
   React.useEffect(() => {
     document.documentElement.style.colorScheme = "dark";
     let meta = document.querySelector('meta[name="color-scheme"]');
@@ -1523,5 +3128,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "zahlenstrahl" && /* @__PURE__ */ React.createElement(ZahlenstrahlTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "zahlenstrahl" && /* @__PURE__ */ React.createElement(ZahlenstrahlTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }
