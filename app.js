@@ -24,6 +24,7 @@ const Sparkles = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @
 const Zap = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M13 2 3 14h7l-1 8 10-12h-7l1-8z" }));
 const Globe = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" }), /* @__PURE__ */ React.createElement("path", { d: "M2 12h20" }), /* @__PURE__ */ React.createElement("path", { d: "M12 2c2.8 2.8 4.2 6.3 4.2 10S14.8 19.2 12 22c-2.8-2.8-4.2-6.3-4.2-10S9.2 4.8 12 2z" }));
 const ChevronRight = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M9 18l6-6-6-6" }));
+const HelpCircle = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" }), /* @__PURE__ */ React.createElement("path", { d: "M9.2 9a3 3 0 1 1 4.4 3c-.9.6-1.6 1.1-1.6 2.2" }), /* @__PURE__ */ React.createElement("path", { d: "M12 17.5h.01" }));
 const Search = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("circle", { cx: "11", cy: "11", r: "7.5" }), /* @__PURE__ */ React.createElement("path", { d: "M21 21l-4.4-4.4" }));
 const Check = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M20 6L9 17l-5-5" }));
 const RotateCcw = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M3.5 9a8.5 8.5 0 1 1 1.8 9.2" }), /* @__PURE__ */ React.createElement("path", { d: "M3.5 4v5h5" }));
@@ -2781,6 +2782,205 @@ function VertiefungenTab() {
   );
 }
 
+
+/* =========================================================
+   FORSCHUNGSFRAGEN
+
+   Historia kann nicht recherchieren – die App liegt als Datei auf einem
+   Webspace. Was sie kann: Fragen sammeln, damit sie nicht verlorengehen.
+   Fragenliste sichern, in raw/inbox/ des Second Brain legen, Claude
+   beantwortet sie mit Quellen, Antwortdatei hier wieder einlesen.
+   ========================================================= */
+
+const FRAGEN_KENNUNG = "historia-fragen";
+const ANTWORTEN_KENNUNG = "historia-antworten";
+
+function heuteISO() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+function fragenKennung() {
+  return "f" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+}
+
+function baueFragendatei(fragen) {
+  const offen = fragen.filter((f) => f.status !== "beantwortet");
+  return {
+    kennung: FRAGEN_KENNUNG,
+    version: 1,
+    app: "Historia",
+    erstellt: new Date().toISOString(),
+    hinweis: "Diese Datei in raw/inbox/ des Second Brain legen. Claude beantwortet die Fragen mit Quellenangabe und legt eine Antwortdatei zurück.",
+    fragen: offen.map((f) => ({ id: f.id, frage: f.frage, kontext: f.kontext || "", gestellt: f.gestellt }))
+  };
+}
+
+function pruefeAntwortdatei(objekt) {
+  const fehler = [];
+  if (!objekt || typeof objekt !== "object" || Array.isArray(objekt)) {
+    return { gueltig: false, fehler: ["Die Datei enthält keine lesbaren Daten."] };
+  }
+  if (objekt.kennung !== ANTWORTEN_KENNUNG) fehler.push("Das ist keine Antwortdatei für Historia.");
+  if (!Array.isArray(objekt.antworten) || objekt.antworten.length === 0) {
+    fehler.push("In der Datei stehen keine Antworten.");
+  } else {
+    objekt.antworten.forEach((a, i) => {
+      if (!a || typeof a.id !== "string") fehler.push("Antwort " + (i + 1) + " hat keine Zuordnung.");
+      else if (typeof a.antwort !== "string" || !a.antwort.trim()) fehler.push("Antwort zu „" + a.id + "“ ist leer.");
+    });
+  }
+  return { gueltig: fehler.length === 0, fehler };
+}
+
+function spieleAntwortenEin(fragen, datei) {
+  const nachId = new Map(datei.antworten.map((a) => [a.id, a]));
+  let zugeordnet = 0;
+  const neu = fragen.map((f) => {
+    const a = nachId.get(f.id);
+    if (!a) return f;
+    zugeordnet++;
+    return {
+      ...f,
+      status: "beantwortet",
+      antwort: String(a.antwort),
+      quellen: Array.isArray(a.quellen) ? a.quellen.filter((q) => typeof q === "string") : [],
+      beantwortet: typeof a.beantwortet === "string" ? a.beantwortet : heuteISO()
+    };
+  });
+  return { fragen: neu, zugeordnet, ohneZuordnung: datei.antworten.length - zugeordnet };
+}
+
+function dateiHerunterladen(inhalt, name, typ) {
+  const blob = new Blob([inhalt], { type: typ });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1e3);
+}
+
+function FragenTab() {
+  const [fragen, setFragen] = useGespeichert("fragen", []);
+  const [frage, setFrage] = useState("");
+  const [kontext, setKontext] = useState("");
+  const [meldung, setMeldung] = useState(null);
+  const [fehler, setFehler] = useState([]);
+  const [aufgeklappt, setAufgeklappt] = useState({});
+
+  const offene = fragen.filter((f) => f.status !== "beantwortet");
+  const beantwortete = fragen.filter((f) => f.status === "beantwortet");
+
+  const hinzufuegen = () => {
+    const t = frage.trim();
+    if (!t) return;
+    setFragen([{ id: fragenKennung(), frage: t, kontext: kontext.trim(), gestellt: heuteISO(), status: "offen" }, ...fragen]);
+    setFrage(""); setKontext("");
+    setMeldung({ gut: true, text: "Notiert." });
+  };
+
+  const exportieren = () => {
+    const datei = baueFragendatei(fragen);
+    if (datei.fragen.length === 0) { setMeldung({ gut: false, text: "Es sind keine offenen Fragen da." }); return; }
+    dateiHerunterladen(JSON.stringify(datei, null, 2), "fragen-historia-" + heuteISO() + ".json", "application/json");
+    setMeldung({ gut: true, text: datei.fragen.length + (datei.fragen.length === 1 ? " offene Frage" : " offene Fragen") + " gesichert. Leg die Datei in raw/inbox/ deines Second Brain." });
+  };
+
+  const antwortenGewaehlt = (ereignis) => {
+    const datei = ereignis.target.files && ereignis.target.files[0];
+    ereignis.target.value = "";
+    if (!datei) return;
+    setMeldung(null); setFehler([]);
+    const leser = new FileReader();
+    leser.onerror = () => setFehler(["Die Datei ließ sich nicht lesen."]);
+    leser.onload = () => {
+      let objekt;
+      try { objekt = JSON.parse(String(leser.result)); }
+      catch (e) { setFehler(["Das ist keine gültige JSON-Datei."]); return; }
+      const pruefung = pruefeAntwortdatei(objekt);
+      if (!pruefung.gueltig) { setFehler(pruefung.fehler); return; }
+      const ergebnis = spieleAntwortenEin(fragen, objekt);
+      setFragen(ergebnis.fragen);
+      setMeldung({ gut: true, text: ergebnis.zugeordnet + (ergebnis.zugeordnet === 1 ? " Antwort" : " Antworten") + " eingelesen." + (ergebnis.ohneZuordnung > 0 ? " " + ergebnis.ohneZuordnung + " ließ sich keiner Frage zuordnen." : "") });
+    };
+    leser.readAsText(datei);
+  };
+
+  const knopf = "px-3 py-2 rounded text-sm border border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37] disabled:opacity-40";
+  const feld = "w-full rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2 text-sm text-[#e8d5b0] placeholder-[#8a6238] focus:outline-none focus:border-[#d4af37]";
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      "Fragen, die beim Lesen entstehen und über das hinausgehen, was hier steht."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl leading-relaxed" },
+      "Die App recherchiert nicht selbst — sie sammelt. Sicher die Liste als Datei, leg sie in den Eingangskorb deines Second Brain, und Claude arbeitet sie mit Quellen ab. Die Antwortdatei liest du hier wieder ein; danach steht alles offline zur Verfügung."),
+
+    meldung && /* @__PURE__ */ React.createElement("p", { className: "mb-4 text-sm " + (meldung.gut ? "text-[#9ad5b0]" : "text-[#e0b84a]") }, meldung.text),
+    fehler.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mb-4 rounded border border-[#7a3020] bg-[#5c1a1e] p-3" },
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#e4a6a6] mb-1" }, "Nicht eingelesen:"),
+      fehler.map((f, i) => /* @__PURE__ */ React.createElement("p", { key: i, className: "text-xs text-[#e4a6a6]" }, "· " + f))),
+
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 mb-5 max-w-2xl" },
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" }, "Neue Frage"),
+      /* @__PURE__ */ React.createElement("textarea", {
+        value: frage, onChange: (e) => setFrage(e.target.value), rows: 2,
+        placeholder: "z. B.: Warum brach das Weströmische Reich zusammen, das Oströmische aber nicht?",
+        className: feld + " mb-2 resize-y"
+      }),
+      /* @__PURE__ */ React.createElement("input", {
+        value: kontext, onChange: (e) => setKontext(e.target.value), type: "text",
+        placeholder: "Woher kommt die Frage? (freiwillig)", className: feld + " mb-3"
+      }),
+      /* @__PURE__ */ React.createElement("button", { onClick: hinzufuegen, disabled: !frage.trim(), className: knopf }, "Frage notieren")
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mb-6" },
+      /* @__PURE__ */ React.createElement("button", { onClick: exportieren, disabled: offene.length === 0, className: knopf },
+        "↓ Offene Fragen sichern" + (offene.length ? " (" + offene.length + ")" : "")),
+      /* @__PURE__ */ React.createElement("label", { className: knopf + " cursor-pointer inline-block" },
+        "↑ Antwortdatei einlesen",
+        /* @__PURE__ */ React.createElement("input", { type: "file", accept: "application/json,.json", onChange: antwortenGewaehlt, className: "hidden" }))
+    ),
+
+    offene.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mb-8" },
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-2" }, "Offen (" + offene.length + ")"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        offene.map((f) => /* @__PURE__ */ React.createElement("div", { key: f.id, className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" },
+          /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug" }, f.frage),
+          f.kontext && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#b8905a] italic mt-1" }, f.kontext),
+          /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-3 mt-2" },
+            /* @__PURE__ */ React.createElement("span", { className: "text-[11px] text-[#8a6238]" }, "notiert am " + f.gestellt),
+            /* @__PURE__ */ React.createElement("button", { onClick: () => setFragen(fragen.filter((x) => x.id !== f.id)), className: "text-[11px] text-[#b8905a] underline hover:text-[#e0b84a]" }, "Löschen"))
+        )))),
+
+    beantwortete.length > 0 && /* @__PURE__ */ React.createElement("div", null,
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-2" }, "Beantwortet (" + beantwortete.length + ")"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        beantwortete.map((f) => {
+          const auf = !!aufgeklappt[f.id];
+          return /* @__PURE__ */ React.createElement("div", { key: f.id, className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" },
+            /* @__PURE__ */ React.createElement("button", {
+              onClick: () => setAufgeklappt({ ...aufgeklappt, [f.id]: !auf }),
+              className: "text-left w-full font-serif text-lg text-[#e0b84a] leading-snug"
+            }, (auf ? "▾ " : "▸ ") + f.frage),
+            auf && /* @__PURE__ */ React.createElement("div", { className: "mt-3 pt-3 border-t border-[#5c2018]" },
+              /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed whitespace-pre-wrap" }, f.antwort),
+              f.quellen && f.quellen.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
+                /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[10px] uppercase tracking-widest text-[#8a6238] mb-1" }, "Quellen"),
+                f.quellen.map((q, i) => /* @__PURE__ */ React.createElement("p", { key: i, className: "text-xs text-[#b8905a]" }, "· " + q))),
+              /* @__PURE__ */ React.createElement("p", { className: "text-[11px] text-[#8a6238] mt-3" }, "beantwortet am " + (f.beantwortet || "—")))
+          );
+        }))),
+
+    fragen.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#b8905a] max-w-2xl leading-relaxed" },
+      "Noch keine Frage notiert. Was beim Lesen offenbleibt oder was du genauer wissen willst, kommt hierher — und geht nicht verloren.")
+  );
+}
+
 const NAV = [
   { id: "epochen", label: "Epochen", icon: BookOpen },
   { id: "vertiefungen", label: "Vertiefungen", icon: Layers },
@@ -2793,6 +2993,7 @@ const NAV = [
   { id: "personen", label: "Pers\xF6nlichkeiten", icon: Users },
   { id: "nationen", label: "Nationen & Reiche", icon: Crown },
   { id: "lernen", label: "Fakten & Jahreszahlen", icon: Sparkles },
+  { id: "fragen", label: "Forschungsfragen", icon: HelpCircle },
   { id: "verblueffend", label: "Verbl\xFCffende Fakten", icon: Sparkles }
 ];
 function formatYear(y) {
@@ -3128,5 +3329,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "zahlenstrahl" && /* @__PURE__ */ React.createElement(ZahlenstrahlTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "zahlenstrahl" && /* @__PURE__ */ React.createElement(ZahlenstrahlTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }
