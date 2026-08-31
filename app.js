@@ -2596,7 +2596,247 @@ const VERTIEFUNGEN = [
       "W3C: The original proposal of the WWW",
       "Encyclopaedia Britannica: Tim Berners-Lee"
     ]
-  }
+  },
+{
+  "id": "ashoka",
+  "titel": "Ashoka und die Umkehr nach Kalinga",
+  "epoche": "antike",
+  "jahr": -260,
+  "zeitraum": "ca. 265–238 v. Chr.",
+  "region": "Indischer Subkontinent",
+  "leitsatz": "Ein Herrscher gewinnt einen Krieg und zieht daraus den Schluss, dass Eroberung durch Gewalt falsch ist – und lässt diesen Schluss in Stein hauen.",
+  "vorgeschichte": "Das Maurya-Reich war das erste Großreich des Subkontinents. Ashokas Regierungszeit wird auf etwa 265–238 v. Chr. datiert, in anderer Zählung auf 273–232 v. Chr.",
+  "verlauf": "Das erste große Ereignis seiner Herrschaft war der Feldzug gegen Kalinga 260 v. Chr., den er selbst in einem Edikt beschreibt. Das Leid, das daraus folgte, brachte ihn dazu, den Gedanken der Eroberung durch Gewalt neu zu bewerten; nach und nach wandte er sich dem Buddhismus zu. Etwa zwölf Jahre nach seinem Regierungsantritt begann er, in regelmäßigen Abständen Edikte zu erlassen – mündlich verkündet und in Felsen und Säulen graviert, damit sie erreichbar blieben.",
+  "folgen": "Ashoka bestimmte die Grundsätze seines dhamma als Gewaltlosigkeit, Duldung aller Richtungen und Meinungen, Achtung vor den Eltern, Respekt vor religiösen Lehrern, Freigebigkeit gegenüber Freunden, menschliche Behandlung von Dienenden und Großzügigkeit gegenüber allen. Seine Förderung des Buddhismus trug wesentlich zu dessen Ausbreitung über Indien hinaus bei. Die Edikte sind zugleich die frühesten datierbaren Schriftzeugnisse Indiens.",
+  "strittig": "Wie tief die Umkehr ging, ist umstritten: Ashoka gab die Eroberungen nicht zurück und behielt Heer und Todesstrafe. Der Begriff dhamma selbst entzieht sich der einfachen Übersetzung – er kann Weltordnung, Sozialordnung, Frömmigkeit oder Rechtschaffenheit meinen, und Buddhisten verstanden darunter die Lehre des Buddha.",
+  "zahlen": [
+    {
+      "wert": "260 v. Chr.",
+      "was": "Feldzug gegen Kalinga"
+    },
+    {
+      "wert": "ca. 265–238 v. Chr.",
+      "was": "Regierungszeit, in anderer Zählung 273–232"
+    },
+    {
+      "wert": "ca. 12 Jahre",
+      "was": "nach Regierungsantritt beginnen die Edikte"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Ashoka; India – Ashoka's edicts; Kalinga; Mauryan empire"
+  ]
+},
+{
+  "id": "qin-einigung",
+  "titel": "Die Einigung Chinas",
+  "epoche": "antike",
+  "jahr": -221,
+  "zeitraum": "221–207 v. Chr.",
+  "region": "China",
+  "leitsatz": "Eine Dynastie hielt fünfzehn Jahre – der Verwaltungsrahmen, den sie schuf, über zweitausend.",
+  "vorgeschichte": "Jahrhundertelang hatten sich die Streitenden Reiche bekriegt. Der Staat Qin setzte auf den Legalismus, eine Lehre vom starken Zentralstaat und von harten Strafen für Ungehorsam.",
+  "verlauf": "221 v. Chr. einte der Herrscher von Qin ganz China unter sich als Qin Shihuangdi, 'Erster erhabener Kaiser von Qin'. Unter ihm wurden Schrift, Maße, Gewichte und sogar die Spurbreite der Wagen vereinheitlicht; die Normierung der Schriftzeichen betrieb der Staatsmann Li Si. Mehrere hunderttausend Menschen wurden eingesetzt, um die im Norden bestehenden Schutzwälle zu verbinden – daraus entstand, was heute die Chinesische Mauer heißt.",
+  "folgen": "Die Qin-Dynastie hielt nur bis 207 v. Chr. Ihre Einrichtungen aber – ein zentral verwalteter Beamtenstaat, eine einheitliche Schrift über Dialektgrenzen hinweg, genormte Maße – überdauerten sie um Jahrtausende und prägen den chinesischen Staat bis heute.",
+  "strittig": "Die Überlieferung stammt weitgehend von der nachfolgenden Han-Dynastie, die ein Interesse daran hatte, den Vorgänger als grausam darzustellen. Wie viel an den Berichten über Bücherverbrennung und Gelehrtenmord historisch ist, wird bis heute diskutiert.",
+  "zahlen": [
+    {
+      "wert": "221 v. Chr.",
+      "was": "Einigung Chinas"
+    },
+    {
+      "wert": "221–207 v. Chr.",
+      "was": "Dauer der Qin-Dynastie – 15 Jahre"
+    },
+    {
+      "wert": "mehrere hunderttausend",
+      "was": "Arbeitskräfte für die Verbindung der Schutzwälle"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Qin dynasty; Qin Shi Huang; China – The Qin empire 221–207 bce; Li Si; Chinese languages – Qin dynasty standardization"
+  ]
+},
+{
+  "id": "kreuzzuege",
+  "titel": "Die Kreuzzüge",
+  "epoche": "mittelalter",
+  "jahr": 1095,
+  "zeitraum": "1095–13. Jahrhundert",
+  "region": "Europa, Levante, Byzanz",
+  "leitsatz": "Der vierte Kreuzzug eroberte keine muslimische Stadt, sondern plünderte die größte christliche.",
+  "vorgeschichte": "Papst Urban II. rief 1095 auf dem Konzil von Clermont die französischen Ritter auf, den Christen im Osten gegen die muslimischen Türken beizustehen und das Heilige Land zurückzugewinnen.",
+  "verlauf": "Der Erste Kreuzzug dauerte von 1096 bis 1099 und endete mit der Einnahme Jerusalems; es entstanden christliche Staaten in Palästina und Syrien. Der wachsende Druck islamischer Staaten machte diese Gewinne später wieder zunichte. Der Vierte Kreuzzug, von Papst Innozenz III. angestoßen, begann 1202 und sollte Jerusalem zurückgewinnen – er wurde nach Konstantinopel umgeleitet. Im April 1204 eroberten und plünderten die Kreuzfahrer die Stadt.",
+  "folgen": "Die Plünderung von 1204 gilt weithin als ein von Habgier getriebener Verrat; sie schwächte das Byzantinische Reich erheblich und zersplitterte die christlichen Kräfte. Bereits der Erste Kreuzzug hatte 1096 zu Massakern an Juden in mehreren rheinischen Städten geführt – ein Wendepunkt in der Geschichte des Antisemitismus.",
+  "strittig": "Ob die Kreuzzüge vor allem religiös, ökonomisch oder machtpolitisch motiviert waren, wird seit Langem diskutiert. Ebenso, wie stark sie den Austausch zwischen Europa und der islamischen Welt förderten – dieser lief zu großen Teilen über Sizilien und Spanien, nicht über die Kreuzfahrerstaaten.",
+  "zahlen": [
+    {
+      "wert": "1095",
+      "was": "Aufruf Urbans II. in Clermont"
+    },
+    {
+      "wert": "1099",
+      "was": "Einnahme Jerusalems"
+    },
+    {
+      "wert": "April 1204",
+      "was": "Plünderung Konstantinopels im Vierten Kreuzzug"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Crusades; First Crusade; Fourth Crusade; Urban II"
+  ]
+},
+{
+  "id": "mali-reich",
+  "titel": "Das Reich von Mali",
+  "epoche": "mittelalter",
+  "jahr": 1324,
+  "zeitraum": "13.–15. Jahrhundert",
+  "region": "Westafrika",
+  "leitsatz": "Eine einzige Pilgerreise machte Europa und Nordafrika schlagartig bewusst, wo das Gold herkam.",
+  "vorgeschichte": "Das Reich von Mali kontrollierte große Gold- und Kupferregionen sowie Salzminen und beherrschte die transsaharischen Handelswege – jene Routen, über die westafrikanisches Gold seit dem 7. Jahrhundert nach Norden gelangte.",
+  "verlauf": "1324 pilgerte Mansa Musa nach Mekka. Die Überlieferung berichtet von einer Karawane mit 60.000 Mann und 80 Kamelen, jedes mit rund 300 Pfund Gold beladen. In Kairo soll seine Ankunft mit einer Tonne Gold den dortigen Goldmarkt zum Einbrechen gebracht haben – was zugleich zeigt, wie klein das übliche Angebot war.",
+  "folgen": "Die Reise war ein Akt der Zugehörigkeit zur islamischen Welt und machte den Reichtum Malis international bekannt. Mansa Musa ließ in Timbuktu die Große Moschee (Djinguereber) und eine königliche Residenz errichten. Im 14. Jahrhundert blühte die Stadt als Umschlagplatz des transsaharischen Gold- und Salzhandels und wurde ein Zentrum islamischer Gelehrsamkeit.",
+  "strittig": "Die überlieferten Zahlen zur Karawane stammen aus späteren arabischen Berichten und sind wahrscheinlich überhöht. Die moderne Rede vom 'reichsten Menschen aller Zeiten' beruht auf Umrechnungen, die Fachleute für nicht seriös halten.",
+  "zahlen": [
+    {
+      "wert": "1324",
+      "was": "Pilgerreise Mansa Musas nach Mekka"
+    },
+    {
+      "wert": "60.000 Mann, 80 Kamele",
+      "was": "überlieferte Größe der Karawane"
+    },
+    {
+      "wert": "Djinguereber",
+      "was": "Große Moschee von Timbuktu, nach der Rückkehr errichtet"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Mūsā I of Mali; Mali empire; Timbuktu",
+    "The Metropolitan Museum of Art: The Trans-Saharan Gold Trade (7th–14th Century)"
+  ]
+},
+{
+  "id": "renaissance",
+  "titel": "Die Renaissance",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1400,
+  "zeitraum": "14.–16. Jahrhundert",
+  "region": "Italien, dann Europa",
+  "leitsatz": "Nicht die Antike war neu, sondern der Blick auf sie – und das Geld, das ihn finanzierte.",
+  "vorgeschichte": "Im 15. Jahrhundert war die italienische Halbinsel in unabhängige Stadtstaaten geteilt, teils Republiken, teils von einer Familie beherrschte signorie. Der wirtschaftliche Reichtum und die frühkapitalistische Entwicklung Mittel- und Norditaliens ermöglichten Mäzenatentum, höhere Lesefähigkeit – und eine neue Art, die Welt anzusehen.",
+  "verlauf": "Zuerst zeigte sich der neue Geist im Humanismus, einer Bewegung, die nicht von gelehrten Klerikern ausging, sondern von weltlichen Literaten. Ihre Grundsätze: Der Mensch ist der erste Gegenstand des Studiums, alle Philosophien und Theologien haben eine gemeinsame Grundlage, und jedem Menschen kommt eine eigene Würde zu. Die Kaufmannsförderung der Künste ermöglichte die Hochrenaissance in Malerei, Bildhauerei und Architektur.",
+  "folgen": "Die Druckerpresse ließ antikes und neues Wissen rasch durch Europa wandern; der Humanismus verbreitete sich nach Norden. Der Buchdruck war es auch, der aus einem Gelehrtenstreit wenig später die Reformation machte.",
+  "strittig": "Der Begriff selbst stammt aus dem 19. Jahrhundert und trägt eine Wertung: Er unterstellt, das Mittelalter sei eine Unterbrechung gewesen. Die Forschung betont heute die Kontinuitäten – Universitäten, Rechtswissenschaft und antike Überlieferung waren nie verschwunden, vieles kam über die islamische Welt zurück.",
+  "zahlen": [
+    {
+      "wert": "15. Jhd.",
+      "was": "Höhepunkt in den italienischen Stadtstaaten"
+    },
+    {
+      "wert": "3 Grundsätze",
+      "was": "des Humanismus: Mensch als Gegenstand, Einheit der Lehren, Würde des Einzelnen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Renaissance; Renaissance – Causes and Effects; History of Europe – The Italian Renaissance; Italy – The early Italian Renaissance"
+  ]
+},
+{
+  "id": "aufklaerung",
+  "titel": "Die Aufklärung",
+  "epoche": "industrialisierung",
+  "jahr": 1750,
+  "zeitraum": "17. und 18. Jahrhundert",
+  "region": "Europa und Nordamerika",
+  "leitsatz": "Der entscheidende Satz war nicht, dass die Vernunft alles erklärt – sondern dass sich alles der Prüfung stellen muss, auch sie selbst.",
+  "vorgeschichte": "Die wissenschaftliche Revolution hatte gezeigt, dass sich Naturvorgänge mathematisch beschreiben lassen. Zugleich hatten Konfessionskriege den Anspruch geistlicher Autoritäten beschädigt.",
+  "verlauf": "Die Bewegung gewann im 17. und 18. Jahrhundert die Mehrheit der europäischen Denker – Thomas Paine nannte die Zeit das Zeitalter der Vernunft. Kant sah das Wesentliche der Aufklärung in der Befreiung von Aberglaube und Unwissenheit und formulierte in der Kritik: Unser Zeitalter sei das Zeitalter der Kritik, der sich alles unterwerfen müsse. Die große französische Encyclopédie, herausgegeben von Diderot und d'Alembert, fasste die wissenschaftlichen und humanistischen Leistungen des Jahrhunderts nahezu vollständig zusammen.",
+  "folgen": "Wenn jeder selbst herausfinden kann, was gilt, wozu braucht es dann politische oder religiöse Autoritäten, die es vorschreiben? Diese Frage untergrub die absolute Macht von Monarchen und Kirche und wirkte auf die amerikanische wie die französische Revolution.",
+  "strittig": "Noch zu Kants Lebzeiten wurde der Geist der Aufklärung von romantischen Idealisten zurückgewiesen, ihr Vertrauen in das menschliche Gespür für Recht und Gut vom revolutionären Terror verspottet und ihr Rationalismus als selbstzufrieden oder unmenschlich gescholten. Diese Kritik begleitet die Aufklärung seither – und stammt teils von ihren eigenen Erben.",
+  "zahlen": [
+    {
+      "wert": "17./18. Jhd.",
+      "was": "Zeitraum der Bewegung"
+    },
+    {
+      "wert": "Encyclopédie",
+      "was": "Diderot und d'Alembert – Kompendium des Jahrhunderts"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: The Enlightenment – Causes and Effects; History of Europe – The Enlightenment",
+    "Stanford Encyclopedia of Philosophy: Immanuel Kant"
+  ]
+},
+{
+  "id": "zweiter-weltkrieg",
+  "titel": "Der Zweite Weltkrieg",
+  "epoche": "moderne",
+  "jahr": 1939,
+  "zeitraum": "1939–1945",
+  "region": "weltweit",
+  "leitsatz": "Der tödlichste Krieg der Geschichte – und in ihm starben mehr Zivilisten als Soldaten.",
+  "vorgeschichte": "Politische und wirtschaftliche Instabilität in Deutschland, verbunden mit der Verbitterung über die Niederlage von 1918 und die Bedingungen des Versailler Vertrags, ermöglichten Hitler und der NSDAP den Aufstieg zur Macht. Ab Mitte der 1930er Jahre rüstete Hitler das Land heimlich und vertragswidrig auf. Großbritannien und Frankreich ließen Hitler und Mussolini gewähren, in der Hoffnung, diese Politik des Appeasement werde einen weiteren Krieg verhindern.",
+  "verlauf": "Der Krieg zog fast alle Weltregionen hinein und wurde in Europa, Nordafrika, Asien und dem Pazifik geführt. Die Schätzungen der Gesamttoten reichen von 35 bis 60 Millionen; verbreitet sind Angaben von 40 bis 50 Millionen. Für Europa allein werden 15 bis 20 Millionen genannt – mehr als doppelt so viele wie im Ersten Weltkrieg.",
+  "folgen": "Die zivilen Todesfälle durch Landkämpfe, Bombardierung, politische und rassistische Morde, kriegsbedingte Krankheit und Hunger sowie versenkte Schiffe übertrafen die Gefechtsverluste wahrscheinlich. Die schwersten anteiligen Verluste trafen Osteuropa: Polen verlor vielleicht 20 Prozent seiner Vorkriegsbevölkerung, Jugoslawien und die Sowjetunion je rund 10 Prozent.",
+  "strittig": "Für die Sowjetunion und China, die beiden Länder mit den zweifellos höchsten Verlusten, gibt es keine verlässlichen Zahlen. Die weite Spanne der Gesamtschätzungen ist kein Streit über die Größenordnung, sondern Ausdruck fehlender Erhebungen in genau den Regionen, die am schwersten getroffen wurden.",
+  "zahlen": [
+    {
+      "wert": "35–60 Mio.",
+      "was": "Spanne der Schätzungen für die Gesamtzahl der Toten"
+    },
+    {
+      "wert": "15–20 Mio.",
+      "was": "Tote allein in Europa"
+    },
+    {
+      "wert": "ca. 20 %",
+      "was": "Bevölkerungsverlust Polens"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: World War II; Casualties of World War II; World War II – Costs of the war; History of Europe – The blast of World War II"
+  ]
+},
+{
+  "id": "holocaust",
+  "titel": "Der Holocaust",
+  "epoche": "moderne",
+  "jahr": 1941,
+  "zeitraum": "1933–1945, systematischer Mord ab 1941",
+  "region": "Deutschland und das besetzte Europa",
+  "leitsatz": "Der bestdokumentierte Völkermord der Geschichte – dokumentiert von den Tätern selbst.",
+  "vorgeschichte": "Nach 1933 entrechtete das NS-Regime die jüdische Bevölkerung Schritt für Schritt: Berufsverbote, Nürnberger Gesetze, Enteignung, Pogrome. Die Ausgrenzung war Jahre vor dem Mord staatliche Politik und öffentlich sichtbar.",
+  "verlauf": "Der Holocaust war die systematische, bürokratisch organisierte, staatlich betriebene Verfolgung und Ermordung von sechs Millionen Jüdinnen und Juden durch das NS-Regime und seine Helfer – zwei Dritteln der jüdischen Bevölkerung Europas. Im September 1941 wurde in Auschwitz erstmals mit dem Giftgas Zyklon B gemordet. Am 20. Januar 1942 versammelten sich fünfzehn hohe Partei- und Regierungsvertreter in einer Villa am Berliner Wannsee, um die Umsetzung dessen zu besprechen, was sie 'Endlösung der Judenfrage' nannten: die planmäßige Ermordung aller elf Millionen als jüdisch geltenden Menschen Europas. Danach begann die systematische Deportation aus ganz Europa in sechs Vernichtungslager auf besetztem polnischem Gebiet – Chelmno, Belzec, Sobibor, Treblinka, Auschwitz-Birkenau und Majdanek.",
+  "folgen": "Ermordet wurde durch Vergasung, Erschießung, willkürliche Gewalt, Krankheit und Hunger. Neben Jüdinnen und Juden wurden Sinti und Roma, Menschen mit Behinderungen, politische Gegner, Homosexuelle, Zeugen Jehovas und sowjetische Kriegsgefangene verfolgt und ermordet.",
+  "strittig": "Hier ist nichts strittig, was die Tat betrifft. Der Holocaust ist der am besten dokumentierte Fall eines Völkermords; die Belege stammen zu großen Teilen aus deutschen Akten. Nur eine umfassende statistische Untersuchung im Auftrag Himmlers überstand den Krieg, eine Kopie wurde 1945 von der US-Armee erbeutet. Was Forschung diskutiert, sind Fragen der Entscheidungswege und der Datierung einzelner Schritte – nicht das Geschehen selbst.",
+  "zahlen": [
+    {
+      "wert": "6.000.000",
+      "was": "ermordete Jüdinnen und Juden – zwei Drittel der jüdischen Bevölkerung Europas"
+    },
+    {
+      "wert": "20. Januar 1942",
+      "was": "Wannsee-Konferenz"
+    },
+    {
+      "wert": "11 Mio.",
+      "was": "Zahl der dort für die Ermordung erfassten Menschen"
+    },
+    {
+      "wert": "6",
+      "was": "Vernichtungslager auf besetztem polnischem Gebiet"
+    }
+  ],
+  "quellen": [
+    "United States Holocaust Memorial Museum: The Final Solution; Documenting Numbers of Victims; Evidence and Documentation of the Holocaust",
+    "Yad Vashem: The Wannsee Conference",
+    "Encyclopaedia Britannica: Holocaust; Final Solution"
+  ]
+}
 ];
 
 
