@@ -638,88 +638,88 @@ const EPOCHS = [
   }
 ];
 const SCHLUESSELMOMENTE = [
-  {"year":-3200,"title":"Erfindung der Schrift","category":"Erfindung","text":"Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und übertragbar – die Voraussetzung für Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst."},
-  {"year":-508,"title":"Geburt der Demokratie in Athen","category":"Politischer Umbruch","text":"Kleisthenes' Reformen schaffen erstmals ein politisches System, in dem Bürger direkt über ihr Gemeinwesen entscheiden – ein Ideal, das über zwei Jahrtausende später weltweit wirkt."},
-  {"year":-218,"title":"Hannibal überquert die Alpen","category":"Wendepunkt im Krieg","text":"Der scheinbar unmögliche Alpenübergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung – hätte Hannibal Rom eingenommen, wäre die Weltgeschichte grundlegend anders verlaufen."},
-  {"year":33,"title":"Entstehung des Christentums","category":"Religion","text":"Aus einer kleinen jüdischen Reformbewegung wird binnen dreier Jahrhunderte die Staatsreligion Roms – und später die prägende religiöse Kraft des Abendlandes."},
-  {"year":476,"title":"Untergang Westroms","category":"Politischer Umbruch","text":"Das Ende der antiken Ordnung in Westeuropa leitet Jahrhunderte politischer Zersplitterung ein, aus denen die heutigen europäischen Nationen langsam hervorgehen."},
-  {"year":622,"title":"Hidschra und Aufstieg des Islam","category":"Religion","text":"Binnen eines Jahrhunderts nach Mohammeds Auswanderung entsteht ein Reich von Spanien bis Zentralasien – eine der schnellsten kulturellen Expansionen der Geschichte."},
-  {"year":1347,"title":"Der Schwarze Tod","category":"Katastrophe","text":"Ein Drittel der europäischen Bevölkerung stirbt innerhalb weniger Jahre – der dadurch entstehende Arbeitskräftemangel verschiebt langfristig die Machtverhältnisse zwischen Adel und einfachem Volk."},
-  {"year":1453,"title":"Fall Konstantinopels","category":"Wendepunkt im Krieg","text":"Mit dem Ende des Byzantinischen Reiches verschiebt sich die Machtbalance zwischen Orient und Okzident endgültig – zugleich fliehen griechische Gelehrte nach Westeuropa und befeuern die Renaissance."},
-  {"year":1455,"title":"Gutenbergs Buchdruck","category":"Erfindung","text":"Innerhalb weniger Jahrzehnte vervielfacht sich die Menge verfügbarer Bücher in Europa – ohne den Buchdruck wären Reformation und Wissenschaftliche Revolution kaum denkbar gewesen."},
-  {"year":1492,"title":"Kolumbus erreicht Amerika","category":"Wendepunkt","text":"Zwei bis dahin getrennte Weltteile treten in dauerhaften Kontakt – mit enormen Folgen für Handel, Migration, Krankheiten und Machtverhältnisse, aber auch verheerenden Folgen für indigene Bevölkerungen."},
-  {"year":1517,"title":"Beginn der Reformation","category":"Religion","text":"Luthers Thesen spalten die westliche Christenheit dauerhaft und lösen jahrhundertelange religiöse und politische Konflikte in Europa aus."},
-  {"year":1776,"title":"US-Unabhängigkeitserklärung","category":"Politischer Umbruch","text":"Erstmals gründet sich ein moderner Staat explizit auf den Prinzipien von Volkssouveränität und unveräußerlichen Menschenrechten."},
-  {"year":1789,"title":"Französische Revolution","category":"Politischer Umbruch","text":"Der Sturz der absoluten Monarchie und die Erklärung der Menschenrechte erschüttern die politische Ordnung ganz Europas und wirken bis in die Gegenwart nach."},
-  {"year":1859,"title":"Darwins Evolutionstheorie","category":"Wissenschaft","text":"Die Idee der natürlichen Auslese verändert nicht nur die Biologie, sondern auch das philosophische und religiöse Selbstverständnis des Menschen."},
-  {"year":1869,"title":"Eröffnung des Suezkanals","category":"Erfindung","text":"Die künstliche Verbindung zweier Meere verkürzt den Seeweg zwischen Europa und Asien um tausende Kilometer und beschleunigt die Globalisierung des 19. Jahrhunderts."},
-  {"year":1914,"title":"Ausbruch des Ersten Weltkriegs","category":"Wendepunkt im Krieg","text":"Ein regionales Attentat löst durch ein Bündnisgeflecht einen globalen Krieg aus, der vier Großreiche zerstört und die politische Landkarte des 20. Jahrhunderts neu zeichnet."},
-  {"year":1917,"title":"Russische Revolution","category":"Politischer Umbruch","text":"Erstmals übernimmt eine kommunistische Bewegung dauerhaft die Staatsmacht – prägt Weltpolitik und Ideologiekonflikte für das gesamte 20. Jahrhundert."},
-  {"year":1929,"title":"Weltwirtschaftskrise","category":"Katastrophe","text":"Der Crash an der Wall Street löst eine globale Depression aus, die politische Radikalisierung begünstigt und den Weg für den Zweiten Weltkrieg mit ebnet."},
-  {"year":1945,"title":"Erster Einsatz von Atomwaffen","category":"Wendepunkt im Krieg","text":"Die Abwürfe auf Hiroshima und Nagasaki beenden den Zweiten Weltkrieg und eröffnen zugleich das nukleare Zeitalter mit permanenter Auslöschungsgefahr."},
-  {"year":1969,"title":"Erste Mondlandung","category":"Erfindung","text":"Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All."},
-  {"year":1989,"title":"Fall der Berliner Mauer","category":"Politischer Umbruch","text":"Friedliche Massenproteste beenden die deutsche und europäische Teilung und läuten das Ende des Kalten Krieges ein."},
-  {"year":1991,"title":"Erfindung des World Wide Web","category":"Erfindung","text":"Tim Berners-Lees Konzept macht das Internet einem Massenpublikum zugänglich und legt den Grundstein der digitalen Vernetzung der Welt."},
-  {"year":2022,"title":"Durchbruch generativer KI","category":"Erfindung","text":"Große Sprachmodelle werden erstmals massentauglich – mit potenziell ähnlich weitreichenden Folgen für Arbeit und Wissen wie einst der Buchdruck."},
-  {"year":-3100,"title":"Vereinigung Ober- und Unterägyptens","category":"Politischer Umbruch","text":"Menes/Narmer eint zwei Königreiche zu einem der ersten Territorialstaaten der Geschichte – Grundlage für 3000 Jahre pharaonische Kontinuität."},
-  {"year":-1274,"title":"Schlacht bei Kadesch & erster Friedensvertrag","category":"Wendepunkt im Krieg","text":"Nach der größten Streitwagenschlacht der Geschichte schließen Ägypter und Hethiter den ältesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit."},
-  {"year":-776,"title":"Erste Olympische Spiele","category":"Kultur","text":"Ein religiös-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause für Wettkampfkultur bis heute."},
-  {"year":-221,"title":"Erste Reichseinigung Chinas","category":"Politischer Umbruch","text":"Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute."},
-  {"year":1204,"title":"Plünderung Konstantinopels durch Kreuzfahrer","category":"Wendepunkt im Krieg","text":"Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – ein Verrat, der Byzanz dauerhaft schwächt und den Fall an die Osmanen 1453 vorbereitet."},
-  {"year":1258,"title":"Mongolische Zerstörung Bagdads","category":"Katastrophe","text":"Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der größten kulturellen Katastrophen der Geschichte."},
-  {"year":1492,"title":"Fall von Granada","category":"Politischer Umbruch","text":"Das Ende von 800 Jahren islamischer Präsenz in Spanien fällt zufällig mit dem Beginn der europäischen Expansion nach Amerika zusammen."},
-  {"year":1602,"title":"Gründung der ersten Börse der Welt","category":"Erfindung","text":"Mit handelbaren VOC-Aktien in Amsterdam entsteht ein völlig neues Finanzinstrument, das die Grundlage moderner Kapitalmärkte legt."},
-  {"year":1648,"title":"Westfälischer Friede","category":"Politischer Umbruch","text":"Das Prinzip staatlicher Souveränität wird erstmals völkerrechtlich verankert – Grundstein des bis heute gültigen internationalen Staatensystems."},
-  {"year":1839,"title":"Erster Opiumkrieg","category":"Wendepunkt im Krieg","text":"Großbritanniens militärische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Demütigung' ein und verschiebt die globale Machtbalance zugunsten Europas."},
-  {"year":1871,"title":"Deutsche Reichsgründung","category":"Politischer Umbruch","text":"Die Einigung unter preußischer Führung schafft eine neue Großmacht im Zentrum Europas und verändert das europäische Kräftegleichgewicht dauerhaft."},
-  {"year":1905,"title":"Russisch-Japanischer Krieg endet","category":"Wendepunkt im Krieg","text":"Erstmals besiegt eine asiatische Macht eine europäische Großmacht – erschüttert den europäischen Überlegenheitsglauben und inspiriert Unabhängigkeitsbewegungen in ganz Asien."},
-  {"year":1917,"title":"Balfour-Deklaration","category":"Politischer Umbruch","text":"Großbritannien unterstützt erstmals offiziell eine 'nationale Heimstätte' für das jüdische Volk in Palästina – Ausgangspunkt späterer Nahostkonflikte."},
-  {"year":1947,"title":"Teilung Indiens","category":"Katastrophe","text":"Die überstürzte Teilung in Indien und Pakistan löst eine der größten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus."},
-  {"year":105,"title":"Erfindung des Papiers","category":"Erfindung","text":"Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus."},
-  {"year":868,"title":"Ältestes datiertes gedrucktes Buch","category":"Erfindung","text":"Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern."},
-  {"year":1044,"title":"Erfindung des Schießpulvers","category":"Erfindung","text":"Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend."},
-  {"year":1088,"title":"Gründung der ersten europäischen Universität","category":"Kultur","text":"Die Universität von Bologna entsteht als älteste durchgehend bestehende Universität Europas – Grundstein institutionalisierter höherer Bildung."},
-  {"year":1494,"title":"Vertrag von Tordesillas","category":"Politischer Umbruch","text":"Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."},
-  {"year":1500,"title":"Der Kolumbianische Austausch","category":"Wendepunkt","text":"Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen."},
-  {"year":1555,"title":"Augsburger Religionsfrieden","category":"Religion","text":"Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen – ein früher Schritt hin zu religiöser Koexistenz in Europa."},
-  {"year":1796,"title":"Erfindung der Pockenimpfung","category":"Wissenschaft","text":"Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken."},
-  {"year":1815,"title":"Wiener Kongress","category":"Politischer Umbruch","text":"Die europäischen Großmächte etablieren ein Mächtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Großkrieg bewahrt."},
-  {"year":1865,"title":"Verfassungsrechtliches Ende der Sklaverei in den USA","category":"Politischer Umbruch","text":"Nach der Emanzipationserklärung von 1863, die zunächst nur Sklaven in den Konföderierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endgültig – tatsächliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg."},
-  {"year":1916,"title":"Sykes-Picot-Abkommen","category":"Politischer Umbruch","text":"Großbritannien und Frankreich ziehen im Geheimen willkürliche Grenzen durch den Nahen Osten – mit Konfliktfolgen, die bis heute spürbar sind."},
-  {"year":1945,"title":"Gründung der Vereinten Nationen","category":"Politischer Umbruch","text":"Als institutionelle Lehre aus zwei Weltkriegen entsteht erstmals eine globale Organisation zur Sicherung von Frieden und internationaler Zusammenarbeit."},
-  {"year":1960,"title":"'Afrikanisches Jahr'","category":"Politischer Umbruch","text":"Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabhängigkeit von europäischen Kolonialmächten – Höhepunkt der weltweiten Dekolonisierungswelle."},
-  {"year":1969,"title":"Geburtsstunde des Internets (ARPANET)","category":"Erfindung","text":"Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet."},
-  {"year":2003,"title":"Entschlüsselung des menschlichen Genoms","category":"Wissenschaft","text":"Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie."},
-  {"year":-3000,"category":"Erfindung","text":"Das Rad taucht zunächst nicht im Verkehr auf, sondern als Töpferscheibe. Erst später wird daraus das Wagenrad – eine Erfindung, die den Transport von Lasten und damit Handel und Krieg grundlegend verändert.","title":"Rad und Töpferscheibe"},
-  {"year":-1754,"category":"Politischer Umbruch","title":"Kodex Hammurapi","text":"Der babylonische König lässt Rechtssätze in Stein hauen und öffentlich aufstellen. Entscheidend ist weniger der Inhalt als das Prinzip: Recht wird nachprüfbar, weil es geschrieben und sichtbar ist."},
-  {"year":-600,"category":"Erfindung","title":"Erfindung der Münze","text":"In Lydien entstehen erste geprägte Münzen aus Elektron. Geld als genormtes, staatlich garantiertes Tauschmittel macht Handel über Vertrauensgrenzen hinweg möglich."},
-  {"year":-221,"category":"Politischer Umbruch","title":"Einigung Chinas","text":"Qin Shihuangdi vereint die Streitenden Reiche, vereinheitlicht Schrift, Maße, Gewichte und Achsenbreiten. Der administrative Rahmen überdauert die Dynastie um zwei Jahrtausende."},
-  {"year":105,"category":"Erfindung","title":"Papier in China","text":"Dem Hofbeamten Cai Lun wird die Verbesserung der Papierherstellung zugeschrieben. Über die islamische Welt erreicht das Verfahren erst rund tausend Jahre später Europa."},
-  {"year":476,"category":"Wendepunkt","title":"Absetzung des letzten Westkaisers","text":"Odoaker setzt Romulus Augustulus ab. Zeitgenossen sahen darin kaum einen Einschnitt – das Datum wurde erst von späteren Historikern zur Epochengrenze erhoben."},
-  {"year":622,"category":"Religion","title":"Hidschra","text":"Mohammeds Auswanderung von Mekka nach Medina markiert den Beginn der islamischen Zeitrechnung – ein Kalender, der von einem politischen Neuanfang aus zählt, nicht von einer Geburt."},
-  {"year":800,"category":"Politischer Umbruch","title":"Kaiserkrönung Karls des Großen","text":"Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."},
-  {"year":1088,"category":"Kultur","title":"Erste europäische Universität","text":"In Bologna entsteht eine Gemeinschaft von Studenten und Lehrenden mit eigenen Rechten. Aus solchen Korporationen wird die Universität als eigenständige Institution."},
-  {"year":1215,"category":"Politischer Umbruch","title":"Magna Carta","text":"König Johann muss zugestehen, dass auch der Herrscher an Recht gebunden ist – ein Satz, der über Jahrhunderte weiterwirkt, obwohl das Dokument zunächst Adelsinteressen sicherte."},
-  {"year":1440,"category":"Wissenschaft","title":"Der Buchdruck","text":"Gutenbergs bewegliche Lettern senken den Buchpreis binnen weniger Jahrzehnte um zwei Drittel. Wissen wird erstmals in großer Zahl vergleichbar – und damit überprüfbar."},
-  {"year":1543,"category":"Wissenschaft","title":"Kopernikus stellt die Erde beiseite","text":"In 'De revolutionibus' rückt Kopernikus die Sonne ins Zentrum. Der Bruch liegt weniger in der Astronomie als im Selbstbild: Der Mensch wohnt nicht mehr im Mittelpunkt."},
-  {"year":1687,"category":"Wissenschaft","title":"Newtons Principia","text":"Newton zeigt, dass fallende Äpfel und kreisende Planeten denselben Gesetzen folgen. Die Vorstellung, die Natur sei mathematisch beschreibbar, wird zur Grundlage der modernen Wissenschaft."},
-  {"year":1755,"category":"Katastrophe","title":"Erdbeben von Lissabon","text":"Das Beben an Allerheiligen zerstört eine europäische Hauptstadt und erschüttert das theologische Weltbild: Wie lässt sich ein solches Unglück mit einer guten Weltordnung vereinbaren? Die Frage prägt die Aufklärung."},
-  {"year":1796,"category":"Wissenschaft","title":"Erste Pockenimpfung","text":"Edward Jenner nutzt Kuhpocken zum Schutz vor Pocken. Die Pocken bleiben die einzige menschliche Infektionskrankheit, die je vollständig ausgerottet wurde – 1980 erklärt."},
-  {"year":1804,"category":"Politischer Umbruch","title":"Unabhängigkeit Haitis","text":"Aus dem einzigen erfolgreichen Sklavenaufstand der Geschichte geht ein unabhängiger Staat hervor. Die europäischen Mächte und die USA reagieren mit Isolation statt Anerkennung."},
-  {"year":1848,"category":"Politischer Umbruch","title":"Revolutionen von 1848","text":"In fast ganz Europa fordern Bewegungen Verfassungen, Pressefreiheit und nationale Einheit. Fast überall scheitern sie kurzfristig – und setzen langfristig den Rahmen."},
-  {"year":1859,"category":"Wissenschaft","title":"Darwins Entstehung der Arten","text":"Die Idee gemeinsamer Abstammung durch natürliche Auslese stellt den Menschen in die Naturgeschichte statt über sie."},
-  {"year":1865,"category":"Wissenschaft","title":"Mendels Vererbungsregeln","text":"Der Augustinermönch Gregor Mendel beschreibt an Erbsen die Regeln der Vererbung. Seine Arbeit bleibt 35 Jahre unbeachtet, bis sie um 1900 wiederentdeckt wird."},
-  {"year":1867,"category":"Wissenschaft","title":"Antiseptische Chirurgie","text":"Joseph Lister führt Antiseptik in den Operationssaal ein. Zuvor starben Patienten häufiger an der Infektion als am Eingriff."},
-  {"year":1893,"category":"Politischer Umbruch","title":"Erstes Frauenwahlrecht","text":"Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern."},
-  {"year":1903,"category":"Erfindung","title":"Erster Motorflug","text":"Die Brüder Wright halten sich mit einem motorisierten Flugzeug in der Luft. Keine sechs Jahrzehnte später fliegen Menschen zum Mond."},
-  {"year":1928,"category":"Wissenschaft","title":"Entdeckung des Penicillins","text":"Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit."},
-  {"year":1945,"category":"Katastrophe","title":"Hiroshima und Nagasaki","text":"Zum ersten und bisher einzigen Mal werden Kernwaffen im Krieg eingesetzt. Seither prägt die Möglichkeit der Selbstauslöschung die internationale Politik."},
-  {"year":1948,"category":"Politischer Umbruch","title":"Allgemeine Erklärung der Menschenrechte","text":"Die UN-Generalversammlung verabschiedet einen Text, der Rechte nicht an Staatsangehörigkeit knüpft, sondern an das Menschsein – rechtlich zunächst unverbindlich, politisch wirkmächtig."},
-  {"year":1953,"category":"Wissenschaft","title":"Struktur der DNA","text":"Watson und Crick beschreiben die Doppelhelix – wesentlich gestützt auf Röntgenaufnahmen von Rosalind Franklin, deren Beitrag lange nicht angemessen gewürdigt wurde."},
-  {"year":1972,"category":"Wendepunkt","title":"Die Grenzen des Wachstums","text":"Der Bericht an den Club of Rome bringt die Frage, ob unbegrenztes Wachstum auf einem begrenzten Planeten möglich ist, erstmals in die breite Öffentlichkeit."},
-  {"year":1980,"category":"Wissenschaft","title":"Pocken ausgerottet","text":"Die WHO erklärt die Pocken für ausgerottet – der bislang einzige derartige Erfolg bei einer menschlichen Infektionskrankheit."},
-  {"year":1989,"category":"Erfindung","title":"Das World Wide Web","text":"Tim Berners-Lee entwirft am CERN ein System zum Austausch von Forschungsdaten. 1993 gibt das CERN die Software gemeinfrei – die Entscheidung, die seine Ausbreitung ermöglichte."},
-  {"year":1994,"category":"Politischer Umbruch","title":"Ende der Apartheid","text":"Nach den ersten allgemeinen Wahlen Südafrikas wird Nelson Mandela Präsident. Die Wahrheits- und Versöhnungskommission versucht anschließend einen Umgang mit der Vergangenheit ohne Bürgerkrieg."}
+{"year":-3200,"title":"Erfindung der Schrift","category":"Erfindung","text":"Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und übertragbar – die Voraussetzung für Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst."},
+{"year":-508,"title":"Geburt der Demokratie in Athen","category":"Politischer Umbruch","text":"Kleisthenes' Reformen schaffen erstmals ein politisches System, in dem Bürger direkt über ihr Gemeinwesen entscheiden – ein Ideal, das über zwei Jahrtausende später weltweit wirkt."},
+{"year":-218,"title":"Hannibal überquert die Alpen","category":"Wendepunkt im Krieg","text":"Der scheinbar unmögliche Alpenübergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung – hätte Hannibal Rom eingenommen, wäre die Weltgeschichte grundlegend anders verlaufen."},
+{"year":33,"title":"Entstehung des Christentums","category":"Religion","text":"Aus einer kleinen jüdischen Reformbewegung wird binnen dreier Jahrhunderte die Staatsreligion Roms – und später die prägende religiöse Kraft des Abendlandes."},
+{"year":476,"title":"Untergang Westroms","category":"Politischer Umbruch","text":"Das Ende der antiken Ordnung in Westeuropa leitet Jahrhunderte politischer Zersplitterung ein, aus denen die heutigen europäischen Nationen langsam hervorgehen."},
+{"year":622,"title":"Hidschra und Aufstieg des Islam","category":"Religion","text":"Binnen eines Jahrhunderts nach Mohammeds Auswanderung entsteht ein Reich von Spanien bis Zentralasien – eine der schnellsten kulturellen Expansionen der Geschichte."},
+{"year":1347,"title":"Der Schwarze Tod","category":"Katastrophe","text":"Ein Drittel der europäischen Bevölkerung stirbt innerhalb weniger Jahre – der dadurch entstehende Arbeitskräftemangel verschiebt langfristig die Machtverhältnisse zwischen Adel und einfachem Volk."},
+{"year":1453,"title":"Fall Konstantinopels","category":"Wendepunkt im Krieg","text":"Mit dem Ende des Byzantinischen Reiches verschiebt sich die Machtbalance zwischen Orient und Okzident endgültig – zugleich fliehen griechische Gelehrte nach Westeuropa und befeuern die Renaissance."},
+{"year":1455,"title":"Gutenbergs Buchdruck","category":"Erfindung","text":"Innerhalb weniger Jahrzehnte vervielfacht sich die Menge verfügbarer Bücher in Europa – ohne den Buchdruck wären Reformation und Wissenschaftliche Revolution kaum denkbar gewesen."},
+{"year":1492,"title":"Kolumbus erreicht Amerika","category":"Wendepunkt","text":"Zwei bis dahin getrennte Weltteile treten in dauerhaften Kontakt – mit enormen Folgen für Handel, Migration, Krankheiten und Machtverhältnisse, aber auch verheerenden Folgen für indigene Bevölkerungen."},
+{"year":1517,"title":"Beginn der Reformation","category":"Religion","text":"Luthers Thesen spalten die westliche Christenheit dauerhaft und lösen jahrhundertelange religiöse und politische Konflikte in Europa aus."},
+{"year":1776,"title":"US-Unabhängigkeitserklärung","category":"Politischer Umbruch","text":"Erstmals gründet sich ein moderner Staat explizit auf den Prinzipien von Volkssouveränität und unveräußerlichen Menschenrechten."},
+{"year":1789,"title":"Französische Revolution","category":"Politischer Umbruch","text":"Neu war nicht der Sturz eines Königs – neu war die Begründung. Herrschaft galt fortan als etwas, das sich vor den Regierten rechtfertigen muss. Dieser Gedanke ließ sich nicht mehr einfangen: Er wanderte über Napoleons Heere nach Europa, über Haiti in die Karibik und über die Erklärung der Menschen- und Bürgerrechte in fast jede spätere Verfassung."},
+{"year":1859,"title":"Darwins Evolutionstheorie","category":"Wissenschaft","text":"Die Idee der natürlichen Auslese verändert nicht nur die Biologie, sondern auch das philosophische und religiöse Selbstverständnis des Menschen."},
+{"year":1869,"title":"Eröffnung des Suezkanals","category":"Erfindung","text":"Der Kanal veränderte die Landkarte der Macht: Wer ihn kontrollierte, kontrollierte den Weg nach Indien. 1875 zwang die Schuldenlast den Khediven Ismail, seine 176.602 Anteile zu verkaufen; auf Betreiben Disraelis kaufte sie die britische Regierung. Ägypten blieb danach bis 1949 ohne Sitz im Verwaltungsrat – am eigenen Kanal."},
+{"year":1914,"title":"Ausbruch des Ersten Weltkriegs","category":"Wendepunkt im Krieg","text":"Ein regionales Attentat löst durch ein Bündnisgeflecht einen globalen Krieg aus, der vier Großreiche zerstört und die politische Landkarte des 20. Jahrhunderts neu zeichnet."},
+{"year":1917,"title":"Russische Revolution","category":"Politischer Umbruch","text":"Erstmals übernimmt eine kommunistische Bewegung dauerhaft die Staatsmacht – prägt Weltpolitik und Ideologiekonflikte für das gesamte 20. Jahrhundert."},
+{"year":1929,"title":"Weltwirtschaftskrise","category":"Katastrophe","text":"Entscheidend war nicht der Kurssturz, sondern seine Übertragung: Der Goldstandard band die Währungen aneinander, sodass Notenbanken mit Zinserhöhungen gegensteuern mussten und die Krise damit vertieften. Wer den Goldstandard zuerst verließ, erholte sich zuerst – Großbritannien ab 1931, die USA erst ab 1933."},
+{"year":1945,"title":"Erster Einsatz von Atomwaffen","category":"Wendepunkt im Krieg","text":"Die Abwürfe auf Hiroshima und Nagasaki beenden den Zweiten Weltkrieg und eröffnen zugleich das nukleare Zeitalter mit permanenter Auslöschungsgefahr."},
+{"year":1969,"title":"Erste Mondlandung","category":"Erfindung","text":"Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All."},
+{"year":1989,"title":"Fall der Berliner Mauer","category":"Politischer Umbruch","text":"Friedliche Massenproteste beenden die deutsche und europäische Teilung und läuten das Ende des Kalten Krieges ein."},
+{"year":1991,"title":"Erfindung des World Wide Web","category":"Erfindung","text":"Tim Berners-Lees Konzept macht das Internet einem Massenpublikum zugänglich und legt den Grundstein der digitalen Vernetzung der Welt."},
+{"year":2022,"title":"Durchbruch generativer KI","category":"Erfindung","text":"Große Sprachmodelle werden erstmals massentauglich – mit potenziell ähnlich weitreichenden Folgen für Arbeit und Wissen wie einst der Buchdruck."},
+{"year":-3100,"title":"Vereinigung Ober- und Unterägyptens","category":"Politischer Umbruch","text":"Menes/Narmer eint zwei Königreiche zu einem der ersten Territorialstaaten der Geschichte – Grundlage für 3000 Jahre pharaonische Kontinuität."},
+{"year":-1274,"title":"Schlacht bei Kadesch & erster Friedensvertrag","category":"Wendepunkt im Krieg","text":"Nach der größten Streitwagenschlacht der Geschichte schließen Ägypter und Hethiter den ältesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit."},
+{"year":-776,"title":"Erste Olympische Spiele","category":"Kultur","text":"Ein religiös-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause für Wettkampfkultur bis heute."},
+{"year":-221,"title":"Erste Reichseinigung Chinas","category":"Politischer Umbruch","text":"Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute."},
+{"year":1204,"title":"Plünderung Konstantinopels durch Kreuzfahrer","category":"Wendepunkt im Krieg","text":"Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – ein Verrat, der Byzanz dauerhaft schwächt und den Fall an die Osmanen 1453 vorbereitet."},
+{"year":1258,"title":"Mongolische Zerstörung Bagdads","category":"Katastrophe","text":"Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der größten kulturellen Katastrophen der Geschichte."},
+{"year":1492,"title":"Fall von Granada","category":"Politischer Umbruch","text":"Das Ende von 800 Jahren islamischer Präsenz in Spanien fällt zufällig mit dem Beginn der europäischen Expansion nach Amerika zusammen."},
+{"year":1602,"title":"Gründung der ersten Börse der Welt","category":"Erfindung","text":"Mit handelbaren VOC-Aktien in Amsterdam entsteht ein völlig neues Finanzinstrument, das die Grundlage moderner Kapitalmärkte legt."},
+{"year":1648,"title":"Westfälischer Friede","category":"Politischer Umbruch","text":"Der Friede beendete den Versuch, Europa religiös zu vereinheitlichen. Weil kein Lager den anderen besiegen konnte, wurde aus der Frage nach der wahren Konfession eine Frage der Zuständigkeit – ein Verfahren statt einer Wahrheit. Ob damit schon das moderne Staatensystem begann, ist umstritten."},
+{"year":1839,"title":"Erster Opiumkrieg","category":"Wendepunkt im Krieg","text":"Großbritanniens militärische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Demütigung' ein und verschiebt die globale Machtbalance zugunsten Europas."},
+{"year":1871,"title":"Deutsche Reichsgründung","category":"Politischer Umbruch","text":"Die Einigung unter preußischer Führung schafft eine neue Großmacht im Zentrum Europas und verändert das europäische Kräftegleichgewicht dauerhaft."},
+{"year":1905,"title":"Russisch-Japanischer Krieg endet","category":"Wendepunkt im Krieg","text":"Erstmals besiegt eine asiatische Macht eine europäische Großmacht – erschüttert den europäischen Überlegenheitsglauben und inspiriert Unabhängigkeitsbewegungen in ganz Asien."},
+{"year":1917,"title":"Balfour-Deklaration","category":"Politischer Umbruch","text":"Großbritannien unterstützt erstmals offiziell eine 'nationale Heimstätte' für das jüdische Volk in Palästina – Ausgangspunkt späterer Nahostkonflikte."},
+{"year":1947,"title":"Teilung Indiens","category":"Katastrophe","text":"Die überstürzte Teilung in Indien und Pakistan löst eine der größten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus."},
+{"year":105,"title":"Erfindung des Papiers","category":"Erfindung","text":"Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus."},
+{"year":868,"title":"Ältestes datiertes gedrucktes Buch","category":"Erfindung","text":"Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern."},
+{"year":1044,"title":"Erfindung des Schießpulvers","category":"Erfindung","text":"Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend."},
+{"year":1088,"title":"Gründung der ersten europäischen Universität","category":"Kultur","text":"Die Universität von Bologna entsteht als älteste durchgehend bestehende Universität Europas – Grundstein institutionalisierter höherer Bildung."},
+{"year":1494,"title":"Vertrag von Tordesillas","category":"Politischer Umbruch","text":"Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."},
+{"year":1500,"title":"Der Kolumbianische Austausch","category":"Wendepunkt","text":"Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen."},
+{"year":1555,"title":"Augsburger Religionsfrieden","category":"Religion","text":"Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen – ein früher Schritt hin zu religiöser Koexistenz in Europa."},
+{"year":1796,"title":"Erfindung der Pockenimpfung","category":"Wissenschaft","text":"Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken."},
+{"year":1815,"title":"Wiener Kongress","category":"Politischer Umbruch","text":"Die europäischen Großmächte etablieren ein Mächtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Großkrieg bewahrt."},
+{"year":1865,"title":"Verfassungsrechtliches Ende der Sklaverei in den USA","category":"Politischer Umbruch","text":"Nach der Emanzipationserklärung von 1863, die zunächst nur Sklaven in den Konföderierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endgültig – tatsächliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg."},
+{"year":1916,"title":"Sykes-Picot-Abkommen","category":"Politischer Umbruch","text":"Großbritannien und Frankreich ziehen im Geheimen willkürliche Grenzen durch den Nahen Osten – mit Konfliktfolgen, die bis heute spürbar sind."},
+{"year":1945,"title":"Gründung der Vereinten Nationen","category":"Politischer Umbruch","text":"Der entscheidende Unterschied zum gescheiterten Völkerbund liegt im Sicherheitsrat: Die fünf Siegermächte erhielten ein Vetorecht und blieben damit dauerhaft an Bord – um den Preis, dass die Organisation gegen eines ihrer eigenen Mitglieder kaum handlungsfähig ist. Diese Bauweise war Bedingung dafür, dass es sie überhaupt gab."},
+{"year":1960,"title":"'Afrikanisches Jahr'","category":"Politischer Umbruch","text":"Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabhängigkeit von europäischen Kolonialmächten – Höhepunkt der weltweiten Dekolonisierungswelle."},
+{"year":1969,"title":"Geburtsstunde des Internets (ARPANET)","category":"Erfindung","text":"Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet."},
+{"year":2003,"title":"Entschlüsselung des menschlichen Genoms","category":"Wissenschaft","text":"Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie."},
+{"year":-3000,"category":"Erfindung","text":"Das Rad taucht zunächst nicht im Verkehr auf, sondern als Töpferscheibe. Erst später wird daraus das Wagenrad – eine Erfindung, die den Transport von Lasten und damit Handel und Krieg grundlegend verändert.","title":"Rad und Töpferscheibe"},
+{"year":-1754,"category":"Politischer Umbruch","title":"Kodex Hammurapi","text":"Der babylonische König lässt Rechtssätze in Stein hauen und öffentlich aufstellen. Entscheidend ist weniger der Inhalt als das Prinzip: Recht wird nachprüfbar, weil es geschrieben und sichtbar ist."},
+{"year":-600,"category":"Erfindung","title":"Erfindung der Münze","text":"In Lydien entstehen erste geprägte Münzen aus Elektron. Geld als genormtes, staatlich garantiertes Tauschmittel macht Handel über Vertrauensgrenzen hinweg möglich."},
+{"year":-221,"category":"Politischer Umbruch","title":"Einigung Chinas","text":"Qin Shihuangdi vereint die Streitenden Reiche, vereinheitlicht Schrift, Maße, Gewichte und Achsenbreiten. Der administrative Rahmen überdauert die Dynastie um zwei Jahrtausende."},
+{"year":105,"category":"Erfindung","title":"Papier in China","text":"Dem Hofbeamten Cai Lun wird die Verbesserung der Papierherstellung zugeschrieben. Über die islamische Welt erreicht das Verfahren erst rund tausend Jahre später Europa."},
+{"year":476,"category":"Wendepunkt","title":"Absetzung des letzten Westkaisers","text":"Odoaker setzt Romulus Augustulus ab. Zeitgenossen sahen darin kaum einen Einschnitt – das Datum wurde erst von späteren Historikern zur Epochengrenze erhoben."},
+{"year":622,"category":"Religion","title":"Hidschra","text":"Mohammeds Auswanderung von Mekka nach Medina markiert den Beginn der islamischen Zeitrechnung – ein Kalender, der von einem politischen Neuanfang aus zählt, nicht von einer Geburt."},
+{"year":800,"category":"Politischer Umbruch","title":"Kaiserkrönung Karls des Großen","text":"Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."},
+{"year":1088,"category":"Kultur","title":"Erste europäische Universität","text":"In Bologna entsteht eine Gemeinschaft von Studenten und Lehrenden mit eigenen Rechten. Aus solchen Korporationen wird die Universität als eigenständige Institution."},
+{"year":1215,"category":"Politischer Umbruch","title":"Magna Carta","text":"König Johann muss zugestehen, dass auch der Herrscher an Recht gebunden ist – ein Satz, der über Jahrhunderte weiterwirkt, obwohl das Dokument zunächst Adelsinteressen sicherte."},
+{"year":1440,"category":"Wissenschaft","title":"Der Buchdruck","text":"Gutenbergs bewegliche Lettern senken den Buchpreis binnen weniger Jahrzehnte um zwei Drittel. Wissen wird erstmals in großer Zahl vergleichbar – und damit überprüfbar."},
+{"year":1543,"category":"Wissenschaft","title":"Kopernikus stellt die Erde beiseite","text":"In 'De revolutionibus' rückt Kopernikus die Sonne ins Zentrum. Der Bruch liegt weniger in der Astronomie als im Selbstbild: Der Mensch wohnt nicht mehr im Mittelpunkt."},
+{"year":1687,"category":"Wissenschaft","title":"Newtons Principia","text":"Newton zeigt, dass fallende Äpfel und kreisende Planeten denselben Gesetzen folgen. Die Vorstellung, die Natur sei mathematisch beschreibbar, wird zur Grundlage der modernen Wissenschaft."},
+{"year":1755,"category":"Katastrophe","title":"Erdbeben von Lissabon","text":"Das Beben an Allerheiligen zerstört eine europäische Hauptstadt und erschüttert das theologische Weltbild: Wie lässt sich ein solches Unglück mit einer guten Weltordnung vereinbaren? Die Frage prägt die Aufklärung."},
+{"year":1796,"category":"Wissenschaft","title":"Erste Pockenimpfung","text":"Edward Jenner nutzt Kuhpocken zum Schutz vor Pocken. Die Pocken bleiben die einzige menschliche Infektionskrankheit, die je vollständig ausgerottet wurde – 1980 erklärt."},
+{"year":1804,"category":"Politischer Umbruch","title":"Unabhängigkeit Haitis","text":"Aus dem einzigen erfolgreichen Sklavenaufstand der Geschichte geht ein unabhängiger Staat hervor. Die europäischen Mächte und die USA reagieren mit Isolation statt Anerkennung."},
+{"year":1848,"category":"Politischer Umbruch","title":"Revolutionen von 1848","text":"In fast ganz Europa fordern Bewegungen Verfassungen, Pressefreiheit und nationale Einheit. Fast überall scheitern sie kurzfristig – und setzen langfristig den Rahmen."},
+{"year":1859,"category":"Wissenschaft","title":"Darwins Entstehung der Arten","text":"Die Idee gemeinsamer Abstammung durch natürliche Auslese stellt den Menschen in die Naturgeschichte statt über sie."},
+{"year":1865,"category":"Wissenschaft","title":"Mendels Vererbungsregeln","text":"Der Augustinermönch Gregor Mendel beschreibt an Erbsen die Regeln der Vererbung. Seine Arbeit bleibt 35 Jahre unbeachtet, bis sie um 1900 wiederentdeckt wird."},
+{"year":1867,"category":"Wissenschaft","title":"Antiseptische Chirurgie","text":"Joseph Lister führt Antiseptik in den Operationssaal ein. Zuvor starben Patienten häufiger an der Infektion als am Eingriff."},
+{"year":1893,"category":"Politischer Umbruch","title":"Erstes Frauenwahlrecht","text":"Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern."},
+{"year":1903,"category":"Erfindung","title":"Erster Motorflug","text":"Die Brüder Wright halten sich mit einem motorisierten Flugzeug in der Luft. Keine sechs Jahrzehnte später fliegen Menschen zum Mond."},
+{"year":1928,"category":"Wissenschaft","title":"Entdeckung des Penicillins","text":"Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit."},
+{"year":1945,"category":"Katastrophe","title":"Hiroshima und Nagasaki","text":"Zum ersten und bisher einzigen Mal werden Kernwaffen im Krieg eingesetzt. Seither prägt die Möglichkeit der Selbstauslöschung die internationale Politik."},
+{"year":1948,"category":"Politischer Umbruch","title":"Allgemeine Erklärung der Menschenrechte","text":"Die UN-Generalversammlung verabschiedet einen Text, der Rechte nicht an Staatsangehörigkeit knüpft, sondern an das Menschsein – rechtlich zunächst unverbindlich, politisch wirkmächtig."},
+{"year":1953,"category":"Wissenschaft","title":"Struktur der DNA","text":"Watson und Crick beschreiben die Doppelhelix – wesentlich gestützt auf Röntgenaufnahmen von Rosalind Franklin, deren Beitrag lange nicht angemessen gewürdigt wurde."},
+{"year":1972,"category":"Wendepunkt","title":"Die Grenzen des Wachstums","text":"Der Bericht an den Club of Rome bringt die Frage, ob unbegrenztes Wachstum auf einem begrenzten Planeten möglich ist, erstmals in die breite Öffentlichkeit."},
+{"year":1980,"category":"Wissenschaft","title":"Pocken ausgerottet","text":"Die WHO erklärt die Pocken für ausgerottet – der bislang einzige derartige Erfolg bei einer menschlichen Infektionskrankheit."},
+{"year":1989,"category":"Erfindung","title":"Das World Wide Web","text":"Tim Berners-Lee entwirft am CERN ein System zum Austausch von Forschungsdaten. 1993 gibt das CERN die Software gemeinfrei – die Entscheidung, die seine Ausbreitung ermöglichte."},
+{"year":1994,"category":"Politischer Umbruch","title":"Ende der Apartheid","text":"Bemerkenswert ist weniger der Machtwechsel als sein Ausbleiben von Rache: Die Wahrheits- und Versöhnungskommission bot Tätern Straffreiheit im Tausch gegen vollständige Aussagen. Ein Verfahren, das seither weltweit nachgeahmt und ebenso lange kritisiert wird – weil Wahrheit an die Stelle von Strafe trat."}
 ];
 const FACTS = EPOCHS.flatMap(
   (ep) => ep.events.map((e) => ({ year: e.year, title: e.title, epoch: ep.name, color: ep.color }))
@@ -1556,179 +1556,178 @@ const COUNTRY_TIMELINES = {
   }
 };
 const MYTHEN = [
-  {"category":"Antike","type":"Nuance","title":"Der Trojanische Krieg war reine Erfindung","text":"Homers 'Ilias' ist literarisch stark überhöht, doch Ausgrabungen in Hisarlik (Türkei) durch Heinrich Schliemann belegen eine reale, mehrfach zerstörte Stadt namens Troja. Ob ein 'Trojanisches Pferd' tatsächlich existierte, bleibt jedoch unbewiesen."},
-  {"category":"Antike","type":"Nuance","title":"Bei den Thermopylen kämpften nur 300 Spartaner","text":"Tatsächlich standen mehrere tausend griechische Verbündete mit den Spartanern gemeinsam gegen die Perser. Die '300' waren nur die Kerntruppe, die als letzte in einem aussichtslosen Nachhutgefecht standhielt."},
-  {"category":"Antike","type":"Mythos","title":"Nero spielte Geige, während Rom brannte","text":"Die Geige wurde erst rund 1500 Jahre später erfunden. Manche antiken Quellen berichten sogar, Nero sei bei Brandausbruch gar nicht in Rom gewesen und habe später den Wiederaufbau organisiert."},
-  {"category":"Antike","type":"Nuance","title":"Caligula ernannte sein Pferd zum Senator","text":"Der römische Historiker Sueton berichtet dies als Beleg für Caligulas Wahnsinn. Moderne Historiker vermuten eher bitteren Spott gegenüber dem Senat als eine tatsächlich vollzogene Ernennung."},
-  {"category":"Antike","type":"Nuance","title":"Kleopatra war eine ägyptische Schönheitsikone","text":"Kleopatra VII. entstammte der griechisch-makedonischen Ptolemäer-Dynastie, war also keine ethnische Ägypterin. Antike Quellen betonen zudem eher ihre Intelligenz, Bildung und Stimme als klassische Schönheit."},
-  {"category":"Antike","type":"Nuance","title":"Alexander der Große wurde vergiftet","text":"Seine Todesursache ist bis heute ungeklärt. Historiker diskutieren neben Vergiftung auch Malaria, Typhus oder übermäßigen Alkoholkonsum – eine endgültige Antwort gibt es nicht."},
-  {"category":"Antike","type":"Mythos","title":"Atlantis war eine reale versunkene Hochkultur","text":"Atlantis wird erstmals von Platon als philosophisches Gedankenexperiment über einen idealen und einen dekadenten Staat erwähnt. Es gibt keinerlei archäologischen Beleg für seine tatsächliche Existenz."},
-  {"category":"Antike","type":"Nuance","title":"Der Läufer Pheidippides rannte 42 km und starb","text":"Herodot berichtet nur von einem Botenlauf nach Sparta, nicht von einem tödlichen Lauf über die Marathon-Distanz. Die moderne Marathondistanz von 42,195 km wurde erst 1908 bei den Olympischen Spielen in London festgelegt."},
-  {"category":"Antike","type":"Nuance","title":"Gladiatoren kämpften immer bis zum Tod","text":"Gladiatoren waren teure Investitionen ihrer Besitzer. Die meisten Kämpfe endeten ohne tödlichen Ausgang, und die genaue Bedeutung der berühmten Daumengeste ist unter Historikern bis heute umstritten."},
-  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter glaubte man an eine flache Erde","text":"Gebildete Menschen wussten seit der griechischen Antike um die Kugelform der Erde. Auch mittelalterliche Gelehrte lehrten dies an Universitäten – der Mythos der 'flachen Erde' entstand erst im 19. Jahrhundert."},
-  {"category":"Mittelalter","type":"Mythos","title":"Ritter mussten mit einem Kran aufs Pferd gehoben werden","text":"Vollrüstungen wogen meist nur 20–25 kg und waren gut über den Körper verteilt. Ritter konnten sich damit frei bewegen, kämpfen und sogar Purzelbäume schlagen, wie Experimente moderner Rüstungshistoriker zeigen."},
-  {"category":"Mittelalter","type":"Mythos","title":"Menschen im Mittelalter wuschen sich nie","text":"Öffentliche Badehäuser waren im Mittelalter weit verbreitet und beliebt. Erst im Zuge der Pestepidemien ab dem 14. Jahrhundert geriet Baden aus Angst vor Ansteckung zunehmend in Verruf."},
-  {"category":"Mittelalter","type":"Mythos","title":"Hexenverbrennungen waren typisch für das 'finstere' Mittelalter","text":"Die überwältigende Mehrheit der europäischen Hexenprozesse und -verbrennungen fand tatsächlich erst in der Frühen Neuzeit statt, besonders im 16. und 17. Jahrhundert – nicht im Mittelalter."},
-  {"category":"Mittelalter","type":"Mythos","title":"Mittelalterliche Karten warnten mit 'Hier seien Drachen'","text":"Die berühmte lateinische Formulierung 'hic sunt dracones' ist tatsächlich nur auf einem einzigen erhaltenen Objekt belegt, dem Hunt-Lenox-Globus von ca. 1510 – nicht auf typischen mittelalterlichen Karten."},
-  {"category":"Mittelalter","type":"Mythos","title":"Die Wikinger trugen gehörnte Helme","text":"Es gibt keinerlei archäologische Belege für Hörnerhelme bei echten Wikingern. Das Bild wurde im 19. Jahrhundert von Kostümbildnern der Oper (u.a. für Wagners Ring des Nibelungen) erfunden."},
-  {"category":"Mittelalter","type":"Mythos","title":"Kolumbus bewies, dass die Erde rund ist","text":"Dies war bereits seit der Antike bekanntes Allgemeinwissen unter Gelehrten. Kolumbus' eigentlicher Streitpunkt mit Experten war die (falsch geschätzte, zu kleine) Größe der Erde, nicht ihre Form."},
-  {"category":"Mittelalter","type":"Nuance","title":"Vlad der Pfähler war ein Vampir","text":"Der reale walachische Fürst Vlad III. war berüchtigt für extrem brutale Bestrafungsmethoden, aber keine übernatürliche Gestalt. Die Vampirlegende geht auf Bram Stokers Roman 'Dracula' (1897) zurück, der seinen Namen nur lose verwendete."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"Marie Antoinette sagte 'Sollen sie doch Kuchen essen'","text":"Dieses Zitat lässt sich bereits vor Marie Antoinettes Zeit nachweisen und wurde ursprünglich anderen Adligen zugeschrieben. Es gibt keinen historischen Beleg, dass sie diesen Satz je gesagt hat."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"In Salem wurden Hexen auf dem Scheiterhaufen verbrannt","text":"Bei den berühmten Hexenprozessen von Salem (1692/93) wurden alle Verurteilten gehängt – niemand wurde verbrannt, anders als es die Popkultur oft darstellt."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"George Washington fällte als Kind einen Kirschbaum und log nie","text":"Diese moralisierende Anekdote wurde erst nach Washingtons Tod von seinem Biografen Parson Weems erfunden, um ihn als Vorbild ehrlichen Charakters darzustellen."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"Napoleon war außergewöhnlich klein","text":"Napoleon war mit ca. 1,68 m für seine Zeit durchschnittlich groß. Der Mythos entstand durch eine Verwechslung französischer und englischer Zoll-Maßeinheiten sowie britische Kriegspropaganda."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Marco Polo erfand seine China-Reise komplett","text":"Manche Historiker bezweifeln einzelne Details seines Berichts (er erwähnt etwa nie die Chinesische Mauer), doch die Reise als solche und viele seiner Beschreibungen gelten heute als historisch belegt."},
-  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Piraten trugen Augenklappen wegen Verletzungen","text":"Eine populäre Theorie besagt, Augenklappen dienten manchen Seeleuten dazu, ein Auge stets an Dunkelheit gewöhnt zu halten, um beim schnellen Wechsel zwischen Deck und dunklem Unterdeck sofort sehen zu können."},
-  {"category":"Moderne","type":"Mythos","title":"Einstein ist in der Schule durchgefallen","text":"Albert Einstein war tatsächlich ein exzellenter Schüler, besonders in Mathematik und Physik. Der Mythos entstand vermutlich durch eine Verwechslung unterschiedlicher Schweizer Notenskalen."},
-  {"category":"Moderne","type":"Mythos","title":"Der Fluch des Tutanchamun tötete die Ausgräber","text":"Nach dem Tod von Lord Carnarvon 1923 verbreitete die Boulevardpresse die Legende eines Grabfluchs. Statistisch starben die meisten an der Ausgrabung Beteiligten aber erst Jahrzehnte später eines natürlichen Todes."},
-  {"category":"Moderne","type":"Kuriosum","title":"Der Piltdown-Mensch war ein Sensationsfund","text":"1912 als bedeutendes 'fehlendes Bindeglied' der Evolution präsentiert, entpuppte sich der Fund 1953 als Fälschung aus einem Menschenschädel und einem Orang-Utan-Kiefer – einer der berühmtesten Wissenschaftsbetrugsfälle der Geschichte."},
-  {"category":"Moderne","type":"Mythos","title":"Anastasia Romanov überlebte die Erschießung ihrer Familie","text":"Jahrzehntelang befeuerten Hochstaplerinnen wie Anna Anderson diesen Mythos. DNA-Analysen der geborgenen Gebeine bestätigten 2007 zweifelsfrei den Tod aller Familienmitglieder der Zarenfamilie."},
-  {"category":"Moderne","type":"Nuance","title":"Rasputin war fast unmöglich zu töten","text":"Die dramatische Legende von Vergiftung, Erschießung und Ertränken stammt vor allem aus den unzuverlässigen Memoiren seines Mörders Felix Jussupow. Historiker bezweifeln heute viele Details dieser Version."},
-  {"category":"Moderne","type":"Kuriosum","title":"Der Fall der Berliner Mauer war minutiös geplant","text":"Tatsächlich war die Maueröffnung 1989 vor allem die Folge eines Kommunikationsfehlers: SED-Funktionär Günter Schabowski verkündete auf einer Pressekonferenz versehentlich sofortige Reisefreiheit."},
-  {"category":"Moderne","type":"Mythos","title":"Ninjas trugen stets komplett schwarze Kleidung","text":"Dieses Bild stammt aus Konventionen des japanischen Kabuki-Theaters, wo schwarz gekleidete Bühnenhelfer als 'unsichtbar' galten. Reale Ninja trugen meist unauffällige Alltagskleidung zur Tarnung."},
-  {"category":"Moderne","type":"Mythos","title":"Die Chinesische Mauer ist vom Weltall aus mit bloßem Auge sichtbar","text":"Astronauten, darunter mehrere chinesische Taikonauten, haben diesen hartnäckigen Mythos wiederholt dementiert. Die Mauer ist schlicht zu schmal, um ohne Hilfsmittel aus dem All erkennbar zu sein."},
-  {"category":"Legenden","type":"Mythos","title":"Das Bermuda-Dreieck verschluckt überdurchschnittlich viele Schiffe","text":"Statistische Analysen von Versicherungsdaten zeigen keine erhöhte Vermisstenrate gegenüber anderen stark befahrenen Seegebieten vergleichbarer Größe."},
-  {"category":"Legenden","type":"Mythos","title":"Nostradamus sagte konkrete historische Ereignisse voraus","text":"Seine Verse sind bewusst vage, mehrdeutig und metaphernreich formuliert. Vermeintliche 'Treffer' entstehen fast immer durch rückwirkende Deutung nach bereits eingetretenen Ereignissen."},
-  {"category":"Legenden","type":"Mythos","title":"Kolumbus war der erste Europäer in Amerika","text":"Wikinger unter Leif Eriksson erreichten Neufundland (das sogenannte 'Vinland') bereits um das Jahr 1000 – rund 500 Jahre vor Kolumbus, wie die Ausgrabungen von L'Anse aux Meadows belegen."},
-  {"category":"Legenden","type":"Kuriosum","title":"Napoleon wurde von einer Hasen-Horde angegriffen","text":"Bei einer eigens organisierten Hasenjagd 1807 wandten sich hunderte zuvor gezüchtete, zahme Hasen nicht zur Flucht, sondern liefen auf Napoleon und seine Gesellschaft zu – die Jagdgesellschaft musste sich regelrecht zurückziehen."},
-  {"category":"Legenden","type":"Kuriosum","title":"Bei den ersten Olympischen Spielen traten Athleten nackt an","text":"Der griechische Begriff 'gymnos' (nackt) ist die Wurzel des Wortes 'Gymnasium'. Athleten traten in Olympia tatsächlich unbekleidet an – laut Überlieferung auch, um Frauen (denen die Teilnahme als Zuschauerinnen untersagt war) fernzuhalten."},
-  {"category":"Legenden","type":"Kuriosum","title":"Ein römischer Kaiser bot einen Preis für die beste Grimasse","text":"Bei manchen römischen Festen gab es tatsächlich Wettbewerbe im Grimassenschneiden ('gymnastiké') als derbe Unterhaltung – ein früher Vorläufer heutiger Grimassen-Wettbewerbe."},
-  {"category":"Antike","type":"Nuance","title":"Spartaner warfen alle schwachen Babys von einem Felsen","text":"Diese Praxis wird nur von einem einzigen, Jahrhunderte späteren Autor (Plutarch) erwähnt. Ausgrabungen der vermeintlichen Stätte fanden keine Babyskelette, sondern nur Knochen erwachsener Männer – vermutlich hingerichteter Verbrecher."},
-  {"category":"Antike","type":"Mythos","title":"Julius Caesars Name stammt vom Kaiserschnitt","text":"Seine Mutter Aurelia lebte nachweislich noch Jahrzehnte nach seiner Geburt weiter – ein Kaiserschnitt war zu dieser Zeit für die Mutter praktisch immer tödlich. Die tatsächliche Namensherkunft ist unklar."},
-  {"category":"Antike","type":"Nuance","title":"Caesars letzte Worte waren 'Auch du, mein Sohn Brutus?'","text":"Der Historiker Sueton überliefert diese Version nur als Gerücht. Ob Caesar überhaupt letzte Worte sprach, ist historisch nicht gesichert."},
-  {"category":"Antike","type":"Mythos","title":"Die Pyramiden wurden von Sklaven erbaut","text":"Ausgrabungen von Arbeitersiedlungen bei Gizeh zeigen, dass die Pyramiden überwiegend von bezahlten, gut versorgten Facharbeitern und Bauern während der Nilüberschwemmungszeit errichtet wurden."},
-  {"category":"Antike","type":"Nuance","title":"Kleopatra starb an einem einzigen Schlangenbiss","text":"Schon antike Quellen waren sich uneinig; moderne Toxikologen bezweifeln, dass eine einzelne Schlange einen so kontrollierten, schmerzfreien Tod verursacht haben könnte."},
-  {"category":"Antike","type":"Mythos","title":"Napoleons Truppen schossen der Sphinx die Nase ab","text":"Zeichnungen aus dem 18. Jahrhundert – vor Napoleons Ägyptenfeldzug – zeigen die Sphinx bereits ohne Nase. Die Beschädigung geschah vermutlich Jahrhunderte früher."},
-  {"category":"Antike","type":"Nuance","title":"Sokrates wurde allein wegen echter Gottlosigkeit hingerichtet","text":"Historiker sehen den Prozess auch stark politisch motiviert – als Abrechnung mit seinen Verbindungen zu unbeliebten aristokratischen Schülern nach dem Sturz der 'Dreißig Tyrannen'."},
-  {"category":"Antike","type":"Nuance","title":"Hannibal verlor alle seine Kriegselefanten in den Alpen","text":"Die meisten Tiere starben tatsächlich an Kälte und Erschöpfung, doch mindestens ein Elefant überlebte Berichten zufolge bis nach Italien."},
-  {"category":"Antike","type":"Nuance","title":"Archimedes rief 'Heureka' beim Baden aus","text":"Die Anekdote stammt vom römischen Autor Vitruv, rund 200 Jahre nach Archimedes' Tod – zeitgenössisch ist sie nicht belegt."},
-  {"category":"Antike","type":"Mythos","title":"Der Koloss von Rhodos stand rittlings über dem Hafeneingang","text":"Diese berühmte Darstellung stammt erst aus mittelalterlichen und Renaissance-Illustrationen; antike Ingenieure hätten eine solche Statue technisch kaum errichten können."},
-  {"category":"Antike","type":"Kuriosum","title":"Die Terrakotta-Armee wurde zufällig entdeckt","text":"1974 stießen Bauern beim Brunnenbohren in der chinesischen Provinz Shaanxi zufällig auf die über 8.000 lebensgroßen Tonkrieger des ersten chinesischen Kaisers."},
-  {"category":"Antike","type":"Nuance","title":"Bei den Olympischen Spielen herrschte reine Sportlichkeit ohne Politik","text":"Während der Spiele galt zwar ein 'heiliger Frieden' (Ekecheiria), dieser wurde jedoch häufig auch für diplomatische Zwecke der Stadtstaaten instrumentalisiert."},
-  {"category":"Antike","type":"Kuriosum","title":"Mönchtum entstand nur einmal in der Geschichte","text":"Buddhistische und christliche Klostertraditionen entwickelten unabhängig voneinander erstaunlich ähnliche Konzepte von Askese, Zölibat und Gemeinschaftsleben."},
-  {"category":"Antike","type":"Nuance","title":"Buddha war von Geburt an ein Bettelmönch","text":"Der Überlieferung nach wurde Siddhartha Gautama als wohlhabender Prinz geboren und wandte sich erst als junger Erwachsener bewusst von Reichtum und Palastleben ab."},
-  {"category":"Mittelalter","type":"Mythos","title":"Das 'Recht der ersten Nacht' war weitverbreitete feudale Praxis","text":"Historiker finden kaum verlässliche zeitgenössische Belege für eine systematische Ausübung dieses angeblichen Rechts; es dürfte größtenteils spätere literarische Erfindung sein."},
-  {"category":"Mittelalter","type":"Mythos","title":"Wikinger waren reine Plünderer ohne Handelskultur","text":"Wikinger betrieben ausgedehnte Handelsnetzwerke bis nach Byzanz und Bagdad und gründeten zahlreiche bis heute bestehende Städte, darunter Dublin."},
-  {"category":"Mittelalter","type":"Nuance","title":"Kreuzritter kämpften ausschließlich aus religiösem Eifer","text":"Viele Teilnehmer verband mit dem religiösen Motiv auch die Aussicht auf Landbesitz, Beute, Handelsvorteile und gesellschaftliches Ansehen."},
-  {"category":"Mittelalter","type":"Nuance","title":"Der Begriff 'Vandalismus' beweist besondere Zerstörungswut der Vandalen","text":"Der Begriff wurde erst über 1000 Jahre später im 18. Jahrhundert geprägt; die historischen Vandalen plünderten Rom 455 zwar, richteten aber wohl keine ungewöhnlich systematische Zerstörung an."},
-  {"category":"Mittelalter","type":"Nuance","title":"Attila der Hunne war nur ein ungebildeter Wilder","text":"Zeitgenössische Quellen wie der oströmische Gesandte Priskos beschreiben ihn auch als überraschend genügsam, diplomatisch geschickt und an römischer Kultur interessiert."},
-  {"category":"Mittelalter","type":"Nuance","title":"Die Lebenserwartung im Mittelalter betrug generell nur 30 Jahre","text":"Diese Zahl wird stark durch hohe Kindersterblichkeit verzerrt; wer das Erwachsenenalter erreichte, hatte durchaus realistische Chancen auf 60 bis 70 Lebensjahre."},
-  {"category":"Mittelalter","type":"Mythos","title":"Marco Polo brachte Nudeln aus China nach Italien","text":"Es gibt Belege für Nudelgerichte im Mittelmeerraum bereits vor Marco Polos Reise; die populäre Legende entstand vermutlich erst im 20. Jahrhundert durch eine amerikanische Werbekampagne."},
-  {"category":"Mittelalter","type":"Nuance","title":"Die Magna Carta garantierte allen Engländern Freiheit","text":"Ursprünglich schützte sie fast ausschließlich die Rechte des Adels gegenüber der Krone; erst spätere Interpretationen im 17. Jahrhundert weiteten ihre Bedeutung auf allgemeine Bürgerrechte aus."},
-  {"category":"Mittelalter","type":"Mythos","title":"Die Assassinen waren durch Haschisch berauschte Auftragsmörder","text":"Der Name geht vermutlich auf eine abwertende arabische Fremdbezeichnung zurück; historische Belege für systematischen Drogenkonsum der Sekte gelten heute als unzuverlässig."},
-  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter herrschte durchgehender wissenschaftlicher Stillstand","text":"Die Epoche brachte bedeutende Innovationen wie die Brille, mechanische Uhren, den Buchdruck, das Dreifelder-System in der Landwirtschaft und gotische Kathedralbaukunst."},
-  {"category":"Mittelalter","type":"Nuance","title":"Die Templerritter wurden wegen erwiesener Häresie vernichtet","text":"Historiker gehen heute überwiegend davon aus, dass der hoch verschuldete französische König Philipp IV. die Anklagen 1307 vor allem konstruierte, um sich des Vermögens des Ordens zu bemächtigen."},
-  {"category":"Mittelalter","type":"Nuance","title":"Der Investiturstreit drehte sich nur um religiöse Fragen","text":"Im Kern ging es vor allem um handfeste Macht- und Besitzfragen: wer Bischöfe – und damit große Ländereien – einsetzen durfte, Kaiser oder Papst."},
-  {"category":"Mittelalter","type":"Nuance","title":"Die Hanse war ein fest organisierter Staat","text":"Tatsächlich war die Hanse ein loses, informelles Netzwerk von Kaufleuten und Städten ohne zentrale Verfassung, gemeinsame Kasse oder feste Mitgliederliste."},
-  {"category":"Mittelalter","type":"Mythos","title":"Chinesische Schiffe der Ming-Zeit waren primitive Boote","text":"Admiral Zheng Hes Flotte im frühen 15. Jahrhundert umfasste Schiffe von bis zu 120 Metern Länge – deutlich größer als alle europäischen Schiffe dieser Zeit."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"Galileo Galilei wurde wegen seiner Thesen gefoltert","text":"Er wurde 1633 zu Hausarrest verurteilt, jedoch nicht gefoltert. Die Androhung von Folter war zu dieser Zeit ein übliches, meist nicht vollzogenes Verhörinstrument der Inquisition."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Pilgerväter suchten Religionsfreiheit für alle","text":"Die Puritaner an Bord der Mayflower suchten vor allem Freiheit für die eigene Glaubensgemeinschaft und praktizierten später selbst erhebliche religiöse Intoleranz gegenüber Andersdenkenden."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenprozesse waren primär von der katholischen Kirche getragen","text":"Tatsächlich fanden besonders viele Hexenverfolgungen in protestantischen Gebieten Mitteleuropas statt – beide Konfessionen beteiligten sich intensiv."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"Die Pest traf vor allem unhygienische arme Bevölkerungsschichten","text":"Die Übertragung erfolgte primär durch Flöhe auf Ratten unabhängig vom persönlichen Reinlichkeitsgrad; auch wohlhabende Haushalte und Klöster waren stark betroffen."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Elisabeth I. blieb aus reiner Prinzipientreue unverheiratet","text":"Ihre Ehelosigkeit war wohl auch eine bewusste politische Strategie, um die eigene Machtposition nicht durch eine Heiratsallianz zu gefährden."},
-  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Peter der Große führte eine Bartsteuer zur reinen Geldbeschaffung ein","text":"Die 1698 eingeführte Steuer diente auch der symbolischen Modernisierung: Wer den traditionellen Bart behalten wollte, musste zahlen und erhielt eine Bart-Münzmarke als Nachweis."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Azteken hielten die Spanier für zurückkehrende Götter","text":"Diese oft erzählte Legende stammt vor allem aus spanischen Quellen nach der Eroberung und wird von vielen Historikern heute als nachträgliche Rechtfertigungserzählung angezweifelt."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Guy Fawkes handelte aus persönlichem Hass allein","text":"Der 'Gunpowder Plot' von 1605 war eine koordinierte katholische Verschwörung gegen die protestantische Verfolgungspolitik, nicht die Tat eines Einzelnen."},
-  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Ludwig XIV. badete regelmäßig","text":"Der Sonnenkönig soll kaum gebadet haben und stattdessen parfümierte Puder sowie häufigen Hemdenwechsel zur Körperpflege bevorzugt haben – zeittypisch für den europäischen Hochadel."},
-  {"category":"Frühe Neuzeit","type":"Mythos","title":"Kolumbus wusste, dass er einen neuen Kontinent entdeckt hatte","text":"Kolumbus glaubte bis zu seinem Tod, ostasiatische Inseln erreicht zu haben; der Kontinentcharakter Amerikas wurde erst durch spätere Entdecker wie Amerigo Vespucci erkannt."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Magellan vollendete persönlich die erste Weltumsegelung","text":"Magellan starb 1521 auf den Philippinen; nur sein Kapitän Juan Sebastián Elcano und eine Handvoll Überlebender vollendeten tatsächlich die vollständige Weltumsegelung."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Die Boston Tea Party war spontaner Protest wütender Bürger","text":"Die Aktion von 1773 war eine sorgfältig organisierte politische Demonstration der 'Sons of Liberty', bei der sich Teilnehmer bewusst als Native Americans verkleideten."},
-  {"category":"Moderne","type":"Nuance","title":"Marie Curie starb direkt an ihrer Radioaktivitätsforschung","text":"Sie starb 1934 an aplastischer Anämie, vermutlich durch jahrelange Strahlenbelastung – ihre Laborhefte sind bis heute radioaktiv kontaminiert und werden in bleiausgekleideten Behältern aufbewahrt."},
-  {"category":"Moderne","type":"Nuance","title":"Die Titanic wurde offiziell als 'unsinkbar' beworben","text":"Der Begriff 'unsinkbar' wurde vor allem nachträglich durch die Presse verbreitet; die White Star Line selbst hatte das Schiff nie offiziell so beworben."},
-  {"category":"Moderne","type":"Nuance","title":"Einstein war Mitentwickler der Atombombe","text":"Einstein unterschrieb 1939 lediglich einen warnenden Brief an Präsident Roosevelt zur Möglichkeit einer deutschen Atombombe, war selbst aber nie am Manhattan-Projekt beteiligt."},
-  {"category":"Moderne","type":"Mythos","title":"Die Spanische Grippe stammte ursprünglich aus Spanien","text":"Frühe Fälle sind vermutlich in den USA oder Frankreich dokumentiert; Spanien erhielt den Namen nur, weil es als neutrales Land im Ersten Weltkrieg offen über die Pandemie berichten durfte."},
-  {"category":"Moderne","type":"Nuance","title":"Rosa Parks war einfach nur eine müde Näherin","text":"Parks war eine langjährige, geschulte Bürgerrechtsaktivistin der NAACP; ihre Weigerung war eine bewusste, vorbereitete Form des zivilen Ungehorsams."},
-  {"category":"Moderne","type":"Nuance","title":"Churchill war während des gesamten Krieges unangefochten beliebt","text":"Trotz seines Kriegsruhms verlor seine konservative Partei die Wahlen 1945 deutlich – viele Briten wollten nach dem Krieg vor allem soziale Reformen statt weiterer Kriegsführerpolitik."},
-  {"category":"Moderne","type":"Mythos","title":"Die Mondlandung 1969 wurde in einem Studio gefälscht","text":"Diese Verschwörungstheorie ist durch überwältigende physikalische Belege widerlegt – etwa von Astronauten hinterlassene Spiegel auf dem Mond, die bis heute per Laser vermessbar sind."},
-  {"category":"Moderne","type":"Mythos","title":"Stalin war der Geburtsname des sowjetischen Diktators","text":"Er wurde als Josef Wissarionowitsch Dschugaschwili geboren; 'Stalin' ('der Stählerne') war ein später angenommener Kampfname."},
-  {"category":"Moderne","type":"Nuance","title":"Der Kalte Krieg war ein völlig gewaltfreier Konflikt","text":"Auch wenn die Supermächte nie direkt gegeneinander kämpften, verursachten zahlreiche 'Stellvertreterkriege' in Korea, Vietnam und Afghanistan Millionen Tote weltweit."},
-  {"category":"Moderne","type":"Kuriosum","title":"Weltweite Zeitzonen gab es schon immer","text":"Erst mit dem Ausbau der Eisenbahn im 19. Jahrhundert wurden standardisierte Zeitzonen notwendig; zuvor hatte praktisch jede Stadt ihre eigene lokale Sonnenzeit."},
-  {"category":"Moderne","type":"Nuance","title":"Nelson Mandela galt während seiner gesamten Haftzeit international als Held","text":"Erst ab den 1980er-Jahren wuchs der internationale Druck gegen die Apartheid deutlich; zuvor stand er in manchen westlichen Regierungen sogar noch auf Terrorlisten."},
-  {"category":"Moderne","type":"Kuriosum","title":"Die Berliner Luftbrücke galt von Anfang an als sicherer Erfolg","text":"Anfangs hielten viele Militärexperten eine dauerhafte Luftversorgung von rund zwei Millionen Berlinern für technisch kaum durchführbar – die logistische Leistung übertraf am Ende alle Erwartungen."},
-  {"category":"Moderne","type":"Nuance","title":"Anne Franks Tagebuch wurde völlig unverändert veröffentlicht","text":"Ihr Vater Otto Frank redigierte nach dem Krieg das Originaltagebuch für die erste Veröffentlichung leicht, wobei einige persönliche Passagen zunächst gekürzt wurden."},
-  {"category":"Moderne","type":"Kuriosum","title":"Der erste Computer-'Bug' war rein metaphorisch gemeint","text":"1947 fanden Techniker tatsächlich eine echte Motte in einem Relais eines frühen Harvard-Computers und klebten sie als Kuriosum ins Logbuch – Ursprung des bis heute gebräuchlichen Begriffs."},
-  {"category":"Moderne","type":"Kuriosum","title":"Die erste E-Mail der Geschichte enthielt eine bedeutungsvolle Botschaft","text":"Die erste jemals versendete E-Mail 1971 durch Ray Tomlinson enthielt nach eigener späterer Aussage lediglich eine bedeutungslose Testzeichenfolge wie 'QWERTYUIOP'."},
-  {"category":"Legenden","type":"Nuance","title":"König Artus und die Ritter der Tafelrunde sind historisch verbürgt","text":"Es gibt keine zeitgenössischen Belege für einen historischen König Artus; die Legende verschmilzt vermutlich mehrere frühmittelalterliche britannische Kriegsherren mit späterer literarischer Ausschmückung."},
-  {"category":"Legenden","type":"Nuance","title":"Robin Hood war eine reale historische Einzelperson","text":"Historiker vermuten eher ein literarisches Sammelbild aus mehreren realen mittelalterlichen Gesetzlosen des 13./14. Jahrhunderts als eine einzelne verbürgte Figur."},
-  {"category":"Legenden","type":"Mythos","title":"Der Heilige Gral ist ein real existierendes Artefakt","text":"Der Gral taucht erstmals in mittelalterlichen Artus-Romanen des 12. Jahrhunderts als literarisches Symbol auf, nicht als historisch belegtes Objekt."},
-  {"category":"Legenden","type":"Mythos","title":"El Dorado war eine reale goldene Stadt in Südamerika","text":"Die Legende geht vermutlich auf ein reales Ritual eines Muisca-Stammesführers zurück und wurde von europäischen Eroberern zur Legende einer sagenhaften Goldstadt aufgebauscht, die nie gefunden wurde."},
-  {"category":"Legenden","type":"Mythos","title":"Die Osterinsel-Statuen wurden von Außerirdischen errichtet","text":"Archäologische Untersuchungen zeigen, dass die Rapa-Nui-Bevölkerung die Statuen mit ausgeklügelten, rein menschlichen Techniken schuf und mutmaßlich mittels Seilen 'gehend' transportierte."},
-  {"category":"Legenden","type":"Mythos","title":"Prester John, der legendäre christliche König im Osten, war real","text":"Ab dem 12. Jahrhundert kursierten in Europa Briefe eines angeblichen mächtigen christlichen Priesterkönigs in Asien oder Afrika – eine bis heute nie verifizierte Legende."},
-  {"category":"Legenden","type":"Kuriosum","title":"Auf Oak Island wurde ein realer Piratenschatz gefunden","text":"Trotz jahrzehntelanger, kostspieliger Suchexpeditionen auf der kanadischen Insel wurde nie ein definitiver historischer Beleg für einen vergrabenen Schatz gefunden."},
-  {"category":"Legenden","type":"Mythos","title":"Area 51 bewahrt Beweise für außerirdische Besuche auf","text":"Nach jahrzehntelanger Geheimhaltung bestätigten US-Behörden, dass die Anlage der geheimen Entwicklung und Erprobung von Aufklärungsflugzeugen wie der U-2 und SR-71 diente."},
-  {"category":"Legenden","type":"Mythos","title":"Die Illuminaten kontrollieren bis heute im Verborgenen die Weltpolitik","text":"Der historische Illuminatenorden wurde 1776 in Bayern gegründet und bereits 1785 von der bayerischen Regierung verboten und faktisch zerschlagen."},
-  {"category":"Legenden","type":"Mythos","title":"Yeti und Bigfoot sind wissenschaftlich nachgewiesene Wesen","text":"Trotz zahlreicher angeblicher Sichtungen und Fußspuren-Funde konnte bislang kein einziger wissenschaftlich verifizierter Beweis für die Existenz dieser Kryptiden erbracht werden."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Thomas Edison erfand die Glühbirne komplett allein","text":"Mehrere Erfinder, darunter Joseph Swan in England, entwickelten parallel funktionsfähige Glühlampen; Edisons Leistung lag vor allem in der praxistauglichen Weiterentwicklung und Vermarktung."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Alexander Graham Bell war der unbestrittene alleinige Erfinder des Telefons","text":"Der italienische Erfinder Antonio Meucci entwickelte bereits Jahre zuvor ein ähnliches Gerät; 2002 erkannte der US-Kongress symbolisch Meuccis frühen Beitrag an."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Marconi erfand das Radio als Erster und Einziger","text":"Der Erfinder Nikola Tesla hatte zuvor patentierte Grundlagentechnologien entwickelt; 1943 erkannte der US Supreme Court nachträglich Teslas vorrangige Patentansprüche an."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die Dampfmaschine war eine Erfindung des 18. Jahrhunderts","text":"Bereits der antike griechische Erfinder Heron von Alexandria konstruierte im 1. Jahrhundert n. Chr. ein funktionierendes, wenn auch praktisch ungenutztes Dampfturbinen-Spielzeug (Aeolipile)."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Penicillin war die erste erfolgreiche antimikrobielle Behandlung","text":"Bereits Jahrtausende zuvor nutzten Ägypter und andere Kulturen empirisch schimmelhaltige Substanzen zur Wundbehandlung, ohne den zugrunde liegenden Wirkmechanismus zu kennen."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Einstein entwickelte die Relativitätstheorie völlig isoliert","text":"Er baute wesentlich auf mathematischen Vorarbeiten von Hendrik Lorentz und Henri Poincaré auf, integrierte diese aber zu einem revolutionär neuen physikalischen Gesamtkonzept."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Darwin war der Erste, der die Evolutionsidee formulierte","text":"Der Naturforscher Alfred Russel Wallace entwickelte unabhängig zur gleichen Zeit eine sehr ähnliche Theorie der natürlichen Auslese; beide Konzepte wurden 1858 gemeinsam vorgestellt."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Computerprogrammierung ist eine Erfindung des 20. Jahrhunderts","text":"Ada Lovelace verfasste bereits 1843 das erste theoretische Computerprogramm für Charles Babbages nie fertiggestellte 'Analytical Engine'."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Marie Curie war der einzige Nobelpreisträger ihrer Familie","text":"Insgesamt erhielten fünf Mitglieder der Familie Curie/Joliot-Curie über zwei Generationen hinweg Nobelpreise in Physik oder Chemie."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Louis Pasteur entdeckte als Erster Mikroorganismen","text":"Der niederländische Naturforscher Antonie van Leeuwenhoek beobachtete bereits im 17. Jahrhundert erstmals Mikroorganismen; Pasteurs Pionierleistung war der Nachweis ihrer Rolle bei Krankheiten und Gärung."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Der erste Motorflug der Gebrüder Wright wurde sofort weltweit gefeiert","text":"Der Flug 1903 wurde von der zeitgenössischen Presse zunächst kaum beachtet; erst spätere, öffentlich vorgeführte Flüge etablierten den historischen Ruhm der Brüder."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die erste Computermaus war aus Kunststoff","text":"Der Prototyp von Douglas Engelbart 1964 bestand tatsächlich aus einem einfachen Holzgehäuse mit zwei Metallrädern – lange vor den heute bekannten Kunststoffmäusen."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Röntgenstrahlen wurden gezielt erforscht und entdeckt","text":"Wilhelm Conrad Röntgen entdeckte die nach ihm benannte Strahlung 1895 eher zufällig bei Experimenten mit Kathodenstrahlröhren und untersuchte das Phänomen erst danach systematisch."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Der erste Kunststoff wurde für die Industrie entwickelt","text":"Das erste vollsynthetische Kunststoff Bakelit wurde 1907 ursprünglich als Ersatzstoff für das knapper werdende Naturmaterial Schellack entwickelt."},
-  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Vasco da Gama entdeckte als Erster den Seeweg nach Indien","text":"Arabische und ostafrikanische Seefahrer nutzten bereits Jahrhunderte zuvor etablierte Handelsrouten im Indischen Ozean; da Gamas Neuerung war die erste direkte europäische Seeverbindung."},
-  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Amerigo Vespucci entdeckte den amerikanischen Kontinent","text":"Vespucci erkannte als einer der Ersten, dass es sich um einen eigenständigen Kontinent handelte – nach ihm wurde er benannt, entdeckt hatte ihn aber zuvor bereits Kolumbus und noch früher die Wikinger."},
-  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"James Cook entdeckte ein unbewohntes Australien","text":"Aborigines besiedelten den Kontinent bereits seit mindestens 50.000 Jahren; das Konzept 'terra nullius' (niemandes Land), mit dem die britische Krone die Inbesitznahme rechtfertigte, ignorierte diese Realität bewusst."},
-  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Grönland heißt zufällig 'grünes Land'","text":"Der Sage nach gab der Wikinger Erik der Rote der eisigen Insel diesen positiv klingenden Namen bewusst als Marketingtrick, um mehr Siedler zur Kolonisierung zu gewinnen."},
-  {"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Das Römische Reich fiel an einem einzigen historischen Datum","text":"Der 'Untergang' 476 n. Chr. markiert nur die Absetzung des letzten weströmischen Kaisers; das oströmische Reich (Byzanz) bestand als direkte Fortsetzung noch fast 1000 Jahre weiter bis 1453."},
-  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Das britische Weltreich war das erste, in dem 'die Sonne nie unterging'","text":"Diese Formulierung wurde bereits im 16./17. Jahrhundert für das spanische Kolonialreich Karls V. verwendet, das sich ebenfalls über alle bekannten Erdteile erstreckte."},
-  {"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Die Mongolen hinterließen nur Zerstörung ohne kulturellen Beitrag","text":"Das Mongolenreich förderte unter der 'Pax Mongolica' erheblich den Ost-West-Handel entlang der Seidenstraße sowie den Austausch von Technologien, Ideen und religiöser Toleranz."},
-  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Der Panama-Kanal wurde ohne größere menschliche Kosten gebaut","text":"Beim Bau, insbesondere während der gescheiterten ersten französischen Bauphase, starben schätzungsweise über 20.000 Arbeiter vor allem an Malaria und Gelbfieber."},
-  {"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Die Seidenstraße war eine einzelne, feste Route","text":"Tatsächlich handelte es sich um ein weitverzweigtes Netzwerk verschiedenster Land- und Seehandelsrouten zwischen Asien, dem Nahen Osten und Europa, die sich über Jahrhunderte veränderten."},
-  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Kolonialreiche wurden von der gesamten Bevölkerung des Mutterlandes einhellig unterstützt","text":"In vielen europäischen Ländern gab es zeitgenössisch durchaus kritische Stimmen und Debatten gegen koloniale Expansion, auch wenn diese oft eine gesellschaftliche Minderheitsposition blieben."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken praktizierten nur in geringem Umfang Menschenopfer","text":"Historiker sind sich über das genaue Ausmaß uneinig; spanische Chronisten übertrieben vermutlich zur moralischen Rechtfertigung der eigenen Eroberung, dennoch belegen Funde zehntausende Opfer über die Reichsgeschichte."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Die Inka kannten kein Schriftsystem","text":"Sie nutzten ein komplexes Knotenschriftsystem aus gefärbten Schnüren (Quipu) zur Verwaltung von Zahlen und vermutlich auch narrativen Informationen, dessen vollständige Entschlüsselung bis heute nicht gelungen ist."},
-  {"category":"Asien & Amerika","type":"Mythos","title":"Die Maya-Zivilisation verschwand plötzlich über Nacht","text":"Der Niedergang der klassischen Maya-Städte im 9. Jahrhundert vollzog sich über Jahrzehnte durch Dürre, Kriege und Ressourcenknappheit; zahlreiche Maya-Gemeinschaften bestehen bis heute fort."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Japan war während der Sakoku-Zeit vollständig isoliert","text":"Über den künstlichen Hafen Dejima unterhielt Japan durchgehend begrenzten, aber bedeutsamen Handel mit niederländischen und chinesischen Kaufleuten."},
-  {"category":"Asien & Amerika","type":"Mythos","title":"Dschingis Khans Grab wurde bereits gefunden","text":"Der genaue Bestattungsort des mongolischen Herrschers wurde der Überlieferung nach bewusst geheim gehalten; trotz jahrzehntelanger archäologischer Suche wurde sein Grab bis heute nicht identifiziert."},
-  {"category":"Asien & Amerika","type":"Mythos","title":"Die Chinesische Mauer ist ein einziges durchgehendes Bauwerk","text":"Tatsächlich besteht sie aus zahlreichen, über mehr als 2000 Jahre von verschiedenen Dynastien errichteten und oft nicht direkt verbundenen Mauerabschnitten."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Samurai folgten stets einem strengen, jahrhundertealten Ehrenkodex","text":"Der als 'Bushido' bekannte, stark idealisierte Verhaltenskodex wurde in seiner heute bekannten Form überwiegend erst in der Edo-Zeit und besonders im frühen 20. Jahrhundert systematisiert."},
-  {"category":"Asien & Amerika","type":"Kuriosum","title":"Die Terrakotta-Armee zeigt lauter identische Soldatenfiguren","text":"Jede der über 8.000 Tonfiguren weist individuell unterschiedliche Gesichtszüge, Frisuren und Ausrüstungsdetails auf – vermutlich nach realen Vorbildern der kaiserlichen Armee gestaltet."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Konfuzius war zu Lebzeiten ein hochgeehrter, einflussreicher Berater","text":"Zu Lebzeiten hatte er nur mäßigen politischen Erfolg und wechselnde Anstellungsverhältnisse; sein enormer Einfluss entfaltete sich vor allem postum über Jahrhunderte durch seine Schüler."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Indien war vor der britischen Kolonialherrschaft stets politisch geeint","text":"Der Subkontinent bestand über weite Teile seiner Geschichte aus zahlreichen unabhängigen Königreichen; größere reichsweite Einigungen wie Maurya oder Mogulreich waren eher die Ausnahme."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Gandhi war von Anfang an ein überzeugter Verfechter gewaltfreien Widerstands","text":"Seine Philosophie des gewaltfreien Widerstands (Satyagraha) entwickelte sich erst schrittweise während seiner Zeit als Anwalt in Südafrika, wo er zunächst für eine loyale Einbindung ins britische Empire eintrat."},
-  {"category":"Asien & Amerika","type":"Kuriosum","title":"Die Kamikaze-Taifune gegen die Mongolen waren einmaliger Zufall","text":"Bemerkenswerterweise zerstörten gleich zwei separate schwere Taifune 1274 und erneut 1281 jeweils die mongolischen Invasionsflotten kurz nach deren Ankunft vor Japan."},
-  {"category":"Asien & Amerika","type":"Mythos","title":"Die Opiumkriege wurden von China begonnen","text":"Die Kriege 1839–1860 gingen von militärischen Interventionen Großbritanniens und später Frankreichs aus, nachdem chinesische Behörden versucht hatten, den illegalen britischen Opiumhandel zu unterbinden."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Mansa Musa war nur ein regionaler Fürst von geringer Bedeutung","text":"Zeitgenössische arabische und europäische Quellen beschreiben ihn als einen der reichsten Menschen der damals bekannten Welt; sein Goldreichtum soll 1324 kurzzeitig den Goldpreis in Kairo destabilisiert haben."},
-  {"category":"Asien & Amerika","type":"Kuriosum","title":"Äthiopien wurde nie von einer europäischen Kolonialmacht erobert","text":"Äthiopien besiegte 1896 in der Schlacht von Adua eine italienische Invasionsarmee entscheidend und blieb damit neben Liberia die einzige afrikanische Nation, die ihre Unabhängigkeit dauerhaft bewahrte."},
-  {"category":"Legenden","type":"Mythos","title":"Wilhelm Tell war eine historisch verbürgte reale Person","text":"Es gibt keine zeitgenössischen Quellen für Wilhelm Tell aus dem angeblichen 14. Jahrhundert; die Geschichte des Apfelschusses erscheint erstmals rund 200 Jahre später in Schweizer Chroniken."},
-  {"category":"Legenden","type":"Kuriosum","title":"Die Curse of the Hope-Diamant brachte allen Besitzern Unglück","text":"Der berühmte blaue Diamant wird mit zahlreichen Unglücksgeschichten seiner früheren Besitzer in Verbindung gebracht – die meisten dieser Anekdoten lassen sich historisch nicht eindeutig belegen."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Kartoffeln waren in Europa von Anfang an ein beliebtes Grundnahrungsmittel","text":"Nach ihrer Einführung aus Amerika im 16. Jahrhundert wurden Kartoffeln in weiten Teilen Europas zunächst misstrauisch beäugt und teils sogar als giftig oder unrein abgelehnt."},
-  {"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Die Wikinger nutzten nur die berühmten Runensteine zur schriftlichen Kommunikation","text":"Neben monumentalen Runensteinen nutzten Wikinger auch Alltagsritzungen auf Holz und Knochen für private Nachrichten, von denen durch Fundorte wie Bergen zahlreiche Beispiele erhalten sind."},
-  {"category":"Moderne","type":"Kuriosum","title":"Die Internationale Raumstation ist das teuerste je gebaute Bauwerk","text":"Mit geschätzten Baukosten von über 150 Milliarden US-Dollar gilt die ISS gemeinhin als teuerstes von Menschen je errichtetes einzelnes Bauwerk der Geschichte."},
-  {"category":"Antike","type":"Kuriosum","title":"Das antike Rom hatte bereits ein ausgeklügeltes Fast-Food-System","text":"Sogenannte 'Thermopolien' – Straßenimbisse mit eingelassenen Vorratsgefäßen – waren in römischen Städten wie Pompeji weitverbreitet, da viele einfache Wohnungen über keine eigene Küche verfügten."},
-  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Schachspiel und Politik waren in der Frühen Neuzeit strikt getrennte Welten","text":"Am Hof Ludwigs XIV. und anderer Monarchen dienten öffentliche Schachpartien häufig als subtile diplomatische Machtdemonstrationen zwischen rivalisierenden Gesandtschaften."},
-  {"category":"Moderne","type":"Nuance","title":"Der Eiffelturm war von Anfang an bei den Parisern beliebt","text":"Beim Bau 1889 protestierten zahlreiche prominente Pariser Künstler und Intellektuelle in einem offenen Brief gegen den Turm als angebliche 'nutzlose und monströse' Verschandelung der Stadt."},
-  {"category":"Antike","type":"Mythos","title":"Die Bibliothek von Alexandria wurde an einem Tag verbrannt","text":"Es gab kein einzelnes Feuer, das die Bibliothek vernichtete. Wahrscheinlicher ist ein Verfall über Jahrhunderte: Brände, Bürgerkriege, ausbleibende Finanzierung und der Wegzug von Gelehrten. Bibliotheken sterben meist an Vernachlässigung, nicht an Flammen."},
-  {"category":"Antike","type":"Nuance","title":"Griechische Statuen waren strahlend weiß","text":"Sie waren bunt bemalt. Farbreste lassen sich mit ultraviolettem Licht und Spektroskopie nachweisen. Das Ideal des weißen Marmors entstand erst, als die Farbe längst verwittert war – und prägte dann rückwirkend das Bild der Antike."},
-  {"category":"Antike","type":"Kuriosum","title":"Römischer Beton wird im Meerwasser fester","text":"Römischer Beton mit Vulkanasche bildet im Kontakt mit Meerwasser Minerale, die Risse schließen. Manche Hafenanlagen stehen nach zweitausend Jahren noch – moderner Portlandbeton hält im Meer selten hundert."},
-  {"category":"Antike","type":"Nuance","title":"Gladiatorenkämpfe endeten fast immer tödlich","text":"Ausgebildete Gladiatoren waren teuer. Die Ausbildung dauerte Jahre, und ein toter Kämpfer bedeutete einen Totalverlust. Viele Kämpfe endeten daher vor dem Tod – was die Grausamkeit der Institution nicht mildert."},
-  {"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter hielt man die Erde für eine Scheibe","text":"Die Kugelgestalt war seit der Antike bekannt und im mittelalterlichen Europa gelehrte Überzeugung. Der Reichsapfel als Herrschaftszeichen bildet eine Kugel ab. Die Scheiben-Erzählung entstand größtenteils im 19. Jahrhundert."},
-  {"category":"Mittelalter","type":"Nuance","title":"Das Mittelalter war finster und stillstehend","text":"In diesen Jahrhunderten entstanden Universitäten, Buchhaltung, Brille, mechanische Uhr, Windmühle und Hochofen. Der Begriff 'finsteres Mittelalter' stammt von Humanisten, die sich selbst als Wiedererwecker der Antike darstellen wollten."},
-  {"category":"Mittelalter","type":"Mythos","title":"Der Keuschheitsgürtel stammt aus dem Mittelalter","text":"Die erhaltenen Exemplare in Museen stammen fast durchweg aus dem 18. und 19. Jahrhundert. Mehrere große Museen haben ihre Stücke inzwischen aus der Ausstellung genommen oder neu datiert."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Kolumbus wollte beweisen, dass die Erde rund ist","text":"Das war unstrittig. Der Streit ging um den Erdumfang: Die Gelehrten am spanischen Hof rechneten richtig und hielten die Strecke nach Asien für zu weit. Kolumbus rechnete falsch – und stieß auf einen Kontinent, mit dem niemand gerechnet hatte."},
-  {"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenverfolgung war ein Phänomen des Mittelalters","text":"Ihr Höhepunkt lag zwischen 1560 und 1630 – mitten in der Frühen Neuzeit, zeitgleich mit der wissenschaftlichen Revolution. Aufklärung und Verfolgung schließen sich historisch weniger aus, als man annehmen möchte."},
-  {"category":"Frühe Neuzeit","type":"Kuriosum","title":"Die Tulpenmanie ruinierte die Niederlande","text":"Die Preise für Tulpenzwiebeln stiegen 1636/37 tatsächlich stark und brachen ein. Der wirtschaftliche Schaden blieb jedoch begrenzt und betraf vor allem einen kleinen Kreis von Händlern – die Erzählung vom nationalen Ruin stammt aus einem populären Buch des 19. Jahrhunderts."},
-  {"category":"Wissenschaft & Erfindungen","type":"Mythos","title":"Ein Apfel fiel Newton auf den Kopf","text":"Newton selbst erzählte von einem fallenden Apfel als Anlass zum Nachdenken über die Schwerkraft – nicht davon, getroffen worden zu sein. Die Geschichte stammt aus Gesprächen seiner letzten Lebensjahre."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Edison erfand die Glühbirne","text":"Vor ihm arbeiteten mehrere Erfinder an Glühlampen. Edisons Leistung lag in einer brauchbaren Kohlefaser, im systematischen Testen tausender Materialien und vor allem im Aufbau eines ganzen Stromversorgungssystems – ohne das die Lampe nutzlos gewesen wäre."},
-  {"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Rosalind Franklin und die Doppelhelix","text":"Die entscheidende Röntgenaufnahme 'Photo 51' stammte aus Franklins Labor und wurde Watson ohne ihr Wissen gezeigt. Der Nobelpreis 1962 ging an Watson, Crick und Wilkins; Franklin war 1958 gestorben und wurde nicht posthum berücksichtigt."},
-  {"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Semmelweis wurde für das Händewaschen gefeiert","text":"Ignaz Semmelweis senkte die Sterblichkeit bei Wöchnerinnen drastisch, indem er Händedesinfektion anordnete. Seine Kollegen lehnten ihn ab; er starb 1865 in einer Anstalt. Die Keimtheorie, die ihn bestätigt hätte, setzte sich erst danach durch."},
-  {"category":"Moderne","type":"Nuance","title":"Die Titanic galt als unsinkbar","text":"Die Werft warb nie mit diesem Wort. Die Formulierung stammt aus Fachzeitschriften und wurde vor allem nach dem Untergang zur festen Wendung – ein Fall, in dem die Nachwelt einen Superlativ erfindet, um die Ironie zu vergrößern."},
-  {"category":"Moderne","type":"Mythos","title":"Einstein war schlecht in Mathematik","text":"Er war ein sehr guter Schüler in Mathematik und Physik. Der Irrtum entstand vermutlich durch ein Schweizer Notensystem, in dem die 6 die beste Note ist – gelesen mit deutschem Maßstab wird aus einer Bestnote ein Ungenügend."},
-  {"category":"Moderne","type":"Nuance","title":"Der Erste Weltkrieg begann wegen eines Attentats","text":"Das Attentat von Sarajevo war der Auslöser, nicht die Ursache. Ohne Bündnissysteme, Aufrüstung, imperiale Rivalität und die Erwartung eines kurzen Krieges wäre daraus kaum ein Weltkrieg geworden."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Die Chinesische Mauer ist aus dem All zu sehen","text":"Mit bloßem Auge aus der Erdumlaufbahn ist sie praktisch nicht zu erkennen – sie ist schmal und farblich kaum von der Umgebung abgesetzt. Mehrere Raumfahrer haben das ausdrücklich bestätigt."},
-  {"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken hielten Cortés für einen Gott","text":"Die Erzählung stammt weitgehend aus spanischen Quellen, die Jahrzehnte später entstanden, und aus indigenen Berichten unter spanischer Herrschaft. Ob Moctezuma so dachte, ist in der Forschung höchst umstritten."},
-  {"category":"Asien & Amerika","type":"Kuriosum","title":"Das Inkareich kannte keine Schrift – aber eine Buchhaltung","text":"Mit Quipus, geknoteten Schnüren, verwalteten die Inka Steuern, Vorräte und Bevölkerungszahlen über ein Reich von tausenden Kilometern. Wie viel darüber hinaus in ihnen gespeichert war, ist bis heute nicht vollständig entschlüsselt."},
-  {"category":"Legenden","type":"Mythos","title":"Wikinger trugen Hörnerhelme","text":"Kein einziger archäologischer Fund belegt sie. Das Bild stammt aus der Ausstattung von Wagner-Aufführungen im 19. Jahrhundert und aus der Romantik."},
-  {"category":"Legenden","type":"Nuance","title":"Marie-Antoinette sagte 'Sollen sie doch Kuchen essen'","text":"Der Satz taucht bei Rousseau auf, als sie ein Kind war und noch nicht in Frankreich lebte. Zugeschrieben wurde er ihr erst später – ein Beispiel dafür, wie politische Propaganda Zitate wandern lässt."},
-  {"category":"Legenden","type":"Mythos","title":"Napoleon war auffallend klein","text":"Drei französische Quellen – sein Kammerdiener, General Gourgaud und sein Leibarzt – nennen gut 5 Fuß 2 Zoll. Der französische Zoll maß damals 2,7 cm, der englische 2,54 cm. Umgerechnet ergibt das etwa 1,67 bis 1,70 Meter und damit für einen Franzosen seiner Zeit eher leicht über dem Durchschnitt. Der Irrtum entstand durch die Verwechslung der Maßsysteme, verstärkt durch britische Karikaturen."},
-  {"category":"Legenden","type":"Kuriosum","title":"Der kürzeste Krieg der Geschichte","text":"Der britisch-sansibarische Krieg begann am 27. August 1896 um 9 Uhr und war vor 9:45 Uhr entschieden – je nach Zählung zwischen 38 und 45 Minuten. Auf sansibarischer Seite gab es rund 500 Opfer; die Kürze des Krieges sagt nichts über seine Härte."}
+{"category":"Antike","type":"Nuance","title":"Der Trojanische Krieg war reine Erfindung","text":"Homers 'Ilias' ist literarisch stark überhöht, doch Ausgrabungen in Hisarlik (Türkei) durch Heinrich Schliemann belegen eine reale, mehrfach zerstörte Stadt namens Troja. Ob ein 'Trojanisches Pferd' tatsächlich existierte, bleibt jedoch unbewiesen."},
+{"category":"Antike","type":"Nuance","title":"Bei den Thermopylen kämpften nur 300 Spartaner","text":"Tatsächlich standen mehrere tausend griechische Verbündete mit den Spartanern gemeinsam gegen die Perser. Die '300' waren nur die Kerntruppe, die als letzte in einem aussichtslosen Nachhutgefecht standhielt."},
+{"category":"Antike","type":"Mythos","title":"Nero spielte Geige, während Rom brannte","text":"Die Geige wurde erst rund 1500 Jahre später erfunden. Manche antiken Quellen berichten sogar, Nero sei bei Brandausbruch gar nicht in Rom gewesen und habe später den Wiederaufbau organisiert."},
+{"category":"Antike","type":"Nuance","title":"Caligula ernannte sein Pferd zum Senator","text":"Der römische Historiker Sueton berichtet dies als Beleg für Caligulas Wahnsinn. Moderne Historiker vermuten eher bitteren Spott gegenüber dem Senat als eine tatsächlich vollzogene Ernennung."},
+{"category":"Antike","type":"Nuance","title":"Kleopatra war eine ägyptische Schönheitsikone","text":"Kleopatra VII. entstammte der griechisch-makedonischen Ptolemäer-Dynastie, war also keine ethnische Ägypterin. Antike Quellen betonen zudem eher ihre Intelligenz, Bildung und Stimme als klassische Schönheit."},
+{"category":"Antike","type":"Nuance","title":"Alexander der Große wurde vergiftet","text":"Seine Todesursache ist bis heute ungeklärt. Historiker diskutieren neben Vergiftung auch Malaria, Typhus oder übermäßigen Alkoholkonsum – eine endgültige Antwort gibt es nicht."},
+{"category":"Antike","type":"Mythos","title":"Atlantis war eine reale versunkene Hochkultur","text":"Atlantis wird erstmals von Platon als philosophisches Gedankenexperiment über einen idealen und einen dekadenten Staat erwähnt. Es gibt keinerlei archäologischen Beleg für seine tatsächliche Existenz."},
+{"category":"Antike","type":"Nuance","title":"Der Läufer Pheidippides rannte 42 km und starb","text":"Herodot berichtet nur von einem Botenlauf nach Sparta, nicht von einem tödlichen Lauf über die Marathon-Distanz. Die moderne Marathondistanz von 42,195 km wurde erst 1908 bei den Olympischen Spielen in London festgelegt."},
+{"category":"Antike","type":"Nuance","title":"Gladiatoren kämpften immer bis zum Tod","text":"Gladiatoren waren teure Investitionen ihrer Besitzer. Die meisten Kämpfe endeten ohne tödlichen Ausgang, und die genaue Bedeutung der berühmten Daumengeste ist unter Historikern bis heute umstritten."},
+{"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter glaubte man an eine flache Erde","text":"Gebildete Menschen wussten seit der griechischen Antike um die Kugelform der Erde. Auch mittelalterliche Gelehrte lehrten dies an Universitäten – der Mythos der 'flachen Erde' entstand erst im 19. Jahrhundert."},
+{"category":"Mittelalter","type":"Mythos","title":"Ritter mussten mit einem Kran aufs Pferd gehoben werden","text":"Vollrüstungen wogen meist nur 20–25 kg und waren gut über den Körper verteilt. Ritter konnten sich damit frei bewegen, kämpfen und sogar Purzelbäume schlagen, wie Experimente moderner Rüstungshistoriker zeigen."},
+{"category":"Mittelalter","type":"Mythos","title":"Menschen im Mittelalter wuschen sich nie","text":"Öffentliche Badehäuser waren im Mittelalter weit verbreitet und beliebt. Erst im Zuge der Pestepidemien ab dem 14. Jahrhundert geriet Baden aus Angst vor Ansteckung zunehmend in Verruf."},
+{"category":"Mittelalter","type":"Mythos","title":"Hexenverbrennungen waren typisch für das 'finstere' Mittelalter","text":"Die überwältigende Mehrheit der europäischen Hexenprozesse und -verbrennungen fand tatsächlich erst in der Frühen Neuzeit statt, besonders im 16. und 17. Jahrhundert – nicht im Mittelalter."},
+{"category":"Mittelalter","type":"Mythos","title":"Mittelalterliche Karten warnten mit 'Hier seien Drachen'","text":"Die berühmte lateinische Formulierung 'hic sunt dracones' ist tatsächlich nur auf einem einzigen erhaltenen Objekt belegt, dem Hunt-Lenox-Globus von ca. 1510 – nicht auf typischen mittelalterlichen Karten."},
+{"category":"Mittelalter","type":"Mythos","title":"Die Wikinger trugen gehörnte Helme","text":"Es gibt keinerlei archäologische Belege für Hörnerhelme bei echten Wikingern. Das Bild wurde im 19. Jahrhundert von Kostümbildnern der Oper (u.a. für Wagners Ring des Nibelungen) erfunden."},
+{"category":"Mittelalter","type":"Mythos","title":"Kolumbus bewies, dass die Erde rund ist","text":"Dies war bereits seit der Antike bekanntes Allgemeinwissen unter Gelehrten. Kolumbus' eigentlicher Streitpunkt mit Experten war die (falsch geschätzte, zu kleine) Größe der Erde, nicht ihre Form."},
+{"category":"Mittelalter","type":"Nuance","title":"Vlad der Pfähler war ein Vampir","text":"Der reale walachische Fürst Vlad III. war berüchtigt für extrem brutale Bestrafungsmethoden, aber keine übernatürliche Gestalt. Die Vampirlegende geht auf Bram Stokers Roman 'Dracula' (1897) zurück, der seinen Namen nur lose verwendete."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"In Salem wurden Hexen auf dem Scheiterhaufen verbrannt","text":"Bei den berühmten Hexenprozessen von Salem (1692/93) wurden alle Verurteilten gehängt – niemand wurde verbrannt, anders als es die Popkultur oft darstellt."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"George Washington fällte als Kind einen Kirschbaum und log nie","text":"Diese moralisierende Anekdote wurde erst nach Washingtons Tod von seinem Biografen Parson Weems erfunden, um ihn als Vorbild ehrlichen Charakters darzustellen."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"Napoleon war außergewöhnlich klein","text":"Napoleon war mit ca. 1,68 m für seine Zeit durchschnittlich groß. Der Mythos entstand durch eine Verwechslung französischer und englischer Zoll-Maßeinheiten sowie britische Kriegspropaganda."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Marco Polo erfand seine China-Reise komplett","text":"Manche Historiker bezweifeln einzelne Details seines Berichts (er erwähnt etwa nie die Chinesische Mauer), doch die Reise als solche und viele seiner Beschreibungen gelten heute als historisch belegt."},
+{"category":"Frühe Neuzeit","type":"Kuriosum","title":"Piraten trugen Augenklappen wegen Verletzungen","text":"Eine populäre Theorie besagt, Augenklappen dienten manchen Seeleuten dazu, ein Auge stets an Dunkelheit gewöhnt zu halten, um beim schnellen Wechsel zwischen Deck und dunklem Unterdeck sofort sehen zu können."},
+{"category":"Moderne","type":"Mythos","title":"Einstein ist in der Schule durchgefallen","text":"Albert Einstein war tatsächlich ein exzellenter Schüler, besonders in Mathematik und Physik. Der Mythos entstand vermutlich durch eine Verwechslung unterschiedlicher Schweizer Notenskalen."},
+{"category":"Moderne","type":"Mythos","title":"Der Fluch des Tutanchamun tötete die Ausgräber","text":"Nach dem Tod von Lord Carnarvon 1923 verbreitete die Boulevardpresse die Legende eines Grabfluchs. Statistisch starben die meisten an der Ausgrabung Beteiligten aber erst Jahrzehnte später eines natürlichen Todes."},
+{"category":"Moderne","type":"Kuriosum","title":"Der Piltdown-Mensch war ein Sensationsfund","text":"1912 als bedeutendes 'fehlendes Bindeglied' der Evolution präsentiert, entpuppte sich der Fund 1953 als Fälschung aus einem Menschenschädel und einem Orang-Utan-Kiefer – einer der berühmtesten Wissenschaftsbetrugsfälle der Geschichte."},
+{"category":"Moderne","type":"Mythos","title":"Anastasia Romanov überlebte die Erschießung ihrer Familie","text":"Jahrzehntelang befeuerten Hochstaplerinnen wie Anna Anderson diesen Mythos. DNA-Analysen der geborgenen Gebeine bestätigten 2007 zweifelsfrei den Tod aller Familienmitglieder der Zarenfamilie."},
+{"category":"Moderne","type":"Nuance","title":"Rasputin war fast unmöglich zu töten","text":"Die dramatische Legende von Vergiftung, Erschießung und Ertränken stammt vor allem aus den unzuverlässigen Memoiren seines Mörders Felix Jussupow. Historiker bezweifeln heute viele Details dieser Version."},
+{"category":"Moderne","type":"Kuriosum","title":"Der Fall der Berliner Mauer war minutiös geplant","text":"Tatsächlich war die Maueröffnung 1989 vor allem die Folge eines Kommunikationsfehlers: SED-Funktionär Günter Schabowski verkündete auf einer Pressekonferenz versehentlich sofortige Reisefreiheit."},
+{"category":"Moderne","type":"Mythos","title":"Ninjas trugen stets komplett schwarze Kleidung","text":"Dieses Bild stammt aus Konventionen des japanischen Kabuki-Theaters, wo schwarz gekleidete Bühnenhelfer als 'unsichtbar' galten. Reale Ninja trugen meist unauffällige Alltagskleidung zur Tarnung."},
+{"category":"Moderne","type":"Mythos","title":"Die Chinesische Mauer ist vom Weltall aus mit bloßem Auge sichtbar","text":"Astronauten, darunter mehrere chinesische Taikonauten, haben diesen hartnäckigen Mythos wiederholt dementiert. Die Mauer ist schlicht zu schmal, um ohne Hilfsmittel aus dem All erkennbar zu sein."},
+{"category":"Legenden","type":"Mythos","title":"Das Bermuda-Dreieck verschluckt überdurchschnittlich viele Schiffe","text":"Statistische Analysen von Versicherungsdaten zeigen keine erhöhte Vermisstenrate gegenüber anderen stark befahrenen Seegebieten vergleichbarer Größe."},
+{"category":"Legenden","type":"Mythos","title":"Nostradamus sagte konkrete historische Ereignisse voraus","text":"Seine Verse sind bewusst vage, mehrdeutig und metaphernreich formuliert. Vermeintliche 'Treffer' entstehen fast immer durch rückwirkende Deutung nach bereits eingetretenen Ereignissen."},
+{"category":"Legenden","type":"Mythos","title":"Kolumbus war der erste Europäer in Amerika","text":"Wikinger unter Leif Eriksson erreichten Neufundland (das sogenannte 'Vinland') bereits um das Jahr 1000 – rund 500 Jahre vor Kolumbus, wie die Ausgrabungen von L'Anse aux Meadows belegen."},
+{"category":"Legenden","type":"Kuriosum","title":"Napoleon wurde von einer Hasen-Horde angegriffen","text":"Bei einer eigens organisierten Hasenjagd 1807 wandten sich hunderte zuvor gezüchtete, zahme Hasen nicht zur Flucht, sondern liefen auf Napoleon und seine Gesellschaft zu – die Jagdgesellschaft musste sich regelrecht zurückziehen."},
+{"category":"Legenden","type":"Kuriosum","title":"Bei den ersten Olympischen Spielen traten Athleten nackt an","text":"Der griechische Begriff 'gymnos' (nackt) ist die Wurzel des Wortes 'Gymnasium'. Athleten traten in Olympia tatsächlich unbekleidet an – laut Überlieferung auch, um Frauen (denen die Teilnahme als Zuschauerinnen untersagt war) fernzuhalten."},
+{"category":"Legenden","type":"Kuriosum","title":"Ein römischer Kaiser bot einen Preis für die beste Grimasse","text":"Bei manchen römischen Festen gab es tatsächlich Wettbewerbe im Grimassenschneiden ('gymnastiké') als derbe Unterhaltung – ein früher Vorläufer heutiger Grimassen-Wettbewerbe."},
+{"category":"Antike","type":"Nuance","title":"Spartaner warfen alle schwachen Babys von einem Felsen","text":"Diese Praxis wird nur von einem einzigen, Jahrhunderte späteren Autor (Plutarch) erwähnt. Ausgrabungen der vermeintlichen Stätte fanden keine Babyskelette, sondern nur Knochen erwachsener Männer – vermutlich hingerichteter Verbrecher."},
+{"category":"Antike","type":"Mythos","title":"Julius Caesars Name stammt vom Kaiserschnitt","text":"Seine Mutter Aurelia lebte nachweislich noch Jahrzehnte nach seiner Geburt weiter – ein Kaiserschnitt war zu dieser Zeit für die Mutter praktisch immer tödlich. Die tatsächliche Namensherkunft ist unklar."},
+{"category":"Antike","type":"Nuance","title":"Caesars letzte Worte waren 'Auch du, mein Sohn Brutus?'","text":"Der Historiker Sueton überliefert diese Version nur als Gerücht. Ob Caesar überhaupt letzte Worte sprach, ist historisch nicht gesichert."},
+{"category":"Antike","type":"Mythos","title":"Die Pyramiden wurden von Sklaven erbaut","text":"Ausgrabungen von Arbeitersiedlungen bei Gizeh zeigen, dass die Pyramiden überwiegend von bezahlten, gut versorgten Facharbeitern und Bauern während der Nilüberschwemmungszeit errichtet wurden."},
+{"category":"Antike","type":"Nuance","title":"Kleopatra starb an einem einzigen Schlangenbiss","text":"Schon antike Quellen waren sich uneinig; moderne Toxikologen bezweifeln, dass eine einzelne Schlange einen so kontrollierten, schmerzfreien Tod verursacht haben könnte."},
+{"category":"Antike","type":"Mythos","title":"Napoleons Truppen schossen der Sphinx die Nase ab","text":"Zeichnungen aus dem 18. Jahrhundert – vor Napoleons Ägyptenfeldzug – zeigen die Sphinx bereits ohne Nase. Die Beschädigung geschah vermutlich Jahrhunderte früher."},
+{"category":"Antike","type":"Nuance","title":"Sokrates wurde allein wegen echter Gottlosigkeit hingerichtet","text":"Historiker sehen den Prozess auch stark politisch motiviert – als Abrechnung mit seinen Verbindungen zu unbeliebten aristokratischen Schülern nach dem Sturz der 'Dreißig Tyrannen'."},
+{"category":"Antike","type":"Nuance","title":"Hannibal verlor alle seine Kriegselefanten in den Alpen","text":"Die meisten Tiere starben tatsächlich an Kälte und Erschöpfung, doch mindestens ein Elefant überlebte Berichten zufolge bis nach Italien."},
+{"category":"Antike","type":"Nuance","title":"Archimedes rief 'Heureka' beim Baden aus","text":"Die Anekdote stammt vom römischen Autor Vitruv, rund 200 Jahre nach Archimedes' Tod – zeitgenössisch ist sie nicht belegt."},
+{"category":"Antike","type":"Mythos","title":"Der Koloss von Rhodos stand rittlings über dem Hafeneingang","text":"Diese berühmte Darstellung stammt erst aus mittelalterlichen und Renaissance-Illustrationen; antike Ingenieure hätten eine solche Statue technisch kaum errichten können."},
+{"category":"Antike","type":"Kuriosum","title":"Die Terrakotta-Armee wurde zufällig entdeckt","text":"1974 stießen Bauern beim Brunnenbohren in der chinesischen Provinz Shaanxi zufällig auf die über 8.000 lebensgroßen Tonkrieger des ersten chinesischen Kaisers."},
+{"category":"Antike","type":"Nuance","title":"Bei den Olympischen Spielen herrschte reine Sportlichkeit ohne Politik","text":"Während der Spiele galt zwar ein 'heiliger Frieden' (Ekecheiria), dieser wurde jedoch häufig auch für diplomatische Zwecke der Stadtstaaten instrumentalisiert."},
+{"category":"Antike","type":"Kuriosum","title":"Mönchtum entstand nur einmal in der Geschichte","text":"Buddhistische und christliche Klostertraditionen entwickelten unabhängig voneinander erstaunlich ähnliche Konzepte von Askese, Zölibat und Gemeinschaftsleben."},
+{"category":"Antike","type":"Nuance","title":"Buddha war von Geburt an ein Bettelmönch","text":"Der Überlieferung nach wurde Siddhartha Gautama als wohlhabender Prinz geboren und wandte sich erst als junger Erwachsener bewusst von Reichtum und Palastleben ab."},
+{"category":"Mittelalter","type":"Mythos","title":"Das 'Recht der ersten Nacht' war weitverbreitete feudale Praxis","text":"Historiker finden kaum verlässliche zeitgenössische Belege für eine systematische Ausübung dieses angeblichen Rechts; es dürfte größtenteils spätere literarische Erfindung sein."},
+{"category":"Mittelalter","type":"Mythos","title":"Wikinger waren reine Plünderer ohne Handelskultur","text":"Wikinger betrieben ausgedehnte Handelsnetzwerke bis nach Byzanz und Bagdad und gründeten zahlreiche bis heute bestehende Städte, darunter Dublin."},
+{"category":"Mittelalter","type":"Nuance","title":"Kreuzritter kämpften ausschließlich aus religiösem Eifer","text":"Viele Teilnehmer verband mit dem religiösen Motiv auch die Aussicht auf Landbesitz, Beute, Handelsvorteile und gesellschaftliches Ansehen."},
+{"category":"Mittelalter","type":"Nuance","title":"Der Begriff 'Vandalismus' beweist besondere Zerstörungswut der Vandalen","text":"Der Begriff wurde erst über 1000 Jahre später im 18. Jahrhundert geprägt; die historischen Vandalen plünderten Rom 455 zwar, richteten aber wohl keine ungewöhnlich systematische Zerstörung an."},
+{"category":"Mittelalter","type":"Nuance","title":"Attila der Hunne war nur ein ungebildeter Wilder","text":"Zeitgenössische Quellen wie der oströmische Gesandte Priskos beschreiben ihn auch als überraschend genügsam, diplomatisch geschickt und an römischer Kultur interessiert."},
+{"category":"Mittelalter","type":"Nuance","title":"Die Lebenserwartung im Mittelalter betrug generell nur 30 Jahre","text":"Diese Zahl wird stark durch hohe Kindersterblichkeit verzerrt; wer das Erwachsenenalter erreichte, hatte durchaus realistische Chancen auf 60 bis 70 Lebensjahre."},
+{"category":"Mittelalter","type":"Mythos","title":"Marco Polo brachte Nudeln aus China nach Italien","text":"Es gibt Belege für Nudelgerichte im Mittelmeerraum bereits vor Marco Polos Reise; die populäre Legende entstand vermutlich erst im 20. Jahrhundert durch eine amerikanische Werbekampagne."},
+{"category":"Mittelalter","type":"Nuance","title":"Die Magna Carta garantierte allen Engländern Freiheit","text":"Ursprünglich schützte sie fast ausschließlich die Rechte des Adels gegenüber der Krone; erst spätere Interpretationen im 17. Jahrhundert weiteten ihre Bedeutung auf allgemeine Bürgerrechte aus."},
+{"category":"Mittelalter","type":"Mythos","title":"Die Assassinen waren durch Haschisch berauschte Auftragsmörder","text":"Der Name geht vermutlich auf eine abwertende arabische Fremdbezeichnung zurück; historische Belege für systematischen Drogenkonsum der Sekte gelten heute als unzuverlässig."},
+{"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter herrschte durchgehender wissenschaftlicher Stillstand","text":"Die Epoche brachte bedeutende Innovationen wie die Brille, mechanische Uhren, den Buchdruck, das Dreifelder-System in der Landwirtschaft und gotische Kathedralbaukunst."},
+{"category":"Mittelalter","type":"Nuance","title":"Die Templerritter wurden wegen erwiesener Häresie vernichtet","text":"Historiker gehen heute überwiegend davon aus, dass der hoch verschuldete französische König Philipp IV. die Anklagen 1307 vor allem konstruierte, um sich des Vermögens des Ordens zu bemächtigen."},
+{"category":"Mittelalter","type":"Nuance","title":"Der Investiturstreit drehte sich nur um religiöse Fragen","text":"Im Kern ging es vor allem um handfeste Macht- und Besitzfragen: wer Bischöfe – und damit große Ländereien – einsetzen durfte, Kaiser oder Papst."},
+{"category":"Mittelalter","type":"Nuance","title":"Die Hanse war ein fest organisierter Staat","text":"Tatsächlich war die Hanse ein loses, informelles Netzwerk von Kaufleuten und Städten ohne zentrale Verfassung, gemeinsame Kasse oder feste Mitgliederliste."},
+{"category":"Mittelalter","type":"Mythos","title":"Chinesische Schiffe der Ming-Zeit waren primitive Boote","text":"Admiral Zheng Hes Flotte im frühen 15. Jahrhundert umfasste Schiffe von bis zu 120 Metern Länge – deutlich größer als alle europäischen Schiffe dieser Zeit."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"Galileo Galilei wurde wegen seiner Thesen gefoltert","text":"Er wurde 1633 zu Hausarrest verurteilt, jedoch nicht gefoltert. Die Androhung von Folter war zu dieser Zeit ein übliches, meist nicht vollzogenes Verhörinstrument der Inquisition."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Die Pilgerväter suchten Religionsfreiheit für alle","text":"Die Puritaner an Bord der Mayflower suchten vor allem Freiheit für die eigene Glaubensgemeinschaft und praktizierten später selbst erhebliche religiöse Intoleranz gegenüber Andersdenkenden."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenprozesse waren primär von der katholischen Kirche getragen","text":"Tatsächlich fanden besonders viele Hexenverfolgungen in protestantischen Gebieten Mitteleuropas statt – beide Konfessionen beteiligten sich intensiv."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"Die Pest traf vor allem unhygienische arme Bevölkerungsschichten","text":"Die Übertragung erfolgte primär durch Flöhe auf Ratten unabhängig vom persönlichen Reinlichkeitsgrad; auch wohlhabende Haushalte und Klöster waren stark betroffen."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Elisabeth I. blieb aus reiner Prinzipientreue unverheiratet","text":"Ihre Ehelosigkeit war wohl auch eine bewusste politische Strategie, um die eigene Machtposition nicht durch eine Heiratsallianz zu gefährden."},
+{"category":"Frühe Neuzeit","type":"Kuriosum","title":"Peter der Große führte eine Bartsteuer zur reinen Geldbeschaffung ein","text":"Die 1698 eingeführte Steuer diente auch der symbolischen Modernisierung: Wer den traditionellen Bart behalten wollte, musste zahlen und erhielt eine Bart-Münzmarke als Nachweis."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Die Azteken hielten die Spanier für zurückkehrende Götter","text":"Diese oft erzählte Legende stammt vor allem aus spanischen Quellen nach der Eroberung und wird von vielen Historikern heute als nachträgliche Rechtfertigungserzählung angezweifelt."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Guy Fawkes handelte aus persönlichem Hass allein","text":"Der 'Gunpowder Plot' von 1605 war eine koordinierte katholische Verschwörung gegen die protestantische Verfolgungspolitik, nicht die Tat eines Einzelnen."},
+{"category":"Frühe Neuzeit","type":"Kuriosum","title":"Ludwig XIV. badete regelmäßig","text":"Der Sonnenkönig soll kaum gebadet haben und stattdessen parfümierte Puder sowie häufigen Hemdenwechsel zur Körperpflege bevorzugt haben – zeittypisch für den europäischen Hochadel."},
+{"category":"Frühe Neuzeit","type":"Mythos","title":"Kolumbus wusste, dass er einen neuen Kontinent entdeckt hatte","text":"Kolumbus glaubte bis zu seinem Tod, ostasiatische Inseln erreicht zu haben; der Kontinentcharakter Amerikas wurde erst durch spätere Entdecker wie Amerigo Vespucci erkannt."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Magellan vollendete persönlich die erste Weltumsegelung","text":"Magellan starb 1521 auf den Philippinen; nur sein Kapitän Juan Sebastián Elcano und eine Handvoll Überlebender vollendeten tatsächlich die vollständige Weltumsegelung."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Die Boston Tea Party war spontaner Protest wütender Bürger","text":"Die Aktion von 1773 war eine sorgfältig organisierte politische Demonstration der 'Sons of Liberty', bei der sich Teilnehmer bewusst als Native Americans verkleideten."},
+{"category":"Moderne","type":"Nuance","title":"Marie Curie starb direkt an ihrer Radioaktivitätsforschung","text":"Sie starb 1934 an aplastischer Anämie, vermutlich durch jahrelange Strahlenbelastung – ihre Laborhefte sind bis heute radioaktiv kontaminiert und werden in bleiausgekleideten Behältern aufbewahrt."},
+{"category":"Moderne","type":"Nuance","title":"Die Titanic wurde offiziell als 'unsinkbar' beworben","text":"Der Begriff 'unsinkbar' wurde vor allem nachträglich durch die Presse verbreitet; die White Star Line selbst hatte das Schiff nie offiziell so beworben."},
+{"category":"Moderne","type":"Nuance","title":"Einstein war Mitentwickler der Atombombe","text":"Einstein unterschrieb 1939 lediglich einen warnenden Brief an Präsident Roosevelt zur Möglichkeit einer deutschen Atombombe, war selbst aber nie am Manhattan-Projekt beteiligt."},
+{"category":"Moderne","type":"Mythos","title":"Die Spanische Grippe stammte ursprünglich aus Spanien","text":"Frühe Fälle sind vermutlich in den USA oder Frankreich dokumentiert; Spanien erhielt den Namen nur, weil es als neutrales Land im Ersten Weltkrieg offen über die Pandemie berichten durfte."},
+{"category":"Moderne","type":"Nuance","title":"Rosa Parks war einfach nur eine müde Näherin","text":"Parks war eine langjährige, geschulte Bürgerrechtsaktivistin der NAACP; ihre Weigerung war eine bewusste, vorbereitete Form des zivilen Ungehorsams."},
+{"category":"Moderne","type":"Nuance","title":"Churchill war während des gesamten Krieges unangefochten beliebt","text":"Trotz seines Kriegsruhms verlor seine konservative Partei die Wahlen 1945 deutlich – viele Briten wollten nach dem Krieg vor allem soziale Reformen statt weiterer Kriegsführerpolitik."},
+{"category":"Moderne","type":"Mythos","title":"Die Mondlandung 1969 wurde in einem Studio gefälscht","text":"Diese Verschwörungstheorie ist durch überwältigende physikalische Belege widerlegt – etwa von Astronauten hinterlassene Spiegel auf dem Mond, die bis heute per Laser vermessbar sind."},
+{"category":"Moderne","type":"Mythos","title":"Stalin war der Geburtsname des sowjetischen Diktators","text":"Er wurde als Josef Wissarionowitsch Dschugaschwili geboren; 'Stalin' ('der Stählerne') war ein später angenommener Kampfname."},
+{"category":"Moderne","type":"Nuance","title":"Der Kalte Krieg war ein völlig gewaltfreier Konflikt","text":"Auch wenn die Supermächte nie direkt gegeneinander kämpften, verursachten zahlreiche 'Stellvertreterkriege' in Korea, Vietnam und Afghanistan Millionen Tote weltweit."},
+{"category":"Moderne","type":"Kuriosum","title":"Weltweite Zeitzonen gab es schon immer","text":"Erst mit dem Ausbau der Eisenbahn im 19. Jahrhundert wurden standardisierte Zeitzonen notwendig; zuvor hatte praktisch jede Stadt ihre eigene lokale Sonnenzeit."},
+{"category":"Moderne","type":"Nuance","title":"Nelson Mandela galt während seiner gesamten Haftzeit international als Held","text":"Erst ab den 1980er-Jahren wuchs der internationale Druck gegen die Apartheid deutlich; zuvor stand er in manchen westlichen Regierungen sogar noch auf Terrorlisten."},
+{"category":"Moderne","type":"Kuriosum","title":"Die Berliner Luftbrücke galt von Anfang an als sicherer Erfolg","text":"Anfangs hielten viele Militärexperten eine dauerhafte Luftversorgung von rund zwei Millionen Berlinern für technisch kaum durchführbar – die logistische Leistung übertraf am Ende alle Erwartungen."},
+{"category":"Moderne","type":"Nuance","title":"Anne Franks Tagebuch wurde völlig unverändert veröffentlicht","text":"Ihr Vater Otto Frank redigierte nach dem Krieg das Originaltagebuch für die erste Veröffentlichung leicht, wobei einige persönliche Passagen zunächst gekürzt wurden."},
+{"category":"Moderne","type":"Kuriosum","title":"Der erste Computer-'Bug' war rein metaphorisch gemeint","text":"1947 fanden Techniker tatsächlich eine echte Motte in einem Relais eines frühen Harvard-Computers und klebten sie als Kuriosum ins Logbuch – Ursprung des bis heute gebräuchlichen Begriffs."},
+{"category":"Moderne","type":"Kuriosum","title":"Die erste E-Mail der Geschichte enthielt eine bedeutungsvolle Botschaft","text":"Die erste jemals versendete E-Mail 1971 durch Ray Tomlinson enthielt nach eigener späterer Aussage lediglich eine bedeutungslose Testzeichenfolge wie 'QWERTYUIOP'."},
+{"category":"Legenden","type":"Nuance","title":"König Artus und die Ritter der Tafelrunde sind historisch verbürgt","text":"Es gibt keine zeitgenössischen Belege für einen historischen König Artus; die Legende verschmilzt vermutlich mehrere frühmittelalterliche britannische Kriegsherren mit späterer literarischer Ausschmückung."},
+{"category":"Legenden","type":"Nuance","title":"Robin Hood war eine reale historische Einzelperson","text":"Historiker vermuten eher ein literarisches Sammelbild aus mehreren realen mittelalterlichen Gesetzlosen des 13./14. Jahrhunderts als eine einzelne verbürgte Figur."},
+{"category":"Legenden","type":"Mythos","title":"Der Heilige Gral ist ein real existierendes Artefakt","text":"Der Gral taucht erstmals in mittelalterlichen Artus-Romanen des 12. Jahrhunderts als literarisches Symbol auf, nicht als historisch belegtes Objekt."},
+{"category":"Legenden","type":"Mythos","title":"El Dorado war eine reale goldene Stadt in Südamerika","text":"Die Legende geht vermutlich auf ein reales Ritual eines Muisca-Stammesführers zurück und wurde von europäischen Eroberern zur Legende einer sagenhaften Goldstadt aufgebauscht, die nie gefunden wurde."},
+{"category":"Legenden","type":"Mythos","title":"Die Osterinsel-Statuen wurden von Außerirdischen errichtet","text":"Archäologische Untersuchungen zeigen, dass die Rapa-Nui-Bevölkerung die Statuen mit ausgeklügelten, rein menschlichen Techniken schuf und mutmaßlich mittels Seilen 'gehend' transportierte."},
+{"category":"Legenden","type":"Mythos","title":"Prester John, der legendäre christliche König im Osten, war real","text":"Ab dem 12. Jahrhundert kursierten in Europa Briefe eines angeblichen mächtigen christlichen Priesterkönigs in Asien oder Afrika – eine bis heute nie verifizierte Legende."},
+{"category":"Legenden","type":"Kuriosum","title":"Auf Oak Island wurde ein realer Piratenschatz gefunden","text":"Trotz jahrzehntelanger, kostspieliger Suchexpeditionen auf der kanadischen Insel wurde nie ein definitiver historischer Beleg für einen vergrabenen Schatz gefunden."},
+{"category":"Legenden","type":"Mythos","title":"Area 51 bewahrt Beweise für außerirdische Besuche auf","text":"Nach jahrzehntelanger Geheimhaltung bestätigten US-Behörden, dass die Anlage der geheimen Entwicklung und Erprobung von Aufklärungsflugzeugen wie der U-2 und SR-71 diente."},
+{"category":"Legenden","type":"Mythos","title":"Die Illuminaten kontrollieren bis heute im Verborgenen die Weltpolitik","text":"Der historische Illuminatenorden wurde 1776 in Bayern gegründet und bereits 1785 von der bayerischen Regierung verboten und faktisch zerschlagen."},
+{"category":"Legenden","type":"Mythos","title":"Yeti und Bigfoot sind wissenschaftlich nachgewiesene Wesen","text":"Trotz zahlreicher angeblicher Sichtungen und Fußspuren-Funde konnte bislang kein einziger wissenschaftlich verifizierter Beweis für die Existenz dieser Kryptiden erbracht werden."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Thomas Edison erfand die Glühbirne komplett allein","text":"Mehrere Erfinder, darunter Joseph Swan in England, entwickelten parallel funktionsfähige Glühlampen; Edisons Leistung lag vor allem in der praxistauglichen Weiterentwicklung und Vermarktung."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Alexander Graham Bell war der unbestrittene alleinige Erfinder des Telefons","text":"Der italienische Erfinder Antonio Meucci entwickelte bereits Jahre zuvor ein ähnliches Gerät; 2002 erkannte der US-Kongress symbolisch Meuccis frühen Beitrag an."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Marconi erfand das Radio als Erster und Einziger","text":"Der Erfinder Nikola Tesla hatte zuvor patentierte Grundlagentechnologien entwickelt; 1943 erkannte der US Supreme Court nachträglich Teslas vorrangige Patentansprüche an."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die Dampfmaschine war eine Erfindung des 18. Jahrhunderts","text":"Bereits der antike griechische Erfinder Heron von Alexandria konstruierte im 1. Jahrhundert n. Chr. ein funktionierendes, wenn auch praktisch ungenutztes Dampfturbinen-Spielzeug (Aeolipile)."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Penicillin war die erste erfolgreiche antimikrobielle Behandlung","text":"Bereits Jahrtausende zuvor nutzten Ägypter und andere Kulturen empirisch schimmelhaltige Substanzen zur Wundbehandlung, ohne den zugrunde liegenden Wirkmechanismus zu kennen."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Einstein entwickelte die Relativitätstheorie völlig isoliert","text":"Er baute wesentlich auf mathematischen Vorarbeiten von Hendrik Lorentz und Henri Poincaré auf, integrierte diese aber zu einem revolutionär neuen physikalischen Gesamtkonzept."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Darwin war der Erste, der die Evolutionsidee formulierte","text":"Der Naturforscher Alfred Russel Wallace entwickelte unabhängig zur gleichen Zeit eine sehr ähnliche Theorie der natürlichen Auslese; beide Konzepte wurden 1858 gemeinsam vorgestellt."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Computerprogrammierung ist eine Erfindung des 20. Jahrhunderts","text":"Ada Lovelace verfasste bereits 1843 das erste theoretische Computerprogramm für Charles Babbages nie fertiggestellte 'Analytical Engine'."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Marie Curie war der einzige Nobelpreisträger ihrer Familie","text":"Insgesamt erhielten fünf Mitglieder der Familie Curie/Joliot-Curie über zwei Generationen hinweg Nobelpreise in Physik oder Chemie."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Louis Pasteur entdeckte als Erster Mikroorganismen","text":"Der niederländische Naturforscher Antonie van Leeuwenhoek beobachtete bereits im 17. Jahrhundert erstmals Mikroorganismen; Pasteurs Pionierleistung war der Nachweis ihrer Rolle bei Krankheiten und Gärung."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Der erste Motorflug der Gebrüder Wright wurde sofort weltweit gefeiert","text":"Der Flug 1903 wurde von der zeitgenössischen Presse zunächst kaum beachtet; erst spätere, öffentlich vorgeführte Flüge etablierten den historischen Ruhm der Brüder."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Die erste Computermaus war aus Kunststoff","text":"Der Prototyp von Douglas Engelbart 1964 bestand tatsächlich aus einem einfachen Holzgehäuse mit zwei Metallrädern – lange vor den heute bekannten Kunststoffmäusen."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Röntgenstrahlen wurden gezielt erforscht und entdeckt","text":"Wilhelm Conrad Röntgen entdeckte die nach ihm benannte Strahlung 1895 eher zufällig bei Experimenten mit Kathodenstrahlröhren und untersuchte das Phänomen erst danach systematisch."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Der erste Kunststoff wurde für die Industrie entwickelt","text":"Das erste vollsynthetische Kunststoff Bakelit wurde 1907 ursprünglich als Ersatzstoff für das knapper werdende Naturmaterial Schellack entwickelt."},
+{"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Vasco da Gama entdeckte als Erster den Seeweg nach Indien","text":"Arabische und ostafrikanische Seefahrer nutzten bereits Jahrhunderte zuvor etablierte Handelsrouten im Indischen Ozean; da Gamas Neuerung war die erste direkte europäische Seeverbindung."},
+{"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Amerigo Vespucci entdeckte den amerikanischen Kontinent","text":"Vespucci erkannte als einer der Ersten, dass es sich um einen eigenständigen Kontinent handelte – nach ihm wurde er benannt, entdeckt hatte ihn aber zuvor bereits Kolumbus und noch früher die Wikinger."},
+{"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"James Cook entdeckte ein unbewohntes Australien","text":"Aborigines besiedelten den Kontinent bereits seit mindestens 50.000 Jahren; das Konzept 'terra nullius' (niemandes Land), mit dem die britische Krone die Inbesitznahme rechtfertigte, ignorierte diese Realität bewusst."},
+{"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Grönland heißt zufällig 'grünes Land'","text":"Der Sage nach gab der Wikinger Erik der Rote der eisigen Insel diesen positiv klingenden Namen bewusst als Marketingtrick, um mehr Siedler zur Kolonisierung zu gewinnen."},
+{"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Das Römische Reich fiel an einem einzigen historischen Datum","text":"Der 'Untergang' 476 n. Chr. markiert nur die Absetzung des letzten weströmischen Kaisers; das oströmische Reich (Byzanz) bestand als direkte Fortsetzung noch fast 1000 Jahre weiter bis 1453."},
+{"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Das britische Weltreich war das erste, in dem 'die Sonne nie unterging'","text":"Diese Formulierung wurde bereits im 16./17. Jahrhundert für das spanische Kolonialreich Karls V. verwendet, das sich ebenfalls über alle bekannten Erdteile erstreckte."},
+{"category":"Entdeckungen & Weltreiche","type":"Nuance","title":"Die Mongolen hinterließen nur Zerstörung ohne kulturellen Beitrag","text":"Das Mongolenreich förderte unter der 'Pax Mongolica' erheblich den Ost-West-Handel entlang der Seidenstraße sowie den Austausch von Technologien, Ideen und religiöser Toleranz."},
+{"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Der Panama-Kanal wurde ohne größere menschliche Kosten gebaut","text":"Beim Bau, insbesondere während der gescheiterten ersten französischen Bauphase, starben schätzungsweise über 20.000 Arbeiter vor allem an Malaria und Gelbfieber."},
+{"category":"Entdeckungen & Weltreiche","type":"Mythos","title":"Die Seidenstraße war eine einzelne, feste Route","text":"Tatsächlich handelte es sich um ein weitverzweigtes Netzwerk verschiedenster Land- und Seehandelsrouten zwischen Asien, dem Nahen Osten und Europa, die sich über Jahrhunderte veränderten."},
+{"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Kolonialreiche wurden von der gesamten Bevölkerung des Mutterlandes einhellig unterstützt","text":"In vielen europäischen Ländern gab es zeitgenössisch durchaus kritische Stimmen und Debatten gegen koloniale Expansion, auch wenn diese oft eine gesellschaftliche Minderheitsposition blieben."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken praktizierten nur in geringem Umfang Menschenopfer","text":"Historiker sind sich über das genaue Ausmaß uneinig; spanische Chronisten übertrieben vermutlich zur moralischen Rechtfertigung der eigenen Eroberung, dennoch belegen Funde zehntausende Opfer über die Reichsgeschichte."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Die Inka kannten kein Schriftsystem","text":"Sie nutzten ein komplexes Knotenschriftsystem aus gefärbten Schnüren (Quipu) zur Verwaltung von Zahlen und vermutlich auch narrativen Informationen, dessen vollständige Entschlüsselung bis heute nicht gelungen ist."},
+{"category":"Asien & Amerika","type":"Mythos","title":"Die Maya-Zivilisation verschwand plötzlich über Nacht","text":"Der Niedergang der klassischen Maya-Städte im 9. Jahrhundert vollzog sich über Jahrzehnte durch Dürre, Kriege und Ressourcenknappheit; zahlreiche Maya-Gemeinschaften bestehen bis heute fort."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Japan war während der Sakoku-Zeit vollständig isoliert","text":"Über den künstlichen Hafen Dejima unterhielt Japan durchgehend begrenzten, aber bedeutsamen Handel mit niederländischen und chinesischen Kaufleuten."},
+{"category":"Asien & Amerika","type":"Mythos","title":"Dschingis Khans Grab wurde bereits gefunden","text":"Der genaue Bestattungsort des mongolischen Herrschers wurde der Überlieferung nach bewusst geheim gehalten; trotz jahrzehntelanger archäologischer Suche wurde sein Grab bis heute nicht identifiziert."},
+{"category":"Asien & Amerika","type":"Mythos","title":"Die Chinesische Mauer ist ein einziges durchgehendes Bauwerk","text":"Tatsächlich besteht sie aus zahlreichen, über mehr als 2000 Jahre von verschiedenen Dynastien errichteten und oft nicht direkt verbundenen Mauerabschnitten."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Samurai folgten stets einem strengen, jahrhundertealten Ehrenkodex","text":"Der als 'Bushido' bekannte, stark idealisierte Verhaltenskodex wurde in seiner heute bekannten Form überwiegend erst in der Edo-Zeit und besonders im frühen 20. Jahrhundert systematisiert."},
+{"category":"Asien & Amerika","type":"Kuriosum","title":"Die Terrakotta-Armee zeigt lauter identische Soldatenfiguren","text":"Jede der über 8.000 Tonfiguren weist individuell unterschiedliche Gesichtszüge, Frisuren und Ausrüstungsdetails auf – vermutlich nach realen Vorbildern der kaiserlichen Armee gestaltet."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Konfuzius war zu Lebzeiten ein hochgeehrter, einflussreicher Berater","text":"Zu Lebzeiten hatte er nur mäßigen politischen Erfolg und wechselnde Anstellungsverhältnisse; sein enormer Einfluss entfaltete sich vor allem postum über Jahrhunderte durch seine Schüler."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Indien war vor der britischen Kolonialherrschaft stets politisch geeint","text":"Der Subkontinent bestand über weite Teile seiner Geschichte aus zahlreichen unabhängigen Königreichen; größere reichsweite Einigungen wie Maurya oder Mogulreich waren eher die Ausnahme."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Gandhi war von Anfang an ein überzeugter Verfechter gewaltfreien Widerstands","text":"Seine Philosophie des gewaltfreien Widerstands (Satyagraha) entwickelte sich erst schrittweise während seiner Zeit als Anwalt in Südafrika, wo er zunächst für eine loyale Einbindung ins britische Empire eintrat."},
+{"category":"Asien & Amerika","type":"Kuriosum","title":"Die Kamikaze-Taifune gegen die Mongolen waren einmaliger Zufall","text":"Bemerkenswerterweise zerstörten gleich zwei separate schwere Taifune 1274 und erneut 1281 jeweils die mongolischen Invasionsflotten kurz nach deren Ankunft vor Japan."},
+{"category":"Asien & Amerika","type":"Mythos","title":"Die Opiumkriege wurden von China begonnen","text":"Die Kriege 1839–1860 gingen von militärischen Interventionen Großbritanniens und später Frankreichs aus, nachdem chinesische Behörden versucht hatten, den illegalen britischen Opiumhandel zu unterbinden."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Mansa Musa war nur ein regionaler Fürst von geringer Bedeutung","text":"Zeitgenössische arabische und europäische Quellen beschreiben ihn als einen der reichsten Menschen der damals bekannten Welt; sein Goldreichtum soll 1324 kurzzeitig den Goldpreis in Kairo destabilisiert haben."},
+{"category":"Asien & Amerika","type":"Kuriosum","title":"Äthiopien wurde nie von einer europäischen Kolonialmacht erobert","text":"Äthiopien besiegte 1896 in der Schlacht von Adua eine italienische Invasionsarmee entscheidend und blieb damit neben Liberia die einzige afrikanische Nation, die ihre Unabhängigkeit dauerhaft bewahrte."},
+{"category":"Legenden","type":"Mythos","title":"Wilhelm Tell war eine historisch verbürgte reale Person","text":"Es gibt keine zeitgenössischen Quellen für Wilhelm Tell aus dem angeblichen 14. Jahrhundert; die Geschichte des Apfelschusses erscheint erstmals rund 200 Jahre später in Schweizer Chroniken."},
+{"category":"Legenden","type":"Kuriosum","title":"Die Curse of the Hope-Diamant brachte allen Besitzern Unglück","text":"Der berühmte blaue Diamant wird mit zahlreichen Unglücksgeschichten seiner früheren Besitzer in Verbindung gebracht – die meisten dieser Anekdoten lassen sich historisch nicht eindeutig belegen."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Kartoffeln waren in Europa von Anfang an ein beliebtes Grundnahrungsmittel","text":"Nach ihrer Einführung aus Amerika im 16. Jahrhundert wurden Kartoffeln in weiten Teilen Europas zunächst misstrauisch beäugt und teils sogar als giftig oder unrein abgelehnt."},
+{"category":"Entdeckungen & Weltreiche","type":"Kuriosum","title":"Die Wikinger nutzten nur die berühmten Runensteine zur schriftlichen Kommunikation","text":"Neben monumentalen Runensteinen nutzten Wikinger auch Alltagsritzungen auf Holz und Knochen für private Nachrichten, von denen durch Fundorte wie Bergen zahlreiche Beispiele erhalten sind."},
+{"category":"Moderne","type":"Kuriosum","title":"Die Internationale Raumstation ist das teuerste je gebaute Bauwerk","text":"Mit geschätzten Baukosten von über 150 Milliarden US-Dollar gilt die ISS gemeinhin als teuerstes von Menschen je errichtetes einzelnes Bauwerk der Geschichte."},
+{"category":"Antike","type":"Kuriosum","title":"Das antike Rom hatte bereits ein ausgeklügeltes Fast-Food-System","text":"Sogenannte 'Thermopolien' – Straßenimbisse mit eingelassenen Vorratsgefäßen – waren in römischen Städten wie Pompeji weitverbreitet, da viele einfache Wohnungen über keine eigene Küche verfügten."},
+{"category":"Frühe Neuzeit","type":"Kuriosum","title":"Schachspiel und Politik waren in der Frühen Neuzeit strikt getrennte Welten","text":"Am Hof Ludwigs XIV. und anderer Monarchen dienten öffentliche Schachpartien häufig als subtile diplomatische Machtdemonstrationen zwischen rivalisierenden Gesandtschaften."},
+{"category":"Moderne","type":"Nuance","title":"Der Eiffelturm war von Anfang an bei den Parisern beliebt","text":"Beim Bau 1889 protestierten zahlreiche prominente Pariser Künstler und Intellektuelle in einem offenen Brief gegen den Turm als angebliche 'nutzlose und monströse' Verschandelung der Stadt."},
+{"category":"Antike","type":"Mythos","title":"Die Bibliothek von Alexandria wurde an einem Tag verbrannt","text":"Es gab kein einzelnes Feuer, das die Bibliothek vernichtete. Wahrscheinlicher ist ein Verfall über Jahrhunderte: Brände, Bürgerkriege, ausbleibende Finanzierung und der Wegzug von Gelehrten. Bibliotheken sterben meist an Vernachlässigung, nicht an Flammen."},
+{"category":"Antike","type":"Nuance","title":"Griechische Statuen waren strahlend weiß","text":"Sie waren bunt bemalt. Farbreste lassen sich mit ultraviolettem Licht und Spektroskopie nachweisen. Das Ideal des weißen Marmors entstand erst, als die Farbe längst verwittert war – und prägte dann rückwirkend das Bild der Antike."},
+{"category":"Antike","type":"Kuriosum","title":"Römischer Beton wird im Meerwasser fester","text":"Römischer Beton mit Vulkanasche bildet im Kontakt mit Meerwasser Minerale, die Risse schließen. Manche Hafenanlagen stehen nach zweitausend Jahren noch – moderner Portlandbeton hält im Meer selten hundert."},
+{"category":"Antike","type":"Nuance","title":"Gladiatorenkämpfe endeten fast immer tödlich","text":"Ausgebildete Gladiatoren waren teuer. Die Ausbildung dauerte Jahre, und ein toter Kämpfer bedeutete einen Totalverlust. Viele Kämpfe endeten daher vor dem Tod – was die Grausamkeit der Institution nicht mildert."},
+{"category":"Mittelalter","type":"Mythos","title":"Im Mittelalter hielt man die Erde für eine Scheibe","text":"Die Kugelgestalt war seit der Antike bekannt und im mittelalterlichen Europa gelehrte Überzeugung. Der Reichsapfel als Herrschaftszeichen bildet eine Kugel ab. Die Scheiben-Erzählung entstand größtenteils im 19. Jahrhundert."},
+{"category":"Mittelalter","type":"Nuance","title":"Das Mittelalter war finster und stillstehend","text":"In diesen Jahrhunderten entstanden Universitäten, Buchhaltung, Brille, mechanische Uhr, Windmühle und Hochofen. Der Begriff 'finsteres Mittelalter' stammt von Humanisten, die sich selbst als Wiedererwecker der Antike darstellen wollten."},
+{"category":"Mittelalter","type":"Mythos","title":"Der Keuschheitsgürtel stammt aus dem Mittelalter","text":"Die erhaltenen Exemplare in Museen stammen fast durchweg aus dem 18. und 19. Jahrhundert. Mehrere große Museen haben ihre Stücke inzwischen aus der Ausstellung genommen oder neu datiert."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Kolumbus wollte beweisen, dass die Erde rund ist","text":"Das war unstrittig. Der Streit ging um den Erdumfang: Die Gelehrten am spanischen Hof rechneten richtig und hielten die Strecke nach Asien für zu weit. Kolumbus rechnete falsch – und stieß auf einen Kontinent, mit dem niemand gerechnet hatte."},
+{"category":"Frühe Neuzeit","type":"Nuance","title":"Hexenverfolgung war ein Phänomen des Mittelalters","text":"Ihr Höhepunkt lag zwischen 1560 und 1630 – mitten in der Frühen Neuzeit, zeitgleich mit der wissenschaftlichen Revolution. Aufklärung und Verfolgung schließen sich historisch weniger aus, als man annehmen möchte."},
+{"category":"Frühe Neuzeit","type":"Kuriosum","title":"Die Tulpenmanie ruinierte die Niederlande","text":"Die Preise für Tulpenzwiebeln stiegen 1636/37 tatsächlich stark und brachen ein. Der wirtschaftliche Schaden blieb jedoch begrenzt und betraf vor allem einen kleinen Kreis von Händlern – die Erzählung vom nationalen Ruin stammt aus einem populären Buch des 19. Jahrhunderts."},
+{"category":"Wissenschaft & Erfindungen","type":"Mythos","title":"Ein Apfel fiel Newton auf den Kopf","text":"Newton selbst erzählte von einem fallenden Apfel als Anlass zum Nachdenken über die Schwerkraft – nicht davon, getroffen worden zu sein. Die Geschichte stammt aus Gesprächen seiner letzten Lebensjahre."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Edison erfand die Glühbirne","text":"Vor ihm arbeiteten mehrere Erfinder an Glühlampen. Edisons Leistung lag in einer brauchbaren Kohlefaser, im systematischen Testen tausender Materialien und vor allem im Aufbau eines ganzen Stromversorgungssystems – ohne das die Lampe nutzlos gewesen wäre."},
+{"category":"Wissenschaft & Erfindungen","type":"Kuriosum","title":"Rosalind Franklin und die Doppelhelix","text":"Die entscheidende Röntgenaufnahme 'Photo 51' stammte aus Franklins Labor und wurde Watson ohne ihr Wissen gezeigt. Der Nobelpreis 1962 ging an Watson, Crick und Wilkins; Franklin war 1958 gestorben und wurde nicht posthum berücksichtigt."},
+{"category":"Wissenschaft & Erfindungen","type":"Nuance","title":"Semmelweis wurde für das Händewaschen gefeiert","text":"Ignaz Semmelweis senkte die Sterblichkeit bei Wöchnerinnen drastisch, indem er Händedesinfektion anordnete. Seine Kollegen lehnten ihn ab; er starb 1865 in einer Anstalt. Die Keimtheorie, die ihn bestätigt hätte, setzte sich erst danach durch."},
+{"category":"Moderne","type":"Nuance","title":"Die Titanic galt als unsinkbar","text":"Die Werft warb nie mit diesem Wort. Die Formulierung stammt aus Fachzeitschriften und wurde vor allem nach dem Untergang zur festen Wendung – ein Fall, in dem die Nachwelt einen Superlativ erfindet, um die Ironie zu vergrößern."},
+{"category":"Moderne","type":"Mythos","title":"Einstein war schlecht in Mathematik","text":"Er war ein sehr guter Schüler in Mathematik und Physik. Der Irrtum entstand vermutlich durch ein Schweizer Notensystem, in dem die 6 die beste Note ist – gelesen mit deutschem Maßstab wird aus einer Bestnote ein Ungenügend."},
+{"category":"Moderne","type":"Nuance","title":"Der Erste Weltkrieg begann wegen eines Attentats","text":"Das Attentat von Sarajevo war der Auslöser, nicht die Ursache. Ohne Bündnissysteme, Aufrüstung, imperiale Rivalität und die Erwartung eines kurzen Krieges wäre daraus kaum ein Weltkrieg geworden."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Die Chinesische Mauer ist aus dem All zu sehen","text":"Mit bloßem Auge aus der Erdumlaufbahn ist sie praktisch nicht zu erkennen – sie ist schmal und farblich kaum von der Umgebung abgesetzt. Mehrere Raumfahrer haben das ausdrücklich bestätigt."},
+{"category":"Asien & Amerika","type":"Nuance","title":"Die Azteken hielten Cortés für einen Gott","text":"Die Erzählung stammt weitgehend aus spanischen Quellen, die Jahrzehnte später entstanden, und aus indigenen Berichten unter spanischer Herrschaft. Ob Moctezuma so dachte, ist in der Forschung höchst umstritten."},
+{"category":"Asien & Amerika","type":"Kuriosum","title":"Das Inkareich kannte keine Schrift – aber eine Buchhaltung","text":"Mit Quipus, geknoteten Schnüren, verwalteten die Inka Steuern, Vorräte und Bevölkerungszahlen über ein Reich von tausenden Kilometern. Wie viel darüber hinaus in ihnen gespeichert war, ist bis heute nicht vollständig entschlüsselt."},
+{"category":"Legenden","type":"Mythos","title":"Wikinger trugen Hörnerhelme","text":"Kein einziger archäologischer Fund belegt sie. Das Bild stammt aus der Ausstattung von Wagner-Aufführungen im 19. Jahrhundert und aus der Romantik."},
+{"category":"Legenden","type":"Nuance","title":"Marie-Antoinette sagte 'Sollen sie doch Kuchen essen'","text":"Der Satz taucht bei Rousseau auf, als sie ein Kind war und noch nicht in Frankreich lebte. Zugeschrieben wurde er ihr erst später – ein Beispiel dafür, wie politische Propaganda Zitate wandern lässt."},
+{"category":"Legenden","type":"Mythos","title":"Napoleon war auffallend klein","text":"Drei französische Quellen – sein Kammerdiener, General Gourgaud und sein Leibarzt – nennen gut 5 Fuß 2 Zoll. Der französische Zoll maß damals 2,7 cm, der englische 2,54 cm. Umgerechnet ergibt das etwa 1,67 bis 1,70 Meter und damit für einen Franzosen seiner Zeit eher leicht über dem Durchschnitt. Der Irrtum entstand durch die Verwechslung der Maßsysteme, verstärkt durch britische Karikaturen."},
+{"category":"Legenden","type":"Kuriosum","title":"Der kürzeste Krieg der Geschichte","text":"Der britisch-sansibarische Krieg begann am 27. August 1896 um 9 Uhr und war vor 9:45 Uhr entschieden – je nach Zählung zwischen 38 und 45 Minuten. Auf sansibarischer Seite gab es rund 500 Opfer; die Kürze des Krieges sagt nichts über seine Härte."}
 ];
 const VERTIEFUNGEN = [
   {
@@ -3221,6 +3220,484 @@ function FragenTab() {
   );
 }
 
+
+/* =========================================================
+   ZEITSCHNITT — was geschah gleichzeitig?
+
+   Ersetzt den früheren Zahlenstrahl. Der scheiterte an vier Dingen:
+   245 Punkte auf einer Linie überlappten sich, die Beschriftung erschien
+   nur beim Überfahren mit der Maus (auf dem Handy also nie), es gab keine
+   Möglichkeit hineinzuzoomen, und auf einer logarithmischen Skala über
+   2,6 Millionen Jahre bedeuten Abstände nichts mehr.
+
+   Diese Ansicht beantwortet stattdessen eine Frage, die eine gewöhnliche
+   Zeitleiste nie beantwortet: Was geschah anderswo, während hier etwas
+   geschah? Genau das fehlt in den meisten Geschichtsdarstellungen.
+   ========================================================= */
+
+const ZEITSCHNITT_SPRUENGE = [
+  { jahr: -3000, label: "3000 v. Chr." },
+  { jahr: -1200, label: "1200 v. Chr." },
+  { jahr: -500, label: "500 v. Chr." },
+  { jahr: 1, label: "Zeitenwende" },
+  { jahr: 500, label: "500" },
+  { jahr: 1000, label: "1000" },
+  { jahr: 1500, label: "1500" },
+  { jahr: 1800, label: "1800" },
+  { jahr: 1914, label: "1914" },
+  { jahr: 1969, label: "1969" },
+  { jahr: 2000, label: "2000" }
+];
+
+function jahrText(j) {
+  if (j < 0) return Math.abs(j).toLocaleString("de-DE") + " v. Chr.";
+  return String(j);
+}
+
+function abstandText(differenz) {
+  const a = Math.abs(differenz);
+  if (a === 0) return "im selben Jahr";
+  if (a === 1) return differenz < 0 ? "1 Jahr davor" : "1 Jahr danach";
+  return a.toLocaleString("de-DE") + (differenz < 0 ? " Jahre davor" : " Jahre danach");
+}
+
+function ZeitschnittTab() {
+  const [jahr, setJahr] = useGespeichert("zeitschnitt.jahr", 1500);
+  const [eingabe, setEingabe] = useState(String(1500));
+
+  const setzeJahr = (j) => {
+    const z = Math.max(-3000, Math.min(2026, Math.round(j)));
+    setJahr(z);
+    setEingabe(String(z));
+  };
+
+  const epoche = useMemo(() => EPOCHS.find((e) => jahr >= e.startYear && jahr <= e.endYear) || null, [jahr]);
+
+  // Je Land das Ereignis, das dem gewählten Jahr am nächsten liegt
+  const laender = useMemo(() => Object.entries(COUNTRY_TIMELINES).map(([name, daten]) => {
+    let naechstes = null;
+    let abstand = Infinity;
+    daten.events.forEach((e) => {
+      const d = Math.abs(e.year - jahr);
+      if (d < abstand) { abstand = d; naechstes = e; }
+    });
+    return { name, farbe: daten.color, ereignis: naechstes, differenz: naechstes ? naechstes.year - jahr : null };
+  }).filter((l) => l.ereignis).sort((a, b) => Math.abs(a.differenz) - Math.abs(b.differenz)), [jahr]);
+
+  // Ereignisse aus den Epochen im Umkreis
+  const fenster = Math.max(25, Math.round(Math.abs(jahr) * 0.02));
+  const nahe = useMemo(() => EPOCHS.flatMap((ep) => ep.events.map((e) => ({ ...e, epoche: ep.name, farbe: ep.color })))
+    .filter((e) => Math.abs(e.year - jahr) <= fenster)
+    .sort((a, b) => a.year - b.year), [jahr, fenster]);
+
+  const vertiefungen = useMemo(() => VERTIEFUNGEN
+    .filter((v) => Math.abs(v.jahr - jahr) <= Math.max(60, fenster))
+    .sort((a, b) => Math.abs(a.jahr - jahr) - Math.abs(b.jahr - jahr)), [jahr, fenster]);
+
+  // Position des Jahres im Epochenband (proportional, nicht logarithmisch —
+  // die Steinzeit bleibt bewusst außen vor, sonst verschwindet alles andere)
+  const bandVon = -3000;
+  const bandBis = 2026;
+  const anteil = ((jahr - bandVon) / (bandBis - bandVon)) * 100;
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      "Wähle ein Jahr und sieh, was zur selben Zeit anderswo geschah."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl leading-relaxed" },
+      "Geschichte wird meist der Länge nach erzählt — ein Land, eine Epoche, von vorn nach hinten. Was dabei verlorengeht, ist die Gleichzeitigkeit: dass die Chinesische Mauer entstand, während Rom die Punischen Kriege führte, oder dass Timbuktu blühte, als in Europa die Pest wütete."),
+
+    // ---------- Jahresauswahl ----------
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 mb-6" },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-3 mb-3 flex-wrap" },
+        /* @__PURE__ */ React.createElement("span", { className: "font-serif text-3xl text-[#f0d878]" }, jahrText(jahr)),
+        epoche && /* @__PURE__ */ React.createElement("span", { className: "text-xs uppercase tracking-wide px-2 py-0.5 rounded border", style: { borderColor: epoche.color, color: epoche.accent } }, epoche.name)
+      ),
+
+      /* @__PURE__ */ React.createElement("input", {
+        type: "range", min: -3000, max: 2026, step: 1, value: jahr,
+        onChange: (e) => setzeJahr(Number(e.target.value)),
+        "aria-label": "Jahr wählen",
+        className: "w-full accent-[#d4af37] mb-1"
+      }),
+
+      // Epochenband unter dem Regler, proportional
+      /* @__PURE__ */ React.createElement("div", { className: "relative h-3 rounded overflow-hidden mb-3 flex" },
+        EPOCHS.filter((e) => e.endYear > bandVon).map((e) => {
+          const von = Math.max(e.startYear, bandVon);
+          const bis = Math.min(e.endYear, bandBis);
+          const breite = ((bis - von) / (bandBis - bandVon)) * 100;
+          return /* @__PURE__ */ React.createElement("div", {
+            key: e.id, title: e.name,
+            style: { width: breite + "%", backgroundColor: e.color, opacity: 0.55 }
+          });
+        }),
+        /* @__PURE__ */ React.createElement("div", {
+          className: "absolute top-0 bottom-0 w-0.5 bg-[#f0d878]",
+          style: { left: Math.max(0, Math.min(100, anteil)) + "%" }
+        })
+      ),
+
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-3" },
+        ZEITSCHNITT_SPRUENGE.map((s) => /* @__PURE__ */ React.createElement("button", {
+          key: s.jahr, onClick: () => setzeJahr(s.jahr),
+          className: `px-2 py-0.5 rounded text-[11px] font-mono border ${jahr === s.jahr ? "bg-[#7a3020] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]"}`
+        }, s.label))
+      ),
+
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 flex-wrap" },
+        /* @__PURE__ */ React.createElement("button", { onClick: () => setzeJahr(jahr - 100), className: "px-2 py-1 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]" }, "−100"),
+        /* @__PURE__ */ React.createElement("button", { onClick: () => setzeJahr(jahr - 10), className: "px-2 py-1 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]" }, "−10"),
+        /* @__PURE__ */ React.createElement("input", {
+          type: "text", value: eingabe, inputMode: "numeric",
+          onChange: (e) => setEingabe(e.target.value),
+          onBlur: () => { const n = parseInt(eingabe, 10); if (!isNaN(n)) setzeJahr(n); else setEingabe(String(jahr)); },
+          onKeyDown: (e) => { if (e.key === "Enter") { const n = parseInt(eingabe, 10); if (!isNaN(n)) setzeJahr(n); } },
+          "aria-label": "Jahr eingeben",
+          className: "w-24 rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1 text-sm text-[#e8d5b0] focus:outline-none focus:border-[#d4af37]"
+        }),
+        /* @__PURE__ */ React.createElement("button", { onClick: () => setzeJahr(jahr + 10), className: "px-2 py-1 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]" }, "+10"),
+        /* @__PURE__ */ React.createElement("button", { onClick: () => setzeJahr(jahr + 100), className: "px-2 py-1 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a]" }, "+100"),
+        /* @__PURE__ */ React.createElement("span", { className: "text-[11px] text-[#8a6238]" }, "negative Zahlen = vor Christus")
+      )
+    ),
+
+    // ---------- Gleichzeitig in der Welt ----------
+    /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" }, "Gleichzeitig in der Welt"),
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-7" },
+      laender.map((l) => /* @__PURE__ */ React.createElement("div", {
+        key: l.name,
+        className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-3"
+      },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline justify-between gap-2 mb-1 flex-wrap" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs uppercase tracking-wide", style: { color: l.farbe } }, l.name),
+          /* @__PURE__ */ React.createElement("span", { className: "text-[10px] text-[#8a6238]" }, jahrText(l.ereignis.year) + " · " + abstandText(l.differenz))
+        ),
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[15px] text-[#e0b84a] leading-snug" }, l.ereignis.title),
+        /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#c2a06a] leading-relaxed mt-1" }, l.ereignis.text)
+      ))
+    ),
+
+    // ---------- Im Umkreis ----------
+    nahe.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mb-7" },
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" },
+        "Im Umkreis von " + fenster.toLocaleString("de-DE") + " Jahren (" + nahe.length + ")"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        nahe.map((e, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-3" },
+          /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 mb-0.5 flex-wrap" },
+            /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, jahrText(e.year)),
+            /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, e.epoche)),
+          /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[15px] text-[#e0b84a] leading-snug" }, e.title),
+          /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#c2a06a] leading-relaxed mt-1" }, e.text)
+        )))
+    ),
+
+    nahe.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#b8905a] mb-7" },
+      "Aus diesem Zeitraum ist in den Epochen kein Ereignis verzeichnet. Die Länder oben zeigen trotzdem, was zeitlich am nächsten liegt."),
+
+    vertiefungen.length > 0 && /* @__PURE__ */ React.createElement("div", null,
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" }, "Dazu gibt es Vertiefungen"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
+        vertiefungen.map((v) => /* @__PURE__ */ React.createElement("span", {
+          key: v.id,
+          className: "px-2.5 py-1 rounded text-xs border border-[#5c2018] text-[#c2a06a]"
+        }, v.titel)))
+    )
+  );
+}
+
+const MYSTERIEN = [
+  {
+    id: "voynich", titel: "Das Voynich-Manuskript", zeitraum: "frühes 15. Jahrhundert", region: "Mitteleuropa (vermutet)",
+    kategorie: "Schrift & Sprache", status: "ungeklaert",
+    gesichert: "Ein Buch aus rund 240 Pergamentseiten, beschrieben in einer unbekannten Schrift und bebildert mit Pflanzen, astronomischen Figuren und badenden Frauen. Das Pergament ist auf das frühe 15. Jahrhundert datiert, das Material stammt von Kalbshaut. Seit 1969 liegt es in der Beinecke Library in Yale.",
+    raetsel: "Niemand kann den Text lesen. Trotz jahrzehntelanger Versuche von Kryptologen – darunter Fachleute, die im Krieg Codes gebrochen haben – ist keine Entzifferung anerkannt.",
+    erklaerungen: [
+      { these: "Eine verschlüsselte europäische Sprache", dafuer: "Die Buchstabenhäufigkeiten und Wortlängen verhalten sich statistisch ähnlich wie in natürlichen Sprachen.", dagegen: "Keines der bekannten Verschlüsselungsverfahren des 15. Jahrhunderts erzeugt ein solches Muster." },
+      { these: "Eine erfundene Sprache oder ein Geheimidiom einer Gemeinschaft", dafuer: "Eine Untersuchung kam zu dem Ergebnis, dass fünf verschiedene Schreiberhände beteiligt waren – möglich wäre eine abgeschlossene Gemeinschaft mit eigener Sprache.", dagegen: "Warum sollte eine solche Gemeinschaft ein einziges, aufwendiges Buch hinterlassen und sonst nichts?" },
+      { these: "Eine sinnlose Fälschung, um einen Käufer zu täuschen", dafuer: "Solche Fälschungen gab es; ein prächtiges unlesbares Buch ließ sich gut verkaufen.", dagegen: "Der Text zeigt sprachähnliche Regelmäßigkeiten, die ein Fälscher mit dem Wissen seiner Zeit kaum hätte erzeugen können." }
+    ],
+    forschungsstand: "2022 bildete sich eine Voynich Research Group aus Fachleuten verschiedener Disziplinen, die es unter anderem mit maschinellen Verfahren versucht. Bislang ohne anerkanntes Ergebnis.",
+    abgrenzung: "Immer wieder werden Entzifferungen verkündet, meist mit großem Medienecho. Bisher hat keine einer fachlichen Prüfung standgehalten. Das Manuskript ist ein Rätsel – kein Beleg für Außerirdische, Alchemie-Geheimnisse oder verschollene Zivilisationen.",
+    quellen: ["Yale University, Beinecke Rare Book and Manuscript Library: The Voynich Manuscript", "Encyclopaedia Britannica: Voynich manuscript", "Yale Library: Alumna joins the long search to unlock an enigmatic 15th-century manuscript"]
+  },
+  {
+    id: "indus-schrift", titel: "Die Indus-Schrift", zeitraum: "ca. 2600–1900 v. Chr.", region: "Nordwestlicher Subkontinent",
+    kategorie: "Schrift & Sprache", status: "ungeklaert",
+    gesichert: "Die Indus-Kultur betrieb Städte mit Kanalisation, genormten Ziegeln und Fernhandel. Auf Siegeln, Tafeln und Keramik finden sich kurze Zeichenfolgen – meist nur fünf Zeichen lang, selten mehr als zwanzig.",
+    raetsel: "Die Zeichen sind nicht entziffert. Anders als bei Hieroglyphen oder Keilschrift fehlt ein zweisprachiger Text als Schlüssel – kein Stein von Rosetta.",
+    erklaerungen: [
+      { these: "Eine echte Schrift für eine bekannte Sprachfamilie, etwa eine frühe dravidische Sprache", dafuer: "Die Zeichenfolgen zeigen Regelmäßigkeiten in Reihenfolge und Häufigkeit.", dagegen: "Ohne bilinguen Text bleibt jede Zuordnung eine Hypothese." },
+      { these: "Kein Schriftsystem, sondern Symbole für Besitz, Herkunft oder Rituale", dafuer: "Die Texte sind extrem kurz; längere Inschriften fehlen völlig.", dagegen: "Auch kurze Verwaltungsnotizen können Schrift sein – Uruk begann ebenso." }
+    ],
+    forschungsstand: "Die Zahl bekannter Inschriften wächst langsam, aber das Grundproblem bleibt: zu kurze Texte, kein Schlüssel. Ohne einen zweisprachigen Fund gilt eine Entzifferung als unwahrscheinlich.",
+    abgrenzung: "Die Frage ist politisch aufgeladen, weil an der Sprachzuordnung Fragen indischer Identität hängen. Wissenschaftlich ist sie offen – Entzifferungsansprüche von jeder Seite sind mit Vorsicht zu lesen.",
+    quellen: ["Encyclopaedia Britannica: Indus civilization; Indus script", "The Metropolitan Museum of Art: Indus Valley Civilization"]
+  },
+  {
+    id: "phaistos", titel: "Der Diskos von Phaistos", zeitraum: "ca. 17. Jahrhundert v. Chr.", region: "Kreta",
+    kategorie: "Schrift & Sprache", status: "ungeklaert",
+    gesichert: "Eine gebrannte Tonscheibe von etwa 16 Zentimetern Durchmesser, 1908 im minoischen Palast von Phaistos gefunden. Beide Seiten tragen spiralförmig angeordnete Zeichen, die mit Stempeln eingedrückt wurden – die früheste bekannte Anwendung beweglicher Typen überhaupt.",
+    raetsel: "241 Zeichenabdrücke, 45 verschiedene Zeichen, keine Entzifferung. Es gibt keinen zweiten Text in derselben Schrift.",
+    erklaerungen: [
+      { these: "Ein religiöser oder ritueller Text", dafuer: "Der Fundort im Palastbereich und die aufwendige Herstellung sprechen für etwas Besonderes.", dagegen: "Reine Vermutung – aus dem Fundort folgt keine Textgattung." },
+      { these: "Eine Fälschung des frühen 20. Jahrhunderts", dafuer: "Die Einzigartigkeit ist auffällig; vergleichbare Objekte fehlen.", dagegen: "Die Fundumstände sind dokumentiert, und thermolumineszente Datierung stützt das Alter." }
+    ],
+    forschungsstand: "Mit einem einzigen Text von 241 Zeichen ist eine Entzifferung nach heutigem Stand der Kryptologie praktisch ausgeschlossen. Es fehlt schlicht Material.",
+    abgrenzung: "Der Diskos wird gern als Beleg für alles Mögliche herangezogen, von Atlantis bis Astronomie. Fachlich gilt: Wir wissen nicht, was dort steht, und werden es ohne weitere Funde nicht erfahren.",
+    quellen: ["Encyclopaedia Britannica: Phaistos Disk; Minoan civilization"]
+  },
+  {
+    id: "goebekli-tepe", titel: "Wozu diente Göbekli Tepe?", zeitraum: "ca. 9500–8000 v. Chr.", region: "Südostanatolien",
+    kategorie: "Frühgeschichte", status: "teilweise",
+    gesichert: "Eine Anlage aus mehreren Steinkreisen mit bis zu fünf Meter hohen T-förmigen Pfeilern, geschmückt mit Tierreliefs. Errichtet von Menschen, die noch nicht ackerbauten: Die Tierknochen stammen ausnahmslos von Wildtieren.",
+    raetsel: "Wer baut so etwas – und warum, bevor es Landwirtschaft, Vorratshaltung und Städte gibt? Die Anlage stellt die alte Reihenfolge auf den Kopf, nach der erst der Überschuss kommt und dann die Kultur.",
+    erklaerungen: [
+      { these: "Ein Heiligtum, 'der älteste Tempel der Welt'", dafuer: "So deutete es der Ausgräber Klaus Schmidt, der ab 1995 bis zu seinem Tod 2014 dort forschte.", dagegen: "Neuere Grabungen zeigen, dass am Ort auch gewohnt wurde – die scharfe Trennung zwischen Heiligtum und Siedlung lässt sich nicht halten." },
+      { these: "Ein Versammlungsort, an dem der Bedarf die Landwirtschaft erzwang", dafuer: "Wer viele Menschen über Wochen versammelt, muss sie ernähren – möglicherweise begann der Getreideanbau, um Bauleute zu versorgen.", dagegen: "Die zeitliche Abfolge lässt sich noch nicht fein genug auflösen, um Ursache und Wirkung zu trennen." }
+    ],
+    forschungsstand: "Das Deutsche Archäologische Institut arbeitet weiter am Ort; im Umfeld wurden inzwischen weitere Anlagen entdeckt (Taş Tepeler). Die Forschung revidiert die frühere Tempel-Deutung, die das populäre Bild bis heute prägt. Ein Fund mit bearbeiteten Menschenschädeln deutet auf einen bislang unbekannten neolithischen Schädelkult.",
+    abgrenzung: "Göbekli Tepe wird häufig für Behauptungen über untergegangene Hochkulturen in Anspruch genommen. Nichts am Befund erfordert eine solche Annahme: Die Erbauer waren Jäger und Sammler, deren Können man lange unterschätzt hat.",
+    quellen: ["Deutsches Archäologisches Institut: Göbekli Tepe; Taş Tepeler", "Science Advances: Modified human crania from Göbekli Tepe (2017)", "Encyclopaedia Britannica: Göbekli Tepe"]
+  },
+  {
+    id: "dschingis-grab", titel: "Das Grab des Dschingis Khan", zeitraum: "1227", region: "Mongolei",
+    kategorie: "Verschollen", status: "ungeklaert",
+    gesichert: "Dschingis Khan starb im August 1227. Die Überlieferung berichtet, das Grab sei bewusst verborgen worden.",
+    raetsel: "Der Ort ist bis heute unbekannt – trotz Satellitenaufnahmen, Geländeprospektion und internationaler Suchprojekte.",
+    erklaerungen: [
+      { these: "Absichtliche Verschleierung", dafuer: "Berichte nennen Reiter, die das Grab einebneten, und die Tötung der Beteiligten. Verborgene Herrschergräber sind aus mehreren Kulturen belegt.", dagegen: "Die Berichte stammen aus späterer Zeit und sind selbst Teil der Legendenbildung." },
+      { these: "Es liegt in der Sperrzone am Burchan Chaldun", dafuer: "Die Region gilt als heilig und war lange unzugänglich, was eine unbemerkte Erhaltung erklären würde.", dagegen: "Bisherige Untersuchungen dort haben nichts Eindeutiges ergeben." }
+    ],
+    forschungsstand: "Die Suche ist heikel: Viele Menschen in der Mongolei lehnen eine Störung der Ruhestätte ab. Moderne Projekte arbeiten daher vor allem mit zerstörungsfreien Verfahren.",
+    abgrenzung: "Das Rätsel ist echt, die begleitenden Erzählungen von Flüchen und Schatzmengen sind es nicht.",
+    quellen: ["Encyclopaedia Britannica: Genghis Khan", "The Metropolitan Museum of Art: The Legacy of Genghis Khan"]
+  },
+  {
+    id: "roanoke", titel: "Die verschwundene Kolonie Roanoke", zeitraum: "1587–1590", region: "Nordamerika, heutiges North Carolina",
+    kategorie: "Verschollen", status: "ungeklaert",
+    gesichert: "1587 ließen sich rund 115 englische Siedler auf Roanoke Island nieder. Gouverneur John White segelte nach England, um Nachschub zu holen; der Krieg mit Spanien verzögerte seine Rückkehr um drei Jahre. 1590 fand er die Siedlung verlassen vor. In einen Pfosten war das Wort CROATOAN geschnitzt.",
+    raetsel: "Was mit den Siedlern geschah, ist ungeklärt. Es gab keine Kampfspuren und keine Gräber.",
+    erklaerungen: [
+      { these: "Sie zogen zu den Croatan auf der heutigen Insel Hatteras", dafuer: "Die Schnitzerei nennt genau diesen Namen; White selbst hielt das für die wahrscheinlichste Erklärung.", dagegen: "Ein Sturm verhinderte, dass er dort nachsah – bestätigt wurde es nie eindeutig." },
+      { these: "Sie gingen an Hunger, Krankheit oder in Konflikten zugrunde", dafuer: "Die Lage war prekär, das Verhältnis zu benachbarten Gruppen angespannt.", dagegen: "Es fehlen die Spuren, die man dann erwarten würde." }
+    ],
+    forschungsstand: "Grabungen auf Hatteras und im Landesinneren haben europäische Gegenstände in indigenen Zusammenhängen zutage gefördert. Das lässt sich als Hinweis auf eine Eingliederung lesen – beweist sie aber nicht, weil solche Gegenstände auch gehandelt wurden.",
+    abgrenzung: "Populäre Erzählungen machen aus Roanoke eine Geistergeschichte. Der wahrscheinlichste Verlauf ist unspektakulär: Menschen schlossen sich anderen Menschen an.",
+    quellen: ["Encyclopaedia Britannica: Roanoke Island; Lost Colony; John White"]
+  },
+  {
+    id: "bernsteinzimmer", titel: "Das Bernsteinzimmer", zeitraum: "verschollen seit 1945", region: "Königsberg / Ostpreußen",
+    kategorie: "Verschollen", status: "ungeklaert",
+    gesichert: "Ein vollständig mit Bernsteinpaneelen ausgekleideter Raum, 1716 von Preußen an Russland geschenkt und im Katharinenpalast bei Sankt Petersburg eingebaut. 1941 von deutschen Truppen abgebaut und nach Königsberg gebracht, dort im Schloss ausgestellt. Ab 1944 verliert sich die Spur.",
+    raetsel: "Ob das Zimmer bei der Zerstörung Königsbergs verbrannte oder ausgelagert wurde, ist ungeklärt.",
+    erklaerungen: [
+      { these: "Es verbrannte 1944/45 in Königsberg", dafuer: "Bernstein ist leicht entzündlich; das Schloss brannte aus. Dies gilt vielen Fachleuten als die nüchternste Erklärung.", dagegen: "Eindeutige Reste wurden nie zugeordnet." },
+      { these: "Es wurde ausgelagert und liegt bis heute verborgen", dafuer: "Andere Kunstgüter wurden nachweislich in Bergwerke und Bunker gebracht.", dagegen: "Jahrzehntelange Suchen an zahllosen Orten blieben ergebnislos." }
+    ],
+    forschungsstand: "Eine Rekonstruktion wurde 2003 im Katharinenpalast eingeweiht. Die Suche nach dem Original gilt vielen als aussichtslos, wird aber immer wieder aufgenommen.",
+    abgrenzung: "Kaum ein Thema zieht so viele unbelegte Fundmeldungen an. Jede Meldung sollte man daran messen, ob geprüfte Belege vorliegen – bislang lag noch nie einer vor.",
+    quellen: ["Encyclopaedia Britannica: Amber Room"]
+  },
+  {
+    id: "nazca", titel: "Die Nazca-Linien", zeitraum: "ca. 500 v. Chr. – 500 n. Chr.", region: "Südperu",
+    kategorie: "Frühgeschichte", status: "teilweise",
+    gesichert: "Hunderte von Geoglyphen in der Wüste südlich von Lima: gerade Linien, geometrische Flächen und Tierfiguren, angelegt durch das Entfernen der dunklen Deckschicht. Sie blieben erhalten, weil dort kaum Regen und Wind wirken.",
+    raetsel: "Wozu sie dienten, ist nicht abschließend geklärt. Viele Figuren sind vom Boden aus kaum als Ganzes zu erkennen.",
+    erklaerungen: [
+      { these: "Rituelle Wege, oft mit Wasser verbunden", dafuer: "Viele Linien führen zu Orten, die mit Wasser und Fruchtbarkeit zu tun haben; Wasser war in dieser Wüste die entscheidende Ressource.", dagegen: "Nicht alle Linien lassen sich so erklären." },
+      { these: "Ein astronomischer Kalender", dafuer: "Einzelne Linien zeigen auf Auf- und Untergangspunkte von Gestirnen.", dagegen: "Statistische Prüfungen fanden nicht mehr Übereinstimmungen, als der Zufall erwarten ließe." }
+    ],
+    forschungsstand: "Seit 2019 werden mit Luftbildauswertung und maschinellem Lernen laufend weitere, bislang unbekannte Figuren entdeckt. Die Deutung bleibt offen, die Herstellung ist dagegen gut verstanden: Sie erfordert nur Schnüre, Pflöcke und Geduld.",
+    abgrenzung: "Die Behauptung, es handle sich um Landebahnen für Raumschiffe, stammt aus der Unterhaltungsliteratur der 1960er Jahre und hat keinerlei Grundlage. Sie unterstellt zudem, die Erbauer hätten so etwas nicht selbst gekonnt.",
+    quellen: ["Encyclopaedia Britannica: Nazca Lines; Nazca culture", "The Metropolitan Museum of Art: Nasca"]
+  },
+  {
+    id: "neunte-legion", titel: "Das Ende der Neunten Legion", zeitraum: "2. Jahrhundert", region: "Britannien",
+    kategorie: "Verschollen", status: "ungeklaert",
+    gesichert: "Die Legio IX Hispana ist zuletzt um 108 n. Chr. in York durch eine Bauinschrift belegt. Danach verschwindet sie aus den Quellen, ohne dass ihre Auflösung oder Vernichtung berichtet würde.",
+    raetsel: "Ob die Legion in Britannien unterging oder verlegt wurde, ist nicht entschieden.",
+    erklaerungen: [
+      { these: "Vernichtung bei Kämpfen in Nordbritannien", dafuer: "Es gab dort Aufstände, und der Hadrianswall entstand kurz darauf.", dagegen: "Kein antiker Autor berichtet von einer solchen Katastrophe – bei einer ganzen Legion wäre das ungewöhnlich." },
+      { these: "Verlegung an eine andere Grenze und späterer Untergang dort", dafuer: "Ziegelstempel der Legion wurden am Niederrhein gefunden, was auf eine Verlegung deutet.", dagegen: "Die Datierung dieser Funde ist umstritten." }
+    ],
+    forschungsstand: "Die Mehrheit der heutigen Forschung neigt zur Verlegung, nicht zum dramatischen Untergang in Britannien. Sicher ist es nicht.",
+    abgrenzung: "Die Vorstellung der im Nebel Schottlands verschwundenen Legion stammt wesentlich aus einem Roman von 1954 und aus Verfilmungen. Sie ist Literatur, nicht Überlieferung.",
+    quellen: ["Encyclopaedia Britannica: Roman Britain; Hadrian's Wall; legion"]
+  },
+  {
+    id: "minoischer-untergang", titel: "Der Niedergang der minoischen Kultur", zeitraum: "ca. 1600–1400 v. Chr.", region: "Kreta und Ägäis",
+    kategorie: "Untergänge", status: "teilweise",
+    gesichert: "Die minoische Kultur auf Kreta beherrschte Handel und Seewege der Ägäis. Auf der Insel Thera (Santorin) brach im 2. Jahrtausend v. Chr. ein Vulkan mit gewaltiger Wucht aus und verschüttete die Stadt Akrotiri. Später gerieten die kretischen Paläste unter mykenische Kontrolle.",
+    raetsel: "Wie eng Ausbruch und Niedergang zusammenhängen, ist umstritten – auch weil die Datierung des Ausbruchs schwankt.",
+    erklaerungen: [
+      { these: "Der Vulkanausbruch zerstörte die Grundlage der Seemacht", dafuer: "Tsunami und Ascheregen hätten Flotte, Häfen und Ernten treffen müssen.", dagegen: "Zwischen Ausbruch und mykenischer Übernahme liegen nach mehreren Datierungen Jahrzehnte bis über ein Jahrhundert." },
+      { these: "Eine Verkettung: geschwächt durch die Katastrophe, unterworfen durch die Mykener", dafuer: "Erklärt den zeitlichen Abstand.", dagegen: "Auch das bleibt eine Rekonstruktion – die Quellenlage besteht aus Grabungsbefunden, nicht aus Texten." }
+    ],
+    forschungsstand: "Radiokarbondaten und archäologische Chronologien liefern seit Jahrzehnten unterschiedliche Zeitansätze für den Ausbruch. Diese Diskrepanz ist der Kern des Problems.",
+    abgrenzung: "Die Gleichsetzung von Thera mit Platons Atlantis ist eine moderne Vermutung. Platon schrieb einen philosophischen Text, keinen Grabungsbericht.",
+    quellen: ["Encyclopaedia Britannica: Minoan civilization; Thera; Aegean civilizations"]
+  },
+  {
+    id: "somerton", titel: "Der Mann von Somerton", zeitraum: "1948, aufgeklärt 2022", region: "Adelaide, Australien",
+    kategorie: "Gelöst", status: "geloest",
+    gesichert: "Am 1. Dezember 1948 wurde am Somerton Beach ein toter Mann gefunden, ohne Papiere, mit entfernten Etiketten in der Kleidung. In einer verborgenen Tasche steckte ein Papierschnipsel mit den Worten „Tamam Shud“ – dem Schlussvers aus den Rubaiyat des Omar Chayyam.",
+    raetsel: "74 Jahre lang war seine Identität unbekannt. Der Fall galt als eines der bekanntesten ungelösten Rätsel Australiens und zog Spionagetheorien an.",
+    erklaerungen: [
+      { these: "Genetische Genealogie führt zur Identität", dafuer: "Derek Abbott (Universität Adelaide) und die Genealogin Colleen Fitzpatrick gewannen DNA aus Haaren, die in einer Gipsbüste des Toten steckten, und suchten in offenen Ahnendatenbanken nach Verwandten.", dagegen: "Die formale Bestätigung durch den Coroner stand zunächst noch aus." }
+    ],
+    forschungsstand: "Über eine sehr entfernte Cousine in Victoria bauten sie einen Stammbaum von rund 4.000 Personen auf. Im Juli 2022 gaben sie den Namen bekannt: Carl „Charles“ Webb, ein 43-jähriger Ingenieur und Instrumentenbauer aus Melbourne. Abbott gab seine Sicherheit mit 99,9 Prozent an; im November 2022 tauchten Familienfotos auf, die zum Toten passen.",
+    abgrenzung: "Dieser Fall steht hier als Gegenbeispiel: Rätsel bleiben nicht ungelöst, weil sie unlösbar wären, sondern weil die Methode fehlt. Hier kam sie – siebzig Jahre später.",
+    quellen: ["ABC News (Australien): Somerton Man identified as Melbourne electrical engineer (26.07.2022); Somerton Man Charles Webb's true identity revealed (21.11.2022)"]
+  },
+  {
+    id: "richard-iii", titel: "Ein König unter dem Parkplatz", zeitraum: "1485, gefunden 2012", region: "Leicester, England",
+    kategorie: "Gelöst", status: "geloest",
+    gesichert: "Richard III. fiel 1485 in der Schlacht von Bosworth. Sein Grab im Kloster der Grauen Brüder ging nach der Auflösung der Klöster verloren; über Jahrhunderte hielt sich die Erzählung, seine Gebeine seien in einen Fluss geworfen worden.",
+    raetsel: "Wo lag der letzte englische König aus dem Haus Plantagenet begraben?",
+    erklaerungen: [
+      { these: "Das Kloster lag unter dem heutigen Stadtgebiet – gezielte Suche statt Zufall", dafuer: "Historische Karten und Quellenarbeit engten den Bereich auf einen Parkplatz ein. Am 5. September 2012 wurde dort ein männliches Skelett mit Wirbelsäulenverkrümmung und Kampfverletzungen freigelegt.", dagegen: "Vor der DNA-Prüfung blieb es eine begründete Vermutung." }
+    ],
+    forschungsstand: "Am 4. Februar 2013 erklärte die Universität Leicester, es handle sich über jeden vernünftigen Zweifel hinaus um Richard III. Ausschlaggebend war unter anderem eine vollständige Übereinstimmung der mitochondrialen DNA mit einem lebenden Nachkommen der weiblichen Linie. 2015 wurde er in der Kathedrale von Leicester bestattet – 530 Jahre nach seinem Tod.",
+    abgrenzung: "Auch hier: kein Zufallsfund, sondern Archivarbeit plus Naturwissenschaft. Die Grabung wusste vorher, wo sie graben musste.",
+    quellen: ["University of Leicester: Richard III – Discovery and identification; DNA results", "Nature Communications: Identification of the remains of King Richard III (2014)"]
+  },
+  {
+    id: "pest-erreger", titel: "Woran starben die Menschen 1348?", zeitraum: "1348/49, geklärt 2011", region: "London",
+    kategorie: "Gelöst", status: "geloest",
+    gesichert: "Der Schwarze Tod tötete zwischen 1347 und 1351 schätzungsweise 25 Millionen Menschen in Europa.",
+    raetsel: "Lange war umstritten, ob wirklich das Pestbakterium Yersinia pestis die Ursache war – manche Forscher hielten Milzbrand oder ein unbekanntes Virus für wahrscheinlicher, weil die Ausbreitung untypisch schnell erschien.",
+    erklaerungen: [
+      { these: "Alte DNA aus den Zähnen der Opfer entscheidet die Frage", dafuer: "Auf dem Gelände der Royal Mint in East Smithfield in London liegt ein Pestfriedhof mit über 2.000 Bestattungen aus den Jahren 1348 und 1349 – ein datierter Fundzusammenhang.", dagegen: "Alte DNA ist fragmentiert und leicht durch heutige Keime verunreinigt; die Methode musste erst reifen." }
+    ],
+    forschungsstand: "2011 gelang es einem Team, aus den Überresten von vier Bestatteten das Genom von Yersinia pestis zu rekonstruieren – die erste Genomsequenz eines antiken bakteriellen Krankheitserregers überhaupt (Nature, Bd. 478). Das Ergebnis enthielt zugleich eine Enttäuschung: Der mittelalterliche Stamm unterscheidet sich kaum von heutigen. Warum die Seuche damals so viel tödlicher verlief, bleibt offen – die Antwort liegt vermutlich weniger im Erreger als in den Lebensumständen.",
+    abgrenzung: "Ein Rätsel wurde geklärt und ein neues sichtbar. Das ist der Normalfall in der Forschung, nicht die Ausnahme.",
+    quellen: ["Nature 478 (2011): A draft genome of Yersinia pestis from victims of the Black Death", "Encyclopaedia Britannica: Black Death"]
+  },
+  {
+    id: "linear-b", titel: "Die Entzifferung von Linear B", zeitraum: "gefunden ab 1900, entziffert 1952", region: "Kreta und griechisches Festland",
+    kategorie: "Gelöst", status: "geloest",
+    gesichert: "Bei Ausgrabungen in Knossos kamen Tontafeln mit einer unbekannten Silbenschrift zutage. Ihr Ausgräber Arthur Evans hielt die Sprache dahinter zeitlebens für nicht-griechisch.",
+    raetsel: "Über fünfzig Jahre lang blieb die Schrift unlesbar.",
+    erklaerungen: [
+      { these: "Die Sprache ist eine frühe Form des Griechischen", dafuer: "Der Architekt Michael Ventris kam 1952 zu diesem Ergebnis – gegen seine eigene ursprüngliche Annahme. Die Zeichenverteilung ließ sich mit griechischen Wortformen widerspruchsfrei erklären.", dagegen: "Die Fachwelt war zunächst skeptisch, weil es Evans' Autorität widersprach." }
+    ],
+    forschungsstand: "Die Entzifferung setzte sich durch, als neue Tafeln aus Pylos exakt jene Wortformen zeigten, die Ventris' Lesung vorhersagte – eine echte Prüfung mit unabhängigen Daten. Die Tafeln enthalten übrigens keine Literatur, sondern Inventarlisten: Schafe, Öl, Räder, Personal.",
+    abgrenzung: "Linear A, die ältere Schrift derselben Region, ist bis heute nicht entziffert. Ein Erfolg überträgt sich nicht automatisch auf den nächsten Fall.",
+    quellen: ["Encyclopaedia Britannica: Linear B; Michael Ventris; Aegean civilizations; Linear A"]
+  }
+];
+
+
+/* =========================================================
+   MYSTERIEN DER GESCHICHTE
+
+   Ungeklärte Geschehnisse — aber nicht als Gruselkabinett. Jeder Eintrag
+   trennt sauber: was gesichert ist, was offen bleibt, welche Erklärungen
+   ernsthaft vertreten werden (mit dem, was dafür und dagegen spricht),
+   wo die Forschung gerade steht, und wovon das Rätsel abzugrenzen ist.
+
+   Bewusst sind auch gelöste Fälle dabei. Sie zeigen, dass Rätsel selten
+   unlösbar sind — meist fehlt nur die Methode, und irgendwann kommt sie.
+   ========================================================= */
+
+const MYSTERIEN_STATUS = {
+  ungeklaert: { label: "ungeklärt", farbe: "#d4af37" },
+  teilweise: { label: "teilweise geklärt", farbe: "#c2a06a" },
+  geloest: { label: "gelöst", farbe: "#7fb08a" }
+};
+
+function MysterienDetail({ eintrag, onBack }) {
+  const st = MYSTERIEN_STATUS[eintrag.status] || MYSTERIEN_STATUS.ungeklaert;
+  const Abschnitt = ({ titel, text }) => /* @__PURE__ */ React.createElement("div", { className: "mb-5" },
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, titel),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, text));
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: onBack,
+      className: "flex items-center gap-1.5 text-[#c9a877] hover:text-[#f0d878] mb-4 text-sm"
+    }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu allen Mysterien"),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" },
+      /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, eintrag.zeitraum),
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, eintrag.region),
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: st.farbe, borderColor: st.farbe } }, st.label)
+    ),
+    /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-4" }, eintrag.titel),
+
+    /* @__PURE__ */ React.createElement(Abschnitt, { titel: "Was gesichert ist", text: eintrag.gesichert }),
+    /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, eintrag.status === "geloest" ? "Was lange offen war" : "Was offen ist"),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, eintrag.raetsel)),
+
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" },
+      eintrag.status === "geloest" ? "Wie es gelöst wurde" : "Welche Erklärungen vertreten werden"),
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-3 mb-5" },
+      eintrag.erklaerungen.map((e, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" },
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-2 leading-snug" }, e.these),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-1.5" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] uppercase tracking-widest text-[#8a6238] mr-2" }, "dafür"), e.dafuer),
+        e.dagegen && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] uppercase tracking-widest text-[#8a6238] mr-2" }, "dagegen"), e.dagegen)
+      ))),
+
+    /* @__PURE__ */ React.createElement(Abschnitt, { titel: "Stand der Forschung", text: eintrag.forschungsstand }),
+
+    /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#5c2018] p-4" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Abzugrenzen davon"),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, eintrag.abgrenzung)),
+
+    /* @__PURE__ */ React.createElement("div", { className: "mt-6 pt-4 border-t border-[#5c2018]" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Quellen"),
+      /* @__PURE__ */ React.createElement("ul", { className: "text-xs text-[#b8905a] leading-relaxed" },
+        eintrag.quellen.map((q, i) => /* @__PURE__ */ React.createElement("li", { key: i }, "· ", q))))
+  );
+}
+
+function MysterienTab() {
+  const [offen, setOffen] = useState(null);
+  const [filter, setFilter] = useState("alle");
+
+  if (offen) {
+    const e = MYSTERIEN.find((m) => m.id === offen);
+    if (e) return /* @__PURE__ */ React.createElement(MysterienDetail, { eintrag: e, onBack: () => setOffen(null) });
+  }
+
+  const gefiltert = MYSTERIEN.filter((m) => filter === "alle" || m.status === filter);
+  const zaehler = { ungeklaert: 0, teilweise: 0, geloest: 0 };
+  MYSTERIEN.forEach((m) => { zaehler[m.status] = (zaehler[m.status] || 0) + 1; });
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      MYSTERIEN.length, " Fälle, in denen die Geschichte eine Lücke hat — und einige, in denen sie geschlossen wurde."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl leading-relaxed" },
+      "Jeder Eintrag trennt, was gesichert ist, von dem, was offen bleibt, und nennt zu jeder Erklärung auch das, was dagegen spricht. Die gelösten Fälle stehen bewusst daneben: Rätsel sind selten unlösbar — meist fehlt nur die Methode, und irgendwann kommt sie."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" },
+      [["alle", "Alle (" + MYSTERIEN.length + ")"], ["ungeklaert", "Ungeklärt (" + zaehler.ungeklaert + ")"], ["teilweise", "Teilweise (" + zaehler.teilweise + ")"], ["geloest", "Gelöst (" + zaehler.geloest + ")"]]
+        .map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
+          key: id, onClick: () => setFilter(id),
+          className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${filter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+        }, label))),
+
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
+      gefiltert.map((m) => {
+        const st = MYSTERIEN_STATUS[m.status] || MYSTERIEN_STATUS.ungeklaert;
+        return /* @__PURE__ */ React.createElement("button", {
+          key: m.id, onClick: () => setOffen(m.id),
+          className: "text-left rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 hover:border-[#d4af37] transition-colors"
+        },
+          /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" },
+            /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, m.zeitraum),
+            /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: st.farbe, borderColor: st.farbe } }, st.label)),
+          /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, m.titel),
+          /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.raetsel),
+          /* @__PURE__ */ React.createElement("span", { className: "mt-2 inline-flex items-center gap-1 text-xs text-[#8a6238]" }, "Ansehen ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 12 }))
+        );
+      }))
+  );
+}
+
 const NAV = [
   { id: "epochen", label: "Epochen", icon: BookOpen },
   { id: "vertiefungen", label: "Vertiefungen", icon: Layers },
@@ -3229,7 +3706,8 @@ const NAV = [
   { id: "schlachten", label: "Ber\xFChmte Schlachten", icon: Crown },
   { id: "zitate", label: "Zitate", icon: BookOpen },
   { id: "mythen", label: "Fun Facts & Mythen", icon: Sparkles },
-  { id: "zahlenstrahl", label: "Zahlenstrahl", icon: Clock },
+  { id: "mysterien", label: "Mysterien der Geschichte", icon: Search },
+  { id: "zeitschnitt", label: "Zeitschnitt", icon: Clock },
   { id: "personen", label: "Pers\xF6nlichkeiten", icon: Users },
   { id: "nationen", label: "Nationen & Reiche", icon: Crown },
   { id: "lernen", label: "Fakten & Jahreszahlen", icon: Sparkles },
@@ -3360,76 +3838,6 @@ function MythenTab() {
     },
     t
   ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Keine Treffer.")));
-}
-function scaleYear(y, min, max) {
-  const clamp = (v) => Math.max(min, Math.min(max, v));
-  y = clamp(y);
-  const shift = -min + 1;
-  const t = Math.log10(y + shift) / Math.log10(max + shift);
-  return t * 100;
-}
-function ZahlenstrahlTab() {
-  const [hover, setHover] = useState(null);
-  const [epFilter, setEpFilter] = useState("alle");
-  const minY = -26e5;
-  const maxY = 2026;
-  const allEvents = useMemo(
-    () => EPOCHS.flatMap((ep) => ep.events.map((e) => ({ ...e, epochName: ep.name, color: ep.color }))).filter(
-      (e) => epFilter === "alle" || e.epochName === epFilter
-    ),
-    [epFilter]
-  );
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-4 max-w-2xl" }, "Ein Zahlenstrahl \xFCber die gesamte Menschheitsgeschichte mit ", allEvents.length, " Ereignispunkten. Da die Steinzeit \xFCber 2,5 Millionen Jahre umfasst, ist die Skala logarithmisch \u2014 so bleiben auch die letzten Jahrhunderte gut lesbar."), /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" }, /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      onClick: () => setEpFilter("alle"),
-      className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${epFilter === "alle" ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
-    },
-    "Alle"
-  ), EPOCHS.map((ep) => /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      key: ep.id,
-      onClick: () => setEpFilter(ep.name),
-      className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border`,
-      style: epFilter === ep.name ? { backgroundColor: "#5c1a1e", color: "#f0d878", borderColor: ep.color } : { borderColor: "#5c2018", color: "#b8905a" }
-    },
-    ep.name
-  ))), /* @__PURE__ */ React.createElement("div", { className: "relative h-[420px] md:h-[480px] mb-4 rounded-lg border border-[#5c2018] bg-[#4a1015] overflow-hidden" }, EPOCHS.map((ep) => {
-    const left = scaleYear(ep.startYear, minY, maxY);
-    const right = scaleYear(ep.endYear, minY, maxY);
-    return /* @__PURE__ */ React.createElement(
-      "div",
-      {
-        key: ep.id,
-        className: "absolute top-0 bottom-8 opacity-20",
-        style: { left: `${left}%`, width: `${right - left}%`, backgroundColor: ep.color }
-      }
-    );
-  }), /* @__PURE__ */ React.createElement("div", { className: "absolute bottom-8 left-0 right-0 h-px bg-[#7a3020]" }), allEvents.map((e, i) => {
-    const left = scaleYear(e.year, minY, maxY);
-    const isHover = hover === i;
-    return /* @__PURE__ */ React.createElement(
-      "div",
-      {
-        key: i,
-        className: "absolute bottom-8 -translate-x-1/2 cursor-pointer",
-        style: { left: `${left}%` },
-        onMouseEnter: () => setHover(i),
-        onMouseLeave: () => setHover(null),
-        onClick: () => setHover(isHover ? null : i)
-      },
-      /* @__PURE__ */ React.createElement(
-        "div",
-        {
-          className: "w-2.5 h-2.5 rounded-full border border-[#4a1015] hover:scale-150 transition-transform",
-          style: { backgroundColor: e.color }
-        }
-      ),
-      /* @__PURE__ */ React.createElement("div", { className: "absolute bottom-full left-1/2 -translate-x-1/2 h-6 w-px bg-[#7a3020]" }),
-      isHover && /* @__PURE__ */ React.createElement("div", { className: "absolute bottom-full mb-6 left-1/2 -translate-x-1/2 w-56 bg-[#6b2024] border border-[#5c2018] rounded-md p-3 shadow-xl z-20" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs", style: { color: e.color } }, formatYear(e.year)), /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a] text-sm" }, e.title), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#c2a06a] mt-1 leading-relaxed" }, e.text))
-    );
-  }), /* @__PURE__ */ React.createElement("div", { className: "absolute bottom-1 left-0 right-0 flex justify-between px-2 text-[10px] font-mono text-[#8a6238]" }, /* @__PURE__ */ React.createElement("span", null, "2,6 Mio. v. Chr."), /* @__PURE__ */ React.createElement("span", null, "10.000 v. Chr."), /* @__PURE__ */ React.createElement("span", null, "0"), /* @__PURE__ */ React.createElement("span", null, "1500"), /* @__PURE__ */ React.createElement("span", null, "Heute"))), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Tippe auf einen Punkt f\xFCr Details."));
 }
 function PersonenTab() {
   const [query, setQuery] = useState("");
@@ -3569,5 +3977,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "zahlenstrahl" && /* @__PURE__ */ React.createElement(ZahlenstrahlTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, null), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, null), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, null), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }
