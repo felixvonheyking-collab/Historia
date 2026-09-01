@@ -5,7 +5,7 @@
  * WICHTIG bei Änderungen: VERSION hochzählen.
  */
 
-const VERSION = '2026-08-31-6';
+const VERSION = '2026-08-31-7';
 const CACHE = 'historia-' + VERSION;
 
 const DATEIEN = [

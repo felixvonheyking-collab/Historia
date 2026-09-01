@@ -2835,6 +2835,359 @@ const VERTIEFUNGEN = [
     "Yad Vashem: The Wannsee Conference",
     "Encyclopaedia Britannica: Holocaust; Final Solution"
   ]
+},
+{
+  "id": "pyramiden-giza",
+  "titel": "Wie die Pyramiden gebaut wurden",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -2543,
+  "zeitraum": "ca. 2543–2436 v. Chr.",
+  "region": "Gizeh, Ägypten",
+  "leitsatz": "Nicht Sklaven bauten sie, sondern bezahlte Arbeiter – und ihre Siedlung samt Bäckerei ist ausgegraben.",
+  "vorgeschichte": "Die Pyramide entstand nicht aus dem Nichts. Über Generationen entwickelte sich die Grabform von der Mastaba über die Stufenpyramide des Djoser bis zur geglätteten Form – mit sichtbaren Fehlversuchen wie der geknickten Pyramide von Dahschur, deren Neigung im Bau geändert wurde.",
+  "verlauf": "Die drei großen Pyramiden von Gizeh entstanden in der 4. Dynastie, etwa zwischen 2543 und 2436 v. Chr. Die Cheopspyramide maß ursprünglich rund 147 Meter und blieb bis ins Mittelalter das höchste Bauwerk der Menschheit. Der Kern besteht aus Kalksteinblöcken aus lokalen Brüchen, die Verkleidung aus feinerem Kalkstein von Tura, die Kammerauskleidung aus Granit aus Assuan – 900 Kilometer flussaufwärts, per Schiff herangeschafft.",
+  "folgen": "Grabungen legten südöstlich der Pyramiden eine Arbeitersiedlung frei: Bäckereien, Brauereien, Speicher, Schlafsäle und Friedhöfe. Die Skelette zeigen harte körperliche Arbeit, aber auch verheilte Brüche – also medizinische Versorgung. 2013 wurde in Wadi al-Dscharf das Tagebuch eines Aufsehers namens Merer gefunden, das den Transport von Kalksteinblöcken nach Gizeh schildert: das älteste beschriebene Papyrus Ägyptens.",
+  "strittig": "Wie genau die Blöcke in die Höhe kamen, ist offen. Diskutiert werden gerade Rampen, umlaufende Rampen und innen liegende Wege; keine Variante erklärt alle Befunde. Unstrittig ist inzwischen, wer baute: keine Sklavenheere, sondern organisierte, versorgte und teils saisonal einberufene Arbeitstrupps.",
+  "zahlen": [
+    {
+      "wert": "ca. 147 m",
+      "was": "ursprüngliche Höhe der Cheopspyramide"
+    },
+    {
+      "wert": "ca. 900 km",
+      "was": "Transportweg des Granits aus Assuan"
+    },
+    {
+      "wert": "2013",
+      "was": "Fund des Merer-Tagebuchs, ältestes beschriebenes Papyrus Ägyptens"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Pyramids of Giza; Great Pyramid of Khufu; Egyptian architecture",
+    "The Metropolitan Museum of Art: Egypt in the Old Kingdom"
+  ]
+},
+{
+  "id": "hieroglyphen",
+  "titel": "Die Entzifferung der Hieroglyphen",
+  "epoche": "industrialisierung",
+  "jahr": 1822,
+  "zeitraum": "1799–1822",
+  "region": "Ägypten und Frankreich",
+  "leitsatz": "Vierzehn Jahrhunderte konnte niemand Ägypten lesen – dann entschied ein Stein mit demselben Text in drei Schriften.",
+  "vorgeschichte": "Mit dem Ende der altägyptischen Tempelkultur ging das Wissen um die Hieroglyphen verloren; die letzte datierte Inschrift stammt aus dem Jahr 394. Die Renaissance hielt sie für reine Bildzeichen, die Ideen darstellen – ein Irrtum, der die Entzifferung jahrhundertelang blockierte.",
+  "verlauf": "1799 fanden französische Soldaten bei Rosette einen Steinblock mit demselben Dekret in Hieroglyphen, Demotisch und Griechisch. Der Grieche ließ sich lesen – damit war der Inhalt bekannt und nur noch die Zuordnung offen. Thomas Young erkannte, dass die Königsnamen in Kartuschen lautlich geschrieben sind. Jean-François Champollion zeigte 1822, dass die Hieroglyphen ein gemischtes System sind: teils Lautzeichen, teils Bedeutungszeichen. Entscheidend war seine Kenntnis des Koptischen, der letzten Sprachstufe des Ägyptischen.",
+  "folgen": "Mit einem Schlag wurde eine dreitausendjährige Überlieferung lesbar: Verwaltungsakten, Verträge, Gebete, Briefe. Aus der Sammlung von Kuriositäten wurde eine Wissenschaft.",
+  "strittig": "Der Anteil von Young und Champollion an der Entzifferung wurde zwischen England und Frankreich lange erbittert gestritten. Sachlich baute Champollion auf Youngs Vorarbeit auf und ging entscheidend darüber hinaus.",
+  "zahlen": [
+    {
+      "wert": "394",
+      "was": "letzte datierte Hieroglyphen-Inschrift"
+    },
+    {
+      "wert": "1799",
+      "was": "Fund des Steins von Rosette"
+    },
+    {
+      "wert": "1822",
+      "was": "Champollions Durchbruch"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Rosetta Stone; Jean-François Champollion; hieroglyph; Thomas Young"
+  ]
+},
+{
+  "id": "athener-demokratie",
+  "titel": "Die Erfindung der Demokratie",
+  "epoche": "antike",
+  "jahr": -508,
+  "zeitraum": "ab 508/507 v. Chr.",
+  "region": "Athen",
+  "leitsatz": "Eine Demokratie, in der Frauen, Zugezogene und Versklavte nicht mitstimmten – und die trotzdem etwas erfand, das es vorher nicht gab.",
+  "vorgeschichte": "Athen war von Adelsfamilien beherrscht, deren Macht auf Verwandtschaft und Klientel beruhte. Kleisthenes (ca. 570–508 v. Chr.) verbündete sich 508 mit der Volksversammlung gegen diese Ordnung.",
+  "verlauf": "Kleisthenes stellte die Grundlage der politischen Gliederung um: nicht mehr Familie und Sippe, sondern Wohnort. Er schuf 508/507 v. Chr. die Demen als territoriale Einheiten. Aus ihnen wurde anteilig der Rat der Fünfhundert bestimmt, der die Tagesordnung der Versammlung festlegte – seine Mitglieder wurden nicht gewählt, sondern ausgelost. Die Volksversammlung tagte vierzigmal im Jahr auf dem Hügel der Pnyx; alle erwachsenen männlichen Bürger durften teilnehmen, mussten aber nicht.",
+  "folgen": "Das Losverfahren nahm der Herkunft ihre Bedeutung: Wer aus dem Los kam, war nicht der Beste, sondern irgendeiner – und genau das war der Punkt. Der Rat der Fünfhundert mit anteiliger Vertretung aus allen Demen nahm zugleich etwas vorweg, was spätere Demokratien über Wahlen lösten.",
+  "strittig": "Ausgeschlossen waren Frauen, Kinder, ansässige Fremde und Versklavte – zusammen die deutliche Mehrheit der Bevölkerung. Ob man das System deshalb Demokratie nennen sollte, wird diskutiert. Dagegen spricht, dass der Maßstab dann ein moderner wäre; dafür, dass die Athener selbst über Zugehörigkeit stritten.",
+  "zahlen": [
+    {
+      "wert": "508/507 v. Chr.",
+      "was": "Reformen des Kleisthenes"
+    },
+    {
+      "wert": "40-mal",
+      "was": "Sitzungen der Volksversammlung pro Jahr"
+    },
+    {
+      "wert": "500",
+      "was": "ausgeloste Ratsmitglieder"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cleisthenes of Athens; ancient Greece – The reforms of Cleisthenes; Council of Five Hundred; democracy"
+  ]
+},
+{
+  "id": "roemisches-buergerrecht",
+  "titel": "Das römische Bürgerrecht",
+  "epoche": "antike",
+  "jahr": 212,
+  "zeitraum": "Republik bis 212 n. Chr.",
+  "region": "Mittelmeerraum",
+  "leitsatz": "Roms wirksamste Waffe war nicht die Legion, sondern die Möglichkeit, Besiegte zu Bürgern zu machen.",
+  "vorgeschichte": "Griechische Städte hielten ihr Bürgerrecht geschlossen; wer nicht hineingeboren war, blieb draußen. Rom verfuhr anders und band unterworfene Gemeinden über abgestufte Rechte ein – vom latinischen Recht bis zum vollen Bürgerrecht.",
+  "verlauf": "Der Bundesgenossenkrieg (91–88 v. Chr.) zwang Rom, das Bürgerrecht auf ganz Italien auszudehnen – die Verbündeten hatten dafür gekämpft, dass sie es bekamen. In der Kaiserzeit wurde es weiter vergeben, an Einzelne, Städte und an Soldaten nach der Dienstzeit. 212 n. Chr. verlieh Kaiser Caracalla mit der Constitutio Antoniniana das Bürgerrecht praktisch allen freien Bewohnern des Reiches.",
+  "folgen": "Wer Bürger war, unterstand römischem Recht, konnte an den Kaiser appellieren und durfte nicht ohne weiteres hingerichtet werden. Die Ausdehnung schuf über Sprach- und Kulturgrenzen hinweg eine gemeinsame Rechtsordnung – eine der Grundlagen dafür, dass das Reich so lange hielt.",
+  "strittig": "Caracallas Beweggründe sind umstritten. Der zeitgenössische Historiker Cassius Dio unterstellte ihm ein fiskalisches Motiv: Bürger zahlten Erbschafts- und Freilassungssteuern. Andere sehen darin den Abschluss einer langen Entwicklung. Beides schließt sich nicht aus.",
+  "zahlen": [
+    {
+      "wert": "91–88 v. Chr.",
+      "was": "Bundesgenossenkrieg – Bürgerrecht für Italien"
+    },
+    {
+      "wert": "212 n. Chr.",
+      "was": "Constitutio Antoniniana"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman law; ancient Rome – The Social War; Caracalla; citizenship"
+  ]
+},
+{
+  "id": "justinian-pest",
+  "titel": "Justinian und die Pest",
+  "epoche": "mittelalter",
+  "jahr": 541,
+  "zeitraum": "527–565, Seuche ab 541",
+  "region": "Byzantinisches Reich",
+  "leitsatz": "Der Kaiser, der Rom zurückerobern wollte, wurde von einem Bakterium gestoppt.",
+  "vorgeschichte": "Justinian I. wollte das Römische Reich in seinen alten Grenzen wiederherstellen. Sein Feldherr Belisar nahm Nordafrika von den Vandalen und begann die Rückeroberung Italiens. In Konstantinopel ließ Justinian nach den Nika-Aufständen die Hagia Sophia neu errichten und das römische Recht kodifizieren.",
+  "verlauf": "Die Seuche brach um 541 im ägyptischen Hafen Pelusium aus und verbreitete sich mit den Getreideschiffen über das Mittelmeer. Im Frühjahr 542 erreichte sie Konstantinopel; Justinian selbst erkrankte und überlebte. Vier Monate lang wütete sie in der Stadt. Justinian ließ riesige Gruben ausheben; als sie überliefen, wurden Leichen in die Türme der Stadtmauer geschichtet und mit Branntkalk übergossen oder auf Schiffe geladen, aufs Marmarameer hinausgestoßen und angezündet. Die Stadt kam zum Stillstand, die Nahrung wurde knapp, die Ordnung brach zusammen.",
+  "folgen": "Zwischen 541 und etwa 548 konnte das Reich keinen Zweifrontenkrieg mehr führen. Belisar wurde von seinen Gegenoffensiven im Osten nach Italien zurückgerufen; der italienische Krieg zog sich hin und wurde durch die Seuche zusätzlich behindert. Historiker sehen in dieser Katastrophe den Übergang, an dem aus Ostrom das mittelalterliche Byzanz wurde.",
+  "strittig": "Wie stark die Seuche die Wirtschaft und Bevölkerung dauerhaft traf, wird neu diskutiert. Ein Teil der Forschung hält die überlieferten Schilderungen für überzeichnet und verweist auf archäologische Befunde, die keinen so scharfen Einbruch zeigen. Andere sehen genau darin ein Messproblem.",
+  "zahlen": [
+    {
+      "wert": "541",
+      "was": "Ausbruch in Pelusium"
+    },
+    {
+      "wert": "Frühjahr 542",
+      "was": "Konstantinopel, vier Monate Höhepunkt"
+    },
+    {
+      "wert": "541–548",
+      "was": "Zeitraum eingeschränkter Handlungsfähigkeit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Justinian I; plague of Justinian; Byzantine Empire – The 6th century; Belisarius; Nika riots"
+  ]
+},
+{
+  "id": "kreuzfahrerstaaten",
+  "titel": "Die Kreuzfahrerstaaten",
+  "epoche": "mittelalter",
+  "jahr": 1099,
+  "zeitraum": "1098–1291",
+  "region": "Levante",
+  "leitsatz": "Zweihundert Jahre lang bestanden lateinische Fürstentümer im Nahen Osten – als kleine Minderheit unter mehrheitlich muslimischer und ostchristlicher Bevölkerung.",
+  "vorgeschichte": "Nach der Einnahme Jerusalems 1099 mussten die Kreuzfahrer entscheiden, was aus dem Eroberten werden sollte. Es entstanden vier Herrschaften: Edessa, Antiochia, Tripolis und das Königreich Jerusalem.",
+  "verlauf": "Die Herrschaft stützte sich auf Burgen, Ritterorden und Bündnisse mit lokalen Mächten – auch mit muslimischen, wenn es die Lage verlangte. 1187 schlug Saladin das Kreuzfahrerheer bei Hattin und nahm Jerusalem ein. Die restlichen Küstenstädte hielten sich noch gut hundert Jahre; 1291 fiel Akkon, der letzte bedeutende Stützpunkt.",
+  "folgen": "Über die Kreuzfahrerstaaten lief Handel: Zucker, Baumwolle, Glas, Gewürze. Die Rückwirkung auf Europa betraf weniger die Wissenschaft – die kam über Spanien und Sizilien – als Geldwesen, Schifffahrt und Befestigungsbau. Für die Region bedeuteten sie zwei Jahrhunderte Krieg, aber auch Phasen praktischen Zusammenlebens.",
+  "strittig": "Ob es sich um Kolonialherrschaft oder um ein Grenzland mit eigener Mischkultur handelte, wird seit Jahrzehnten diskutiert. Die Beteiligten selbst sahen sich weder als Kolonisatoren noch als Eingewanderte, sondern als Erben eines Anspruchs.",
+  "zahlen": [
+    {
+      "wert": "4",
+      "was": "Kreuzfahrerstaaten: Edessa, Antiochia, Tripolis, Jerusalem"
+    },
+    {
+      "wert": "1187",
+      "was": "Schlacht bei Hattin, Verlust Jerusalems"
+    },
+    {
+      "wert": "1291",
+      "was": "Fall Akkons – Ende der lateinischen Herrschaft"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Crusades; Kingdom of Jerusalem; Battle of Hattin; Acre"
+  ]
+},
+{
+  "id": "stellungskrieg",
+  "titel": "Warum sich die Front nicht bewegte",
+  "epoche": "moderne",
+  "jahr": 1915,
+  "zeitraum": "1914–1918",
+  "region": "Westfront",
+  "leitsatz": "Die Technik der Verteidigung war der Technik des Angriffs vier Jahre lang überlegen – und niemand hatte damit gerechnet.",
+  "vorgeschichte": "Alle Generalstäbe hatten mit einem kurzen Bewegungskrieg gerechnet. Der deutsche Aufmarschplan setzte auf eine schnelle Entscheidung im Westen, um danach nach Osten zu schwenken.",
+  "verlauf": "Nach dem Scheitern dieses Plans an der Marne gruben sich beide Seiten ein. Von der Nordsee bis zur Schweizer Grenze entstand ein durchgehendes Grabensystem. Maschinengewehre, Stacheldraht und Schnellfeuerartillerie machten jeden Sturmangriff auf offenem Feld zur Katastrophe; Nachschub und Reserven erreichten den Verteidiger schneller als der Angreifer seinen eigenen Erfolg ausnutzen konnte.",
+  "folgen": "Aus dieser Sackgasse entstanden die Antworten, die den Krieg des 20. Jahrhunderts prägten: Giftgas, Panzer, Sturmtruppentaktik, Luftaufklärung und ein Ausmaß industrieller Kriegsproduktion, das ganze Volkswirtschaften umbaute. Verdun dauerte 1916 über zehn Monate ohne nennenswerte Geländegewinne.",
+  "strittig": "Ob die Generäle stur waren oder vor einem tatsächlich unlösbaren Problem standen, ist umstritten. Die ältere Erzählung von den 'Löwen unter Eseln' gilt heute als zu einfach: Taktik und Technik entwickelten sich während des Krieges erheblich weiter.",
+  "zahlen": [
+    {
+      "wert": "ca. 700 km",
+      "was": "Länge der Westfront von der Nordsee zur Schweiz"
+    },
+    {
+      "wert": "über 10 Monate",
+      "was": "Dauer der Schlacht um Verdun 1916"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: World War I; trench warfare; Battle of Verdun; Western Front"
+  ]
+},
+{
+  "id": "versailles",
+  "titel": "Versailles und die Folgen",
+  "epoche": "moderne",
+  "jahr": 1919,
+  "zeitraum": "1919",
+  "region": "Paris und Deutschland",
+  "leitsatz": "Ein Vertrag, hart genug, um Empörung zu erzeugen, und zu weich, um Deutschland dauerhaft zu schwächen.",
+  "vorgeschichte": "Deutschland hatte auf einen Frieden nach Wilsons Vierzehn Punkten gehofft. Die Siegermächte verhandelten den Vertrag ohne deutsche Beteiligung.",
+  "verlauf": "Artikel 231, die sogenannte Kriegsschuldklausel, erklärte Deutschland und seine Verbündeten für verantwortlich für alle Verluste und Schäden der Alliierten. Sie bildete die Grundlage für Artikel 232 und die Reparationskommission; die Gesamtsumme wurde später auf 132 Milliarden Goldmark festgesetzt, mit einer vorläufigen Zahlung von 20 Milliarden. Deutschland verlor rund 10 Prozent seines europäischen Gebiets und alle Kolonien, das Heer wurde stark begrenzt. Elsass-Lothringen ging an Frankreich, große Teile Oberschlesiens und Westpreußens an Polen, Eupen-Malmedy an Belgien.",
+  "folgen": "In Deutschland wurde die Klausel als Siegerjustiz empfunden; die meisten Deutschen hielten ihr Land nicht für allein verantwortlich. Der Vertrag galt als 'Diktat', als Bruch mit den Vierzehn Punkten und als wirtschaftlich untragbar. Die provisorische Regierung in Weimar geriet in eine Krise, führende Politiker traten zurück, statt zu unterschreiben.",
+  "strittig": "Ob Versailles den Aufstieg des Nationalsozialismus verursachte, ist eine der meistdiskutierten Fragen des Fachs. Gegen eine einfache Kausalität spricht, dass die Reparationen faktisch nie in voller Höhe gezahlt wurden und die deutsche Wirtschaft sich ab 1924 erholte. Für einen Zusammenhang spricht die politische Wirkung der Klausel, die jede Regierung der Republik belastete.",
+  "zahlen": [
+    {
+      "wert": "Artikel 231",
+      "was": "sogenannte Kriegsschuldklausel"
+    },
+    {
+      "wert": "132 Mrd. Goldmark",
+      "was": "später festgesetzte Reparationssumme"
+    },
+    {
+      "wert": "ca. 10 %",
+      "was": "Verlust europäischen Staatsgebiets"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Treaty of Versailles 1919; Article 231; Weimar Republic – The Treaty of Versailles; 20th-century international relations – Reaction to the treaty"
+  ]
+},
+{
+  "id": "weg-in-den-krieg",
+  "titel": "Der Weg in den Krieg 1933–1939",
+  "epoche": "moderne",
+  "jahr": 1938,
+  "zeitraum": "1933–1939",
+  "region": "Europa",
+  "leitsatz": "Jeder einzelne Schritt schien hinnehmbar – zusammen ergaben sie den Krieg.",
+  "vorgeschichte": "Politische und wirtschaftliche Instabilität, die Bitterkeit über die Niederlage von 1918 und die Bedingungen von Versailles ermöglichten Hitler und der NSDAP den Aufstieg. Ab Mitte der 1930er Jahre rüstete Deutschland heimlich und vertragswidrig auf.",
+  "verlauf": "1936 Einmarsch ins entmilitarisierte Rheinland, 1938 Anschluss Österreichs, im selben Jahr die Abtretung des Sudetenlands im Münchner Abkommen, 1939 die Zerschlagung der Rest-Tschechoslowakei. Großbritannien und Frankreich ließen Hitler und Mussolini gewähren, in der Hoffnung, diese Politik des Appeasement werde einen weiteren Krieg verhindern. Im August 1939 sicherte der deutsch-sowjetische Nichtangriffspakt die Ostflanke; am 1. September begann der Überfall auf Polen.",
+  "folgen": "Appeasement gilt seither als Warnbegriff. Die Lehre daraus – dass Zugeständnisse an einen entschlossenen Aggressor dessen Ansprüche vergrößern – prägt die westliche Außenpolitik bis heute, gelegentlich auch dort, wo die Lage nicht vergleichbar ist.",
+  "strittig": "Ob Appeasement dumm oder unter den Umständen nachvollziehbar war, wird bis heute diskutiert. Für die Politiker der Zeit war der Erste Weltkrieg zwanzig Jahre her; die Abneigung gegen einen neuen Krieg war in ihren Gesellschaften überwältigend, und die eigene Aufrüstung stand erst am Anfang.",
+  "zahlen": [
+    {
+      "wert": "1936",
+      "was": "Einmarsch ins Rheinland"
+    },
+    {
+      "wert": "September 1938",
+      "was": "Münchner Abkommen"
+    },
+    {
+      "wert": "1. September 1939",
+      "was": "Überfall auf Polen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: World War II – Causes; appeasement; Munich Agreement; German-Soviet Nonaggression Pact"
+  ]
+},
+{
+  "id": "wende-1942",
+  "titel": "Die Wende 1942/43",
+  "epoche": "moderne",
+  "jahr": 1942,
+  "zeitraum": "Juni 1942 – Februar 1943",
+  "region": "Pazifik, Nordafrika, Osteuropa",
+  "leitsatz": "Innerhalb von acht Monaten kippte der Krieg an drei Fronten gleichzeitig – und keine dieser Schlachten war für sich entscheidend.",
+  "vorgeschichte": "Bis Mitte 1942 hatten die Achsenmächte in Europa, Nordafrika und im Pazifik weit ausgegriffen. Die materielle Überlegenheit der Alliierten war angelegt, aber noch nicht wirksam.",
+  "verlauf": "Juni 1942: Bei Midway verlor Japan vier Flugzeugträger und damit die Fähigkeit zur Offensive im Pazifik. Oktober/November 1942: El Alamein beendete den Vorstoß der Achsenmächte nach Ägypten. November 1942 bis Februar 1943: Die 6. Armee wurde bei Stalingrad eingekesselt und kapitulierte. Im selben Zeitraum wendete sich die Schlacht im Atlantik zugunsten der Alliierten.",
+  "folgen": "Nach diesen Monaten führten die Achsenmächte überall einen Verteidigungskrieg. Entscheidend war weniger die einzelne Schlacht als das Zusammentreffen: Die Produktionskapazität der USA und der Sowjetunion begann zu wirken, während die deutschen und japanischen Verluste nicht mehr ersetzt werden konnten.",
+  "strittig": "Welche Schlacht die eigentliche Wende brachte, ist eine Frage der Perspektive und wurde im Kalten Krieg politisch aufgeladen: Im Westen galt Midway oder El Alamein, im Osten Stalingrad. Die nüchterne Antwort lautet, dass keine für sich genügt hätte.",
+  "zahlen": [
+    {
+      "wert": "Juni 1942",
+      "was": "Midway – Verlust von vier japanischen Flugzeugträgern"
+    },
+    {
+      "wert": "Nov. 1942",
+      "was": "El Alamein"
+    },
+    {
+      "wert": "2. Februar 1943",
+      "was": "Kapitulation der 6. Armee in Stalingrad"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: World War II; Battle of Midway; Battle of El-Alamein; Battle of Stalingrad"
+  ]
+},
+{
+  "id": "kalter-krieg-entsteht",
+  "titel": "Wie die Teilung entstand",
+  "epoche": "moderne",
+  "jahr": 1947,
+  "zeitraum": "1945–1955",
+  "region": "Europa und weltweit",
+  "leitsatz": "Die Teilung Europas war nicht geplant – sie entstand aus lauter Schritten, die jede Seite für Verteidigung hielt.",
+  "vorgeschichte": "Der Kalte Krieg begann nach der deutschen Kapitulation 1945, als das unbehagliche Bündnis zwischen den USA und Großbritannien einerseits und der Sowjetunion andererseits auseinanderfiel. Die Sowjetunion errichtete in den Ländern Osteuropas linke Regierungen – entschlossen, sich gegen eine mögliche erneute Bedrohung durch Deutschland abzusichern.",
+  "verlauf": "1947 kündigte Präsident Truman an, die USA würden antikommunistische Kräfte weltweit unterstützen – die Truman-Doktrin. Im selben Jahr startete das Europäische Wiederaufbauprogramm, der Marshallplan, der die zerstörten Volkswirtschaften wiederbeleben und damit kommunistischen Einfluss zurückdrängen sollte; Truman unterzeichnete es am 3. April 1948. Als die drei Westmächte 1948 ihre Zonen zusammenlegten, sperrte die Sowjetunion die Land- und Bahnwege nach Berlin, das vollständig im sowjetischen Teil lag. Die USA und Großbritannien versorgten die Stadt aus der Luft; am 12. Mai 1949 wurde die Blockade aufgehoben. 1949 gründeten die USA und ihre europäischen Verbündeten die NATO, 1955 folgte der Warschauer Pakt.",
+  "folgen": "Aus einer Reihe von Reaktionen wurde eine Ordnung, die vierzig Jahre hielt. Jeder Schritt der einen Seite bestätigte der anderen ihre Befürchtung – ein Muster, das die Politikwissenschaft später als Sicherheitsdilemma beschrieb.",
+  "strittig": "Wer den Kalten Krieg begann, war jahrzehntelang selbst ein Politikum. Die orthodoxe Deutung sah die sowjetische Expansion als Ursache, die revisionistische die amerikanische Wirtschafts- und Atompolitik. Heute überwiegt die Sicht, dass beide Seiten in einer Lage handelten, in der defensive Schritte offensiv wirkten.",
+  "zahlen": [
+    {
+      "wert": "1947",
+      "was": "Truman-Doktrin und Marshallplan"
+    },
+    {
+      "wert": "12. Mai 1949",
+      "was": "Ende der Berliner Blockade"
+    },
+    {
+      "wert": "1949 / 1955",
+      "was": "Gründung von NATO und Warschauer Pakt"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cold War; Truman Doctrine; Marshall Plan; Berlin blockade; NATO"
+  ]
+},
+{
+  "id": "ende-kalter-krieg",
+  "titel": "Das Ende des Kalten Krieges",
+  "epoche": "moderne",
+  "jahr": 1991,
+  "zeitraum": "1985–1991",
+  "region": "Sowjetunion und Osteuropa",
+  "leitsatz": "Ein Weltkonflikt endete ohne Krieg – und fast niemand hatte es kommen sehen.",
+  "vorgeschichte": "Die sowjetische Wirtschaft stagnierte, der Krieg in Afghanistan band Kräfte, und das Wettrüsten verschlang Mittel, die im Inneren fehlten. 1985 übernahm Michail Gorbatschow die Führung.",
+  "verlauf": "Gorbatschow setzte auf Umbau (Perestroika) und Offenheit (Glasnost) und gab die Bereitschaft auf, verbündete Regime militärisch zu stützen. 1989 fielen die Regierungen in Polen, Ungarn, der DDR, der Tschechoslowakei, Bulgarien und Rumänien – überwiegend ohne Blutvergießen. Die Mauer öffnete sich im November 1989, 1990 wurde Deutschland vereinigt. 1991 löste sich der Warschauer Pakt auf; im Dezember 1991 hörte die Sowjetunion auf zu existieren.",
+  "folgen": "Die bipolare Ordnung endete. Fünfzehn Nachfolgestaaten entstanden, viele mit Grenzen, die als Verwaltungsgrenzen gezogen worden waren und nun Staatsgrenzen wurden. Aus dieser Erbschaft erwuchsen Konflikte, die bis in die Gegenwart reichen.",
+  "strittig": "Warum es unblutig ausging, wird weiter untersucht: entscheidend war wohl Gorbatschows Verzicht auf Gewalt gegenüber den Verbündeten. Ob westlicher Druck, innere Erschöpfung oder Führungsentscheidungen den Ausschlag gaben, ist umstritten – ebenso, welche Zusagen es 1990 zur NATO-Erweiterung gab.",
+  "zahlen": [
+    {
+      "wert": "1985",
+      "was": "Gorbatschow übernimmt die Führung"
+    },
+    {
+      "wert": "1989",
+      "was": "Umbrüche in sechs Staaten Osteuropas"
+    },
+    {
+      "wert": "Dezember 1991",
+      "was": "Auflösung der Sowjetunion"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cold War; Mikhail Gorbachev; perestroika; Soviet Union – Dissolution; Revolutions of 1989"
+  ]
 }
 ];
 
