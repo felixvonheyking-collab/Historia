@@ -30,612 +30,3049 @@ const Check = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__P
 const RotateCcw = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M3.5 9a8.5 8.5 0 1 1 1.8 9.2" }), /* @__PURE__ */ React.createElement("path", { d: "M3.5 4v5h5" }));
 const ArrowLeft = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M19 12H5" }), /* @__PURE__ */ React.createElement("path", { d: "M12 19l-7-7 7-7" }));
 const EPOCHS = [
-  {
-    id: "steinzeit",
-    name: "Steinzeit",
-    span: "ca. 2,6 Mio. \u2013 2200 v. Chr.",
-    startYear: -26e5,
-    endYear: -2200,
-    color: "#8c6a2e",
-    accent: "#d9b56a",
-    lead: "Der lange Anfang: Werkzeuge, Feuer, Sesshaftwerdung.",
-    description: "Die Steinzeit umfasst den bei weitem l\xE4ngsten Abschnitt der Menschheitsgeschichte. Sie beginnt mit den ersten Steinwerkzeugen fr\xFCher Hominiden und endet mit der Erfindung der Metallverarbeitung. Entscheidend war die 'Neolithische Revolution': der \xDCbergang vom J\xE4ger-und-Sammler-Dasein zu Ackerbau und Viehzucht, der feste Siedlungen, Vorratshaltung und erste soziale Hierarchien erm\xF6glichte.",
-    events: [
-      { year: -34e5, title: "\xC4lteste bekannte Steinwerkzeuge", text: "Funde bei Lomekwi (Kenia) gelten als \xE4lteste bekannte Werkzeuge \u2013 \xE4lter als die Gattung Homo selbst." },
-      { year: -26e5, title: "Beginn der Oldowan-Kultur", text: "Homo habilis stellt in Ostafrika systematisch einfache Ger\xF6llger\xE4te zum Schneiden und Zerkleinern her." },
-      { year: -18e5, title: "Homo erectus verl\xE4sst Afrika", text: "Erste Ausbreitung eines Fr\xFChmenschen \xFCber Afrika hinaus nach Asien und sp\xE4ter Europa." },
-      { year: -1e6, title: "Kontrolle des Feuers", text: "Fr\xFChmenschen beginnen, Feuer gezielt zu nutzen und zu erhalten \u2013 ein Wendepunkt f\xFCr Ern\xE4hrung, Schutz und Sozialleben." },
-      { year: -4e5, title: "Speerbau in Sch\xF6ningen", text: "In Niedersachsen gefundene Holzspeere belegen ausgefeilte Jagdtechnik fr\xFCher Menschenformen." },
-      { year: -3e5, title: "Homo sapiens entsteht", text: "Der anatomisch moderne Mensch entwickelt sich in Afrika; Funde in Jebel Irhoud (Marokko) st\xFCtzen diese Datierung." },
-      { year: -2e5, title: "Erste Bekleidung aus Fellen", text: "Genetische Studien zur Kleiderlaus deuten darauf, dass Menschen um diese Zeit begannen, Kleidung zu tragen." },
-      { year: -1e5, title: "Neandertaler und Homo sapiens koexistieren", text: "Beide Menschenformen leben zeitweise nebeneinander in Eurasien und vermischen sich genetisch nachweisbar." },
-      { year: -7e4, title: "Auszug aus Afrika", text: "Homo sapiens breitet sich in mehreren Wellen \xFCber Arabien nach Asien, Europa und sp\xE4ter Australien aus." },
-      { year: -5e4, title: "Besiedlung Australiens", text: "Menschen erreichen \xFCber Wasserwege den australischen Kontinent \u2013 fr\xFCheste bekannte Seefahrt der Menschheit." },
-      { year: -4e4, title: "H\xF6hlenmalerei und Kunst", text: "In H\xF6hlen wie Chauvet und sp\xE4ter Lascaux entstehen kunstvolle Tiermalereien \u2013 fr\xFCher Beleg symbolischen Denkens." },
-      { year: -35e3, title: "Venus vom Hohle Fels", text: "Eine der \xE4ltesten bekannten fig\xFCrlichen Kunstwerke der Menschheit entsteht in der Schw\xE4bischen Alb." },
-      { year: -3e4, title: "Aussterben der Neandertaler", text: "Die letzten Neandertaler-Populationen in Europa verschwinden \u2013 Ursachen (Klima, Konkurrenz) werden weiter erforscht." },
-      { year: -2e4, title: "H\xF6hepunkt der letzten Eiszeit", text: "Riesige Eisschilde bedecken Nordeuropa und Nordamerika; der Meeresspiegel liegt rund 120 Meter tiefer als heute." },
-      { year: -14e3, title: "Besiedlung Amerikas", text: "\xDCber die Beringlandbr\xFCcke gelangen Menschen von Asien nach Amerika und breiten sich rasch \xFCber den Kontinent aus." },
-      { year: -12e3, title: "Ende der letzten Eiszeit", text: "Das Klima erw\xE4rmt sich, Gletscher ziehen sich zur\xFCck, neue Lebensr\xE4ume entstehen \u2013 Grundlage f\xFCr die folgende Sesshaftwerdung." },
-      { year: -1e4, title: "Neolithische Revolution beginnt", text: "Im 'Fruchtbaren Halbmond' (Nahost) beginnen Menschen erstmals gezielt Pflanzen anzubauen und Tiere zu domestizieren." },
-      { year: -9500, title: "G\xF6bekli Tepe", text: "In Anatolien entsteht die vermutlich \xE4lteste monumentale Kultst\xE4tte der Welt \u2013 errichtet von J\xE4gern und Sammlern, nicht von Bauern." },
-      { year: -8e3, title: "Domestikation von Schaf und Ziege", text: "Im Nahen Osten werden erstmals Nutztiere planm\xE4\xDFig gehalten und gez\xFCchtet." },
-      { year: -7e3, title: "Erste St\xE4dte: \xC7atalh\xF6y\xFCk", text: "Eine der fr\xFChesten gro\xDFen Siedlungen entsteht in Anatolien mit dicht gedr\xE4ngten Lehmh\xE4usern ohne Stra\xDFen." },
-      { year: -6500, title: "Verbreitung der T\xF6pferei im Nahen Osten", text: "Keramikgef\xE4\xDFe verbreiten sich in der Region und revolutionieren Vorratshaltung und Kochen; deutlich \xE4ltere T\xF6pferfunde in Ostasien (u.a. China, Japan) zeigen, dass diese Technik andernorts bereits Jahrtausende fr\xFCher entstand." },
-      { year: -5e3, title: "Kupferverarbeitung beginnt", text: "Erste Kupferwerkzeuge markieren den flie\xDFenden \xDCbergang zur Kupfer- bzw. Bronzezeit." },
-      { year: -2200, title: "Domestikation des modernen Hauspferdes", text: "Genetische Studien (2021) verorten den Ursprung der modernen Hauspferde-Linie in der Wolga-Don-Steppe; die \xE4ltere Annahme einer Domestikation bei der Botai-Kultur (ca. 3500 v. Chr.) betraf laut neueren Erkenntnissen einen anderen, nicht direkt verwandten Wildpferd-Zweig." },
-      { year: -3500, title: "Erfindung des Rades", text: "In Mesopotamien entstehen die ersten R\xE4der \u2013 zun\xE4chst f\xFCr T\xF6pferscheiben, bald darauf f\xFCr Transportwagen." }
-    ],
-    figures: [
-      { name: "Lucy (Australopithecus afarensis)", years: "vor ca. 3,2 Mio. Jahren", text: "Ber\xFChmtes Fossil eines Vormenschen aus \xC4thiopien, zeigt fr\xFChen aufrechten Gang \u2013 Meilenstein der Pal\xE4oanthropologie." },
-      { name: "\xD6tzi (der Mann aus dem Eis)", years: "ca. 3300 v. Chr.", text: "Gut erhaltene Gletschermumie aus den \xD6tztaler Alpen, liefert einzigartige Einblicke in Ausr\xFCstung, Ern\xE4hrung und Gesundheit der Kupfersteinzeit." },
-      { name: "Der Neandertaler von La Chapelle", years: "vor ca. 60.000 Jahren", text: "Eines der ersten vollst\xE4ndig geborgenen Neandertaler-Skelette, pr\xE4gte lange (teils falsche) Vorstellungen vom 'H\xF6hlenmenschen'." }
-    ],
-    nations: [
-      { name: "Fruchtbarer Halbmond", text: "Region zwischen Nil, Euphrat und Tigris, in der Ackerbau, Viehzucht und die ersten St\xE4dte entstanden." },
-      { name: "Jericho", text: "Eine der \xE4ltesten durchgehend besiedelten Siedlungen der Welt, bereits vor rund 10.000 Jahren ummauert." },
-      { name: "Cucuteni-Trypillia-Kultur", text: "Gro\xDFe neolithische Siedlungsgemeinschaft in Osteuropa mit teils mehreren tausend Einwohnern pro Ort." }
+ {
+  "id": "steinzeit",
+  "name": "Steinzeit",
+  "span": "ca. 2,6 Mio. – 2200 v. Chr.",
+  "startYear": -2600000,
+  "endYear": -2200,
+  "color": "#8c6a2e",
+  "accent": "#d9b56a",
+  "lead": "Der lange Anfang: Werkzeuge, Feuer, Sesshaftwerdung.",
+  "description": "Die Steinzeit umfasst den bei weitem längsten Abschnitt der Menschheitsgeschichte. Sie beginnt mit den ersten Steinwerkzeugen früher Hominiden und endet mit der Erfindung der Metallverarbeitung. Entscheidend war die 'Neolithische Revolution': der Übergang vom Jäger-und-Sammler-Dasein zu Ackerbau und Viehzucht, der feste Siedlungen, Vorratshaltung und erste soziale Hierarchien ermöglichte.",
+  "events": [
+   {
+    "year": -3400000,
+    "title": "Älteste bekannte Steinwerkzeuge",
+    "text": "Funde bei Lomekwi (Kenia) gelten als älteste bekannte Werkzeuge – älter als die Gattung Homo selbst."
+   },
+   {
+    "year": -2600000,
+    "title": "Beginn der Oldowan-Kultur",
+    "text": "Homo habilis stellt in Ostafrika systematisch einfache Geröllgeräte zum Schneiden und Zerkleinern her."
+   },
+   {
+    "year": -1800000,
+    "title": "Homo erectus verlässt Afrika",
+    "text": "Erste Ausbreitung eines Frühmenschen über Afrika hinaus nach Asien und später Europa."
+   },
+   {
+    "year": -1000000,
+    "title": "Kontrolle des Feuers",
+    "text": "Frühmenschen beginnen, Feuer gezielt zu nutzen und zu erhalten – ein Wendepunkt für Ernährung, Schutz und Sozialleben."
+   },
+   {
+    "year": -400000,
+    "title": "Speerbau in Schöningen",
+    "text": "In Niedersachsen gefundene Holzspeere belegen ausgefeilte Jagdtechnik früher Menschenformen."
+   },
+   {
+    "year": -300000,
+    "title": "Homo sapiens entsteht",
+    "text": "Der anatomisch moderne Mensch entwickelt sich in Afrika; Funde in Jebel Irhoud (Marokko) stützen diese Datierung."
+   },
+   {
+    "year": -200000,
+    "title": "Erste Bekleidung aus Fellen",
+    "text": "Genetische Studien zur Kleiderlaus deuten darauf, dass Menschen um diese Zeit begannen, Kleidung zu tragen."
+   },
+   {
+    "year": -100000,
+    "title": "Neandertaler und Homo sapiens koexistieren",
+    "text": "Beide Menschenformen leben zeitweise nebeneinander in Eurasien und vermischen sich genetisch nachweisbar."
+   },
+   {
+    "year": -70000,
+    "title": "Auszug aus Afrika",
+    "text": "Homo sapiens breitet sich in mehreren Wellen über Arabien nach Asien, Europa und später Australien aus."
+   },
+   {
+    "year": -50000,
+    "title": "Besiedlung Australiens",
+    "text": "Menschen erreichen über Wasserwege den australischen Kontinent – früheste bekannte Seefahrt der Menschheit."
+   },
+   {
+    "year": -45000,
+    "title": "Höhlenmalereien auf Sulawesi",
+    "text": "Auf der indonesischen Insel finden sich Jagddarstellungen, die zu den ältesten bekannten Bildern der Menschheit zählen – älter als die europäischen Höhlenkunstwerke."
+   },
+   {
+    "year": -40000,
+    "title": "Höhlenmalerei und Kunst",
+    "text": "In Höhlen wie Chauvet und später Lascaux entstehen kunstvolle Tiermalereien – früher Beleg symbolischen Denkens."
+   },
+   {
+    "year": -40000,
+    "title": "Älteste Musikinstrumente",
+    "text": "Flöten aus Vogelknochen und Mammutelfenbein von der Schwäbischen Alb belegen, dass Musik so alt ist wie die Kunst."
+   },
+   {
+    "year": -35000,
+    "title": "Venus vom Hohle Fels",
+    "text": "Eine der ältesten bekannten figürlichen Kunstwerke der Menschheit entsteht in der Schwäbischen Alb."
+   },
+   {
+    "year": -30000,
+    "title": "Aussterben der Neandertaler",
+    "text": "Die letzten Neandertaler-Populationen in Europa verschwinden – Ursachen (Klima, Konkurrenz) werden weiter erforscht."
+   },
+   {
+    "year": -20000,
+    "title": "Höhepunkt der letzten Eiszeit",
+    "text": "Riesige Eisschilde bedecken Nordeuropa und Nordamerika; der Meeresspiegel liegt rund 120 Meter tiefer als heute."
+   },
+   {
+    "year": -15000,
+    "title": "Domestizierung des Hundes",
+    "text": "Aus dem Wolf wird der erste Begleiter des Menschen – Tausende Jahre vor jedem Nutztier."
+   },
+   {
+    "year": -14000,
+    "title": "Besiedlung Amerikas",
+    "text": "Über die Beringlandbrücke gelangen Menschen von Asien nach Amerika und breiten sich rasch über den Kontinent aus."
+   },
+   {
+    "year": -12000,
+    "title": "Ende der letzten Eiszeit",
+    "text": "Das Klima erwärmt sich, Gletscher ziehen sich zurück, neue Lebensräume entstehen – Grundlage für die folgende Sesshaftwerdung."
+   },
+   {
+    "year": -10000,
+    "title": "Neolithische Revolution beginnt",
+    "text": "Im 'Fruchtbaren Halbmond' (Nahost) beginnen Menschen erstmals gezielt Pflanzen anzubauen und Tiere zu domestizieren."
+   },
+   {
+    "year": -9600,
+    "title": "Errichtung von Göbekli Tepe",
+    "text": "Jäger und Sammler bauen monumentale Steinkreise. Der Befund kehrt die alte Annahme um, erst der Ackerbau habe Monumentalbauten ermöglicht."
+   },
+   {
+    "year": -9500,
+    "title": "Göbekli Tepe",
+    "text": "In Anatolien entsteht die vermutlich älteste monumentale Kultstätte der Welt – errichtet von Jägern und Sammlern, nicht von Bauern."
+   },
+   {
+    "year": -8000,
+    "title": "Domestikation von Schaf und Ziege",
+    "text": "Im Nahen Osten werden erstmals Nutztiere planmäßig gehalten und gezüchtet."
+   },
+   {
+    "year": -7000,
+    "title": "Erste Städte: Çatalhöyük",
+    "text": "Eine der frühesten großen Siedlungen entsteht in Anatolien mit dicht gedrängten Lehmhäusern ohne Straßen."
+   },
+   {
+    "year": -6500,
+    "title": "Verbreitung der Töpferei im Nahen Osten",
+    "text": "Keramikgefäße verbreiten sich in der Region und revolutionieren Vorratshaltung und Kochen; deutlich ältere Töpferfunde in Ostasien (u.a. China, Japan) zeigen, dass diese Technik andernorts bereits Jahrtausende früher entstand."
+   },
+   {
+    "year": -6500,
+    "title": "Milchverträglichkeit entsteht",
+    "text": "Die Fähigkeit, als Erwachsener Milchzucker zu verdauen, breitet sich aus – eine der schnellsten bekannten Anpassungen des Menschen an eine selbstgeschaffene Lebensweise."
+   },
+   {
+    "year": -5000,
+    "title": "Kupferverarbeitung beginnt",
+    "text": "Erste Kupferwerkzeuge markieren den fließenden Übergang zur Kupfer- bzw. Bronzezeit."
+   },
+   {
+    "year": -3900,
+    "title": "Ausbruch der Kupferzeit in Europa",
+    "text": "In Südosteuropa wird Kupfer verhüttet; die Gräber von Warna enthalten mehr Gold als alle anderen Fundstellen dieser Zeit zusammen."
+   },
+   {
+    "year": -3500,
+    "title": "Erfindung des Rades",
+    "text": "In Mesopotamien entstehen die ersten Räder – zunächst für Töpferscheiben, bald darauf für Transportwagen."
+   },
+   {
+    "year": -2200,
+    "title": "Domestikation des modernen Hauspferdes",
+    "text": "Genetische Studien (2021) verorten den Ursprung der modernen Hauspferde-Linie in der Wolga-Don-Steppe; die ältere Annahme einer Domestikation bei der Botai-Kultur (ca. 3500 v. Chr.) betraf laut neueren Erkenntnissen einen anderen, nicht direkt verwandten Wildpferd-Zweig."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Lucy (Australopithecus afarensis)",
+    "years": "vor ca. 3,2 Mio. Jahren",
+    "text": "Berühmtes Fossil eines Vormenschen aus Äthiopien, zeigt frühen aufrechten Gang – Meilenstein der Paläoanthropologie."
+   },
+   {
+    "name": "Ötzi (der Mann aus dem Eis)",
+    "years": "ca. 3300 v. Chr.",
+    "text": "Gut erhaltene Gletschermumie aus den Ötztaler Alpen, liefert einzigartige Einblicke in Ausrüstung, Ernährung und Gesundheit der Kupfersteinzeit."
+   },
+   {
+    "name": "Der Neandertaler von La Chapelle",
+    "years": "vor ca. 60.000 Jahren",
+    "text": "Eines der ersten vollständig geborgenen Neandertaler-Skelette, prägte lange (teils falsche) Vorstellungen vom 'Höhlenmenschen'."
+   },
+   {
+    "name": "Das Kind von Taung",
+    "years": "entdeckt 1924",
+    "text": "Der Schädel eines Australopithecus-Kindes aus Südafrika. Raymond Darts Deutung, der Mensch stamme aus Afrika, wurde zwei Jahrzehnte lang abgelehnt."
+   },
+   {
+    "name": "Turkana Boy",
+    "years": "ca. 1,6 Mio. Jahre",
+    "text": "Das vollständigste Skelett eines Homo erectus. Der schmale Brustkorb und die langen Beine zeigen einen Körperbau, der auf Ausdauerlauf angelegt war."
+   },
+   {
+    "name": "Der Löwenmensch vom Hohlenstein-Stadel",
+    "years": "ca. 40.000 Jahre",
+    "text": "Eine Elfenbeinfigur mit Menschenkörper und Löwenkopf – die älteste bekannte Darstellung eines Wesens, das es nicht gibt. Der früheste Beleg für Vorstellungskraft."
+   },
+   {
+    "name": "Die Frau von Denisova",
+    "years": "ca. 90.000 Jahre",
+    "text": "Ein Knochensplitter aus einer sibirischen Höhle erwies sich als Kind einer Neandertalerin und eines Denisova-Mannes – der erste bekannte Mensch mit Eltern zweier Menschenformen."
+   },
+   {
+    "name": "Cheddar Man",
+    "years": "ca. 10.000 Jahre",
+    "text": "Das älteste vollständige Skelett Großbritanniens. Die Genanalyse ergab dunkle Haut und helle Augen – ein Befund, der verbreitete Annahmen zur Einwanderungsgeschichte Europas korrigierte."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Fruchtbarer Halbmond",
+    "text": "Region zwischen Nil, Euphrat und Tigris, in der Ackerbau, Viehzucht und die ersten Städte entstanden."
+   },
+   {
+    "name": "Jericho",
+    "text": "Eine der ältesten durchgehend besiedelten Siedlungen der Welt, bereits vor rund 10.000 Jahren ummauert."
+   },
+   {
+    "name": "Cucuteni-Trypillia-Kultur",
+    "text": "Große neolithische Siedlungsgemeinschaft in Osteuropa mit teils mehreren tausend Einwohnern pro Ort."
+   },
+   {
+    "name": "Göbekli Tepe",
+    "text": "Monumentale Steinkreise in Anatolien, errichtet von Jägern und Sammlern rund 6000 Jahre vor Stonehenge – vor dem Ackerbau, nicht danach."
+   },
+   {
+    "name": "Çatalhöyük",
+    "text": "Eine der ältesten Großsiedlungen, betreten über die Dächer, ohne Straßen und ohne erkennbare Paläste oder Tempel."
+   },
+   {
+    "name": "Die Trichterbecherkultur",
+    "text": "Erbauer der Megalithgräber Nordeuropas – Grabanlagen aus Steinen von vielen Tonnen Gewicht, bewegt ohne Metall und ohne Rad."
+   },
+   {
+    "name": "Doggerland",
+    "text": "Ein bewohntes Land zwischen England und dem Festland, das mit dem Anstieg des Meeresspiegels versank. Fischer bergen dort bis heute Werkzeuge vom Meeresgrund."
+   }
+  ]
+ },
+ {
+  "id": "fruehe-hochkulturen",
+  "name": "Frühe Hochkulturen & Bronzezeit",
+  "span": "ca. 3300 – 800 v. Chr.",
+  "startYear": -3300,
+  "endYear": -800,
+  "color": "#b8860b",
+  "accent": "#f0c869",
+  "lead": "Schrift, Staat und Stadt: die ersten Hochkulturen entstehen.",
+  "description": "An großen Flüssen – Nil, Euphrat/Tigris, Indus und Gelber Fluss – entwickeln sich die ersten Hochkulturen mit Bewässerungswirtschaft, Arbeitsteilung, Schrift und zentralisierter Herrschaft. Bronze als Werkstoff ermöglicht bessere Werkzeuge und Waffen und treibt Handel über weite Strecken an.",
+  "events": [
+   {
+    "year": -3300,
+    "title": "Beginn der Bronzezeit",
+    "text": "Die Legierung von Kupfer und Zinn zu Bronze verbreitet sich im Nahen Osten und verändert Waffen- und Werkzeugbau."
+   },
+   {
+    "year": -3200,
+    "title": "Erfindung der Schrift",
+    "text": "In Mesopotamien entsteht die Keilschrift, in Ägypten die Hieroglyphenschrift – Grundlage für Verwaltung, Recht und Überlieferung."
+   },
+   {
+    "year": -3200,
+    "title": "Erfindung der Keilschrift",
+    "text": "In Uruk entsteht Schrift – zunächst nicht für Dichtung oder Recht, sondern für Buchhaltung über Getreide und Vieh."
+   },
+   {
+    "year": -3100,
+    "title": "Reichseinigung Ägyptens",
+    "text": "Menes (Narmer) vereinigt Ober- und Unterägypten und begründet die Pharaonenherrschaft."
+   },
+   {
+    "year": -3000,
+    "title": "Bau von Stonehenge beginnt",
+    "text": "In England entsteht über Jahrhunderte die berühmte Steinkreis-Anlage – Zweck bis heute nicht abschließend geklärt."
+   },
+   {
+    "year": -2900,
+    "title": "Frühdynastische Zeit Sumers",
+    "text": "Stadtstaaten wie Uruk, Ur und Lagasch konkurrieren um Vormacht im südlichen Mesopotamien."
+   },
+   {
+    "year": -2600,
+    "title": "Königsgräber von Ur",
+    "text": "Die Bestattungen enthalten Gefolgschaftsopfer: Dutzende Menschen wurden mit dem Herrscher beigesetzt."
+   },
+   {
+    "year": -2560,
+    "title": "Bau der Cheops-Pyramide",
+    "text": "Die größte Pyramide von Gizeh entsteht als Grabmal – Symbol pharaonischer Macht und organisatorischer Leistungsfähigkeit."
+   },
+   {
+    "year": -2500,
+    "title": "Bau der Großen Sphinx von Gizeh",
+    "text": "Das monumentale Löwen-Mensch-Bauwerk entsteht vermutlich unter Pharao Chephren als Wächterfigur der Pyramiden-Nekropole."
+   },
+   {
+    "year": -2334,
+    "title": "Sargon von Akkad gründet ein Weltreich",
+    "text": "Sargon eint erstmals Mesopotamien zu einem der ersten bekannten Großreiche der Geschichte."
+   },
+   {
+    "year": -2200,
+    "title": "Dürreperiode und Reichszusammenbrüche",
+    "text": "Eine mehrhundertjährige Trockenphase fällt mit dem Ende des Akkad-Reiches und des ägyptischen Alten Reiches zusammen."
+   },
+   {
+    "year": -2100,
+    "title": "Codex Ur-Nammu",
+    "text": "Die vermutlich älteste erhaltene Gesetzessammlung der Welt entsteht im sumerischen Ur."
+   },
+   {
+    "year": -1900,
+    "title": "Blütezeit der Indus-Kultur",
+    "text": "Städte wie Mohenjo-Daro und Harappa erreichen bemerkenswerte Stadtplanung mit Kanalisation und einheitlichen Maßen."
+   },
+   {
+    "year": -1792,
+    "title": "Codex Hammurapi",
+    "text": "König Hammurapi von Babylon lässt eine der ältesten überlieferten Rechtssammlungen in Stein meißeln."
+   },
+   {
+    "year": -1750,
+    "title": "Kodex Hammurapi",
+    "text": "Auf einer Stele werden knapp 300 Rechtssätze veröffentlicht – nicht das erste Gesetzeswerk, aber das bekannteste und vollständigste."
+   },
+   {
+    "year": -1700,
+    "title": "Minoische Kultur auf Kreta blüht",
+    "text": "Die minoische Palastkultur entwickelt Schrift (Linear A), Fresken und weitreichenden Seehandel."
+   },
+   {
+    "year": -1650,
+    "title": "Herrschaft der Hyksos in Ägypten",
+    "text": "Fremde Herrscher aus der Levante übernehmen zeitweise Unterägypten – bringen aber auch neue Technik wie den Streitwagen mit."
+   },
+   {
+    "year": -1600,
+    "title": "Beginn der Shang-Dynastie",
+    "text": "In China entsteht mit der Shang-Dynastie eine frühe zentralisierte Herrschaft mit Bronzegusskunst und Orakelknochenschrift."
+   },
+   {
+    "year": -1600,
+    "title": "Hethiterreich in Anatolien",
+    "text": "Die Hethiter entwickeln als eines der ersten Völker die Eisenverarbeitung und werden zur Großmacht Kleinasiens."
+   },
+   {
+    "year": -1600,
+    "title": "Ausbruch von Thera",
+    "text": "Die Explosion der Insel Santorin verwüstet die Ägäis. Der Zusammenhang mit dem Niedergang der minoischen Kultur wird bis heute diskutiert."
+   },
+   {
+    "year": -1550,
+    "title": "Neues Reich Ägyptens beginnt",
+    "text": "Ägypten erlebt seine machtpolitische und kulturelle Blütezeit mit Expansion nach Nubien und in die Levante."
+   },
+   {
+    "year": -1500,
+    "title": "Vedische Kultur in Indien",
+    "text": "Einwandernde indoarische Gruppen prägen mit den Veden die religiöse und soziale Grundlage Indiens."
+   },
+   {
+    "year": -1400,
+    "title": "Bau des Karnak-Tempels",
+    "text": "Über Jahrhunderte erweiterter größter religiöser Tempelkomplex der Antike entsteht bei Theben zu Ehren des Gottes Amun."
+   },
+   {
+    "year": -1350,
+    "title": "Echnatons Reform",
+    "text": "Pharao Echnaton führt kurzzeitig den Monotheismus (Aton-Kult) in Ägypten ein – ein religiöser Sonderweg der Antike."
+   },
+   {
+    "year": -1274,
+    "title": "Schlacht bei Kadesch",
+    "text": "Ägypter unter Ramses II. und Hethiter liefern sich eine der größten Streitwagenschlachten der Geschichte; es folgt der älteste erhaltene Friedensvertrag."
+   },
+   {
+    "year": -1274,
+    "title": "Schlacht von Kadesch",
+    "text": "Ägypter und Hethiter kämpfen unentschieden; sechzehn Jahre später schließen sie den ältesten erhaltenen Friedensvertrag der Geschichte."
+   },
+   {
+    "year": -1200,
+    "title": "Bronzezeitlicher Kollaps",
+    "text": "Mehrere Hochkulturen im östlichen Mittelmeerraum (Hethiter, Mykene) brechen binnen weniger Jahrzehnte zusammen – Ursachen bis heute diskutiert."
+   },
+   {
+    "year": -1200,
+    "title": "Der spätbronzezeitliche Kollaps",
+    "text": "Binnen weniger Jahrzehnte gehen Hethiterreich, mykenische Paläste und viele Handelsstädte unter. Seevölker, Dürre, Erdbeben und Systemabhängigkeiten werden als Ursachen diskutiert."
+   },
+   {
+    "year": -1100,
+    "title": "Ausbreitung des phönizischen Alphabets",
+    "text": "Die Phönizier verbreiten über den Seehandel ein Konsonantenalphabet, das Grundlage vieler späterer Schriften wird."
+   },
+   {
+    "year": -1046,
+    "title": "Zhou-Dynastie in China",
+    "text": "Die Zhou lösen die Shang ab und prägen das Konzept des 'Mandats des Himmels' als Herrschaftslegitimation."
+   },
+   {
+    "year": -1046,
+    "title": "Zhou stürzen die Shang",
+    "text": "Mit dem Dynastiewechsel wird das Himmelsmandat begründet: Herrschaft ist an sittliche Bewährung gebunden und kann entzogen werden."
+   },
+   {
+    "year": -1000,
+    "title": "Königreich Israel und Juda",
+    "text": "Nach biblischer Überlieferung entsteht unter David und Salomo ein vereintes israelitisches Königreich."
+   },
+   {
+    "year": -900,
+    "title": "Aufstieg des Neuassyrischen Reiches",
+    "text": "Assyrien baut durch effiziente Militärorganisation und Verwaltung ein Großreich im Nahen Osten auf."
+   },
+   {
+    "year": -814,
+    "title": "Gründung Karthagos",
+    "text": "Phönizische Siedler gründen Karthago in Nordafrika, das später zur Großmacht im westlichen Mittelmeer wird."
+   },
+   {
+    "year": -800,
+    "title": "Ausbreitung des Alphabets",
+    "text": "Die Griechen übernehmen die phönizische Zeichenschrift und fügen Vokale hinzu – die erste Schrift, die jeder Sprachlaut abbildet."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Sargon von Akkad",
+    "years": "ca. 2334–2279 v. Chr.",
+    "text": "Begründer eines der ersten bekannten Großreiche der Geschichte, gilt als Archetyp des 'Weltherrschers'."
+   },
+   {
+    "name": "Hammurapi",
+    "years": "reg. ca. 1792–1750 v. Chr.",
+    "text": "Babylonischer König, bekannt für seinen Gesetzeskodex nach dem Prinzip 'Auge um Auge'."
+   },
+   {
+    "name": "Hatschepsut",
+    "years": "ca. 1507–1458 v. Chr.",
+    "text": "Eine der wenigen weiblichen Pharaonen Ägyptens, initiierte umfangreiche Handelsexpeditionen und Bauprojekte."
+   },
+   {
+    "name": "Echnaton",
+    "years": "ca. 1351–1334 v. Chr.",
+    "text": "Ägyptischer Pharao, versuchte eine monotheistische Reform durchzusetzen; nach seinem Tod rückgängig gemacht."
+   },
+   {
+    "name": "Nofretete",
+    "years": "ca. 1370–1330 v. Chr.",
+    "text": "Große königliche Gemahlin Echnatons, berühmt durch ihre ikonische Büste – Symbol altägyptischer Schönheitsideale."
+   },
+   {
+    "name": "Ramses II.",
+    "years": "ca. 1303–1213 v. Chr.",
+    "text": "Einer der mächtigsten Pharaonen, bekannt für Bauprojekte (Abu Simbel) und den Frieden von Kadesch mit den Hethitern."
+   },
+   {
+    "name": "Tutanchamun",
+    "years": "ca. 1341–1323 v. Chr.",
+    "text": "Jung verstorbener Pharao, weltberühmt durch die 1922 nahezu unversehrt entdeckte Grabkammer."
+   },
+   {
+    "name": "Enheduanna",
+    "years": "ca. 2285–2250 v. Chr.",
+    "text": "Hohepriesterin in Ur und Tochter Sargons – die erste namentlich bekannte Autorin der Weltliteratur, deren Hymnen überliefert sind."
+   },
+   {
+    "name": "Gilgamesch",
+    "years": "ca. 2700 v. Chr. (Legende)",
+    "text": "Vermutlich ein historischer König von Uruk, um den sich das älteste erhaltene Großepos der Menschheit rankt."
+   },
+   {
+    "name": "Cheops",
+    "years": "reg. ca. 2620–2580 v. Chr.",
+    "text": "Bauherr der Großen Pyramide von Gizeh. Die Arbeiter waren, anders als lange angenommen, keine Sklaven, sondern versorgte Fachkräfte und Fronarbeiter."
+   },
+   {
+    "name": "Naram-Sin",
+    "years": "reg. ca. 2254–2218 v. Chr.",
+    "text": "Enkel Sargons und erster Herrscher Mesopotamiens, der sich selbst zum Gott erklärte."
+   },
+   {
+    "name": "Suppiluliuma I.",
+    "years": "reg. ca. 1350–1322 v. Chr.",
+    "text": "Baute das Hethiterreich zur Großmacht aus. Eine ägyptische Königinwitwe bat ihn um einen Sohn als Gemahl – der Prinz wurde auf dem Weg ermordet."
+   },
+   {
+    "name": "Assurbanipal",
+    "years": "reg. 668–627 v. Chr.",
+    "text": "Assyrischer König, der in Ninive eine systematische Bibliothek anlegte. Ihr verdanken wir das Gilgamesch-Epos."
+   },
+   {
+    "name": "Nebukadnezar II.",
+    "years": "reg. 605–562 v. Chr.",
+    "text": "Babylonischer König, unter dem Jerusalem zerstört und die judäische Oberschicht deportiert wurde – das Babylonische Exil."
+   },
+   {
+    "name": "Zarathustra",
+    "years": "Datierung umstritten, ca. 1200–600 v. Chr.",
+    "text": "Stifter einer der ältesten Offenbarungsreligionen, in der Welt und Geschichte als Kampf zwischen Wahrheit und Lüge gedeutet werden."
+   },
+   {
+    "name": "Wu Ding",
+    "years": "reg. ca. 1250–1192 v. Chr.",
+    "text": "Shang-König, aus dessen Zeit Zehntausende Orakelknochen stammen – die ältesten Zeugnisse der chinesischen Schrift."
+   },
+   {
+    "name": "Fu Hao",
+    "years": "gest. ca. 1200 v. Chr.",
+    "text": "Gemahlin Wu Dings, Priesterin und Heerführerin. Ihr ungeplündertes Grab enthielt Waffen, Bronzen und die Bestattungen von Gefolgsleuten."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Altägypten",
+    "text": "Hochkultur am Nil mit über 3000 Jahren Kontinuität, Pharaonentum und monumentaler Architektur."
+   },
+   {
+    "name": "Mesopotamien (Sumer, Babylon, Assyrien)",
+    "text": "Stadtstaaten und Reiche zwischen Euphrat und Tigris, Wiege von Schrift, Recht und Astronomie."
+   },
+   {
+    "name": "Indus-Kultur",
+    "text": "Hochentwickelte Städte wie Mohenjo-Daro mit erstaunlich fortschrittlicher Stadtplanung und Wasserversorgung."
+   },
+   {
+    "name": "Hethiterreich",
+    "text": "Anatolische Großmacht, Rivale Ägyptens, Pionier der Eisenverarbeitung."
+   },
+   {
+    "name": "Minoische & Mykenische Kultur",
+    "text": "Frühe griechische Hochkulturen auf Kreta und dem Peloponnes, Vorläufer der klassischen griechischen Welt."
+   },
+   {
+    "name": "Shang- und Zhou-China",
+    "text": "Frühe chinesische Dynastien mit Bronzegusskunst, Orakelknochenschrift und dem Konzept des 'Mandats des Himmels'."
+   },
+   {
+    "name": "Reich von Elam",
+    "text": "Im heutigen Iran, jahrtausendelang Rivale Mesopotamiens, mit eigener, bis heute nur teilweise entzifferter Schrift."
+   },
+   {
+    "name": "Nubien und Kusch",
+    "text": "Südlich Ägyptens gelegen, zeitweise dessen Beherrscher: Die kuschitischen Könige stellten die 25. Dynastie Ägyptens."
+   },
+   {
+    "name": "Die Phönizier",
+    "text": "Händler und Seefahrer der Levante, deren Alphabet über die Griechen zur Grundlage nahezu aller europäischen Schriften wurde."
+   },
+   {
+    "name": "Königreich Israel und Juda",
+    "text": "Kleine Reiche zwischen den Großmächten, deren Schriften über Judentum, Christentum und Islam bis heute wirken."
+   },
+   {
+    "name": "Die Olmeken",
+    "text": "Älteste bekannte Hochkultur Mesoamerikas, berühmt für kolossale Steinköpfe, deren Basalt über hundert Kilometer weit transportiert wurde."
+   }
+  ]
+ },
+ {
+  "id": "antike",
+  "name": "Antike",
+  "span": "ca. 800 v. Chr. – 500 n. Chr.",
+  "startYear": -800,
+  "endYear": 500,
+  "color": "#9c1c1c",
+  "accent": "#e2a45c",
+  "lead": "Griechenland, Rom und die Grundlagen der westlichen Kultur.",
+  "description": "Die Antike prägt Philosophie, Demokratie, Recht und Architektur bis heute. Griechische Stadtstaaten entwickeln Demokratie und Wissenschaft, Alexander der Große verbreitet hellenistische Kultur bis nach Asien, und Rom baut ein Weltreich, das schließlich in West- und Ostrom zerfällt.",
+  "events": [
+   {
+    "year": -776,
+    "title": "Erste Olympische Spiele",
+    "text": "In Olympia finden die ersten überlieferten panhellenischen Spiele statt – religiöses und sportliches Großereignis."
+   },
+   {
+    "year": -753,
+    "title": "Gründung Roms (Legende)",
+    "text": "Der Überlieferung nach gründet Romulus die Stadt Rom am Tiber."
+   },
+   {
+    "year": -594,
+    "title": "Solonische Reformen in Athen",
+    "text": "Solon entschärft soziale Spannungen und legt Grundsteine für spätere demokratische Entwicklungen."
+   },
+   {
+    "year": -563,
+    "title": "Geburt Buddhas",
+    "text": "Siddhartha Gautama wird in Nordindien geboren; seine Lehren begründen den Buddhismus."
+   },
+   {
+    "year": -551,
+    "title": "Geburt des Konfuzius",
+    "text": "Der chinesische Philosoph prägt mit seiner Ethik- und Staatslehre die ostasiatische Kultur bis heute."
+   },
+   {
+    "year": -509,
+    "title": "Gründung der Römischen Republik",
+    "text": "Rom vertreibt seinen letzten König und wird zur aristokratischen Republik mit gewählten Konsuln."
+   },
+   {
+    "year": -508,
+    "title": "Demokratie in Athen",
+    "text": "Kleisthenes reformiert die athenische Verfassung und legt den Grundstein für die erste Demokratie der Geschichte."
+   },
+   {
+    "year": -490,
+    "title": "Schlacht bei Marathon",
+    "text": "Athen wehrt einen persischen Invasionsversuch ab – prägendes Ereignis des griechischen Selbstverständnisses."
+   },
+   {
+    "year": -490,
+    "title": "Marathon",
+    "text": "Athen schlägt ein persisches Landungsheer. Die Geschichte vom Läufer, der die Nachricht überbrachte und starb, entstand erst Jahrhunderte später."
+   },
+   {
+    "year": -480,
+    "title": "Schlachten bei Thermopylae und Salamis",
+    "text": "Griechische Stadtstaaten stoppen die zweite persische Invasion zu Land und zur See."
+   },
+   {
+    "year": -431,
+    "title": "Peloponnesischer Krieg beginnt",
+    "text": "Athen und Sparta führen einen jahrzehntelangen Krieg, der Griechenland nachhaltig schwächt."
+   },
+   {
+    "year": -399,
+    "title": "Tod des Sokrates",
+    "text": "Der athenische Philosoph wird wegen 'Gottlosigkeit' zum Tode verurteilt und trinkt den Schierlingsbecher."
+   },
+   {
+    "year": -399,
+    "title": "Prozess gegen Sokrates",
+    "text": "Athen verurteilt einen Bürger zum Tode wegen seiner Fragen – der Gründungskonflikt zwischen Philosophie und Gemeinwesen."
+   },
+   {
+    "year": -336,
+    "title": "Alexander der Große wird König",
+    "text": "Alexander besteigt den makedonischen Thron und erobert binnen weniger Jahre ein Reich bis nach Indien."
+   },
+   {
+    "year": -323,
+    "title": "Tod Alexanders und Reichsteilung",
+    "text": "Nach Alexanders Tod zerfällt sein Reich unter seinen Nachfolgern (Diadochen) in mehrere hellenistische Königreiche."
+   },
+   {
+    "year": -264,
+    "title": "Beginn der Punischen Kriege",
+    "text": "Rom und Karthago liefern sich über ein Jahrhundert Kriege um die Vorherrschaft im westlichen Mittelmeer."
+   },
+   {
+    "year": -221,
+    "title": "Einigung Chinas unter Qin",
+    "text": "Nach 250 Jahren Krieg entsteht ein Zentralstaat mit einheitlicher Schrift, Währung und Achsbreite für Wagen."
+   },
+   {
+    "year": -218,
+    "title": "Hannibal überquert die Alpen",
+    "text": "Der karthagische Feldherr fällt mit Kriegselefanten in Italien ein und bedroht Rom existenziell."
+   },
+   {
+    "year": -146,
+    "title": "Zerstörung Karthagos",
+    "text": "Rom zerstört Karthago vollständig und wird zur unangefochtenen Macht im westlichen Mittelmeerraum."
+   },
+   {
+    "year": -73,
+    "title": "Spartacus-Aufstand",
+    "text": "Ein Sklavenaufstand unter dem Gladiator Spartacus erschüttert für zwei Jahre die römische Ordnung."
+   },
+   {
+    "year": -58,
+    "title": "Caesars Gallischer Krieg",
+    "text": "Julius Caesar erobert Gallien und legt damit den Grundstein für sein politisches Machtwachstum."
+   },
+   {
+    "year": -44,
+    "title": "Ermordung Caesars",
+    "text": "Julius Caesar wird an den Iden des März von Senatoren ermordet – Auslöser des endgültigen Untergangs der Republik."
+   },
+   {
+    "year": -31,
+    "title": "Schlacht bei Actium",
+    "text": "Octavian besiegt Marcus Antonius und Kleopatra – Ägypten wird römische Provinz."
+   },
+   {
+    "year": -31,
+    "title": "Actium",
+    "text": "Octavians Sieg über Antonius und Kleopatra beendet die römischen Bürgerkriege und leitet die Kaiserzeit ein."
+   },
+   {
+    "year": -27,
+    "title": "Beginn des Prinzipats",
+    "text": "Octavian (Augustus) wird erster römischer Kaiser und beendet die Bürgerkriege der späten Republik."
+   },
+   {
+    "year": 9,
+    "title": "Varusschlacht",
+    "text": "Germanische Stämme unter Arminius vernichten drei römische Legionen im Teutoburger Wald – stoppt römische Expansion nach Germanien."
+   },
+   {
+    "year": 33,
+    "title": "Kreuzigung Jesu von Nazareth",
+    "text": "Ausgangspunkt des Christentums, das sich in den folgenden Jahrhunderten im Römischen Reich ausbreitet."
+   },
+   {
+    "year": 70,
+    "title": "Zerstörung des Zweiten Tempels",
+    "text": "Rom zerschlägt einen jüdischen Aufstand und zerstört den Tempel in Jerusalem – prägend für die jüdische Diaspora."
+   },
+   {
+    "year": 79,
+    "title": "Ausbruch des Vesuv",
+    "text": "Pompeji und Herculaneum werden unter Asche begraben – einzigartig konservierter Einblick in römisches Alltagsleben."
+   },
+   {
+    "year": 117,
+    "title": "Größte Ausdehnung des Römischen Reiches",
+    "text": "Unter Kaiser Trajan erreicht das Imperium Romanum seine maximale territoriale Ausdehnung."
+   },
+   {
+    "year": 166,
+    "title": "Antoninische Pest",
+    "text": "Eine Seuche, vermutlich Pocken, tötet über Jahre Millionen im Römischen Reich und schwächt Heer und Wirtschaft dauerhaft."
+   },
+   {
+    "year": 220,
+    "title": "Ende der Han-Dynastie",
+    "text": "China zerfällt in die Zeit der Drei Reiche – Beginn einer langen Phase politischer Zersplitterung."
+   },
+   {
+    "year": 285,
+    "title": "Reichsteilung unter Diokletian",
+    "text": "Kaiser Diokletian teilt das Römische Reich verwaltungstechnisch, um es besser regierbar zu machen."
+   },
+   {
+    "year": 312,
+    "title": "Milvische Brücke",
+    "text": "Konstantins Sieg unter christlichem Zeichen leitet den Aufstieg des Christentums zur Reichsreligion ein."
+   },
+   {
+    "year": 313,
+    "title": "Toleranzedikt von Mailand",
+    "text": "Kaiser Konstantin gewährt dem Christentum Religionsfreiheit im Römischen Reich."
+   },
+   {
+    "year": 325,
+    "title": "Konzil von Nicäa",
+    "text": "Das erste ökumenische Konzil formuliert zentrale Glaubensgrundsätze des Christentums (Nizänisches Glaubensbekenntnis)."
+   },
+   {
+    "year": 330,
+    "title": "Gründung Konstantinopels",
+    "text": "Kaiser Konstantin macht die griechische Stadt Byzantion zur neuen Reichshauptstadt – künftiges Zentrum von Byzanz."
+   },
+   {
+    "year": 375,
+    "title": "Beginn der Völkerwanderung",
+    "text": "Der Einfall der Hunnen setzt eine Kettenreaktion germanischer Wanderbewegungen in Gang, die Westrom destabilisiert."
+   },
+   {
+    "year": 395,
+    "title": "Teilung des Römischen Reiches",
+    "text": "Das Reich wird endgültig in West- und Ostrom (Byzanz) geteilt."
+   },
+   {
+    "year": 410,
+    "title": "Plünderung Roms durch die Westgoten",
+    "text": "Erstmals seit 800 Jahren wird Rom von einer fremden Streitmacht eingenommen – Schockwirkung im ganzen Reich."
+   },
+   {
+    "year": 451,
+    "title": "Schlacht auf den Katalaunischen Feldern",
+    "text": "Ein römisch-germanisches Bündnisheer stoppt Attilas Hunnen in Gallien."
+   },
+   {
+    "year": 476,
+    "title": "Untergang Westroms",
+    "text": "Der germanische Heerführer Odoaker setzt den letzten weströmischen Kaiser Romulus Augustulus ab."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Konfuzius",
+    "years": "551–479 v. Chr.",
+    "text": "Chinesischer Philosoph, dessen Ethik- und Staatslehre die ostasiatische Kultur bis heute prägt."
+   },
+   {
+    "name": "Buddha (Siddhartha Gautama)",
+    "years": "ca. 563–483 v. Chr.",
+    "text": "Begründer des Buddhismus, lehrte den 'Mittleren Weg' zur Überwindung des Leidens."
+   },
+   {
+    "name": "Sokrates",
+    "years": "469–399 v. Chr.",
+    "text": "Athenischer Philosoph, Begründer der westlichen Ethik durch das dialogische Hinterfragen vermeintlicher Gewissheiten."
+   },
+   {
+    "name": "Perikles",
+    "years": "ca. 495–429 v. Chr.",
+    "text": "Athenischer Staatsmann, prägte das 'Goldene Zeitalter' Athens mit Demokratieausbau und der Errichtung der Akropolis."
+   },
+   {
+    "name": "Platon",
+    "years": "ca. 428–348 v. Chr.",
+    "text": "Schüler des Sokrates, Begründer der Akademie in Athen, prägte mit seiner Ideenlehre die abendländische Philosophie."
+   },
+   {
+    "name": "Aristoteles",
+    "years": "384–322 v. Chr.",
+    "text": "Universalgelehrter, Lehrer Alexanders des Großen, legte Grundlagen für Logik, Naturwissenschaft und Politiktheorie."
+   },
+   {
+    "name": "Alexander der Große",
+    "years": "356–323 v. Chr.",
+    "text": "Makedonischer König, eroberte ein Weltreich von Griechenland bis Indien und verbreitete hellenistische Kultur."
+   },
+   {
+    "name": "Hannibal",
+    "years": "247–183 v. Chr.",
+    "text": "Karthagischer Feldherr, überquerte mit einem Heer die Alpen und brachte Rom im Zweiten Punischen Krieg an den Rand der Niederlage."
+   },
+   {
+    "name": "Julius Caesar",
+    "years": "100–44 v. Chr.",
+    "text": "Römischer Feldherr und Politiker, eroberte Gallien, wurde Alleinherrscher und wurde von Senatoren ermordet."
+   },
+   {
+    "name": "Cicero",
+    "years": "106–43 v. Chr.",
+    "text": "Römischer Redner, Politiker und Philosoph, prägte die lateinische Prosa und republikanisches Denken nachhaltig."
+   },
+   {
+    "name": "Augustus",
+    "years": "63 v. Chr.–14 n. Chr.",
+    "text": "Erster römischer Kaiser, begründete den über 200 Jahre währenden 'Pax Romana'."
+   },
+   {
+    "name": "Kleopatra VII.",
+    "years": "69–30 v. Chr.",
+    "text": "Letzte Pharaonin Ägyptens, bekannt für ihre politischen Bündnisse mit Caesar und Marcus Antonius."
+   },
+   {
+    "name": "Jesus von Nazareth",
+    "years": "ca. 4 v. Chr.–33 n. Chr.",
+    "text": "Jüdischer Wanderprediger, dessen Lehren die Grundlage des Christentums bilden."
+   },
+   {
+    "name": "Konstantin der Große",
+    "years": "ca. 272–337 n. Chr.",
+    "text": "Römischer Kaiser, förderte das Christentum und gründete Konstantinopel als neue Hauptstadt."
+   },
+   {
+    "name": "Attila",
+    "years": "ca. 406–453 n. Chr.",
+    "text": "Herrscher der Hunnen, als 'Geißel Gottes' gefürchtet, brachte weite Teile Europas in Bedrängnis."
+   },
+   {
+    "name": "Augustinus von Hippo",
+    "years": "354–430 n. Chr.",
+    "text": "Kirchenvater und Philosoph, dessen Werke ('Bekenntnisse', 'De civitate Dei') die christliche Theologie prägten."
+   },
+   {
+    "name": "Trajan",
+    "years": "53–117 n. Chr.",
+    "text": "Römischer Kaiser, unter dem das Reich seine größte territoriale Ausdehnung erreichte; gilt als vorbildlicher Verwalter."
+   },
+   {
+    "name": "Hadrian",
+    "years": "76–138 n. Chr.",
+    "text": "Römischer Kaiser, bereiste das gesamte Reich und ließ u.a. den Hadrianswall in Britannien errichten."
+   },
+   {
+    "name": "Marc Aurel",
+    "years": "121–180 n. Chr.",
+    "text": "Kaiser und Stoiker, verfasste die 'Selbstbetrachtungen' – eines der einflussreichsten philosophischen Werke der Antike."
+   },
+   {
+    "name": "Diokletian",
+    "years": "ca. 244–311 n. Chr.",
+    "text": "Reformierte das Römische Reich grundlegend (Tetrarchie, Verwaltungs- und Wirtschaftsreformen) und beendete die Reichskrise des 3. Jahrhunderts."
+   },
+   {
+    "name": "Gaius Marius",
+    "years": "157–86 v. Chr.",
+    "text": "Römischer Feldherr und Politiker, reformierte das Heerwesen grundlegend und öffnete es für besitzlose Bürger."
+   },
+   {
+    "name": "Spartacus",
+    "years": "gest. 71 v. Chr.",
+    "text": "Entlaufener Gladiator, führte den größten Sklavenaufstand der römischen Geschichte an."
+   },
+   {
+    "name": "Imhotep",
+    "years": "ca. 27. Jh. v. Chr.",
+    "text": "Architekt der Stufenpyramide von Sakkara und erster namentlich bekannter Baumeister und Gelehrter der Geschichte, später als Gott verehrt."
+   },
+   {
+    "name": "Sesostris III.",
+    "years": "ca. 1878–1839 v. Chr.",
+    "text": "Bedeutendster Pharao des Mittleren Reiches, expandierte nach Nubien und reformierte die Verwaltung."
+   },
+   {
+    "name": "Thutmosis III.",
+    "years": "ca. 1479–1425 v. Chr.",
+    "text": "'Napoleon Ägyptens', führte zahlreiche erfolgreiche Feldzüge und brachte das Neue Reich zu seiner größten Ausdehnung."
+   },
+   {
+    "name": "Amenhotep III.",
+    "years": "ca. 1388–1351 v. Chr.",
+    "text": "Regierte während einer Blütezeit des Friedens und Wohlstands, errichtete zahlreiche Monumentalbauten."
+   },
+   {
+    "name": "Scipio Africanus",
+    "years": "236–183 v. Chr.",
+    "text": "Römischer Feldherr, besiegte Hannibal bei Zama und beendete damit Karthagos Großmachtstellung."
+   },
+   {
+    "name": "Sulla",
+    "years": "138–78 v. Chr.",
+    "text": "Römischer Feldherr und Diktator, dessen brutale Proskriptionen und Verfassungsreformen die späte Republik destabilisierten."
+   },
+   {
+    "name": "Pompeius",
+    "years": "106–48 v. Chr.",
+    "text": "Römischer Feldherr und Rivale Caesars im Bürgerkrieg, zunächst gefeierter Eroberer des Ostens."
+   },
+   {
+    "name": "Crassus",
+    "years": "ca. 115–53 v. Chr.",
+    "text": "Reichster Mann Roms, Mitglied des Ersten Triumvirats mit Caesar und Pompeius, fiel im Krieg gegen die Parther."
+   },
+   {
+    "name": "Herodot",
+    "years": "ca. 484–425 v. Chr.",
+    "text": "Verfasser der ersten erhaltenen Geschichtsschreibung; er trennte Bericht und Gerücht und nannte seine Quellen – auch wenn er ihnen selbst nicht glaubte."
+   },
+   {
+    "name": "Thukydides",
+    "years": "ca. 460–400 v. Chr.",
+    "text": "Beschrieb den Peloponnesischen Krieg ohne göttliche Ursachen, allein aus Interessen und Furcht – der Beginn nüchterner Geschichtsanalyse."
+   },
+   {
+    "name": "Archimedes",
+    "years": "ca. 287–212 v. Chr.",
+    "text": "Mathematiker und Ingenieur aus Syrakus. Bei der Eroberung der Stadt wurde er von einem römischen Soldaten getötet, während er über eine Zeichnung gebeugt war."
+   },
+   {
+    "name": "Ashoka",
+    "years": "reg. ca. 268–232 v. Chr.",
+    "text": "Maurya-Herrscher, der nach einem verlustreichen Feldzug zum Buddhismus fand und seine Reue in Felsedikten im ganzen Reich veröffentlichen ließ."
+   },
+   {
+    "name": "Qin Shihuangdi",
+    "years": "259–210 v. Chr.",
+    "text": "Erster Kaiser Chinas, der Maße, Gewichte und Schrift vereinheitlichte – und sich mit einer Terrakotta-Armee von Tausenden Figuren bestatten ließ."
+   },
+   {
+    "name": "Sima Qian",
+    "years": "ca. 145–86 v. Chr.",
+    "text": "Chinas erster großer Historiker. Er wählte die Kastration statt des Selbstmords, um sein Geschichtswerk vollenden zu können."
+   },
+   {
+    "name": "Boudicca",
+    "years": "gest. 60/61 n. Chr.",
+    "text": "Königin der Icener, die nach Misshandlung ihrer Familie einen Aufstand führte und drei römische Städte in Britannien zerstörte."
+   },
+   {
+    "name": "Zenobia",
+    "years": "ca. 240–274",
+    "text": "Herrscherin von Palmyra, die Ägypten und Teile Kleinasiens eroberte, bevor Aurelian sie besiegte und in Rom im Triumphzug führte."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Griechische Stadtstaaten (Poleis)",
+    "text": "Athen, Sparta und weitere Poleis prägten Philosophie, Theater, Demokratie und Kriegskunst."
+   },
+   {
+    "name": "Perserreich (Achämeniden)",
+    "text": "Größtes Reich seiner Zeit, bekannt für Verwaltungseffizienz, Straßenbau und religiöse Toleranz."
+   },
+   {
+    "name": "Karthago",
+    "text": "Phönizische Handelsmacht in Nordafrika, unterlag Rom nach drei Punischen Kriegen und wurde vollständig zerstört."
+   },
+   {
+    "name": "Römisches Reich",
+    "text": "Von einer Stadtstaat-Republik zum Weltreich mit Recht, Infrastruktur und Militärmacht, das Europa bis heute prägt."
+   },
+   {
+    "name": "Han-Dynastie (China)",
+    "text": "Chinesisches Kaiserreich zeitgleich zu Rom, förderte Seidenstraßenhandel, Konfuzianismus und Verwaltung."
+   },
+   {
+    "name": "Maurya-Reich (Indien)",
+    "text": "Erstes großes indisches Großreich, unter Kaiser Ashoka Förderung des Buddhismus und relativ friedlicher Herrschaft."
+   },
+   {
+    "name": "Hunnenreich",
+    "text": "Nomadisches Steppenreich unter Attila, dessen Druck maßgeblich zur Völkerwanderung und zum Fall Westroms beitrug."
+   },
+   {
+    "name": "Etrusker",
+    "text": "Vor Rom die führende Macht Mittelitaliens; ihre Sprache ist bis heute nur teilweise verstanden."
+   },
+   {
+    "name": "Ptolemäisches Ägypten",
+    "text": "Griechisch regiertes Ägypten mit Alexandria als Zentrum der Gelehrsamkeit, gegründet von einem General Alexanders."
+   },
+   {
+    "name": "Partherreich",
+    "text": "Jahrhundertelanger Gegenspieler Roms im Osten; die Niederlage bei Carrhae 53 v. Chr. war eine der schwersten der römischen Geschichte."
+   },
+   {
+    "name": "Kuschana-Reich",
+    "text": "An der Seidenstraße gelegen, verband es Indien, Persien und China und vermittelte den Buddhismus nach Ostasien."
+   },
+   {
+    "name": "Königreich Aksum",
+    "text": "Am Roten Meer gelegene Handelsmacht mit eigener Schrift und Münzprägung; früh christianisiert."
+   },
+   {
+    "name": "Sassanidenreich",
+    "text": "Ab 224 die zweite große persische Großmacht, die Rom und Byzanz über vier Jahrhunderte forderte."
+   }
+  ],
+  "dynastyGroups": [
+   {
+    "title": "Dynastien Altägyptens",
+    "items": [
+     {
+      "name": "Frühdynastische Zeit (ca. 3100–2700 v. Chr.)",
+      "text": "Beginnend mit Menes/Narmer, Vereinigung von Ober- und Unterägypten, erste Hauptstadt Memphis."
+     },
+     {
+      "name": "Altes Reich (ca. 2700–2200 v. Chr.)",
+      "text": "Zeitalter der großen Pyramiden unter Djoser, Snofru, Cheops, Chephren und Mykerinos; straff zentralisierte Gottkönigsherrschaft."
+     },
+     {
+      "name": "Mittleres Reich (ca. 2000–1700 v. Chr.)",
+      "text": "Wiedervereinigung nach einer Zwischenzeit des Zerfalls, Expansion nach Nubien, kulturelle Blüte unter Herrschern wie Sesostris III."
+     },
+     {
+      "name": "Neues Reich (ca. 1550–1070 v. Chr.)",
+      "text": "Machtpolitischer Höhepunkt Ägyptens unter Thutmosis III., Hatschepsut, Echnaton, Tutanchamun und Ramses II.; größte territoriale Ausdehnung bis nach Nubien und in die Levante."
+     },
+     {
+      "name": "Dritte Zwischenzeit & Spätzeit (ca. 1070–332 v. Chr.)",
+      "text": "Zunehmende Fremdherrschaften durch Libyer, Kuschiten und Perser schwächen die Zentralmacht der Pharaonen."
+     },
+     {
+      "name": "Ptolemäer-Dynastie (332–30 v. Chr.)",
+      "text": "Nach Alexanders Eroberung griechisch-makedonische Herrscherfamilie mit Zentrum Alexandria; endet mit Kleopatra VII. und der römischen Annexion."
+     }
     ]
-  },
-  {
-    id: "fruehe-hochkulturen",
-    name: "Fr\xFChe Hochkulturen & Bronzezeit",
-    span: "ca. 3300 \u2013 800 v. Chr.",
-    startYear: -3300,
-    endYear: -800,
-    color: "#b8860b",
-    accent: "#f0c869",
-    lead: "Schrift, Staat und Stadt: die ersten Hochkulturen entstehen.",
-    description: "An gro\xDFen Fl\xFCssen \u2013 Nil, Euphrat/Tigris, Indus und Gelber Fluss \u2013 entwickeln sich die ersten Hochkulturen mit Bew\xE4sserungswirtschaft, Arbeitsteilung, Schrift und zentralisierter Herrschaft. Bronze als Werkstoff erm\xF6glicht bessere Werkzeuge und Waffen und treibt Handel \xFCber weite Strecken an.",
-    events: [
-      { year: -3300, title: "Beginn der Bronzezeit", text: "Die Legierung von Kupfer und Zinn zu Bronze verbreitet sich im Nahen Osten und ver\xE4ndert Waffen- und Werkzeugbau." },
-      { year: -3200, title: "Erfindung der Schrift", text: "In Mesopotamien entsteht die Keilschrift, in \xC4gypten die Hieroglyphenschrift \u2013 Grundlage f\xFCr Verwaltung, Recht und \xDCberlieferung." },
-      { year: -3100, title: "Reichseinigung \xC4gyptens", text: "Menes (Narmer) vereinigt Ober- und Unter\xE4gypten und begr\xFCndet die Pharaonenherrschaft." },
-      { year: -3e3, title: "Bau von Stonehenge beginnt", text: "In England entsteht \xFCber Jahrhunderte die ber\xFChmte Steinkreis-Anlage \u2013 Zweck bis heute nicht abschlie\xDFend gekl\xE4rt." },
-      { year: -2900, title: "Fr\xFChdynastische Zeit Sumers", text: "Stadtstaaten wie Uruk, Ur und Lagasch konkurrieren um Vormacht im s\xFCdlichen Mesopotamien." },
-      { year: -2560, title: "Bau der Cheops-Pyramide", text: "Die gr\xF6\xDFte Pyramide von Gizeh entsteht als Grabmal \u2013 Symbol pharaonischer Macht und organisatorischer Leistungsf\xE4higkeit." },
-      { year: -2334, title: "Sargon von Akkad gr\xFCndet ein Weltreich", text: "Sargon eint erstmals Mesopotamien zu einem der ersten bekannten Gro\xDFreiche der Geschichte." },
-      { year: -2100, title: "Codex Ur-Nammu", text: "Die vermutlich \xE4lteste erhaltene Gesetzessammlung der Welt entsteht im sumerischen Ur." },
-      { year: -1900, title: "Bl\xFCtezeit der Indus-Kultur", text: "St\xE4dte wie Mohenjo-Daro und Harappa erreichen bemerkenswerte Stadtplanung mit Kanalisation und einheitlichen Ma\xDFen." },
-      { year: -1792, title: "Codex Hammurapi", text: "K\xF6nig Hammurapi von Babylon l\xE4sst eine der \xE4ltesten \xFCberlieferten Rechtssammlungen in Stein mei\xDFeln." },
-      { year: -1700, title: "Minoische Kultur auf Kreta bl\xFCht", text: "Die minoische Palastkultur entwickelt Schrift (Linear A), Fresken und weitreichenden Seehandel." },
-      { year: -1600, title: "Beginn der Shang-Dynastie", text: "In China entsteht mit der Shang-Dynastie eine fr\xFChe zentralisierte Herrschaft mit Bronzegusskunst und Orakelknochenschrift." },
-      { year: -1600, title: "Hethiterreich in Anatolien", text: "Die Hethiter entwickeln als eines der ersten V\xF6lker die Eisenverarbeitung und werden zur Gro\xDFmacht Kleinasiens." },
-      { year: -1550, title: "Neues Reich \xC4gyptens beginnt", text: "\xC4gypten erlebt seine machtpolitische und kulturelle Bl\xFCtezeit mit Expansion nach Nubien und in die Levante." },
-      { year: -1500, title: "Vedische Kultur in Indien", text: "Einwandernde indoarische Gruppen pr\xE4gen mit den Veden die religi\xF6se und soziale Grundlage Indiens." },
-      { year: -1350, title: "Echnatons Reform", text: "Pharao Echnaton f\xFChrt kurzzeitig den Monotheismus (Aton-Kult) in \xC4gypten ein \u2013 ein religi\xF6ser Sonderweg der Antike." },
-      { year: -1274, title: "Schlacht bei Kadesch", text: "\xC4gypter unter Ramses II. und Hethiter liefern sich eine der gr\xF6\xDFten Streitwagenschlachten der Geschichte; es folgt der \xE4lteste erhaltene Friedensvertrag." },
-      { year: -1200, title: "Bronzezeitlicher Kollaps", text: "Mehrere Hochkulturen im \xF6stlichen Mittelmeerraum (Hethiter, Mykene) brechen binnen weniger Jahrzehnte zusammen \u2013 Ursachen bis heute diskutiert." },
-      { year: -1100, title: "Ausbreitung des ph\xF6nizischen Alphabets", text: "Die Ph\xF6nizier verbreiten \xFCber den Seehandel ein Konsonantenalphabet, das Grundlage vieler sp\xE4terer Schriften wird." },
-      { year: -1046, title: "Zhou-Dynastie in China", text: "Die Zhou l\xF6sen die Shang ab und pr\xE4gen das Konzept des 'Mandats des Himmels' als Herrschaftslegitimation." },
-      { year: -1e3, title: "K\xF6nigreich Israel und Juda", text: "Nach biblischer \xDCberlieferung entsteht unter David und Salomo ein vereintes israelitisches K\xF6nigreich." },
-      { year: -900, title: "Aufstieg des Neuassyrischen Reiches", text: "Assyrien baut durch effiziente Milit\xE4rorganisation und Verwaltung ein Gro\xDFreich im Nahen Osten auf." },
-      { year: -2500, title: "Bau der Gro\xDFen Sphinx von Gizeh", text: "Das monumentale L\xF6wen-Mensch-Bauwerk entsteht vermutlich unter Pharao Chephren als W\xE4chterfigur der Pyramiden-Nekropole." },
-      { year: -1650, title: "Herrschaft der Hyksos in \xC4gypten", text: "Fremde Herrscher aus der Levante \xFCbernehmen zeitweise Unter\xE4gypten \u2013 bringen aber auch neue Technik wie den Streitwagen mit." },
-      { year: -1400, title: "Bau des Karnak-Tempels", text: "\xDCber Jahrhunderte erweiterter gr\xF6\xDFter religi\xF6ser Tempelkomplex der Antike entsteht bei Theben zu Ehren des Gottes Amun." },
-      { year: -814, title: "Gr\xFCndung Karthagos", text: "Ph\xF6nizische Siedler gr\xFCnden Karthago in Nordafrika, das sp\xE4ter zur Gro\xDFmacht im westlichen Mittelmeer wird." }
-    ],
-    figures: [
-      { name: "Sargon von Akkad", years: "ca. 2334\u20132279 v. Chr.", text: "Begr\xFCnder eines der ersten bekannten Gro\xDFreiche der Geschichte, gilt als Archetyp des 'Weltherrschers'." },
-      { name: "Hammurapi", years: "reg. ca. 1792\u20131750 v. Chr.", text: "Babylonischer K\xF6nig, bekannt f\xFCr seinen Gesetzeskodex nach dem Prinzip 'Auge um Auge'." },
-      { name: "Hatschepsut", years: "ca. 1507\u20131458 v. Chr.", text: "Eine der wenigen weiblichen Pharaonen \xC4gyptens, initiierte umfangreiche Handelsexpeditionen und Bauprojekte." },
-      { name: "Echnaton", years: "ca. 1351\u20131334 v. Chr.", text: "\xC4gyptischer Pharao, versuchte eine monotheistische Reform durchzusetzen; nach seinem Tod r\xFCckg\xE4ngig gemacht." },
-      { name: "Nofretete", years: "ca. 1370\u20131330 v. Chr.", text: "Gro\xDFe k\xF6nigliche Gemahlin Echnatons, ber\xFChmt durch ihre ikonische B\xFCste \u2013 Symbol alt\xE4gyptischer Sch\xF6nheitsideale." },
-      { name: "Ramses II.", years: "ca. 1303\u20131213 v. Chr.", text: "Einer der m\xE4chtigsten Pharaonen, bekannt f\xFCr Bauprojekte (Abu Simbel) und den Frieden von Kadesch mit den Hethitern." },
-      { name: "Tutanchamun", years: "ca. 1341\u20131323 v. Chr.", text: "Jung verstorbener Pharao, weltber\xFChmt durch die 1922 nahezu unversehrt entdeckte Grabkammer." }
-    ],
-    nations: [
-      { name: "Alt\xE4gypten", text: "Hochkultur am Nil mit \xFCber 3000 Jahren Kontinuit\xE4t, Pharaonentum und monumentaler Architektur." },
-      { name: "Mesopotamien (Sumer, Babylon, Assyrien)", text: "Stadtstaaten und Reiche zwischen Euphrat und Tigris, Wiege von Schrift, Recht und Astronomie." },
-      { name: "Indus-Kultur", text: "Hochentwickelte St\xE4dte wie Mohenjo-Daro mit erstaunlich fortschrittlicher Stadtplanung und Wasserversorgung." },
-      { name: "Hethiterreich", text: "Anatolische Gro\xDFmacht, Rivale \xC4gyptens, Pionier der Eisenverarbeitung." },
-      { name: "Minoische & Mykenische Kultur", text: "Fr\xFChe griechische Hochkulturen auf Kreta und dem Peloponnes, Vorl\xE4ufer der klassischen griechischen Welt." },
-      { name: "Shang- und Zhou-China", text: "Fr\xFChe chinesische Dynastien mit Bronzegusskunst, Orakelknochenschrift und dem Konzept des 'Mandats des Himmels'." }
+   },
+   {
+    "title": "Römische Kaiserdynastien",
+    "items": [
+     {
+      "name": "Julisch-Claudische Dynastie (27 v. Chr. – 68 n. Chr.)",
+      "text": "Augustus, Tiberius, Caligula, Claudius, Nero – die erste Kaiserdynastie, endet mit Neros Sturz und Selbstmord."
+     },
+     {
+      "name": "Vierkaiserjahr & Flavische Dynastie (69–96)",
+      "text": "Nach dem Bürgerkriegsjahr 69 stabilisieren Vespasian, Titus und Domitian das Reich; Bau des Kolosseums."
+     },
+     {
+      "name": "Adoptivkaiser – 'Fünf gute Kaiser' (96–180)",
+      "text": "Nerva, Trajan, Hadrian, Antoninus Pius und Marc Aurel gelten als Höhepunkt stabiler, gut verwalteter Herrschaft und größter territorialer Ausdehnung unter Trajan."
+     },
+     {
+      "name": "Severer-Dynastie (193–235)",
+      "text": "Septimius Severus und Nachfolger stützen sich zunehmend auf das Militär als Machtbasis."
+     },
+     {
+      "name": "Reichskrise des 3. Jahrhunderts (235–284)",
+      "text": "Über 20 sogenannte Soldatenkaiser in 50 Jahren, meist durch Putsche eingesetzt und gestürzt – tiefe Staats-, Wirtschafts- und Grenzkrise."
+     },
+     {
+      "name": "Spätantike & Tetrarchie (284–395)",
+      "text": "Diokletian reformiert das Reich grundlegend (Tetrarchie), Konstantin der Große fördert das Christentum; Theodosius I. ist letzter Alleinherrscher vor der endgültigen Reichsteilung."
+     }
     ]
-  },
-  {
-    id: "antike",
-    name: "Antike",
-    span: "ca. 800 v. Chr. \u2013 500 n. Chr.",
-    startYear: -800,
-    endYear: 500,
-    color: "#9c1c1c",
-    accent: "#e2a45c",
-    lead: "Griechenland, Rom und die Grundlagen der westlichen Kultur.",
-    description: "Die Antike pr\xE4gt Philosophie, Demokratie, Recht und Architektur bis heute. Griechische Stadtstaaten entwickeln Demokratie und Wissenschaft, Alexander der Gro\xDFe verbreitet hellenistische Kultur bis nach Asien, und Rom baut ein Weltreich, das schlie\xDFlich in West- und Ostrom zerf\xE4llt.",
-    events: [
-      { year: -776, title: "Erste Olympische Spiele", text: "In Olympia finden die ersten \xFCberlieferten panhellenischen Spiele statt \u2013 religi\xF6ses und sportliches Gro\xDFereignis." },
-      { year: -753, title: "Gr\xFCndung Roms (Legende)", text: "Der \xDCberlieferung nach gr\xFCndet Romulus die Stadt Rom am Tiber." },
-      { year: -594, title: "Solonische Reformen in Athen", text: "Solon entsch\xE4rft soziale Spannungen und legt Grundsteine f\xFCr sp\xE4tere demokratische Entwicklungen." },
-      { year: -563, title: "Geburt Buddhas", text: "Siddhartha Gautama wird in Nordindien geboren; seine Lehren begr\xFCnden den Buddhismus." },
-      { year: -551, title: "Geburt des Konfuzius", text: "Der chinesische Philosoph pr\xE4gt mit seiner Ethik- und Staatslehre die ostasiatische Kultur bis heute." },
-      { year: -509, title: "Gr\xFCndung der R\xF6mischen Republik", text: "Rom vertreibt seinen letzten K\xF6nig und wird zur aristokratischen Republik mit gew\xE4hlten Konsuln." },
-      { year: -508, title: "Demokratie in Athen", text: "Kleisthenes reformiert die athenische Verfassung und legt den Grundstein f\xFCr die erste Demokratie der Geschichte." },
-      { year: -490, title: "Schlacht bei Marathon", text: "Athen wehrt einen persischen Invasionsversuch ab \u2013 pr\xE4gendes Ereignis des griechischen Selbstverst\xE4ndnisses." },
-      { year: -480, title: "Schlachten bei Thermopylae und Salamis", text: "Griechische Stadtstaaten stoppen die zweite persische Invasion zu Land und zur See." },
-      { year: -431, title: "Peloponnesischer Krieg beginnt", text: "Athen und Sparta f\xFChren einen jahrzehntelangen Krieg, der Griechenland nachhaltig schw\xE4cht." },
-      { year: -399, title: "Tod des Sokrates", text: "Der athenische Philosoph wird wegen 'Gottlosigkeit' zum Tode verurteilt und trinkt den Schierlingsbecher." },
-      { year: -336, title: "Alexander der Gro\xDFe wird K\xF6nig", text: "Alexander besteigt den makedonischen Thron und erobert binnen weniger Jahre ein Reich bis nach Indien." },
-      { year: -323, title: "Tod Alexanders und Reichsteilung", text: "Nach Alexanders Tod zerf\xE4llt sein Reich unter seinen Nachfolgern (Diadochen) in mehrere hellenistische K\xF6nigreiche." },
-      { year: -264, title: "Beginn der Punischen Kriege", text: "Rom und Karthago liefern sich \xFCber ein Jahrhundert Kriege um die Vorherrschaft im westlichen Mittelmeer." },
-      { year: -218, title: "Hannibal \xFCberquert die Alpen", text: "Der karthagische Feldherr f\xE4llt mit Kriegselefanten in Italien ein und bedroht Rom existenziell." },
-      { year: -146, title: "Zerst\xF6rung Karthagos", text: "Rom zerst\xF6rt Karthago vollst\xE4ndig und wird zur unangefochtenen Macht im westlichen Mittelmeerraum." },
-      { year: -73, title: "Spartacus-Aufstand", text: "Ein Sklavenaufstand unter dem Gladiator Spartacus ersch\xFCttert f\xFCr zwei Jahre die r\xF6mische Ordnung." },
-      { year: -58, title: "Caesars Gallischer Krieg", text: "Julius Caesar erobert Gallien und legt damit den Grundstein f\xFCr sein politisches Machtwachstum." },
-      { year: -44, title: "Ermordung Caesars", text: "Julius Caesar wird an den Iden des M\xE4rz von Senatoren ermordet \u2013 Ausl\xF6ser des endg\xFCltigen Untergangs der Republik." },
-      { year: -31, title: "Schlacht bei Actium", text: "Octavian besiegt Marcus Antonius und Kleopatra \u2013 \xC4gypten wird r\xF6mische Provinz." },
-      { year: -27, title: "Beginn des Prinzipats", text: "Octavian (Augustus) wird erster r\xF6mischer Kaiser und beendet die B\xFCrgerkriege der sp\xE4ten Republik." },
-      { year: 9, title: "Varusschlacht", text: "Germanische St\xE4mme unter Arminius vernichten drei r\xF6mische Legionen im Teutoburger Wald \u2013 stoppt r\xF6mische Expansion nach Germanien." },
-      { year: 33, title: "Kreuzigung Jesu von Nazareth", text: "Ausgangspunkt des Christentums, das sich in den folgenden Jahrhunderten im R\xF6mischen Reich ausbreitet." },
-      { year: 70, title: "Zerst\xF6rung des Zweiten Tempels", text: "Rom zerschl\xE4gt einen j\xFCdischen Aufstand und zerst\xF6rt den Tempel in Jerusalem \u2013 pr\xE4gend f\xFCr die j\xFCdische Diaspora." },
-      { year: 79, title: "Ausbruch des Vesuv", text: "Pompeji und Herculaneum werden unter Asche begraben \u2013 einzigartig konservierter Einblick in r\xF6misches Alltagsleben." },
-      { year: 117, title: "Gr\xF6\xDFte Ausdehnung des R\xF6mischen Reiches", text: "Unter Kaiser Trajan erreicht das Imperium Romanum seine maximale territoriale Ausdehnung." },
-      { year: 220, title: "Ende der Han-Dynastie", text: "China zerf\xE4llt in die Zeit der Drei Reiche \u2013 Beginn einer langen Phase politischer Zersplitterung." },
-      { year: 285, title: "Reichsteilung unter Diokletian", text: "Kaiser Diokletian teilt das R\xF6mische Reich verwaltungstechnisch, um es besser regierbar zu machen." },
-      { year: 313, title: "Toleranzedikt von Mailand", text: "Kaiser Konstantin gew\xE4hrt dem Christentum Religionsfreiheit im R\xF6mischen Reich." },
-      { year: 325, title: "Konzil von Nic\xE4a", text: "Das erste \xF6kumenische Konzil formuliert zentrale Glaubensgrunds\xE4tze des Christentums (Niz\xE4nisches Glaubensbekenntnis)." },
-      { year: 330, title: "Gr\xFCndung Konstantinopels", text: "Kaiser Konstantin macht die griechische Stadt Byzantion zur neuen Reichshauptstadt \u2013 k\xFCnftiges Zentrum von Byzanz." },
-      { year: 375, title: "Beginn der V\xF6lkerwanderung", text: "Der Einfall der Hunnen setzt eine Kettenreaktion germanischer Wanderbewegungen in Gang, die Westrom destabilisiert." },
-      { year: 395, title: "Teilung des R\xF6mischen Reiches", text: "Das Reich wird endg\xFCltig in West- und Ostrom (Byzanz) geteilt." },
-      { year: 410, title: "Pl\xFCnderung Roms durch die Westgoten", text: "Erstmals seit 800 Jahren wird Rom von einer fremden Streitmacht eingenommen \u2013 Schockwirkung im ganzen Reich." },
-      { year: 451, title: "Schlacht auf den Katalaunischen Feldern", text: "Ein r\xF6misch-germanisches B\xFCndnisheer stoppt Attilas Hunnen in Gallien." },
-      { year: 476, title: "Untergang Westroms", text: "Der germanische Heerf\xFChrer Odoaker setzt den letzten westr\xF6mischen Kaiser Romulus Augustulus ab." }
-    ],
-    figures: [
-      { name: "Konfuzius", years: "551\u2013479 v. Chr.", text: "Chinesischer Philosoph, dessen Ethik- und Staatslehre die ostasiatische Kultur bis heute pr\xE4gt." },
-      { name: "Buddha (Siddhartha Gautama)", years: "ca. 563\u2013483 v. Chr.", text: "Begr\xFCnder des Buddhismus, lehrte den 'Mittleren Weg' zur \xDCberwindung des Leidens." },
-      { name: "Sokrates", years: "469\u2013399 v. Chr.", text: "Athenischer Philosoph, Begr\xFCnder der westlichen Ethik durch das dialogische Hinterfragen vermeintlicher Gewissheiten." },
-      { name: "Perikles", years: "ca. 495\u2013429 v. Chr.", text: "Athenischer Staatsmann, pr\xE4gte das 'Goldene Zeitalter' Athens mit Demokratieausbau und der Errichtung der Akropolis." },
-      { name: "Platon", years: "ca. 428\u2013348 v. Chr.", text: "Sch\xFCler des Sokrates, Begr\xFCnder der Akademie in Athen, pr\xE4gte mit seiner Ideenlehre die abendl\xE4ndische Philosophie." },
-      { name: "Aristoteles", years: "384\u2013322 v. Chr.", text: "Universalgelehrter, Lehrer Alexanders des Gro\xDFen, legte Grundlagen f\xFCr Logik, Naturwissenschaft und Politiktheorie." },
-      { name: "Alexander der Gro\xDFe", years: "356\u2013323 v. Chr.", text: "Makedonischer K\xF6nig, eroberte ein Weltreich von Griechenland bis Indien und verbreitete hellenistische Kultur." },
-      { name: "Hannibal", years: "247\u2013183 v. Chr.", text: "Karthagischer Feldherr, \xFCberquerte mit einem Heer die Alpen und brachte Rom im Zweiten Punischen Krieg an den Rand der Niederlage." },
-      { name: "Julius Caesar", years: "100\u201344 v. Chr.", text: "R\xF6mischer Feldherr und Politiker, eroberte Gallien, wurde Alleinherrscher und wurde von Senatoren ermordet." },
-      { name: "Cicero", years: "106\u201343 v. Chr.", text: "R\xF6mischer Redner, Politiker und Philosoph, pr\xE4gte die lateinische Prosa und republikanisches Denken nachhaltig." },
-      { name: "Augustus", years: "63 v. Chr.\u201314 n. Chr.", text: "Erster r\xF6mischer Kaiser, begr\xFCndete den \xFCber 200 Jahre w\xE4hrenden 'Pax Romana'." },
-      { name: "Kleopatra VII.", years: "69\u201330 v. Chr.", text: "Letzte Pharaonin \xC4gyptens, bekannt f\xFCr ihre politischen B\xFCndnisse mit Caesar und Marcus Antonius." },
-      { name: "Jesus von Nazareth", years: "ca. 4 v. Chr.\u201333 n. Chr.", text: "J\xFCdischer Wanderprediger, dessen Lehren die Grundlage des Christentums bilden." },
-      { name: "Konstantin der Gro\xDFe", years: "ca. 272\u2013337 n. Chr.", text: "R\xF6mischer Kaiser, f\xF6rderte das Christentum und gr\xFCndete Konstantinopel als neue Hauptstadt." },
-      { name: "Attila", years: "ca. 406\u2013453 n. Chr.", text: "Herrscher der Hunnen, als 'Gei\xDFel Gottes' gef\xFCrchtet, brachte weite Teile Europas in Bedr\xE4ngnis." },
-      { name: "Augustinus von Hippo", years: "354\u2013430 n. Chr.", text: "Kirchenvater und Philosoph, dessen Werke ('Bekenntnisse', 'De civitate Dei') die christliche Theologie pr\xE4gten." },
-      { name: "Trajan", years: "53\u2013117 n. Chr.", text: "R\xF6mischer Kaiser, unter dem das Reich seine gr\xF6\xDFte territoriale Ausdehnung erreichte; gilt als vorbildlicher Verwalter." },
-      { name: "Hadrian", years: "76\u2013138 n. Chr.", text: "R\xF6mischer Kaiser, bereiste das gesamte Reich und lie\xDF u.a. den Hadrianswall in Britannien errichten." },
-      { name: "Marc Aurel", years: "121\u2013180 n. Chr.", text: "Kaiser und Stoiker, verfasste die 'Selbstbetrachtungen' \u2013 eines der einflussreichsten philosophischen Werke der Antike." },
-      { name: "Diokletian", years: "ca. 244\u2013311 n. Chr.", text: "Reformierte das R\xF6mische Reich grundlegend (Tetrarchie, Verwaltungs- und Wirtschaftsreformen) und beendete die Reichskrise des 3. Jahrhunderts." },
-      { name: "Gaius Marius", years: "157\u201386 v. Chr.", text: "R\xF6mischer Feldherr und Politiker, reformierte das Heerwesen grundlegend und \xF6ffnete es f\xFCr besitzlose B\xFCrger." },
-      { name: "Spartacus", years: "gest. 71 v. Chr.", text: "Entlaufener Gladiator, f\xFChrte den gr\xF6\xDFten Sklavenaufstand der r\xF6mischen Geschichte an." },
-      { name: "Imhotep", years: "ca. 27. Jh. v. Chr.", text: "Architekt der Stufenpyramide von Sakkara und erster namentlich bekannter Baumeister und Gelehrter der Geschichte, sp\xE4ter als Gott verehrt." },
-      { name: "Sesostris III.", years: "ca. 1878\u20131839 v. Chr.", text: "Bedeutendster Pharao des Mittleren Reiches, expandierte nach Nubien und reformierte die Verwaltung." },
-      { name: "Thutmosis III.", years: "ca. 1479\u20131425 v. Chr.", text: "'Napoleon \xC4gyptens', f\xFChrte zahlreiche erfolgreiche Feldz\xFCge und brachte das Neue Reich zu seiner gr\xF6\xDFten Ausdehnung." },
-      { name: "Amenhotep III.", years: "ca. 1388\u20131351 v. Chr.", text: "Regierte w\xE4hrend einer Bl\xFCtezeit des Friedens und Wohlstands, errichtete zahlreiche Monumentalbauten." },
-      { name: "Scipio Africanus", years: "236\u2013183 v. Chr.", text: "R\xF6mischer Feldherr, besiegte Hannibal bei Zama und beendete damit Karthagos Gro\xDFmachtstellung." },
-      { name: "Sulla", years: "138\u201378 v. Chr.", text: "R\xF6mischer Feldherr und Diktator, dessen brutale Proskriptionen und Verfassungsreformen die sp\xE4te Republik destabilisierten." },
-      { name: "Pompeius", years: "106\u201348 v. Chr.", text: "R\xF6mischer Feldherr und Rivale Caesars im B\xFCrgerkrieg, zun\xE4chst gefeierter Eroberer des Ostens." },
-      { name: "Crassus", years: "ca. 115\u201353 v. Chr.", text: "Reichster Mann Roms, Mitglied des Ersten Triumvirats mit Caesar und Pompeius, fiel im Krieg gegen die Parther." }
-    ],
-    nations: [
-      { name: "Griechische Stadtstaaten (Poleis)", text: "Athen, Sparta und weitere Poleis pr\xE4gten Philosophie, Theater, Demokratie und Kriegskunst." },
-      { name: "Perserreich (Ach\xE4meniden)", text: "Gr\xF6\xDFtes Reich seiner Zeit, bekannt f\xFCr Verwaltungseffizienz, Stra\xDFenbau und religi\xF6se Toleranz." },
-      { name: "Karthago", text: "Ph\xF6nizische Handelsmacht in Nordafrika, unterlag Rom nach drei Punischen Kriegen und wurde vollst\xE4ndig zerst\xF6rt." },
-      { name: "R\xF6misches Reich", text: "Von einer Stadtstaat-Republik zum Weltreich mit Recht, Infrastruktur und Milit\xE4rmacht, das Europa bis heute pr\xE4gt." },
-      { name: "Han-Dynastie (China)", text: "Chinesisches Kaiserreich zeitgleich zu Rom, f\xF6rderte Seidenstra\xDFenhandel, Konfuzianismus und Verwaltung." },
-      { name: "Maurya-Reich (Indien)", text: "Erstes gro\xDFes indisches Gro\xDFreich, unter Kaiser Ashoka F\xF6rderung des Buddhismus und relativ friedlicher Herrschaft." },
-      { name: "Hunnenreich", text: "Nomadisches Steppenreich unter Attila, dessen Druck ma\xDFgeblich zur V\xF6lkerwanderung und zum Fall Westroms beitrug." }
-    ],
-    dynastyGroups: [
-      {
-        title: "Dynastien Alt\xE4gyptens",
-        items: [
-          { name: "Fr\xFChdynastische Zeit (ca. 3100\u20132700 v. Chr.)", text: "Beginnend mit Menes/Narmer, Vereinigung von Ober- und Unter\xE4gypten, erste Hauptstadt Memphis." },
-          { name: "Altes Reich (ca. 2700\u20132200 v. Chr.)", text: "Zeitalter der gro\xDFen Pyramiden unter Djoser, Snofru, Cheops, Chephren und Mykerinos; straff zentralisierte Gottk\xF6nigsherrschaft." },
-          { name: "Mittleres Reich (ca. 2000\u20131700 v. Chr.)", text: "Wiedervereinigung nach einer Zwischenzeit des Zerfalls, Expansion nach Nubien, kulturelle Bl\xFCte unter Herrschern wie Sesostris III." },
-          { name: "Neues Reich (ca. 1550\u20131070 v. Chr.)", text: "Machtpolitischer H\xF6hepunkt \xC4gyptens unter Thutmosis III., Hatschepsut, Echnaton, Tutanchamun und Ramses II.; gr\xF6\xDFte territoriale Ausdehnung bis nach Nubien und in die Levante." },
-          { name: "Dritte Zwischenzeit & Sp\xE4tzeit (ca. 1070\u2013332 v. Chr.)", text: "Zunehmende Fremdherrschaften durch Libyer, Kuschiten und Perser schw\xE4chen die Zentralmacht der Pharaonen." },
-          { name: "Ptolem\xE4er-Dynastie (332\u201330 v. Chr.)", text: "Nach Alexanders Eroberung griechisch-makedonische Herrscherfamilie mit Zentrum Alexandria; endet mit Kleopatra VII. und der r\xF6mischen Annexion." }
-        ]
-      },
-      {
-        title: "R\xF6mische Kaiserdynastien",
-        items: [
-          { name: "Julisch-Claudische Dynastie (27 v. Chr. \u2013 68 n. Chr.)", text: "Augustus, Tiberius, Caligula, Claudius, Nero \u2013 die erste Kaiserdynastie, endet mit Neros Sturz und Selbstmord." },
-          { name: "Vierkaiserjahr & Flavische Dynastie (69\u201396)", text: "Nach dem B\xFCrgerkriegsjahr 69 stabilisieren Vespasian, Titus und Domitian das Reich; Bau des Kolosseums." },
-          { name: "Adoptivkaiser \u2013 'F\xFCnf gute Kaiser' (96\u2013180)", text: "Nerva, Trajan, Hadrian, Antoninus Pius und Marc Aurel gelten als H\xF6hepunkt stabiler, gut verwalteter Herrschaft und gr\xF6\xDFter territorialer Ausdehnung unter Trajan." },
-          { name: "Severer-Dynastie (193\u2013235)", text: "Septimius Severus und Nachfolger st\xFCtzen sich zunehmend auf das Milit\xE4r als Machtbasis." },
-          { name: "Reichskrise des 3. Jahrhunderts (235\u2013284)", text: "\xDCber 20 sogenannte Soldatenkaiser in 50 Jahren, meist durch Putsche eingesetzt und gest\xFCrzt \u2013 tiefe Staats-, Wirtschafts- und Grenzkrise." },
-          { name: "Sp\xE4tantike & Tetrarchie (284\u2013395)", text: "Diokletian reformiert das Reich grundlegend (Tetrarchie), Konstantin der Gro\xDFe f\xF6rdert das Christentum; Theodosius I. ist letzter Alleinherrscher vor der endg\xFCltigen Reichsteilung." }
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "id": "mittelalter",
+  "name": "Mittelalter",
+  "span": "ca. 500 – 1500",
+  "startYear": 500,
+  "endYear": 1500,
+  "color": "#7a2a3a",
+  "accent": "#c98a5c",
+  "lead": "Zwischen Glaube, Feudalismus und aufblühenden Städten.",
+  "description": "Nach dem Untergang Westroms entstehen neue Reiche in Europa, geprägt von Christentum, Feudalismus und wechselnden Machtzentren. Gleichzeitig blühen im islamischen Kalifat, in Byzanz und in Ostasien hochentwickelte Kulturen. Kreuzzüge, Pest und die beginnende Stadtkultur prägen das Spätmittelalter.",
+  "events": [
+   {
+    "year": 529,
+    "title": "Corpus Iuris Civilis",
+    "text": "Kaiser Justinian lässt das römische Recht systematisch zusammenfassen – Grundlage vieler europäischer Rechtssysteme bis heute."
+   },
+   {
+    "year": 541,
+    "title": "Justinianische Pest",
+    "text": "Die erste dokumentierte Pestpandemie erfasst das Mittelmeer und schwächt Justinians Versuch, das Römische Reich wiederherzustellen."
+   },
+   {
+    "year": 570,
+    "title": "Geburt Mohammeds",
+    "text": "Der spätere Religionsstifter des Islam wird in Mekka geboren."
+   },
+   {
+    "year": 610,
+    "title": "Erste Offenbarungen an Mohammed",
+    "text": "Nach islamischer Überlieferung beginnt Mohammed, die Offenbarungen des Koran zu empfangen."
+   },
+   {
+    "year": 622,
+    "title": "Hidschra – Beginn der islamischen Zeitrechnung",
+    "text": "Mohammed wandert von Mekka nach Medina aus; Ausgangspunkt der raschen Ausbreitung des Islam."
+   },
+   {
+    "year": 632,
+    "title": "Tod Mohammeds und Beginn der Expansion",
+    "text": "Nach Mohammeds Tod breitet sich der Islam binnen weniger Jahrzehnte über den Nahen Osten und Nordafrika aus."
+   },
+   {
+    "year": 711,
+    "title": "Islamische Eroberung Spaniens",
+    "text": "Muslimische Truppen erobern weite Teile der Iberischen Halbinsel – Beginn von Al-Andalus."
+   },
+   {
+    "year": 732,
+    "title": "Schlacht bei Tours und Poitiers",
+    "text": "Karl Martell stoppt die arabische Expansion nach Mitteleuropa."
+   },
+   {
+    "year": 750,
+    "title": "Abbasidenkalifat löst Umayyaden ab",
+    "text": "Bagdad wird Zentrum eines islamischen 'Goldenen Zeitalters' der Wissenschaft und Philosophie."
+   },
+   {
+    "year": 751,
+    "title": "Schlacht am Talas",
+    "text": "Araber besiegen ein chinesisches Heer. Über Kriegsgefangene gelangt die Papierherstellung in die islamische Welt und von dort nach Europa."
+   },
+   {
+    "year": 793,
+    "title": "Wikingerüberfall auf Lindisfarne",
+    "text": "Der Überfall auf ein englisches Kloster markiert traditionell den Beginn der Wikingerzeit."
+   },
+   {
+    "year": 800,
+    "title": "Kaiserkrönung Karls des Großen",
+    "text": "Karl der Große wird in Rom zum Kaiser gekrönt – Versuch der Erneuerung des weströmischen Kaisertums."
+   },
+   {
+    "year": 843,
+    "title": "Vertrag von Verdun",
+    "text": "Das Frankenreich wird unter Karls Enkeln geteilt – Grundlage der späteren Staaten Frankreich, Deutschland und Italien."
+   },
+   {
+    "year": 862,
+    "title": "Gründung der Kiewer Rus",
+    "text": "Waräger (Wikinger) gründen ein Fürstentum, das zum Ursprung Russlands, der Ukraine und Weißrusslands wird."
+   },
+   {
+    "year": 962,
+    "title": "Gründung des Heiligen Römischen Reiches",
+    "text": "Otto I. wird zum Kaiser gekrönt – Beginn des Heiligen Römischen Reiches als loser Verbund deutscher Territorien."
+   },
+   {
+    "year": 1054,
+    "title": "Morgenländisches Schisma",
+    "text": "Rom und Konstantinopel exkommunizieren einander. Die Trennung war eher ein langer Prozess als ein Ereignis dieses Jahres."
+   },
+   {
+    "year": 1066,
+    "title": "Schlacht bei Hastings",
+    "text": "Wilhelm der Eroberer besiegt die Angelsachsen und normannisiert England grundlegend."
+   },
+   {
+    "year": 1077,
+    "title": "Gang nach Canossa",
+    "text": "Kaiser Heinrich IV. unterwirft sich im Investiturstreit öffentlich Papst Gregor VII. – Höhepunkt des Machtkampfs zwischen Kaiser und Papst."
+   },
+   {
+    "year": 1096,
+    "title": "Beginn der Kreuzzüge",
+    "text": "Nach dem Aufruf Papst Urbans II. ziehen Kreuzfahrerheere Richtung Jerusalem – Beginn von zwei Jahrhunderten Kreuzzügen."
+   },
+   {
+    "year": 1099,
+    "title": "Eroberung Jerusalems",
+    "text": "Kreuzfahrer erobern Jerusalem und errichten mehrere Kreuzfahrerstaaten in der Levante."
+   },
+   {
+    "year": 1147,
+    "title": "Zweiter Kreuzzug",
+    "text": "Ein europäisches Großheer scheitert bei dem Versuch, die Kreuzfahrerstaaten zu stärken."
+   },
+   {
+    "year": 1187,
+    "title": "Saladin erobert Jerusalem zurück",
+    "text": "Der ayyubidische Sultan Saladin besiegt die Kreuzfahrer entscheidend bei Hattin und nimmt Jerusalem ein."
+   },
+   {
+    "year": 1191,
+    "title": "Dritter Kreuzzug",
+    "text": "Richard Löwenherz, Philipp II. von Frankreich und Friedrich Barbarossa versuchen erfolglos, Jerusalem zurückzuerobern; ein Waffenstillstand mit Saladin sichert aber Pilgerzugang."
+   },
+   {
+    "year": 1204,
+    "title": "Plünderung Konstantinopels (Vierter Kreuzzug)",
+    "text": "Kreuzfahrer richten sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – schwächt Byzanz dauerhaft und vertieft die Kluft zwischen West- und Ostkirche."
+   },
+   {
+    "year": 1206,
+    "title": "Dschingis Khan wird Großkhan",
+    "text": "Die mongolischen Stämme werden geeint; Beginn der größten Landeroberung der Geschichte."
+   },
+   {
+    "year": 1206,
+    "title": "Temüdschin wird Dschingis Khan",
+    "text": "Die Einigung der Steppenvölker begründet das größte zusammenhängende Landreich der Geschichte."
+   },
+   {
+    "year": 1212,
+    "title": "Kinderkreuzzug",
+    "text": "Tausende jugendliche Kreuzfahrer ohne militärische Ausbildung brechen Richtung Heiliges Land auf – die meisten sterben oder werden versklavt."
+   },
+   {
+    "year": 1215,
+    "title": "Magna Carta",
+    "text": "Englische Adlige zwingen König Johann Ohneland zur Anerkennung von Rechten – früher Meilenstein des Rechtsstaats."
+   },
+   {
+    "year": 1228,
+    "title": "Kreuzzug Friedrichs II.",
+    "text": "Kaiser Friedrich II. erreicht durch Diplomatie statt Krieg die vorübergehende Rückgabe Jerusalems – einzigartig unter den Kreuzzügen."
+   },
+   {
+    "year": 1241,
+    "title": "Mongolensturm erreicht Europa",
+    "text": "Mongolische Heere besiegen polnische und ungarische Ritterheere, ziehen sich aber nach dem Tod des Großkhans zurück."
+   },
+   {
+    "year": 1248,
+    "title": "Siebter Kreuzzug Ludwigs IX.",
+    "text": "Der französische König greift Ägypten an, gerät aber in Gefangenschaft und muss sich freikaufen."
+   },
+   {
+    "year": 1258,
+    "title": "Mongolische Eroberung Bagdads",
+    "text": "Die Zerstörung Bagdads beendet das Abbasidenkalifat und gilt als Ende des islamischen 'Goldenen Zeitalters'."
+   },
+   {
+    "year": 1258,
+    "title": "Zerstörung Bagdads",
+    "text": "Die Mongolen nehmen die Stadt ein und vernichten das Haus der Weisheit – ein Einschnitt für die Gelehrsamkeit der islamischen Welt."
+   },
+   {
+    "year": 1270,
+    "title": "Achter Kreuzzug und Tod Ludwigs IX.",
+    "text": "Der französische König stirbt bei einem letzten Kreuzzugsversuch vor Tunis an einer Seuche – praktisches Ende der großen Kreuzzugsbewegung."
+   },
+   {
+    "year": 1271,
+    "title": "Marco Polo bricht nach China auf",
+    "text": "Der venezianische Kaufmann reist an den Hof des Mongolenherrschers Kublai Khan und prägt europäische Asienvorstellungen."
+   },
+   {
+    "year": 1291,
+    "title": "Ende der Kreuzfahrerstaaten",
+    "text": "Mit dem Fall von Akkon verlieren die Kreuzfahrer ihre letzte Bastion im Heiligen Land."
+   },
+   {
+    "year": 1315,
+    "title": "Große Hungersnot in Europa",
+    "text": "Jahrelange Regenfälle lassen Ernten ausfallen; bis 1317 stirbt ein erheblicher Teil der nordeuropäischen Bevölkerung – sieben Jahrzehnte vor der Pest."
+   },
+   {
+    "year": 1324,
+    "title": "Pilgerreise des Mansa Musa",
+    "text": "Der Herrscher des westafrikanischen Malireichs reist mit enormem Goldreichtum nach Mekka und wird international bekannt."
+   },
+   {
+    "year": 1337,
+    "title": "Beginn des Hundertjährigen Krieges",
+    "text": "England und Frankreich beginnen einen jahrzehntelangen Konflikt um die französische Krone."
+   },
+   {
+    "year": 1347,
+    "title": "Der Schwarze Tod erreicht Europa",
+    "text": "Die Pest tötet innerhalb weniger Jahre schätzungsweise ein Drittel der europäischen Bevölkerung."
+   },
+   {
+    "year": 1358,
+    "title": "Goldene Bulle",
+    "text": "Kaiser Karl IV. regelt die Königswahl im Heiligen Römischen Reich und stärkt die Kurfürsten."
+   },
+   {
+    "year": 1368,
+    "title": "Ming-Dynastie in China",
+    "text": "Die Ming lösen die mongolische Yuan-Dynastie ab und leiten eine Blütezeit chinesischer Kultur ein."
+   },
+   {
+    "year": 1381,
+    "title": "Englischer Bauernaufstand",
+    "text": "Hohe Steuern und Pestfolgen lösen einen der größten mittelalterlichen Volksaufstände Englands aus."
+   },
+   {
+    "year": 1420,
+    "title": "Beginn der Hussitenkriege",
+    "text": "Anhänger Jan Hus' kämpfen gegen Kaiser und Kirche – früher Ausdruck religiöser Reformbewegungen."
+   },
+   {
+    "year": 1429,
+    "title": "Jeanne d'Arc befreit Orléans",
+    "text": "Die junge Bauerntochter wendet im Hundertjährigen Krieg das Blatt zugunsten Frankreichs."
+   },
+   {
+    "year": 1453,
+    "title": "Fall Konstantinopels",
+    "text": "Die Osmanen erobern Konstantinopel und beenden das Byzantinische Reich endgültig."
+   },
+   {
+    "year": 1453,
+    "title": "Ende des Hundertjährigen Krieges",
+    "text": "Frankreich vertreibt die Engländer weitgehend vom Kontinent – Grundstein eines gestärkten französischen Nationalgefühls."
+   },
+   {
+    "year": 1455,
+    "title": "Gutenbergs Buchdruck",
+    "text": "Johannes Gutenberg druckt mit beweglichen Lettern die erste vollständige Bibel – Medienrevolution mit Fernwirkung."
+   },
+   {
+    "year": 1492,
+    "title": "Fall von Granada / Ende der Reconquista",
+    "text": "Die letzten islamischen Herrscher werden aus Spanien vertrieben – im selben Jahr sticht Kolumbus in See."
+   },
+   {
+    "year": 1492,
+    "title": "Kolumbus erreicht Amerika",
+    "text": "Christoph Kolumbus landet in der Karibik und leitet die europäische Kolonisierung Amerikas ein."
+   },
+   {
+    "year": 1492,
+    "title": "Fall Granadas",
+    "text": "Die letzte muslimische Herrschaft Iberiens endet; im selben Jahr werden die Juden Spaniens vertrieben und Kolumbus bricht auf."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Justinian I.",
+    "years": "ca. 482–565",
+    "text": "Oströmischer Kaiser, ließ das römische Recht kodifizieren und die Hagia Sophia erbauen."
+   },
+   {
+    "name": "Mohammed",
+    "years": "ca. 570–632",
+    "text": "Religionsstifter des Islam, dessen Lehren binnen weniger Jahrhunderte von Spanien bis Zentralasien verbreitet wurden."
+   },
+   {
+    "name": "Karl der Große",
+    "years": "747–814",
+    "text": "Fränkischer König und Kaiser, einte weite Teile West- und Mitteleuropas und förderte Bildung ('Karolingische Renaissance')."
+   },
+   {
+    "name": "Alfred der Große",
+    "years": "849–899",
+    "text": "Angelsächsischer König, verteidigte England erfolgreich gegen die Wikinger und förderte Bildung und Recht."
+   },
+   {
+    "name": "Otto I.",
+    "years": "912–973",
+    "text": "Erster Kaiser des Heiligen Römischen Reiches, sicherte die Ostgrenze und stärkte die Kirche als Machtstütze."
+   },
+   {
+    "name": "Wilhelm der Eroberer",
+    "years": "1028–1087",
+    "text": "Normannischer Herzog, eroberte 1066 England und veränderte dessen Sprache, Recht und Adel grundlegend."
+   },
+   {
+    "name": "Dschingis Khan",
+    "years": "ca. 1162–1227",
+    "text": "Begründer des Mongolenreichs, das zum größten zusammenhängenden Landreich der Geschichte wurde."
+   },
+   {
+    "name": "Saladin",
+    "years": "1137–1193",
+    "text": "Kurdisch-muslimischer Sultan, eroberte Jerusalem von den Kreuzfahrern zurück und galt als ritterlicher Gegner."
+   },
+   {
+    "name": "Mansa Musa",
+    "years": "ca. 1280–1337",
+    "text": "Herrscher des westafrikanischen Malireichs, gilt aufgrund seines Goldreichtums als möglicherweise reichster Mensch der Geschichte."
+   },
+   {
+    "name": "Thomas von Aquin",
+    "years": "1225–1274",
+    "text": "Mittelalterlicher Theologe und Philosoph, verband christliche Lehre mit aristotelischer Philosophie."
+   },
+   {
+    "name": "Jeanne d'Arc",
+    "years": "1412–1431",
+    "text": "Französische Nationalheldin, führte im Hundertjährigen Krieg französische Truppen an, wurde später als Ketzerin verbrannt."
+   },
+   {
+    "name": "Marco Polo",
+    "years": "1254–1324",
+    "text": "Venezianischer Händler und Reisender, dessen Berichte über China Europas Asienbild jahrhundertelang prägten."
+   },
+   {
+    "name": "Johannes Gutenberg",
+    "years": "ca. 1400–1468",
+    "text": "Erfinder des Buchdrucks mit beweglichen Lettern, ermöglichte massenhafte Verbreitung von Wissen."
+   },
+   {
+    "name": "Basileios II.",
+    "years": "958–1025",
+    "text": "Byzantinischer Kaiser, genannt 'Bulgarentöter', führte das Reich zu seiner größten mittelalterlichen Machtentfaltung."
+   },
+   {
+    "name": "Alexios I. Komnenos",
+    "years": "1048–1118",
+    "text": "Byzantinischer Kaiser, dessen Hilferuf an den Westen den Ersten Kreuzzug mit auslöste."
+   },
+   {
+    "name": "Gottfried von Bouillon",
+    "years": "ca. 1060–1100",
+    "text": "Anführer des Ersten Kreuzzugs, erster Herrscher des Königreichs Jerusalem."
+   },
+   {
+    "name": "Balduin I. von Jerusalem",
+    "years": "ca. 1058–1118",
+    "text": "Bruder Gottfrieds von Bouillon, erster König von Jerusalem, festigte die junge Kreuzfahrerherrschaft in der Levante."
+   },
+   {
+    "name": "Friedrich I. Barbarossa",
+    "years": "ca. 1122–1190",
+    "text": "Kaiser des Heiligen Römischen Reiches, ertrank auf dem Weg zum Dritten Kreuzzug in Kleinasien."
+   },
+   {
+    "name": "Richard Löwenherz",
+    "years": "1157–1199",
+    "text": "Englischer König, prominenter Anführer des Dritten Kreuzzugs, kämpfte gegen Saladin um Jerusalem."
+   },
+   {
+    "name": "Ludwig IX. der Heilige",
+    "years": "1214–1270",
+    "text": "Französischer König, führte zwei Kreuzzüge an und starb bei der Belagerung von Tunis; später heiliggesprochen."
+   },
+   {
+    "name": "Baibars",
+    "years": "ca. 1223–1277",
+    "text": "Mamlukensultan, stoppte die Mongolen bei Ain Dschalut und eroberte zahlreiche Kreuzfahrerfestungen zurück."
+   },
+   {
+    "name": "Theodora",
+    "years": "ca. 500–548",
+    "text": "Ehemalige Schauspielerin und Kaiserin an der Seite Justinians. Beim Nika-Aufstand bewog sie ihn zum Bleiben, als er fliehen wollte."
+   },
+   {
+    "name": "Harun ar-Raschid",
+    "years": "reg. 786–809",
+    "text": "Abbasidischer Kalif, unter dem Bagdad zur größten Stadt der Welt wurde – und die Figur, um die sich die Erzählungen aus Tausendundeiner Nacht ranken."
+   },
+   {
+    "name": "Hildegard von Bingen",
+    "years": "1098–1179",
+    "text": "Äbtissin, Verfasserin von Visionsschriften, Heilkunde und Musik – und eine der wenigen Frauen, deren Werk aus dem Mittelalter vollständig überliefert ist."
+   },
+   {
+    "name": "Averroes",
+    "years": "1126–1198",
+    "text": "Andalusischer Richter und Aristoteles-Kommentator; im lateinischen Europa hieß er schlicht der Kommentator."
+   },
+   {
+    "name": "Ibn Battuta",
+    "years": "1304–1368/69",
+    "text": "Reiste in dreißig Jahren rund 120.000 Kilometer von Marokko bis China – weiter als Marco Polo, im Westen aber lange unbekannt."
+   },
+   {
+    "name": "Zheng He",
+    "years": "1371–1433",
+    "text": "Chinesischer Admiral, dessen Flotten bis Ostafrika fuhren. Sein größtes Schiff war ein Vielfaches der Santa Maria. Danach stellte China die Fahrten ein."
+   },
+   {
+    "name": "Timur",
+    "years": "1336–1405",
+    "text": "Eroberer aus Zentralasien, dessen Feldzüge Millionen Opfer forderten und der Samarkand zu einer prächtigen Hauptstadt ausbaute."
+   },
+   {
+    "name": "Mehmed II.",
+    "years": "1432–1481",
+    "text": "Eroberte mit 21 Jahren Konstantinopel und ließ Schiffe über Land in das Goldene Horn ziehen."
+   },
+   {
+    "name": "Anna Komnene",
+    "years": "1083–1153",
+    "text": "Byzantinische Prinzessin und Verfasserin der Alexias – eine der wenigen mittelalterlichen Geschichtsschreiberinnen und Hauptquelle zum Ersten Kreuzzug."
+   },
+   {
+    "name": "Wilhelm von Ockham",
+    "years": "ca. 1288–1347",
+    "text": "Franziskaner, der aus Avignon zum Kaiser floh und dessen Sparsamkeitsprinzip bis heute wissenschaftliche Methodik prägt."
+   },
+   {
+    "name": "Jan Hus",
+    "years": "ca. 1370–1415",
+    "text": "Böhmischer Reformator, der trotz kaiserlichen Geleits in Konstanz verbrannt wurde – ein Wortbruch mit jahrzehntelangen Kriegsfolgen."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Byzantinisches Reich",
+    "text": "Oströmisches Reich mit Hauptstadt Konstantinopel, bewahrte über 1000 Jahre antikes Wissen und orthodoxes Christentum."
+   },
+   {
+    "name": "Fränkisches Reich / Heiliges Römisches Reich",
+    "text": "Zentrale Macht in West- und Mitteleuropa, Vorläufer moderner europäischer Staaten."
+   },
+   {
+    "name": "Kalifat (Umayyaden, Abbasiden)",
+    "text": "Islamische Großreiche mit Blütezeiten in Wissenschaft, Mathematik und Medizin, Zentrum u.a. Bagdad."
+   },
+   {
+    "name": "Mongolenreich",
+    "text": "Größtes zusammenhängendes Landreich der Geschichte unter Dschingis Khan und seinen Nachfolgern."
+   },
+   {
+    "name": "Song- und Ming-Dynastie (China)",
+    "text": "Chinesische Kaiserreiche mit technologischen Innovationen wie Papiergeld, Schießpulver, Kompass und Porzellankunst."
+   },
+   {
+    "name": "Malireich",
+    "text": "Westafrikanisches Großreich mit enormem Goldreichtum, geprägt durch den Herrscher Mansa Musa und Handel über die Sahara."
+   },
+   {
+    "name": "Kiewer Rus",
+    "text": "Frühes ostslawisches Reich, Ursprung von Russland, der Ukraine und Weißrussland."
+   },
+   {
+    "name": "Aztekenreich",
+    "text": "Mesoamerikanisches Reich mit Hauptstadt Tenochtitlan, geprägt durch Kriegertum, Tributsystem und monumentale Tempelanlagen."
+   },
+   {
+    "name": "Al-Andalus",
+    "text": "Muslimisches Iberien mit Córdoba als einer der größten Städte Europas – ein Ort intensiven Austauschs und ebenso realer Konflikte."
+   },
+   {
+    "name": "Republik Venedig",
+    "text": "Über tausend Jahre bestehende Seemacht, deren Arsenal Schiffe fast in Serienfertigung baute."
+   },
+   {
+    "name": "Hanse",
+    "text": "Ein Bund von Handelsstädten ohne Hauptstadt, Heer oder Verfassung, der jahrhundertelang den Nord- und Ostseehandel beherrschte."
+   },
+   {
+    "name": "Khmer-Reich",
+    "text": "Beherrschte das südostasiatische Festland; Angkor war zeitweise die flächengrößte Stadt der vorindustriellen Welt."
+   },
+   {
+    "name": "Inkareich",
+    "text": "Ein Großreich mit über 30.000 Kilometern Straßen und Verwaltung ohne Alphabetschrift, gestützt auf Knotenschnüre."
+   },
+   {
+    "name": "Königreich Simbabwe",
+    "text": "Im südlichen Afrika entstand eine Steinstadt ohne Mörtel, deren Mauern bis zu elf Meter hoch aufragen."
+   }
+  ],
+  "dynastyGroups": [
+   {
+    "title": "Byzantinische Kaiserdynastien",
+    "items": [
+     {
+      "name": "Justinianische Dynastie (518–602)",
+      "text": "Justinian I. lässt das römische Recht kodifizieren, die Hagia Sophia errichten und erobert zeitweise Italien und Nordafrika zurück."
+     },
+     {
+      "name": "Herakleische Dynastie (610–711)",
+      "text": "Herakleios wehrt die Perser ab, verliert aber weite Teile des Reiches an die rasch expandierenden arabischen Heere."
+     },
+     {
+      "name": "Makedonische Dynastie (867–1056)",
+      "text": "Unter Basileios II. erlebt Byzanz seine größte mittelalterliche Machtentfaltung, u.a. Sieg über das Bulgarenreich."
+     },
+     {
+      "name": "Komnenen-Dynastie (1081–1185)",
+      "text": "Nach der schweren Niederlage von Manzikert (1071) stabilisiert Alexios I. das Reich und bittet den Westen um Hilfe – Auslöser der Kreuzzüge."
+     },
+     {
+      "name": "Palaiologen-Dynastie (1259–1453)",
+      "text": "Letzte byzantinische Dynastie, zunehmend geschwächtes Restreich, endet mit dem Fall Konstantinopels 1453."
+     }
     ]
-  },
-  {
-    id: "mittelalter",
-    name: "Mittelalter",
-    span: "ca. 500 \u2013 1500",
-    startYear: 500,
-    endYear: 1500,
-    color: "#7a2a3a",
-    accent: "#c98a5c",
-    lead: "Zwischen Glaube, Feudalismus und aufbl\xFChenden St\xE4dten.",
-    description: "Nach dem Untergang Westroms entstehen neue Reiche in Europa, gepr\xE4gt von Christentum, Feudalismus und wechselnden Machtzentren. Gleichzeitig bl\xFChen im islamischen Kalifat, in Byzanz und in Ostasien hochentwickelte Kulturen. Kreuzz\xFCge, Pest und die beginnende Stadtkultur pr\xE4gen das Sp\xE4tmittelalter.",
-    events: [
-      { year: 529, title: "Corpus Iuris Civilis", text: "Kaiser Justinian l\xE4sst das r\xF6mische Recht systematisch zusammenfassen \u2013 Grundlage vieler europ\xE4ischer Rechtssysteme bis heute." },
-      { year: 570, title: "Geburt Mohammeds", text: "Der sp\xE4tere Religionsstifter des Islam wird in Mekka geboren." },
-      { year: 610, title: "Erste Offenbarungen an Mohammed", text: "Nach islamischer \xDCberlieferung beginnt Mohammed, die Offenbarungen des Koran zu empfangen." },
-      { year: 622, title: "Hidschra \u2013 Beginn der islamischen Zeitrechnung", text: "Mohammed wandert von Mekka nach Medina aus; Ausgangspunkt der raschen Ausbreitung des Islam." },
-      { year: 632, title: "Tod Mohammeds und Beginn der Expansion", text: "Nach Mohammeds Tod breitet sich der Islam binnen weniger Jahrzehnte \xFCber den Nahen Osten und Nordafrika aus." },
-      { year: 711, title: "Islamische Eroberung Spaniens", text: "Muslimische Truppen erobern weite Teile der Iberischen Halbinsel \u2013 Beginn von Al-Andalus." },
-      { year: 732, title: "Schlacht bei Tours und Poitiers", text: "Karl Martell stoppt die arabische Expansion nach Mitteleuropa." },
-      { year: 750, title: "Abbasidenkalifat l\xF6st Umayyaden ab", text: "Bagdad wird Zentrum eines islamischen 'Goldenen Zeitalters' der Wissenschaft und Philosophie." },
-      { year: 793, title: "Wikinger\xFCberfall auf Lindisfarne", text: "Der \xDCberfall auf ein englisches Kloster markiert traditionell den Beginn der Wikingerzeit." },
-      { year: 800, title: "Kaiserkr\xF6nung Karls des Gro\xDFen", text: "Karl der Gro\xDFe wird in Rom zum Kaiser gekr\xF6nt \u2013 Versuch der Erneuerung des westr\xF6mischen Kaisertums." },
-      { year: 843, title: "Vertrag von Verdun", text: "Das Frankenreich wird unter Karls Enkeln geteilt \u2013 Grundlage der sp\xE4teren Staaten Frankreich, Deutschland und Italien." },
-      { year: 862, title: "Gr\xFCndung der Kiewer Rus", text: "War\xE4ger (Wikinger) gr\xFCnden ein F\xFCrstentum, das zum Ursprung Russlands, der Ukraine und Wei\xDFrusslands wird." },
-      { year: 962, title: "Gr\xFCndung des Heiligen R\xF6mischen Reiches", text: "Otto I. wird zum Kaiser gekr\xF6nt \u2013 Beginn des Heiligen R\xF6mischen Reiches als loser Verbund deutscher Territorien." },
-      { year: 1066, title: "Schlacht bei Hastings", text: "Wilhelm der Eroberer besiegt die Angelsachsen und normannisiert England grundlegend." },
-      { year: 1077, title: "Gang nach Canossa", text: "Kaiser Heinrich IV. unterwirft sich im Investiturstreit \xF6ffentlich Papst Gregor VII. \u2013 H\xF6hepunkt des Machtkampfs zwischen Kaiser und Papst." },
-      { year: 1096, title: "Beginn der Kreuzz\xFCge", text: "Nach dem Aufruf Papst Urbans II. ziehen Kreuzfahrerheere Richtung Jerusalem \u2013 Beginn von zwei Jahrhunderten Kreuzz\xFCgen." },
-      { year: 1099, title: "Eroberung Jerusalems", text: "Kreuzfahrer erobern Jerusalem und errichten mehrere Kreuzfahrerstaaten in der Levante." },
-      { year: 1147, title: "Zweiter Kreuzzug", text: "Ein europ\xE4isches Gro\xDFheer scheitert bei dem Versuch, die Kreuzfahrerstaaten zu st\xE4rken." },
-      { year: 1187, title: "Saladin erobert Jerusalem zur\xFCck", text: "Der ayyubidische Sultan Saladin besiegt die Kreuzfahrer entscheidend bei Hattin und nimmt Jerusalem ein." },
-      { year: 1191, title: "Dritter Kreuzzug", text: "Richard L\xF6wenherz, Philipp II. von Frankreich und Friedrich Barbarossa versuchen erfolglos, Jerusalem zur\xFCckzuerobern; ein Waffenstillstand mit Saladin sichert aber Pilgerzugang." },
-      { year: 1204, title: "Pl\xFCnderung Konstantinopels (Vierter Kreuzzug)", text: "Kreuzfahrer richten sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime \u2013 schw\xE4cht Byzanz dauerhaft und vertieft die Kluft zwischen West- und Ostkirche." },
-      { year: 1206, title: "Dschingis Khan wird Gro\xDFkhan", text: "Die mongolischen St\xE4mme werden geeint; Beginn der gr\xF6\xDFten Landeroberung der Geschichte." },
-      { year: 1212, title: "Kinderkreuzzug", text: "Tausende jugendliche Kreuzfahrer ohne milit\xE4rische Ausbildung brechen Richtung Heiliges Land auf \u2013 die meisten sterben oder werden versklavt." },
-      { year: 1215, title: "Magna Carta", text: "Englische Adlige zwingen K\xF6nig Johann Ohneland zur Anerkennung von Rechten \u2013 fr\xFCher Meilenstein des Rechtsstaats." },
-      { year: 1228, title: "Kreuzzug Friedrichs II.", text: "Kaiser Friedrich II. erreicht durch Diplomatie statt Krieg die vor\xFCbergehende R\xFCckgabe Jerusalems \u2013 einzigartig unter den Kreuzz\xFCgen." },
-      { year: 1241, title: "Mongolensturm erreicht Europa", text: "Mongolische Heere besiegen polnische und ungarische Ritterheere, ziehen sich aber nach dem Tod des Gro\xDFkhans zur\xFCck." },
-      { year: 1248, title: "Siebter Kreuzzug Ludwigs IX.", text: "Der franz\xF6sische K\xF6nig greift \xC4gypten an, ger\xE4t aber in Gefangenschaft und muss sich freikaufen." },
-      { year: 1258, title: "Mongolische Eroberung Bagdads", text: "Die Zerst\xF6rung Bagdads beendet das Abbasidenkalifat und gilt als Ende des islamischen 'Goldenen Zeitalters'." },
-      { year: 1270, title: "Achter Kreuzzug und Tod Ludwigs IX.", text: "Der franz\xF6sische K\xF6nig stirbt bei einem letzten Kreuzzugsversuch vor Tunis an einer Seuche \u2013 praktisches Ende der gro\xDFen Kreuzzugsbewegung." },
-      { year: 1271, title: "Marco Polo bricht nach China auf", text: "Der venezianische Kaufmann reist an den Hof des Mongolenherrschers Kublai Khan und pr\xE4gt europ\xE4ische Asienvorstellungen." },
-      { year: 1291, title: "Ende der Kreuzfahrerstaaten", text: "Mit dem Fall von Akkon verlieren die Kreuzfahrer ihre letzte Bastion im Heiligen Land." },
-      { year: 1324, title: "Pilgerreise des Mansa Musa", text: "Der Herrscher des westafrikanischen Malireichs reist mit enormem Goldreichtum nach Mekka und wird international bekannt." },
-      { year: 1337, title: "Beginn des Hundertj\xE4hrigen Krieges", text: "England und Frankreich beginnen einen jahrzehntelangen Konflikt um die franz\xF6sische Krone." },
-      { year: 1347, title: "Der Schwarze Tod erreicht Europa", text: "Die Pest t\xF6tet innerhalb weniger Jahre sch\xE4tzungsweise ein Drittel der europ\xE4ischen Bev\xF6lkerung." },
-      { year: 1358, title: "Goldene Bulle", text: "Kaiser Karl IV. regelt die K\xF6nigswahl im Heiligen R\xF6mischen Reich und st\xE4rkt die Kurf\xFCrsten." },
-      { year: 1368, title: "Ming-Dynastie in China", text: "Die Ming l\xF6sen die mongolische Yuan-Dynastie ab und leiten eine Bl\xFCtezeit chinesischer Kultur ein." },
-      { year: 1381, title: "Englischer Bauernaufstand", text: "Hohe Steuern und Pestfolgen l\xF6sen einen der gr\xF6\xDFten mittelalterlichen Volksaufst\xE4nde Englands aus." },
-      { year: 1420, title: "Beginn der Hussitenkriege", text: "Anh\xE4nger Jan Hus' k\xE4mpfen gegen Kaiser und Kirche \u2013 fr\xFCher Ausdruck religi\xF6ser Reformbewegungen." },
-      { year: 1429, title: "Jeanne d'Arc befreit Orl\xE9ans", text: "Die junge Bauerntochter wendet im Hundertj\xE4hrigen Krieg das Blatt zugunsten Frankreichs." },
-      { year: 1453, title: "Fall Konstantinopels", text: "Die Osmanen erobern Konstantinopel und beenden das Byzantinische Reich endg\xFCltig." },
-      { year: 1453, title: "Ende des Hundertj\xE4hrigen Krieges", text: "Frankreich vertreibt die Engl\xE4nder weitgehend vom Kontinent \u2013 Grundstein eines gest\xE4rkten franz\xF6sischen Nationalgef\xFChls." },
-      { year: 1455, title: "Gutenbergs Buchdruck", text: "Johannes Gutenberg druckt mit beweglichen Lettern die erste vollst\xE4ndige Bibel \u2013 Medienrevolution mit Fernwirkung." },
-      { year: 1492, title: "Fall von Granada / Ende der Reconquista", text: "Die letzten islamischen Herrscher werden aus Spanien vertrieben \u2013 im selben Jahr sticht Kolumbus in See." },
-      { year: 1492, title: "Kolumbus erreicht Amerika", text: "Christoph Kolumbus landet in der Karibik und leitet die europ\xE4ische Kolonisierung Amerikas ein." }
-    ],
-    figures: [
-      { name: "Justinian I.", years: "ca. 482\u2013565", text: "Ostr\xF6mischer Kaiser, lie\xDF das r\xF6mische Recht kodifizieren und die Hagia Sophia erbauen." },
-      { name: "Mohammed", years: "ca. 570\u2013632", text: "Religionsstifter des Islam, dessen Lehren binnen weniger Jahrhunderte von Spanien bis Zentralasien verbreitet wurden." },
-      { name: "Karl der Gro\xDFe", years: "747\u2013814", text: "Fr\xE4nkischer K\xF6nig und Kaiser, einte weite Teile West- und Mitteleuropas und f\xF6rderte Bildung ('Karolingische Renaissance')." },
-      { name: "Alfred der Gro\xDFe", years: "849\u2013899", text: "Angels\xE4chsischer K\xF6nig, verteidigte England erfolgreich gegen die Wikinger und f\xF6rderte Bildung und Recht." },
-      { name: "Otto I.", years: "912\u2013973", text: "Erster Kaiser des Heiligen R\xF6mischen Reiches, sicherte die Ostgrenze und st\xE4rkte die Kirche als Machtst\xFCtze." },
-      { name: "Wilhelm der Eroberer", years: "1028\u20131087", text: "Normannischer Herzog, eroberte 1066 England und ver\xE4nderte dessen Sprache, Recht und Adel grundlegend." },
-      { name: "Dschingis Khan", years: "ca. 1162\u20131227", text: "Begr\xFCnder des Mongolenreichs, das zum gr\xF6\xDFten zusammenh\xE4ngenden Landreich der Geschichte wurde." },
-      { name: "Saladin", years: "1137\u20131193", text: "Kurdisch-muslimischer Sultan, eroberte Jerusalem von den Kreuzfahrern zur\xFCck und galt als ritterlicher Gegner." },
-      { name: "Mansa Musa", years: "ca. 1280\u20131337", text: "Herrscher des westafrikanischen Malireichs, gilt aufgrund seines Goldreichtums als m\xF6glicherweise reichster Mensch der Geschichte." },
-      { name: "Thomas von Aquin", years: "1225\u20131274", text: "Mittelalterlicher Theologe und Philosoph, verband christliche Lehre mit aristotelischer Philosophie." },
-      { name: "Jeanne d'Arc", years: "1412\u20131431", text: "Franz\xF6sische Nationalheldin, f\xFChrte im Hundertj\xE4hrigen Krieg franz\xF6sische Truppen an, wurde sp\xE4ter als Ketzerin verbrannt." },
-      { name: "Marco Polo", years: "1254\u20131324", text: "Venezianischer H\xE4ndler und Reisender, dessen Berichte \xFCber China Europas Asienbild jahrhundertelang pr\xE4gten." },
-      { name: "Johannes Gutenberg", years: "ca. 1400\u20131468", text: "Erfinder des Buchdrucks mit beweglichen Lettern, erm\xF6glichte massenhafte Verbreitung von Wissen." },
-      { name: "Basileios II.", years: "958\u20131025", text: "Byzantinischer Kaiser, genannt 'Bulgarent\xF6ter', f\xFChrte das Reich zu seiner gr\xF6\xDFten mittelalterlichen Machtentfaltung." },
-      { name: "Alexios I. Komnenos", years: "1048\u20131118", text: "Byzantinischer Kaiser, dessen Hilferuf an den Westen den Ersten Kreuzzug mit ausl\xF6ste." },
-      { name: "Gottfried von Bouillon", years: "ca. 1060\u20131100", text: "Anf\xFChrer des Ersten Kreuzzugs, erster Herrscher des K\xF6nigreichs Jerusalem." },
-      { name: "Balduin I. von Jerusalem", years: "ca. 1058\u20131118", text: "Bruder Gottfrieds von Bouillon, erster K\xF6nig von Jerusalem, festigte die junge Kreuzfahrerherrschaft in der Levante." },
-      { name: "Friedrich I. Barbarossa", years: "ca. 1122\u20131190", text: "Kaiser des Heiligen R\xF6mischen Reiches, ertrank auf dem Weg zum Dritten Kreuzzug in Kleinasien." },
-      { name: "Richard L\xF6wenherz", years: "1157\u20131199", text: "Englischer K\xF6nig, prominenter Anf\xFChrer des Dritten Kreuzzugs, k\xE4mpfte gegen Saladin um Jerusalem." },
-      { name: "Ludwig IX. der Heilige", years: "1214\u20131270", text: "Franz\xF6sischer K\xF6nig, f\xFChrte zwei Kreuzz\xFCge an und starb bei der Belagerung von Tunis; sp\xE4ter heiliggesprochen." },
-      { name: "Baibars", years: "ca. 1223\u20131277", text: "Mamlukensultan, stoppte die Mongolen bei Ain Dschalut und eroberte zahlreiche Kreuzfahrerfestungen zur\xFCck." }
-    ],
-    nations: [
-      { name: "Byzantinisches Reich", text: "Ostr\xF6misches Reich mit Hauptstadt Konstantinopel, bewahrte \xFCber 1000 Jahre antikes Wissen und orthodoxes Christentum." },
-      { name: "Fr\xE4nkisches Reich / Heiliges R\xF6misches Reich", text: "Zentrale Macht in West- und Mitteleuropa, Vorl\xE4ufer moderner europ\xE4ischer Staaten." },
-      { name: "Kalifat (Umayyaden, Abbasiden)", text: "Islamische Gro\xDFreiche mit Bl\xFCtezeiten in Wissenschaft, Mathematik und Medizin, Zentrum u.a. Bagdad." },
-      { name: "Mongolenreich", text: "Gr\xF6\xDFtes zusammenh\xE4ngendes Landreich der Geschichte unter Dschingis Khan und seinen Nachfolgern." },
-      { name: "Song- und Ming-Dynastie (China)", text: "Chinesische Kaiserreiche mit technologischen Innovationen wie Papiergeld, Schie\xDFpulver, Kompass und Porzellankunst." },
-      { name: "Malireich", text: "Westafrikanisches Gro\xDFreich mit enormem Goldreichtum, gepr\xE4gt durch den Herrscher Mansa Musa und Handel \xFCber die Sahara." },
-      { name: "Kiewer Rus", text: "Fr\xFChes ostslawisches Reich, Ursprung von Russland, der Ukraine und Wei\xDFrussland." },
-      { name: "Aztekenreich", text: "Mesoamerikanisches Reich mit Hauptstadt Tenochtitlan, gepr\xE4gt durch Kriegertum, Tributsystem und monumentale Tempelanlagen." }
-    ],
-    dynastyGroups: [
-      {
-        title: "Byzantinische Kaiserdynastien",
-        items: [
-          { name: "Justinianische Dynastie (518\u2013602)", text: "Justinian I. l\xE4sst das r\xF6mische Recht kodifizieren, die Hagia Sophia errichten und erobert zeitweise Italien und Nordafrika zur\xFCck." },
-          { name: "Herakleische Dynastie (610\u2013711)", text: "Herakleios wehrt die Perser ab, verliert aber weite Teile des Reiches an die rasch expandierenden arabischen Heere." },
-          { name: "Makedonische Dynastie (867\u20131056)", text: "Unter Basileios II. erlebt Byzanz seine gr\xF6\xDFte mittelalterliche Machtentfaltung, u.a. Sieg \xFCber das Bulgarenreich." },
-          { name: "Komnenen-Dynastie (1081\u20131185)", text: "Nach der schweren Niederlage von Manzikert (1071) stabilisiert Alexios I. das Reich und bittet den Westen um Hilfe \u2013 Ausl\xF6ser der Kreuzz\xFCge." },
-          { name: "Palaiologen-Dynastie (1259\u20131453)", text: "Letzte byzantinische Dynastie, zunehmend geschw\xE4chtes Restreich, endet mit dem Fall Konstantinopels 1453." }
-        ]
-      },
-      {
-        title: "Outremer \u2013 die Kreuzfahrerstaaten",
-        items: [
-          { name: "K\xF6nigreich Jerusalem (1099\u20131291)", text: "Zentraler und m\xE4chtigster Kreuzfahrerstaat, gegr\xFCndet von Gottfried von Bouillon nach der Eroberung Jerusalems 1099; endet mit dem Fall Akkons." },
-          { name: "Grafschaft Edessa (1098\u20131150)", text: "N\xF6rdlichster und erster gegr\xFCndeter Kreuzfahrerstaat; sein Fall 1144 l\xF6st den Zweiten Kreuzzug aus." },
-          { name: "F\xFCrstentum Antiochia (1098\u20131268)", text: "Wichtiger Handels- und Machtknotenpunkt an der nordsyrischen K\xFCste, lange umk\xE4mpft zwischen Kreuzfahrern, Byzantinern und muslimischen Nachbarn." },
-          { name: "Grafschaft Tripolis (1102\u20131289)", text: "Letzter neu gegr\xFCndeter Kreuzfahrerstaat, fiel als vorletzter an die \xE4gyptischen Mamluken." }
-        ]
-      },
-      {
-        title: "Islamische Kalifate",
-        items: [
-          { name: "Rechtgeleitete Kalifen (632\u2013661)", text: "Die ersten vier Nachfolger Mohammeds (u.a. Abu Bakr, Umar, Uthman, Ali) leiten die rasche islamische Expansion \xFCber den Nahen Osten und Nordafrika." },
-          { name: "Umayyaden-Kalifat (661\u2013750)", text: "Mit Hauptstadt Damaskus erreicht das Kalifat seine gr\xF6\xDFte Ausdehnung \u2013 von Spanien bis an die Grenzen Indiens." },
-          { name: "Abbasiden-Kalifat (750\u20131258)", text: "Bagdad wird zum Zentrum eines 'Goldenen Zeitalters' der Wissenschaft, Philosophie und Medizin; endet mit der mongolischen Eroberung Bagdads." },
-          { name: "Fatimiden-Kalifat (909\u20131171)", text: "Schiitisches Gegenkalifat mit Zentrum in Nordafrika und \xC4gypten, gr\xFCndete Kairo als neue Hauptstadt." }
-        ]
-      }
+   },
+   {
+    "title": "Outremer – die Kreuzfahrerstaaten",
+    "items": [
+     {
+      "name": "Königreich Jerusalem (1099–1291)",
+      "text": "Zentraler und mächtigster Kreuzfahrerstaat, gegründet von Gottfried von Bouillon nach der Eroberung Jerusalems 1099; endet mit dem Fall Akkons."
+     },
+     {
+      "name": "Grafschaft Edessa (1098–1150)",
+      "text": "Nördlichster und erster gegründeter Kreuzfahrerstaat; sein Fall 1144 löst den Zweiten Kreuzzug aus."
+     },
+     {
+      "name": "Fürstentum Antiochia (1098–1268)",
+      "text": "Wichtiger Handels- und Machtknotenpunkt an der nordsyrischen Küste, lange umkämpft zwischen Kreuzfahrern, Byzantinern und muslimischen Nachbarn."
+     },
+     {
+      "name": "Grafschaft Tripolis (1102–1289)",
+      "text": "Letzter neu gegründeter Kreuzfahrerstaat, fiel als vorletzter an die ägyptischen Mamluken."
+     }
     ]
-  },
-  {
-    id: "fruehe-neuzeit",
-    name: "Fr\xFChe Neuzeit",
-    span: "ca. 1500 \u2013 1789",
-    startYear: 1500,
-    endYear: 1789,
-    color: "#8a3020",
-    accent: "#d4a24a",
-    lead: "Reformation, Kolonialismus und die Wissenschaftliche Revolution.",
-    description: "Die Fr\xFChe Neuzeit bringt weitreichende Umbr\xFCche: Die Reformation spaltet die Kirche, europ\xE4ische M\xE4chte errichten Kolonialreiche, und die Wissenschaftliche Revolution ver\xE4ndert das Weltbild grundlegend. Absolutistische Monarchien konzentrieren Macht, w\xE4hrend Aufkl\xE4rung und B\xFCrgertum die Grundlagen f\xFCr Umw\xE4lzungen legen.",
-    events: [
-      { year: 1498, title: "Vasco da Gama erreicht Indien", text: "Der Portugiese findet den Seeweg um Afrika nach Indien \u2013 Grundlage des europ\xE4ischen Gew\xFCrzhandels." },
-      { year: 1517, title: "Luthers 95 Thesen", text: "Martin Luther ver\xF6ffentlicht seine Thesen gegen den Ablasshandel \u2013 Beginn der Reformation und Kirchenspaltung." },
-      { year: 1519, title: "Beginn der Eroberung Mexikos", text: "Hern\xE1n Cort\xE9s beginnt den Feldzug gegen das Aztekenreich, das binnen zwei Jahren f\xE4llt." },
-      { year: 1521, title: "Reichstag zu Worms", text: "Luther widerruft vor Kaiser Karl V. nicht und wird ge\xE4chtet \u2013 H\xF6hepunkt des fr\xFChen Reformationskonflikts." },
-      { year: 1522, title: "Vollendung der ersten Weltumsegelung", text: "Magellan selbst stirbt bereits 1521 auf den Philippinen; sein Kapit\xE4n Juan Sebasti\xE1n Elcano vollendet mit den letzten \xDCberlebenden 1522 die erste Erdumsegelung und beweist praktisch die Kugelgestalt der Erde." },
-      { year: 1524, title: "Deutscher Bauernkrieg", text: "B\xE4uerliche Aufst\xE4nde fordern soziale und religi\xF6se Reformen \u2013 blutig niedergeschlagener gr\xF6\xDFter Volksaufstand vor der Neuzeit." },
-      { year: 1533, title: "Eroberung des Inkareichs", text: "Francisco Pizarro erobert mit einer kleinen Truppe das riesige Inkareich in S\xFCdamerika." },
-      { year: 1543, title: "Kopernikanische Wende", text: "Nikolaus Kopernikus ver\xF6ffentlicht sein heliozentrisches Weltbild \u2013 Grundstein der modernen Astronomie." },
-      { year: 1545, title: "Konzil von Trient beginnt", text: "Die katholische Kirche reagiert mit Reformen auf die Reformation ('Gegenreformation')." },
-      { year: 1588, title: "Untergang der Spanischen Armada", text: "England besiegt die spanische Flotte und etabliert sich als aufstrebende Seemacht." },
-      { year: 1600, title: "Gr\xFCndung der britischen Ostindien-Kompanie", text: "Eine private Handelsgesellschaft erh\xE4lt weitreichende Vollmachten und wird sp\xE4ter faktischer Herrscher \xFCber weite Teile Indiens." },
-      { year: 1602, title: "Gr\xFCndung der ersten B\xF6rse der Welt", text: "Mit der Amsterdamer B\xF6rse und den handelbaren Aktien der Niederl\xE4ndischen Ostindien-Kompanie (VOC) entsteht der erste moderne Aktienmarkt der Geschichte." },
-      { year: 1637, title: "Tulpenmanie", text: "In den Niederlanden l\xF6sen spekulative Tulpenzwiebel-Preise einen der fr\xFChesten dokumentierten Finanzblasen-Crashs der Geschichte aus." },
-      { year: 1618, title: "Beginn des Drei\xDFigj\xE4hrigen Kriegs", text: "Der Prager Fenstersturz l\xF6st einen der verheerendsten Kriege der europ\xE4ischen Geschichte aus." },
-      { year: 1642, title: "Englischer B\xFCrgerkrieg", text: "K\xF6nig und Parlament ringen gewaltsam um die Macht; endet mit der Hinrichtung Karls I." },
-      { year: 1648, title: "Westf\xE4lischer Friede", text: "Der Drei\xDFigj\xE4hrige Krieg endet; das Prinzip staatlicher Souver\xE4nit\xE4t wird v\xF6lkerrechtlich verankert." },
-      { year: 1665, title: "Gro\xDFe Pest von London", text: "Eine der letzten gro\xDFen Pestepidemien Europas fordert in London zehntausende Todesopfer." },
-      { year: 1687, title: "Newtons Principia Mathematica", text: "Isaac Newton formuliert die Gravitationsgesetze und legt die Grundlage der klassischen Physik." },
-      { year: 1688, title: "Glorreiche Revolution", text: "Das englische Parlament setzt K\xF6nig Jakob II. ab und st\xE4rkt dauerhaft die parlamentarische Macht." },
-      { year: 1689, title: "Bill of Rights in England", text: "Die englische Krone wird dauerhaft an das Parlament gebunden \u2013 Meilenstein konstitutioneller Monarchie." },
-      { year: 1701, title: "Kr\xF6nung des ersten K\xF6nigs in Preu\xDFen", text: "Brandenburg-Preu\xDFen wird formal zum K\xF6nigreich \u2013 Aufstieg zur europ\xE4ischen Milit\xE4rmacht beginnt." },
-      { year: 1721, title: "Zar Peter der Gro\xDFe kr\xF6nt sich zum Kaiser", text: "Russland wird formal zum Kaiserreich und orientiert sich st\xE4rker an westeurop\xE4ischen Vorbildern." },
-      { year: 1740, title: "Beginn der \xD6sterreichischen Erbfolgekriege", text: "Preu\xDFen unter Friedrich II. erobert Schlesien und stellt sich als neue Gro\xDFmacht gegen Habsburg." },
-      { year: 1751, title: "Erste Encyclop\xE9die erscheint", text: "Diderot und d'Alembert ver\xF6ffentlichen ein Kompendium aufkl\xE4rerischen Wissens \u2013 zentrales Werk der Aufkl\xE4rung." },
-      { year: 1756, title: "Beginn des Siebenj\xE4hrigen Kriegs", text: "Ein globaler Konflikt zwischen den europ\xE4ischen Gro\xDFm\xE4chten wird teils als 'erster Weltkrieg' bezeichnet." },
-      { year: 1762, title: "Rousseaus 'Gesellschaftsvertrag'", text: "Jean-Jacques Rousseau entwirft ein einflussreiches Konzept von Volkssouver\xE4nit\xE4t und Gesellschaftsvertrag." },
-      { year: 1769, title: "James Watts verbesserte Dampfmaschine", text: "Die entscheidend verbesserte Dampfmaschine legt die technische Grundlage der bevorstehenden Industriellen Revolution." },
-      { year: 1776, title: "US-Unabh\xE4ngigkeitserkl\xE4rung", text: "Die 13 amerikanischen Kolonien erkl\xE4ren ihre Unabh\xE4ngigkeit von Gro\xDFbritannien." },
-      { year: 1789, title: "Beginn der Franz\xF6sischen Revolution", text: "Der Sturm auf die Bastille markiert den Beginn eines Umbruchs, der die politische Ordnung Europas ver\xE4ndert." }
-    ],
-    figures: [
-      { name: "Martin Luther", years: "1483\u20131546", text: "Deutscher Theologe, Ausl\xF6ser der Reformation, \xFCbersetzte die Bibel ins Deutsche und pr\xE4gte damit die Sprache." },
-      { name: "Nikolaus Kopernikus", years: "1473\u20131543", text: "Astronom, begr\xFCndete das heliozentrische Weltbild gegen die vorherrschende geozentrische Lehre." },
-      { name: "Hern\xE1n Cort\xE9s", years: "1485\u20131547", text: "Spanischer Konquistador, eroberte mit wenigen hundert M\xE4nnern das Aztekenreich." },
-      { name: "Galileo Galilei", years: "1564\u20131642", text: "Physiker und Astronom, verteidigte das kopernikanische Weltbild und geriet in Konflikt mit der Kirche." },
-      { name: "Elisabeth I.", years: "1533\u20131603", text: "Englische K\xF6nigin, f\xFChrte England zur Seemacht und f\xF6rderte eine kulturelle Bl\xFCtezeit (Shakespeare)." },
-      { name: "Isaac Newton", years: "1643\u20131727", text: "Physiker und Mathematiker, formulierte die Gravitationsgesetze und die klassische Mechanik." },
-      { name: "Ludwig XIV.", years: "1638\u20131715", text: "'Sonnenk\xF6nig', Inbegriff des Absolutismus, erbaute Versailles als Machtzentrum Frankreichs." },
-      { name: "Peter der Gro\xDFe", years: "1672\u20131725", text: "Russischer Zar, modernisierte Russland nach westeurop\xE4ischem Vorbild und gr\xFCndete St. Petersburg." },
-      { name: "Friedrich der Gro\xDFe", years: "1712\u20131786", text: "Preu\xDFischer K\xF6nig, machte Preu\xDFen durch Kriege und Verwaltungsreformen zur europ\xE4ischen Gro\xDFmacht." },
-      { name: "Maria Theresia", years: "1717\u20131780", text: "Habsburgische Herrscherin, modernisierte Verwaltung, Bildung und Milit\xE4r des Habsburgerreichs." },
-      { name: "Katharina die Gro\xDFe", years: "1729\u20131796", text: "Russische Zarin, erweiterte das Reich erheblich und f\xF6rderte Kunst und Aufkl\xE4rung am Hof." },
-      { name: "Voltaire", years: "1694\u20131778", text: "Franz\xF6sischer Aufkl\xE4rer, Verfechter von Meinungsfreiheit und Kirchenkritik." },
-      { name: "Adam Smith", years: "1723\u20131790", text: "Schottischer \xD6konom, Begr\xFCnder der modernen National\xF6konomie mit 'Der Wohlstand der Nationen'." },
-      { name: "S\xFCleyman der Pr\xE4chtige", years: "1494\u20131566", text: "Osmanischer Sultan, f\xFChrte das Reich zu seiner gr\xF6\xDFten territorialen und kulturellen Bl\xFCte." },
-      { name: "Akbar der Gro\xDFe", years: "1542\u20131605", text: "Mogulherrscher Indiens, bekannt f\xFCr religi\xF6se Toleranzpolitik und Verwaltungsreformen in einem riesigen Vielv\xF6lkerreich." },
-      { name: "Oliver Cromwell", years: "1599\u20131658", text: "Englischer General und Staatsmann, f\xFChrte den Sturz der Monarchie an und regierte als 'Lordprotektor'." }
-    ],
-    nations: [
-      { name: "Spanisches Kolonialreich", text: "Erste globale Kolonialmacht, kontrollierte weite Teile Amerikas nach dem Fall der Azteken- und Inkareiche." },
-      { name: "Osmanisches Reich", text: "Islamisches Gro\xDFreich, das bis vor Wien vorstie\xDF und weite Teile S\xFCdosteuropas, Nordafrikas und des Nahen Ostens beherrschte." },
-      { name: "Vereinigte Niederlande", text: "Handelsmacht des 'Goldenen Zeitalters' mit globalem Handelsnetz (VOC) und kultureller Bl\xFCte." },
-      { name: "K\xF6nigreich Preu\xDFen", text: "Aufstrebende deutsche Milit\xE4rmacht, die im 18. Jahrhundert zur europ\xE4ischen Gro\xDFmacht aufstieg." },
-      { name: "Mogulreich (Indien)", text: "Islamisches Gro\xDFreich in Indien, bekannt f\xFCr kulturelle Bl\xFCte (Taj Mahal) und religi\xF6se Vielfalt." },
-      { name: "Habsburgerreich", text: "Vielv\xF6lkerstaat in Mitteleuropa unter der Dynastie Habsburg, lange pr\xE4gende Kraft im Heiligen R\xF6mischen Reich." },
-      { name: "Tokugawa-Shogunat (Japan)", text: "Japanisches Herrschaftssystem mit \xFCber 250 Jahren weitgehender Isolation und innerer Stabilit\xE4t ('Edo-Zeit')." }
-    ],
-    dynastyGroups: [
-      {
-        title: "Herrscherh\xE4user der Fr\xFChen Neuzeit",
-        items: [
-          { name: "Habsburger (Spanien & \xD6sterreich)", text: "Karl V. vereinigt kurzzeitig Spanien, \xD6sterreich und weite Teile Amerikas unter einer Krone ('Reich, in dem die Sonne nie unterging'); sp\xE4tere Trennung in eine spanische und \xF6sterreichische Linie." },
-          { name: "Bourbonen (Frankreich)", text: "Ab Heinrich IV. (1589) regierende Dynastie, H\xF6hepunkt unter dem 'Sonnenk\xF6nig' Ludwig XIV.; endet mit der Hinrichtung Ludwigs XVI. 1793." },
-          { name: "Osmanische Sultane", text: "Von S\xFCleyman dem Pr\xE4chtigen (16. Jh.) bis zum allm\xE4hlichen Niedergang beherrschen die Osmanen S\xFCdosteuropa, Nordafrika und den Nahen Osten." },
-          { name: "Romanov-Zaren (Russland)", text: "Ab 1613 regierende Dynastie; unter Peter dem Gro\xDFen und Katharina der Gro\xDFen Aufstieg Russlands zur europ\xE4ischen Gro\xDFmacht." },
-          { name: "Ming- und fr\xFChe Qing-Dynastie (China)", text: "Die Ming (bis 1644) f\xF6rdern Handel und Kultur; die aus der Mandschurei stammenden Qing l\xF6sen sie ab und errichten das letzte chinesische Kaiserreich." }
-        ]
-      }
+   },
+   {
+    "title": "Islamische Kalifate",
+    "items": [
+     {
+      "name": "Rechtgeleitete Kalifen (632–661)",
+      "text": "Die ersten vier Nachfolger Mohammeds (u.a. Abu Bakr, Umar, Uthman, Ali) leiten die rasche islamische Expansion über den Nahen Osten und Nordafrika."
+     },
+     {
+      "name": "Umayyaden-Kalifat (661–750)",
+      "text": "Mit Hauptstadt Damaskus erreicht das Kalifat seine größte Ausdehnung – von Spanien bis an die Grenzen Indiens."
+     },
+     {
+      "name": "Abbasiden-Kalifat (750–1258)",
+      "text": "Bagdad wird zum Zentrum eines 'Goldenen Zeitalters' der Wissenschaft, Philosophie und Medizin; endet mit der mongolischen Eroberung Bagdads."
+     },
+     {
+      "name": "Fatimiden-Kalifat (909–1171)",
+      "text": "Schiitisches Gegenkalifat mit Zentrum in Nordafrika und Ägypten, gründete Kairo als neue Hauptstadt."
+     }
     ]
-  },
-  {
-    id: "industrialisierung",
-    name: "Revolution & Industrialisierung",
-    span: "1789 \u2013 1914",
-    startYear: 1789,
-    endYear: 1914,
-    color: "#6b1f1f",
-    accent: "#d4af37",
-    lead: "B\xFCrgerliche Revolutionen, Dampfmaschinen und Nationalstaaten.",
-    description: "Das 'lange 19. Jahrhundert' beginnt mit der Franz\xF6sischen Revolution und endet mit dem Ersten Weltkrieg. Die Industrielle Revolution ver\xE4ndert Wirtschaft und Gesellschaft radikal, Nationalstaaten entstehen oder einigen sich (Deutschland, Italien), und europ\xE4ische M\xE4chte teilen weite Teile der Welt kolonial unter sich auf.",
-    events: [
-      { year: 1789, title: "Franz\xF6sische Revolution", text: "Sturz der absoluten Monarchie in Frankreich, Erkl\xE4rung der Menschen- und B\xFCrgerrechte." },
-      { year: 1793, title: "Hinrichtung Ludwigs XVI.", text: "Der franz\xF6sische K\xF6nig wird \xF6ffentlich hingerichtet \u2013 radikaler Bruch mit der monarchischen Ordnung Europas." },
-      { year: 1799, title: "Napoleon wird Erster Konsul", text: "Napoleon Bonaparte \xFCbernimmt durch Staatsstreich die Macht in Frankreich." },
-      { year: 1804, title: "Napoleon kr\xF6nt sich zum Kaiser", text: "Frankreich wird zum Kaiserreich; Napoleon beginnt seine europ\xE4ischen Eroberungsfeldz\xFCge." },
-      { year: 1804, title: "Unabh\xE4ngigkeit Haitis", text: "Nach einem erfolgreichen Sklavenaufstand entsteht die erste unabh\xE4ngige Schwarze Republik der Welt." },
-      { year: 1806, title: "Ende des Heiligen R\xF6mischen Reiches", text: "Unter napoleonischem Druck legt Kaiser Franz II. die Reichskrone nieder \u2013 Ende eines \xFCber 800-j\xE4hrigen Staatsgebildes." },
-      { year: 1812, title: "Napoleons Russlandfeldzug scheitert", text: "Die 'Grande Arm\xE9e' wird durch Winter, Logistikprobleme und russischen Widerstand nahezu vernichtet." },
-      { year: 1815, title: "Schlacht bei Waterloo", text: "Napoleons endg\xFCltige Niederlage beendet die napoleonische \xC4ra; der Wiener Kongress ordnet Europa neu." },
-      { year: 1830, title: "Erste Eisenbahnlinie", text: "Die Strecke Liverpool\u2013Manchester er\xF6ffnet das Zeitalter der Eisenbahn und beschleunigt die Industrialisierung." },
-      { year: 1833, title: "Abschaffung der Sklaverei im Britischen Empire", text: "Gro\xDFbritannien verbietet die Sklaverei in seinen Kolonien \u2013 wichtiger Schritt der internationalen Abolitionsbewegung." },
-      { year: 1848, title: "Europ\xE4ische Revolutionen", text: "In vielen europ\xE4ischen Staaten fordern B\xFCrger Verfassungen und nationale Einheit \u2013 der 'V\xF6lkerfr\xFChling' scheitert gr\xF6\xDFtenteils kurzfristig." },
-      { year: 1848, title: "Kommunistisches Manifest", text: "Marx und Engels ver\xF6ffentlichen ihre einflussreiche Streitschrift, die sp\xE4tere sozialistische Bewegungen pr\xE4gt." },
-      { year: 1853, title: "Beginn des Krimkriegs", text: "Ein Konflikt zwischen Russland und einer europ\xE4ischen Koalition zeigt fr\xFCh moderne, verlustreiche Kriegsf\xFChrung." },
-      { year: 1859, title: "Darwins 'Entstehung der Arten'", text: "Charles Darwins Evolutionstheorie ver\xE4ndert das biologische und philosophische Weltbild grundlegend." },
-      { year: 1861, title: "Italienische Einigung", text: "Unter F\xFChrung Garibaldis und Cavours entsteht ein geeinter italienischer Nationalstaat." },
-      { year: 1861, title: "Beginn des Amerikanischen B\xFCrgerkriegs", text: "Der Konflikt um Sklaverei und Staatenrechte zwischen Nord- und S\xFCdstaaten beginnt." },
-      { year: 1863, title: "Sklaverei-Emanzipationserkl\xE4rung (USA)", text: "Abraham Lincoln erkl\xE4rt die Sklaven in den Konf\xF6derierten Staaten f\xFCr frei." },
-      { year: 1868, title: "Meiji-Restauration in Japan", text: "Japan modernisiert sich binnen weniger Jahrzehnte radikal nach westlichem Vorbild und wird zur asiatischen Gro\xDFmacht." },
-      { year: 1869, title: "Er\xF6ffnung des Suezkanals", text: "Die Verbindung zwischen Mittelmeer und Rotem Meer verk\xFCrzt den Seeweg nach Asien erheblich." },
-      { year: 1870, title: "Deutsch-Franz\xF6sischer Krieg", text: "Preu\xDFen besiegt Frankreich entscheidend und ebnet den Weg zur deutschen Reichsgr\xFCndung." },
-      { year: 1871, title: "Deutsche Reichsgr\xFCndung", text: "Nach dem Sieg \xFCber Frankreich wird das Deutsche Kaiserreich im Spiegelsaal von Versailles ausgerufen." },
-      { year: 1876, title: "Erfindung des Telefons", text: "Alexander Graham Bell meldet das Telefon zum Patent an \u2013 Beginn der modernen Telekommunikation." },
-      { year: 1879, title: "Erfindung der Gl\xFChlampe", text: "Thomas Edison entwickelt eine praxistaugliche Gl\xFChlampe und treibt die Elektrifizierung voran." },
-      { year: 1884, title: "Berliner Kongo-Konferenz", text: "Europ\xE4ische M\xE4chte teilen Afrika weitgehend ohne Beteiligung der Betroffenen unter sich auf." },
-      { year: 1893, title: "Neuseeland f\xFChrt Frauenwahlrecht ein", text: "Als erstes Land der Welt gew\xE4hrt Neuseeland Frauen das aktive Wahlrecht." },
-      { year: 1903, title: "Erster motorisierter Flug", text: "Die Gebr\xFCder Wright gelingt in Kitty Hawk der erste kontrollierte Motorflug." },
-      { year: 1904, title: "Russisch-Japanischer Krieg", text: "Japan besiegt erstmals eine europ\xE4ische Gro\xDFmacht \u2013 Schock f\xFCr das europ\xE4ische Selbstverst\xE4ndnis." },
-      { year: 1905, title: "Einsteins Relativit\xE4tstheorie", text: "Albert Einstein ver\xF6ffentlicht seine spezielle Relativit\xE4tstheorie und ver\xE4ndert das physikalische Weltbild." },
-      { year: 1905, title: "Russische Revolution von 1905", text: "Massenproteste erzwingen von Zar Nikolaus II. erste Zugest\xE4ndnisse \u2013 Vorbote der Revolution von 1917." },
-      { year: 1908, title: "Flie\xDFbandproduktion bei Ford", text: "Henry Ford revolutioniert mit der Massenfertigung des Model T die industrielle Produktion." },
-      { year: 1912, title: "Untergang der Titanic", text: "Der als unsinkbar geltende Ozeandampfer sinkt auf seiner Jungfernfahrt \u2013 \xFCber 1500 Menschen sterben." }
-    ],
-    figures: [
-      { name: "Napoleon Bonaparte", years: "1769\u20131821", text: "Franz\xF6sischer Feldherr und Kaiser, pr\xE4gte Europa milit\xE4risch und rechtlich (Code Civil) nachhaltig." },
-      { name: "Sim\xF3n Bol\xEDvar", years: "1783\u20131830", text: "'Der Befreier' S\xFCdamerikas, f\xFChrte mehrere Staaten in die Unabh\xE4ngigkeit von Spanien." },
-      { name: "Otto von Bismarck", years: "1815\u20131898", text: "Preu\xDFischer Staatsmann, 'Reichsgr\xFCnder' Deutschlands durch geschickte Diplomatie und drei Kriege." },
-      { name: "Abraham Lincoln", years: "1809\u20131865", text: "US-Pr\xE4sident w\xE4hrend des B\xFCrgerkriegs, beendete die Sklaverei, wurde kurz nach Kriegsende ermordet." },
-      { name: "K\xF6nigin Victoria", years: "1819\u20131901", text: "Britische Monarchin, unter deren langer Herrschaft das britische Weltreich seine gr\xF6\xDFte Ausdehnung erreichte." },
-      { name: "Giuseppe Garibaldi", years: "1807\u20131882", text: "Italienischer Freiheitsk\xE4mpfer, Schl\xFCsselfigur der italienischen Einigung." },
-      { name: "Charles Darwin", years: "1809\u20131882", text: "Naturforscher, begr\xFCndete mit der Evolutionstheorie ein neues biologisches Weltbild." },
-      { name: "Karl Marx", years: "1818\u20131883", text: "Philosoph und \xD6konom, pr\xE4gte mit dem 'Kapital' die Kapitalismuskritik und sozialistische Bewegungen." },
-      { name: "Thomas Edison", years: "1847\u20131931", text: "US-Erfinder, meldete \xFCber 1000 Patente an, darunter die praxistaugliche Gl\xFChlampe." },
-      { name: "Louis Pasteur", years: "1822\u20131895", text: "Franz\xF6sischer Chemiker und Mikrobiologe, begr\xFCndete die moderne Bakteriologie und Impfstoffentwicklung." },
-      { name: "Marie Curie", years: "1867\u20131934", text: "Physikerin und Chemikerin, erforschte Radioaktivit\xE4t und erhielt als einzige Frau bislang Nobelpreise in zwei Naturwissenschaften." },
-      { name: "Florence Nightingale", years: "1820\u20131910", text: "Britische Krankenpflegerin, begr\xFCndete durch ihre Arbeit im Krimkrieg die moderne, hygieneorientierte Krankenpflege." },
-      { name: "Sun Yat-sen", years: "1866\u20131925", text: "Chinesischer Revolution\xE4r, f\xFChrend an der Xinhai-Revolution beteiligt, gilt als 'Vater' der Republik China." }
-    ],
-    nations: [
-      { name: "Britisches Weltreich", text: "Gr\xF6\xDFtes Kolonialreich der Geschichte, \xFCber das 'die Sonne nie unterging', Vorreiter der Industrialisierung." },
-      { name: "Deutsches Kaiserreich", text: "1871 gegr\xFCndeter Nationalstaat, wurde binnen weniger Jahrzehnte zur f\xFChrenden Industrie- und Milit\xE4rmacht Europas." },
-      { name: "USA (werdende Weltmacht)", text: "Wuchs durch Westexpansion, Industrialisierung und Einwanderung zur wirtschaftlichen Gro\xDFmacht heran." },
-      { name: "Meiji-Japan", text: "Modernisierte sich nach 1868 rasant nach westlichem Vorbild und besiegte 1905 als erste asiatische Macht ein europ\xE4isches Reich." },
-      { name: "\xD6sterreich-Ungarn", text: "Vielv\xF6lkerstaat in Mitteleuropa, dessen innere Spannungen ma\xDFgeblich zum Ersten Weltkrieg beitrugen." },
-      { name: "Zarenreich Russland", text: "Riesiges, agrarisch gepr\xE4gtes Kaiserreich mit wachsenden sozialen Spannungen vor der Revolution von 1917." }
-    ],
-    dynastyGroups: [
-      {
-        title: "Deutsches Kaiserreich \u2013 Kaiser & Kanzler",
-        items: [
-          { name: "Wilhelm I. & Otto von Bismarck (1871\u20131888/1890)", text: "Erster deutscher Kaiser und sein 'Eiserner Kanzler' pr\xE4gen Reichsgr\xFCndung, Sozialgesetzgebung und ein komplexes B\xFCndnissystem zur Kriegsvermeidung." },
-          { name: "Wilhelm II. (1888\u20131918)", text: "Letzter deutscher Kaiser, entlie\xDF Bismarck, verfolgte aggressive Flotten- und Weltpolitik und dankte 1918 nach der Niederlage ab." }
-        ]
-      },
-      {
-        title: "Frankreich \u2013 Wechselnde Regime",
-        items: [
-          { name: "Zweites Kaiserreich (1852\u20131870)", text: "Napoleon III. (Neffe Napoleons I.) regiert autorit\xE4r, modernisiert Paris grundlegend, scheitert milit\xE4risch gegen Preu\xDFen 1870." },
-          { name: "Dritte Republik (1870\u20131940)", text: "Nach Napoleons III. Sturz entsteht eine langlebige parlamentarische Republik, die Frankreich durch den Ersten Weltkrieg f\xFChrt." }
-        ]
-      },
-      {
-        title: "Sp\xE4te Qing-Dynastie (China)",
-        items: [
-          { name: "Kaiserinwitwe Cixi (Regentschaft 1861\u20131908)", text: "De-facto-Herrscherin Chinas in einer Phase wachsenden westlichen Drucks, gescheiterter Reformversuche und innerer Aufst\xE4nde (u.a. Boxeraufstand 1900)." },
-          { name: "Ende des chinesischen Kaisertums (1912)", text: "Nach \xFCber 2000 Jahren Kaiserherrschaft wird China nach der Xinhai-Revolution Republik \u2013 der letzte Kaiser Puyi dankt als Kind ab." }
-        ]
-      },
-      {
-        title: "Meiji-Japan",
-        items: [
-          { name: "Kaiser Meiji (1867\u20131912)", text: "Unter seiner Herrschaft modernisiert sich Japan in wenigen Jahrzehnten von einem isolierten Feudalstaat zur asiatischen Industrie- und Milit\xE4rmacht." }
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "id": "fruehe-neuzeit",
+  "name": "Frühe Neuzeit",
+  "span": "ca. 1500 – 1789",
+  "startYear": 1500,
+  "endYear": 1789,
+  "color": "#8a3020",
+  "accent": "#d4a24a",
+  "lead": "Reformation, Kolonialismus und die Wissenschaftliche Revolution.",
+  "description": "Die Frühe Neuzeit bringt weitreichende Umbrüche: Die Reformation spaltet die Kirche, europäische Mächte errichten Kolonialreiche, und die Wissenschaftliche Revolution verändert das Weltbild grundlegend. Absolutistische Monarchien konzentrieren Macht, während Aufklärung und Bürgertum die Grundlagen für Umwälzungen legen.",
+  "events": [
+   {
+    "year": 1498,
+    "title": "Vasco da Gama erreicht Indien",
+    "text": "Der Portugiese findet den Seeweg um Afrika nach Indien – Grundlage des europäischen Gewürzhandels."
+   },
+   {
+    "year": 1517,
+    "title": "Luthers 95 Thesen",
+    "text": "Martin Luther veröffentlicht seine Thesen gegen den Ablasshandel – Beginn der Reformation und Kirchenspaltung."
+   },
+   {
+    "year": 1517,
+    "title": "Luthers Thesen",
+    "text": "Ob sie angeschlagen wurden, ist unsicher – sicher ist, dass der Buchdruck sie binnen Wochen in ganz Deutschland verbreitete."
+   },
+   {
+    "year": 1519,
+    "title": "Beginn der Eroberung Mexikos",
+    "text": "Hernán Cortés beginnt den Feldzug gegen das Aztekenreich, das binnen zwei Jahren fällt."
+   },
+   {
+    "year": 1521,
+    "title": "Reichstag zu Worms",
+    "text": "Luther widerruft vor Kaiser Karl V. nicht und wird geächtet – Höhepunkt des frühen Reformationskonflikts."
+   },
+   {
+    "year": 1521,
+    "title": "Fall von Tenochtitlán",
+    "text": "Cortés siegt mit indigenen Verbündeten und mit Hilfe der Pocken, die die Stadt vorher entvölkert hatten."
+   },
+   {
+    "year": 1522,
+    "title": "Vollendung der ersten Weltumsegelung",
+    "text": "Magellan selbst stirbt bereits 1521 auf den Philippinen; sein Kapitän Juan Sebastián Elcano vollendet mit den letzten Überlebenden 1522 die erste Erdumsegelung und beweist praktisch die Kugelgestalt der Erde."
+   },
+   {
+    "year": 1524,
+    "title": "Deutscher Bauernkrieg",
+    "text": "Bäuerliche Aufstände fordern soziale und religiöse Reformen – blutig niedergeschlagener größter Volksaufstand vor der Neuzeit."
+   },
+   {
+    "year": 1533,
+    "title": "Eroberung des Inkareichs",
+    "text": "Francisco Pizarro erobert mit einer kleinen Truppe das riesige Inkareich in Südamerika."
+   },
+   {
+    "year": 1543,
+    "title": "Kopernikanische Wende",
+    "text": "Nikolaus Kopernikus veröffentlicht sein heliozentrisches Weltbild – Grundstein der modernen Astronomie."
+   },
+   {
+    "year": 1543,
+    "title": "Kopernikus und Vesalius",
+    "text": "Im selben Jahr erscheinen das heliozentrische Weltbild und die erste genaue Anatomie des Menschen – zwei Angriffe auf antike Autorität."
+   },
+   {
+    "year": 1545,
+    "title": "Konzil von Trient beginnt",
+    "text": "Die katholische Kirche reagiert mit Reformen auf die Reformation ('Gegenreformation')."
+   },
+   {
+    "year": 1555,
+    "title": "Augsburger Religionsfriede",
+    "text": "Der Landesherr bestimmt die Konfession seiner Untertanen. Ein Kompromiss, der Frieden schafft und Gewissensfreiheit ausschließt."
+   },
+   {
+    "year": 1571,
+    "title": "Lepanto",
+    "text": "Die letzte große Galeerenschlacht der Geschichte stoppt die osmanische Ausdehnung im Mittelmeer – ohne die Machtverhältnisse dauerhaft zu ändern."
+   },
+   {
+    "year": 1588,
+    "title": "Untergang der Spanischen Armada",
+    "text": "England besiegt die spanische Flotte und etabliert sich als aufstrebende Seemacht."
+   },
+   {
+    "year": 1600,
+    "title": "Gründung der britischen Ostindien-Kompanie",
+    "text": "Eine private Handelsgesellschaft erhält weitreichende Vollmachten und wird später faktischer Herrscher über weite Teile Indiens."
+   },
+   {
+    "year": 1600,
+    "title": "Gründung der Englischen Ostindien-Kompanie",
+    "text": "Ein Handelsunternehmen erhält Hoheitsrechte und wird über zwei Jahrhunderte zum faktischen Herrscher Indiens."
+   },
+   {
+    "year": 1602,
+    "title": "Gründung der ersten Börse der Welt",
+    "text": "Mit der Amsterdamer Börse und den handelbaren Aktien der Niederländischen Ostindien-Kompanie (VOC) entsteht der erste moderne Aktienmarkt der Geschichte."
+   },
+   {
+    "year": 1618,
+    "title": "Beginn des Dreißigjährigen Kriegs",
+    "text": "Der Prager Fenstersturz löst einen der verheerendsten Kriege der europäischen Geschichte aus."
+   },
+   {
+    "year": 1618,
+    "title": "Prager Fenstersturz",
+    "text": "Der Auslöser des Dreißigjährigen Krieges, der Mitteleuropa verwüstet und in manchen Regionen ein Drittel der Bevölkerung kostet."
+   },
+   {
+    "year": 1637,
+    "title": "Tulpenmanie",
+    "text": "In den Niederlanden lösen spekulative Tulpenzwiebel-Preise einen der frühesten dokumentierten Finanzblasen-Crashs der Geschichte aus."
+   },
+   {
+    "year": 1642,
+    "title": "Englischer Bürgerkrieg",
+    "text": "König und Parlament ringen gewaltsam um die Macht; endet mit der Hinrichtung Karls I."
+   },
+   {
+    "year": 1648,
+    "title": "Westfälischer Friede",
+    "text": "Der Dreißigjährige Krieg endet; das Prinzip staatlicher Souveränität wird völkerrechtlich verankert."
+   },
+   {
+    "year": 1665,
+    "title": "Große Pest von London",
+    "text": "Eine der letzten großen Pestepidemien Europas fordert in London zehntausende Todesopfer."
+   },
+   {
+    "year": 1687,
+    "title": "Newtons Principia Mathematica",
+    "text": "Isaac Newton formuliert die Gravitationsgesetze und legt die Grundlage der klassischen Physik."
+   },
+   {
+    "year": 1687,
+    "title": "Newtons Principia",
+    "text": "Ein einziges Gesetz erklärt fallende Äpfel und kreisende Planeten. Die Vorstellung einer berechenbaren Natur setzt sich durch."
+   },
+   {
+    "year": 1688,
+    "title": "Glorreiche Revolution",
+    "text": "Das englische Parlament setzt König Jakob II. ab und stärkt dauerhaft die parlamentarische Macht."
+   },
+   {
+    "year": 1689,
+    "title": "Bill of Rights in England",
+    "text": "Die englische Krone wird dauerhaft an das Parlament gebunden – Meilenstein konstitutioneller Monarchie."
+   },
+   {
+    "year": 1701,
+    "title": "Krönung des ersten Königs in Preußen",
+    "text": "Brandenburg-Preußen wird formal zum Königreich – Aufstieg zur europäischen Militärmacht beginnt."
+   },
+   {
+    "year": 1721,
+    "title": "Zar Peter der Große krönt sich zum Kaiser",
+    "text": "Russland wird formal zum Kaiserreich und orientiert sich stärker an westeuropäischen Vorbildern."
+   },
+   {
+    "year": 1740,
+    "title": "Beginn der Österreichischen Erbfolgekriege",
+    "text": "Preußen unter Friedrich II. erobert Schlesien und stellt sich als neue Großmacht gegen Habsburg."
+   },
+   {
+    "year": 1751,
+    "title": "Erste Encyclopédie erscheint",
+    "text": "Diderot und d'Alembert veröffentlichen ein Kompendium aufklärerischen Wissens – zentrales Werk der Aufklärung."
+   },
+   {
+    "year": 1755,
+    "title": "Erdbeben von Lissabon",
+    "text": "Zehntausende sterben an Allerheiligen in den Kirchen. Die Katastrophe erschüttert den Glauben an eine gütige Weltordnung und beschäftigt Voltaire, Rousseau und Kant."
+   },
+   {
+    "year": 1756,
+    "title": "Beginn des Siebenjährigen Kriegs",
+    "text": "Ein globaler Konflikt zwischen den europäischen Großmächten wird teils als 'erster Weltkrieg' bezeichnet."
+   },
+   {
+    "year": 1756,
+    "title": "Siebenjähriger Krieg",
+    "text": "Auf vier Kontinenten geführt und deshalb oft als erster Weltkrieg bezeichnet; er entscheidet über Nordamerika und Indien."
+   },
+   {
+    "year": 1762,
+    "title": "Rousseaus 'Gesellschaftsvertrag'",
+    "text": "Jean-Jacques Rousseau entwirft ein einflussreiches Konzept von Volkssouveränität und Gesellschaftsvertrag."
+   },
+   {
+    "year": 1769,
+    "title": "James Watts verbesserte Dampfmaschine",
+    "text": "Die entscheidend verbesserte Dampfmaschine legt die technische Grundlage der bevorstehenden Industriellen Revolution."
+   },
+   {
+    "year": 1776,
+    "title": "US-Unabhängigkeitserklärung",
+    "text": "Die 13 amerikanischen Kolonien erklären ihre Unabhängigkeit von Großbritannien."
+   },
+   {
+    "year": 1776,
+    "title": "Amerikanische Unabhängigkeitserklärung",
+    "text": "Erstmals wird ein Staat auf abstrakte Rechte gegründet – von Männern, von denen viele selbst Sklaven hielten."
+   },
+   {
+    "year": 1783,
+    "title": "Erster bemannter Ballonflug",
+    "text": "In Paris steigen Menschen zum ersten Mal in die Luft; Benjamin Franklin gehörte zu den Zuschauern."
+   },
+   {
+    "year": 1787,
+    "title": "Verfassung der Vereinigten Staaten",
+    "text": "Die älteste noch geltende geschriebene Staatsverfassung der Welt, gebaut auf Gewaltenteilung nach Montesquieu."
+   },
+   {
+    "year": 1789,
+    "title": "Beginn der Französischen Revolution",
+    "text": "Der Sturm auf die Bastille markiert den Beginn eines Umbruchs, der die politische Ordnung Europas verändert."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Martin Luther",
+    "years": "1483–1546",
+    "text": "Deutscher Theologe, Auslöser der Reformation, übersetzte die Bibel ins Deutsche und prägte damit die Sprache."
+   },
+   {
+    "name": "Nikolaus Kopernikus",
+    "years": "1473–1543",
+    "text": "Astronom, begründete das heliozentrische Weltbild gegen die vorherrschende geozentrische Lehre."
+   },
+   {
+    "name": "Hernán Cortés",
+    "years": "1485–1547",
+    "text": "Spanischer Konquistador, eroberte mit wenigen hundert Männern das Aztekenreich."
+   },
+   {
+    "name": "Galileo Galilei",
+    "years": "1564–1642",
+    "text": "Physiker und Astronom, verteidigte das kopernikanische Weltbild und geriet in Konflikt mit der Kirche."
+   },
+   {
+    "name": "Elisabeth I.",
+    "years": "1533–1603",
+    "text": "Englische Königin, führte England zur Seemacht und förderte eine kulturelle Blütezeit (Shakespeare)."
+   },
+   {
+    "name": "Isaac Newton",
+    "years": "1643–1727",
+    "text": "Physiker und Mathematiker, formulierte die Gravitationsgesetze und die klassische Mechanik."
+   },
+   {
+    "name": "Ludwig XIV.",
+    "years": "1638–1715",
+    "text": "'Sonnenkönig', Inbegriff des Absolutismus, erbaute Versailles als Machtzentrum Frankreichs."
+   },
+   {
+    "name": "Peter der Große",
+    "years": "1672–1725",
+    "text": "Russischer Zar, modernisierte Russland nach westeuropäischem Vorbild und gründete St. Petersburg."
+   },
+   {
+    "name": "Friedrich der Große",
+    "years": "1712–1786",
+    "text": "Preußischer König, machte Preußen durch Kriege und Verwaltungsreformen zur europäischen Großmacht."
+   },
+   {
+    "name": "Maria Theresia",
+    "years": "1717–1780",
+    "text": "Habsburgische Herrscherin, modernisierte Verwaltung, Bildung und Militär des Habsburgerreichs."
+   },
+   {
+    "name": "Katharina die Große",
+    "years": "1729–1796",
+    "text": "Russische Zarin, erweiterte das Reich erheblich und förderte Kunst und Aufklärung am Hof."
+   },
+   {
+    "name": "Voltaire",
+    "years": "1694–1778",
+    "text": "Französischer Aufklärer, Verfechter von Meinungsfreiheit und Kirchenkritik."
+   },
+   {
+    "name": "Adam Smith",
+    "years": "1723–1790",
+    "text": "Schottischer Ökonom, Begründer der modernen Nationalökonomie mit 'Der Wohlstand der Nationen'."
+   },
+   {
+    "name": "Süleyman der Prächtige",
+    "years": "1494–1566",
+    "text": "Osmanischer Sultan, führte das Reich zu seiner größten territorialen und kulturellen Blüte."
+   },
+   {
+    "name": "Akbar der Große",
+    "years": "1542–1605",
+    "text": "Mogulherrscher Indiens, bekannt für religiöse Toleranzpolitik und Verwaltungsreformen in einem riesigen Vielvölkerreich."
+   },
+   {
+    "name": "Oliver Cromwell",
+    "years": "1599–1658",
+    "text": "Englischer General und Staatsmann, führte den Sturz der Monarchie an und regierte als 'Lordprotektor'."
+   },
+   {
+    "name": "Leonardo da Vinci",
+    "years": "1452–1519",
+    "text": "Maler, Anatom und Ingenieur, dessen Notizbücher in Spiegelschrift Entwürfe enthalten, die Jahrhunderte voraus waren – und die zu Lebzeiten fast niemand sah."
+   },
+   {
+    "name": "Michelangelo",
+    "years": "1475–1564",
+    "text": "Bildhauer, Maler und Architekt; er hielt sich zeitlebens für einen Bildhauer, auch während der vier Jahre an der Decke der Sixtinischen Kapelle."
+   },
+   {
+    "name": "Erasmus von Rotterdam",
+    "years": "1466–1536",
+    "text": "Humanist, der eine kritische Ausgabe des griechischen Neuen Testaments schuf und sich weigerte, sich einer Konfession anzuschließen."
+   },
+   {
+    "name": "Ferdinand Magellan",
+    "years": "ca. 1480–1521",
+    "text": "Leitete die erste Weltumsegelung, kam auf den Philippinen um; von 270 Mann kehrten 18 zurück."
+   },
+   {
+    "name": "Bartolomé de las Casas",
+    "years": "1484–1566",
+    "text": "Dominikaner, der die Vernichtung der indigenen Bevölkerung anklagte – und zunächst afrikanische Sklaven als Ersatz vorschlug, was er später bereute."
+   },
+   {
+    "name": "Johannes Kepler",
+    "years": "1571–1630",
+    "text": "Fand die elliptischen Planetenbahnen; nebenbei verteidigte er seine Mutter erfolgreich in einem Hexenprozess."
+   },
+   {
+    "name": "René Descartes",
+    "years": "1596–1650",
+    "text": "Begründete den methodischen Zweifel und starb in Stockholm, weil Königin Christine Unterricht um fünf Uhr morgens verlangte."
+   },
+   {
+    "name": "Rembrandt",
+    "years": "1606–1669",
+    "text": "Malte über vierzig Jahre Selbstporträts – eine Bildautobiografie vom selbstbewussten Jungen bis zum verarmten Alten."
+   },
+   {
+    "name": "Aurangzeb",
+    "years": "1618–1707",
+    "text": "Dehnte das Mogulreich auf seine größte Ausdehnung aus und überdehnte es zugleich; seine Religionspolitik ist bis heute umstritten."
+   },
+   {
+    "name": "Tokugawa Ieyasu",
+    "years": "1543–1616",
+    "text": "Begründete das Shogunat, das Japan über 250 Jahre Frieden und weitgehende Abschottung brachte."
+   },
+   {
+    "name": "Anne Bonny",
+    "years": "ca. 1697–?",
+    "text": "Eine der wenigen namentlich bekannten Piratinnen der Karibik; ihr Prozessausgang ist ungeklärt – sie entging der Hinrichtung durch Schwangerschaft."
+   },
+   {
+    "name": "Olaudah Equiano",
+    "years": "ca. 1745–1797",
+    "text": "Als Kind verschleppt, kaufte sich frei und schrieb eine Autobiografie, die zur Waffe der britischen Abolitionsbewegung wurde."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Spanisches Kolonialreich",
+    "text": "Erste globale Kolonialmacht, kontrollierte weite Teile Amerikas nach dem Fall der Azteken- und Inkareiche."
+   },
+   {
+    "name": "Osmanisches Reich",
+    "text": "Islamisches Großreich, das bis vor Wien vorstieß und weite Teile Südosteuropas, Nordafrikas und des Nahen Ostens beherrschte."
+   },
+   {
+    "name": "Vereinigte Niederlande",
+    "text": "Handelsmacht des 'Goldenen Zeitalters' mit globalem Handelsnetz (VOC) und kultureller Blüte."
+   },
+   {
+    "name": "Königreich Preußen",
+    "text": "Aufstrebende deutsche Militärmacht, die im 18. Jahrhundert zur europäischen Großmacht aufstieg."
+   },
+   {
+    "name": "Mogulreich (Indien)",
+    "text": "Islamisches Großreich in Indien, bekannt für kulturelle Blüte (Taj Mahal) und religiöse Vielfalt."
+   },
+   {
+    "name": "Habsburgerreich",
+    "text": "Vielvölkerstaat in Mitteleuropa unter der Dynastie Habsburg, lange prägende Kraft im Heiligen Römischen Reich."
+   },
+   {
+    "name": "Tokugawa-Shogunat (Japan)",
+    "text": "Japanisches Herrschaftssystem mit über 250 Jahren weitgehender Isolation und innerer Stabilität ('Edo-Zeit')."
+   },
+   {
+    "name": "Republik Venedig",
+    "text": "Noch immer Seemacht, aber im Rückzug – der Handel verlagert sich an den Atlantik."
+   },
+   {
+    "name": "Polen-Litauen",
+    "text": "Zeitweise das flächengrößte Land Europas, mit gewähltem König und einem Vetorecht jedes Adligen, das den Staat schließlich lähmte."
+   },
+   {
+    "name": "Safawidenreich",
+    "text": "Machte den Zwölferschiismus zur Staatsreligion Persiens – eine Weichenstellung, die bis in die Gegenwart wirkt."
+   },
+   {
+    "name": "Ming- und Qing-China",
+    "text": "Das bevölkerungsreichste und lange wirtschaftlich stärkste Reich der Welt, das den Seehandel bewusst begrenzte."
+   },
+   {
+    "name": "Songhai-Reich",
+    "text": "Westafrikanische Großmacht mit Timbuktu als Zentrum der Gelehrsamkeit, 1591 durch marokkanische Feuerwaffen zerschlagen."
+   },
+   {
+    "name": "Schwedisches Reich",
+    "text": "Vom Dreißigjährigen Krieg bis Poltawa eine europäische Großmacht mit Ostseeherrschaft."
+   }
+  ],
+  "dynastyGroups": [
+   {
+    "title": "Herrscherhäuser der Frühen Neuzeit",
+    "items": [
+     {
+      "name": "Habsburger (Spanien & Österreich)",
+      "text": "Karl V. vereinigt kurzzeitig Spanien, Österreich und weite Teile Amerikas unter einer Krone ('Reich, in dem die Sonne nie unterging'); spätere Trennung in eine spanische und österreichische Linie."
+     },
+     {
+      "name": "Bourbonen (Frankreich)",
+      "text": "Ab Heinrich IV. (1589) regierende Dynastie, Höhepunkt unter dem 'Sonnenkönig' Ludwig XIV.; endet mit der Hinrichtung Ludwigs XVI. 1793."
+     },
+     {
+      "name": "Osmanische Sultane",
+      "text": "Von Süleyman dem Prächtigen (16. Jh.) bis zum allmählichen Niedergang beherrschen die Osmanen Südosteuropa, Nordafrika und den Nahen Osten."
+     },
+     {
+      "name": "Romanov-Zaren (Russland)",
+      "text": "Ab 1613 regierende Dynastie; unter Peter dem Großen und Katharina der Großen Aufstieg Russlands zur europäischen Großmacht."
+     },
+     {
+      "name": "Ming- und frühe Qing-Dynastie (China)",
+      "text": "Die Ming (bis 1644) fördern Handel und Kultur; die aus der Mandschurei stammenden Qing lösen sie ab und errichten das letzte chinesische Kaiserreich."
+     }
     ]
-  },
-  {
-    id: "moderne",
-    name: "20./21. Jahrhundert",
-    span: "1914 \u2013 heute",
-    startYear: 1914,
-    endYear: 2026,
-    color: "#a01f1f",
-    accent: "#e8c14a",
-    lead: "Weltkriege, Digitalisierung und eine vernetzte Welt.",
-    description: "Kein Jahrhundert ver\xE4nderte die Welt so schnell wie das 20. Jahrhundert: zwei Weltkriege, der Kalte Krieg, Dekolonisierung, technologische Revolutionen von der Raumfahrt bis zum Internet. Das 21. Jahrhundert ist gepr\xE4gt von Globalisierung, Digitalisierung und neuen geopolitischen Verschiebungen.",
-    events: [
-      { year: 1914, title: "Beginn des Ersten Weltkriegs", text: "Das Attentat von Sarajevo l\xF6st eine Kette von B\xFCndnisf\xE4llen aus, die in einen globalen Krieg m\xFCndet." },
-      { year: 1914, title: "Der Schlieffenplan scheitert", text: "Deutschlands Plan eines schnellen Zangenangriffs gegen Frankreich \xFCber Belgien soll einen Zweifrontenkrieg vermeiden \u2013 ger\xE4t aber ins Stocken und m\xFCndet in einen langwierigen Stellungskrieg." },
-      { year: 1914, title: "Erste Marneschlacht", text: "Franz\xF6sische und britische Truppen stoppen den deutschen Vormarsch vor Paris \u2013 das Scheitern des Schlieffenplans wird endg\xFCltig besiegelt." },
-      { year: 1915, title: "Gallipoli-Kampagne", text: "Ein alliierter Angriff auf die Dardanellen gegen das Osmanische Reich scheitert verlustreich; wichtiger Karrierestart f\xFCr den sp\xE4teren australischen und t\xFCrkischen Nationalstolz (Atat\xFCrk)." },
-      { year: 1916, title: "Schlacht um Verdun", text: "Eine der verlustreichsten Schlachten der Geschichte symbolisiert das Grauen des Stellungskriegs \u2013 \xFCber 700.000 Tote und Verwundete." },
-      { year: 1916, title: "Schlacht an der Somme", text: "Mit \xFCber einer Million Opfern eine der blutigsten Schlachten der Menschheitsgeschichte; erster Panzereinsatz der Kriegsgeschichte." },
-      { year: 1916, title: "Seeschlacht am Skagerrak (Jutland)", text: "Gr\xF6\xDFte Seeschlacht des Ersten Weltkriegs zwischen deutscher und britischer Flotte, taktisch unentschieden, strategisch bleibt Gro\xDFbritannien Seemacht Nr. 1." },
-      { year: 1917, title: "Russische Oktoberrevolution", text: "Die Bolschewiki unter Lenin \xFCbernehmen die Macht \u2013 Beginn der Sowjetunion." },
-      { year: 1918, title: "Friede von Brest-Litowsk", text: "Sowjetrussland scheidet unter harten Bedingungen aus dem Krieg aus \u2013 Deutschland kann Truppen an die Westfront verlegen." },
-      { year: 1918, title: "Ende des Ersten Weltkriegs", text: "Waffenstillstand von Compi\xE8gne beendet den Krieg; Millionen Tote und der Zusammenbruch mehrerer Reiche pr\xE4gen die Folgen." },
-      { year: 1919, title: "Vertrag von Versailles", text: "Deutschland wird zu hohen Reparationen und Gebietsabtretungen verpflichtet \u2013 belastet die Weimarer Republik schwer." },
-      { year: 1922, title: "Gr\xFCndung der Sowjetunion", text: "Aus dem russischen B\xFCrgerkrieg geht die UdSSR als kommunistischer Vielv\xF6lkerstaat hervor." },
-      { year: 1929, title: "Weltwirtschaftskrise", text: "Der B\xF6rsencrash an der Wall Street l\xF6st eine globale Wirtschaftskrise mit Massenarbeitslosigkeit aus." },
-      { year: 1933, title: "Macht\xFCbernahme der Nationalsozialisten", text: "Adolf Hitler wird deutscher Reichskanzler \u2013 Beginn der NS-Diktatur." },
-      { year: 1936, title: "Spanischer B\xFCrgerkrieg beginnt", text: "Ein blutiger Konflikt zwischen Republikanern und Franco-Anh\xE4ngern wird zum Vorspiel des Zweiten Weltkriegs." },
-      { year: 1939, title: "Beginn des Zweiten Weltkriegs", text: "Der deutsche \xDCberfall auf Polen l\xF6st den bislang verheerendsten Krieg der Geschichte aus." },
-      { year: 1940, title: "Westfeldzug und Fall Frankreichs", text: "Mit einer schnellen 'Blitzkrieg'-Strategie besiegt die Wehrmacht Frankreich binnen sechs Wochen; britische Truppen entkommen bei D\xFCnkirchen." },
-      { year: 1940, title: "Luftschlacht um England", text: "Die deutsche Luftwaffe scheitert an der Royal Air Force \u2013 erste gro\xDFe Niederlage NS-Deutschlands verhindert eine geplante Invasion Gro\xDFbritanniens." },
-      { year: 1941, title: "Unternehmen Barbarossa", text: "Deutschland \xFCberf\xE4llt die Sowjetunion mit der gr\xF6\xDFten Invasionsstreitmacht der Geschichte \u2013 Bruch des Hitler-Stalin-Pakts und Beginn des Vernichtungskriegs im Osten." },
-      { year: 1941, title: "Angriff auf Pearl Harbor", text: "Japans \xDCberraschungsangriff bringt die USA in den Zweiten Weltkrieg." },
-      { year: 1941, title: "Wannseekonferenz", text: "NS-Funktion\xE4re planen die systematische Ermordung der europ\xE4ischen Juden \u2013 organisatorischer Kern des Holocaust." },
-      { year: 1942, title: "Schlacht von Midway", text: "Die US-Marine besiegt die japanische Flotte entscheidend im Pazifik \u2013 Wendepunkt des Krieges gegen Japan." },
-      { year: 1942, title: "Zweite Schlacht von El Alamein", text: "Die Alliierten unter Montgomery besiegen das deutsch-italienische Afrikakorps unter Rommel entscheidend in Nordafrika." },
-      { year: 1943, title: "Schlacht von Stalingrad endet", text: "Die Kapitulation der eingekesselten deutschen 6. Armee gilt als entscheidender Wendepunkt des Krieges an der Ostfront." },
-      { year: 1944, title: "Landung in der Normandie (D-Day)", text: "Alliierte Truppen er\xF6ffnen die Westfront gegen NS-Deutschland \u2013 Wendepunkt des Kriegs in Europa." },
-      { year: 1945, title: "Ende des Zweiten Weltkriegs / Atombombenabw\xFCrfe", text: "Nach den Atombombenabw\xFCrfen auf Hiroshima und Nagasaki kapituliert Japan; der Krieg fordert weltweit \xFCber 60 Millionen Tote." },
-      { year: 1945, title: "Gr\xFCndung der Vereinten Nationen", text: "Als Lehre aus zwei Weltkriegen entsteht eine internationale Organisation zur Sicherung von Frieden und Zusammenarbeit." },
-      { year: 1947, title: "Unabh\xE4ngigkeit Indiens", text: "Nach jahrzehntelangem gewaltfreiem Widerstand wird Indien unabh\xE4ngig; die Teilung in Indien und Pakistan fordert zugleich enorme Opfer." },
-      { year: 1948, title: "Gr\xFCndung des Staates Israel", text: "Nach dem UN-Teilungsplan wird der Staat Israel ausgerufen \u2013 Beginn anhaltender Nahostkonflikte." },
-      { year: 1949, title: "Gr\xFCndung von BRD und DDR", text: "Deutschland wird in zwei Staaten geteilt \u2013 Ausdruck des beginnenden Kalten Krieges." },
-      { year: 1949, title: "Gr\xFCndung der Volksrepublik China", text: "Mao Zedong ruft nach dem Sieg im B\xFCrgerkrieg die Volksrepublik aus." },
-      { year: 1950, title: "Beginn des Koreakriegs", text: "Der Konflikt zwischen Nord- und S\xFCdkorea wird zum ersten gro\xDFen 'Stellvertreterkrieg' des Kalten Krieges." },
-      { year: 1955, title: "Rosa Parks' Widerstand", text: "Ihre Weigerung, ihren Bussitzplatz zu r\xE4umen, wird zum Fanal der US-B\xFCrgerrechtsbewegung." },
-      { year: 1961, title: "Bau der Berliner Mauer", text: "Die DDR riegelt West-Berlin ab \u2013 Symbol der deutschen und europ\xE4ischen Teilung." },
-      { year: 1961, title: "Erster Mensch im Weltraum", text: "Der Sowjetkosmonaut Juri Gagarin umkreist als erster Mensch die Erde." },
-      { year: 1962, title: "Kubakrise", text: "Die Welt steht am Rand eines Atomkriegs zwischen den USA und der Sowjetunion \u2013 wird diplomatisch entsch\xE4rft." },
-      { year: 1963, title: "'I Have a Dream'-Rede", text: "Martin Luther King h\xE4lt seine ber\xFChmte Rede beim Marsch auf Washington f\xFCr B\xFCrgerrechte." },
-      { year: 1969, title: "Erste Mondlandung", text: "Neil Armstrong und Buzz Aldrin betreten als erste Menschen den Mond \u2013 H\xF6hepunkt des Wettlaufs ins All." },
-      { year: 1973, title: "\xD6lkrise", text: "Ein \xD6l-Embargo arabischer Staaten l\xF6st weltweit wirtschaftliche Schockwellen aus." },
-      { year: 1975, title: "Ende des Vietnamkriegs", text: "Der Fall Saigons beendet einen der pr\xE4gendsten und umstrittensten Kriege des Kalten Krieges." },
-      { year: 1986, title: "Reaktorkatastrophe von Tschernobyl", text: "Die schwerste Atomkatastrophe der Geschichte kontaminiert weite Teile der Ukraine und Belarus." },
-      { year: 1989, title: "Fall der Berliner Mauer", text: "Friedliche Proteste f\xFChren zur Mauer\xF6ffnung \u2013 Symbol des Endes des Kalten Krieges." },
-      { year: 1989, title: "Proteste auf dem Tiananmen-Platz", text: "Die chinesische Regierung schl\xE4gt Demokratieproteste in Peking gewaltsam nieder." },
-      { year: 1990, title: "Deutsche Wiedervereinigung", text: "BRD und DDR vereinigen sich zu einem gemeinsamen Staat." },
-      { year: 1991, title: "Aufl\xF6sung der Sowjetunion", text: "Die UdSSR zerf\xE4llt in unabh\xE4ngige Staaten \u2013 Ende des Kalten Krieges." },
-      { year: 1991, title: "Erstes World Wide Web geht online", text: "Tim Berners-Lee ver\xF6ffentlicht die erste Webseite \u2013 Grundstein des heutigen Internets." },
-      { year: 1994, title: "Ende der Apartheid", text: "Nelson Mandela wird nach den ersten freien Wahlen erster schwarzer Pr\xE4sident S\xFCdafrikas." },
-      { year: 2001, title: "Terroranschl\xE4ge vom 11. September", text: "Anschl\xE4ge auf das World Trade Center ver\xE4ndern globale Sicherheitspolitik nachhaltig." },
-      { year: 2002, title: "Einf\xFChrung des Euro-Bargelds", text: "Zw\xF6lf europ\xE4ische Staaten f\xFChren eine gemeinsame W\xE4hrung ein \u2013 bislang gr\xF6\xDFtes Geldumstellungsprojekt der Geschichte." },
-      { year: 2008, title: "Globale Finanzkrise", text: "Die Immobilienkrise in den USA l\xF6st eine weltweite Banken- und Wirtschaftskrise aus." },
-      { year: 2011, title: "Arabischer Fr\xFChling", text: "Massenproteste st\xFCrzen mehrere autorit\xE4re Regierungen in Nordafrika und dem Nahen Osten." },
-      { year: 2016, title: "Brexit-Referendum", text: "Das Vereinigte K\xF6nigreich stimmt f\xFCr den Austritt aus der Europ\xE4ischen Union." },
-      { year: 2020, title: "COVID-19-Pandemie", text: "Eine globale Pandemie f\xFChrt zu Lockdowns, wirtschaftlichen Einbr\xFCchen und beschleunigter Digitalisierung weltweit." },
-      { year: 2022, title: "Russischer \xDCberfall auf die Ukraine", text: "Russland beginnt einen gro\xDFangelegten Angriffskrieg \u2013 gr\xF6\xDFter zwischenstaatlicher Krieg in Europa seit 1945." },
-      { year: 2022, title: "\xD6ffentlicher Durchbruch generativer KI", text: "Chatbots wie ChatGPT machen gro\xDFe Sprachmodelle einem Massenpublikum zug\xE4nglich und l\xF6sen weltweite Debatten \xFCber KI aus." }
-    ],
-    figures: [
-      { name: "Winston Churchill", years: "1874\u20131965", text: "Britischer Premierminister, f\xFChrte Gro\xDFbritannien durch den Zweiten Weltkrieg gegen NS-Deutschland." },
-      { name: "Adolf Hitler", years: "1889\u20131945", text: "Diktator des nationalsozialistischen Deutschlands, verantwortlich f\xFCr den Zweiten Weltkrieg und den Holocaust." },
-      { name: "Franklin D. Roosevelt", years: "1882\u20131945", text: "US-Pr\xE4sident, f\xFChrte die USA durch die Weltwirtschaftskrise ('New Deal') und den Zweiten Weltkrieg." },
-      { name: "Mahatma Gandhi", years: "1869\u20131948", text: "F\xFChrte die indische Unabh\xE4ngigkeitsbewegung durch gewaltfreien Widerstand gegen die britische Kolonialherrschaft." },
-      { name: "Mao Zedong", years: "1893\u20131976", text: "Gr\xFCnder der Volksrepublik China, pr\xE4gte das Land durch kommunistische Herrschaft und tiefgreifende Umbr\xFCche." },
-      { name: "Nelson Mandela", years: "1918\u20132013", text: "S\xFCdafrikanischer Freiheitsk\xE4mpfer und sp\xE4terer Pr\xE4sident, \xFCberwand friedlich das Apartheidsystem." },
-      { name: "Martin Luther King Jr.", years: "1929\u20131968", text: "F\xFChrende Figur der US-B\xFCrgerrechtsbewegung, setzte sich gewaltfrei f\xFCr Gleichberechtigung ein." },
-      { name: "John F. Kennedy", years: "1917\u20131963", text: "US-Pr\xE4sident, meisterte die Kubakrise und initiierte das Mondlandeprogramm; wurde 1963 ermordet." },
-      { name: "Mikhail Gorbatschow", years: "1931\u20132022", text: "Letzter Staatschef der UdSSR, erm\xF6glichte durch Glasnost und Perestroika das Ende des Kalten Krieges." },
-      { name: "Margaret Thatcher", years: "1925\u20132013", text: "Britische Premierministerin, pr\xE4gte mit marktwirtschaftlichen Reformen die Politik der 1980er-Jahre." },
-      { name: "Deng Xiaoping", years: "1904\u20131997", text: "Chinesischer Reformpolitiker, \xF6ffnete China wirtschaftlich und leitete dessen rasanten Aufstieg ein." },
-      { name: "Albert Einstein", years: "1879\u20131955", text: "Physiker, dessen Relativit\xE4tstheorie das moderne physikalische Weltbild begr\xFCndete." },
-      { name: "Ho Chi Minh", years: "1890\u20131969", text: "Vietnamesischer Revolution\xE4r und Staatsgr\xFCnder, f\xFChrte den Unabh\xE4ngigkeitskampf gegen Frankreich und sp\xE4ter die USA an." },
-      { name: "Golda Meir", years: "1898\u20131978", text: "Israelische Premierministerin, pr\xE4gende Figur der fr\xFChen Staatsgeschichte Israels." },
-      { name: "Anwar as-Sadat", years: "1918\u20131981", text: "\xC4gyptischer Pr\xE4sident, schloss 1979 den ersten Friedensvertrag eines arabischen Staates mit Israel und wurde daf\xFCr sp\xE4ter ermordet." }
-    ],
-    nations: [
-      { name: "USA (Supermacht)", text: "Wurde nach 1945 zur f\xFChrenden Wirtschafts- und Milit\xE4rmacht der westlichen Welt." },
-      { name: "Sowjetunion", text: "Kommunistischer Vielv\xF6lkerstaat und Gegenspieler der USA im Kalten Krieg, existierte 1922\u20131991." },
-      { name: "Europ\xE4ische Union", text: "Aus der Montanunion hervorgegangenes B\xFCndnis, das europ\xE4ische Staaten wirtschaftlich und politisch integriert." },
-      { name: "Volksrepublik China", text: "Seit 1949 kommunistisch regiert, seit den 1980er-Jahren wirtschaftlich zur Weltmacht aufgestiegen." },
-      { name: "Indien (unabh\xE4ngig)", text: "Gr\xF6\xDFte Demokratie der Welt seit 1947, heute bev\xF6lkerungsreichstes Land und aufstrebende Wirtschaftsmacht." }
+   }
+  ]
+ },
+ {
+  "id": "industrialisierung",
+  "name": "Revolution & Industrialisierung",
+  "span": "1789 – 1914",
+  "startYear": 1789,
+  "endYear": 1914,
+  "color": "#6b1f1f",
+  "accent": "#d4af37",
+  "lead": "Bürgerliche Revolutionen, Dampfmaschinen und Nationalstaaten.",
+  "description": "Das 'lange 19. Jahrhundert' beginnt mit der Französischen Revolution und endet mit dem Ersten Weltkrieg. Die Industrielle Revolution verändert Wirtschaft und Gesellschaft radikal, Nationalstaaten entstehen oder einigen sich (Deutschland, Italien), und europäische Mächte teilen weite Teile der Welt kolonial unter sich auf.",
+  "events": [
+   {
+    "year": 1789,
+    "title": "Französische Revolution",
+    "text": "Sturz der absoluten Monarchie in Frankreich, Erklärung der Menschen- und Bürgerrechte."
+   },
+   {
+    "year": 1793,
+    "title": "Hinrichtung Ludwigs XVI.",
+    "text": "Der französische König wird öffentlich hingerichtet – radikaler Bruch mit der monarchischen Ordnung Europas."
+   },
+   {
+    "year": 1799,
+    "title": "Napoleon wird Erster Konsul",
+    "text": "Napoleon Bonaparte übernimmt durch Staatsstreich die Macht in Frankreich."
+   },
+   {
+    "year": 1804,
+    "title": "Napoleon krönt sich zum Kaiser",
+    "text": "Frankreich wird zum Kaiserreich; Napoleon beginnt seine europäischen Eroberungsfeldzüge."
+   },
+   {
+    "year": 1804,
+    "title": "Unabhängigkeit Haitis",
+    "text": "Nach einem erfolgreichen Sklavenaufstand entsteht die erste unabhängige Schwarze Republik der Welt."
+   },
+   {
+    "year": 1806,
+    "title": "Ende des Heiligen Römischen Reiches",
+    "text": "Unter napoleonischem Druck legt Kaiser Franz II. die Reichskrone nieder – Ende eines über 800-jährigen Staatsgebildes."
+   },
+   {
+    "year": 1812,
+    "title": "Napoleons Russlandfeldzug scheitert",
+    "text": "Die 'Grande Armée' wird durch Winter, Logistikprobleme und russischen Widerstand nahezu vernichtet."
+   },
+   {
+    "year": 1815,
+    "title": "Schlacht bei Waterloo",
+    "text": "Napoleons endgültige Niederlage beendet die napoleonische Ära; der Wiener Kongress ordnet Europa neu."
+   },
+   {
+    "year": 1815,
+    "title": "Wiener Kongress",
+    "text": "Europas Grenzen werden neu gezogen und für ein Jahrhundert weitgehend stabilisiert – auf Kosten nationaler und liberaler Bewegungen."
+   },
+   {
+    "year": 1830,
+    "title": "Erste Eisenbahnlinie",
+    "text": "Die Strecke Liverpool–Manchester eröffnet das Zeitalter der Eisenbahn und beschleunigt die Industrialisierung."
+   },
+   {
+    "year": 1833,
+    "title": "Abschaffung der Sklaverei im Britischen Empire",
+    "text": "Großbritannien verbietet die Sklaverei in seinen Kolonien – wichtiger Schritt der internationalen Abolitionsbewegung."
+   },
+   {
+    "year": 1839,
+    "title": "Erster Opiumkrieg",
+    "text": "Großbritannien erzwingt den Drogenhandel mit China. Für China beginnt das Jahrhundert der Demütigung."
+   },
+   {
+    "year": 1848,
+    "title": "Europäische Revolutionen",
+    "text": "In vielen europäischen Staaten fordern Bürger Verfassungen und nationale Einheit – der 'Völkerfrühling' scheitert größtenteils kurzfristig."
+   },
+   {
+    "year": 1848,
+    "title": "Kommunistisches Manifest",
+    "text": "Marx und Engels veröffentlichen ihre einflussreiche Streitschrift, die spätere sozialistische Bewegungen prägt."
+   },
+   {
+    "year": 1848,
+    "title": "Revolutionen in Europa",
+    "text": "Von Palermo bis Berlin fordern Bewegungen Verfassungen und Nationalstaaten. Fast alle scheitern – die Ideen setzen sich trotzdem durch."
+   },
+   {
+    "year": 1853,
+    "title": "Beginn des Krimkriegs",
+    "text": "Ein Konflikt zwischen Russland und einer europäischen Koalition zeigt früh moderne, verlustreiche Kriegsführung."
+   },
+   {
+    "year": 1859,
+    "title": "Darwins 'Entstehung der Arten'",
+    "text": "Charles Darwins Evolutionstheorie verändert das biologische und philosophische Weltbild grundlegend."
+   },
+   {
+    "year": 1859,
+    "title": "Darwins Über die Entstehung der Arten",
+    "text": "Die erste Auflage war am Erscheinungstag ausverkauft. Der Mensch verliert seine Sonderstellung in der Natur."
+   },
+   {
+    "year": 1861,
+    "title": "Italienische Einigung",
+    "text": "Unter Führung Garibaldis und Cavours entsteht ein geeinter italienischer Nationalstaat."
+   },
+   {
+    "year": 1861,
+    "title": "Beginn des Amerikanischen Bürgerkriegs",
+    "text": "Der Konflikt um Sklaverei und Staatenrechte zwischen Nord- und Südstaaten beginnt."
+   },
+   {
+    "year": 1863,
+    "title": "Sklaverei-Emanzipationserklärung (USA)",
+    "text": "Abraham Lincoln erklärt die Sklaven in den Konföderierten Staaten für frei."
+   },
+   {
+    "year": 1868,
+    "title": "Meiji-Restauration in Japan",
+    "text": "Japan modernisiert sich binnen weniger Jahrzehnte radikal nach westlichem Vorbild und wird zur asiatischen Großmacht."
+   },
+   {
+    "year": 1869,
+    "title": "Eröffnung des Suezkanals",
+    "text": "Die Verbindung zwischen Mittelmeer und Rotem Meer verkürzt den Seeweg nach Asien erheblich."
+   },
+   {
+    "year": 1870,
+    "title": "Deutsch-Französischer Krieg",
+    "text": "Preußen besiegt Frankreich entscheidend und ebnet den Weg zur deutschen Reichsgründung."
+   },
+   {
+    "year": 1871,
+    "title": "Deutsche Reichsgründung",
+    "text": "Nach dem Sieg über Frankreich wird das Deutsche Kaiserreich im Spiegelsaal von Versailles ausgerufen."
+   },
+   {
+    "year": 1876,
+    "title": "Erfindung des Telefons",
+    "text": "Alexander Graham Bell meldet das Telefon zum Patent an – Beginn der modernen Telekommunikation."
+   },
+   {
+    "year": 1879,
+    "title": "Erfindung der Glühlampe",
+    "text": "Thomas Edison entwickelt eine praxistaugliche Glühlampe und treibt die Elektrifizierung voran."
+   },
+   {
+    "year": 1884,
+    "title": "Berliner Kongo-Konferenz",
+    "text": "Europäische Mächte teilen Afrika weitgehend ohne Beteiligung der Betroffenen unter sich auf."
+   },
+   {
+    "year": 1886,
+    "title": "Haymarket und der 1. Mai",
+    "text": "Nach der Eskalation einer Kundgebung für den Achtstundentag in Chicago wird der 1. Mai zum internationalen Tag der Arbeit."
+   },
+   {
+    "year": 1893,
+    "title": "Neuseeland führt Frauenwahlrecht ein",
+    "text": "Als erstes Land der Welt gewährt Neuseeland Frauen das aktive Wahlrecht."
+   },
+   {
+    "year": 1896,
+    "title": "Adwa",
+    "text": "Äthiopien schlägt Italien und bleibt als einziger afrikanischer Staat unkolonisiert – ein Ereignis mit weltweiter Signalwirkung."
+   },
+   {
+    "year": 1903,
+    "title": "Erster motorisierter Flug",
+    "text": "Die Gebrüder Wright gelingt in Kitty Hawk der erste kontrollierte Motorflug."
+   },
+   {
+    "year": 1904,
+    "title": "Russisch-Japanischer Krieg",
+    "text": "Japan besiegt erstmals eine europäische Großmacht – Schock für das europäische Selbstverständnis."
+   },
+   {
+    "year": 1905,
+    "title": "Einsteins Relativitätstheorie",
+    "text": "Albert Einstein veröffentlicht seine spezielle Relativitätstheorie und verändert das physikalische Weltbild."
+   },
+   {
+    "year": 1905,
+    "title": "Russische Revolution von 1905",
+    "text": "Massenproteste erzwingen von Zar Nikolaus II. erste Zugeständnisse – Vorbote der Revolution von 1917."
+   },
+   {
+    "year": 1908,
+    "title": "Fließbandproduktion bei Ford",
+    "text": "Henry Ford revolutioniert mit der Massenfertigung des Model T die industrielle Produktion."
+   },
+   {
+    "year": 1912,
+    "title": "Untergang der Titanic",
+    "text": "Der als unsinkbar geltende Ozeandampfer sinkt auf seiner Jungfernfahrt – über 1500 Menschen sterben."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Napoleon Bonaparte",
+    "years": "1769–1821",
+    "text": "Französischer Feldherr und Kaiser, prägte Europa militärisch und rechtlich (Code Civil) nachhaltig."
+   },
+   {
+    "name": "Simón Bolívar",
+    "years": "1783–1830",
+    "text": "'Der Befreier' Südamerikas, führte mehrere Staaten in die Unabhängigkeit von Spanien."
+   },
+   {
+    "name": "Otto von Bismarck",
+    "years": "1815–1898",
+    "text": "Preußischer Staatsmann, 'Reichsgründer' Deutschlands durch geschickte Diplomatie und drei Kriege."
+   },
+   {
+    "name": "Abraham Lincoln",
+    "years": "1809–1865",
+    "text": "US-Präsident während des Bürgerkriegs, beendete die Sklaverei, wurde kurz nach Kriegsende ermordet."
+   },
+   {
+    "name": "Königin Victoria",
+    "years": "1819–1901",
+    "text": "Britische Monarchin, unter deren langer Herrschaft das britische Weltreich seine größte Ausdehnung erreichte."
+   },
+   {
+    "name": "Giuseppe Garibaldi",
+    "years": "1807–1882",
+    "text": "Italienischer Freiheitskämpfer, Schlüsselfigur der italienischen Einigung."
+   },
+   {
+    "name": "Charles Darwin",
+    "years": "1809–1882",
+    "text": "Naturforscher, begründete mit der Evolutionstheorie ein neues biologisches Weltbild."
+   },
+   {
+    "name": "Karl Marx",
+    "years": "1818–1883",
+    "text": "Philosoph und Ökonom, prägte mit dem 'Kapital' die Kapitalismuskritik und sozialistische Bewegungen."
+   },
+   {
+    "name": "Thomas Edison",
+    "years": "1847–1931",
+    "text": "US-Erfinder, meldete über 1000 Patente an, darunter die praxistaugliche Glühlampe."
+   },
+   {
+    "name": "Louis Pasteur",
+    "years": "1822–1895",
+    "text": "Französischer Chemiker und Mikrobiologe, begründete die moderne Bakteriologie und Impfstoffentwicklung."
+   },
+   {
+    "name": "Marie Curie",
+    "years": "1867–1934",
+    "text": "Physikerin und Chemikerin, erforschte Radioaktivität und erhielt als einzige Frau bislang Nobelpreise in zwei Naturwissenschaften."
+   },
+   {
+    "name": "Florence Nightingale",
+    "years": "1820–1910",
+    "text": "Britische Krankenpflegerin, begründete durch ihre Arbeit im Krimkrieg die moderne, hygieneorientierte Krankenpflege."
+   },
+   {
+    "name": "Sun Yat-sen",
+    "years": "1866–1925",
+    "text": "Chinesischer Revolutionär, führend an der Xinhai-Revolution beteiligt, gilt als 'Vater' der Republik China."
+   },
+   {
+    "name": "James Watt",
+    "years": "1736–1819",
+    "text": "Verbesserte die Dampfmaschine entscheidend durch den getrennten Kondensator – der Motor der Industrialisierung."
+   },
+   {
+    "name": "Ada Lovelace",
+    "years": "1815–1852",
+    "text": "Erkannte, dass eine Rechenmaschine mehr könnte als rechnen, und schrieb das, was als erstes Computerprogramm gilt – hundert Jahre vor der ersten Maschine."
+   },
+   {
+    "name": "Michael Faraday",
+    "years": "1791–1867",
+    "text": "Buchbinderlehrling ohne Schulbildung in Mathematik, der die elektromagnetische Induktion entdeckte und damit das Stromzeitalter ermöglichte."
+   },
+   {
+    "name": "Toussaint Louverture",
+    "years": "ca. 1743–1803",
+    "text": "Führte den einzigen erfolgreichen Sklavenaufstand der Geschichte in Haiti; er starb in französischer Gefangenschaft im Jura."
+   },
+   {
+    "name": "Frederick Douglass",
+    "years": "1818–1895",
+    "text": "Aus der Sklaverei geflohen, wurde er der wirkungsvollste Redner der Abolitionsbewegung und Berater Lincolns."
+   },
+   {
+    "name": "Harriet Tubman",
+    "years": "ca. 1822–1913",
+    "text": "Führte auf der Underground Railroad wiederholt Versklavte in die Freiheit und diente im Bürgerkrieg als Spähern und Kundschafterin."
+   },
+   {
+    "name": "Alexander von Humboldt",
+    "years": "1769–1859",
+    "text": "Beschrieb die Natur als vernetztes Ganzes und warnte früh vor menschengemachten Klimaveränderungen durch Abholzung."
+   },
+   {
+    "name": "Gregor Mendel",
+    "years": "1822–1884",
+    "text": "Augustinermönch, dessen Erbsenversuche die Vererbungsregeln offenlegten – und die 35 Jahre lang niemand zur Kenntnis nahm."
+   },
+   {
+    "name": "Ignaz Semmelweis",
+    "years": "1818–1865",
+    "text": "Senkte die Sterblichkeit im Kindbett durch Händedesinfektion drastisch, wurde von der Fachwelt abgelehnt und starb in einer Anstalt."
+   },
+   {
+    "name": "Cixi",
+    "years": "1835–1908",
+    "text": "Beherrschte China fast fünfzig Jahre als Kaiserinwitwe; ihre Rolle beim Scheitern der Reformen ist umstritten."
+   },
+   {
+    "name": "Meiji-Tenno",
+    "years": "1852–1912",
+    "text": "Unter seiner Regierung verwandelte sich Japan binnen einer Generation vom Feudalstaat zur Industriemacht."
+   },
+   {
+    "name": "Kate Sheppard",
+    "years": "1848–1934",
+    "text": "Führende Stimme der neuseeländischen Frauenwahlrechtsbewegung. 1893 führte Neuseeland als erstes Land das allgemeine Frauenwahlrecht ein."
+   },
+   {
+    "name": "Ida B. Wells",
+    "years": "1862–1931",
+    "text": "Journalistin, die Lynchmorde in den Südstaaten systematisch dokumentierte und damit die Rechtfertigungslegenden widerlegte."
+   }
+  ],
+  "nations": [
+   {
+    "name": "Britisches Weltreich",
+    "text": "Größtes Kolonialreich der Geschichte, über das 'die Sonne nie unterging', Vorreiter der Industrialisierung."
+   },
+   {
+    "name": "Deutsches Kaiserreich",
+    "text": "1871 gegründeter Nationalstaat, wurde binnen weniger Jahrzehnte zur führenden Industrie- und Militärmacht Europas."
+   },
+   {
+    "name": "USA (werdende Weltmacht)",
+    "text": "Wuchs durch Westexpansion, Industrialisierung und Einwanderung zur wirtschaftlichen Großmacht heran."
+   },
+   {
+    "name": "Meiji-Japan",
+    "text": "Modernisierte sich nach 1868 rasant nach westlichem Vorbild und besiegte 1905 als erste asiatische Macht ein europäisches Reich."
+   },
+   {
+    "name": "Österreich-Ungarn",
+    "text": "Vielvölkerstaat in Mitteleuropa, dessen innere Spannungen maßgeblich zum Ersten Weltkrieg beitrugen."
+   },
+   {
+    "name": "Zarenreich Russland",
+    "text": "Riesiges, agrarisch geprägtes Kaiserreich mit wachsenden sozialen Spannungen vor der Revolution von 1917."
+   },
+   {
+    "name": "Französisches Kolonialreich",
+    "text": "Nach dem Verlust Nordamerikas neu aufgebaut in Afrika und Indochina – nach Großbritannien das zweitgrößte."
+   },
+   {
+    "name": "Königreich Italien",
+    "text": "1861 vereinigt, aber innerlich gespalten zwischen industrialisiertem Norden und agrarischem Süden."
+   },
+   {
+    "name": "Osmanisches Reich",
+    "text": "Der kranke Mann am Bosporus – Reformversuche und Gebietsverluste prägen das Jahrhundert."
+   },
+   {
+    "name": "Qing-China",
+    "text": "Von Opiumkriegen, Aufständen und ungleichen Verträgen zerrieben; der Taiping-Aufstand kostete Millionen Menschenleben."
+   },
+   {
+    "name": "Lateinamerikanische Republiken",
+    "text": "Nach der Unabhängigkeit zwischen Caudillo-Herrschaft, Bürgerkriegen und wirtschaftlicher Abhängigkeit."
+   },
+   {
+    "name": "Kongo-Freistaat",
+    "text": "Privatbesitz König Leopolds II., dessen Kautschukwirtschaft Millionen Opfer forderte und den ersten internationalen Menschenrechtsskandal auslöste."
+   }
+  ],
+  "dynastyGroups": [
+   {
+    "title": "Deutsches Kaiserreich – Kaiser & Kanzler",
+    "items": [
+     {
+      "name": "Wilhelm I. & Otto von Bismarck (1871–1888/1890)",
+      "text": "Erster deutscher Kaiser und sein 'Eiserner Kanzler' prägen Reichsgründung, Sozialgesetzgebung und ein komplexes Bündnissystem zur Kriegsvermeidung."
+     },
+     {
+      "name": "Wilhelm II. (1888–1918)",
+      "text": "Letzter deutscher Kaiser, entließ Bismarck, verfolgte aggressive Flotten- und Weltpolitik und dankte 1918 nach der Niederlage ab."
+     }
     ]
-  }
+   },
+   {
+    "title": "Frankreich – Wechselnde Regime",
+    "items": [
+     {
+      "name": "Zweites Kaiserreich (1852–1870)",
+      "text": "Napoleon III. (Neffe Napoleons I.) regiert autoritär, modernisiert Paris grundlegend, scheitert militärisch gegen Preußen 1870."
+     },
+     {
+      "name": "Dritte Republik (1870–1940)",
+      "text": "Nach Napoleons III. Sturz entsteht eine langlebige parlamentarische Republik, die Frankreich durch den Ersten Weltkrieg führt."
+     }
+    ]
+   },
+   {
+    "title": "Späte Qing-Dynastie (China)",
+    "items": [
+     {
+      "name": "Kaiserinwitwe Cixi (Regentschaft 1861–1908)",
+      "text": "De-facto-Herrscherin Chinas in einer Phase wachsenden westlichen Drucks, gescheiterter Reformversuche und innerer Aufstände (u.a. Boxeraufstand 1900)."
+     },
+     {
+      "name": "Ende des chinesischen Kaisertums (1912)",
+      "text": "Nach über 2000 Jahren Kaiserherrschaft wird China nach der Xinhai-Revolution Republik – der letzte Kaiser Puyi dankt als Kind ab."
+     }
+    ]
+   },
+   {
+    "title": "Meiji-Japan",
+    "items": [
+     {
+      "name": "Kaiser Meiji (1867–1912)",
+      "text": "Unter seiner Herrschaft modernisiert sich Japan in wenigen Jahrzehnten von einem isolierten Feudalstaat zur asiatischen Industrie- und Militärmacht."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "moderne",
+  "name": "20./21. Jahrhundert",
+  "span": "1914 – heute",
+  "startYear": 1914,
+  "endYear": 2026,
+  "color": "#a01f1f",
+  "accent": "#e8c14a",
+  "lead": "Weltkriege, Digitalisierung und eine vernetzte Welt.",
+  "description": "Kein Jahrhundert veränderte die Welt so schnell wie das 20. Jahrhundert: zwei Weltkriege, der Kalte Krieg, Dekolonisierung, technologische Revolutionen von der Raumfahrt bis zum Internet. Das 21. Jahrhundert ist geprägt von Globalisierung, Digitalisierung und neuen geopolitischen Verschiebungen.",
+  "events": [
+   {
+    "year": 1914,
+    "title": "Beginn des Ersten Weltkriegs",
+    "text": "Das Attentat von Sarajevo löst eine Kette von Bündnisfällen aus, die in einen globalen Krieg mündet."
+   },
+   {
+    "year": 1914,
+    "title": "Der Schlieffenplan scheitert",
+    "text": "Deutschlands Plan eines schnellen Zangenangriffs gegen Frankreich über Belgien soll einen Zweifrontenkrieg vermeiden – gerät aber ins Stocken und mündet in einen langwierigen Stellungskrieg."
+   },
+   {
+    "year": 1914,
+    "title": "Erste Marneschlacht",
+    "text": "Französische und britische Truppen stoppen den deutschen Vormarsch vor Paris – das Scheitern des Schlieffenplans wird endgültig besiegelt."
+   },
+   {
+    "year": 1915,
+    "title": "Gallipoli-Kampagne",
+    "text": "Ein alliierter Angriff auf die Dardanellen gegen das Osmanische Reich scheitert verlustreich; wichtiger Karrierestart für den späteren australischen und türkischen Nationalstolz (Atatürk)."
+   },
+   {
+    "year": 1916,
+    "title": "Schlacht um Verdun",
+    "text": "Eine der verlustreichsten Schlachten der Geschichte symbolisiert das Grauen des Stellungskriegs – über 700.000 Tote und Verwundete."
+   },
+   {
+    "year": 1916,
+    "title": "Schlacht an der Somme",
+    "text": "Mit über einer Million Opfern eine der blutigsten Schlachten der Menschheitsgeschichte; erster Panzereinsatz der Kriegsgeschichte."
+   },
+   {
+    "year": 1916,
+    "title": "Seeschlacht am Skagerrak (Jutland)",
+    "text": "Größte Seeschlacht des Ersten Weltkriegs zwischen deutscher und britischer Flotte, taktisch unentschieden, strategisch bleibt Großbritannien Seemacht Nr. 1."
+   },
+   {
+    "year": 1917,
+    "title": "Russische Oktoberrevolution",
+    "text": "Die Bolschewiki unter Lenin übernehmen die Macht – Beginn der Sowjetunion."
+   },
+   {
+    "year": 1918,
+    "title": "Friede von Brest-Litowsk",
+    "text": "Sowjetrussland scheidet unter harten Bedingungen aus dem Krieg aus – Deutschland kann Truppen an die Westfront verlegen."
+   },
+   {
+    "year": 1918,
+    "title": "Ende des Ersten Weltkriegs",
+    "text": "Waffenstillstand von Compiègne beendet den Krieg; Millionen Tote und der Zusammenbruch mehrerer Reiche prägen die Folgen."
+   },
+   {
+    "year": 1918,
+    "title": "Spanische Grippe",
+    "text": "Die Pandemie tötet mehr Menschen als der Erste Weltkrieg. Ihr Name täuscht: Spanien zensierte nur nicht."
+   },
+   {
+    "year": 1919,
+    "title": "Vertrag von Versailles",
+    "text": "Deutschland wird zu hohen Reparationen und Gebietsabtretungen verpflichtet – belastet die Weimarer Republik schwer."
+   },
+   {
+    "year": 1922,
+    "title": "Gründung der Sowjetunion",
+    "text": "Aus dem russischen Bürgerkrieg geht die UdSSR als kommunistischer Vielvölkerstaat hervor."
+   },
+   {
+    "year": 1929,
+    "title": "Weltwirtschaftskrise",
+    "text": "Der Börsencrash an der Wall Street löst eine globale Wirtschaftskrise mit Massenarbeitslosigkeit aus."
+   },
+   {
+    "year": 1933,
+    "title": "Machtübernahme der Nationalsozialisten",
+    "text": "Adolf Hitler wird deutscher Reichskanzler – Beginn der NS-Diktatur."
+   },
+   {
+    "year": 1936,
+    "title": "Spanischer Bürgerkrieg beginnt",
+    "text": "Ein blutiger Konflikt zwischen Republikanern und Franco-Anhängern wird zum Vorspiel des Zweiten Weltkriegs."
+   },
+   {
+    "year": 1939,
+    "title": "Beginn des Zweiten Weltkriegs",
+    "text": "Der deutsche Überfall auf Polen löst den bislang verheerendsten Krieg der Geschichte aus."
+   },
+   {
+    "year": 1940,
+    "title": "Westfeldzug und Fall Frankreichs",
+    "text": "Mit einer schnellen 'Blitzkrieg'-Strategie besiegt die Wehrmacht Frankreich binnen sechs Wochen; britische Truppen entkommen bei Dünkirchen."
+   },
+   {
+    "year": 1940,
+    "title": "Luftschlacht um England",
+    "text": "Die deutsche Luftwaffe scheitert an der Royal Air Force – erste große Niederlage NS-Deutschlands verhindert eine geplante Invasion Großbritanniens."
+   },
+   {
+    "year": 1941,
+    "title": "Unternehmen Barbarossa",
+    "text": "Deutschland überfällt die Sowjetunion mit der größten Invasionsstreitmacht der Geschichte – Bruch des Hitler-Stalin-Pakts und Beginn des Vernichtungskriegs im Osten."
+   },
+   {
+    "year": 1941,
+    "title": "Angriff auf Pearl Harbor",
+    "text": "Japans Überraschungsangriff bringt die USA in den Zweiten Weltkrieg."
+   },
+   {
+    "year": 1941,
+    "title": "Wannseekonferenz",
+    "text": "NS-Funktionäre planen die systematische Ermordung der europäischen Juden – organisatorischer Kern des Holocaust."
+   },
+   {
+    "year": 1942,
+    "title": "Schlacht von Midway",
+    "text": "Die US-Marine besiegt die japanische Flotte entscheidend im Pazifik – Wendepunkt des Krieges gegen Japan."
+   },
+   {
+    "year": 1942,
+    "title": "Zweite Schlacht von El Alamein",
+    "text": "Die Alliierten unter Montgomery besiegen das deutsch-italienische Afrikakorps unter Rommel entscheidend in Nordafrika."
+   },
+   {
+    "year": 1943,
+    "title": "Schlacht von Stalingrad endet",
+    "text": "Die Kapitulation der eingekesselten deutschen 6. Armee gilt als entscheidender Wendepunkt des Krieges an der Ostfront."
+   },
+   {
+    "year": 1944,
+    "title": "Landung in der Normandie (D-Day)",
+    "text": "Alliierte Truppen eröffnen die Westfront gegen NS-Deutschland – Wendepunkt des Kriegs in Europa."
+   },
+   {
+    "year": 1945,
+    "title": "Ende des Zweiten Weltkriegs / Atombombenabwürfe",
+    "text": "Nach den Atombombenabwürfen auf Hiroshima und Nagasaki kapituliert Japan; der Krieg fordert weltweit über 60 Millionen Tote."
+   },
+   {
+    "year": 1945,
+    "title": "Gründung der Vereinten Nationen",
+    "text": "Als Lehre aus zwei Weltkriegen entsteht eine internationale Organisation zur Sicherung von Frieden und Zusammenarbeit."
+   },
+   {
+    "year": 1947,
+    "title": "Unabhängigkeit Indiens",
+    "text": "Nach jahrzehntelangem gewaltfreiem Widerstand wird Indien unabhängig; die Teilung in Indien und Pakistan fordert zugleich enorme Opfer."
+   },
+   {
+    "year": 1948,
+    "title": "Gründung des Staates Israel",
+    "text": "Nach dem UN-Teilungsplan wird der Staat Israel ausgerufen – Beginn anhaltender Nahostkonflikte."
+   },
+   {
+    "year": 1948,
+    "title": "Allgemeine Erklärung der Menschenrechte",
+    "text": "Von der UN-Vollversammlung verabschiedet, ohne Gegenstimme, mit acht Enthaltungen – rechtlich nicht bindend, politisch folgenreich."
+   },
+   {
+    "year": 1949,
+    "title": "Gründung von BRD und DDR",
+    "text": "Deutschland wird in zwei Staaten geteilt – Ausdruck des beginnenden Kalten Krieges."
+   },
+   {
+    "year": 1949,
+    "title": "Gründung der Volksrepublik China",
+    "text": "Mao Zedong ruft nach dem Sieg im Bürgerkrieg die Volksrepublik aus."
+   },
+   {
+    "year": 1950,
+    "title": "Beginn des Koreakriegs",
+    "text": "Der Konflikt zwischen Nord- und Südkorea wird zum ersten großen 'Stellvertreterkrieg' des Kalten Krieges."
+   },
+   {
+    "year": 1955,
+    "title": "Rosa Parks' Widerstand",
+    "text": "Ihre Weigerung, ihren Bussitzplatz zu räumen, wird zum Fanal der US-Bürgerrechtsbewegung."
+   },
+   {
+    "year": 1957,
+    "title": "Sputnik",
+    "text": "Der erste Satellit löst im Westen einen Schock aus und startet das Wettrennen ins All."
+   },
+   {
+    "year": 1961,
+    "title": "Bau der Berliner Mauer",
+    "text": "Die DDR riegelt West-Berlin ab – Symbol der deutschen und europäischen Teilung."
+   },
+   {
+    "year": 1961,
+    "title": "Erster Mensch im Weltraum",
+    "text": "Der Sowjetkosmonaut Juri Gagarin umkreist als erster Mensch die Erde."
+   },
+   {
+    "year": 1962,
+    "title": "Kubakrise",
+    "text": "Die Welt steht am Rand eines Atomkriegs zwischen den USA und der Sowjetunion – wird diplomatisch entschärft."
+   },
+   {
+    "year": 1963,
+    "title": "'I Have a Dream'-Rede",
+    "text": "Martin Luther King hält seine berühmte Rede beim Marsch auf Washington für Bürgerrechte."
+   },
+   {
+    "year": 1969,
+    "title": "Erste Mondlandung",
+    "text": "Neil Armstrong und Buzz Aldrin betreten als erste Menschen den Mond – Höhepunkt des Wettlaufs ins All."
+   },
+   {
+    "year": 1972,
+    "title": "Die Grenzen des Wachstums",
+    "text": "Der Bericht des Club of Rome bringt erstmals einer breiten Öffentlichkeit nahe, dass unbegrenztes Wachstum auf einem endlichen Planeten nicht geht."
+   },
+   {
+    "year": 1973,
+    "title": "Ölkrise",
+    "text": "Ein Öl-Embargo arabischer Staaten löst weltweit wirtschaftliche Schockwellen aus."
+   },
+   {
+    "year": 1975,
+    "title": "Ende des Vietnamkriegs",
+    "text": "Der Fall Saigons beendet einen der prägendsten und umstrittensten Kriege des Kalten Krieges."
+   },
+   {
+    "year": 1986,
+    "title": "Reaktorkatastrophe von Tschernobyl",
+    "text": "Die schwerste Atomkatastrophe der Geschichte kontaminiert weite Teile der Ukraine und Belarus."
+   },
+   {
+    "year": 1986,
+    "title": "Tschernobyl",
+    "text": "Der Reaktorunfall verstrahlt weite Teile Europas und beschädigt das Vertrauen in die sowjetische Führung nachhaltig."
+   },
+   {
+    "year": 1989,
+    "title": "Fall der Berliner Mauer",
+    "text": "Friedliche Proteste führen zur Maueröffnung – Symbol des Endes des Kalten Krieges."
+   },
+   {
+    "year": 1989,
+    "title": "Proteste auf dem Tiananmen-Platz",
+    "text": "Die chinesische Regierung schlägt Demokratieproteste in Peking gewaltsam nieder."
+   },
+   {
+    "year": 1990,
+    "title": "Deutsche Wiedervereinigung",
+    "text": "BRD und DDR vereinigen sich zu einem gemeinsamen Staat."
+   },
+   {
+    "year": 1991,
+    "title": "Auflösung der Sowjetunion",
+    "text": "Die UdSSR zerfällt in unabhängige Staaten – Ende des Kalten Krieges."
+   },
+   {
+    "year": 1991,
+    "title": "Erstes World Wide Web geht online",
+    "text": "Tim Berners-Lee veröffentlicht die erste Webseite – Grundstein des heutigen Internets."
+   },
+   {
+    "year": 1994,
+    "title": "Ende der Apartheid",
+    "text": "Nelson Mandela wird nach den ersten freien Wahlen erster schwarzer Präsident Südafrikas."
+   },
+   {
+    "year": 1994,
+    "title": "Völkermord in Ruanda",
+    "text": "In hundert Tagen werden schätzungsweise 800.000 Menschen getötet, während die internationale Gemeinschaft ihre Truppen abzieht."
+   },
+   {
+    "year": 2001,
+    "title": "Terroranschläge vom 11. September",
+    "text": "Anschläge auf das World Trade Center verändern globale Sicherheitspolitik nachhaltig."
+   },
+   {
+    "year": 2001,
+    "title": "Anschläge des 11. September",
+    "text": "Der Angriff auf New York und Washington leitet zwei Jahrzehnte Kriege, Überwachungsausbau und veränderte Sicherheitspolitik ein."
+   },
+   {
+    "year": 2002,
+    "title": "Einführung des Euro-Bargelds",
+    "text": "Zwölf europäische Staaten führen eine gemeinsame Währung ein – bislang größtes Geldumstellungsprojekt der Geschichte."
+   },
+   {
+    "year": 2008,
+    "title": "Globale Finanzkrise",
+    "text": "Die Immobilienkrise in den USA löst eine weltweite Banken- und Wirtschaftskrise aus."
+   },
+   {
+    "year": 2008,
+    "title": "Weltfinanzkrise",
+    "text": "Der Zusammenbruch von Lehman Brothers löst die schwerste Wirtschaftskrise seit 1929 aus und verändert das Vertrauen in Finanzmärkte."
+   },
+   {
+    "year": 2011,
+    "title": "Arabischer Frühling",
+    "text": "Massenproteste stürzen mehrere autoritäre Regierungen in Nordafrika und dem Nahen Osten."
+   },
+   {
+    "year": 2015,
+    "title": "Pariser Klimaabkommen",
+    "text": "195 Staaten einigen sich erstmals auf ein gemeinsames Ziel zur Begrenzung der Erderwärmung – ohne verbindliche Sanktionen."
+   },
+   {
+    "year": 2016,
+    "title": "Brexit-Referendum",
+    "text": "Das Vereinigte Königreich stimmt für den Austritt aus der Europäischen Union."
+   },
+   {
+    "year": 2020,
+    "title": "COVID-19-Pandemie",
+    "text": "Eine globale Pandemie führt zu Lockdowns, wirtschaftlichen Einbrüchen und beschleunigter Digitalisierung weltweit."
+   },
+   {
+    "year": 2022,
+    "title": "Russischer Überfall auf die Ukraine",
+    "text": "Russland beginnt einen großangelegten Angriffskrieg – größter zwischenstaatlicher Krieg in Europa seit 1945."
+   },
+   {
+    "year": 2022,
+    "title": "Öffentlicher Durchbruch generativer KI",
+    "text": "Chatbots wie ChatGPT machen große Sprachmodelle einem Massenpublikum zugänglich und lösen weltweite Debatten über KI aus."
+   }
+  ],
+  "figures": [
+   {
+    "name": "Winston Churchill",
+    "years": "1874–1965",
+    "text": "Britischer Premierminister, führte Großbritannien durch den Zweiten Weltkrieg gegen NS-Deutschland."
+   },
+   {
+    "name": "Adolf Hitler",
+    "years": "1889–1945",
+    "text": "Diktator des nationalsozialistischen Deutschlands, verantwortlich für den Zweiten Weltkrieg und den Holocaust."
+   },
+   {
+    "name": "Franklin D. Roosevelt",
+    "years": "1882–1945",
+    "text": "US-Präsident, führte die USA durch die Weltwirtschaftskrise ('New Deal') und den Zweiten Weltkrieg."
+   },
+   {
+    "name": "Mahatma Gandhi",
+    "years": "1869–1948",
+    "text": "Führte die indische Unabhängigkeitsbewegung durch gewaltfreien Widerstand gegen die britische Kolonialherrschaft."
+   },
+   {
+    "name": "Mao Zedong",
+    "years": "1893–1976",
+    "text": "Gründer der Volksrepublik China, prägte das Land durch kommunistische Herrschaft und tiefgreifende Umbrüche."
+   },
+   {
+    "name": "Nelson Mandela",
+    "years": "1918–2013",
+    "text": "Südafrikanischer Freiheitskämpfer und späterer Präsident, überwand friedlich das Apartheidsystem."
+   },
+   {
+    "name": "Martin Luther King Jr.",
+    "years": "1929–1968",
+    "text": "Führende Figur der US-Bürgerrechtsbewegung, setzte sich gewaltfrei für Gleichberechtigung ein."
+   },
+   {
+    "name": "John F. Kennedy",
+    "years": "1917–1963",
+    "text": "US-Präsident, meisterte die Kubakrise und initiierte das Mondlandeprogramm; wurde 1963 ermordet."
+   },
+   {
+    "name": "Mikhail Gorbatschow",
+    "years": "1931–2022",
+    "text": "Letzter Staatschef der UdSSR, ermöglichte durch Glasnost und Perestroika das Ende des Kalten Krieges."
+   },
+   {
+    "name": "Margaret Thatcher",
+    "years": "1925–2013",
+    "text": "Britische Premierministerin, prägte mit marktwirtschaftlichen Reformen die Politik der 1980er-Jahre."
+   },
+   {
+    "name": "Deng Xiaoping",
+    "years": "1904–1997",
+    "text": "Chinesischer Reformpolitiker, öffnete China wirtschaftlich und leitete dessen rasanten Aufstieg ein."
+   },
+   {
+    "name": "Albert Einstein",
+    "years": "1879–1955",
+    "text": "Physiker, dessen Relativitätstheorie das moderne physikalische Weltbild begründete."
+   },
+   {
+    "name": "Ho Chi Minh",
+    "years": "1890–1969",
+    "text": "Vietnamesischer Revolutionär und Staatsgründer, führte den Unabhängigkeitskampf gegen Frankreich und später die USA an."
+   },
+   {
+    "name": "Golda Meir",
+    "years": "1898–1978",
+    "text": "Israelische Premierministerin, prägende Figur der frühen Staatsgeschichte Israels."
+   },
+   {
+    "name": "Anwar as-Sadat",
+    "years": "1918–1981",
+    "text": "Ägyptischer Präsident, schloss 1979 den ersten Friedensvertrag eines arabischen Staates mit Israel und wurde dafür später ermordet."
+   },
+   {
+    "name": "Rosa Luxemburg",
+    "years": "1871–1919",
+    "text": "Sozialistin, die Krieg und Diktatur gleichermaßen ablehnte; ihr Satz über die Freiheit der Andersdenkenden wird bis heute quer durch die Lager zitiert."
+   },
+   {
+    "name": "Hannah Arendt",
+    "years": "1906–1975",
+    "text": "Analysierte den Totalitarismus als neue Herrschaftsform und prägte mit der Banalität des Bösen einen bis heute umstrittenen Begriff."
+   },
+   {
+    "name": "Alan Turing",
+    "years": "1912–1954",
+    "text": "Half, den deutschen Funkverkehr zu entschlüsseln, legte die Grundlagen der Informatik – und wurde wegen seiner Homosexualität verurteilt."
+   },
+   {
+    "name": "Rosa Parks",
+    "years": "1913–2005",
+    "text": "Ihre Weigerung, den Sitzplatz zu räumen, war kein Zufall, sondern eine geplante Aktion einer erfahrenen Bürgerrechtsaktivistin."
+   },
+   {
+    "name": "Simone de Beauvoir",
+    "years": "1908–1986",
+    "text": "Ihr Satz, man werde nicht als Frau geboren, sondern dazu gemacht, wurde zur Grundlage der zweiten Frauenbewegung."
+   },
+   {
+    "name": "Wassili Archipow",
+    "years": "1926–1998",
+    "text": "Verweigerte 1962 auf einem sowjetischen U-Boot in der Kubakrise die Zustimmung zum Abschuss eines Atomtorpedos – und verhinderte vermutlich einen Atomkrieg."
+   },
+   {
+    "name": "Norman Borlaug",
+    "years": "1914–2009",
+    "text": "Züchtete ertragreiche Weizensorten; die Grüne Revolution wird mit der Rettung von hunderten Millionen Menschen vor dem Hungertod verbunden."
+   },
+   {
+    "name": "Neil Armstrong",
+    "years": "1930–2012",
+    "text": "Erster Mensch auf dem Mond. Die Landefähre hatte beim Aufsetzen Treibstoff für weniger als eine Minute."
+   },
+   {
+    "name": "Wangari Maathai",
+    "years": "1940–2011",
+    "text": "Kenianische Biologin, deren Green Belt Movement Millionen Bäume pflanzte; erste afrikanische Frau mit dem Friedensnobelpreis."
+   },
+   {
+    "name": "Václav Havel",
+    "years": "1936–2011",
+    "text": "Dramatiker und Dissident, der vom Gefängnis auf die Prager Burg wechselte – Symbol der Samtenen Revolution."
+   },
+   {
+    "name": "Tim Berners-Lee",
+    "years": "*1955",
+    "text": "Entwarf am CERN das World Wide Web und verzichtete bewusst auf Patente – die Bedingung dafür, dass es sich frei ausbreiten konnte."
+   },
+   {
+    "name": "Katalin Karikó",
+    "years": "*1955",
+    "text": "Forschte jahrzehntelang unter schwierigen Bedingungen an mRNA; ihre Arbeit ermöglichte die schnellen Impfstoffe von 2020."
+   },
+   {
+    "name": "Sophie Scholl",
+    "years": "1921–1943",
+    "text": "Mitglied der Weißen Rose, mit 21 Jahren hingerichtet – Sinnbild des zivilen Widerstands im Nationalsozialismus."
+   }
+  ],
+  "nations": [
+   {
+    "name": "USA (Supermacht)",
+    "text": "Wurde nach 1945 zur führenden Wirtschafts- und Militärmacht der westlichen Welt."
+   },
+   {
+    "name": "Sowjetunion",
+    "text": "Kommunistischer Vielvölkerstaat und Gegenspieler der USA im Kalten Krieg, existierte 1922–1991."
+   },
+   {
+    "name": "Europäische Union",
+    "text": "Aus der Montanunion hervorgegangenes Bündnis, das europäische Staaten wirtschaftlich und politisch integriert."
+   },
+   {
+    "name": "Volksrepublik China",
+    "text": "Seit 1949 kommunistisch regiert, seit den 1980er-Jahren wirtschaftlich zur Weltmacht aufgestiegen."
+   },
+   {
+    "name": "Indien (unabhängig)",
+    "text": "Größte Demokratie der Welt seit 1947, heute bevölkerungsreichstes Land und aufstrebende Wirtschaftsmacht."
+   },
+   {
+    "name": "Bundesrepublik Deutschland",
+    "text": "Aus der Teilung hervorgegangen und 1990 wiedervereinigt; heute größte Volkswirtschaft Europas."
+   },
+   {
+    "name": "Japan",
+    "text": "Nach der Zerstörung von 1945 binnen einer Generation zur zweitgrößten Volkswirtschaft der Welt aufgestiegen."
+   },
+   {
+    "name": "Brasilien",
+    "text": "Größtes Land Südamerikas, zwischen Militärdiktatur, Demokratisierung und der Frage nach dem Amazonas."
+   },
+   {
+    "name": "Südafrika",
+    "text": "Von der Apartheid zur Verfassung von 1996 – ein Übergang ohne Bürgerkrieg, dessen soziale Aufgaben unerledigt blieben."
+   },
+   {
+    "name": "Nigeria",
+    "text": "Bevölkerungsreichster Staat Afrikas, geprägt von Ölwirtschaft, Bürgerkrieg und einer der größten Filmindustrien der Welt."
+   },
+   {
+    "name": "Israel und die palästinensischen Gebiete",
+    "text": "Seit 1948 Zentrum eines Konflikts, der die Weltpolitik durchgehend beschäftigt."
+   },
+   {
+    "name": "Vereinte Nationen",
+    "text": "1945 gegründet, um Kriege zu verhindern – mit einem Sicherheitsrat, dessen Vetorecht sie zugleich blockiert."
+   }
+  ]
+ }
 ];
 const SCHLUESSELMOMENTE = [
 {"year":-3200,"title":"Erfindung der Schrift","category":"Erfindung","text":"Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und übertragbar – die Voraussetzung für Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst."},
@@ -1554,6 +3991,8 @@ const COUNTRY_TIMELINES = {
       }
     ]
   }
+,
+"Italien":{"color":"#2f6b4f","events":[{"year":-753,"title":"Sagenhafte Gründung Roms","text":"Die Überlieferung nennt dieses Jahr; archäologisch ist eine dauerhafte Siedlung auf dem Palatin bereits im 10. Jahrhundert v. Chr. nachweisbar."},{"year":-509,"title":"Vertreibung der Könige","text":"Rom wird Republik. Die Verfassung mit Konsuln, Senat und Volksversammlungen prägt europäisches Staatsdenken bis in die Neuzeit."},{"year":-146,"title":"Zerstörung Karthagos","text":"Nach drei Punischen Kriegen ist Rom unbestrittene Macht des westlichen Mittelmeers."},{"year":476,"title":"Absetzung des letzten weströmischen Kaisers","text":"Odoaker setzt Romulus Augustulus ab. Zeitgenossen empfanden das kaum als Epochenbruch – die Verwaltung lief weiter."},{"year":1077,"title":"Canossa","text":"Heinrich IV. tut vor Papst Gregor VII. in der Burg der Markgräfin Mathilde Buße – ein Höhepunkt des Investiturstreits auf italienischem Boden."},{"year":1204,"title":"Venedig lenkt den Kreuzzug um","text":"Die Republik bringt das Kreuzfahrerheer dazu, Konstantinopel zu plündern, und sichert sich das Handelsmonopol im östlichen Mittelmeer."},{"year":1348,"title":"Der Schwarze Tod erreicht Italien","text":"Über genuesische Schiffe kommt die Pest nach Europa. Boccaccios Decamerone entsteht als literarische Antwort auf die Katastrophe."},{"year":1401,"title":"Wettbewerb um die Bronzetüren von Florenz","text":"Ghiberti setzt sich gegen Brunelleschi durch – der Streit gilt als symbolischer Auftakt der Renaissance."},{"year":1494,"title":"Beginn der Italienischen Kriege","text":"Karl VIII. von Frankreich marschiert ein. Über sechzig Jahre wird Italien Schlachtfeld fremder Mächte – der Hintergrund von Machiavellis Denken."},{"year":1633,"title":"Prozess gegen Galilei","text":"Der Inquisitionsprozess endet mit Widerruf und Hausarrest. Erst 1992 erklärte die Kirche das Urteil offiziell für einen Fehler."},{"year":1861,"title":"Königreich Italien ausgerufen","text":"Nach Garibaldis Zug der Tausend und Cavours Diplomatie entsteht ein Nationalstaat. Rom kommt erst 1870 hinzu."},{"year":1922,"title":"Marsch auf Rom","text":"Mussolini wird zum Regierungschef ernannt – die erste faschistische Machtübernahme Europas, Vorbild für spätere Bewegungen."},{"year":1943,"title":"Sturz Mussolinis und Kriegswende","text":"Italien wechselt die Seiten, das Land wird zum Kriegsschauplatz und zerfällt bis 1945 in zwei Teile."},{"year":1946,"title":"Referendum: Republik statt Monarchie","text":"Mit knapper Mehrheit endet das Haus Savoyen. Frauen stimmen erstmals landesweit mit ab."},{"year":1957,"title":"Römische Verträge","text":"In Rom wird die Europäische Wirtschaftsgemeinschaft gegründet – der Grundstein der heutigen EU."},{"year":1992,"title":"Ermittlungen „Saubere Hände\"","text":"Ein Korruptionsskandal legt das gesamte Parteiensystem der Nachkriegszeit lahm und lässt es binnen zwei Jahren zerfallen."}]},"Griechenland":{"color":"#2a5b8a","events":[{"year":-1600,"title":"Blüte der mykenischen Paläste","text":"Befestigte Zentren wie Mykene und Tiryns beherrschen die Ägäis. Ihre Schrift Linear B wurde erst 1952 entziffert."},{"year":-1200,"title":"Zusammenbruch der Palastkultur","text":"Innerhalb weniger Jahrzehnte verschwinden Schrift, Fernhandel und Paläste. Die Ursachen sind bis heute umstritten."},{"year":-776,"title":"Erste überlieferte Olympische Spiele","text":"Die Siegerlisten setzen ein – für die Griechen der Beginn gemeinsamer Zeitrechnung."},{"year":-508,"title":"Reformen des Kleisthenes","text":"Athen ordnet die Bürgerschaft nach Wohnbezirken statt nach Sippen. Damit beginnt die Demokratie im engeren Sinn."},{"year":-480,"title":"Salamis","text":"Die griechische Flotte schlägt die persische in der Meerenge bei Salamis – der Wendepunkt der Perserkriege."},{"year":-404,"title":"Niederlage Athens im Peloponnesischen Krieg","text":"Nach 27 Jahren Krieg gegen Sparta endet die athenische Vormacht. Thukydides schrieb die Geschichte dieses Krieges mit."},{"year":-338,"title":"Chaironeia","text":"Philipp II. von Makedonien besiegt Athen und Theben. Die Zeit der unabhängigen Stadtstaaten ist vorbei."},{"year":-146,"title":"Zerstörung Korinths","text":"Rom macht Griechenland zur Provinz. Kulturell aber erobert der Besiegte den Sieger – römische Bildung wird griechisch."},{"year":1453,"title":"Fall Konstantinopels","text":"Das byzantinische Reich, griechischsprachig und orthodox, endet. Gelehrte fliehen nach Italien und beleben dort die Antikenkenntnis."},{"year":1821,"title":"Beginn des Unabhängigkeitskriegs","text":"Der Aufstand gegen das Osmanische Reich begeistert halb Europa; Lord Byron stirbt 1824 in Missolonghi."},{"year":1832,"title":"Königreich Griechenland","text":"Die Großmächte setzen den bayerischen Prinzen Otto als König ein – ein von außen entworfener Staat."},{"year":1922,"title":"Kleinasiatische Katastrophe","text":"Die Niederlage gegen die Türkei beendet die griechische Präsenz in Anatolien; über eine Million Menschen werden umgesiedelt."},{"year":1941,"title":"Deutsche Besetzung","text":"Nach dem Scheitern des italienischen Angriffs greift die Wehrmacht ein. Die Besatzung fordert durch Hungersnot und Repressalien Hunderttausende Opfer."},{"year":1946,"title":"Bürgerkrieg","text":"Bis 1949 kämpfen Regierung und kommunistische Partisanen. Der Konflikt gilt als erster heißer Krieg des Kalten Krieges."},{"year":1967,"title":"Militärputsch der Obristen","text":"Sieben Jahre Diktatur, die 1974 nach dem Zypern-Abenteuer zusammenbricht."},{"year":1981,"title":"Beitritt zur Europäischen Gemeinschaft","text":"Griechenland wird zehntes Mitglied – ein bewusst politisches Signal zur Sicherung der jungen Demokratie."}]},"Skandinavien":{"color":"#1f6b7d","events":[{"year":793,"title":"Überfall auf Lindisfarne","text":"Der Angriff auf das Inselkloster gilt als Beginn der Wikingerzeit – vor allem, weil erstmals jemand darüber schrieb."},{"year":874,"title":"Besiedlung Islands","text":"Norweger lassen sich auf der bis dahin nahezu unbewohnten Insel nieder; die Sagas berichten davon Jahrhunderte später."},{"year":930,"title":"Das Althing auf Island","text":"Die jährliche Versammlung freier Bauern gilt als eines der ältesten fortbestehenden Parlamente der Welt."},{"year":1000,"title":"Leif Eriksson erreicht Vinland","text":"Rund fünfhundert Jahre vor Kolumbus landen Nordleute in Nordamerika. Die Siedlungsspuren in L'Anse aux Meadows bestätigen es."},{"year":1066,"title":"Stamford Bridge","text":"Der Tod Harald Hardradas in England markiert das Ende der großen Wikingerzüge – drei Wochen vor Hastings."},{"year":1397,"title":"Kalmarer Union","text":"Dänemark, Norwegen und Schweden unter einer Krone – eine Personalunion, die über hundert Jahre hält."},{"year":1520,"title":"Stockholmer Blutbad","text":"Die Hinrichtung schwedischer Adliger löst den Aufstand aus, der 1523 zur Unabhängigkeit unter Gustav Wasa führt."},{"year":1630,"title":"Schweden greift in den Dreißigjährigen Krieg ein","text":"Gustav II. Adolf landet in Pommern und wird zur Schutzmacht der Protestanten; er fällt 1632 bei Lützen."},{"year":1709,"title":"Poltawa","text":"Karl XII. unterliegt Peter dem Großen. Schwedens Zeit als Großmacht endet, Russlands beginnt."},{"year":1814,"title":"Norwegische Verfassung von Eidsvoll","text":"Norwegen gibt sich eine der freiheitlichsten Verfassungen Europas – und wird trotzdem an Schweden abgetreten."},{"year":1905,"title":"Norwegen wird unabhängig","text":"Die Union mit Schweden wird friedlich aufgelöst – bemerkenswert in einem Jahrhundert der Nationalkriege."},{"year":1917,"title":"Finnland erklärt seine Unabhängigkeit","text":"Nach der russischen Revolution löst sich das Großfürstentum; es folgt ein blutiger Bürgerkrieg."},{"year":1939,"title":"Winterkrieg","text":"Finnland leistet der sowjetischen Übermacht monatelang Widerstand und verliert Karelien, bleibt aber unbesetzt."},{"year":1940,"title":"Besetzung Dänemarks und Norwegens","text":"Schweden bleibt neutral – eine bis heute umstrittene Neutralität, die Erztransporte nach Deutschland einschloss."},{"year":1943,"title":"Rettung der dänischen Juden","text":"In wenigen Nächten werden über 7.000 Menschen nach Schweden gebracht – die erfolgreichste Rettungsaktion im besetzten Europa."},{"year":1969,"title":"Erdölfund in der Nordsee","text":"Das Ekofisk-Feld macht Norwegen binnen einer Generation zu einem der reichsten Länder der Welt."},{"year":2024,"title":"Schweden tritt der NATO bei","text":"Nach über zweihundert Jahren Bündnisfreiheit – eine Folge des russischen Angriffs auf die Ukraine. Finnland war 2023 vorausgegangen."}]},"Korea":{"color":"#5b7d1f","events":[{"year":-108,"title":"Han-China richtet Kommandanturen ein","text":"Nach dem Ende von Gojoseon kontrolliert China Teile der Halbinsel – der Beginn einer jahrhundertelangen Wechselbeziehung."},{"year":372,"title":"Buddhismus erreicht Goguryeo","text":"Über China kommt der Buddhismus, wird Staatsreligion und prägt Kunst, Schrift und Denken – auch Japans, das ihn von Korea empfängt."},{"year":676,"title":"Silla einigt die Halbinsel","text":"Mit chinesischer Hilfe und anschließend gegen sie setzt sich Silla durch – die erste Einigung Koreas."},{"year":918,"title":"Gründung von Goryeo","text":"Von diesem Reichsnamen leitet sich das westliche Wort Korea ab."},{"year":1234,"title":"Druck mit beweglichen Metalllettern","text":"Koreanische Drucker verwenden Metalltypen – rund zwei Jahrhunderte vor Gutenberg. Die Technik verbreitete sich jedoch nicht nach Westen."},{"year":1392,"title":"Beginn der Joseon-Dynastie","text":"Fünf Jahrhunderte konfuzianisch geprägter Herrschaft beginnen – eine der langlebigsten Dynastien der Weltgeschichte."},{"year":1446,"title":"Verkündung des Hangul","text":"König Sejong lässt eine eigene Schrift entwerfen, die jeder in wenigen Tagen erlernen kann. Die Gelehrtenelite wehrte sich dagegen."},{"year":1592,"title":"Japanische Invasion","text":"Admiral Yi Sun-sin schlägt die japanische Flotte mit seinen gepanzerten Schildkrötenschiffen und rettet das Land."},{"year":1866,"title":"Abschottungspolitik","text":"Korea weist westliche Kontaktversuche ab und erhält den Beinamen Einsiedlerkönigreich."},{"year":1910,"title":"Annexion durch Japan","text":"35 Jahre Kolonialherrschaft mit Unterdrückung der Sprache, Zwangsarbeit und dem System der sogenannten Trostfrauen – bis heute eine Belastung der Beziehungen."},{"year":1919,"title":"Bewegung des 1. März","text":"Landesweite gewaltlose Unabhängigkeitsdemonstrationen werden blutig niedergeschlagen; sie prägen das nationale Selbstverständnis."},{"year":1945,"title":"Teilung am 38. Breitengrad","text":"Zwei amerikanische Offiziere ziehen in einer Nacht eine Linie auf der Landkarte. Sie besteht bis heute."},{"year":1950,"title":"Koreakrieg","text":"Drei Jahre Krieg mit Millionen Toten enden 1953 mit einem Waffenstillstand – ein Friedensvertrag wurde nie geschlossen."},{"year":1980,"title":"Aufstand von Gwangju","text":"Die Niederschlagung durch das Militär kostet Hunderte das Leben und wird zum Wendepunkt der südkoreanischen Demokratiebewegung."},{"year":1987,"title":"Demokratisierung Südkoreas","text":"Massenproteste erzwingen freie Präsidentschaftswahlen und das Ende der Militärherrschaft."},{"year":1988,"title":"Olympische Spiele in Seoul","text":"Der internationale Auftritt eines Landes, das eine Generation zuvor zu den ärmsten der Welt gehörte."}]},"Westafrika":{"color":"#c9701c","events":[{"year":300,"title":"Aufstieg des Reiches Ghana","text":"Zwischen Senegal und Niger entsteht ein Reich, das den Handel mit Gold und Salz über die Sahara kontrolliert. Mit dem heutigen Staat Ghana ist es geografisch nicht identisch."},{"year":800,"title":"Blüte von Djenné-Djenno","text":"Eine der ältesten Städte Afrikas südlich der Sahara – gewachsen ohne königlichen Palast und ohne Stadtmauer, was gängige Staatsmodelle in Frage stellt."},{"year":1235,"title":"Gründung des Mali-Reiches","text":"Sundiata Keïta besiegt seine Gegner und begründet ein Großreich. Die Kouroukan Fouga, eine mündlich überlieferte Verfassung, regelt Rechte und Pflichten."},{"year":1324,"title":"Pilgerfahrt des Mansa Musa","text":"Der Herrscher Malis reist mit einem riesigen Gefolge nach Mekka und verschenkt in Kairo so viel Gold, dass dessen Wert dort jahrelang gedrückt bleibt."},{"year":1375,"title":"Mali auf der Katalanischen Weltkarte","text":"Europäische Kartografen zeichnen Mansa Musa mit Goldklumpen – Westafrika ist im europäischen Weltbild angekommen."},{"year":1468,"title":"Songhai erobert Timbuktu","text":"Unter Sonni Ali löst Songhai Mali als Vormacht ab. Timbuktu wird zum Zentrum von Handel und Gelehrsamkeit."},{"year":1500,"title":"Universität Sankoré","text":"In Timbuktu lehren und schreiben Gelehrte; die Handschriftensammlungen der Stadt umfassen bis heute Zehntausende Bände zu Recht, Astronomie und Medizin."},{"year":1591,"title":"Schlacht von Tondibi","text":"Eine marokkanische Armee mit Feuerwaffen zerschlägt das Songhai-Reich – ein früher Fall, in dem Schusswaffen ein Großreich entscheiden."},{"year":1600,"title":"Ausweitung des atlantischen Sklavenhandels","text":"Über drei Jahrhunderte werden schätzungsweise mehr als zwölf Millionen Menschen verschleppt; Westafrika ist die Hauptregion der Verschiffung."},{"year":1804,"title":"Sokoto-Kalifat","text":"Usman dan Fodios Reformbewegung begründet einen der größten afrikanischen Staaten des 19. Jahrhunderts."},{"year":1884,"title":"Berliner Konferenz","text":"Europäische Mächte teilen Afrika unter sich auf, ohne dass ein einziger Afrikaner am Tisch sitzt. Die gezogenen Grenzen bestehen weitgehend fort."},{"year":1897,"title":"Britische Strafexpedition gegen Benin","text":"Die Stadt wird zerstört und geplündert; die Benin-Bronzen gelangen in europäische Museen. Ihre Rückgabe wird seit den 2010er Jahren umgesetzt."},{"year":1957,"title":"Ghana wird unabhängig","text":"Als erste Kolonie südlich der Sahara – Kwame Nkrumah wird zur Leitfigur des Panafrikanismus."},{"year":1960,"title":"Das Afrikanische Jahr","text":"Siebzehn afrikanische Staaten erlangen die Unabhängigkeit, darunter Nigeria, Senegal, Mali und die Elfenbeinküste."},{"year":1967,"title":"Biafra-Krieg","text":"Der Sezessionskrieg in Nigeria fordert bis 1970 durch Kampfhandlungen und Hungerblockade über eine Million Opfer und prägt das Bild humanitärer Hilfe."},{"year":2012,"title":"Bedrohung der Handschriften von Timbuktu","text":"Bibliothekare bringen Zehntausende Manuskripte heimlich aus der Stadt, um sie vor Zerstörung zu bewahren."}]},"Äthiopien":{"color":"#3f7d3f","events":[{"year":100,"title":"Aufstieg des Reiches Aksum","text":"Ein Handelsreich am Roten Meer mit eigener Schrift und eigener Münzprägung – eine der wenigen Mächte der Antike, die eigenes Geld schlug."},{"year":330,"title":"Christianisierung","text":"König Ezana nimmt das Christentum an – Äthiopien gehört damit zu den ältesten christlichen Staaten der Welt."},{"year":615,"title":"Aufnahme der ersten Muslime","text":"Verfolgte Anhänger Mohammeds finden am aksumitischen Hof Zuflucht. Die Episode gilt als früher Fall religiöser Duldung."},{"year":1200,"title":"Felsenkirchen von Lalibela","text":"Elf Kirchen werden aus dem anstehenden Fels herausgemeißelt, von oben nach unten – ein Bauverfahren ohne Parallele."},{"year":1270,"title":"Salomonische Dynastie","text":"Die Herrscher leiten ihre Abstammung von Salomo und der Königin von Saba ab. Die Legende wird im Kebra Nagast festgehalten."},{"year":1541,"title":"Portugiesische Hilfstruppen","text":"Im Krieg gegen das Sultanat Adal erhält Äthiopien portugiesische Unterstützung – ein früher Fall europäischer Militärintervention in Afrika."},{"year":1636,"title":"Gondar wird Hauptstadt","text":"Erstmals seit Jahrhunderten hat der Hof einen festen Sitz; es entsteht eine Schloss- und Kirchenlandschaft."},{"year":1855,"title":"Reichseinigung unter Tewodros II.","text":"Nach der Zeit der Fürsten wird das zersplitterte Reich wieder zusammengeführt."},{"year":1896,"title":"Schlacht von Adwa","text":"Menelik II. schlägt die italienische Invasionsarmee vernichtend. Äthiopien bleibt als einziger afrikanischer Staat unkolonisiert – ein Symbol für die gesamte Bewegung gegen die Kolonialherrschaft."},{"year":1930,"title":"Krönung Haile Selassies","text":"Der Kaiser wird zur Symbolfigur weit über Afrika hinaus; in Jamaika entsteht in seinem Namen die Rastafari-Bewegung."},{"year":1935,"title":"Italienischer Überfall","text":"Mussolini lässt mit Giftgas angreifen. Der Völkerbund reagiert wirkungslos – ein Vorzeichen seines Scheiterns."},{"year":1941,"title":"Befreiung","text":"Nach fünf Jahren Besatzung kehrt Haile Selassie zurück; äthiopische Widerstandskämpfer und britische Truppen vertreiben die Italiener."},{"year":1963,"title":"Gründung der OAU in Addis Abeba","text":"Die Organisation für Afrikanische Einheit wird gegründet; die Stadt bleibt bis heute Sitz der Afrikanischen Union."},{"year":1974,"title":"Sturz des Kaisers","text":"Der Derg übernimmt die Macht; es folgen Terror, Zwangsumsiedlungen und die Hungersnot von 1984."},{"year":1991,"title":"Ende des Derg-Regimes","text":"Rebellenverbände nehmen Addis Abeba ein; Eritrea wird 1993 nach einem Referendum unabhängig."},{"year":2020,"title":"Krieg in Tigray","text":"Ein zweijähriger Konflikt mit hunderttausenden Toten; 2022 folgt ein Waffenstillstandsabkommen."}]},"Südostasien":{"color":"#1f7d6b","events":[{"year":802,"title":"Gründung des Khmer-Reiches","text":"Jayavarman II. lässt sich zum Weltenherrscher weihen – Beginn eines Reiches, das ein halbes Jahrtausend das Festland beherrscht."},{"year":825,"title":"Borobudur auf Java","text":"Die größte buddhistische Tempelanlage der Welt entsteht; sie wurde später aufgegeben und erst im 19. Jahrhundert wieder freigelegt."},{"year":1113,"title":"Bau von Angkor Wat","text":"Zunächst ein Vishnu-Tempel, später buddhistisch genutzt – die größte religiöse Anlage der Welt, umgeben von einem Bewässerungssystem für womöglich Hunderttausende Menschen."},{"year":1292,"title":"Marco Polo besucht Sumatra","text":"Er berichtet von islamisch geprägten Hafenstädten – der Islam breitet sich über den Handel aus, nicht durch Eroberung."},{"year":1400,"title":"Aufstieg von Malakka","text":"Der Hafen wird zur Drehscheibe zwischen Indischem Ozean und Südchinesischem Meer und zum Ausgangspunkt der Islamisierung der Inselwelt."},{"year":1511,"title":"Portugal erobert Malakka","text":"Der erste europäische Stützpunkt in der Region – der Beginn eines Jahrhunderte währenden Kampfes um die Gewürzrouten."},{"year":1602,"title":"Gründung der Niederländischen Ostindien-Kompanie","text":"Die erste Aktiengesellschaft der Welt mit eigenem Militär und dem Recht, Krieg zu führen und Verträge zu schließen."},{"year":1782,"title":"Beginn der Chakri-Dynastie in Siam","text":"Bangkok wird Hauptstadt. Siam bleibt als einziges Land der Region formal unabhängig – durch geschickte Diplomatie zwischen Briten und Franzosen."},{"year":1815,"title":"Ausbruch des Tambora","text":"Der stärkste Vulkanausbruch der Neuzeit auf Sumbawa führt weltweit zum Jahr ohne Sommer, mit Missernten bis nach Europa und Nordamerika."},{"year":1887,"title":"Französisch-Indochina","text":"Vietnam, Kambodscha und später Laos werden zu einer Kolonialverwaltung zusammengefasst."},{"year":1942,"title":"Japanische Besetzung","text":"Binnen Monaten fallen die europäischen Kolonien. Der Mythos europäischer Unbesiegbarkeit zerbricht und beschleunigt die Unabhängigkeitsbewegungen."},{"year":1945,"title":"Indonesien erklärt seine Unabhängigkeit","text":"Sukarno ruft die Republik aus; erst nach vier Jahren Krieg erkennen die Niederlande sie an."},{"year":1954,"title":"Dien Bien Phu","text":"Die Niederlage beendet die französische Kolonialherrschaft in Indochina und teilt Vietnam."},{"year":1965,"title":"Massaker in Indonesien","text":"Nach einem gescheiterten Putsch werden Hunderttausende als angebliche Kommunisten getötet; die Aufarbeitung steht bis heute aus."},{"year":1975,"title":"Machtübernahme der Roten Khmer","text":"Bis 1979 sterben in Kambodscha schätzungsweise 1,5 bis 2 Millionen Menschen – ein Viertel der Bevölkerung."},{"year":1997,"title":"Asienkrise","text":"Der Zusammenbruch des thailändischen Baht löst eine regionale Finanzkrise aus und stürzt in Indonesien das Suharto-Regime."}]},"Brasilien & Südamerika":{"color":"#7d5b1f","events":[{"year":-1200,"title":"Chavín de Huántar","text":"In den peruanischen Anden entsteht ein Kultzentrum, das über Jahrhunderte eine gemeinsame Bildsprache in weiten Teilen der Region prägt."},{"year":100,"title":"Nazca-Linien","text":"Riesige Scharrbilder in der Wüste Südperus, die vom Boden aus kaum erkennbar sind. Ihre Funktion – Wasserkult, Prozessionswege, Astronomie – bleibt umstritten."},{"year":1438,"title":"Beginn der Inka-Expansion","text":"Unter Pachacútec wächst ein Reich mit über 30.000 Kilometern Straßen, Terrassenfeldern und Knotenschnüren als Verwaltungsmedium – ohne Rad, Geld und Alphabetschrift."},{"year":1500,"title":"Landung von Cabral in Brasilien","text":"Die Portugiesen erreichen die Küste. Der Vertrag von Tordesillas hatte das Gebiet bereits 1494 zugesprochen."},{"year":1532,"title":"Cajamarca","text":"Pizarro nimmt Atahualpa mit weniger als zweihundert Mann gefangen. Entscheidend waren Bürgerkrieg im Reich, Verbündete und vor allem eingeschleppte Seuchen."},{"year":1630,"title":"Quilombo dos Palmares","text":"Entflohene Versklavte gründen im Nordosten Brasiliens ein Gemeinwesen, das fast ein Jahrhundert besteht, bevor es 1694 zerschlagen wird."},{"year":1780,"title":"Aufstand des Túpac Amaru II.","text":"Die größte indigene Erhebung gegen die spanische Herrschaft wird niedergeschlagen; sein Name wird zum Symbol späterer Bewegungen."},{"year":1808,"title":"Der portugiesische Hof flieht nach Rio","text":"Vor Napoleon setzt der Königshof über den Atlantik – der einzige Fall, in dem eine europäische Monarchie ihre Kolonie zum Regierungssitz macht."},{"year":1819,"title":"Boyacá","text":"Simón Bolívars Sieg nach dem Marsch über die Anden entscheidet die Unabhängigkeit Kolumbiens und leitet die Befreiung des Nordens ein."},{"year":1822,"title":"Unabhängigkeit Brasiliens","text":"Dom Pedro erklärt die Loslösung – ohne Krieg, als Kaiserreich, was Brasilien einen anderen Weg als seine Nachbarn nimmt."},{"year":1864,"title":"Tripel-Allianz-Krieg","text":"Paraguay verliert im Krieg gegen Brasilien, Argentinien und Uruguay einen großen Teil seiner männlichen Bevölkerung – der verlustreichste Krieg Südamerikas."},{"year":1888,"title":"Abschaffung der Sklaverei in Brasilien","text":"Als letztes Land der westlichen Welt. Ein Jahr später fällt die Monarchie – die Grundbesitzer entzogen ihr die Unterstützung."},{"year":1930,"title":"Vargas kommt an die Macht","text":"Fünfzehn Jahre autoritäre Modernisierung prägen Brasiliens Wirtschaft, Arbeitsrecht und Selbstbild."},{"year":1960,"title":"Brasília wird Hauptstadt","text":"Eine am Reißbrett entworfene Stadt im Landesinneren, gebaut in gut drei Jahren – Symbol des Fortschrittsglaubens der Moderne."},{"year":1973,"title":"Putsch in Chile","text":"Der Sturz Allendes leitet siebzehn Jahre Diktatur ein und macht Chile zum Versuchsfeld radikaler Wirtschaftsreformen."},{"year":1985,"title":"Rückkehr zur Demokratie in Brasilien","text":"Nach 21 Jahren endet die Militärherrschaft; 1988 folgt eine neue Verfassung, die Land- und indigene Rechte festschreibt."}]},"Australien & Ozeanien":{"color":"#8a5b7d","events":[{"year":-50000,"title":"Besiedlung Australiens","text":"Menschen erreichen den Kontinent über Wasserwege – eine der frühesten bekannten Seefahrten der Menschheit. Die Aboriginal-Kulturen zählen damit zu den ältesten fortbestehenden der Welt."},{"year":-3000,"title":"Aufbruch der Lapita-Kultur","text":"Von Melanesien aus besiedeln Seefahrer über Jahrtausende den Pazifik – navigiert wird nach Sternen, Dünung und Vogelflug."},{"year":1000,"title":"Besiedlung Aotearoas","text":"Polynesische Seefahrer erreichen Neuseeland, die letzte große bewohnbare Landmasse der Erde. Aus ihnen werden die Maori."},{"year":1250,"title":"Errichtung der Moai","text":"Auf der Osterinsel entstehen die Steinfiguren. Die These vom selbstverschuldeten ökologischen Kollaps gilt heute als überzogen – Sklavenraub und eingeschleppte Krankheiten wogen schwerer."},{"year":1606,"title":"Erste dokumentierte europäische Landung","text":"Willem Janszoon erreicht die Kap-York-Halbinsel. Die Niederländer nennen den Kontinent Neuholland und finden ihn wirtschaftlich uninteressant."},{"year":1770,"title":"James Cook an der Ostküste","text":"Cook erklärt das Land für die britische Krone – unter der Rechtsfiktion terra nullius, niemandes Land, obwohl es besiedelt war."},{"year":1788,"title":"Die First Fleet in Botany Bay","text":"Britannien richtet eine Sträflingskolonie ein. Für die indigene Bevölkerung beginnt eine Katastrophe aus Krankheiten, Vertreibung und Gewalt."},{"year":1840,"title":"Vertrag von Waitangi","text":"Britische Krone und Maori-Häuptlinge schließen einen Vertrag – dessen englische und Maori-Fassung Entscheidendes unterschiedlich sagen. Der Streit darüber prägt Neuseeland bis heute."},{"year":1851,"title":"Goldrausch in Victoria","text":"Die Bevölkerung Australiens verdreifacht sich binnen eines Jahrzehnts; Einwanderer aus China stoßen auf offene Diskriminierung."},{"year":1901,"title":"Australischer Bund","text":"Die Kolonien schließen sich zusammen. Eines der ersten Gesetze begründet die White Australia Policy, die bis in die 1970er Jahre gilt."},{"year":1915,"title":"Gallipoli","text":"Australische und neuseeländische Truppen erleiden schwere Verluste. Der ANZAC Day ist bis heute der wichtigste Gedenktag beider Länder."},{"year":1942,"title":"Bombardierung von Darwin","text":"Japanische Angriffe auf australischen Boden lösen die außenpolitische Neuausrichtung von Großbritannien zu den USA aus."},{"year":1946,"title":"Atomtests im Pazifik","text":"Über Jahrzehnte testen USA, Großbritannien und Frankreich Kernwaffen; Bewohner von Bikini, Maralinga und Mururoa tragen die Folgen."},{"year":1967,"title":"Referendum über Aboriginal-Rechte","text":"Über 90 Prozent stimmen dafür, indigene Australier in die Volkszählung aufzunehmen und Bundesgesetze auf sie anzuwenden."},{"year":1992,"title":"Mabo-Urteil","text":"Der High Court verwirft die Fiktion terra nullius und erkennt indigene Landrechte an – die folgenreichste Gerichtsentscheidung der australischen Geschichte."},{"year":2008,"title":"Entschuldigung an die Gestohlenen Generationen","text":"Premierminister Rudd entschuldigt sich für die jahrzehntelange Wegnahme indigener Kinder von ihren Familien."}]}
 };
 const MYTHEN = [
 {"category":"Antike","type":"Nuance","title":"Der Trojanische Krieg war reine Erfindung","text":"Homers 'Ilias' ist literarisch stark überhöht, doch Ausgrabungen in Hisarlik (Türkei) durch Heinrich Schliemann belegen eine reale, mehrfach zerstörte Stadt namens Troja. Ob ein 'Trojanisches Pferd' tatsächlich existierte, bleibt jedoch unbewiesen."},
