@@ -5,7 +5,7 @@
  * WICHTIG bei Änderungen: VERSION hochzählen.
  */
 
-const VERSION = '2026-09-01-1';
+const VERSION = '2026-09-06-1';
 const CACHE = 'historia-' + VERSION;
 
 const DATEIEN = [
@@ -18,6 +18,13 @@ const DATEIEN = [
   './tailwind.css',
   './react.js',
   './react-dom.js',
+  './data-epochen.js',
+  './data-sammlungen.js',
+  './data-laender.js',
+  './data-mythen.js',
+  './data-vertiefungen.js',
+  './data-themen.js',
+  './data-mysterien.js',
   './app.js',
   './font-sourcesans3.woff2',
   './font-fraunces.woff2',
