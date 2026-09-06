@@ -1464,5 +1464,244 @@ const VERTIEFUNGEN = [
   "quellen": [
     "Encyclopaedia Britannica: Cold War; Mikhail Gorbachev; perestroika; Soviet Union – Dissolution; Revolutions of 1989"
   ]
-}
+},
+  {
+    id: "null-und-ziffern",
+    titel: "Die Null und die indischen Ziffern",
+    epoche: "mittelalter",
+    jahr: 628,
+    zeitraum: "5.–13. Jahrhundert",
+    region: "Indien, Bagdad, Europa",
+    leitsatz: "Ein Zeichen für nichts zu schreiben klingt trivial – es war die Voraussetzung dafür, dass Rechnen überhaupt zu einer Technik werden konnte.",
+    vorgeschichte: "Babylonier und Maya kannten Platzhalterzeichen, verwendeten sie aber nicht als eigenständige Zahl. Griechische und römische Systeme kamen ohne Stellenwert aus – und machten schriftliches Rechnen zur Qual. Wer in Rom multiplizieren wollte, griff zum Rechenbrett, nicht zur Feder.",
+    verlauf: "Der indische Mathematiker Brahmagupta formulierte 628 als Erster Rechenregeln für die Null als Zahl: Addition, Subtraktion, Multiplikation. Bei der Division blieb er unklar – ein Problem, das erst im 19. Jahrhundert sauber gelöst wurde. Über Bagdad gelangte das System nach Westen: Al-Chwarizmi beschrieb es im 9. Jahrhundert, Leonardo Fibonacci führte es 1202 mit dem Liber Abaci in Italien ein. Durchgesetzt hat es sich dort erst über Jahrhunderte; Florenz verbot die neuen Ziffern 1299 im Bankwesen, weil sie sich leichter fälschen ließen als römische.",
+    folgen: "Mit Stellenwertsystem und Null wurde schriftliches Rechnen so einfach, dass es lernbar wurde. Doppelte Buchführung, Zinsrechnung, Navigation und später jede Form von Naturwissenschaft setzen darauf auf. Dass wir die Ziffern arabisch nennen, obwohl sie indisch sind, zeigt, über welchen Weg sie kamen – und wie Wissen unterwegs seine Herkunft verliert.",
+    strittig: "Die Datierung der ältesten schriftlichen Null ist offen. Eine Radiokarbonuntersuchung des Bakhshali-Manuskripts ergab 2017 Datierungen bis ins 3. oder 4. Jahrhundert, doch das Manuskript besteht aus Blättern verschiedener Zeiten, sodass die frühe Datierung nicht ohne Weiteres für den Text gilt. Umstritten ist auch, wie viel die europäische Rechenkunst Fibonacci verdankt und wie viel dem praktischen Handelsverkehr, der die Ziffern ohnehin über den Mittelmeerraum verbreitete.",
+    zahlen: [
+      { wert: "628", was: "Brahmagupta formuliert Rechenregeln für die Null" },
+      { wert: "1202", was: "Fibonaccis Liber Abaci führt das System in Italien ein" },
+      { wert: "1299", was: "Florenz verbietet die neuen Ziffern im Bankwesen" },
+      { wert: "ca. 500 Jahre", was: "bis sich die Ziffern in Europa vollständig durchsetzten" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Numerals and numeral systems; Brahmagupta",
+      "Bodleian Library Oxford (2017): Radiokarbondatierung des Bakhshali-Manuskripts und die Debatte darüber",
+      "Georges Ifrah: Universalgeschichte der Zahlen"
+    ]
+  },
+  {
+    id: "haus-der-weisheit",
+    titel: "Die Übersetzungsbewegung von Bagdad",
+    epoche: "mittelalter",
+    jahr: 800,
+    zeitraum: "8.–10. Jahrhundert",
+    region: "Abbasidisches Kalifat",
+    leitsatz: "Ohne zwei Jahrhunderte arabischer Übersetzungsarbeit wäre ein großer Teil der griechischen Wissenschaft schlicht verloren gewesen.",
+    vorgeschichte: "Nach der Gründung Bagdads 762 verfügten die Abbasiden über Reichtum, ein Reich von Zentralasien bis Nordafrika und eine mehrsprachige Bildungsschicht aus Persern, Syrern, Christen und Juden. Papier, über chinesische Vermittlung bekannt geworden, machte Bücher bezahlbar. Griechische Texte lagen in byzantinischen Klöstern und in syrischen Übersetzungen bereit.",
+    verlauf: "Über rund zweihundert Jahre wurde fast alles ins Arabische übertragen, was an griechischer Wissenschaft greifbar war: Euklid, Ptolemäus, Galen, Aristoteles, Archimedes. Übersetzer wie Hunayn ibn Ishaq arbeiteten mit Handschriftenvergleich und begrifflicher Präzision statt Wort für Wort. Übersetzt wurde nicht aus Ehrfurcht, sondern aus Bedarf: Astronomie für Kalender und Gebetsrichtung, Medizin für die Krankenhäuser, Mathematik für Erbrecht und Verwaltung. Die Texte wurden dabei nicht nur bewahrt, sondern korrigiert und erweitert – Ibn al-Haitham widerlegte Ptolemäus' Sehtheorie durch Experimente.",
+    folgen: "Ab dem 12. Jahrhundert übersetzten Gelehrte in Toledo und Sizilien diese arabischen Fassungen ins Lateinische zurück. Ein erheblicher Teil dessen, was Europa für sein antikes Erbe hält, ist über diesen Umweg gekommen. Begriffe wie Algebra, Algorithmus, Alkohol und Ziffer tragen die Spur bis heute.",
+    strittig: "Ob das Haus der Weisheit eine förmliche Akademie mit Übersetzerstab war oder eher eine Palastbibliothek, um die sich Legenden gelegt haben, wird in der Forschung bestritten – Dimitri Gutas hat die romantische Vorstellung deutlich relativiert. Umstritten ist auch die verbreitete Erzählung, die islamische Wissenschaft sei nach dem 12. Jahrhundert erloschen; Arbeiten der Maragha-Schule und Ulug Begs Sternwarte sprechen dagegen.",
+    zahlen: [
+      { wert: "762", was: "Gründung Bagdads als Reichshauptstadt" },
+      { wert: "ca. 200 Jahre", was: "Dauer der intensiven Übersetzungstätigkeit" },
+      { wert: "1085", was: "Fall Toledos – Beginn der Rückübersetzung ins Lateinische" }
+    ],
+    quellen: [
+      "Dimitri Gutas: Greek Thought, Arabic Culture",
+      "Encyclopaedia Britannica: House of Wisdom; Hunayn ibn Ishaq",
+      "Jim Al-Khalili: Im Haus der Weisheit"
+    ]
+  },
+  {
+    id: "transsahara",
+    titel: "Der Transsaharahandel",
+    epoche: "mittelalter",
+    jahr: 800,
+    zeitraum: "8.–16. Jahrhundert",
+    region: "West- und Nordafrika",
+    leitsatz: "Die Sahara war keine Mauer, sondern ein Meer aus Sand – und Westafrika lieferte über Jahrhunderte einen Großteil des Goldes, mit dem Europa Münzen prägte.",
+    vorgeschichte: "Bis das Dromedar in den ersten nachchristlichen Jahrhunderten in Nordafrika verbreitet wurde, war die Wüste kaum regelmäßig zu queren. Mit dem Kamel wurden Strecken von zwei Monaten planbar. Im Süden lagen Goldfelder, im Norden die Mittelmeerhäfen – und dazwischen die Salzminen der Sahara, denn im Sahel fehlte Salz zum Überleben.",
+    verlauf: "Ab dem 8. Jahrhundert entstanden Karawanenrouten zwischen Sijilmasa, Timbuktu, Gao und Kairo. Gehandelt wurde Gold gegen Salz, dazu Kupfer, Stoffe, Bücher – und Menschen. Die Reiche Ghana, Mali und Songhai kontrollierten nacheinander die südlichen Endpunkte und besteuerten den Verkehr. Mit dem Handel kam der Islam, weniger durch Eroberung als durch Kaufleute und Gelehrte. Timbuktu wurde zu einem Zentrum der Gelehrsamkeit mit Zehntausenden Handschriften.",
+    folgen: "Westafrikanisches Gold finanzierte über Jahrhunderte die Münzprägung des Mittelmeerraums. Mansa Musas Pilgerfahrt 1324 machte das Reich Mali in Europa bekannt; auf der Katalanischen Weltkarte von 1375 ist er mit einem Goldklumpen abgebildet. Erst die europäische Seefahrt entlang der Westküste ab dem 15. Jahrhundert verlagerte den Handel an die Küste – und entwertete die Wüstenrouten.",
+    strittig: "Der Umfang des Goldflusses lässt sich nur schätzen; Angaben zu Mansa Musas Vermögen, die ihn zum reichsten Menschen der Geschichte erklären, sind Hochrechnungen ohne belastbare Grundlage. Umstritten ist auch die Größenordnung des transsaharischen Sklavenhandels: Schätzungen über die Jahrhunderte reichen von rund vier bis über neun Millionen verschleppte Menschen, bei sehr dünner Quellenlage.",
+    zahlen: [
+      { wert: "ca. 2 Monate", was: "Dauer einer Karawanenquerung" },
+      { wert: "1324", was: "Mansa Musas Pilgerfahrt nach Mekka" },
+      { wert: "1375", was: "Mali erscheint auf der Katalanischen Weltkarte" },
+      { wert: "Zehntausende", was: "Handschriften in den Sammlungen Timbuktus" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Trans-Saharan trade; Mali empire",
+      "Michael Gomez: African Dominion. A New History of Empire in Early and Medieval West Africa",
+      "UNESCO: General History of Africa, Band IV"
+    ]
+  },
+  {
+    id: "hexenverfolgung",
+    titel: "Die europäische Hexenverfolgung",
+    epoche: "fruehe-neuzeit",
+    jahr: 1560,
+    zeitraum: "ca. 1450–1750, Höhepunkt 1560–1630",
+    region: "Europa, vor allem Mitteleuropa",
+    leitsatz: "Die Hexenverfolgung war kein finsteres Mittelalter, sondern ein Phänomen der frühen Neuzeit – gleichzeitig mit Buchdruck, Renaissance und beginnender Wissenschaft.",
+    vorgeschichte: "Das mittelalterliche Kirchenrecht hatte den Glauben an nächtliche Hexenflüge lange als heidnischen Aberglauben verworfen. Erst im 15. Jahrhundert setzte sich die Vorstellung eines Teufelspakts durch, die aus einzelnen Schadenzaubervorwürfen ein Delikt gegen Gott machte. Der Hexenhammer von 1486 verbreitete diese Lehre gedruckt – und traf auf eine Zeit der Konfessionskriege, Klimaverschlechterung und Missernten.",
+    verlauf: "Der Höhepunkt lag zwischen 1560 und 1630, besonders im zersplitterten Heiligen Römischen Reich, wo kleine Territorien ohne wirksame Rechtsmittelinstanz urteilten. Die Folter erzwang Geständnisse und Denunziationen, aus denen die nächsten Verfahren erwuchsen – ein sich selbst verstärkender Mechanismus. Zentralisierte Staaten wie Spanien oder die Niederlande verurteilten deutlich weniger, weil übergeordnete Gerichte die Verfahren prüften. Ausgerechnet die viel gescholtene spanische Inquisition stand dem Hexenvorwurf skeptisch gegenüber.",
+    folgen: "Von etwa 100.000 Verfahren endeten schätzungsweise 40.000 bis 60.000 mit einer Hinrichtung, rund drei Viertel bis vier Fünftel der Opfer waren Frauen. Das Ende kam nicht durch Aufklärungsschriften allein, sondern durch juristische Beweisanforderungen: Wo Folter abgeschafft und Indizien geprüft wurden, brachen die Verfahren zusammen.",
+    strittig: "Die Opferzahlen sind Hochrechnungen aus regional sehr unterschiedlicher Aktenlage; ältere Angaben von Millionen Opfern sind widerlegt, stammen aus dem 19. Jahrhundert und wurden später politisch weiterverwendet. Umstritten bleibt die Gewichtung der Ursachen: Klimakrise und Missernten, Konfessionskonflikt, Rechtsordnung und Geschlechterverhältnisse werden unterschiedlich stark veranschlagt.",
+    zahlen: [
+      { wert: "ca. 100.000", was: "Verfahren in Europa und im britischen Amerika" },
+      { wert: "40.000–60.000", was: "Hinrichtungen, Schätzung der Forschung" },
+      { wert: "75–80 %", was: "Anteil der Frauen unter den Opfern" },
+      { wert: "1486", was: "Druck des Hexenhammers" }
+    ],
+    quellen: [
+      "Brian P. Levack: The Witch-Hunt in Early Modern Europe",
+      "Wolfgang Behringer: Hexen. Glaube, Verfolgung, Vermarktung",
+      "Encyclopaedia Britannica: Witch hunt"
+    ]
+  },
+  {
+    id: "krise-17-jahrhundert",
+    titel: "Die Krise des 17. Jahrhunderts",
+    epoche: "fruehe-neuzeit",
+    jahr: 1640,
+    zeitraum: "ca. 1590–1700",
+    region: "weltweit",
+    leitsatz: "Zwischen 1618 und 1680 brachen auf mehreren Kontinenten gleichzeitig Staaten zusammen – und über allem lag eine Kälteperiode.",
+    vorgeschichte: "Ab dem späten 16. Jahrhundert sanken die Durchschnittstemperaturen der Nordhalbkugel messbar; Gletscher wuchsen, Flüsse froren, Vegetationsperioden verkürzten sich. Gleichzeitig war die Bevölkerung Europas und Chinas stark gewachsen und lebte am Rand der Tragfähigkeit ihrer Landwirtschaft. Staaten hatten ihre Militärausgaben vervielfacht, ohne ihre Steuerbasis entsprechend zu verbreitern.",
+    verlauf: "Innerhalb weniger Jahrzehnte häuften sich Katastrophen: der Dreißigjährige Krieg in Mitteleuropa, der englische Bürgerkrieg und die Hinrichtung des Königs, die Fronde in Frankreich, Aufstände in Katalonien, Portugal und Neapel, die Krise der polnischen Adelsrepublik – und in China der Sturz der Ming-Dynastie 1644 nach Hungersnöten und Bauernaufständen. Japan blieb nach der Abschottung vergleichsweise stabil.",
+    folgen: "Wo Staaten die Krise überstanden, gingen sie zentralisierter und steuerkräftiger daraus hervor – der Absolutismus Ludwigs XIV. und das fiskalisch-militärische England sind Antworten auf diese Erfahrung. Die Bevölkerung Mitteleuropas brauchte Generationen zur Erholung; in Teilen des Reichs starb ein Drittel oder mehr.",
+    strittig: "Ob es eine Krise des 17. Jahrhunderts als zusammenhängendes Phänomen überhaupt gab, ist eine alte Kontroverse. Geoffrey Parker verbindet die Ereignisse eng mit der Kleinen Eiszeit, andere Historiker halten die Gleichzeitigkeit für teilweise zufällig und warnen davor, politische Umbrüche aus dem Klima abzuleiten. Sicher ist die Abkühlung, umstritten ist ihre Erklärungskraft.",
+    zahlen: [
+      { wert: "1618–1648", was: "Dreißigjähriger Krieg" },
+      { wert: "1644", was: "Ende der Ming-Dynastie" },
+      { wert: "1649", was: "Hinrichtung Karls I. in England" },
+      { wert: "ca. 1–2 °C", was: "Abkühlung in den kältesten Phasen, regional verschieden" }
+    ],
+    quellen: [
+      "Geoffrey Parker: Global Crisis. War, Climate Change and Catastrophe in the Seventeenth Century",
+      "Encyclopaedia Britannica: Little Ice Age; Thirty Years' War",
+      "Jonathan Spence: Chinas Weg in die Moderne"
+    ]
+  },
+  {
+    id: "voelkermord-armenier",
+    titel: "Der Völkermord an den Armeniern",
+    epoche: "moderne",
+    jahr: 1915,
+    zeitraum: "1915–1916, Nachwirkungen bis 1923",
+    region: "Osmanisches Reich",
+    leitsatz: "Der erste systematisch geplante Völkermord des 20. Jahrhunderts – und der erste, dessen Leugnung zur Staatspolitik wurde.",
+    vorgeschichte: "Die armenische Bevölkerung Anatoliens war christlich und rechtlich benachteiligt. Nach Massakern in den 1890er Jahren und 1909 verschärfte sich die Lage mit dem Kriegseintritt des Osmanischen Reichs 1914. Nach der schweren Niederlage gegen Russland bei Sarikamis wurden die Armenier pauschal als innerer Feind dargestellt.",
+    verlauf: "Am 24. April 1915 wurden in Konstantinopel hunderte armenische Intellektuelle verhaftet und überwiegend getötet. Es folgten Deportationen der Zivilbevölkerung in die syrische Wüste – Märsche ohne Verpflegung, begleitet von Überfällen und Massakern. Deutsche Diplomaten und Offiziere, Verbündete des Osmanischen Reichs, berichteten detailliert nach Berlin, ohne dass daraus Konsequenzen folgten. Auch der US-Botschafter Morgenthau dokumentierte das Geschehen.",
+    folgen: "Die armenische Bevölkerung Anatoliens verschwand nahezu vollständig. Raphael Lemkin, der 1944 den Begriff Genozid prägte, nannte diese Ereignisse ausdrücklich als einen seiner Ausgangspunkte. Die Anerkennung als Völkermord erfolgte in vielen Staaten erst Jahrzehnte später, in Deutschland 2016, in den USA 2021.",
+    strittig: "Die Opferzahlen liegen je nach Methode zwischen etwa 600.000 und 1,5 Millionen; die meisten Fachleute nennen rund eine Million für 1915/16. Die Unschärfe entsteht durch zerstörte osmanische Akten und dadurch, dass unterschiedlich gezählt wird, wer als Opfer gilt. Die türkische Regierung bestreitet bis heute die Einordnung als Völkermord und spricht von Kriegsfolgen – eine Position, der die Genozidforschung nahezu geschlossen widerspricht.",
+    zahlen: [
+      { wert: "24. April 1915", was: "Verhaftungswelle in Konstantinopel, heute Gedenktag" },
+      { wert: "600.000–1,5 Mio.", was: "Spanne der Opferschätzungen" },
+      { wert: "ca. 1 Million", was: "am häufigsten genannte Größenordnung für 1915/16" },
+      { wert: "1944", was: "Lemkin prägt den Begriff Genozid, auch mit Blick hierauf" }
+    ],
+    quellen: [
+      "United States Holocaust Memorial Museum: The Armenian Genocide (1915–16), Overview",
+      "Encyclopaedia Britannica: Armenian Genocide",
+      "Taner Akçam: A Shameful Act. The Armenian Genocide and the Question of Turkish Responsibility"
+    ]
+  },
+  {
+    id: "teilung-indiens",
+    titel: "Die Teilung Indiens",
+    epoche: "moderne",
+    jahr: 1947,
+    zeitraum: "1947",
+    region: "Britisch-Indien",
+    leitsatz: "Ein Anwalt aus London zog in fünf Wochen eine Grenze durch ein Land, das er nie zuvor gesehen hatte – und löste die größte Fluchtbewegung der Geschichte aus.",
+    vorgeschichte: "Die britische Verwaltung hatte religiöse Zugehörigkeit über Jahrzehnte zur politischen Kategorie gemacht, unter anderem durch getrennte Wählerschaften. Die Muslimliga unter Jinnah forderte einen eigenen Staat, der Kongress unter Nehru und Gandhi hielt an einem ungeteilten Indien fest. Nach dem Zweiten Weltkrieg war Großbritannien finanziell erschöpft und wollte rasch abziehen.",
+    verlauf: "Lord Mountbatten zog den Abzugstermin auf August 1947 vor. Der Jurist Cyril Radcliffe, ohne Indienerfahrung ausgewählt, erhielt fünf Wochen, um die Grenze durch Punjab und Bengalen zu ziehen; veröffentlicht wurde sie erst nach der Unabhängigkeit. Millionen erfuhren erst danach, auf welcher Seite sie lebten. Es folgten Massaker, Vergewaltigungen und Vertreibungen in beide Richtungen.",
+    folgen: "Rund 15 Millionen Menschen verloren ihre Heimat. Die Schätzungen der Toten reichen von 200.000 bis zwei Millionen. Kaschmir blieb ungeklärt und ist bis heute Gegenstand von Kriegen zwischen zwei Atommächten. Gandhi, der die Teilung abgelehnt hatte, wurde im Januar 1948 von einem hinduistischen Nationalisten ermordet.",
+    strittig: "Ob die Teilung vermeidbar gewesen wäre, ist bis heute Streitfrage der Historiografie: Manche sehen sie als Folge britischer Spaltungspolitik, andere als Ergebnis unvereinbarer politischer Programme, wieder andere als Fehler der übereilten Terminsetzung. Auch Jinnahs eigentliche Absichten – ein souveräner Staat oder ein Verhandlungspfand für Minderheitenrechte – werden unterschiedlich gedeutet.",
+    zahlen: [
+      { wert: "5 Wochen", was: "Zeit für die Festlegung der Grenzlinie" },
+      { wert: "ca. 15 Mio.", was: "Vertriebene und Flüchtende" },
+      { wert: "200.000–2 Mio.", was: "Spanne der Opferschätzungen" },
+      { wert: "15. August 1947", was: "Unabhängigkeit Indiens, einen Tag nach Pakistan" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Partition of India",
+      "Yasmin Khan: The Great Partition. The Making of India and Pakistan",
+      "Nisid Hajari: Midnight's Furies"
+    ]
+  },
+  {
+    id: "bandung",
+    titel: "Bandung und die Blockfreien",
+    epoche: "moderne",
+    jahr: 1955,
+    zeitraum: "1955–1970er Jahre",
+    region: "Asien, Afrika, Lateinamerika",
+    leitsatz: "Zum ersten Mal saßen Staaten Asiens und Afrikas an einem Tisch, ohne dass eine europäische Macht die Tagesordnung bestimmte.",
+    vorgeschichte: "Nach 1945 entstanden binnen weniger Jahre dutzende neue Staaten, die weder dem Westen noch der Sowjetunion angehören wollten und deren Grenzen und Verwaltungen aus der Kolonialzeit stammten. Der Kalte Krieg drohte sie zu Nebenschauplätzen fremder Interessen zu machen.",
+    verlauf: "Im April 1955 trafen sich in Bandung auf Java Vertreter von 29 Staaten, die zusammen mehr als die Hälfte der Weltbevölkerung repräsentierten. Nehru, Sukarno, Nasser, Zhou Enlai und Nkrumah gehörten zu den Wortführern. Die Schlusserklärung verurteilte Kolonialismus in jeder Form und formulierte Grundsätze der Nichteinmischung. 1961 folgte in Belgrad die Gründung der Bewegung der Blockfreien Staaten.",
+    folgen: "Die Blockfreien wurden zu einer Stimme in den Vereinten Nationen und drängten Entkolonialisierung, Abrüstung und später eine gerechtere Weltwirtschaftsordnung auf die Tagesordnung. Ihre praktische Macht blieb begrenzt: Viele Mitglieder waren wirtschaftlich abhängig, mehrere führten untereinander Krieg, und einige waren im Inneren Diktaturen.",
+    strittig: "Wie viel Bandung tatsächlich bewirkte, ist umstritten. Für die einen ist es der Gründungsmoment des globalen Südens als politischer Größe, für die anderen eine Konferenz mit starker Symbolik und schwacher Folgewirkung. Umstritten ist auch, ob Blockfreiheit je konsequent praktiziert wurde – etliche Mitglieder waren faktisch an einen der beiden Blöcke gebunden.",
+    zahlen: [
+      { wert: "29", was: "teilnehmende Staaten in Bandung 1955" },
+      { wert: "über 50 %", was: "Anteil der Weltbevölkerung, den sie vertraten" },
+      { wert: "1961", was: "Gründung der Blockfreien-Bewegung in Belgrad" },
+      { wert: "1960", was: "Afrikanisches Jahr: 17 neue unabhängige Staaten" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Bandung Conference; Non-Aligned Movement",
+      "Vijay Prashad: The Darker Nations. A People's History of the Third World",
+      "Vereinte Nationen: Dokumentation der Entkolonialisierung"
+    ]
+  },
+  {
+    id: "doppelhelix",
+    titel: "Die Struktur der DNA",
+    epoche: "moderne",
+    jahr: 1953,
+    zeitraum: "1951–1962",
+    region: "Großbritannien",
+    leitsatz: "Die berühmteste Entdeckung der Biologie beruht auf einer Aufnahme, die ihre Urheberin nicht freigegeben hatte.",
+    vorgeschichte: "Dass Gene aus DNA bestehen und nicht aus Proteinen, war seit den Experimenten von Avery 1944 und Hershey und Chase 1952 bekannt, aber noch nicht allgemein akzeptiert. Wie das Molekül Information speichern und weitergeben konnte, war völlig offen. Am King's College London untersuchten Rosalind Franklin und Maurice Wilkins DNA mit Röntgenbeugung.",
+    verlauf: "Franklin erzeugte 1952 die Aufnahme, die als Photo 51 bekannt wurde und die Helixstruktur klar zeigte. Wilkins zeigte sie im Januar 1953 James Watson, ohne Franklins Wissen; zusätzlich erhielten Watson und Crick über einen Gutachterbericht Zugang zu ihren unveröffentlichten Daten. Im April 1953 veröffentlichten sie in Nature ihr Modell der Doppelhelix – auf gut einer Seite, mit dem berühmt gewordenen Understatement, die Basenpaarung lege einen Kopiermechanismus nahe.",
+    folgen: "Die Struktur erklärte Vererbung als Kopiervorgang und begründete die Molekularbiologie. Aus ihr folgen Gentechnik, DNA-Fingerabdruck, Sequenzierung ganzer Genome und die alte DNA, mit der heute Fragen der Archäologie beantwortet werden. Watson, Crick und Wilkins erhielten 1962 den Nobelpreis. Franklin war 1958 mit 37 Jahren an Eierstockkrebs gestorben; der Preis wird nicht posthum vergeben.",
+    strittig: "Wie unlauter das Vorgehen war, wird unterschiedlich beurteilt. Manche sehen einen klaren Bruch wissenschaftlicher Fairness, andere verweisen auf die damals lockeren Gepflogenheiten im Umgang mit unveröffentlichten Daten. Neuere Arbeiten zeigen, dass Franklin die Helix selbst weiter erkannt hatte, als die spätere Erzählung von der übergangenen Außenseiterin nahelegt – sie war Mitarbeiterin auf Augenhöhe, nicht bloß Datenlieferantin.",
+    zahlen: [
+      { wert: "1952", was: "Entstehung von Photo 51" },
+      { wert: "April 1953", was: "Veröffentlichung des Modells in Nature" },
+      { wert: "1962", was: "Nobelpreis für Watson, Crick und Wilkins" },
+      { wert: "2003", was: "Abschluss des Humangenomprojekts" }
+    ],
+    quellen: [
+      "Nature (1953): Watson und Crick, Molecular Structure of Nucleic Acids",
+      "Nature (2023): Neubewertung von Rosalind Franklins Rolle anhand unveröffentlichter Dokumente",
+      "Encyclopaedia Britannica: DNA; Rosalind Franklin"
+    ]
+  },
+  {
+    id: "ende-apartheid",
+    titel: "Das Ende der Apartheid",
+    epoche: "moderne",
+    jahr: 1990,
+    zeitraum: "1990–1996",
+    region: "Südafrika",
+    leitsatz: "Ein Regime, dessen Ende fast alle Beobachter für nur gewaltsam möglich hielten, verhandelte sich selbst ab.",
+    vorgeschichte: "Seit 1948 war die Trennung nach Hautfarbe lückenlos in Gesetze gegossen. Nach Sharpeville 1960 waren ANC und PAC verboten, die Führung saß im Gefängnis oder im Exil. In den 1980er Jahren wurde das Land unregierbar: Aufstände in den Townships, Ausnahmezustand, internationale Sanktionen, Kapitalflucht. Mit dem Ende des Kalten Krieges verlor das Regime zugleich sein Argument, ein Bollwerk gegen den Kommunismus zu sein.",
+    verlauf: "Im Februar 1990 hob de Klerk das Verbot des ANC auf und ließ Mandela nach 27 Jahren frei. Es folgten vier Jahre Verhandlungen unter fortdauernder Gewalt – zwischen 1990 und 1994 starben mehr Menschen politisch motiviert als in den Jahrzehnten zuvor, ein erheblicher Teil durch eine dritte Kraft aus Teilen des Sicherheitsapparats. Im April 1994 wählten erstmals alle Südafrikaner. 1996 nahm die Wahrheits- und Versöhnungskommission unter Desmond Tutu ihre Arbeit auf: Amnestie im Tausch gegen vollständige Aussage.",
+    folgen: "Der Übergang gelang ohne Bürgerkrieg – gemessen an den Erwartungen das eigentlich Bemerkenswerte. Die politische Gleichstellung wurde erreicht, die wirtschaftliche nicht: Südafrika gehört bis heute zu den ungleichsten Gesellschaften der Welt, und die Landverteilung von 1913 wirkt fort.",
+    strittig: "Ob die Verhandlungen zu viel wirtschaftliche Kontinuität festschrieben, ist eine der schärfsten Debatten der südafrikanischen Gegenwart. Umstritten ist auch die Bilanz der Wahrheitskommission: Sie brachte Taten ans Licht, die sonst verborgen geblieben wären, ließ aber viele Täter straflos und die Opfer weitgehend ohne Entschädigung – ein Modell, das seither weltweit kopiert und ebenso oft kritisiert wurde.",
+    zahlen: [
+      { wert: "27 Jahre", was: "Mandelas Haftzeit" },
+      { wert: "11. Februar 1990", was: "Freilassung Mandelas" },
+      { wert: "April 1994", was: "erste allgemeine Wahlen" },
+      { wert: "über 21.000", was: "bei der Wahrheitskommission eingereichte Opferaussagen" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Apartheid; Nelson Mandela",
+      "Bericht der Truth and Reconciliation Commission of South Africa (1998)",
+      "South African History Online: Negotiations and transition 1990–1994"
+    ]
+  }
 ];

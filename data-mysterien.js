@@ -184,5 +184,136 @@ const MYSTERIEN = [
     forschungsstand: "Die Entzifferung setzte sich durch, als neue Tafeln aus Pylos exakt jene Wortformen zeigten, die Ventris' Lesung vorhersagte – eine echte Prüfung mit unabhängigen Daten. Die Tafeln enthalten übrigens keine Literatur, sondern Inventarlisten: Schafe, Öl, Räder, Personal.",
     abgrenzung: "Linear A, die ältere Schrift derselben Region, ist bis heute nicht entziffert. Ein Erfolg überträgt sich nicht automatisch auf den nächsten Fall.",
     quellen: ["Encyclopaedia Britannica: Linear B; Michael Ventris; Aegean civilizations; Linear A"]
+  },
+  {
+    id: "antikythera",
+    titel: "Der Mechanismus von Antikythera",
+    zeitraum: "ca. 150–100 v. Chr.",
+    region: "Griechenland",
+    kategorie: "Technik",
+    status: "teilweise",
+    gesichert: "1901 barg man aus einem Schiffswrack vor der Insel Antikythera einen korrodierten Bronzeklumpen. Er enthält über dreißig ineinandergreifende Zahnräder. Computertomografie zeigte ab 2006 Inschriften und Zahnradzahlen: Das Gerät bildete Sonnen- und Mondlauf, den Kalender und die Termine der Olympischen Spiele ab.",
+    raetsel: "Es gibt kein vergleichbares Objekt aus der Antike – und kein technisch ähnliches wieder für über tausend Jahre. Wie eine so verzahnte Feinmechanik entstehen und dann spurlos verschwinden konnte, ist offen.",
+    erklaerungen: [
+      { these: "Ein Einzelstück eines außergewöhnlichen Werkstattmilieus", dafuer: "Antike Autoren erwähnen Planetarien des Archimedes und des Poseidonios.", dagegen: "Die Verarbeitung wirkt eingespielt, nicht wie ein erster Versuch." },
+      { these: "Ein verbreiteter Gerätetyp, von dem nichts erhalten blieb", dafuer: "Bronze wurde über Jahrhunderte eingeschmolzen; nur der Meeresgrund bewahrte dieses Stück.", dagegen: "Es fehlen jede Werkstattspur und jede zweite Fundstelle." }
+    ],
+    forschungsstand: "Die Funktion gilt heute weitgehend als geklärt; 2021 legte ein Team des University College London ein Modell auch des Planetenteils vor. Ungeklärt bleiben Hersteller, Auftraggeber und Verbreitung.",
+    abgrenzung: "Kein Beweis für verlorene Hochtechnologie: Das Gerät nutzt bekannte Mechanik und bekanntes astronomisches Wissen – bemerkenswert ist die Präzision der Ausführung, nicht ein unbekanntes Prinzip.",
+    quellen: [
+      "Nature (2006): Freeth u. a., Decoding the ancient Greek astronomical calculator",
+      "Scientific Reports (2021): UCL-Modell des Planetariums",
+      "Encyclopaedia Britannica: Antikythera mechanism"
+    ]
+  },
+  {
+    id: "seevoelker",
+    titel: "Wer waren die Seevölker?",
+    zeitraum: "ca. 1200–1150 v. Chr.",
+    region: "Östliches Mittelmeer",
+    kategorie: "Völker & Wanderungen",
+    status: "ungeklaert",
+    gesichert: "Ägyptische Inschriften aus der Zeit Ramses' III. berichten von Angreifern zu Wasser und zu Lande, mit Namen wie Peleset, Schekelesch und Scherden. Im selben Zeitraum brechen im östlichen Mittelmeer Paläste, Schrift und Fernhandel zusammen.",
+    raetsel: "Woher diese Gruppen kamen, ob sie überhaupt ein Bündnis bildeten und ob sie Ursache oder Symptom des Zusammenbruchs waren, ist ungeklärt.",
+    erklaerungen: [
+      { these: "Wandernde Kriegerverbände aus dem ägäischen Raum", dafuer: "Materielle Ähnlichkeiten zwischen philistäischer und mykenischer Keramik.", dagegen: "Die Namenszuordnung zu Herkunftsräumen beruht auf schwacher sprachlicher Grundlage." },
+      { these: "Folge und nicht Ursache: Dürre, Hunger und Systemzusammenbruch setzten Menschen in Bewegung", dafuer: "Pollenprofile und Isotopendaten belegen eine mehrjährige Trockenphase um 1200 v. Chr.", dagegen: "Klimadaten erklären Wanderung, aber nicht die konkrete militärische Wucht der Angriffe." },
+      { these: "Ein ägyptisches Erzählmuster, das viele Gegner zu einem Feind bündelt", dafuer: "Die Inschriften sind Siegespropaganda in stark formelhafter Sprache.", dagegen: "Die Zerstörungshorizonte in Ugarit und anderswo sind archäologisch real." }
+    ],
+    forschungsstand: "Die neuere Forschung sieht den Zusammenbruch der Bronzezeit als Zusammenwirken mehrerer Ursachen und misst den Seevölkern eine geringere Rolle bei als die ältere Literatur.",
+    abgrenzung: "Nicht zu verwechseln mit einer einzelnen Invasion: Der Begriff Seevölker ist eine moderne Sammelbezeichnung des 19. Jahrhunderts, keine Selbstbezeichnung.",
+    quellen: [
+      "Eric H. Cline: 1177 v. Chr. Der erste Untergang der Zivilisation",
+      "Encyclopaedia Britannica: Sea Peoples",
+      "PLoS ONE (2013): Pollenanalysen zur Dürre in der südlichen Levante"
+    ]
+  },
+  {
+    id: "indus-untergang",
+    titel: "Warum endete die Indus-Kultur?",
+    zeitraum: "ca. 1900–1300 v. Chr.",
+    region: "Pakistan, Nordwestindien",
+    kategorie: "Untergang von Kulturen",
+    status: "teilweise",
+    gesichert: "Die Städte der Indus-Kultur zählten zu den größten der Bronzezeit, mit rechtwinkligem Straßennetz, Abwasserleitungen und genormten Ziegeln. Ab etwa 1900 v. Chr. wurden die großen Zentren aufgegeben, die Schrift verschwand, die Bevölkerung verlagerte sich nach Osten.",
+    raetsel: "Es gibt keine Zerstörungsschicht, keine Massengräber, keine Hinweise auf Eroberung. Eine Hochkultur verschwindet, ohne dass etwas Sichtbares geschieht.",
+    erklaerungen: [
+      { these: "Klimawandel und schwächere Monsune", dafuer: "Sedimentbohrungen zeigen eine über Jahrhunderte zunehmende Trockenheit.", dagegen: "Der Prozess verlief langsam; unklar bleibt, warum keine Anpassung gelang." },
+      { these: "Verlagerung und Versiegen von Flussläufen", dafuer: "Geologische Untersuchungen belegen Änderungen im Flusssystem der Region.", dagegen: "Zeitliche Zuordnung und Ausmaß sind umstritten." },
+      { these: "Einwanderung indoarischer Gruppen", dafuer: "Sprachgeschichtlich ist eine Zuwanderung gut begründbar, genetische Studien stützen Bewegungen aus der Steppe.", dagegen: "Die ältere Vorstellung einer gewaltsamen Eroberung ist archäologisch nicht haltbar und gilt als überholt." }
+    ],
+    forschungsstand: "Die Mehrheit sieht heute ein Zusammenwirken von Klima- und Flussveränderungen mit gesellschaftlicher Umschichtung, nicht ein einzelnes Ereignis.",
+    abgrenzung: "Die Frage ist unabhängig davon zu behandeln, dass die Indus-Schrift bis heute nicht gelesen werden kann – beides zusammen macht die Kultur aber besonders schwer zugänglich.",
+    quellen: [
+      "Encyclopaedia Britannica: Indus civilization",
+      "Nature Communications (2012/2018): Studien zu Monsun und Flusssystemen im Indusraum",
+      "Cell (2019): Genomstudie zur Bevölkerungsgeschichte Südasiens"
+    ]
+  },
+  {
+    id: "hoehlenkunst",
+    titel: "Wozu die Höhlenbilder?",
+    zeitraum: "ca. 40.000–12.000 v. Chr.",
+    region: "Europa, weltweit",
+    kategorie: "Kunst & Religion",
+    status: "ungeklaert",
+    gesichert: "In Chauvet, Lascaux, Altamira und hunderten weiteren Höhlen finden sich Tierdarstellungen von hoher Beobachtungsschärfe, oft tief im Berg, an Stellen ohne Tageslicht und ohne Siedlungsspuren. Auf Sulawesi wurden Bilder auf über 45.000 Jahre datiert – die Praxis ist nicht europäisch.",
+    raetsel: "Warum malten Menschen an Orte, die kaum jemand sehen konnte, und warum fast nur Tiere und fast nie Landschaft?",
+    erklaerungen: [
+      { these: "Jagdmagie", dafuer: "Häufig sind Beutetiere dargestellt, manche mit Speerzeichen.", dagegen: "Die dargestellten Arten stimmen oft nicht mit den Knochenfunden der Siedlungen überein – gemalt wurde anderes, als gegessen wurde." },
+      { these: "Schamanische Praxis in veränderten Bewusstseinszuständen", dafuer: "Geometrische Muster ähneln Wahrnehmungsmustern, die auch sonst unter bestimmten Bedingungen auftreten.", dagegen: "Die Übertragung heutiger ethnografischer Beobachtungen auf die Eiszeit ist methodisch angreifbar." },
+      { these: "Wissensweitergabe und Initiation", dafuer: "Kinderhandabdrücke und Fußspuren zeigen, dass auch Junge die Höhlen betraten.", dagegen: "Bleibt Deutung; direkte Belege für Unterricht fehlen." }
+    ],
+    forschungsstand: "Eine einheitliche Erklärung gilt inzwischen als unwahrscheinlich: Die Bilder entstanden über 25.000 Jahre hinweg – ein Zeitraum, der länger ist als die gesamte Geschichte seit der Erfindung der Schrift.",
+    abgrenzung: "Nicht zu verwechseln mit der Frage nach dem Ursprung von Kunst überhaupt; Schmuck und Ockerverwendung sind deutlich älter.",
+    quellen: [
+      "Encyclopaedia Britannica: Cave art; Lascaux",
+      "Nature (2019/2021): Datierungen der Höhlenmalereien auf Sulawesi",
+      "Jean Clottes: Höhlenkunst. Die Anfänge der Kunst"
+    ]
+  },
+  {
+    id: "franklin-expedition",
+    titel: "Das Ende der Franklin-Expedition",
+    zeitraum: "1845–1848",
+    region: "Kanadische Arktis",
+    kategorie: "Verschollene Expeditionen",
+    status: "geloest",
+    gesichert: "1845 brach John Franklin mit zwei Schiffen und 129 Mann auf, um die Nordwestpassage zu finden. Niemand kehrte zurück. Über Jahrzehnte suchten mehr als dreißig Expeditionen. Inuit berichteten früh von verhungernden Männern und von Kannibalismus – die britische Öffentlichkeit wies das empört zurück.",
+    raetsel: "Lange war unklar, wo die Schiffe lagen und warum eine gut ausgerüstete Expedition vollständig unterging.",
+    erklaerungen: [
+      { these: "Kälte, Eis und Hunger", dafuer: "Die Schiffe saßen über Jahre im Eis fest; Vorräte waren auf drei Jahre bemessen.", dagegen: "Erklärt nicht die auffällige Schwäche der Mannschaft schon im ersten Winter." },
+      { these: "Bleivergiftung aus Konservendosen", dafuer: "Erhöhte Bleiwerte in Knochen und Haaren der Toten.", dagegen: "Neuere Studien halten die Werte für nicht ungewöhnlich für Briten jener Zeit." },
+      { these: "Zusammenwirken mehrerer Ursachen, darunter Skorbut und Tuberkulose", dafuer: "Skelettbefunde zeigen entsprechende Spuren.", dagegen: "Die genaue Abfolge bleibt unbekannt." }
+    ],
+    forschungsstand: "2014 und 2016 wurden beide Schiffe gefunden – die Erebus und die Terror, geortet auch dank Inuit-Überlieferungen, die man 150 Jahre lang ignoriert hatte. Schnittspuren an Knochen bestätigten den Kannibalismus.",
+    abgrenzung: "Der Fall zeigt weniger ein historisches Rätsel als ein Erkenntnisproblem: Die entscheidenden Auskünfte lagen von Anfang an vor, wurden aber wegen ihrer Herkunft nicht ernst genommen.",
+    quellen: [
+      "Parks Canada: Wrecks of HMS Erebus and HMS Terror, Fundberichte 2014 und 2016",
+      "Journal of Archaeological Science (1997/2015): Untersuchungen zu Schnittspuren und Bleiwerten",
+      "Encyclopaedia Britannica: John Franklin"
+    ]
+  },
+  {
+    id: "mary-celeste",
+    titel: "Die verlassene Mary Celeste",
+    zeitraum: "1872",
+    region: "Atlantik",
+    kategorie: "Verschollene Menschen",
+    status: "ungeklaert",
+    gesichert: "Am 4. Dezember 1872 wurde die Brigantine Mary Celeste zwischen den Azoren und Portugal treibend gefunden – seetüchtig, mit Vorräten für Monate, aber ohne Menschen. Das Rettungsboot fehlte, die Ladung Rohalkohol war bis auf neun beschädigte Fässer intakt.",
+    raetsel: "Warum verließ eine erfahrene Besatzung ein intaktes Schiff auf offener See?",
+    erklaerungen: [
+      { these: "Panik wegen austretender Alkoholdämpfe", dafuer: "Neun Fässer waren leck; verdampfender Alkohol kann eine Explosionsangst auslösen.", dagegen: "Es fanden sich keine Brand- oder Explosionsspuren." },
+      { these: "Fehleinschätzung eines Wassereinbruchs", dafuer: "Die Pumpe war zerlegt, das Lot zeigte Wasser im Rumpf – die Lage konnte bedrohlicher wirken, als sie war.", dagegen: "Warum das Beiboot dann nicht am Schiff vertäut blieb, bleibt offen." },
+      { these: "Seebeben oder Wasserhose", dafuer: "Erklärt eine plötzliche Räumung.", dagegen: "Keinerlei Beleg, reine Möglichkeit." }
+    ],
+    forschungsstand: "Die Alkoholdampf-These gilt als plausibelste, ist aber unbewiesen. Die Besatzung wurde nie gefunden.",
+    abgrenzung: "Der größte Teil des populären Bildes stammt aus einer Erzählung, die Arthur Conan Doyle 1884 veröffentlichte und die frei erfundene Details wie noch warme Mahlzeiten hinzufügte – sie stehen in keinem Protokoll.",
+    quellen: [
+      "Encyclopaedia Britannica: Mary Celeste",
+      "Protokolle des Vizeadmiralitätsgerichts Gibraltar, 1873",
+      "Smithsonian Magazine: Abandoned Ship. The Mary Celeste"
+    ]
   }
 ];
