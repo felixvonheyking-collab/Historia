@@ -16,6 +16,11 @@ const EPOCHS = [
   "accent": "#d9b56a",
   "lead": "Der lange Anfang: Werkzeuge, Feuer, Sesshaftwerdung.",
   "description": "Die Steinzeit umfasst den bei weitem längsten Abschnitt der Menschheitsgeschichte. Sie beginnt mit den ersten Steinwerkzeugen früher Hominiden und endet mit der Erfindung der Metallverarbeitung. Entscheidend war die 'Neolithische Revolution': der Übergang vom Jäger-und-Sammler-Dasein zu Ackerbau und Viehzucht, der feste Siedlungen, Vorratshaltung und erste soziale Hierarchien ermöglichte.",
+  "literatur": [
+   "Hermann Parzinger: Die Kinder des Prometheus. Eine Geschichte der Menschheit vor der Erfindung der Schrift",
+   "Encyclopaedia Britannica: Stone Age; Neolithic; Human evolution",
+   "Laufende Berichte zur Paläogenetik in Nature und Science (u. a. MPI für evolutionäre Anthropologie)"
+  ],
   "events": [
    {
     "year": -3400000,
@@ -251,6 +256,12 @@ const EPOCHS = [
   "accent": "#f0c869",
   "lead": "Schrift, Staat und Stadt: die ersten Hochkulturen entstehen.",
   "description": "An großen Flüssen – Nil, Euphrat/Tigris, Indus und Gelber Fluss – entwickeln sich die ersten Hochkulturen mit Bewässerungswirtschaft, Arbeitsteilung, Schrift und zentralisierter Herrschaft. Bronze als Werkstoff ermöglicht bessere Werkzeuge und Waffen und treibt Handel über weite Strecken an.",
+  "literatur": [
+   "Marc Van De Mieroop: A History of the Ancient Near East",
+   "Eric H. Cline: 1177 v. Chr. Der erste Untergang der Zivilisation",
+   "Cambridge Ancient History, Bände 1 und 2",
+   "Encyclopaedia Britannica: Mesopotamia; Ancient Egypt; Bronze Age"
+  ],
   "events": [
    {
     "year": -3300,
@@ -285,7 +296,7 @@ const EPOCHS = [
    {
     "year": -2600,
     "title": "Königsgräber von Ur",
-    "text": "Die Bestattungen enthalten Gefolgschaftsopfer: Dutzende Menschen wurden mit dem Herrscher beigesetzt."
+    "text": "Die Bestattungen enthalten Gefolgschaftsopfer: Dutzende Menschen wurden mit dem Herrscher beigesetzt. Ob sie freiwillig gingen, betäubt oder getötet wurden, ist bis heute offen.", "quelle": "Britisches Museum und Penn Museum, Grabungsbefunde Woolley; neuere CT-Untersuchungen der Schädel"
    },
    {
     "year": -2560,
@@ -572,6 +583,12 @@ const EPOCHS = [
   "accent": "#e2a45c",
   "lead": "Griechenland, Rom und die Grundlagen der westlichen Kultur.",
   "description": "Die Antike prägt Philosophie, Demokratie, Recht und Architektur bis heute. Griechische Stadtstaaten entwickeln Demokratie und Wissenschaft, Alexander der Große verbreitet hellenistische Kultur bis nach Asien, und Rom baut ein Weltreich, das schließlich in West- und Ostrom zerfällt.",
+  "literatur": [
+   "Mary Beard: SPQR. Die tausendjährige Geschichte Roms",
+   "Christian Meier: Die Entstehung des Politischen bei den Griechen",
+   "Cambridge Ancient History, Bände 5 bis 14",
+   "Encyclopaedia Britannica: Ancient Greek civilization; Ancient Rome"
+  ],
   "events": [
    {
     "year": -776,
@@ -726,7 +743,7 @@ const EPOCHS = [
    {
     "year": 166,
     "title": "Antoninische Pest",
-    "text": "Eine Seuche, vermutlich Pocken, tötet über Jahre Millionen im Römischen Reich und schwächt Heer und Wirtschaft dauerhaft."
+    "text": "Eine Seuche tötet über Jahre Millionen im Römischen Reich und schwächt Heer und Wirtschaft dauerhaft. Dass es Pocken waren, ist eine plausible Vermutung – ein Erregernachweis fehlt.", "quelle": "Encyclopaedia Britannica: Antonine Plague; zur Erregerfrage fehlt bislang aussagekräftige alte DNA"
    },
    {
     "year": 220,
@@ -1101,6 +1118,12 @@ const EPOCHS = [
   "accent": "#c98a5c",
   "lead": "Zwischen Glaube, Feudalismus und aufblühenden Städten.",
   "description": "Nach dem Untergang Westroms entstehen neue Reiche in Europa, geprägt von Christentum, Feudalismus und wechselnden Machtzentren. Gleichzeitig blühen im islamischen Kalifat, in Byzanz und in Ostasien hochentwickelte Kulturen. Kreuzzüge, Pest und die beginnende Stadtkultur prägen das Spätmittelalter.",
+  "literatur": [
+   "Chris Wickham: Das Mittelalter. Europa von 500 bis 1500",
+   "Peter Frankopan: Licht aus dem Osten. Eine neue Geschichte der Welt",
+   "New Cambridge Medieval History",
+   "Encyclopaedia Britannica: Middle Ages; Byzantine Empire; Caliphate"
+  ],
   "events": [
    {
     "year": 529,
@@ -1300,7 +1323,7 @@ const EPOCHS = [
    {
     "year": 1347,
     "title": "Der Schwarze Tod erreicht Europa",
-    "text": "Die Pest tötet innerhalb weniger Jahre schätzungsweise ein Drittel der europäischen Bevölkerung."
+    "text": "Die Pest tötet innerhalb weniger Jahre einen großen Teil der europäischen Bevölkerung. Die Schätzungen reichen von rund 30 bis über 60 Prozent und gehen weit auseinander, weil die Überlieferung lückenhaft ist.", "quelle": "Britannica: Black Death; Aberth und Benedictow (2021) am oberen, vorsichtige Schätzungen am unteren Rand"
    },
    {
     "year": 1358,
@@ -1658,6 +1681,12 @@ const EPOCHS = [
   "accent": "#d4a24a",
   "lead": "Reformation, Kolonialismus und die Wissenschaftliche Revolution.",
   "description": "Die Frühe Neuzeit bringt weitreichende Umbrüche: Die Reformation spaltet die Kirche, europäische Mächte errichten Kolonialreiche, und die Wissenschaftliche Revolution verändert das Weltbild grundlegend. Absolutistische Monarchien konzentrieren Macht, während Aufklärung und Bürgertum die Grundlagen für Umwälzungen legen.",
+  "literatur": [
+   "Jürgen Osterhammel und Niels P. Petersson: Geschichte der Globalisierung",
+   "Alfred W. Crosby: The Columbian Exchange",
+   "Cambridge History of Early Modern Europe",
+   "Encyclopaedia Britannica: Reformation; Age of Discovery; Thirty Years' War"
+  ],
   "events": [
    {
     "year": 1498,
@@ -1777,7 +1806,7 @@ const EPOCHS = [
    {
     "year": 1665,
     "title": "Große Pest von London",
-    "text": "Eine der letzten großen Pestepidemien Europas fordert in London zehntausende Todesopfer."
+    "text": "Eine der letzten großen Pestepidemien Europas fordert in London zehntausende Todesopfer.", "quelle": "Encyclopaedia Britannica: Great Plague of London; zeitgenössische Bills of Mortality mit bekannter Untererfassung"
    },
    {
     "year": 1687,
@@ -2104,6 +2133,12 @@ const EPOCHS = [
   "accent": "#d4af37",
   "lead": "Bürgerliche Revolutionen, Dampfmaschinen und Nationalstaaten.",
   "description": "Das 'lange 19. Jahrhundert' beginnt mit der Französischen Revolution und endet mit dem Ersten Weltkrieg. Die Industrielle Revolution verändert Wirtschaft und Gesellschaft radikal, Nationalstaaten entstehen oder einigen sich (Deutschland, Italien), und europäische Mächte teilen weite Teile der Welt kolonial unter sich auf.",
+  "literatur": [
+   "Jürgen Osterhammel: Die Verwandlung der Welt. Eine Geschichte des 19. Jahrhunderts",
+   "Eric Hobsbawm: Das Zeitalter der Revolution und Das Zeitalter des Kapitals",
+   "Christopher A. Bayly: Die Geburt der modernen Welt",
+   "Encyclopaedia Britannica: Industrial Revolution; French Revolution"
+  ],
   "events": [
    {
     "year": 1789,
@@ -2534,6 +2569,12 @@ const EPOCHS = [
   "accent": "#e8c14a",
   "lead": "Weltkriege, Digitalisierung und eine vernetzte Welt.",
   "description": "Kein Jahrhundert veränderte die Welt so schnell wie das 20. Jahrhundert: zwei Weltkriege, der Kalte Krieg, Dekolonisierung, technologische Revolutionen von der Raumfahrt bis zum Internet. Das 21. Jahrhundert ist geprägt von Globalisierung, Digitalisierung und neuen geopolitischen Verschiebungen.",
+  "literatur": [
+   "Ian Kershaw: Höllensturz. Europa 1914 bis 1949, und Achterbahn. Europa 1950 bis heute",
+   "Eric Hobsbawm: Das Zeitalter der Extreme",
+   "Tony Judt: Postwar. Eine Geschichte Europas seit 1945",
+   "Encyclopaedia Britannica: World War I; World War II; Cold War"
+  ],
   "events": [
    {
     "year": 1914,
@@ -2558,12 +2599,12 @@ const EPOCHS = [
    {
     "year": 1916,
     "title": "Schlacht um Verdun",
-    "text": "Eine der verlustreichsten Schlachten der Geschichte symbolisiert das Grauen des Stellungskriegs – über 700.000 Tote und Verwundete."
+    "text": "Eine der verlustreichsten Schlachten der Geschichte symbolisiert das Grauen des Stellungskriegs. Die Angaben zu den Verlusten beider Seiten reichen von rund 700.000 bis über 900.000 Tote und Verwundete.", "quelle": "Encyclopaedia Britannica: Battle of Verdun; die Spannweite ergibt sich aus unterschiedlicher Zählweise beider Armeen"
    },
    {
     "year": 1916,
     "title": "Schlacht an der Somme",
-    "text": "Mit über einer Million Opfern eine der blutigsten Schlachten der Menschheitsgeschichte; erster Panzereinsatz der Kriegsgeschichte."
+    "text": "Mit über einer Million Opfern eine der blutigsten Schlachten der Menschheitsgeschichte; erster Panzereinsatz der Kriegsgeschichte.", "quelle": "Encyclopaedia Britannica: Battle of the Somme; Imperial War Museum zum ersten Panzereinsatz im September 1916"
    },
    {
     "year": 1916,
@@ -2583,12 +2624,12 @@ const EPOCHS = [
    {
     "year": 1918,
     "title": "Ende des Ersten Weltkriegs",
-    "text": "Waffenstillstand von Compiègne beendet den Krieg; Millionen Tote und der Zusammenbruch mehrerer Reiche prägen die Folgen."
+    "text": "Waffenstillstand von Compiègne beendet den Krieg; Millionen Tote und der Zusammenbruch mehrerer Reiche prägen die Folgen.", "quelle": "Encyclopaedia Britannica: World War I, Abschnitt Killed, wounded, and missing"
    },
    {
     "year": 1918,
     "title": "Spanische Grippe",
-    "text": "Die Pandemie tötet mehr Menschen als der Erste Weltkrieg. Ihr Name täuscht: Spanien zensierte nur nicht."
+    "text": "Die Pandemie tötet mehr Menschen als der Erste Weltkrieg; die Schätzungen reichen von 25 bis über 50 Millionen. Ihr Name täuscht: Spanien zensierte nur nicht.", "quelle": "Encyclopaedia Britannica: Influenza pandemic of 1918–19; die Spanne spiegelt fehlende Erfassung außerhalb Europas und Nordamerikas"
    },
    {
     "year": 1919,
@@ -2668,7 +2709,7 @@ const EPOCHS = [
    {
     "year": 1945,
     "title": "Ende des Zweiten Weltkriegs / Atombombenabwürfe",
-    "text": "Nach den Atombombenabwürfen auf Hiroshima und Nagasaki kapituliert Japan; der Krieg fordert weltweit über 60 Millionen Tote."
+    "text": "Nach den Atombombenabwürfen auf Hiroshima und Nagasaki kapituliert Japan. Der Krieg fordert weltweit schätzungsweise 60 bis 80 Millionen Tote, die Mehrzahl davon Zivilisten.", "quelle": "Encyclopaedia Britannica: World War II, Abschnitt Costs of the war"
    },
    {
     "year": 1945,
@@ -2678,7 +2719,7 @@ const EPOCHS = [
    {
     "year": 1947,
     "title": "Unabhängigkeit Indiens",
-    "text": "Nach jahrzehntelangem gewaltfreiem Widerstand wird Indien unabhängig; die Teilung in Indien und Pakistan fordert zugleich enorme Opfer."
+    "text": "Nach jahrzehntelangem gewaltfreiem Widerstand wird Indien unabhängig. Die Teilung löst zugleich die größte Fluchtbewegung der Geschichte aus: rund 15 Millionen Menschen verlieren ihre Heimat, die Schätzungen der Toten reichen von 200.000 bis zwei Millionen.", "quelle": "Encyclopaedia Britannica: Partition of India; die weite Spanne der Opferzahlen ist in der Forschung unstrittig ungeklärt"
    },
    {
     "year": 1948,
@@ -2798,7 +2839,7 @@ const EPOCHS = [
    {
     "year": 1994,
     "title": "Völkermord in Ruanda",
-    "text": "In hundert Tagen werden schätzungsweise 800.000 Menschen getötet, während die internationale Gemeinschaft ihre Truppen abzieht."
+    "text": "In gut hundert Tagen werden schätzungsweise 500.000 bis 800.000 Menschen getötet, überwiegend Tutsi, während die internationale Gemeinschaft ihre Truppen abzieht.", "quelle": "Vereinte Nationen: Outreach Programme on the 1994 Genocide against the Tutsi in Rwanda"
    },
    {
     "year": 2001,
