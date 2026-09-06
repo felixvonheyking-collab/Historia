@@ -896,7 +896,36 @@ function SchlachtenTab() {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-5 max-w-2xl" }, BATTLES.length, " Schlachten, die den Ausgang von Kriegen und damit oft den Lauf der Geschichte entschieden haben."), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, sorted.map((b, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-1" }, formatYear(b.year)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a]" }, b.name), /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, b.war), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, b.text)))));
 }
 function ZitateTab() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-5 max-w-2xl" }, QUOTES.length, " ber\xFChmte historische Zitate. Bei unsicherer oder legend\xE4rer \xDCberlieferung ist dies vermerkt."), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, QUOTES.map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug mb-2" }, "\u201E", q.text, '"'), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d4af37] font-medium" }, q.author), (q.year || q.note) && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mt-0.5" }, [q.year, q.note].filter(Boolean).join(" \xB7 "))))));
+  const [statusFilter, setStatusFilter] = useState("Alle");
+  const reihenfolge = ["belegt", "sinngem\xE4\xDF", "zugeschrieben", "falsch zitiert", "falsch zugeschrieben", "Sprichwort"];
+  const vorhanden = reihenfolge.filter((s) => QUOTES.some((q) => q.status === s));
+  const stil = (s) => {
+    if (s === "belegt") return { backgroundColor: "#1f3a24", color: "#9fd8ac", borderColor: "#3f6b4a" };
+    if (s === "falsch zugeschrieben" || s === "falsch zitiert") return { backgroundColor: "#6b2024", color: "#f0a878", borderColor: "#a03a20" };
+    if (s === "sinngem\xE4\xDF") return { backgroundColor: "#3a2a0a", color: "#f0c869", borderColor: "#8a6238" };
+    return { backgroundColor: "#3a1218", color: "#d8c690", borderColor: "#5c2018" };
+  };
+  const gefiltert = statusFilter === "Alle" ? QUOTES : QUOTES.filter((q) => q.status === statusFilter);
+  const falsche = QUOTES.filter((q) => q.status === "falsch zugeschrieben" || q.status === "falsch zitiert").length;
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" }, QUOTES.length, " historische Zitate \u2014 jedes mit einer Angabe dazu, wie gut es belegt ist."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-4 max-w-2xl" }, "Bei ", falsche, " davon stimmt die \xFCbliche Zuschreibung nachweislich nicht. Sie stehen trotzdem hier \u2013 mit Richtigstellung, denn genau das sind die, die man sonst weitererz\xE4hlt."),
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" },
+      ["Alle", ...vorhanden].map((s) => /* @__PURE__ */ React.createElement("button", {
+        key: s,
+        onClick: () => setStatusFilter(s),
+        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${statusFilter === s ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      }, s, s === "Alle" ? "" : ` (${QUOTES.filter((q) => q.status === s).length})`))
+    ),
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
+      gefiltert.map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" },
+        /* @__PURE__ */ React.createElement("span", { className: "inline-block text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5 mb-2", style: stil(q.status) }, q.status),
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug mb-2" }, "\u201E", q.text, '"'),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d4af37] font-medium" }, q.author),
+        (q.year || q.note) && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mt-0.5 leading-snug" }, [q.year, q.note].filter(Boolean).join(" \xB7 "))
+      ))
+    )
+  );
 }
 function LaenderTab() {
   const countries = Object.keys(COUNTRY_TIMELINES);
