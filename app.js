@@ -29,10 +29,6 @@ const Search = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__
 const Check = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M20 6L9 17l-5-5" }));
 const RotateCcw = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M3.5 9a8.5 8.5 0 1 1 1.8 9.2" }), /* @__PURE__ */ React.createElement("path", { d: "M3.5 4v5h5" }));
 const ArrowLeft = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M19 12H5" }), /* @__PURE__ */ React.createElement("path", { d: "M12 19l-7-7 7-7" }));
-const FACTS = EPOCHS.flatMap(
-  (ep) => ep.events.map((e) => ({ year: e.year, title: e.title, epoch: ep.name, color: ep.color }))
-);
-
 
 /* =========================================================
    SPEICHER
@@ -1525,87 +1521,290 @@ function NationenTab() {
   const all = EPOCHS.flatMap((ep) => ep.nations.map((n) => ({ ...n, epochName: ep.name, color: ep.color })));
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mb-4 font-mono" }, all.length, " Nationen & Reiche"), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, all.map((n, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4", style: { borderLeft: `3px solid ${n.color}` } }, /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, n.name), /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, n.epochName), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, n.text)))));
 }
+/* =========================================================
+   LERNEN
+
+   Vorher: zufälliges Mischen der 301 Jahreszahlen. Was man
+   sicher konnte, kam genauso oft wie das, was man nie traf.
+
+   Jetzt ein Karteikasten nach dem Leitner-Prinzip: Jede Karte
+   sitzt in einem von fünf Fächern. Richtig beantwortet wandert
+   sie ein Fach höher und kommt später wieder, falsch beantwortet
+   fällt sie zurück auf Fach eins. So sieht man das Schwere oft
+   und das Sichere selten.
+
+   Gefragt wird aus allen Sammlungen, nicht nur aus den Jahreszahlen.
+   ========================================================= */
+
+// Tage bis zur Wiedervorlage je Fach
+const FAECHER = [0, 1, 3, 7, 21, 60];
+
+function heuteTag() {
+  return Math.floor(Date.now() / 86400000);
+}
+
+function mischen(liste) {
+  const a = liste.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const h = a[i]; a[i] = a[j]; a[j] = h;
+  }
+  return a;
+}
+
+// --- Kartenbestand aus allen Sammlungen ----------------------------------
+
+function baueKarten() {
+  const karten = [];
+  const gesehen = new Set();
+  const rein = (k) => { if (!gesehen.has(k.id)) { gesehen.add(k.id); karten.push(k); } };
+
+  EPOCHS.forEach((ep) => ep.events.forEach((e) => rein({
+    id: "jahr:" + e.title, art: "Jahreszahl", frage: e.title, jahr: e.year,
+    antwort: formatYear(e.year), kontext: ep.name, erklaerung: e.text
+  })));
+  SCHLUESSELMOMENTE.forEach((s) => rein({
+    id: "jahr:" + s.title, art: "Jahreszahl", frage: s.title, jahr: s.year,
+    antwort: formatYear(s.year), kontext: "Schlüsselmoment · " + s.category, erklaerung: s.text
+  }));
+  BATTLES.forEach((b) => rein({
+    id: "jahr:" + b.name, art: "Jahreszahl", frage: b.name, jahr: b.year,
+    antwort: formatYear(b.year), kontext: b.war, erklaerung: b.text
+  }));
+  VERTIEFUNGEN.forEach((v) => rein({
+    id: "jahr:" + v.titel, art: "Jahreszahl", frage: v.titel, jahr: v.jahr,
+    // Die Antwort muss zur Frage passen: gefragt ist ein Jahr, nicht ein Zeitraum.
+    antwort: formatYear(v.jahr), kontext: v.region,
+    erklaerung: (v.zeitraum ? "Zeitraum: " + v.zeitraum + ". " : "") + v.leitsatz
+  }));
+
+  // Zuschreibung von Zitaten – nur die eindeutigen Fälle
+  QUOTES.forEach((q, i) => {
+    const echt = q.status === "belegt";
+    const falsch = q.status === "falsch zugeschrieben" || q.status === "falsch zitiert";
+    if (!echt && !falsch) return;
+    rein({
+      id: "zitat:" + i, art: "Zuschreibung",
+      frage: "„" + q.text + "\"",
+      kontext: "zugeschrieben: " + q.author,
+      stimmt: echt,
+      antwort: echt ? "Die Zuschreibung stimmt." : "Die Zuschreibung stimmt nicht.",
+      erklaerung: q.note || ""
+    });
+  });
+
+  // Wahr oder falsch: Mythen sind falsch, verblüffende Fakten sind wahr
+  MYTHEN.filter((m) => m.type === "Mythos").forEach((m) => rein({
+    id: "aussage:m:" + m.title, art: "Aussage", frage: m.title, kontext: m.category,
+    stimmt: false, antwort: "Stimmt nicht.", erklaerung: m.text + (m.quelle ? "  (" + m.quelle + ")" : "")
+  }));
+  SURPRISING_FACTS.forEach((f, i) => rein({
+    id: "aussage:f:" + i, art: "Aussage", frage: f, kontext: "",
+    stimmt: true, antwort: "Stimmt.", erklaerung: ""
+  }));
+
+  return karten;
+}
+
+// --- Lernstand ------------------------------------------------------------
+
+function faelligkeit(stand, id) {
+  const s = stand[id];
+  if (!s) return -1;              // noch nie gesehen
+  return s.faellig;
+}
+
 function LernenTab() {
-  const [mode, setMode] = useState("karten");
-  const [idx, setIdx] = useState(0);
-  const [flipped, setFlipped] = useState(false);
-  const [quizYear, setQuizYear] = useState(null);
-  const [options, setOptions] = useState([]);
-  const [selected, setSelected] = useState(null);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
-  // Sitzungsstand oben, Gesamtbilanz dauerhaft im Browser
-  const [bilanz, setBilanz] = useGespeichert("lernen.bilanz", { richtig: 0, gesamt: 0 });
-  const shuffled = useMemo(() => [...FACTS].sort(() => Math.random() - 0.5), []);
-  const current = shuffled[idx % shuffled.length];
-  function newQuizQuestion(i) {
-    const fact = shuffled[i % shuffled.length];
-    const distractors = [...FACTS].filter((f) => f.title !== fact.title).sort(() => Math.random() - 0.5).slice(0, 3);
-    const opts = [fact, ...distractors].sort(() => Math.random() - 0.5);
-    setOptions(opts);
-    setQuizYear(fact);
-    setSelected(null);
-  }
-  React.useEffect(() => {
-    if (mode === "quiz") newQuizQuestion(idx);
-  }, [mode]);
-  function nextCard() {
-    setFlipped(false);
-    setIdx((i) => i + 1);
-  }
-  function nextQuiz(correct) {
-    setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
-    setBilanz({ richtig: bilanz.richtig + (correct ? 1 : 0), gesamt: bilanz.gesamt + 1 });
-    setTimeout(() => {
-      const next = idx + 1;
-      setIdx(next);
-      newQuizQuestion(next);
-    }, 700);
-  }
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mb-4 font-mono" }, FACTS.length, " Jahreszahlen in der Datenbank"), /* @__PURE__ */ React.createElement("div", { className: "flex gap-2 mb-6" }, /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      onClick: () => setMode("karten"),
-      className: `px-3 py-1.5 rounded-md text-sm font-medium border ${mode === "karten" ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
-    },
-    "Karteikarten"
-  ), /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      onClick: () => setMode("quiz"),
-      className: `px-3 py-1.5 rounded-md text-sm font-medium border ${mode === "quiz" ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
-    },
-    "Jahreszahlen-Quiz"
-  )), mode === "karten" && /* @__PURE__ */ React.createElement("div", { className: "max-w-md" }, /* @__PURE__ */ React.createElement(
-    "div",
-    {
-      onClick: () => setFlipped((f) => !f),
-      className: "cursor-pointer rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-8 h-56 flex flex-col items-center justify-center text-center select-none",
-      style: { borderLeft: `4px solid ${current.color}` }
-    },
-    !flipped ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-3" }, current.epoch), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#e0b84a]" }, current.title), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mt-4" }, "Tippen zum Umdrehen")) : /* @__PURE__ */ React.createElement("p", { className: "font-mono text-3xl", style: { color: current.color } }, formatYear(current.year))
-  ), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mt-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Karte ", idx % shuffled.length + 1, " / ", shuffled.length), /* @__PURE__ */ React.createElement("button", { onClick: nextCard, className: "flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#5c1a1e] text-[#f0d878] border border-[#d4af37] text-sm font-medium" }, "N\xE4chste ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 15 })))), mode === "quiz" && quizYear && /* @__PURE__ */ React.createElement("div", { className: "max-w-md" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-3 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238]" }, "Diese Runde: ", score.correct, " / ", score.total, bilanz.gesamt > 0 ? " · insgesamt " + bilanz.richtig + " / " + bilanz.gesamt + " (" + Math.round(bilanz.richtig / bilanz.gesamt * 100) + " %)" : ""), bilanz.gesamt > 0 && /* @__PURE__ */ React.createElement("button", { onClick: () => setBilanz({ richtig: 0, gesamt: 0 }), className: "text-xs text-[#8a6238] underline hover:text-[#e0b84a]" }, "Bilanz zurücksetzen")), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-6 mb-4" }, /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, "In welchem Jahr geschah\u2026"), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a]" }, quizYear.title)), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" }, options.map((o, i) => {
-    const isCorrect = o.year === quizYear.year;
-    const isSelected = selected !== null && o.year === selected;
-    let cls = "border-[#5c2018] text-[#d8c690]";
-    if (selected !== null) {
-      if (isCorrect) cls = "border-green-600 bg-green-950 text-green-300";
-      else if (isSelected) cls = "border-red-700 bg-red-950 text-red-300";
+  const [stand, setStand] = useGespeichert("lernen.stand", {});
+  const [art, setArt] = useState("Alle");
+  const [modus, setModus] = useState("quiz");
+  const [karte, setKarte] = useState(null);
+  const [optionen, setOptionen] = useState([]);
+  const [gewaehlt, setGewaehlt] = useState(null);
+  const [umgedreht, setUmgedreht] = useState(false);
+  const [sitzung, setSitzung] = useState({ richtig: 0, gesamt: 0 });
+
+  const alle = useMemo(baueKarten, []);
+  const heute = heuteTag();
+
+  const arten = ["Alle", "Jahreszahl", "Zuschreibung", "Aussage"];
+  const auswahl = useMemo(
+    () => (art === "Alle" ? alle : alle.filter((k) => k.art === art)),
+    [art, alle]
+  );
+
+  const faellig = auswahl.filter((k) => faelligkeit(stand, k.id) <= heute);
+  const neu = auswahl.filter((k) => !stand[k.id]).length;
+  const verteilung = [1, 2, 3, 4, 5].map(
+    (f) => auswahl.filter((k) => stand[k.id] && stand[k.id].fach === f).length
+  );
+
+  function optionenFuer(k) {
+    if (k.art !== "Jahreszahl") return [];
+    // Ablenker aus der zeitlichen Nachbarschaft: Ein Vorschlag, der tausend Jahre
+    // danebenliegt, macht die Frage wertlos. Der Abstand waechst mit dem Alter,
+    // weil "1848 oder 1849" eine andere Frage ist als "3200 oder 3210 v. Chr.".
+    const spanne = Math.min(120, Math.max(25, Math.abs(k.jahr) * 0.04));
+    const nah = alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr &&
+      Math.abs(x.jahr - k.jahr) <= spanne);
+    const quelle = nah.length >= 3 ? nah : alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr);
+    const andere = [];
+    for (const x of mischen(quelle)) {
+      if (andere.indexOf(x.jahr) === -1) andere.push(x.jahr);
+      if (andere.length === 3) break;
     }
-    return /* @__PURE__ */ React.createElement(
-      "button",
-      {
-        key: i,
-        disabled: selected !== null,
-        onClick: () => {
-          setSelected(o.year);
-          nextQuiz(o.year === quizYear.year);
-        },
-        className: `px-3 py-3 rounded-md border font-mono text-sm flex items-center justify-center gap-1.5 ${cls}`
-      },
-      selected !== null && isCorrect && /* @__PURE__ */ React.createElement(Check, { size: 14 }),
-      formatYear(o.year)
-    );
-  }))));
+    return mischen([k.jahr, ...andere]);
+  }
+
+  function naechste() {
+    const kandidaten = auswahl.filter((k) => faelligkeit(stand, k.id) <= heute);
+    const quelle = kandidaten.length ? kandidaten : auswahl;
+    // Erst das Fälligste, dann Neues, sonst zufällig
+    const sortiert = mischen(quelle).sort((a, b) => faelligkeit(stand, a.id) - faelligkeit(stand, b.id));
+    const k = sortiert[0];
+    setKarte(k);
+    setOptionen(k ? optionenFuer(k) : []);
+    setGewaehlt(null);
+    setUmgedreht(false);
+  }
+
+  React.useEffect(() => { naechste(); }, [art, modus]);
+
+  function werten(richtig) {
+    if (!karte) return;
+    const bisher = stand[karte.id] || { fach: 1, r: 0, f: 0 };
+    const fach = richtig ? Math.min(5, bisher.fach + 1) : 1;
+    setStand({
+      ...stand,
+      [karte.id]: {
+        fach,
+        faellig: heute + FAECHER[fach],
+        r: bisher.r + (richtig ? 1 : 0),
+        f: bisher.f + (richtig ? 0 : 1)
+      }
+    });
+    setSitzung((s) => ({ richtig: s.richtig + (richtig ? 1 : 0), gesamt: s.gesamt + 1 }));
+  }
+
+  function antworten(wert) {
+    setGewaehlt(wert);
+    const richtig = karte.art === "Jahreszahl" ? wert === karte.jahr : wert === karte.stimmt;
+    werten(richtig);
+    setTimeout(naechste, 1400);
+  }
+
+  const knopf = "px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border";
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      alle.length, " Karten aus allen Sammlungen — Jahreszahlen, Zitat-Zuschreibungen und Aussagen, die stimmen oder nicht."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-4 max-w-2xl" },
+      "Karteikasten mit fünf Fächern: Richtig beantwortet wandert eine Karte ein Fach höher und kommt später wieder, falsch fällt sie zurück. Der Stand bleibt in diesem Browser — sichern lässt er sich unter Sicherung."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-2" },
+      arten.map((a) => /* @__PURE__ */ React.createElement("button", {
+        key: a, onClick: () => setArt(a),
+        className: `${knopf} ${art === a ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      }, a, a === "Alle" ? "" : " (" + alle.filter((k) => k.art === a).length + ")"))
+    ),
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-5" },
+      [["quiz", "Quiz"], ["karten", "Karteikarten"]].map(([id, label]) =>
+        /* @__PURE__ */ React.createElement("button", {
+          key: id, onClick: () => setModus(id),
+          className: `${knopf} ${modus === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+        }, label))
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-3 mb-5 text-xs font-mono text-[#8a6238]" },
+      /* @__PURE__ */ React.createElement("span", null, faellig.length, " fällig"),
+      /* @__PURE__ */ React.createElement("span", null, neu, " noch nie gesehen"),
+      verteilung.map((n, i) => /* @__PURE__ */ React.createElement("span", { key: i, className: n ? "text-[#c9a877]" : "" },
+        "Fach ", i + 1, ": ", n)),
+      sitzung.gesamt > 0 && /* @__PURE__ */ React.createElement("span", { className: "text-[#f0d878]" },
+        "diese Sitzung: ", sitzung.richtig, "/", sitzung.gesamt)
+    ),
+
+    !karte && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Keine Karten in dieser Auswahl."),
+
+    karte && /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 max-w-2xl" },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-3 flex-wrap" },
+        /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border border-[#5c2018] rounded px-1.5 py-0.5 text-[#d4af37]" }, karte.art),
+        karte.kontext && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, karte.kontext),
+        stand[karte.id] && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" },
+          "Fach ", stand[karte.id].fach)
+      ),
+
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] leading-snug mb-4" },
+        karte.art === "Jahreszahl" ? "Wann?" : karte.art === "Zuschreibung" ? "Stimmt die Zuschreibung?" : "Stimmt diese Aussage?"),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[17px] text-[#e8d5b0] leading-relaxed mb-5" }, karte.frage),
+
+      // --- Quiz: automatisch bewertet ---
+      modus === "quiz" && karte.art === "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2" },
+        optionen.map((j) => {
+          const gewaehltDies = gewaehlt === j;
+          const istRichtig = j === karte.jahr;
+          const zeigen = gewaehlt !== null;
+          return /* @__PURE__ */ React.createElement("button", {
+            key: j,
+            disabled: zeigen,
+            onClick: () => antworten(j),
+            className: `px-3 py-2 rounded border text-left font-mono text-sm ${
+              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
+              : zeigen && gewaehltDies ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
+              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
+          }, formatYear(j));
+        })
+      ),
+
+      modus === "quiz" && karte.art !== "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
+        [[true, "Stimmt"], [false, "Stimmt nicht"]].map(([wert, label]) => {
+          const zeigen = gewaehlt !== null;
+          const istRichtig = wert === karte.stimmt;
+          return /* @__PURE__ */ React.createElement("button", {
+            key: label,
+            disabled: zeigen,
+            onClick: () => antworten(wert),
+            className: `px-4 py-2 rounded border text-sm ${
+              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
+              : zeigen && gewaehlt === wert ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
+              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
+          }, label);
+        })
+      ),
+
+      // --- Karteikarten: selbst bewerten ---
+      modus === "karten" && !umgedreht && /* @__PURE__ */ React.createElement("button", {
+        onClick: () => setUmgedreht(true),
+        className: "px-4 py-2 rounded border border-[#d4af37] text-[#f0d878] text-sm"
+      }, "Umdrehen"),
+
+      modus === "karten" && umgedreht && /* @__PURE__ */ React.createElement("div", null,
+        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-lg text-[#f0d878] mb-2" }, karte.antwort),
+        karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4" }, karte.erklaerung),
+        /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
+          /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { werten(true); naechste(); },
+            className: "px-4 py-2 rounded border border-[#3f6b4a] text-[#9fd8ac] text-sm"
+          }, "Gewusst"),
+          /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { werten(false); naechste(); },
+            className: "px-4 py-2 rounded border border-[#a03a20] text-[#f0a878] text-sm"
+          }, "Nicht gewusst")
+        )
+      ),
+
+      // Auflösung im Quiz
+      modus === "quiz" && gewaehlt !== null && /* @__PURE__ */ React.createElement("div", { className: "mt-4 pt-3 border-t border-[#5c2018]" },
+        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878] mb-1" }, karte.antwort),
+        karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, karte.erklaerung)
+      )
+    ),
+
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: naechste,
+      className: "mt-4 inline-flex items-center gap-1.5 text-xs text-[#8a6238] hover:text-[#e0b84a]"
+    }, /* @__PURE__ */ React.createElement(RotateCcw, { size: 12 }), "Andere Karte")
+  );
 }
 function VerblueffendTab() {
   const [shown, setShown] = useState(SURPRISING_FACTS.map((_, i) => i).sort(() => Math.random() - 0.5));
