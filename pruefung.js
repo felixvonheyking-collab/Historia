@@ -1,0 +1,360 @@
+/*
+ * Historia – Prüfskript
+ *
+ * Aufruf:  node pruefung.js
+ *
+ * Prüft die Inhalte und den Aufbau der App, ohne Fremdbibliotheken.
+ * Gedacht als Netz gegen genau die Fehler, die beim Wachsen der App
+ * immer wieder aufgetreten sind: doppelte Einträge, widersprüchliche
+ * Jahreszahlen, fehlende Pflichtfelder – und ein Startfehler, wenn
+ * index.html und sw.js unterschiedliche Versionsmarken tragen.
+ *
+ * Rückgabewert: 0 wenn alles in Ordnung ist, sonst 1.
+ * Hinweise (nicht kritisch) werden getrennt ausgegeben.
+ */
+
+const fs = require("fs");
+const path = require("path");
+const vm = require("vm");
+
+const WURZEL = __dirname;
+const fehler = [];
+const hinweise = [];
+const meldeFehler = (t) => fehler.push(t);
+const meldeHinweis = (t) => hinweise.push(t);
+
+const DATEN = [
+  "data-epochen.js",
+  "data-sammlungen.js",
+  "data-laender.js",
+  "data-mythen.js",
+  "data-vertiefungen.js",
+  "data-themen.js",
+  "data-mysterien.js"
+];
+
+/* ---------------------------------------------------------------- Einlesen */
+
+function lade() {
+  const kontext = { console };
+  vm.createContext(kontext);
+  for (const datei of DATEN) {
+    const pfad = path.join(WURZEL, datei);
+    if (!fs.existsSync(pfad)) {
+      meldeFehler("Datei fehlt: " + datei);
+      continue;
+    }
+    try {
+      vm.runInContext(fs.readFileSync(pfad, "utf8"), kontext, { filename: datei });
+    } catch (e) {
+      meldeFehler("Syntaxfehler in " + datei + ": " + e.message);
+    }
+  }
+  try {
+    return vm.runInContext(
+      "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
+      "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN })",
+      kontext
+    );
+  } catch (e) {
+    meldeFehler("Eine Datensammlung fehlt oder heißt anders: " + e.message);
+    return null;
+  }
+}
+
+/* ------------------------------------------------------------ Hilfsprüfer */
+
+const woerter = (s) =>
+  new Set(String(s).toLowerCase().replace(/[^a-zäöüß0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 3));
+
+function aehnlich(a, b) {
+  const A = woerter(a), B = woerter(b);
+  if (!A.size || !B.size) return 0;
+  const schnitt = [...A].filter((x) => B.has(x)).length;
+  return schnitt / Math.min(A.size, B.size);
+}
+
+function pruefeDubletten(name, liste, schluessel) {
+  const werte = liste.map((x) => (schluessel ? x[schluessel] : x));
+  const doppelt = [...new Set(werte.filter((w, i) => werte.indexOf(w) !== i))];
+  doppelt.forEach((d) => meldeFehler(name + ": doppelter Eintrag – " + String(d).slice(0, 90)));
+}
+
+function pruefeAehnliche(name, liste, schluessel, schwelle) {
+  const werte = liste.map((x) => (schluessel ? x[schluessel] : x));
+  for (let i = 0; i < werte.length; i++) {
+    for (let j = i + 1; j < werte.length; j++) {
+      if (aehnlich(werte[i], werte[j]) >= schwelle) {
+        meldeHinweis(
+          name + ": sehr ähnlich –\n      A: " + String(werte[i]).slice(0, 85) +
+          "\n      B: " + String(werte[j]).slice(0, 85)
+        );
+      }
+    }
+  }
+}
+
+function pruefeFelder(name, liste, pflicht, bezeichner) {
+  liste.forEach((x, i) => {
+    const wer = bezeichner && x[bezeichner] ? String(x[bezeichner]).slice(0, 60) : "Eintrag " + i;
+    pflicht.forEach((f) => {
+      const wert = x[f];
+      const leer = wert === undefined || wert === null || wert === "" ||
+                   (Array.isArray(wert) && wert.length === 0);
+      if (leer) meldeFehler(name + " – " + wer + ": Feld '" + f + "' fehlt oder ist leer");
+    });
+  });
+}
+
+// Nur fuer kuratierte Ereignislisten gedacht, nicht fuer Schlachten:
+// Verdun und die Somme liegen im selben Jahr und aehneln sich sprachlich,
+// sind aber zwei verschiedene Schlachten.
+// Kurze Titel wie "Papier in China" und "Erfindung des Papiers" haben kaum
+// gemeinsame Wörter und rutschen durch jede Ähnlichkeitsprüfung. Zwei Einträge
+// zum selben Jahr, deren Texte sich überschneiden, sind aber fast immer dasselbe
+// Ereignis in zwei Formulierungen.
+function pruefeGleichesEreignis(name, liste, jahrFeld, titelFeld, textFeld) {
+  for (let i = 0; i < liste.length; i++) {
+    for (let j = i + 1; j < liste.length; j++) {
+      const a = liste[i], b = liste[j];
+      if (Math.abs(a[jahrFeld] - b[jahrFeld]) > 3) continue;
+      const q = Math.max(
+        aehnlich(a[titelFeld], b[titelFeld]),
+        aehnlich(a[textFeld], b[textFeld]),
+        aehnlich(a[titelFeld] + " " + a[textFeld], b[titelFeld] + " " + b[textFeld])
+      );
+      if (q >= 0.3) {
+        meldeFehler(
+          name + ": zwei Einträge zum selben Ereignis (" + a[jahrFeld] + " / " + b[jahrFeld] + ") –\n      A: " +
+          a[titelFeld] + "\n      B: " + b[titelFeld]
+        );
+      }
+    }
+  }
+}
+
+function pruefeChronologie(name, liste, jahrFeld) {
+  for (let i = 1; i < liste.length; i++) {
+    if (liste[i - 1][jahrFeld] > liste[i][jahrFeld]) {
+      meldeFehler(
+        name + ": nicht chronologisch – " + liste[i - 1][jahrFeld] +
+        " steht vor " + liste[i][jahrFeld]
+      );
+      return;
+    }
+  }
+}
+
+/* ----------------------------------------------------- Aufbau der Dateien */
+
+function pruefeVersionen() {
+  const html = fs.readFileSync(path.join(WURZEL, "index.html"), "utf8");
+  const sw = fs.readFileSync(path.join(WURZEL, "sw.js"), "utf8");
+
+  const swVersion = (sw.match(/const VERSION = '([^']+)'/) || [])[1];
+  if (!swVersion) { meldeFehler("sw.js: VERSION nicht gefunden"); return; }
+
+  const geladen = [...html.matchAll(/(?:src|href)="([^"]+\.(?:js|css))(?:\?v=([^"]*))?"/g)]
+    .map((m) => ({ datei: m[1], version: m[2] || null }));
+
+  const swListe = ((sw.match(/const VERSIONIERT = \[([\s\S]*?)\]/) || [])[1] || "")
+    .split(",").map((x) => x.trim().replace(/['"]/g, "")).filter((x) => x.startsWith("./"))
+    .map((x) => x.slice(2));
+
+  geladen.forEach((g) => {
+    if (g.version && g.version !== swVersion) {
+      meldeFehler("Versionsmarke weicht ab: index.html lädt " + g.datei + "?v=" + g.version +
+                  ", sw.js führt " + swVersion);
+    }
+    if (g.version && !swListe.includes(g.datei)) {
+      meldeFehler(g.datei + ": von index.html versioniert geladen, fehlt aber in der Vorratsliste von sw.js");
+    }
+    if (!g.version && swListe.includes(g.datei)) {
+      meldeFehler(g.datei + ": sw.js erwartet eine Versionsmarke, index.html lädt ohne");
+    }
+    if (!fs.existsSync(path.join(WURZEL, g.datei))) {
+      meldeFehler(g.datei + ": wird von index.html geladen, existiert aber nicht");
+    }
+  });
+
+  swListe.forEach((d) => {
+    if (!geladen.some((g) => g.datei === d)) {
+      meldeFehler(d + ": in sw.js gelistet, wird von index.html aber nicht geladen");
+    }
+  });
+
+  // Alle Datendateien müssen vor app.js stehen, sonst fehlen beim Start die Daten.
+  const reihenfolge = geladen.map((g) => g.datei);
+  const appIndex = reihenfolge.indexOf("app.js");
+  DATEN.forEach((d) => {
+    const i = reihenfolge.indexOf(d);
+    if (i === -1) meldeFehler(d + ": wird von index.html gar nicht geladen");
+    else if (appIndex !== -1 && i > appIndex) meldeFehler(d + ": wird nach app.js geladen – app.js braucht die Daten aber beim Start");
+  });
+
+  console.log("  Versionsmarke: " + swVersion + " (" + geladen.length + " Dateien, Reihenfolge geprüft)");
+}
+
+function pruefeAppSyntax() {
+  for (const datei of ["app.js", "sw.js"]) {
+    const pfad = path.join(WURZEL, datei);
+    if (!fs.existsSync(pfad)) { meldeFehler("Datei fehlt: " + datei); continue; }
+    try {
+      new vm.Script(fs.readFileSync(pfad, "utf8"), { filename: datei });
+    } catch (e) {
+      meldeFehler("Syntaxfehler in " + datei + ": " + e.message);
+    }
+  }
+}
+
+/* --------------------------------------------------------------- Inhalte */
+
+function pruefeInhalte(D) {
+  const epochenIds = D.EPOCHS.map((e) => e.id);
+
+  // Epochen
+  pruefeDubletten("Epochen", D.EPOCHS, "id");
+  pruefeFelder("Epochen", D.EPOCHS, ["id", "name", "span", "description", "literatur"], "name");
+  D.EPOCHS.forEach((ep) => {
+    pruefeFelder("Ereignisse in " + ep.name, ep.events, ["year", "title", "text"], "title");
+    pruefeFelder("Personen in " + ep.name, ep.figures, ["name", "years", "text"], "name");
+    pruefeFelder("Reiche in " + ep.name, ep.nations, ["name", "text"], "name");
+  });
+  const allePersonen = D.EPOCHS.flatMap((e) => e.figures);
+  pruefeDubletten("Persönlichkeiten", allePersonen, "name");
+  // Reiche dürfen in mehreren Epochen vorkommen – das Osmanische Reich bestand
+  // über sechs Jahrhunderte. Doppelt innerhalb einer Epoche ist dagegen ein Fehler.
+  D.EPOCHS.forEach((ep) => pruefeDubletten("Reiche in " + ep.name, ep.nations, "name"));
+  const reichNamen = D.EPOCHS.flatMap((e) => e.nations.map((n) => n.name));
+  [...new Set(reichNamen.filter((n, i) => reichNamen.indexOf(n) !== i))].forEach((n) =>
+    meldeHinweis("Reich '" + n + "' steht in mehreren Epochen – bei langlebigen Reichen gewollt"));
+
+  // Vertiefungen
+  pruefeDubletten("Vertiefungen", D.VERTIEFUNGEN, "id");
+  pruefeDubletten("Vertiefungen", D.VERTIEFUNGEN, "titel");
+  pruefeFelder("Vertiefungen", D.VERTIEFUNGEN,
+    ["id", "titel", "epoche", "zeitraum", "region", "leitsatz", "vorgeschichte",
+     "verlauf", "folgen", "strittig", "zahlen", "quellen"], "titel");
+  D.VERTIEFUNGEN.forEach((v) => {
+    if (!epochenIds.includes(v.epoche)) meldeFehler("Vertiefung '" + v.titel + "': unbekannte Epoche '" + v.epoche + "'");
+    if (v.vertiefungVon) meldeHinweis("Vertiefung '" + v.titel + "': unbekanntes Feld vertiefungVon");
+  });
+
+  // Themen
+  pruefeDubletten("Themen", D.THEMEN, "id");
+  pruefeFelder("Themen", D.THEMEN, ["id", "titel", "kurz", "einleitung", "stationen", "strittig", "quellen"], "titel");
+  D.THEMEN.forEach((t) => {
+    pruefeFelder("Stationen in '" + t.titel + "'", t.stationen, ["jahr", "titel", "text"], "titel");
+    pruefeChronologie("Thema '" + t.titel + "'", t.stationen, "jahr");
+  });
+
+  // Mysterien
+  pruefeDubletten("Mysterien", D.MYSTERIEN, "id");
+  pruefeFelder("Mysterien", D.MYSTERIEN,
+    ["id", "titel", "kategorie", "status", "gesichert", "raetsel",
+     "erklaerungen", "forschungsstand", "abgrenzung", "quellen"], "titel");
+  D.MYSTERIEN.forEach((m) => {
+    if (!["ungeklaert", "teilweise", "geloest"].includes(m.status)) {
+      meldeFehler("Mysterium '" + m.titel + "': unbekannter Status '" + m.status + "'");
+    }
+    (m.erklaerungen || []).forEach((e, i) => {
+      ["these", "dafuer", "dagegen"].forEach((f) => {
+        if (!e[f]) meldeFehler("Mysterium '" + m.titel + "', These " + (i + 1) + ": '" + f + "' fehlt");
+      });
+    });
+  });
+
+  // Länder
+  Object.entries(D.COUNTRY_TIMELINES).forEach(([land, d]) => {
+    if (!d.color) meldeFehler("Zeitleiste '" + land + "': keine Farbe");
+    pruefeFelder("Zeitleiste '" + land + "'", d.events, ["year", "title", "text"], "title");
+    pruefeChronologie("Zeitleiste '" + land + "'", d.events, "year");
+    pruefeDubletten("Zeitleiste '" + land + "'", d.events, "title");
+  });
+
+  // Sammlungen
+  pruefeDubletten("Schlüsselmomente", D.SCHLUESSELMOMENTE, "title");
+  pruefeGleichesEreignis("Schlüsselmomente", D.SCHLUESSELMOMENTE, "year", "title", "text");
+  pruefeFelder("Schlüsselmomente", D.SCHLUESSELMOMENTE, ["year", "title", "category", "text"], "title");
+  const vertiefungsIds = D.VERTIEFUNGEN.map((v) => v.id);
+  D.SCHLUESSELMOMENTE.forEach((s) => {
+    if (s.vertiefung && !vertiefungsIds.includes(s.vertiefung)) {
+      meldeFehler("Schlüsselmoment '" + s.title + "': verweist auf unbekannte Vertiefung '" + s.vertiefung + "'");
+    }
+  });
+
+  pruefeDubletten("Schlachten", D.BATTLES, "name");
+  pruefeFelder("Schlachten", D.BATTLES, ["year", "name", "war", "text"], "name");
+
+  pruefeDubletten("Mythen", D.MYTHEN, "title");
+  pruefeFelder("Mythen", D.MYTHEN, ["category", "type", "title", "text"], "title");
+  D.MYTHEN.filter((m) => m.type === "Mythos" && !m.quelle)
+    .forEach((m) => meldeFehler("Mythos '" + m.title + "': ohne Beleg – gerade Richtigstellungen brauchen einen"));
+
+  pruefeDubletten("Zitate", D.QUOTES, "text");
+  pruefeFelder("Zitate", D.QUOTES, ["text", "author", "status"], "author");
+  const erlaubt = ["belegt", "sinngemäß", "zugeschrieben", "falsch zitiert", "falsch zugeschrieben", "Sprichwort"];
+  D.QUOTES.forEach((q) => {
+    if (!erlaubt.includes(q.status)) meldeFehler("Zitat von " + q.author + ": unbekannter Belegstatus '" + q.status + "'");
+  });
+
+  pruefeDubletten("Verblüffende Fakten", D.SURPRISING_FACTS, null);
+
+  // Weiche Prüfungen
+  pruefeAehnliche("Verblüffende Fakten", D.SURPRISING_FACTS, null, 0.6);
+  pruefeAehnliche("Schlüsselmomente", D.SCHLUESSELMOMENTE, "title", 0.7);
+  pruefeAehnliche("Mythen", D.MYTHEN, "title", 0.7);
+
+  D.SURPRISING_FACTS.forEach((f) => {
+    D.MYTHEN.forEach((m) => {
+      if (aehnlich(f, m.title) >= 0.65) {
+        meldeHinweis("Fakt doppelt einen Mythos –\n      Fakt:   " + f.slice(0, 85) +
+                     "\n      Mythos: " + m.title);
+      }
+    });
+  });
+
+  console.log("  Epochen " + D.EPOCHS.length +
+    " · Ereignisse " + D.EPOCHS.reduce((a, e) => a + e.events.length, 0) +
+    " · Personen " + allePersonen.length +
+    " · Reiche " + D.EPOCHS.reduce((a, e) => a + e.nations.length, 0));
+  console.log("  Vertiefungen " + D.VERTIEFUNGEN.length +
+    " · Themen " + D.THEMEN.length +
+    " · Mysterien " + D.MYSTERIEN.length +
+    " · Regionen " + Object.keys(D.COUNTRY_TIMELINES).length);
+  console.log("  Schlüsselmomente " + D.SCHLUESSELMOMENTE.length +
+    " · Schlachten " + D.BATTLES.length +
+    " · Zitate " + D.QUOTES.length +
+    " · Mythen " + D.MYTHEN.length +
+    " · Fakten " + D.SURPRISING_FACTS.length);
+  const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
+  console.log("  Schlüsselmomente mit Verweis auf eine Vertiefung: " + verknuepft);
+}
+
+/* ------------------------------------------------------------------ Lauf */
+
+console.log("Historia – Prüfung\n");
+console.log("Aufbau:");
+pruefeAppSyntax();
+pruefeVersionen();
+
+const D = lade();
+if (D) {
+  console.log("\nInhalte:");
+  pruefeInhalte(D);
+}
+
+console.log("");
+if (hinweise.length) {
+  console.log("Hinweise (" + hinweise.length + ") – kein Fehler, aber ansehen:");
+  hinweise.forEach((h) => console.log("  · " + h));
+  console.log("");
+}
+if (fehler.length) {
+  console.log("FEHLER (" + fehler.length + "):");
+  fehler.forEach((f) => console.log("  ✗ " + f));
+  console.log("\nPrüfung fehlgeschlagen.");
+  process.exit(1);
+}
+console.log("Alles in Ordnung.");
+process.exit(0);

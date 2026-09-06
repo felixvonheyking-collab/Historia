@@ -1,0 +1,27 @@
+name: Prüfung
+
+# Läuft bei jedem Push und bei jedem Pull Request auf main.
+# Schlägt die Prüfung fehl, wird der Commit auf GitHub rot markiert –
+# damit fällt ein Fehler auf, bevor er auf dem Handy landet.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository holen
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Inhalte und Aufbau prüfen
+        run: node pruefung.js
