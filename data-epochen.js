@@ -525,6 +525,9 @@ const EPOCHS = [
     "years": "gest. ca. 1200 v. Chr.",
     "text": "Gemahlin Wu Dings, Priesterin und Heerführerin. Ihr ungeplündertes Grab enthielt Waffen, Bronzen und die Bestattungen von Gefolgsleuten."
    }
+  ,
+   { "name": "Piye", "years": "ca. 750–715 v. Chr.", "text": "Kuschitischer König aus dem heutigen Sudan, der Ägypten eroberte und als Pharao regierte. Die 25. Dynastie war nubisch – Ägypten wurde von Süden her beherrscht, nicht nur von Norden bedroht." },
+   { "name": "Laozi", "years": "6. Jahrhundert v. Chr. (überliefert)", "text": "Dem Daodejing zugeschriebener Denker. Ob er als Person existierte, ist offen; der Text prägte chinesisches Denken über Herrschaft und Nichthandeln über zwei Jahrtausende." }
   ],
   "nations": [
    {
@@ -992,6 +995,13 @@ const EPOCHS = [
     "years": "ca. 240–274",
     "text": "Herrscherin von Palmyra, die Ägypten und Teile Kleinasiens eroberte, bevor Aurelian sie besiegte und in Rom im Triumphzug führte."
    }
+  ,
+   { "name": "Chandragupta Maurya", "years": "ca. 340–297 v. Chr.", "text": "Begründer des ersten indischen Großreichs, das fast den gesamten Subkontinent umfasste. Der Überlieferung nach dankte er ab und starb als jainistischer Asket durch freiwilliges Fasten." },
+   { "name": "Kautilya", "years": "ca. 350–275 v. Chr.", "text": "Ihm wird das Arthashastra zugeschrieben, ein Handbuch der Staatskunst, das nüchtern über Spionage, Steuern und Machterhalt schreibt – rund 1.800 Jahre vor Machiavelli." },
+   { "name": "Ban Zhao", "years": "ca. 45–116 n. Chr.", "text": "Vollendete das Buch der Han, die Reichsgeschichte ihrer Zeit, und unterrichtete am Kaiserhof. Eine der ersten namentlich bekannten Historikerinnen der Welt." },
+   { "name": "Zhang Qian", "years": "gestorben 114 v. Chr.", "text": "Han-Gesandter, der nach dreizehn Jahren – darunter Jahre in Gefangenschaft – aus Zentralasien zurückkehrte. Seine Berichte öffneten China den Blick nach Westen." },
+   { "name": "Cai Lun", "years": "ca. 50–121 n. Chr.", "text": "Ihm wird die Verbesserung der Papierherstellung zugeschrieben. Ältere Papierfunde sind bekannt; entscheidend war, dass das Verfahren am Hof durchgesetzt wurde." },
+   { "name": "Aspelta", "years": "ca. 600–580 v. Chr.", "text": "Herrscher von Kusch mit Zentrum in Napata. Das Reich von Meroë entwickelte eine eigene Schrift, die bis heute nur teilweise gelesen werden kann." }
   ],
   "nations": [
    {
@@ -1046,6 +1056,11 @@ const EPOCHS = [
     "name": "Sassanidenreich",
     "text": "Ab 224 die zweite große persische Großmacht, die Rom und Byzanz über vier Jahrhunderte forderte."
    }
+  ,
+   { "name": "Nok-Kultur (Westafrika)", "text": "Zwischen etwa 1500 v. Chr. und 500 n. Chr. entstehen im heutigen Nigeria Terrakotten von hoher Qualität und früher Eisenverhüttung – ohne dass ein zugehöriger Staat nachweisbar wäre." },
+   { "name": "Zapoteken und Monte Albán", "text": "Auf einem abgetragenen Bergrücken in Oaxaca entsteht eine Stadt mit einem der ältesten Schriftsysteme Amerikas." },
+   { "name": "Xiongnu", "text": "Ein Steppenreich nördlich Chinas, das die Han-Dynastie zu Tributzahlungen zwang. Die Große Mauer entstand als Antwort auf diese Macht." },
+   { "name": "Anuradhapura (Sri Lanka)", "text": "Ein buddhistisches Königreich mit Bewässerungsanlagen, deren Stauseen teilweise bis heute genutzt werden." }
   ],
   "dynastyGroups": [
    {
@@ -1542,6 +1557,16 @@ const EPOCHS = [
     "years": "ca. 1370–1415",
     "text": "Böhmischer Reformator, der trotz kaiserlichen Geleits in Konstanz verbrannt wurde – ein Wortbruch mit jahrzehntelangen Kriegsfolgen."
    }
+  ,
+   { "name": "Al-Chwarizmi", "years": "ca. 780–850", "text": "Sein Buch über das Rechnen gab der Algebra ihren Namen, sein latinisierter Name dem Algorithmus. Beides steckt heute in jeder Zeile Software." },
+   { "name": "Ibn Sina (Avicenna)", "years": "980–1037", "text": "Arzt und Philosoph aus Buchara. Sein Kanon der Medizin war bis ins 17. Jahrhundert auch an europäischen Universitäten Lehrbuch." },
+   { "name": "Al-Biruni", "years": "973–1048", "text": "Berechnete den Erdumfang mit wenigen Prozent Abweichung und schrieb eine für seine Zeit erstaunlich unvoreingenommene Beschreibung Indiens – er lernte dafür Sanskrit." },
+   { "name": "Murasaki Shikibu", "years": "ca. 978–1014", "text": "Hofdame in Heian-Japan, Verfasserin der Geschichte vom Prinzen Genji. Das Werk gilt vielen als der erste Roman der Weltliteratur – geschrieben von einer Frau, in einer Frauenschrift." },
+   { "name": "Sejong", "years": "1397–1450", "text": "Der koreanische König ließ eine Schrift entwerfen, die jeder in wenigen Tagen lernen kann. Die Gelehrtenelite wehrte sich – genau deshalb setzte er sie durch." },
+   { "name": "Sundiata Keita", "years": "ca. 1217–1255", "text": "Gründer des Mali-Reichs. Die mit ihm verbundene Kouroukan Fouga ist eine mündlich überlieferte Verfassung mit Rechten und Pflichten der beteiligten Gruppen." },
+   { "name": "K'inich Janaab' Pakal", "years": "603–683", "text": "Herrscher von Palenque, dessen Grabplatte zu den bekanntesten Zeugnissen der Maya-Kunst zählt. Seine Inschriften erlaubten die Entzifferung der Maya-Schrift." },
+   { "name": "Wu Zetian", "years": "624–705", "text": "Die einzige Frau, die in China als Kaiserin aus eigenem Recht regierte. Ihre Verwaltung förderte Beamtenprüfungen über Herkunft – die spätere Geschichtsschreibung verteufelte sie umso gründlicher." },
+   { "name": "Rabban Bar Sauma", "years": "ca. 1220–1294", "text": "Ein in China geborener Mönch reiste als mongolischer Gesandter bis nach Rom, Paris und Bordeaux. Der Bericht spiegelt Europa aus asiatischer Sicht – der umgekehrte Marco Polo." }
   ],
   "nations": [
    {
@@ -1600,6 +1625,13 @@ const EPOCHS = [
     "name": "Königreich Simbabwe",
     "text": "Im südlichen Afrika entstand eine Steinstadt ohne Mörtel, deren Mauern bis zu elf Meter hoch aufragen."
    }
+  ,
+   { "name": "Reich von Ghana", "text": "Zwischen Senegal und Niger kontrolliert es den Transsaharahandel mit Gold und Salz – mit dem heutigen Staat Ghana nicht identisch." },
+   { "name": "Srivijaya", "text": "Ein Seehandelsreich auf Sumatra, das die Meerenge von Malakka beherrschte und ein Zentrum buddhistischer Gelehrsamkeit war." },
+   { "name": "Delhi-Sultanat", "text": "Über drei Jahrhunderte muslimische Herrschaft in Nordindien, aus deren Verwaltungs- und Sprachformen später das Mogulreich schöpfte." },
+   { "name": "Goryeo (Korea)", "text": "Von seinem Namen leitet sich das westliche Wort Korea ab. Hier wurde mit Metalllettern gedruckt, zwei Jahrhunderte vor Gutenberg." },
+   { "name": "Heian-Japan", "text": "Eine Hofkultur, in der Literatur, Kalligrafie und Zeremoniell wichtiger waren als Militär – und in der Frauen die bedeutendsten Werke schrieben." },
+   { "name": "Kanem-Bornu", "text": "Ein Reich am Tschadsee, das in wechselnder Gestalt fast ein Jahrtausend bestand – eine der längsten Staatskontinuitäten Afrikas." }
   ],
   "dynastyGroups": [
    {
@@ -2040,6 +2072,13 @@ const EPOCHS = [
     "years": "ca. 1745–1797",
     "text": "Als Kind verschleppt, kaufte sich frei und schrieb eine Autobiografie, die zur Waffe der britischen Abolitionsbewegung wurde."
    }
+  ,
+   { "name": "Nzinga von Ndongo und Matamba", "years": "1583–1663", "text": "Königin im heutigen Angola, die Portugal jahrzehntelang militärisch und diplomatisch widerstand und dabei zwischen den europäischen Mächten lavierte." },
+   { "name": "Yi Sun-sin", "years": "1545–1598", "text": "Koreanischer Admiral, der die japanische Invasionsflotte mehrfach schlug. Er wurde zwischenzeitlich degradiert und gefoltert – und übernahm danach erneut das Kommando." },
+   { "name": "Kangxi", "years": "1654–1722", "text": "Einer der am längsten regierenden Herrscher der Weltgeschichte. Er ließ ein Wörterbuch mit über 47.000 Zeichen erstellen und beschäftigte jesuitische Astronomen am Hof." },
+   { "name": "Abbas I.", "years": "1571–1629", "text": "Der safawidische Schah machte Isfahan zu einer der prächtigsten Städte der Welt und öffnete Persien dem europäischen Handel – bei gleichzeitiger harter Zentralisierung." },
+   { "name": "Sor Juana Inés de la Cruz", "years": "1648–1695", "text": "Nonne und Dichterin in Neuspanien, die das Recht von Frauen auf Bildung verteidigte. Kirchlicher Druck zwang sie am Ende zum Schweigen." },
+   { "name": "Guamán Poma de Ayala", "years": "ca. 1535–1616", "text": "Sein bebildertes Schreiben an den spanischen König dokumentiert die Kolonialherrschaft aus indigener Sicht. Es erreichte den Adressaten nie und wurde erst 1908 in Kopenhagen wiederentdeckt." }
   ],
   "nations": [
    {
@@ -2094,6 +2133,13 @@ const EPOCHS = [
     "name": "Schwedisches Reich",
     "text": "Vom Dreißigjährigen Krieg bis Poltawa eine europäische Großmacht mit Ostseeherrschaft."
    }
+  ,
+   { "name": "Königreich Kongo", "text": "Ein zentralafrikanisches Reich, das mit Portugal diplomatische Beziehungen auf Augenhöhe aufnahm – bis der Sklavenhandel das Verhältnis zerstörte." },
+   { "name": "Königreich Benin", "text": "Bekannt für seine Bronzegüsse und eine befestigte Hauptstadt, die europäische Besucher mit Amsterdam verglichen. 1897 von britischen Truppen zerstört." },
+   { "name": "Ashanti-Reich", "text": "Ein westafrikanisches Reich mit eigener Verwaltung und dem Goldenen Stuhl als Herrschaftssymbol, das den Briten mehrere Kriege lieferte." },
+   { "name": "Joseon (Korea)", "text": "Fünf Jahrhunderte konfuzianisch geprägter Herrschaft – eine der langlebigsten Dynastien der Weltgeschichte." },
+   { "name": "Ayutthaya (Siam)", "text": "Eine Handelsmetropole, in der portugiesische, japanische, persische und niederländische Viertel nebeneinander bestanden." },
+   { "name": "Oman und Sansibar", "text": "Ein Seereich, das die Portugiesen aus Ostafrika vertrieb und seine Hauptstadt später von Arabien nach Afrika verlegte." }
   ],
   "dynastyGroups": [
    {
@@ -2457,6 +2503,14 @@ const EPOCHS = [
     "years": "1862–1931",
     "text": "Journalistin, die Lynchmorde in den Südstaaten systematisch dokumentierte und damit die Rechtfertigungslegenden widerlegte."
    }
+  ,
+   { "name": "Shaka", "years": "ca. 1787–1828", "text": "Begründer des Zulu-Reichs, dem tiefgreifende militärische Neuerungen zugeschrieben werden. Wie viel davon auf ihn zurückgeht und wie viel spätere Zuschreibung ist, ist umstritten." },
+   { "name": "Usman dan Fodio", "years": "1754–1817", "text": "Gelehrter und Reformer, dessen Bewegung das Sokoto-Kalifat begründete – einen der größten afrikanischen Staaten des 19. Jahrhunderts." },
+   { "name": "Menelik II.", "years": "1844–1913", "text": "Der äthiopische Kaiser schlug 1896 bei Adwa eine italienische Invasionsarmee. Äthiopien blieb als einziger afrikanischer Staat unkolonisiert." },
+   { "name": "Samory Touré", "years": "ca. 1830–1900", "text": "Baute in Westafrika ein Reich auf und leistete Frankreich fast zwei Jahrzehnte militärischen Widerstand, unter anderem mit selbst hergestellten Gewehren." },
+   { "name": "José Rizal", "years": "1861–1896", "text": "Arzt und Schriftsteller, dessen Romane die spanische Kolonialherrschaft auf den Philippinen bloßstellten. Seine Hinrichtung machte ihn zur Leitfigur der Unabhängigkeitsbewegung." },
+   { "name": "Rammohan Roy", "years": "1772–1833", "text": "Reformer in Bengalen, der gegen die Witwenverbrennung und für Bildung eintrat – und dabei sowohl hinduistische Tradition als auch britische Bevormundung kritisierte." },
+   { "name": "Yaa Asantewaa", "years": "ca. 1840–1921", "text": "Führte 1900 den Aufstand der Aschanti gegen die Briten an, nachdem die männlichen Führer zögerten. Sie starb in der Verbannung auf den Seychellen." }
   ],
   "nations": [
    {
@@ -2507,6 +2561,12 @@ const EPOCHS = [
     "name": "Kongo-Freistaat",
     "text": "Privatbesitz König Leopolds II., dessen Kautschukwirtschaft Millionen Opfer forderte und den ersten internationalen Menschenrechtsskandal auslöste."
    }
+  ,
+   { "name": "Zulu-Reich", "text": "Ein zentralisierter Militärstaat im südlichen Afrika, der 1879 einer britischen Kolonne eine vernichtende Niederlage beibrachte." },
+   { "name": "Sokoto-Kalifat", "text": "Aus einer Reformbewegung hervorgegangen, war es einer der größten und am dichtesten verwalteten Staaten Afrikas im 19. Jahrhundert." },
+   { "name": "Kaiserreich Äthiopien", "text": "Der einzige afrikanische Staat, der die europäische Aufteilung des Kontinents unbesiegt überstand." },
+   { "name": "Königreich Hawaii", "text": "Ein international anerkannter Staat mit Verträgen und Gesandtschaften – 1893 durch einen von amerikanischen Geschäftsleuten getragenen Umsturz beendet." },
+   { "name": "Königreich Siam", "text": "Das einzige Land Südostasiens, das formal unabhängig blieb, indem es zwischen britischen und französischen Interessen manövrierte." }
   ],
   "dynastyGroups": [
    {
@@ -3038,6 +3098,17 @@ const EPOCHS = [
     "years": "1921–1943",
     "text": "Mitglied der Weißen Rose, mit 21 Jahren hingerichtet – Sinnbild des zivilen Widerstands im Nationalsozialismus."
    }
+  ,
+   { "name": "Sukarno", "years": "1901–1970", "text": "Erster Präsident Indonesiens und Mitbegründer der Blockfreienbewegung. Seine Konferenz von Bandung 1955 gab dem globalen Süden erstmals eine gemeinsame Stimme." },
+   { "name": "Kwame Nkrumah", "years": "1909–1972", "text": "Führte Ghana als erste Kolonie südlich der Sahara in die Unabhängigkeit und wurde zur Leitfigur des Panafrikanismus – bis ihn 1966 ein Putsch stürzte." },
+   { "name": "Patrice Lumumba", "years": "1925–1961", "text": "Erster Ministerpräsident des unabhängigen Kongo, nach wenigen Monaten mit belgischer und amerikanischer Beteiligung ermordet. Sein Tod steht für die Grenzen der Dekolonisation." },
+   { "name": "Frantz Fanon", "years": "1925–1961", "text": "Psychiater aus Martinique, dessen Analysen von Kolonialismus und Gewalt Befreiungsbewegungen weltweit prägten – und bis heute kontrovers diskutiert werden." },
+   { "name": "Mustafa Kemal Atatürk", "years": "1881–1938", "text": "Gründer der türkischen Republik. Sein Umbau von Schrift, Recht und Kleidung war radikale Modernisierung von oben – mit bis heute umstrittenen Folgen." },
+   { "name": "Zhou Enlai", "years": "1898–1976", "text": "Über Jahrzehnte Chinas Ministerpräsident und Außengesicht. Seine Rolle zwischen Mäßigung und Mitverantwortung in der Kulturrevolution wird unterschiedlich beurteilt." },
+   { "name": "Ruhollah Chomeini", "years": "1902–1989", "text": "Führte 1979 die iranische Revolution an und begründete eine Staatsform, in der religiöse Gelehrte die letzte Instanz sind – ein Modell ohne historisches Vorbild." },
+   { "name": "Salvador Allende", "years": "1908–1973", "text": "Erster demokratisch gewählter marxistischer Präsident Lateinamerikas. Sein Sturz 1973 machte Chile zum Versuchsfeld radikaler Wirtschaftsreformen." },
+   { "name": "Rigoberta Menchú", "years": "geboren 1959", "text": "Maya-Aktivistin aus Guatemala, Friedensnobelpreis 1992. Die Debatte um Genauigkeiten in ihrem Zeugnisbericht wurde zugleich zu einer über die Beweislast, die Betroffenen auferlegt wird." },
+   { "name": "Fatima Jinnah", "years": "1893–1967", "text": "Zahnärztin und Mitgestalterin der pakistanischen Staatsgründung, später Oppositionskandidatin gegen einen Militärherrscher." }
   ],
   "nations": [
    {
@@ -3088,6 +3159,13 @@ const EPOCHS = [
     "name": "Vereinte Nationen",
     "text": "1945 gegründet, um Kriege zu verhindern – mit einem Sicherheitsrat, dessen Vetorecht sie zugleich blockiert."
    }
+  ,
+   { "name": "Indonesien", "text": "Der viertbevölkerungsreichste Staat der Erde, aus über 17.000 Inseln und hunderten Sprachen zu einer Nation zusammengeführt." },
+   { "name": "Ägypten", "text": "Führungsmacht des arabischen Nationalismus unter Nasser, später erster arabischer Staat mit einem Friedensvertrag mit Israel." },
+   { "name": "Iran", "text": "Nach 1979 eine Staatsform, in der gewählte Institutionen und religiöse Aufsicht nebeneinanderstehen – ohne Vorbild in der Geschichte." },
+   { "name": "Südkorea", "text": "Vom ärmsten Drittel der Welt in zwei Generationen zur Industrienation und Demokratie – der schnellste dokumentierte Aufstieg dieser Art." },
+   { "name": "Vietnam", "text": "Besiegte nacheinander Frankreich, die USA und einen chinesischen Angriff – und öffnete sich ab 1986 wirtschaftlich." },
+   { "name": "Mexiko", "text": "Die Revolution von 1910 prägte Verfassung und Selbstbild; sieben Jahrzehnte regierte anschließend eine einzige Partei." }
   ]
  }
 ];
