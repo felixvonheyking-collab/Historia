@@ -2,19 +2,36 @@
  * Historia – Service Worker
  *
  * Legt die App vollständig im Browser ab, damit sie auch ohne Netz startet.
- * WICHTIG bei Änderungen: VERSION hochzählen.
+ *
+ * WICHTIG bei Änderungen: VERSION hochzählen – und denselben Wert
+ * in index.html hinter jedes ?v= schreiben. Beides muss übereinstimmen.
+ *
+ * Warum die Versionsmarke an den Dateien hängt:
+ * Ohne sie konnte der Browser eine neue index.html laden, die Skripte
+ * aber aus dem alten Zwischenspeicher nehmen. Da Code und Daten seit
+ * der Aufteilung in getrennten Dateien liegen, passten sie dann nicht
+ * mehr zusammen und die App startete gar nicht. Mit der Versionsmarke
+ * verweist eine neue index.html zwangsläufig auf neue Dateien.
  */
 
-const VERSION = '2026-09-06-9';
+const VERSION = '2026-09-06-10';
 const CACHE = 'historia-' + VERSION;
 
-const DATEIEN = [
+// Dateien ohne Versionsmarke (Bilder, Schriften, Manifest ändern sich selten)
+const UNVERSIONIERT = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',
   './icon-512-maskable.png',
+  './font-sourcesans3.woff2',
+  './font-fraunces.woff2',
+  './font-jetbrains.woff2'
+];
+
+// Dateien mit Versionsmarke – exakt so, wie index.html sie anfordert
+const VERSIONIERT = [
   './tailwind.css',
   './react.js',
   './react-dom.js',
@@ -25,18 +42,18 @@ const DATEIEN = [
   './data-vertiefungen.js',
   './data-themen.js',
   './data-mysterien.js',
-  './app.js',
-  './font-sourcesans3.woff2',
-  './font-fraunces.woff2',
-  './font-jetbrains.woff2'
-];
+  './app.js'
+].map((p) => p + '?v=' + VERSION);
+
+const DATEIEN = UNVERSIONIERT.concat(VERSIONIERT);
 
 self.addEventListener('install', (event) => {
+  // Sofort übernehmen: sonst liefert der alte Worker weiter alte Dateien aus.
+  self.skipWaiting();
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
     await Promise.all(DATEIEN.map(async (pfad) => {
-      const trenner = pfad.includes('?') ? '&' : '?';
-      const antwort = await fetch(new Request(pfad + trenner + 'sw=' + VERSION, { cache: 'reload' }));
+      const antwort = await fetch(new Request(pfad, { cache: 'reload' }));
       if (!antwort.ok) throw new Error('Konnte ' + pfad + ' nicht laden (' + antwort.status + ')');
       await cache.put(pfad, antwort);
     }));
@@ -62,15 +79,14 @@ self.addEventListener('fetch', (event) => {
   if (anfrage.method !== 'GET') return;
   if (new URL(anfrage.url).origin !== self.location.origin) return;
 
+  // Seitenaufruf: zuerst aus dem Zwischenspeicher, damit index.html und
+  // Skripte immer aus derselben Version stammen. Neue Fassungen kommen
+  // über den Worker-Wechsel, nicht über einen halben Mischzustand.
   if (anfrage.mode === 'navigate') {
     event.respondWith(
-      fetch(anfrage)
-        .then((antwort) => {
-          const kopie = antwort.clone();
-          caches.open(CACHE).then((cache) => cache.put('./index.html', kopie));
-          return antwort;
-        })
-        .catch(() => caches.match('./index.html').then((t) => t || caches.match('./')))
+      caches.match('./index.html')
+        .then((treffer) => treffer || fetch(anfrage))
+        .catch(() => fetch(anfrage))
     );
     return;
   }

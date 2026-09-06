@@ -20,9 +20,9 @@
     <!-- Alles liegt im Repo: kein fremder CDN, offline lauffaehig.
          Tailwind wird nicht mehr im Browser erzeugt, sondern liegt als
          fertige Datei vor; JSX ist vorab uebersetzt, Babel entfaellt. -->
-    <link rel="stylesheet" href="tailwind.css" />
-    <script src="react.js"></script>
-    <script src="react-dom.js"></script>
+    <link rel="stylesheet" href="tailwind.css?v=2026-09-06-10" />
+    <script src="react.js?v=2026-09-06-10"></script>
+    <script src="react-dom.js?v=2026-09-06-10"></script>
 
     <style>
       html, body, #root { height: 100%; }
@@ -40,32 +40,59 @@
 
     <script>
       // Zeigt einen echten Fehlertext an, statt dass die Seite stumm auf "wird geladen" hängen bleibt
+      window.__ersterFehler = null;
       window.addEventListener("error", function (e) {
+        var roh = String(e.message || e.error || "");
+        var text = "Ladefehler: " + roh + "\n" + (e.filename || "") + ":" + (e.lineno || "");
+        // Fehlt eine Datendatei, ist der technische Wortlaut unbrauchbar.
+        // Dann lieber sagen, was zu tun ist.
+        if (/EPOCHS|VERTIEFUNGEN|THEMEN|COUNTRY_TIMELINES|MYTHEN|MYSTERIEN|QUOTES|BATTLES|SCHLUESSELMOMENTE|SURPRISING_FACTS/.test(roh)) {
+          text = "Historia konnte die Inhalte nicht laden.\n\n" +
+                 "Wahrscheinlich liegt noch eine alte Fassung im Zwischenspeicher.\n" +
+                 "Bitte die Seite einmal vollstaendig neu laden.\n\n" +
+                 "Technisch: " + roh;
+        }
+        if (!window.__ersterFehler) window.__ersterFehler = text;
         var el = document.getElementById("boot-error");
         if (el) {
           el.style.display = "block";
-          el.textContent = "Ladefehler: " + (e.message || e.error) + "\n" + (e.filename || "") + ":" + (e.lineno || "");
+          // Die erste Meldung nennt die Ursache, spaetere sind nur ihre Folge.
+          el.textContent = window.__ersterFehler;
         }
       });
     </script>
 
-    <script src="data-epochen.js"></script>
-    <script src="data-sammlungen.js"></script>
-    <script src="data-laender.js"></script>
-    <script src="data-mythen.js"></script>
-    <script src="data-vertiefungen.js"></script>
-    <script src="data-themen.js"></script>
-    <script src="data-mysterien.js"></script>
-    <script src="app.js"></script>
+    <script src="data-epochen.js?v=2026-09-06-10"></script>
+    <script src="data-sammlungen.js?v=2026-09-06-10"></script>
+    <script src="data-laender.js?v=2026-09-06-10"></script>
+    <script src="data-mythen.js?v=2026-09-06-10"></script>
+    <script src="data-vertiefungen.js?v=2026-09-06-10"></script>
+    <script src="data-themen.js?v=2026-09-06-10"></script>
+    <script src="data-mysterien.js?v=2026-09-06-10"></script>
+    <script src="app.js?v=2026-09-06-10"></script>
 
     <script>
       (function () {
         function zeigeFehler(label, err) {
           var el = document.getElementById("boot-error");
-          if (el) { el.style.display = "block"; el.textContent = label + ": " + (err && err.message ? err.message : err); }
+          if (el) { el.style.display = "block"; el.textContent = window.__ersterFehler || (label + ": " + (err && err.message ? err.message : err)); }
           console.error(err);
         }
         try {
+          // Sicherung: Wenn eine Datendatei fehlt, sagen wir das verstaendlich,
+          // statt eine Folgemeldung ueber eine unbekannte Variable zu zeigen.
+          var fehlend = [];
+          if (typeof EPOCHS === "undefined") fehlend.push("Epochen");
+          if (typeof VERTIEFUNGEN === "undefined") fehlend.push("Vertiefungen");
+          if (typeof THEMEN === "undefined") fehlend.push("Themen");
+          if (typeof COUNTRY_TIMELINES === "undefined") fehlend.push("Laender");
+          if (typeof MYTHEN === "undefined") fehlend.push("Mythen");
+          if (typeof MYSTERIEN === "undefined") fehlend.push("Mysterien");
+          if (typeof QUOTES === "undefined") fehlend.push("Sammlungen");
+          if (fehlend.length) {
+            throw new Error("Diese Daten fehlen: " + fehlend.join(", ") +
+              ". Meist hilft: Seite einmal vollstaendig neu laden.");
+          }
           var wurzel = ReactDOM.createRoot(document.getElementById("root"));
           wurzel.render(React.createElement(Historia));
         } catch (fehler) {
