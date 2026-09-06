@@ -139,7 +139,10 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
 
 function VertiefungenTab({ ziel }) {
   const [offen, setOffen] = useState(null);
+  const [, setZuletzt] = useGespeichert("zuletzt.gelesen", null);
   React.useEffect(() => { if (ziel) setOffen(ziel); }, [ziel]);
+  // Fuer "Weiterlesen" auf der Startseite
+  React.useEffect(() => { if (offen) setZuletzt(offen); }, [offen]);
   const [epochenFilter, setEpochenFilter] = useState("Alle");
   const [suche, setSuche] = useState("");
   const [gelesen, setGelesen] = useGespeichert("vertiefungen.gelesen", []);
@@ -999,43 +1002,200 @@ function SucheTab() {
   );
 }
 
-const NAV = [
-  { id: "suche", label: "Suche", icon: Search },
-  { id: "epochen", label: "Epochen", icon: BookOpen },
-  { id: "vertiefungen", label: "Vertiefungen", icon: Layers },
-  { id: "themen", label: "Themengeschichte", icon: Layers },
-  { id: "schluessel", label: "Schl\xFCsselmomente", icon: Zap },
-  { id: "laender", label: "L\xE4nder-Zeitleisten", icon: Globe },
-  { id: "schlachten", label: "Ber\xFChmte Schlachten", icon: Crown },
-  { id: "zitate", label: "Zitate", icon: BookOpen },
-  { id: "mythen", label: "Fun Facts & Mythen", icon: Sparkles },
-  { id: "mysterien", label: "Mysterien der Geschichte", icon: Search },
-  { id: "zeitschnitt", label: "Zeitschnitt", icon: Clock },
-  { id: "personen", label: "Pers\xF6nlichkeiten", icon: Users },
-  { id: "nationen", label: "Nationen & Reiche", icon: Crown },
-  { id: "lernen", label: "Fakten & Jahreszahlen", icon: Sparkles },
-  { id: "fragen", label: "Forschungsfragen", icon: HelpCircle },
-  { id: "verblueffend", label: "Verbl\xFCffende Fakten", icon: Sparkles }
+
+/* =========================================================
+   START
+
+   Die App begann bisher mitten in einer Liste. Diese Seite ist
+   der Einstieg: was es gibt, wo man weiterlesen kann, und ein
+   Fund, den man nicht gesucht hat.
+   ========================================================= */
+
+function zufall(liste) {
+  return liste[Math.floor(Math.random() * liste.length)];
+}
+
+function StartTab() {
+  const [wurf, setWurf] = useState(0);
+  const [zuletzt] = useGespeichert("zuletzt.gelesen", null);
+
+  const fund = useMemo(() => {
+    const quellen = [
+      () => {
+        const f = zufall(SURPRISING_FACTS);
+        return { art: "Verblüffender Fakt", titel: null, text: f, reiter: "verblueffend", ziel: null };
+      },
+      () => {
+        const m = zufall(MYTHEN.filter((x) => x.type === "Mythos"));
+        return { art: "Mythos", titel: m.title, text: m.text, kontext: m.category, reiter: "mythen", ziel: null };
+      },
+      () => {
+        const q = zufall(QUOTES);
+        return { art: "Zitat", titel: "„" + q.text + "\"", text: q.note || "", kontext: q.author + " · " + q.status, reiter: "zitate", ziel: null };
+      },
+      () => {
+        const v = zufall(VERTIEFUNGEN);
+        return { art: "Vertiefung", titel: v.titel, text: v.leitsatz, kontext: v.zeitraum + " · " + v.region, reiter: "vertiefungen", ziel: v.id };
+      },
+      () => {
+        const s = zufall(SCHLUESSELMOMENTE);
+        return { art: "Schlüsselmoment", titel: s.title, text: s.text, kontext: formatYear(s.year), reiter: "schluessel", ziel: null };
+      }
+    ];
+    return zufall(quellen)();
+  }, [wurf]);
+
+  const weiter = zuletzt && VERTIEFUNGEN.find((v) => v.id === zuletzt);
+
+  const zahlen = [
+    { wert: EPOCHS.reduce((a, e) => a + e.events.length, 0), was: "Ereignisse", reiter: "epochen" },
+    { wert: VERTIEFUNGEN.length, was: "Vertiefungen", reiter: "vertiefungen" },
+    { wert: THEMEN.length, was: "Querschnitte", reiter: "themen" },
+    { wert: Object.keys(COUNTRY_TIMELINES).length, was: "Weltregionen", reiter: "laender" },
+    { wert: EPOCHS.reduce((a, e) => a + e.figures.length, 0), was: "Persönlichkeiten", reiter: "personen" },
+    { wert: MYTHEN.length, was: "Mythen", reiter: "mythen" },
+    { wert: SURPRISING_FACTS.length, was: "Fakten", reiter: "verblueffend" },
+    { wert: MYSTERIEN.length, was: "Mysterien", reiter: "mysterien" }
+  ];
+
+  const springe = (reiter, ziel) => { if (SPRINGE) SPRINGE(reiter, ziel); };
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#e0b84a] mb-1" }, "Von der Steinzeit bis zur Gegenwart."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-6 max-w-2xl" },
+      "Zum Nachschlagen, zum Vertiefen und zum Behalten. Wo etwas strittig ist, steht es dabei."),
+
+    weiter && /* @__PURE__ */ React.createElement("button", {
+      onClick: () => springe("vertiefungen", weiter.id),
+      className: "w-full text-left rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 mb-3 hover:border-[#d4af37] transition-colors"
+    },
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, "Weiterlesen"),
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mt-1" }, weiter.titel),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, weiter.leitsatz)
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4 mb-6" },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-2 mb-2" },
+        /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-widest text-[#d4af37]" }, "Zufallsfund · ", fund.art),
+        /* @__PURE__ */ React.createElement("button", {
+          onClick: () => setWurf((w) => w + 1),
+          className: "inline-flex items-center gap-1 text-xs text-[#b8905a] hover:text-[#f0d878]"
+        }, /* @__PURE__ */ React.createElement(RotateCcw, { size: 12 }), "Noch einer")
+      ),
+      fund.kontext && /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] text-[#8a6238] mb-1" }, fund.kontext),
+      fund.titel && /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug mb-1" }, fund.titel),
+      fund.text && /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, fund.text),
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: () => springe(fund.reiter, fund.ziel),
+        className: "mt-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+      }, fund.ziel ? "Öffnen" : "Zum Bereich", /* @__PURE__ */ React.createElement(ChevronRight, { size: 12 }))
+    ),
+
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-2" }, "Was drin ist"),
+    /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6" },
+      zahlen.map((z) => /* @__PURE__ */ React.createElement("button", {
+        key: z.was,
+        onClick: () => springe(z.reiter, null),
+        className: "rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2 text-left hover:border-[#d4af37] transition-colors"
+      },
+        /* @__PURE__ */ React.createElement("div", { className: "font-mono text-lg text-[#f0d878]" }, z.wert),
+        /* @__PURE__ */ React.createElement("div", { className: "text-[11px] text-[#b8905a]" }, z.was)
+      ))
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2" },
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: () => springe("suche", null),
+        className: "inline-flex items-center gap-1.5 px-3 py-2 rounded border border-[#d4af37] text-[#f0d878] text-sm"
+      }, /* @__PURE__ */ React.createElement(Search, { size: 14 }), "Etwas nachschlagen"),
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: () => springe("lernen", null),
+        className: "inline-flex items-center gap-1.5 px-3 py-2 rounded border border-[#5c2018] text-[#c9a877] text-sm hover:border-[#d4af37]"
+      }, /* @__PURE__ */ React.createElement(Zap, { size: 14 }), "Etwas lernen")
+    )
+  );
+}
+
+const BEREICHE = [
+  { id: "start", label: "Start", icon: Sparkles, unter: [] },
+  { id: "suche", label: "Suche", icon: Search, unter: [] },
+  { id: "epochen", label: "Epochen", icon: BookOpen, unter: [
+      { id: "epochen", label: "\xDCbersicht" },
+      { id: "personen", label: "Pers\xF6nlichkeiten" },
+      { id: "nationen", label: "Nationen & Reiche" }
+  ] },
+  { id: "vertiefungen", label: "Vertiefungen", icon: Layers, unter: [
+      { id: "vertiefungen", label: "Wendepunkte" },
+      { id: "themen", label: "Querschnitte" }
+  ] },
+  { id: "zeit", label: "Zeit & Raum", icon: Clock, unter: [
+      { id: "laender", label: "Weltregionen" },
+      { id: "zeitschnitt", label: "Zeitschnitt" }
+  ] },
+  { id: "momente", label: "Momente", icon: Zap, unter: [
+      { id: "schluessel", label: "Schl\xFCsselmomente" },
+      { id: "schlachten", label: "Schlachten" },
+      { id: "zitate", label: "Zitate" }
+  ] },
+  { id: "raetsel", label: "Mythen & R\xE4tsel", icon: HelpCircle, unter: [
+      { id: "mythen", label: "Mythen & Fun Facts" },
+      { id: "verblueffend", label: "Verbl\xFCffende Fakten" },
+      { id: "mysterien", label: "Mysterien" }
+  ] },
+  { id: "lernen", label: "Lernen", icon: Crown, unter: [
+      { id: "lernen", label: "Karteikarten & Quiz" },
+      { id: "fragen", label: "Forschungsfragen" }
+  ] }
 ];
+
+// Ordnet einen einzelnen Reiter seinem Bereich zu. Die Suche und alle
+// Querverweise arbeiten weiterhin mit den alten Reiternamen; hier werden
+// sie in Bereich und Unterreiter uebersetzt.
+function bereichFuer(reiter) {
+  for (const b of BEREICHE) {
+    if (b.id === reiter && b.unter.length === 0) return { bereich: b.id, unter: null };
+    const u = b.unter.find((x) => x.id === reiter);
+    if (u) return { bereich: b.id, unter: u.id };
+  }
+  return { bereich: "start", unter: null };
+}
 function formatYear(y) {
   if (y < 0) return `${Math.abs(y).toLocaleString("de-DE")} v. Chr.`;
   return `${y} n. Chr.`;
 }
-function Header({ tab, setTab }) {
-  return /* @__PURE__ */ React.createElement("header", { className: "border-b border-[#5c2018] bg-[#4a1015]" }, /* @__PURE__ */ React.createElement("div", { className: "max-w-6xl mx-auto px-4 pt-5 pb-3" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-3" }, /* @__PURE__ */ React.createElement("h1", { className: "font-serif text-2xl md:text-3xl text-[#e0b84a] tracking-tight" }, "Historia"), /* @__PURE__ */ React.createElement("span", { className: "text-[#b8905a] text-xs md:text-sm font-mono uppercase tracking-widest" }, "Steinzeit \u2014 Gegenwart"))), /* @__PURE__ */ React.createElement("nav", { className: "max-w-6xl mx-auto px-4 flex gap-1 overflow-x-auto no-scrollbar pb-2" }, NAV.map((n) => {
-    const Icon2 = n.icon;
-    const active = tab === n.id;
-    return /* @__PURE__ */ React.createElement(
-      "button",
-      {
-        key: n.id,
-        onClick: () => setTab(n.id),
-        className: `flex items-center gap-1.5 whitespace-nowrap px-3 py-2 rounded-t-md text-sm font-medium transition-colors border-b-2 ${active ? "text-[#e0b84a] border-[#d4af37]" : "text-[#b8905a] border-transparent hover:text-[#d8c690]"}`
-      },
-      /* @__PURE__ */ React.createElement(Icon2, { size: 15 }),
-      n.label
-    );
-  })));
+function Header({ bereich, setBereich, unter, setUnter }) {
+  const aktuell = BEREICHE.find((b) => b.id === bereich) || BEREICHE[0];
+  return /* @__PURE__ */ React.createElement("header", { className: "border-b border-[#5c2018] bg-[#4a1015]" },
+    /* @__PURE__ */ React.createElement("div", { className: "max-w-6xl mx-auto px-4 pt-5 pb-3" },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-3" },
+        /* @__PURE__ */ React.createElement("h1", {
+          className: "font-serif text-2xl md:text-3xl text-[#e0b84a] tracking-tight cursor-pointer",
+          onClick: () => { setBereich("start"); setUnter(null); }
+        }, "Historia"),
+        /* @__PURE__ */ React.createElement("span", { className: "text-[#b8905a] font-mono text-[11px] uppercase tracking-widest" }, "Steinzeit \u2014 Gegenwart")
+      )
+    ),
+    /* @__PURE__ */ React.createElement("nav", { className: "max-w-6xl mx-auto px-4 flex gap-1 overflow-x-auto no-scrollbar" },
+      BEREICHE.map((b) => {
+        const Icon2 = b.icon;
+        const aktiv = bereich === b.id;
+        return /* @__PURE__ */ React.createElement("button", {
+          key: b.id,
+          onClick: () => { setBereich(b.id); setUnter(b.unter.length ? b.unter[0].id : null); },
+          className: `flex items-center gap-1.5 whitespace-nowrap px-3 py-2 rounded-t-md text-sm font-medium transition-colors border-b-2 ${aktiv ? "text-[#e0b84a] border-[#d4af37]" : "text-[#b8905a] border-transparent hover:text-[#d8c690]"}`
+        }, /* @__PURE__ */ React.createElement(Icon2, { size: 15 }), b.label);
+      })
+    ),
+    aktuell.unter.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "border-t border-[#5c2018] bg-[#5c1a1e]" },
+      /* @__PURE__ */ React.createElement("div", { className: "max-w-6xl mx-auto px-4 py-1.5 flex gap-1 overflow-x-auto no-scrollbar" },
+        aktuell.unter.map((u) => /* @__PURE__ */ React.createElement("button", {
+          key: u.id,
+          onClick: () => setUnter(u.id),
+          className: `whitespace-nowrap px-2.5 py-1 rounded text-xs border ${unter === u.id ? "bg-[#4a1015] text-[#f0d878] border-[#d4af37]" : "border-transparent text-[#b8905a] hover:text-[#e0b84a]"}`
+        }, u.label))
+      )
+    )
+  );
 }
 function EpochCard({ ep, onOpen }) {
   return /* @__PURE__ */ React.createElement(
@@ -1290,10 +1450,23 @@ function VerblueffendTab() {
 }
 function Historia() {
   // Der zuletzt geoeffnete Bereich bleibt ueber Sitzungen hinweg erhalten.
-  const [tab, setTab] = useGespeichert("reiter", "epochen");
+  const [bereich, setBereich] = useGespeichert("bereich", "start");
+  const [unter, setUnter] = useGespeichert("unterreiter", null);
   const [ziel, setZiel] = useState(null);
-  SPRINGE = (reiter, eintrag) => { setZiel(eintrag ? { reiter, eintrag, n: Date.now() } : null); setTab(reiter); };
+  // Suche und Querverweise arbeiten mit einzelnen Reiternamen; hier wird
+  // daraus der passende Bereich samt Unterreiter gesetzt.
+  SPRINGE = (reiter, eintrag) => {
+    const b = bereichFuer(reiter);
+    setZiel(eintrag ? { reiter, eintrag, n: Date.now() } : null);
+    setBereich(b.bereich);
+    setUnter(b.unter);
+  };
   const zielFuer = (reiter) => (ziel && ziel.reiter === reiter ? ziel.eintrag : null);
+  // Welcher einzelne Reiter ist gerade sichtbar?
+  const aktuellerBereich = BEREICHE.find((b) => b.id === bereich) || BEREICHE[0];
+  const tab = aktuellerBereich.unter.length
+    ? (aktuellerBereich.unter.some((u) => u.id === unter) ? unter : aktuellerBereich.unter[0].id)
+    : aktuellerBereich.id;
   React.useEffect(() => {
     document.documentElement.style.colorScheme = "dark";
     let meta = document.querySelector('meta[name="color-scheme"]');
@@ -1314,5 +1487,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { tab, setTab }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }
