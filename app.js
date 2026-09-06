@@ -1116,6 +1116,176 @@ function StartTab() {
   );
 }
 
+
+/* =========================================================
+   SICHERUNG
+
+   Alles, was du in Historia tust – Lernstand, gelesene
+   Vertiefungen, Lesezeichen, Forschungsfragen – liegt im
+   Speicher genau dieses Browsers. Verlauf löschen, Gerät
+   wechseln, und es ist weg. Zur Startseite hinzugefügt als
+   App-Symbol hat die App sogar einen eigenen Speicher,
+   getrennt von Safari.
+
+   Deshalb: alles in eine Datei schreiben und wieder einlesen.
+   ========================================================= */
+
+const SICHERUNG_KENNUNG = "historia-sicherung";
+
+function alleGespeichertenDaten() {
+  const daten = {};
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const schluessel = localStorage.key(i);
+      if (!schluessel || schluessel.indexOf(SPEICHER_PRAEFIX) !== 0) continue;
+      daten[schluessel.slice(SPEICHER_PRAEFIX.length)] = localStorage.getItem(schluessel);
+    }
+  } catch (e) {
+    // Speicher nicht verfügbar (privates Fenster, gesperrte Website-Daten)
+  }
+  return daten;
+}
+
+function baueSicherung() {
+  return JSON.stringify({
+    kennung: SICHERUNG_KENNUNG,
+    fassung: 1,
+    erstellt: new Date().toISOString(),
+    daten: alleGespeichertenDaten()
+  }, null, 2);
+}
+
+function pruefeSicherung(objekt) {
+  const fehler = [];
+  if (!objekt || typeof objekt !== "object") fehler.push("Die Datei enthält keine Sicherung.");
+  else {
+    if (objekt.kennung !== SICHERUNG_KENNUNG) fehler.push("Das ist keine Historia-Sicherung.");
+    if (!objekt.daten || typeof objekt.daten !== "object") fehler.push("Der Datenteil fehlt.");
+  }
+  return fehler;
+}
+
+function LesbarerName(schluessel) {
+  const namen = {
+    "bereich": "zuletzt geöffneter Bereich",
+    "unterreiter": "zuletzt geöffneter Unterreiter",
+    "vertiefungen.gelesen": "gelesene Vertiefungen",
+    "themen.gelesen": "gelesene Themen",
+    "zuletzt.gelesen": "Weiterlesen-Merker",
+    "lernen.bilanz": "Lernbilanz",
+    "fragen": "Forschungsfragen"
+  };
+  return namen[schluessel] || schluessel;
+}
+
+function SicherungTab() {
+  const [meldung, setMeldung] = useState(null);
+  const [fehler, setFehler] = useState([]);
+  const [stand, setStand] = useState(0);
+
+  const daten = useMemo(alleGespeichertenDaten, [stand]);
+  const eintraege = Object.keys(daten).sort();
+
+  const groesse = eintraege.reduce((s, k) => s + (daten[k] || "").length, 0);
+
+  function anzahlIn(wert) {
+    try {
+      const x = JSON.parse(wert);
+      if (Array.isArray(x)) return x.length + " Einträge";
+      if (x && typeof x === "object") return Object.keys(x).length + " Werte";
+      return String(x).slice(0, 40);
+    } catch (e) { return ""; }
+  }
+
+  function sichern() {
+    dateiHerunterladen(baueSicherung(), "historia-sicherung-" + heuteISO() + ".json", "application/json");
+    setFehler([]);
+    setMeldung("Sicherung heruntergeladen. Leg sie irgendwohin, wo du sie wiederfindest.");
+  }
+
+  function einlesen(datei) {
+    const leser = new FileReader();
+    leser.onload = () => {
+      let objekt = null;
+      try { objekt = JSON.parse(String(leser.result)); }
+      catch (e) { setMeldung(null); setFehler(["Die Datei ist nicht lesbar: " + e.message]); return; }
+      const probleme = pruefeSicherung(objekt);
+      if (probleme.length) { setMeldung(null); setFehler(probleme); return; }
+      let uebernommen = 0;
+      Object.entries(objekt.daten).forEach(([schluessel, wert]) => {
+        try { localStorage.setItem(SPEICHER_PRAEFIX + schluessel, wert); uebernommen++; }
+        catch (e) { /* Speicher voll oder gesperrt */ }
+      });
+      setFehler([]);
+      setStand((s) => s + 1);
+      setMeldung(uebernommen + " Einträge eingespielt. Die Seite lädt gleich neu, damit alles greift.");
+      setTimeout(() => location.reload(), 1200);
+    };
+    leser.readAsText(datei);
+  }
+
+  function alleslLoeschen() {
+    if (!confirm("Wirklich alle gespeicherten Daten dieses Browsers löschen? Lernstand, gelesene Vertiefungen und Forschungsfragen sind dann weg.")) return;
+    Object.keys(daten).forEach((k) => {
+      try { localStorage.removeItem(SPEICHER_PRAEFIX + k); } catch (e) {}
+    });
+    setStand((s) => s + 1);
+    setMeldung("Alles gelöscht.");
+  }
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      "Alles, was du hier tust, liegt im Speicher dieses Browsers – nicht auf einem Server."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl" },
+      "Verlauf löschen, Gerät wechseln oder die App vom Startbildschirm entfernen, und es ist weg. ",
+      "Zum Startbildschirm hinzugefügt hat Historia sogar einen eigenen Speicher, getrennt von Safari. ",
+      "Eine Sicherung dauert einen Klick."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 mb-4" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" },
+        "Was gespeichert ist"),
+      eintraege.length === 0
+        ? /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#b8905a]" }, "Noch nichts.")
+        : /* @__PURE__ */ React.createElement("ul", { className: "text-sm text-[#c2a06a] leading-relaxed" },
+            eintraege.map((k) => /* @__PURE__ */ React.createElement("li", { key: k, className: "flex justify-between gap-3" },
+              /* @__PURE__ */ React.createElement("span", null, "· ", LesbarerName(k)),
+              /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#8a6238] whitespace-nowrap" }, anzahlIn(daten[k]))
+            ))
+          ),
+      eintraege.length > 0 && /* @__PURE__ */ React.createElement("p", { className: "mt-2 font-mono text-[11px] text-[#8a6238]" },
+        "zusammen etwa ", Math.max(1, Math.round(groesse / 1024)), " KB")
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mb-4" },
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: sichern,
+        className: "px-3 py-2 rounded border border-[#d4af37] text-[#f0d878] text-sm"
+      }, "Sicherung herunterladen"),
+      /* @__PURE__ */ React.createElement("label", {
+        className: "px-3 py-2 rounded border border-[#5c2018] text-[#c9a877] text-sm cursor-pointer hover:border-[#d4af37]"
+      }, "Sicherung einlesen",
+        /* @__PURE__ */ React.createElement("input", {
+          type: "file", accept: "application/json,.json", className: "hidden",
+          onChange: (e) => { const d = e.target.files && e.target.files[0]; if (d) einlesen(d); e.target.value = ""; }
+        })
+      ),
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: alleslLoeschen,
+        className: "px-3 py-2 rounded border border-[#7a3020] text-[#b8905a] text-sm hover:text-[#f0a878]"
+      }, "Alles löschen")
+    ),
+
+    meldung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#9fd8ac] mb-2" }, meldung),
+    fehler.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "rounded border border-[#a03a20] bg-[#6b2024] p-3 mb-2" },
+      fehler.map((f, i) => /* @__PURE__ */ React.createElement("p", { key: i, className: "text-sm text-[#f0a878]" }, f))),
+
+    /* @__PURE__ */ React.createElement("p", { className: "text-[11px] text-[#8a6238] leading-snug max-w-2xl mt-4" },
+      "Beim Einlesen werden vorhandene Werte überschrieben, nicht zusammengeführt. ",
+      "Wer auf zwei Geräten arbeitet, sollte also wissen, welche Sicherung die neuere ist – ",
+      "das Erstellungsdatum steht in der Datei.")
+  );
+}
+
 const BEREICHE = [
   { id: "start", label: "Start", icon: Sparkles, unter: [] },
   { id: "suche", label: "Suche", icon: Search, unter: [] },
@@ -1144,7 +1314,8 @@ const BEREICHE = [
   ] },
   { id: "lernen", label: "Lernen", icon: Crown, unter: [
       { id: "lernen", label: "Karteikarten & Quiz" },
-      { id: "fragen", label: "Forschungsfragen" }
+      { id: "fragen", label: "Forschungsfragen" },
+      { id: "sicherung", label: "Sicherung" }
   ] }
 ];
 
@@ -1487,5 +1658,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }

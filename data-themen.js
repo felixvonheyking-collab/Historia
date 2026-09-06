@@ -252,7 +252,7 @@ const THEMEN = [
    },
    {
     "jahr": 533,
-    "titel": "Das Corpus Iuris Civilis",
+    "titel": "Die Digesten des Corpus Iuris Civilis",
     "text": "Justinian lässt das römische Recht ordnen. Im 11. Jahrhundert in Italien wiederentdeckt, wird es zur Grundlage der Rechtswissenschaft in weiten Teilen Europas – ein Text überlebt sein Reich um anderthalb Jahrtausende."
    },
    {
@@ -367,7 +367,7 @@ const THEMEN = [
    },
    {
     "jahr": 1866,
-    "titel": "Mendels Vererbungsregeln",
+    "titel": "Mendels Regeln erscheinen im Druck",
     "text": "Die Arbeit bleibt fast vierzig Jahre unbeachtet. Ihre Wiederentdeckung um 1900 macht Pflanzenzüchtung erstmals planbar statt zufällig."
    },
    {
@@ -781,7 +781,7 @@ const THEMEN = [
   "einleitung": "Fast jede größere Gesellschaft der Geschichte hat Menschen unfrei gehalten. Was sich änderte, war die Begründung: mal Kriegsgefangenschaft, mal Schulden, mal Geburt, im atlantischen System schließlich Hautfarbe. Die Abschaffung ist historisch jung, kam nie allein durch Einsicht zustande – und ist bis heute nicht abgeschlossen.",
   "stationen": [
    {
-    "jahr": -1750,
+    "jahr": -1754,
     "titel": "Schuldknechtschaft im Codex Hammurabi",
     "text": "Wer Schulden nicht zahlen konnte, verlor die Freiheit – aber begrenzt auf drei Jahre. Schon früh gibt es also Regeln, die Unfreiheit einhegen, statt sie zu beseitigen."
    },

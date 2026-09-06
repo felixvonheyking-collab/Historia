@@ -207,6 +207,96 @@ function pruefeAppSyntax() {
   }
 }
 
+
+/* ------------------------------------------- Widersprueche zwischen Sammlungen
+
+   Dasselbe Ereignis steht oft in mehreren Sammlungen. Stehen dort
+   verschiedene Jahre, ist das entweder ein Fehler – oder gewollt, weil
+   Beginn und Ende, Beschluss und Inkrafttreten gemeint sind. Letzteres
+   muss hier begruendet eingetragen werden, sonst meldet die Pruefung es.
+   ========================================================================= */
+
+const ERLAUBTE_ABWEICHUNGEN = [
+  ["Beginn der Kreuzzüge", "Die Kreuzzüge", "1095 Aufruf von Clermont, 1096 Aufbruch"],
+  ["Berliner Kongo-Konferenz", "Die Berliner Konferenz endet", "1884 Beginn, 1885 Schlussakte"],
+  ["Berliner Konferenz", "Die Berliner Konferenz endet", "1884 Beginn, 1885 Schlussakte"],
+  ["Russisch-Japanischer Krieg", "Russisch-Japanischer Krieg endet", "1904 Beginn, 1905 Ende"],
+  ["Abschaffung der Sklaverei im Britischen Empire", "Abschaffung der Sklaverei im Britischen Reich", "1833 Gesetz, 1834 Inkrafttreten"],
+  ["Abschaffung der Sklaverei im Britischen Empire", "Abschaffung im Britischen Reich", "1833 Gesetz, 1834 Inkrafttreten"],
+  ["Ende der Apartheid", "Das Ende der Apartheid", "Vertiefung beginnt 1990 mit Mandelas Freilassung, Wahlen 1994"],
+  ["Mongolensturm", "Der Mongolensturm", "Regional unterschiedliche Jahre desselben Feldzugs"],
+  ["Osmanische Herrschaft", "Osmanische Herrschaft beginnt", "1516 Levante, 1517 Ägypten"],
+  ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
+  ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
+  ["Mendel stellt seine Vererbungsregeln vor", "Mendels Regeln erscheinen im Druck", "1865 Vortrag, 1866 Veröffentlichung"],
+  ["Codex Justinianus", "Die Digesten des Corpus Iuris Civilis", "529 Codex, 533 Digesten"],
+  ["Der Buchdruck", "Die Gutenberg-Bibel erscheint", "um 1450 die Presse, 1455 die Bibel"],
+  ["Gutenbergs Druckpresse", "Die Gutenberg-Bibel erscheint", "um 1450 die Presse, 1455 die Bibel"]
+];
+
+// Woerter, die kein Ereignis kennzeichnen und deshalb keine Verwandtschaft stiften
+const ALLERWELT = new Set(["gründung", "ende", "beginn", "erste", "ersten", "erster", "aufstand",
+  "krieg", "kriegs", "kriege", "bürgerkrieg", "revolution", "schlacht", "vertrag", "frieden",
+  "unabhängig", "unabhängigkeit", "reich", "reiches", "referendum", "machtübernahme", "erfindung",
+  "entdeckung", "große", "großen", "großer", "neue", "neuen", "zweite", "zweiten", "dritte",
+  "jahre", "jahren", "besetzung", "eroberung", "verfassung", "beitritt", "demokratie", "dynastie",
+  "republik", "weltkrieg", "weltkriegs", "weltkriege", "sklaverei", "seeschlacht", "kaiser",
+  "königreich", "ausbruch", "gruendung", "abschaffung", "zerstörung", "einführung",
+  "besetzt", "erobert", "gegründet", "unabhängige", "staaten", "vereinigten"]);
+
+function kernwoerter(s) {
+  return new Set(String(s).toLowerCase().replace(/[^a-zäöüß0-9 ]/g, " ").split(/\s+/)
+    .filter((w) => w.length >= 5 && !ALLERWELT.has(w)));
+}
+
+function istErlaubt(a, b) {
+  return ERLAUBTE_ABWEICHUNGEN.some(([x, y]) =>
+    (a === x && b === y) || (a === y && b === x));
+}
+
+function pruefeWiderspruecheZwischenSammlungen(D) {
+  const alle = [];
+  D.EPOCHS.forEach((e) => e.events.forEach((x) =>
+    alle.push({ jahr: x.year, titel: x.title, quelle: "Epoche " + e.name })));
+  D.SCHLUESSELMOMENTE.forEach((x) => alle.push({ jahr: x.year, titel: x.title, quelle: "Schlüsselmoment" }));
+  D.BATTLES.forEach((x) => alle.push({ jahr: x.year, titel: x.name, quelle: "Schlacht" }));
+  Object.entries(D.COUNTRY_TIMELINES).forEach(([l, d]) => d.events.forEach((x) =>
+    alle.push({ jahr: x.year, titel: x.title, quelle: "Zeitleiste " + l })));
+  D.VERTIEFUNGEN.forEach((x) => alle.push({ jahr: x.jahr, titel: x.titel, quelle: "Vertiefung" }));
+  D.THEMEN.forEach((t) => t.stationen.forEach((x) =>
+    alle.push({ jahr: x.jahr, titel: x.titel, quelle: "Thema " + t.titel })));
+
+  const gemeldet = new Set();
+  for (let i = 0; i < alle.length; i++) {
+    for (let j = i + 1; j < alle.length; j++) {
+      const a = alle[i], b = alle[j];
+      if (a.quelle === b.quelle) continue;
+      const abstand = Math.abs(a.jahr - b.jahr);
+      if (abstand === 0 || abstand > 6) continue;
+      const A = kernwoerter(a.titel), B = kernwoerter(b.titel);
+      if (!A.size || !B.size) continue;
+      const gemeinsam = [...A].filter((x) => B.has(x));
+      // Entscheidend ist der Anteil, nicht die Anzahl: Ein geteilter Eigenname
+      // wie "Alexander" verbindet zwei ganz verschiedene Ereignisse, ein
+      // nahezu identischer Titel dagegen meint fast sicher dasselbe.
+      const anteil = gemeinsam.length / Math.min(A.size, B.size);
+      const verwandt = anteil >= 0.7 &&
+        (Math.min(A.size, B.size) >= 2 || gemeinsam.some((w) => w.length >= 8));
+      if (!verwandt) continue;
+      if (istErlaubt(a.titel, b.titel)) continue;
+      const marke = [a.titel, b.titel].sort().join("|");
+      if (gemeldet.has(marke)) continue;
+      gemeldet.add(marke);
+      meldeFehler(
+        "Verschiedene Jahre fuer dasselbe Ereignis (" + abstand + " Jahre Abstand) –\n      " +
+        a.jahr + "  " + a.titel + "  [" + a.quelle + "]\n      " +
+        b.jahr + "  " + b.titel + "  [" + b.quelle + "]\n" +
+        "      Wenn beide Jahre stimmen: in ERLAUBTE_ABWEICHUNGEN eintragen, mit Begruendung."
+      );
+    }
+  }
+}
+
 /* --------------------------------------------------------------- Inhalte */
 
 function pruefeInhalte(D) {
@@ -327,6 +417,8 @@ function pruefeInhalte(D) {
     " · Zitate " + D.QUOTES.length +
     " · Mythen " + D.MYTHEN.length +
     " · Fakten " + D.SURPRISING_FACTS.length);
+  pruefeWiderspruecheZwischenSammlungen(D);
+
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
   console.log("  Schlüsselmomente mit Verweis auf eine Vertiefung: " + verknuepft);
 }

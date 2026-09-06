@@ -59,11 +59,22 @@ Läuft ohne Installation, nur mit Node. Geprüft werden:
 - chronologische Sortierung der Zeitleisten und Themen-Stationen
 - Pflichtfelder je Eintragsart
 - Verweise ins Leere (etwa ein Schlüsselmoment, der auf eine nicht existierende Vertiefung zeigt)
+- **Widersprüche zwischen Sammlungen**: dasselbe Ereignis mit verschiedenen Jahren in Epochen, Zeitleisten, Vertiefungen oder Themen. Wo zwei Jahre zu Recht auseinandergehen – Beginn und Ende, Beschluss und Inkrafttreten –, gehört das mit Begründung in die Liste `ERLAUBTE_ABWEICHUNGEN` in `pruefung.js`
 - Belegpflicht: jeder Eintrag vom Typ *Mythos* braucht eine Quelle
 - gültige Belegstatus bei Zitaten und Status bei Mysterien
 
 Fehler führen zum Rückgabewert 1. Hinweise sind kein Fehler, lohnen aber einen Blick.
 Dieselbe Prüfung läuft über GitHub Actions bei jedem Push.
+
+## Eigene Daten sichern
+
+Lernstand, gelesene Vertiefungen und Forschungsfragen liegen im Speicher **genau des Browsers**,
+in dem du sie angelegt hast – nicht auf einem Server. Verlauf löschen, Gerät wechseln oder die
+App vom Startbildschirm entfernen, und sie sind weg. Zum Startbildschirm hinzugefügt hat die
+App unter iOS sogar einen eigenen Speicher, getrennt von Safari.
+
+Unter **Lernen → Sicherung** lässt sich alles als Datei herunterladen und wieder einspielen.
+Beim Einspielen werden vorhandene Werte überschrieben, nicht zusammengeführt.
 
 ## Ändern und veröffentlichen
 
