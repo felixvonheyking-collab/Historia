@@ -609,42 +609,51 @@ function ZeitstrahlTab() {
       }, f.label))),
 
     // Achse
-    /* @__PURE__ */ React.createElement("div", { className: "relative h-5 ml-[136px] mb-1 border-b border-[#5c2018]" },
+    /* @__PURE__ */ React.createElement("div", { className: "relative mb-1 border-b border-[#5c2018]",
+      style: { height: "20px", marginLeft: "136px" } },
       marken.map((m, i) => /* @__PURE__ */ React.createElement("span", {
         key: i,
-        className: "absolute font-mono text-[10px] text-[#8a6238] -translate-x-1/2",
-        style: { left: (i / 4) * 100 + "%" }
+        className: "absolute font-mono text-[10px] text-[#8a6238]",
+        style: { left: (i / 4) * 100 + "%", transform: "translateX(-50%)", whiteSpace: "nowrap" }
       }, formatYear(m)))),
 
     // Baender
-    /* @__PURE__ */ React.createElement("div", { className: "space-y-0.5" },
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "3px" } },
       regionen.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.name, className: "flex items-center gap-2" },
         /* @__PURE__ */ React.createElement("button", {
           onClick: () => { if (SPRINGE) SPRINGE("laender", r.name); },
-          className: "w-[128px] shrink-0 text-right text-[11px] leading-tight text-[#c2a06a] hover:text-[#f0d878] truncate",
+          className: "text-right text-[11px] text-[#c2a06a] hover:text-[#f0d878]",
+          style: { width: "128px", flexShrink: 0, lineHeight: 1.2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" },
           title: r.name + " — Zeitleiste öffnen"
         }, r.name),
         /* @__PURE__ */ React.createElement("div", {
-          className: "relative flex-1 h-6 rounded",
-          style: { backgroundColor: "#4a1015" }
+          className: "relative rounded",
+          style: { backgroundColor: "#4a1015", flex: "1 1 0%", height: "22px", minWidth: 0 }
         },
           /* @__PURE__ */ React.createElement("div", {
-            className: "absolute inset-x-0 top-1/2 h-px",
-            style: { backgroundColor: r.farbe, opacity: 0.25 }
+            style: { position: "absolute", left: 0, right: 0, top: "50%", height: "1px", backgroundColor: r.farbe, opacity: 0.25 }
           }),
           r.sichtbar.map((e, i) => /* @__PURE__ */ React.createElement("button", {
             key: i,
             onClick: () => setGewaehlt({ region: r.name, farbe: r.farbe, ereignis: e }),
             title: formatYear(e.year) + " — " + e.title,
-            className: "absolute top-1/2 w-2 h-2 -mt-1 -ml-1 rounded-full hover:scale-150 transition-transform",
+            className: "rounded-full",
             style: {
+              position: "absolute",
+              top: "50%",
               left: ((e.year - fenster.von) / spanne) * 100 + "%",
+              width: "9px",
+              height: "9px",
+              marginTop: "-4.5px",
+              marginLeft: "-4.5px",
               backgroundColor: r.farbe,
-              outline: gewaehlt && gewaehlt.ereignis === e ? "2px solid #f0d878" : "none"
+              border: gewaehlt && gewaehlt.ereignis === e ? "2px solid #f0d878" : "none",
+              cursor: "pointer"
             }
           }))
         ),
-        /* @__PURE__ */ React.createElement("span", { className: "w-7 shrink-0 font-mono text-[10px] text-[#8a6238] text-right" }, r.sichtbar.length)
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] text-[#8a6238] text-right",
+          style: { width: "28px", flexShrink: 0 } }, r.sichtbar.length)
       ))),
 
     ausserhalb > 0 && /* @__PURE__ */ React.createElement("p", { className: "mt-3 font-mono text-[11px] text-[#8a6238]" },

@@ -209,6 +209,31 @@ function pruefeAppSyntax() {
 }
 
 
+/* --------------------------------------------------------- CSS-Klassen
+   Die Tailwind-Datei ist vorgebaut und wird nicht bei jeder Aenderung neu
+   erzeugt. Eine Klasse, die im Code steht, aber keine Regel hat, faellt
+   nicht auf: Der Browser meldet nichts, das Element wird nur falsch
+   dargestellt. Genau das ist beim Zeitstrahl passiert - die Baender hatten
+   Hoehe null. Deshalb wird hier verglichen.
+   ==================================================================== */
+
+function pruefeKlassen() {
+  const app = fs.readFileSync(path.join(WURZEL, "app.js"), "utf8");
+  const css = fs.readFileSync(path.join(WURZEL, "tailwind.css"), "utf8");
+  const klassen = new Set();
+  const re = /className:\s*(?:"([^"]*)"|`([^`]*)`)/g;
+  let m;
+  while ((m = re.exec(app))) {
+    (m[1] || m[2]).replace(/\$\{[^}]*\}/g, " ").split(/\s+/).filter(Boolean).forEach((k) => klassen.add(k));
+  }
+  // Tailwind schreibt Sonderzeichen im Selektor mit vorangestelltem Backslash
+  const alsSelektor = (k) => "." + k.replace(/[^a-zA-Z0-9_-]/g, (c) => "\\" + c);
+  const fehlend = [...klassen].filter((k) => !css.includes(alsSelektor(k)));
+  fehlend.sort().forEach((k) => meldeFehler("CSS-Klasse ohne Regel in tailwind.css: " + k));
+  return { geprueft: klassen.size, fehlend: fehlend.length };
+}
+
+
 /* ------------------------------------------- Widersprueche zwischen Sammlungen
 
    Dasselbe Ereignis steht oft in mehreren Sammlungen. Stehen dort
@@ -470,6 +495,9 @@ console.log("Historia – Prüfung\n");
 console.log("Aufbau:");
 pruefeAppSyntax();
 pruefeVersionen();
+const klassen = pruefeKlassen();
+console.log("  CSS-Klassen: " + klassen.geprueft + " geprüft, " +
+  (klassen.fehlend ? klassen.fehlend + " ohne Regel" : "alle vorhanden"));
 
 const D = lade();
 if (D) {
