@@ -591,8 +591,10 @@ function ZeitstrahlTab() {
 
   const ausserhalb = regionen.reduce((a, r) => a + (r.gesamt - r.sichtbar.length), 0);
 
-  // Beschriftung der Achse: fuenf gleichmaessige Marken
-  const marken = [0, 1, 2, 3, 4].map((i) => fenster.von + Math.round(spanne * i / 4));
+  // Beschriftung der Achse: vier Marken in Kurzform. Die lange Form
+  // ("1500 n. Chr.") stiess auf schmalen Bildschirmen aneinander.
+  const kurzesJahr = (j) => (j < 0 ? Math.abs(j) + " v." : String(j));
+  const marken = [0, 1, 2, 3].map((i) => fenster.von + Math.round(spanne * i / 3));
 
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
@@ -610,12 +612,16 @@ function ZeitstrahlTab() {
 
     // Achse
     /* @__PURE__ */ React.createElement("div", { className: "relative mb-1 border-b border-[#5c2018]",
-      style: { height: "20px", marginLeft: "136px" } },
+      style: { height: "20px", marginLeft: "136px", marginRight: "36px" } },
       marken.map((m, i) => /* @__PURE__ */ React.createElement("span", {
         key: i,
         className: "absolute font-mono text-[10px] text-[#8a6238]",
-        style: { left: (i / 4) * 100 + "%", transform: "translateX(-50%)", whiteSpace: "nowrap" }
-      }, formatYear(m)))),
+        style: {
+          left: (i / 3) * 100 + "%",
+          transform: i === 0 ? "none" : (i === 3 ? "translateX(-100%)" : "translateX(-50%)"),
+          whiteSpace: "nowrap"
+        }
+      }, kurzesJahr(m)))),
 
     // Baender
     /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "3px" } },
