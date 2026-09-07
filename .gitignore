@@ -1,0 +1,4 @@
+# Werkzeug- und Systemdateien, die nicht zur App gehören
+.impeccable/
+node_modules/
+.DS_Store
