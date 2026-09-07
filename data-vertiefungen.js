@@ -2251,5 +2251,358 @@ const VERTIEFUNGEN = [
       "Encyclopaedia Britannica: Basil II",
       "Ralph-Johannes Lilie: Byzanz. Geschichte des oströmischen Reiches"
     ]
-  }
+  },
+{
+  "id": "kyros2",
+  "titel": "Kyros und die Erfindung des Weltreichs",
+  "epoche": "antike",
+  "jahr": -539,
+  "zeitraum": "559–530 v. Chr.",
+  "region": "Persien",
+  "leitsatz": "Er eroberte mehr Land als jeder vor ihm – und wurde berühmt dafür, wie er mit den Besiegten umging.",
+  "vorgeschichte": "Der Vordere Orient war seit Jahrhunderten von Großmächten beherrscht worden, die auf Abschreckung setzten: Die Assyrer deportierten ganze Bevölkerungen, um Aufstände unmöglich zu machen. Persien war zu Kyros' Geburt ein Vasallenland der Meder.",
+  "verlauf": "Kyros stürzte um 550 v. Chr. den medischen Oberkönig, schlug 547 den lydischen König Kroisos und nahm 539 Babylon ein – der Überlieferung nach fast kampflos. Statt Deportationen erlaubte er verschleppten Gruppen die Rückkehr, gab geraubte Götterbilder zurück und ließ örtliche Kulte bestehen. Die jüdische Überlieferung nennt ihn deshalb ausdrücklich als Befreier; der Kyros-Zylinder verkündet dieselbe Politik in babylonischer Form.",
+  "folgen": "Das Reich reichte am Ende von der Ägäis bis nach Zentralasien und wurde zum Vorbild aller späteren Großreiche der Region. Die Methode – lokale Eliten und Religionen bestehen lassen, dafür Tribut und Truppen verlangen – erwies sich als haltbarer als assyrische Härte.",
+  "strittig": "Der Kyros-Zylinder wird gelegentlich als erste Menschenrechtserklärung bezeichnet. Fachleute widersprechen: Der Text folgt einer alten mesopotamischen Gattung, in der neue Herrscher ihre Frömmigkeit belegen, und spricht keine allgemeinen Rechte aus. Auch der friedliche Einzug in Babylon stammt aus Quellen, die Kyros' Herrschaft rechtfertigen sollten.",
+  "zahlen": [
+    {
+      "wert": "539 v. Chr.",
+      "was": "Einnahme Babylons"
+    },
+    {
+      "wert": "ca. 5,5 Mio. km²",
+      "was": "Ausdehnung unter den Achämeniden"
+    },
+    {
+      "wert": "29 Jahre",
+      "was": "Regierungszeit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cyrus the Great",
+    "The Cambridge History of Iran, Band 2",
+    "British Museum: The Cyrus Cylinder",
+    "Herodot: Historien, Buch 1 (mit Vorbehalt)"
+  ]
+},
+{
+  "id": "dareios1",
+  "titel": "Dareios ordnet ein Weltreich",
+  "epoche": "antike",
+  "jahr": -522,
+  "zeitraum": "522–486 v. Chr.",
+  "region": "Persien",
+  "leitsatz": "Er hat das Reich nicht erobert, sondern regierbar gemacht – und seine Version der Ereignisse in einen Felsen schlagen lassen.",
+  "vorgeschichte": "Nach dem Tod des Kambyses 522 v. Chr. brach das Reich in Aufstände aus. Dareios gehörte einer Nebenlinie an und hatte keinen selbstverständlichen Anspruch auf den Thron.",
+  "verlauf": "Innerhalb eines Jahres schlug er nach eigener Darstellung neunzehn Schlachten nieder. Danach teilte er das Reich in rund zwanzig Satrapien mit fest bemessenem Tribut, führte eine reichsweite Goldmünze ein, ließ die Königsstraße von Sardes nach Susa bauen und richtete ein Botensystem ein, das die Strecke in einer Woche schaffte. Die dreisprachige Inschrift von Behistun verkündet seine Thronbesteigung als göttlich gewollt.",
+  "folgen": "Die Satrapienordnung hielt bis zum Ende des Reichs und diente Alexander und den Nachfolgereichen als Verwaltungsvorlage. Die Behistun-Inschrift lieferte im 19. Jahrhundert den Schlüssel zur Entzifferung der Keilschrift – ein Herrschaftsdenkmal wurde zum wichtigsten Sprachfund der Altertumskunde.",
+  "strittig": "Ob Dareios rechtmäßig auf den Thron kam oder einen Staatsstreich mit einer Legende deckte, ist offen. Seine Darstellung, ein Betrüger habe sich für Kambyses' Bruder ausgegeben, lässt sich nicht unabhängig prüfen – sie stammt aus seiner eigenen Inschrift.",
+  "zahlen": [
+    {
+      "wert": "ca. 20",
+      "was": "Satrapien"
+    },
+    {
+      "wert": "2.700 km",
+      "was": "Länge der Königsstraße"
+    },
+    {
+      "wert": "3 Sprachen",
+      "was": "Behistun-Inschrift: Altpersisch, Elamisch, Babylonisch"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Darius I",
+    "The Cambridge History of Iran, Band 2",
+    "Behistun-Inschrift (Übersetzung, Livius.org)",
+    "Josef Wiesehöfer: Das antike Persien"
+  ]
+},
+{
+  "id": "schapur1",
+  "titel": "Schapur und der gefangene Kaiser",
+  "epoche": "antike",
+  "jahr": 260,
+  "zeitraum": "240–270",
+  "region": "Sasanidenreich",
+  "leitsatz": "Ein römischer Kaiser geriet in Gefangenschaft – ein einziges Mal in der ganzen römischen Geschichte.",
+  "vorgeschichte": "Das junge Sasanidenreich verstand sich als Erbe der Achämeniden und erhob Anspruch auf deren einstige Westgebiete. Rom steckte im 3. Jahrhundert in einer Dauerkrise aus Thronkämpfen, Seuchen und Geldentwertung.",
+  "verlauf": "Schapur schlug drei römische Kaiser: Gordian III. fiel 244 im Feldzug, Philippus Arabs erkaufte Frieden, und Valerian geriet 260 bei Edessa in Gefangenschaft und starb in Persien. Schapur ließ den Triumph an mehreren Felswänden darstellen und in einer dreisprachigen Inschrift festhalten, in der er sich König der Könige von Iran und Nicht-Iran nennt. Gefangene Römer setzte er beim Bau von Städten und Brücken ein.",
+  "folgen": "Vier Jahrhunderte Rivalität zwischen Rom und Persien begannen, in denen keine Seite die andere endgültig besiegen konnte. Beide banden große Teile ihrer Kräfte an dieser Grenze – ein Grund, warum die arabische Expansion im 7. Jahrhundert auf zwei erschöpfte Reiche traf.",
+  "strittig": "Was mit Valerian geschah, ist unklar. Christliche Autoren berichten von schwerer Demütigung; persische Quellen sagen dazu nichts. Diese Autoren sahen in seinem Ende die Strafe für seine Christenverfolgung, was die Berichte fragwürdig macht.",
+  "zahlen": [
+    {
+      "wert": "3",
+      "was": "besiegte römische Kaiser"
+    },
+    {
+      "wert": "260",
+      "was": "Gefangennahme Valerians"
+    },
+    {
+      "wert": "1",
+      "was": "in Gefangenschaft geratene römische Kaiser insgesamt"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Shapur I",
+    "The Cambridge History of Iran, Band 3",
+    "Res Gestae Divi Saporis (Inschrift von Naqsch-e Rostam)"
+  ]
+},
+{
+  "id": "chosrau1",
+  "titel": "Chosrau I. und das Haus der Weisheit vor dem Haus der Weisheit",
+  "epoche": "antike",
+  "jahr": 531,
+  "zeitraum": "531–579",
+  "region": "Sasanidenreich",
+  "leitsatz": "Als Justinian die Athener Akademie schloss, fanden ihre Philosophen an einem persischen Hof Aufnahme.",
+  "vorgeschichte": "Ein Aufstand der Mazdakiten hatte die sasanidische Gesellschaft erschüttert; der Adel war mächtig, die Steuereinnahmen unzuverlässig. Chosrau übernahm ein Reich, das an inneren Gegensätzen zu zerbrechen drohte.",
+  "verlauf": "Er ersetzte die willkürliche Ernteabgabe durch eine feste, vermessene Grundsteuer und schuf eine vom Hof abhängige Ritterschicht als Gegengewicht zum Hochadel. Er ließ indische und griechische Werke ins Mittelpersische übersetzen, förderte die Akademie von Gundischapur mit ihrer Medizinschule und nahm 529 die aus Athen vertriebenen Philosophen auf. Gegen Byzanz führte er wechselhafte Kriege und schloss 562 einen auf fünfzig Jahre angelegten Frieden.",
+  "folgen": "Die Übersetzungen aus seiner Zeit gelangten später ins Arabische und wurden zu einer Grundlage der islamischen Wissenschaft. Seine Steuer- und Heeresordnung diente den frühen Kalifen als Vorbild. In der persischen Überlieferung gilt er bis heute als der gerechte König.",
+  "strittig": "Das Bild vom philosophenfreundlichen Herrscher stammt teils aus späteren, idealisierenden Texten. Wie lange die griechischen Philosophen tatsächlich blieben, ist unsicher – einige kehrten offenbar bald zurück.",
+  "zahlen": [
+    {
+      "wert": "48 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "529",
+      "was": "Schließung der Akademie in Athen"
+    },
+    {
+      "wert": "562",
+      "was": "Friedensvertrag mit Byzanz"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Khosrow I",
+    "The Cambridge History of Iran, Band 3",
+    "Prokop: Perserkriege (byzantinische Sicht)"
+  ]
+},
+{
+  "id": "ismail1",
+  "titel": "Ismail I. macht Iran schiitisch",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1501,
+  "zeitraum": "1501–1524",
+  "region": "Iran",
+  "leitsatz": "Ein Fünfzehnjähriger entschied, welcher Religion ein Land angehört – und die Entscheidung hält bis heute.",
+  "vorgeschichte": "Iran war um 1500 politisch zersplittert und überwiegend sunnitisch. Ismail stammte aus einer Sufi-Bruderschaft, deren Anhänger ihn als heilige Gestalt verehrten und ihm eine kampfstarke Reiterei stellten.",
+  "verlauf": "Nach der Einnahme von Täbris 1501 erklärte er die Zwölferschia zur Staatsreligion und setzte sie gegen Widerstand durch – notfalls mit Gewalt. Da es im Land kaum schiitische Gelehrte gab, ließ er sie aus dem arabischen Raum und dem Libanon holen. 1514 unterlag er bei Tschaldiran den Osmanen, deren Artillerie seiner Reiterei überlegen war.",
+  "folgen": "Iran wurde zum einzigen großen schiitischen Staat und blieb es. Die Grenze zwischen safawidischem und osmanischem Einflussgebiet läuft in Grundzügen noch heute durch dieselbe Region. Die Niederlage von 1514 zerstörte zugleich den Glauben an die Unbesiegbarkeit des Herrschers.",
+  "strittig": "Wie gewaltsam die Bekehrung ablief, ist umstritten. Ältere Darstellungen betonen Zwang und Verfolgung, neuere weisen darauf hin, dass die Umstellung Generationen dauerte und in vielen Gegenden eher allmählich verlief.",
+  "zahlen": [
+    {
+      "wert": "14 oder 15",
+      "was": "Alter bei der Machtübernahme"
+    },
+    {
+      "wert": "1514",
+      "was": "Niederlage bei Tschaldiran"
+    },
+    {
+      "wert": "235 Jahre",
+      "was": "Dauer der Safawidenherrschaft"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Ismāʿīl I; Ṣafavid dynasty",
+    "The Cambridge History of Iran, Band 6",
+    "Encyclopaedia Iranica: Esmāʿīl I Ṣafawī"
+  ]
+},
+{
+  "id": "sturz-schah",
+  "titel": "1979: Das Ende von 2.500 Jahren Monarchie",
+  "epoche": "moderne",
+  "jahr": 1979,
+  "zeitraum": "1978–1979",
+  "region": "Iran",
+  "leitsatz": "Eine Revolution ohne Bürgerkrieg stürzte eine der bestgerüsteten Regierungen der Welt – und endete anders, als die meisten ihrer Träger erwartet hatten.",
+  "vorgeschichte": "1953 hatten CIA und britischer Geheimdienst den gewählten Ministerpräsidenten Mossadegh gestürzt, der die Ölindustrie verstaatlicht hatte. Der Schah regierte danach zunehmend autoritär, gestützt auf den Geheimdienst SAVAK. Die Weiße Revolution der 1960er Jahre brachte Landreform und Frauenwahlrecht, verschärfte aber die Gegensätze zwischen Stadt und Land, Klerus und Staat.",
+  "verlauf": "Ab Anfang 1978 folgten Demonstrationen und Trauerzüge in Vierzig-Tage-Abständen aufeinander. Streiks legten ab Herbst die Ölproduktion lahm. Im Januar 1979 verließ der Schah das Land, im Februar kehrte Chomeini aus dem Pariser Exil zurück, die Armee erklärte sich für neutral, und die Regierung brach zusammen. Ein Referendum im März machte Iran zur Islamischen Republik.",
+  "folgen": "Die Monarchie endete nach zweieinhalb Jahrtausenden. Die breite Koalition aus Linken, Liberalen, Bazaris und Geistlichen zerfiel binnen zwei Jahren; die Geistlichkeit setzte sich durch. Die Besetzung der US-Botschaft und der irakische Angriff 1980 prägten die folgenden Jahrzehnte.",
+  "strittig": "Ob der Ausgang von Anfang an feststand, ist umstritten. Viele Beteiligte kämpften für Demokratie, nicht für einen Gottesstaat. Historiker streiten, ob Chomeini seine Absichten verschleierte oder ob sich die Machtverhältnisse erst nach dem Sieg verschoben.",
+  "zahlen": [
+    {
+      "wert": "16. Januar 1979",
+      "was": "Ausreise des Schahs"
+    },
+    {
+      "wert": "1. Februar 1979",
+      "was": "Rückkehr Chomeinis"
+    },
+    {
+      "wert": "2.500 Jahre",
+      "was": "Dauer der iranischen Monarchie in der offiziellen Zählung"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Iranian Revolution",
+    "Ervand Abrahamian: A History of Modern Iran",
+    "Encyclopaedia Iranica: Islamic Revolution of 1979"
+  ]
+},
+{
+  "id": "japan-suiko",
+  "titel": "Suiko, Shōtoku und der Anschluss an China",
+  "epoche": "antike",
+  "jahr": 593,
+  "zeitraum": "592–628",
+  "region": "Japan",
+  "leitsatz": "Japan übernahm Schrift, Religion und Staatsform seines übermächtigen Nachbarn – und bestand zugleich darauf, ihm ebenbürtig zu sein.",
+  "vorgeschichte": "Im 6. Jahrhundert kam der Buddhismus über Korea nach Japan und spaltete den Hof: Ein Teil des Adels sah in den fremden Göttern eine Bedrohung der einheimischen Kulte. Die Familie Soga setzte sich durch und brachte Suiko auf den Thron.",
+  "verlauf": "Suiko regierte 36 Jahre, ihr Neffe Shōtoku wirkte als Regent. Ihm wird die Siebzehn-Artikel-Verfassung von 604 zugeschrieben, eine Sammlung von Regierungsgrundsätzen nach konfuzianischem und buddhistischem Vorbild, dazu ein zwölfstufiges Hofrangsystem nach Verdienst statt nach Geburt. Ein Brief an den chinesischen Kaiser, angeblich vom Herrscher des Landes der aufgehenden Sonne an den Herrscher des Landes der untergehenden Sonne, beanspruchte Gleichrangigkeit.",
+  "folgen": "Buddhismus wurde Staatsreligion, die chinesische Schrift zur Grundlage der japanischen Schriftlichkeit. Der Hōryū-ji bei Nara gilt als ältester erhaltener Holzbau der Welt. Die Reformen bereiteten den zentralisierten Staat der Nara-Zeit vor.",
+  "strittig": "Ob Shōtoku als Person so gewirkt hat, wie die Chroniken sagen, ist in der Forschung umstritten. Die Nihon Shoki entstand ein Jahrhundert später und diente der Legitimation; ein Teil der Fachleute hält Shōtoku für eine stark ausgestaltete Idealfigur. Auch die Verfassung von 604 könnte später verfasst worden sein.",
+  "zahlen": [
+    {
+      "wert": "36 Jahre",
+      "was": "Regierungszeit Suikos"
+    },
+    {
+      "wert": "604",
+      "was": "Siebzehn-Artikel-Verfassung"
+    },
+    {
+      "wert": "12",
+      "was": "Hofränge nach Verdienst"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Suiko; Shōtoku Taishi",
+    "The Cambridge History of Japan, Band 1",
+    "Nihon Shoki (antike Quelle, legitimatorisch gefärbt)"
+  ]
+},
+{
+  "id": "japan-kanmu",
+  "titel": "Kanmu verlegt die Hauptstadt",
+  "epoche": "mittelalter",
+  "jahr": 794,
+  "zeitraum": "781–806",
+  "region": "Japan",
+  "leitsatz": "Er zog um, weil die Klöster zu mächtig geworden waren – und schuf damit eine Stadt, die tausend Jahre Hauptstadt blieb.",
+  "vorgeschichte": "In Nara waren die buddhistischen Großklöster so einflussreich geworden, dass ein Mönch beinahe selbst den Thron bestiegen hätte. Die Klöster besaßen steuerfreies Land, eigene Bewaffnete und direkten Zugang zum Hof.",
+  "verlauf": "Kanmu verlegte den Hof 784 zunächst nach Nagaoka, nach Unglücksfällen und einem Mord dann 794 nach Heian-kyō, dem heutigen Kyōto. Die Klöster von Nara durften nicht mitziehen. Er förderte stattdessen neue buddhistische Schulen, deren Gründer er nach China schicken ließ, und führte langwierige Feldzüge gegen die Emishi im Norden Honshūs, für die er das Amt des Shogun einrichtete.",
+  "folgen": "Kyōto blieb bis 1868 Sitz des Tennō. Die folgenden vier Jahrhunderte, die Heian-Zeit, brachten mit dem Genji Monogatari eine der ersten Romanliteraturen der Welt hervor. Der Titel Shogun, ursprünglich für einen Grenzfeldzug geschaffen, wurde später zur Bezeichnung des eigentlichen Herrschers Japans.",
+  "strittig": "Ob der Umzug allein dem Einfluss der Klöster galt, ist offen; Geomantik, Hochwasserschutz und die Interessen der Familien im neuen Umland werden ebenfalls genannt. Die Chroniken nennen nach dem Tod von Kanmus Bruder auch dessen rachsüchtigen Geist als Grund für den zweiten Umzug.",
+  "zahlen": [
+    {
+      "wert": "794",
+      "was": "Gründung von Heian-kyō"
+    },
+    {
+      "wert": "1.074 Jahre",
+      "was": "Kyōto als Sitz des Tennō"
+    },
+    {
+      "wert": "390 Jahre",
+      "was": "Dauer der Heian-Zeit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Kammu; Heian period",
+    "The Cambridge History of Japan, Band 2"
+  ]
+},
+{
+  "id": "japan-godaigo",
+  "titel": "Go-Daigo und die drei Jahre der Rückkehr",
+  "epoche": "mittelalter",
+  "jahr": 1333,
+  "zeitraum": "1318–1339",
+  "region": "Japan",
+  "leitsatz": "Der einzige Tennō, der die Macht zurückeroberte – und sie binnen drei Jahren wieder verlor.",
+  "vorgeschichte": "Seit 1185 regierten Krieger. In Kamakura hatten die Hōjō als Regenten selbst die Shogune entmachtet. Die Abwehr der mongolischen Invasionen hatte das Shogunat teuer zu stehen kommen lassen: Es gab keine eroberten Ländereien, mit denen die Krieger belohnt werden konnten.",
+  "verlauf": "Go-Daigo erhob sich zweimal, wurde verbannt, floh und fand Verbündete unter unzufriedenen Kriegerfamilien. 1333 fiel Kamakura. In der Kenmu-Restauration versuchte er, wieder direkt zu regieren, bevorzugte dabei aber den Hofadel und enttäuschte die Krieger, die ihn an die Macht gebracht hatten. 1336 wandte sich Ashikaga Takauji gegen ihn, setzte einen Gegen-Tennō ein und ließ sich zum Shogun ernennen.",
+  "folgen": "Go-Daigo floh nach Yoshino; sechzig Jahre lang gab es zwei Kaiserhöfe mit je eigener Erbfolge. Das Ashikaga-Shogunat regierte bis 1573. Für Japan bedeutete die Episode: Der Tennō konnte Herrschaft legitimieren, aber nicht ausüben – eine Lehre, auf die sich Gegner des Shogunats bis 1868 beriefen.",
+  "strittig": "Welcher der beiden Höfe der rechtmäßige war, wurde noch im 20. Jahrhundert politisch diskutiert; 1911 entschied die Regierung sich amtlich für den Südhof Go-Daigos. Ob seine Restauration überhaupt Aussicht auf Erfolg hatte, ist in der Forschung umstritten.",
+  "zahlen": [
+    {
+      "wert": "3 Jahre",
+      "was": "Dauer der Kenmu-Restauration"
+    },
+    {
+      "wert": "1336–1392",
+      "was": "Zeit der zwei Höfe"
+    },
+    {
+      "wert": "148 Jahre",
+      "was": "Dauer des Kamakura-Shogunats"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Go-Daigo; Kemmu Restoration",
+    "The Cambridge History of Japan, Band 3"
+  ]
+},
+{
+  "id": "japan-ieyasu",
+  "titel": "Tokugawa Ieyasu und 250 Jahre Frieden",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1600,
+  "zeitraum": "1600–1868",
+  "region": "Japan",
+  "leitsatz": "Er baute eine Ordnung, die so stabil war, dass sich zweieinhalb Jahrhunderte lang kaum etwas änderte – und genau das wurde am Ende ihr Problem.",
+  "vorgeschichte": "Ein Jahrhundert Bürgerkrieg hatte Japan zerrissen. Oda Nobunaga und Toyotomi Hideyoshi hatten das Land militärisch geeint; nach Hideyoshis Tod 1598 stand ein unmündiger Erbe zwischen rivalisierenden Fürsten.",
+  "verlauf": "1600 setzte sich Ieyasu bei Sekigahara durch und ließ sich 1603 zum Shogun ernennen. Er teilte die Fürsten nach Loyalität ein und verteilte ihre Lehen entsprechend, verpflichtete sie zum wechselnden Aufenthalt in Edo und ließ ihre Familien dort als Geiseln zurück. Die Gesellschaft wurde in feste Stände geordnet. Seine Nachfolger verboten das Christentum, untersagten Ausreise und Schiffsbau für die Hochseefahrt und beschränkten den Außenhandel auf Nagasaki.",
+  "folgen": "Zweieinhalb Jahrhunderte ohne Krieg im Inneren. Edo wuchs zur vielleicht größten Stadt der Welt, es entstanden eine breite Lesekultur, Farbholzschnitt und Kabuki-Theater. Zugleich blieb Japan technisch stehen: Als 1853 amerikanische Kriegsschiffe erschienen, war der Rückstand nicht mehr aufzuholen, und das System brach binnen fünfzehn Jahren zusammen.",
+  "strittig": "Ob die Abschließung Japan schützte oder schwächte, wird bis heute diskutiert. Die neuere Forschung betont, dass die Isolation weniger vollständig war als lange angenommen: Über Nagasaki, Tsushima, die Ryūkyū-Inseln und Hokkaidō bestanden durchgehend Kontakte, und westliche Bücher wurden ab 1720 wieder zugelassen.",
+  "zahlen": [
+    {
+      "wert": "1600",
+      "was": "Schlacht von Sekigahara"
+    },
+    {
+      "wert": "15",
+      "was": "Tokugawa-Shogune"
+    },
+    {
+      "wert": "über 1 Mio.",
+      "was": "Einwohner Edos um 1720"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Tokugawa Ieyasu; Tokugawa period",
+    "The Cambridge History of Japan, Band 4",
+    "Ronald Toby: State and Diplomacy in Early Modern Japan"
+  ]
+},
+{
+  "id": "japan-showa",
+  "titel": "Hirohito: die umstrittenste Regierung Japans",
+  "epoche": "moderne",
+  "jahr": 1926,
+  "zeitraum": "1926–1989",
+  "region": "Japan",
+  "leitsatz": "Er regierte 62 Jahre, führte ein Land in den Krieg und blieb danach im Amt – über seine Verantwortung wird bis heute gestritten.",
+  "vorgeschichte": "Die Meiji-Verfassung von 1889 machte den Tennō formal zum Souverän mit Oberbefehl über die Streitkräfte, überließ die Regierungsgeschäfte aber Ministern und Militärführung. Wie viel eigener Wille darin lag, war schon Zeitgenossen unklar.",
+  "verlauf": "Unter der Regierungsdevise Shōwa – erleuchteter Friede – besetzte Japan 1931 die Mandschurei, führte ab 1937 Krieg in China und griff 1941 Pearl Harbor an. Im August 1945 sprach Hirohito nach den Atombombenabwürfen erstmals öffentlich im Rundfunk und verkündete die Kapitulation. 1946 erklärte er in einer Neujahrserklärung, seine Göttlichkeit sei eine Erfindung. Die neue Verfassung machte ihn zum Symbol des Staates ohne Regierungsgewalt.",
+  "folgen": "Japan wurde eine parlamentarische Demokratie und binnen dreißig Jahren die zweitgrößte Volkswirtschaft der Welt. Die Frage der Kriegsverantwortung blieb ungeklärt und belastet die Beziehungen zu China und Korea bis heute.",
+  "strittig": "Der Kern des Streits: War Hirohito eine von Militärs vorgeschobene Symbolfigur oder ein Mitentscheider? Die amerikanische Besatzung hielt ihn bewusst aus den Kriegsverbrecherprozessen heraus, um die Besatzung zu erleichtern – eine politische, keine juristische Entscheidung. Neuere Arbeiten, etwa von Herbert Bix, weisen ihm deutlich mehr Einfluss zu, als die Nachkriegsdarstellung nahelegte; andere Historiker halten dagegen. Die Aktenlage bleibt lückenhaft.",
+  "zahlen": [
+    {
+      "wert": "62 Jahre",
+      "was": "Regierungszeit, die längste eines Tennō"
+    },
+    {
+      "wert": "15. August 1945",
+      "was": "Rundfunkansprache zur Kapitulation"
+    },
+    {
+      "wert": "1. Januar 1946",
+      "was": "Erklärung zur Menschlichkeit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Hirohito",
+    "Herbert P. Bix: Hirohito and the Making of Modern Japan",
+    "John W. Dower: Embracing Defeat",
+    "The Cambridge History of Japan, Band 6"
+  ]
+}
 ];

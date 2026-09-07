@@ -355,6 +355,30 @@ function pruefeInhalte(D) {
     });
   });
 
+  // Dynastien
+  pruefeDubletten("Dynastien", D.DYNASTIEN, "id");
+  pruefeFelder("Dynastien", D.DYNASTIEN,
+    ["id", "reich", "untertitel", "zeitraum", "farbe", "einleitung", "hinweis", "quellen", "perioden"], "reich");
+  const vertIds = new Set(D.VERTIEFUNGEN.map((v) => v.id));
+  D.DYNASTIEN.forEach((r) => {
+    const gesehen = new Set();
+    r.perioden.forEach((p) => {
+      pruefeFelder("Perioden in '" + r.reich + "'", p.dynastien, ["name", "zeitraum", "kurz", "herrscher"], "name");
+      p.dynastien.forEach((d) => {
+        pruefeFelder("Dynastie '" + d.name + "'", d.herrscher, ["name", "regierung", "kurz"], "name");
+        d.herrscher.forEach((h) => {
+          // Ein Name kann in einem Reich nur einmal vorkommen; sonst ist ein
+          // Herrscher versehentlich zweimal eingetragen.
+          if (gesehen.has(h.name)) meldeFehler("Dynastien '" + r.reich + "': '" + h.name + "' steht doppelt");
+          gesehen.add(h.name);
+          if (h.vertiefung && !vertIds.has(h.vertiefung)) {
+            meldeFehler("Dynastien '" + r.reich + "': '" + h.name + "' verweist auf fehlende Vertiefung '" + h.vertiefung + "'");
+          }
+        });
+      });
+    });
+  });
+
   // Länder
   Object.entries(D.COUNTRY_TIMELINES).forEach(([land, d]) => {
     if (!d.color) meldeFehler("Zeitleiste '" + land + "': keine Farbe");
@@ -418,6 +442,10 @@ function pruefeInhalte(D) {
     " · Zitate " + D.QUOTES.length +
     " · Mythen " + D.MYTHEN.length +
     " · Fakten " + D.SURPRISING_FACTS.length);
+  console.log("  Dynastien: " + D.DYNASTIEN.length + " Reiche · " +
+    D.DYNASTIEN.reduce((a, r) => a + r.perioden.reduce((b, p) => b + p.dynastien.length, 0), 0) + " Dynastien · " +
+    D.DYNASTIEN.reduce((a, r) => a + r.perioden.reduce((b, p) =>
+      b + p.dynastien.reduce((c, d) => c + d.herrscher.length, 0), 0), 0) + " Herrscher");
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;

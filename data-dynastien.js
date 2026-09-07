@@ -1490,5 +1490,533 @@ const DYNASTIEN = [
    ]
   }
  ]
+},
+{
+ "id": "persien",
+ "reich": "Persien und Iran",
+ "untertitel": "Von Kyros bis zum Sturz des Schahs",
+ "zeitraum": "559 v. Chr. – 1979",
+ "farbe": "#6b4f9a",
+ "einleitung": "Über 2.500 Jahre Monarchie, dreimal unterbrochen von Fremdherrschaft und jedes Mal kulturell wiederhergestellt. Griechen, Araber, Türken und Mongolen eroberten das Land – und übernahmen anschließend persische Verwaltung, Sprache und Hofkultur.",
+ "hinweis": "Für die Achämeniden und Sasaniden sind die Daten weitgehend gesichert. Bei den Parthern ist die Lage schlecht: Fast alle Nachrichten stammen von römischen Gegnern, mehrere Könige regierten gleichzeitig, und Reihenfolge wie Regierungsjahre sind teils unsicher. Für die islamische Zeit sind hier Dynastien statt einzelner Herrscher aufgeführt, weil sich Gebiete und Ansprüche überlappten.",
+ "quellen": [
+  "Encyclopaedia Britannica: Ancient Iran; Achaemenian dynasty; Sasanian dynasty",
+  "The Cambridge History of Iran, Bände 2–7",
+  "Josef Wiesehöfer: Das antike Persien"
+ ],
+ "perioden": [
+  {
+   "name": "Altpersische Zeit",
+   "zeitraum": "550–330 v. Chr.",
+   "dynastien": [
+    {
+     "name": "Achämeniden",
+     "zeitraum": "550–330 v. Chr.",
+     "kurz": "Das erste Weltreich der Geschichte, von der Ägäis bis zum Indus. Es verwaltete dutzende Völker über Satrapien, ließ ihnen Sprache und Religion und band sie über ein Straßen- und Botensystem zusammen.",
+     "herrscher": [
+      {
+       "name": "Kyros II.",
+       "regierung": "559–530 v. Chr.",
+       "kurz": "Eroberte Medien, Lydien und Babylon. Der nach ihm benannte Tonzylinder verkündet die Rückkehr verschleppter Gruppen und wird oft, aber irreführend, als erste Menschenrechtserklärung bezeichnet.",
+       "vertiefung": "kyros2"
+      },
+      {
+       "name": "Kambyses II.",
+       "regierung": "530–522 v. Chr.",
+       "kurz": "Eroberte Ägypten. Herodots Bericht über seine Grausamkeiten gilt heute als von ägyptischen Priestern gefärbt."
+      },
+      {
+       "name": "Dareios I.",
+       "regierung": "522–486 v. Chr.",
+       "kurz": "Ordnete das Reich in Satrapien, führte eine Reichswährung ein und ließ die Königsstraße bauen. Die Inschrift von Behistun lieferte den Schlüssel zur Keilschrift.",
+       "vertiefung": "dareios1"
+      },
+      {
+       "name": "Xerxes I.",
+       "regierung": "486–465 v. Chr.",
+       "kurz": "Sein Griechenlandfeldzug scheiterte bei Salamis und Plataiai. In Persepolis vollendete er die Bauten seines Vaters."
+      },
+      {
+       "name": "Artaxerxes I.",
+       "regierung": "465–424 v. Chr.",
+       "kurz": "Lange, vergleichsweise ruhige Regierung; unter ihm endeten die Perserkriege durch Vertrag."
+      },
+      {
+       "name": "Artaxerxes II.",
+       "regierung": "404–358 v. Chr.",
+       "kurz": "Verlor Ägypten, hielt aber das Reich zusammen. In seiner Zeit spielt der Zug der Zehntausend."
+      },
+      {
+       "name": "Dareios III.",
+       "regierung": "336–330 v. Chr.",
+       "kurz": "Verlor bei Issos und Gaugamela gegen Alexander und wurde auf der Flucht von einem eigenen Satrapen ermordet."
+      }
+     ],
+     "weitere": "Weitere: Kyros I. und Kambyses I. als Kleinkönige vor der Reichsgründung, Bardiya/Smerdis (522), Dareios II. (424–404) und Artaxerxes III. (358–338), unter dem Ägypten zurückerobert wurde, sowie Artaxerxes IV. (338–336)."
+    }
+   ]
+  },
+  {
+   "name": "Hellenistische und parthische Zeit",
+   "zeitraum": "330 v. Chr. – 224 n. Chr.",
+   "dynastien": [
+    {
+     "name": "Seleukiden in Iran",
+     "zeitraum": "312–141 v. Chr.",
+     "kurz": "Nach Alexanders Tod fiel der Osten an seinen General Seleukos. Griechische Städte und Verwaltung überlagerten die iranische Welt, ohne sie zu ersetzen.",
+     "herrscher": [
+      {
+       "name": "Seleukos I.",
+       "regierung": "312–281 v. Chr.",
+       "kurz": "Begründete das Reich, tauschte seine indischen Gebiete gegen 500 Kriegselefanten und gründete Seleukia am Tigris."
+      },
+      {
+       "name": "Antiochos III.",
+       "regierung": "222–187 v. Chr.",
+       "kurz": "Stellte die Reichsgrenzen kurzzeitig wieder her und scheiterte dann an Rom."
+      }
+     ],
+     "weitere": "Rund zwanzig weitere Seleukidenherrscher regierten bis 141 v. Chr. über iranisches Gebiet, danach nur noch über Syrien."
+    },
+    {
+     "name": "Arsakiden (Parther)",
+     "zeitraum": "247 v. Chr. – 224 n. Chr.",
+     "kurz": "Ein Reiternomadenvolk übernahm den iranischen Raum und hielt Rom fast drei Jahrhunderte in Schach. Die Quellenlage ist dünn: Fast alles Überlieferte stammt von römischen Gegnern.",
+     "herrscher": [
+      {
+       "name": "Arsakes I.",
+       "regierung": "ab ca. 247 v. Chr.",
+       "kurz": "Namensgeber der Dynastie; alle Nachfolger führten den Titel Arsakes zusätzlich zum eigenen Namen."
+      },
+      {
+       "name": "Mithridates I.",
+       "regierung": "171–132 v. Chr.",
+       "kurz": "Machte aus einem Randreich eine Großmacht, indem er Medien und Mesopotamien nahm."
+      },
+      {
+       "name": "Orodes II.",
+       "regierung": "57–37 v. Chr.",
+       "kurz": "Unter ihm vernichteten die Parther bei Carrhae ein römisches Heer und töteten Crassus."
+      },
+      {
+       "name": "Artabanos IV.",
+       "regierung": "213–224",
+       "kurz": "Letzter Partherkönig, unterlag dem sasanidischen Aufsteiger Ardaschir."
+      }
+     ],
+     "weitere": "Über zwanzig weitere Könige regierten dazwischen, oft mehrere zugleich; die Reihenfolge ist wegen der schlechten Quellenlage teils unsicher."
+    }
+   ]
+  },
+  {
+   "name": "Sasanidenreich",
+   "zeitraum": "224–651",
+   "dynastien": [
+    {
+     "name": "Sasaniden",
+     "zeitraum": "224–651",
+     "kurz": "Das letzte vorislamische Großreich Irans: zentralisiert, mit dem Zoroastrismus als Staatsreligion und über vier Jahrhunderte Roms ebenbürtiger Gegner.",
+     "herrscher": [
+      {
+       "name": "Ardaschir I.",
+       "regierung": "224–242",
+       "kurz": "Stürzte die Parther und begründete die Dynastie; er berief sich auf die Achämeniden als Vorbild."
+      },
+      {
+       "name": "Schapur I.",
+       "regierung": "240–270",
+       "kurz": "Besiegte drei römische Kaiser und nahm Valerian gefangen – der einzige römische Kaiser, der je in Gefangenschaft geriet. Ließ den Triumph in Fels hauen.",
+       "vertiefung": "schapur1"
+      },
+      {
+       "name": "Schapur II.",
+       "regierung": "309–379",
+       "kurz": "Wurde der Überlieferung nach schon als Ungeborener zum König ausgerufen und regierte siebzig Jahre."
+      },
+      {
+       "name": "Chosrau I.",
+       "regierung": "531–579",
+       "kurz": "Reformierte Steuer und Heer, förderte Wissenschaft und Übersetzung. Griechische Philosophen fanden nach der Schließung der Athener Akademie an seinem Hof Aufnahme.",
+       "vertiefung": "chosrau1"
+      },
+      {
+       "name": "Chosrau II.",
+       "regierung": "590–628",
+       "kurz": "Eroberte Syrien, Ägypten und Jerusalem, verlor alles wieder an Herakleios und wurde vom eigenen Sohn gestürzt."
+      },
+      {
+       "name": "Yazdegerd III.",
+       "regierung": "632–651",
+       "kurz": "Letzter Sasanidenkönig; nach der Niederlage gegen die arabischen Heere auf der Flucht ermordet."
+      }
+     ],
+     "weitere": "Zwischen diesen regierten rund zwei Dutzend weitere Könige, darunter Bahram V. (420–438), Kavadh I. (488–531) und in den Wirren nach 628 mehrere Herrscher binnen weniger Jahre, unter ihnen die Königinnen Boran und Azarmidocht."
+    }
+   ]
+  },
+  {
+   "name": "Iranische Dynastien der islamischen Zeit",
+   "zeitraum": "651–1501",
+   "dynastien": [
+    {
+     "name": "Frühe iranische Dynastien",
+     "zeitraum": "821–1055",
+     "kurz": "Nach der arabischen Eroberung entstanden im Osten Irans halbautonome Reiche, die das Persische als Literatursprache wiederbelebten.",
+     "herrscher": [
+      {
+       "name": "Samaniden",
+       "regierung": "819–999",
+       "kurz": "Unter ihnen wurde Buchara ein Bildungszentrum; hier entstand die neupersische Literatursprache, hier wirkte Ibn Sina."
+      },
+      {
+       "name": "Buyiden",
+       "regierung": "934–1062",
+       "kurz": "Schiitische Herrscher, die Bagdad beherrschten und den abbasidischen Kalifen zur Symbolfigur machten."
+      }
+     ],
+     "weitere": "Dazu Tahiriden (821–873), Saffariden (861–1003) und Ziyariden (931–1090) in wechselnden Gebieten."
+    },
+    {
+     "name": "Türkische und mongolische Herrschaft",
+     "zeitraum": "1037–1501",
+     "kurz": "Fremde Dynastien regieren Iran, übernehmen aber persische Verwaltung, Sprache und Hofkultur – die Eroberer werden kulturell erobert.",
+     "herrscher": [
+      {
+       "name": "Seldschuken",
+       "regierung": "1037–1194",
+       "kurz": "Alp Arslan siegte 1071 bei Manzikert; sein Wesir Nizam al-Mulk schrieb ein Standardwerk der Staatskunst und gründete Hochschulen."
+      },
+      {
+       "name": "Ilchane",
+       "regierung": "1256–1335",
+       "kurz": "Hülegü zerstörte 1258 Bagdad; sein Nachfahre Ghazan trat zum Islam über und förderte Wissenschaft und Geschichtsschreibung."
+      },
+      {
+       "name": "Timuriden",
+       "regierung": "1370–1507",
+       "kurz": "Timur machte Samarkand zur Hauptstadt; sein Enkel Ulug Beg baute eine Sternwarte und erstellte den genauesten Sternkatalog seit Ptolemäus."
+      }
+     ],
+     "weitere": "Dazwischen Choresm-Schahs (1077–1231), Muzaffariden und Dschalayiriden sowie die turkmenischen Verbände Qara Qoyunlu und Aq Qoyunlu (1375–1508)."
+    }
+   ]
+  },
+  {
+   "name": "Neuzeitliches Iran",
+   "zeitraum": "1501–1979",
+   "dynastien": [
+    {
+     "name": "Safawiden",
+     "zeitraum": "1501–1736",
+     "kurz": "Die Dynastie, die Iran zum schiitischen Staat machte – eine Entscheidung, die die Region bis heute prägt.",
+     "herrscher": [
+      {
+       "name": "Ismail I.",
+       "regierung": "1501–1524",
+       "kurz": "Erklärte mit fünfzehn Jahren die Zwölferschia zur Staatsreligion und setzte sie gegen Widerstand durch. Seine Niederlage gegen die Osmanen 1514 begrenzte das Reich nach Westen.",
+       "vertiefung": "ismail1"
+      },
+      {
+       "name": "Abbas I.",
+       "regierung": "1588–1629",
+       "kurz": "Machte Isfahan zu einer der prächtigsten Städte der Welt, öffnete das Land europäischem Handel und zentralisierte hart."
+      },
+      {
+       "name": "Sultan Husayn",
+       "regierung": "1694–1722",
+       "kurz": "Unter ihm brach das Reich nach einer afghanischen Invasion zusammen."
+      }
+     ],
+     "weitere": "Weitere: Tahmasp I. (1524–1576), Ismail II., Mohammad Chodabande, Safi I., Abbas II., Suleiman I. sowie zwei Gegenkönige in den Wirren nach 1722."
+    },
+    {
+     "name": "Afschariden, Zand und Kadscharen",
+     "zeitraum": "1736–1925",
+     "kurz": "Zwei Jahrhunderte zwischen militärischer Erneuerung und wachsendem Druck durch Russland und Großbritannien.",
+     "herrscher": [
+      {
+       "name": "Nader Schah",
+       "regierung": "1736–1747",
+       "kurz": "Feldherr aus einfachen Verhältnissen, eroberte Delhi und nahm den Pfauenthron mit. Wurde von eigenen Offizieren ermordet."
+      },
+      {
+       "name": "Karim Khan Zand",
+       "regierung": "1751–1779",
+       "kurz": "Nannte sich bescheiden Anwalt des Volkes statt Schah; seine Regierung gilt als eine der friedlichsten der iranischen Neuzeit."
+      },
+      {
+       "name": "Nasir ad-Din Schah",
+       "regierung": "1848–1896",
+       "kurz": "Regierte fast fünfzig Jahre, führte Telegrafen und Fotografie ein und musste eine Tabakkonzession an Briten nach landesweitem Boykott zurücknehmen – der erste erfolgreiche Massenprotest Irans."
+      }
+     ],
+     "weitere": "Weitere: Agha Mohammad Khan (1789–1797), Fath Ali Schah (1797–1834), Mohammad Schah (1834–1848), Mozaffar ad-Din (1896–1907), unter dem die Verfassungsrevolution begann, Mohammad Ali (1907–1909) und Ahmad Schah (1909–1925)."
+    },
+    {
+     "name": "Pahlavi",
+     "zeitraum": "1925–1979",
+     "kurz": "Zwei Herrscher in gut fünfzig Jahren, beide auf Modernisierung von oben ausgerichtet, beide mit fremder Hilfe an oder auf dem Thron gehalten.",
+     "herrscher": [
+      {
+       "name": "Reza Schah",
+       "regierung": "1925–1941",
+       "kurz": "Offizier, der sich zum Schah erhob. Modernisierte Recht, Bildung und Infrastruktur, verbot den Schleier und unterdrückte jede Opposition. Wurde 1941 von Briten und Sowjets zur Abdankung gezwungen."
+      },
+      {
+       "name": "Mohammad Reza Schah",
+       "regierung": "1941–1979",
+       "kurz": "Nach dem von CIA und britischem Geheimdienst gestützten Sturz Mossadeghs 1953 regierte er zunehmend autoritär. Die Revolution von 1979 beendete 2.500 Jahre Monarchie in Iran.",
+       "vertiefung": "sturz-schah"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "japan",
+ "reich": "Japan",
+ "untertitel": "Tennō und Shogune von der Sage bis heute",
+ "zeitraum": "traditionell ab 660 v. Chr.",
+ "farbe": "#a03a5a",
+ "einleitung": "Japan hat die längste durchgehend überlieferte Herrscherreihe der Welt – und zugleich die ungewöhnlichste: Über den größten Teil der Geschichte regierte der Tennō nicht, sondern legitimierte den, der regierte. Deshalb stehen hier Tennō und Shogune nebeneinander.",
+ "hinweis": "Die traditionelle Zählung von 126 Tennō beginnt 660 v. Chr. mit einer Sagengestalt. Die Tennō 2 bis 9 gelten in der Forschung als nachträglich eingefügt; belastbar wird die Überlieferung erst ab dem 6. Jahrhundert. Regierungsjahre bedeuten außerdem selten tatsächliche Macht: In der Heian-Zeit regierten die Fujiwara, in der Kamakura-Zeit die Hōjō, danach die Shogune. Genannt sind hier die Herrscher, deren Wirken erkennbar ist – die vollständige Reihe umfasst 126 Tennō und 47 Shogune dreier Shogunate.",
+ "quellen": [
+  "Encyclopaedia Britannica: Japan, history; List of emperors of Japan",
+  "The Cambridge History of Japan, Bände 1–6",
+  "Kojiki und Nihon Shoki als antike, legitimatorisch gefärbte Quellen"
+ ],
+ "perioden": [
+  {
+   "name": "Frühzeit und Legende",
+   "zeitraum": "660 v. Chr. – 592 n. Chr.",
+   "dynastien": [
+    {
+     "name": "Legendäre Tennō",
+     "zeitraum": "660 v. Chr. – 5. Jh.",
+     "kurz": "Die Reichsgründung wird traditionell auf 660 v. Chr. datiert. Die ersten Tennō sind Sagengestalten; die Chroniken Kojiki und Nihon Shoki entstanden erst im 8. Jahrhundert und dienten der Legitimation.",
+     "herrscher": [
+      {
+       "name": "Jimmu",
+       "regierung": "traditionell 660–585 v. Chr.",
+       "kurz": "Erster Tennō der Überlieferung, Nachkomme der Sonnengöttin Amaterasu. Historisch nicht fassbar."
+      },
+      {
+       "name": "Ōjin und Nintoku",
+       "regierung": "4./5. Jahrhundert",
+       "kurz": "Erste Herrscher, denen sich archäologisch etwas zuordnen lässt – die riesigen Schlüssellochgräber der Kofun-Zeit."
+      }
+     ],
+     "weitere": "Die Tennō 2 bis 9 gelten in der Forschung als nachträglich eingefügt, um die Reihe zu verlängern. Ab Kinmei (539–571) wird die Überlieferung belastbar."
+    }
+   ]
+  },
+  {
+   "name": "Asuka- und Nara-Zeit",
+   "zeitraum": "592–794",
+   "dynastien": [
+    {
+     "name": "Asuka-Zeit",
+     "zeitraum": "592–710",
+     "kurz": "Buddhismus, chinesische Schrift und ein nach chinesischem Vorbild geordneter Staat kommen ins Land.",
+     "herrscher": [
+      {
+       "name": "Suiko",
+       "regierung": "592–628",
+       "kurz": "Erste Frau auf dem Thron, deren Herrschaft gesichert ist. Unter ihr wirkte der Regent Shōtoku, dem die Siebzehn-Artikel-Verfassung zugeschrieben wird.",
+       "vertiefung": "japan-suiko"
+      },
+      {
+       "name": "Tenji",
+       "regierung": "661–672",
+       "kurz": "Trieb nach der Niederlage gegen China die Taika-Reformen voran, die Land und Steuern neu ordneten."
+      },
+      {
+       "name": "Temmu",
+       "regierung": "673–686",
+       "kurz": "Ließ die Reichschroniken beginnen und führte den Titel Tennō ein."
+      }
+     ],
+     "weitere": "Weitere: Jomei, Kōgyoku/Saimei (zweimal regierend), Kōtoku, Jitō, Mommu und Gemmei."
+    },
+    {
+     "name": "Nara-Zeit",
+     "zeitraum": "710–794",
+     "kurz": "Erste dauerhafte Hauptstadt in Nara. Der Buddhismus wird Staatsreligion – und die Klöster so mächtig, dass der Hof am Ende vor ihnen flieht.",
+     "herrscher": [
+      {
+       "name": "Shōmu",
+       "regierung": "724–749",
+       "kurz": "Ließ den Großen Buddha von Nara gießen, für den fast der gesamte Kupfervorrat des Landes verbraucht wurde."
+      },
+      {
+       "name": "Kōken/Shōtoku",
+       "regierung": "749–758 und 764–770",
+       "kurz": "Regierte zweimal; ihre Nähe zum Mönch Dōkyō führte fast zu einem buddhistischen Kaiser und danach zu einem faktischen Ausschluss von Frauen vom Thron."
+      }
+     ],
+     "weitere": "Weitere: Gemmei, Genshō, Junnin, Kōnin."
+    }
+   ]
+  },
+  {
+   "name": "Heian-Zeit",
+   "zeitraum": "794–1185",
+   "dynastien": [
+    {
+     "name": "Heian-Tennō und Fujiwara-Regenten",
+     "zeitraum": "794–1185",
+     "kurz": "Vier Jahrhunderte Hofkultur. Die tatsächliche Macht liegt bei der Familie Fujiwara, die als Regenten regiert und ihre Töchter mit den Tennō verheiratet – der Tennō herrscht, aber regiert nicht.",
+     "herrscher": [
+      {
+       "name": "Kanmu",
+       "regierung": "781–806",
+       "kurz": "Verlegte die Hauptstadt nach Heian-kyō, dem heutigen Kyōto, um dem Einfluss der Klöster von Nara zu entkommen.",
+       "vertiefung": "japan-kanmu"
+      },
+      {
+       "name": "Fujiwara no Michinaga",
+       "regierung": "als Regent 995–1027",
+       "kurz": "Kein Tennō, aber der mächtigste Mann Japans. In seiner Zeit schrieb Murasaki Shikibu die Geschichte vom Prinzen Genji."
+      },
+      {
+       "name": "Shirakawa",
+       "regierung": "1073–1087, danach als Klosterkaiser",
+       "kurz": "Begründete die Praxis, abzudanken und aus dem Kloster weiterzuregieren – ein System, in dem der amtierende Tennō noch weniger zu sagen hatte."
+      },
+      {
+       "name": "Antoku",
+       "regierung": "1180–1185",
+       "kurz": "Ertrank als Sechsjähriger in der Seeschlacht von Dan-no-ura, mit der die Kriegerherrschaft begann."
+      }
+     ],
+     "weitere": "Rund dreißig weitere Tennō regierten in dieser Zeit, meist als Kinder eingesetzt und früh zur Abdankung gebracht."
+    }
+   ]
+  },
+  {
+   "name": "Zeit der Kriegerherrschaft",
+   "zeitraum": "1185–1868",
+   "dynastien": [
+    {
+     "name": "Kamakura-Shogunat",
+     "zeitraum": "1185–1333",
+     "kurz": "Erstmals regiert ein Krieger statt des Hofes. Der Tennō bleibt in Kyōto und behält die religiöse Würde, die Macht liegt in Kamakura – und bald nicht einmal beim Shogun, sondern bei dessen Regenten aus der Familie Hōjō.",
+     "herrscher": [
+      {
+       "name": "Minamoto no Yoritomo",
+       "regierung": "Shogun 1192–1199",
+       "kurz": "Begründete das Shogunat. Nach dem Tod seiner Söhne ging die Macht an die Familie seiner Frau über."
+      },
+      {
+       "name": "Hōjō Tokimune",
+       "regierung": "Regent 1268–1284",
+       "kurz": "Wehrte die beiden mongolischen Invasionen von 1274 und 1281 ab; die Stürme, die die Flotten zerstörten, gingen als Kamikaze in die Überlieferung ein."
+      },
+      {
+       "name": "Go-Daigo",
+       "regierung": "1318–1339",
+       "kurz": "Versuchte, die Macht an den Thron zurückzuholen. Seine Kenmu-Restauration hielt drei Jahre und führte zur Spaltung in einen Nord- und einen Südhof.",
+       "vertiefung": "japan-godaigo"
+      }
+     ],
+     "weitere": "Neun Shogune und sechzehn Hōjō-Regenten folgten aufeinander; die meisten Shogune waren Kinder aus dem Hochadel ohne eigene Macht."
+    },
+    {
+     "name": "Muromachi-Shogunat und Reichseinigung",
+     "zeitraum": "1336–1603",
+     "kurz": "Die Ashikaga regieren aus Kyōto, verlieren aber die Kontrolle über die Provinzen. Nach 1467 zerfällt das Land in ein Jahrhundert Bürgerkrieg, aus dem drei Männer die Einigung erzwingen.",
+     "herrscher": [
+      {
+       "name": "Ashikaga Yoshimitsu",
+       "regierung": "Shogun 1368–1394",
+       "kurz": "Höhepunkt der Ashikaga-Macht; ließ den Goldenen Pavillon bauen und nahm vom chinesischen Kaiser den Titel König von Japan an."
+      },
+      {
+       "name": "Oda Nobunaga",
+       "regierung": "1568–1582",
+       "kurz": "Brach die Macht der Klöster und setzte als Erster Feuerwaffen in großem Stil ein. Wurde von einem eigenen General zum Selbstmord gezwungen."
+      },
+      {
+       "name": "Toyotomi Hideyoshi",
+       "regierung": "1585–1598",
+       "kurz": "Aus bäuerlicher Herkunft aufgestiegen, vollendete die Einigung, trennte Krieger und Bauern und scheiterte an der Invasion Koreas."
+      },
+      {
+       "name": "Tokugawa Ieyasu",
+       "regierung": "Shogun 1603–1605",
+       "kurz": "Setzte sich 1600 bei Sekigahara durch und begründete ein Shogunat, das zweieinhalb Jahrhunderte hielt.",
+       "vertiefung": "japan-ieyasu"
+      }
+     ],
+     "weitere": "Fünfzehn Ashikaga-Shogune regierten zwischen 1338 und 1573, die späteren nur noch dem Namen nach."
+    },
+    {
+     "name": "Tokugawa-Shogunat (Edo-Zeit)",
+     "zeitraum": "1603–1868",
+     "kurz": "Zweieinhalb Jahrhunderte Frieden bei weitgehender Abschottung. Der Tennō in Kyōto ist ohne politische Macht, aber unangetastet – gerade das macht ihn später zur Alternative.",
+     "herrscher": [
+      {
+       "name": "Tokugawa Iemitsu",
+       "regierung": "Shogun 1623–1651",
+       "kurz": "Vollendete die Abschließung: Ausreiseverbot, Christenverbot, Handel nur noch über Nagasaki mit Niederländern und Chinesen."
+      },
+      {
+       "name": "Tokugawa Yoshimune",
+       "regierung": "Shogun 1716–1745",
+       "kurz": "Reformierte Finanzen und Recht und lockerte das Verbot westlicher Bücher – der Beginn der Hollandkunde."
+      },
+      {
+       "name": "Tokugawa Yoshinobu",
+       "regierung": "Shogun 1866–1867",
+       "kurz": "Letzter Shogun; gab die Macht an den Tennō zurück, um einen Bürgerkrieg zu vermeiden – der trotzdem kam."
+      }
+     ],
+     "weitere": "Fünfzehn Tokugawa-Shogune regierten zwischen 1603 und 1868. Die Tennō dieser Zeit – von Go-Yōzei bis Kōmei – hatten keinerlei politische Macht."
+    }
+   ]
+  },
+  {
+   "name": "Modernes Japan",
+   "zeitraum": "1868–heute",
+   "dynastien": [
+    {
+     "name": "Tennō der Moderne",
+     "zeitraum": "1868–heute",
+     "kurz": "Mit der Meiji-Restauration kehrt der Tennō ins Zentrum zurück – zunächst als Symbol der Modernisierung, dann als Legitimation des Krieges, schließlich als Symbol des Staates ohne Regierungsgewalt.",
+     "herrscher": [
+      {
+       "name": "Meiji",
+       "regierung": "1867–1912",
+       "kurz": "In seinem Namen wurde Japan binnen einer Generation vom Feudalstaat zur Industriemacht umgebaut.",
+       "vertiefung": "meiji"
+      },
+      {
+       "name": "Taishō",
+       "regierung": "1912–1926",
+       "kurz": "Gesundheitlich schwer beeinträchtigt; in seiner Zeit gewann das Parlament vorübergehend an Gewicht."
+      },
+      {
+       "name": "Shōwa (Hirohito)",
+       "regierung": "1926–1989",
+       "kurz": "Längste Regierung eines japanischen Tennō. Seine Rolle im Krieg ist bis heute umstritten; 1946 erklärte er öffentlich, kein Gott zu sein.",
+       "vertiefung": "japan-showa"
+      },
+      {
+       "name": "Heisei (Akihito)",
+       "regierung": "1989–2019",
+       "kurz": "Bemühte sich um Aussöhnung mit den Nachbarländern und dankte als erster Tennō seit 200 Jahren zu Lebzeiten ab."
+      },
+      {
+       "name": "Reiwa (Naruhito)",
+       "regierung": "seit 2019",
+       "kurz": "126. Tennō der traditionellen Zählung."
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
 ];
