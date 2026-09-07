@@ -1385,7 +1385,7 @@ const EPOCHS = [
     "quelle": "Britannica: Black Death; Aberth und Benedictow (2021) am oberen, vorsichtige Schätzungen am unteren Rand"
    },
    {
-    "year": 1358,
+    "year": 1356,
     "title": "Goldene Bulle",
     "text": "Kaiser Karl IV. regelt die Königswahl im Heiligen Römischen Reich und stärkt die Kurfürsten."
    },
@@ -2924,7 +2924,7 @@ const EPOCHS = [
     "text": "Japans Überraschungsangriff bringt die USA in den Zweiten Weltkrieg."
    },
    {
-    "year": 1941,
+    "year": 1942,
     "title": "Wannseekonferenz",
     "text": "NS-Funktionäre planen die systematische Ermordung der europäischen Juden – organisatorischer Kern des Holocaust."
    },

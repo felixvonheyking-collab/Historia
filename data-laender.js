@@ -30,9 +30,44 @@ const COUNTRY_TIMELINES = {
     "text": "Höhepunkt des Investiturstreits zwischen Kaiser und Papst um die Vormachtstellung."
    },
    {
+    "year": 1122,
+    "title": "Wormser Konkordat",
+    "text": "Der Investiturstreit endet mit einem Kompromiss: Der Kaiser verleiht die weltlichen Rechte, der Papst das geistliche Amt. Das Nebeneinander zweier Gewalten wird zum Dauerzustand des Reichs."
+   },
+   {
+    "year": 1250,
+    "title": "Tod Friedrichs II. und Ende der Staufer",
+    "text": "Mit dem Kaiser stirbt der Versuch, Reich und Sizilien zu einer Macht zu verbinden. Es folgt eine Zeit ohne allgemein anerkannten König."
+   },
+   {
+    "year": 1356,
+    "title": "Goldene Bulle",
+    "text": "Karl IV. legt fest, wer den König wählt: sieben Kurfürsten. Der Papst hat kein Mitspracherecht mehr – das Reich regelt seine Spitze selbst."
+   },
+   {
+    "year": 1370,
+    "title": "Frieden von Stralsund",
+    "text": "Die Hanse besiegt Dänemark und bestimmt für ein Jahrhundert den Handel im Ostseeraum. Ein Städtebund, kein Staat, wird zur Großmacht."
+   },
+   {
+    "year": 1455,
+    "title": "Gutenbergs Bibel in Mainz",
+    "text": "Der Druck mit beweglichen Lettern macht Bücher vervielfältigbar. Ohne ihn wäre die Reformation zwei Generationen später kaum so schnell verlaufen."
+   },
+   {
     "year": 1517,
     "title": "Beginn der Reformation",
     "text": "Martin Luthers Thesen spalten die Kirche und prägen die deutsche Geschichte nachhaltig."
+   },
+   {
+    "year": 1524,
+    "title": "Deutscher Bauernkrieg",
+    "text": "Der größte Aufstand Mitteleuropas vor 1789 beginnt im Südwesten und erfasst binnen Monaten weite Teile des Reichs. 1525 wird er niedergeschlagen; Luther stellt sich gegen die Aufständischen – die Reformation wird zur Sache der Fürsten."
+   },
+   {
+    "year": 1555,
+    "title": "Augsburger Religionsfrieden",
+    "text": "Der Landesherr bestimmt die Konfession seines Gebiets. Der Frieden hält ein halbes Jahrhundert und lässt die Reformierten außen vor – ein Grund für den nächsten Krieg."
    },
    {
     "year": 1618,
@@ -40,14 +75,39 @@ const COUNTRY_TIMELINES = {
     "text": "Einer der verheerendsten Kriege der deutschen Geschichte verwüstet weite Teile des Reiches."
    },
    {
+    "year": 1648,
+    "title": "Westfälischer Frieden",
+    "text": "Nach dreißig Jahren Krieg werden die Reichsstände nahezu souverän. Die Bevölkerung ist regional um bis zu ein Drittel geschrumpft."
+   },
+   {
     "year": 1701,
     "title": "Königreich Preußen entsteht",
     "text": "Brandenburg-Preußen steigt zur europäischen Militärmacht auf."
    },
    {
+    "year": 1740,
+    "title": "Preußen greift nach Schlesien",
+    "text": "Friedrich II. bricht einen Vertrag und beginnt drei Kriege um die Provinz. Preußen wird europäische Großmacht – und Österreichs dauerhafter Rivale."
+   },
+   {
     "year": 1806,
     "title": "Ende des Heiligen Römischen Reiches",
     "text": "Unter napoleonischem Druck legt Kaiser Franz II. die Reichskrone nieder."
+   },
+   {
+    "year": 1813,
+    "title": "Völkerschlacht bei Leipzig",
+    "text": "Rund 500.000 Soldaten kämpfen bei der bis dahin größten Schlacht Europas. Napoleons Herrschaft über Deutschland endet."
+   },
+   {
+    "year": 1815,
+    "title": "Deutscher Bund",
+    "text": "Der Wiener Kongress schafft einen losen Staatenbund statt eines Nationalstaats. Die Enttäuschung darüber trägt die nationale Bewegung der folgenden Jahrzehnte."
+   },
+   {
+    "year": 1834,
+    "title": "Deutscher Zollverein",
+    "text": "Binnenzölle fallen, ein einheitlicher Wirtschaftsraum entsteht – wirtschaftliche Einheit lange vor der politischen."
    },
    {
     "year": 1848,
@@ -60,9 +120,29 @@ const COUNTRY_TIMELINES = {
     "text": "Unter preußischer Führung entsteht das Deutsche Kaiserreich."
    },
    {
+    "year": 1883,
+    "title": "Bismarcks Sozialgesetze",
+    "text": "Kranken-, Unfall- und Rentenversicherung entstehen, ausdrücklich um der Sozialdemokratie den Zulauf zu nehmen. Das Grundmuster des Sozialstaats bleibt bis heute erkennbar."
+   },
+   {
+    "year": 1914,
+    "title": "Deutschland erklärt Russland den Krieg",
+    "text": "Deutschland erklärt Russland und Frankreich den Krieg und marschiert durch das neutrale Belgien. Die Kriegsbegeisterung des Sommers hält keine zwei Jahre."
+   },
+   {
     "year": 1918,
     "title": "Novemberrevolution",
     "text": "Kaiser Wilhelm II. dankt ab, die Weimarer Republik wird ausgerufen."
+   },
+   {
+    "year": 1919,
+    "title": "Versailles und die Weimarer Verfassung",
+    "text": "Der Friedensvertrag legt Gebietsverluste und Reparationen fest, die Verfassung schafft eine Demokratie mit Frauenwahlrecht. Beide werden von Anfang an bekämpft."
+   },
+   {
+    "year": 1923,
+    "title": "Hyperinflation",
+    "text": "Das Geld verliert binnen Monaten jeden Wert; ein Brot kostet im November Milliarden Mark. Die Währungsreform beendet die Inflation, das Misstrauen bleibt."
    },
    {
     "year": 1933,
@@ -70,9 +150,29 @@ const COUNTRY_TIMELINES = {
     "text": "Adolf Hitler wird Reichskanzler – Beginn der Diktatur und des Zivilisationsbruchs des Holocaust."
    },
    {
+    "year": 1935,
+    "title": "Nürnberger Gesetze",
+    "text": "Die Entrechtung der jüdischen Bevölkerung wird Gesetz. Der Weg von der Ausgrenzung zur Vernichtung ist damit rechtlich vorbereitet."
+   },
+   {
+    "year": 1938,
+    "title": "Novemberpogrome",
+    "text": "In der Nacht vom 9. auf den 10. November brennen Synagogen im ganzen Land. Die Gewalt ist staatlich organisiert und öffentlich sichtbar."
+   },
+   {
+    "year": 1942,
+    "title": "Wannseekonferenz",
+    "text": "Hohe Beamte koordinieren die Ermordung der europäischen Juden. Die Konferenz beschloss den Mord nicht, sie organisierte ihn – das Protokoll ist eines der wichtigsten Dokumente der Täterseite."
+   },
+   {
     "year": 1945,
     "title": "Bedingungslose Kapitulation",
     "text": "Das Deutsche Reich kapituliert nach dem Zweiten Weltkrieg vollständig; Besatzungszonen der Alliierten entstehen."
+   },
+   {
+    "year": 1948,
+    "title": "Währungsreform und Berliner Luftbrücke",
+    "text": "Die D-Mark kommt, die Sowjetunion sperrt die Zufahrtswege nach West-Berlin. Elf Monate lang versorgen Flugzeuge die Stadt."
    },
    {
     "year": 1949,
@@ -80,9 +180,34 @@ const COUNTRY_TIMELINES = {
     "text": "Deutschland wird für über 40 Jahre in zwei Staaten geteilt."
    },
    {
+    "year": 1953,
+    "title": "Aufstand des 17. Juni",
+    "text": "Aus einem Streik gegen erhöhte Arbeitsnormen wird ein Aufstand in über 500 Orten der DDR. Sowjetische Panzer beenden ihn."
+   },
+   {
+    "year": 1961,
+    "title": "Bau der Berliner Mauer",
+    "text": "Die DDR riegelt West-Berlin ab, um die Abwanderung zu stoppen. Bis 1989 sterben an der innerdeutschen Grenze mindestens 140 Menschen."
+   },
+   {
+    "year": 1970,
+    "title": "Kniefall von Warschau",
+    "text": "Willy Brandt kniet am Denkmal des Ghettoaufstands. Die Geste war nicht abgesprochen und wurde in Deutschland zunächst mehrheitlich kritisiert."
+   },
+   {
+    "year": 1989,
+    "title": "Fall der Berliner Mauer",
+    "text": "Nach Wochen von Montagsdemonstrationen öffnet die DDR am 9. November die Grenze – ausgelöst durch eine missverständliche Pressekonferenz."
+   },
+   {
     "year": 1990,
     "title": "Deutsche Wiedervereinigung",
     "text": "BRD und DDR vereinigen sich zu einem gemeinsamen demokratischen Staat."
+   },
+   {
+    "year": 2002,
+    "title": "Das Euro-Bargeld kommt",
+    "text": "Die D-Mark wird nach 54 Jahren abgelöst. Die Währungsunion war politisch gewollt, ohne gemeinsame Finanzpolitik – ein Konstruktionsproblem, das die Eurokrise offenlegte."
    }
   ]
  },
@@ -265,6 +390,11 @@ const COUNTRY_TIMELINES = {
     "text": "Der Frankenkönig eint weite Teile Galliens und lässt sich später taufen – Grundstein des späteren Frankreichs."
    },
    {
+    "year": 732,
+    "title": "Schlacht von Tours und Poitiers",
+    "text": "Karl Martell stoppt einen arabischen Vorstoß aus Spanien. Die spätere Deutung als Rettung des Abendlands überhöht ein Gefecht, dessen Umfang unklar ist."
+   },
+   {
     "year": 800,
     "title": "Kaiserkrönung Karls des Großen",
     "text": "Der fränkische König wird in Rom zum Kaiser gekrönt."
@@ -275,9 +405,29 @@ const COUNTRY_TIMELINES = {
     "text": "Das Westfrankenreich entsteht als direkter Vorläufer des modernen Frankreichs."
    },
    {
+    "year": 987,
+    "title": "Hugo Capet wird König",
+    "text": "Die Kapetinger übernehmen den Thron und stellen 300 Jahre lang ununterbrochen den König – eine Kontinuität ohne Beispiel in Europa."
+   },
+   {
+    "year": 1214,
+    "title": "Schlacht bei Bouvines",
+    "text": "Der Sieg über eine Koalition aus Kaiser und England festigt die Königsmacht und gilt als früher Kristallisationspunkt französischen Zusammengehörigkeitsgefühls."
+   },
+   {
+    "year": 1309,
+    "title": "Die Päpste ziehen nach Avignon",
+    "text": "Fast siebzig Jahre residiert das Papsttum in Frankreich, in enger Bindung an die Krone. Der Ansehensverlust bereitet das Abendländische Schisma vor."
+   },
+   {
     "year": 1337,
     "title": "Beginn des Hundertjährigen Krieges",
     "text": "Jahrzehntelanger Konflikt mit England um die französische Krone."
+   },
+   {
+    "year": 1348,
+    "title": "Der Schwarze Tod erreicht Frankreich",
+    "text": "Binnen zwei Jahren stirbt vermutlich ein Drittel bis die Hälfte der Bevölkerung. Löhne steigen, die Grundherrschaft gerät ins Wanken."
    },
    {
     "year": 1429,
@@ -285,9 +435,24 @@ const COUNTRY_TIMELINES = {
     "text": "Die Nationalheldin wendet das Kriegsglück zugunsten Frankreichs."
    },
    {
+    "year": 1453,
+    "title": "Ende des Hundertjährigen Krieges",
+    "text": "Mit dem Verlust der Gascogne endet die englische Herrschaft auf dem Festland bis auf Calais. Aus Lehnsverbänden ist ein Königreich geworden."
+   },
+   {
+    "year": 1572,
+    "title": "Bartholomäusnacht",
+    "text": "In Paris und den Provinzen werden Tausende Hugenotten ermordet. Der Religionskrieg dauert danach noch ein Vierteljahrhundert."
+   },
+   {
     "year": 1589,
     "title": "Heinrich IV. begründet die Bourbonen-Dynastie",
     "text": "Beendet die Religionskriege und erlässt das Edikt von Nantes zur religiösen Toleranz."
+   },
+   {
+    "year": 1598,
+    "title": "Edikt von Nantes",
+    "text": "Heinrich IV. sichert den Protestanten Glaubensfreiheit und feste Plätze zu – in Europa ein einzigartiges Zugeständnis."
    },
    {
     "year": 1643,
@@ -295,9 +460,29 @@ const COUNTRY_TIMELINES = {
     "text": "Der 'Sonnenkönig' macht Frankreich zur führenden Macht Europas und Versailles zum Symbol des Absolutismus."
    },
    {
+    "year": 1685,
+    "title": "Widerruf des Edikts von Nantes",
+    "text": "Ludwig XIV. hebt die Toleranz auf; Hunderttausende Hugenotten fliehen, viele nach Preußen und in die Niederlande. Frankreich verliert Handwerk und Kapital."
+   },
+   {
+    "year": 1751,
+    "title": "Die Encyclopédie erscheint",
+    "text": "Diderot und d'Alembert sammeln das Wissen der Zeit in 28 Bänden und stellen es unter den Vorbehalt der Vernunft. Das Werk wurde zeitweise verboten und trotzdem weitergeführt."
+   },
+   {
     "year": 1789,
     "title": "Französische Revolution",
     "text": "Sturz der absoluten Monarchie, Erklärung der Menschen- und Bürgerrechte."
+   },
+   {
+    "year": 1793,
+    "title": "Hinrichtung Ludwigs XVI. und Schreckensherrschaft",
+    "text": "Der König wird als Bürger Capet verurteilt und hingerichtet. Im folgenden Jahr sterben Zehntausende unter der Revolutionsregierung, bevor sich diese selbst verzehrt."
+   },
+   {
+    "year": 1799,
+    "title": "Napoleons Staatsstreich",
+    "text": "Der General setzt das Direktorium ab und wird Erster Konsul. Die Revolution endet, ihre Verwaltungsordnung bleibt."
    },
    {
     "year": 1804,
@@ -305,14 +490,49 @@ const COUNTRY_TIMELINES = {
     "text": "Beginn der napoleonischen Ära und der Neuordnung Europas durch Eroberung."
    },
    {
+    "year": 1804,
+    "title": "Code civil",
+    "text": "Das bürgerliche Gesetzbuch fasst Recht einheitlich und verständlich zusammen und wurde in halb Europa übernommen – Napoleons dauerhafteste Wirkung."
+   },
+   {
     "year": 1815,
     "title": "Niederlage bei Waterloo",
     "text": "Napoleons endgültiges Ende beendet die französische Vormachtstellung in Europa."
    },
    {
+    "year": 1830,
+    "title": "Julirevolution",
+    "text": "Drei Tage Barrikadenkampf stürzen die Bourbonen endgültig. Ein Bürgerkönig folgt, das Wahlrecht bleibt auf wenige Vermögende beschränkt."
+   },
+   {
+    "year": 1848,
+    "title": "Februarrevolution und Zweite Republik",
+    "text": "Frankreich führt als erster großer Staat das allgemeine Männerwahlrecht ein – und wählt einen Napoleon, der die Republik drei Jahre später beseitigt."
+   },
+   {
     "year": 1870,
     "title": "Niederlage im Deutsch-Französischen Krieg",
     "text": "Frankreich verliert Elsass-Lothringen; die Dritte Republik entsteht."
+   },
+   {
+    "year": 1871,
+    "title": "Pariser Kommune",
+    "text": "Nach der Niederlage gegen Preußen regiert Paris zwei Monate lang sich selbst. Die Niederschlagung durch französische Truppen kostet Tausende das Leben."
+   },
+   {
+    "year": 1894,
+    "title": "Dreyfus-Affäre",
+    "text": "Ein jüdischer Offizier wird zu Unrecht wegen Landesverrats verurteilt. Der Streit spaltet das Land und schuf die Rolle des öffentlich einmischenden Intellektuellen."
+   },
+   {
+    "year": 1905,
+    "title": "Trennung von Kirche und Staat",
+    "text": "Der Laizismus wird Gesetz: keine Staatsreligion, keine Finanzierung von Kulten. Die Regelung prägt französische Debatten bis heute."
+   },
+   {
+    "year": 1916,
+    "title": "Schlacht um Verdun",
+    "text": "Zehn Monate Stellungskrieg fordern auf beiden Seiten je rund 300.000 Tote. Verdun wurde zum Sinnbild sinnloser Materialschlachten."
    },
    {
     "year": 1940,
@@ -328,6 +548,21 @@ const COUNTRY_TIMELINES = {
     "year": 1958,
     "title": "Gründung der Fünften Republik",
     "text": "Charles de Gaulle begründet das bis heute bestehende präsidiale Regierungssystem Frankreichs."
+   },
+   {
+    "year": 1962,
+    "title": "Unabhängigkeit Algeriens",
+    "text": "Nach acht Jahren Krieg endet die französische Herrschaft. Der Konflikt hatte 1958 bereits die Vierte Republik gestürzt; Folter und Vertreibungen belasten das Verhältnis bis heute."
+   },
+   {
+    "year": 1968,
+    "title": "Mai 1968",
+    "text": "Studentenproteste und ein Generalstreik mit Millionen Beteiligten legen das Land lahm. Politisch überlebt de Gaulle, gesellschaftlich verändert sich Frankreich dauerhaft."
+   },
+   {
+    "year": 2015,
+    "title": "Pariser Klimaabkommen",
+    "text": "195 Staaten einigen sich darauf, die Erwärmung deutlich unter zwei Grad zu halten. Die Ziele sind verbindlich beschlossen, die nationalen Beiträge freiwillig."
    }
   ]
  },
@@ -345,9 +580,29 @@ const COUNTRY_TIMELINES = {
     "text": "Fürst Wladimir I. lässt sich taufen und macht das orthodoxe Christentum zur Staatsreligion."
    },
    {
+    "year": 1054,
+    "title": "Kirchliches Erbe aus Byzanz",
+    "text": "Die Rus folgt der östlichen Kirche. Schrift, Liturgie und Staatsverständnis kommen aus Konstantinopel, nicht aus Rom – eine Weichenstellung mit langer Wirkung."
+   },
+   {
     "year": 1237,
     "title": "Mongolische Eroberung",
     "text": "Die Rus geraten für rund 240 Jahre unter die Oberherrschaft der Goldenen Horde."
+   },
+   {
+    "year": 1240,
+    "title": "Alexander Newski an der Newa",
+    "text": "Der Fürst schlägt schwedische und später deutsche Angreifer und arrangiert sich zugleich mit den Mongolen. Beide Seiten seines Handelns wurden später politisch gedeutet."
+   },
+   {
+    "year": 1380,
+    "title": "Schlacht auf dem Schnepfenfeld",
+    "text": "Moskau besiegt erstmals ein mongolisches Heer. Die Vorherrschaft endet noch nicht, aber Moskau wird zur Führungsmacht unter den russischen Fürstentümern."
+   },
+   {
+    "year": 1480,
+    "title": "Ende der Mongolenherrschaft",
+    "text": "Nach dem Rückzug beider Heere an der Ugra zahlt Moskau keinen Tribut mehr. Ein Machtwechsel ohne Schlacht."
    },
    {
     "year": 1547,
@@ -355,9 +610,34 @@ const COUNTRY_TIMELINES = {
     "text": "Moskau festigt seine Vormachtstellung unter den russischen Fürstentümern."
    },
    {
+    "year": 1552,
+    "title": "Eroberung von Kasan",
+    "text": "Moskau nimmt das Tatarenkhanat und wird zum Vielvölkerreich. Der Weg nach Sibirien steht offen."
+   },
+   {
+    "year": 1598,
+    "title": "Zeit der Wirren",
+    "text": "Nach dem Aussterben der Rurikiden folgen fünfzehn Jahre Bürgerkrieg, Hungersnot und polnische Besetzung. Ein Drittel der Bevölkerung stirbt."
+   },
+   {
     "year": 1613,
     "title": "Beginn der Romanov-Dynastie",
     "text": "Die Romanovs regieren bis zur Revolution 1917 über Russland."
+   },
+   {
+    "year": 1649,
+    "title": "Die Leibeigenschaft wird festgeschrieben",
+    "text": "Das Gesetzbuch bindet die Bauern dauerhaft an die Scholle – während sie in Westeuropa gelockert wird. Die Folgen wirken bis ins 20. Jahrhundert."
+   },
+   {
+    "year": 1703,
+    "title": "Gründung von Sankt Petersburg",
+    "text": "Peter der Große lässt eine Hauptstadt im Sumpf bauen, nach europäischem Vorbild und unter dem Einsatz zehntausender Zwangsarbeiter."
+   },
+   {
+    "year": 1709,
+    "title": "Sieg bei Poltawa",
+    "text": "Die Niederlage Schwedens macht Russland zur europäischen Großmacht und beendet Schwedens Zeit als Ostseemacht."
    },
    {
     "year": 1721,
@@ -365,14 +645,39 @@ const COUNTRY_TIMELINES = {
     "text": "Russland modernisiert sich nach westeuropäischem Vorbild und wird zum Kaiserreich."
    },
    {
+    "year": 1762,
+    "title": "Katharina die Große",
+    "text": "34 Jahre Regierung: Expansion nach Süden, Briefwechsel mit Aufklärern, zugleich Ausweitung der Leibeigenschaft. Der Widerspruch prägt das Bild der Zarin."
+   },
+   {
     "year": 1812,
     "title": "Napoleons Russlandfeldzug scheitert",
     "text": "Winter, Logistikprobleme und russischer Widerstand vernichten die 'Grande Armée' nahezu vollständig."
    },
    {
+    "year": 1825,
+    "title": "Dekabristenaufstand",
+    "text": "Offiziere fordern eine Verfassung und scheitern binnen eines Tages. Die erste Revolutionsbewegung Russlands kam aus dem Adel selbst."
+   },
+   {
+    "year": 1853,
+    "title": "Krimkrieg",
+    "text": "Die Niederlage gegen Briten, Franzosen und Osmanen legt die technische Rückständigkeit offen und erzwingt die Reformen der folgenden Jahre."
+   },
+   {
     "year": 1861,
     "title": "Aufhebung der Leibeigenschaft",
     "text": "Zar Alexander II. befreit die russischen Bauern aus jahrhundertelanger Leibeigenschaft."
+   },
+   {
+    "year": 1891,
+    "title": "Bau der Transsibirischen Eisenbahn",
+    "text": "9.300 Kilometer verbinden Moskau mit dem Pazifik. Die Strecke erschließt Sibirien und verschiebt Russlands Gewicht nach Osten."
+   },
+   {
+    "year": 1904,
+    "title": "Krieg gegen Japan",
+    "text": "Eine europäische Großmacht unterliegt erstmals einer asiatischen. Die Niederlage löst die Revolution von 1905 aus."
    },
    {
     "year": 1905,
@@ -385,9 +690,24 @@ const COUNTRY_TIMELINES = {
     "text": "Die Bolschewiki unter Lenin übernehmen die Macht – Beginn der Sowjetunion."
    },
    {
+    "year": 1918,
+    "title": "Bürgerkrieg und Kriegskommunismus",
+    "text": "Rote und Weiße kämpfen fünf Jahre; Hunger und Seuchen kosten Millionen Menschen das Leben. Am Ende steht ein Einparteienstaat."
+   },
+   {
     "year": 1922,
     "title": "Gründung der Sowjetunion",
     "text": "Aus dem Bürgerkrieg geht die UdSSR als kommunistischer Vielvölkerstaat hervor."
+   },
+   {
+    "year": 1929,
+    "title": "Zwangskollektivierung",
+    "text": "Die Landwirtschaft wird gewaltsam umgebaut. Die folgende Hungersnot fordert Millionen Tote, in der Ukraine als Holodomor bis heute Gegenstand des Streits um die Einordnung."
+   },
+   {
+    "year": 1937,
+    "title": "Der Große Terror",
+    "text": "Massenverhaftungen und Erschießungen treffen Partei, Armee und Bevölkerung. Allein 1937/38 wurden nach Archivzahlen über 680.000 Menschen hingerichtet."
    },
    {
     "year": 1941,
@@ -400,14 +720,49 @@ const COUNTRY_TIMELINES = {
     "text": "Wendepunkt des Krieges an der Ostfront zugunsten der Sowjetunion."
    },
    {
+    "year": 1945,
+    "title": "Sieg und Verluste",
+    "text": "Die Sowjetunion verliert im Krieg rund 27 Millionen Menschen – mehr als jedes andere Land. Der Sieg wird zum wichtigsten Bezugspunkt staatlicher Erinnerung."
+   },
+   {
     "year": 1961,
     "title": "Erster Mensch im Weltraum",
     "text": "Juri Gagarin umkreist als erster Mensch die Erde – Höhepunkt des sowjetischen Raumfahrtprogramms."
    },
    {
+    "year": 1962,
+    "title": "Kubakrise",
+    "text": "Sowjetische Raketen auf Kuba bringen die Welt an den Rand eines Atomkriegs. Der Rückzug kostete Chruschtschow innenpolitisch die Autorität."
+   },
+   {
+    "year": 1979,
+    "title": "Einmarsch in Afghanistan",
+    "text": "Zehn Jahre Krieg ohne Sieg schwächen die Sowjetunion militärisch und wirtschaftlich."
+   },
+   {
+    "year": 1985,
+    "title": "Perestroika und Glasnost",
+    "text": "Gorbatschow versucht, das System durch Umbau und Öffentlichkeit zu retten. Die Öffnung setzt Kräfte frei, die es auflösen."
+   },
+   {
+    "year": 1986,
+    "title": "Reaktorkatastrophe von Tschernobyl",
+    "text": "Die Vertuschung der ersten Tage beschädigt das Vertrauen in den Staat stärker als der Unfall selbst. Gorbatschow nannte sie später einen Auslöser seiner Reformpolitik."
+   },
+   {
     "year": 1991,
     "title": "Auflösung der Sowjetunion",
     "text": "Die UdSSR zerfällt in unabhängige Staaten – Ende des Kalten Krieges."
+   },
+   {
+    "year": 1998,
+    "title": "Staatsbankrott",
+    "text": "Der Rubel bricht ein, der Staat kann Schulden nicht bedienen. Die Erfahrung prägt die russische Politik der folgenden Jahrzehnte."
+   },
+   {
+    "year": 2000,
+    "title": "Putin wird Präsident",
+    "text": "Nach dem Jahrzehnt der Umbrüche verspricht er Stabilität. Medien, Regionen und Parlament verlieren in den Folgejahren an Eigenständigkeit."
    },
    {
     "year": 2022,
@@ -420,14 +775,44 @@ const COUNTRY_TIMELINES = {
   "color": "#9c1c1c",
   "events": [
    {
+    "year": -12000,
+    "title": "Besiedlung des Kontinents",
+    "text": "Menschen erreichen Amerika über Beringia, nach heutigem Stand deutlich früher als lange angenommen. Fundstellen wie White Sands deuten auf über 20.000 Jahre – die Datierung wird noch diskutiert."
+   },
+   {
+    "year": 1000,
+    "title": "Cahokia und die Mississippi-Kultur",
+    "text": "Am Mississippi entsteht eine Stadt mit vielleicht 15.000 Einwohnern und Erdpyramiden. Sie war größer als das damalige London und wurde um 1350 verlassen; warum, ist ungeklärt."
+   },
+   {
     "year": 1607,
     "title": "Gründung von Jamestown",
     "text": "Erste dauerhafte englische Kolonie in Nordamerika entsteht in Virginia."
    },
    {
+    "year": 1619,
+    "title": "Die ersten Verschleppten in Virginia",
+    "text": "Ein Schiff bringt rund zwanzig Afrikaner nach Jamestown. Aus zunächst unklarem Status wird im Lauf des Jahrhunderts erbliche Sklaverei nach Rasse."
+   },
+   {
     "year": 1620,
     "title": "Ankunft der Mayflower",
     "text": "Puritanische Siedler gründen die Plymouth-Kolonie in Neuengland."
+   },
+   {
+    "year": 1692,
+    "title": "Hexenprozesse von Salem",
+    "text": "Zwanzig Menschen werden hingerichtet, bevor die Gerichte Geistererscheinungen als Beweis verwerfen. Der Fall gilt bis heute als Warnung vor Massenhysterie im Rechtssystem."
+   },
+   {
+    "year": 1754,
+    "title": "Franzosen- und Indianerkrieg",
+    "text": "Der nordamerikanische Teil eines Weltkriegs beseitigt Frankreichs Kolonialmacht – und hinterlässt London Schulden, deren Eintreibung die Kolonien gegen die Krone aufbringt."
+   },
+   {
+    "year": 1773,
+    "title": "Boston Tea Party",
+    "text": "Kolonisten werfen Tee in den Hafen, aus Protest gegen Besteuerung ohne Vertretung. Die Vergeltungsgesetze aus London einen die Kolonien."
    },
    {
     "year": 1776,
@@ -440,9 +825,29 @@ const COUNTRY_TIMELINES = {
     "text": "Eine der ältesten noch gültigen geschriebenen Verfassungen der Welt tritt in Kraft."
    },
    {
+    "year": 1791,
+    "title": "Bill of Rights",
+    "text": "Die ersten zehn Zusatzartikel sichern Meinungs-, Religions- und Versammlungsfreiheit. Sie waren der Preis dafür, dass skeptische Staaten die Verfassung annahmen."
+   },
+   {
     "year": 1803,
     "title": "Louisiana Purchase",
     "text": "Die USA erwerben von Frankreich ein riesiges Territorium und verdoppeln damit ihre Fläche."
+   },
+   {
+    "year": 1830,
+    "title": "Vertreibung der Indianer",
+    "text": "Ein Gesetz erlaubt die Zwangsumsiedlung östlicher Völker. Auf dem Pfad der Tränen sterben tausende Cherokee, Choctaw und Angehörige anderer Nationen."
+   },
+   {
+    "year": 1848,
+    "title": "Der Westen wird amerikanisch",
+    "text": "Mexiko tritt nach dem Krieg ein Drittel seines Gebiets ab; im selben Jahr beginnt der Goldrausch in Kalifornien."
+   },
+   {
+    "year": 1848,
+    "title": "Frauenrechtskonvention von Seneca Falls",
+    "text": "Die erste Versammlung ihrer Art formuliert die Forderung nach dem Frauenwahlrecht. Bis zur Einlösung vergehen 72 Jahre."
    },
    {
     "year": 1861,
@@ -455,14 +860,49 @@ const COUNTRY_TIMELINES = {
     "text": "Abraham Lincoln erklärt die Sklaven in den Südstaaten für frei."
    },
    {
+    "year": 1865,
+    "title": "Abschaffung der Sklaverei",
+    "text": "Der 13. Verfassungszusatz beendet die Sklaverei – mit einer Ausnahme für Strafgefangene, die bis heute Folgen hat."
+   },
+   {
+    "year": 1877,
+    "title": "Ende der Reconstruction",
+    "text": "Die Bundestruppen ziehen aus dem Süden ab. Es folgen achtzig Jahre Rassentrennung durch Gesetz und Gewalt."
+   },
+   {
+    "year": 1886,
+    "title": "Haymarket und die Arbeiterbewegung",
+    "text": "Aus dem Streik für den Achtstundentag und der folgenden Bombe in Chicago entsteht der internationale Tag der Arbeit – begangen überall außer in den USA."
+   },
+   {
+    "year": 1890,
+    "title": "Wounded Knee",
+    "text": "Die Erschießung von rund 250 Lakota beendet die Indianerkriege. Im selben Jahr erklärt die Volkszählung die Grenze der Besiedlung für geschlossen."
+   },
+   {
     "year": 1898,
     "title": "Spanisch-Amerikanischer Krieg",
     "text": "Die USA treten erstmals als Kolonialmacht außerhalb des eigenen Kontinents auf (Kuba, Philippinen)."
    },
    {
+    "year": 1913,
+    "title": "Fließband und Notenbank",
+    "text": "Ford führt das Fließband ein, der Kongress schafft die Federal Reserve. Massenproduktion und zentrale Geldpolitik prägen das amerikanische Jahrhundert."
+   },
+   {
+    "year": 1920,
+    "title": "Frauenwahlrecht",
+    "text": "Der 19. Verfassungszusatz gilt landesweit. Für schwarze Frauen im Süden blieb er wegen Wahlhürden jahrzehntelang wirkungslos."
+   },
+   {
     "year": 1929,
     "title": "Weltwirtschaftskrise",
     "text": "Der Börsencrash an der Wall Street löst eine globale Depression aus."
+   },
+   {
+    "year": 1933,
+    "title": "New Deal",
+    "text": "Roosevelt antwortet auf die Krise mit Beschäftigungsprogrammen, Bankenaufsicht und Sozialversicherung. Die Rolle des Bundes verändert sich dauerhaft."
    },
    {
     "year": 1941,
@@ -475,14 +915,44 @@ const COUNTRY_TIMELINES = {
     "text": "Die USA werfen Atombomben auf Hiroshima und Nagasaki ab und beenden den Zweiten Weltkrieg."
    },
    {
+    "year": 1954,
+    "title": "Brown gegen Board of Education",
+    "text": "Der Supreme Court erklärt Rassentrennung an Schulen für verfassungswidrig. Die Umsetzung dauert Jahrzehnte und kostet Menschen das Leben."
+   },
+   {
+    "year": 1955,
+    "title": "Busboykott von Montgomery",
+    "text": "381 Tage lang meiden schwarze Fahrgäste die Busse. Der Boykott macht Rosa Parks und Martin Luther King bekannt und zeigt die Wirkung wirtschaftlichen Drucks."
+   },
+   {
     "year": 1963,
     "title": "'I Have a Dream'-Rede",
     "text": "Martin Luther King prägt die Bürgerrechtsbewegung mit seiner berühmten Rede in Washington."
    },
    {
+    "year": 1964,
+    "title": "Civil Rights Act",
+    "text": "Rassentrennung in öffentlichen Einrichtungen wird verboten, ein Jahr später folgt das Wahlrechtsgesetz. Die politische Landkarte des Südens verschiebt sich dauerhaft."
+   },
+   {
+    "year": 1968,
+    "title": "Ermordung Martin Luther Kings",
+    "text": "Der Mord löst Unruhen in über hundert Städten aus. Im selben Jahr wird auch Robert Kennedy erschossen."
+   },
+   {
     "year": 1969,
     "title": "Erste Mondlandung",
     "text": "Neil Armstrong und Buzz Aldrin betreten als erste Menschen den Mond."
+   },
+   {
+    "year": 1973,
+    "title": "Watergate und Ölkrise",
+    "text": "Ein Einbruch stürzt einen Präsidenten, ein Ölembargo beendet die Nachkriegsjahre billiger Energie. Das Vertrauen in Institutionen sinkt messbar und dauerhaft."
+   },
+   {
+    "year": 1989,
+    "title": "Das Internet öffnet sich",
+    "text": "Aus einem Forschungsnetz wird eine Infrastruktur für alle. Die entscheidenden Bausteine entstanden mit öffentlichem Geld, der wirtschaftliche Ertrag fiel privat an."
    },
    {
     "year": 1991,
@@ -493,6 +963,16 @@ const COUNTRY_TIMELINES = {
     "year": 2001,
     "title": "Terroranschläge vom 11. September",
     "text": "Anschläge auf das World Trade Center verändern die US-Außen- und Sicherheitspolitik nachhaltig."
+   },
+   {
+    "year": 2008,
+    "title": "Finanzkrise",
+    "text": "Der Zusammenbruch von Lehman Brothers löst die schwerste Wirtschaftskrise seit 1929 aus. Millionen verlieren ihr Haus, die Rettung galt den Banken."
+   },
+   {
+    "year": 2020,
+    "title": "Pandemie und Proteste",
+    "text": "Covid-19 kostet in den USA über eine Million Menschen das Leben; nach dem Tod George Floyds demonstrieren Millionen gegen Polizeigewalt."
    }
   ]
  },
@@ -665,14 +1145,49 @@ const COUNTRY_TIMELINES = {
     "text": "Unter Kaiser Claudius beginnt die römische Herrschaft, die rund vier Jahrhunderte dauert."
    },
    {
+    "year": 410,
+    "title": "Rückzug der römischen Truppen",
+    "text": "Rom gibt die Insel auf; Städte, Straßen und Steuerwesen verfallen binnen weniger Generationen."
+   },
+   {
+    "year": 597,
+    "title": "Christianisierung Kents",
+    "text": "Augustinus von Canterbury landet im Auftrag des Papstes. Die Kirche bringt Schriftlichkeit und die Anbindung an den Kontinent."
+   },
+   {
     "year": 1066,
     "title": "Normannische Eroberung",
     "text": "Wilhelm von der Normandie nimmt England ein – Sprache, Adel und Recht der Insel verändern sich grundlegend."
    },
    {
+    "year": 1086,
+    "title": "Domesday Book",
+    "text": "Wilhelm der Eroberer lässt Besitz und Erträge des ganzen Landes erfassen – die genaueste Bestandsaufnahme des mittelalterlichen Europa."
+   },
+   {
     "year": 1215,
     "title": "Magna Carta",
     "text": "Am 15. Juni 1215 gewährt König Johann unter Bürgerkriegsdrohung die Magna Carta. Indem sie den Herrscher dem Recht unterstellt und Freiheiten der 'freien Männer' festhält, wird sie zur Grundlage individueller Rechte im angelsächsischen Rechtsraum."
+   },
+   {
+    "year": 1265,
+    "title": "Erstes Parlament mit Bürgern",
+    "text": "Simon de Montfort beruft nicht nur Adel und Klerus, sondern auch Vertreter der Grafschaften und Städte. Aus der Notlösung wird eine Einrichtung."
+   },
+   {
+    "year": 1348,
+    "title": "Der Schwarze Tod erreicht England",
+    "text": "Bis zu 40 Prozent der Bevölkerung sterben. Arbeitskräfte werden knapp, die Löhne steigen, Lohnobergrenzen per Gesetz scheitern."
+   },
+   {
+    "year": 1381,
+    "title": "Bauernaufstand",
+    "text": "Aufständische ziehen nach London und fordern das Ende der Leibeigenschaft. Der Aufstand wird niedergeschlagen, die Kopfsteuer aber nie wieder erhoben."
+   },
+   {
+    "year": 1455,
+    "title": "Rosenkriege",
+    "text": "Dreißig Jahre Thronkämpfe zwischen York und Lancaster kosten einen großen Teil des alten Hochadels das Leben – und ebnen den Tudors den Weg."
    },
    {
     "year": 1534,
@@ -683,6 +1198,16 @@ const COUNTRY_TIMELINES = {
     "year": 1588,
     "title": "Sieg über die Armada",
     "text": "Die Abwehr der spanischen Invasionsflotte markiert den Aufstieg Englands zur Seemacht."
+   },
+   {
+    "year": 1600,
+    "title": "Gründung der East India Company",
+    "text": "Ein Handelsunternehmen erhält ein königliches Monopol. Zwei Jahrhunderte später regiert es Millionen Menschen und unterhält eigene Armeen."
+   },
+   {
+    "year": 1642,
+    "title": "Englischer Bürgerkrieg",
+    "text": "Parlament und König führen Krieg um Steuerrecht und Religion. Der Konflikt beantwortet erstmals gewaltsam die Frage, wer im Staat das letzte Wort hat."
    },
    {
     "year": 1649,
@@ -700,6 +1225,21 @@ const COUNTRY_TIMELINES = {
     "text": "England und Schottland stimmen dem Act of Union zu; das Königreich Großbritannien entsteht."
    },
    {
+    "year": 1707,
+    "title": "Ein Staat, zwei Rechtssysteme",
+    "text": "Mit der Union bleiben schottisches Recht, Kirche und Bildungswesen eigenständig – eine Besonderheit, die die Debatte um Unabhängigkeit bis heute trägt."
+   },
+   {
+    "year": 1720,
+    "title": "Südseeblase",
+    "text": "Aktien einer Handelsgesellschaft steigen ins Unermessliche und stürzen ab. Die erste große Spekulationsblase der Moderne führt zu strengeren Regeln für Aktiengesellschaften."
+   },
+   {
+    "year": 1769,
+    "title": "Watts Dampfmaschine erhält ihr Patent",
+    "text": "Die getrennte Kondensation senkt den Kohleverbrauch drastisch. Dampfkraft wird auch dort wirtschaftlich, wo keine Kohle vor der Tür liegt."
+   },
+   {
     "year": 1801,
     "title": "Union mit Irland",
     "text": "Die Vereinigung mit Irland schafft das Vereinigte Königreich von Großbritannien und Irland."
@@ -715,9 +1255,49 @@ const COUNTRY_TIMELINES = {
     "text": "Wahlkreise werden neu zugeschnitten und das Wahlrecht erweitert – die Wählerschaft wächst um 57 Prozent auf 217.000. Handwerker, Arbeiter und große Teile der unteren Mittelschicht bleiben weiterhin ausgeschlossen."
    },
    {
+    "year": 1833,
+    "title": "Abschaffung der Sklaverei im Empire",
+    "text": "Die Sklaverei endet in den meisten Kolonien. Entschädigt wurden nicht die Versklavten, sondern ihre Besitzer – die Anleihe dafür wurde erst 2015 getilgt."
+   },
+   {
+    "year": 1837,
+    "title": "Beginn der viktorianischen Zeit",
+    "text": "Victoria regiert 63 Jahre. In dieser Zeit verdoppelt sich die Bevölkerung, Eisenbahn und Fabrik verändern das Land grundlegend."
+   },
+   {
+    "year": 1845,
+    "title": "Große Hungersnot in Irland",
+    "text": "Eine Kartoffelfäule und die Wirtschaftspolitik Londons kosten rund eine Million Menschen das Leben, eine weitere Million wandert aus. Irland hat bis heute weniger Einwohner als 1841."
+   },
+   {
+    "year": 1851,
+    "title": "Weltausstellung im Kristallpalast",
+    "text": "Sechs Millionen Besucher sehen die Industrieproduktion der Welt unter einem Glasdach. Großbritannien zeigt sich als Werkstatt der Welt."
+   },
+   {
+    "year": 1858,
+    "title": "Die Krone übernimmt Indien",
+    "text": "Nach dem Aufstand von 1857 löst London die East India Company ab und regiert direkt. Aus Handelsherrschaft wird Kolonialverwaltung."
+   },
+   {
+    "year": 1916,
+    "title": "Schlacht an der Somme",
+    "text": "Am ersten Tag fallen fast 20.000 britische Soldaten – der verlustreichste Tag der britischen Militärgeschichte. Der Krieg beendet das Vertrauen in die alte Ordnung."
+   },
+   {
+    "year": 1921,
+    "title": "Irischer Freistaat",
+    "text": "Nach Aufstand und Krieg wird der Süden Irlands unabhängig, sechs Grafschaften im Norden bleiben britisch. Die Teilung prägt das folgende Jahrhundert."
+   },
+   {
     "year": 1928,
     "title": "Gleiches Wahlrecht für Frauen",
     "text": "Nach dem Teilwahlrecht von 1918 erhalten Frauen dieselben Bedingungen wie Männer."
+   },
+   {
+    "year": 1940,
+    "title": "Luftschlacht um England",
+    "text": "Die Royal Air Force verhindert die deutsche Luftherrschaft. Radar und ein zentrales Leitsystem waren entscheidender als die reine Flugzeugzahl."
    },
    {
     "year": 1947,
@@ -730,9 +1310,29 @@ const COUNTRY_TIMELINES = {
     "text": "Der National Health Service macht medizinische Versorgung für alle unabhängig vom Einkommen zugänglich."
    },
    {
+    "year": 1956,
+    "title": "Sueskrise",
+    "text": "Der Vorstoß gegen Ägypten scheitert am amerikanischen Druck. Großbritannien erkennt, dass es ohne die USA keine Weltmachtpolitik mehr führen kann."
+   },
+   {
     "year": 1973,
     "title": "Beitritt zur EWG",
     "text": "Großbritannien tritt der Europäischen Wirtschaftsgemeinschaft bei, einer Vorläuferin der Europäischen Union."
+   },
+   {
+    "year": 1979,
+    "title": "Thatcher wird Premierministerin",
+    "text": "Privatisierung, Deregulierung und die Entmachtung der Gewerkschaften verändern die Wirtschaftsordnung. Die Folgen werden bis heute gegensätzlich bewertet."
+   },
+   {
+    "year": 1997,
+    "title": "Rückgabe Hongkongs",
+    "text": "Die letzte bedeutende Kolonie geht an China. Für viele markiert der Tag das formale Ende des Empire."
+   },
+   {
+    "year": 1998,
+    "title": "Karfreitagsabkommen",
+    "text": "Nach dreißig Jahren Gewalt mit über 3.500 Toten einigen sich die Konfliktparteien in Nordirland auf Machtteilung und offene Grenze."
    },
    {
     "year": 2020,
@@ -745,9 +1345,24 @@ const COUNTRY_TIMELINES = {
   "color": "#a8571c",
   "events": [
    {
+    "year": -1000,
+    "title": "Tartessos und die Phönizier",
+    "text": "Im Süden entsteht aus Metallhandel eine erste Hochkultur. Phönizische Gründungen wie Gadir, das heutige Cádiz, gehören zu den ältesten Städten Westeuropas."
+   },
+   {
     "year": -218,
     "title": "Rom erobert Hispanien",
     "text": "Im Zweiten Punischen Krieg beginnt die römische Herrschaft über die Halbinsel, die Sprache und Recht dauerhaft prägt."
+   },
+   {
+    "year": -19,
+    "title": "Rom beherrscht die ganze Halbinsel",
+    "text": "Nach fast 200 Jahren Krieg ist Hispanien erobert. Die Provinz stellt später Kaiser wie Trajan und Hadrian und wird zu einer der romanisiertesten Regionen des Reichs."
+   },
+   {
+    "year": 409,
+    "title": "Westgoten und Sueben",
+    "text": "Germanische Verbände übernehmen die Halbinsel. Das Westgotenreich mit Zentrum Toledo hält sich bis 711."
    },
    {
     "year": 711,
@@ -765,6 +1380,36 @@ const COUNTRY_TIMELINES = {
     "text": "Al-Andalus wird zum eigenständigen Zentrum von Wissenschaft, Medizin und Philosophie – über Jahrhunderte eine Brücke antiken Wissens nach Europa."
    },
    {
+    "year": 929,
+    "title": "Kalifat von Córdoba",
+    "text": "Abd ar-Rahman III. nimmt den Kalifentitel an. Córdoba wird eine der größten Städte Europas mit Bibliotheken, Wasserleitungen und Straßenbeleuchtung."
+   },
+   {
+    "year": 1031,
+    "title": "Zerfall in Kleinkönigreiche",
+    "text": "Das Kalifat bricht in rund dreißig Taifa-Reiche auseinander. Die christlichen Reiche im Norden nutzen die Schwäche und rücken vor."
+   },
+   {
+    "year": 1085,
+    "title": "Eroberung von Toledo",
+    "text": "Die alte Westgotenhauptstadt fällt an Kastilien. In ihren Bibliotheken beginnt die Übersetzungsarbeit, über die arabische und griechische Wissenschaft nach Europa gelangt."
+   },
+   {
+    "year": 1212,
+    "title": "Schlacht bei Las Navas de Tolosa",
+    "text": "Ein Bündnis christlicher Könige besiegt die Almohaden. Danach bleibt muslimische Herrschaft auf Granada beschränkt."
+   },
+   {
+    "year": 1469,
+    "title": "Heirat von Isabella und Ferdinand",
+    "text": "Kastilien und Aragón werden in Personalunion verbunden. Die Reiche behalten Recht und Verwaltung – Spanien entsteht als Bündnis, nicht als Einheitsstaat."
+   },
+   {
+    "year": 1478,
+    "title": "Einrichtung der Inquisition",
+    "text": "Die spanische Inquisition untersteht der Krone, nicht dem Papst. Sie verfolgt vor allem zum Christentum übergetretene Juden und Muslime unter Verdacht der Heimlichkeit."
+   },
+   {
     "year": 1492,
     "title": "Granada, Kolumbus, Vertreibung",
     "text": "Die Katholischen Könige erobern Granada, Kolumbus erreicht Amerika – und im selben Jahr werden die Juden aus Spanien vertrieben."
@@ -775,14 +1420,39 @@ const COUNTRY_TIMELINES = {
     "text": "Die Herrschaft der Habsburger beginnt und endet 1700, als Philipp V. als erster Bourbone König wird."
    },
    {
+    "year": 1519,
+    "title": "Magellans Weltumsegelung beginnt",
+    "text": "Fünf Schiffe brechen auf, eines kehrt 1522 zurück. Der Beweis, dass die Erde umsegelbar ist, kostete Magellan und über 200 Männer das Leben."
+   },
+   {
     "year": 1521,
     "title": "Eroberung Tenochtitlans",
     "text": "Mit dem Fall der Aztekenhauptstadt beginnt die spanische Herrschaft über weite Teile Amerikas."
    },
    {
+    "year": 1545,
+    "title": "Silber aus Potosí",
+    "text": "Der Berg in den Anden liefert jahrzehntelang das meiste Silber der Welt. Es finanziert die spanische Macht, treibt die Preise in Europa und kostet unzählige Zwangsarbeiter das Leben."
+   },
+   {
+    "year": 1556,
+    "title": "Philipp II. übernimmt das Weltreich",
+    "text": "Sein Reich reicht von Peru bis zu den Philippinen. Vier Staatsbankrotte während seiner Regierung zeigen, dass Silber allein keine Macht trägt."
+   },
+   {
     "year": 1588,
     "title": "Untergang der Armada",
     "text": "Die Niederlage der Invasionsflotte gegen England markiert den Wendepunkt der spanischen Seemacht."
+   },
+   {
+    "year": 1609,
+    "title": "Vertreibung der Morisken",
+    "text": "Rund 300.000 Nachkommen muslimischer Familien müssen das Land verlassen. Ganze Landstriche in Valencia und Aragón entvölkern sich."
+   },
+   {
+    "year": 1700,
+    "title": "Bourbonen und Erbfolgekrieg",
+    "text": "Der Tod des letzten spanischen Habsburgers löst einen europäischen Krieg aus. Spanien verliert seine europäischen Nebenländer, gewinnt aber eine zentralisierte Verwaltung."
    },
    {
     "year": 1808,
@@ -795,14 +1465,44 @@ const COUNTRY_TIMELINES = {
     "text": "Eine der ersten liberalen Verfassungen Europas entsteht mitten im Krieg – und wird zum Vorbild weit über Spanien hinaus."
    },
    {
+    "year": 1824,
+    "title": "Verlust des amerikanischen Festlands",
+    "text": "Mit der Schlacht von Ayacucho endet die spanische Herrschaft auf dem Kontinent. Ein Weltreich schrumpft binnen fünfzehn Jahren auf wenige Inseln."
+   },
+   {
+    "year": 1873,
+    "title": "Erste Republik",
+    "text": "Sie hält elf Monate und verschleißt vier Präsidenten. Das 19. Jahrhundert Spaniens ist eine Folge von Bürgerkriegen, Staatsstreichen und Verfassungswechseln."
+   },
+   {
     "year": 1898,
     "title": "Verlust der letzten Kolonien",
     "text": "Im Krieg gegen die USA verliert Spanien Kuba, Puerto Rico und die Philippinen – das Ende des überseeischen Reiches."
    },
    {
+    "year": 1898,
+    "title": "Die Generation von 98",
+    "text": "Nach dem Verlust Kubas und der Philippinen fragt eine Schriftstellergeneration öffentlich, was aus Spanien geworden ist. Die Selbstprüfung prägt das Jahrhundert."
+   },
+   {
+    "year": 1931,
+    "title": "Zweite Republik",
+    "text": "Der König geht ins Exil. Die Republik bringt Frauenwahlrecht, Schulreform und Landreform – und eine Polarisierung, die im Bürgerkrieg endet."
+   },
+   {
     "year": 1936,
     "title": "Bürgerkrieg",
     "text": "Der Spanische Bürgerkrieg 1936–1939 endet mit dem Sieg der Nationalisten unter General Franco, der bis zu seinem Tod 1975 als Diktator herrscht."
+   },
+   {
+    "year": 1937,
+    "title": "Bombardierung von Gernika",
+    "text": "Deutsche und italienische Flugzeuge zerstören die baskische Stadt. Picassos Bild macht daraus das bekannteste Antikriegswerk des Jahrhunderts."
+   },
+   {
+    "year": 1939,
+    "title": "Beginn der Franco-Diktatur",
+    "text": "Fast vierzig Jahre Diktatur folgen: Repression, wirtschaftliche Abschottung, ab den 1960er Jahren Öffnung für Tourismus und Industrie."
    },
    {
     "year": 1975,
@@ -815,9 +1515,19 @@ const COUNTRY_TIMELINES = {
     "text": "Die Verfassung von 1978 begründet eine konstitutionelle Monarchie mit weitreichender Selbstverwaltung der Regionen."
    },
    {
+    "year": 1981,
+    "title": "Gescheiterter Putsch",
+    "text": "Bewaffnete Guardia Civil besetzt das Parlament. Der König stellt sich im Fernsehen gegen die Putschisten – die junge Demokratie hält."
+   },
+   {
     "year": 1986,
     "title": "Beitritt zur EG",
     "text": "Der Beitritt zur Europäischen Gemeinschaft besiegelt die Rückkehr Spaniens nach Westeuropa."
+   },
+   {
+    "year": 2004,
+    "title": "Anschläge von Madrid",
+    "text": "Bomben in Vorortzügen töten 193 Menschen, drei Tage vor der Wahl. Der schwerste islamistische Anschlag Europas verändert auch den Wahlausgang."
    }
   ]
  },
@@ -1070,9 +1780,39 @@ const COUNTRY_TIMELINES = {
     "text": "Rom wird Republik. Die Verfassung mit Konsuln, Senat und Volksversammlungen prägt europäisches Staatsdenken bis in die Neuzeit."
    },
    {
+    "year": -390,
+    "title": "Kelten plündern Rom",
+    "text": "Ein gallischer Heerzug nimmt die Stadt ein. Die Erfahrung prägt römische Politik über Jahrhunderte – Gallien gilt fortan als Bedrohung, nicht als Nachbar."
+   },
+   {
+    "year": -264,
+    "title": "Erster Punischer Krieg",
+    "text": "Rom baut erstmals eine Kriegsflotte und fordert die Seemacht Karthago heraus. Aus einer italischen Landmacht wird ein Mittelmeerreich."
+   },
+   {
     "year": -146,
     "title": "Zerstörung Karthagos",
     "text": "Nach drei Punischen Kriegen ist Rom unbestrittene Macht des westlichen Mittelmeers."
+   },
+   {
+    "year": -73,
+    "title": "Aufstand des Spartacus",
+    "text": "Ein entlaufener Gladiator führt zwei Jahre lang ein Heer aus Versklavten. Die Niederschlagung endet mit tausenden Kreuzigungen entlang der Via Appia."
+   },
+   {
+    "year": -44,
+    "title": "Ermordung Caesars",
+    "text": "Senatoren töten den Diktator, um die Republik zu retten – und lösen den Bürgerkrieg aus, der sie endgültig beseitigt."
+   },
+   {
+    "year": 79,
+    "title": "Ausbruch des Vesuv",
+    "text": "Pompeji und Herculaneum verschwinden unter Asche und Glutlawinen. Die Verschüttung konservierte einen Alltag, den keine andere antike Stadt so zeigt."
+   },
+   {
+    "year": 313,
+    "title": "Mailänder Vereinbarung",
+    "text": "Constantin und Licinius sichern den Christen Religionsfreiheit zu. Aus einer verfolgten Minderheit wird binnen eines Jahrhunderts die Staatsreligion."
    },
    {
     "year": 476,
@@ -1080,14 +1820,39 @@ const COUNTRY_TIMELINES = {
     "text": "Odoaker setzt Romulus Augustulus ab. Zeitgenossen empfanden das kaum als Epochenbruch – die Verwaltung lief weiter."
    },
    {
+    "year": 568,
+    "title": "Die Langobarden kommen",
+    "text": "Italien zerfällt in langobardische und byzantinische Gebiete. Die politische Zersplitterung der Halbinsel beginnt und dauert 1.300 Jahre."
+   },
+   {
     "year": 1077,
     "title": "Canossa",
     "text": "Heinrich IV. tut vor Papst Gregor VII. in der Burg der Markgräfin Mathilde Buße – ein Höhepunkt des Investiturstreits auf italienischem Boden."
    },
    {
+    "year": 1130,
+    "title": "Königreich Sizilien",
+    "text": "Normannen vereinen Süditalien und Sizilien zu einem Reich, in dem Lateiner, Griechen und Araber nebeneinander verwaltet werden."
+   },
+   {
     "year": 1204,
     "title": "Venedig lenkt den Kreuzzug um",
     "text": "Die Republik bringt das Kreuzfahrerheer dazu, Konstantinopel zu plündern, und sichert sich das Handelsmonopol im östlichen Mittelmeer."
+   },
+   {
+    "year": 1252,
+    "title": "Der Florentiner Gulden",
+    "text": "Florenz prägt eine Goldmünze von gleichbleibendem Gehalt. Sie wird zur Leitwährung Europas – Grundlage des Aufstiegs italienischer Bankhäuser."
+   },
+   {
+    "year": 1271,
+    "title": "Marco Polo bricht nach Osten auf",
+    "text": "Sein Reisebericht prägt das europäische Bild Asiens für Jahrhunderte. Wie viel er selbst sah und wie viel er sammelte, ist bis heute umstritten."
+   },
+   {
+    "year": 1309,
+    "title": "Dante beginnt die Göttliche Komödie",
+    "text": "Ein Verbannter schreibt sein Hauptwerk nicht auf Latein, sondern im toskanischen Volksmund – und begründet damit die italienische Literatursprache."
    },
    {
     "year": 1348,
@@ -1100,9 +1865,29 @@ const COUNTRY_TIMELINES = {
     "text": "Ghiberti setzt sich gegen Brunelleschi durch – der Streit gilt als symbolischer Auftakt der Renaissance."
    },
    {
+    "year": 1442,
+    "title": "Aragón erobert Neapel",
+    "text": "Der Süden gerät für Jahrhunderte unter spanische Herrschaft – eine der Wurzeln des wirtschaftlichen Nord-Süd-Gefälles."
+   },
+   {
     "year": 1494,
     "title": "Beginn der Italienischen Kriege",
     "text": "Karl VIII. von Frankreich marschiert ein. Über sechzig Jahre wird Italien Schlachtfeld fremder Mächte – der Hintergrund von Machiavellis Denken."
+   },
+   {
+    "year": 1508,
+    "title": "Michelangelo beginnt die Sixtinische Decke",
+    "text": "Vier Jahre Arbeit auf einem Gerüst. Der Auftrag kam von einem Papst, der Kunst als Machtmittel verstand."
+   },
+   {
+    "year": 1545,
+    "title": "Konzil von Trient",
+    "text": "Die katholische Kirche ordnet Lehre und Disziplin neu und wird handlungsfähig gegen die Reformation. Die Beschlüsse gelten weitgehend bis ins 20. Jahrhundert."
+   },
+   {
+    "year": 1571,
+    "title": "Seeschlacht von Lepanto",
+    "text": "Eine christliche Flotte besiegt die osmanische. Militärisch änderte der Sieg wenig, symbolisch beendete er den Ruf osmanischer Unbesiegbarkeit zur See."
    },
    {
     "year": 1633,
@@ -1110,9 +1895,39 @@ const COUNTRY_TIMELINES = {
     "text": "Der Inquisitionsprozess endet mit Widerruf und Hausarrest. Erst 1992 erklärte die Kirche das Urteil offiziell für einen Fehler."
    },
    {
+    "year": 1797,
+    "title": "Napoleon beendet Venedig",
+    "text": "Nach über tausend Jahren erlischt die Republik ohne Kampf. Der Freistaat wurde im Vertrag von Campo Formio an Österreich abgetreten."
+   },
+   {
+    "year": 1848,
+    "title": "Fünf Tage von Mailand",
+    "text": "Aufstände gegen die österreichische Herrschaft erfassen die Halbinsel. Sie scheitern, geben der Einigungsbewegung aber ihr Personal und ihre Erzählung."
+   },
+   {
+    "year": 1860,
+    "title": "Garibaldis Zug der Tausend",
+    "text": "Ein Freiwilligenheer erobert Sizilien und Neapel und übergibt sie dem Königreich Sardinien. Die Einigung entsteht aus einer Mischung von Diplomatie und Freischärlerei."
+   },
+   {
     "year": 1861,
     "title": "Königreich Italien ausgerufen",
     "text": "Nach Garibaldis Zug der Tausend und Cavours Diplomatie entsteht ein Nationalstaat. Rom kommt erst 1870 hinzu."
+   },
+   {
+    "year": 1870,
+    "title": "Rom wird Hauptstadt",
+    "text": "Italienische Truppen nehmen die Stadt; der Kirchenstaat endet. Die Päpste erkennen den italienischen Staat erst 1929 an."
+   },
+   {
+    "year": 1911,
+    "title": "Krieg um Libyen",
+    "text": "Italien greift osmanisches Gebiet an und setzt erstmals Flugzeuge im Krieg ein. Die Kolonie bringt kaum Gewinn, aber viel nationalistische Erregung."
+   },
+   {
+    "year": 1915,
+    "title": "Italien tritt an der Seite der Entente ein",
+    "text": "Italien wechselt die Bündnisseite. Zwölf Isonzoschlachten fordern Hunderttausende Tote; die Enttäuschung über den Frieden nährt den Faschismus."
    },
    {
     "year": 1922,
@@ -1120,9 +1935,19 @@ const COUNTRY_TIMELINES = {
     "text": "Mussolini wird zum Regierungschef ernannt – die erste faschistische Machtübernahme Europas, Vorbild für spätere Bewegungen."
    },
    {
+    "year": 1929,
+    "title": "Lateranverträge",
+    "text": "Mussolini und der Papst einigen sich: Der Vatikanstaat entsteht, der Katholizismus wird Staatsreligion. Der Kirchenstreit von 1870 ist beigelegt."
+   },
+   {
     "year": 1943,
     "title": "Sturz Mussolinis und Kriegswende",
     "text": "Italien wechselt die Seiten, das Land wird zum Kriegsschauplatz und zerfällt bis 1945 in zwei Teile."
+   },
+   {
+    "year": 1944,
+    "title": "Widerstand und Bürgerkrieg",
+    "text": "Nach dem Waffenstillstand kämpfen Partisanen gegen deutsche Besatzung und italienische Faschisten. Die Resistenza wird zum Gründungsmythos der Republik."
    },
    {
     "year": 1946,
@@ -1133,6 +1958,11 @@ const COUNTRY_TIMELINES = {
     "year": 1957,
     "title": "Römische Verträge",
     "text": "In Rom wird die Europäische Wirtschaftsgemeinschaft gegründet – der Grundstein der heutigen EU."
+   },
+   {
+    "year": 1980,
+    "title": "Anschlag von Bologna",
+    "text": "Eine Bombe im Bahnhof tötet 85 Menschen – der schwerste Anschlag der bleiernen Jahre, in denen Terror von rechts und links das Land erschütterte."
    },
    {
     "year": 1992,
@@ -1320,9 +2150,19 @@ const COUNTRY_TIMELINES = {
   "color": "#5b7d1f",
   "events": [
    {
+    "year": -2333,
+    "title": "Gründungssage von Gojoseon",
+    "text": "Die Überlieferung nennt Dangun als Gründer. Historisch fassbar wird Gojoseon erst im ersten Jahrtausend vor Christus; die frühe Datierung ist Nationalmythos, nicht Befund."
+   },
+   {
     "year": -108,
     "title": "Han-China richtet Kommandanturen ein",
     "text": "Nach dem Ende von Gojoseon kontrolliert China Teile der Halbinsel – der Beginn einer jahrhundertelangen Wechselbeziehung."
+   },
+   {
+    "year": 57,
+    "title": "Die Drei Reiche",
+    "text": "Goguryeo, Baekje und Silla teilen die Halbinsel und Teile der Mandschurei unter sich auf. Sieben Jahrhunderte Rivalität prägen Kultur und Selbstbild."
    },
    {
     "year": 372,
@@ -1330,9 +2170,19 @@ const COUNTRY_TIMELINES = {
     "text": "Über China kommt der Buddhismus, wird Staatsreligion und prägt Kunst, Schrift und Denken – auch Japans, das ihn von Korea empfängt."
    },
    {
+    "year": 538,
+    "title": "Korea bringt den Buddhismus nach Japan",
+    "text": "Baekje schickt Mönche und Bilder an den japanischen Hof. Über Korea gelangen Schrift, Kunst und Handwerk auf die Inseln."
+   },
+   {
     "year": 676,
     "title": "Silla einigt die Halbinsel",
     "text": "Mit chinesischer Hilfe und anschließend gegen sie setzt sich Silla durch – die erste Einigung Koreas."
+   },
+   {
+    "year": 698,
+    "title": "Balhae im Norden",
+    "text": "Nach dem Untergang Goguryeos entsteht im Norden ein Reich, das China als Land der blühenden Kultur des Ostens bezeichnete. Ob es koreanisch war, ist zwischen den Nachbarstaaten bis heute umstritten."
    },
    {
     "year": 918,
@@ -1340,14 +2190,29 @@ const COUNTRY_TIMELINES = {
     "text": "Von diesem Reichsnamen leitet sich das westliche Wort Korea ab."
    },
    {
+    "year": 1231,
+    "title": "Mongolische Invasionen",
+    "text": "Nach dreißig Jahren Krieg wird Goryeo mongolischer Vasall. Der Hof flieht auf eine Insel, die Bevölkerung trägt die Last."
+   },
+   {
     "year": 1234,
     "title": "Druck mit beweglichen Metalllettern",
     "text": "Koreanische Drucker verwenden Metalltypen – rund zwei Jahrhunderte vor Gutenberg. Die Technik verbreitete sich jedoch nicht nach Westen."
    },
    {
+    "year": 1251,
+    "title": "Die Tripitaka Koreana",
+    "text": "Über 80.000 Druckstöcke mit dem buddhistischen Kanon entstehen als Gebet um Rettung vor den Mongolen. Sie sind bis heute vollständig erhalten."
+   },
+   {
     "year": 1392,
     "title": "Beginn der Joseon-Dynastie",
     "text": "Fünf Jahrhunderte konfuzianisch geprägter Herrschaft beginnen – eine der langlebigsten Dynastien der Weltgeschichte."
+   },
+   {
+    "year": 1443,
+    "title": "Sejong lässt das Hangul entwickeln",
+    "text": "Der König gibt eine Schrift in Auftrag, die jeder lernen kann. Die Gelehrten wehrten sich – eine leicht erlernbare Schrift bedrohte ihr Bildungsmonopol."
    },
    {
     "year": 1446,
@@ -1360,9 +2225,39 @@ const COUNTRY_TIMELINES = {
     "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mit seinen gepanzerten Schildkrötenschiffen und rettet das Land."
    },
    {
+    "year": 1592,
+    "title": "Die Schildkrötenschiffe",
+    "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mehrfach, zuletzt bei Myeongnyang mit dreizehn Schiffen gegen weit über hundert. Der Seesieg entscheidet den Krieg mit."
+   },
+   {
+    "year": 1637,
+    "title": "Unterwerfung unter die Qing",
+    "text": "Nach zwei Invasionen wird Joseon Vasall der Mandschu. Die Demütigung prägt das Selbstbild des Hofes für zwei Jahrhunderte."
+   },
+   {
+    "year": 1801,
+    "title": "Verfolgung der Katholiken",
+    "text": "Das Christentum kommt über koreanische Gelehrte aus China ins Land, ohne Missionare. Der Hof sieht darin eine Bedrohung der Standesordnung und verfolgt es hart."
+   },
+   {
     "year": 1866,
     "title": "Abschottungspolitik",
     "text": "Korea weist westliche Kontaktversuche ab und erhält den Beinamen Einsiedlerkönigreich."
+   },
+   {
+    "year": 1894,
+    "title": "Donghak-Aufstand und Reformen",
+    "text": "Ein Bauernaufstand gegen Korruption und Fremdherrschaft löst den Krieg zwischen China und Japan um Korea aus. Die Kabo-Reformen schaffen die Standesordnung und die Sklaverei ab."
+   },
+   {
+    "year": 1895,
+    "title": "Ermordung der Königin Min",
+    "text": "Japanische Agenten töten die Königin im Palast. Der Mord zerstört den letzten Rest japanischen Ansehens in Korea."
+   },
+   {
+    "year": 1897,
+    "title": "Ausrufung des Kaiserreichs",
+    "text": "Korea erklärt sich zum Kaiserreich, um Gleichrangigkeit mit China und Japan zu behaupten. Der Versuch der Selbstbehauptung endet dreizehn Jahre später."
    },
    {
     "year": 1910,
@@ -1375,14 +2270,39 @@ const COUNTRY_TIMELINES = {
     "text": "Landesweite gewaltlose Unabhängigkeitsdemonstrationen werden blutig niedergeschlagen; sie prägen das nationale Selbstverständnis."
    },
    {
+    "year": 1926,
+    "title": "Die Kolonialzeit greift in den Alltag",
+    "text": "Japan baut Eisenbahnen und Fabriken, verbietet aber Sprache, Namen und Presse. Bis heute streiten Historiker und Regierungen über die Bilanz dieser Jahre."
+   },
+   {
     "year": 1945,
     "title": "Teilung am 38. Breitengrad",
     "text": "Zwei amerikanische Offiziere ziehen in einer Nacht eine Linie auf der Landkarte. Sie besteht bis heute."
    },
    {
+    "year": 1948,
+    "title": "Zwei Staaten",
+    "text": "Im Süden entsteht die Republik Korea, im Norden die Volksrepublik. Beide beanspruchen die ganze Halbinsel."
+   },
+   {
     "year": 1950,
     "title": "Koreakrieg",
     "text": "Drei Jahre Krieg mit Millionen Toten enden 1953 mit einem Waffenstillstand – ein Friedensvertrag wurde nie geschlossen."
+   },
+   {
+    "year": 1953,
+    "title": "Waffenstillstand ohne Frieden",
+    "text": "Die Kämpfe enden nahe der Ausgangslinie; bis zu drei Millionen Menschen sind tot. Ein Friedensvertrag fehlt bis heute."
+   },
+   {
+    "year": 1960,
+    "title": "Aprilrevolution",
+    "text": "Studentenproteste stürzen Präsident Rhee nach Wahlfälschung. Ein Jahr später putscht das Militär."
+   },
+   {
+    "year": 1962,
+    "title": "Der Aufstieg beginnt",
+    "text": "Mit Fünfjahresplänen, Exportförderung und den Familienkonzernen wächst Südkorea vom Agrarland zur Industriemacht – unter einer Militärdiktatur."
    },
    {
     "year": 1980,
@@ -1398,6 +2318,26 @@ const COUNTRY_TIMELINES = {
     "year": 1988,
     "title": "Olympische Spiele in Seoul",
     "text": "Der internationale Auftritt eines Landes, das eine Generation zuvor zu den ärmsten der Welt gehörte."
+   },
+   {
+    "year": 1997,
+    "title": "Asienkrise und Goldsammlung",
+    "text": "Südkorea muss unter den Rettungsschirm des Währungsfonds. Millionen Bürger spenden privates Gold zur Schuldentilgung – ein Vorgang ohne Beispiel."
+   },
+   {
+    "year": 2000,
+    "title": "Erstes Gipfeltreffen der beiden Staaten",
+    "text": "Die Präsidenten treffen sich erstmals seit der Teilung in Pjöngjang. Die Annäherung bleibt brüchig."
+   },
+   {
+    "year": 2006,
+    "title": "Nordkorea zündet eine Atombombe",
+    "text": "Der erste Test macht den Norden zur Atommacht und verändert die Sicherheitslage Ostasiens dauerhaft."
+   },
+   {
+    "year": 2017,
+    "title": "Amtsenthebung einer Präsidentin",
+    "text": "Nach monatelangen Kerzenlicht-Demonstrationen enthebt das Verfassungsgericht Park Geun-hye des Amtes. Ein Machtwechsel ohne Gewalt."
    }
   ]
  },
@@ -2678,6 +3618,146 @@ const COUNTRY_TIMELINES = {
     "year": 2016,
     "title": "Vision 2030",
     "text": "Saudi-Arabien kündigt den Umbau weg vom Öl an. Ob eine Rentenökonomie sich aus eigener Kraft in eine andere Wirtschaftsform verwandeln kann, ist historisch weitgehend unerprobt."
+   }
+  ]
+ },
+ "Thailand": {
+  "color": "#c48a1e",
+  "events": [
+   {
+    "year": -1500,
+    "title": "Bronze in Ban Chiang",
+    "text": "Im Nordosten entsteht früh eine Kultur mit Bronzeguss und bemalter Keramik. Die einst behauptete Datierung als älteste Bronzekultur der Welt gilt heute als überholt; die Funde bleiben bedeutend."
+   },
+   {
+    "year": 600,
+    "title": "Dvaravati",
+    "text": "Mon-sprechende Städte im Zentrum des heutigen Thailand übernehmen den Buddhismus aus Indien. Sie prägen Kunst und Religion der späteren Reiche."
+   },
+   {
+    "year": 1238,
+    "title": "Gründung von Sukhothai",
+    "text": "Tai-Fürsten machen sich vom Khmer-Reich unabhängig. Die Zeit gilt als goldenes Zeitalter – ein Bild, das im 19. Jahrhundert bewusst gepflegt wurde."
+   },
+   {
+    "year": 1283,
+    "title": "Die thailändische Schrift",
+    "text": "König Ramkhamhaeng wird die Schaffung der Schrift zugeschrieben. Die Inschrift, auf der das steht, wurde 1833 gefunden; ihre Echtheit ist unter Fachleuten umstritten."
+   },
+   {
+    "year": 1351,
+    "title": "Gründung von Ayutthaya",
+    "text": "Das neue Reich am Chao Phraya wird für vier Jahrhunderte die beherrschende Macht der Region und einer der größten Handelsplätze Asiens."
+   },
+   {
+    "year": 1431,
+    "title": "Ayutthaya erobert Angkor",
+    "text": "Das Khmer-Reich verliert seine Hauptstadt. Hofkultur, Rituale und Verwaltungsformen der Khmer wirken im siamesischen Königtum weiter."
+   },
+   {
+    "year": 1511,
+    "title": "Erste Europäer am Hof",
+    "text": "Portugiesische Gesandte kommen nach Ayutthaya. Siam handelt mit ihnen, ohne sich abhängig zu machen – ein Muster, das sich wiederholt."
+   },
+   {
+    "year": 1688,
+    "title": "Die Revolution von 1688",
+    "text": "Der Hof stürzt den griechischen Ratgeber Phaulkon und weist die Franzosen aus. Siam schließt sich für 150 Jahre weitgehend gegen europäischen Einfluss ab."
+   },
+   {
+    "year": 1767,
+    "title": "Zerstörung Ayutthayas",
+    "text": "Birmanische Truppen brennen die Stadt nieder; Archive und Kunstwerke gehen verloren. Ein Großteil des Wissens über die Zeit davor fehlt seitdem."
+   },
+   {
+    "year": 1782,
+    "title": "Bangkok wird Hauptstadt",
+    "text": "Rama I. begründet die Chakri-Dynastie und baut die neue Hauptstadt am Fluss. Die Dynastie regiert bis heute."
+   },
+   {
+    "year": 1826,
+    "title": "Verträge mit Großbritannien",
+    "text": "Siam öffnet den Handel und vermeidet damit den Krieg. Die Verträge kosten Zolleinnahmen und Rechtshoheit über Ausländer."
+   },
+   {
+    "year": 1855,
+    "title": "Bowring-Vertrag",
+    "text": "Der Freihandelsvertrag mit Großbritannien bindet Siam an den Weltmarkt. Reisexport wird zur wirtschaftlichen Grundlage des Landes."
+   },
+   {
+    "year": 1868,
+    "title": "Regierungsbeginn Chulalongkorns",
+    "text": "In 42 Jahren schafft er die Sklaverei ab, baut Verwaltung, Schulen und Eisenbahn und gibt Randgebiete ab, um den Kern zu retten."
+   },
+   {
+    "year": 1893,
+    "title": "Krise mit Frankreich",
+    "text": "Französische Kanonenboote erzwingen die Abtretung von Gebieten östlich des Mekong. Siam bleibt unabhängig – als einziges Land Südostasiens, aber um den Preis großer Landverluste."
+   },
+   {
+    "year": 1917,
+    "title": "Kriegseintritt an der Seite der Alliierten",
+    "text": "Die Beteiligung am Ersten Weltkrieg bringt einen Sitz beim Friedenskongress und die schrittweise Rücknahme der ungleichen Verträge."
+   },
+   {
+    "year": 1932,
+    "title": "Ende der absoluten Monarchie",
+    "text": "Eine Gruppe von Offizieren und Beamten erzwingt eine Verfassung. Aus dem absoluten wird ein konstitutionelles Königtum – und der Beginn einer bis heute andauernden Reihe von Militärputschen."
+   },
+   {
+    "year": 1939,
+    "title": "Aus Siam wird Thailand",
+    "text": "Die Umbenennung soll ein Land der Thai bezeichnen und begleitet eine nationalistische Politik. Zwischen 1946 und 1949 hieß das Land noch einmal Siam."
+   },
+   {
+    "year": 1941,
+    "title": "Japanische Truppen im Land",
+    "text": "Nach kurzem Widerstand lässt die Regierung Japan durchmarschieren und erklärt den Alliierten den Krieg. Eine Widerstandsbewegung arbeitet gleichzeitig mit ihnen zusammen."
+   },
+   {
+    "year": 1946,
+    "title": "Rätselhafter Tod König Anandas",
+    "text": "Der junge König stirbt durch einen Schuss im Palast. Der Fall wurde nie aufgeklärt; sein Bruder Bhumibol folgt ihm."
+   },
+   {
+    "year": 1957,
+    "title": "Militärherrschaft und amerikanische Bindung",
+    "text": "Feldmarschall Sarit stützt sich auf Monarchie, Militär und amerikanische Hilfe. Während des Vietnamkriegs werden US-Stützpunkte im Land eingerichtet."
+   },
+   {
+    "year": 1973,
+    "title": "Studentenaufstand",
+    "text": "Massenproteste stürzen die Militärregierung. Drei Jahre später endet die demokratische Öffnung mit einem Massaker an der Thammasat-Universität."
+   },
+   {
+    "year": 1997,
+    "title": "Krise und Verfassung des Volkes",
+    "text": "Die Abwertung des Baht löst die Asienkrise aus. Im selben Jahr tritt die bis dahin demokratischste Verfassung des Landes in Kraft."
+   },
+   {
+    "year": 2004,
+    "title": "Tsunami im Indischen Ozean",
+    "text": "Die Flutwelle tötet an Thailands Küsten über 5.000 Menschen, viele davon Touristen. Danach entsteht ein regionales Frühwarnsystem."
+   },
+   {
+    "year": 2006,
+    "title": "Putsch gegen Thaksin",
+    "text": "Das Militär stürzt den Ministerpräsidenten. Die Spaltung zwischen seinen Anhängern und Gegnern prägt die Politik der folgenden Jahre."
+   },
+   {
+    "year": 2014,
+    "title": "Erneuter Militärputsch",
+    "text": "Die Armee übernimmt nach monatelangen Protesten die Macht und schreibt eine Verfassung, die ihren Einfluss festschreibt."
+   },
+   {
+    "year": 2016,
+    "title": "Tod von König Bhumibol",
+    "text": "Nach 70 Jahren auf dem Thron stirbt der am längsten regierende Monarch der Welt. Das Land trägt ein Jahr lang Trauer."
+   },
+   {
+    "year": 2020,
+    "title": "Proteste der jungen Generation",
+    "text": "Erstmals fordern Demonstranten öffentlich eine Reform der Monarchie – ein Tabubruch in einem Land mit strengem Majestätsbeleidigungsrecht."
    }
   ]
  }
