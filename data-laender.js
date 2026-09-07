@@ -27,12 +27,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1077,
     "title": "Gang nach Canossa",
-    "text": "Höhepunkt des Investiturstreits zwischen Kaiser und Papst um die Vormachtstellung."
+    "text": "Höhepunkt des Investiturstreits zwischen Kaiser und Papst um die Vormachtstellung.",
+    "vertiefung": "investiturstreit"
    },
    {
     "year": 1122,
     "title": "Wormser Konkordat",
-    "text": "Der Investiturstreit endet mit einem Kompromiss: Der Kaiser verleiht die weltlichen Rechte, der Papst das geistliche Amt. Das Nebeneinander zweier Gewalten wird zum Dauerzustand des Reichs."
+    "text": "Der Investiturstreit endet mit einem Kompromiss: Der Kaiser verleiht die weltlichen Rechte, der Papst das geistliche Amt. Das Nebeneinander zweier Gewalten wird zum Dauerzustand des Reichs.",
+    "vertiefung": "investiturstreit"
    },
    {
     "year": 1250,
@@ -52,12 +54,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1455,
     "title": "Gutenbergs Bibel in Mainz",
-    "text": "Der Druck mit beweglichen Lettern macht Bücher vervielfältigbar. Ohne ihn wäre die Reformation zwei Generationen später kaum so schnell verlaufen."
+    "text": "Der Druck mit beweglichen Lettern macht Bücher vervielfältigbar. Ohne ihn wäre die Reformation zwei Generationen später kaum so schnell verlaufen.",
+    "vertiefung": "buchdruck"
    },
    {
     "year": 1517,
     "title": "Beginn der Reformation",
-    "text": "Martin Luthers Thesen spalten die Kirche und prägen die deutsche Geschichte nachhaltig."
+    "text": "Martin Luthers Thesen spalten die Kirche und prägen die deutsche Geschichte nachhaltig.",
+    "vertiefung": "reformation"
    },
    {
     "year": 1524,
@@ -72,12 +76,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1618,
     "title": "Dreißigjähriger Krieg beginnt",
-    "text": "Einer der verheerendsten Kriege der deutschen Geschichte verwüstet weite Teile des Reiches."
+    "text": "Einer der verheerendsten Kriege der deutschen Geschichte verwüstet weite Teile des Reiches.",
+    "vertiefung": "dreissigjaehriger-krieg"
    },
    {
     "year": 1648,
     "title": "Westfälischer Frieden",
-    "text": "Nach dreißig Jahren Krieg werden die Reichsstände nahezu souverän. Die Bevölkerung ist regional um bis zu ein Drittel geschrumpft."
+    "text": "Nach dreißig Jahren Krieg werden die Reichsstände nahezu souverän. Die Bevölkerung ist regional um bis zu ein Drittel geschrumpft.",
+    "vertiefung": "westfaelischer-friede"
    },
    {
     "year": 1701,
@@ -117,7 +123,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1871,
     "title": "Deutsche Reichsgründung",
-    "text": "Unter preußischer Führung entsteht das Deutsche Kaiserreich."
+    "text": "Unter preußischer Führung entsteht das Deutsche Kaiserreich.",
+    "vertiefung": "reichsgruendung"
    },
    {
     "year": 1883,
@@ -127,7 +134,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1914,
     "title": "Deutschland erklärt Russland den Krieg",
-    "text": "Deutschland erklärt Russland und Frankreich den Krieg und marschiert durch das neutrale Belgien. Die Kriegsbegeisterung des Sommers hält keine zwei Jahre."
+    "text": "Deutschland erklärt Russland und Frankreich den Krieg und marschiert durch das neutrale Belgien. Die Kriegsbegeisterung des Sommers hält keine zwei Jahre.",
+    "vertiefung": "julikrise"
    },
    {
     "year": 1918,
@@ -137,17 +145,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1919,
     "title": "Versailles und die Weimarer Verfassung",
-    "text": "Der Friedensvertrag legt Gebietsverluste und Reparationen fest, die Verfassung schafft eine Demokratie mit Frauenwahlrecht. Beide werden von Anfang an bekämpft."
+    "text": "Der Friedensvertrag legt Gebietsverluste und Reparationen fest, die Verfassung schafft eine Demokratie mit Frauenwahlrecht. Beide werden von Anfang an bekämpft.",
+    "vertiefung": "versailles"
    },
    {
     "year": 1923,
     "title": "Hyperinflation",
-    "text": "Das Geld verliert binnen Monaten jeden Wert; ein Brot kostet im November Milliarden Mark. Die Währungsreform beendet die Inflation, das Misstrauen bleibt."
+    "text": "Das Geld verliert binnen Monaten jeden Wert; ein Brot kostet im November Milliarden Mark. Die Währungsreform beendet die Inflation, das Misstrauen bleibt.",
+    "vertiefung": "inflation-1923"
    },
    {
     "year": 1933,
     "title": "NS-Machtübernahme",
-    "text": "Adolf Hitler wird Reichskanzler – Beginn der Diktatur und des Zivilisationsbruchs des Holocaust."
+    "text": "Adolf Hitler wird Reichskanzler – Beginn der Diktatur und des Zivilisationsbruchs des Holocaust.",
+    "vertiefung": "weg-in-den-krieg"
    },
    {
     "year": 1935,
@@ -162,7 +173,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1942,
     "title": "Wannseekonferenz",
-    "text": "Hohe Beamte koordinieren die Ermordung der europäischen Juden. Die Konferenz beschloss den Mord nicht, sie organisierte ihn – das Protokoll ist eines der wichtigsten Dokumente der Täterseite."
+    "text": "Hohe Beamte koordinieren die Ermordung der europäischen Juden. Die Konferenz beschloss den Mord nicht, sie organisierte ihn – das Protokoll ist eines der wichtigsten Dokumente der Täterseite.",
+    "vertiefung": "holocaust"
    },
    {
     "year": 1945,
@@ -177,7 +189,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1949,
     "title": "Gründung von BRD und DDR",
-    "text": "Deutschland wird für über 40 Jahre in zwei Staaten geteilt."
+    "text": "Deutschland wird für über 40 Jahre in zwei Staaten geteilt.",
+    "vertiefung": "kalter-krieg-entsteht"
    },
    {
     "year": 1953,
@@ -187,7 +200,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1961,
     "title": "Bau der Berliner Mauer",
-    "text": "Die DDR riegelt West-Berlin ab, um die Abwanderung zu stoppen. Bis 1989 sterben an der innerdeutschen Grenze mindestens 140 Menschen."
+    "text": "Die DDR riegelt West-Berlin ab, um die Abwanderung zu stoppen. Bis 1989 sterben an der innerdeutschen Grenze mindestens 140 Menschen.",
+    "vertiefung": "mauerbau"
    },
    {
     "year": 1970,
@@ -197,12 +211,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1989,
     "title": "Fall der Berliner Mauer",
-    "text": "Nach Wochen von Montagsdemonstrationen öffnet die DDR am 9. November die Grenze – ausgelöst durch eine missverständliche Pressekonferenz."
+    "text": "Nach Wochen von Montagsdemonstrationen öffnet die DDR am 9. November die Grenze – ausgelöst durch eine missverständliche Pressekonferenz.",
+    "vertiefung": "mauerfall"
    },
    {
     "year": 1990,
     "title": "Deutsche Wiedervereinigung",
-    "text": "BRD und DDR vereinigen sich zu einem gemeinsamen demokratischen Staat."
+    "text": "BRD und DDR vereinigen sich zu einem gemeinsamen demokratischen Staat.",
+    "vertiefung": "wiedervereinigung"
    },
    {
     "year": 2002,
@@ -422,27 +438,32 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1337,
     "title": "Beginn des Hundertjährigen Krieges",
-    "text": "Jahrzehntelanger Konflikt mit England um die französische Krone."
+    "text": "Jahrzehntelanger Konflikt mit England um die französische Krone.",
+    "vertiefung": "hundertjaehriger-krieg"
    },
    {
     "year": 1348,
     "title": "Der Schwarze Tod erreicht Frankreich",
-    "text": "Binnen zwei Jahren stirbt vermutlich ein Drittel bis die Hälfte der Bevölkerung. Löhne steigen, die Grundherrschaft gerät ins Wanken."
+    "text": "Binnen zwei Jahren stirbt vermutlich ein Drittel bis die Hälfte der Bevölkerung. Löhne steigen, die Grundherrschaft gerät ins Wanken.",
+    "vertiefung": "schwarzer-tod"
    },
    {
     "year": 1429,
     "title": "Jeanne d'Arc befreit Orléans",
-    "text": "Die Nationalheldin wendet das Kriegsglück zugunsten Frankreichs."
+    "text": "Die Nationalheldin wendet das Kriegsglück zugunsten Frankreichs.",
+    "vertiefung": "jeanne-darc"
    },
    {
     "year": 1453,
     "title": "Ende des Hundertjährigen Krieges",
-    "text": "Mit dem Verlust der Gascogne endet die englische Herrschaft auf dem Festland bis auf Calais. Aus Lehnsverbänden ist ein Königreich geworden."
+    "text": "Mit dem Verlust der Gascogne endet die englische Herrschaft auf dem Festland bis auf Calais. Aus Lehnsverbänden ist ein Königreich geworden.",
+    "vertiefung": "hundertjaehriger-krieg"
    },
    {
     "year": 1572,
     "title": "Bartholomäusnacht",
-    "text": "In Paris und den Provinzen werden Tausende Hugenotten ermordet. Der Religionskrieg dauert danach noch ein Vierteljahrhundert."
+    "text": "In Paris und den Provinzen werden Tausende Hugenotten ermordet. Der Religionskrieg dauert danach noch ein Vierteljahrhundert.",
+    "vertiefung": "bartholomaeusnacht"
    },
    {
     "year": 1589,
@@ -457,22 +478,26 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1643,
     "title": "Regierungsbeginn Ludwigs XIV.",
-    "text": "Der 'Sonnenkönig' macht Frankreich zur führenden Macht Europas und Versailles zum Symbol des Absolutismus."
+    "text": "Der 'Sonnenkönig' macht Frankreich zur führenden Macht Europas und Versailles zum Symbol des Absolutismus.",
+    "vertiefung": "ludwig14"
    },
    {
     "year": 1685,
     "title": "Widerruf des Edikts von Nantes",
-    "text": "Ludwig XIV. hebt die Toleranz auf; Hunderttausende Hugenotten fliehen, viele nach Preußen und in die Niederlande. Frankreich verliert Handwerk und Kapital."
+    "text": "Ludwig XIV. hebt die Toleranz auf; Hunderttausende Hugenotten fliehen, viele nach Preußen und in die Niederlande. Frankreich verliert Handwerk und Kapital.",
+    "vertiefung": "ludwig14"
    },
    {
     "year": 1751,
     "title": "Die Encyclopédie erscheint",
-    "text": "Diderot und d'Alembert sammeln das Wissen der Zeit in 28 Bänden und stellen es unter den Vorbehalt der Vernunft. Das Werk wurde zeitweise verboten und trotzdem weitergeführt."
+    "text": "Diderot und d'Alembert sammeln das Wissen der Zeit in 28 Bänden und stellen es unter den Vorbehalt der Vernunft. Das Werk wurde zeitweise verboten und trotzdem weitergeführt.",
+    "vertiefung": "aufklaerung"
    },
    {
     "year": 1789,
     "title": "Französische Revolution",
-    "text": "Sturz der absoluten Monarchie, Erklärung der Menschen- und Bürgerrechte."
+    "text": "Sturz der absoluten Monarchie, Erklärung der Menschen- und Bürgerrechte.",
+    "vertiefung": "franzoesische-revolution"
    },
    {
     "year": 1793,
@@ -522,7 +547,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1894,
     "title": "Dreyfus-Affäre",
-    "text": "Ein jüdischer Offizier wird zu Unrecht wegen Landesverrats verurteilt. Der Streit spaltet das Land und schuf die Rolle des öffentlich einmischenden Intellektuellen."
+    "text": "Ein jüdischer Offizier wird zu Unrecht wegen Landesverrats verurteilt. Der Streit spaltet das Land und schuf die Rolle des öffentlich einmischenden Intellektuellen.",
+    "vertiefung": "dreyfus"
    },
    {
     "year": 1905,
@@ -532,7 +558,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1916,
     "title": "Schlacht um Verdun",
-    "text": "Zehn Monate Stellungskrieg fordern auf beiden Seiten je rund 300.000 Tote. Verdun wurde zum Sinnbild sinnloser Materialschlachten."
+    "text": "Zehn Monate Stellungskrieg fordern auf beiden Seiten je rund 300.000 Tote. Verdun wurde zum Sinnbild sinnloser Materialschlachten.",
+    "vertiefung": "stellungskrieg"
    },
    {
     "year": 1940,
@@ -552,7 +579,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1962,
     "title": "Unabhängigkeit Algeriens",
-    "text": "Nach acht Jahren Krieg endet die französische Herrschaft. Der Konflikt hatte 1958 bereits die Vierte Republik gestürzt; Folter und Vertreibungen belasten das Verhältnis bis heute."
+    "text": "Nach acht Jahren Krieg endet die französische Herrschaft. Der Konflikt hatte 1958 bereits die Vierte Republik gestürzt; Folter und Vertreibungen belasten das Verhältnis bis heute.",
+    "vertiefung": "algerienkrieg"
    },
    {
     "year": 1968,
@@ -587,7 +615,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1237,
     "title": "Mongolische Eroberung",
-    "text": "Die Rus geraten für rund 240 Jahre unter die Oberherrschaft der Goldenen Horde."
+    "text": "Die Rus geraten für rund 240 Jahre unter die Oberherrschaft der Goldenen Horde.",
+    "vertiefung": "mongolisches-reich"
    },
    {
     "year": 1240,
@@ -632,7 +661,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1703,
     "title": "Gründung von Sankt Petersburg",
-    "text": "Peter der Große lässt eine Hauptstadt im Sumpf bauen, nach europäischem Vorbild und unter dem Einsatz zehntausender Zwangsarbeiter."
+    "text": "Peter der Große lässt eine Hauptstadt im Sumpf bauen, nach europäischem Vorbild und unter dem Einsatz zehntausender Zwangsarbeiter.",
+    "vertiefung": "peter-der-grosse"
    },
    {
     "year": 1709,
@@ -642,7 +672,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1721,
     "title": "Peter der Große krönt sich zum Kaiser",
-    "text": "Russland modernisiert sich nach westeuropäischem Vorbild und wird zum Kaiserreich."
+    "text": "Russland modernisiert sich nach westeuropäischem Vorbild und wird zum Kaiserreich.",
+    "vertiefung": "peter-der-grosse"
    },
    {
     "year": 1762,
@@ -687,7 +718,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1917,
     "title": "Oktoberrevolution",
-    "text": "Die Bolschewiki unter Lenin übernehmen die Macht – Beginn der Sowjetunion."
+    "text": "Die Bolschewiki unter Lenin übernehmen die Macht – Beginn der Sowjetunion.",
+    "vertiefung": "russische-revolution"
    },
    {
     "year": 1918,
@@ -707,17 +739,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1937,
     "title": "Der Große Terror",
-    "text": "Massenverhaftungen und Erschießungen treffen Partei, Armee und Bevölkerung. Allein 1937/38 wurden nach Archivzahlen über 680.000 Menschen hingerichtet."
+    "text": "Massenverhaftungen und Erschießungen treffen Partei, Armee und Bevölkerung. Allein 1937/38 wurden nach Archivzahlen über 680.000 Menschen hingerichtet.",
+    "vertiefung": "grosser-terror"
    },
    {
     "year": 1941,
     "title": "Unternehmen Barbarossa",
-    "text": "NS-Deutschland überfällt die Sowjetunion – Beginn eines der verlustreichsten Kriege der Geschichte."
+    "text": "NS-Deutschland überfällt die Sowjetunion – Beginn eines der verlustreichsten Kriege der Geschichte.",
+    "vertiefung": "zweiter-weltkrieg"
    },
    {
     "year": 1943,
     "title": "Sieg bei Stalingrad",
-    "text": "Wendepunkt des Krieges an der Ostfront zugunsten der Sowjetunion."
+    "text": "Wendepunkt des Krieges an der Ostfront zugunsten der Sowjetunion.",
+    "vertiefung": "wende-1942"
    },
    {
     "year": 1945,
@@ -732,7 +767,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1962,
     "title": "Kubakrise",
-    "text": "Sowjetische Raketen auf Kuba bringen die Welt an den Rand eines Atomkriegs. Der Rückzug kostete Chruschtschow innenpolitisch die Autorität."
+    "text": "Sowjetische Raketen auf Kuba bringen die Welt an den Rand eines Atomkriegs. Der Rückzug kostete Chruschtschow innenpolitisch die Autorität.",
+    "vertiefung": "kubakrise"
    },
    {
     "year": 1979,
@@ -747,12 +783,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1986,
     "title": "Reaktorkatastrophe von Tschernobyl",
-    "text": "Die Vertuschung der ersten Tage beschädigt das Vertrauen in den Staat stärker als der Unfall selbst. Gorbatschow nannte sie später einen Auslöser seiner Reformpolitik."
+    "text": "Die Vertuschung der ersten Tage beschädigt das Vertrauen in den Staat stärker als der Unfall selbst. Gorbatschow nannte sie später einen Auslöser seiner Reformpolitik.",
+    "vertiefung": "tschernobyl"
    },
    {
     "year": 1991,
     "title": "Auflösung der Sowjetunion",
-    "text": "Die UdSSR zerfällt in unabhängige Staaten – Ende des Kalten Krieges."
+    "text": "Die UdSSR zerfällt in unabhängige Staaten – Ende des Kalten Krieges.",
+    "vertiefung": "ende-kalter-krieg"
    },
    {
     "year": 1998,
@@ -792,7 +830,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1619,
     "title": "Die ersten Verschleppten in Virginia",
-    "text": "Ein Schiff bringt rund zwanzig Afrikaner nach Jamestown. Aus zunächst unklarem Status wird im Lauf des Jahrhunderts erbliche Sklaverei nach Rasse."
+    "text": "Ein Schiff bringt rund zwanzig Afrikaner nach Jamestown. Aus zunächst unklarem Status wird im Lauf des Jahrhunderts erbliche Sklaverei nach Rasse.",
+    "vertiefung": "sklavenhandel"
    },
    {
     "year": 1620,
@@ -817,12 +856,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1776,
     "title": "Unabhängigkeitserklärung",
-    "text": "Die 13 Kolonien erklären ihre Unabhängigkeit von Großbritannien."
+    "text": "Die 13 Kolonien erklären ihre Unabhängigkeit von Großbritannien.",
+    "vertiefung": "amerikanische-revolution"
    },
    {
     "year": 1787,
     "title": "Verabschiedung der US-Verfassung",
-    "text": "Eine der ältesten noch gültigen geschriebenen Verfassungen der Welt tritt in Kraft."
+    "text": "Eine der ältesten noch gültigen geschriebenen Verfassungen der Welt tritt in Kraft.",
+    "vertiefung": "amerikanische-revolution"
    },
    {
     "year": 1791,
@@ -837,7 +878,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1830,
     "title": "Vertreibung der Indianer",
-    "text": "Ein Gesetz erlaubt die Zwangsumsiedlung östlicher Völker. Auf dem Pfad der Tränen sterben tausende Cherokee, Choctaw und Angehörige anderer Nationen."
+    "text": "Ein Gesetz erlaubt die Zwangsumsiedlung östlicher Völker. Auf dem Pfad der Tränen sterben tausende Cherokee, Choctaw und Angehörige anderer Nationen.",
+    "vertiefung": "trail-of-tears"
    },
    {
     "year": 1848,
@@ -852,12 +894,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1861,
     "title": "Beginn des Bürgerkriegs",
-    "text": "Konflikt um Sklaverei und Staatenrechte zwischen Nord- und Südstaaten."
+    "text": "Konflikt um Sklaverei und Staatenrechte zwischen Nord- und Südstaaten.",
+    "vertiefung": "amerikanischer-buergerkrieg"
    },
    {
     "year": 1863,
     "title": "Emanzipationserklärung",
-    "text": "Abraham Lincoln erklärt die Sklaven in den Südstaaten für frei."
+    "text": "Abraham Lincoln erklärt die Sklaven in den Südstaaten für frei.",
+    "vertiefung": "amerikanischer-buergerkrieg"
    },
    {
     "year": 1865,
@@ -897,7 +941,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1929,
     "title": "Weltwirtschaftskrise",
-    "text": "Der Börsencrash an der Wall Street löst eine globale Depression aus."
+    "text": "Der Börsencrash an der Wall Street löst eine globale Depression aus.",
+    "vertiefung": "weltwirtschaftskrise"
    },
    {
     "year": 1933,
@@ -912,27 +957,32 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1945,
     "title": "Erster Einsatz von Atomwaffen",
-    "text": "Die USA werfen Atombomben auf Hiroshima und Nagasaki ab und beenden den Zweiten Weltkrieg."
+    "text": "Die USA werfen Atombomben auf Hiroshima und Nagasaki ab und beenden den Zweiten Weltkrieg.",
+    "vertiefung": "zweiter-weltkrieg"
    },
    {
     "year": 1954,
     "title": "Brown gegen Board of Education",
-    "text": "Der Supreme Court erklärt Rassentrennung an Schulen für verfassungswidrig. Die Umsetzung dauert Jahrzehnte und kostet Menschen das Leben."
+    "text": "Der Supreme Court erklärt Rassentrennung an Schulen für verfassungswidrig. Die Umsetzung dauert Jahrzehnte und kostet Menschen das Leben.",
+    "vertiefung": "buergerrechtsbewegung"
    },
    {
     "year": 1955,
     "title": "Busboykott von Montgomery",
-    "text": "381 Tage lang meiden schwarze Fahrgäste die Busse. Der Boykott macht Rosa Parks und Martin Luther King bekannt und zeigt die Wirkung wirtschaftlichen Drucks."
+    "text": "381 Tage lang meiden schwarze Fahrgäste die Busse. Der Boykott macht Rosa Parks und Martin Luther King bekannt und zeigt die Wirkung wirtschaftlichen Drucks.",
+    "vertiefung": "buergerrechtsbewegung"
    },
    {
     "year": 1963,
     "title": "'I Have a Dream'-Rede",
-    "text": "Martin Luther King prägt die Bürgerrechtsbewegung mit seiner berühmten Rede in Washington."
+    "text": "Martin Luther King prägt die Bürgerrechtsbewegung mit seiner berühmten Rede in Washington.",
+    "vertiefung": "buergerrechtsbewegung"
    },
    {
     "year": 1964,
     "title": "Civil Rights Act",
-    "text": "Rassentrennung in öffentlichen Einrichtungen wird verboten, ein Jahr später folgt das Wahlrechtsgesetz. Die politische Landkarte des Südens verschiebt sich dauerhaft."
+    "text": "Rassentrennung in öffentlichen Einrichtungen wird verboten, ein Jahr später folgt das Wahlrechtsgesetz. Die politische Landkarte des Südens verschiebt sich dauerhaft.",
+    "vertiefung": "buergerrechtsbewegung"
    },
    {
     "year": 1968,
@@ -942,7 +992,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1969,
     "title": "Erste Mondlandung",
-    "text": "Neil Armstrong und Buzz Aldrin betreten als erste Menschen den Mond."
+    "text": "Neil Armstrong und Buzz Aldrin betreten als erste Menschen den Mond.",
+    "vertiefung": "mondlandung"
    },
    {
     "year": 1973,
@@ -952,12 +1003,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1989,
     "title": "Das Internet öffnet sich",
-    "text": "Aus einem Forschungsnetz wird eine Infrastruktur für alle. Die entscheidenden Bausteine entstanden mit öffentlichem Geld, der wirtschaftliche Ertrag fiel privat an."
+    "text": "Aus einem Forschungsnetz wird eine Infrastruktur für alle. Die entscheidenden Bausteine entstanden mit öffentlichem Geld, der wirtschaftliche Ertrag fiel privat an.",
+    "vertiefung": "world-wide-web"
    },
    {
     "year": 1991,
     "title": "Ende des Kalten Krieges",
-    "text": "Mit dem Zerfall der Sowjetunion werden die USA zur alleinigen Supermacht."
+    "text": "Mit dem Zerfall der Sowjetunion werden die USA zur alleinigen Supermacht.",
+    "vertiefung": "ende-kalter-krieg"
    },
    {
     "year": 2001,
@@ -1157,17 +1210,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1066,
     "title": "Normannische Eroberung",
-    "text": "Wilhelm von der Normandie nimmt England ein – Sprache, Adel und Recht der Insel verändern sich grundlegend."
+    "text": "Wilhelm von der Normandie nimmt England ein – Sprache, Adel und Recht der Insel verändern sich grundlegend.",
+    "vertiefung": "normannische-eroberung"
    },
    {
     "year": 1086,
     "title": "Domesday Book",
-    "text": "Wilhelm der Eroberer lässt Besitz und Erträge des ganzen Landes erfassen – die genaueste Bestandsaufnahme des mittelalterlichen Europa."
+    "text": "Wilhelm der Eroberer lässt Besitz und Erträge des ganzen Landes erfassen – die genaueste Bestandsaufnahme des mittelalterlichen Europa.",
+    "vertiefung": "normannische-eroberung"
    },
    {
     "year": 1215,
     "title": "Magna Carta",
-    "text": "Am 15. Juni 1215 gewährt König Johann unter Bürgerkriegsdrohung die Magna Carta. Indem sie den Herrscher dem Recht unterstellt und Freiheiten der 'freien Männer' festhält, wird sie zur Grundlage individueller Rechte im angelsächsischen Rechtsraum."
+    "text": "Am 15. Juni 1215 gewährt König Johann unter Bürgerkriegsdrohung die Magna Carta. Indem sie den Herrscher dem Recht unterstellt und Freiheiten der 'freien Männer' festhält, wird sie zur Grundlage individueller Rechte im angelsächsischen Rechtsraum.",
+    "vertiefung": "magna-carta"
    },
    {
     "year": 1265,
@@ -1177,7 +1233,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1348,
     "title": "Der Schwarze Tod erreicht England",
-    "text": "Bis zu 40 Prozent der Bevölkerung sterben. Arbeitskräfte werden knapp, die Löhne steigen, Lohnobergrenzen per Gesetz scheitern."
+    "text": "Bis zu 40 Prozent der Bevölkerung sterben. Arbeitskräfte werden knapp, die Löhne steigen, Lohnobergrenzen per Gesetz scheitern.",
+    "vertiefung": "schwarzer-tod"
    },
    {
     "year": 1381,
@@ -1192,12 +1249,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1534,
     "title": "Bruch mit Rom",
-    "text": "Heinrich VIII. macht sich zum Oberhaupt der englischen Kirche – aus dynastischen, nicht aus theologischen Gründen."
+    "text": "Heinrich VIII. macht sich zum Oberhaupt der englischen Kirche – aus dynastischen, nicht aus theologischen Gründen.",
+    "vertiefung": "reformation"
    },
    {
     "year": 1588,
     "title": "Sieg über die Armada",
-    "text": "Die Abwehr der spanischen Invasionsflotte markiert den Aufstieg Englands zur Seemacht."
+    "text": "Die Abwehr der spanischen Invasionsflotte markiert den Aufstieg Englands zur Seemacht.",
+    "vertiefung": "armada"
    },
    {
     "year": 1600,
@@ -1237,7 +1296,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1769,
     "title": "Watts Dampfmaschine erhält ihr Patent",
-    "text": "Die getrennte Kondensation senkt den Kohleverbrauch drastisch. Dampfkraft wird auch dort wirtschaftlich, wo keine Kohle vor der Tür liegt."
+    "text": "Die getrennte Kondensation senkt den Kohleverbrauch drastisch. Dampfkraft wird auch dort wirtschaftlich, wo keine Kohle vor der Tür liegt.",
+    "vertiefung": "industrielle-revolution"
    },
    {
     "year": 1801,
@@ -1247,7 +1307,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1807,
     "title": "Verbot des Sklavenhandels",
-    "text": "Großbritannien verbietet den Sklavenhandel mit seinen Kolonien; 1833 folgt die Abschaffung der Sklaverei im Empire."
+    "text": "Großbritannien verbietet den Sklavenhandel mit seinen Kolonien; 1833 folgt die Abschaffung der Sklaverei im Empire.",
+    "vertiefung": "sklavenhandel"
    },
    {
     "year": 1832,
@@ -1257,7 +1318,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1833,
     "title": "Abschaffung der Sklaverei im Empire",
-    "text": "Die Sklaverei endet in den meisten Kolonien. Entschädigt wurden nicht die Versklavten, sondern ihre Besitzer – die Anleihe dafür wurde erst 2015 getilgt."
+    "text": "Die Sklaverei endet in den meisten Kolonien. Entschädigt wurden nicht die Versklavten, sondern ihre Besitzer – die Anleihe dafür wurde erst 2015 getilgt.",
+    "vertiefung": "sklavenhandel"
    },
    {
     "year": 1837,
@@ -1267,7 +1329,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1845,
     "title": "Große Hungersnot in Irland",
-    "text": "Eine Kartoffelfäule und die Wirtschaftspolitik Londons kosten rund eine Million Menschen das Leben, eine weitere Million wandert aus. Irland hat bis heute weniger Einwohner als 1841."
+    "text": "Eine Kartoffelfäule und die Wirtschaftspolitik Londons kosten rund eine Million Menschen das Leben, eine weitere Million wandert aus. Irland hat bis heute weniger Einwohner als 1841.",
+    "vertiefung": "irische-hungersnot"
    },
    {
     "year": 1851,
@@ -1282,7 +1345,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1916,
     "title": "Schlacht an der Somme",
-    "text": "Am ersten Tag fallen fast 20.000 britische Soldaten – der verlustreichste Tag der britischen Militärgeschichte. Der Krieg beendet das Vertrauen in die alte Ordnung."
+    "text": "Am ersten Tag fallen fast 20.000 britische Soldaten – der verlustreichste Tag der britischen Militärgeschichte. Der Krieg beendet das Vertrauen in die alte Ordnung.",
+    "vertiefung": "stellungskrieg"
    },
    {
     "year": 1921,
@@ -1302,7 +1366,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1947,
     "title": "Rückzug aus Indien",
-    "text": "Die Unabhängigkeit Indiens leitet das Ende des Empire ein."
+    "text": "Die Unabhängigkeit Indiens leitet das Ende des Empire ein.",
+    "vertiefung": "teilung-indiens"
    },
    {
     "year": 1948,
@@ -1337,7 +1402,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 2020,
     "title": "Austritt aus der EU",
-    "text": "Nach dem Referendum von 2016 verlässt das Vereinigte Königreich die Europäische Union."
+    "text": "Nach dem Referendum von 2016 verlässt das Vereinigte Königreich die Europäische Union.",
+    "vertiefung": "brexit"
    }
   ]
  },
@@ -1367,7 +1433,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 711,
     "title": "Muslimische Eroberung",
-    "text": "Im April oder Mai 711 setzt ein Amazigh-Heer unter Tariq ibn Ziyad über die Straße von Gibraltar; im Juli schlägt es König Roderich entscheidend."
+    "text": "Im April oder Mai 711 setzt ein Amazigh-Heer unter Tariq ibn Ziyad über die Straße von Gibraltar; im Juli schlägt es König Roderich entscheidend.",
+    "vertiefung": "cordoba"
    },
    {
     "year": 718,
@@ -1377,12 +1444,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 756,
     "title": "Emirat von Córdoba",
-    "text": "Al-Andalus wird zum eigenständigen Zentrum von Wissenschaft, Medizin und Philosophie – über Jahrhunderte eine Brücke antiken Wissens nach Europa."
+    "text": "Al-Andalus wird zum eigenständigen Zentrum von Wissenschaft, Medizin und Philosophie – über Jahrhunderte eine Brücke antiken Wissens nach Europa.",
+    "vertiefung": "cordoba"
    },
    {
     "year": 929,
     "title": "Kalifat von Córdoba",
-    "text": "Abd ar-Rahman III. nimmt den Kalifentitel an. Córdoba wird eine der größten Städte Europas mit Bibliotheken, Wasserleitungen und Straßenbeleuchtung."
+    "text": "Abd ar-Rahman III. nimmt den Kalifentitel an. Córdoba wird eine der größten Städte Europas mit Bibliotheken, Wasserleitungen und Straßenbeleuchtung.",
+    "vertiefung": "cordoba"
    },
    {
     "year": 1031,
@@ -1412,7 +1481,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1492,
     "title": "Granada, Kolumbus, Vertreibung",
-    "text": "Die Katholischen Könige erobern Granada, Kolumbus erreicht Amerika – und im selben Jahr werden die Juden aus Spanien vertrieben."
+    "text": "Die Katholischen Könige erobern Granada, Kolumbus erreicht Amerika – und im selben Jahr werden die Juden aus Spanien vertrieben.",
+    "vertiefung": "1492"
    },
    {
     "year": 1516,
@@ -1422,12 +1492,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1519,
     "title": "Magellans Weltumsegelung beginnt",
-    "text": "Fünf Schiffe brechen auf, eines kehrt 1522 zurück. Der Beweis, dass die Erde umsegelbar ist, kostete Magellan und über 200 Männer das Leben."
+    "text": "Fünf Schiffe brechen auf, eines kehrt 1522 zurück. Der Beweis, dass die Erde umsegelbar ist, kostete Magellan und über 200 Männer das Leben.",
+    "vertiefung": "columbian-exchange"
    },
    {
     "year": 1521,
     "title": "Eroberung Tenochtitlans",
-    "text": "Mit dem Fall der Aztekenhauptstadt beginnt die spanische Herrschaft über weite Teile Amerikas."
+    "text": "Mit dem Fall der Aztekenhauptstadt beginnt die spanische Herrschaft über weite Teile Amerikas.",
+    "vertiefung": "columbian-exchange"
    },
    {
     "year": 1545,
@@ -1442,7 +1514,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1588,
     "title": "Untergang der Armada",
-    "text": "Die Niederlage der Invasionsflotte gegen England markiert den Wendepunkt der spanischen Seemacht."
+    "text": "Die Niederlage der Invasionsflotte gegen England markiert den Wendepunkt der spanischen Seemacht.",
+    "vertiefung": "armada"
    },
    {
     "year": 1609,
@@ -1467,7 +1540,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1824,
     "title": "Verlust des amerikanischen Festlands",
-    "text": "Mit der Schlacht von Ayacucho endet die spanische Herrschaft auf dem Kontinent. Ein Weltreich schrumpft binnen fünfzehn Jahren auf wenige Inseln."
+    "text": "Mit der Schlacht von Ayacucho endet die spanische Herrschaft auf dem Kontinent. Ein Weltreich schrumpft binnen fünfzehn Jahren auf wenige Inseln.",
+    "vertiefung": "lateinamerika-unabhaengigkeit"
    },
    {
     "year": 1873,
@@ -1492,12 +1566,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1936,
     "title": "Bürgerkrieg",
-    "text": "Der Spanische Bürgerkrieg 1936–1939 endet mit dem Sieg der Nationalisten unter General Franco, der bis zu seinem Tod 1975 als Diktator herrscht."
+    "text": "Der Spanische Bürgerkrieg 1936–1939 endet mit dem Sieg der Nationalisten unter General Franco, der bis zu seinem Tod 1975 als Diktator herrscht.",
+    "vertiefung": "spanischer-buergerkrieg"
    },
    {
     "year": 1937,
     "title": "Bombardierung von Gernika",
-    "text": "Deutsche und italienische Flugzeuge zerstören die baskische Stadt. Picassos Bild macht daraus das bekannteste Antikriegswerk des Jahrhunderts."
+    "text": "Deutsche und italienische Flugzeuge zerstören die baskische Stadt. Picassos Bild macht daraus das bekannteste Antikriegswerk des Jahrhunderts.",
+    "vertiefung": "spanischer-buergerkrieg"
    },
    {
     "year": 1939,
@@ -1507,12 +1583,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1975,
     "title": "Übergang zur Demokratie",
-    "text": "Nach Francos Tod stellt Juan Carlos I. die Monarchie wieder her und leitet den Übergang ein."
+    "text": "Nach Francos Tod stellt Juan Carlos I. die Monarchie wieder her und leitet den Übergang ein.",
+    "vertiefung": "transicion"
    },
    {
     "year": 1978,
     "title": "Neue Verfassung",
-    "text": "Die Verfassung von 1978 begründet eine konstitutionelle Monarchie mit weitreichender Selbstverwaltung der Regionen."
+    "text": "Die Verfassung von 1978 begründet eine konstitutionelle Monarchie mit weitreichender Selbstverwaltung der Regionen.",
+    "vertiefung": "transicion"
    },
    {
     "year": 1981,
@@ -1772,12 +1850,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": -753,
     "title": "Sagenhafte Gründung Roms",
-    "text": "Die Überlieferung nennt dieses Jahr; archäologisch ist eine dauerhafte Siedlung auf dem Palatin bereits im 10. Jahrhundert v. Chr. nachweisbar."
+    "text": "Die Überlieferung nennt dieses Jahr; archäologisch ist eine dauerhafte Siedlung auf dem Palatin bereits im 10. Jahrhundert v. Chr. nachweisbar.",
+    "vertiefung": "roemische-republik"
    },
    {
     "year": -509,
     "title": "Vertreibung der Könige",
-    "text": "Rom wird Republik. Die Verfassung mit Konsuln, Senat und Volksversammlungen prägt europäisches Staatsdenken bis in die Neuzeit."
+    "text": "Rom wird Republik. Die Verfassung mit Konsuln, Senat und Volksversammlungen prägt europäisches Staatsdenken bis in die Neuzeit.",
+    "vertiefung": "roemische-republik"
    },
    {
     "year": -390,
@@ -1802,12 +1882,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": -44,
     "title": "Ermordung Caesars",
-    "text": "Senatoren töten den Diktator, um die Republik zu retten – und lösen den Bürgerkrieg aus, der sie endgültig beseitigt."
+    "text": "Senatoren töten den Diktator, um die Republik zu retten – und lösen den Bürgerkrieg aus, der sie endgültig beseitigt.",
+    "vertiefung": "roemische-republik"
    },
    {
     "year": 79,
     "title": "Ausbruch des Vesuv",
-    "text": "Pompeji und Herculaneum verschwinden unter Asche und Glutlawinen. Die Verschüttung konservierte einen Alltag, den keine andere antike Stadt so zeigt."
+    "text": "Pompeji und Herculaneum verschwinden unter Asche und Glutlawinen. Die Verschüttung konservierte einen Alltag, den keine andere antike Stadt so zeigt.",
+    "vertiefung": "vesuv"
    },
    {
     "year": 313,
@@ -1817,7 +1899,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 476,
     "title": "Absetzung des letzten weströmischen Kaisers",
-    "text": "Odoaker setzt Romulus Augustulus ab. Zeitgenossen empfanden das kaum als Epochenbruch – die Verwaltung lief weiter."
+    "text": "Odoaker setzt Romulus Augustulus ab. Zeitgenossen empfanden das kaum als Epochenbruch – die Verwaltung lief weiter.",
+    "vertiefung": "ende-westrom"
    },
    {
     "year": 568,
@@ -1827,7 +1910,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1077,
     "title": "Canossa",
-    "text": "Heinrich IV. tut vor Papst Gregor VII. in der Burg der Markgräfin Mathilde Buße – ein Höhepunkt des Investiturstreits auf italienischem Boden."
+    "text": "Heinrich IV. tut vor Papst Gregor VII. in der Burg der Markgräfin Mathilde Buße – ein Höhepunkt des Investiturstreits auf italienischem Boden.",
+    "vertiefung": "investiturstreit"
    },
    {
     "year": 1130,
@@ -1837,7 +1921,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1204,
     "title": "Venedig lenkt den Kreuzzug um",
-    "text": "Die Republik bringt das Kreuzfahrerheer dazu, Konstantinopel zu plündern, und sichert sich das Handelsmonopol im östlichen Mittelmeer."
+    "text": "Die Republik bringt das Kreuzfahrerheer dazu, Konstantinopel zu plündern, und sichert sich das Handelsmonopol im östlichen Mittelmeer.",
+    "vertiefung": "kreuzzuege"
    },
    {
     "year": 1252,
@@ -1857,12 +1942,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1348,
     "title": "Der Schwarze Tod erreicht Italien",
-    "text": "Über genuesische Schiffe kommt die Pest nach Europa. Boccaccios Decamerone entsteht als literarische Antwort auf die Katastrophe."
+    "text": "Über genuesische Schiffe kommt die Pest nach Europa. Boccaccios Decamerone entsteht als literarische Antwort auf die Katastrophe.",
+    "vertiefung": "schwarzer-tod"
    },
    {
     "year": 1401,
     "title": "Wettbewerb um die Bronzetüren von Florenz",
-    "text": "Ghiberti setzt sich gegen Brunelleschi durch – der Streit gilt als symbolischer Auftakt der Renaissance."
+    "text": "Ghiberti setzt sich gegen Brunelleschi durch – der Streit gilt als symbolischer Auftakt der Renaissance.",
+    "vertiefung": "renaissance"
    },
    {
     "year": 1442,
@@ -1877,7 +1964,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1508,
     "title": "Michelangelo beginnt die Sixtinische Decke",
-    "text": "Vier Jahre Arbeit auf einem Gerüst. Der Auftrag kam von einem Papst, der Kunst als Machtmittel verstand."
+    "text": "Vier Jahre Arbeit auf einem Gerüst. Der Auftrag kam von einem Papst, der Kunst als Machtmittel verstand.",
+    "vertiefung": "renaissance"
    },
    {
     "year": 1545,
@@ -1892,7 +1980,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1633,
     "title": "Prozess gegen Galilei",
-    "text": "Der Inquisitionsprozess endet mit Widerruf und Hausarrest. Erst 1992 erklärte die Kirche das Urteil offiziell für einen Fehler."
+    "text": "Der Inquisitionsprozess endet mit Widerruf und Hausarrest. Erst 1992 erklärte die Kirche das Urteil offiziell für einen Fehler.",
+    "vertiefung": "galilei"
    },
    {
     "year": 1797,
@@ -1912,12 +2001,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1861,
     "title": "Königreich Italien ausgerufen",
-    "text": "Nach Garibaldis Zug der Tausend und Cavours Diplomatie entsteht ein Nationalstaat. Rom kommt erst 1870 hinzu."
+    "text": "Nach Garibaldis Zug der Tausend und Cavours Diplomatie entsteht ein Nationalstaat. Rom kommt erst 1870 hinzu.",
+    "vertiefung": "risorgimento"
    },
    {
     "year": 1870,
     "title": "Rom wird Hauptstadt",
-    "text": "Italienische Truppen nehmen die Stadt; der Kirchenstaat endet. Die Päpste erkennen den italienischen Staat erst 1929 an."
+    "text": "Italienische Truppen nehmen die Stadt; der Kirchenstaat endet. Die Päpste erkennen den italienischen Staat erst 1929 an.",
+    "vertiefung": "risorgimento"
    },
    {
     "year": 1911,
@@ -1932,7 +2023,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1922,
     "title": "Marsch auf Rom",
-    "text": "Mussolini wird zum Regierungschef ernannt – die erste faschistische Machtübernahme Europas, Vorbild für spätere Bewegungen."
+    "text": "Mussolini wird zum Regierungschef ernannt – die erste faschistische Machtübernahme Europas, Vorbild für spätere Bewegungen.",
+    "vertiefung": "faschismus-italien"
    },
    {
     "year": 1929,
@@ -2212,22 +2304,26 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1443,
     "title": "Sejong lässt das Hangul entwickeln",
-    "text": "Der König gibt eine Schrift in Auftrag, die jeder lernen kann. Die Gelehrten wehrten sich – eine leicht erlernbare Schrift bedrohte ihr Bildungsmonopol."
+    "text": "Der König gibt eine Schrift in Auftrag, die jeder lernen kann. Die Gelehrten wehrten sich – eine leicht erlernbare Schrift bedrohte ihr Bildungsmonopol.",
+    "vertiefung": "hangul"
    },
    {
     "year": 1446,
     "title": "Verkündung des Hangul",
-    "text": "König Sejong lässt eine eigene Schrift entwerfen, die jeder in wenigen Tagen erlernen kann. Die Gelehrtenelite wehrte sich dagegen."
+    "text": "König Sejong lässt eine eigene Schrift entwerfen, die jeder in wenigen Tagen erlernen kann. Die Gelehrtenelite wehrte sich dagegen.",
+    "vertiefung": "hangul"
    },
    {
     "year": 1592,
     "title": "Japanische Invasion",
-    "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mit seinen gepanzerten Schildkrötenschiffen und rettet das Land."
+    "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mit seinen gepanzerten Schildkrötenschiffen und rettet das Land.",
+    "vertiefung": "imjin-krieg"
    },
    {
     "year": 1592,
     "title": "Die Schildkrötenschiffe",
-    "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mehrfach, zuletzt bei Myeongnyang mit dreizehn Schiffen gegen weit über hundert. Der Seesieg entscheidet den Krieg mit."
+    "text": "Admiral Yi Sun-sin schlägt die japanische Flotte mehrfach, zuletzt bei Myeongnyang mit dreizehn Schiffen gegen weit über hundert. Der Seesieg entscheidet den Krieg mit.",
+    "vertiefung": "imjin-krieg"
    },
    {
     "year": 1637,
@@ -2262,12 +2358,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1910,
     "title": "Annexion durch Japan",
-    "text": "35 Jahre Kolonialherrschaft mit Unterdrückung der Sprache, Zwangsarbeit und dem System der sogenannten Trostfrauen – bis heute eine Belastung der Beziehungen."
+    "text": "35 Jahre Kolonialherrschaft mit Unterdrückung der Sprache, Zwangsarbeit und dem System der sogenannten Trostfrauen – bis heute eine Belastung der Beziehungen.",
+    "vertiefung": "korea-kolonialzeit"
    },
    {
     "year": 1919,
     "title": "Bewegung des 1. März",
-    "text": "Landesweite gewaltlose Unabhängigkeitsdemonstrationen werden blutig niedergeschlagen; sie prägen das nationale Selbstverständnis."
+    "text": "Landesweite gewaltlose Unabhängigkeitsdemonstrationen werden blutig niedergeschlagen; sie prägen das nationale Selbstverständnis.",
+    "vertiefung": "korea-kolonialzeit"
    },
    {
     "year": 1926,
@@ -2277,7 +2375,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1945,
     "title": "Teilung am 38. Breitengrad",
-    "text": "Zwei amerikanische Offiziere ziehen in einer Nacht eine Linie auf der Landkarte. Sie besteht bis heute."
+    "text": "Zwei amerikanische Offiziere ziehen in einer Nacht eine Linie auf der Landkarte. Sie besteht bis heute.",
+    "vertiefung": "koreakrieg"
    },
    {
     "year": 1948,
@@ -2287,7 +2386,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1950,
     "title": "Koreakrieg",
-    "text": "Drei Jahre Krieg mit Millionen Toten enden 1953 mit einem Waffenstillstand – ein Friedensvertrag wurde nie geschlossen."
+    "text": "Drei Jahre Krieg mit Millionen Toten enden 1953 mit einem Waffenstillstand – ein Friedensvertrag wurde nie geschlossen.",
+    "vertiefung": "koreakrieg"
    },
    {
     "year": 1953,
@@ -3647,7 +3747,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1351,
     "title": "Gründung von Ayutthaya",
-    "text": "Das neue Reich am Chao Phraya wird für vier Jahrhunderte die beherrschende Macht der Region und einer der größten Handelsplätze Asiens."
+    "text": "Das neue Reich am Chao Phraya wird für vier Jahrhunderte die beherrschende Macht der Region und einer der größten Handelsplätze Asiens.",
+    "vertiefung": "ayutthaya"
    },
    {
     "year": 1431,
@@ -3667,7 +3768,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1767,
     "title": "Zerstörung Ayutthayas",
-    "text": "Birmanische Truppen brennen die Stadt nieder; Archive und Kunstwerke gehen verloren. Ein Großteil des Wissens über die Zeit davor fehlt seitdem."
+    "text": "Birmanische Truppen brennen die Stadt nieder; Archive und Kunstwerke gehen verloren. Ein Großteil des Wissens über die Zeit davor fehlt seitdem.",
+    "vertiefung": "ayutthaya"
    },
    {
     "year": 1782,
@@ -3682,17 +3784,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1855,
     "title": "Bowring-Vertrag",
-    "text": "Der Freihandelsvertrag mit Großbritannien bindet Siam an den Weltmarkt. Reisexport wird zur wirtschaftlichen Grundlage des Landes."
+    "text": "Der Freihandelsvertrag mit Großbritannien bindet Siam an den Weltmarkt. Reisexport wird zur wirtschaftlichen Grundlage des Landes.",
+    "vertiefung": "siam-unabhaengig"
    },
    {
     "year": 1868,
     "title": "Regierungsbeginn Chulalongkorns",
-    "text": "In 42 Jahren schafft er die Sklaverei ab, baut Verwaltung, Schulen und Eisenbahn und gibt Randgebiete ab, um den Kern zu retten."
+    "text": "In 42 Jahren schafft er die Sklaverei ab, baut Verwaltung, Schulen und Eisenbahn und gibt Randgebiete ab, um den Kern zu retten.",
+    "vertiefung": "siam-unabhaengig"
    },
    {
     "year": 1893,
     "title": "Krise mit Frankreich",
-    "text": "Französische Kanonenboote erzwingen die Abtretung von Gebieten östlich des Mekong. Siam bleibt unabhängig – als einziges Land Südostasiens, aber um den Preis großer Landverluste."
+    "text": "Französische Kanonenboote erzwingen die Abtretung von Gebieten östlich des Mekong. Siam bleibt unabhängig – als einziges Land Südostasiens, aber um den Preis großer Landverluste.",
+    "vertiefung": "siam-unabhaengig"
    },
    {
     "year": 1917,
@@ -3702,7 +3807,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1932,
     "title": "Ende der absoluten Monarchie",
-    "text": "Eine Gruppe von Offizieren und Beamten erzwingt eine Verfassung. Aus dem absoluten wird ein konstitutionelles Königtum – und der Beginn einer bis heute andauernden Reihe von Militärputschen."
+    "text": "Eine Gruppe von Offizieren und Beamten erzwingt eine Verfassung. Aus dem absoluten wird ein konstitutionelles Königtum – und der Beginn einer bis heute andauernden Reihe von Militärputschen.",
+    "vertiefung": "siam-1932"
    },
    {
     "year": 1939,

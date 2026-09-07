@@ -2604,5 +2604,1253 @@ const VERTIEFUNGEN = [
     "John W. Dower: Embracing Defeat",
     "The Cambridge History of Japan, Band 6"
   ]
+},
+{
+  "id": "investiturstreit",
+  "titel": "Canossa und der Streit um die Investitur",
+  "epoche": "mittelalter",
+  "jahr": 1077,
+  "zeitraum": "1075–1122",
+  "region": "Heiliges Römisches Reich",
+  "leitsatz": "Der Gang nach Canossa war keine Demütigung, sondern ein Schachzug – er funktionierte, und der Kaiser verlor trotzdem.",
+  "vorgeschichte": "Bischöfe und Äbte waren im Reich zugleich Landesherren mit Truppen und Einkünften. Wer sie einsetzte, verfügte über einen großen Teil der Reichsgewalt – und das tat seit Generationen der König. Die von Cluny ausgehende Reformbewegung sah darin einen Missbrauch geistlicher Ämter.",
+  "verlauf": "1075 verbot Gregor VII. die Einsetzung von Bischöfen durch Laien. Heinrich IV. ließ den Papst für abgesetzt erklären, worauf dieser ihn bannte und die Untertanen vom Treueid entband. Als die deutschen Fürsten drohten, einen neuen König zu wählen, zog Heinrich im Winter über die Alpen und tat vor der Burg Canossa Buße. Der Papst musste ihn als Priester lossprechen – und verlor damit sein wirksamstes Druckmittel. Der Konflikt ging weitere vierzig Jahre weiter, mit Gegenkönigen, Gegenpäpsten und Feldzügen.",
+  "folgen": "Das Wormser Konkordat von 1122 trennte geistliches Amt und weltliche Rechte. Wichtiger als der Kompromiss war, was der Streit offengelegt hatte: Es gab zwei höchste Gewalten, und keine konnte die andere endgültig unterwerfen. Für das Reich bedeutete das dauerhaft schwächere Königsmacht als in Frankreich oder England, weil die Fürsten gelernt hatten, dass sie zwischen beiden Seiten wählen konnten.",
+  "strittig": "Die Redewendung vom Gang nach Canossa als Sinnbild der Unterwerfung stammt nicht aus dem Mittelalter, sondern aus dem Kulturkampf des 19. Jahrhunderts: Bismarck prägte sie 1872 im Reichstag. Historisch war der Bußgang für Heinrich kurzfristig ein Erfolg. Ob Gregor eine Falle gestellt bekam oder selbst taktierte, ist umstritten.",
+  "zahlen": [
+    {
+      "wert": "1077",
+      "was": "Bußgang vor Canossa"
+    },
+    {
+      "wert": "47 Jahre",
+      "was": "Dauer des Konflikts bis zum Konkordat"
+    },
+    {
+      "wert": "2",
+      "was": "Bannungen Heinrichs IV."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Investiture Controversy",
+    "Gerd Tellenbach: Die westliche Kirche vom 10. bis zum frühen 12. Jahrhundert",
+    "Lampert von Hersfeld: Annalen (parteiische Quelle)"
+  ]
+},
+{
+  "id": "dreissigjaehriger-krieg",
+  "titel": "Der Dreißigjährige Krieg",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1618,
+  "zeitraum": "1618–1648",
+  "region": "Mitteleuropa",
+  "leitsatz": "Ein Konfessionsstreit wurde zum europäischen Machtkrieg – und das Land, auf dem er ausgetragen wurde, brauchte ein Jahrhundert zur Erholung.",
+  "vorgeschichte": "Der Augsburger Religionsfrieden von 1555 hatte die Reformierten ausgeschlossen und strittige Fälle ungeregelt gelassen. Im Reich standen sich Union und Liga bewaffnet gegenüber, in Böhmen bedrohte ein katholischer Habsburger die Rechte protestantischer Stände.",
+  "verlauf": "Der Prager Fenstersturz von 1618 löste den Aufstand aus. Was als böhmischer Ständekonflikt begann, zog nacheinander Dänemark, Schweden und Frankreich hinein – das katholische Frankreich schließlich auf protestantischer Seite, gegen die Habsburger. Die Heere ernährten sich vom Land; Söldnerführer wie Wallenstein bauten Machtapparate auf eigene Rechnung. Magdeburg wurde 1631 mit über 20.000 Toten fast ausgelöscht.",
+  "folgen": "Der Westfälische Friede von 1648 machte die Reichsstände nahezu souverän, erkannte die Reformierten an und beendete den Versuch, Konfessionen mit Gewalt zu vereinheitlichen. Er begründete zugleich die Praxis, europäische Ordnung auf Kongressen auszuhandeln.",
+  "strittig": "Die Bevölkerungsverluste sind umstritten. Ältere Angaben nannten pauschal ein Drittel für das gesamte Reich; die neuere Forschung rechnet mit rund 20 Prozent im Reichsdurchschnitt, regional stark schwankend – in Teilen Mecklenburgs und Württembergs über die Hälfte, in Nordwestdeutschland kaum spürbar. Umstritten ist auch, ob der Krieg vor allem ein Religionskrieg oder ein Staatenkrieg war.",
+  "zahlen": [
+    {
+      "wert": "30 Jahre",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "ca. 20 %",
+      "was": "geschätzter Bevölkerungsverlust im Reich"
+    },
+    {
+      "wert": "1648",
+      "was": "Westfälischer Friede"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Thirty Years' War",
+    "Peter H. Wilson: Der Dreißigjährige Krieg",
+    "Herbert Langer: Hortus Bellicus"
+  ]
+},
+{
+  "id": "inflation-1923",
+  "titel": "Als das Geld nichts mehr wert war",
+  "epoche": "moderne",
+  "jahr": 1923,
+  "zeitraum": "1919–1924",
+  "region": "Deutschland",
+  "leitsatz": "Am Ende kostete ein Brot Milliarden – und die Erfahrung wirkte länger nach als der Schaden.",
+  "vorgeschichte": "Deutschland hatte den Weltkrieg fast vollständig über Schulden finanziert, in der Erwartung, ihn zu gewinnen und die Kosten den Besiegten aufzuerlegen. Nach der Niederlage kamen Reparationen hinzu. Die Reichsbank druckte weiter Geld, statt Steuern zu erhöhen.",
+  "verlauf": "Als Deutschland Lieferungen aussetzte, besetzten Frankreich und Belgien 1923 das Ruhrgebiet. Die Regierung rief zum passiven Widerstand auf und bezahlte die streikenden Arbeiter mit frisch gedrucktem Geld. Der Kurs fiel ins Bodenlose: Im November 1923 kostete ein Dollar 4,2 Billionen Mark. Löhne wurden täglich, dann zweimal täglich ausgezahlt und sofort ausgegeben. Im November stoppte die Rentenmark die Inflation binnen Tagen – gedeckt durch nichts als das Vertrauen, dass ihre Menge begrenzt bleibt.",
+  "folgen": "Sparguthaben, Anleihen und Renten waren wertlos; Schuldner, darunter der Staat, waren entlastet. Das Bürgertum verlor Vermögen und Vertrauen in die Republik. Die Furcht vor Inflation prägte die deutsche Geld- und Haushaltspolitik über Generationen, bis in die Konstruktion der Europäischen Zentralbank.",
+  "strittig": "Ob die Hyperinflation den Aufstieg des Nationalsozialismus verursachte, ist umstritten. Die NSDAP scheiterte 1923 und wurde erst nach der Weltwirtschaftskrise ab 1930 stark – die Deflationspolitik Brünings wirkte politisch verheerender. Die Inflation zerstörte aber Bindungen an die Republik, die 1930 fehlten.",
+  "zahlen": [
+    {
+      "wert": "4,2 Billionen",
+      "was": "Mark je Dollar im November 1923"
+    },
+    {
+      "wert": "15. November 1923",
+      "was": "Einführung der Rentenmark"
+    },
+    {
+      "wert": "1 zu 1 Billion",
+      "was": "Umtauschverhältnis alte zu neuer Mark"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: hyperinflation; Weimar Republic",
+    "Gerald D. Feldman: The Great Disorder",
+    "Deutsche Bundesbank: Zur Geschichte der Hyperinflation 1923"
+  ]
+},
+{
+  "id": "mauerbau",
+  "titel": "Der 13. August 1961",
+  "epoche": "moderne",
+  "jahr": 1961,
+  "zeitraum": "1961–1989",
+  "region": "Berlin",
+  "leitsatz": "Eine Mauer, gebaut, um die eigene Bevölkerung im Land zu halten – und ausdrücklich zwei Monate zuvor bestritten.",
+  "vorgeschichte": "Zwischen 1949 und 1961 verließen etwa 2,7 Millionen Menschen die DDR, überwiegend junge und gut ausgebildete. Berlin war das offene Schlupfloch: Wer die Sektorengrenze überquerte, war im Westen. Der Staat verlor jährlich einen Jahrgang Facharbeiter.",
+  "verlauf": "Am 15. Juni 1961 erklärte Walter Ulbricht auf einer Pressekonferenz, niemand habe die Absicht, eine Mauer zu errichten – niemand hatte danach gefragt. In der Nacht zum 13. August riegelten Volkspolizei und Kampfgruppen die Sektorengrenze mit Stacheldraht ab, später kam Beton. Familien wurden getrennt, U-Bahn-Linien gekappt, Häuser an der Grenze zugemauert und geräumt. Die Westmächte protestierten, griffen aber nicht ein: Ihre drei Grundforderungen – Präsenz in Berlin, Zugang, Freiheit der Westsektoren – waren nicht verletzt.",
+  "folgen": "Die Abwanderung endete, die DDR stabilisierte sich wirtschaftlich. Zugleich verlor sie jede Möglichkeit, sich als freiwillige Ordnung darzustellen. An der innerdeutschen Grenze starben bis 1989 mindestens 140 Menschen allein in Berlin; die Gesamtzahl der Todesopfer an der Grenze ist bis heute Gegenstand von Forschung.",
+  "strittig": "Ob der Westen anders hätte reagieren können, wird bis heute diskutiert. Kennedys interne Reaktion – eine Mauer sei besser als ein Krieg – zeigt, dass die Teilung als stabilisierend akzeptiert wurde. Über die genaue Zahl der Todesopfer gibt es unterschiedliche Zählungen, je nachdem ob Fluchthelfer, Grenzsoldaten und Todesfälle bei Kontrollen mitgezählt werden.",
+  "zahlen": [
+    {
+      "wert": "2,7 Mio.",
+      "was": "Abwanderung aus der DDR 1949–1961"
+    },
+    {
+      "wert": "155 km",
+      "was": "Länge der Berliner Grenzanlagen"
+    },
+    {
+      "wert": "28 Jahre",
+      "was": "Bestand der Mauer"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Berlin Wall",
+    "Stiftung Berliner Mauer: Todesopfer an der Berliner Mauer",
+    "Hope M. Harrison: Ulbrichts Mauer"
+  ]
+},
+{
+  "id": "wiedervereinigung",
+  "titel": "Wie aus zwei Staaten einer wurde",
+  "epoche": "moderne",
+  "jahr": 1990,
+  "zeitraum": "1989–1990",
+  "region": "Deutschland",
+  "leitsatz": "Zwischen Mauerfall und Vereinigung lagen 329 Tage – und die Zustimmung von vier Siegermächten, die noch immer Rechte in Deutschland hatten.",
+  "vorgeschichte": "Der Mauerfall vom 9. November 1989 hatte keine Vereinigung beschlossen. Die Bürgerbewegungen der DDR wollten mehrheitlich einen reformierten eigenen Staat. Erst als die Abwanderung anhielt und die DDR-Wirtschaft zusammenbrach, verschob sich die Losung von Wir sind das Volk zu Wir sind ein Volk.",
+  "verlauf": "Die erste freie Volkskammerwahl im März 1990 gewann ein Bündnis, das die schnelle Vereinigung wollte. Im Juli folgte die Währungsunion, die Ostmark wurde für Löhne und kleine Guthaben eins zu eins getauscht – wirtschaftlich fragwürdig, politisch kaum vermeidbar. Parallel verhandelten die beiden deutschen Staaten mit den USA, der Sowjetunion, Großbritannien und Frankreich. Der Zwei-plus-Vier-Vertrag beendete die Rechte der Siegermächte; Moskau stimmte der NATO-Mitgliedschaft zu. Am 3. Oktober 1990 trat die DDR dem Grundgesetz bei.",
+  "folgen": "Die Vereinigung erfolgte als Beitritt, nicht als Neugründung: Das Grundgesetz blieb, DDR-Institutionen wurden abgewickelt. Die Treuhandanstalt privatisierte über 8.000 Betriebe; die Industriebeschäftigung im Osten fiel um rund zwei Drittel. Wirtschaftliche und mentale Unterschiede sind Jahrzehnte später noch messbar.",
+  "strittig": "Ob eine langsamere Vereinigung mit eigener Verfassung möglich gewesen wäre, ist bis heute Streitpunkt. Ebenso die Frage, ob dem Westen 1990 mündlich eine NATO-Osterweiterung ausgeschlossen wurde: Es gibt Gesprächsprotokolle mit entsprechenden Äußerungen, aber keine vertragliche Zusage. Beide Seiten berufen sich auf dieselben Akten.",
+  "zahlen": [
+    {
+      "wert": "329 Tage",
+      "was": "zwischen Mauerfall und Vereinigung"
+    },
+    {
+      "wert": "3. Oktober 1990",
+      "was": "Tag des Beitritts"
+    },
+    {
+      "wert": "über 8.000",
+      "was": "von der Treuhand veräußerte Betriebe"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: German reunification",
+    "Zwei-plus-Vier-Vertrag, Vertragstext",
+    "Andreas Rödder: Deutschland einig Vaterland"
+  ]
+},
+{
+  "id": "hundertjaehriger-krieg",
+  "titel": "Der Hundertjährige Krieg",
+  "epoche": "mittelalter",
+  "jahr": 1337,
+  "zeitraum": "1337–1453",
+  "region": "Frankreich und England",
+  "leitsatz": "116 Jahre Krieg um einen Thronanspruch – am Ende hatten beide Seiten aufgehört, dasselbe Königshaus zu sein.",
+  "vorgeschichte": "Die englischen Könige waren seit 1066 zugleich Lehnsleute des französischen Königs für ihre Festlandsbesitzungen – ein Dauerkonflikt. Als 1328 die direkte kapetingische Linie erlosch, erhob Eduard III. über seine Mutter Anspruch auf den französischen Thron. Hinzu kamen der Streit um Flandern und der lukrative Wollhandel.",
+  "verlauf": "Englische Langbogenschützen schlugen die französische Ritterschaft bei Crécy 1346 und Azincourt 1415 vernichtend. Zwischendurch wüteten die Pest und Bauernaufstände auf beiden Seiten. 1420 erkannte Frankreich einen englischen Thronerben an. Die Wende brachte ab 1429 Jeanne d'Arc mit dem Entsatz von Orléans und der Krönung Karls VII. in Reims. Danach reorganisierte Frankreich Heer und Steuern; die neue Artillerie entschied die letzten Schlachten.",
+  "folgen": "England verlor bis auf Calais den gesamten Festlandsbesitz und stürzte in die Rosenkriege. Frankreich ging mit stehendem Heer und dauerhafter Steuer aus dem Krieg hervor – der Beginn des modernen Staates. Auf beiden Seiten entstand ein Bewusstsein, verschiedene Völker zu sein; die englische Oberschicht gab das Französische als Alltagssprache auf.",
+  "strittig": "Der Name täuscht: Es war keine durchgehende Auseinandersetzung, sondern eine Folge von Kriegen mit langen Waffenstillständen, und die Bezeichnung entstand erst im 19. Jahrhundert. Umstritten ist auch, wie entscheidend der Langbogen wirklich war – neuere Arbeiten betonen Disziplin, Gelände und Versorgung stärker als die Waffe selbst.",
+  "zahlen": [
+    {
+      "wert": "116 Jahre",
+      "was": "von 1337 bis 1453"
+    },
+    {
+      "wert": "1346, 1356, 1415",
+      "was": "Crécy, Poitiers, Azincourt"
+    },
+    {
+      "wert": "Calais",
+      "was": "einziger englischer Rest bis 1558"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Hundred Years' War",
+    "Jonathan Sumption: The Hundred Years War",
+    "Christopher Allmand: The Hundred Years War"
+  ]
+},
+{
+  "id": "jeanne-darc",
+  "titel": "Jeanne d'Arc",
+  "epoche": "mittelalter",
+  "jahr": 1429,
+  "zeitraum": "1429–1431",
+  "region": "Frankreich",
+  "leitsatz": "Ein Bauernmädchen wendete einen Krieg, wurde als Ketzerin verbrannt – und 25 Jahre später von derselben Kirche rehabilitiert.",
+  "vorgeschichte": "1428 stand Frankreich vor der Niederlage: Der Norden war englisch oder burgundisch, der Thronerbe ungekrönt und ohne Ansehen. Orléans, der Schlüssel zum Süden, wurde belagert.",
+  "verlauf": "Die etwa sechzehnjährige Jeanne aus Domrémy erklärte, Stimmen von Heiligen hätten sie beauftragt, den Dauphin krönen zu lassen. Nach theologischer Prüfung erhielt sie Rüstung und Begleitung. Innerhalb von neun Tagen war die Belagerung von Orléans aufgehoben; im Juli 1429 wurde Karl VII. in Reims gekrönt – ein Akt von großer symbolischer Wirkung. 1430 geriet sie in burgundische Gefangenschaft und wurde an die Engländer verkauft. Ein kirchliches Gericht unter englischem Einfluss verurteilte sie wegen Ketzerei; im Mai 1431 wurde sie in Rouen verbrannt, mit neunzehn Jahren.",
+  "folgen": "Frankreich gewann den Krieg. 1456 hob ein Revisionsprozess das Urteil auf, 1920 wurde Jeanne heiliggesprochen. Ihre Figur wurde seither von fast jeder politischen Richtung Frankreichs beansprucht – von Republikanern, Katholiken, der Résistance und der extremen Rechten gleichermaßen.",
+  "strittig": "Über ihre Stimmen gibt es keine historische Entscheidung, nur Deutungen: religiöse Erfahrung, psychische Erkrankung, bewusste Inszenierung. Ihre militärische Rolle ist umstritten – ob sie Truppen führte oder vor allem als Symbol wirkte. Die Prozessakten sind ungewöhnlich gut erhalten und zeigen eine Angeklagte, die den Theologen mehrfach rhetorisch gewachsen war.",
+  "zahlen": [
+    {
+      "wert": "9 Tage",
+      "was": "bis zum Entsatz von Orléans"
+    },
+    {
+      "wert": "19",
+      "was": "Alter bei der Hinrichtung"
+    },
+    {
+      "wert": "1456",
+      "was": "Aufhebung des Urteils"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Saint Joan of Arc",
+    "Prozessakten von 1431 und 1456 (Edition Duparc)",
+    "Régine Pernoud: Jeanne d'Arc"
+  ]
+},
+{
+  "id": "bartholomaeusnacht",
+  "titel": "Die Bartholomäusnacht",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1572,
+  "zeitraum": "1562–1598",
+  "region": "Frankreich",
+  "leitsatz": "Eine Hochzeit, die Frieden bringen sollte, endete in einem Massaker, das den Krieg um ein Vierteljahrhundert verlängerte.",
+  "vorgeschichte": "Seit 1562 führten Katholiken und Hugenotten Krieg. Die Königinmutter Katharina von Medici versuchte auszugleichen und verheiratete ihre Tochter mit dem protestantischen Heinrich von Navarra. Zur Hochzeit im August 1572 war der protestantische Adel in Paris versammelt.",
+  "verlauf": "Zwei Tage nach der Hochzeit scheiterte ein Attentat auf den hugenottischen Führer Coligny. Aus Furcht vor Vergeltung beschloss der Hof, die Führung zu töten. In der Nacht zum 24. August begann die Tötung – und geriet außer Kontrolle: Die Pariser Bevölkerung machte daraus ein Massaker, das sich über Wochen auf ein Dutzend Städte ausweitete.",
+  "folgen": "Die Zahl der Toten wird auf 5.000 bis 10.000 geschätzt. Der Protestantismus in Frankreich verlor seine Führungsschicht und wurde zu einer bewaffneten Minderheit mit eigenen Städten. Erst Heinrich von Navarra selbst beendete die Kriege – als König Heinrich IV., nachdem er katholisch geworden war, mit dem Edikt von Nantes 1598.",
+  "strittig": "Ob der Hof ein umfassendes Massaker plante oder nur die Ermordung weniger Anführer, ist seit Jahrhunderten umstritten. Die Quellen der Beteiligten widersprechen sich und dienten der Entlastung. Die neuere Forschung neigt zur zweiten Deutung: eine Entscheidung aus Panik, deren Folgen niemand steuerte.",
+  "zahlen": [
+    {
+      "wert": "24. August 1572",
+      "was": "Beginn des Massakers"
+    },
+    {
+      "wert": "5.000–10.000",
+      "was": "geschätzte Todesopfer"
+    },
+    {
+      "wert": "1598",
+      "was": "Edikt von Nantes"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Massacre of St. Bartholomew's Day",
+    "Barbara B. Diefendorf: Beneath the Cross",
+    "Denis Crouzet: La nuit de la Saint-Barthélemy"
+  ]
+},
+{
+  "id": "ludwig14",
+  "titel": "Ludwig XIV. und der Hof als Machtmittel",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1643,
+  "zeitraum": "1643–1715",
+  "region": "Frankreich",
+  "leitsatz": "Er entmachtete den Adel nicht mit Gewalt, sondern mit Etikette – und ruinierte sein Land mit Kriegen.",
+  "vorgeschichte": "Als Kind erlebte Ludwig die Fronde, den Aufstand von Adel und Parlamenten, und musste zeitweise aus Paris fliehen. Die Erfahrung prägte seinen Entschluss, den Adel nie wieder gefährlich werden zu lassen.",
+  "verlauf": "Nach dem Tod Mazarins 1661 regierte er ohne ersten Minister. Versailles wurde ab 1682 Regierungssitz: Wer Einfluss wollte, musste dort leben, in einem Tagesablauf aus Zeremonien, in dem Nähe zum König das einzige Kapital war. Colbert baute Manufakturen, Zölle und Flotte auf. Zugleich führte Ludwig in 54 Jahren rund dreißig Jahre Krieg; der Spanische Erbfolgekrieg brachte das Land an den Rand des Staatsbankrotts. Der Widerruf des Edikts von Nantes 1685 vertrieb Hunderttausende Hugenotten.",
+  "folgen": "Frankreich war die führende Macht Europas, seine Sprache die der Diplomatie, sein Hof Vorbild von Madrid bis Sankt Petersburg. Zugleich hinterließ Ludwig Schulden und ein Steuersystem, in dem gerade die Reichsten kaum zahlten – ein Grundproblem, an dem die Monarchie 1789 zerbrach.",
+  "strittig": "Der Satz Der Staat bin ich ist nicht belegt; er taucht erst lange nach seinem Tod auf. Umstritten ist auch, wie absolut die absolute Monarchie war: Neuere Arbeiten betonen, dass der König auf Aushandlung mit Provinzständen, Parlamenten und Kirche angewiesen blieb.",
+  "zahlen": [
+    {
+      "wert": "72 Jahre",
+      "was": "Regierungszeit, die längste eines europäischen Monarchen"
+    },
+    {
+      "wert": "ca. 30 Jahre",
+      "was": "davon im Krieg"
+    },
+    {
+      "wert": "1685",
+      "was": "Widerruf des Edikts von Nantes"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Louis XIV",
+    "Peter Burke: Ludwig XIV. – Die Inszenierung des Sonnenkönigs",
+    "Olivier Chaline: Le règne de Louis XIV"
+  ]
+},
+{
+  "id": "dreyfus",
+  "titel": "Die Dreyfus-Affäre",
+  "epoche": "industrialisierung",
+  "jahr": 1894,
+  "zeitraum": "1894–1906",
+  "region": "Frankreich",
+  "leitsatz": "Ein Justizirrtum, den alle Beteiligten hätten korrigieren können – und den sie zwölf Jahre lang verteidigten, weil das Eingeständnis teurer schien.",
+  "vorgeschichte": "Nach der Niederlage von 1870 galt die Armee als letzte unantastbare Institution. Antisemitismus war in Presse und Öffentlichkeit verbreitet. Als 1894 Spionage für Deutschland auffiel, richtete sich der Verdacht schnell auf den einzigen jüdischen Offizier im Generalstab.",
+  "verlauf": "Alfred Dreyfus wurde aufgrund eines Schriftvergleichs und geheimer, der Verteidigung nicht vorgelegter Akten verurteilt und auf die Teufelsinsel verbannt. 1896 fand Oberst Picquart Beweise, dass ein anderer Offizier der Täter war – und wurde versetzt. Ein Freispruch für den wahren Täter löste 1898 Émile Zolas offenen Brief J'accuse aus, der die Verantwortlichen namentlich nannte. Das Land spaltete sich in Dreyfusards und Antidreyfusards, quer durch Familien und Freundschaften. 1899 wurde Dreyfus begnadigt, aber erst 1906 gerichtlich rehabilitiert und wieder in die Armee aufgenommen.",
+  "folgen": "Die Affäre schwächte Armee und Kirche politisch und führte 1905 zur Trennung von Kirche und Staat. Sie schuf die Rolle des Intellektuellen, der sich öffentlich in Politik einmischt. Theodor Herzl, der als Journalist berichtete, sah in ihr einen Beleg dafür, dass Assimilation den Antisemitismus nicht beende.",
+  "strittig": "Wie stark Herzls Zionismus tatsächlich durch die Affäre ausgelöst wurde, wird diskutiert – seine Aufzeichnungen zeigen früher einsetzende Überlegungen. Unstrittig ist die Faktenlage des Falls selbst: Dreyfus war unschuldig, und das war ab 1896 in der Armee bekannt.",
+  "zahlen": [
+    {
+      "wert": "12 Jahre",
+      "was": "bis zur Rehabilitierung"
+    },
+    {
+      "wert": "1898",
+      "was": "Zolas J'accuse"
+    },
+    {
+      "wert": "1906",
+      "was": "Aufhebung des Urteils"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Dreyfus affair",
+    "Jean-Denis Bredin: The Affair",
+    "Ruth Harris: The Man on Devil's Island"
+  ]
+},
+{
+  "id": "algerienkrieg",
+  "titel": "Der Algerienkrieg",
+  "epoche": "moderne",
+  "jahr": 1954,
+  "zeitraum": "1954–1962",
+  "region": "Frankreich und Algerien",
+  "leitsatz": "Frankreich führte acht Jahre Krieg um ein Gebiet, das staatsrechtlich als Frankreich selbst galt – und nannte es dreißig Jahre lang nicht Krieg.",
+  "vorgeschichte": "Algerien war seit 1830 französisch und seit 1848 kein Kolonialgebiet, sondern in Departements gegliedertes Staatsgebiet. Rund eine Million europäischstämmige Siedler standen neun Millionen muslimischen Algeriern gegenüber, die politisch kaum Rechte hatten. Ein Aufstand 1945 in Sétif war mit tausenden Toten niedergeschlagen worden.",
+  "verlauf": "Am 1. November 1954 begann die FLN den bewaffneten Kampf. Frankreich setzte bis zu 400.000 Soldaten ein. In der Schlacht um Algier 1957 zerschlug die Armee die städtische FLN-Struktur durch systematische Folter – militärisch erfolgreich, politisch verheerend, als es öffentlich wurde. 1958 stürzte die Krise die Vierte Republik und brachte de Gaulle zurück, von dem die Siedler das Festhalten erwarteten. Er verhandelte stattdessen; ein Putschversuch von Generälen 1961 scheiterte. Die Verträge von Évian beendeten 1962 den Krieg.",
+  "folgen": "Fast die gesamte europäischstämmige Bevölkerung verließ Algerien binnen Monaten. Zehntausende Harkis, die auf französischer Seite gekämpft hatten, wurden zurückgelassen und vielfach ermordet. Frankreich erkannte erst 1999 offiziell an, dass es sich um einen Krieg handelte; die Öffnung der Archive und die Frage der Folter belasten das Verhältnis beider Länder bis heute.",
+  "strittig": "Die Opferzahlen gehen weit auseinander: französische Schätzungen nennen rund 350.000 bis 400.000 Tote, algerische offizielle Angaben 1,5 Millionen. Die Differenz ist nicht nur statistisch, sondern politisch – sie betrifft die Gründungserzählung des algerischen Staates.",
+  "zahlen": [
+    {
+      "wert": "1954–1962",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "bis zu 400.000",
+      "was": "eingesetzte französische Soldaten"
+    },
+    {
+      "wert": "1999",
+      "was": "offizielle Anerkennung als Krieg durch Frankreich"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Algerian War",
+    "Alistair Horne: A Savage War of Peace",
+    "Benjamin Stora: La gangrène et l'oubli"
+  ]
+},
+{
+  "id": "normannische-eroberung",
+  "titel": "1066 und die Umformung Englands",
+  "epoche": "mittelalter",
+  "jahr": 1066,
+  "zeitraum": "1066–1087",
+  "region": "England",
+  "leitsatz": "Ein Tag Schlacht ersetzte eine ganze Oberschicht – und veränderte sogar die Sprache.",
+  "vorgeschichte": "Nach dem Tod Eduards des Bekenners beanspruchten drei Männer den englischen Thron: Harold Godwinson, der norwegische König Harald Hardrada und Wilhelm von der Normandie. Harold schlug den Norweger im September bei Stamford Bridge und musste danach in Eilmärschen nach Süden.",
+  "verlauf": "Am 14. Oktober 1066 trafen die Heere bei Hastings aufeinander. Nach einem Tag Kampf fiel Harold; Wilhelm wurde zu Weihnachten gekrönt. Aufstände im Norden beantwortete er 1069 mit systematischer Verwüstung, die ganze Landstriche für Jahrzehnte entvölkerte. Bis 1086 war fast der gesamte englische Großgrundbesitz in normannischer Hand – das Domesday Book hält es fest.",
+  "folgen": "England erhielt eine neue Elite, ein durchorganisiertes Lehnswesen und dauerhafte Bindungen zum Festland, aus denen später der Hundertjährige Krieg erwuchs. Das Englische nahm über die folgenden Jahrhunderte tausende französische Wörter auf – bis heute stehen germanische und romanische Ausdrücke oft nebeneinander, mit unterschiedlichem Klang: cow und beef, house und mansion.",
+  "strittig": "Ob Harold wirklich durch einen Pfeil ins Auge starb, ist unsicher – der Teppich von Bayeux lässt sich unterschiedlich lesen, und der Teppich ist eine Quelle der Sieger. Umstritten bleibt auch das Ausmaß der Verwüstung des Nordens; die Angaben des Domesday Book werden verschieden interpretiert.",
+  "zahlen": [
+    {
+      "wert": "14. Oktober 1066",
+      "was": "Schlacht bei Hastings"
+    },
+    {
+      "wert": "unter 5 %",
+      "was": "Anteil englischer Großgrundbesitzer 1086"
+    },
+    {
+      "wert": "ca. 10.000",
+      "was": "französischstämmige Wörter im Englischen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Norman Conquest",
+    "Marc Morris: The Norman Conquest",
+    "Domesday Book (Edition und Auswertung, National Archives)"
+  ]
+},
+{
+  "id": "magna-carta",
+  "titel": "Die Magna Carta",
+  "epoche": "mittelalter",
+  "jahr": 1215,
+  "zeitraum": "1215–1297",
+  "region": "England",
+  "leitsatz": "Ein Friedensvertrag zwischen einem König und aufständischen Baronen, zehn Wochen später für ungültig erklärt – und trotzdem Grundlage moderner Freiheitsrechte.",
+  "vorgeschichte": "Johann Ohneland hatte die Normandie verloren, teure Feldzüge geführt und dafür Abgaben in bisher unbekannter Höhe erhoben. 1215 verweigerten ihm die Barone die Gefolgschaft und nahmen London ein.",
+  "verlauf": "Auf der Wiese von Runnymede besiegelte der König 63 Artikel. Die meisten regeln Erbschaftsabgaben, Waldrechte und Fischwehre – Anliegen des Adels, nicht des Volkes. Zwei Artikel aber banden den König an Recht: Kein freier Mann sollte ohne rechtmäßiges Urteil seiner Standesgenossen oder das Landesrecht verhaftet oder enteignet werden, und Recht sollte niemandem verkauft oder verweigert werden. Der Papst annullierte die Urkunde auf Bitten des Königs binnen Wochen; es folgte Bürgerkrieg. Nach Johanns Tod wurde die Charta mehrfach neu ausgestellt und 1297 ins Gesetzesrecht übernommen.",
+  "folgen": "Die Magna Carta wurde später zu etwas gemacht, was sie nicht war: zur Gründungsurkunde der Freiheit. Über diese Deutung wirkte sie tatsächlich – in den englischen Verfassungskämpfen des 17. Jahrhunderts, in den amerikanischen Kolonien, in der Allgemeinen Erklärung der Menschenrechte. Drei ihrer Artikel sind in England bis heute geltendes Recht.",
+  "strittig": "Fachleute betonen, dass es sich um ein Standesdokument handelte: freier Mann bezeichnete eine Minderheit, die große Mehrheit der unfreien Bauern war nicht gemeint. Ob die Wirkungsgeschichte eine Fehldeutung oder eine legitime Fortschreibung ist, wird unterschiedlich beurteilt.",
+  "zahlen": [
+    {
+      "wert": "63",
+      "was": "Artikel der Urkunde von 1215"
+    },
+    {
+      "wert": "10 Wochen",
+      "was": "bis zur Annullierung durch den Papst"
+    },
+    {
+      "wert": "3",
+      "was": "heute noch geltende Artikel"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Magna Carta",
+    "British Library: Magna Carta, Originale und Übersetzung",
+    "David Carpenter: Magna Carta"
+  ]
+},
+{
+  "id": "armada",
+  "titel": "Die Armada von 1588",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1588,
+  "zeitraum": "1588",
+  "region": "England und Spanien",
+  "leitsatz": "Der Sturm, dem England den Sieg zuschrieb, kam erst, als die Schlacht schon verloren war.",
+  "vorgeschichte": "Elisabeth I. unterstützte den niederländischen Aufstand gegen Spanien, englische Kaperfahrer plünderten spanische Silberflotten, und 1587 wurde die katholische Maria Stuart hingerichtet. Philipp II. plante eine Invasion, um England zurück in den Katholizismus zu führen.",
+  "verlauf": "130 Schiffe segelten im Mai 1588 aus Lissabon. Der Plan sah vor, das Heer aus Flandern überzusetzen – ein Zusammenspiel, das ohne Funk kaum zu koordinieren war. Vor Calais griffen die Engländer mit Brandern an; die spanische Formation löste sich auf. Bei Gravelines entschied die englische Taktik, aus größerer Entfernung mit schnellerer Nachladefolge zu schießen. Der Rückweg führte um Schottland und Irland, wo Stürme viele Schiffe zerstörten.",
+  "folgen": "Rund die Hälfte der Schiffe kehrte nicht zurück. Spanien blieb dennoch Seemacht und schlug englische Gegenunternehmungen ab; der Krieg dauerte bis 1604. Für England entstand ein Gründungsmythos, der zur Rechtfertigung der späteren Seeherrschaft diente.",
+  "strittig": "Der protestantische Wind, den Gedenkmünzen feierten, wirkte erst nach der Entscheidung. Die neuere Forschung sieht die Ursachen im Plan selbst, in der Artillerietaktik und in der Unmöglichkeit, Flotte und Landheer zu verbinden – nicht im Wetter.",
+  "zahlen": [
+    {
+      "wert": "ca. 130",
+      "was": "Schiffe der Armada"
+    },
+    {
+      "wert": "ca. 60",
+      "was": "verlorene Schiffe"
+    },
+    {
+      "wert": "1604",
+      "was": "Friedensschluss mit Spanien"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Spanish Armada",
+    "Geoffrey Parker und Colin Martin: Armada",
+    "National Maritime Museum: The Spanish Armada"
+  ]
+},
+{
+  "id": "irische-hungersnot",
+  "titel": "Die Große Hungersnot in Irland",
+  "epoche": "industrialisierung",
+  "jahr": 1845,
+  "zeitraum": "1845–1852",
+  "region": "Irland",
+  "leitsatz": "Während eine Million Menschen verhungerte, verließen Getreide und Vieh das Land in Richtung England.",
+  "vorgeschichte": "Ein Großteil der irischen Landbevölkerung lebte als Pächter auf Kleinstflächen und ernährte sich fast ausschließlich von Kartoffeln – die einzige Frucht, die auf so wenig Land genug Kalorien lieferte. Angebaut wurde überwiegend eine einzige Sorte, was die Anfälligkeit erhöhte.",
+  "verlauf": "Ab 1845 vernichtete die Kraut- und Knollenfäule mehrere Ernten hintereinander. London reagierte zunächst mit Getreideeinkäufen, ab 1847 aber nach dem Grundsatz, der Markt solle die Versorgung regeln, und verlagerte die Kosten auf die irischen Grundbesitzer. Hilfe wurde an Arbeit in Workhouses gebunden. Gleichzeitig wurden weiterhin Nahrungsmittel exportiert, weil die Pächter ihre Pacht anders nicht aufbringen konnten. Massenräumungen vertrieben Hunderttausende von ihren Parzellen.",
+  "folgen": "Rund eine Million Menschen starben, eine weitere Million wanderte aus, vor allem nach Nordamerika. Irlands Bevölkerung sank von 8,2 Millionen 1841 auf unter 4,5 Millionen 1901 – und hat den Stand von damals bis heute nicht wieder erreicht. Der irische Nationalismus und die irisch-amerikanische Diaspora wurden dauerhaft geprägt.",
+  "strittig": "Ob es sich um Völkermord handelte, wird kontrovers diskutiert. Die Mehrheit der Fachleute spricht von einer Katastrophe, die durch ideologisch begründetes Nichthandeln, Verachtung und Fehlentscheidungen massiv verschärft wurde, ohne Vernichtungsabsicht. Der britische Premierminister Blair drückte 1997 offiziell Bedauern aus.",
+  "zahlen": [
+    {
+      "wert": "ca. 1 Mio.",
+      "was": "Tote"
+    },
+    {
+      "wert": "ca. 1 Mio.",
+      "was": "Auswanderer bis 1855"
+    },
+    {
+      "wert": "8,2 auf 4,4 Mio.",
+      "was": "Bevölkerung 1841 bis 1911"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Great Famine",
+    "Cormac Ó Gráda: Black '47 and Beyond",
+    "Christine Kinealy: This Great Calamity"
+  ]
+},
+{
+  "id": "brexit",
+  "titel": "Der Brexit",
+  "epoche": "moderne",
+  "jahr": 2016,
+  "zeitraum": "2016–2020",
+  "region": "Großbritannien",
+  "leitsatz": "Ein Referendum mit knapper Mehrheit, das keine Antwort darauf gab, was danach gelten sollte.",
+  "vorgeschichte": "Großbritannien war 1973 der EWG beigetreten und hatte 1975 in einem ersten Referendum mit zwei Dritteln für den Verbleib gestimmt. Es blieb außerhalb von Euro und Schengen. Innerparteilicher Druck und der Aufstieg der UKIP bewogen Premierminister Cameron 2013, ein Referendum zuzusagen.",
+  "verlauf": "Am 23. Juni 2016 stimmten 51,9 Prozent für den Austritt, bei 72 Prozent Beteiligung. Schottland und Nordirland stimmten mehrheitlich dagegen. Der Stimmzettel nannte kein Modell des Austritts, weshalb sich der Streit anschließend darauf verlagerte, was Austritt bedeutet. Drei Jahre Verhandlungen scheiterten vor allem an der Grenze zwischen Nordirland und Irland: Sie musste offen bleiben, ohne dass die Zollunion fortbestand. Das Nordirland-Protokoll verlegte die Kontrollen in die Irische See. Am 31. Januar 2020 trat Großbritannien aus, der Handelsvertrag folgte Ende 2020.",
+  "folgen": "Personenfreizügigkeit und Binnenmarktzugang endeten. Handel mit der EU und ausländische Investitionen entwickelten sich schwächer als in Vergleichsländern; Fachkräftemangel trat in mehreren Branchen auf. In Schottland verstärkte das Ergebnis die Unabhängigkeitsdebatte, in Nordirland die Frage nach dem künftigen Status.",
+  "strittig": "Die wirtschaftlichen Folgen sind schwer zu isolieren, weil Pandemie und Energiekrise zeitgleich wirkten. Schätzungen zum entgangenen Wirtschaftswachstum unterscheiden sich erheblich, je nach Vergleichsmodell. Politisch ist umstritten, ob das Referendum eine Frage von solcher Tragweite mit einfacher Mehrheit entscheiden durfte.",
+  "zahlen": [
+    {
+      "wert": "51,9 zu 48,1 %",
+      "was": "Ergebnis vom 23. Juni 2016"
+    },
+    {
+      "wert": "72,2 %",
+      "was": "Wahlbeteiligung"
+    },
+    {
+      "wert": "31. Januar 2020",
+      "was": "Austritt"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Brexit",
+    "UK Electoral Commission: EU referendum results",
+    "Office for Budget Responsibility: Brexit analysis"
+  ]
+},
+{
+  "id": "vesuv",
+  "titel": "Der Ausbruch des Vesuv",
+  "epoche": "antike",
+  "jahr": 79,
+  "zeitraum": "79 n. Chr.",
+  "region": "Italien",
+  "leitsatz": "Die Katastrophe, die zwei Städte auslöschte, hat mehr über den römischen Alltag bewahrt als jede andere Quelle.",
+  "vorgeschichte": "Pompeji und Herculaneum lagen in einer wohlhabenden Region am Golf von Neapel. Ein schweres Erdbeben hatte die Städte 62 n. Chr. beschädigt; die Bauarbeiten dauerten noch an. Dass der Berg ein Vulkan war, war im Alltagswissen offenbar nicht präsent.",
+  "verlauf": "Die Eruption begann mit einer kilometerhohen Aschesäule, deren Bimsregen Dächer einstürzen ließ. In der Nacht folgten pyroklastische Ströme – Lawinen aus heißem Gas und Asche mit mehreren hundert Grad. Sie töteten die Zurückgebliebenen binnen Sekunden und begruben die Städte unter mehreren Metern Material. Plinius der Jüngere beschrieb den Ablauf als Augenzeuge aus der Ferne; sein Onkel, der Flottenkommandant und Naturforscher Plinius der Ältere, starb bei einem Rettungsversuch.",
+  "folgen": "Unter der Asche blieb erhalten, was sonst vergeht: Wandmalereien, Möbel, Lebensmittel, Wahlwerbung und Kritzeleien an Hauswänden. Seit den Ausgrabungen ab 1748 stammt ein Großteil des Wissens über römische Wohnkultur, Ernährung und Alltagssprache von hier. Der Vulkanologie gab der Bericht des Plinius den Begriff der plinianischen Eruption.",
+  "strittig": "Das überlieferte Datum 24. August beruht auf einer Handschriftenlesart. Funde von Herbstfrüchten, Heizkohlebecken und eine 2018 entdeckte Wandinschrift sprechen für Oktober. Die Diskussion ist nicht abgeschlossen. Auch die Opferzahl ist unbekannt; gefunden wurden bisher rund 1.500 Tote von vermutlich weit mehr.",
+  "zahlen": [
+    {
+      "wert": "79 n. Chr.",
+      "was": "Ausbruch, Monat umstritten"
+    },
+    {
+      "wert": "4–6 m",
+      "was": "Aschemächtigkeit über Pompeji"
+    },
+    {
+      "wert": "1748",
+      "was": "Beginn der Ausgrabungen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Vesuvius; Pompeii",
+    "Plinius der Jüngere: Briefe VI, 16 und 20",
+    "Parco Archeologico di Pompei: Forschungsberichte zur Datierung"
+  ]
+},
+{
+  "id": "galilei",
+  "titel": "Der Prozess gegen Galilei",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1633,
+  "zeitraum": "1610–1633",
+  "region": "Italien",
+  "leitsatz": "Verurteilt wurde nicht die Behauptung, die Erde bewege sich – sondern die Weigerung, sie als bloße Rechenannahme zu behandeln.",
+  "vorgeschichte": "Kopernikus hatte 1543 ein Modell mit der Sonne im Mittelpunkt veröffentlicht, zunächst ohne großen Widerspruch. Als Galilei ab 1610 mit dem Fernrohr Jupitermonde, Venusphasen und Sonnenflecken beobachtete, wurde daraus eine physikalische Behauptung mit theologischen Folgen. 1616 verbot die Kirche, das kopernikanische System als Tatsache zu lehren.",
+  "verlauf": "1632 erschien Galileis Dialog über die beiden Weltsysteme, angeblich ergebnisoffen, tatsächlich klar parteiisch – die Einwände des Papstes legte er einer Figur namens Simplicio in den Mund. Die Inquisition lud ihn nach Rom. Unter Androhung der Folter widerrief er 1633 und stand bis zu seinem Tod 1642 unter Hausarrest, in dem er sein wichtigstes Werk zur Mechanik schrieb.",
+  "folgen": "Der Prozess verschob das Zentrum der Naturforschung nach Norden. Er wurde zum Sinnbild des Konflikts zwischen Wissenschaft und Kirche – eine Deutung, die im 19. Jahrhundert zugespitzt wurde. 1992 erklärte eine päpstliche Kommission das Urteil für falsch.",
+  "strittig": "Der Satz und sie bewegt sich doch ist erst über hundert Jahre später belegt. Historiker betonen, dass entscheidende Beweise damals fehlten: Die Sternparallaxe wurde erst 1838 gemessen. Galilei hatte in der Sache recht, aber nicht mit den Argumenten, die er anführte – seine Gezeitentheorie als Beweis war falsch.",
+  "zahlen": [
+    {
+      "wert": "1616",
+      "was": "erstes kirchliches Verbot"
+    },
+    {
+      "wert": "1633",
+      "was": "Verurteilung und Widerruf"
+    },
+    {
+      "wert": "1992",
+      "was": "Rehabilitierung durch die Kirche"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Galileo",
+    "Maurice A. Finocchiaro: The Galileo Affair",
+    "Vatikanische Akten des Prozesses, Edition Pagano"
+  ]
+},
+{
+  "id": "risorgimento",
+  "titel": "Die Einigung Italiens",
+  "epoche": "industrialisierung",
+  "jahr": 1861,
+  "zeitraum": "1848–1871",
+  "region": "Italien",
+  "leitsatz": "Italien wurde nicht von unten erkämpft und nicht von oben verordnet, sondern aus beidem zusammengesetzt – mit Folgen, die bis heute spürbar sind.",
+  "vorgeschichte": "Nach 1815 war die Halbinsel in acht Staaten geteilt, der Norden österreichisch beherrscht, der Süden bourbonisch, die Mitte päpstlich. Die Aufstände von 1848 scheiterten, gaben der Bewegung aber Personal und Erzählung.",
+  "verlauf": "Das Königreich Sardinien-Piemont unter Cavour verband Diplomatie mit Krieg: ein Bündnis mit Frankreich, der Krieg gegen Österreich 1859, Volksabstimmungen in den befreiten Gebieten. Parallel eroberte Garibaldi 1860 mit tausend Freiwilligen Sizilien und Neapel – und übergab sie dem König, statt eine Republik auszurufen. 1861 wurde das Königreich Italien ausgerufen, ohne Venetien und Rom; beide kamen 1866 und 1870 hinzu.",
+  "folgen": "Der neue Staat übernahm das piemontesische Recht, die piemontesische Verwaltung und eine Wahlordnung, bei der zunächst rund zwei Prozent der Bevölkerung wählen durften. Im Süden folgte ein jahrelanger Aufstand, der als Brigantaggio niedergeschlagen wurde und mehr Tote forderte als alle Einigungskriege zusammen. Das wirtschaftliche Gefälle zwischen Nord und Süd verfestigte sich.",
+  "strittig": "Ob die Einigung eine nationale Befreiung oder eine Eroberung des Südens durch den Norden war, wird in Italien bis heute politisch diskutiert. Der oft zitierte Satz, man habe Italien gemacht und müsse nun Italiener machen, ist Massimo d'Azeglio zugeschrieben, aber in dieser Form nicht sicher belegt.",
+  "zahlen": [
+    {
+      "wert": "1.089",
+      "was": "Freiwillige in Garibaldis Zug der Tausend"
+    },
+    {
+      "wert": "ca. 2 %",
+      "was": "Wahlberechtigte 1861"
+    },
+    {
+      "wert": "1870",
+      "was": "Rom wird Hauptstadt"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Risorgimento",
+    "Lucy Riall: Risorgimento – The History of Italy",
+    "Christopher Duggan: The Force of Destiny"
+  ]
+},
+{
+  "id": "faschismus-italien",
+  "titel": "Der Marsch auf Rom und der erste faschistische Staat",
+  "epoche": "moderne",
+  "jahr": 1922,
+  "zeitraum": "1919–1945",
+  "region": "Italien",
+  "leitsatz": "Die Macht wurde nicht erobert, sondern übergeben – Mussolini kam im Schlafwagen nach Rom.",
+  "vorgeschichte": "Italien ging als Sieger, aber enttäuscht aus dem Weltkrieg: versprochene Gebiete blieben aus, 600.000 Gefallene und eine Wirtschaftskrise prägten die Stimmung. Fabrikbesetzungen und Streiks weckten Furcht vor einer Revolution; die schwarzhemdigen Schlägertrupps der Faschisten wurden von Grundbesitzern und Industriellen gegen Gewerkschaften eingesetzt.",
+  "verlauf": "Im Oktober 1922 marschierten Zehntausende Faschisten auf Rom. Die Armee hätte sie stoppen können, die Regierung bat um Ausnahmezustand – doch König Viktor Emanuel III. weigerte sich zu unterzeichnen und ernannte Mussolini zum Ministerpräsidenten. Erst danach zerlegte dieser den Rechtsstaat: Wahlgesetz 1923, Ermordung des Sozialisten Matteotti 1924, Verbot der Parteien, Presse- und Gewerkschaftskontrolle bis 1926.",
+  "folgen": "Italien wurde zum Vorbild und Namensgeber für Bewegungen in ganz Europa. Der Angriff auf Äthiopien 1935 mit Giftgaseinsatz, das Bündnis mit Hitler und der Kriegseintritt 1940 endeten mit Mussolinis Sturz 1943, Bürgerkrieg und seiner Erschießung 1945.",
+  "strittig": "Wie viel Zustimmung das Regime hatte, ist umstritten – zwischen der These weitgehender Zustimmung und der Betonung von Repression und Anpassungsdruck. Umstritten bleibt auch, wie stark die italienischen Rassengesetze von 1938 eigenständig entstanden und wie sehr sie deutschem Druck folgten.",
+  "zahlen": [
+    {
+      "wert": "28. Oktober 1922",
+      "was": "Marsch auf Rom"
+    },
+    {
+      "wert": "1926",
+      "was": "Verbot aller anderen Parteien"
+    },
+    {
+      "wert": "23 Jahre",
+      "was": "Dauer der Diktatur"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Benito Mussolini; Fascism",
+    "Emilio Gentile: Storia del Partito fascista",
+    "Richard J. B. Bosworth: Mussolini's Italy"
+  ]
+},
+{
+  "id": "cordoba",
+  "titel": "Al-Andalus und das Kalifat von Córdoba",
+  "epoche": "mittelalter",
+  "jahr": 929,
+  "zeitraum": "756–1031",
+  "region": "Iberische Halbinsel",
+  "leitsatz": "Eine der größten Städte Europas stand nicht in Italien oder Frankreich, sondern in Andalusien – und ihr Ruf ist seither Gegenstand politischer Auseinandersetzung.",
+  "vorgeschichte": "711 fiel das Westgotenreich binnen weniger Jahre an muslimische Heere aus Nordafrika. Ein überlebender Umayyade gründete 756 in Córdoba ein eigenes Emirat, unabhängig vom Kalifat in Bagdad. 929 nahm Abd ar-Rahman III. selbst den Kalifentitel an.",
+  "verlauf": "Córdoba hatte im 10. Jahrhundert vermutlich mehrere hunderttausend Einwohner, gepflasterte Straßen, Wasserleitungen und eine Bibliothek, deren Katalog allein mehrere Bände füllte. Übersetzer machten griechische und indische Werke zugänglich; Mathematik, Medizin und Astronomie standen auf einem Niveau, das Nordeuropa erst Jahrhunderte später erreichte. Juden und Christen lebten als Schutzbefohlene mit eigenen Gerichten, aber Sonderabgaben und rechtlicher Nachrangigkeit. 1031 zerfiel das Kalifat in rund dreißig Kleinreiche.",
+  "folgen": "Über Toledo und Sizilien gelangten arabische Übersetzungen des Aristoteles und die Werke von Ibn Ruschd nach Europa und prägten die Scholastik. Ohne diesen Weg wäre die europäische Universitätsphilosophie anders verlaufen.",
+  "strittig": "Der Begriff der Convivencia, des friedlichen Zusammenlebens dreier Religionen, wird von einem Teil der Forschung als Idealisierung kritisiert: Es gab Pogrome, Zwangskonversionen unter den Almohaden und dauerhafte rechtliche Ungleichheit. Andere halten dagegen, dass die Zusammenarbeit im Alltag und in der Wissenschaft real und für die Zeit außergewöhnlich war. Beide Seiten stützen sich auf belegte Vorgänge.",
+  "zahlen": [
+    {
+      "wert": "756",
+      "was": "Gründung des Emirats"
+    },
+    {
+      "wert": "929",
+      "was": "Annahme des Kalifentitels"
+    },
+    {
+      "wert": "1031",
+      "was": "Zerfall in Taifa-Reiche"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Al-Andalus; Córdoba",
+    "Hugh Kennedy: Muslim Spain and Portugal",
+    "Maribel Fierro: Abd al-Rahman III"
+  ]
+},
+{
+  "id": "1492",
+  "titel": "1492: Granada, Kolumbus, Vertreibung",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1492,
+  "zeitraum": "1492",
+  "region": "Spanien",
+  "leitsatz": "Drei Ereignisse in einem Jahr, alle vom selben Herrscherpaar entschieden – und alle drei aus derselben Logik.",
+  "vorgeschichte": "Kastilien und Aragón waren seit 1469 in Personalunion verbunden. Granada war der letzte muslimische Staat der Halbinsel. Die Krone brauchte Geld, Legitimation und eine Ordnung, die das zusammengesetzte Reich zusammenhielt – religiöse Einheit bot sich als Klammer an.",
+  "verlauf": "Am 2. Januar 1492 übergab der letzte Emir Granada. Am 31. März erging das Alhambra-Edikt: Juden mussten binnen vier Monaten konvertieren oder das Land verlassen; schätzungsweise 40.000 bis 100.000 gingen, vor allem ins Osmanische Reich und nach Portugal. Am 3. August liefen drei Schiffe unter Kolumbus aus, der einen Westweg nach Asien suchte und im Oktober auf den Bahamas landete – überzeugt, Asien erreicht zu haben.",
+  "folgen": "Spanien wurde binnen einer Generation zur Weltmacht, finanziert durch amerikanisches Silber. Für die Bevölkerung Amerikas begann die folgenreichste Katastrophe ihrer Geschichte. Den Muslimen Granadas zugesicherte Religionsfreiheit wurde binnen zehn Jahren aufgehoben; 1609 folgte die Vertreibung der Morisken. Die sephardische Diaspora bewahrte ihre Sprache über Jahrhunderte; 2015 bot Spanien den Nachkommen die Staatsbürgerschaft an.",
+  "strittig": "Die Zahl der vertriebenen Juden schwankt in der Forschung erheblich, weil unklar ist, wie viele konvertierten und blieben. Umstritten ist auch, ob die Vertreibung wirtschaftlich schadete – ältere Thesen dazu gelten heute als überzeichnet.",
+  "zahlen": [
+    {
+      "wert": "2. Januar 1492",
+      "was": "Übergabe Granadas"
+    },
+    {
+      "wert": "31. März 1492",
+      "was": "Alhambra-Edikt"
+    },
+    {
+      "wert": "12. Oktober 1492",
+      "was": "Landung in der Karibik"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Spain, history; Alhambra Decree",
+    "Henry Kamen: Spain 1469–1714",
+    "John H. Elliott: Imperial Spain"
+  ]
+},
+{
+  "id": "spanischer-buergerkrieg",
+  "titel": "Der Spanische Bürgerkrieg",
+  "epoche": "moderne",
+  "jahr": 1936,
+  "zeitraum": "1936–1939",
+  "region": "Spanien",
+  "leitsatz": "Ein Bürgerkrieg, in dem die halbe Welt mitkämpfte, während die Demokratien beschlossen, sich herauszuhalten.",
+  "vorgeschichte": "Die Zweite Republik hatte ab 1931 Landreform, Schulwesen und Militär umgebaut und dabei Kirche, Großgrundbesitz und Offizierskorps gegen sich aufgebracht. Die Gesellschaft polarisierte sich; politische Gewalt nahm auf beiden Seiten zu. Im Februar 1936 gewann die Volksfront knapp die Wahl.",
+  "verlauf": "Im Juli 1936 putschte ein Teil der Armee. Der Putsch gelang nur teilweise – daraus wurde ein Krieg. Deutschland und Italien lieferten Flugzeuge, Panzer und Truppen an Franco; die Sowjetunion belieferte die Republik und nahm dafür deren Goldreserven. Großbritannien und Frankreich vereinbarten Nichteinmischung, die von den anderen offen missachtet wurde. Rund 35.000 Freiwillige aus über fünfzig Ländern kämpften in den Internationalen Brigaden. 1937 zerstörten deutsche und italienische Flugzeuge Gernika. Innerhalb des republikanischen Lagers kam es zu Kämpfen zwischen Kommunisten, Anarchisten und Trotzkisten.",
+  "folgen": "Bis zu 500.000 Menschen starben, Hunderttausende gingen ins Exil. Franco regierte bis 1975. Die Aufarbeitung begann erst spät: Erst nach 2000 wurden systematisch Massengräber geöffnet; das Gesetz zur demokratischen Erinnerung von 2022 ist politisch umstritten.",
+  "strittig": "Ob die Republik ohne die Nichteinmischung hätte bestehen können, ist eine der großen offenen Fragen. Umstritten bleibt auch die Rolle der Sowjetunion: Sie war der einzige nennenswerte Unterstützer und benutzte diese Stellung, um die Republik innenpolitisch umzuformen.",
+  "zahlen": [
+    {
+      "wert": "1936–1939",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "ca. 35.000",
+      "was": "Freiwillige der Internationalen Brigaden"
+    },
+    {
+      "wert": "26. April 1937",
+      "was": "Bombardierung von Gernika"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Spanish Civil War",
+    "Paul Preston: The Spanish Holocaust",
+    "Antony Beevor: Der Spanische Bürgerkrieg"
+  ]
+},
+{
+  "id": "transicion",
+  "titel": "Spaniens Übergang zur Demokratie",
+  "epoche": "moderne",
+  "jahr": 1975,
+  "zeitraum": "1975–1982",
+  "region": "Spanien",
+  "leitsatz": "Eine Diktatur baute sich selbst ab – auf Grundlage ihrer eigenen Gesetze, und um den Preis des Schweigens.",
+  "vorgeschichte": "Franco hatte den König als Nachfolger eingesetzt, in der Erwartung, dass die Ordnung bleibe. Spanien war wirtschaftlich längst europäisch geworden: Tourismus, Industrie und Auswanderung hatten das Land verändert, die politische Ordnung war stehengeblieben.",
+  "verlauf": "Nach Francos Tod im November 1975 setzte König Juan Carlos auf Reform statt Bruch. Ministerpräsident Suárez brachte 1976 ein Gesetz zur politischen Reform durch die Cortes des alten Regimes – das Parlament beschloss die eigene Abschaffung. 1977 wurden Parteien zugelassen, auch die kommunistische, und frei gewählt. 1978 nahm ein Referendum die neue Verfassung an, die den Regionen weitgehende Selbstverwaltung gab. Ein Amnestiegesetz von 1977 schloss die Strafverfolgung für Taten des Regimes aus. Der Putschversuch vom Februar 1981 scheiterte, auch weil sich der König öffentlich gegen ihn stellte.",
+  "folgen": "Spanien wurde 1986 Mitglied der Europäischen Gemeinschaft. Der Übergang galt lange international als Vorbild. Seit den 2000er Jahren wächst die Kritik am Pakt des Vergessens: Opferverbände fordern Aufarbeitung, Exhumierungen und die Aufhebung der Amnestie.",
+  "strittig": "Ob das Schweigen der Preis für den friedlichen Übergang war oder ob mehr möglich gewesen wäre, ist die zentrale Streitfrage. Auch die Rolle des Königs wird heute nüchterner beurteilt als in den achtziger Jahren – 2014 dankte Juan Carlos nach Skandalen ab.",
+  "zahlen": [
+    {
+      "wert": "20. November 1975",
+      "was": "Tod Francos"
+    },
+    {
+      "wert": "1977",
+      "was": "erste freie Wahlen seit 1936"
+    },
+    {
+      "wert": "23. Februar 1981",
+      "was": "gescheiterter Putsch"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Spain, Transition to democracy",
+    "Paul Preston: The Triumph of Democracy in Spain",
+    "Verfassung von 1978, Amtstext"
+  ]
+},
+{
+  "id": "peter-der-grosse",
+  "titel": "Peter der Große und das Fenster nach Europa",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1703,
+  "zeitraum": "1682–1725",
+  "region": "Russland",
+  "leitsatz": "Er baute eine Hauptstadt im Sumpf, verbot Bärte und machte aus einem Binnenreich eine Seemacht – mit Methoden, die genau das zementierten, was er überwinden wollte.",
+  "vorgeschichte": "Russland war um 1690 ein Agrarreich ohne eisfreien Hafen, ohne stehende Flotte und ohne Universität. Handel und Technik liefen über wenige Ausländer in Moskau. Peter reiste 1697 selbst nach Westeuropa und arbeitete unter falschem Namen auf einer niederländischen Werft.",
+  "verlauf": "Nach der Rückkehr erzwang er eine Umwälzung von oben: neue Verwaltung nach schwedischem Vorbild, Rangtabelle mit Aufstieg nach Dienst statt Geburt, Kalender- und Schriftreform, Bartsteuer für Adlige, Werften, Manufakturen und eine Marine. Ab 1703 entstand Sankt Petersburg auf sumpfigem Gelände – gebaut von zwangsverpflichteten Arbeitern, von denen viele starben. Der Große Nordische Krieg gegen Schweden endete 1721 mit dem Zugang zur Ostsee.",
+  "folgen": "Russland wurde europäische Großmacht und blieb es. Der Preis war eine Modernisierung, die auf Zwangsarbeit und Leibeigenschaft aufbaute: Peter finanzierte die Reform, indem er die Bauern noch fester band. Die Spaltung zwischen einer verwestlichten Oberschicht und der übrigen Bevölkerung prägte das 19. Jahrhundert und die Debatte zwischen Westlern und Slawophilen.",
+  "strittig": "Ob Peter Russland modernisierte oder nur militärisch aufrüstete, ist eine alte Streitfrage. Die Zahl der Toten beim Bau Petersburgs – oft mit 100.000 angegeben – beruht auf zeitgenössischen Schätzungen ohne belastbare Grundlage; neuere Arbeiten halten sie für zu hoch.",
+  "zahlen": [
+    {
+      "wert": "43 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "1703",
+      "was": "Gründung Sankt Petersburgs"
+    },
+    {
+      "wert": "1721",
+      "was": "Frieden von Nystad und Kaisertitel"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Peter I",
+    "Lindsey Hughes: Russia in the Age of Peter the Great",
+    "Evgenii Anisimov: The Reforms of Peter the Great"
+  ]
+},
+{
+  "id": "grosser-terror",
+  "titel": "Der Große Terror",
+  "epoche": "moderne",
+  "jahr": 1937,
+  "zeitraum": "1936–1938",
+  "region": "Sowjetunion",
+  "leitsatz": "Die Opferzahlen waren nicht Folge von Willkür, sondern von Planvorgaben – Regionen erhielten Quoten und baten um Erhöhung.",
+  "vorgeschichte": "Nach Zwangskollektivierung und Hungersnot war die Gesellschaft aufgewühlt. Die Ermordung des Parteifunktionärs Kirow 1934 diente als Anlass für erste Verhaftungswellen. In den Schauprozessen ab 1936 gestanden alte Bolschewiki Verbrechen, die sie nicht begangen hatten.",
+  "verlauf": "Der Befehl 00447 vom Juli 1937 richtete sich nicht gegen Einzelne, sondern gegen Kategorien: ehemalige Kulaken, Geistliche, frühere Angehörige anderer Parteien. Für jede Region wurden Zahlen für Erschießung und Lagerhaft festgelegt. Örtliche Behörden erfüllten und übertrafen sie und beantragten Aufstockungen. Parallel liefen nationale Operationen gegen Polen, Deutsche und andere Gruppen. Auch die Armee traf es: Ein Großteil der höheren Offiziere wurde verhaftet oder erschossen.",
+  "folgen": "Nach Auswertung der geöffneten Archive wurden 1937/38 rund 1,6 Millionen Menschen verhaftet und über 680.000 erschossen. Die Enthauptung des Offizierskorps trug zu den Katastrophen von 1941 bei. Chruschtschow benannte den Terror 1956 teilweise, eine vollständige Aufarbeitung unterblieb; die Organisation Memorial, die die Opfer dokumentierte, wurde 2021 in Russland aufgelöst.",
+  "strittig": "Vor der Archivöffnung reichten Schätzungen bis zu zweistelligen Millionenzahlen. Die Archivzahlen gelten heute als belastbare Untergrenze für die dokumentierten Erschießungen, erfassen aber nicht Tote in Haft, Deportation und Lagern. Umstritten bleibt, wie weit Stalin persönlich steuerte und wie viel Eigendynamik der Apparat entwickelte.",
+  "zahlen": [
+    {
+      "wert": "ca. 1,6 Mio.",
+      "was": "Verhaftungen 1937/38"
+    },
+    {
+      "wert": "über 680.000",
+      "was": "dokumentierte Erschießungen"
+    },
+    {
+      "wert": "Befehl 00447",
+      "was": "Grundlage der Massenoperationen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Great Purge",
+    "Oleg Chlewnjuk: Stalin – Eine Biographie",
+    "Karl Schlögel: Terror und Traum. Moskau 1937"
+  ]
+},
+{
+  "id": "tschernobyl",
+  "titel": "Tschernobyl",
+  "epoche": "moderne",
+  "jahr": 1986,
+  "zeitraum": "1986",
+  "region": "Sowjetunion",
+  "leitsatz": "Nicht der Reaktor allein versagte, sondern ein System, in dem Meldung von schlechten Nachrichten gefährlicher war als der Fehler selbst.",
+  "vorgeschichte": "Der Reaktortyp RBMK hatte eine bauartbedingte Eigenschaft, die bei niedriger Leistung zu unkontrollierbarem Leistungsanstieg führen konnte. Diese Eigenschaft war bekannt, aber als Verschlusssache behandelt – das Betriebspersonal wusste davon nichts.",
+  "verlauf": "In der Nacht zum 26. April 1986 lief ein Test, bei dem geprüft werden sollte, ob die auslaufende Turbine noch genug Strom für die Kühlpumpen liefert. Sicherheitssysteme wurden dafür abgeschaltet, der Reaktor geriet in einen instabilen Zustand. Beim Versuch, ihn abzuschalten, löste die Konstruktion der Steuerstäbe das Gegenteil aus. Zwei Explosionen sprengten den Deckel; der brennende Graphitkern setzte tagelang Radioaktivität frei. Die Bevölkerung von Prypjat wurde erst 36 Stunden später evakuiert. Öffentlich bekannt wurde der Unfall, weil schwedische Messstationen Alarm schlugen.",
+  "folgen": "31 Menschen starben unmittelbar oder an akuter Strahlenkrankheit; über 350.000 wurden umgesiedelt. Zu den langfristigen Todesfällen gibt es keine einheitliche Zahl. Belegt ist ein starker Anstieg von Schilddrüsenkrebs bei damaligen Kindern. In der Sowjetunion beschädigte die Vertuschung der ersten Tage das Vertrauen tief; Gorbatschow nannte die Katastrophe später einen Auslöser von Glasnost.",
+  "strittig": "Die Schätzungen der langfristigen Krebstoten gehen weit auseinander – von einigen tausend in WHO-nahen Berechnungen bis zu Zehntausenden in anderen Modellen. Der Streit betrifft die Frage, ob sehr geringe Dosen über große Bevölkerungen linear hochgerechnet werden dürfen. Wer eine einzelne Zahl nennt, verschweigt diese Unsicherheit.",
+  "zahlen": [
+    {
+      "wert": "26. April 1986",
+      "was": "Unfalldatum"
+    },
+    {
+      "wert": "31",
+      "was": "unmittelbare Todesopfer"
+    },
+    {
+      "wert": "über 350.000",
+      "was": "Umgesiedelte"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Chernobyl disaster",
+    "IAEA: INSAG-7, The Chernobyl Accident",
+    "WHO: Health effects of the Chernobyl accident"
+  ]
+},
+{
+  "id": "amerikanische-revolution",
+  "titel": "Die Amerikanische Revolution",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1776,
+  "zeitraum": "1765–1791",
+  "region": "Nordamerika",
+  "leitsatz": "Alle Menschen sind gleich geschaffen – geschrieben von einem Mann, der über 600 Menschen als Eigentum besaß.",
+  "vorgeschichte": "Der Siebenjährige Krieg hatte London hoch verschuldet. Die Kolonien sollten mitzahlen: Stempelsteuer, Zölle, Teesteuer. Die Kolonisten hatten kein Mitspracherecht im Parlament und machten daraus einen Grundsatz – keine Besteuerung ohne Vertretung.",
+  "verlauf": "Nach der Boston Tea Party 1773 und den Vergeltungsgesetzen trat 1774 der Kontinentalkongress zusammen. 1775 begann der Krieg, 1776 folgte die Unabhängigkeitserklärung. Militärisch entschied die französische Unterstützung: Flotte und Truppen ermöglichten 1781 den Sieg bei Yorktown. 1783 erkannte Großbritannien die Unabhängigkeit an. Die erste Ordnung, die Konföderationsartikel, erwies sich als zu schwach; 1787 entstand die Verfassung mit Gewaltenteilung und föderalem Aufbau, 1791 ergänzt um die Bill of Rights.",
+  "folgen": "Erstmals entstand eine große Republik mit geschriebener Verfassung. Das Vorbild wirkte auf die Französische Revolution und die Unabhängigkeitsbewegungen Lateinamerikas. Zugleich blieb die Sklaverei bestehen und wurde in der Verfassung indirekt geschützt – die Drei-Fünftel-Klausel verschaffte den Sklavenhalterstaaten zusätzliche Sitze im Kongress. Der Widerspruch führte 74 Jahre später in den Bürgerkrieg.",
+  "strittig": "Wie revolutionär die Revolution war, ist umstritten: Für die einen war sie ein Umsturz der politischen Ordnung, für die anderen eine Elitenrevolte, die die Gesellschaftsordnung unangetastet ließ. Für Frauen, Versklavte und die indigenen Nationen brachte sie keine Verbesserung; für Letztere entfiel mit der britischen Grenzlinie sogar ein Schutz.",
+  "zahlen": [
+    {
+      "wert": "4. Juli 1776",
+      "was": "Unabhängigkeitserklärung"
+    },
+    {
+      "wert": "1783",
+      "was": "Frieden von Paris"
+    },
+    {
+      "wert": "ca. 20 %",
+      "was": "Anteil Versklavter an der Bevölkerung 1790"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: American Revolution",
+    "Gordon S. Wood: The Radicalism of the American Revolution",
+    "US National Archives: Declaration of Independence, Constitution"
+  ]
+},
+{
+  "id": "trail-of-tears",
+  "titel": "Vertreibung und Pfad der Tränen",
+  "epoche": "industrialisierung",
+  "jahr": 1830,
+  "zeitraum": "1830–1850",
+  "region": "Nordamerika",
+  "leitsatz": "Der Supreme Court gab den Cherokee recht – und der Präsident setzte das Urteil nicht um.",
+  "vorgeschichte": "Die Cherokee, Choctaw, Chickasaw, Creek und Seminolen im Südosten hatten sich weitgehend an europäische Formen angepasst: Ackerbau, Schriftsprache, geschriebene Verfassung, eigene Zeitung. Genau das machte sie nicht sicherer, sondern störender – ihr Land war fruchtbar und für den Baumwollanbau begehrt, in Georgia wurde zudem Gold gefunden.",
+  "verlauf": "Der Indian Removal Act von 1830 ermächtigte die Regierung, Land östlich des Mississippi gegen Gebiete im Westen zu tauschen. Formal freiwillig, praktisch erzwungen. Die Cherokee klagten und gewannen 1832 vor dem Obersten Gerichtshof, der ihre Souveränität bestätigte. Präsident Jackson setzte das Urteil nicht durch. 1838 wurden rund 16.000 Cherokee von Soldaten in Lagern zusammengetrieben und über 1.000 Kilometer nach Westen getrieben, viele im Winter.",
+  "folgen": "Schätzungen gehen von etwa 4.000 toten Cherokee aus; bei den anderen Nationen kamen Tausende hinzu. Der Südosten wurde für Plantagenwirtschaft mit Sklavenarbeit frei. Das Muster – Vertrag, Bruch, Vertreibung – wiederholte sich über den ganzen Kontinent. Die Rechtsstellung indigener Nationen als abhängige Nationen im eigenen Recht wirkt bis heute nach.",
+  "strittig": "Die Opferzahl von 4.000 stammt aus einer zeitgenössischen Schätzung und wird in der Forschung teils höher, teils niedriger angesetzt. Ob der Vorgang völkerrechtlich als Genozid einzuordnen ist, wird diskutiert; unstrittig ist die Zwangsumsiedlung gegen ein höchstrichterliches Urteil.",
+  "zahlen": [
+    {
+      "wert": "1830",
+      "was": "Indian Removal Act"
+    },
+    {
+      "wert": "ca. 16.000",
+      "was": "vertriebene Cherokee 1838"
+    },
+    {
+      "wert": "ca. 4.000",
+      "was": "geschätzte Tote auf dem Weg"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Trail of Tears; Indian Removal Act",
+    "Worcester v. Georgia, 31 U.S. 515 (1832)",
+    "Theda Perdue und Michael Green: The Cherokee Nation and the Trail of Tears"
+  ]
+},
+{
+  "id": "amerikanischer-buergerkrieg",
+  "titel": "Der Amerikanische Bürgerkrieg",
+  "epoche": "industrialisierung",
+  "jahr": 1861,
+  "zeitraum": "1861–1865",
+  "region": "USA",
+  "leitsatz": "Die Südstaaten nannten den Grund ihres Austritts in ihren eigenen Erklärungen selbst – der Streit darüber kam erst danach.",
+  "vorgeschichte": "Seit der Staatsgründung wuchs der Gegensatz zwischen der Plantagenwirtschaft des Südens, die auf Sklavenarbeit beruhte, und dem industrialisierenden Norden. Jeder neue Bundesstaat verschob das Gleichgewicht im Senat. Die Wahl Lincolns 1860, der die Ausdehnung der Sklaverei in neue Gebiete ablehnte, war der Anlass zum Austritt von elf Staaten.",
+  "verlauf": "Der Krieg begann im April 1861 mit dem Beschuss von Fort Sumter. Er wurde zum ersten Krieg mit Eisenbahnlogistik, Telegrafie, Panzerschiffen und Massenfertigung von Waffen – und mit entsprechenden Verlusten. Die Emanzipationserklärung von 1863 machte die Abschaffung der Sklaverei zum Kriegsziel und verhinderte ein Eingreifen europäischer Mächte zugunsten des Südens. Rund 180.000 schwarze Soldaten kämpften für die Union. 1865 kapitulierte Lee bei Appomattox; wenige Tage später wurde Lincoln erschossen.",
+  "folgen": "Rund 620.000 bis 750.000 Tote, mehr als in allen anderen amerikanischen Kriegen zusammen. Die Sklaverei endete, die Verfassungszusätze 13 bis 15 brachten Freiheit, Staatsbürgerschaft und Wahlrecht. Nach dem Ende der Reconstruction 1877 wurden diese Rechte im Süden durch Gesetze und Gewalt praktisch beseitigt und erst in den 1960er Jahren wiederhergestellt.",
+  "strittig": "Die These, es sei um Staatenrechte und nicht um Sklaverei gegangen, entstand nach dem Krieg als Lost-Cause-Erzählung. Die Austrittserklärungen von Mississippi, Texas und South Carolina nennen die Sklaverei ausdrücklich als Grund. Umstritten ist in der Forschung nicht das Warum, sondern die Gewichtung wirtschaftlicher und politischer Faktoren.",
+  "zahlen": [
+    {
+      "wert": "620.000–750.000",
+      "was": "geschätzte Tote"
+    },
+    {
+      "wert": "ca. 4 Mio.",
+      "was": "befreite Versklavte"
+    },
+    {
+      "wert": "1877",
+      "was": "Ende der Reconstruction"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: American Civil War",
+    "James M. McPherson: Battle Cry of Freedom",
+    "Declarations of Secession, Originaltexte der Südstaaten"
+  ]
+},
+{
+  "id": "buergerrechtsbewegung",
+  "titel": "Die Bürgerrechtsbewegung",
+  "epoche": "moderne",
+  "jahr": 1954,
+  "zeitraum": "1954–1968",
+  "region": "USA",
+  "leitsatz": "Ein Boykott, der 381 Tage hielt, bewies, dass die Trennung wirtschaftlich teurer war als ihre Abschaffung.",
+  "vorgeschichte": "Nach dem Ende der Reconstruction hatten die Südstaaten Rassentrennung gesetzlich verankert; der Supreme Court hatte sie 1896 mit der Formel getrennt, aber gleich gebilligt. Wahlhürden wie Lesetests und Kopfsteuern hielten die schwarze Bevölkerung von den Urnen fern. Schwarze Soldaten, die im Zweiten Weltkrieg gekämpft hatten, kehrten in ein Land zurück, in dem sie nicht wählen durften.",
+  "verlauf": "1954 erklärte der Supreme Court in Brown gegen Board of Education die Trennung an Schulen für verfassungswidrig. 1955 begann in Montgomery nach der Verhaftung von Rosa Parks ein Busboykott, der 381 Tage dauerte und die Verkehrsbetriebe an den Rand des Ruins brachte. Es folgten Sitzstreiks, Freiheitsfahrten und 1963 der Marsch auf Washington mit rund 250.000 Teilnehmern. Fernsehbilder von Polizeihunden und Wasserwerfern gegen Demonstranten in Birmingham veränderten die öffentliche Meinung im Norden. 1964 kam der Civil Rights Act, 1965 das Wahlrechtsgesetz.",
+  "folgen": "Die gesetzliche Trennung endete, die Wählerregistrierung im Süden stieg binnen Jahren sprunghaft. Zugleich verschob sich die Parteienlandschaft: Der Süden wechselte von den Demokraten zu den Republikanern. Nach Kings Ermordung 1968 zerfiel die Bewegung in verschiedene Richtungen; wirtschaftliche Ungleichheit blieb weitgehend bestehen.",
+  "strittig": "Die Erinnerung konzentriert sich stark auf einzelne Personen. Die Forschung betont die Rolle lokaler Netzwerke, schwarzer Kirchen, Gewerkschaften und Frauen wie Ella Baker, die im öffentlichen Bild kaum vorkommen. Rosa Parks war keine zufällig müde Passagierin, sondern langjährige Sekretärin der Bürgerrechtsorganisation NAACP.",
+  "zahlen": [
+    {
+      "wert": "381 Tage",
+      "was": "Busboykott von Montgomery"
+    },
+    {
+      "wert": "ca. 250.000",
+      "was": "Teilnehmer des Marsches auf Washington"
+    },
+    {
+      "wert": "1965",
+      "was": "Voting Rights Act"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: American civil rights movement",
+    "Taylor Branch: Parting the Waters",
+    "Library of Congress: Civil Rights History Project"
+  ]
+},
+{
+  "id": "mondlandung",
+  "titel": "Die Mondlandung",
+  "epoche": "moderne",
+  "jahr": 1969,
+  "zeitraum": "1961–1972",
+  "region": "USA",
+  "leitsatz": "Ein Programm, das aus einer Niederlage entstand – und dessen Ziel politisch war, nicht wissenschaftlich.",
+  "vorgeschichte": "Die Sowjetunion hatte 1957 den ersten Satelliten und 1961 den ersten Menschen ins All gebracht. Kennedy suchte ein Ziel, bei dem die USA vorn liegen konnten, und legte 1961 vor dem Kongress fest, noch im selben Jahrzehnt einen Menschen auf den Mond und zurück zu bringen.",
+  "verlauf": "Das Apollo-Programm beschäftigte auf dem Höhepunkt rund 400.000 Menschen und verschlang bis zu 4 Prozent des Bundeshaushalts. Ein Feuer beim Bodentest kostete 1967 drei Astronauten das Leben. Am 20. Juli 1969 landete die Mondfähre mit Neil Armstrong und Buzz Aldrin, während Michael Collins im Orbit blieb. Der Bordcomputer meldete beim Anflug Überlastung, und Armstrong steuerte die letzten Meter von Hand; der Treibstoff reichte für etwa dreißig Sekunden. Bis 1972 folgten fünf weitere Landungen.",
+  "folgen": "Zurückgebrachte Gesteinsproben stützten die Theorie, dass der Mond durch einen Einschlag entstand. Miniaturisierung und Qualitätssicherung wirkten in die Technik hinein. Nach dem politischen Sieg verlor das Programm seinen Zweck und wurde eingestellt – die Trägerrakete Saturn V wurde nie wieder gebaut.",
+  "strittig": "Die Behauptung, die Landung sei gefälscht, ist mehrfach widerlegt: durch Laserreflektoren, deren Signal bis heute gemessen wird, durch unabhängige Verfolgung der Funksignale, auch durch sowjetische Stationen, und durch die Gesteinsproben. Sachlich diskutiert wird dagegen der Nutzen: ob bemannte Raumfahrt wissenschaftlich mehr leistet als unbemannte Sonden.",
+  "zahlen": [
+    {
+      "wert": "20. Juli 1969",
+      "was": "Landung von Apollo 11"
+    },
+    {
+      "wert": "ca. 400.000",
+      "was": "Beteiligte am Apollo-Programm"
+    },
+    {
+      "wert": "12",
+      "was": "Menschen, die den Mond betraten"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Apollo 11",
+    "NASA: Apollo Program Historical Documents",
+    "Charles Fishman: One Giant Leap"
+  ]
+},
+{
+  "id": "hangul",
+  "titel": "Hangul, die geplante Schrift",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1446,
+  "zeitraum": "1443–1446",
+  "region": "Korea",
+  "leitsatz": "Fast alle Schriften der Welt sind gewachsen – diese wurde entworfen, und ihre Zeichen bilden die Stellung von Zunge und Lippen nach.",
+  "vorgeschichte": "Koreanisch wurde bis dahin mit chinesischen Zeichen geschrieben, die für eine völlig anders gebaute Sprache ungeeignet sind. Wer schreiben konnte, hatte Jahre für das Erlernen tausender Zeichen aufgewendet – Schriftlichkeit blieb ein Vorrecht der Gelehrten.",
+  "verlauf": "König Sejong ließ ab 1443 ein eigenes Alphabet entwickeln und veröffentlichte es 1446 unter dem Titel Die richtigen Laute zur Unterweisung des Volkes. Die Konsonantenzeichen bilden schematisch nach, wo und wie der Laut gebildet wird; die Vokalzeichen setzen sich aus drei Grundelementen zusammen. Die Silben werden zu Blöcken zusammengesetzt. Der Hof begründete die Reform ausdrücklich damit, dass einfache Leute ihre Anliegen nicht schriftlich vorbringen könnten. Ein Teil der Gelehrten protestierte – eine leicht erlernbare Schrift entwertete ihr Bildungsmonopol.",
+  "folgen": "Hangul wurde jahrhundertelang als Schrift für Frauen und einfache Leute abgewertet und erst mit dem Nationalismus des späten 19. Jahrhunderts zur Staatsschrift. Die japanische Kolonialverwaltung schränkte den Gebrauch ein, was ihn zusätzlich zum nationalen Symbol machte. Heute liegt die Alphabetisierung in beiden koreanischen Staaten nahe hundert Prozent; der 9. Oktober ist in Südkorea Feiertag.",
+  "strittig": "Ob Sejong die Schrift selbst entwarf oder eine Gelehrtenkommission, ist nicht abschließend geklärt; die Quellen nennen den König, was der höfischen Konvention entspricht. Auch mögliche Anregungen durch die mongolische Phagspa-Schrift werden diskutiert.",
+  "zahlen": [
+    {
+      "wert": "1443",
+      "was": "Fertigstellung"
+    },
+    {
+      "wert": "1446",
+      "was": "Verkündung"
+    },
+    {
+      "wert": "24",
+      "was": "Grundzeichen im heutigen Gebrauch"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Hangul; Sejong",
+    "UNESCO Memory of the World: Hunminjeongeum Manuscript",
+    "Ki-Moon Lee und S. Robert Ramsey: A History of the Korean Language"
+  ]
+},
+{
+  "id": "imjin-krieg",
+  "titel": "Der Imjin-Krieg und Admiral Yi",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1592,
+  "zeitraum": "1592–1598",
+  "region": "Korea, Japan, China",
+  "leitsatz": "Ein Admiral gewann jede seiner Seeschlachten, wurde zwischendurch degradiert und gefoltert – und rettete sein Land trotzdem.",
+  "vorgeschichte": "Toyotomi Hideyoshi hatte Japan geeint und verfügte über eine kriegserfahrene Armee mit Feuerwaffen. Sein erklärtes Ziel war China; Korea sollte den Durchmarsch gewähren und lehnte ab. Das koreanische Heer war auf einen Krieg dieser Größe nicht vorbereitet.",
+  "verlauf": "1592 landeten rund 160.000 japanische Soldaten und nahmen binnen weniger Wochen Seoul und Pjöngjang. Zur See jedoch schlug Admiral Yi Sun-sin die japanische Flotte mehrfach und schnitt den Nachschub ab; seine gepanzerten Schildkrötenschiffe waren dabei nur ein Teil des Erfolgs, entscheidend waren Aufklärung, Kanonen und Gelände. Bauernmilizen und buddhistische Mönche führten einen Kleinkrieg im Rücken der Besatzer, China schickte Truppen. Yi wurde nach einer Hofintrige degradiert; sein Nachfolger verlor fast die gesamte Flotte. Wieder eingesetzt, siegte Yi 1597 bei Myeongnyang mit dreizehn Schiffen gegen ein Vielfaches. 1598 fiel er in der letzten Schlacht.",
+  "folgen": "Japan zog nach Hideyoshis Tod ab. Korea war verwüstet, die Bevölkerung stark dezimiert, Handwerker – vor allem Töpfer – waren zu Zehntausenden nach Japan verschleppt worden, wo sie die japanische Keramik prägten. Die Ming-Dynastie war durch den Kriegseinsatz geschwächt und fiel vier Jahrzehnte später. Yi Sun-sin ist bis heute die wichtigste Heldenfigur Koreas.",
+  "strittig": "Ob die Schildkrötenschiffe tatsächlich mit Eisenplatten gepanzert waren, ist unter Fachleuten umstritten; die Quellen sind uneindeutig, kein Wrack ist gefunden. Auch die Truppenzahlen schwanken je nach Überlieferung erheblich.",
+  "zahlen": [
+    {
+      "wert": "ca. 160.000",
+      "was": "japanische Soldaten 1592"
+    },
+    {
+      "wert": "13 gegen über 100",
+      "was": "Schiffe bei Myeongnyang 1597"
+    },
+    {
+      "wert": "7 Jahre",
+      "was": "Kriegsdauer"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Imjin War; Yi Sun-sin",
+    "Kenneth M. Swope: A Dragon's Head and a Serpent's Tail",
+    "Nanjung Ilgi, Kriegstagebuch Yi Sun-sins"
+  ]
+},
+{
+  "id": "koreakrieg",
+  "titel": "Der Koreakrieg",
+  "epoche": "moderne",
+  "jahr": 1950,
+  "zeitraum": "1950–1953",
+  "region": "Korea",
+  "leitsatz": "Drei Jahre Krieg endeten fast genau auf der Linie, an der sie begonnen hatten – ein Friedensvertrag fehlt bis heute.",
+  "vorgeschichte": "1945 teilten die USA und die Sowjetunion die japanische Kolonie am 38. Breitengrad, ohne Beteiligung der Koreaner. Zwei Staaten entstanden, beide mit dem Anspruch auf die ganze Halbinsel. Stalin gab nach längerem Zögern grünes Licht für den Angriff.",
+  "verlauf": "Am 25. Juni 1950 überschritten nordkoreanische Truppen die Grenze und eroberten fast die ganze Halbinsel. Der UN-Sicherheitsrat beschloss ein Eingreifen – möglich, weil die Sowjetunion die Sitzungen boykottierte. Die Landung bei Incheon drehte den Krieg; UN-Truppen stießen bis zur chinesischen Grenze vor. Daraufhin griff China mit Hunderttausenden Soldaten ein und warf sie zurück. Ab 1951 erstarrte die Front nahe dem 38. Breitengrad, während die Verhandlungen zwei Jahre dauerten – vor allem am Streit über die Rückführung von Kriegsgefangenen. Die amerikanische Luftwaffe warf mehr Bomben ab als im gesamten Pazifikkrieg; nordkoreanische Städte wurden weitgehend zerstört.",
+  "folgen": "Bis zu drei Millionen Tote, davon die Mehrheit Zivilisten. Der Waffenstillstand von 1953 gilt bis heute; eine der am stärksten befestigten Grenzen der Welt trennt die Halbinsel. Für Nordkorea wurde die Bombardierung zum Kern der Staatserzählung, für Südkorea die amerikanische Militärpräsenz zur Sicherheitsgrundlage.",
+  "strittig": "Über Kriegsverbrechen auf beiden Seiten wurde lange geschwiegen. Erst eine südkoreanische Wahrheitskommission dokumentierte ab 2005 Massaker an eigenen Zivilisten, darunter die Erschießung tausender Gefangener zu Kriegsbeginn. Die Opferzahlen insgesamt sind Schätzungen mit großer Spannbreite.",
+  "zahlen": [
+    {
+      "wert": "25. Juni 1950",
+      "was": "Kriegsbeginn"
+    },
+    {
+      "wert": "bis zu 3 Mio.",
+      "was": "geschätzte Todesopfer"
+    },
+    {
+      "wert": "27. Juli 1953",
+      "was": "Waffenstillstand ohne Friedensvertrag"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Korean War",
+    "Bruce Cumings: The Korean War – A History",
+    "Truth and Reconciliation Commission Republic of Korea, Berichte"
+  ]
+},
+{
+  "id": "korea-kolonialzeit",
+  "titel": "Korea unter japanischer Herrschaft",
+  "epoche": "moderne",
+  "jahr": 1910,
+  "zeitraum": "1910–1945",
+  "region": "Korea",
+  "leitsatz": "35 Jahre, über die zwei Nachbarländer bis heute keine gemeinsame Darstellung finden.",
+  "vorgeschichte": "Nach den Kriegen gegen China 1895 und Russland 1905 hatte Japan freie Hand auf der Halbinsel. 1905 wurde Korea Protektorat, 1910 annektiert. Die Königin war 1895 von japanischen Agenten im Palast ermordet worden.",
+  "verlauf": "Die Kolonialverwaltung baute Eisenbahnen, Häfen, Fabriken und Schulen – auf die Bedürfnisse des Mutterlandes ausgerichtet. Zugleich wurde die koreanische Presse verboten, der Sprachunterricht zurückgedrängt und ab 1939 die Annahme japanischer Namen erzwungen. Die Bewegung des 1. März 1919 mit landesweiten friedlichen Kundgebungen wurde blutig niedergeschlagen. Im Krieg wurden Hunderttausende Koreaner zur Arbeit in japanischen Bergwerken und Fabriken verpflichtet; Zehntausende Frauen aus Korea und anderen besetzten Gebieten wurden in Militärbordelle gezwungen.",
+  "folgen": "1945 endete die Herrschaft mit der japanischen Kapitulation – und ging unmittelbar in die Teilung durch die Siegermächte über. Der Vertrag von 1965 normalisierte die Beziehungen und leistete Zahlungen an den südkoreanischen Staat, nicht an Einzelpersonen. Genau darüber wird bis heute prozessiert und gestritten.",
+  "strittig": "Die Bilanz ist der Kern des Streits: Japanische Darstellungen betonen Modernisierung und Wachstum, koreanische die Ausbeutung und die Zerstörung eigener Entwicklung. Zur Zahl und zum Zwangscharakter der sogenannten Trostfrauen gibt es amtliche japanische Untersuchungen, die Zwang einräumen, und politische Erklärungen, die ihn relativieren. Historisch belegt sind Rekrutierung durch Täuschung und Gewalt sowie die Beteiligung des Militärs an der Einrichtung der Bordelle.",
+  "zahlen": [
+    {
+      "wert": "35 Jahre",
+      "was": "Dauer der Kolonialherrschaft"
+    },
+    {
+      "wert": "1. März 1919",
+      "was": "landesweite Unabhängigkeitsbewegung"
+    },
+    {
+      "wert": "1965",
+      "was": "Normalisierungsvertrag mit Japan"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Korea under Japanese rule",
+    "Carter J. Eckert u. a.: Korea Old and New",
+    "Kono-Erklärung 1993, japanische Regierungsuntersuchung"
+  ]
+},
+{
+  "id": "siam-unabhaengig",
+  "titel": "Warum Siam nicht kolonisiert wurde",
+  "epoche": "industrialisierung",
+  "jahr": 1893,
+  "zeitraum": "1855–1910",
+  "region": "Südostasien",
+  "leitsatz": "Das einzige Land Südostasiens ohne Kolonialherrschaft blieb frei, indem es beträchtliche Teile seines Gebiets abgab.",
+  "vorgeschichte": "Um 1850 war Südostasien fast vollständig aufgeteilt: Britisch-Birma und Malaya im Westen, Französisch-Indochina im Osten. Siam lag genau dazwischen. Der Hof beobachtete, wie das benachbarte Birma in drei Kriegen unterworfen wurde, und zog daraus Schlüsse.",
+  "verlauf": "König Mongkut öffnete das Land 1855 im Bowring-Vertrag freiwillig für den britischen Handel – zu ungleichen Bedingungen: fester niedriger Zoll, eigene Gerichtsbarkeit für Ausländer. Sein Sohn Chulalongkorn baute in 42 Jahren Verwaltung, Steuerwesen, Schulen, Telegrafen und Eisenbahn nach europäischem Vorbild um, schaffte die Sklaverei schrittweise ab und schickte seine Söhne nach Europa. 1893 erzwang Frankreich mit Kanonenbooten vor Bangkok die Abtretung der Gebiete östlich des Mekong. Weitere Abtretungen an Frankreich und Großbritannien folgten bis 1909.",
+  "folgen": "Siam blieb formal souverän – auch weil es beiden Kolonialmächten als Pufferstaat nützte. Der Preis waren etwa 40 Prozent des ursprünglich beanspruchten Gebiets, darunter Teile des heutigen Laos, Kambodscha und Malaysia. Die Reformen schufen einen zentralisierten Staat und eine Beamtenschaft, aus der 1932 die Bewegung gegen die absolute Monarchie hervorging.",
+  "strittig": "Die Erzählung von der geschickten Diplomatie ist Teil des thailändischen Selbstbildes. Ein Teil der Forschung betont dagegen, dass die Pufferrolle zwischen zwei Mächten mindestens ebenso wichtig war wie das Geschick des Hofes – und dass Siam gegenüber seinen eigenen Randgebieten wie ein Kolonialstaat auftrat.",
+  "zahlen": [
+    {
+      "wert": "1855",
+      "was": "Bowring-Vertrag"
+    },
+    {
+      "wert": "42 Jahre",
+      "was": "Regierungszeit Chulalongkorns"
+    },
+    {
+      "wert": "ca. 40 %",
+      "was": "abgetretenes beanspruchtes Gebiet"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Thailand, history; Chulalongkorn",
+    "David K. Wyatt: Thailand – A Short History",
+    "Thongchai Winichakul: Siam Mapped"
+  ]
+},
+{
+  "id": "siam-1932",
+  "titel": "1932: Das Ende der absoluten Monarchie in Siam",
+  "epoche": "moderne",
+  "jahr": 1932,
+  "zeitraum": "1932–heute",
+  "region": "Thailand",
+  "leitsatz": "Ein unblutiger Umsturz an einem Morgen – und der Beginn einer Reihe von Militärputschen, die bis heute nicht abgerissen ist.",
+  "vorgeschichte": "Die Reformen Chulalongkorns hatten eine ausgebildete Beamten- und Offiziersschicht geschaffen, oft mit Studium in Europa. Die Weltwirtschaftskrise traf Siam hart; der Hof reagierte mit Gehaltskürzungen und Entlassungen im Staatsdienst, während der königliche Haushalt unangetastet blieb.",
+  "verlauf": "Am Morgen des 24. Juni 1932 besetzte eine Gruppe von rund hundert Offizieren und Beamten, die sich Volkspartei nannte, die Schlüsselstellen in Bangkok und nahm Mitglieder der königlichen Familie in Gewahrsam. König Prajadhipok, außerhalb der Stadt, nahm die Verfassung an, statt Widerstand zu leisten – nach eigener Aussage, um Blutvergießen zu vermeiden. Die Bewegung zerfiel bald in einen zivilen Flügel um Pridi Banomyong und einen militärischen um Phibun Songkhram. 1935 dankte der König ab und ging ins Exil.",
+  "folgen": "Aus dem absoluten wurde ein konstitutionelles Königtum, aber nicht eine Demokratie: Seit 1932 gab es in Thailand rund ein Dutzend erfolgreiche Militärputsche und über zwanzig Verfassungen. Die Monarchie gewann ab den 1950er Jahren unter Bhumibol wieder erheblich an Bedeutung – als Symbol, das jede Seite für sich beanspruchte.",
+  "strittig": "Ob 1932 eine Revolution oder ein Elitenwechsel war, ist in Thailand eine politisch aufgeladene Frage. Die öffentliche Erinnerung an das Datum wurde in den letzten Jahren zurückgedrängt: Gedenktafeln verschwanden, ein Denkmal wurde 2018 nachts abgebaut. Wer die Verantwortung dafür trägt, wurde nie geklärt.",
+  "zahlen": [
+    {
+      "wert": "24. Juni 1932",
+      "was": "Umsturz"
+    },
+    {
+      "wert": "ca. 100",
+      "was": "unmittelbar Beteiligte"
+    },
+    {
+      "wert": "über 20",
+      "was": "Verfassungen seither"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Thailand, Revolution of 1932",
+    "David K. Wyatt: Thailand – A Short History",
+    "Federico Ferrara: The Political Development of Modern Thailand"
+  ]
+},
+{
+  "id": "ayutthaya",
+  "titel": "Der Untergang Ayutthayas",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1767,
+  "zeitraum": "1351–1767",
+  "region": "Südostasien",
+  "leitsatz": "Vier Jahrhunderte Reichsgeschichte gingen in wenigen Tagen in Flammen auf – und mit ihnen ein Großteil der Quellen.",
+  "vorgeschichte": "Ayutthaya war seit 1351 die beherrschende Macht des Festlands Südostasiens: eine Handelsstadt auf einer Flussinsel, in der portugiesische, japanische, persische, chinesische und niederländische Gemeinden lebten. Europäische Besucher des 17. Jahrhunderts verglichen sie mit Paris und London. Mit Birma bestand eine jahrhundertealte Rivalität.",
+  "verlauf": "1765 rückten birmanische Heere von zwei Seiten vor. Die Belagerung dauerte vierzehn Monate; die Stadt verließ sich auf die Regenzeit, die sonst Belagerer vertrieb – diesmal blieben sie. Im April 1767 fiel Ayutthaya. Tempel wurden geplündert, Buddhastatuen ihres Goldes wegen eingeschmolzen, Archive und Bibliotheken verbrannt, Zehntausende verschleppt. Die Stadt wurde nicht wieder aufgebaut.",
+  "folgen": "Innerhalb von Monaten sammelte der Feldherr Taksin die Reste, vertrieb die Birmanen und errichtete eine neue Hauptstadt in Thonburi; 1782 gründete Rama I. gegenüber Bangkok. Der Verlust der Archive bedeutet, dass ein Großteil des Wissens über die Zeit vor 1767 auf Rekonstruktionen, ausländischen Berichten und späteren Abschriften beruht – ein Grund, warum manche Datierungen der thailändischen Frühzeit unsicher bleiben.",
+  "strittig": "Wie groß Ayutthaya wirklich war, ist umstritten; Angaben von bis zu einer Million Einwohnern stammen aus europäischen Reiseberichten und gelten als übertrieben. Auch das Ausmaß der Zerstörung wurde in späteren Darstellungen teils gesteigert, um den Neubeginn unter der Chakri-Dynastie zu betonen.",
+  "zahlen": [
+    {
+      "wert": "1351–1767",
+      "was": "Bestand des Reiches"
+    },
+    {
+      "wert": "14 Monate",
+      "was": "Dauer der Belagerung"
+    },
+    {
+      "wert": "1782",
+      "was": "Gründung Bangkoks"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Ayutthaya",
+    "David K. Wyatt: Thailand – A Short History",
+    "Chris Baker und Pasuk Phongpaichit: A History of Ayutthaya"
+  ]
 }
 ];

@@ -553,6 +553,125 @@ function abstandText(differenz) {
   return a.toLocaleString("de-DE") + (differenz < 0 ? " Jahre davor" : " Jahre danach");
 }
 
+/* =========================================================
+   ZEITSTRAHL
+
+   Alle Weltregionen als parallele Baender uebereinander. Der
+   Zeitschnitt zeigt einen Moment, der Zeitstrahl zeigt Verlaeufe:
+   wo viel passiert, wo Luecken klaffen, was gleichzeitig laeuft.
+
+   Bewusst linear und nicht logarithmisch. Eine logarithmische
+   Achse wuerde die Steinzeit sichtbar machen, aber die letzten
+   zweitausend Jahre zu einem Strich zusammenquetschen. Statt
+   dessen gibt es Zeitfenster zur Auswahl - und der Hinweis, dass
+   Eintraege ausserhalb des Fensters nicht verschwinden, sondern
+   nur gerade nicht gezeigt werden.
+   ========================================================= */
+
+const ZEITFENSTER = [
+  { id: "alles", label: "3000 v. Chr. – heute", von: -3000, bis: 2026 },
+  { id: "antike", label: "Antike", von: -800, bis: 500 },
+  { id: "mittelalter", label: "Mittelalter", von: 500, bis: 1500 },
+  { id: "neuzeit", label: "Neuzeit", von: 1500, bis: 1900 },
+  { id: "modern", label: "20./21. Jahrhundert", von: 1900, bis: 2026 }
+];
+
+function ZeitstrahlTab() {
+  const [fensterId, setFensterId] = useGespeichert("zeitstrahl.fenster", "alles");
+  const [gewaehlt, setGewaehlt] = useState(null);
+  const fenster = ZEITFENSTER.find((f) => f.id === fensterId) || ZEITFENSTER[0];
+  const spanne = fenster.bis - fenster.von;
+
+  const regionen = useMemo(() => Object.entries(COUNTRY_TIMELINES).map(([name, d]) => ({
+    name,
+    farbe: d.color,
+    sichtbar: d.events.filter((e) => e.year >= fenster.von && e.year <= fenster.bis),
+    gesamt: d.events.length
+  })).sort((a, b) => b.sichtbar.length - a.sichtbar.length), [fensterId]);
+
+  const ausserhalb = regionen.reduce((a, r) => a + (r.gesamt - r.sichtbar.length), 0);
+
+  // Beschriftung der Achse: fuenf gleichmaessige Marken
+  const marken = [0, 1, 2, 3, 4].map((i) => fenster.von + Math.round(spanne * i / 4));
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      "Alle Weltregionen nebeneinander — jeder Punkt ein Ereignis."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl leading-relaxed" },
+      "Die Lücken sind so aussagekräftig wie die Häufungen. Manche stehen für Zeiten, aus denen wenig überliefert ist — andere dafür, dass diese Zeitleiste noch nicht fertig ist."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-5" },
+      ZEITFENSTER.map((f) => /* @__PURE__ */ React.createElement("button", {
+        key: f.id,
+        onClick: () => { setFensterId(f.id); setGewaehlt(null); },
+        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${
+          f.id === fensterId ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      }, f.label))),
+
+    // Achse
+    /* @__PURE__ */ React.createElement("div", { className: "relative h-5 ml-[136px] mb-1 border-b border-[#5c2018]" },
+      marken.map((m, i) => /* @__PURE__ */ React.createElement("span", {
+        key: i,
+        className: "absolute font-mono text-[10px] text-[#8a6238] -translate-x-1/2",
+        style: { left: (i / 4) * 100 + "%" }
+      }, formatYear(m)))),
+
+    // Baender
+    /* @__PURE__ */ React.createElement("div", { className: "space-y-0.5" },
+      regionen.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.name, className: "flex items-center gap-2" },
+        /* @__PURE__ */ React.createElement("button", {
+          onClick: () => { if (SPRINGE) SPRINGE("laender", r.name); },
+          className: "w-[128px] shrink-0 text-right text-[11px] leading-tight text-[#c2a06a] hover:text-[#f0d878] truncate",
+          title: r.name + " — Zeitleiste öffnen"
+        }, r.name),
+        /* @__PURE__ */ React.createElement("div", {
+          className: "relative flex-1 h-6 rounded",
+          style: { backgroundColor: "#4a1015" }
+        },
+          /* @__PURE__ */ React.createElement("div", {
+            className: "absolute inset-x-0 top-1/2 h-px",
+            style: { backgroundColor: r.farbe, opacity: 0.25 }
+          }),
+          r.sichtbar.map((e, i) => /* @__PURE__ */ React.createElement("button", {
+            key: i,
+            onClick: () => setGewaehlt({ region: r.name, farbe: r.farbe, ereignis: e }),
+            title: formatYear(e.year) + " — " + e.title,
+            className: "absolute top-1/2 w-2 h-2 -mt-1 -ml-1 rounded-full hover:scale-150 transition-transform",
+            style: {
+              left: ((e.year - fenster.von) / spanne) * 100 + "%",
+              backgroundColor: r.farbe,
+              outline: gewaehlt && gewaehlt.ereignis === e ? "2px solid #f0d878" : "none"
+            }
+          }))
+        ),
+        /* @__PURE__ */ React.createElement("span", { className: "w-7 shrink-0 font-mono text-[10px] text-[#8a6238] text-right" }, r.sichtbar.length)
+      ))),
+
+    ausserhalb > 0 && /* @__PURE__ */ React.createElement("p", { className: "mt-3 font-mono text-[11px] text-[#8a6238]" },
+      ausserhalb, " Einträge liegen außerhalb dieses Zeitfensters"),
+
+    // Ausgewaehltes Ereignis
+    gewaehlt && /* @__PURE__ */ React.createElement("div", {
+      className: "mt-5 rounded-lg border bg-[#5c1a1e] p-4 max-w-3xl",
+      style: { borderColor: gewaehlt.farbe }
+    },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap mb-1" },
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs", style: { color: gewaehlt.farbe } }, formatYear(gewaehlt.ereignis.year)),
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238] uppercase tracking-wide" }, gewaehlt.region)),
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#f0d878] mb-1" }, gewaehlt.ereignis.title),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, gewaehlt.ereignis.text),
+      (() => {
+        const v = gewaehlt.ereignis.vertiefung
+          ? VERTIEFUNGEN.find((x) => x.id === gewaehlt.ereignis.vertiefung) : null;
+        return v && /* @__PURE__ */ React.createElement("button", {
+          onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id); },
+          className: "mt-2 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+        }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+      })()
+    )
+  );
+}
+
 function ZeitschnittTab() {
   const [jahr, setJahr] = useGespeichert("zeitschnitt.jahr", 1500);
   const [eingabe, setEingabe] = useState(String(1500));
@@ -1452,6 +1571,7 @@ const BEREICHE = [
   ] },
   { id: "zeit", label: "Zeit & Raum", icon: Clock, unter: [
       { id: "laender", label: "Weltregionen" },
+      { id: "zeitstrahl", label: "Zeitstrahl" },
       { id: "zeitschnitt", label: "Zeitschnitt" }
   ] },
   { id: "momente", label: "Momente", icon: Zap, unter: [
@@ -1603,27 +1723,58 @@ function ZitateTab() {
     )
   );
 }
+/* =========================================================
+   LAENDER
+
+   Chronologische Zeitleisten je Region. Wo ein Ereignis einen
+   ausfuehrlichen Artikel hat, fuehrt ein Verweis dorthin - so
+   bleibt die Zeitleiste knapp und der Ausbau trotzdem erreichbar.
+   ========================================================= */
+
 function LaenderTab({ ziel }) {
   const countries = Object.keys(COUNTRY_TIMELINES);
   const [country, setCountry] = useState(countries[0]);
   React.useEffect(() => { if (ziel && COUNTRY_TIMELINES[ziel]) setCountry(ziel); }, [ziel]);
   const data = COUNTRY_TIMELINES[country];
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-5 max-w-2xl" }, "Eigene chronologische Zeitleisten f\xFCr ausgew\xE4hlte L\xE4nder \u2014 quer durch alle Epochen hinweg."), /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" }, countries.map((c) => /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      key: c,
-      onClick: () => setCountry(c),
-      className: "px-3 py-1.5 rounded text-sm font-medium border",
-      style: country === c ? { backgroundColor: "#5c1a1e", color: "#f0d878", borderColor: COUNTRY_TIMELINES[c].color } : { borderColor: "#5c2018", color: "#b8905a" }
-    },
-    c
-  ))), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l border-[#5c2018] ml-2" }, data.events.map((e, i) => /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-6 ml-5" }, /* @__PURE__ */ React.createElement(
-    "span",
-    {
-      className: "absolute -left-[7px] w-3.5 h-3.5 rounded-full border-2 border-[#4a1015]",
-      style: { backgroundColor: data.color }
-    }
-  ), /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs", style: { color: data.color } }, formatYear(e.year)), /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, e.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, e.text)))));
+  const mitVertiefung = data.events.filter((e) => e.vertiefung).length;
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-5 max-w-2xl" },
+      "Eigene chronologische Zeitleisten für ausgewählte Länder — quer durch alle Epochen hinweg."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-4" },
+      countries.map((c) => /* @__PURE__ */ React.createElement("button", {
+        key: c,
+        onClick: () => setCountry(c),
+        className: "px-3 py-1.5 rounded text-sm font-medium border",
+        style: country === c
+          ? { backgroundColor: "#5c1a1e", color: "#f0d878", borderColor: COUNTRY_TIMELINES[c].color }
+          : { borderColor: "#5c2018", color: "#b8905a" }
+      }, c))),
+
+    /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] text-[#8a6238] mb-5" },
+      data.events.length, " Einträge",
+      mitVertiefung ? " · " + mitVertiefung + " mit Vertiefung" : ""),
+
+    /* @__PURE__ */ React.createElement("ol", { className: "relative border-l border-[#5c2018] ml-2" },
+      data.events.map((e, i) => {
+        const vert = e.vertiefung ? VERTIEFUNGEN.find((v) => v.id === e.vertiefung) : null;
+        return /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-6 ml-5" },
+          /* @__PURE__ */ React.createElement("span", {
+            className: "absolute -left-[7px] w-3.5 h-3.5 rounded-full border-2 border-[#4a1015]",
+            style: { backgroundColor: data.color }
+          }),
+          /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs", style: { color: data.color } }, formatYear(e.year)),
+          /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, e.title),
+          /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, e.text),
+          vert && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id); },
+            className: "mt-1.5 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+          }, "Vertiefung: ", vert.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))
+        );
+      })
+    )
+  );
 }
 function MythenTab() {
   const [cat, setCat] = useState("Alle");
@@ -2013,5 +2164,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }

@@ -389,6 +389,11 @@ function pruefeInhalte(D) {
     pruefeFelder("Zeitleiste '" + land + "'", d.events, ["year", "title", "text"], "title");
     pruefeChronologie("Zeitleiste '" + land + "'", d.events, "year");
     pruefeDubletten("Zeitleiste '" + land + "'", d.events, "title");
+    d.events.forEach((e) => {
+      if (e.vertiefung && !vertIds.has(e.vertiefung)) {
+        meldeFehler("Zeitleiste '" + land + "': '" + e.title + "' verweist auf fehlende Vertiefung '" + e.vertiefung + "'");
+      }
+    });
   });
 
   // Sammlungen
@@ -453,6 +458,9 @@ function pruefeInhalte(D) {
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
+  const laenderVerweise = Object.values(D.COUNTRY_TIMELINES)
+    .reduce((a, d) => a + d.events.filter((e) => e.vertiefung).length, 0);
+  console.log("  Zeitleisten-Einträge mit Verweis auf eine Vertiefung: " + laenderVerweise);
   console.log("  Schlüsselmomente mit Verweis auf eine Vertiefung: " + verknuepft);
 }
 
