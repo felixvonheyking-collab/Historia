@@ -125,12 +125,7 @@ const EPOCHS = [
    {
     "year": -9600,
     "title": "Errichtung von Göbekli Tepe",
-    "text": "Jäger und Sammler bauen monumentale Steinkreise. Der Befund kehrt die alte Annahme um, erst der Ackerbau habe Monumentalbauten ermöglicht."
-   },
-   {
-    "year": -9500,
-    "title": "Göbekli Tepe",
-    "text": "In Anatolien entsteht die vermutlich älteste monumentale Kultstätte der Welt – errichtet von Jägern und Sammlern, nicht von Bauern."
+    "text": "In Anatolien bauen Jäger und Sammler monumentale Steinkreise mit bis zu fünf Meter hohen T-Pfeilern. Der Befund kehrt eine alte Annahme um: Nicht der Ackerbau ermöglichte Monumentalbauten – möglicherweise war es umgekehrt."
    },
    {
     "year": -8000,

@@ -858,5 +858,466 @@ const THEMEN = [
    "Trans-Atlantic Slave Trade Database, Emory University",
    "Internationale Arbeitsorganisation: Global Estimates of Modern Slavery"
   ]
- }
+ },
+{
+  "id": "kunst",
+  "titel": "Kunst & Bild",
+  "kurz": "Wer Bilder in Auftrag gibt, bestimmt, was zu sehen ist — und was nicht.",
+  "einleitung": "Kunstgeschichte wird oft als Folge von Stilen erzählt. Aufschlussreicher ist die Frage, wer bezahlte und wozu: Tempel, Fürsten, Kirche, Bürgertum, Markt, Staat. Fast jeder Bruch in der Bildsprache folgt einem Wechsel des Auftraggebers oder einer neuen Technik. Und mehrmals in der Geschichte wurde Kunst nicht nur gemacht, sondern gezielt zerstört.",
+  "stationen": [
+    {
+      "jahr": -40000,
+      "titel": "Die ältesten Bilder",
+      "text": "Höhlenmalereien in Sulawesi, Chauvet und El Castillo zeigen Tiere, Handabdrücke und Zeichen. Was sie bedeuteten, ist unbekannt; jede Deutung als Jagdzauber oder Schamanismus ist Vermutung, nicht Befund."
+    },
+    {
+      "jahr": -2600,
+      "titel": "Der ägyptische Kanon",
+      "text": "Ägyptische Kunst folgt über drei Jahrtausende festen Proportionsregeln und Ansichtsvorschriften. Nicht Unvermögen, sondern Absicht: Dargestellt wird nicht, wie etwas aussieht, sondern was es ist."
+    },
+    {
+      "jahr": -480,
+      "titel": "Der griechische Umbruch",
+      "text": "Innerhalb weniger Jahrzehnte lösen sich starre Standfiguren in bewegte Körper auf. Der Kontrapost verlagert das Gewicht auf ein Bein – der Beginn einer Kunst, die Körper als Organismen darstellt."
+    },
+    {
+      "jahr": -30,
+      "titel": "Das römische Porträt",
+      "text": "Römische Bildnisse zeigen Falten, Warzen und Alter. Wo Griechen idealisierten, war in Rom das gelebte Leben ein Ausweis von Würde und Verdienst."
+    },
+    {
+      "jahr": 550,
+      "titel": "Die Ikone",
+      "text": "In der Ostkirche entsteht ein Bildtyp, der nicht abbilden, sondern vergegenwärtigen will. Bildregeln werden theologisch begründet und bleiben über Jahrhunderte gültig."
+    },
+    {
+      "jahr": 726,
+      "titel": "Der Bilderstreit",
+      "text": "Byzanz verbietet religiöse Bilder und zerstört sie; über hundert Jahre wird gestritten, ob das Bild Gotteslästerung oder Zeugnis der Menschwerdung ist. Der Ausgang zugunsten der Bilder prägte die europäische Kunst."
+    },
+    {
+      "jahr": 1305,
+      "titel": "Giotto und der Raum",
+      "text": "In Padua malt Giotto Figuren, die Gewicht haben und im Raum stehen. Die Loslösung von der Goldgrundfläche ist der Beginn dessen, was später Renaissance heißen wird."
+    },
+    {
+      "jahr": 1425,
+      "titel": "Die Perspektive wird berechenbar",
+      "text": "Brunelleschi zeigt die Zentralperspektive im Experiment, Alberti beschreibt sie 1435 als Regel. Bild wird zur Konstruktion – Mathematik betritt das Atelier."
+    },
+    {
+      "jahr": 1434,
+      "titel": "Öl statt Tempera",
+      "text": "Die niederländische Ölmalerei erlaubt Lasuren, Übergänge und Details, die vorher unmöglich waren. Jan van Eycks Oberflächen wirken auf Zeitgenossen wie Zauberei."
+    },
+    {
+      "jahr": 1508,
+      "titel": "Die Sixtinische Decke",
+      "text": "Michelangelo arbeitet vier Jahre auf einem Gerüst. Der Auftrag kommt von einem Papst, der Kunst als politisches Mittel einsetzt – Kunst und Macht sind hier nicht zu trennen."
+    },
+    {
+      "jahr": 1566,
+      "titel": "Der Bildersturm",
+      "text": "In den Niederlanden zerstören Reformierte Altäre und Figuren. Die protestantischen Gebiete entwickeln daraufhin Landschaft, Stillleben und Porträt – Bildgattungen ohne Heilige."
+    },
+    {
+      "jahr": 1656,
+      "titel": "Das Bild denkt über sich selbst nach",
+      "text": "Velázquez malt in Las Meninas den Maler, das Modell und den Betrachter in ein unauflösbares Verhältnis. Das Bild wird zum Gegenstand seiner eigenen Frage."
+    },
+    {
+      "jahr": 1785,
+      "titel": "Kunst als politisches Programm",
+      "text": "Der Klassizismus greift auf römische Vorbilder zurück, um bürgerliche Tugend zu predigen. Davids Bilder werden zur Bildsprache der Französischen Revolution."
+    },
+    {
+      "jahr": 1839,
+      "titel": "Die Fotografie entlastet die Malerei",
+      "text": "Als eine Maschine das Abbilden übernimmt, verliert die Malerei ihre älteste Aufgabe. Was folgt – Impressionismus, Expressionismus, Abstraktion – ist auch eine Antwort darauf."
+    },
+    {
+      "jahr": 1907,
+      "titel": "Der Bruch mit der Perspektive",
+      "text": "Der Kubismus zeigt Gegenstände aus mehreren Blickwinkeln zugleich und beendet die fünfhundertjährige Herrschaft des einen Standpunkts. Anregungen kamen unter anderem aus afrikanischer Plastik – lange ohne Nennung der Herkunft."
+    },
+    {
+      "jahr": 1917,
+      "titel": "Der Gegenstand als Kunstwerk",
+      "text": "Duchamp reicht ein Urinal als Skulptur ein. Die Frage verschiebt sich vom Können zur Zuschreibung: Kunst ist, was als Kunst ausgestellt und anerkannt wird."
+    },
+    {
+      "jahr": 1937,
+      "titel": "Entartete Kunst",
+      "text": "Die NS-Diktatur beschlagnahmt über 20.000 Werke, verkauft einen Teil ins Ausland und verfemt die Moderne. Viele Künstler emigrieren – das Zentrum der Kunstwelt verschiebt sich nach New York."
+    },
+    {
+      "jahr": 1962,
+      "titel": "Kunst und Massenware",
+      "text": "Die Pop Art übernimmt Werbebild, Comic und Serienproduktion. Die Grenze zwischen hoher Kunst und Alltagsbild wird bewusst durchlässig gemacht."
+    },
+    {
+      "jahr": 1998,
+      "titel": "Die Rückgabefrage",
+      "text": "Die Washingtoner Erklärung verpflichtet Museen zur Suche nach NS-Raubkunst. Parallel wächst der Druck, koloniale Sammlungen zurückzugeben – seit 2022 gehen die Benin-Bronzen an Nigeria."
+    },
+    {
+      "jahr": 2018,
+      "titel": "Bilder ohne Hand",
+      "text": "Erstmals versteigert ein großes Auktionshaus ein maschinell erzeugtes Bild. Die alte Frage nach Urheberschaft und Werk stellt sich neu – rechtlich ist sie bis heute nicht geklärt."
+    }
+  ],
+  "strittig": "Kunstgeschichte ist bis heute stark europäisch erzählt. Techniken und Formen aus China, Persien, Indien, Westafrika und Mesoamerika erscheinen oft nur als Einfluss auf europäische Kunst statt als eigene Entwicklungslinien. Auch die Zuschreibung einzelner Werke ist unsicherer, als Museumsschilder vermuten lassen.",
+  "quellen": [
+    "Encyclopaedia Britannica: art history, Einzelartikel",
+    "Ernst Gombrich: Die Geschichte der Kunst",
+    "Horst Bredekamp: Der Bildakt",
+    "Washingtoner Erklärung 1998, Originaltext"
+  ]
+},
+{
+  "id": "musik",
+  "titel": "Musik & Klang",
+  "kurz": "Von der Knochenflöte zur Streaming-Liste — jede Aufzeichnungstechnik verändert, was Musik ist.",
+  "einleitung": "Musik ist die älteste Kunst, von der Werkzeuge erhalten sind, und die jüngste, die sich speichern ließ. Bis 1877 existierte Musik nur im Moment ihres Erklingens; alles davor kennen wir nur über Notenschriften, Instrumente und Beschreibungen. Jede neue Technik – Notation, Druck, Aufnahme, Rundfunk, Datei – hat verändert, wer Musik machen, verbreiten und besitzen konnte.",
+  "stationen": [
+    {
+      "jahr": -40000,
+      "titel": "Flöten aus Knochen und Elfenbein",
+      "text": "Funde von der Schwäbischen Alb belegen Instrumente mit Grifflöchern – gebaut, nicht gefunden. Musik ist mindestens so alt wie die figürliche Kunst."
+    },
+    {
+      "jahr": -1400,
+      "titel": "Die älteste notierte Melodie",
+      "text": "Auf Tontafeln aus Ugarit steht ein hurritischer Hymnus mit Angaben zu Saiten und Intervallen. Die Übertragung in heutige Töne bleibt umstritten – mehrere Rekonstruktionen klingen völlig verschieden."
+    },
+    {
+      "jahr": -530,
+      "titel": "Zahlenverhältnisse im Klang",
+      "text": "Der pythagoreischen Schule wird die Entdeckung zugeschrieben, dass wohlklingende Intervalle einfachen Längenverhältnissen entsprechen. Musik gilt seither als Teil der Mathematik – im mittelalterlichen Studium steht sie neben Arithmetik und Astronomie."
+    },
+    {
+      "jahr": 600,
+      "titel": "Der gregorianische Gesang",
+      "text": "Die römische Kirche vereinheitlicht die Liturgiegesänge. Die Zuschreibung an Papst Gregor I. ist Legende; die Sammlung entsteht über Jahrhunderte."
+    },
+    {
+      "jahr": 1025,
+      "titel": "Guido von Arezzo erfindet die Linien",
+      "text": "Töne werden auf Notenlinien festgelegt und mit Silben benannt. Erstmals kann jemand ein Stück singen, das er nie gehört hat – Musik wird übertragbar."
+    },
+    {
+      "jahr": 1320,
+      "titel": "Mehrstimmigkeit wird komponierbar",
+      "text": "Die Ars nova bringt genaue Rhythmusnotation. Musik ist nicht mehr nur Aufführung, sondern Komposition: ein Werk, das ein Einzelner entwirft und das andere ausführen."
+    },
+    {
+      "jahr": 1501,
+      "titel": "Musikdruck",
+      "text": "Petrucci druckt in Venedig mehrstimmige Musik mit beweglichen Lettern. Noten werden Ware, Komponisten werden über ihre Region hinaus bekannt."
+    },
+    {
+      "jahr": 1607,
+      "titel": "Die Oper entsteht",
+      "text": "Monteverdis Orfeo verbindet Text, Musik und Bühne zu einer neuen Gattung. Aus einem Experiment florentinischer Gelehrter, die die antike Tragödie nachbilden wollten, wird die aufwendigste Kunstform Europas."
+    },
+    {
+      "jahr": 1722,
+      "titel": "Die wohltemperierte Stimmung",
+      "text": "Bachs Sammlung nutzt eine Stimmung, in der alle Tonarten brauchbar klingen. Der Preis: Kein Intervall außer der Oktave ist mehr rein – ein Kompromiss, auf dem die westliche Musik bis heute beruht."
+    },
+    {
+      "jahr": 1824,
+      "titel": "Musik als Bekenntnis",
+      "text": "Beethovens Neunte stellt am Ende einer Sinfonie einen Chor mit einem Text über Menschenverbrüderung. Die Sinfonie wird zur weltanschaulichen Aussage – seit 1985 ist der Satz Europahymne."
+    },
+    {
+      "jahr": 1877,
+      "titel": "Klang wird speicherbar",
+      "text": "Edisons Phonograph zeichnet Schall auf und gibt ihn wieder. Zum ersten Mal überdauert Musik den Moment ihrer Aufführung – die gesamte spätere Musikgeschichte hängt daran."
+    },
+    {
+      "jahr": 1889,
+      "titel": "Fremde Klänge in Paris",
+      "text": "Auf der Weltausstellung hört Debussy javanische Gamelan-Musik. Die Begegnung verändert die europäische Harmonik – zugleich waren die Musiker Teil einer kolonialen Zurschaustellung."
+    },
+    {
+      "jahr": 1913,
+      "titel": "Der Skandal als Methode",
+      "text": "Die Uraufführung von Strawinskys Sacre du printemps endet im Tumult. Rhythmus und Klangfarbe treten an die Stelle der Melodie als tragendes Element."
+    },
+    {
+      "jahr": 1917,
+      "titel": "Der Jazz auf Platte",
+      "text": "Die erste Jazzaufnahme macht eine aus afroamerikanischer Tradition entstandene Musik weltweit hörbar. Die Erfinder profitierten am wenigsten – die erste Platte spielte eine weiße Band ein."
+    },
+    {
+      "jahr": 1948,
+      "titel": "Die Langspielplatte",
+      "text": "Die LP fasst über zwanzig Minuten pro Seite. Musik wird in Alben gedacht, nicht in Einzelstücken – eine Form, die bis ins Streaming-Zeitalter nachwirkt."
+    },
+    {
+      "jahr": 1951,
+      "titel": "Musik ohne Absicht",
+      "text": "John Cages 4'33'' besteht aus Stille; zu hören ist, was ohnehin im Raum geschieht. Die Frage, was überhaupt Musik ist, wird zur künstlerischen Aufgabe."
+    },
+    {
+      "jahr": 1963,
+      "titel": "Der Synthesizer",
+      "text": "Elektronisch erzeugte Klänge lösen die Bindung an schwingende Körper. Popmusik, Filmmusik und später ganze Genres beruhen auf Klängen, die kein Instrument erzeugen kann."
+    },
+    {
+      "jahr": 1979,
+      "titel": "Musik wird tragbar",
+      "text": "Der Walkman macht das Hören privat und ortsunabhängig. Musik begleitet erstmals den Alltag, statt einen eigenen Anlass zu verlangen."
+    },
+    {
+      "jahr": 1999,
+      "titel": "Die Datei",
+      "text": "Tauschbörsen lösen Musik vom Tonträger. Die Branche bricht ein und erfindet sich mit Streaming neu – die Bezahlung der Musiker bleibt bis heute Streitpunkt."
+    },
+    {
+      "jahr": 2020,
+      "titel": "Der lange Schwanz der Vergangenheit",
+      "text": "Auf Streamingdiensten entfallen mehr Abrufe auf ältere als auf neue Aufnahmen. Erstmals konkurriert neue Musik dauerhaft mit der gesamten aufgezeichneten Vergangenheit."
+    }
+  ],
+  "strittig": "Wie Musik vor der Notation klang, ist nicht rekonstruierbar. Übertragungen antiker und mittelalterlicher Stücke beruhen auf Annahmen über Stimmung, Tempo und Verzierung, die sich nicht prüfen lassen. Auch die Ursprungsgeschichten von Blues und Jazz sind lückenhaft, weil die frühen Beteiligten kaum aufgezeichnet und selten befragt wurden.",
+  "quellen": [
+    "Encyclopaedia Britannica: music, history of Western music",
+    "Richard Taruskin: The Oxford History of Western Music",
+    "Nicholas Conard u. a., Nature 2009: Palaeolithic flutes",
+    "Anne Kilmer: The Hurrian Hymn, Rekonstruktionen und Kritik"
+  ]
+},
+{
+  "id": "alltag",
+  "titel": "Alltag & Wohnen",
+  "kurz": "Wie Menschen schliefen, aßen, wuschen und Zeit maßen — die Geschichte, die selten aufgeschrieben wurde.",
+  "einleitung": "Über Schlachten und Könige gibt es Akten, über den Alltag fast keine. Was wir wissen, stammt aus Abfallgruben, Steuerlisten, Gerichtsprotokollen und Zufallsfunden wie Pompeji. Gerade deshalb ist dieser Bereich voller überraschender Befunde: Vieles, was uns natürlich vorkommt – acht Stunden Schlaf am Stück, drei Mahlzeiten, Privatsphäre im Schlafzimmer – ist historisch jung.",
+  "stationen": [
+    {
+      "jahr": -7000,
+      "titel": "Wohnen ohne Türen",
+      "text": "In Çatalhöyük betritt man die Häuser über das Dach; es gibt keine Straßen. Unter den Fußböden liegen die Toten – Wohnen und Bestatten sind nicht getrennt."
+    },
+    {
+      "jahr": -1750,
+      "titel": "Bier als Lohn",
+      "text": "Mesopotamische Texte belegen Bierrationen als Teil der Bezahlung. Vergorene Getränke waren keimarm und kalorienreich – über Jahrtausende ein Grundnahrungsmittel, kein Genussmittel."
+    },
+    {
+      "jahr": -100,
+      "titel": "Wohnen in der Mietskaserne",
+      "text": "In Rom leben die meisten Menschen in mehrstöckigen Insulae ohne Küche und Wasseranschluss. Gekocht wird auswärts; Einsturz und Brand sind ständige Gefahren."
+    },
+    {
+      "jahr": 79,
+      "titel": "Alltag unter Asche",
+      "text": "Pompeji bewahrt Wandkritzeleien, Wahlwerbung, Garküchen und Latrinen. Erst dieser Fund zeigt, wie römischer Alltag aussah – die Literatur der Zeit schweigt darüber weitgehend."
+    },
+    {
+      "jahr": 600,
+      "titel": "Die Stundenordnung des Klosters",
+      "text": "Klösterliche Gebetszeiten gliedern den Tag in feste Abschnitte. Zeitdisziplin entsteht als religiöse Übung, lange bevor sie wirtschaftlich verlangt wird."
+    },
+    {
+      "jahr": 1300,
+      "titel": "Die öffentliche Uhr",
+      "text": "Räderuhren an Kirch- und Rathaustürmen geben allen dieselbe Zeit. Der Tag wird in gleich lange Stunden geteilt statt in Tageslicht, das im Winter kürzer ist."
+    },
+    {
+      "jahr": 1350,
+      "titel": "Nach der Pest steigen die Löhne",
+      "text": "Der Arbeitskräftemangel verbessert die Lage der Überlebenden spürbar: mehr Fleisch, bessere Kleidung, mehr Freizügigkeit. Obrigkeiten reagieren mit Lohnobergrenzen und Kleiderordnungen."
+    },
+    {
+      "jahr": 1450,
+      "titel": "Der Kamin und das eigene Zimmer",
+      "text": "Wandkamine mit Schornstein ersetzen die offene Feuerstelle in der Mitte. Häuser können in beheizbare Einzelräume geteilt werden – die Voraussetzung dafür, allein zu sein."
+    },
+    {
+      "jahr": 1600,
+      "titel": "Der geteilte Schlaf",
+      "text": "Quellen aus ganz Europa beschreiben zwei Schlafphasen mit einer wachen Stunde dazwischen, in der gebetet, geredet oder gearbeitet wurde. Der durchgehende Achtstundenschlaf setzt sich erst mit künstlichem Licht durch."
+    },
+    {
+      "jahr": 1650,
+      "titel": "Das Kaffeehaus",
+      "text": "Kaffee kommt über das Osmanische Reich nach Europa. Die Kaffeehäuser werden Orte für Nachrichten, Geschäfte und Politik – aus einem Londoner entsteht die Versicherungsbörse Lloyd's."
+    },
+    {
+      "jahr": 1750,
+      "titel": "Die Kindheit wird entdeckt",
+      "text": "Kinder werden zunehmend als eigene Lebensphase wahrgenommen, mit eigener Kleidung, Büchern und Spielzeug. Zugleich arbeiten Kinder in den frühen Fabriken unter härteren Bedingungen als je zuvor."
+    },
+    {
+      "jahr": 1800,
+      "titel": "Der Arbeitstag nach der Uhr",
+      "text": "In der Fabrik ersetzt die Uhrzeit die Aufgabe als Maß der Arbeit. Wer zu spät kommt, wird bestraft – ein Zeitverständnis, das erst gelernt werden musste."
+    },
+    {
+      "jahr": 1854,
+      "titel": "Sauberes Wasser",
+      "text": "John Snow weist in London eine Choleraquelle im Brunnen nach. Es folgen Kanalisation und Wasserwerke – die Maßnahme, die die Lebenserwartung in Städten am stärksten erhöhte."
+    },
+    {
+      "jahr": 1880,
+      "titel": "Licht in der Nacht",
+      "text": "Gas- und dann elektrisches Licht verlängern den nutzbaren Tag. Nachtarbeit, Abendunterhaltung und späteres Zubettgehen werden möglich – und üblich."
+    },
+    {
+      "jahr": 1900,
+      "titel": "Das Badezimmer",
+      "text": "Fließend warmes Wasser und eigene Bäder verbreiten sich in bürgerlichen Wohnungen. Was heute Mindeststandard ist, war zwei Generationen zuvor Luxus."
+    },
+    {
+      "jahr": 1913,
+      "titel": "Konserve, Kühlschrank, Vorrat",
+      "text": "Industrielle Konservierung und später der Haushaltskühlschrank lösen die Ernährung von der Jahreszeit. Der Speiseplan wird gleichförmiger und sicherer zugleich."
+    },
+    {
+      "jahr": 1950,
+      "titel": "Die Hausarbeit wird technisiert",
+      "text": "Waschmaschine und Staubsauger verkürzen einzelne Arbeitsgänge drastisch. Die Gesamtzeit für Hausarbeit sinkt aber kaum – die Ansprüche an Sauberkeit steigen mit."
+    },
+    {
+      "jahr": 1970,
+      "titel": "Fernsehen als Taktgeber",
+      "text": "Der Fernsehabend synchronisiert Millionen Haushalte. Erstmals verbringt ein Großteil einer Gesellschaft die Freizeit gleichzeitig mit demselben Inhalt."
+    },
+    {
+      "jahr": 2007,
+      "titel": "Das Gerät in der Tasche",
+      "text": "Das Smartphone verbindet Uhr, Post, Karte, Kamera und Zeitung. Erreichbarkeit wird zum Normalzustand – die Trennung von Arbeit und Freizeit verliert ihren äußeren Halt."
+    },
+    {
+      "jahr": 2020,
+      "titel": "Zuhause als Arbeitsplatz",
+      "text": "Die Pandemie verlagert Büroarbeit millionenfach in die Wohnung. Was als Notlösung begann, verändert Wohnungsgrundrisse, Pendelwege und Innenstädte dauerhaft."
+    }
+  ],
+  "strittig": "Alltagsgeschichte beruht oft auf wenigen Fundorten, die stellvertretend für ganze Epochen gelesen werden. Der zweigeteilte Schlaf ist gut belegt, aber wie verbreitet er war, ist offen. Auch die Frage, ob technische Geräte den Haushalt tatsächlich entlasteten, wird in der Forschung unterschiedlich beantwortet.",
+  "quellen": [
+    "Encyclopaedia Britannica: daily life, Einzelartikel",
+    "A. Roger Ekirch: At Day's Close – Night in Times Past",
+    "Ruth Schwartz Cowan: More Work for Mother",
+    "Parco Archeologico di Pompei, Grabungsberichte"
+  ]
+},
+{
+  "id": "vor-der-schrift",
+  "titel": "Vor der Schrift",
+  "kurz": "Zwei Millionen Jahre Menschheit ohne ein einziges geschriebenes Wort — was wir trotzdem wissen.",
+  "einleitung": "Über 99 Prozent der menschlichen Vergangenheit liegen vor der Schrift. Alles, was wir darüber wissen, stammt aus Knochen, Steinen, Pollen, Zähnen und seit wenigen Jahrzehnten aus alter DNA. Diese Quellen schweigen über Namen, Sprachen und Gedanken – dafür reichen sie viel weiter zurück als jeder Text. Und sie werden ständig neu gelesen: Kaum ein Bereich der Geschichte hat sich in den letzten dreißig Jahren so stark verändert.",
+  "stationen": [
+    {
+      "jahr": -3300000,
+      "titel": "Die ersten Werkzeuge",
+      "text": "Bearbeitete Steine aus Lomekwi in Kenia sind älter als die Gattung Homo. Werkzeuggebrauch ist damit keine Erfindung des Menschen, sondern älter als er."
+    },
+    {
+      "jahr": -1800000,
+      "titel": "Der Auszug aus Afrika",
+      "text": "Homo erectus erreicht Georgien und später Ostasien – die erste weite Ausbreitung einer Menschenform. Sie gelingt ohne Nadel, Boot oder Vorratshaltung."
+    },
+    {
+      "jahr": -1000000,
+      "titel": "Feuer",
+      "text": "Verbrannte Knochen und Asche in der Wonderwerk-Höhle gelten als früher Beleg für kontrolliertes Feuer. Gekochte Nahrung liefert mehr verwertbare Energie – eine Voraussetzung für größere Gehirne."
+    },
+    {
+      "jahr": -400000,
+      "titel": "Die Speere von Schöningen",
+      "text": "Acht sorgfältig gearbeitete Wurfspeere aus Fichtenholz belegen planvolle Jagd auf Großwild und Handwerk mit Kenntnis von Material und Schwerpunkt."
+    },
+    {
+      "jahr": -300000,
+      "titel": "Homo sapiens",
+      "text": "Funde aus Jebel Irhoud in Marokko verschieben die Entstehung unserer Art um über hunderttausend Jahre nach hinten – und weg von Ostafrika als einzigem Ursprungsort."
+    },
+    {
+      "jahr": -100000,
+      "titel": "Bestattung und Farbe",
+      "text": "Gräber mit Beigaben und Ockerverwendung deuten auf Vorstellungen, die über das Sichtbare hinausgehen. Was genau gedacht wurde, sagen die Funde nicht."
+    },
+    {
+      "jahr": -70000,
+      "titel": "Die große Ausbreitung",
+      "text": "Homo sapiens verlässt Afrika in einer Welle, aus der alle heute außerhalb Afrikas lebenden Menschen hervorgehen. Frühere Vorstöße scheiterten oder blieben ohne Nachkommen."
+    },
+    {
+      "jahr": -50000,
+      "titel": "Über das offene Meer",
+      "text": "Die Besiedlung Australiens setzt Wasserfahrzeuge voraus – Sichtweite reicht nicht aus. Boote sind nicht erhalten, die Ankunft ist der Beweis."
+    },
+    {
+      "jahr": -45000,
+      "titel": "Bilder an Höhlenwänden",
+      "text": "Jagddarstellungen auf Sulawesi gehören zu den ältesten bekannten Bildern. Höhlenkunst ist keine europäische Erfindung – dort wurde nur früher gegraben."
+    },
+    {
+      "jahr": -40000,
+      "titel": "Nadel, Flöte, Figur",
+      "text": "Nähnadeln, Knochenflöten und Elfenbeinfiguren treten fast gleichzeitig auf. Kleidung, Musik und Bildwerk erscheinen als Bündel, nicht nacheinander."
+    },
+    {
+      "jahr": -30000,
+      "titel": "Das Ende der Neandertaler",
+      "text": "Die letzten Neandertaler sterben aus. Ihre Gene leben weiter: Menschen außerhalb Afrikas tragen ein bis zwei Prozent neandertalerisches Erbgut."
+    },
+    {
+      "jahr": -20000,
+      "titel": "Die Eiszeit auf dem Höhepunkt",
+      "text": "Eisschilde binden so viel Wasser, dass der Meeresspiegel etwa 120 Meter tiefer liegt. Landbrücken verbinden Sibirien mit Alaska und die britischen Inseln mit dem Festland."
+    },
+    {
+      "jahr": -15000,
+      "titel": "Der Hund",
+      "text": "Wölfe werden zum ersten domestizierten Tier – vor dem Ackerbau, vor jeder Nutztierhaltung. Ort und Zeitpunkt sind umstritten, die Priorität nicht."
+    },
+    {
+      "jahr": -12000,
+      "titel": "Das Ende der Eiszeit",
+      "text": "Innerhalb weniger Jahrzehnte steigen die Temperaturen stark an. Küsten verschwinden, Wälder wandern nordwärts, ganze Lebensweisen werden hinfällig."
+    },
+    {
+      "jahr": -11500,
+      "titel": "Göbekli Tepe",
+      "text": "Jäger und Sammler errichten in Anatolien monumentale Steinkreise. Der Befund kehrt eine alte Annahme um: Möglicherweise stand der gemeinsame Bau am Anfang, nicht der Ackerbau."
+    },
+    {
+      "jahr": -9500,
+      "titel": "Sesshaftigkeit",
+      "text": "In der Levante beginnen Getreideanbau und Tierhaltung. Der Preis ist hoch: einseitigere Ernährung, kleinere Körper, mehr Krankheiten und mehr Arbeitszeit als bei Jägern und Sammlern."
+    },
+    {
+      "jahr": -7000,
+      "titel": "Çatalhöyük",
+      "text": "Bis zu 8.000 Menschen leben in einer dicht gebauten Siedlung ohne erkennbare Paläste, Tempel oder Herrschaftszeichen. Große Siedlungen setzen nicht zwingend Herrschaft voraus."
+    },
+    {
+      "jahr": -6500,
+      "titel": "Milch für Erwachsene",
+      "text": "Eine Genmutation macht Milchzucker im Erwachsenenalter verdaulich. Sie breitet sich dort aus, wo Vieh gehalten wird – Kultur verändert messbar die Biologie."
+    },
+    {
+      "jahr": -5000,
+      "titel": "Kupfer",
+      "text": "Metallverarbeitung beginnt mit gediegenem und dann verhüttetem Kupfer. Ötzi trägt um 3300 v. Chr. ein Kupferbeil – ein Wertgegenstand, kein Alltagswerkzeug."
+    },
+    {
+      "jahr": -3500,
+      "titel": "Rad und Wagen",
+      "text": "Radfunde in Mesopotamien, im Alpenraum und in der Steppe erscheinen fast gleichzeitig. Ob eine Erfindung sich ausbreitete oder mehrere unabhängig entstanden, ist ungeklärt."
+    }
+  ],
+  "strittig": "Fast jede Zahl in diesem Bereich ist eine Spanne mit Fehlerbalken. Datierungen werden regelmäßig korrigiert, wenn neue Verfahren oder Funde hinzukommen – etwa bei den Fußspuren von White Sands, die die Besiedlung Amerikas um Jahrtausende vorverlegen könnten und intensiv diskutiert werden. Alte DNA hat das Fach seit den 2010er Jahren umgewälzt; manche Schlussfolgerung von heute wird in zehn Jahren überholt sein. Wer hier feste Jahreszahlen liest, sollte sie als besten derzeitigen Stand verstehen, nicht als Befund.",
+  "quellen": [
+    "Encyclopaedia Britannica: Stone Age; human evolution",
+    "David Reich: Who We Are and How We Got Here",
+    "Sonia Harmand u. a., Nature 2015: 3.3-million-year-old stone tools from Lomekwi",
+    "Jean-Jacques Hublin u. a., Nature 2017: Jebel Irhoud",
+    "Klaus Schmidt: Sie bauten die ersten Tempel"
+  ]
+}
 ];
