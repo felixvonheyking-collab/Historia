@@ -849,6 +849,17 @@ function sucheIndex() {
     }));
   });
 
+  DYNASTIEN.forEach((r) => r.perioden.forEach((p) => p.dynastien.forEach((d) => {
+    rein({ art: "Dynastie", titel: d.name + " (" + r.reich + ")", text: d.kurz,
+           kontext: d.zeitraum + " \xB7 " + p.name, reiter: "dynastien", ziel: r.id });
+    d.herrscher.forEach((h) => rein({
+      art: "Herrscher", titel: h.name, text: h.kurz,
+      kontext: h.regierung + " \xB7 " + d.name + " \xB7 " + r.reich,
+      reiter: h.vertiefung ? "vertiefungen" : "dynastien",
+      ziel: h.vertiefung || r.id
+    }));
+  })));
+
   VERTIEFUNGEN.forEach((v) => rein({
     art: "Vertiefung", titel: v.titel, text: v.leitsatz + " " + v.vorgeschichte + " " + v.verlauf + " " + v.folgen,
     kontext: v.zeitraum + " · " + v.region, reiter: "vertiefungen", ziel: v.id
@@ -897,6 +908,7 @@ function sucheIndex() {
 const ART_FARBE = {
   "Epoche": "#8c6a2e", "Ereignis": "#a01f1f", "Persönlichkeit": "#2a5b8a", "Reich": "#7d5b1f",
   "Zeitleiste": "#1f8a7d", "Vertiefung": "#d4af37", "Themengeschichte": "#6b4f9a", "Themen-Station": "#6b4f9a",
+  "Herrscher": "#c9a05a", "Dynastie": "#8c6a2e",
   "Schlüsselmoment": "#c9701c", "Schlacht": "#8a3020", "Zitat": "#3f7d3f", "Mythos": "#a03a20",
   "Nuance": "#8a6238", "Kuriosum": "#c2a06a", "Mysterium": "#5b7d1f", "Verblüffender Fakt": "#8a5b7d"
 };
@@ -1282,13 +1294,152 @@ function SicherungTab() {
   );
 }
 
+
+/* =========================================================
+   DYNASTIEN
+
+   Herrscherlisten in drei Ebenen: Reich, Periode, Dynastie.
+   Wo ein Herrscher einen ausführlichen Artikel hat, führt ein
+   Verweis dorthin.
+
+   Absichtlich steht bei jedem Reich ein Hinweis zur Chronologie:
+   Jahreszahlen sind hier Konventionen, keine Messwerte, und für
+   manche Zeitabschnitte ist nicht einmal die Reihenfolge sicher.
+   Eine Liste ohne diesen Hinweis würde Genauigkeit vortäuschen.
+   ========================================================= */
+
+function DynastienTab({ ziel }) {
+  const [offen, setOffen] = useState(DYNASTIEN.length === 1 ? DYNASTIEN[0].id : null);
+  const [suche, setSuche] = useState("");
+  React.useEffect(() => { if (ziel) setOffen(ziel); }, [ziel]);
+
+  const reich = DYNASTIEN.find((r) => r.id === offen);
+  const q = suche.trim().toLowerCase();
+
+  function herrscherKarte(h, farbe) {
+    const vert = h.vertiefung ? VERTIEFUNGEN.find((v) => v.id === h.vertiefung) : null;
+    return /* @__PURE__ */ React.createElement("div", {
+      key: h.name,
+      className: "rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2",
+      style: vert ? { borderLeft: "3px solid " + farbe } : null
+    },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap" },
+        /* @__PURE__ */ React.createElement("span", { className: "font-serif text-[15px] text-[#e0b84a]" }, h.name),
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, h.regierung)
+      ),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-0.5" }, h.kurz),
+      vert && /* @__PURE__ */ React.createElement("button", {
+        onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id); },
+        className: "mt-1.5 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+      }, "Vertiefung: ", vert.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))
+    );
+  }
+
+  // --- Übersicht der Reiche ---
+  if (!reich) {
+    return /* @__PURE__ */ React.createElement("div", null,
+      /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-4 max-w-2xl" },
+        "Herrscherlisten großer Reiche, gegliedert nach Perioden und Dynastien."),
+      /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
+        DYNASTIEN.map((r) => {
+          const anzahl = r.perioden.reduce((s, p) => s + p.dynastien.reduce((t, d) => t + d.herrscher.length, 0), 0);
+          return /* @__PURE__ */ React.createElement("button", {
+            key: r.id,
+            onClick: () => setOffen(r.id),
+            className: "text-left rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 hover:border-[#d4af37] transition-colors",
+            style: { borderLeft: "4px solid " + r.farbe }
+          },
+            /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#e0b84a]" }, r.reich),
+            /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-1" }, r.zeitraum),
+            /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, r.untertitel),
+            /* @__PURE__ */ React.createElement("p", { className: "mt-2 font-mono text-[11px] text-[#8a6238]" },
+              r.perioden.length, " Perioden · ", anzahl, " Einträge")
+          );
+        })
+      )
+    );
+  }
+
+  // --- ein Reich ---
+  const perioden = reich.perioden
+    .map((p) => ({
+      ...p,
+      dynastien: p.dynastien
+        .map((d) => ({
+          ...d,
+          herrscher: q
+            ? d.herrscher.filter((h) => (h.name + " " + h.kurz).toLowerCase().includes(q))
+            : d.herrscher
+        }))
+        .filter((d) => !q || d.herrscher.length || (d.name + " " + d.kurz).toLowerCase().includes(q))
+    }))
+    .filter((p) => p.dynastien.length);
+
+  const treffer = perioden.reduce((s, p) => s + p.dynastien.reduce((t, d) => t + d.herrscher.length, 0), 0);
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    DYNASTIEN.length > 1 && /* @__PURE__ */ React.createElement("button", {
+      onClick: () => { setOffen(null); setSuche(""); },
+      className: "flex items-center gap-1.5 text-[#c9a877] hover:text-[#f0d878] mb-4 text-sm"
+    }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Alle Reiche"),
+
+    /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878]" }, reich.reich),
+    /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-3" }, reich.zeitraum),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed max-w-3xl mb-3" }, reich.einleitung),
+
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4 mb-5 max-w-3xl" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Zur Chronologie"),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#e8d5b0] leading-relaxed" }, reich.hinweis)
+    ),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-5 rounded border border-[#5c2018] bg-[#5c1a1e] px-2.5 py-1.5 max-w-md" },
+      /* @__PURE__ */ React.createElement(Search, { size: 15, className: "text-[#8a6238]" }),
+      /* @__PURE__ */ React.createElement("input", {
+        value: suche,
+        onChange: (e) => setSuche(e.target.value),
+        placeholder: "Herrscher oder Dynastie suchen …",
+        className: "bg-transparent text-sm text-[#e8d5b0] placeholder-[#8a6238] focus:outline-none flex-1"
+      }),
+      q && /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, treffer)
+    ),
+
+    perioden.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Nichts gefunden."),
+
+    perioden.map((p) => /* @__PURE__ */ React.createElement("div", { key: p.name, className: "mb-8" },
+      /* @__PURE__ */ React.createElement("div", { className: "border-l-2 pl-3 mb-3", style: { borderColor: reich.farbe } },
+        /* @__PURE__ */ React.createElement("h3", { className: "font-serif text-xl text-[#e0b84a]" }, p.name),
+        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] text-[#8a6238]" }, p.zeitraum)
+      ),
+      p.dynastien.map((d) => /* @__PURE__ */ React.createElement("div", { key: d.name, className: "mb-5 ml-1" },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap mb-1" },
+          /* @__PURE__ */ React.createElement("h4", { className: "font-serif text-lg text-[#f0d878]" }, d.name),
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#d4af37]" }, d.zeitraum),
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, d.herrscher.length, " Einträge")
+        ),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-2 max-w-3xl" }, d.kurz),
+        /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2" },
+          d.herrscher.map((h) => herrscherKarte(h, reich.farbe))
+        )
+      ))
+    )),
+
+    /* @__PURE__ */ React.createElement("div", { className: "mt-2 pt-4 border-t border-[#5c2018]" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Quellen"),
+      /* @__PURE__ */ React.createElement("ul", { className: "text-xs text-[#b8905a] leading-relaxed" },
+        reich.quellen.map((x, i) => /* @__PURE__ */ React.createElement("li", { key: i }, "· ", x))
+      )
+    )
+  );
+}
+
 const BEREICHE = [
   { id: "start", label: "Start", icon: Sparkles, unter: [] },
   { id: "suche", label: "Suche", icon: Search, unter: [] },
   { id: "epochen", label: "Epochen", icon: BookOpen, unter: [
       { id: "epochen", label: "\xDCbersicht" },
       { id: "personen", label: "Pers\xF6nlichkeiten" },
-      { id: "nationen", label: "Nationen & Reiche" }
+      { id: "nationen", label: "Nationen & Reiche" },
+      { id: "dynastien", label: "Dynastien" }
   ] },
   { id: "vertiefungen", label: "Vertiefungen", icon: Layers, unter: [
       { id: "vertiefungen", label: "Wendepunkte" },
@@ -1857,5 +2008,5 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }

@@ -1703,5 +1703,311 @@ const VERTIEFUNGEN = [
       "Bericht der Truth and Reconciliation Commission of South Africa (1998)",
       "South African History Online: Negotiations and transition 1990–1994"
     ]
+  },
+  {
+    id: "pharao-narmer",
+    titel: "Narmer und die Reichseinigung",
+    epoche: "fruehe-hochkulturen",
+    jahr: -3100,
+    zeitraum: "ca. 3100 v. Chr.",
+    region: "Ägypten",
+    leitsatz: "Der erste Staat der Weltgeschichte entstand nicht an einem Tag – aber ein einziges Schminkpalettchen hat die Vorstellung davon geprägt.",
+    vorgeschichte: "Im 4. Jahrtausend v. Chr. gab es entlang des Nils zwei kulturelle Räume: das schmale Tal Oberägyptens und das breite Delta im Norden. Beide kannten bereits Städte, Handwerk und soziale Schichtung. In Hierakonpolis und Abydos regierten Fürsten, die sich mit Serech-Zeichen als Herrscher darstellten – Vorläufer des späteren Königstitels.",
+    verlauf: "Die Narmer-Palette aus Hierakonpolis, heute in Kairo, zeigt auf der einen Seite einen König mit der weißen Krone Oberägyptens, der einen Feind erschlägt, auf der anderen denselben König mit der roten Krone Unterägyptens vor gefallenen Gegnern. Es ist die früheste Darstellung eines Herrschers über beide Landesteile und zugleich eines der ältesten beschrifteten Objekte Ägyptens. Ob sie ein konkretes Ereignis abbildet oder ein Herrschaftsprogramm, ist offen.",
+    folgen: "Was mit Narmer beginnt, hält in wechselnder Form drei Jahrtausende: ein Königtum, das Ober- und Unterägypten in einer Person vereint, mit Doppelkrone, Titulatur und dem Anspruch, die Ordnung gegen das Chaos zu halten. Die Hauptstadt Memphis an der Nahtstelle beider Landesteile wird zum Zentrum.",
+    strittig: "Ob Narmer und der in späteren Listen genannte Reichsgründer Menes dieselbe Person sind, ist ungeklärt; manche setzen Menes mit seinem Nachfolger Hor Aha gleich. Umstritten ist auch, ob die Einigung eine Eroberung war oder ein längerer Prozess der Angleichung, den die Palette nachträglich in ein Siegesbild fasst. Die Archäologie zeigt eine allmähliche Ausbreitung oberägyptischer Kultur nach Norden über Generationen.",
+    zahlen: [
+      { wert: "ca. 3100 v. Chr.", was: "konventionelles Datum der Reichseinigung" },
+      { wert: "64 cm", was: "Höhe der Narmer-Palette" },
+      { wert: "1898", was: "Fund in Hierakonpolis" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Toby Wilkinson: Early Dynastic Egypt"
+    ]
+  },
+  {
+    id: "pharao-djoser",
+    titel: "Djoser und die erste Pyramide",
+    epoche: "fruehe-hochkulturen",
+    jahr: -2670,
+    zeitraum: "ca. 2670 v. Chr.",
+    region: "Sakkara",
+    leitsatz: "Ein Baumeister stapelte sechs Mastabas übereinander – und erfand damit das monumentale Bauen in Stein.",
+    vorgeschichte: "Könige der ersten beiden Dynastien wurden in rechteckigen Lehmziegelbauten bestattet, den Mastabas. Stein diente allenfalls für Verkleidungen. Djoser übertrug seinem Baumeister Imhotep den Bau seiner Grabanlage in Sakkara.",
+    verlauf: "Imhotep begann mit einer besonders großen Mastaba aus Stein und erweiterte sie in mehreren Schritten, bis sechs übereinandergesetzte Stufen von rund sechzig Metern Höhe entstanden. Um die Pyramide legte er einen ummauerten Bezirk mit Scheinbauten – Fassaden ohne Innenräume, die Festbauten nachbilden. Die Säulen sind nicht freistehend, sondern an Wände gebunden; niemand hatte Erfahrung damit, wie viel Stein tragen kann.",
+    folgen: "Innerhalb von rund hundert Jahren führte diese Bauform zur echten Pyramide von Gizeh. Imhotep selbst wurde später vergöttlicht und als Gott der Heilkunst verehrt – ein Aufstieg, der sonst keinem Beamten widerfuhr.",
+    strittig: "Djosers Regierungsdauer ist unsicher; die Angaben schwanken zwischen 19 und 29 Jahren. Umstritten ist auch, wie viel von der Anlage tatsächlich auf Imhotep zurückgeht: Seine Nennung auf einer Statuenbasis Djosers belegt seinen Rang, nicht aber die Urheberschaft am Entwurf.",
+    zahlen: [
+      { wert: "ca. 60 m", was: "Höhe der Stufenpyramide" },
+      { wert: "6", was: "Stufen" },
+      { wert: "15 ha", was: "Fläche des ummauerten Bezirks" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Miroslav Verner: Die Pyramiden"
+    ]
+  },
+  {
+    id: "pharao-mentuhotep",
+    titel: "Mentuhotep II. und die Wiedervereinigung",
+    epoche: "fruehe-hochkulturen",
+    jahr: -2055,
+    zeitraum: "ca. 2055–2004 v. Chr.",
+    region: "Theben",
+    leitsatz: "Nach über hundert Jahren geteilten Landes einte ein thebanischer Fürst Ägypten wieder – und begründete damit erst den Ruf Thebens.",
+    vorgeschichte: "Mit dem Ende des Alten Reiches zerfiel die Zentralmacht. Im Norden regierten Könige von Herakleopolis, im Süden thebanische Fürsten. Die Gaufürsten waren erblich geworden, Hungersnöte und Rechtsunsicherheit sind in Grabinschriften bezeugt – die Literatur der folgenden Zeit erinnert diese Jahrzehnte als Zeit des Umsturzes.",
+    verlauf: "Mentuhotep II. setzte sich in langen Kämpfen gegen Herakleopolis durch; ein Massengrab mit sechzig gefallenen Soldaten bei seinem Tempel gehört zu den wenigen direkten Zeugnissen. Nach der Einigung änderte er zweimal seinen Horusnamen – erst zu „Der die Beiden Länder vereint“, dann zu „Der die Weiße Krone vereinigt“ – und dokumentierte so den Machtzuwachs.",
+    folgen: "Er baute in Deir el-Bahari einen Terrassentempel, der fünfhundert Jahre später Hatschepsut als Vorbild diente. Theben wurde von einer Provinzstadt zum religiösen Zentrum Ägyptens, der lokale Gott Amun stieg zum Reichsgott auf.",
+    strittig: "Der Verlauf der Wiedervereinigung ist nur in Umrissen bekannt; ob sie in einem Feldzug oder über Jahrzehnte gelang, geht aus den Quellen nicht hervor. Auch die Zuordnung des Soldatengrabs zu einem bestimmten Feldzug bleibt Deutung.",
+    zahlen: [
+      { wert: "51 Jahre", was: "Regierungsdauer" },
+      { wert: "60", was: "Gefallene im Massengrab bei seinem Tempel" },
+      { wert: "ca. 140 Jahre", was: "Dauer der vorangegangenen Teilung" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt"
+    ]
+  },
+  {
+    id: "pharao-sesostris3",
+    titel: "Sesostris III. und der gealterte König",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1870,
+    zeitraum: "ca. 1870–1831 v. Chr.",
+    region: "Ägypten und Nubien",
+    leitsatz: "Zum ersten Mal ließ sich ein Pharao nicht jugendlich-vollkommen darstellen, sondern mit hängenden Lidern und müdem Blick.",
+    vorgeschichte: "Das Mittlere Reich hatte die Gaufürsten wieder eingebunden, ohne ihre Macht zu brechen. Ihre Gräber in den Provinzen waren aufwendiger als die mancher Königsbeamten. Im Süden reichte der ägyptische Einfluss bis zum zweiten Nilkatarakt.",
+    verlauf: "Sesostris III. teilte die Verwaltung in drei große Bezirke unter königlichen Beamten und entzog den Gaufürsten damit die Grundlage; ihre großen Provinzgräber hören nach ihm auf. In Nubien führte er mehrere Feldzüge und ließ eine Kette von Festungen errichten, deren Grenzstele jede Überschreitung nach Norden untersagte. Seine Bildnisse zeigen ein Gesicht mit tiefen Furchen und schweren Lidern.",
+    folgen: "Die Verwaltungsreform machte den Staat schlagkräftiger und bereitete die Blüte unter Amenemhet III. vor. Das ungeschönte Herrscherbild blieb ein Sonderfall: Spätere Dynastien kehrten zum jugendlichen Idealbild zurück.",
+    strittig: "Ob die Porträts tatsächlich Alter und Sorge zeigen sollten oder eine andere Botschaft trugen – Wachsamkeit, Fürsorge, Erschöpfung durch das Amt –, wird unterschiedlich gedeutet. Eine Bildunterschrift, die es erklärt, gibt es nicht.",
+    zahlen: [
+      { wert: "39 Jahre", was: "Regierungsdauer" },
+      { wert: "8", was: "Festungen zwischen erstem und zweitem Katarakt" },
+      { wert: "1841 v. Chr.", was: "Grenzstele bei Semna" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Metropolitan Museum of Art: Sesostris III, Bestandskatalog"
+    ]
+  },
+  {
+    id: "pharao-hatschepsut",
+    titel: "Hatschepsut, König von Ägypten",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1473,
+    zeitraum: "ca. 1473–1458 v. Chr.",
+    region: "Ägypten und Punt",
+    leitsatz: "Sie regierte zwanzig Jahre erfolgreich – und wurde danach so gründlich getilgt, dass die Ägyptologie sie erst im 19. Jahrhundert wiederentdeckte.",
+    vorgeschichte: "Nach dem Tod Thutmosis' II. war der Thronerbe Thutmosis III. ein Kind. Hatschepsut, Königinwitwe und Tochter Thutmosis' I., übernahm die Regentschaft – ein üblicher Vorgang. Ungewöhnlich war, was folgte: Sie nahm nach einigen Jahren den vollen Königstitel an und regierte als Pharao neben dem heranwachsenden Stiefsohn.",
+    verlauf: "Ihre Regierung war friedlich und wirtschaftlich erfolgreich. Die Expedition nach Punt am Roten Meer brachte Weihrauchbäume, Gold und Ebenholz; die Reise ist an den Wänden ihres Terrassentempels in Deir el-Bahari in ungewöhnlicher Ausführlichkeit erzählt, samt Darstellung der Königin von Punt. In der Bildkunst erscheint sie zunehmend in männlicher Königstracht mit Zeremonialbart – nicht als Verkleidung, sondern weil das Amt diese Zeichen verlangte.",
+    folgen: "Etwa zwanzig Jahre nach ihrem Tod wurden ihre Bildnisse zerstört und ihr Name aus Königslisten entfernt. Thutmosis III. war zu diesem Zeitpunkt längst Alleinherrscher – die späte Tilgung spricht gegen persönliche Rache und eher für eine Bereinigung der Thronfolge zugunsten seines eigenen Sohnes.",
+    strittig: "Die Gründe der Tilgung sind ungeklärt; die ältere Erzählung vom gedemütigten Stiefsohn gilt wegen der zeitlichen Lücke als unwahrscheinlich. Auch die Identifizierung ihrer Mumie, 2007 anhand eines Zahns in einer Kanope vorgenommen, ist nicht unumstritten.",
+    zahlen: [
+      { wert: "ca. 22 Jahre", was: "Regierungsdauer" },
+      { wert: "ca. 20 Jahre", was: "Abstand zwischen ihrem Tod und der Tilgung" },
+      { wert: "5", was: "Schiffe der Punt-Expedition auf den Reliefs" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Metropolitan Museum of Art: Hatshepsut. From Queen to Pharaoh (Ausstellungskatalog 2005)"
+    ]
+  },
+  {
+    id: "pharao-thutmosis3",
+    titel: "Thutmosis III. und das ägyptische Weltreich",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1479,
+    zeitraum: "ca. 1479–1425 v. Chr.",
+    region: "Vorderer Orient und Nubien",
+    leitsatz: "Siebzehn Feldzüge in zwanzig Jahren – und die erste Schlachtbeschreibung der Geschichte, die man militärisch nachvollziehen kann.",
+    vorgeschichte: "Als Thutmosis III. nach Hatschepsuts Tod allein regierte, hatte sich in Syrien eine Koalition unter Führung von Kadesch gegen Ägypten gebildet, gestützt vom Reich Mitanni. Die ägyptische Vorherrschaft in der Levante stand infrage.",
+    verlauf: "Bei Megiddo wählte er 1457 v. Chr. gegen den Rat seiner Offiziere den engen, riskanten Pass statt der sicheren Umgehung und stand dadurch überraschend vor dem Feind. Die Schlacht war gewonnen, doch die Truppen plünderten das Lager, statt die Fliehenden zu verfolgen – die Stadt musste sieben Monate belagert werden. Der Feldzugsbericht in Karnak nennt Marschtage, Beute und Verluste und gilt als älteste militärhistorisch auswertbare Quelle.",
+    folgen: "Ägypten beherrschte fortan ein Gebiet vom Euphrat bis zum vierten Nilkatarakt. Söhne unterworfener Fürsten wurden am ägyptischen Hof erzogen – ein Mittel der Herrschaftssicherung, das die Region kulturell prägte. Tribute aus Syrien und Nubien finanzierten den Ausbau von Karnak.",
+    strittig: "Der Beiname „Napoleon Ägyptens“ stammt vom Ägyptologen James Henry Breasted im frühen 20. Jahrhundert und sagt mehr über das europäische Geschichtsbild seiner Zeit als über den Pharao. Die Zahlenangaben der Feldzugsberichte sind Siegespropaganda und in ihrer Höhe nicht überprüfbar.",
+    zahlen: [
+      { wert: "17", was: "Feldzüge" },
+      { wert: "1457 v. Chr.", was: "Schlacht bei Megiddo" },
+      { wert: "7 Monate", was: "Belagerung von Megiddo" },
+      { wert: "54 Jahre", was: "Gesamtregierung einschließlich der Zeit unter Hatschepsut" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Donald B. Redford: The Wars in Syria and Palestine of Thutmose III"
+    ]
+  },
+  {
+    id: "pharao-echnaton",
+    titel: "Echnaton und der Bruch mit den Göttern",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1352,
+    zeitraum: "ca. 1352–1336 v. Chr.",
+    region: "Amarna",
+    leitsatz: "Ein Pharao schaffte die Götter seines Landes ab, baute eine Hauptstadt in der Wüste – und alles war innerhalb einer Generation rückgängig gemacht.",
+    vorgeschichte: "Sein Vater Amenophis III. regierte in beispiellosem Wohlstand. Die Amunpriesterschaft von Theben war durch Jahrhunderte von Stiftungen zu einer wirtschaftlichen Macht geworden. Der Sonnenkult hatte bereits an Bedeutung gewonnen, ohne die anderen Götter zu verdrängen.",
+    verlauf: "Im fünften Regierungsjahr änderte der König seinen Namen von Amenophis in Echnaton, verlegte den Hof in die neu gegründete Stadt Achet-Aton und erklärte die Sonnenscheibe Aton zum einzigen verehrungswürdigen Gott. Tempel wurden geschlossen, Namen anderer Götter ausgemeißelt – besonders der des Amun. Die Kunst dieser Jahre bricht mit allen Regeln: lange Schädel, schwere Hüften, Szenen des Königspaars mit seinen Töchtern in häuslicher Nähe.",
+    folgen: "Unter seinen Nachfolgern kehrte Ägypten zum alten Kult zurück. Achet-Aton wurde aufgegeben, Echnatons Bauten als Füllmaterial verwendet, sein Name aus den Königslisten gestrichen. Gerade dadurch blieb Amarna archäologisch einmalig gut erhalten – die Stadt wurde nie überbaut.",
+    strittig: "Ob es sich um Monotheismus im späteren Sinn handelte, ist umstritten: Der König selbst blieb Mittler zwischen Aton und den Menschen, verehrt wurde faktisch weiter auch er. Ungeklärt sind ferner die Ursachen der eigentümlichen Körperdarstellungen – eine Erkrankung ist eine mögliche, aber unbewiesene Erklärung; ebenso denkbar ist ein bewusst neuer Bildstil. Auch die Reihenfolge der Nachfolger und die Identität der Herrscherin Anchetcheperure werden weiter diskutiert.",
+    zahlen: [
+      { wert: "17 Jahre", was: "Regierungsdauer" },
+      { wert: "Jahr 5", was: "Namensänderung und Gründung der neuen Hauptstadt" },
+      { wert: "ca. 380", was: "erhaltene Amarna-Briefe des diplomatischen Archivs" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Barry Kemp: The City of Akhenaten and Nefertiti. Amarna and Its People"
+    ]
+  },
+  {
+    id: "pharao-tutanchamun",
+    titel: "Tutanchamun und das Grab, das niemand fand",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1336,
+    zeitraum: "ca. 1336–1327 v. Chr.",
+    region: "Theben",
+    leitsatz: "Der politisch unbedeutendste bekannte Pharao ist der berühmteste – weil sein Grab als einziges nahezu unberührt blieb.",
+    vorgeschichte: "Nach Echnatons Tod war das Land religiös und außenpolitisch geschwächt. Der Thron fiel an einen etwa neunjährigen Jungen, der zunächst Tutanchaton hieß. Regiert wurde faktisch von den Beamten Eje und Haremhab.",
+    verlauf: "Der Hof kehrte nach Theben zurück, der Name wurde in Tutanchamun geändert, die alten Kulte wiederhergestellt. Die Restaurationsstele schildert den Zustand der Tempel als verwahrlost. Der König starb mit etwa achtzehn Jahren; sein Grab im Tal der Könige ist auffällig klein und wirkt eilig hergerichtet.",
+    folgen: "1922 fand Howard Carter das Grab mit über 5.000 Objekten. Der Fund prägte das Bild des Alten Ägypten weltweit und löste eine Ägyptomanie aus, die bis in Mode und Architektur reichte. Zugleich zeigte er, welche Mengen an Grabbeigaben die geplünderten Königsgräber enthalten haben müssen.",
+    strittig: "Die Todesursache ist ungeklärt. Untersuchungen von 2010 wiesen Malaria und einen Knochendefekt nach und machten einen Sturz oder eine Infektion wahrscheinlich; die früher populäre Mordthese stützt sich auf eine Schädelveränderung, die heute als Folge der Einbalsamierung gilt. Auch die Abstammung – Echnaton gilt aufgrund der DNA-Untersuchungen als wahrscheinlicher Vater – wird weiter diskutiert.",
+    zahlen: [
+      { wert: "ca. 9 Jahre", was: "Alter bei Regierungsantritt" },
+      { wert: "ca. 18 Jahre", was: "Alter beim Tod" },
+      { wert: "über 5.000", was: "Objekte im Grab" },
+      { wert: "1922", was: "Entdeckung durch Howard Carter" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "JAMA (2010): Ancestry and Pathology in King Tutankhamun's Family",
+      "Griffith Institute Oxford: Howard Carters Grabungstagebücher"
+    ]
+  },
+  {
+    id: "pharao-ramses2",
+    titel: "Ramses II. und der erste Friedensvertrag",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1279,
+    zeitraum: "ca. 1279–1213 v. Chr.",
+    region: "Ägypten, Syrien, Nubien",
+    leitsatz: "Er ließ eine unentschiedene Schlacht überall als Triumph in Stein hauen – und schloss dann den ältesten erhaltenen Friedensvertrag der Welt.",
+    vorgeschichte: "Um Syrien rangen zwei Großmächte: Ägypten und das Hethiterreich. Ramses' Vater Sethos I. hatte die ägyptische Position gefestigt, die Grenze blieb umkämpft. Ramses II. bestieg mit etwa fünfundzwanzig Jahren den Thron.",
+    verlauf: "1274 v. Chr. traf er bei Kadesch am Orontes auf das hethitische Heer. Durch falsche Angaben zweier Überläufer geriet seine Vorhut in einen Hinterhalt; nur das späte Eintreffen einer weiteren Abteilung verhinderte die Niederlage. Die Schlacht endete ohne Entscheidung. Ramses ließ sie an mindestens fünf Tempeln als persönlichen Sieg darstellen. Sechzehn Jahre später schloss er mit Hattusili III. einen Vertrag, der in ägyptischer und hethitischer Fassung erhalten ist – beide Seiten stellen sich darin als der um Frieden Bittende dar.",
+    folgen: "66 Jahre Regierung, über hundert Kinder und eine Bautätigkeit, die von Abu Simbel bis ins Delta reicht. Eine Kopie des Vertrags hängt im Sitz der Vereinten Nationen in New York. Neun spätere Könige nannten sich nach ihm.",
+    strittig: "Der Ausgang von Kadesch wird unterschiedlich bewertet – zwischen taktischem Unentschieden und strategischer Niederlage Ägyptens, da Kadesch hethitisch blieb. Die Gleichsetzung Ramses' II. mit dem Pharao des biblischen Exodus ist eine populäre Vermutung ohne archäologische Grundlage.",
+    zahlen: [
+      { wert: "66 Jahre", was: "Regierungsdauer" },
+      { wert: "1274 v. Chr.", was: "Schlacht bei Kadesch" },
+      { wert: "1259 v. Chr.", was: "Friedensvertrag mit Hattusili III." },
+      { wert: "ca. 90 Jahre", was: "Lebensalter" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Kenneth A. Kitchen: Pharaoh Triumphant. The Life and Times of Ramesses II"
+    ]
+  },
+  {
+    id: "pharao-ramses3",
+    titel: "Ramses III., Seevölker und der erste Streik",
+    epoche: "fruehe-hochkulturen",
+    jahr: -1184,
+    zeitraum: "ca. 1184–1153 v. Chr.",
+    region: "Ägypten",
+    leitsatz: "Der letzte große Pharao wehrte eine Völkerwanderung ab, konnte aber seine eigenen Arbeiter nicht bezahlen.",
+    vorgeschichte: "Um 1200 v. Chr. brach die Ordnung des östlichen Mittelmeers zusammen: Das Hethiterreich verschwand, Ugarit und die mykenischen Paläste wurden zerstört. Gruppen, die ägyptische Quellen als Seevölker zusammenfassen, zogen zu Wasser und zu Lande nach Süden.",
+    verlauf: "In seinem achten Regierungsjahr schlug Ramses III. sie in einer Land- und einer Seeschlacht im Nildelta zurück; die Reliefs von Medinet Habu zeigen die einzige detaillierte Darstellung einer antiken Seeschlacht. Im Inneren aber wuchs die Not: Im 29. Regierungsjahr blieben den Arbeitern der Königsgräber in Deir el-Medina die Getreiderationen aus. Sie legten die Arbeit nieder und zogen vor die Totentempel – der erste schriftlich dokumentierte Streik der Geschichte, festgehalten auf einem Papyrus in Turin.",
+    folgen: "Ramses III. starb einer Haremsverschwörung zum Opfer; die Gerichtsakten des Prozesses sind erhalten. 2012 bestätigte eine Computertomografie einen tiefen Schnitt durch die Kehle seiner Mumie. Nach ihm zerfiel die königliche Macht, die Hohepriester des Amun wurden faktisch selbstständig.",
+    strittig: "Wer die Seevölker waren und ob sie Ursache oder Folge des Zusammenbruchs waren, ist ungeklärt – die neuere Forschung sieht ein Zusammenwirken von Dürre, Handelskrise und Wanderung. Auch die Frage, ob der Streik ein Einzelfall oder wiederholte Praxis war, ist offen.",
+    zahlen: [
+      { wert: "Jahr 8", was: "Abwehr der Seevölker" },
+      { wert: "Jahr 29", was: "erster dokumentierter Streik" },
+      { wert: "2012", was: "Computertomografie bestätigt den Kehlschnitt" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "British Medical Journal (2012): Revisiting the harem conspiracy and death of Ramesses III",
+      "Eric H. Cline: 1177 v. Chr. Der erste Untergang der Zivilisation"
+    ]
+  },
+  {
+    id: "pharao-piye",
+    titel: "Piye und die nubischen Pharaonen",
+    epoche: "antike",
+    jahr: -747,
+    zeitraum: "747–656 v. Chr.",
+    region: "Kusch und Ägypten",
+    leitsatz: "Ägypten wurde ein Jahrhundert lang von Süden regiert – von Königen, die sich als die eigentlichen Bewahrer der ägyptischen Tradition verstanden.",
+    vorgeschichte: "Nach dem Ende des Neuen Reiches zerfiel Ägypten in konkurrierende Herrschaften des Deltas. Im Süden war aus der einstigen ägyptischen Provinz das Reich von Kusch mit Zentrum Napata erwachsen, das ägyptische Religion, Schrift und Königsideologie übernommen hatte.",
+    verlauf: "Als der Delta-Fürst Tefnachte nach Süden vordrang, zog Piye von Napata aus nach Norden und unterwarf zwischen 728 und 727 v. Chr. eine Stadt nach der anderen. Seine Siegesstele aus Gebel Barkal ist einer der ausführlichsten historischen Texte Ägyptens: Sie berichtet auch von seinem Zorn über verwahrloste Pferde in einem eroberten Stall. Nach dem Sieg kehrte er nach Nubien zurück, statt in Ägypten zu residieren.",
+    folgen: "Seine Nachfolger regierten als 25. Dynastie über beide Länder. Sie ließen alte Texte kopieren, Tempel erneuern und wieder Pyramiden bauen – in Nubien stehen heute mehr Pyramiden als in Ägypten. Der Konflikt mit Assyrien beendete die Herrschaft: 671 v. Chr. fiel Memphis, 663 v. Chr. wurde Theben geplündert.",
+    strittig: "Ob Piye Ägypten als Eroberer oder als Wiederhersteller einer gestörten Ordnung betrat, wird unterschiedlich gelesen – seine eigene Stele legt das Zweite nahe, was Herrschaftstexte allerdings meist tun. Die ältere Ägyptologie sprach abwertend von einer Fremdherrschaft; diese Sicht gilt heute als von kolonialen Vorstellungen geprägt.",
+    zahlen: [
+      { wert: "747–656 v. Chr.", was: "Dauer der 25. Dynastie" },
+      { wert: "728 v. Chr.", was: "Feldzug nach Ägypten" },
+      { wert: "über 200", was: "Pyramiden in Nubien, mehr als in Ägypten" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Museum of Fine Arts Boston: Nubia. Ancient Kingdoms of Africa",
+      "UNESCO: Gebel Barkal and the Sites of the Napatan Region"
+    ]
+  },
+  {
+    id: "pharao-nektanebos2",
+    titel: "Nektanebos II., der letzte einheimische Pharao",
+    epoche: "antike",
+    jahr: -360,
+    zeitraum: "360–343 v. Chr.",
+    region: "Ägypten",
+    leitsatz: "Mit seiner Flucht nach Nubien endete eine Reihe einheimischer Herrscher, die dreitausend Jahre zurückreichte – und nie wieder aufgenommen wurde.",
+    vorgeschichte: "Nach sechzig Jahren persischer Herrschaft hatte Ägypten 404 v. Chr. seine Unabhängigkeit zurückgewonnen. Die folgenden Dynastien behaupteten sich mit griechischen Söldnern gegen wiederholte persische Rückeroberungsversuche. Nektanebos I. hatte 373 v. Chr. eine Invasion abgewehrt.",
+    verlauf: "Nektanebos II. gelangte durch einen Staatsstreich an die Macht und regierte siebzehn Jahre. Er war ein außergewöhnlich reger Bauherr; kaum ein größerer Tempel Ägyptens ohne Spuren seiner Tätigkeit. 343 v. Chr. griff Artaxerxes III. mit überlegener Streitmacht an. Nach dem Fall von Pelusium zog sich Nektanebos nach Memphis und schließlich nach Nubien zurück; sein weiteres Schicksal ist unbekannt.",
+    folgen: "Ägypten wurde persisch, elf Jahre später makedonisch, dann ptolemäisch, dann römisch. Ein Herrscher ägyptischer Herkunft regierte das Land danach nicht mehr – bis in die Neuzeit. In der späteren Alexanderlegende wird Nektanebos zum heimlichen Vater Alexanders erklärt; eine Erzählung, die den Bruch nachträglich kitten sollte.",
+    strittig: "Sein Ende ist nicht überliefert; die Angabe, er sei in Nubien gestorben, beruht auf späten und unsicheren Quellen. Auch die Frage, ob sein umfangreiches Bauprogramm Stärke zeigte oder ein Versuch war, Priesterschaft und Bevölkerung zu binden, wird unterschiedlich beurteilt.",
+    zahlen: [
+      { wert: "17 Jahre", was: "Regierungsdauer" },
+      { wert: "343 v. Chr.", was: "persische Rückeroberung" },
+      { wert: "ca. 3.000 Jahre", was: "Dauer der Reihe einheimischer Pharaonen vor ihm" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Alan B. Lloyd: Egypt, 404–332 BC, in: The Cambridge Ancient History"
+    ]
+  },
+  {
+    id: "pharao-kleopatra",
+    titel: "Kleopatra VII. und das Ende Ägyptens",
+    epoche: "antike",
+    jahr: -51,
+    zeitraum: "51–30 v. Chr.",
+    region: "Ägypten und Rom",
+    leitsatz: "Sie war die erste ihrer griechischen Dynastie, die Ägyptisch sprach – und die letzte Herrscherin eines unabhängigen Ägypten.",
+    vorgeschichte: "Die Ptolemäer regierten Ägypten seit 305 v. Chr., blieben aber kulturell griechisch. Im 1. Jahrhundert v. Chr. war das Land wirtschaftlich stark, politisch aber von Rom abhängig; römische Feldherren entschieden über ägyptische Thronstreitigkeiten. Kleopatra bestieg mit achtzehn Jahren gemeinsam mit ihrem jüngeren Bruder den Thron und wurde von dessen Beratern vertrieben.",
+    verlauf: "Sie gewann Caesar als Verbündeten, setzte sich im alexandrinischen Krieg durch und regierte danach mit römischer Rückendeckung. Nach Caesars Ermordung verband sie sich mit Marcus Antonius. Octavian nutzte diese Verbindung für einen Propagandafeldzug, der den Konflikt zweier Römer als Krieg gegen eine fremde Königin darstellte. 31 v. Chr. verloren beide die Seeschlacht bei Actium; im Jahr darauf nahmen sich Antonius und Kleopatra das Leben.",
+    folgen: "Ägypten wurde römische Provinz und blieb es fast siebenhundert Jahre – als Kornkammer unter direkter Verwaltung des Kaisers. Die Reihe der Pharaonen endete nach drei Jahrtausenden. Das Bild Kleopatras prägte bis heute überwiegend die römische Siegerdarstellung: verführerisch, orientalisch, gefährlich.",
+    strittig: "Ihr Äußeres ist unbekannt; die wenigen Münzbildnisse zeigen ein kräftiges Profil und stimmen mit dem späteren Schönheitsmythos nicht überein. Die Todesart ist ungesichert – der Schlangenbiss ist die literarisch überlieferte Version, Gift gilt vielen als wahrscheinlicher. Auch ihre Herkunft mütterlicherseits ist nicht geklärt, weshalb Aussagen über ihre Hautfarbe in beide Richtungen unbelegt bleiben.",
+    zahlen: [
+      { wert: "21 Jahre", was: "Regierungsdauer" },
+      { wert: "31 v. Chr.", was: "Seeschlacht bei Actium" },
+      { wert: "30 v. Chr.", was: "Tod und Ende des unabhängigen Ägypten" },
+      { wert: "9", was: "Sprachen, die Plutarch ihr zuschreibt" }
+    ],
+    quellen: [
+      "Ian Shaw (Hrsg.): The Oxford History of Ancient Egypt",
+      "Encyclopaedia Britannica: Ancient Egypt",
+      "Encyclopaedia Britannica: Cleopatra",
+      "Duane W. Roller: Cleopatra. A Biography"
+    ]
   }
 ];

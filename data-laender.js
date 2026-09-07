@@ -910,13 +910,13 @@ const COUNTRY_TIMELINES = {
     "text": "Die Pyramiden der 4. Dynastie entstehen zwischen etwa 2543 und 2436 v. Chr. – bis ins Mittelalter die höchsten Bauwerke der Menschheit."
    },
    {
-    "year": -1479,
-    "title": "Hatschepsut",
+    "year": -1473,
+    "title": "Hatschepsut wird Pharao",
     "text": "Eine der wenigen Frauen auf dem Thron regiert über zwei Jahrzehnte; ihre Nachfolger versuchen später, ihre Spuren zu tilgen."
    },
    {
-    "year": -1353,
-    "title": "Echnaton",
+    "year": -1352,
+    "title": "Echnatons Religionsumbruch",
     "text": "Der Pharao stellt den Kult auf den Sonnengott Aton um – ein früher Versuch, viele Götter durch einen zu ersetzen, der nach seinem Tod rückgängig gemacht wird."
    },
    {

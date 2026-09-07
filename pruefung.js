@@ -30,7 +30,8 @@ const DATEN = [
   "data-mythen.js",
   "data-vertiefungen.js",
   "data-themen.js",
-  "data-mysterien.js"
+  "data-mysterien.js",
+  "data-dynastien.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -53,7 +54,7 @@ function lade() {
   try {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
-      "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN })",
+      "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN })",
       kontext
     );
   } catch (e) {
