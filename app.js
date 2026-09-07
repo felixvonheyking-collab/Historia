@@ -1419,7 +1419,12 @@ function DynastienTab({ ziel }) {
         /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-2 max-w-3xl" }, d.kurz),
         /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2" },
           d.herrscher.map((h) => herrscherKarte(h, reich.farbe))
-        )
+        ),
+        // Kurzlebige und wenig folgenreiche Regenten stehen gesammelt am Ende,
+        // damit die Liste vollstaendig bleibt, ohne das Wichtige zu ersticken.
+        d.weitere && !q && /* @__PURE__ */ React.createElement("p", {
+          className: "mt-2 text-xs text-[#8a6238] leading-relaxed max-w-3xl"
+        }, /* @__PURE__ */ React.createElement("span", { className: "uppercase tracking-wide" }, "Weitere: "), d.weitere)
       ))
     )),
 

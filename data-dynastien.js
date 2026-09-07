@@ -873,5 +873,622 @@ const DYNASTIEN = [
    ]
   }
  ]
+},
+{
+ "id": "rom",
+ "reich": "Römisches Reich",
+ "untertitel": "Von den sagenhaften Königen bis zum Ende des Westens",
+ "zeitraum": "753 v. Chr. – 476 n. Chr.",
+ "farbe": "#a01f1f",
+ "einleitung": "Rom war nacheinander Königtum, Republik und Kaiserreich – und behielt bis zuletzt die Formen der Republik bei, während längst ein Einzelner regierte. Kein Kaiser nannte sich je König: Das Wort war seit der Vertreibung des Tarquinius verbrannt.",
+ "hinweis": "Die Königszeit ist Sage mit historischem Kern; die überlieferten Regierungsjahre sind rechnerisch unglaubwürdig. Für die Kaiserzeit sind die Daten dagegen weitgehend gesichert. Wer als rechtmäßiger Kaiser gilt, ist allerdings eine Frage der Zählung: Neben den hier genannten gab es dutzende Gegenkaiser und Usurpatoren, die zeitweise Gebiete beherrschten. Besonders in der Reichskrise des 3. Jahrhunderts ist die Grenze zwischen Kaiser und Usurpator eine Frage des Ausgangs, nicht des Rechts.",
+ "quellen": [
+  "Encyclopaedia Britannica: Ancient Rome; List of Roman emperors",
+  "The Cambridge Ancient History, Bände 10–14",
+  "Mary Beard: SPQR. Die tausendjährige Geschichte Roms"
+ ],
+ "perioden": [
+  {
+   "name": "Königszeit",
+   "zeitraum": "753–509 v. Chr.",
+   "dynastien": [
+    {
+     "name": "Die sieben Könige",
+     "zeitraum": "753–509 v. Chr.",
+     "kurz": "Die Überlieferung nennt sieben Könige für 244 Jahre – rechnerisch je 35 Jahre, was für eine erbliche Reihe unrealistisch ist. Die Königszeit ist Sage mit historischem Kern, keine gesicherte Geschichte.",
+     "herrscher": [
+      {
+       "name": "Romulus",
+       "regierung": "753–716 v. Chr.",
+       "kurz": "Sagenhafter Stadtgründer. Die Zwillingslegende ist ein Gründungsmythos, kein Bericht."
+      },
+      {
+       "name": "Servius Tullius",
+       "regierung": "578–535 v. Chr.",
+       "kurz": "Ihm wird die Einteilung der Bürger nach Vermögen zugeschrieben, die Grundlage der späteren Wahlordnung."
+      },
+      {
+       "name": "Tarquinius Superbus",
+       "regierung": "534–509 v. Chr.",
+       "kurz": "Der letzte König; seine Vertreibung gilt als Geburtsstunde der Republik. Rom hasste den Königstitel danach so sehr, dass ihn auch die Kaiser nie führten."
+      }
+     ],
+     "weitere": "Numa Pompilius (715–673), Tullus Hostilius (673–642), Ancus Marcius (642–617) und Tarquinius Priscus (616–579) sind nur literarisch überliefert."
+    }
+   ]
+  },
+  {
+   "name": "Republik",
+   "zeitraum": "509–27 v. Chr.",
+   "dynastien": [
+    {
+     "name": "Republik ohne Monarchen",
+     "zeitraum": "509–27 v. Chr.",
+     "kurz": "Fünf Jahrhunderte ohne Alleinherrscher: Zwei jährlich gewählte Konsuln, dazu Senat und Volksversammlungen. Genannt sind hier nur die Männer, deren Macht das Amt sprengte – sie leiten zum Kaisertum über.",
+     "herrscher": [
+      {
+       "name": "Sulla",
+       "regierung": "82–79 v. Chr.",
+       "kurz": "Erster Römer, der mit einem Heer die eigene Stadt eroberte, und erster Diktator ohne Zeitbegrenzung. Er legte die Macht freiwillig nieder – ein Vorbild, dem niemand folgte."
+      },
+      {
+       "name": "Pompeius",
+       "regierung": "70–48 v. Chr.",
+       "kurz": "Feldherr mit außerordentlichen Vollmachten; sein Machtkampf mit Caesar führte in den Bürgerkrieg."
+      },
+      {
+       "name": "Gaius Julius Caesar",
+       "regierung": "49–44 v. Chr.",
+       "kurz": "Diktator auf Lebenszeit, an den Iden des März ermordet. Sein Familienname wurde zum Herrschertitel – Kaiser und Zar gehen darauf zurück.",
+       "vertiefung": "roemische-republik"
+      },
+      {
+       "name": "Marcus Antonius und Octavian",
+       "regierung": "43–31 v. Chr.",
+       "kurz": "Das zweite Triumvirat teilte das Reich, bis Octavian bei Actium siegte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Prinzipat",
+   "zeitraum": "27 v. Chr. – 284 n. Chr.",
+   "dynastien": [
+    {
+     "name": "Julisch-claudische Dynastie",
+     "zeitraum": "27 v. Chr. – 68 n. Chr.",
+     "kurz": "Die Familie des Augustus. Vier von fünf Herrschern starben gewaltsam oder unter ungeklärten Umständen – die Nachfolge war nie geregelt.",
+     "herrscher": [
+      {
+       "name": "Augustus",
+       "regierung": "27 v. Chr. – 14 n. Chr.",
+       "kurz": "Begründete die Kaiserherrschaft, ohne je König zu heißen. Er nannte sich Erster Bürger und behielt die Formen der Republik bei, während er alle Macht bündelte.",
+       "vertiefung": "kaiser-augustus"
+      },
+      {
+       "name": "Tiberius",
+       "regierung": "14–37",
+       "kurz": "Fähiger Verwalter und Feldherr, der sich auf Capri zurückzog und die Regierung Vertrauten überließ."
+      },
+      {
+       "name": "Caligula",
+       "regierung": "37–41",
+       "kurz": "Nach vier Jahren von der eigenen Garde ermordet. Die Berichte über seinen Wahnsinn stammen von Autoren, die dem Senat nahestanden."
+      },
+      {
+       "name": "Claudius",
+       "regierung": "41–54",
+       "kurz": "Von der Garde zum Kaiser gemacht, galt als unfähig und erwies sich als tüchtiger Verwalter. Unter ihm wurde Britannien Provinz."
+      },
+      {
+       "name": "Nero",
+       "regierung": "54–68",
+       "kurz": "Sein Ruf ist von senatorischer Geschichtsschreibung geprägt. Beim Brand Roms 64 war er nachweislich nicht in der Stadt.",
+       "vertiefung": "kaiser-nero"
+      }
+     ]
+    },
+    {
+     "name": "Vierkaiserjahr",
+     "zeitraum": "68–69",
+     "kurz": "Nach Neros Sturz erhoben vier Feldherren in einem Jahr Anspruch auf den Thron. Tacitus zog daraus den Schluss, das Geheimnis der Herrschaft sei gelüftet: Kaiser konnte auch außerhalb Roms gemacht werden.",
+     "herrscher": [
+      {
+       "name": "Galba, Otho, Vitellius",
+       "regierung": "68–69",
+       "kurz": "Drei Kaiser in zwölf Monaten, alle gewaltsam beseitigt. Keiner regierte lange genug, um zu regieren."
+      },
+      {
+       "name": "Vespasian",
+       "regierung": "69–79",
+       "kurz": "Setzte sich durch und begründete die flavische Dynastie. Er besteuerte öffentliche Bedürfnisanstalten und antwortete auf den Einwand seines Sohnes, Geld stinke nicht."
+      }
+     ]
+    },
+    {
+     "name": "Flavier",
+     "zeitraum": "69–96",
+     "kurz": "Eine Familie aus dem italischen Landadel ohne stadtrömische Vorfahren – der Kaiserthron öffnet sich über die Herkunft hinaus.",
+     "herrscher": [
+      {
+       "name": "Titus",
+       "regierung": "79–81",
+       "kurz": "In seine kurze Regierung fallen der Vesuvausbruch und ein Großbrand Roms."
+      },
+      {
+       "name": "Domitian",
+       "regierung": "81–96",
+       "kurz": "Straffte die Verwaltung, geriet mit dem Senat aneinander und wurde ermordet; der Senat verhängte über ihn die Verdammung des Andenkens."
+      }
+     ]
+    },
+    {
+     "name": "Adoptivkaiser",
+     "zeitraum": "96–180",
+     "kurz": "Fünf Kaiser, die ihren Nachfolger nicht zeugten, sondern auswählten und adoptierten. Zeitgenossen erlebten die Zeit als beste des Reiches – bezeichnenderweise endete sie, als wieder ein leiblicher Sohn folgte.",
+     "herrscher": [
+      {
+       "name": "Nerva",
+       "regierung": "96–98",
+       "kurz": "Übergangsfigur des Senats, die durch Adoption Trajans die Nachfolge sicherte."
+      },
+      {
+       "name": "Trajan",
+       "regierung": "98–117",
+       "kurz": "Unter ihm erreichte das Reich seine größte Ausdehnung. Erster Kaiser aus einer Provinz, geboren in Spanien.",
+       "vertiefung": "kaiser-trajan"
+      },
+      {
+       "name": "Hadrian",
+       "regierung": "117–138",
+       "kurz": "Gab Trajans Ostgebiete auf und befestigte die Grenzen; der Hadrianswall in Britannien trägt seinen Namen."
+      },
+      {
+       "name": "Antoninus Pius",
+       "regierung": "138–161",
+       "kurz": "23 Jahre ohne größeren Krieg – die ruhigste Regierung der Kaiserzeit."
+      },
+      {
+       "name": "Mark Aurel",
+       "regierung": "161–180",
+       "kurz": "Führte fast durchgehend Krieg an der Donau und schrieb dabei seine Selbstbetrachtungen, das bekannteste Zeugnis stoischer Philosophie.",
+       "vertiefung": "kaiser-markaurel"
+      }
+     ]
+    },
+    {
+     "name": "Severer und Übergang",
+     "zeitraum": "180–235",
+     "kurz": "Mit Commodus kehrt die leibliche Erbfolge zurück. Die Severer stützen sich offen auf das Heer und erhöhen den Sold – der Anfang der Militärherrschaft.",
+     "herrscher": [
+      {
+       "name": "Commodus",
+       "regierung": "180–192",
+       "kurz": "Mark Aurels Sohn, trat als Gladiator auf und wurde erdrosselt."
+      },
+      {
+       "name": "Septimius Severus",
+       "regierung": "193–211",
+       "kurz": "Erster Kaiser afrikanischer Herkunft. Sein Rat an die Söhne: die Soldaten bereichern, alle anderen verachten."
+      },
+      {
+       "name": "Caracalla",
+       "regierung": "211–217",
+       "kurz": "Verlieh 212 fast allen Reichsbewohnern das Bürgerrecht – die größte Statusänderung der römischen Geschichte, vermutlich auch aus fiskalischem Interesse.",
+       "vertiefung": "roemisches-buergerrecht"
+      }
+     ],
+     "weitere": "Geta (211), Macrinus (217–218), Elagabal (218–222) und Severus Alexander (222–235) regierten kurz und endeten sämtlich gewaltsam."
+    },
+    {
+     "name": "Reichskrise des 3. Jahrhunderts",
+     "zeitraum": "235–284",
+     "kurz": "Rund fünfzig Jahre mit über zwanzig anerkannten Kaisern, dazu Gegenkaiser, Sonderreiche in Gallien und Palmyra, Seuchen, Inflation und Einfälle an allen Grenzen. Die meisten regierten Monate und starben durch die eigenen Truppen.",
+     "herrscher": [
+      {
+       "name": "Decius",
+       "regierung": "249–251",
+       "kurz": "Ordnete das erste reichsweite Opfergebot an, das zur ersten systematischen Christenverfolgung führte. Fiel gegen die Goten."
+      },
+      {
+       "name": "Valerian",
+       "regierung": "253–260",
+       "kurz": "Einziger römischer Kaiser, der in Gefangenschaft geriet – der Perserkönig Schapur I. ließ den Sieg in Fels hauen."
+      },
+      {
+       "name": "Aurelian",
+       "regierung": "270–275",
+       "kurz": "Stellte die Reichseinheit wieder her, gab Dakien auf und ließ Rom eine Stadtmauer bauen – das erste Mal seit fünfhundert Jahren."
+      }
+     ],
+     "weitere": "Weitere: Maximinus Thrax (235–238), Gordian I. bis III. (238–244), Philippus Arabs (244–249), Trebonianus Gallus (251–253), Gallienus (253–268), Claudius Gothicus (268–270), Tacitus (275–276), Probus (276–282), Carus und Söhne (282–285) – dazu die Kaiser des gallischen Sonderreichs."
+    }
+   ]
+  },
+  {
+   "name": "Dominat und Spätantike",
+   "zeitraum": "284–476",
+   "dynastien": [
+    {
+     "name": "Tetrarchie",
+     "zeitraum": "284–324",
+     "kurz": "Diokletian teilte die Herrschaft auf vier Schultern: zwei Augusti, zwei Caesares. Das System sollte die Nachfolge regeln und zerbrach nach seinem Rücktritt an genau dieser Frage.",
+     "herrscher": [
+      {
+       "name": "Diokletian",
+       "regierung": "284–305",
+       "kurz": "Beendete die Reichskrise durch grundlegende Reformen von Verwaltung, Heer und Steuer. Trat als einziger Kaiser freiwillig zurück und zog sich in seinen Palast in Split zurück.",
+       "vertiefung": "kaiser-diokletian"
+      },
+      {
+       "name": "Maximian",
+       "regierung": "286–305",
+       "kurz": "Mitkaiser für den Westen, wurde nach seinem Rücktritt erneut in die Machtkämpfe hineingezogen."
+      },
+      {
+       "name": "Galerius",
+       "regierung": "305–311",
+       "kurz": "Betrieb die letzte große Christenverfolgung und erließ kurz vor seinem Tod ein Duldungsedikt."
+      }
+     ],
+     "weitere": "Constantius I. (305–306), Severus (306–307), Maxentius (306–312), Licinius (308–324) und Maximinus Daia (310–313) regierten in wechselnden Konstellationen nebeneinander."
+    },
+    {
+     "name": "Konstantinische Dynastie",
+     "zeitraum": "306–363",
+     "kurz": "Das Christentum wird von der verfolgten zur geförderten Religion, die Hauptstadt wandert an den Bosporus.",
+     "herrscher": [
+      {
+       "name": "Konstantin der Große",
+       "regierung": "306–337",
+       "kurz": "Beendete die Verfolgung, berief das Konzil von Nicaea und gründete Konstantinopel. Getauft wurde er erst auf dem Sterbebett.",
+       "vertiefung": "kaiser-konstantin"
+      },
+      {
+       "name": "Constantius II.",
+       "regierung": "337–361",
+       "kurz": "Setzte die Christianisierung fort und stützte die arianische Richtung, die das Konzil verworfen hatte."
+      },
+      {
+       "name": "Julian",
+       "regierung": "361–363",
+       "kurz": "Versuchte als letzter Kaiser, die alten Kulte wiederzubeleben. Fiel nach zwei Jahren im Perserfeldzug."
+      }
+     ],
+     "weitere": "Constantin II. (337–340), Constans (337–350) und der Usurpator Magnentius (350–353) teilten sich zeitweise die Herrschaft."
+    },
+    {
+     "name": "Valentinianische und theodosianische Dynastie",
+     "zeitraum": "364–395",
+     "kurz": "Das Reich wird dauerhaft in zwei Verwaltungshälften geführt. Nach 395 wächst es nie wieder zusammen.",
+     "herrscher": [
+      {
+       "name": "Valentinian I.",
+       "regierung": "364–375",
+       "kurz": "Sicherte die Rhein- und Donaugrenze; sein Bruder Valens regierte den Osten."
+      },
+      {
+       "name": "Valens",
+       "regierung": "364–378",
+       "kurz": "Fiel in der Schlacht von Adrianopel gegen die Goten – die schwerste römische Niederlage seit Jahrhunderten."
+      },
+      {
+       "name": "Theodosius I.",
+       "regierung": "379–395",
+       "kurz": "Machte das Christentum zur Staatsreligion und teilte das Reich unter seinen Söhnen. Letzter Kaiser über Ost und West zugleich.",
+       "vertiefung": "kaiser-theodosius"
+      }
+     ],
+     "weitere": "Gratian (375–383) und Valentinian II. (375–392) regierten im Westen unter wechselndem Einfluss ihrer Heermeister."
+    },
+    {
+     "name": "Weströmisches Reich",
+     "zeitraum": "395–476",
+     "kurz": "Achtzig Jahre, in denen die Kaiser meist Werkzeuge ihrer germanischen Heermeister sind. Die Provinzen gehen eine nach der anderen verloren.",
+     "herrscher": [
+      {
+       "name": "Honorius",
+       "regierung": "395–423",
+       "kurz": "Unter ihm plünderten die Westgoten 410 Rom – erstmals seit achthundert Jahren fiel die Stadt an einen Feind."
+      },
+      {
+       "name": "Valentinian III.",
+       "regierung": "425–455",
+       "kurz": "Ließ seinen fähigsten Feldherrn Aëtius eigenhändig töten und wurde ein Jahr später selbst ermordet."
+      },
+      {
+       "name": "Romulus Augustulus",
+       "regierung": "475–476",
+       "kurz": "Der letzte weströmische Kaiser, ein Junge, den Odoaker absetzte. Zeitgenossen empfanden das kaum als Epochenbruch.",
+       "vertiefung": "ende-westrom"
+      }
+     ],
+     "weitere": "Zwischen 455 und 475 folgten neun kurzlebige Kaiser: Petronius Maximus, Avitus, Majorian, Libius Severus, Anthemius, Olybrius, Glycerius, Julius Nepos – die meisten von Heermeistern eingesetzt und wieder beseitigt."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "byzanz",
+ "reich": "Byzantinisches Reich",
+ "untertitel": "Das oströmische Kaisertum von 395 bis 1453",
+ "zeitraum": "395–1453",
+ "farbe": "#7d5b9a",
+ "einleitung": "Byzanz ist ein Name der Neuzeit. Seine Bewohner nannten sich Rhomäer, also Römer, und ihr Staat war die ununterbrochene Fortsetzung des Römischen Reiches – nur griechischsprachig und christlich. Damit bestand das Römische Reich nicht bis 476, sondern bis 1453.",
+ "hinweis": "Die Dynastienamen stammen überwiegend aus der modernen Forschung, nicht von den Byzantinern selbst. Mitkaiser und Regentschaften überlappen sich häufig, weshalb Zählungen abweichen: Je nachdem, ob man Mitkaiser und kurzlebige Usurpatoren mitzählt, kommt man auf rund 90 bis über 100 Kaiser. Angegeben sind hier die Alleinherrscher und die wichtigsten Mitkaiser.",
+ "quellen": [
+  "Encyclopaedia Britannica: Byzantine Empire; List of Byzantine emperors",
+  "The Oxford History of Byzantium (Hrsg. Cyril Mango)",
+  "Ralph-Johannes Lilie: Byzanz. Geschichte des oströmischen Reiches"
+ ],
+ "perioden": [
+  {
+   "name": "Frühbyzantinische Zeit",
+   "zeitraum": "395–717",
+   "dynastien": [
+    {
+     "name": "Theodosianische Dynastie im Osten",
+     "zeitraum": "395–457",
+     "kurz": "Der Osten übersteht, woran der Westen zerbricht: mehr Steuerkraft, kürzere Grenzen und eine uneinnehmbare Hauptstadt.",
+     "herrscher": [
+      {
+       "name": "Arcadius",
+       "regierung": "395–408",
+       "kurz": "Erster Kaiser des dauerhaft eigenständigen Ostens."
+      },
+      {
+       "name": "Theodosius II.",
+       "regierung": "408–450",
+       "kurz": "Ließ die Landmauer bauen, die Konstantinopel tausend Jahre schützte, und den Codex Theodosianus zusammenstellen."
+      },
+      {
+       "name": "Marcian",
+       "regierung": "450–457",
+       "kurz": "Berief das Konzil von Chalkedon, dessen Beschlüsse die Ostkirchen bis heute spalten."
+      }
+     ]
+    },
+    {
+     "name": "Leonidische Dynastie",
+     "zeitraum": "457–518",
+     "kurz": "Eine Zeit religiöser Streitigkeiten und wachsender Distanz zum Westen.",
+     "herrscher": [
+      {
+       "name": "Leo I.",
+       "regierung": "457–474",
+       "kurz": "Ließ sich als erster Kaiser vom Patriarchen krönen – ein folgenreicher Vorgang."
+      },
+      {
+       "name": "Anastasios I.",
+       "regierung": "491–518",
+       "kurz": "Sanierte die Finanzen so gründlich, dass sein Nachfolger einen gewaltigen Überschuss vorfand."
+      }
+     ],
+     "weitere": "Leo II. (474), Zenon (474–491) und Basiliskos (475–476) regierten dazwischen kurz."
+    },
+    {
+     "name": "Justinianische Dynastie",
+     "zeitraum": "518–602",
+     "kurz": "Der letzte Versuch, das Römische Reich in seiner alten Ausdehnung wiederherzustellen – erfolgreich und ruinös zugleich.",
+     "herrscher": [
+      {
+       "name": "Justinian I.",
+       "regierung": "527–565",
+       "kurz": "Ließ das römische Recht sammeln, die Hagia Sophia bauen und Nordafrika und Italien zurückerobern. Die Kriege und die Pest von 541 erschöpften das Reich.",
+       "vertiefung": "kaiser-justinian"
+      },
+      {
+       "name": "Justin II.",
+       "regierung": "565–578",
+       "kurz": "Verlor einen Großteil Italiens an die Langobarden."
+      },
+      {
+       "name": "Maurikios",
+       "regierung": "582–602",
+       "kurz": "Fähiger Feldherr, dessen Sparmaßnahmen im Heer eine Meuterei auslösten; er wurde mit seinen Söhnen hingerichtet."
+      }
+     ],
+     "weitere": "Justin I. (518–527), Tiberios II. (578–582) und der Usurpator Phokas (602–610) gehören in diese Reihe."
+    },
+    {
+     "name": "Herakleische Dynastie",
+     "zeitraum": "610–711",
+     "kurz": "Das Reich verliert binnen einer Generation die Hälfte seines Gebiets an die arabische Expansion – und erfindet sich als griechischer Staat neu.",
+     "herrscher": [
+      {
+       "name": "Herakleios",
+       "regierung": "610–641",
+       "kurz": "Besiegte die Perser endgültig, verlor danach Syrien und Ägypten an die Araber. Ersetzte den lateinischen Kaisertitel durch den griechischen Basileus.",
+       "vertiefung": "kaiser-herakleios"
+      },
+      {
+       "name": "Konstans II.",
+       "regierung": "641–668",
+       "kurz": "Verlegte zeitweise die Residenz nach Syrakus und wurde dort im Bad erschlagen."
+      },
+      {
+       "name": "Konstantin IV.",
+       "regierung": "668–685",
+       "kurz": "Wehrte die erste arabische Belagerung Konstantinopels ab – erstmals wird das Griechische Feuer erwähnt."
+      }
+     ],
+     "weitere": "Konstantin III. und Heraklonas (641), Justinian II. (685–695 und 705–711), Leontios (695–698), Tiberios III. (698–705) sowie Philippikos, Anastasios II. und Theodosios III. (711–717) folgten in rascher Abfolge."
+    }
+   ]
+  },
+  {
+   "name": "Mittelbyzantinische Zeit",
+   "zeitraum": "717–1204",
+   "dynastien": [
+    {
+     "name": "Isaurische Dynastie",
+     "zeitraum": "717–802",
+     "kurz": "Die Bilderfrage spaltet das Reich: Zwei Jahrhunderte Streit darüber, ob Christusbilder verehrt werden dürfen.",
+     "herrscher": [
+      {
+       "name": "Leo III.",
+       "regierung": "717–741",
+       "kurz": "Rettete Konstantinopel vor der zweiten arabischen Belagerung und begann den Bildersturm."
+      },
+      {
+       "name": "Konstantin V.",
+       "regierung": "741–775",
+       "kurz": "Militärisch erfolgreich, kirchlich verhasst; die späteren Quellen sind ihm gegenüber durchweg feindselig."
+      },
+      {
+       "name": "Eirene",
+       "regierung": "797–802",
+       "kurz": "Erste Frau, die allein als Basileus regierte. Sie stellte die Bilderverehrung wieder her und ließ ihren Sohn blenden."
+      }
+     ],
+     "weitere": "Leo IV. (775–780) und Nikephoros I. (802–811) schließen die Zeit ab."
+    },
+    {
+     "name": "Amorische Dynastie",
+     "zeitraum": "820–867",
+     "kurz": "Das Ende des Bilderstreits und der Beginn einer kulturellen Erneuerung.",
+     "herrscher": [
+      {
+       "name": "Theophilos",
+       "regierung": "829–842",
+       "kurz": "Letzter bilderfeindlicher Kaiser, zugleich Förderer von Kunst und Wissenschaft."
+      },
+      {
+       "name": "Michael III.",
+       "regierung": "842–867",
+       "kurz": "Unter ihm begann die Slawenmission der Brüder Kyrill und Method, aus der die kyrillische Schrift hervorging."
+      }
+     ],
+     "weitere": "Michael II. (820–829) begründete die Dynastie; die Regentschaft der Kaiserin Theodora (842–856) beendete den Bilderstreit."
+    },
+    {
+     "name": "Makedonische Dynastie",
+     "zeitraum": "867–1056",
+     "kurz": "Die Blütezeit des Reiches: Rückeroberungen im Osten, wirtschaftlicher Aufschwung und eine Neuordnung des Rechts auf Griechisch.",
+     "herrscher": [
+      {
+       "name": "Basileios I.",
+       "regierung": "867–886",
+       "kurz": "Aufstieg vom Bauernsohn und Pferdeknecht zum Kaiser – durch zwei Morde."
+      },
+      {
+       "name": "Konstantin VII.",
+       "regierung": "913–959",
+       "kurz": "Regierte wenig und schrieb viel; seine Werke über Hofzeremoniell und Reichsverwaltung sind Hauptquellen der Byzantinistik."
+      },
+      {
+       "name": "Basileios II.",
+       "regierung": "976–1025",
+       "kurz": "Unter ihm erreichte das Reich seine größte Ausdehnung seit Justinian. Nach dem Sieg über Bulgarien 1014 trug er den Beinamen Bulgarentöter.",
+       "vertiefung": "kaiser-basileios2"
+      }
+     ],
+     "weitere": "Leo VI. (886–912), Romanos I. (920–944), Nikephoros II. Phokas (963–969), Johannes I. Tzimiskes (969–976), Konstantin VIII. (1025–1028), Zoe und Theodora (1028–1056) sowie mehrere Mitkaiser gehören zur Dynastie."
+    },
+    {
+     "name": "Dukas und Komnenen",
+     "zeitraum": "1059–1185",
+     "kurz": "Nach der Niederlage von Manzikert 1071 geht Kleinasien weitgehend verloren – die Kernlandschaft, aus der Heer und Steuern kamen.",
+     "herrscher": [
+      {
+       "name": "Romanos IV.",
+       "regierung": "1068–1071",
+       "kurz": "Geriet bei Manzikert in seldschukische Gefangenschaft; die Niederlage war militärisch begrenzt, politisch verheerend."
+      },
+      {
+       "name": "Alexios I. Komnenos",
+       "regierung": "1081–1118",
+       "kurz": "Stabilisierte das Reich und bat den Westen um Söldner – aus der Bitte wurde der Erste Kreuzzug.",
+       "vertiefung": "kreuzzuege"
+      },
+      {
+       "name": "Manuel I.",
+       "regierung": "1143–1180",
+       "kurz": "Letzter Kaiser mit westlicher Großmachtpolitik; seine Niederlage bei Myriokephalon 1176 beendete die Hoffnung auf Kleinasien."
+      }
+     ],
+     "weitere": "Konstantin X. (1059–1067), Michael VII. (1071–1078), Nikephoros III. (1078–1081), Johannes II. (1118–1143), Alexios II. (1180–1183) und Andronikos I. (1183–1185) vervollständigen die Reihe."
+    },
+    {
+     "name": "Angeloi",
+     "zeitraum": "1185–1204",
+     "kurz": "Zwanzig Jahre Thronstreitigkeiten, an deren Ende die eigene Hauptstadt von Verbündeten geplündert wird.",
+     "herrscher": [
+      {
+       "name": "Isaak II.",
+       "regierung": "1185–1195 und 1203–1204",
+       "kurz": "Zweimal Kaiser, dazwischen geblendet; sein Hilfeversuch beim Westen zog den Vierten Kreuzzug nach Konstantinopel."
+      },
+      {
+       "name": "Alexios III.",
+       "regierung": "1195–1203",
+       "kurz": "Floh bei der Ankunft der Kreuzfahrer mit dem Staatsschatz."
+      }
+     ],
+     "weitere": "Alexios IV. und Alexios V. regierten 1203/04 wenige Monate bis zur Eroberung."
+    }
+   ]
+  },
+  {
+   "name": "Spätbyzantinische Zeit",
+   "zeitraum": "1204–1453",
+   "dynastien": [
+    {
+     "name": "Exilreiche und Rückeroberung",
+     "zeitraum": "1204–1261",
+     "kurz": "Nach der Plünderung durch die Kreuzfahrer bestehen mehrere griechische Nachfolgestaaten. Nikaia setzt sich durch.",
+     "herrscher": [
+      {
+       "name": "Theodoros I. Laskaris",
+       "regierung": "1205–1221",
+       "kurz": "Begründete das Kaiserreich Nikaia als Sammelpunkt des byzantinischen Widerstands."
+      },
+      {
+       "name": "Johannes III. Vatatzes",
+       "regierung": "1221–1254",
+       "kurz": "Baute Nikaia wirtschaftlich und militärisch zur führenden Macht der Region aus."
+      },
+      {
+       "name": "Michael VIII. Palaiologos",
+       "regierung": "1259–1282",
+       "kurz": "Eroberte Konstantinopel 1261 zurück und begründete die letzte Dynastie."
+      }
+     ],
+     "weitere": "Theodoros II. Laskaris (1254–1258) und Johannes IV. (1258–1261, als Kind geblendet und beseitigt) gehören dazu."
+    },
+    {
+     "name": "Palaiologen",
+     "zeitraum": "1261–1453",
+     "kurz": "Fast zwei Jahrhunderte Rückzug: Bürgerkriege, Pest und der Aufstieg der Osmanen. Am Ende ist das Reich kaum mehr als die Hauptstadt.",
+     "herrscher": [
+      {
+       "name": "Andronikos II.",
+       "regierung": "1282–1328",
+       "kurz": "Löste die Flotte aus Geldmangel auf und machte das Reich von fremden Seemächten abhängig."
+      },
+      {
+       "name": "Johannes VI. Kantakuzenos",
+       "regierung": "1347–1354",
+       "kurz": "Kam durch Bürgerkrieg an die Macht und holte osmanische Truppen als Verbündete nach Europa – ein Schritt mit weitreichenden Folgen."
+      },
+      {
+       "name": "Manuel II.",
+       "regierung": "1391–1425",
+       "kurz": "Reiste jahrelang durch Westeuropa, um Hilfe zu erbitten – vergeblich."
+      },
+      {
+       "name": "Konstantin XI.",
+       "regierung": "1449–1453",
+       "kurz": "Der letzte Kaiser fiel bei der Verteidigung der Stadtmauer. Sein Leichnam wurde nie sicher identifiziert.",
+       "vertiefung": "fall-konstantinopel"
+      }
+     ],
+     "weitere": "Michael IX. (1294–1320), Andronikos III. (1328–1341), Johannes V. (1341–1391 mit Unterbrechungen), Andronikos IV. (1376–1379) und Johannes VII. (1390) regierten teils gleichzeitig und gegeneinander."
+    }
+   ]
+  }
+ ]
 }
 ];

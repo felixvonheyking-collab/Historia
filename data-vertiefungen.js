@@ -2009,5 +2009,247 @@ const VERTIEFUNGEN = [
       "Encyclopaedia Britannica: Cleopatra",
       "Duane W. Roller: Cleopatra. A Biography"
     ]
+  },
+  {
+    id: "kaiser-augustus",
+    titel: "Augustus und die getarnte Monarchie",
+    epoche: "antike",
+    jahr: -27,
+    zeitraum: "27 v. Chr. – 14 n. Chr.",
+    region: "Römisches Reich",
+    leitsatz: "Er schaffte die Republik ab, indem er sie wiederherstellte – und niemand konnte genau sagen, wann es geschehen war.",
+    vorgeschichte: "Nach Caesars Ermordung 44 v. Chr. folgten dreizehn Jahre Bürgerkrieg. Der neunzehnjährige Großneffe Octavian setzte sich gegen Antonius durch und stand 30 v. Chr. ohne Rivalen da. Caesars Beispiel zeigte, was einem drohte, der offen nach der Alleinherrschaft griff.",
+    verlauf: "27 v. Chr. gab Octavian dem Senat feierlich alle Vollmachten zurück – und erhielt sie in anderer Form zurück, samt dem Ehrennamen Augustus. Er nannte sich princeps, erster Bürger, hielt Konsulat, Volkstribunat und Oberbefehl über die entscheidenden Provinzen in seiner Hand und behielt alle Formen der Republik bei: Senat, Wahlen, Ämter. In seinem Rechenschaftsbericht schrieb er, er habe alle an Ansehen überragt, an Amtsgewalt aber nicht mehr gehabt als seine Kollegen.",
+    folgen: "Zwei Jahrhunderte innerer Frieden im Mittelmeerraum, eine stehende Berufsarmee, eine geordnete Provinzverwaltung. Der Preis: Die Nachfolge war nie geregelt, weil das Amt offiziell nicht existierte. Jeder Herrscherwechsel wurde zur Machtfrage – ein Konstruktionsfehler, an dem das Reich immer wieder litt.",
+    strittig: "Ob Augustus die Republik bewusst beseitigte oder ihre Formen für erhaltenswert hielt, wird seit der Antike diskutiert. Tacitus sah einen kalt kalkulierten Griff nach der Macht, andere Quellen einen Ordnungsstifter nach Jahrzehnten des Blutvergießens. Beide Lesarten stützen sich auf dieselben Handlungen.",
+    zahlen: [
+      { wert: "41 Jahre", was: "Regierungsdauer" },
+      { wert: "27 v. Chr.", was: "Übertragung des Namens Augustus" },
+      { wert: "ca. 200 Jahre", was: "Dauer der pax romana" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Res gestae divi Augusti, Rechenschaftsbericht des Augustus",
+      "Tacitus: Annalen, Buch 1"
+    ]
+  },
+  {
+    id: "kaiser-nero",
+    titel: "Nero und der Brand Roms",
+    epoche: "antike",
+    jahr: 54,
+    zeitraum: "54–68",
+    region: "Rom",
+    leitsatz: "Fast alles, was über ihn erzählt wird, stammt von Autoren, die seinen Sturz begrüßten – und ausgerechnet die bekannteste Geschichte ist nachweislich falsch.",
+    vorgeschichte: "Nero kam mit sechzehn Jahren an die Macht, nachdem seine Mutter Agrippina die Nachfolge gesichert hatte. Die ersten fünf Jahre unter Anleitung Senecas galten schon Zeitgenossen als gute Regierung. Danach löste sich Nero von seinen Beratern, ließ Mutter und Ehefrau töten und brüskierte den Senat durch öffentliche Auftritte als Sänger und Wagenlenker.",
+    verlauf: "Im Juli 64 brannte Rom neun Tage; zehn der vierzehn Stadtbezirke wurden beschädigt oder zerstört. Nero war bei Ausbruch nachweislich in Antium, kehrte zurück, öffnete öffentliche Gebäude für Obdachlose und ließ Getreidepreise senken. Er erließ auch strengere Bauvorschriften. Zugleich nutzte er die freigewordene Fläche für seinen Palastbezirk, die Domus Aurea – was den Verdacht nährte, er habe den Brand gelegt. Tacitus berichtet, Nero habe die Schuld auf die Christen gelenkt.",
+    folgen: "68 erhoben sich die Provinzstatthalter, der Senat erklärte ihn zum Staatsfeind, er nahm sich das Leben. Es folgte das Vierkaiserjahr. In den Ostprovinzen wurde er noch Jahrzehnte später verehrt; mehrere Betrüger traten als der angeblich überlebende Nero auf.",
+    strittig: "Die Geige gab es damals nicht, und Nero war bei Brandausbruch nicht in der Stadt – das Bild des musizierenden Brandstifters ist Legende. Umstritten bleibt, wie viel der übrigen Überlieferung zutrifft: Tacitus, Sueton und Cassius Dio schrieben aus senatorischer Sicht Jahrzehnte später. Die neuere Forschung zeichnet ein weniger eindeutiges Bild, ohne die Morde an Mutter und Ehefrau zu bestreiten.",
+    zahlen: [
+      { wert: "9 Tage", was: "Dauer des Brandes von 64" },
+      { wert: "10 von 14", was: "betroffene Stadtbezirke" },
+      { wert: "16 Jahre", was: "Alter bei Regierungsantritt" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Tacitus: Annalen, Buch 15",
+      "British Museum (2021): Nero. The Man Behind the Myth, Ausstellungskatalog"
+    ]
+  },
+  {
+    id: "kaiser-trajan",
+    titel: "Trajan und die größte Ausdehnung",
+    epoche: "antike",
+    jahr: 98,
+    zeitraum: "98–117",
+    region: "Römisches Reich",
+    leitsatz: "Unter ihm reichte Rom vom Atlantik bis an den Persischen Golf – und sein Nachfolger gab einen Teil davon sofort wieder auf.",
+    vorgeschichte: "Nach Domitians Ermordung war das Verhältnis zwischen Kaiser und Senat zerrüttet. Der betagte Nerva adoptierte den erfolgreichen Feldherrn Trajan und sicherte so einen Übergang ohne Bürgerkrieg. Trajan stammte aus Italica in Spanien – der erste Kaiser, der nicht aus Italien kam.",
+    verlauf: "Zwei Kriege gegen die Daker brachten 106 deren Goldbergwerke ins Reich; die Trajanssäule erzählt den Feldzug in einem 200 Meter langen Reliefband. 114 bis 117 folgte der Partherfeldzug, der bis Mesopotamien führte. Im Inneren ließ Trajan Straßen, Häfen und ein Forum bauen und richtete eine Stiftung zur Unterstützung bedürftiger Kinder ein. Sein Briefwechsel mit dem Statthalter Plinius über den Umgang mit Christen ist erhalten – Trajan riet davon ab, ihnen nachzuspüren oder anonymen Anzeigen zu folgen.",
+    folgen: "Bei seinem Tod war das Reich so groß wie nie. Hadrian gab die östlichen Neuerwerbungen sofort auf, weil sie nicht zu halten waren. Der Senat ehrte spätere Kaiser mit dem Wunsch, sie mögen glücklicher als Augustus und besser als Trajan sein.",
+    strittig: "Ob die Aufgabe der Ostgebiete Trajans Politik widerlegte oder nur ihre Kosten offenlegte, wird unterschiedlich beurteilt. Auch die Zahlen zu den dakischen Kriegsgewinnen beruhen auf einer späten Quelle und gelten als übertrieben.",
+    zahlen: [
+      { wert: "117", was: "Jahr der größten Reichsausdehnung" },
+      { wert: "ca. 5 Mio. km²", was: "geschätzte Fläche des Reiches auf dem Höhepunkt" },
+      { wert: "200 m", was: "Länge des Reliefbands der Trajanssäule" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Plinius der Jüngere: Briefe, Buch 10 (Briefwechsel mit Trajan)"
+    ]
+  },
+  {
+    id: "kaiser-markaurel",
+    titel: "Mark Aurel, Philosoph im Feldlager",
+    epoche: "antike",
+    jahr: 161,
+    zeitraum: "161–180",
+    region: "Donaugrenze",
+    leitsatz: "Der berühmteste Text über innere Ruhe entstand in neunzehn Jahren fast ununterbrochenen Krieges.",
+    vorgeschichte: "Mark Aurel wurde von Antoninus Pius adoptiert und auf die Herrschaft vorbereitet. Er trat sie 161 gemeinsam mit Lucius Verus an – erstmals regierten zwei Kaiser gleichberechtigt. Fast sofort begannen der Partherkrieg und, mit den heimkehrenden Truppen, eine Seuche.",
+    verlauf: "Die Antoninische Pest kostete über Jahre Millionen Menschen das Leben und schwächte Heer und Wirtschaft. Von 166 an drangen Markomannen und Quaden über die Donau; Mark Aurel verbrachte den größten Teil seiner Regierung im Feldlager. Dort schrieb er auf Griechisch Aufzeichnungen an sich selbst, die nicht zur Veröffentlichung bestimmt waren – heute als Selbstbetrachtungen bekannt. Sie ermahnen zur Pflichterfüllung, zur Gelassenheit gegenüber dem Unabänderlichen und zur Nachsicht mit anderen.",
+    folgen: "Er starb 180 an der Donau. Anders als seine vier Vorgänger adoptierte er keinen Nachfolger, sondern übergab an seinen leiblichen Sohn Commodus – womit die Reihe der Adoptivkaiser endete. Die Selbstbetrachtungen überlebten in wenigen Handschriften und wurden erst im 16. Jahrhundert gedruckt.",
+    strittig: "Ob die Wahl seines Sohnes ein Fehler war oder ob es angesichts eines volljährigen leiblichen Erben keine echte Alternative gab, ist eine alte Streitfrage. Auch das Verhältnis zwischen seiner stoischen Ethik und den Christenverfolgungen seiner Regierungszeit wird unterschiedlich erklärt.",
+    zahlen: [
+      { wert: "19 Jahre", was: "Regierungsdauer" },
+      { wert: "12 Bücher", was: "Umfang der Selbstbetrachtungen" },
+      { wert: "165–180", was: "Hauptzeit der Antoninischen Pest" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Mark Aurel: Selbstbetrachtungen",
+      "Encyclopaedia Britannica: Marcus Aurelius"
+    ]
+  },
+  {
+    id: "kaiser-diokletian",
+    titel: "Diokletian und die Rettung durch Teilung",
+    epoche: "antike",
+    jahr: 284,
+    zeitraum: "284–305",
+    region: "Römisches Reich",
+    leitsatz: "Er beendete fünfzig Jahre Chaos, indem er das Reich auf vier Herrscher verteilte – und trat als einziger römischer Kaiser freiwillig zurück.",
+    vorgeschichte: "Zwischen 235 und 284 gab es über zwanzig anerkannte Kaiser, die meisten von ihren eigenen Soldaten getötet. Seuchen, Geldentwertung, Einfälle an Rhein, Donau und Euphrat sowie abgespaltene Sonderreiche brachten das Reich an den Rand des Zerfalls. Diokletian war Sohn einer einfachen Familie aus Dalmatien und stieg über die Armee auf.",
+    verlauf: "Er erkannte, dass ein Mann die Grenzen nicht halten konnte, und ernannte einen Mitkaiser, später zwei Unterkaiser – die Tetrarchie. Er verdoppelte die Zahl der Provinzen, trennte zivile und militärische Befehlsgewalt und stellte die Steuer auf eine berechenbare Grundlage. Sein Höchstpreisedikt von 301 sollte die Inflation bremsen und scheiterte. Ab 303 betrieb er die letzte und härteste Christenverfolgung. 305 legte er die Macht nieder und zog sich in seinen Palast bei Split zurück.",
+    folgen: "Die Reformen gaben dem Reich weitere zwei Jahrhunderte im Osten. Die Tetrarchie überlebte den Rücktritt ihres Erfinders nicht: Sofort begannen Machtkämpfe, aus denen Konstantin hervorging. Die Trennung in eine westliche und östliche Verwaltungshälfte blieb.",
+    strittig: "Ob die Tetrarchie an einem Konstruktionsfehler scheiterte oder an den Beteiligten, wird unterschiedlich beurteilt. Umstritten ist auch die Wirkung des Höchstpreisedikts, das antike Quellen als wirkungslos beschreiben – die Belege dafür sind allerdings dünn.",
+    zahlen: [
+      { wert: "21 Jahre", was: "Regierungsdauer" },
+      { wert: "4", was: "Herrscher in der Tetrarchie" },
+      { wert: "über 100", was: "Provinzen nach seiner Neuordnung" },
+      { wert: "305", was: "freiwilliger Rücktritt" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Encyclopaedia Britannica: Diocletian",
+      "Laktanz: Über die Todesarten der Verfolger (christlich und feindselig)"
+    ]
+  },
+  {
+    id: "kaiser-konstantin",
+    titel: "Konstantin und die Wende zum Christentum",
+    epoche: "antike",
+    jahr: 306,
+    zeitraum: "306–337",
+    region: "Römisches Reich",
+    leitsatz: "Ein Kaiser machte aus einer verfolgten Minderheit die künftige Staatsreligion – und ließ sich selbst erst auf dem Sterbebett taufen.",
+    vorgeschichte: "Nach Diokletians Rücktritt zerfiel die Tetrarchie in Bürgerkriege. Konstantin, Sohn eines Unterkaisers, wurde 306 von seinen Truppen in Britannien ausgerufen. Die Christen waren nach der letzten großen Verfolgung eine geschwächte, aber gut organisierte Minderheit von vielleicht einem Zehntel der Reichsbevölkerung.",
+    verlauf: "312 besiegte er Maxentius an der Milvischen Brücke; die christliche Überlieferung berichtet von einem Zeichen am Himmel vor der Schlacht. 313 sicherte die Vereinbarung von Mailand allen Religionen freie Ausübung. Konstantin förderte die Kirche mit Bauten und Privilegien, berief 325 das Konzil von Nicaea, um den Streit um die Natur Christi beizulegen, und gründete 330 Konstantinopel als neue Hauptstadt. Getauft wurde er 337 kurz vor seinem Tod – damals nicht ungewöhnlich, weil die Taufe alle Sünden tilgte.",
+    folgen: "Das Christentum stieg innerhalb eines Jahrhunderts zur alleinigen Staatsreligion auf. Konstantinopel überdauerte das Weströmische Reich um tausend Jahre. Das nicaenische Glaubensbekenntnis wird bis heute gesprochen.",
+    strittig: "Ob Konstantins Hinwendung religiöse Überzeugung oder politisches Kalkül war, ist die älteste Streitfrage der Konstantinforschung – wahrscheinlich eine falsche Alternative. Die Erzählung vom Kreuzeszeichen existiert in zwei unvereinbaren Fassungen. Die sogenannte Konstantinische Schenkung, mit der er dem Papst weltliche Macht übertragen haben soll, wurde 1440 von Lorenzo Valla als Fälschung erwiesen.",
+    zahlen: [
+      { wert: "31 Jahre", was: "Regierungsdauer" },
+      { wert: "313", was: "Vereinbarung von Mailand" },
+      { wert: "325", was: "Konzil von Nicaea" },
+      { wert: "330", was: "Einweihung Konstantinopels" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Encyclopaedia Britannica: Constantine I",
+      "Eusebius von Caesarea: Vita Constantini (parteiisch zugunsten Konstantins)"
+    ]
+  },
+  {
+    id: "kaiser-theodosius",
+    titel: "Theodosius I. und die endgültige Teilung",
+    epoche: "antike",
+    jahr: 379,
+    zeitraum: "379–395",
+    region: "Römisches Reich",
+    leitsatz: "Der letzte Kaiser über Ost und West zugleich – und derjenige, der das Christentum zur einzigen erlaubten Religion machte.",
+    vorgeschichte: "378 vernichteten die Goten bei Adrianopel ein römisches Heer und töteten Kaiser Valens. Der Osten stand ohne Herrscher und ohne Feldarmee da. Theodosius, ein Feldherr aus Spanien, wurde zur Rettung der Lage eingesetzt.",
+    verlauf: "Er beendete den Gotenkrieg nicht durch Sieg, sondern durch einen Vertrag: Die Goten durften als geschlossener Verband auf Reichsboden siedeln und stellten dafür Truppen – ein Bruch mit der bisherigen Praxis. 380 erklärte er das nicaenische Christentum zur verbindlichen Religion, 391 verbot er die alten Kulte und schloss die Tempel. Nach einem Massaker seiner Truppen in Thessaloniki unterwarf er sich der Kirchenbuße, die Bischof Ambrosius von ihm verlangte – erstmals beugte sich ein Kaiser einem Bischof.",
+    folgen: "Bei seinem Tod 395 teilte er das Reich unter seinen Söhnen Arcadius und Honorius. Die Teilung war als Verwaltungsmaßnahme gedacht und wurde nie wieder aufgehoben. Die Olympischen Spiele endeten unter seiner Religionsgesetzgebung; die letzte antike Austragung wird meist auf 393 datiert.",
+    strittig: "Ob die Ansiedlung der Goten eine kluge Notlösung oder der Anfang vom Ende war, ist eine Kernfrage der Spätantikeforschung. Umstritten ist auch, wie konsequent die Tempelschließungen durchgesetzt wurden – vielerorts bestanden die alten Kulte noch Generationen fort.",
+    zahlen: [
+      { wert: "16 Jahre", was: "Regierungsdauer" },
+      { wert: "380", was: "Christentum wird verbindliche Religion" },
+      { wert: "395", was: "Teilung unter seine Söhne" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Ancient Rome",
+      "The Cambridge Ancient History",
+      "Encyclopaedia Britannica: Theodosius I",
+      "Peter Heather: Der Untergang des Römischen Weltreichs"
+    ]
+  },
+  {
+    id: "kaiser-justinian",
+    titel: "Justinian I. und die Rückeroberung",
+    epoche: "mittelalter",
+    jahr: 527,
+    zeitraum: "527–565",
+    region: "Byzanz, Italien, Nordafrika",
+    leitsatz: "Er holte den Westen zurück, ordnete das römische Recht für die Ewigkeit – und hinterließ ein erschöpftes Reich.",
+    vorgeschichte: "Justinian kam aus einer Bauernfamilie im Balkanraum und folgte seinem Onkel Justin auf den Thron. Der Westen war seit Jahrzehnten in germanischer Hand: Ostgoten in Italien, Vandalen in Nordafrika, Westgoten in Spanien. Der Anspruch, römischer Kaiser zu sein, ließ sich mit dieser Lage schwer vereinbaren.",
+    verlauf: "534 nahm sein Feldherr Belisar Nordafrika in wenigen Monaten. Der Krieg gegen die Ostgoten in Italien dauerte dagegen zwanzig Jahre und verwüstete das Land. Zugleich ließ Justinian das gesamte römische Recht sichten und ordnen: Codex, Digesten, Institutionen und Novellen bilden zusammen das später so genannte Corpus Iuris Civilis. In Konstantinopel entstand nach dem Nika-Aufstand von 532 die Hagia Sophia in fünf Jahren – mit einer Kuppel, wie sie niemand zuvor gebaut hatte. Seine Frau Theodora, ehemals Schauspielerin, hatte erheblichen politischen Einfluss.",
+    folgen: "Die Rückeroberungen hielten nicht: Italien fiel drei Jahre nach seinem Tod großenteils an die Langobarden. Die Pest von 541 und die Kriegskosten schwächten das Reich dauerhaft und trugen dazu bei, dass es der arabischen Expansion wenig entgegensetzen konnte. Das Rechtswerk dagegen wurde im 11. Jahrhundert in Italien wiederentdeckt und prägt das europäische Zivilrecht bis heute.",
+    strittig: "Ob die Westfeldzüge weitsichtig oder ruinös waren, ist die klassische Kontroverse der Justinianforschung. Die einzige ausführliche zeitgenössische Quelle stammt von Prokop, der zugleich eine offizielle Kriegsgeschichte und eine giftige Geheimgeschichte schrieb – zwei unvereinbare Bilder desselben Kaisers aus derselben Feder.",
+    zahlen: [
+      { wert: "38 Jahre", was: "Regierungsdauer" },
+      { wert: "529–534", was: "Entstehung des Rechtswerks" },
+      { wert: "5 Jahre", was: "Bauzeit der Hagia Sophia" },
+      { wert: "20 Jahre", was: "Dauer des Gotenkriegs in Italien" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Byzantine Empire",
+      "The Oxford History of Byzantium (Hrsg. Cyril Mango)",
+      "Prokop: Gotenkriege und Geheimgeschichte (mit Vorsicht zu lesen)",
+      "Encyclopaedia Britannica: Justinian I"
+    ]
+  },
+  {
+    id: "kaiser-herakleios",
+    titel: "Herakleios und die Verwandlung des Reiches",
+    epoche: "mittelalter",
+    jahr: 610,
+    zeitraum: "610–641",
+    region: "Byzanz, Persien, Syrien",
+    leitsatz: "Er gewann den längsten Krieg der Spätantike – und verlor unmittelbar danach die Hälfte des Reiches an einen Gegner, den niemand erwartet hatte.",
+    vorgeschichte: "Als Herakleios 610 die Macht übernahm, standen die Perser in Syrien und Ägypten, die Awaren vor Konstantinopel. Das Reich hatte seine Getreidezufuhr, seine reichsten Provinzen und 614 sogar das Kreuz aus Jerusalem verloren.",
+    verlauf: "Herakleios stellte die Finanzen um, ließ Kirchengerät einschmelzen und führte ab 622 selbst Feldzüge tief in persisches Gebiet. 626 hielt Konstantinopel einer gemeinsamen Belagerung von Awaren und Persern stand. 628 brach das Sasanidenreich zusammen, das Kreuz kehrte nach Jerusalem zurück. Wenige Jahre später erschienen die arabischen Heere: 636 am Jarmuk verlor Byzanz Syrien, 642 Ägypten. Herakleios ersetzte den lateinischen Titel Imperator durch das griechische Basileus – ein Zeichen dafür, dass das Reich sich als griechischer Staat verstand.",
+    folgen: "Aus dem spätantiken Mittelmeerreich wurde ein kleinerer, griechischsprachiger, auf Anatolien gestützter Staat. Die Verwaltung wurde militärisch umgebaut; Latein verschwand als Amtssprache. Beide Großmächte der Spätantike hatten sich gegenseitig so erschöpft, dass die arabische Expansion auf wenig Widerstand traf.",
+    strittig: "Ob die Themenverfassung – die Militärbezirke, die dem Reich sein Überleben sicherten – schon auf Herakleios zurückgeht oder erst später entstand, ist in der Byzantinistik umstritten. Auch der Anteil der Erschöpfung beider Reiche am arabischen Erfolg wird unterschiedlich gewichtet.",
+    zahlen: [
+      { wert: "31 Jahre", was: "Regierungsdauer" },
+      { wert: "626", was: "Belagerung Konstantinopels durch Awaren und Perser" },
+      { wert: "636", was: "Schlacht am Jarmuk, Verlust Syriens" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Byzantine Empire",
+      "The Oxford History of Byzantium (Hrsg. Cyril Mango)",
+      "Encyclopaedia Britannica: Heraclius",
+      "Walter E. Kaegi: Heraclius, Emperor of Byzantium"
+    ]
+  },
+  {
+    id: "kaiser-basileios2",
+    titel: "Basileios II. und die letzte Blüte",
+    epoche: "mittelalter",
+    jahr: 976,
+    zeitraum: "976–1025",
+    region: "Byzanz und Bulgarien",
+    leitsatz: "Fünfzig Jahre Regierung führten Byzanz auf einen Höhepunkt, von dem es fünfzig Jahre später abstürzte.",
+    vorgeschichte: "Basileios war als Kind Mitkaiser und musste sich gegen zwei Aufstände mächtiger Militäraristokraten behaupten. Entscheidende Hilfe kam vom Kiewer Fürsten Wladimir, der dafür die Schwester des Kaisers heiratete und das Christentum annahm – ein Ereignis mit Folgen bis heute für die Ostkirche.",
+    verlauf: "Basileios führte fast vier Jahrzehnte Krieg gegen Bulgarien und unterwarf es 1018 vollständig. Der Beiname Bulgarentöter geht auf einen Bericht zurück, wonach er nach der Schlacht von Kleidion 1014 tausende Gefangene blenden ließ. Im Inneren bekämpfte er die Großgrundbesitzer, um die steuerzahlenden Bauern zu schützen. Er heiratete nie, lebte spartanisch und hinterließ einen vollen Staatsschatz.",
+    folgen: "Das Reich reichte von Süditalien bis Armenien und war die stärkste Macht Europas. Doch Basileios regelte die Nachfolge nicht: Es folgten schwache Herrscher, die Aristokratie gewann zurück, was er ihr genommen hatte, und die Armee verfiel. 1071 endete das bei Manzikert.",
+    strittig: "Die Massenblendung von Kleidion stammt aus einer Quelle, die über hundert Jahre später schrieb; Umfang und Zahl gelten als unsicher, das Ereignis selbst wird nicht bestritten. Umstritten ist auch, ob Basileios' Politik den späteren Absturz vorbereitete oder ob seine Nachfolger sie nur nicht fortsetzten.",
+    zahlen: [
+      { wert: "49 Jahre", was: "Regierungsdauer, die längste eines byzantinischen Kaisers" },
+      { wert: "1014", was: "Schlacht von Kleidion" },
+      { wert: "1018", was: "vollständige Unterwerfung Bulgariens" }
+    ],
+    quellen: [
+      "Encyclopaedia Britannica: Byzantine Empire",
+      "The Oxford History of Byzantium (Hrsg. Cyril Mango)",
+      "Encyclopaedia Britannica: Basil II",
+      "Ralph-Johannes Lilie: Byzanz. Geschichte des oströmischen Reiches"
+    ]
   }
 ];
