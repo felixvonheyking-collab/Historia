@@ -2018,5 +2018,1169 @@ const DYNASTIEN = [
    ]
   }
  ]
+},
+{
+ "id": "osmanen",
+ "reich": "Osmanisches Reich",
+ "untertitel": "36 Sultane von Osman bis zur Abschaffung",
+ "zeitraum": "1299–1922",
+ "farbe": "#2f7d5b",
+ "einleitung": "Sechs Jahrhunderte, eine einzige Familie – kein anderes Großreich der Neuzeit wurde so lange von einer ununterbrochenen Dynastie regiert. Das Reich reichte auf seinem Höhepunkt von Ungarn bis zum Jemen und von Algier bis zum Kaukasus und beherrschte damit die Handelswege zwischen Europa und Asien – ein Grund, warum Portugal und Spanien Seewege suchten.",
+ "hinweis": "Die Jahreszahlen sind ab dem 15. Jahrhundert gut belegt, für die Frühzeit weniger: Osman und Orhan sind historisch, ihre Regierungsdaten aber Rekonstruktionen aus späteren Chroniken. Zu beachten ist außerdem, dass Regierungsjahre hier oft wenig über Macht sagen. Zwischen 1566 und 1826 lag die tatsächliche Führung häufig bei Großwesiren, Müttern der Sultane und der Janitscharentruppe – die Zeit ab 1648 heißt in der türkischen Geschichtsschreibung ausdrücklich Sultanat der Frauen beziehungsweise Herrschaft der Wesire.",
+ "quellen": [
+  "Encyclopaedia Britannica: Ottoman Empire",
+  "Halil İnalcık: The Ottoman Empire – The Classical Age",
+  "Caroline Finkel: Osman's Dream",
+  "Suraiya Faroqhi (Hrsg.): The Cambridge History of Turkey"
+ ],
+ "perioden": [
+  {
+   "name": "Gründung und Aufstieg",
+   "zeitraum": "1299–1453",
+   "dynastien": [
+    {
+     "name": "Frühe Sultane",
+     "zeitraum": "1299–1453",
+     "kurz": "Aus einem Grenzfürstentum in Westanatolien wird binnen 150 Jahren eine Macht auf zwei Kontinenten. Die Osmanen nutzen den Zerfall von Byzanz und Seldschuken und setzen auf Söldner, Reiterei und Bündnisse mit christlichen Vasallen.",
+     "herrscher": [
+      {
+       "name": "Osman I.",
+       "regierung": "ca. 1299–1324",
+       "kurz": "Namensgeber der Dynastie. Seine Gestalt ist von der späteren Überlieferung stark ausgeschmückt; gesichert ist wenig mehr als seine Existenz."
+      },
+      {
+       "name": "Orhan",
+       "regierung": "1324–1362",
+       "kurz": "Nahm Bursa und setzte erstmals nach Europa über. Unter ihm entstand die Janitscharentruppe aus christlichen Knabenrekruten."
+      },
+      {
+       "name": "Murad I.",
+       "regierung": "1362–1389",
+       "kurz": "Eroberte Adrianopel und machte es zur Hauptstadt. Fiel auf dem Amselfeld – in der Schlacht, die er gewann."
+      },
+      {
+       "name": "Bayezid I.",
+       "regierung": "1389–1402",
+       "kurz": "Der Blitz genannt. Schlug ein Kreuzfahrerheer bei Nikopolis, geriet dann bei Ankara in die Gefangenschaft Timurs und starb dort."
+      },
+      {
+       "name": "Mehmed I.",
+       "regierung": "1413–1421",
+       "kurz": "Beendete elf Jahre Bruderkrieg und stellte das Reich wieder her. Wird deshalb oft als zweiter Gründer bezeichnet."
+      },
+      {
+       "name": "Murad II.",
+       "regierung": "1421–1451",
+       "kurz": "Dankte zweimal freiwillig ab und kehrte beide Male zurück, weil sein Sohn zu jung war. Schlug die Ungarn bei Varna."
+      }
+     ],
+     "weitere": "Zwischen 1402 und 1413 kämpften Bayezids Söhne Süleyman, Musa und Isa um die Nachfolge – ein Interregnum, das das Reich fast beendet hätte."
+    }
+   ]
+  },
+  {
+   "name": "Klassisches Zeitalter",
+   "zeitraum": "1453–1566",
+   "dynastien": [
+    {
+     "name": "Auf dem Höhepunkt",
+     "zeitraum": "1453–1566",
+     "kurz": "Das Reich wird Weltmacht: Konstantinopel fällt, Ägypten und Syrien kommen hinzu, mit ihnen der Anspruch auf das Kalifat. Verwaltung, Recht und Baukunst erreichen ihre klassische Form.",
+     "herrscher": [
+      {
+       "name": "Mehmed II.",
+       "regierung": "1444–1446 und 1451–1481",
+       "kurz": "Eroberte 1453 Konstantinopel und beendete das Byzantinische Reich. Machte die Stadt zur Hauptstadt und siedelte gezielt Griechen, Armenier und Juden dort an.",
+       "vertiefung": "fall-konstantinopel"
+      },
+      {
+       "name": "Bayezid II.",
+       "regierung": "1481–1512",
+       "kurz": "Nahm die aus Spanien vertriebenen Juden auf und soll über den katholischen König gespottet haben, der sein eigenes Land verarme, um seines zu bereichern."
+      },
+      {
+       "name": "Selim I.",
+       "regierung": "1512–1520",
+       "kurz": "Verdoppelte in acht Jahren das Reichsgebiet: Syrien, Ägypten, Hedschas. Mit Mekka und Medina ging der Kalifentitel an die Osmanen über."
+      },
+      {
+       "name": "Süleyman I.",
+       "regierung": "1520–1566",
+       "kurz": "46 Jahre Regierung, im Westen der Prächtige, in der Türkei der Gesetzgeber. Nahm Belgrad und Rhodos, scheiterte 1529 vor Wien, ordnete das Recht neu und ließ Sinan die großen Moscheen bauen.",
+       "vertiefung": "sueleyman"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Wesire, Mütter und Stillstand",
+   "zeitraum": "1566–1789",
+   "dynastien": [
+    {
+     "name": "Sultanat der Frauen und der Wesire",
+     "zeitraum": "1566–1703",
+     "kurz": "Die Sultane führen die Heere nicht mehr selbst; die Macht verlagert sich in den Palast und die Verwaltung. Mehrere Sultansmütter regieren faktisch mit, die Großwesirsfamilie Köprülü stabilisiert das Reich für Jahrzehnte.",
+     "herrscher": [
+      {
+       "name": "Selim II.",
+       "regierung": "1566–1574",
+       "kurz": "Erster Sultan, der nicht ins Feld zog. Unter ihm ging Zypern an das Reich, die Flotte aber bei Lepanto verloren."
+      },
+      {
+       "name": "Murad III.",
+       "regierung": "1574–1595",
+       "kurz": "In seiner Zeit erreichte das Reich seine größte Ausdehnung. Zugleich begann die Geldentwertung, die die Janitscharen unruhig machte."
+      },
+      {
+       "name": "Ahmed I.",
+       "regierung": "1603–1617",
+       "kurz": "Beendete den Brudermord als Nachfolgeregel und ersetzte ihn durch den Käfig – die lebenslange Isolation der Prinzen im Palast. Ließ die Blaue Moschee bauen."
+      },
+      {
+       "name": "Murad IV.",
+       "regierung": "1623–1640",
+       "kurz": "Kam als Elfjähriger auf den Thron, regierte ab 1632 mit äußerster Härte und nahm Bagdad zurück."
+      },
+      {
+       "name": "Mehmed IV.",
+       "regierung": "1648–1687",
+       "kurz": "Unter ihm regierten die Köprülü-Wesire. Nach der Niederlage vor Wien 1683 wurde er abgesetzt."
+      }
+     ],
+     "weitere": "Dazwischen: Mehmed III. (1595–1603), der bei seinem Amtsantritt 19 Brüder töten ließ, Mustafa I. (zweimal, geistig krank), Osman II. (1618–1622, von Janitscharen ermordet), Ibrahim (1640–1648) und Süleyman II., Ahmed II. sowie Mustafa II. bis 1703."
+    },
+    {
+     "name": "Rückzug und erste Reformen",
+     "zeitraum": "1703–1789",
+     "kurz": "Das Reich verliert Gebiete an Österreich und Russland. Erste Versuche, Heer und Verwaltung nach europäischem Vorbild umzubauen, scheitern am Widerstand der Janitscharen und der Rechtsgelehrten.",
+     "herrscher": [
+      {
+       "name": "Ahmed III.",
+       "regierung": "1703–1730",
+       "kurz": "Zeit der Tulpen: Öffnung für europäische Mode, erste Druckerei mit arabischen Lettern im Reich. Ein Aufstand beendete beides."
+      },
+      {
+       "name": "Selim III.",
+       "regierung": "1789–1807",
+       "kurz": "Baute mit der Neuen Ordnung eine Armee nach europäischem Muster auf. Die Janitscharen setzten ihn ab und ließen ihn töten."
+      }
+     ],
+     "weitere": "Dazwischen Mahmud I. (1730–1754), Osman III., Mustafa III. und Abdülhamid I. (1774–1789), unter dem das Reich die Krim an Russland verlor."
+    }
+   ]
+  },
+  {
+   "name": "Reformzeit und Ende",
+   "zeitraum": "1808–1922",
+   "dynastien": [
+    {
+     "name": "Tanzimat und Verfassung",
+     "zeitraum": "1808–1922",
+     "kurz": "Ein Jahrhundert Reform unter äußerem Druck: Rechtsgleichheit für Nichtmuslime, moderne Schulen, Eisenbahnen, zweimal eine Verfassung. Die Nationalbewegungen auf dem Balkan lassen sich damit nicht mehr aufhalten.",
+     "herrscher": [
+      {
+       "name": "Mahmud II.",
+       "regierung": "1808–1839",
+       "kurz": "Ließ 1826 die Janitscharen gewaltsam auflösen – im Reich als Glückliches Ereignis bezeichnet. Erst danach war eine Modernisierung des Heeres möglich."
+      },
+      {
+       "name": "Abdülmecid I.",
+       "regierung": "1839–1861",
+       "kurz": "Verkündete die Tanzimat-Reformen mit Rechtsgleichheit aller Untertanen unabhängig von der Religion – ein Bruch mit dem bisherigen Ordnungsprinzip."
+      },
+      {
+       "name": "Abdülhamid II.",
+       "regierung": "1876–1909",
+       "kurz": "Setzte die erste Verfassung nach zwei Jahren aus und regierte 33 Jahre autokratisch, gestützt auf Zensur und Geheimdienst. In seine Zeit fallen die Massaker an Armeniern der 1890er Jahre.",
+       "vertiefung": "osmanen-ende"
+      },
+      {
+       "name": "Mehmed VI.",
+       "regierung": "1918–1922",
+       "kurz": "Letzter Sultan. Unterzeichnete den Vertrag von Sèvres, verlor jede Autorität an die Nationalbewegung und verließ das Land auf einem britischen Kriegsschiff.",
+       "vertiefung": "osmanen-ende"
+      }
+     ],
+     "weitere": "Dazwischen: Abdülaziz (1861–1876, abgesetzt und wenig später tot aufgefunden), Murad V. (93 Tage), Mehmed V. (1909–1918), unter dem das Reich in den Ersten Weltkrieg eintrat und der Völkermord an den Armeniern begangen wurde. Das Sultanat wurde 1922 abgeschafft, das Kalifat 1924."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "zaren",
+ "reich": "Russische Zaren",
+ "untertitel": "Von Iwan III. bis zur Erschießung der Romanows",
+ "zeitraum": "1462–1917",
+ "farbe": "#8a5a2f",
+ "einleitung": "Der Titel Zar leitet sich von Caesar ab und wurde 1547 erstmals förmlich angenommen – als Anspruch, das Erbe des untergegangenen Byzanz anzutreten. Moskau verstand sich als drittes Rom. In viereinhalb Jahrhunderten wuchs aus einem Fürstentum das flächengrößte Reich der Erde, regiert von zwei Dynastien und unterbrochen von einer Zeit, in der niemand wusste, wer der rechtmäßige Herrscher war.",
+ "hinweis": "Zwei Dinge sind zu unterscheiden: Titel und Macht. Iwan IV. nahm 1547 den Zarentitel an, Peter I. 1721 den Kaisertitel – im Deutschen wird beides oft mit Zar wiedergegeben. Die Nachfolge war bis 1797 nicht geregelt: Peter I. hatte bestimmt, dass jeder Herrscher seinen Nachfolger selbst benennt, tat es dann selbst nicht, und das 18. Jahrhundert wurde zur Zeit der Palastrevolten. Vier Herrscher dieses Jahrhunderts wurden gestürzt oder ermordet.",
+ "quellen": [
+  "Encyclopaedia Britannica: Russia, history; Romanov dynasty",
+  "Nicholas V. Riasanovsky: A History of Russia",
+  "Simon Sebag Montefiore: Die Romanows",
+  "Lindsey Hughes: Russia in the Age of Peter the Great"
+ ],
+ "perioden": [
+  {
+   "name": "Aufstieg Moskaus",
+   "zeitraum": "1462–1598",
+   "dynastien": [
+    {
+     "name": "Rurikiden in Moskau",
+     "zeitraum": "1462–1598",
+     "kurz": "Moskau löst sich von den Mongolen, unterwirft die anderen russischen Fürstentümer und erhebt erstmals einen kaiserlichen Anspruch.",
+     "herrscher": [
+      {
+       "name": "Iwan III.",
+       "regierung": "1462–1505",
+       "kurz": "Beendete 1480 die Tributpflicht gegenüber der Goldenen Horde ohne Schlacht, verdreifachte das Staatsgebiet und heiratete die Nichte des letzten byzantinischen Kaisers – daraus leitete Moskau seinen Anspruch ab."
+      },
+      {
+       "name": "Wassili III.",
+       "regierung": "1505–1533",
+       "kurz": "Vollendete die Sammlung der russischen Länder mit der Eingliederung von Pskow, Smolensk und Rjasan."
+      },
+      {
+       "name": "Iwan IV.",
+       "regierung": "1547–1584",
+       "kurz": "Erster förmlich gekrönter Zar. Eroberte Kasan und Astrachan, öffnete den Weg nach Sibirien – und richtete mit der Opritschnina einen Terrorapparat gegen den eigenen Adel ein.",
+       "vertiefung": "iwan4"
+      },
+      {
+       "name": "Fjodor I.",
+       "regierung": "1584–1598",
+       "kurz": "Kränklich und regierungsunfähig; die Geschäfte führte sein Schwager Boris Godunow. Mit ihm starb die Moskauer Linie der Rurikiden aus."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Zeit der Wirren",
+   "zeitraum": "1598–1613",
+   "dynastien": [
+    {
+     "name": "Ohne gesicherte Dynastie",
+     "zeitraum": "1598–1613",
+     "kurz": "Fünfzehn Jahre Bürgerkrieg, Hungersnot und Fremdherrschaft. Mehrere Männer traten als angeblich überlebender Zarensohn Dmitri auf; polnische Truppen besetzten Moskau. Schätzungen gehen von einem Bevölkerungsverlust um ein Drittel aus.",
+     "herrscher": [
+      {
+       "name": "Boris Godunow",
+       "regierung": "1598–1605",
+       "kurz": "Fähiger Verwalter ohne dynastische Legitimation. Eine dreijährige Hungersnot mit vielleicht zwei Millionen Toten zerstörte seine Herrschaft."
+      },
+      {
+       "name": "Der falsche Dmitri I.",
+       "regierung": "1605–1606",
+       "kurz": "Behauptete, der ermordete Sohn Iwans IV. zu sein, wurde von polnischen Adligen gestützt und nach elf Monaten erschlagen."
+      },
+      {
+       "name": "Wassili IV. Schuiski",
+       "regierung": "1606–1610",
+       "kurz": "Vom Bojarenrat gewählt, von Polen abgesetzt und nach Warschau verschleppt."
+      }
+     ],
+     "weitere": "Dazu ein zweiter und ein dritter falscher Dmitri, ein polnischer Thronanwärter und mehrere Jahre ohne anerkannten Herrscher. Beendet wurde die Zeit 1612 von einem Volksaufgebot aus Nischni Nowgorod unter Minin und Poscharski."
+    }
+   ]
+  },
+  {
+   "name": "Frühe Romanows",
+   "zeitraum": "1613–1725",
+   "dynastien": [
+    {
+     "name": "Von der Wahl bis zum Kaiserreich",
+     "zeitraum": "1613–1725",
+     "kurz": "Ein Landstand wählt 1613 den sechzehnjährigen Michael Romanow – die Dynastie wird 304 Jahre regieren. Das Jahrhundert bringt die Festschreibung der Leibeigenschaft, die Kirchenspaltung und am Ende die gewaltsame Öffnung nach Westen.",
+     "herrscher": [
+      {
+       "name": "Michael I.",
+       "regierung": "1613–1645",
+       "kurz": "Vom Landstand gewählter erster Romanow. Regierte lange unter der Vormundschaft seines Vaters, des Patriarchen Filaret."
+      },
+      {
+       "name": "Alexei I.",
+       "regierung": "1645–1676",
+       "kurz": "Sein Gesetzbuch von 1649 band die Bauern endgültig an die Scholle. Die Kirchenreform seines Patriarchen Nikon spaltete die Orthodoxie; die Altgläubigen bestehen bis heute."
+      },
+      {
+       "name": "Peter I.",
+       "regierung": "1682–1725",
+       "kurz": "Baute Sankt Petersburg im Sumpf, schuf Flotte und Verwaltung nach westlichem Vorbild, besiegte Schweden bei Poltawa und nahm 1721 den Kaisertitel an.",
+       "vertiefung": "peter-der-grosse"
+      }
+     ],
+     "weitere": "Dazwischen Fjodor III. (1676–1682) und die Doppelherrschaft Peters mit seinem behinderten Halbbruder Iwan V. unter der Regentschaft ihrer Schwester Sofia bis 1689."
+    }
+   ]
+  },
+  {
+   "name": "Das Jahrhundert der Kaiserinnen",
+   "zeitraum": "1725–1801",
+   "dynastien": [
+    {
+     "name": "Palastrevolten und Aufklärung",
+     "zeitraum": "1725–1801",
+     "kurz": "Vier Frauen regieren zusammen mehr als zwei Drittel dieses Jahrhunderts – in einem Reich, das Frauen sonst kaum Rechte gab. Möglich machte das die ungeregelte Nachfolge und die Garderegimenter, die in Petersburg die Throne verteilten.",
+     "herrscher": [
+      {
+       "name": "Katharina I.",
+       "regierung": "1725–1727",
+       "kurz": "Peters Witwe, ehemals Magd aus Livland, von der Garde auf den Thron gehoben."
+      },
+      {
+       "name": "Elisabeth",
+       "regierung": "1741–1762",
+       "kurz": "Kam durch einen Staatsstreich der Garde an die Macht. Ließ das Winterpalais bauen, gründete die Universität Moskau und schaffte die Todesstrafe faktisch ab."
+      },
+      {
+       "name": "Katharina II.",
+       "regierung": "1762–1796",
+       "kurz": "Deutsche Prinzessin, die ihren Mann stürzen ließ und 34 Jahre regierte. Expansion nach Süden und Westen, Briefwechsel mit Voltaire – und zugleich die härteste Ausweitung der Leibeigenschaft.",
+       "vertiefung": "katharina2"
+      },
+      {
+       "name": "Paul I.",
+       "regierung": "1796–1801",
+       "kurz": "Regelte die Thronfolge nach festem Erstgeburtsrecht und beendete damit das Jahrhundert der Umstürze – ausgerechnet er wurde selbst ermordet."
+      }
+     ],
+     "weitere": "Dazwischen Peter II. (1727–1730), Anna (1730–1740), der als Säugling eingesetzte und später lebenslang eingekerkerte Iwan VI. (1740–1741) und Peter III. (1762), der nach einem halben Jahr gestürzt wurde."
+    }
+   ]
+  },
+  {
+   "name": "Das lange 19. Jahrhundert",
+   "zeitraum": "1801–1917",
+   "dynastien": [
+    {
+     "name": "Reform, Reaktion, Untergang",
+     "zeitraum": "1801–1917",
+     "kurz": "Zwischen Napoleon und Revolution schwankt das Reich zwischen Reform und Unterdrückung. Die Aufhebung der Leibeigenschaft kommt zu spät und zu halbherzig, um die soziale Frage zu lösen.",
+     "herrscher": [
+      {
+       "name": "Alexander I.",
+       "regierung": "1801–1825",
+       "kurz": "Besiegte Napoleon, trieb die Heilige Allianz voran und wurde im Inneren zunehmend reaktionär. Nach seinem Tod erhoben sich die Dekabristen."
+      },
+      {
+       "name": "Nikolaus I.",
+       "regierung": "1825–1855",
+       "kurz": "Regierte auf Orthodoxie, Autokratie und Volkstum gestützt und mit strenger Zensur. Der Krimkrieg legte die Rückständigkeit des Reiches offen."
+      },
+      {
+       "name": "Alexander II.",
+       "regierung": "1855–1881",
+       "kurz": "Hob 1861 die Leibeigenschaft für 23 Millionen Menschen auf, reformierte Justiz und Verwaltung – und wurde nach mehreren Versuchen von Attentätern getötet."
+      },
+      {
+       "name": "Nikolaus II.",
+       "regierung": "1894–1917",
+       "kurz": "Letzter Zar. Verlor den Krieg gegen Japan, überstand die Revolution von 1905, übernahm 1915 selbst den Oberbefehl und dankte im März 1917 ab. Er und seine Familie wurden 1918 in Jekaterinburg erschossen.",
+       "vertiefung": "russische-revolution"
+      }
+     ],
+     "weitere": "Dazwischen Alexander III. (1881–1894), der die Reformen seines Vaters teilweise zurücknahm."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "deutsche-kaiser",
+ "reich": "Deutsche Kaiser und Könige",
+ "untertitel": "Vom Heiligen Römischen Reich zum Kaiserreich",
+ "zeitraum": "962–1918",
+ "farbe": "#8a2b2b",
+ "einleitung": "Zwei Reiche, die denselben Namen tragen und wenig gemeinsam haben. Das Heilige Römische Reich war ein Wahlkönigtum über einem Flickenteppich aus Fürstentümern, Bistümern und Reichsstädten – der Kaiser hatte Rang, aber selten Macht. Das Deutsche Reich von 1871 war ein Bundesstaat mit einer erblichen Kaiserwürde beim preußischen König. Dazwischen liegen 65 Jahre ohne deutschen Kaiser.",
+ "hinweis": "Zwei Warnungen. Erstens: Königswahl, Königskrönung und Kaiserkrönung waren getrennte Akte, oft Jahre auseinander – die Regierungsjahre beziehen sich hier auf die Königsherrschaft im Reich. Zweitens: Ab 1438 stellten fast durchgehend die Habsburger den Kaiser. Diese Herrscher stehen deshalb auch im Reich Habsburger, dort aus dem Blickwinkel der Familie und ihrer eigenen Länder. Wer die Reihe der Kaiser sucht, ist hier richtig; wer die Familie sucht, dort.",
+ "quellen": [
+  "Encyclopaedia Britannica: Holy Roman Empire; German Empire",
+  "Peter H. Wilson: Heart of Europe – A History of the Holy Roman Empire",
+  "Barbara Stollberg-Rilinger: Das Heilige Römische Reich Deutscher Nation",
+  "Christopher Clark: Preußen – Aufstieg und Niedergang"
+ ],
+ "perioden": [
+  {
+   "name": "Frühes Reich",
+   "zeitraum": "962–1250",
+   "dynastien": [
+    {
+     "name": "Ottonen",
+     "zeitraum": "919–1024",
+     "kurz": "Sächsische Herzöge werden Könige und erneuern das Kaisertum im Westen. Die Bindung an die Reichskirche wird zum Fundament der Herrschaft – Bischöfe als Amtsträger des Königs.",
+     "herrscher": [
+      {
+       "name": "Otto I.",
+       "regierung": "936–973",
+       "kurz": "Schlug 955 die Ungarn auf dem Lechfeld und wurde 962 in Rom zum Kaiser gekrönt – der Beginn des Heiligen Römischen Reiches."
+      },
+      {
+       "name": "Otto III.",
+       "regierung": "983–1002",
+       "kurz": "Mit drei Jahren König, aufgewachsen zwischen griechischer Mutter und römischem Anspruch. Wollte Rom zur Hauptstadt eines erneuerten Kaiserreichs machen und starb mit 21 Jahren."
+      },
+      {
+       "name": "Heinrich II.",
+       "regierung": "1002–1024",
+       "kurz": "Letzter Ottone, später heiliggesprochen. Stützte sich stärker auf die Kirche als jeder Vorgänger und gründete das Bistum Bamberg."
+      }
+     ],
+     "weitere": "Dazu Otto II. (973–983), dessen Niederlage gegen Araber in Süditalien die Reichspolitik jahrzehntelang belastete."
+    },
+    {
+     "name": "Salier",
+     "zeitraum": "1024–1125",
+     "kurz": "Ein fränkisches Haus baut Königsmacht gegen die Fürsten auf – und stößt dabei mit dem reformierten Papsttum zusammen. Der Streit um die Bischofseinsetzung entscheidet die Machtverhältnisse für Jahrhunderte.",
+     "herrscher": [
+      {
+       "name": "Konrad II.",
+       "regierung": "1024–1039",
+       "kurz": "Gewann Burgund für das Reich und stützte sich erstmals gezielt auf die kleinen Vasallen gegen die Herzöge."
+      },
+      {
+       "name": "Heinrich III.",
+       "regierung": "1039–1056",
+       "kurz": "Höhepunkt der Königsmacht: Er setzte drei Päpste ab und einen deutschen ein."
+      },
+      {
+       "name": "Heinrich IV.",
+       "regierung": "1056–1105",
+       "kurz": "Ging 1077 nach Canossa, um den Bann zu lösen – kurzfristig ein Erfolg, langfristig der Beleg, dass es zwei höchste Gewalten gab. Starb im Kampf gegen den eigenen Sohn.",
+       "vertiefung": "investiturstreit"
+      },
+      {
+       "name": "Heinrich V.",
+       "regierung": "1106–1125",
+       "kurz": "Schloss 1122 das Wormser Konkordat und beendete damit den Investiturstreit durch Kompromiss."
+      }
+     ]
+    },
+    {
+     "name": "Staufer",
+     "zeitraum": "1138–1254",
+     "kurz": "Das glänzendste und zugleich folgenreichste Haus: Der Versuch, Reich und Sizilien zu verbinden, überdehnt die Kräfte und endet mit dem Zusammenbruch der Zentralgewalt.",
+     "herrscher": [
+      {
+       "name": "Friedrich I. Barbarossa",
+       "regierung": "1152–1190",
+       "kurz": "Sechs Italienzüge, Streit mit den lombardischen Städten und mit Heinrich dem Löwen. Ertrank auf dem Kreuzzug in einem Fluss in Kleinasien.",
+       "vertiefung": "barbarossa"
+      },
+      {
+       "name": "Heinrich VI.",
+       "regierung": "1190–1197",
+       "kurz": "Erwarb durch Heirat Sizilien und ließ Richard Löwenherz gegen ein enormes Lösegeld gefangen halten. Starb mit 31 Jahren."
+      },
+      {
+       "name": "Friedrich II.",
+       "regierung": "1212–1250",
+       "kurz": "In Sizilien aufgewachsen, mehrsprachig, den Zeitgenossen unheimlich. Erhielt Jerusalem durch Vertrag statt durch Krieg und lag lebenslang mit dem Papsttum im Streit.",
+       "vertiefung": "friedrich2-staufer"
+      }
+     ],
+     "weitere": "Dazwischen Konrad III. (1138–1152), der Welfe Otto IV. (1198–1218) als Gegenkönig und Konrad IV. (1250–1254). Nach dem Ende der Staufer folgte das Interregnum – rund zwanzig Jahre ohne allgemein anerkannten König."
+    }
+   ]
+  },
+  {
+   "name": "Wahlkönigtum der Fürsten",
+   "zeitraum": "1273–1438",
+   "dynastien": [
+    {
+     "name": "Wechselnde Häuser",
+     "zeitraum": "1273–1438",
+     "kurz": "Nach dem Interregnum wählen die Fürsten bewusst Könige aus kleineren Häusern, um keine neue Übermacht entstehen zu lassen. Die Goldene Bulle regelt 1356 endgültig, wer wählt – ohne den Papst.",
+     "herrscher": [
+      {
+       "name": "Rudolf I.",
+       "regierung": "1273–1291",
+       "kurz": "Erster Habsburger auf dem Thron. Gewann Österreich und legte damit den Grund für den Aufstieg seines Hauses."
+      },
+      {
+       "name": "Ludwig IV.",
+       "regierung": "1314–1347",
+       "kurz": "Wittelsbacher, lag im Dauerstreit mit dem Papst in Avignon. Unter ihm erklärten die Kurfürsten, die Königswahl bedürfe keiner päpstlichen Bestätigung."
+      },
+      {
+       "name": "Karl IV.",
+       "regierung": "1346–1378",
+       "kurz": "Luxemburger, machte Prag zur Hauptstadt und gründete dort die erste Universität Mitteleuropas. Seine Goldene Bulle blieb bis 1806 Reichsgrundgesetz."
+      },
+      {
+       "name": "Sigismund",
+       "regierung": "1410–1437",
+       "kurz": "Berief das Konzil von Konstanz ein, das die Kirchenspaltung beendete – und ließ trotz Geleitbrief Jan Hus verbrennen, was die Hussitenkriege auslöste."
+      }
+     ],
+     "weitere": "Dazwischen Adolf von Nassau, Albrecht I., Heinrich VII. (der erste Luxemburger), Wenzel (1378–1400, abgesetzt) und Ruprecht von der Pfalz."
+    }
+   ]
+  },
+  {
+   "name": "Habsburger auf dem Kaiserthron",
+   "zeitraum": "1438–1806",
+   "dynastien": [
+    {
+     "name": "Fast ununterbrochen ein Haus",
+     "zeitraum": "1438–1806",
+     "kurz": "Von 1438 bis 1806 stellen die Habsburger mit einer einzigen Unterbrechung alle Kaiser. Das Reich wird dabei immer lockerer: Nach 1648 sind die Reichsstände praktisch souverän, der Kaiser ist Schiedsrichter mehr als Herrscher.",
+     "herrscher": [
+      {
+       "name": "Maximilian I.",
+       "regierung": "1486–1519",
+       "kurz": "Betrieb Heiratspolitik statt Krieg – Burgund und Spanien fielen seinem Haus so zu. Reformierte Reichstag und Reichskammergericht."
+      },
+      {
+       "name": "Karl V.",
+       "regierung": "1519–1556",
+       "kurz": "Herrschte über ein Reich, in dem die Sonne nicht unterging, und scheiterte doch: an der Reformation, an Frankreich, an den Osmanen und an den eigenen Fürsten. Dankte freiwillig ab.",
+       "vertiefung": "karl5"
+      },
+      {
+       "name": "Ferdinand II.",
+       "regierung": "1619–1637",
+       "kurz": "Sein Vorgehen gegen die böhmischen Stände löste den Dreißigjährigen Krieg aus. Hielt an der Rekatholisierung fest, auch als das Reich verwüstet war.",
+       "vertiefung": "dreissigjaehriger-krieg"
+      },
+      {
+       "name": "Leopold I.",
+       "regierung": "1658–1705",
+       "kurz": "47 Jahre Regierung zwischen Osmanen im Osten und Ludwig XIV. im Westen. Unter ihm wurde Wien 1683 entsetzt und Ungarn zurückgewonnen."
+      },
+      {
+       "name": "Franz II.",
+       "regierung": "1792–1806",
+       "kurz": "Letzter Kaiser des Heiligen Römischen Reiches. Legte 1806 unter Napoleons Druck die Krone nieder und regierte als Franz I. von Österreich weiter."
+      }
+     ],
+     "weitere": "Weitere: Friedrich III. (1440–1493, der am längsten regierende deutsche König), Ferdinand I., Maximilian II., Rudolf II. (1576–1612, Prag als Zentrum von Kunst und Wissenschaft), Matthias, Ferdinand III., Joseph I., Karl VI., der Wittelsbacher Karl VII. (1742–1745, die einzige Unterbrechung), Franz I. Stephan, Joseph II. und Leopold II."
+    }
+   ]
+  },
+  {
+   "name": "Deutsches Kaiserreich",
+   "zeitraum": "1871–1918",
+   "dynastien": [
+    {
+     "name": "Hohenzollern",
+     "zeitraum": "1871–1918",
+     "kurz": "Eine neue, erbliche Kaiserwürde beim preußischen König – ausgerufen 1871 im Spiegelsaal von Versailles. 47 Jahre, drei Kaiser, davon einer für 99 Tage.",
+     "herrscher": [
+      {
+       "name": "Wilhelm I.",
+       "regierung": "1871–1888",
+       "kurz": "Preußischer König seit 1861, deutscher Kaiser seit 1871 – den Titel nahm er widerwillig an. Die Politik machte Bismarck.",
+       "vertiefung": "reichsgruendung"
+      },
+      {
+       "name": "Friedrich III.",
+       "regierung": "1888",
+       "kurz": "Regierte 99 Tage und starb an Kehlkopfkrebs. Er galt als liberal; ob er den Kurs des Reiches geändert hätte, bleibt eine der großen offenen Fragen."
+      },
+      {
+       "name": "Wilhelm II.",
+       "regierung": "1888–1918",
+       "kurz": "Entließ Bismarck, betrieb Flottenrüstung und Weltpolitik und trug zur außenpolitischen Isolierung bei. Dankte im November 1918 ab und ging in die Niederlande.",
+       "vertiefung": "julikrise"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "habsburger",
+ "reich": "Habsburger",
+ "untertitel": "Von einer Grafenburg zur Donaumonarchie",
+ "zeitraum": "1273–1918",
+ "farbe": "#c98a2f",
+ "einleitung": "Kaum eine Familie hat Europa so lange geprägt – und kaum eine verdankt ihren Aufstieg so wenig dem Krieg. Der Wahlspruch, andere sollten Kriege führen, das glückliche Österreich aber heiraten, ist zwar erst später geprägt worden, trifft die Sache jedoch: Burgund, Spanien, Böhmen und Ungarn kamen durch Ehen, Erbfälle und Verträge ins Haus. Am Ende zerbrach es an etwas, das sich nicht verheiraten ließ – am Nationalismus.",
+ "hinweis": "Das Haus teilte sich 1521 in eine spanische und eine österreichische Linie; die spanische erlosch 1700 und steht im Reich Spanisches Königshaus. Mit Maria Theresia endete 1780 die männliche Linie – ihre Nachkommen heißen genau genommen Habsburg-Lothringen. Wer dieselben Personen als Kaiser des Heiligen Römischen Reiches sucht, findet sie unter Deutsche Kaiser und Könige; hier stehen sie als Familie und mit ihren eigenen Ländern.",
+ "quellen": [
+  "Encyclopaedia Britannica: Habsburg dynasty; Austria-Hungary",
+  "Pieter M. Judson: Habsburg – Geschichte eines Imperiums",
+  "Martyn Rady: Die Habsburger",
+  "Barbara Stollberg-Rilinger: Maria Theresia"
+ ],
+ "perioden": [
+  {
+   "name": "Aufstieg",
+   "zeitraum": "1273–1519",
+   "dynastien": [
+    {
+     "name": "Vom Grafen zum Kaiserhaus",
+     "zeitraum": "1273–1519",
+     "kurz": "Ein Grafengeschlecht aus dem Aargau gewinnt Österreich, verliert die Stammlande in der Schweiz und arbeitet sich über zwei Jahrhunderte an die Spitze des Reiches.",
+     "herrscher": [
+      {
+       "name": "Rudolf von Habsburg",
+       "regierung": "1273–1291",
+       "kurz": "Wurde als vermeintlich schwacher Kandidat zum König gewählt, besiegte Ottokar von Böhmen und übergab Österreich seinen Söhnen – der Grundstein."
+      },
+      {
+       "name": "Friedrich der Schöne",
+       "regierung": "1314–1330",
+       "kurz": "Unterlag im Kampf um die Königswürde den Wittelsbachern. Danach blieb das Haus für hundert Jahre von der Krone ausgeschlossen."
+      },
+      {
+       "name": "Rudolf IV.",
+       "regierung": "1358–1365",
+       "kurz": "Der Stifter: gründete die Universität Wien, ließ den Stephansdom ausbauen – und die Habsburger Hausprivilegien fälschen, um dem Haus Vorrang im Reich zu verschaffen."
+      },
+      {
+       "name": "Maximilian I.",
+       "regierung": "1493–1519",
+       "kurz": "Heiratete Maria von Burgund und gewann damit die Niederlande. Die Ehen seiner Enkel brachten Spanien, Böhmen und Ungarn."
+      }
+     ],
+     "weitere": "Dazwischen Albrecht I., Albrecht II. (1438 erster Habsburger in der ununterbrochenen Reihe der Könige) und Friedrich III., der 53 Jahre regierte und dessen Devise AEIOU bis heute nicht sicher gedeutet ist."
+    }
+   ]
+  },
+  {
+   "name": "Weltreich und Teilung",
+   "zeitraum": "1519–1740",
+   "dynastien": [
+    {
+     "name": "Die österreichische Linie",
+     "zeitraum": "1521–1740",
+     "kurz": "Karl V. teilte das Erbe: Spanien und die überseeischen Gebiete an den Sohn, Österreich und die Kaiserwürde an den Bruder. Die österreichische Linie behauptet sich gegen Osmanen, Reformation und Frankreich.",
+     "herrscher": [
+      {
+       "name": "Ferdinand I.",
+       "regierung": "1521–1564",
+       "kurz": "Erbte die österreichischen Länder und gewann 1526 Böhmen und Ungarn – die Grundlage der Donaumonarchie für die nächsten 400 Jahre."
+      },
+      {
+       "name": "Rudolf II.",
+       "regierung": "1576–1612",
+       "kurz": "Verlegte den Hof nach Prag, sammelte Kunst und förderte Kepler und Brahe. Politisch zunehmend handlungsunfähig; sein Bruder entmachtete ihn."
+      },
+      {
+       "name": "Karl VI.",
+       "regierung": "1711–1740",
+       "kurz": "Ließ die Pragmatische Sanktion von allen europäischen Mächten anerkennen, damit seine Tochter erben konnte. Nach seinem Tod hielt sich fast niemand daran."
+      }
+     ],
+     "weitere": "Weitere: Maximilian II. (1564–1576), Matthias, Ferdinand II. und III., Leopold I., Joseph I. – ihre Rolle als Kaiser steht unter Deutsche Kaiser und Könige."
+    }
+   ]
+  },
+  {
+   "name": "Habsburg-Lothringen",
+   "zeitraum": "1740–1848",
+   "dynastien": [
+    {
+     "name": "Reform von oben",
+     "zeitraum": "1740–1848",
+     "kurz": "Eine Frau erbt, muss ihr Recht darauf erst erkämpfen und reformiert danach den Staat gründlicher als alle Vorgänger. Ihr Sohn treibt es weiter, als die Gesellschaft mitgeht.",
+     "herrscher": [
+      {
+       "name": "Maria Theresia",
+       "regierung": "1740–1780",
+       "kurz": "Verlor Schlesien und behielt alles andere. Führte Schulpflicht, Zentralverwaltung, Steuerreform und ein einheitliches Gesetzbuch ein – und lehnte Toleranz gegenüber Juden und Protestanten zeitlebens ab.",
+       "vertiefung": "maria-theresia"
+      },
+      {
+       "name": "Joseph II.",
+       "regierung": "1780–1790",
+       "kurz": "Hob die Leibeigenschaft auf, erließ das Toleranzpatent, schloss hunderte Klöster. Sein Tempo überforderte das Land; vieles musste er am Ende zurücknehmen."
+      },
+      {
+       "name": "Franz I. von Österreich",
+       "regierung": "1804–1835",
+       "kurz": "Nahm 1804 den österreichischen Kaisertitel an und legte 1806 die römisch-deutsche Krone nieder. Unter ihm und Metternich wurde Österreich zur Ordnungsmacht gegen jede Veränderung."
+      },
+      {
+       "name": "Ferdinand I. der Gütige",
+       "regierung": "1835–1848",
+       "kurz": "Regierungsunfähig; die Geschäfte führte eine Staatskonferenz. Dankte in der Revolution 1848 zugunsten seines Neffen ab."
+      }
+     ],
+     "weitere": "Dazwischen Franz I. Stephan von Lothringen als Kaiser und Leopold II. (1790–1792), der in zwei Jahren die schärfsten Reformen seines Bruders entschärfte."
+    }
+   ]
+  },
+  {
+   "name": "Donaumonarchie",
+   "zeitraum": "1848–1918",
+   "dynastien": [
+    {
+     "name": "Franz Joseph und das Ende",
+     "zeitraum": "1848–1918",
+     "kurz": "68 Jahre ein einziger Herrscher, über ein Reich aus einem Dutzend Nationalitäten. Der Ausgleich mit Ungarn hält die Monarchie zusammen und verschärft zugleich die Ansprüche aller anderen.",
+     "herrscher": [
+      {
+       "name": "Franz Joseph I.",
+       "regierung": "1848–1916",
+       "kurz": "Kam mit 18 Jahren im Revolutionsjahr auf den Thron. Verlor Kriege gegen Frankreich, Preußen und schloss 1867 den Ausgleich mit Ungarn. Persönliche Schicksalsschläge und die Julikrise 1914 fallen in seine Zeit.",
+       "vertiefung": "franz-joseph"
+      },
+      {
+       "name": "Karl I.",
+       "regierung": "1916–1918",
+       "kurz": "Letzter Kaiser. Suchte insgeheim Frieden, was aufflog und ihn politisch erledigte. Verzichtete im November 1918 auf jeden Anteil an den Staatsgeschäften, ohne förmlich abzudanken, und starb 1922 im Exil auf Madeira.",
+       "vertiefung": "franz-joseph"
+      }
+     ],
+     "weitere": "Nicht regiert, aber prägend: Kronprinz Rudolf (Tod in Mayerling 1889), Kaiserin Elisabeth (1898 in Genf ermordet) und Thronfolger Franz Ferdinand, dessen Ermordung in Sarajevo 1914 den Ersten Weltkrieg auslöste."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "england",
+ "reich": "Englisches Königshaus",
+ "untertitel": "Von Alfred dem Großen bis Charles III.",
+ "zeitraum": "871–heute",
+ "farbe": "#3f6b8a",
+ "einleitung": "Über tausend Jahre eine fast ununterbrochene Reihe – mit einer Lücke von elf Jahren, in denen England eine Republik war. Die englische Krone ist zugleich die Krone, die am gründlichsten entmachtet wurde: vom angelsächsischen Kriegsherrn über den absoluten Anspruch der Stuarts bis zum heutigen Staatsoberhaupt ohne eigene politische Entscheidung. Jeder dieser Schritte wurde erkämpft, keiner geschenkt.",
+ "hinweis": "Zur Zählung: England, Schottland und Irland waren lange getrennte Königreiche. Seit 1603 in Personalunion, seit 1707 als Großbritannien vereinigt, seit 1801 mit Irland – die Titel wechseln entsprechend. Die Ordnungszahlen folgen der englischen Zählung, was in Schottland bis heute Anlass zu Widerspruch gibt: Elisabeth II. war dort die erste Elisabeth. Ausgelassen sind hier die Herrscher der angelsächsischen Kleinreiche vor der Einigung.",
+ "quellen": [
+  "Encyclopaedia Britannica: United Kingdom, history; List of British monarchs",
+  "Simon Schama: A History of Britain",
+  "David Starkey: Crown and Country",
+  "The Royal Family: offizielle Herrscherlisten"
+ ],
+ "perioden": [
+  {
+   "name": "Angelsächsisches England",
+   "zeitraum": "871–1066",
+   "dynastien": [
+    {
+     "name": "Haus Wessex und dänische Könige",
+     "zeitraum": "871–1066",
+     "kurz": "Aus dem Widerstand gegen die Wikinger entsteht ein einheitliches englisches Königreich – zeitweise unter dänischer Herrschaft.",
+     "herrscher": [
+      {
+       "name": "Alfred der Große",
+       "regierung": "871–899",
+       "kurz": "Hielt Wessex gegen die Dänen, ließ Befestigungen und eine Flotte bauen und Bücher ins Englische übersetzen. Der einzige englische König mit dem Beinamen der Große."
+      },
+      {
+       "name": "Æthelstan",
+       "regierung": "924–939",
+       "kurz": "Gilt vielen als erster König von ganz England. Sein Sieg bei Brunanburh sicherte die Einheit des Reiches."
+      },
+      {
+       "name": "Knut der Große",
+       "regierung": "1016–1035",
+       "kurz": "Däne, der England, Dänemark und Norwegen in einer Hand hielt. Die Geschichte, er habe der Flut Einhalt geboten, sollte ursprünglich zeigen, wie begrenzt königliche Macht ist – sie wird meist umgekehrt erzählt."
+      },
+      {
+       "name": "Harold Godwinson",
+       "regierung": "1066",
+       "kurz": "Neun Monate König. Schlug bei Stamford Bridge eine norwegische Invasion und fiel drei Wochen später bei Hastings.",
+       "vertiefung": "normannische-eroberung"
+      }
+     ],
+     "weitere": "Weitere: Eduard der Ältere, Edmund I., Eadred, Eadwig, Edgar, Eduard der Märtyrer, Æthelred der Unberatene, Edmund Eisenseite, Harald Hasenfuß, Hardiknut und Eduard der Bekenner (1042–1066), dessen kinderloser Tod die Thronkrise von 1066 auslöste."
+    }
+   ]
+  },
+  {
+   "name": "Normannen und Plantagenets",
+   "zeitraum": "1066–1485",
+   "dynastien": [
+    {
+     "name": "Normannen",
+     "zeitraum": "1066–1154",
+     "kurz": "Eine fremde Oberschicht übernimmt das Land, bringt Lehnswesen, Burgen und Französisch als Sprache des Hofes mit.",
+     "herrscher": [
+      {
+       "name": "Wilhelm der Eroberer",
+       "regierung": "1066–1087",
+       "kurz": "Gewann England an einem Tag und sicherte es in zwanzig Jahren. Das Domesday Book erfasste 1086 Besitz und Erträge des ganzen Landes.",
+       "vertiefung": "normannische-eroberung"
+      },
+      {
+       "name": "Heinrich I.",
+       "regierung": "1100–1135",
+       "kurz": "Ordnete Verwaltung und Finanzen. Der Tod seines einzigen Sohnes bei einem Schiffsunglück stürzte England nach ihm in einen Bürgerkrieg."
+      },
+      {
+       "name": "Stephan",
+       "regierung": "1135–1154",
+       "kurz": "Seine Herrschaft war ein Dauerkrieg mit Kaiserin Matilda, die als Erbin bestimmt war. Zeitgenossen nannten die Jahre die Anarchie."
+      }
+     ],
+     "weitere": "Dazu Wilhelm II. Rufus (1087–1100), der bei einer Jagd von einem Pfeil getroffen wurde – ob Unfall oder Mord, ist bis heute offen."
+    },
+    {
+     "name": "Plantagenets",
+     "zeitraum": "1154–1399",
+     "kurz": "Zweieinhalb Jahrhunderte, in denen die Krone reich und mächtig wird und zugleich lernt, dass sie an Recht und Parlament gebunden ist.",
+     "herrscher": [
+      {
+       "name": "Heinrich II.",
+       "regierung": "1154–1189",
+       "kurz": "Herrschte von Schottland bis zu den Pyrenäen. Legte die Grundlagen des Common Law – und ließ, wenn auch wohl ungewollt, Thomas Becket im Dom von Canterbury erschlagen."
+      },
+      {
+       "name": "Richard I. Löwenherz",
+       "regierung": "1189–1199",
+       "kurz": "Von zehn Regierungsjahren verbrachte er kaum sechs Monate in England. Führte den Dritten Kreuzzug und geriet auf dem Rückweg in deutsche Gefangenschaft."
+      },
+      {
+       "name": "Johann Ohneland",
+       "regierung": "1199–1216",
+       "kurz": "Verlor die Normandie, erhob beispiellose Abgaben und musste 1215 die Magna Carta besiegeln.",
+       "vertiefung": "magna-carta"
+      },
+      {
+       "name": "Eduard I.",
+       "regierung": "1272–1307",
+       "kurz": "Unterwarf Wales, kämpfte gegen Schottland und berief 1295 das Musterparlament. Vertrieb 1290 die Juden aus England – für 366 Jahre."
+      },
+      {
+       "name": "Eduard III.",
+       "regierung": "1327–1377",
+       "kurz": "Begann den Hundertjährigen Krieg mit dem Anspruch auf den französischen Thron und siegte bei Crécy. In seine Zeit fällt der Schwarze Tod.",
+       "vertiefung": "hundertjaehriger-krieg"
+      }
+     ],
+     "weitere": "Weitere: Heinrich III. (1216–1272), unter dem das erste Parlament mit Bürgervertretern zusammentrat, Eduard II. (1327 abgesetzt und ermordet) und Richard II. (1377–1399, ebenfalls abgesetzt)."
+    },
+    {
+     "name": "Lancaster und York",
+     "zeitraum": "1399–1485",
+     "kurz": "Zwei Zweige derselben Familie führen dreißig Jahre Krieg um die Krone – die Rosenkriege kosten einen Großteil des alten Hochadels das Leben.",
+     "herrscher": [
+      {
+       "name": "Heinrich V.",
+       "regierung": "1413–1422",
+       "kurz": "Siegte bei Azincourt gegen große Übermacht und wurde als französischer Thronerbe anerkannt. Starb mit 35 Jahren an Ruhr."
+      },
+      {
+       "name": "Heinrich VI.",
+       "regierung": "1422–1461 und 1470–1471",
+       "kurz": "Mit neun Monaten König, zeitweise geistig umnachtet. Unter ihm ging Frankreich verloren und begannen die Rosenkriege."
+      },
+      {
+       "name": "Eduard IV.",
+       "regierung": "1461–1470 und 1471–1483",
+       "kurz": "Gewann die Krone im Feld, verlor sie kurz und holte sie zurück. Förderte den Buchdruck in England."
+      },
+      {
+       "name": "Richard III.",
+       "regierung": "1483–1485",
+       "kurz": "Zwei Jahre König, gefallen bei Bosworth. Sein Skelett wurde 2012 unter einem Parkplatz in Leicester gefunden und 2015 bestattet."
+      }
+     ],
+     "weitere": "Dazu Heinrich IV. (1399–1413), der Richard II. stürzte, und Eduard V., der als Zwölfjähriger mit seinem Bruder im Tower verschwand – einer der bekanntesten ungeklärten Fälle der Geschichte."
+    }
+   ]
+  },
+  {
+   "name": "Tudor und Stuart",
+   "zeitraum": "1485–1714",
+   "dynastien": [
+    {
+     "name": "Tudor",
+     "zeitraum": "1485–1603",
+     "kurz": "Ein Jahrhundert, in dem England mit Rom bricht, zur Seemacht wird und aus einer Randlage in die europäische Politik rückt.",
+     "herrscher": [
+      {
+       "name": "Heinrich VII.",
+       "regierung": "1485–1509",
+       "kurz": "Beendete die Rosenkriege, heiratete die Erbin des Gegenhauses und sanierte die Staatsfinanzen mit einer Gründlichkeit, die ihn unbeliebt machte."
+      },
+      {
+       "name": "Heinrich VIII.",
+       "regierung": "1509–1547",
+       "kurz": "Sechs Ehen, der Bruch mit Rom und die Auflösung der Klöster. Der größte Eigentumsumbau der englischen Geschichte geschah nicht aus Glauben, sondern aus Geldnot und dem Wunsch nach einem Sohn.",
+       "vertiefung": "heinrich8"
+      },
+      {
+       "name": "Maria I.",
+       "regierung": "1553–1558",
+       "kurz": "Versuchte England zum Katholizismus zurückzuführen und ließ rund 280 Protestanten verbrennen – daher der Beiname Bloody Mary. Verlor Calais, den letzten Festlandsbesitz."
+      },
+      {
+       "name": "Elisabeth I.",
+       "regierung": "1558–1603",
+       "kurz": "45 Jahre Regierung ohne Ehe. Sicherte die anglikanische Kirche, wehrte die Armada ab und ließ ihre Cousine Maria Stuart hinrichten. Mit ihr starb das Haus Tudor aus.",
+       "vertiefung": "elisabeth1"
+      }
+     ],
+     "weitere": "Dazu Eduard VI. (1547–1553), der als Kind regierte und unter dem die Reformation in England theologisch verankert wurde, sowie Jane Grey, die neun Tage lang als Königin ausgerufen war und dafür hingerichtet wurde."
+    },
+    {
+     "name": "Stuart, Republik und Restauration",
+     "zeitraum": "1603–1714",
+     "kurz": "Der Streit darüber, ob König oder Parlament das letzte Wort hat, wird erst mit Waffen und dann mit einem Gesetz entschieden.",
+     "herrscher": [
+      {
+       "name": "Jakob I.",
+       "regierung": "1603–1625",
+       "kurz": "Vereinigte die Kronen Englands und Schottlands in einer Person. Ließ die nach ihm benannte Bibelübersetzung anfertigen, die die englische Sprache prägte."
+      },
+      {
+       "name": "Karl I.",
+       "regierung": "1625–1649",
+       "kurz": "Regierte elf Jahre ohne Parlament, verlor den Bürgerkrieg und wurde als einziger englischer König öffentlich hingerichtet."
+      },
+      {
+       "name": "Oliver Cromwell",
+       "regierung": "1653–1658",
+       "kurz": "Kein König, sondern Lordprotektor der Republik. Sein Vorgehen in Irland gilt dort bis heute als eines der dunkelsten Kapitel."
+      },
+      {
+       "name": "Karl II.",
+       "regierung": "1660–1685",
+       "kurz": "Rückkehr der Monarchie nach elf Jahren Republik. In seine Zeit fallen Pest, der Brand von London und die Gründung der Royal Society."
+      },
+      {
+       "name": "Wilhelm III. und Maria II.",
+       "regierung": "1689–1702",
+       "kurz": "Kamen in der Glorreichen Revolution ins Land und nahmen die Krone unter Bedingungen an: Die Bill of Rights band den König an das Parlament."
+      }
+     ],
+     "weitere": "Dazu Jakob II. (1685–1688), der wegen seines Katholizismus vertrieben wurde, und Anna (1702–1714), unter der 1707 England und Schottland zu Großbritannien vereinigt wurden."
+    }
+   ]
+  },
+  {
+   "name": "Vom Empire zur Gegenwart",
+   "zeitraum": "1714–heute",
+   "dynastien": [
+    {
+     "name": "Hannover",
+     "zeitraum": "1714–1901",
+     "kurz": "Eine deutsche Nebenlinie erbt die Krone, spricht anfangs kaum Englisch – und ausgerechnet unter ihr entsteht das Amt des Premierministers und damit die moderne Regierungsform.",
+     "herrscher": [
+      {
+       "name": "Georg III.",
+       "regierung": "1760–1820",
+       "kurz": "Verlor die amerikanischen Kolonien, überstand Napoleon und war die letzten zehn Jahre wegen Krankheit regierungsunfähig.",
+       "vertiefung": "amerikanische-revolution"
+      },
+      {
+       "name": "Victoria",
+       "regierung": "1837–1901",
+       "kurz": "63 Jahre auf dem Thron, Kaiserin von Indien. In ihrer Zeit verdoppelte sich die Bevölkerung, das Empire erreichte seine größte Ausdehnung – und die Krone verlor endgültig ihre politische Entscheidungsmacht.",
+       "vertiefung": "victoria"
+      }
+     ],
+     "weitere": "Weitere: Georg I. (1714–1727), Georg II., Georg IV., Wilhelm IV. (1830–1837), unter dem der Reform Act von 1832 das Wahlrecht ausweitete."
+    },
+    {
+     "name": "Windsor",
+     "zeitraum": "1901–heute",
+     "kurz": "Das Haus benannte sich 1917 mitten im Krieg von Sachsen-Coburg und Gotha in Windsor um. Zwei Weltkriege, das Ende des Empire und eine Monarchie, die sich als Symbol neu erfinden musste.",
+     "herrscher": [
+      {
+       "name": "Georg V.",
+       "regierung": "1910–1936",
+       "kurz": "Änderte den Namen des Hauses und lehnte die Aufnahme seines Cousins, des gestürzten Zaren, ab – aus Sorge um die eigene Stellung."
+      },
+      {
+       "name": "Eduard VIII.",
+       "regierung": "1936",
+       "kurz": "Dankte nach 326 Tagen ab, um eine geschiedene Amerikanerin zu heiraten. Seine spätere Nähe zu NS-Deutschland belastet sein Andenken."
+      },
+      {
+       "name": "Georg VI.",
+       "regierung": "1936–1952",
+       "kurz": "Übernahm unvorbereitet und blieb im Krieg in London. Unter ihm endete die britische Herrschaft in Indien.",
+       "vertiefung": "teilung-indiens"
+      },
+      {
+       "name": "Elisabeth II.",
+       "regierung": "1952–2022",
+       "kurz": "70 Jahre und 214 Tage – die längste Regierung der britischen Geschichte. Fünfzehn Premierminister, der Zerfall des Empire und die Umwandlung in den Commonwealth fielen in ihre Zeit."
+      },
+      {
+       "name": "Charles III.",
+       "regierung": "seit 2022",
+       "kurz": "Mit 73 Jahren ältester Thronfolger, der je den Thron bestieg."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "spanien-koenige",
+ "reich": "Spanisches Königshaus",
+ "untertitel": "Von Isabella und Ferdinand bis Felipe VI.",
+ "zeitraum": "1474–heute",
+ "farbe": "#b8721f",
+ "einleitung": "Spanien entstand nicht als Staat, sondern als Bündnis zweier Kronen durch Heirat. Es wurde binnen einer Generation zur ersten Weltmacht der Neuzeit, ging viermal bankrott, verlor sein Reich in zwei Schüben, durchlief zwei Republiken, mehrere Bürgerkriege und eine vierzigjährige Diktatur – und hat heute wieder einen König, der 1975 aus dem Nichts eingesetzt wurde.",
+ "hinweis": "Vor 1474 gab es kein Spanien, sondern mehrere Königreiche: Kastilien, Aragón, Navarra, Portugal und das muslimische Granada. Die Reihe beginnt deshalb mit Isabella und Ferdinand, deren Ehe die beiden größten Kronen verband – rechtlich blieben sie bis ins 18. Jahrhundert getrennt. Die spanischen Habsburger sind die Linie, die aus der Teilung von 1521 hervorging; die österreichische steht unter Habsburger.",
+ "quellen": [
+  "Encyclopaedia Britannica: Spain, history; Bourbon dynasty",
+  "Henry Kamen: Spain 1469–1714",
+  "John H. Elliott: Imperial Spain 1469–1716",
+  "Paul Preston: Juan Carlos – Steering Spain from Dictatorship to Democracy"
+ ],
+ "perioden": [
+  {
+   "name": "Katholische Könige",
+   "zeitraum": "1474–1516",
+   "dynastien": [
+    {
+     "name": "Trastámara",
+     "zeitraum": "1474–1516",
+     "kurz": "Zwei Kronen in einer Ehe, die letzte muslimische Herrschaft in Westeuropa beendet, ein Kontinent erreicht – und eine religiöse Einheitspolitik, die Hunderttausende vertrieb.",
+     "herrscher": [
+      {
+       "name": "Isabella I. von Kastilien",
+       "regierung": "1474–1504",
+       "kurz": "Regierte gleichberechtigt mit ihrem Mann, finanzierte Kolumbus und richtete die Inquisition unter königlicher statt päpstlicher Aufsicht ein.",
+       "vertiefung": "1492"
+      },
+      {
+       "name": "Ferdinand II. von Aragón",
+       "regierung": "1479–1516",
+       "kurz": "Machiavelli nahm ihn als Vorbild des politisch geschickten Fürsten. Sicherte Neapel und Navarra für Spanien."
+      },
+      {
+       "name": "Johanna die Wahnsinnige",
+       "regierung": "1504–1555",
+       "kurz": "Erbin Kastiliens, von Vater und Sohn für regierungsunfähig erklärt und fast fünfzig Jahre in Tordesillas eingeschlossen. Ob sie krank war oder entmachtet wurde, ist bis heute umstritten."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Spanische Habsburger",
+   "zeitraum": "1516–1700",
+   "dynastien": [
+    {
+     "name": "Das Weltreich und sein Abstieg",
+     "zeitraum": "1516–1700",
+     "kurz": "Silber aus Amerika finanziert eine europäische Vormachtstellung – und ruiniert zugleich die eigene Wirtschaft. Vier Staatsbankrotte allein unter einem König.",
+     "herrscher": [
+      {
+       "name": "Karl I.",
+       "regierung": "1516–1556",
+       "kurz": "Als Karl V. zugleich römisch-deutscher Kaiser. Sein Erbe umfasste Spanien, die Niederlande, Süditalien, Österreich und Amerika – er teilte es am Ende selbst auf.",
+       "vertiefung": "karl5"
+      },
+      {
+       "name": "Philipp II.",
+       "regierung": "1556–1598",
+       "kurz": "Regierte von einem Schreibtisch im Escorial aus über vier Kontinente, gliederte Portugal ein und verlor die Armada. Trotz aller Silberflotten viermal zahlungsunfähig.",
+       "vertiefung": "philipp2-spanien"
+      },
+      {
+       "name": "Philipp IV.",
+       "regierung": "1621–1665",
+       "kurz": "Unter ihm verlor Spanien die Niederlande und Portugal – und erlebte zugleich mit Velázquez und Calderón sein goldenes Zeitalter der Kunst."
+      },
+      {
+       "name": "Karl II.",
+       "regierung": "1665–1700",
+       "kurz": "Der letzte spanische Habsburger, durch Generationen von Verwandtenehen schwer krank und kinderlos. Sein Testament löste einen europäischen Krieg aus.",
+       "vertiefung": "spanischer-erbfolgekrieg"
+      }
+     ],
+     "weitere": "Dazu Philipp III. (1598–1621), unter dem die Morisken vertrieben wurden – rund 300.000 Menschen, deren Verlust ganze Landstriche entvölkerte."
+    }
+   ]
+  },
+  {
+   "name": "Bourbonen und Umbrüche",
+   "zeitraum": "1700–1931",
+   "dynastien": [
+    {
+     "name": "Erste Bourbonen",
+     "zeitraum": "1700–1808",
+     "kurz": "Ein französischer Prinz erbt Spanien und bringt zentralisierte Verwaltung nach französischem Muster mit. Die Reiche in Europa gehen verloren, das Kolonialreich bleibt.",
+     "herrscher": [
+      {
+       "name": "Philipp V.",
+       "regierung": "1700–1746",
+       "kurz": "Erster Bourbone. Musste seinen Thron in dreizehn Jahren Krieg verteidigen und die europäischen Nebenländer abgeben.",
+       "vertiefung": "spanischer-erbfolgekrieg"
+      },
+      {
+       "name": "Karl III.",
+       "regierung": "1759–1788",
+       "kurz": "Der aufgeklärte Reformer: modernisierte Madrid, förderte Wirtschaft und Wissenschaft, vertrieb die Jesuiten."
+      },
+      {
+       "name": "Karl IV.",
+       "regierung": "1788–1808",
+       "kurz": "Ließ die Politik seinem Günstling Godoy, geriet in Napoleons Abhängigkeit und dankte unter Druck ab."
+      }
+     ],
+     "weitere": "Dazu Ludwig I. (1724, sieben Monate) und Ferdinand VI. (1746–1759), unter dem Spanien sich aus europäischen Kriegen heraushielt."
+    },
+    {
+     "name": "19. Jahrhundert: Verlust und Bürgerkriege",
+     "zeitraum": "1808–1931",
+     "kurz": "Sieben Verfassungen, drei Bürgerkriege um die Thronfolge, der Verlust des amerikanischen Festlands und zuletzt der Kolonien – ein Jahrhundert der Erschütterungen.",
+     "herrscher": [
+      {
+       "name": "Joseph Bonaparte",
+       "regierung": "1808–1813",
+       "kurz": "Napoleons Bruder, von Spaniern nie anerkannt. Sein Einsatz löste den Unabhängigkeitskrieg aus, den Goya in seinen Radierungen festhielt."
+      },
+      {
+       "name": "Ferdinand VII.",
+       "regierung": "1814–1833",
+       "kurz": "Hob die Verfassung von Cádiz auf und regierte absolut. Unter ihm ging fast das gesamte amerikanische Festland verloren.",
+       "vertiefung": "lateinamerika-unabhaengigkeit"
+      },
+      {
+       "name": "Isabella II.",
+       "regierung": "1833–1868",
+       "kurz": "Ihre Thronfolge als Frau löste die Karlistenkriege aus. Wurde nach 35 Jahren durch eine Revolution vertrieben."
+      },
+      {
+       "name": "Alfons XIII.",
+       "regierung": "1886–1931",
+       "kurz": "Von Geburt an König. Deckte ab 1923 die Diktatur Primo de Riveras und verließ das Land, als die Kommunalwahlen 1931 gegen die Monarchie ausfielen."
+      }
+     ],
+     "weitere": "Dazwischen: der gewählte König Amadeus von Savoyen (1870–1873), die Erste Republik (1873–1874, elf Monate, vier Präsidenten) und Alfons XII. (1874–1885)."
+    }
+   ]
+  },
+  {
+   "name": "Republik, Diktatur, Monarchie",
+   "zeitraum": "1931–heute",
+   "dynastien": [
+    {
+     "name": "Bruch und Rückkehr",
+     "zeitraum": "1931–heute",
+     "kurz": "Zweite Republik, Bürgerkrieg, vierzig Jahre Franco – und danach eine wiederhergestellte Monarchie, die ihre Legitimation erst gewinnen musste.",
+     "herrscher": [
+      {
+       "name": "Zweite Republik",
+       "regierung": "1931–1939",
+       "kurz": "Frauenwahlrecht, Schul- und Landreform, dazu eine Polarisierung, die im Bürgerkrieg endete. Kein Monarch, aber der Grund, warum die Monarchie 44 Jahre ausgesetzt war.",
+       "vertiefung": "spanischer-buergerkrieg"
+      },
+      {
+       "name": "Francisco Franco",
+       "regierung": "1939–1975",
+       "kurz": "Kein König, aber Staatschef auf Lebenszeit. Erklärte Spanien 1947 formell zum Königreich ohne König und bestimmte 1969 Juan Carlos zu seinem Nachfolger."
+      },
+      {
+       "name": "Juan Carlos I.",
+       "regierung": "1975–2014",
+       "kurz": "Setzte statt der erwarteten Fortsetzung der Diktatur den Übergang zur Demokratie durch und stellte sich 1981 im Fernsehen gegen die Putschisten. Dankte 2014 nach Finanzskandalen ab und lebt seit 2020 im Ausland.",
+       "vertiefung": "transicion"
+      },
+      {
+       "name": "Felipe VI.",
+       "regierung": "seit 2014",
+       "kurz": "Übernahm eine Monarchie mit beschädigtem Ansehen, kürzte den Hofetat und trennte sich öffentlich von den Finanzen seines Vaters."
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
 ];

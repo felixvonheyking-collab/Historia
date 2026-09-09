@@ -39,7 +39,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1250,
     "title": "Tod Friedrichs II. und Ende der Staufer",
-    "text": "Mit dem Kaiser stirbt der Versuch, Reich und Sizilien zu einer Macht zu verbinden. Es folgt eine Zeit ohne allgemein anerkannten König."
+    "text": "Mit dem Kaiser stirbt der Versuch, Reich und Sizilien zu einer Macht zu verbinden. Es folgt eine Zeit ohne allgemein anerkannten König.",
+    "vertiefung": "friedrich2-staufer"
    },
    {
     "year": 1356,
@@ -637,12 +638,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1547,
     "title": "Iwan der Schreckliche wird erster Zar",
-    "text": "Moskau festigt seine Vormachtstellung unter den russischen Fürstentümern."
+    "text": "Moskau festigt seine Vormachtstellung unter den russischen Fürstentümern.",
+    "vertiefung": "iwan4"
    },
    {
     "year": 1552,
     "title": "Eroberung von Kasan",
-    "text": "Moskau nimmt das Tatarenkhanat und wird zum Vielvölkerreich. Der Weg nach Sibirien steht offen."
+    "text": "Moskau nimmt das Tatarenkhanat und wird zum Vielvölkerreich. Der Weg nach Sibirien steht offen.",
+    "vertiefung": "iwan4"
    },
    {
     "year": 1598,
@@ -679,7 +682,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1762,
     "title": "Katharina die Große",
-    "text": "34 Jahre Regierung: Expansion nach Süden, Briefwechsel mit Aufklärern, zugleich Ausweitung der Leibeigenschaft. Der Widerspruch prägt das Bild der Zarin."
+    "text": "34 Jahre Regierung: Expansion nach Süden, Briefwechsel mit Aufklärern, zugleich Ausweitung der Leibeigenschaft. Der Widerspruch prägt das Bild der Zarin.",
+    "vertiefung": "katharina2"
    },
    {
     "year": 1812,
@@ -1046,12 +1050,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1453,
     "title": "Eroberung Konstantinopels",
-    "text": "Sultan Mehmed II. erobert die byzantinische Hauptstadt – Ende des Byzantinischen Reiches, Beginn der Blütezeit der Osmanen."
+    "text": "Sultan Mehmed II. erobert die byzantinische Hauptstadt – Ende des Byzantinischen Reiches, Beginn der Blütezeit der Osmanen.",
+    "vertiefung": "fall-konstantinopel"
    },
    {
     "year": 1520,
     "title": "Regierungsbeginn Süleymans des Prächtigen",
-    "text": "Höhepunkt osmanischer Macht, Kultur und Rechtsreformen; das Reich erreicht seine größte Ausdehnung."
+    "text": "Höhepunkt osmanischer Macht, Kultur und Rechtsreformen; das Reich erreicht seine größte Ausdehnung.",
+    "vertiefung": "sueleyman"
    },
    {
     "year": 1529,
@@ -1081,12 +1087,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1908,
     "title": "Jungtürkische Revolution",
-    "text": "Reformorientierte Militärs erzwingen eine Verfassung und schwächen die Sultansmacht weiter."
+    "text": "Reformorientierte Militärs erzwingen eine Verfassung und schwächen die Sultansmacht weiter.",
+    "vertiefung": "osmanen-ende"
    },
    {
     "year": 1915,
     "title": "Gallipoli-Kampagne",
-    "text": "Die Osmanen wehren erfolgreich eine alliierte Invasion an den Dardanellen ab."
+    "text": "Die Osmanen wehren erfolgreich eine alliierte Invasion an den Dardanellen ab.",
+    "vertiefung": "stellungskrieg"
    },
    {
     "year": 1918,
@@ -1096,7 +1104,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1922,
     "title": "Abschaffung des Sultanats",
-    "text": "Mustafa Kemal Atatürk beendet das über 600 Jahre alte Sultanat."
+    "text": "Mustafa Kemal Atatürk beendet das über 600 Jahre alte Sultanat.",
+    "vertiefung": "osmanen-ende"
    },
    {
     "year": 1923,
@@ -1245,13 +1254,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1455,
     "title": "Rosenkriege",
-    "text": "Dreißig Jahre Thronkämpfe zwischen York und Lancaster kosten einen großen Teil des alten Hochadels das Leben – und ebnen den Tudors den Weg."
+    "text": "Dreißig Jahre Thronkämpfe zwischen York und Lancaster kosten einen großen Teil des alten Hochadels das Leben – und ebnen den Tudors den Weg.",
+    "vertiefung": "hundertjaehriger-krieg"
    },
    {
     "year": 1534,
     "title": "Bruch mit Rom",
     "text": "Heinrich VIII. macht sich zum Oberhaupt der englischen Kirche – aus dynastischen, nicht aus theologischen Gründen.",
-    "vertiefung": "reformation"
+    "vertiefung": "heinrich8"
    },
    {
     "year": 1588,
@@ -1325,7 +1335,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1837,
     "title": "Beginn der viktorianischen Zeit",
-    "text": "Victoria regiert 63 Jahre. In dieser Zeit verdoppelt sich die Bevölkerung, Eisenbahn und Fabrik verändern das Land grundlegend."
+    "text": "Victoria regiert 63 Jahre. In dieser Zeit verdoppelt sich die Bevölkerung, Eisenbahn und Fabrik verändern das Land grundlegend.",
+    "vertiefung": "victoria"
    },
    {
     "year": 1845,
@@ -1342,7 +1353,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1858,
     "title": "Die Krone übernimmt Indien",
-    "text": "Nach dem Aufstand von 1857 löst London die East India Company ab und regiert direkt. Aus Handelsherrschaft wird Kolonialverwaltung."
+    "text": "Nach dem Aufstand von 1857 löst London die East India Company ab und regiert direkt. Aus Handelsherrschaft wird Kolonialverwaltung.",
+    "vertiefung": "victoria"
    },
    {
     "year": 1916,
@@ -1489,7 +1501,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1516,
     "title": "Habsburger auf dem Thron",
-    "text": "Die Herrschaft der Habsburger beginnt und endet 1700, als Philipp V. als erster Bourbone König wird."
+    "text": "Die Herrschaft der Habsburger beginnt und endet 1700, als Philipp V. als erster Bourbone König wird.",
+    "vertiefung": "karl5"
    },
    {
     "year": 1519,
@@ -1506,12 +1519,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1545,
     "title": "Silber aus Potosí",
-    "text": "Der Berg in den Anden liefert jahrzehntelang das meiste Silber der Welt. Es finanziert die spanische Macht, treibt die Preise in Europa und kostet unzählige Zwangsarbeiter das Leben."
+    "text": "Der Berg in den Anden liefert jahrzehntelang das meiste Silber der Welt. Es finanziert die spanische Macht, treibt die Preise in Europa und kostet unzählige Zwangsarbeiter das Leben.",
+    "vertiefung": "philipp2-spanien"
    },
    {
     "year": 1556,
     "title": "Philipp II. übernimmt das Weltreich",
-    "text": "Sein Reich reicht von Peru bis zu den Philippinen. Vier Staatsbankrotte während seiner Regierung zeigen, dass Silber allein keine Macht trägt."
+    "text": "Sein Reich reicht von Peru bis zu den Philippinen. Vier Staatsbankrotte während seiner Regierung zeigen, dass Silber allein keine Macht trägt.",
+    "vertiefung": "philipp2-spanien"
    },
    {
     "year": 1588,
@@ -1527,7 +1542,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1700,
     "title": "Bourbonen und Erbfolgekrieg",
-    "text": "Der Tod des letzten spanischen Habsburgers löst einen europäischen Krieg aus. Spanien verliert seine europäischen Nebenländer, gewinnt aber eine zentralisierte Verwaltung."
+    "text": "Der Tod des letzten spanischen Habsburgers löst einen europäischen Krieg aus. Spanien verliert seine europäischen Nebenländer, gewinnt aber eine zentralisierte Verwaltung.",
+    "vertiefung": "spanischer-erbfolgekrieg"
    },
    {
     "year": 1808,
@@ -1918,7 +1934,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1130,
     "title": "Königreich Sizilien",
-    "text": "Normannen vereinen Süditalien und Sizilien zu einem Reich, in dem Lateiner, Griechen und Araber nebeneinander verwaltet werden."
+    "text": "Normannen vereinen Süditalien und Sizilien zu einem Reich, in dem Lateiner, Griechen und Araber nebeneinander verwaltet werden.",
+    "vertiefung": "friedrich2-staufer"
    },
    {
     "year": 1204,

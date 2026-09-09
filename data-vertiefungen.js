@@ -4594,5 +4594,454 @@ const VERTIEFUNGEN = [
     "Eunice Foote, 1856: Circumstances affecting the Heat of the Sun's Rays",
     "NOAA Global Monitoring Laboratory: Keeling-Kurve"
   ]
+},
+{
+  "id": "barbarossa",
+  "titel": "Friedrich Barbarossa",
+  "epoche": "mittelalter",
+  "jahr": 1152,
+  "zeitraum": "1152–1190",
+  "region": "Heiliges Römisches Reich",
+  "leitsatz": "Er verbrachte sein Leben damit, in Italien eine Kaisermacht durchzusetzen, die es nie gegeben hatte — und wurde nach seinem Tod zur Figur einer Erwartung, die es auch nie gab.",
+  "vorgeschichte": "Nach dem Investiturstreit war die Königsmacht geschwächt und der Streit zwischen Staufern und Welfen offen. Norditalien hatte sich derweil in wohlhabende Städte verwandelt, die ihre Angelegenheiten selbst regelten und im Kaiser eher einen entfernten Oberherrn sahen.",
+  "verlauf": "Friedrich zog sechsmal über die Alpen. Auf dem Reichstag von Roncaglia 1158 ließ er sich von Bologneser Rechtsgelehrten aus dem römischen Recht herleiten, welche Rechte dem Kaiser zustünden – Zölle, Münzrecht, Gerichtsbarkeit. Die Städte sahen darin einen Eingriff und schlossen sich im Lombardenbund zusammen; 1176 unterlag er ihnen bei Legnano. Der Friede von Konstanz 1183 überließ ihnen faktisch die Selbstverwaltung. Im Reich entmachtete er 1180 Heinrich den Löwen, den mächtigsten Fürsten, und verteilte dessen Herzogtümer – was die Königsmacht kurzfristig stärkte und langfristig die Zersplitterung förderte. 1190 ertrank er auf dem Dritten Kreuzzug im Fluss Saleph in Kleinasien.",
+  "folgen": "Die italienischen Städte behielten ihre Freiheiten und wurden zu den Trägern der Renaissance. Im Reich blieb die Machtbalance zugunsten der Fürsten verschoben. Die Bezeichnung Heiliges Reich stammt aus Barbarossas Kanzlei – ein Anspruch, der die Kaiserwürde vom Papst unabhängig begründen sollte.",
+  "strittig": "Die Sage vom im Kyffhäuser schlafenden Kaiser, der wiederkehrt, bezog sich ursprünglich auf seinen Enkel Friedrich II. und wurde erst im 19. Jahrhundert auf Barbarossa übertragen – als Bild für die ersehnte deutsche Einheit. Die Nationalsozialisten benannten später den Überfall auf die Sowjetunion nach ihm. Beides sagt mehr über die jeweilige Gegenwart als über den Kaiser.",
+  "zahlen": [
+    {
+      "wert": "38 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "6",
+      "was": "Italienzüge"
+    },
+    {
+      "wert": "1183",
+      "was": "Friede von Konstanz"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Frederick I",
+    "Knut Görich: Friedrich Barbarossa – Eine Biographie",
+    "Otto von Freising: Gesta Friderici (zeitgenössisch, parteiisch)"
+  ]
+},
+{
+  "id": "friedrich2-staufer",
+  "titel": "Friedrich II. – das Staunen der Welt",
+  "epoche": "mittelalter",
+  "jahr": 1212,
+  "zeitraum": "1212–1250",
+  "region": "Reich und Sizilien",
+  "leitsatz": "Ein Kaiser, der Arabisch sprach, Falken beobachtete und Jerusalem durch Verhandlung gewann — und deshalb zweimal gebannt wurde.",
+  "vorgeschichte": "Als Waise wuchs Friedrich in Palermo auf, in einem Sizilien mit lateinischen, griechischen und arabischen Bevölkerungsteilen. Er stand unter der Vormundschaft von Papst Innozenz III., der ihn förderte, weil er ihn für lenkbar hielt.",
+  "verlauf": "Friedrich verlagerte sein Interesse nach Süden: In den Konstitutionen von Melfi 1231 schuf er für Sizilien einen zentral verwalteten Staat mit besoldeten Beamten, staatlichen Gerichten und einem Verbot privater Fehden – Jahrhunderte vor vergleichbaren Ordnungen im Norden. Er gründete 1224 die Universität Neapel, die erste staatliche Hochschulgründung Europas. Den zugesagten Kreuzzug schob er auf und wurde gebannt; als er ihn dann führte, erhielt er Jerusalem 1229 durch einen Vertrag mit Sultan al-Kamil, ohne zu kämpfen – und wurde dafür erneut gebannt. Sein Buch über die Falkenjagd beruht auf eigener Beobachtung und widerspricht Aristoteles an mehreren Stellen ausdrücklich.",
+  "folgen": "Nach seinem Tod 1250 zerfiel die Reichsgewalt; es folgte das Interregnum. Sizilien fiel an fremde Dynastien. Für die Kaiseridee war sein Tod ein Bruch, von dem sie sich nicht erholte. In der Wissenschaftsgeschichte gilt er als früher Vertreter der Erfahrung gegen die Autorität.",
+  "strittig": "Zeitgenossen nannten ihn stupor mundi, das Staunen der Welt; päpstliche Schriften nannten ihn den Antichrist. Beides ist Wertung, nicht Beschreibung. Die oft erzählten Sprachexperimente an Säuglingen stammen aus einer einzigen, feindlich gesinnten Chronik und gelten als unbelegt. Die Vorstellung vom aufgeklärten Freidenker ist eine Deutung des 19. Jahrhunderts – gegen Ketzer ging er hart vor.",
+  "zahlen": [
+    {
+      "wert": "2",
+      "was": "Kirchenbanne"
+    },
+    {
+      "wert": "1224",
+      "was": "Gründung der Universität Neapel"
+    },
+    {
+      "wert": "1229",
+      "was": "Jerusalem durch Vertrag"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Frederick II",
+    "Wolfgang Stürner: Friedrich II.",
+    "Friedrich II.: De arte venandi cum avibus"
+  ]
+},
+{
+  "id": "karl5",
+  "titel": "Karl V. und das Reich, in dem die Sonne nicht unterging",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1519,
+  "zeitraum": "1516–1556",
+  "region": "Europa und Amerika",
+  "leitsatz": "Er erbte mehr Länder als jeder Herrscher vor ihm — und musste erleben, dass sich damit nichts zusammenhalten ließ.",
+  "vorgeschichte": "Vier Großeltern, vier Erbschaften: Von Maximilian kamen Österreich und der Anspruch auf die Kaiserwürde, von Maria von Burgund die Niederlande, von Isabella und Ferdinand Spanien mit Süditalien und Amerika. Karl war sechzehn, als er spanischer König wurde, und sprach zunächst kaum Spanisch.",
+  "verlauf": "1519 kaufte er sich mit Krediti der Fugger die Kaiserwahl gegen Franz I. von Frankreich. Es folgten vier Kriege gegen Frankreich, die Abwehr der Osmanen vor Wien und im Mittelmeer und der Umgang mit der Reformation: Auf dem Reichstag zu Worms 1521 verhängte er die Reichsacht über Luther, konnte sie aber nie durchsetzen, weil er anderswo gebunden war. Aus Amerika floss Silber, das zugleich seine Kriege finanzierte und die Preise in Europa trieb. 1555 musste er im Augsburger Religionsfrieden hinnehmen, dass der Landesherr die Konfession bestimmt. Ein Jahr später dankte er ab – als einziger Kaiser der Neuzeit freiwillig – und zog sich in ein Kloster in Extremadura zurück.",
+  "folgen": "Er teilte sein Erbe: Spanien, die Niederlande und Amerika an den Sohn Philipp, Österreich und die Kaiserwürde an den Bruder Ferdinand. Aus dieser Teilung entstanden die beiden habsburgischen Linien, die Europa noch zwei Jahrhunderte prägten. Die Vorstellung eines einheitlichen christlichen Kaisertums war endgültig gescheitert.",
+  "strittig": "Ob er an der Aufgabe scheiterte oder ob sie unlösbar war, ist die Kernfrage aller Darstellungen. Neuere Arbeiten betonen die schiere Entfernung: Ein Brief brauchte von Brüssel nach Madrid Wochen, nach Mexiko Monate. Der Satz über das Reich, in dem die Sonne nicht untergeht, stammt nicht von ihm, sondern wurde erst später auf sein Erbe gemünzt.",
+  "zahlen": [
+    {
+      "wert": "40 Jahre",
+      "was": "Regierungszeit in Spanien"
+    },
+    {
+      "wert": "ca. 850.000 Gulden",
+      "was": "Kosten der Kaiserwahl 1519"
+    },
+    {
+      "wert": "1556",
+      "was": "freiwillige Abdankung"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Charles V",
+    "Geoffrey Parker: Emperor – A New Life of Charles V",
+    "Alfred Kohler: Karl V. – Eine Biographie"
+  ]
+},
+{
+  "id": "maria-theresia",
+  "titel": "Maria Theresia",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1740,
+  "zeitraum": "1740–1780",
+  "region": "Habsburgermonarchie",
+  "leitsatz": "Sie musste ihr Erbe erst im Krieg verteidigen — und baute danach den Staat gründlicher um als jeder Habsburger vor ihr.",
+  "vorgeschichte": "Ihr Vater Karl VI. hatte jahrelang darauf verwandt, die Pragmatische Sanktion anerkennen zu lassen, damit eine Tochter erben konnte. Als er 1740 starb, hielt sich kaum jemand daran: Preußen marschierte in Schlesien ein, Bayern, Frankreich und Sachsen erhoben eigene Ansprüche.",
+  "verlauf": "Die dreiundzwanzigjährige Erbin hielt das Reich zusammen, unter anderem indem sie sich in Pressburg an die ungarischen Stände wandte und deren Unterstützung gewann. Schlesien blieb verloren – in drei Kriegen und über vierzig Jahren gelang die Rückeroberung nie. Daraus zog sie den Schluss, dass ein Staat, der bestehen will, anders verwaltet werden muss: zentrale Behörden statt ständischer Selbstverwaltung, eine allgemeine Steuer auch für Adel und Kirche, eine stehende Armee mit fester Finanzierung, ein einheitliches Gesetzbuch, die Abschaffung der Folter 1776, allgemeine Schulpflicht 1774. Sechzehn Kinder bekam sie in dieser Zeit, zehn davon überlebten.",
+  "folgen": "Aus einem Bündel von Ländern wurde ein verwalteter Staat. Die Schulpflicht war europaweit eine der frühesten; die Verwaltungsstruktur überdauerte die Monarchie. Ihre Tochter Marie Antoinette heiratete nach Frankreich, ihr Sohn Joseph II. trieb die Reformen weiter, als sie längst bremste.",
+  "strittig": "Das Bild der Landesmutter blendet aus, dass sie Protestanten zwangsumsiedelte, Juden 1744 aus Prag vertreiben ließ und eine Keuschheitskommission zur Sittenaufsicht einrichtete. Ihre Toleranz war Verwaltungspragmatismus, keine Überzeugung – in Glaubensfragen war sie unnachgiebig. Umstritten ist auch, wie viel der Reformen auf ihre Berater Haugwitz und Kaunitz zurückgeht.",
+  "zahlen": [
+    {
+      "wert": "40 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "16",
+      "was": "Kinder"
+    },
+    {
+      "wert": "1774",
+      "was": "allgemeine Schulpflicht"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Maria Theresa",
+    "Barbara Stollberg-Rilinger: Maria Theresia – Die Kaiserin in ihrer Zeit",
+    "Pieter M. Judson: Habsburg"
+  ]
+},
+{
+  "id": "franz-joseph",
+  "titel": "Franz Joseph und das Ende der Donaumonarchie",
+  "epoche": "moderne",
+  "jahr": 1848,
+  "zeitraum": "1848–1918",
+  "region": "Österreich-Ungarn",
+  "leitsatz": "68 Jahre auf dem Thron eines Reiches aus einem Dutzend Nationen — und die Unterschrift unter das Ultimatum, das den Weltkrieg auslöste.",
+  "vorgeschichte": "Er kam 1848 mit achtzehn Jahren im Revolutionsjahr auf den Thron, nachdem sein Onkel abgedankt und sein Vater verzichtet hatte. Die Aufgabe war von Anfang an dieselbe: ein Vielvölkerreich zusammenzuhalten, in dem der Nationalismus gerade zur bestimmenden Kraft wurde.",
+  "verlauf": "Militärisch verlief seine Regierung als Kette von Niederlagen: 1859 gegen Frankreich und Sardinien, 1866 gegen Preußen. Die Folge war der Ausgleich von 1867 – die Monarchie wurde in zwei Hälften geteilt, Österreich und Ungarn, mit eigenen Parlamenten und Regierungen, gemeinsam nur in Heer, Außenpolitik und Finanzen. Für die Ungarn war das ein Erfolg, für Tschechen, Kroaten, Slowaken, Rumänen und Polen der Beleg, dass Zugeständnisse möglich waren – nur nicht für sie. Persönlich traf ihn eine Reihe von Schlägen: sein Bruder Maximilian 1867 in Mexiko erschossen, sein Sohn Rudolf 1889 in Mayerling gestorben, seine Frau Elisabeth 1898 in Genf ermordet, sein Thronfolger Franz Ferdinand 1914 in Sarajevo. Auf das Attentat folgte das Ultimatum an Serbien, das er unterzeichnete.",
+  "folgen": "Er starb 1916 mitten im Krieg. Zwei Jahre später zerfiel die Monarchie in Nachfolgestaaten; sein Großneffe Karl I. verzichtete auf jeden Anteil an den Staatsgeschäften. Die Grenzen, die daraus entstanden, prägen Mitteleuropa bis heute – ebenso die Minderheitenfragen, die dabei ungelöst blieben.",
+  "strittig": "Ob die Monarchie an Strukturproblemen zerbrechen musste oder am Krieg zerbrach, wird seit hundert Jahren diskutiert. Ältere Darstellungen sahen einen Völkerkerker, der ohnehin dem Untergang geweiht war; neuere Arbeiten – etwa von Pieter Judson – betonen, dass Verwaltung, Wirtschaft und Rechtsstaat besser funktionierten als ihr Ruf und viele Bewohner die Monarchie durchaus schätzten.",
+  "zahlen": [
+    {
+      "wert": "68 Jahre",
+      "was": "Regierungszeit, die zweitlängste in Europa"
+    },
+    {
+      "wert": "1867",
+      "was": "Ausgleich mit Ungarn"
+    },
+    {
+      "wert": "ca. 11",
+      "was": "Sprachgruppen im Reich"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Francis Joseph",
+    "Pieter M. Judson: Habsburg – Geschichte eines Imperiums",
+    "Christopher Clark: Die Schlafwandler"
+  ]
+},
+{
+  "id": "iwan4",
+  "titel": "Iwan der Schreckliche",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1547,
+  "zeitraum": "1533–1584",
+  "region": "Russland",
+  "leitsatz": "Der erste Zar erweiterte das Reich nach Osten — und richtete gegen den eigenen Adel einen Terrorapparat ein, für den es kein Vorbild gab.",
+  "vorgeschichte": "Er wurde mit drei Jahren Großfürst; seine Mutter starb, als er acht war. Die Jahre danach verbrachte er zwischen rivalisierenden Bojarenfamilien, die um die Vormundschaft kämpften – eine Erfahrung, auf die spätere Darstellungen sein Misstrauen zurückführen.",
+  "verlauf": "1547 ließ er sich als erster russischer Herrscher zum Zaren krönen. Die ersten Jahre gelten als Reformzeit: neues Gesetzbuch, Landesversammlung, Heeresreform, Eroberung von Kasan 1552 und Astrachan 1556 – damit wurde Moskau ein Vielvölkerreich und der Weg nach Sibirien frei. Ab 1565 richtete er die Opritschnina ein: ein eigenes Herrschaftsgebiet mit eigener Truppe, die sich schwarz kleidete und Hundekopf und Besen als Zeichen führte. Sie enteignete, verschleppte und tötete Adlige und ganze Städte – die Strafaktion gegen Nowgorod 1570 kostete tausende Menschen das Leben. Der Livländische Krieg um einen Ostseezugang dauerte 25 Jahre und endete ohne Gewinn. 1581 erschlug er im Zorn seinen eigenen Thronfolger.",
+  "folgen": "Das Reich war größer, der Adel gebrochen, das Land wirtschaftlich ausgeblutet. Weil kein regierungsfähiger Erbe blieb, folgte nach dem Tod seines schwachen Sohnes Fjodor die Zeit der Wirren – fünfzehn Jahre Bürgerkrieg und Fremdherrschaft.",
+  "strittig": "Der russische Beiname Grosny bedeutet eher der Gestrenge oder Furchteinflößende als der Schreckliche; die deutsche Übersetzung verschiebt den Sinn. Über sein Handeln gehen die Urteile weit auseinander: Für die einen ein Psychopath, für die anderen ein Herrscher, der mit den Mitteln seiner Zeit die Zentralgewalt durchsetzte. Stalin ließ ihn in den 1940er Jahren gezielt als vorbildlichen Staatsmann darstellen – eine Deutung, die bis heute nachwirkt.",
+  "zahlen": [
+    {
+      "wert": "51 Jahre",
+      "was": "Herrschaft, davon 37 als Zar"
+    },
+    {
+      "wert": "1565–1572",
+      "was": "Opritschnina"
+    },
+    {
+      "wert": "1552",
+      "was": "Eroberung von Kasan"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Ivan the Terrible",
+    "Isabel de Madariaga: Ivan the Terrible",
+    "Andrei Pavlov und Maureen Perrie: Ivan the Terrible"
+  ]
+},
+{
+  "id": "katharina2",
+  "titel": "Katharina die Große",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1762,
+  "zeitraum": "1762–1796",
+  "region": "Russland",
+  "leitsatz": "Sie korrespondierte mit Voltaire über Freiheit und dehnte gleichzeitig die Leibeigenschaft weiter aus als jeder Herrscher vor ihr.",
+  "vorgeschichte": "Geboren als Sophie von Anhalt-Zerbst, mit fünfzehn nach Russland verheiratet, konvertiert und umbenannt. Ihr Mann Peter III. machte sich in einem halben Jahr bei Garde und Adel unmöglich; ein Staatsstreich brachte sie 1762 an die Macht, wenige Tage später war er tot.",
+  "verlauf": "Sie berief 1767 eine Gesetzgebende Kommission ein und legte ihr eine von Montesquieu und Beccaria beeinflusste Instruktion vor – die Kommission tagte anderthalb Jahre und beschloss nichts. Nach dem Pugatschow-Aufstand 1773, an dem sich Leibeigene, Kosaken und Nichtrussen beteiligten, verschärfte sie den Kurs: Die Adelsurkunde von 1785 machte den Adel steuerfrei und dienstfrei, die Leibeigenen wurden endgültig zu Verfügungsmasse ihrer Herren. Außenpolitisch gewann Russland durch die Kriege gegen die Osmanen den Zugang zum Schwarzen Meer und die Krim, durch die drei Teilungen Polens große Gebiete im Westen – Polen verschwand für 123 Jahre von der Landkarte. Sie gründete die Eremitage, das erste staatliche Mädcheninstitut und förderte Impfungen, indem sie sich selbst öffentlich gegen Pocken impfen ließ.",
+  "folgen": "Russland war Großmacht ersten Ranges, die Adelsherrschaft gefestigt, die soziale Frage vertagt. Die Diskrepanz zwischen aufgeklärter Sprache und leibeigener Wirklichkeit wurde für das 19. Jahrhundert zum Ausgangspunkt der russischen Gesellschaftskritik.",
+  "strittig": "Die Potemkinschen Dörfer – bemalte Kulissen zur Täuschung der Zarin – gelten heute als Erfindung eines sächsischen Diplomaten; die Reise auf die Krim war eine Inszenierung, aber keine Fälschung. Auch die berüchtigten Anekdoten über ihr Privatleben stammen überwiegend aus feindlicher Propaganda ihrer Zeit. Umstritten bleibt, ob ihre Reformabsichten ernst gemeint waren oder Fassade.",
+  "zahlen": [
+    {
+      "wert": "34 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "3",
+      "was": "Teilungen Polens"
+    },
+    {
+      "wert": "1785",
+      "was": "Adelsurkunde"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Catherine the Great",
+    "Isabel de Madariaga: Russia in the Age of Catherine the Great",
+    "Simon Sebag Montefiore: Die Romanows"
+  ]
+},
+{
+  "id": "sueleyman",
+  "titel": "Süleyman der Prächtige",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1520,
+  "zeitraum": "1520–1566",
+  "region": "Osmanisches Reich",
+  "leitsatz": "Im Westen heißt er der Prächtige, in der Türkei der Gesetzgeber — die beiden Namen beschreiben dasselbe Wirken aus zwei Blickwinkeln.",
+  "vorgeschichte": "Sein Vater Selim I. hatte das Reich in acht Jahren verdoppelt und mit Mekka und Medina den Kalifentitel gewonnen. Süleyman übernahm 1520 ein Reich in bester Verfassung, ohne Rivalen im Inneren – er war der einzige überlebende Sohn.",
+  "verlauf": "Militärisch: Belgrad 1521, Rhodos 1522, der Sieg bei Mohács 1526, der Vorstoß bis vor Wien 1529, Bagdad 1534, dazu eine Flotte, die unter Barbarossa das Mittelmeer beherrschte. Innenpolitisch ordnete er das weltliche Recht neu und glich es mit dem religiösen ab – daher der Beiname Kanuni, der Gesetzgeber. Der Baumeister Sinan errichtete in seiner Zeit über dreihundert Bauten, darunter die Süleymaniye-Moschee. Er heiratete Hürrem, eine Frau aus dem Harem, was mit der Gewohnheit brach; sie wurde politisch einflussreich. Zwei eigene Söhne ließ er hinrichten, weil er Aufstände fürchtete. Er starb 1566 im Feldlager während der Belagerung von Szigetvár; sein Tod wurde 48 Tage lang geheim gehalten, damit das Heer nicht auseinanderlief.",
+  "folgen": "Das Reich erreichte seine größte Machtstellung. Danach begann, was die ältere Forschung Niedergang nannte: Die Sultane führten die Heere nicht mehr selbst, die Macht verlagerte sich zu Wesiren und Palast. Neuere Arbeiten sprechen eher von Wandel als von Verfall – das Reich bestand noch dreieinhalb Jahrhunderte.",
+  "strittig": "Die Erzählung vom Niedergang nach Süleyman stammt teilweise von osmanischen Autoren des 17. Jahrhunderts, die eine goldene Vergangenheit gegen ihre Gegenwart hielten, und wurde von europäischen Historikern übernommen. Ob die Hinrichtung seiner Söhne auf Intrigen Hürrems zurückging, wie oft erzählt, lässt sich nicht belegen.",
+  "zahlen": [
+    {
+      "wert": "46 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "13",
+      "was": "Feldzüge, die er selbst führte"
+    },
+    {
+      "wert": "48 Tage",
+      "was": "Geheimhaltung seines Todes"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Süleyman the Magnificent",
+    "Caroline Finkel: Osman's Dream",
+    "Halil İnalcık: The Ottoman Empire"
+  ]
+},
+{
+  "id": "osmanen-ende",
+  "titel": "Das Ende des Osmanischen Reiches",
+  "epoche": "moderne",
+  "jahr": 1908,
+  "zeitraum": "1876–1924",
+  "region": "Osmanisches Reich und Türkei",
+  "leitsatz": "Ein Reich, das sich zweimal eine Verfassung gab und beide Male daran scheiterte, ein Vielvölkerreich in ein Nationalstaatszeitalter zu retten.",
+  "vorgeschichte": "Seit den Tanzimat-Reformen ab 1839 galt formal Rechtsgleichheit für alle Untertanen unabhängig von der Religion. Zugleich lösten sich Griechenland, Serbien, Rumänien und Bulgarien nacheinander heraus. Das Reich war hoch verschuldet; ab 1881 verwaltete eine europäische Schuldenkommission Teile seiner Einnahmen.",
+  "verlauf": "1876 trat die erste Verfassung in Kraft; Abdülhamid II. setzte sie nach zwei Jahren aus und regierte 33 Jahre mit Zensur und Geheimdienst – in seine Zeit fallen auch die Massaker an Armeniern in den 1890er Jahren. 1908 erzwangen die Jungtürken die Rückkehr zur Verfassung, ein Jahr später setzten sie den Sultan ab. Die Balkankriege 1912/13 kosteten fast das gesamte europäische Gebiet. Im Ersten Weltkrieg kämpfte das Reich an der Seite Deutschlands; 1915/16 wurde der Völkermord an den Armeniern begangen. Der Vertrag von Sèvres 1920 sah die Aufteilung Anatoliens vor. Dagegen erhob sich eine Nationalbewegung unter Mustafa Kemal, die den Befreiungskrieg gewann und 1923 in Lausanne neue Grenzen durchsetzte.",
+  "folgen": "Das Sultanat wurde 1922 abgeschafft, die Republik 1923 ausgerufen, das Kalifat 1924 beseitigt – nach 1.300 Jahren als Institution des Islam. Mit Griechenland wurde ein Bevölkerungsaustausch nach Religionszugehörigkeit vereinbart, der über 1,5 Millionen Menschen betraf. Aus den arabischen Provinzen entstanden unter britischer und französischer Mandatsverwaltung die heutigen Staaten des Nahen Ostens – mit Grenzen, die in Europa gezogen wurden.",
+  "strittig": "Der Völkermord an den Armeniern ist historisch gut belegt und wird von der Türkei als solcher bis heute nicht anerkannt; die Einordnung ist Gegenstand eines aktiven politischen Streits, nicht eines wissenschaftlichen. Umstritten ist auch, ob das Reich unrettbar war: Die ältere These vom kranken Mann am Bosporus stammt aus europäischen Kanzleien des 19. Jahrhunderts und diente der Rechtfertigung eigener Ansprüche.",
+  "zahlen": [
+    {
+      "wert": "623 Jahre",
+      "was": "Bestand der Dynastie"
+    },
+    {
+      "wert": "1922",
+      "was": "Abschaffung des Sultanats"
+    },
+    {
+      "wert": "1924",
+      "was": "Abschaffung des Kalifats"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Ottoman Empire; Turkey, history",
+    "Caroline Finkel: Osman's Dream",
+    "Erik-Jan Zürcher: Turkey – A Modern History",
+    "Vertrag von Lausanne 1923, Vertragstext"
+  ]
+},
+{
+  "id": "heinrich8",
+  "titel": "Heinrich VIII. und der Bruch mit Rom",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1534,
+  "zeitraum": "1509–1547",
+  "region": "England",
+  "leitsatz": "Der größte Eigentumsumbau der englischen Geschichte begann mit einer Ehefrage — und endete in der Auflösung von 800 Klöstern.",
+  "vorgeschichte": "Heinrich hatte vom Papst den Titel Verteidiger des Glaubens erhalten, weil er gegen Luther geschrieben hatte. Seine Ehe mit Katharina von Aragón brachte jedoch keinen überlebenden Sohn, und er hielt eine Nachfolgerin für nicht durchsetzbar – die Erinnerung an die Rosenkriege lag zwei Generationen zurück.",
+  "verlauf": "Als Rom die Annullierung verweigerte – auch weil Katharinas Neffe Karl V. gerade Rom kontrollierte –, ließ Heinrich sich 1534 durch die Suprematsakte zum Oberhaupt der Kirche von England erklären. Wer den Eid verweigerte, wurde hingerichtet, darunter Thomas Morus. Es folgte die Auflösung der Klöster: Ihr Land, etwa ein Viertel bis ein Sechstel des englischen Bodens, ging an die Krone und wurde weiterverkauft. Von seinen sechs Ehen endeten zwei mit Annullierung, zwei mit Hinrichtung, eine mit dem Tod im Kindbett.",
+  "folgen": "England wurde protestantisch – zunächst mehr in der Verfassung als im Glauben; die theologische Reformation kam unter seinem Sohn Eduard VI. Der Landverkauf schuf eine neue Grundbesitzerschicht, deren Vermögen an der Trennung von Rom hing – ein wirtschaftlicher Grund, warum die Rückkehr zum Katholizismus unter Maria I. scheiterte. Die Krone gewann Einkünfte, gab sie für Kriege gegen Frankreich und Schottland aber rasch wieder aus.",
+  "strittig": "Ob Heinrich aus Überzeugung oder aus dynastischer Not handelte, ist die alte Frage; die Quellen stützen beides. Umstritten ist auch, wie schlecht es um die Klöster stand: Die Berichte der königlichen Kommissare beschrieben Verfall und Missstände – sie wurden von Leuten verfasst, die den Auftrag hatten, die Auflösung zu begründen.",
+  "zahlen": [
+    {
+      "wert": "6",
+      "was": "Ehen"
+    },
+    {
+      "wert": "ca. 800",
+      "was": "aufgelöste Klöster"
+    },
+    {
+      "wert": "38 Jahre",
+      "was": "Regierungszeit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Henry VIII",
+    "Diarmaid MacCulloch: Thomas Cromwell",
+    "G. W. Bernard: The King's Reformation"
+  ]
+},
+{
+  "id": "elisabeth1",
+  "titel": "Elisabeth I.",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1558,
+  "zeitraum": "1558–1603",
+  "region": "England",
+  "leitsatz": "Sie regierte 45 Jahre ohne zu heiraten — in einem Jahrhundert, in dem die Ehe einer Königin als einzige Lösung ihres Problems galt.",
+  "vorgeschichte": "Tochter Heinrichs VIII. und Anne Boleyns, nach der Hinrichtung ihrer Mutter für unehelich erklärt, unter ihrer katholischen Halbschwester Maria zeitweise im Tower. Sie übernahm 1558 ein Land, das binnen 25 Jahren dreimal die Konfession gewechselt hatte, Calais verloren hatte und verschuldet war.",
+  "verlauf": "Ihre Kirchenordnung von 1559 suchte einen mittleren Weg: protestantische Lehre, weitgehend beibehaltene Formen, kein Zwang zur inneren Überzeugung – sie wollte, wie es überliefert ist, keine Fenster in die Herzen der Menschen öffnen. Nach der Exkommunikation 1570 verschärfte sich das Vorgehen gegen Katholiken, mehrere Verschwörungen wurden aufgedeckt. 1587 ließ sie ihre Cousine Maria Stuart hinrichten, nach jahrelangem Zögern. 1588 scheiterte die spanische Armada. Ihre Heiratsverhandlungen mit mehreren Fürstenhäusern zogen sich über Jahrzehnte – vermutlich bewusst, weil ein unentschiedener Zustand ihr außenpolitisch mehr Spielraum ließ als jede Entscheidung.",
+  "folgen": "England wurde dauerhaft protestantisch und zur Seemacht; die ersten Kolonialversuche in Nordamerika und die Gründung der East India Company 1600 fallen in ihre Zeit. In ihrer Regierung schrieben Shakespeare und Marlowe. Weil sie kinderlos starb, ging die Krone an den schottischen König Jakob – der Anfang der britischen Personalunion.",
+  "strittig": "Das Bild der Virgin Queen ist Teil einer bewusst gepflegten Selbstdarstellung, an der die Königin selbst mitarbeitete; die Historiographie des 19. Jahrhunderts baute daraus ein goldenes Zeitalter. Neuere Arbeiten betonen die Kehrseite: Inflation, Missernten, harte Armengesetze, den Beginn des englischen Sklavenhandels unter Hawkins und die brutale Kriegführung in Irland.",
+  "zahlen": [
+    {
+      "wert": "45 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "1570",
+      "was": "Exkommunikation durch den Papst"
+    },
+    {
+      "wert": "1588",
+      "was": "Scheitern der Armada"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Elizabeth I",
+    "John Guy: Elizabeth – The Forgotten Years",
+    "Susan Doran: Elizabeth I and Her Circle"
+  ]
+},
+{
+  "id": "victoria",
+  "titel": "Victoria und das Empire",
+  "epoche": "industrialisierung",
+  "jahr": 1837,
+  "zeitraum": "1837–1901",
+  "region": "Großbritannien und Empire",
+  "leitsatz": "Unter ihr wurde die Krone politisch entmachtet und zugleich zum Symbol eines Reiches, das ein Viertel der Erde umfasste.",
+  "vorgeschichte": "Sie kam mit achtzehn Jahren auf den Thron, nach einer Reihe von Königen, deren Lebenswandel die Monarchie unbeliebt gemacht hatte. Das Wahlrecht war 1832 gerade erweitert worden; die Industrialisierung veränderte das Land schneller als jede Regierung folgen konnte.",
+  "verlauf": "In 63 Jahren amtierten zehn Premierminister. Ihr Einfluss auf die Politik nahm stetig ab – nach dem Tod ihres Mannes Albert 1861 zog sie sich für Jahre fast ganz zurück, was der Monarchie beinahe gefährlich wurde. Zurück in die Öffentlichkeit holte sie unter anderem Disraeli, der ihr 1876 den Titel Kaiserin von Indien verschaffte. Das Empire wuchs in dieser Zeit auf rund ein Viertel der Landfläche der Erde; die Kolonialkriege, die das ermöglichten, wurden im Mutterland als Zivilisationsleistung dargestellt. Innenpolitisch brachten die Reform Acts von 1867 und 1884 das Wahlrecht für einen Großteil der Männer.",
+  "folgen": "Am Ende ihrer Regierung war klar, was seither gilt: Der Monarch herrscht, regiert aber nicht. Durch die Ehen ihrer neun Kinder war sie mit fast allen europäischen Häusern verwandt – Wilhelm II. und Zar Nikolaus II. waren ihre Enkel beziehungsweise deren Ehepartner. Die Hämophilie in ihrer Familie erreichte über eine Tochter auch die Romanows und wurde dort politisch folgenreich.",
+  "strittig": "Das Etikett viktorianisch für Prüderie und Enge trifft die Zeit nur teilweise und stammt großenteils aus der Abgrenzung späterer Generationen. Umstritten ist heute vor allem die Erinnerungspolitik: Hungersnöte in Indien und Irland, Opiumkriege und Kolonialkriege gehören zur Bilanz derselben Jahrzehnte, die als Blütezeit erinnert werden.",
+  "zahlen": [
+    {
+      "wert": "63 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "10",
+      "was": "Premierminister"
+    },
+    {
+      "wert": "ca. 25 %",
+      "was": "Anteil des Empire an der Landfläche der Erde um 1900"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Victoria",
+    "A. N. Wilson: Victoria – A Life",
+    "Jan Morris: Pax Britannica"
+  ]
+},
+{
+  "id": "philipp2-spanien",
+  "titel": "Philipp II. und die Grenzen des Silbers",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1556,
+  "zeitraum": "1556–1598",
+  "region": "Spanien und Weltreich",
+  "leitsatz": "Er regierte über vier Kontinente und ging viermal bankrott — mehr Geld hat selten weniger genützt.",
+  "vorgeschichte": "Von seinem Vater Karl V. erbte er Spanien, die Niederlande, Süditalien und Amerika, nicht aber die Kaiserwürde. Das Silber aus Potosí floss seit 1545 in wachsenden Mengen nach Sevilla.",
+  "verlauf": "Philipp regierte vom Schreibtisch aus, las und beschrieb Akten eigenhändig und verlangte über Kontinente hinweg Berichte – ein Verwaltungsstil, der ihn den Beinamen der Aktenkönig eintrug und Entscheidungen oft um Monate verzögerte. 1571 siegte seine Flotte bei Lepanto, 1580 erbte er Portugal samt dessen Reich. Zugleich begann 1568 der Aufstand in den Niederlanden, der achtzig Jahre dauern sollte, und 1588 scheiterte die Armada gegen England. Das Silber ging fast vollständig für Kriege und Zinsen an Genueser und deutsche Bankiers; Staatsbankrotte gab es 1557, 1560, 1575 und 1596.",
+  "folgen": "Spanien blieb bis weit ins 17. Jahrhundert Großmacht, aber die wirtschaftliche Grundlage war ausgehöhlt: Der Silberstrom trieb die Preise, machte einheimische Waren teuer und Einfuhren billig – Handwerk und Landwirtschaft verkümmerten. Die nördlichen Niederlande wurden unabhängig und binnen einer Generation zur führenden Handelsmacht Europas.",
+  "strittig": "Die Schwarze Legende – das Bild eines finsteren, fanatischen Spaniens – wurde in den Niederlanden und England gezielt verbreitet und prägte die Darstellung jahrhundertelang. Die Gegenbewegung neigt umgekehrt zur Beschönigung. Historisch gut belegt sind beides: eine sorgfältige, rechtlich gebundene Verwaltung und die harte Repression in den Niederlanden.",
+  "zahlen": [
+    {
+      "wert": "42 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "4",
+      "was": "Staatsbankrotte"
+    },
+    {
+      "wert": "1580",
+      "was": "Personalunion mit Portugal"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Philip II",
+    "Geoffrey Parker: Imprudent King – A New Life of Philip II",
+    "Henry Kamen: Philip of Spain"
+  ]
+},
+{
+  "id": "spanischer-erbfolgekrieg",
+  "titel": "Der Spanische Erbfolgekrieg",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1701,
+  "zeitraum": "1700–1714",
+  "region": "Europa und Kolonien",
+  "leitsatz": "Ein kinderloser König starb — und dreizehn Jahre lang kämpfte halb Europa darum, wer sein Testament vollstrecken durfte.",
+  "vorgeschichte": "Karl II. von Spanien war das Ergebnis von Generationen habsburgischer Verwandtenehen: schwer krank, kinderlos, seit seiner Geburt Gegenstand von Erbverhandlungen. Sein Reich umfasste Spanien, Süditalien, die spanischen Niederlande und Amerika. Frankreich und Österreich hatten beide Ansprüche durch Heirat; keine andere Macht konnte hinnehmen, dass eines von ihnen alles bekam.",
+  "verlauf": "Karls Testament setzte einen Enkel Ludwigs XIV. als Alleinerben ein. Als Ludwig zusätzlich dessen französische Thronrechte offenhielt und spanische Häfen für französischen Handel öffnete, bildete sich eine Große Allianz aus England, den Niederlanden und Österreich. Marlborough und Prinz Eugen schlugen die Franzosen bei Höchstädt 1704, Ramillies, Oudenaarde und Malplaquet – Letzteres so verlustreich, dass es als Sieg kaum zählte. In Spanien selbst wurde der Krieg zum Bürgerkrieg: Kastilien stand zum Bourbonen, Katalonien und Aragón zum Habsburger. Ein politischer Zufall beendete ihn: 1711 erbte der österreichische Thronanwärter die Kaiserwürde – ein Habsburger mit Spanien und Reich wäre genau das Machtungleichgewicht gewesen, das man verhindern wollte.",
+  "folgen": "Die Verträge von Utrecht und Rastatt teilten das Erbe: Philipp V. behielt Spanien und Amerika unter Verzicht auf Frankreich, Österreich bekam die Niederlande und Italien, England Gibraltar, Menorca und das Monopol auf den Sklavenhandel mit Spanisch-Amerika. Die katalanischen Sonderrechte wurden aufgehoben – der 11. September 1714, der Fall Barcelonas, ist bis heute katalonischer Nationalfeiertag. In Utrecht wurde erstmals das Gleichgewicht der Mächte ausdrücklich als Vertragsziel genannt.",
+  "strittig": "Ob der Krieg vermeidbar war, wird diskutiert: Es hatte Teilungsverträge gegeben, die Ludwig XIV. zunächst mitgetragen hatte. Umstritten ist auch, wie stark Karls Testament von spanischen Hofparteien beeinflusst war, die eine Zerstückelung des Reiches unbedingt verhindern wollten.",
+  "zahlen": [
+    {
+      "wert": "13 Jahre",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "1713/1714",
+      "was": "Utrecht und Rastatt"
+    },
+    {
+      "wert": "1714",
+      "was": "Fall Barcelonas"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: War of the Spanish Succession",
+    "John Lynn: The Wars of Louis XIV",
+    "Friede von Utrecht, Vertragstexte"
+  ]
 }
 ];
