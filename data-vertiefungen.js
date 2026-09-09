@@ -5400,5 +5400,233 @@ const VERTIEFUNGEN = [
     "Codex Florentinus, Buch 12 (indigene Sicht, nach 1550 aufgezeichnet)",
     "Matthew Restall: Seven Myths of the Spanish Conquest"
   ]
+},
+{
+  "id": "angkor",
+  "titel": "Angkor",
+  "epoche": "mittelalter",
+  "jahr": 1113,
+  "zeitraum": "802–1431",
+  "region": "Kambodscha",
+  "leitsatz": "Die größte vorindustrielle Stadt der Welt lag nicht in Europa oder China, sondern im Dschungel Kambodschas — und wurde vom Wasser getragen, an dem sie am Ende vermutlich scheiterte.",
+  "vorgeschichte": "Am Tonle-Sap-See, dessen Wasserstand sich im Jahreslauf um mehrere Meter ändert, lebten seit Jahrhunderten Reisbauern. 802 erklärte sich Jayavarman II. auf dem Kulen-Berg zum universellen Herrscher und löste das Gebiet aus javanischer Oberhoheit – die traditionelle Gründung des Khmer-Reiches.",
+  "verlauf": "Über sechs Jahrhunderte entstand ein System aus Kanälen, Dämmen und Stauseen, das Wasser der Regenzeit speicherte und in der Trockenzeit verteilte. Satellitengestützte Radarvermessungen haben ab 2007 gezeigt, wie weit die besiedelte Fläche reichte: rund 1.000 Quadratkilometer, mit einer Bevölkerung, die auf mehrere hunderttausend Menschen geschätzt wird. Suryavarman II. ließ ab 1113 Angkor Wat errichten, den größten religiösen Bau der Welt – ursprünglich Vishnu geweiht, später buddhistisch genutzt und deshalb nie aufgegeben. Jayavarman VII. baute nach der Vertreibung der Cham die ummauerte Stadt Angkor Thom mit dem Bayon und dessen Gesichtertürmen; eine Inschrift schreibt ihm 102 Krankenhäuser und 121 Rasthäuser an den Reichsstraßen zu.",
+  "folgen": "1431 nahm Ayutthaya die Stadt; der Hof zog nach Süden. Angkor Wat blieb als buddhistisches Heiligtum in Gebrauch und war nie vergessen – die europäische Erzählung von der im Dschungel wiederentdeckten Stadt ist ein Missverständnis des 19. Jahrhunderts. Der Tempel steht heute auf der kambodschanischen Flagge.",
+  "strittig": "Warum Angkor als Zentrum endete, ist ungeklärt. Die Eroberung allein erklärt es nicht. Jahrringuntersuchungen an Bäumen der Region zeigen im 14. und 15. Jahrhundert schwere Dürren im Wechsel mit heftigen Monsunjahren – ein Wasserbausystem, das auf verlässliche Zyklen ausgelegt war, hätte darunter gelitten. Diskutiert werden außerdem der Wechsel zum Theravada-Buddhismus, der die Legitimation des Gottkönigtums entwertete, und die Verlagerung des Handels an die Küsten.",
+  "zahlen": [
+    {
+      "wert": "ca. 1.000 km²",
+      "was": "besiedelte Fläche nach Radarvermessung"
+    },
+    {
+      "wert": "162 ha",
+      "was": "Fläche der Anlage von Angkor Wat"
+    },
+    {
+      "wert": "37 Jahre",
+      "was": "Regierungszeit Jayavarmans VII."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Angkor",
+    "Charles Higham: The Civilization of Angkor",
+    "Damian Evans u. a., PNAS 2007 und 2013: Airborne laser scanning in Angkor",
+    "Brendan Buckley u. a., PNAS 2010: Climate as a contributing factor in the demise of Angkor"
+  ]
+},
+{
+  "id": "dai-viet",
+  "titel": "Vietnam und die tausend Jahre danach",
+  "epoche": "mittelalter",
+  "jahr": 939,
+  "zeitraum": "111 v. Chr. – 1428",
+  "region": "Vietnam",
+  "leitsatz": "Tausend Jahre chinesische Herrschaft, dann tausend Jahre Behauptung gegen China — mit chinesischer Schrift, chinesischem Beamtenexamen und der beharrlichen Weigerung, chinesisch zu werden.",
+  "vorgeschichte": "111 v. Chr. eroberte die Han-Dynastie das Gebiet des heutigen Nordvietnam. Es blieb über tausend Jahre chinesische Provinz. Aufstände gab es immer wieder – der bekannteste, den die Schwestern Trung 40 n. Chr. anführten, dauerte drei Jahre und ist bis heute Teil der nationalen Erinnerung.",
+  "verlauf": "939 schlug Ngo Quyen am Fluss Bach Dang eine chinesische Flotte, indem er eisenbeschlagene Pfähle ins Flussbett rammen ließ, die bei Ebbe die Schiffe aufspießten. Die Unabhängigkeit hielt. Was folgte, ist das Bemerkenswerte: Vietnam übernahm chinesische Schrift, Verwaltung, Beamtenprüfungen und Konfuzianismus – und verteidigte sich mit diesen Mitteln gegen China. 1288 wiederholte Tran Hung Dao gegen die Mongolen dieselbe Pfahlfalle im selben Fluss. 1428 vertrieb Le Loi nach zehnjährigem Widerstandskrieg eine erneute chinesische Besetzung; die Proklamation seines Beraters Nguyen Trai gilt als eine der Gründungsschriften vietnamesischen Selbstverständnisses.",
+  "folgen": "Vietnam blieb tributpflichtig, aber unabhängig – ein Verhältnis, das beiden Seiten passte. Die Ausdehnung nach Süden auf Kosten des Champa-Reichs und der Khmer verdreifachte das Staatsgebiet bis ins 18. Jahrhundert. Das Muster – kulturelle Nähe, politische Abgrenzung – prägt das Verhältnis zu China bis heute.",
+  "strittig": "Ob die tausend Jahre chinesischer Herrschaft als Fremdherrschaft oder als Formungsphase zu verstehen sind, wird unterschiedlich beantwortet; die vietnamesische Geschichtsschreibung betont den durchgehenden Widerstand, neuere Arbeiten weisen darauf hin, dass die lokale Elite über weite Strecken mitregierte. Die Schwestern Trung sind historisch belegt, ihre Darstellung als Nationalheldinnen ist eine Zuschreibung späterer Jahrhunderte.",
+  "zahlen": [
+    {
+      "wert": "1.050 Jahre",
+      "was": "chinesische Herrschaft von 111 v. Chr. bis 939"
+    },
+    {
+      "wert": "3",
+      "was": "abgewehrte mongolische Invasionen"
+    },
+    {
+      "wert": "2",
+      "was": "Siege am Bach Dang mit derselben Pfahlfalle, 350 Jahre auseinander"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Vietnam, history",
+    "Keith W. Taylor: A History of the Vietnamese",
+    "Ben Kiernan: Viet Nam – A History from Earliest Times to the Present"
+  ]
+},
+{
+  "id": "aksum",
+  "titel": "Aksum und die frühe Christianisierung Äthiopiens",
+  "epoche": "antike",
+  "jahr": 340,
+  "zeitraum": "ca. 100–940",
+  "region": "Horn von Afrika",
+  "leitsatz": "Ein persischer Autor des 3. Jahrhunderts zählte Aksum neben Rom, Persien und China zu den vier großen Reichen der Welt.",
+  "vorgeschichte": "Im äthiopischen Hochland und am Roten Meer entstand aus Handelssiedlungen ein Reich, das den Warenverkehr zwischen dem Mittelmeerraum, Arabien und Indien vermittelte: Elfenbein, Gold, Weihrauch und Sklaven nach Norden, Textilien und Metallwaren nach Süden. Aksum prägte eigene Münzen in Gold, Silber und Bronze – als einer der wenigen Staaten Afrikas jener Zeit.",
+  "verlauf": "Um 340 trat König Ezana zum Christentum über. Die Münzen belegen den Wechsel unmittelbar: Wo vorher Sonne und Mond standen, erscheint danach das Kreuz. Der Überlieferung nach wirkte dabei Frumentius, ein aus Syrien verschlagener junger Mann, der am Hof aufwuchs und später erster Bischof wurde. Damit gehört Äthiopien zu den frühesten christlichen Staaten überhaupt – vor dem Römischen Reich, in dem das Christentum erst 380 Staatsreligion wurde. Um 520 führte König Kaleb einen Feldzug über das Rote Meer nach Südarabien, um dort verfolgte Christen zu schützen; der Vorgang beschäftigte Konstantinopel und Persien gleichermaßen.",
+  "folgen": "Aksum verlor ab dem 7. Jahrhundert seine Grundlage, als sich der Handel des Roten Meeres verlagerte, und zog sich ins Hochland zurück. Die äthiopisch-orthodoxe Kirche überdauerte – mit eigener Liturgiesprache, eigenem Kanon und einem Gottesdienst, der bis heute Elemente bewahrt, die anderswo verschwunden sind. Die Stelen von Aksum, bis zu 33 Meter hohe Monolithen, stehen noch; eine wurde 1937 von Italien nach Rom verbracht und 2005 zurückgegeben.",
+  "strittig": "Die Regierungsdaten beruhen fast nur auf Münzprägungen und wenigen Inschriften und schwanken um Jahrzehnte. Die Überlieferung, die Bundeslade werde in Aksum aufbewahrt, ist Teil der äthiopischen Kirchentradition; eine Überprüfung wird nicht zugelassen, und historisch gibt es keinen Beleg dafür.",
+  "zahlen": [
+    {
+      "wert": "ca. 340",
+      "was": "Übertritt Ezanas zum Christentum"
+    },
+    {
+      "wert": "33 m",
+      "was": "Höhe der größten Stele"
+    },
+    {
+      "wert": "40 Jahre",
+      "was": "vor der Erhebung des Christentums zur römischen Staatsreligion"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Aksum",
+    "Stuart Munro-Hay: Aksum – An African Civilisation of Late Antiquity",
+    "David W. Phillipson: Foundations of an African Civilisation"
+  ]
+},
+{
+  "id": "lalibela",
+  "titel": "Die Felsenkirchen von Lalibela",
+  "epoche": "mittelalter",
+  "jahr": 1200,
+  "zeitraum": "ca. 1181–1221",
+  "region": "Äthiopien",
+  "leitsatz": "Elf Kirchen, nicht gebaut, sondern aus dem anstehenden Fels herausgearbeitet — von oben nach unten, ohne Möglichkeit, einen Fehler zu korrigieren.",
+  "vorgeschichte": "Die Zagwe-Dynastie stammte nicht aus der aksumitischen Linie und musste ihren Anspruch begründen. Jerusalem war nach 1187 für christliche Pilger schwer erreichbar. Beides kommt in Lalibela zusammen: Der Ort wurde als zweites Jerusalem angelegt, mit einem Fluss namens Jordan, einem Golgatha und einem Grab Christi.",
+  "verlauf": "Die Kirchen wurden nicht in eine Höhle gebaut, sondern aus dem gewachsenen Fels geschnitten. Zuerst wurde ein Graben rings um einen Block gehauen, dann der Block von außen nach innen ausgeformt – Dach, Fenster, Säulen, Gewölbe, alles aus einem Stück. Wer sich verhaut, kann nichts ergänzen. Die größte, Bete Medhane Alem, ist über elf Meter hoch. Ein System aus Gräben, Tunneln und Abflüssen verbindet die Anlagen und leitet Regenwasser ab.",
+  "folgen": "Lalibela ist bis heute lebendiger Wallfahrtsort; zu den Feiertagen kommen zehntausende Pilger. Die Kirchen gehören seit 1978 zum Weltkulturerbe. Ihre Erhaltung ist schwierig: Der Tuffstein verwittert, und die 2008 errichteten Schutzdächer sind selbst umstritten.",
+  "strittig": "Die Überlieferung schreibt alle elf Kirchen König Lalibela und einer Bauzeit von 24 Jahren zu, unter Mithilfe von Engeln bei Nacht. Die Forschung geht von mehreren Bauphasen über einen längeren Zeitraum aus; einige Anlagen könnten älter sein und ursprünglich anderen Zwecken gedient haben. Die Zuschreibung an einen Herrscher ist typisch für Gründungserzählungen und sagt mehr über Legitimation als über Bauabläufe.",
+  "zahlen": [
+    {
+      "wert": "11",
+      "was": "Felsenkirchen"
+    },
+    {
+      "wert": "ca. 11,5 m",
+      "was": "Höhe der größten Kirche"
+    },
+    {
+      "wert": "1978",
+      "was": "Aufnahme ins Weltkulturerbe"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Lalibela",
+    "UNESCO: Rock-Hewn Churches, Lalibela",
+    "David W. Phillipson: Ancient Churches of Ethiopia"
+  ]
+},
+{
+  "id": "haile-selassie",
+  "titel": "Haile Selassie",
+  "epoche": "moderne",
+  "jahr": 1936,
+  "zeitraum": "1930–1974",
+  "region": "Äthiopien",
+  "leitsatz": "Er stand 1936 vor dem Völkerbund und sagte voraus, was geschieht, wenn kollektive Sicherheit nur ein Wort bleibt — drei Jahre später begann der Weltkrieg.",
+  "vorgeschichte": "Äthiopien hatte 1896 bei Adwa ein italienisches Heer geschlagen und als einziger afrikanischer Staat seine Unabhängigkeit behauptet. Ras Tafari Makonnen wurde 1916 Regent, 1930 Kaiser und nahm den Thronnamen Haile Selassie an. 1931 gab er dem Land seine erste geschriebene Verfassung.",
+  "verlauf": "1935 fiel Italien erneut ein, diesmal mit Flugzeugen, Panzern und Giftgas – dessen Einsatz gegen Zivilisten und Sanitätseinrichtungen dokumentiert ist. Haile Selassie ging ins Exil und sprach im Juni 1936 vor dem Völkerbund in Genf. Seine Rede benannte, was auf dem Spiel stand: Wenn ein Mitgliedsstaat angegriffen werde und die Gemeinschaft nichts tue, sei es das Ende der kollektiven Sicherheit. Die Sanktionen wurden kurz darauf aufgehoben. 1941 kehrte er mit britischer Unterstützung zurück. In den folgenden Jahrzehnten trieb er die panafrikanische Zusammenarbeit voran; 1963 wurde in Addis Abeba die Organisation für Afrikanische Einheit gegründet. Innenpolitisch blieben Landreform und Verfassungswirklichkeit hinter den Ankündigungen zurück. Eine Hungersnot in Wollo 1972 bis 1974 mit zehntausenden Toten wurde von der Regierung heruntergespielt; als ein britischer Fernsehfilm die Bilder zeigte, brach die Legitimation zusammen.",
+  "folgen": "1974 stürzte ihn der Derg, ein Militärkomitee. Er starb 1975 in Haft; die Umstände wurden nie geklärt. Die Monarchie war beendet. Für die Rastafari-Bewegung, die in Jamaika seit den 1930er Jahren in ihm eine göttliche Gestalt sah, blieb er die zentrale Figur – eine Zuschreibung, der er selbst nie zustimmte.",
+  "strittig": "Sein Bild schwankt zwischen dem Symbol afrikanischer Unabhängigkeit und dem autokratischen Herrscher, der Reformen ankündigte und verschleppte. Beides lässt sich belegen. Umstritten ist auch die Wirkung der Genfer Rede: Sie gilt als moralischer Höhepunkt und blieb politisch folgenlos – genau das war ihr Gegenstand.",
+  "zahlen": [
+    {
+      "wert": "44 Jahre",
+      "was": "als Regent und Kaiser"
+    },
+    {
+      "wert": "Juni 1936",
+      "was": "Rede vor dem Völkerbund"
+    },
+    {
+      "wert": "1963",
+      "was": "Gründung der Organisation für Afrikanische Einheit in Addis Abeba"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Haile Selassie I",
+    "Harold G. Marcus: A History of Ethiopia",
+    "Rede vor dem Völkerbund, 30. Juni 1936, Protokoll",
+    "Bahru Zewde: A History of Modern Ethiopia"
+  ]
+},
+{
+  "id": "great-zimbabwe",
+  "titel": "Great Zimbabwe und die Geschichte, die man ihm wegnahm",
+  "epoche": "mittelalter",
+  "jahr": 1300,
+  "zeitraum": "ca. 1220–1450",
+  "region": "Südliches Afrika",
+  "leitsatz": "Eine Million Steine, ohne Mörtel gesetzt — und ein halbes Jahrhundert lang wurde amtlich bestritten, dass Afrikaner sie gesetzt hatten.",
+  "vorgeschichte": "Im Hochland zwischen Sambesi und Limpopo entstanden ab dem 11. Jahrhundert Staaten, deren Reichtum auf Rinderhaltung und dem Handel mit Gold und Elfenbein zu den Häfen der Swahiliküste beruhte. Mapungubwe war das erste Zentrum; ab etwa 1220 verlagerte sich die Macht nach Great Zimbabwe.",
+  "verlauf": "Die Anlage umfasst rund 720 Hektar. Die Große Einfriedung hat Mauern von bis zu elf Metern Höhe und fünf Metern Dicke, gesetzt aus behauenen Granitblöcken ohne jeden Mörtel – die Steine halten allein durch Passung und Gewicht. Auf dem Höhepunkt lebten dort schätzungsweise 18.000 Menschen. Funde belegen den Fernhandel: chinesisches Seladon-Porzellan, persische Keramik, arabische Münzen, Glasperlen aus Indien. Schriftliche Quellen gibt es nicht; kein einziger Herrschername ist überliefert.",
+  "folgen": "Um 1450 wurde der Ort weitgehend aufgegeben, vermutlich wegen Übernutzung der Weiden und einer Verlagerung der Handelswege; die Macht ging an Mutapa im Norden über. Der Name des heutigen Staates Simbabwe stammt von der Ruine, ebenso der Vogel im Staatswappen – eine der Specksteinfiguren, die dort gefunden wurden.",
+  "strittig": "Hier liegt der eigentliche Fall. Als Europäer die Ruine im 19. Jahrhundert sahen, schrieben sie sie Phöniziern, Arabern oder der Königin von Saba zu – nur nicht der einheimischen Bevölkerung. Der Archäologe David Randall-MacIver wies 1905 die afrikanische Herkunft nach, Gertrude Caton-Thompson bestätigte sie 1929 unabhängig. Die Regierung Rhodesiens unterdrückte diesen Befund ab den 1960er Jahren aktiv: Fachleute wurden angewiesen, die afrikanische Urheberschaft nicht als gesichert darzustellen, zwei traten deshalb zurück. Erst mit der Unabhängigkeit 1980 endete die Zensur. Ein Lehrstück darüber, dass Forschungsergebnisse politisch unterdrückt werden können – und dass sie sich am Ende trotzdem durchsetzen.",
+  "zahlen": [
+    {
+      "wert": "ca. 720 ha",
+      "was": "Fläche der Anlage"
+    },
+    {
+      "wert": "bis 11 m",
+      "was": "Mauerhöhe der Großen Einfriedung"
+    },
+    {
+      "wert": "1905",
+      "was": "erster wissenschaftlicher Nachweis der afrikanischen Herkunft"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Great Zimbabwe",
+    "Innocent Pikirayi: The Zimbabwe Culture",
+    "Peter Garlake: Great Zimbabwe",
+    "Gertrude Caton-Thompson: The Zimbabwe Culture, 1931"
+  ]
+},
+{
+  "id": "shaka",
+  "titel": "Shaka und die Entstehung des Zulu-Reichs",
+  "epoche": "industrialisierung",
+  "jahr": 1816,
+  "zeitraum": "1816–1828",
+  "region": "Südliches Afrika",
+  "leitsatz": "In zwölf Jahren wurde aus einem Clan von wenigen tausend Menschen ein Militärstaat — und aus der Umwälzung ringsum eine Bevölkerungsverschiebung über tausende Kilometer.",
+  "vorgeschichte": "Im südöstlichen Afrika lebten um 1800 zahlreiche Chiefdoms nebeneinander, die um Weideland und Handelszugang konkurrierten. Bevölkerungswachstum, Dürren und der wachsende Elfenbein- und Sklavenhandel über die portugiesische Delagoa Bay verschärften den Druck. Shaka wuchs als uneheliches Kind am Rand auf und diente zunächst unter dem Mthethwa-Herrscher Dingiswayo.",
+  "verlauf": "Nach seiner Machtübernahme 1816 baute er die Kriegführung um: kurzer Stoßspeer statt Wurfspeer, größerer Schild, geschlossene Regimenter nach Altersklassen statt nach Herkunft, eine Umfassungstaktik in Form der Büffelhörner. Unterworfene Gruppen wurden nicht vertrieben, sondern eingegliedert – dadurch wuchs das Reich schnell. 1828 wurde er von seinen Halbbrüdern ermordet.",
+  "folgen": "Die Umwälzung dieser Jahre, in Südafrika Mfecane genannt, verschob Bevölkerungen bis nach Tansania und Sambia. Aus ihr gingen neue Staaten hervor: das Ndebele-Reich unter Mzilikazi, das Gaza-Reich, die Basotho unter Moshoeshoe I. Das Zulu-Reich blieb bestehen, bis es 1879 nach dem Sieg bei Isandlwana in wenigen Monaten von Großbritannien zerschlagen wurde.",
+  "strittig": "Über Shaka wird seit Jahrzehnten heftig gestritten. Die ältere Darstellung – ein blutrünstiger Despot, dessen Kriege ein menschenleeres Land hinterließen – stammt wesentlich aus den Aufzeichnungen zweier britischer Händler und aus Nacherzählungen des 20. Jahrhunderts. Sie war politisch nützlich: Ein angeblich entvölkertes Binnenland rechtfertigte die Landnahme durch Buren und Briten. Der Historiker Julian Cobbing warf der Mfecane-Erzählung 1988 vor, sie lenke von der eigentlichen Ursache ab – dem Sklavenhandel und dem Druck der Siedler. Seine These ist ihrerseits kritisiert worden. Was bleibt: Die Umwälzung fand statt, ihre Ursachen sind vielschichtiger als die Figur eines einzelnen Herrschers.",
+  "zahlen": [
+    {
+      "wert": "12 Jahre",
+      "was": "Herrschaft Shakas"
+    },
+    {
+      "wert": "1879",
+      "was": "Zerschlagung des Zulu-Reichs nach Isandlwana"
+    },
+    {
+      "wert": "1988",
+      "was": "Cobbings Kritik an der Mfecane-Erzählung"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Shaka",
+    "John Laband: The Rise and Fall of the Zulu Nation",
+    "Carolyn Hamilton (Hrsg.): The Mfecane Aftermath",
+    "Julian Cobbing, Journal of African History 1988"
+  ]
 }
 ];

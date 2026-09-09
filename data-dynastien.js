@@ -4092,5 +4092,455 @@ const DYNASTIEN = [
    ]
   }
  ]
+},
+{
+ "id": "suedostasien",
+ "reich": "Südostasien",
+ "untertitel": "Khmer, Bagan, Majapahit, Dai Viet und Siam",
+ "zeitraum": "802–1945",
+ "farbe": "#3f8a8a",
+ "einleitung": "Vier große Reiche und ein Sonderfall. Angkor, Bagan und Majapahit übernahmen indische Vorstellungen von Königtum und Religion und formten daraus etwas Eigenes – der Herrscher war Weltenordner, sein Tempel das Abbild des Kosmos. Vietnam ging den anderen Weg: tausend Jahre chinesische Herrschaft, danach ein Staat, der chinesische Verwaltung übernahm und sich zugleich gegen China behauptete. Und Siam blieb als einziges Land der Region unkolonisiert.",
+ "hinweis": "Die Quellenlage ist ungleich. Für Angkor stammen Herrscher und Daten fast nur aus Sanskrit- und Khmer-Inschriften an Tempeln – Verwaltungsakten auf Palmblatt sind im tropischen Klima vergangen. Für Majapahit ist die Hauptquelle ein Preisgedicht von 1365, das den König feiert. Vietnam und Birma haben dagegen Hofchroniken, die aber jeweils die eigene Dynastie legitimieren. Die Umschrift schwankt: Jayavarman und Dschajawarman, Ayutthaya und Ayudhya bezeichnen dasselbe.",
+ "quellen": [
+  "Encyclopaedia Britannica: Southeast Asia, history; Angkor; Majapahit",
+  "The Cambridge History of Southeast Asia",
+  "Michael Vickery und Charles Higham zur Khmer-Geschichte",
+  "Victor Lieberman: Strange Parallels"
+ ],
+ "perioden": [
+  {
+   "name": "Khmer-Reich",
+   "zeitraum": "802–1431",
+   "dynastien": [
+    {
+     "name": "Angkor",
+     "zeitraum": "802–1431",
+     "kurz": "Sechs Jahrhunderte, in denen ein Reich am Tonle-Sap-See die größte vorindustrielle Stadt der Welt errichtete – ausgedehnter als das mittelalterliche London, getragen von einem Bewässerungssystem aus Kanälen und Stauseen.",
+     "herrscher": [
+      {
+       "name": "Jayavarman II.",
+       "regierung": "802–835",
+       "kurz": "Erklärte sich in einer Zeremonie auf dem Kulen-Berg zum universellen Herrscher und löste sich damit von javanischer Oberhoheit – die traditionelle Gründung des Khmer-Reiches."
+      },
+      {
+       "name": "Suryavarman II.",
+       "regierung": "1113–1150",
+       "kurz": "Ließ Angkor Wat errichten, den größten religiösen Bau der Welt, ursprünglich Vishnu geweiht. Die Reliefs zeigen seine Feldzüge und den Hofstaat.",
+       "vertiefung": "angkor"
+      },
+      {
+       "name": "Jayavarman VII.",
+       "regierung": "1181–1218",
+       "kurz": "Warf die Cham zurück, baute Angkor Thom mit dem Bayon und ließ nach eigener Inschrift 102 Krankenhäuser und 121 Rasthäuser an den Reichsstraßen anlegen. Buddhist in einem bis dahin hinduistisch geprägten Reich.",
+       "vertiefung": "angkor"
+      },
+      {
+       "name": "Ponhea Yat",
+       "regierung": "1431–1463",
+       "kurz": "Verlegte den Hof nach Süden, nachdem Ayutthaya Angkor genommen hatte. Die Stadt wurde nicht schlagartig verlassen, aber sie war nicht mehr Zentrum."
+      }
+     ],
+     "weitere": "Über zwanzig weitere Herrscher sind aus Inschriften bekannt, darunter Yasovarman I., der die erste Hauptstadt bei Angkor anlegte, und Suryavarman I. Die Reihenfolge ist teilweise unsicher, weil mehrere Thronanwärter zugleich Inschriften setzen ließen."
+    }
+   ]
+  },
+  {
+   "name": "Birma",
+   "zeitraum": "1044–1885",
+   "dynastien": [
+    {
+     "name": "Bagan und die Nachfolgereiche",
+     "zeitraum": "1044–1885",
+     "kurz": "In der Ebene von Bagan stehen über 2.000 Tempel aus zwei Jahrhunderten – die dichteste Sakrallandschaft der Welt. Nach dem Mongolensturm folgen zwei weitere Reichsgründungen, bis Großbritannien das Königtum beendet.",
+     "herrscher": [
+      {
+       "name": "Anawrahta",
+       "regierung": "1044–1077",
+       "kurz": "Einte das Gebiet, machte den Theravada-Buddhismus zur Grundlage des Reiches und begann den Tempelbau in Bagan."
+      },
+      {
+       "name": "Kyansittha",
+       "regierung": "1084–1112",
+       "kurz": "Vollendete den Ananda-Tempel und sicherte die Verbindung zu Sri Lanka als Zentrum des Theravada."
+      },
+      {
+       "name": "Bayinnaung",
+       "regierung": "1551–1581",
+       "kurz": "Herrscher der Taungoo-Dynastie, schuf durch Feldzüge gegen Ayutthaya und die Shan-Staaten das größte Reich, das Südostasien bis dahin gesehen hatte – es zerfiel kurz nach seinem Tod."
+      },
+      {
+       "name": "Alaungpaya",
+       "regierung": "1752–1760",
+       "kurz": "Begründete die Konbaung-Dynastie und einte Birma erneut. Sein Zug gegen Ayutthaya leitete den Untergang der siamesischen Hauptstadt ein."
+      },
+      {
+       "name": "Thibaw",
+       "regierung": "1878–1885",
+       "kurz": "Letzter König von Birma. Nach dem Dritten Anglo-Birmanischen Krieg wurde er nach Indien verbannt; das Land wurde Provinz von Britisch-Indien."
+      }
+     ],
+     "weitere": "Dazwischen Narathihapate (1256–1287), unter dem mongolische Truppen einfielen und Bagan seine Vormacht verlor, sowie die Herrscher der Ava-, Hanthawaddy- und Mrauk-U-Reiche in der Zeit der Teilung."
+    }
+   ]
+  },
+  {
+   "name": "Java und die Inselwelt",
+   "zeitraum": "1293–1527",
+   "dynastien": [
+    {
+     "name": "Majapahit",
+     "zeitraum": "1293–1527",
+     "kurz": "Ein Reich, das seine Macht über See ausübte – Häfen, Handel und Tribut statt flächiger Verwaltung. Sein Anspruch reichte weit über Java hinaus und ist bis heute Bezugspunkt indonesischer Staatsidee.",
+     "herrscher": [
+      {
+       "name": "Kertanegara",
+       "regierung": "1268–1292",
+       "kurz": "Letzter Herrscher von Singhasari. Er ließ mongolische Gesandte demütigen; die Strafexpedition traf ein, als er bereits gestürzt war."
+      },
+      {
+       "name": "Raden Wijaya",
+       "regierung": "1293–1309",
+       "kurz": "Nutzte die mongolische Invasion, schlug sich zunächst auf ihre Seite, wandte sich dann gegen sie und gründete Majapahit."
+      },
+      {
+       "name": "Hayam Wuruk",
+       "regierung": "1350–1389",
+       "kurz": "Höhepunkt des Reiches. Sein Kanzler Gajah Mada soll geschworen haben, keine Gewürze zu essen, bis der Archipel geeint sei – ein Schwur, auf den sich indonesische Nationalisten des 20. Jahrhunderts beriefen."
+      }
+     ],
+     "weitere": "Nach Hayam Wuruk folgten Thronstreitigkeiten und der Aufstieg islamischer Hafenstaaten an der Nordküste Javas; Majapahit erlosch im frühen 16. Jahrhundert. Vorher hatte Srivijaya auf Sumatra vom 7. bis 13. Jahrhundert den Seehandel beherrscht – seine Herrscher sind nur bruchstückhaft überliefert."
+    }
+   ]
+  },
+  {
+   "name": "Vietnam",
+   "zeitraum": "939–1945",
+   "dynastien": [
+    {
+     "name": "Dai Viet und Nguyen",
+     "zeitraum": "939–1945",
+     "kurz": "Tausend Jahre chinesische Herrschaft, dann tausend Jahre Behauptung gegen China – mit chinesischer Schrift, chinesischem Beamtenexamen und der beharrlichen Weigerung, chinesisch zu werden.",
+     "herrscher": [
+      {
+       "name": "Ngo Quyen",
+       "regierung": "939–944",
+       "kurz": "Beendete mit dem Sieg am Bach-Dang-Fluss die chinesische Herrschaft. Er ließ eiserne Pfähle im Flussbett verankern, die bei Ebbe die feindliche Flotte aufspießten.",
+       "vertiefung": "dai-viet"
+      },
+      {
+       "name": "Ly Thai To",
+       "regierung": "1009–1028",
+       "kurz": "Begründete die Ly-Dynastie und verlegte die Hauptstadt nach Thang Long, dem heutigen Hanoi."
+      },
+      {
+       "name": "Tran Nhan Tong",
+       "regierung": "1278–1293",
+       "kurz": "Unter ihm wehrte Vietnam zwei mongolische Invasionen ab; sein Feldherr Tran Hung Dao wiederholte 1288 die Pfahlfalle im Bach Dang.",
+       "vertiefung": "dai-viet"
+      },
+      {
+       "name": "Le Loi",
+       "regierung": "1428–1433",
+       "kurz": "Beendete nach zehn Jahren Widerstandskrieg eine erneute chinesische Besetzung und begründete die Spätere Le-Dynastie."
+      },
+      {
+       "name": "Gia Long",
+       "regierung": "1802–1820",
+       "kurz": "Einte Nord und Süd und begründete die Nguyen-Dynastie mit Hauptstadt Hue – die letzte Dynastie Vietnams."
+      },
+      {
+       "name": "Bao Dai",
+       "regierung": "1926–1945",
+       "kurz": "Letzter Kaiser. Dankte im August 1945 ab und übergab die Insignien an die Vietminh; später kurzzeitig Staatschef unter französischem Schutz."
+      }
+     ],
+     "weitere": "Dazwischen die Dynastien Dinh, Frühe Le, Ly, Tran, Ho und Mac sowie die Zeit der Teilung zwischen den Familien Trinh im Norden und Nguyen im Süden vom 17. bis ins 18. Jahrhundert."
+    }
+   ]
+  },
+  {
+   "name": "Siam",
+   "zeitraum": "1351–heute",
+   "dynastien": [
+    {
+     "name": "Ayutthaya und Chakri",
+     "zeitraum": "1351–heute",
+     "kurz": "Zwei Hauptstädte, ein Königtum: Nach der Zerstörung Ayutthayas 1767 baute die Chakri-Dynastie das Reich von Bangkok aus neu auf – und blieb als einzige der Region unkolonisiert.",
+     "herrscher": [
+      {
+       "name": "Ramathibodi I.",
+       "regierung": "1351–1369",
+       "kurz": "Gründer Ayutthayas, das für vier Jahrhunderte die beherrschende Macht des Festlands wurde.",
+       "vertiefung": "ayutthaya"
+      },
+      {
+       "name": "Naresuan",
+       "regierung": "1590–1605",
+       "kurz": "Machte Ayutthaya von Birma unabhängig. Der Zweikampf auf Kriegselefanten, den die Überlieferung ihm zuschreibt, ist bis heute Nationalmythos."
+      },
+      {
+       "name": "Rama I.",
+       "regierung": "1782–1809",
+       "kurz": "Begründete die Chakri-Dynastie, baute Bangkok als neue Hauptstadt und ließ Recht und buddhistischen Kanon neu ordnen."
+      },
+      {
+       "name": "Chulalongkorn",
+       "regierung": "1868–1910",
+       "kurz": "42 Jahre Regierung: Abschaffung der Sklaverei, Verwaltungs- und Schulreform, Eisenbahn – und die Abtretung von Randgebieten, um den Kern vor Frankreich und Großbritannien zu retten.",
+       "vertiefung": "siam-unabhaengig"
+      },
+      {
+       "name": "Bhumibol",
+       "regierung": "1946–2016",
+       "kurz": "70 Jahre auf dem Thron, der am längsten regierende Monarch der Welt zu seiner Zeit. Über neun Militärputsche hinweg blieb die Monarchie die Konstante des Landes.",
+       "vertiefung": "siam-1932"
+      }
+     ],
+     "weitere": "33 Könige regierten in Ayutthaya, zehn bisher in der Chakri-Dynastie. Seit 1932 ist Thailand konstitutionelle Monarchie; die tatsächliche Macht lag seither überwiegend beim Militär."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "aethiopien",
+ "reich": "Äthiopien",
+ "untertitel": "Von Aksum bis zum letzten Kaiser",
+ "zeitraum": "ca. 100–1974",
+ "farbe": "#9a5b3f",
+ "einleitung": "Die älteste durchgehend belegte Monarchie Afrikas und eines der ältesten christlichen Länder der Welt – Äthiopien nahm das Christentum an, bevor Rom es zur Staatsreligion machte. Es war zudem das einzige Land Afrikas, das die europäische Aufteilung des Kontinents als unabhängiger Staat überstand.",
+ "hinweis": "Zur Legitimation: Die salomonische Dynastie führte sich auf einen Sohn Salomos und der Königin von Saba zurück – erzählt im Kebra Nagast, das im 14. Jahrhundert seine bekannte Form erhielt, also genau dann, als die Dynastie ihren Anspruch gegen die Vorgänger begründen musste. Historisch ist die Abstammung nicht haltbar; als politisches Dokument war sie über sechs Jahrhunderte wirksam und stand noch 1955 in der Verfassung. Zur Datierung: Für Aksum stützen sich die Angaben auf Münzen und Inschriften und schwanken um Jahrzehnte.",
+ "quellen": [
+  "Encyclopaedia Britannica: Ethiopia, history; Aksum",
+  "Harold G. Marcus: A History of Ethiopia",
+  "Stuart Munro-Hay: Aksum – An African Civilisation of Late Antiquity",
+  "Kebra Nagast (als legitimatorische Quelle, nicht als Geschichtsbericht)"
+ ],
+ "perioden": [
+  {
+   "name": "Aksum",
+   "zeitraum": "ca. 100–940",
+   "dynastien": [
+    {
+     "name": "Reich von Aksum",
+     "zeitraum": "ca. 100–940",
+     "kurz": "Eine Handelsmacht am Roten Meer, von einem persischen Autor des 3. Jahrhunderts neben Rom, Persien und China zu den vier großen Reichen der Welt gezählt. Sie prägte eigene Münzen – als einer der wenigen Staaten Afrikas jener Zeit.",
+     "herrscher": [
+      {
+       "name": "Ezana",
+       "regierung": "ca. 320–360",
+       "kurz": "Trat zum Christentum über und ließ es auf Münzen und Inschriften abbilden – das Kreuz ersetzte Sonne und Mond. Damit gehört Äthiopien zu den frühesten christlichen Staaten überhaupt.",
+       "vertiefung": "aksum"
+      },
+      {
+       "name": "Kaleb",
+       "regierung": "ca. 520–540",
+       "kurz": "Führte einen Feldzug über das Rote Meer nach Südarabien, um dort verfolgte Christen zu schützen – ein Eingreifen, das bis nach Konstantinopel und Persien Beachtung fand."
+      }
+     ],
+     "weitere": "Weitere Herrscher sind vor allem über Münzprägungen bekannt; die Reihenfolge ist teilweise erschlossen. Ab dem 7. Jahrhundert verlor Aksum durch die Verlagerung des Handels seine Grundlage und zog sich ins Hochland zurück."
+    }
+   ]
+  },
+  {
+   "name": "Zagwe",
+   "zeitraum": "ca. 1137–1270",
+   "dynastien": [
+    {
+     "name": "Zagwe-Dynastie",
+     "zeitraum": "ca. 1137–1270",
+     "kurz": "Eine Dynastie, die nicht aus der aksumitischen Linie stammte – und deshalb von der späteren Geschichtsschreibung als Usurpation dargestellt wurde. Ihr bleibendes Werk sind elf aus dem Fels gehauene Kirchen.",
+     "herrscher": [
+      {
+       "name": "Lalibela",
+       "regierung": "ca. 1181–1221",
+       "kurz": "Ließ in seiner Hauptstadt elf Kirchen nicht bauen, sondern aus dem anstehenden Felsen herausarbeiten – von oben nach unten, mit Fenstern, Säulen und Dächern im Vollmaterial. Der Ort trägt heute seinen Namen.",
+       "vertiefung": "lalibela"
+      }
+     ],
+     "weitere": "Die Zahl und Reihenfolge der Zagwe-Herrscher ist unsicher; die Quellen stammen überwiegend von ihren salomonischen Nachfolgern, die deren Legitimität bestritten."
+    }
+   ]
+  },
+  {
+   "name": "Salomonische Dynastie",
+   "zeitraum": "1270–1974",
+   "dynastien": [
+    {
+     "name": "Kaiser von Äthiopien",
+     "zeitraum": "1270–1855",
+     "kurz": "Sieben Jahrhunderte einer Dynastie, die ihren Anspruch aus einer Abstammungserzählung bezog. Zwischen Blütezeiten und Zerfall lagen Kriege gegen muslimische Nachbarn, portugiesische Eingriffe und eine Zeit ohne wirkliche Zentralgewalt.",
+     "herrscher": [
+      {
+       "name": "Yekuno Amlak",
+       "regierung": "1270–1285",
+       "kurz": "Stürzte die Zagwe und begründete die salomonische Dynastie – gestützt auf die Erzählung, er sei Nachkomme Salomos."
+      },
+      {
+       "name": "Amda Seyon I.",
+       "regierung": "1314–1344",
+       "kurz": "Dehnte das Reich weit nach Süden und Osten aus. Seine Feldzüge sind in einer der ausführlichsten Chroniken der äthiopischen Geschichte festgehalten."
+      },
+      {
+       "name": "Zara Yaqob",
+       "regierung": "1434–1468",
+       "kurz": "Ordnete Kirche und Verwaltung neu, schrieb selbst theologische Werke und ging gegen abweichende Lehren hart vor."
+      },
+      {
+       "name": "Susenyos I.",
+       "regierung": "1607–1632",
+       "kurz": "Trat unter jesuitischem Einfluss zum Katholizismus über und machte ihn zur Staatsreligion. Der Widerstand war so heftig, dass er widerrief und abdankte; die Jesuiten wurden ausgewiesen."
+      }
+     ],
+     "weitere": "Auf die Zeit der Kaiser folgte ab 1769 die Zemene Mesafint, die Zeit der Richter: Rund achtzig Jahre lang regierten regionale Fürsten, während die Kaiser in Gondar ohne Macht blieben."
+    },
+    {
+     "name": "Das moderne Kaiserreich",
+     "zeitraum": "1855–1974",
+     "kurz": "Drei Herrscher bauen aus zerfallenen Fürstentümern wieder einen Staat – und behaupten ihn als einziges Land Afrikas gegen die europäische Aufteilung.",
+     "herrscher": [
+      {
+       "name": "Tewodros II.",
+       "regierung": "1855–1868",
+       "kurz": "Beendete die Zeit der Fürsten und begann die Zentralisierung. Nach einem Streit mit London landete eine britische Strafexpedition; er nahm sich das Leben, statt sich zu ergeben."
+      },
+      {
+       "name": "Yohannes IV.",
+       "regierung": "1872–1889",
+       "kurz": "Wehrte ägyptische und mahdistische Angriffe ab und fiel im Kampf gegen die Mahdisten."
+      },
+      {
+       "name": "Menelik II.",
+       "regierung": "1889–1913",
+       "kurz": "Schlug 1896 bei Adwa ein italienisches Heer vernichtend – der Sieg, der Äthiopiens Unabhängigkeit sicherte und weltweit zum Bezugspunkt antikolonialer Bewegungen wurde."
+      },
+      {
+       "name": "Zewditu",
+       "regierung": "1916–1930",
+       "kurz": "Erste und einzige Kaiserin Äthiopiens aus eigenem Recht. Regierte gemeinsam mit einem Regenten, der ihr später nachfolgte."
+      },
+      {
+       "name": "Haile Selassie",
+       "regierung": "1930–1974",
+       "kurz": "Gab dem Land 1931 seine erste Verfassung, appellierte 1936 vor dem Völkerbund gegen die italienische Invasion, kehrte 1941 zurück und wurde 1974 gestürzt. Für die Rastafari-Bewegung ist er eine religiöse Gestalt.",
+       "vertiefung": "haile-selassie"
+      }
+     ],
+     "weitere": "Nach dem Sturz 1974 übernahm der Derg die Macht; Haile Selassie starb 1975 in Haft. Die Monarchie wurde abgeschafft – nach der äthiopischen Zählung nach über 3.000 Jahren, historisch belegbar nach rund 1.800."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "suedliches-afrika",
+ "reich": "Südliches Afrika",
+ "untertitel": "Mapungubwe, Great Zimbabwe, Mutapa und die Zulu",
+ "zeitraum": "ca. 1075–1900",
+ "farbe": "#5f5f9a",
+ "einleitung": "Zwischen Limpopo und Kap entstanden Staaten, deren Reichtum auf Rinderhaltung, Goldhandel und der Anbindung an die Häfen der Swahiliküste beruhte. Great Zimbabwe mit seinen fugenlos gesetzten Steinmauern war ihr sichtbarster Ausdruck – und wurde von der Kolonialzeit systematisch jemand anderem zugeschrieben. Im 19. Jahrhundert formte Shaka aus verstreuten Verbänden das Zulu-Reich.",
+ "hinweis": "Hier ist die Quellenlage am dünnsten. Für Mapungubwe und Great Zimbabwe sind keine Herrschernamen überliefert – es gab keine Schrift, und die mündliche Überlieferung reicht nicht so weit zurück. Was wir wissen, stammt aus Archäologie. Ab dem 16. Jahrhundert kommen portugiesische Berichte hinzu, ab dem 19. Jahrhundert europäische Aufzeichnungen und die mündliche Überlieferung der beteiligten Völker, die im 20. Jahrhundert systematisch gesammelt wurde. Regierungsdaten des 19. Jahrhunderts sind gut belegt, frühere Angaben Näherungen.",
+ "quellen": [
+  "Encyclopaedia Britannica: Great Zimbabwe; Zulu; Mutapa",
+  "Innocent Pikirayi: The Zimbabwe Culture",
+  "John Laband: The Rise and Fall of the Zulu Nation",
+  "Elizabeth Eldredge: Kingdoms and Chiefdoms of Southeastern Africa"
+ ],
+ "perioden": [
+  {
+   "name": "Steinbaukulturen",
+   "zeitraum": "ca. 1075–1450",
+   "dynastien": [
+    {
+     "name": "Mapungubwe und Great Zimbabwe",
+     "zeitraum": "ca. 1075–1450",
+     "kurz": "Zwei aufeinanderfolgende Zentren, verbunden durch Goldhandel bis nach Indien und China. In Great Zimbabwe lebten auf ihrem Höhepunkt vielleicht 18.000 Menschen; die Große Einfriedung besteht aus rund einer Million Steinblöcken, gesetzt ohne Mörtel.",
+     "herrscher": [
+      {
+       "name": "Die Herrscher von Mapungubwe",
+       "regierung": "ca. 1075–1220",
+       "kurz": "Namentlich unbekannt. Gräber auf dem Hügel enthielten Goldbeigaben, darunter ein mit Goldblech überzogenes Nashorn – heute eines der wichtigsten Kulturgüter Südafrikas."
+      },
+      {
+       "name": "Die Herrscher von Great Zimbabwe",
+       "regierung": "ca. 1220–1450",
+       "kurz": "Ebenfalls namentlich unbekannt. Funde von chinesischem Porzellan, persischer Keramik und arabischen Münzen belegen Handelsverbindungen über den Indischen Ozean.",
+       "vertiefung": "great-zimbabwe"
+      }
+     ],
+     "weitere": "Warum Great Zimbabwe im 15. Jahrhundert aufgegeben wurde, ist ungeklärt – Übernutzung der Weiden, Verschiebung der Handelswege und Klimaschwankungen werden diskutiert."
+    }
+   ]
+  },
+  {
+   "name": "Mutapa und Rozvi",
+   "zeitraum": "1430–1830",
+   "dynastien": [
+    {
+     "name": "Nachfolgereiche",
+     "zeitraum": "1430–1830",
+     "kurz": "Aus dem Erbe Great Zimbabwes gingen Reiche hervor, die von portugiesischen Händlern und Missionaren beschrieben wurden – die ersten Herrscher der Region, deren Namen überliefert sind.",
+     "herrscher": [
+      {
+       "name": "Nyatsimba Mutota",
+       "regierung": "ca. 1430–1450",
+       "kurz": "Gründer des Reiches Mutapa im Norden. Der Titel Mwene Mutapa wurde von den Portugiesen zu Monomotapa verschliffen – unter diesem Namen erschien das Reich auf europäischen Karten als sagenhaftes Goldland."
+      },
+      {
+       "name": "Mavura",
+       "regierung": "1629–1652",
+       "kurz": "Unterzeichnete einen Vertrag, der ihn zum Vasallen Portugals machte – der Beginn des Bedeutungsverlusts von Mutapa."
+      },
+      {
+       "name": "Changamire Dombo",
+       "regierung": "ca. 1684–1696",
+       "kurz": "Begründer des Rozvi-Reiches. Schlug die Portugiesen mehrfach und vertrieb sie aus dem Hochland – für rund anderthalb Jahrhunderte."
+      }
+     ],
+     "weitere": "Beide Reiche zerfielen im 19. Jahrhundert unter dem Druck der Mfecane und der Ndebele-Wanderung."
+    }
+   ]
+  },
+  {
+   "name": "Das 19. Jahrhundert",
+   "zeitraum": "1816–1900",
+   "dynastien": [
+    {
+     "name": "Zulu und Nachbarn",
+     "zeitraum": "1816–1900",
+     "kurz": "Innerhalb weniger Jahrzehnte entstehen aus verstreuten Verbänden zentralisierte Militärstaaten. Die Umwälzung, in Südafrika Mfecane genannt, verschob Bevölkerungen über tausende Kilometer.",
+     "herrscher": [
+      {
+       "name": "Shaka",
+       "regierung": "1816–1828",
+       "kurz": "Formte aus einem kleinen Clan das Zulu-Reich, mit neuer Taktik, kurzem Stoßspeer und stehenden Regimentern nach Altersklassen. Wurde von seinen Halbbrüdern ermordet.",
+       "vertiefung": "shaka"
+      },
+      {
+       "name": "Dingane",
+       "regierung": "1828–1840",
+       "kurz": "Ließ 1838 eine Gruppe Voortrekker unter Piet Retief töten; die Vergeltung am Blood River wurde in Südafrika über anderthalb Jahrhunderte als göttliches Zeichen gefeiert."
+      },
+      {
+       "name": "Cetshwayo",
+       "regierung": "1872–1879",
+       "kurz": "Unter ihm vernichteten die Zulu 1879 bei Isandlwana ein britisches Heer – die schwerste Niederlage Großbritanniens gegen eine technisch unterlegene Macht. Wenige Monate später war das Reich zerschlagen."
+      },
+      {
+       "name": "Moshoeshoe I.",
+       "regierung": "1822–1870",
+       "kurz": "Begründer der Basotho. Sicherte sein Volk auf einem Tafelberg und stellte es 1868 unter britischen Schutz, um es vor den Buren zu bewahren – daraus entstand das heutige Lesotho."
+      },
+      {
+       "name": "Lobengula",
+       "regierung": "1868–1894",
+       "kurz": "Letzter König der Ndebele. Unterzeichnete eine Konzession, deren Tragweite ihm verschwiegen wurde; sie diente Cecil Rhodes als Grundlage für die Besetzung des Landes, das danach Rhodesien hieß."
+      }
+     ],
+     "weitere": "Dazu Mzilikazi, der sich von Shaka löste und das Ndebele-Reich gründete, sowie zahlreiche kleinere Königtümer, die in der Mfecane untergingen oder neu entstanden."
+    }
+   ]
+  }
+ ]
 }
 ];

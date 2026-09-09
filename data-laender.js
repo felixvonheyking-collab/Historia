@@ -2583,12 +2583,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 100,
     "title": "Aufstieg des Reiches Aksum",
-    "text": "Ein Handelsreich am Roten Meer mit eigener Schrift und eigener Münzprägung – eine der wenigen Mächte der Antike, die eigenes Geld schlug."
+    "text": "Ein Handelsreich am Roten Meer mit eigener Schrift und eigener Münzprägung – eine der wenigen Mächte der Antike, die eigenes Geld schlug.",
+    "vertiefung": "aksum"
    },
    {
     "year": 330,
     "title": "Christianisierung",
-    "text": "König Ezana nimmt das Christentum an – Äthiopien gehört damit zu den ältesten christlichen Staaten der Welt."
+    "text": "König Ezana nimmt das Christentum an – Äthiopien gehört damit zu den ältesten christlichen Staaten der Welt.",
+    "vertiefung": "aksum"
    },
    {
     "year": 615,
@@ -2598,7 +2600,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1200,
     "title": "Felsenkirchen von Lalibela",
-    "text": "Elf Kirchen werden aus dem anstehenden Fels herausgemeißelt, von oben nach unten – ein Bauverfahren ohne Parallele."
+    "text": "Elf Kirchen werden aus dem anstehenden Fels herausgemeißelt, von oben nach unten – ein Bauverfahren ohne Parallele.",
+    "vertiefung": "lalibela"
    },
    {
     "year": 1270,
@@ -2628,12 +2631,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1930,
     "title": "Krönung Haile Selassies",
-    "text": "Der Kaiser wird zur Symbolfigur weit über Afrika hinaus; in Jamaika entsteht in seinem Namen die Rastafari-Bewegung."
+    "text": "Der Kaiser wird zur Symbolfigur weit über Afrika hinaus; in Jamaika entsteht in seinem Namen die Rastafari-Bewegung.",
+    "vertiefung": "haile-selassie"
    },
    {
     "year": 1935,
     "title": "Italienischer Überfall",
-    "text": "Mussolini lässt mit Giftgas angreifen. Der Völkerbund reagiert wirkungslos – ein Vorzeichen seines Scheiterns."
+    "text": "Mussolini lässt mit Giftgas angreifen. Der Völkerbund reagiert wirkungslos – ein Vorzeichen seines Scheiterns.",
+    "vertiefung": "haile-selassie"
    },
    {
     "year": 1941,
@@ -2643,12 +2648,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1963,
     "title": "Gründung der OAU in Addis Abeba",
-    "text": "Die Organisation für Afrikanische Einheit wird gegründet; die Stadt bleibt bis heute Sitz der Afrikanischen Union."
+    "text": "Die Organisation für Afrikanische Einheit wird gegründet; die Stadt bleibt bis heute Sitz der Afrikanischen Union.",
+    "vertiefung": "haile-selassie"
    },
    {
     "year": 1974,
     "title": "Sturz des Kaisers",
-    "text": "Der Derg übernimmt die Macht; es folgen Terror, Zwangsumsiedlungen und die Hungersnot von 1984."
+    "text": "Der Derg übernimmt die Macht; es folgen Terror, Zwangsumsiedlungen und die Hungersnot von 1984.",
+    "vertiefung": "haile-selassie"
    },
    {
     "year": 1991,
@@ -3235,12 +3242,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1220,
     "title": "Das Königreich Mapungubwe",
-    "text": "Am Limpopo entsteht der erste bekannte Staat des südlichen Afrika, mit räumlich abgesetzter Elite und Handel bis Indien und China. Das goldene Nashorn aus seinen Gräbern ist heute ein Nationalsymbol."
+    "text": "Am Limpopo entsteht der erste bekannte Staat des südlichen Afrika, mit räumlich abgesetzter Elite und Handel bis Indien und China. Das goldene Nashorn aus seinen Gräbern ist heute ein Nationalsymbol.",
+    "vertiefung": "great-zimbabwe"
    },
    {
     "year": 1300,
     "title": "Groß-Simbabwe",
-    "text": "Die fugenlos gesetzten Steinmauern entstehen ohne Mörtel. Koloniale Autoren schrieben den Bau jahrzehntelang Fremden zu – die Archäologie hat das längst widerlegt."
+    "text": "Die fugenlos gesetzten Steinmauern entstehen ohne Mörtel. Koloniale Autoren schrieben den Bau jahrzehntelang Fremden zu – die Archäologie hat das längst widerlegt.",
+    "vertiefung": "great-zimbabwe"
    },
    {
     "year": 1652,
@@ -3255,7 +3264,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1818,
     "title": "Aufstieg Shakas und das Mfecane",
-    "text": "Das Zulu-Reich entsteht, begleitet von großflächigen Umwälzungen im Binnenland. Wie viel davon auf Shaka zurückgeht und wie viel auf Dürre, Sklavenraub und Landhunger der Siedler, ist bis heute umstritten."
+    "text": "Das Zulu-Reich entsteht, begleitet von großflächigen Umwälzungen im Binnenland. Wie viel davon auf Shaka zurückgeht und wie viel auf Dürre, Sklavenraub und Landhunger der Siedler, ist bis heute umstritten.",
+    "vertiefung": "shaka"
    },
    {
     "year": 1836,
@@ -3270,7 +3280,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1879,
     "title": "Isandlwana und Ulundi",
-    "text": "Die Zulu vernichten eine britische Kolonne, verlieren aber den Krieg innerhalb eines halben Jahres. Der Schock beschleunigte die britische Eroberung, statt sie aufzuhalten."
+    "text": "Die Zulu vernichten eine britische Kolonne, verlieren aber den Krieg innerhalb eines halben Jahres. Der Schock beschleunigte die britische Eroberung, statt sie aufzuhalten.",
+    "vertiefung": "shaka"
    },
    {
     "year": 1886,
@@ -3320,7 +3331,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1990,
     "title": "Freilassung Mandelas",
-    "text": "De Klerk hebt das Verbot des ANC auf. Vier Jahre Verhandlungen unter fortgesetzter Gewalt folgen, bevor der Übergang gelingt."
+    "text": "De Klerk hebt das Verbot des ANC auf. Vier Jahre Verhandlungen unter fortgesetzter Gewalt folgen, bevor der Übergang gelingt.",
+    "vertiefung": "ende-apartheid"
    },
    {
     "year": 1994,

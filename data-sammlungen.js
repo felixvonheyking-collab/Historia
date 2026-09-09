@@ -2575,7 +2575,8 @@ const BATTLES = [
   ],
   "ausgang": "Vernichtender Zulu-Sieg. Die Zulu griffen in der Formation der Büffelhörner an – Mitte bindet, Hörner umfassen. Das britische Lager war nicht verschanzt, die Munitionsausgabe stockte.",
   "folgen": "Die schwerste Niederlage der britischen Armee gegen eine technisch unterlegene Streitmacht. London reagierte mit massiver Verstärkung; noch im selben Jahr fiel das Zulu-Reich. Am Abend desselben Tages hielten 150 Briten in Rorke's Drift gegen 3.000 Zulu stand – diese Episode wurde gezielt in den Vordergrund gerückt, um die Katastrophe zu überdecken.",
-  "hinweis": "Elf Victoria-Kreuze für Rorke's Drift, die höchste Zahl für ein einzelnes Gefecht: eine Auszeichnungspolitik mit Nachrichtenwirkung."
+  "hinweis": "Elf Victoria-Kreuze für Rorke's Drift, die höchste Zahl für ein einzelnes Gefecht: eine Auszeichnungspolitik mit Nachrichtenwirkung.",
+  "vertiefung": "shaka"
  },
  {
   "year": 1896,
@@ -2599,7 +2600,8 @@ const BATTLES = [
   ],
   "ausgang": "Vollständiger äthiopischer Sieg. Die italienischen Kolonnen marschierten nachts nach fehlerhaften Karten und trafen einzeln und getrennt auf ein weit überlegenes, gut bewaffnetes Heer.",
   "folgen": "Äthiopien blieb als einziger afrikanischer Staat unkolonisiert. Italien musste die Unabhängigkeit im Vertrag von Addis Abeba anerkennen. Der Sieg wurde weltweit zum Bezugspunkt antikolonialer Bewegungen und später des Panafrikanismus.",
-  "hinweis": "Menelik hatte über Jahre systematisch moderne Gewehre eingekauft – auch von Italien selbst. Der Sieg war keine Überraschung der Technik, sondern das Ergebnis vorausschauender Rüstung."
+  "hinweis": "Menelik hatte über Jahre systematisch moderne Gewehre eingekauft – auch von Italien selbst. Der Sieg war keine Überraschung der Technik, sondern das Ergebnis vorausschauender Rüstung.",
+  "vertiefung": "haile-selassie"
  },
  {
   "year": 1898,
@@ -3231,7 +3233,8 @@ const BATTLES = [
   ],
   "ausgang": "Vollständiger Sieg der Việt Minh nach 57 Tagen. Frankreich hatte den Kessel als Falle für den Gegner gedacht; Giáp ließ Artillerie in Einzelteilen über die Berge tragen und beschoss die Landebahn, worauf die Versorgung nur noch per Fallschirm möglich war und schließlich ausblieb.",
   "folgen": "Frankreich gab Indochina auf. Die Genfer Konferenz teilte Vietnam am 17. Breitengrad – aus der vorläufigen Linie wurde eine Grenze, an der zwanzig Jahre später der amerikanische Krieg geführt wurde.",
-  "hinweis": "Die Träger – überwiegend Zivilisten mit umgebauten Fahrrädern – waren militärisch entscheidend. In den meisten Truppenzahlen tauchen sie nicht auf."
+  "hinweis": "Die Träger – überwiegend Zivilisten mit umgebauten Fahrrädern – waren militärisch entscheidend. In den meisten Truppenzahlen tauchen sie nicht auf.",
+  "vertiefung": "dai-viet"
  },
  {
   "year": 1968,
