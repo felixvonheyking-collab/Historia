@@ -253,6 +253,9 @@ const ERLAUBTE_ABWEICHUNGEN = [
   ["Mongolensturm", "Der Mongolensturm", "Regional unterschiedliche Jahre desselben Feldzugs"],
   ["Mongolische Eroberung", "Mongolische Invasionen", "1231 erster Angriff auf Korea, 1237 Feldzug gegen die Rus"],
   ["Japanische Besetzung", "Japanische Truppen im Land", "8. Dezember 1941 Thailand, 1942 die übrige Region"],
+  // Zwei verschiedene Aufstaende, die haeufig verwechselt werden: 1943 erhob
+  // sich das Ghetto, 1944 die polnische Heimatarmee in der ganzen Stadt.
+  ["Aufstand im Warschauer Ghetto", "Der Warschauer Aufstand", "1943 Ghettoaufstand, 1944 Aufstand der Heimatarmee – zwei verschiedene Ereignisse"],
   ["Osmanische Herrschaft", "Osmanische Herrschaft beginnt", "1516 Levante, 1517 Ägypten"],
   ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
@@ -433,7 +436,24 @@ function pruefeInhalte(D) {
   });
 
   pruefeDubletten("Schlachten", D.BATTLES, "name");
-  pruefeFelder("Schlachten", D.BATTLES, ["year", "name", "war", "text"], "name");
+  pruefeFelder("Schlachten", D.BATTLES, ["year", "name", "war", "text",
+    "ort", "parteien", "ausgang", "folgen"], "name");
+  D.BATTLES.forEach((s) => {
+    // Eine Schlacht ohne zwei Seiten ist keine. Genau zwei, weil die Karte
+    // sie nebeneinander stellt - Koalitionen stehen als eine Partei.
+    if (!Array.isArray(s.parteien) || s.parteien.length !== 2) {
+      meldeFehler("Schlacht '" + s.name + "': braucht genau zwei Parteien");
+      return;
+    }
+    s.parteien.forEach((p, i) => {
+      ["name", "fuehrer", "staerke", "verluste"].forEach((f) => {
+        if (!p[f]) meldeFehler("Schlacht '" + s.name + "', Partei " + (i + 1) + ": '" + f + "' fehlt");
+      });
+    });
+    if (s.vertiefung && !vertIds.has(s.vertiefung)) {
+      meldeFehler("Schlacht '" + s.name + "': verweist auf fehlende Vertiefung '" + s.vertiefung + "'");
+    }
+  });
 
   pruefeDubletten("Mythen", D.MYTHEN, "title");
   pruefeFelder("Mythen", D.MYTHEN, ["category", "type", "title", "text"], "title");

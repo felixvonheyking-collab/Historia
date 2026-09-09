@@ -1463,7 +1463,7 @@ function DynastienTab({ ziel }) {
       ),
       /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-0.5" }, h.kurz),
       vert && /* @__PURE__ */ React.createElement("button", {
-        onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id); },
+        onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id, { reiter: "dynastien", eintrag: reich.id, label: reich.reich }); },
         className: "mt-1.5 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
       }, "Vertiefung: ", vert.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))
     );
@@ -1617,6 +1617,16 @@ function bereichFuer(reiter) {
   }
   return { bereich: "start", unter: null };
 }
+
+// Anzeigename eines einzelnen Reiters, fuer die Zurueck-Leiste.
+function reiterLabel(reiter) {
+  for (const b of BEREICHE) {
+    if (b.id === reiter && b.unter.length === 0) return b.label;
+    const u = b.unter.find((x) => x.id === reiter);
+    if (u) return u.label;
+  }
+  return "Übersicht";
+}
 function formatYear(y) {
   if (y < 0) return `${Math.abs(y).toLocaleString("de-DE")} v. Chr.`;
   return `${y} n. Chr.`;
@@ -1702,9 +1712,126 @@ function SchluesselmomenteTab() {
     c
   ))), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l-2 border-[#5c2018] ml-2" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-8 ml-6" }, /* @__PURE__ */ React.createElement("span", { className: "absolute -left-[9px] w-4 h-4 rounded-full bg-[#d4af37] border-2 border-[#4a1015] flex items-center justify-center" }, /* @__PURE__ */ React.createElement(Zap, { size: 9, className: "text-[#4a1015]" })), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(m.year)), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), (m.vertiefung || m.thema) && /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mt-3" }, m.vertiefung && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", m.vertiefung); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Vertiefung: ", (VERTIEFUNGEN.find((v) => v.id === m.vertiefung) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })), m.thema && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("themen", m.thema); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Thema: ", (THEMEN.find((t) => t.id === m.thema) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))))))));
 }
+/* =========================================================
+   SCHLACHTEN
+
+   Jede Schlacht mit beiden Seiten nebeneinander: Anfuehrer,
+   Truppenstaerke, Verluste, Ausgang und Folgen.
+
+   Zu den Zahlen: Fuer die Antike und das Mittelalter stammen sie
+   fast immer von einer Seite und sind haeufig uebertrieben - die
+   Sieger hatten Grund, den Gegner gross zu rechnen. Wo die
+   Forschung deutlich von der Ueberlieferung abweicht, steht das
+   im Feld 'hinweis' statt in einer glatten Zahl.
+   ========================================================= */
+
+const SCHLACHT_ZEITRAEUME = [
+  { id: "Alle", von: -9999, bis: 9999 },
+  { id: "Antike", von: -9999, bis: 500 },
+  { id: "Mittelalter", von: 500, bis: 1500 },
+  { id: "Neuzeit", von: 1500, bis: 1800 },
+  { id: "19. Jh.", von: 1800, bis: 1900 },
+  { id: "20./21. Jh.", von: 1900, bis: 9999 }
+];
+
 function SchlachtenTab() {
-  const sorted = [...BATTLES].sort((a, b) => a.year - b.year);
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-5 max-w-2xl" }, BATTLES.length, " Schlachten, die den Ausgang von Kriegen und damit oft den Lauf der Geschichte entschieden haben."), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, sorted.map((b, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-1" }, formatYear(b.year)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a]" }, b.name), /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#8a6238] mb-2" }, b.war), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, b.text)))));
+  const [suche, setSuche] = useState("");
+  const [zeit, setZeit] = useState("Alle");
+
+  const q = suche.trim().toLowerCase();
+  const spanne = SCHLACHT_ZEITRAEUME.find((z) => z.id === zeit) || SCHLACHT_ZEITRAEUME[0];
+
+  const gefiltert = [...BATTLES]
+    .sort((a, b) => a.year - b.year)
+    .filter((b) => b.year >= spanne.von && b.year < spanne.bis)
+    .filter((b) => {
+      if (!q) return true;
+      const heu = [b.name, b.war, b.text, b.ort, b.ausgang, b.folgen]
+        .concat((b.parteien || []).map((p) => p.name + " " + (p.fuehrer || "")))
+        .join(" ").toLowerCase();
+      return heu.includes(q);
+    });
+
+  function partei(p, i) {
+    return /* @__PURE__ */ React.createElement("div", {
+      key: i,
+      className: "rounded border border-[#5c2018] bg-[#4a1015] p-3"
+    },
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[15px] text-[#e0b84a] leading-snug" }, p.name),
+      p.fuehrer && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] mt-0.5" }, p.fuehrer),
+      /* @__PURE__ */ React.createElement("dl", { className: "mt-2 text-xs" },
+        p.staerke && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
+          /* @__PURE__ */ React.createElement("dt", { className: "text-[#8a6238]", style: { width: "58px", flexShrink: 0 } }, "Stärke"),
+          /* @__PURE__ */ React.createElement("dd", { className: "text-[#d8c690]" }, p.staerke)),
+        p.verluste && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2 mt-0.5" },
+          /* @__PURE__ */ React.createElement("dt", { className: "text-[#8a6238]", style: { width: "58px", flexShrink: 0 } }, "Verluste"),
+          /* @__PURE__ */ React.createElement("dd", { className: "text-[#d8c690]" }, p.verluste))
+      )
+    );
+  }
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      BATTLES.length, " Schlachten mit beiden Seiten, Anführern, Stärke und Verlusten — und dem, was jeweils gewonnen und verloren wurde."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-5 max-w-2xl leading-relaxed" },
+      "Truppenzahlen der Antike und des Mittelalters stammen fast immer von einer Seite und sind oft übertrieben. Wo die Forschung deutlich von der Überlieferung abweicht, steht das dabei."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-3" },
+      SCHLACHT_ZEITRAEUME.map((z) => /* @__PURE__ */ React.createElement("button", {
+        key: z.id,
+        onClick: () => setZeit(z.id),
+        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${
+          zeit === z.id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      }, z.id))),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-5 rounded border border-[#5c2018] bg-[#5c1a1e] px-2.5 py-1.5 max-w-md" },
+      /* @__PURE__ */ React.createElement(Search, { size: 15, className: "text-[#8a6238]" }),
+      /* @__PURE__ */ React.createElement("input", {
+        value: suche,
+        onChange: (e) => setSuche(e.target.value),
+        placeholder: "Schlacht, Krieg oder Feldherr suchen …",
+        className: "bg-transparent text-sm text-[#e8d5b0] placeholder-[#8a6238] focus:outline-none flex-1"
+      }),
+      /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, gefiltert.length)),
+
+    gefiltert.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Nichts gefunden."),
+
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "12px" } },
+      gefiltert.map((b, i) => /* @__PURE__ */ React.createElement("div", {
+        key: i,
+        className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 max-w-4xl"
+      },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(b.year)),
+          /* @__PURE__ */ React.createElement("span", { className: "font-serif text-lg text-[#f0d878]" }, b.name),
+          b.ort && /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, b.ort)),
+        /* @__PURE__ */ React.createElement("p", { className: "text-[11px] uppercase tracking-wide text-[#8a6238] mb-2" }, b.war),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-3" }, b.text),
+
+        b.parteien && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-3" },
+          b.parteien.map(partei)),
+
+        b.ausgang && /* @__PURE__ */ React.createElement("div", { className: "mb-1.5" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] uppercase tracking-widest text-[#d4af37]" }, "Ausgang "),
+          /* @__PURE__ */ React.createElement("span", { className: "text-sm text-[#e8d5b0] leading-relaxed" }, b.ausgang)),
+
+        b.folgen && /* @__PURE__ */ React.createElement("div", null,
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] uppercase tracking-widest text-[#8a6238]" }, "Folgen "),
+          /* @__PURE__ */ React.createElement("span", { className: "text-sm text-[#c2a06a] leading-relaxed" }, b.folgen)),
+
+        b.hinweis && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#8a6238] leading-relaxed" },
+          "Zu den Zahlen: ", b.hinweis),
+
+        (() => {
+          const v = b.vertiefung ? VERTIEFUNGEN.find((x) => x.id === b.vertiefung) : null;
+          return v && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, { reiter: "schlachten", label: "Schlachten" }); },
+            className: "mt-2 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+          }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+        })()
+      ))
+    )
+  );
 }
 function ZitateTab() {
   const [statusFilter, setStatusFilter] = useState("Alle");
@@ -1783,7 +1910,7 @@ function LaenderTab({ ziel }) {
           /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, e.title),
           /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, e.text),
           vert && /* @__PURE__ */ React.createElement("button", {
-            onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id); },
+            onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", vert.id, { reiter: "laender", eintrag: country, label: country }); },
             className: "mt-1.5 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
           }, "Vertiefung: ", vert.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))
         );
@@ -2145,14 +2272,49 @@ function Historia() {
   const [bereich, setBereich] = useGespeichert("bereich", "start");
   const [unter, setUnter] = useGespeichert("unterreiter", null);
   const [ziel, setZiel] = useState(null);
+  // Woher kam der letzte Sprung? Ohne das landet ein Rueckweg auf der
+  // Uebersicht des Ausgangsbereichs, und man muss sich erneut durchscrollen.
+  const [herkunft, setHerkunft] = useState(null);
+
   // Suche und Querverweise arbeiten mit einzelnen Reiternamen; hier wird
   // daraus der passende Bereich samt Unterreiter gesetzt.
-  SPRINGE = (reiter, eintrag) => {
+  // 'quelle' beschreibt den Ausgangspunkt: { reiter, eintrag, label }.
+  // Wer sie mitgibt, ermoeglicht eine genaue Rueckkehr; ohne sie wird nur
+  // der Reiter gemerkt.
+  SPRINGE = (reiter, eintrag, quelle) => {
     const b = bereichFuer(reiter);
+    const vorher = quelle || { reiter: tab, eintrag: null };
+    setHerkunft({
+      reiter: vorher.reiter,
+      eintrag: vorher.eintrag || null,
+      label: vorher.label || reiterLabel(vorher.reiter),
+      scrollY: typeof window !== "undefined" ? window.scrollY : 0
+    });
     setZiel(eintrag ? { reiter, eintrag, n: Date.now() } : null);
     setBereich(b.bereich);
     setUnter(b.unter);
+    if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
+
+  const geheZurueck = () => {
+    if (!herkunft) return;
+    const h = herkunft;
+    const b = bereichFuer(h.reiter);
+    setHerkunft(null);
+    setZiel(h.eintrag ? { reiter: h.reiter, eintrag: h.eintrag, n: Date.now() } : null);
+    setBereich(b.bereich);
+    setUnter(b.unter);
+    // Erst nach dem Neuzeichnen scrollen, sonst ist die Seite noch zu kurz.
+    if (typeof window !== "undefined") {
+      requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, h.scrollY || 0)));
+    }
+  };
+
+  // Wer selbst im Menue umschaltet, verlaesst den Sprungweg - die alte
+  // Zurueck-Marke waere dann irrefuehrend.
+  const wechsleBereich = (id) => { setHerkunft(null); setBereich(id); };
+  const wechsleUnter = (id) => { setHerkunft(null); setUnter(id); };
+
   const zielFuer = (reiter) => (ziel && ziel.reiter === reiter ? ziel.eintrag : null);
   // Welcher einzelne Reiter ist gerade sichtbar?
   const aktuellerBereich = BEREICHE.find((b) => b.id === bereich) || BEREICHE[0];
@@ -2179,5 +2341,8 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich, unter, setUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich: wechsleBereich, unter, setUnter: wechsleUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, herkunft && /* @__PURE__ */ React.createElement("button", {
+        onClick: geheZurueck,
+        className: "inline-flex items-center gap-1.5 mb-4 text-sm text-[#c9a877] hover:text-[#f0d878]"
+      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
 }
