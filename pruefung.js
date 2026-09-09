@@ -256,6 +256,8 @@ const ERLAUBTE_ABWEICHUNGEN = [
   // Zwei verschiedene Aufstaende, die haeufig verwechselt werden: 1943 erhob
   // sich das Ghetto, 1944 die polnische Heimatarmee in der ganzen Stadt.
   ["Aufstand im Warschauer Ghetto", "Der Warschauer Aufstand", "1943 Ghettoaufstand, 1944 Aufstand der Heimatarmee – zwei verschiedene Ereignisse"],
+  ["Frauenwahlrecht", "Frauenwahlrecht in Deutschland", "1918 Deutschland, 1920 USA – verschiedene Länder, nicht dasselbe Ereignis"],
+  ["Gleiches Wahlrecht für Frauen", "Gleiches Wahlrecht in Großbritannien", "1928 Großbritannien – dieselbe Reform, zwei Sammlungen"],
   ["Osmanische Herrschaft", "Osmanische Herrschaft beginnt", "1516 Levante, 1517 Ägypten"],
   ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],

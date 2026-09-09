@@ -4177,5 +4177,422 @@ const VERTIEFUNGEN = [
     "Oslo-Abkommen 1993 und 1995, Vertragstexte",
     "Israelisches Zentralbüro für Statistik: Jerusalem-Statistiken"
   ]
+},
+{
+  "id": "peloponnesischer-krieg",
+  "titel": "Der Peloponnesische Krieg",
+  "epoche": "antike",
+  "jahr": -431,
+  "zeitraum": "431–404 v. Chr.",
+  "region": "Griechenland",
+  "leitsatz": "Der Krieg, an dem die griechische Welt ihre Blütezeit verlor — und über den der erste Historiker schrieb, der nach Ursachen statt nach Göttern fragte.",
+  "vorgeschichte": "Nach der Abwehr der Perser war Athen zur Seemacht geworden und hatte den Delisch-Attischen Seebund in ein Reich verwandelt: Die Bundeskasse wanderte nach Athen, Austritte wurden militärisch verhindert. Sparta führte den Peloponnesischen Bund und sah seine Stellung bedroht.",
+  "verlauf": "Athen setzte auf die Flotte und zog die Landbevölkerung hinter die Mauern – wo 430 v. Chr. eine Seuche ausbrach und etwa ein Viertel der Bevölkerung tötete, darunter Perikles. Nach wechselhaften Jahren scheiterte 415 der Feldzug gegen Syrakus mit dem Verlust einer ganzen Flotte und ihres Heeres. Sparta ließ sich schließlich von Persien eine Flotte finanzieren – gegen die Zusage, die griechischen Städte Kleinasiens zu überlassen. 405 vernichtete Lysander die athenische Flotte bei Aigospotamoi; ausgehungert kapitulierte Athen 404.",
+  "folgen": "Athen verlor Mauern, Flotte und vorübergehend die Demokratie. Sparta erwies sich als Hegemon unfähig und unterlag 371 bei Leuktra den Thebanern. Die dauernden Kriege schwächten alle griechischen Städte so weit, dass Philipp II. von Makedonien 338 v. Chr. die Vorherrschaft übernehmen konnte. Fünf Jahre nach Kriegsende wurde Sokrates in Athen hingerichtet – in einer Stadt, die ihr Selbstvertrauen verloren hatte.",
+  "strittig": "Thukydides nennt als wahrsten Grund die Furcht Spartas vor Athens wachsender Macht – eine Erklärung, die in der Politikwissenschaft bis heute als Thukydides-Falle zitiert wird. Historiker weisen darauf hin, dass diese Deutung von ihm stammt und andere Ursachen, etwa Handelsinteressen, in seinem Bericht zurücktreten. Auch die Seuche von 430 ist nicht bestimmt: Typhus, Pocken und Ebola wurden vorgeschlagen, eine DNA-Analyse an Zähnen aus einem Massengrab deutet auf Typhus.",
+  "zahlen": [
+    {
+      "wert": "27 Jahre",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "ca. 25 %",
+      "was": "Bevölkerungsverlust Athens durch die Seuche"
+    },
+    {
+      "wert": "404 v. Chr.",
+      "was": "Kapitulation Athens"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Peloponnesian War",
+    "Thukydides: Der Peloponnesische Krieg",
+    "Donald Kagan: The Peloponnesian War"
+  ]
+},
+{
+  "id": "wikinger",
+  "titel": "Die Wikinger",
+  "epoche": "mittelalter",
+  "jahr": 793,
+  "zeitraum": "793–1066",
+  "region": "Nordeuropa und Nordatlantik",
+  "leitsatz": "Sie plünderten Klöster, gründeten Staaten, erreichten Amerika — und Hörnerhelme trugen sie nie.",
+  "vorgeschichte": "Skandinavien hatte im 8. Jahrhundert Bevölkerungsdruck, knappes Ackerland und ein Erbrecht, das nachgeborene Söhne leer ausgehen ließ. Zugleich entstand mit dem Langschiff ein Fahrzeug, das hochseetüchtig war und trotzdem in flachen Flüssen fuhr – bis weit ins Binnenland.",
+  "verlauf": "Der Überfall auf Lindisfarne 793 gilt als Beginn. Die Züge führten nach England, Irland und Frankreich, über die russischen Flüsse bis nach Konstantinopel und Bagdad, über den Nordatlantik nach Island, Grönland und um 1000 nach Neufundland. Aus Raubzügen wurde Siedlung: Die Normandie, das Danelag in England, Dublin und die Kiewer Rus gehen darauf zurück. In Konstantinopel bildeten Skandinavier die Leibgarde des Kaisers.",
+  "folgen": "Die Wikingerzeit endete mit der Christianisierung und der Entstehung der Königreiche Dänemark, Norwegen und Schweden – ab da war die Gewalt staatlich organisiert statt privat. 1066 fielen mit Harald Hardrada bei Stamford Bridge und Wilhelm dem Eroberer bei Hastings zwei Nachfahren derselben Bewegung in England ein, drei Wochen auseinander.",
+  "strittig": "Das Bild vom wilden Heiden stammt aus den Klosterchroniken – geschrieben von den Opfern der Überfälle, die zugleich die einzigen waren, die schreiben konnten. Der Hörnerhelm ist eine Erfindung des 19. Jahrhunderts, überwiegend aus der Bühnenausstattung von Wagner-Opern. Umstritten ist auch die Rolle von Frauen: Ein reich ausgestattetes Kriegergrab in Birka erwies sich 2017 per DNA als weiblich, was eine bis heute andauernde Debatte über die Deutung von Grabbeigaben auslöste.",
+  "zahlen": [
+    {
+      "wert": "793",
+      "was": "Überfall auf Lindisfarne"
+    },
+    {
+      "wert": "ca. 1000",
+      "was": "Siedlung L'Anse aux Meadows in Neufundland"
+    },
+    {
+      "wert": "ca. 6 km/h",
+      "was": "Dauergeschwindigkeit eines Langschiffs unter Ruder"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Viking",
+    "Neil Price: Die wahre Geschichte der Wikinger",
+    "Charlotte Hedenstierna-Jonson u. a., 2017: A female Viking warrior confirmed by genomics"
+  ]
+},
+{
+  "id": "hanse",
+  "titel": "Die Hanse",
+  "epoche": "mittelalter",
+  "jahr": 1358,
+  "zeitraum": "12.–17. Jahrhundert",
+  "region": "Nord- und Ostseeraum",
+  "leitsatz": "Ein Bund ohne Verfassung, ohne Armee und ohne feste Mitgliederliste beherrschte drei Jahrhunderte lang den Handel im Norden.",
+  "vorgeschichte": "Kaufleute, die weit von zu Hause handelten, brauchten Schutz, Rechtssicherheit und gemeinsame Vertretung gegenüber fremden Herrschern. Aus Fahrtgemeinschaften und Gilden entstand allmählich ein Netz, das sich erst im 14. Jahrhundert selbst als Hanse bezeichnete.",
+  "verlauf": "Etwa 200 Städte gehörten zeitweise dazu, von Nowgorod bis Brügge und London. Ihre Mittel waren wirtschaftlich: Handelssperren, gemeinsame Preise, eigene Niederlassungen mit eigenem Recht. Als Dänemark 1361 Visby plünderte und den Ostseehandel bedrohte, führte die Hanse ausnahmsweise Krieg und erzwang 1370 im Frieden von Stralsund weitreichende Vorrechte – einschließlich eines Mitspracherechts bei der dänischen Königswahl.",
+  "folgen": "Der Bund schuf gemeinsames Handelsrecht, den Schiffstyp der Kogge als Standard und eine Infrastruktur des Vertrauens über hunderte Kilometer. Sein Niedergang begann, als die Territorialstaaten stark genug wurden, eigene Handelspolitik zu machen, und als der Atlantikhandel wichtiger wurde als die Ostsee. Der letzte Hansetag fand 1669 statt; niemand beschloss die Auflösung.",
+  "strittig": "Ob die Hanse ein Städtebund war oder eher ein Kaufmannsnetzwerk, das sich manchmal städtisch organisierte, wird in der Forschung unterschiedlich beantwortet. Es gab keine Gründungsurkunde, keine feste Mitgliederliste und kein gemeinsames Siegel – die klare Vorstellung von der Hanse als Organisation stammt teilweise erst aus dem 19. Jahrhundert.",
+  "zahlen": [
+    {
+      "wert": "ca. 200",
+      "was": "Städte, die zeitweise dazugehörten"
+    },
+    {
+      "wert": "1370",
+      "was": "Frieden von Stralsund"
+    },
+    {
+      "wert": "1669",
+      "was": "letzter Hansetag"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Hanseatic League",
+    "Rolf Hammel-Kiesow: Die Hanse",
+    "Europäisches Hansemuseum Lübeck"
+  ]
+},
+{
+  "id": "universitaet",
+  "titel": "Die Erfindung der Universität",
+  "epoche": "mittelalter",
+  "jahr": 1088,
+  "zeitraum": "ab 1088",
+  "region": "Europa",
+  "leitsatz": "Eine Rechtsform aus dem Handwerk — universitas hieß schlicht Zunft — wurde zur langlebigsten Institution des Westens nach der Kirche.",
+  "vorgeschichte": "Bildung lag im frühen Mittelalter bei Kloster- und Domschulen. Mit dem Wiederaufkommen des römischen Rechts, der Übersetzung des Aristoteles aus dem Arabischen und dem wachsenden Verwaltungsbedarf von Kirche und Städten stieg der Bedarf an ausgebildeten Juristen, Ärzten und Theologen sprunghaft.",
+  "verlauf": "In Bologna schlossen sich ab etwa 1088 Studenten zu einer Körperschaft zusammen, um gegenüber Stadt und Lehrern aufzutreten – dort bestimmten die Studenten, was gelesen wurde. In Paris organisierten sich umgekehrt die Lehrer. Beide Modelle erhielten Privilegien: eigene Gerichtsbarkeit, Steuerfreiheit, das Recht, Grade zu verleihen, die überall galten. Der Unterricht bestand aus Vorlesung und Disputation – dem geregelten Streit über eine These.",
+  "folgen": "Aus wenigen Gründungen wurden bis 1500 rund achtzig Universitäten. Die Struktur – Fakultäten, Grade, akademische Freiheit, Selbstverwaltung – hat tausend Jahre überdauert und ist weltweit übernommen worden. Von den Institutionen, die es im Jahr 1500 gab und die heute noch in erkennbar gleicher Form arbeiten, sind die meisten Universitäten.",
+  "strittig": "Ob die Universität eine europäische Erfindung ist, hängt an der Definition. Die al-Qarawiyyin in Fes und die al-Azhar in Kairo sind älter und lehrten dauerhaft; ihnen fehlte aber die Körperschaftsverfassung mit eigener Rechtspersönlichkeit, die den europäischen Fall auszeichnet. Nalanda in Indien war Jahrhunderte früher ein großes Lehrzentrum. Die Frage nach dem Ersten ist weniger ergiebig als die nach den Unterschieden.",
+  "zahlen": [
+    {
+      "wert": "1088",
+      "was": "traditionelles Gründungsjahr Bolognas"
+    },
+    {
+      "wert": "ca. 80",
+      "was": "Universitäten in Europa um 1500"
+    },
+    {
+      "wert": "über 900 Jahre",
+      "was": "ununterbrochener Betrieb in Bologna"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: university",
+    "Walter Rüegg (Hrsg.): Geschichte der Universität in Europa",
+    "Olaf Pedersen: The First Universities"
+  ]
+},
+{
+  "id": "inka",
+  "titel": "Das Inkareich",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1438,
+  "zeitraum": "1438–1533",
+  "region": "Andenraum",
+  "leitsatz": "Ein Reich über 4.000 Kilometer, verwaltet ohne Schrift, ohne Geld und ohne Rad — und in weniger als einem Jahr verloren.",
+  "vorgeschichte": "Im Andenraum bestanden seit Jahrtausenden Hochkulturen – Caral, Chavín, Moche, Tiwanaku, Wari. Die Inka waren zunächst eine von vielen Gruppen im Tal von Cusco und begannen erst um 1438 unter Pachacútec mit der raschen Ausdehnung.",
+  "verlauf": "Binnen dreier Generationen entstand ein Reich von Ecuador bis Chile mit vielleicht zehn Millionen Menschen. Es beruhte auf Arbeitsabgabe statt Steuern: Jeder Haushalt leistete Arbeitstage für Straßen, Terrassen, Bewässerung und Militär. Ein Straßennetz von rund 40.000 Kilometern verband das Land, Läufer überbrachten Nachrichten in Staffeln. Die Verwaltung nutzte Quipus – Knotenschnüre –, mit denen sich mindestens Zahlen, Bestände und Verwaltungsangaben festhalten ließen. Vorratsspeicher entlang der Straßen sicherten gegen Missernten.",
+  "folgen": "Als Pizarro 1532 mit 168 Mann eintraf, war das Reich durch einen Bürgerkrieg zwischen zwei Thronanwärtern und eine vorauseilende Pockenepidemie geschwächt. Die Gefangennahme Atahualpas in Cajamarca und seine Hinrichtung ein Jahr später brachten die zentralisierte Struktur zum Einsturz – ein Reich ohne Kopf war nicht mehr zu steuern. Widerstand hielt in Vilcabamba bis 1572 an.",
+  "strittig": "Ob Quipus über Zahlen hinaus auch Sprache aufzeichnen konnten, ist eine offene Forschungsfrage; einige Exemplare zeigen Muster, die sich mit reiner Zahlenkodierung schwer erklären lassen. Umstritten ist auch die Deutung des Reiches: als Sozialstaat mit Fürsorge, als Zwangsordnung mit Umsiedlungen ganzer Bevölkerungen – die Belege stützen beide Aspekte, und die Quellen stammen fast alle von spanischen Autoren.",
+  "zahlen": [
+    {
+      "wert": "ca. 40.000 km",
+      "was": "Straßennetz"
+    },
+    {
+      "wert": "ca. 10 Mio.",
+      "was": "geschätzte Bevölkerung um 1530"
+    },
+    {
+      "wert": "168",
+      "was": "Spanier bei der Gefangennahme Atahualpas"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Inca",
+    "Gordon McEwan: The Incas – New Perspectives",
+    "Sabine Hyland: Ethnographers and the Khipu"
+  ]
+},
+{
+  "id": "eisenbahn",
+  "titel": "Die Eisenbahn und die Erfindung des Fahrplans",
+  "epoche": "industrialisierung",
+  "jahr": 1830,
+  "zeitraum": "1825–1900",
+  "region": "weltweit",
+  "leitsatz": "Sie beschleunigte nicht nur den Verkehr, sondern erzwang etwas, das es vorher nicht gab: eine für alle gleiche Uhrzeit.",
+  "vorgeschichte": "Bis ins 19. Jahrhundert reiste man so schnell wie ein Pferd – seit der Antike unverändert. Jede Stadt hatte ihre eigene Ortszeit nach dem Sonnenstand; zwischen London und Bristol lagen zehn Minuten Unterschied, was niemanden störte, solange die Postkutsche zwei Tage brauchte.",
+  "verlauf": "Die Strecke Liverpool–Manchester von 1830 war die erste, die planmäßig Personen und Güter mit Dampfkraft beförderte. Binnen zwanzig Jahren überzogen Netze England, Belgien und Deutschland. Fahrpläne setzten voraus, dass alle Stationen dieselbe Zeit anzeigen: 1847 führten die britischen Gesellschaften die Greenwich-Zeit ein, 1884 legte eine internationale Konferenz die Zeitzonen fest. Die Eisenbahn schuf zugleich Massengüterverkehr, Pendeln, Vorstädte, Ferntourismus und den Bedarf an Stahl in nie gekannter Menge.",
+  "folgen": "Wirtschaftlich verband sie Rohstoffe, Fabriken und Märkte und machte nationale Wirtschaftsräume erst möglich. Militärisch entschied sie Kriege: Bei Königgrätz 1866 ließ Moltke drei Armeen getrennt heranfahren. Politisch band sie Flächenstaaten zusammen – die Transsibirische Bahn und die amerikanische Pazifikbahn waren so sehr Staatsprojekte wie Verkehrsprojekte.",
+  "strittig": "Zeitgenössische Warnungen, hohe Geschwindigkeit schade der Gesundheit, werden gern als Beispiel für Fortschrittsangst zitiert. Die Belege dafür sind dünner als die Anekdote; die tatsächliche Kritik richtete sich meist gegen Enteignungen, Unfallzahlen und die Macht der Gesellschaften – Punkte, die sich als berechtigt erwiesen.",
+  "zahlen": [
+    {
+      "wert": "1830",
+      "was": "Liverpool–Manchester"
+    },
+    {
+      "wert": "1884",
+      "was": "internationale Zeitzonenkonferenz"
+    },
+    {
+      "wert": "ca. 1 Mio. km",
+      "was": "Streckennetz weltweit um 1913"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: railroad",
+    "Wolfgang Schivelbusch: Geschichte der Eisenbahnreise",
+    "Christian Wolmar: Blood, Iron and Gold"
+  ]
+},
+{
+  "id": "suezkanal",
+  "titel": "Der Suezkanal",
+  "epoche": "industrialisierung",
+  "jahr": 1869,
+  "zeitraum": "1859–heute",
+  "region": "Ägypten",
+  "leitsatz": "Ein Kanal, gegraben von ägyptischen Zwangsarbeitern, brachte Ägypten den Staatsbankrott und damit die britische Besetzung.",
+  "vorgeschichte": "Eine Verbindung zwischen Mittelmeer und Rotem Meer hatte es schon in der Antike gegeben, verschüttet und wieder freigelegt. Im 19. Jahrhundert wurde sie wirtschaftlich zwingend: Der Weg nach Indien führte um Afrika, was den Handel um Wochen verlängerte.",
+  "verlauf": "Ferdinand de Lesseps erhielt 1854 eine Konzession vom ägyptischen Vizekönig. Der Bau dauerte zehn Jahre; in den ersten Jahren arbeiteten zehntausende Ägypter unter Zwangsverpflichtung, bis internationaler Druck das beendete und Maschinen übernahmen. Die Zahl der Toten ist unbekannt, Schätzungen reichen weit auseinander. 1869 wurde der Kanal mit einem Fest eröffnet, dessen Kosten den ägyptischen Haushalt zusätzlich belasteten.",
+  "folgen": "Die Fahrt von London nach Bombay verkürzte sich um etwa 7.000 Kilometer. Ägypten war so verschuldet, dass es 1875 seine Anteile an Großbritannien verkaufte; 1882 besetzten britische Truppen das Land – offiziell zur Sicherung des Kanals, tatsächlich für siebzig Jahre. 1956 verstaatlichte Nasser den Kanal; der Versuch Großbritanniens, Frankreichs und Israels, das rückgängig zu machen, scheiterte am amerikanischen Druck und markierte das Ende britischer Weltmachtpolitik.",
+  "strittig": "Die Opferzahlen des Baus schwanken zwischen wenigen tausend und über hunderttausend; belastbare Aufzeichnungen fehlen, und beide Extreme werden politisch benutzt. Unstrittig ist der Zwangscharakter der frühen Arbeit.",
+  "zahlen": [
+    {
+      "wert": "193 km",
+      "was": "Länge"
+    },
+    {
+      "wert": "10 Jahre",
+      "was": "Bauzeit"
+    },
+    {
+      "wert": "ca. 12 %",
+      "was": "Anteil am Welthandel, der ihn heute passiert"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Suez Canal",
+    "Zachary Karabell: Parting the Desert",
+    "Suez Canal Authority: Verkehrsstatistiken"
+  ]
+},
+{
+  "id": "grippe-1918",
+  "titel": "Die Grippepandemie von 1918",
+  "epoche": "moderne",
+  "jahr": 1918,
+  "zeitraum": "1918–1920",
+  "region": "weltweit",
+  "leitsatz": "Sie tötete mehr Menschen als der Weltkrieg, der ihr vorausging — und wurde trotzdem für Jahrzehnte fast vergessen.",
+  "vorgeschichte": "Der Krieg hatte Millionen Menschen in Lagern, Zügen und Schützengräben zusammengedrängt und weltweit verschoben. Zensur in allen kriegführenden Staaten unterdrückte Nachrichten über Krankheiten; nur das neutrale Spanien berichtete offen – daher der irreführende Name Spanische Grippe.",
+  "verlauf": "Die erste Welle im Frühjahr 1918 verlief mild, die zweite ab August verheerend. Anders als bei üblichen Grippewellen starben besonders viele 20- bis 40-Jährige, vermutlich durch eine überschießende Immunreaktion. Städte, die früh Versammlungen verboten und Schulen schlossen, hatten deutlich niedrigere Sterblichkeit – der Vergleich zwischen St. Louis und Philadelphia wurde 2020 wieder viel zitiert. Insgesamt starben schätzungsweise 50 Millionen Menschen, ein großer Teil davon in Indien.",
+  "folgen": "Der Erreger wurde erst 1933 als Virus erkannt; 2005 gelang die Rekonstruktion des Genoms aus konserviertem Gewebe. Die Pandemie beschleunigte den Aufbau öffentlicher Gesundheitssysteme und internationaler Meldewege. Erinnert wurde sie kaum: Es gibt fast keine Denkmäler, wenig Literatur, kaum familiäre Überlieferung – die Katastrophe verschwand hinter dem Krieg.",
+  "strittig": "Der Ursprung ist ungeklärt; vorgeschlagen wurden Kansas, Frankreich und China, ohne Entscheidung. Die Opferzahl wurde mehrfach nach oben korrigiert: Ältere Angaben nannten 20 Millionen, heute gelten 50 Millionen als mittlere Schätzung, mit einer Spanne bis 100 Millionen.",
+  "zahlen": [
+    {
+      "wert": "ca. 50 Mio.",
+      "was": "geschätzte Todesopfer"
+    },
+    {
+      "wert": "ca. 500 Mio.",
+      "was": "Infizierte, etwa ein Drittel der Menschheit"
+    },
+    {
+      "wert": "2005",
+      "was": "Rekonstruktion des Virusgenoms"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: influenza pandemic of 1918–19",
+    "Laura Spinney: 1918 – Die Welt im Fieber",
+    "Taubenberger und Morens, 2006: 1918 Influenza – the Mother of All Pandemics"
+  ]
+},
+{
+  "id": "evolutionstheorie",
+  "titel": "Darwin und die Evolutionstheorie",
+  "epoche": "industrialisierung",
+  "jahr": 1859,
+  "zeitraum": "1831–1871",
+  "region": "Großbritannien",
+  "leitsatz": "Er wartete zwanzig Jahre mit der Veröffentlichung — und schrieb dann in acht Monaten, weil ein anderer dieselbe Idee gehabt hatte.",
+  "vorgeschichte": "Dass Arten sich wandeln, hatten vor Darwin schon andere vermutet, darunter sein eigener Großvater und Lamarck. Was fehlte, war ein Mechanismus. Zugleich hatte die Geologie mit Lyell gezeigt, dass die Erde alt genug für langsame Prozesse ist – ohne diese Tiefenzeit wäre Evolution undenkbar gewesen.",
+  "verlauf": "Auf der fünfjährigen Reise der Beagle sammelte Darwin Beobachtungen, die er erst Jahre später ordnete. Die Idee der natürlichen Auslese hatte er 1838 nach der Lektüre von Malthus. Er arbeitete zwei Jahrzehnte daran, ohne zu veröffentlichen – Biographen nennen Sorge vor der Reaktion ebenso wie den Wunsch, den Fall lückenlos zu belegen. 1858 schickte ihm Alfred Russel Wallace aus Indonesien einen Aufsatz mit derselben Kernidee; beide wurden gemeinsam vorgetragen. Ein Jahr später erschien Über die Entstehung der Arten und war am ersten Tag ausverkauft.",
+  "folgen": "Die Biologie erhielt ein einheitliches Erklärungsprinzip. Der Vererbungsmechanismus fehlte noch – Mendels Arbeit blieb bis 1900 unbeachtet; erst die Verbindung beider in den 1930er Jahren ergab die moderne Synthese. Darwins Gedanken wurden zugleich missbraucht: Der sogenannte Sozialdarwinismus übertrug Auslese auf Gesellschaften und lieferte Rechtfertigungen für Kolonialismus, Eugenik und Rassenlehren. Diese Übertragung stammt nicht von Darwin und ist wissenschaftlich unhaltbar.",
+  "strittig": "In der Fachwissenschaft ist die Evolution seit über einem Jahrhundert unbestritten; gestritten wird über Tempo, Rolle des Zufalls und Bedeutung von Ebenen der Selektion. Öffentliche Ablehnung besteht regional fort, ist aber keine wissenschaftliche Kontroverse. Offen ist historisch, warum Darwin so lange zögerte – die Belege lassen mehrere Deutungen zu.",
+  "zahlen": [
+    {
+      "wert": "5 Jahre",
+      "was": "Reise der Beagle"
+    },
+    {
+      "wert": "21 Jahre",
+      "was": "zwischen erster Notiz und Veröffentlichung"
+    },
+    {
+      "wert": "1.250",
+      "was": "Exemplare der ersten Auflage, am ersten Tag vergriffen"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Charles Darwin",
+    "Charles Darwin: On the Origin of Species, 1859",
+    "Janet Browne: Charles Darwin – Eine Biographie"
+  ]
+},
+{
+  "id": "physik-1900",
+  "titel": "Die zwei Revolutionen der Physik",
+  "epoche": "moderne",
+  "jahr": 1905,
+  "zeitraum": "1900–1935",
+  "region": "Europa",
+  "leitsatz": "Innerhalb von dreißig Jahren verlor die Physik Zeit, Raum und Bestimmtheit — und wurde dadurch genauer als je zuvor.",
+  "vorgeschichte": "Um 1900 galt die Physik vielen als weitgehend abgeschlossen; es blieben ein paar Unstimmigkeiten. Genau an ihnen brach das Gebäude auf: die Strahlung schwarzer Körper, der fehlende Nachweis des Äthers, die Radioaktivität.",
+  "verlauf": "Max Planck führte 1900 als rechnerischen Notbehelf ein, dass Energie nur in Portionen abgegeben wird. Einstein nahm das 1905 ernst und erklärte damit den Fotoeffekt – dafür erhielt er den Nobelpreis, nicht für die Relativitätstheorie. Im selben Jahr zeigte er, dass Zeit und Länge vom Bewegungszustand abhängen; 1915 folgte die allgemeine Relativitätstheorie, die Schwerkraft als Krümmung des Raumes deutet. Parallel entstand die Quantenmechanik: Heisenbergs Unbestimmtheitsrelation 1927 und Schrödingers Wellengleichung machten Wahrscheinlichkeit zum Kern der Beschreibung.",
+  "folgen": "Ohne Quantenmechanik gäbe es keinen Transistor, keinen Laser, keine moderne Chemie; ohne Relativitätstheorie keine funktionierende Satellitennavigation – GPS muss beide Effekte herausrechnen, sonst wäre die Position nach einem Tag um Kilometer falsch. Die Bestätigung der Lichtablenkung bei der Sonnenfinsternis 1919 machte Einstein weltberühmt.",
+  "strittig": "Die Deutung der Quantenmechanik ist bis heute offen: Kopenhagener Deutung, Viele-Welten, Bohmsche Mechanik und andere sagen dieselben Messergebnisse voraus, erklären sie aber völlig verschieden. Ungelöst ist auch die Vereinbarkeit beider Theorien – Relativitätstheorie und Quantenmechanik widersprechen sich dort, wo Schwerkraft und Quanteneffekte zugleich wirken.",
+  "zahlen": [
+    {
+      "wert": "1905",
+      "was": "Einsteins Wunderjahr mit vier grundlegenden Aufsätzen"
+    },
+    {
+      "wert": "1919",
+      "was": "Bestätigung der Lichtablenkung"
+    },
+    {
+      "wert": "38 Mikrosekunden",
+      "was": "tägliche Zeitkorrektur bei GPS-Satelliten"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: quantum mechanics; relativity",
+    "Abraham Pais: Raffiniert ist der Herrgott",
+    "Nobelprize.org: Physikpreise 1918, 1921, 1932, 1933"
+  ]
+},
+{
+  "id": "kulturrevolution",
+  "titel": "Die Kulturrevolution",
+  "epoche": "moderne",
+  "jahr": 1966,
+  "zeitraum": "1966–1976",
+  "region": "China",
+  "leitsatz": "Ein Machtkampf an der Parteispitze wurde als Jugendbewegung inszeniert — und geriet außer Kontrolle.",
+  "vorgeschichte": "Der Große Sprung nach vorn hatte ab 1958 eine Hungersnot mit Millionen Toten verursacht; Mao war innerparteilich geschwächt und in praktischen Fragen entmachtet. 1966 mobilisierte er Studenten und Schüler gegen die eigene Partei, gegen Lehrer, Beamte und alles, was als alt galt.",
+  "verlauf": "Rotgardisten zerstörten Tempel, Bibliotheken und Kunstwerke, demütigten und misshandelten Lehrer und Vorgesetzte öffentlich. Universitäten schlossen für Jahre. Millionen Jugendliche wurden aufs Land geschickt – eine ganze Generation ohne Ausbildung. Als die Gewalt eskalierte und Fraktionen der Rotgardisten gegeneinander kämpften, setzte Mao die Armee ein, um die von ihm losgelassene Bewegung wieder einzufangen.",
+  "folgen": "Die Zahl der Todesopfer wird auf ein bis zwei Millionen geschätzt, die Zahl der Verfolgten weit höher. Nach Maos Tod 1976 wurde die Viererbande verurteilt und die Kulturrevolution offiziell als Katastrophe bewertet – bei gleichzeitiger Fortschreibung von Maos Ansehen im Grundsatz. Der Bruch mit den Verhältnissen ermöglichte allerdings auch Deng Xiaopings Reformen ab 1978.",
+  "strittig": "Die Aufarbeitung in China ist begrenzt: Der offizielle Beschluss von 1981 nennt Fehler, ohne die Verantwortung im Einzelnen zu klären; unabhängige Forschung im Land ist erschwert. Die Opferzahlen beruhen auf Hochrechnungen aus lokalen Chroniken und schwanken erheblich.",
+  "zahlen": [
+    {
+      "wert": "10 Jahre",
+      "was": "Dauer"
+    },
+    {
+      "wert": "1–2 Mio.",
+      "was": "geschätzte Todesopfer"
+    },
+    {
+      "wert": "ca. 17 Mio.",
+      "was": "aufs Land geschickte Jugendliche"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cultural Revolution",
+    "Frank Dikötter: Die Kulturrevolution",
+    "Roderick MacFarquhar und Michael Schoenhals: Mao's Last Revolution"
+  ]
+},
+{
+  "id": "europaeische-einigung",
+  "titel": "Die europäische Einigung",
+  "epoche": "moderne",
+  "jahr": 1951,
+  "zeitraum": "1951–heute",
+  "region": "Europa",
+  "leitsatz": "Der Frieden sollte nicht beschworen, sondern technisch unmöglich zu brechen gemacht werden: über Kohle und Stahl.",
+  "vorgeschichte": "Nach zwei Weltkriegen in dreißig Jahren stellte sich die Frage, wie ein dritter zu verhindern sei. Die Antwort von 1919 – Strafe und Kontrolle – hatte nicht gehalten. Der Schuman-Plan von 1950 wählte den umgekehrten Weg: die Rüstungsgrundstoffe Kohle und Stahl gemeinsam verwalten, sodass ein Krieg zwischen den Beteiligten nicht nur undenkbar, sondern materiell unmöglich würde.",
+  "verlauf": "1951 gründeten sechs Staaten die Montanunion, 1957 folgten mit den Römischen Verträgen die Wirtschaftsgemeinschaft und Euratom. Es folgten Zollunion, Agrarpolitik, Binnenmarkt 1993, Währungsunion 1999 und mehrere Erweiterungsrunden, die größte 2004 mit zehn überwiegend osteuropäischen Staaten. Der Verfassungsvertrag scheiterte 2005 an Referenden in Frankreich und den Niederlanden; der Vertrag von Lissabon übernahm 2009 wesentliche Teile ohne den Verfassungsanspruch.",
+  "folgen": "Die längste Friedensperiode zwischen den westeuropäischen Staaten seit der Antike; freier Verkehr von Waren, Kapital und Personen; gemeinsame Normen von der Produkthaftung bis zum Datenschutz. Zugleich blieb die Konstruktion unfertig: Währungsunion ohne Finanzunion, Außenpolitik mit Vetorecht, ein Parlament ohne Initiativrecht. Der Brexit war 2020 der erste Austritt.",
+  "strittig": "Ob die Integration den Frieden sicherte oder ob NATO, Nuklearabschreckung und Wohlstandswachstum wichtiger waren, ist historisch nicht zu entscheiden – die Faktoren wirkten gleichzeitig. Umstritten ist auch das Demokratiedefizit: Wie viel Entscheidungsmacht darf bei Institutionen liegen, die nicht direkt gewählt sind.",
+  "zahlen": [
+    {
+      "wert": "6",
+      "was": "Gründungsstaaten der Montanunion"
+    },
+    {
+      "wert": "1993",
+      "was": "Binnenmarkt"
+    },
+    {
+      "wert": "27",
+      "was": "Mitgliedstaaten nach dem Brexit"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: European Union",
+    "Schuman-Erklärung vom 9. Mai 1950, Originaltext",
+    "Tony Judt: Die Geschichte Europas seit dem Zweiten Weltkrieg"
+  ]
+},
+{
+  "id": "klimaforschung",
+  "titel": "Wie der Klimawandel erkannt wurde",
+  "epoche": "moderne",
+  "jahr": 1958,
+  "zeitraum": "1856–heute",
+  "region": "weltweit",
+  "leitsatz": "Der Treibhauseffekt wurde im 19. Jahrhundert im Labor gemessen — die Frage war nie, ob er wirkt, sondern wie stark und wie schnell.",
+  "vorgeschichte": "Joseph Fourier beschrieb 1824, dass die Atmosphäre Wärme zurückhält. Eunice Newton Foote zeigte 1856 im Experiment, dass ein Gefäß mit Kohlendioxid sich in der Sonne stärker erwärmt als eines mit Luft, und schloss daraus auf das Klima – ihr Beitrag geriet für über 150 Jahre in Vergessenheit. John Tyndall wies die Absorption drei Jahre später genauer nach.",
+  "verlauf": "Svante Arrhenius rechnete 1896 aus, wie stark eine Verdopplung des CO2-Gehalts die Temperatur erhöhen würde; sein Ergebnis liegt erstaunlich nahe an heutigen Werten, allerdings hielt er die Entwicklung für langsam und eher vorteilhaft. 1958 begann Charles Keeling auf Hawaii mit kontinuierlichen Messungen – die Keeling-Kurve zeigte den Anstieg erstmals unbestreitbar. 1988 wurde der Weltklimarat gegründet, der den Forschungsstand regelmäßig zusammenfasst statt eigene Forschung zu betreiben.",
+  "folgen": "Die Erwärmung liegt inzwischen über einem Grad gegenüber der vorindustriellen Zeit. Die politischen Antworten – Kyoto 1997, Paris 2015 – blieben hinter dem zurück, was die Berichte als nötig beschreiben. Firmenunterlagen, die ab 2015 öffentlich wurden, zeigen, dass mehrere Ölkonzerne die Erwärmung intern früh zutreffend prognostizierten und zugleich Zweifel an der Forschung öffentlich förderten.",
+  "strittig": "In der Klimaforschung ist der menschliche Anteil nicht strittig. Diskutiert werden Klimasensitivität, Kipppunkte, regionale Auswirkungen und die Frage, wie schnell Rückkopplungen wirken. Politisch strittig ist praktisch alles, was aus dem Befund folgen soll – Tempo, Kosten, Lastenverteilung zwischen Ländern und Generationen. Diese Trennung zwischen naturwissenschaftlichem Befund und politischer Bewertung wird in Debatten oft verwischt.",
+  "zahlen": [
+    {
+      "wert": "1856",
+      "was": "Footes Experiment"
+    },
+    {
+      "wert": "315 ppm",
+      "was": "CO2 zu Beginn der Keeling-Messungen 1958"
+    },
+    {
+      "wert": "über 420 ppm",
+      "was": "Stand der 2020er Jahre – laufende Werte bei der NOAA"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: global warming",
+    "IPCC-Sachstandsberichte",
+    "Eunice Foote, 1856: Circumstances affecting the Heat of the Sun's Rays",
+    "NOAA Global Monitoring Laboratory: Keeling-Kurve"
+  ]
 }
 ];

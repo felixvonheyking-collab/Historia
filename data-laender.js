@@ -49,7 +49,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1370,
     "title": "Frieden von Stralsund",
-    "text": "Die Hanse besiegt Dänemark und bestimmt für ein Jahrhundert den Handel im Ostseeraum. Ein Städtebund, kein Staat, wird zur Großmacht."
+    "text": "Die Hanse besiegt Dänemark und bestimmt für ein Jahrhundert den Handel im Ostseeraum. Ein Städtebund, kein Staat, wird zur Großmacht.",
+    "vertiefung": "hanse"
    },
    {
     "year": 1455,
@@ -1335,7 +1336,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1851,
     "title": "Weltausstellung im Kristallpalast",
-    "text": "Sechs Millionen Besucher sehen die Industrieproduktion der Welt unter einem Glasdach. Großbritannien zeigt sich als Werkstatt der Welt."
+    "text": "Sechs Millionen Besucher sehen die Industrieproduktion der Welt unter einem Glasdach. Großbritannien zeigt sich als Werkstatt der Welt.",
+    "vertiefung": "eisenbahn"
    },
    {
     "year": 1858,
@@ -1932,7 +1934,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1271,
     "title": "Marco Polo bricht nach Osten auf",
-    "text": "Sein Reisebericht prägt das europäische Bild Asiens für Jahrhunderte. Wie viel er selbst sah und wie viel er sammelte, ist bis heute umstritten."
+    "text": "Sein Reisebericht prägt das europäische Bild Asiens für Jahrhunderte. Wie viel er selbst sah und wie viel er sammelte, ist bis heute umstritten.",
+    "vertiefung": "seidenstrasse"
    },
    {
     "year": 1309,
@@ -2154,7 +2157,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 793,
     "title": "Überfall auf Lindisfarne",
-    "text": "Der Angriff auf das Inselkloster gilt als Beginn der Wikingerzeit – vor allem, weil erstmals jemand darüber schrieb."
+    "text": "Der Angriff auf das Inselkloster gilt als Beginn der Wikingerzeit – vor allem, weil erstmals jemand darüber schrieb.",
+    "vertiefung": "wikinger"
    },
    {
     "year": 874,

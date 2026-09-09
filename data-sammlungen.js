@@ -1084,7 +1084,8 @@ const BATTLES = [
   ],
   "ausgang": "Spartanischer Sieg. Lysander griff an, während die athenischen Besatzungen zum Proviantholen an Land waren – Alkibiades hatte vor genau dieser Nachlässigkeit gewarnt und war abgewiesen worden.",
   "folgen": "Ohne Flotte konnte Athen seine Getreidezufuhr aus dem Schwarzmeerraum nicht mehr sichern. Nach einer Hungerblockade kapitulierte die Stadt 404 v. Chr.: Mauern geschleift, Flotte abgegeben, Demokratie vorübergehend beseitigt. Die Vormacht Athens war zu Ende.",
-  "hinweis": "Xenophon, die Hauptquelle, war Zeitgenosse und Spartafreund; die Zahl der hingerichteten Gefangenen stammt von ihm."
+  "hinweis": "Xenophon, die Hauptquelle, war Zeitgenosse und Spartafreund; die Zahl der hingerichteten Gefangenen stammt von ihm.",
+  "vertiefung": "peloponnesischer-krieg"
  },
  {
   "year": -371,
@@ -1645,7 +1646,8 @@ const BATTLES = [
   ],
   "ausgang": "Vollständiger Sieg Saladins. Er lockte das Kreuzfahrerheer bei größter Hitze über wasserloses Gelände, ließ Gras anzünden und schnitt es vom See ab. Die Kreuzfahrer kämpften ausgedörrt.",
   "folgen": "Innerhalb von drei Monaten fielen Akkon, Sidon, Beirut und Jerusalem. Das Königreich Jerusalem war als Landmacht erledigt. Die Nachricht löste in Europa den Dritten Kreuzzug aus. Die Ordensritter ließ Saladin hinrichten, den König verschonte er.",
-  "hinweis": "Das Wahre Kreuz, die wichtigste Reliquie der Kreuzfahrer, ging in dieser Schlacht verloren und blieb verschollen."
+  "hinweis": "Das Wahre Kreuz, die wichtigste Reliquie der Kreuzfahrer, ging in dieser Schlacht verloren und blieb verschollen.",
+  "vertiefung": "jerusalem-saladin"
  },
  {
   "year": 1191,
