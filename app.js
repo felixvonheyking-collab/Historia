@@ -236,15 +236,42 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic leading-relaxed border-l-2 border-[#d4af37] pl-4 mb-5" }, eintrag.kurz),
     /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed mb-7 max-w-3xl" }, eintrag.einleitung),
 
+    // Manche Themen haben Abschnitte - bei einer Stadtgeschichte etwa die
+    // Reihe der Herrschaften. Sie stehen vorweg als Ueberblick, damit der
+    // rote Faden sichtbar ist, bevor die Einzelheiten kommen.
+    eintrag.abschnitte && /* @__PURE__ */ React.createElement("div", { className: "mb-7" },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" }, "Im Überblick"),
+      /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2" },
+        eintrag.abschnitte.map((a, i) => /* @__PURE__ */ React.createElement("div", {
+          key: i,
+          className: "rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2"
+        },
+          /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap" },
+            /* @__PURE__ */ React.createElement("span", { className: "font-serif text-[15px] text-[#e0b84a]" }, a.name),
+            /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#d4af37]" }, a.zeitraum)),
+          /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-0.5" }, a.kurz)
+        )))),
+
     /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-3" },
       eintrag.stationen.length, " Stationen"),
 
     /* @__PURE__ */ React.createElement("div", { className: "relative pl-5 border-l border-[#5c2018]" },
       eintrag.stationen.map((s, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "relative mb-5" },
         /* @__PURE__ */ React.createElement("span", { className: "absolute -left-[23px] top-1.5 w-2 h-2 rounded-full bg-[#d4af37]" }),
-        /* @__PURE__ */ React.createElement("div", { className: "font-mono text-xs text-[#d4af37] mb-0.5" }, formatYear(s.jahr)),
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap mb-0.5" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(s.jahr)),
+          s.herrschaft && /* @__PURE__ */ React.createElement("span", {
+            className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5"
+          }, s.herrschaft)),
         /* @__PURE__ */ React.createElement("div", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, s.titel),
-        /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, s.text)
+        /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, s.text),
+        (() => {
+          const v = s.vertiefung ? VERTIEFUNGEN.find((x) => x.id === s.vertiefung) : null;
+          return v && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, { reiter: "themen", eintrag: eintrag.id, label: eintrag.titel }); },
+            className: "mt-1.5 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+          }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+        })()
       ))
     ),
 

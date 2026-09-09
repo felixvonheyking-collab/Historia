@@ -3852,5 +3852,330 @@ const VERTIEFUNGEN = [
     "David K. Wyatt: Thailand – A Short History",
     "Chris Baker und Pasuk Phongpaichit: A History of Ayutthaya"
   ]
+},
+{
+  "id": "jerusalem-david",
+  "titel": "David und die Frage, was Jerusalem um 1000 v. Chr. war",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -1000,
+  "zeitraum": "ca. 1010–970 v. Chr.",
+  "region": "Jerusalem",
+  "leitsatz": "Die Bibel schildert ein Großreich, der Spaten findet ein Bergdorf — und beides lässt sich mit denselben Funden begründen.",
+  "vorgeschichte": "Jerusalem war seit Jahrhunderten eine kanaanäische Bergsiedlung an der Gihonquelle, ägyptischen Texten seit etwa 1800 v. Chr. bekannt und in den Amarna-Briefen um 1350 v. Chr. als Vasallenstadt belegt. Die Bibel nennt ihre Bewohner Jebusiter.",
+  "verlauf": "Nach dem biblischen Bericht erobert David die Stadt, macht sie zur Hauptstadt und bringt die Bundeslade dorthin. Die Wahl war klug: Der Ort gehörte keinem der zwölf Stämme, bevorzugte also keinen von ihnen, und lag zwischen dem nördlichen und südlichen Siedlungsgebiet. Politische und religiöse Mitte fielen von da an zusammen – ein Muster, das Jerusalem bis heute prägt.",
+  "folgen": "Aus dem Königtum Davids entstand die Erwartung eines künftigen Herrschers aus seinem Haus. Diese Erwartung trägt das messianische Denken des Judentums, und über sie wird im Neuen Testament die Herkunft Jesu begründet. Im Islam ist David als Prophet Dawud anerkannt. Kaum eine Figur der Antike hat über drei Religionen hinweg so weit gewirkt.",
+  "strittig": "Der Kern des Streits: Wie groß war Davids Reich? Für die Minimalisten um Israel Finkelstein war Jerusalem um 1000 v. Chr. eine Siedlung mit vielleicht tausend Einwohnern und David ein regionaler Kriegsherr; das geschilderte Großreich sei eine Rückprojektion des 7. Jahrhunderts. Die Gegenposition verweist auf monumentale Mauerreste in der Davidsstadt, deren Datierung allerdings selbst umstritten ist. Sicher ist nur: Die Tel-Dan-Stele aus dem 9. Jahrhundert v. Chr. nennt ein Haus Davids – die Dynastie existierte also. Über ihre Ausdehnung sagt die Inschrift nichts. Der Tempelberg wurde nie archäologisch untersucht und wird es aus religiösen und politischen Gründen absehbar auch nicht.",
+  "zahlen": [
+    {
+      "wert": "ca. 1800 v. Chr.",
+      "was": "älteste Erwähnung Jerusalems"
+    },
+    {
+      "wert": "9. Jh. v. Chr.",
+      "was": "Tel-Dan-Stele nennt das Haus Davids"
+    },
+    {
+      "wert": "40 Jahre",
+      "was": "Regierungszeit nach biblischer Angabe"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: David; Jerusalem",
+    "Israel Finkelstein und Neil Asher Silberman: Keine Posaunen vor Jericho",
+    "Amihai Mazar: Archaeology and the Biblical Narrative",
+    "Tel-Dan-Stele, Israel Museum"
+  ]
+},
+{
+  "id": "jerusalem-tempel",
+  "titel": "Der Tempel und die Erfindung des leeren Heiligtums",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -960,
+  "zeitraum": "ca. 960 v. Chr. – 70 n. Chr.",
+  "region": "Jerusalem",
+  "leitsatz": "Im Allerheiligsten stand kein Götterbild — für die antike Welt ein unbegreiflicher Befund.",
+  "vorgeschichte": "In jedem Tempel des Vorderen Orients wohnte ein Gott in Gestalt seines Bildes; es wurde gewaschen, gekleidet und gespeist. Die Bibel schildert stattdessen einen Tempel, in dessen innerstem Raum die Bundeslade stand – ein Kasten mit den Gesetzestafeln, kein Abbild.",
+  "verlauf": "Der Erste Tempel wird Salomo zugeschrieben und 586 v. Chr. von den Babyloniern zerstört; die Lade verschwindet damals und bleibt verschwunden. Der Zweite Tempel entsteht ab 538 v. Chr. nach der Rückkehr aus dem Exil und wird 515 geweiht – bescheidener als der erste. Herodes lässt ihn ab 20 v. Chr. auf einer Plattform von vierzehn Hektar völlig neu fassen; die Stützmauern bestehen aus Blöcken von bis zu 500 Tonnen. Das Allerheiligste betrat einmal im Jahr der Hohepriester. Römische Feldherren, die es erzwangen, berichteten verwundert, es sei leer.",
+  "folgen": "Als der Tempel 70 n. Chr. brannte, endete der Opferkult. Das Judentum verlagerte sich vollständig auf Text, Gebet und Auslegung – Synagoge statt Altar, Rabbiner statt Priester. Diese Umstellung machte die Religion vom Ort unabhängig und damit über zwei Jahrtausende Diaspora tragfähig. Die Westmauer der herodianischen Plattform, heute Klagemauer, gehörte nie zum Tempel selbst, sondern zu seinem Unterbau.",
+  "strittig": "Vom Ersten Tempel gibt es keinen archäologischen Nachweis; die einzige Quelle ist die Bibel, die Jahrhunderte später ihre Endgestalt erhielt. Ob das Judentum von Anfang an nur einen Gott verehrte oder erst allmählich zum Monotheismus fand, ist ein eigener Forschungsstreit – Funde jüdischer Kultstätten mit Weihinschriften an Jahwe und seine Aschera sprechen für einen längeren Weg.",
+  "zahlen": [
+    {
+      "wert": "586 v. Chr.",
+      "was": "Zerstörung des Ersten Tempels"
+    },
+    {
+      "wert": "515 v. Chr.",
+      "was": "Weihe des Zweiten Tempels"
+    },
+    {
+      "wert": "14 ha",
+      "was": "Fläche der herodianischen Plattform"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Temple of Jerusalem",
+    "Flavius Josephus: Jüdischer Krieg und Jüdische Altertümer",
+    "Yaron Eliav: God's Mountain – The Temple Mount in Time, Place and Memory"
+  ]
+},
+{
+  "id": "jerusalem-586",
+  "titel": "586 v. Chr.: Zerstörung, Exil und was daraus entstand",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -586,
+  "zeitraum": "597–538 v. Chr.",
+  "region": "Jerusalem und Babylonien",
+  "leitsatz": "Eine Katastrophe, die eine Religion nicht beendete, sondern erst hervorbrachte.",
+  "vorgeschichte": "Juda lag zwischen Ägypten und Babylonien und setzte mehrfach auf die falsche Seite. 597 v. Chr. nahm Nebukadnezar II. Jerusalem ein und deportierte den König samt Oberschicht. Der eingesetzte Nachfolger Zedekia empörte sich zehn Jahre später erneut.",
+  "verlauf": "Nach anderthalb Jahren Belagerung fiel die Stadt im Sommer 586 v. Chr. Tempel und Palast brannten, die Mauern wurden geschleift, ein weiterer Teil der Bevölkerung nach Babylonien verschleppt. Das Königreich Juda hörte auf zu bestehen. In Babylonien lebten die Verschleppten nicht als Sklaven, sondern als angesiedelte Gemeinde mit eigener Verwaltung – Keilschrifttafeln aus dem Ort Al-Yahudu belegen Verträge, Steuern und Namen über mehrere Generationen.",
+  "folgen": "Ohne Tempel und Land musste sich definieren lassen, was die Gemeinschaft zusammenhält. In dieser Zeit entstanden oder erhielten ihre Gestalt: der Sabbat als Kennzeichen, die Beschneidung als Zeichen, die Sammlung und Redaktion der Schriften. Als Kyros 538 v. Chr. die Rückkehr erlaubte, kehrte nur ein Teil zurück – die babylonische Gemeinde bestand über tausend Jahre weiter und brachte später den Babylonischen Talmud hervor.",
+  "strittig": "Wie viele Menschen tatsächlich deportiert wurden, ist unklar: Die Bibel nennt an einer Stelle 4.600, an anderer deutlich mehr. Auch das Bild vom völlig entleerten Land gilt als überzeichnet – archäologisch war die Landbevölkerung weniger betroffen als die Hauptstadt. Der Streit betrifft nicht das Ereignis, sondern seinen Umfang.",
+  "zahlen": [
+    {
+      "wert": "18 Monate",
+      "was": "Dauer der Belagerung"
+    },
+    {
+      "wert": "48 Jahre",
+      "was": "vom Tempelbrand bis zum Edikt des Kyros"
+    },
+    {
+      "wert": "über 1.000 Jahre",
+      "was": "Bestand der jüdischen Gemeinde in Babylonien"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Babylonian Exile",
+    "Al-Yahudu-Tafeln, Publikationen von Laurie Pearce und Cornelia Wunsch",
+    "Rainer Albertz: Die Exilszeit"
+  ]
+},
+{
+  "id": "jerusalem-makkabaeer",
+  "titel": "Die Makkabäer und der erste Religionskrieg",
+  "epoche": "antike",
+  "jahr": -167,
+  "zeitraum": "167–141 v. Chr.",
+  "region": "Judäa",
+  "leitsatz": "Ein Aufstand gegen einen König, der eine Religion verbot — und zugleich ein Bürgerkrieg zwischen zwei Auffassungen davon, wie man leben soll.",
+  "vorgeschichte": "Nach Alexander gehörte Judäa erst zu Ägypten, ab 198 v. Chr. zum Seleukidenreich. Griechische Bildung, Sprache und Lebensart galten in der Oberschicht als Weg nach oben; in Jerusalem entstand ein Gymnasion. Ein Teil der Priesterschaft trieb die Hellenisierung voran, ein anderer lehnte sie ab. Um das Hohepriesteramt wurde offen mit Geld geboten.",
+  "verlauf": "Antiochos IV. griff in diesen Streit ein, plünderte den Tempel, ließ dort einen fremden Altar errichten und verbot 167 v. Chr. Beschneidung, Sabbat und Torabesitz bei Todesstrafe. Der Priester Mattatias und seine Söhne begannen den Aufstand im Bergland und führten ihn als Kleinkrieg. 164 v. Chr. konnte Judas Makkabäus den Tempel neu weihen – das Chanukkafest erinnert daran. Der Kampf ging weitere zwanzig Jahre, bis Simon 141 v. Chr. die Unabhängigkeit erreichte.",
+  "folgen": "Es entstand mit den Hasmonäern ein eigener jüdischer Staat, der achtzig Jahre bestand. Dass sie Königtum und Hohepriesteramt in einer Hand vereinten, spaltete jedoch die Gesellschaft weiter – aus diesem Streit gingen Pharisäer, Sadduzäer und Essener hervor. Der Gedanke des Martyriums, des Sterbens für den Glauben, ist hier zum ersten Mal literarisch fassbar und wirkte über das Judentum hinaus ins Christentum.",
+  "strittig": "Ob Antiochos aus religiösem Eifer handelte oder aus Finanznot und dem Wunsch, einen inneren Konflikt zu beenden, ist offen; das Verbot einer Religion war für einen hellenistischen Herrscher völlig unüblich. Umstritten ist auch, wie stark der Aufstand ein Bürgerkrieg zwischen hellenisierten und traditionellen Juden war – die Makkabäerbücher, unsere Hauptquelle, sind von der Siegerseite geschrieben. Das Ölwunder taucht erst im Talmud auf, mehrere Jahrhunderte später.",
+  "zahlen": [
+    {
+      "wert": "167 v. Chr.",
+      "was": "Kultverbot"
+    },
+    {
+      "wert": "164 v. Chr.",
+      "was": "Tempelweihe, Ursprung von Chanukka"
+    },
+    {
+      "wert": "80 Jahre",
+      "was": "Dauer des Hasmonäerstaates"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Maccabees; Hasmonean dynasty",
+    "1. und 2. Makkabäerbuch",
+    "Flavius Josephus: Jüdische Altertümer",
+    "Erich S. Gruen: Heritage and Hellenism"
+  ]
+},
+{
+  "id": "jerusalem-70",
+  "titel": "70 n. Chr.: Der Tempelbrand und die Neuerfindung einer Religion",
+  "epoche": "antike",
+  "jahr": 70,
+  "zeitraum": "66–73 n. Chr.",
+  "region": "Jerusalem",
+  "leitsatz": "Der Verlust des einen erlaubten Opferortes zwang eine Religion, ohne Opfer auszukommen — und machte sie damit ortsunabhängig.",
+  "vorgeschichte": "Die römische Verwaltung Judäas war seit Jahrzehnten von Missgriffen, Steuerdruck und religiösen Kränkungen geprägt. 66 n. Chr. brach ein Aufstand aus, der zunächst erfolgreich war: Die Aufständischen vertrieben die römische Garnison und schlugen ein Entsatzheer. In Jerusalem kämpften mehrere Fraktionen zugleich gegeneinander und verbrannten dabei die Getreidevorräte der Stadt.",
+  "verlauf": "Titus schloss die Stadt zu Beginn des Passahfestes ein, als sie mit Pilgern überfüllt war. Nach fünf Monaten fielen nacheinander die Mauern; im August brannte der Tempel. Ob der Brand befohlen war, berichten die Quellen unterschiedlich – Josephus, der auf römischer Seite stand, entlastet Titus. Der Titusbogen in Rom zeigt die Menora im Triumphzug. Die letzte Festung, Masada, fiel 73 oder 74.",
+  "folgen": "Der Opferkult endete für immer. Was blieb, war das Studium: Rabbi Jochanan ben Sakkai erhielt der Überlieferung nach die Erlaubnis, in Javne eine Schule zu gründen. Aus dieser Verlagerung entstand das rabbinische Judentum, wie es bis heute besteht. Für die frühe christliche Gemeinde, die vorher als jüdische Gruppe in Jerusalem lebte, war die Zerstörung der endgültige Anstoß zur Trennung. Die Tempelsteuer zog Rom weiter ein – nun für den Jupitertempel, als demütigende Sondersteuer.",
+  "strittig": "Josephus nennt 1,1 Millionen Tote und 97.000 Gefangene. Die Stadt kann so viele Menschen nicht gefasst haben; die Forschung hält einen Bruchteil für plausibel. Josephus schrieb zudem als Schützling der Flavier und hatte Gründe, sowohl das Ausmaß der Katastrophe als auch die Milde des Titus zu betonen.",
+  "zahlen": [
+    {
+      "wert": "5 Monate",
+      "was": "Dauer der Belagerung"
+    },
+    {
+      "wert": "9. Aw",
+      "was": "jüdischer Trauertag, auf den die Zerstörung beider Tempel gelegt wird"
+    },
+    {
+      "wert": "1.900 Jahre",
+      "was": "seither ohne Tempel"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Jewish War",
+    "Flavius Josephus: Der Jüdische Krieg",
+    "Martin Goodman: Rome and Jerusalem"
+  ]
+},
+{
+  "id": "jerusalem-638",
+  "titel": "638: Jerusalem wird islamisch",
+  "epoche": "mittelalter",
+  "jahr": 638,
+  "zeitraum": "638–1099",
+  "region": "Jerusalem",
+  "leitsatz": "Der leerstehende Tempelberg, den die Byzantiner als Müllplatz nutzten, wurde binnen zwei Generationen zum drittheiligsten Ort des Islam.",
+  "vorgeschichte": "Byzanz und Persien hatten sich in zwanzig Jahren Krieg erschöpft; Jerusalem war 614 persisch geworden und 630 wieder byzantinisch. Nach der arabischen Niederlage der Byzantiner am Jarmuk 636 war die Stadt nicht mehr zu halten. Der Tempelberg lag seit 70 n. Chr. in Trümmern; unter christlicher Herrschaft blieb er bewusst wüst, als sichtbarer Beleg für die Erfüllung einer Prophezeiung.",
+  "verlauf": "Der Patriarch Sophronios übergab die Stadt 638 vertraglich. Der Überlieferung nach lehnte Kalif Umar es ab, in der Grabeskirche zu beten, damit sie nicht später zur Moschee würde. Christen und Juden erhielten den Status von Schutzbefohlenen: Religionsausübung und eigene Gerichtsbarkeit gegen Sonderabgabe und rechtliche Nachrangigkeit. Juden durften sich erstmals seit fünf Jahrhunderten wieder ansiedeln. 691 vollendete Abd al-Malik den Felsendom über dem Felsen, an dem die Bindung Isaaks – im Islam Ismaels – verortet wird; wenige Jahre später entstand die al-Aqsa-Moschee.",
+  "folgen": "Der Ort wurde zum drittheiligsten des Islam nach Mekka und Medina, gestützt auf die Erzählung von der Nachtreise des Propheten. Die drei Religionen beanspruchten von nun an denselben Platz. Der Felsendom ist eines der ältesten erhaltenen islamischen Bauwerke überhaupt und übernahm bewusst byzantinische Bauformen – Kuppel und Mosaiken –, um sie zu übertreffen.",
+  "strittig": "Der Vertrag Umars ist nur in späteren Fassungen überliefert, die vermutlich Bestimmungen aus späterer Zeit zurückprojizieren. Ob der Felsendom zunächst als Wallfahrtsziel in Konkurrenz zu Mekka gedacht war – so eine ältere These – oder von Anfang an als Zeichen des Sieges über das Christentum, wird diskutiert. Die Inschriften im Inneren wenden sich ausdrücklich gegen die Dreieinigkeit, was für die zweite Lesart spricht.",
+  "zahlen": [
+    {
+      "wert": "638",
+      "was": "Übergabe der Stadt"
+    },
+    {
+      "wert": "691",
+      "was": "Vollendung des Felsendoms"
+    },
+    {
+      "wert": "568 Jahre",
+      "was": "vom Tempelbrand bis zur muslimischen Übernahme"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Dome of the Rock; Jerusalem",
+    "Hugh Kennedy: The Great Arab Conquests",
+    "Oleg Grabar: The Shape of the Holy"
+  ]
+},
+{
+  "id": "jerusalem-saladin",
+  "titel": "Saladin und die Rückeroberung von 1187",
+  "epoche": "mittelalter",
+  "jahr": 1187,
+  "zeitraum": "1187–1193",
+  "region": "Jerusalem",
+  "leitsatz": "Er nahm die Stadt so ein, wie die Kreuzfahrer es 88 Jahre zuvor nicht getan hatten — und wurde dafür ausgerechnet in Europa berühmt.",
+  "vorgeschichte": "Das Königreich Jerusalem war innerlich zerstritten und hatte mit dem Bruch eines Waffenstillstands durch Rainald von Chatillon einen Anlass zum Krieg geliefert. Saladin, Kurde aus Tikrit, hatte Ägypten und Syrien unter seiner Herrschaft vereint und konnte erstmals von zwei Seiten zugleich angreifen.",
+  "verlauf": "Bei Hattin im Juli 1187 vernichtete er das Kreuzfahrerheer. Jerusalem, fast ohne Verteidiger, ergab sich Ende September nach Verhandlungen. Balian von Ibelin drohte, die islamischen Heiligtümer zu zerstören, falls die Bedingungen zu hart ausfielen; man einigte sich auf ein Lösegeld je Person. Wer nicht zahlen konnte, wurde versklavt – Saladin und sein Bruder ließen tausende auf eigene Kosten frei. Ein Massaker wie 1099 fand nicht statt. Die Grabeskirche blieb geöffnet, der Tempelberg wurde wieder muslimisch, Juden durften zurückkehren.",
+  "folgen": "Die Nachricht löste den Dritten Kreuzzug aus. Richard Löwenherz siegte bei Arsuf, nahm Jerusalem aber nie; der Vertrag von 1192 sicherte Christen freien Zugang als Pilger. Saladin starb ein Jahr später, so mittellos, dass sein Begräbnis aus geliehenem Geld bezahlt werden musste. In der europäischen Literatur wurde er zur Figur des edlen Gegners – bei Dante, später bei Lessing im Nathan der Weise.",
+  "strittig": "Das Bild vom durchweg großmütigen Saladin ist teils europäische Projektion des 19. Jahrhunderts. Er ließ nach Hattin die gefangenen Templer und Johanniter hinrichten und ging in anderen Feldzügen hart vor. Sein Ansehen in der arabischen Welt war zu Lebzeiten geringer als heute; die moderne Verehrung setzte erst im 19. und 20. Jahrhundert ein.",
+  "zahlen": [
+    {
+      "wert": "88 Jahre",
+      "was": "christliche Herrschaft von 1099 bis 1187"
+    },
+    {
+      "wert": "10 Dinar",
+      "was": "Lösegeld je Mann, 5 je Frau, 1 je Kind"
+    },
+    {
+      "wert": "1192",
+      "was": "Vertrag über den Pilgerzugang"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Saladin",
+    "Anne-Marie Eddé: Saladin",
+    "Ibn al-Athir und Baha ad-Din ibn Schaddad, zeitgenössische arabische Berichte"
+  ]
+},
+{
+  "id": "jerusalem-1948",
+  "titel": "1948: Die Teilung der Stadt",
+  "epoche": "moderne",
+  "jahr": 1948,
+  "zeitraum": "1947–1949",
+  "region": "Jerusalem",
+  "leitsatz": "Eine Stadt, die international verwaltet werden sollte, wurde stattdessen von Stacheldraht durchschnitten — für neunzehn Jahre.",
+  "vorgeschichte": "Unter britischem Mandat war die Bevölkerung Jerusalems und Palästinas gewachsen und die Spannung zwischen jüdischen und arabischen Einwohnern gestiegen; 1929 und 1936 bis 1939 hatte es schwere Unruhen und Aufstände gegeben. Nach dem Zweiten Weltkrieg gab Großbritannien das Mandat an die Vereinten Nationen zurück.",
+  "verlauf": "Der UN-Teilungsplan vom November 1947 sah einen jüdischen und einen arabischen Staat vor; Jerusalem sollte wegen seiner Bedeutung für drei Religionen als corpus separatum unter internationale Verwaltung kommen. Die jüdische Seite nahm an, die arabischen Staaten und die palästinensische Führung lehnten ab. Mit dem Abzug der Briten im Mai 1948 begann der Krieg. Die jordanische Arabische Legion nahm die Altstadt; das jüdische Viertel wurde zerstört, seine Bewohner vertrieben. Israel hielt den Westteil, aus dem zehntausende palästinensische Bewohner flohen oder vertrieben wurden.",
+  "folgen": "Die Waffenstillstandslinie von 1949 – die Grüne Linie – zerschnitt die Stadt. Israel erklärte West-Jerusalem zur Hauptstadt, Jordanien annektierte den Osten; beides fand international kaum Anerkennung. Der im Abkommen zugesagte Zugang von Juden zur Westmauer wurde nicht gewährt. Neunzehn Jahre lang lag zwischen den Stadthälften ein Streifen aus Minen und Stacheldraht.",
+  "strittig": "Über Ursachen und Verantwortung der Fluchtbewegung von 1948 wird bis heute mit großer Schärfe gestritten; die israelischen New Historians haben ab den 1980er Jahren Archivmaterial ausgewertet, das ältere Darstellungen beider Seiten korrigiert. Auch die Bezeichnung – Unabhängigkeitskrieg oder Nakba – ist Teil des Konflikts. Unstrittig ist, dass beide Seiten Bevölkerungsteile verloren: das jüdische Viertel der Altstadt und die arabischen Viertel des Westens.",
+  "zahlen": [
+    {
+      "wert": "29. November 1947",
+      "was": "UN-Teilungsplan"
+    },
+    {
+      "wert": "19 Jahre",
+      "was": "Dauer der Teilung"
+    },
+    {
+      "wert": "0",
+      "was": "Zugänge für Juden zur Westmauer zwischen 1948 und 1967"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Arab-Israeli wars; Jerusalem",
+    "UN-Resolution 181 (1947)",
+    "Benny Morris: 1948 – A History of the First Arab-Israeli War",
+    "Rashid Khalidi: The Hundred Years' War on Palestine"
+  ]
+},
+{
+  "id": "jerusalem-1967",
+  "titel": "1967: Sechs Tage, die den Status bis heute bestimmen",
+  "epoche": "moderne",
+  "jahr": 1967,
+  "zeitraum": "Juni 1967",
+  "region": "Jerusalem",
+  "leitsatz": "Am Morgen nach der Eroberung gab Israel die Verwaltung des Tempelbergs zurück — eine Entscheidung von wenigen Stunden, die seit sechzig Jahren gilt.",
+  "vorgeschichte": "Im Mai 1967 verlegte Ägypten Truppen auf den Sinai, ließ die UN-Beobachter abziehen und sperrte die Straße von Tiran. Jordanien schloss ein Militärbündnis mit Ägypten. Israel eröffnete am 5. Juni mit einem Angriff auf die ägyptische Luftwaffe.",
+  "verlauf": "Israel forderte Jordanien auf, sich herauszuhalten; nach jordanischem Artilleriebeschuss auf West-Jerusalem folgte der Angriff auf den Ostteil. Am 7. Juni nahmen Fallschirmjäger die Altstadt ein. Verteidigungsminister Mosche Dajan ließ noch am selben Tag die israelische Fahne vom Felsendom entfernen und übergab die Verwaltung des Platzes der islamischen Stiftung Waqf. Juden durften den Platz betreten, aber nicht dort beten – eine Regelung, die bis heute gilt. Innerhalb weniger Tage wurde das maghrebinische Viertel vor der Westmauer abgerissen, um Platz für den heutigen Vorplatz zu schaffen; über hundert Familien verloren ihre Wohnungen.",
+  "folgen": "Israel dehnte sein Recht auf Ost-Jerusalem aus und erklärte die Stadt 1980 formell zur ungeteilten Hauptstadt. Der UN-Sicherheitsrat wies das zurück; Ost-Jerusalem gilt völkerrechtlich überwiegend als besetztes Gebiet, was Israel bestreitet. Die arabischen Einwohner Ost-Jerusalems erhielten einen dauerhaften Aufenthaltsstatus, aber in der Regel keine Staatsbürgerschaft. Der Status quo auf dem Tempelberg ist seither einer der empfindlichsten Punkte des gesamten Konflikts.",
+  "strittig": "Ob der israelische Erstschlag ein Präventivangriff in akuter Bedrohungslage war oder eine bewusst gewählte Gelegenheit, wird in der Forschung unterschiedlich beurteilt; beide Seiten stützen sich auf inzwischen zugängliche Akten. Umstritten ist auch, wie belastbar der Status quo auf dem Tempelberg ist – die Auslegung des Betensverbots hat sich in der Praxis über die Jahre verschoben, was regelmäßig zu Zusammenstößen führt.",
+  "zahlen": [
+    {
+      "wert": "6 Tage",
+      "was": "Kriegsdauer"
+    },
+    {
+      "wert": "7. Juni 1967",
+      "was": "Einnahme der Altstadt"
+    },
+    {
+      "wert": "135",
+      "was": "abgerissene Häuser im maghrebinischen Viertel"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Six-Day War",
+    "UN-Sicherheitsratsresolutionen 242 (1967) und 478 (1980)",
+    "Michael B. Oren: Six Days of War",
+    "Tom Segev: 1967 – Israels zweite Geburt"
+  ]
+},
+{
+  "id": "jerusalem-status",
+  "titel": "Der ungeklärte Status Jerusalems",
+  "epoche": "moderne",
+  "jahr": 1980,
+  "zeitraum": "1947 bis heute",
+  "region": "Jerusalem",
+  "leitsatz": "Fast jede Verhandlung über den Nahostkonflikt ist an derselben Frage gescheitert: wem die Altstadt gehört.",
+  "vorgeschichte": "Der UN-Teilungsplan von 1947 wollte Jerusalem international verwalten lassen. Umgesetzt wurde das nie. Seit 1967 kontrolliert Israel die ganze Stadt; die Palästinensische Autonomiebehörde beansprucht Ost-Jerusalem als Hauptstadt eines künftigen Staates.",
+  "verlauf": "1980 erklärte die Knesset Jerusalem zur ungeteilten Hauptstadt Israels; der UN-Sicherheitsrat erklärte das Gesetz für null und nichtig, die verbliebenen Botschaften zogen weg. In Oslo 1993 wurde Jerusalem ausdrücklich auf spätere Verhandlungen vertagt. In Camp David 2000 scheiterten die Gespräche vor allem an der Souveränität über den Tempelberg; verschiedene Formeln – geteilte Souveränität, göttliche Souveränität, internationale Aufsicht – fanden keine Zustimmung. 2017 erkannten die USA Jerusalem als Hauptstadt Israels an und verlegten 2018 ihre Botschaft; die UN-Vollversammlung verurteilte das mit großer Mehrheit.",
+  "folgen": "Der Status bleibt offen. In der Stadt leben rund eine Million Menschen; etwa 38 Prozent sind arabisch, die meisten davon mit Aufenthaltsstatus statt Staatsbürgerschaft. Die Trennmauer verläuft so, dass Teile der Bevölkerung Ost-Jerusalems außerhalb liegen. Praktisch entscheidet sich die Frage weniger an Verträgen als an Wohnungsbau, Bevölkerungsentwicklung und Zugangsregelungen.",
+  "strittig": "Hier ist fast alles strittig, bis in die Begriffe: Tempelberg oder Haram asch-Scharif, Annexion oder Wiedervereinigung, besetztes Gebiet oder umstrittenes Gebiet. Diese Darstellung nennt die belegten Vorgänge, die geltenden UN-Resolutionen und die Positionen beider Seiten, ohne den Streit zu entscheiden. Wer sich ein Urteil bilden will, sollte die Primärtexte lesen – die Resolutionen, die Abkommen von Oslo und die Verhandlungsprotokolle von 2000 sind öffentlich zugänglich.",
+  "zahlen": [
+    {
+      "wert": "1947",
+      "was": "UN-Plan für internationale Verwaltung, nie umgesetzt"
+    },
+    {
+      "wert": "1980",
+      "was": "Jerusalemgesetz, vom Sicherheitsrat zurückgewiesen"
+    },
+    {
+      "wert": "ca. 1 Mio.",
+      "was": "Einwohner, Stand 2026 – aktuelle Zahlen beim israelischen Zentralbüro für Statistik"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Jerusalem",
+    "UN-Resolutionen 181 (1947), 242 (1967), 478 (1980), 2334 (2016)",
+    "Oslo-Abkommen 1993 und 1995, Vertragstexte",
+    "Israelisches Zentralbüro für Statistik: Jerusalem-Statistiken"
+  ]
 }
 ];

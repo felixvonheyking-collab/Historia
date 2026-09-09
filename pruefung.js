@@ -333,6 +333,9 @@ function pruefeWiderspruecheZwischenSammlungen(D) {
 /* --------------------------------------------------------------- Inhalte */
 
 function pruefeInhalte(D) {
+  // Wird von mehreren Pruefungen gebraucht: Themen, Dynastien,
+  // Zeitleisten und Schlachten verweisen alle auf Vertiefungen.
+  const vertIds = new Set(D.VERTIEFUNGEN.map((v) => v.id));
   const epochenIds = D.EPOCHS.map((e) => e.id);
 
   // Epochen
@@ -369,6 +372,16 @@ function pruefeInhalte(D) {
   D.THEMEN.forEach((t) => {
     pruefeFelder("Stationen in '" + t.titel + "'", t.stationen, ["jahr", "titel", "text"], "titel");
     pruefeChronologie("Thema '" + t.titel + "'", t.stationen, "jahr");
+    t.stationen.forEach((s) => {
+      if (s.vertiefung && !vertIds.has(s.vertiefung)) {
+        meldeFehler("Thema '" + t.titel + "': Station '" + s.titel + "' verweist auf fehlende Vertiefung '" + s.vertiefung + "'");
+      }
+    });
+    (t.abschnitte || []).forEach((a, i) => {
+      ["name", "zeitraum", "kurz"].forEach((f) => {
+        if (!a[f]) meldeFehler("Thema '" + t.titel + "', Abschnitt " + (i + 1) + ": '" + f + "' fehlt");
+      });
+    });
   });
 
   // Mysterien
@@ -391,7 +404,6 @@ function pruefeInhalte(D) {
   pruefeDubletten("Dynastien", D.DYNASTIEN, "id");
   pruefeFelder("Dynastien", D.DYNASTIEN,
     ["id", "reich", "untertitel", "zeitraum", "farbe", "einleitung", "hinweis", "quellen", "perioden"], "reich");
-  const vertIds = new Set(D.VERTIEFUNGEN.map((v) => v.id));
   D.DYNASTIEN.forEach((r) => {
     const gesehen = new Set();
     r.perioden.forEach((p) => {

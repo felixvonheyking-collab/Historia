@@ -1319,5 +1319,412 @@ const THEMEN = [
     "Jean-Jacques Hublin u. a., Nature 2017: Jebel Irhoud",
     "Klaus Schmidt: Sie bauten die ersten Tempel"
   ]
+},
+{
+  "id": "jerusalem",
+  "titel": "Jerusalem",
+  "kurz": "Eine Stadt, die in 3.000 Jahren mindestens vierzigmal den Herrn wechselte — und dreimal heilig wurde.",
+  "einleitung": "Jerusalem hat keine Rohstoffe, liegt an keinem Fluss, an keiner Küste und an keiner wichtigen Handelsstraße. Es liegt auf einem Bergrücken über einer Quelle, weit genug abseits, dass es nie von selbst groß geworden wäre. Trotzdem ist es die vielleicht am häufigsten belagerte Stadt der Welt: mindestens zwanzig erfolgreiche Eroberungen, zweimal vollständig zerstört, mehrfach entvölkert und wieder besiedelt. Der Grund ist kein geographischer, sondern ein erzählerischer — was hier geschah, wurde aufgeschrieben, und was aufgeschrieben wurde, machte den Ort für die nächste Generation unverzichtbar. Diese Geschichte folgt der Reihe der Herrschaften von der ersten ägyptischen Erwähnung bis heute.",
+  "abschnitte": [
+    {
+      "name": "Kanaanäisch und jebusitisch",
+      "zeitraum": "ca. 1800–1000 v. Chr.",
+      "kurz": "Eine Bergsiedlung an einer Quelle, erwähnt in ägyptischen Texten. Klein, aber schwer einzunehmen."
+    },
+    {
+      "name": "Israelitisch und judäisch",
+      "zeitraum": "ca. 1000–586 v. Chr.",
+      "kurz": "Hauptstadt des Königreichs Juda. Der Erste Tempel wird zum religiösen Mittelpunkt."
+    },
+    {
+      "name": "Babylonisch und persisch",
+      "zeitraum": "586–332 v. Chr.",
+      "kurz": "Zerstörung, Exil, Rückkehr. Unter persischer Oberhoheit entsteht der Zweite Tempel."
+    },
+    {
+      "name": "Hellenistisch",
+      "zeitraum": "332–141 v. Chr.",
+      "kurz": "Alexander, dann Ptolemäer und Seleukiden. Der Streit um die Hellenisierung führt zum Makkabäeraufstand."
+    },
+    {
+      "name": "Hasmonäisch",
+      "zeitraum": "141–63 v. Chr.",
+      "kurz": "Erstmals seit 450 Jahren wieder ein eigener jüdischer Staat – geführt von Priesterkönigen."
+    },
+    {
+      "name": "Römisch",
+      "zeitraum": "63 v. Chr. – 324 n. Chr.",
+      "kurz": "Herodes baut den Tempel um, Titus zerstört ihn. Hadrian gründet an derselben Stelle eine römische Kolonie."
+    },
+    {
+      "name": "Byzantinisch",
+      "zeitraum": "324–638",
+      "kurz": "Christliche Stadt mit Grabeskirche und Pilgerbetrieb, unterbrochen von 15 Jahren persischer Herrschaft."
+    },
+    {
+      "name": "Frühislamisch",
+      "zeitraum": "638–1099",
+      "kurz": "Umayyaden, Abbasiden, Fatimiden. Felsendom und al-Aqsa entstehen; die Stadt wird zur drittheiligsten des Islam."
+    },
+    {
+      "name": "Kreuzfahrer",
+      "zeitraum": "1099–1187 und 1229–1244",
+      "kurz": "Königreich Jerusalem, zweimal begründet und zweimal verloren – beim zweiten Mal durch Vertrag statt Krieg."
+    },
+    {
+      "name": "Ayyubidisch und mamlukisch",
+      "zeitraum": "1187–1517",
+      "kurz": "Saladin und seine Nachfolger. Eine fromme Provinzstadt mit Schulen und Stiftungen, ohne politisches Gewicht."
+    },
+    {
+      "name": "Osmanisch",
+      "zeitraum": "1517–1917",
+      "kurz": "Vier Jahrhunderte Ruhe. Süleyman baut die Mauern, die heute die Altstadt umschließen."
+    },
+    {
+      "name": "Britisches Mandat",
+      "zeitraum": "1917–1948",
+      "kurz": "Verwaltung unter Völkerbundsmandat, wachsende Spannungen zwischen den Bevölkerungsgruppen."
+    },
+    {
+      "name": "Geteilt",
+      "zeitraum": "1948–1967",
+      "kurz": "Westen israelisch, Osten jordanisch. Stacheldraht durch die Stadt; die heiligen Stätten für die jeweils andere Seite unerreichbar."
+    },
+    {
+      "name": "Seit 1967",
+      "zeitraum": "ab 1967",
+      "kurz": "Israel kontrolliert die ganze Stadt; die Annexion Ost-Jerusalems ist international nicht anerkannt. Der Status ist bis heute ungeklärt."
+    }
+  ],
+  "stationen": [
+    {
+      "jahr": -1800,
+      "titel": "Erste Erwähnung in ägyptischen Texten",
+      "text": "Ägyptische Ächtungstexte nennen einen Ort namens Rushalimum – die älteste bekannte Nennung Jerusalems. Ächtungstexte waren Schalen mit Namen feindlicher Fürsten, die zerschlagen wurden, um sie magisch zu schwächen. Die Stadt lag auf einem schmalen Bergrücken über der Gihonquelle, der einzigen verlässlichen Wasserquelle der Gegend.",
+      "herrschaft": "Kanaanäisch"
+    },
+    {
+      "jahr": -1350,
+      "titel": "Abdi-Heba schreibt nach Ägypten",
+      "text": "In den Amarna-Briefen, dem diplomatischen Archiv des ägyptischen Hofes, bittet ein Stadtfürst namens Abdi-Heba den Pharao mehrfach um Truppen. Die Briefe zeigen Jerusalem als kleinen, aber befestigten Vasallenstaat im ägyptischen Einflussbereich – rund 350 Jahre vor David.",
+      "herrschaft": "Ägyptische Oberhoheit"
+    },
+    {
+      "jahr": -1000,
+      "titel": "David nimmt die Jebusiterstadt",
+      "text": "Nach der biblischen Erzählung erobert David die Stadt der Jebusiter und macht sie zur Hauptstadt seines Reiches – ein Ort, der zuvor keinem der Stämme gehörte und deshalb keinen bevorzugte. Er bringt die Bundeslade dorthin und verbindet damit erstmals politische und religiöse Mitte. Archäologisch ist dieser Vorgang nicht belegt; die Frage, wie groß Davids Reich war, ist eine der umstrittensten der Bibelwissenschaft.",
+      "herrschaft": "Israelitisch",
+      "vertiefung": "jerusalem-david"
+    },
+    {
+      "jahr": -960,
+      "titel": "Salomo baut den Ersten Tempel",
+      "text": "Die Bibel schildert einen aufwendigen Tempelbau mit Zedernholz aus Tyros und phönizischen Handwerkern. Vom Bau selbst ist nichts erhalten – der Tempelberg ist bis heute nicht archäologisch untersucht, weil er als muslimisches Heiligtum unantastbar ist. Der Tempel begründete die Vorstellung eines einzigen legitimen Opferortes, aus der später der Monotheismus in seiner strengen Form erwuchs.",
+      "herrschaft": "Israelitisch",
+      "vertiefung": "jerusalem-tempel"
+    },
+    {
+      "jahr": -925,
+      "titel": "Der Feldzug des Pharao Schoschenk",
+      "text": "Nach dem Tod Salomos zerfällt das Reich in Israel im Norden und Juda im Süden. Ein Feldzug des Pharao Schoschenk I. – in der Bibel Schischak – trifft die Region; seine Siegesliste in Karnak nennt zahlreiche Orte, Jerusalem selbst allerdings nicht. Die Bibel berichtet, der Tempelschatz sei als Tribut abgegeben worden.",
+      "herrschaft": "Judäisch"
+    },
+    {
+      "jahr": -701,
+      "titel": "Hiskias Tunnel und die assyrische Belagerung",
+      "text": "König Hiskia lässt einen 533 Meter langen Tunnel durch den Fels treiben, um das Wasser der Gihonquelle in die Stadt zu leiten – zwei Trupps graben von beiden Seiten und treffen sich in der Mitte. Eine Inschrift an der Fundstelle beschreibt den Moment der Begegnung. Als Sanherib von Assyrien die Stadt belagert, hält sie stand. Warum, sagen die Quellen unterschiedlich: Die Bibel spricht von einem Engel, Sanheribs Annalen von einem hohen Tribut.",
+      "herrschaft": "Judäisch"
+    },
+    {
+      "jahr": -586,
+      "titel": "Nebukadnezar zerstört Tempel und Stadt",
+      "text": "Nach einer Belagerung von anderthalb Jahren fällt Jerusalem. Die babylonischen Truppen brennen Tempel und Palast nieder, reißen die Mauern ein und verschleppen die Oberschicht nach Babylonien. Der König wird geblendet, nachdem man vor seinen Augen seine Söhne getötet hat. Der Staat Juda hört auf zu existieren.",
+      "herrschaft": "Babylonisch",
+      "vertiefung": "jerusalem-586"
+    },
+    {
+      "jahr": -539,
+      "titel": "Kyros erlaubt die Rückkehr",
+      "text": "Nach der Einnahme Babylons durch Kyros II. dürfen die Verschleppten heimkehren. Der Kyros-Zylinder verkündet diese Politik in babylonischer Form; die Bibel nennt Kyros ausdrücklich einen Gesalbten Gottes – der einzige Nichtjude, dem dieser Titel zukommt. Nicht alle kehren zurück: In Babylonien bleibt eine jüdische Gemeinde, die über tausend Jahre bestehen wird.",
+      "herrschaft": "Persisch",
+      "vertiefung": "kyros2"
+    },
+    {
+      "jahr": -515,
+      "titel": "Der Zweite Tempel wird eingeweiht",
+      "text": "Der Neubau ist bescheidener als der erste; die Bibel berichtet, Ältere hätten beim Anblick geweint. Die Bundeslade ist verschwunden und bleibt es. Das Allerheiligste ist von nun an ein leerer Raum – eine Vorstellung, die im antiken Vorderen Orient ohne Parallele war.",
+      "herrschaft": "Persisch",
+      "vertiefung": "jerusalem-tempel"
+    },
+    {
+      "jahr": -445,
+      "titel": "Nehemia baut die Mauern wieder auf",
+      "text": "Ein jüdischer Beamter am persischen Hof erhält Urlaub und Vollmachten, um Jerusalem zu befestigen. Sein Bericht schildert die Arbeit unter dem Spott und den Drohungen der Nachbarn – die Bauleute arbeiteten mit der Waffe an der Seite. Mit Esra beginnt zugleich die Verschriftlichung und öffentliche Verlesung des Gesetzes.",
+      "herrschaft": "Persisch"
+    },
+    {
+      "jahr": -332,
+      "titel": "Alexander zieht durch",
+      "text": "Das Perserreich fällt an Alexander; Jerusalem geht ohne Kampf über. Eine Legende bei Flavius Josephus lässt den Hohepriester ihm entgegengehen und Alexander sich vor dem Gottesnamen verneigen – historisch nicht belegbar. Griechische Sprache, Gymnasion und Handel verändern die Stadt in den folgenden Generationen tiefgreifend.",
+      "herrschaft": "Hellenistisch",
+      "vertiefung": "alexanderzug"
+    },
+    {
+      "jahr": -250,
+      "titel": "Die Septuaginta entsteht",
+      "text": "In Alexandria wird die hebräische Bibel ins Griechische übersetzt – der erste große Übersetzungsvorgang der Weltgeschichte. Für die griechischsprachige jüdische Diaspora wird sie zur Bibel; später übernimmt die frühe Kirche sie und liest ihre eigene Botschaft in sie hinein.",
+      "herrschaft": "Hellenistisch"
+    },
+    {
+      "jahr": -198,
+      "titel": "Von den Ptolemäern zu den Seleukiden",
+      "text": "Nach der Schlacht von Panion wechselt Judäa vom ägyptischen zum syrischen Herrscherhaus. Antiochos III. bestätigt zunächst das Recht, nach den eigenen Gesetzen zu leben – ein üblicher hellenistischer Umgang mit Tempelstädten.",
+      "herrschaft": "Hellenistisch"
+    },
+    {
+      "jahr": -167,
+      "titel": "Antiochos IV. verbietet den jüdischen Kult",
+      "text": "Der Seleukidenkönig lässt im Tempel einen fremden Altar errichten, verbietet Beschneidung und Sabbat und macht das Halten der Tora zum Kapitalverbrechen. Der Anlass war zugleich ein innerjüdischer Streit: Ein Teil der Oberschicht wollte die Hellenisierung, ein anderer nicht. Der Eingriff löst den ersten Religionskrieg der Geschichte aus, von dem wir wissen.",
+      "herrschaft": "Hellenistisch",
+      "vertiefung": "jerusalem-makkabaeer"
+    },
+    {
+      "jahr": -164,
+      "titel": "Die Makkabäer weihen den Tempel neu",
+      "text": "Ein Aufstand unter Judas Makkabäus und seinen Brüdern erobert Jerusalem zurück. Die Tempelweihe im Dezember 164 v. Chr. wird als Chanukka bis heute begangen. Die Erzählung vom Öl, das acht Tage reichte, taucht erst Jahrhunderte später im Talmud auf; die Makkabäerbücher kennen sie nicht.",
+      "herrschaft": "Hasmonäisch",
+      "vertiefung": "jerusalem-makkabaeer"
+    },
+    {
+      "jahr": -141,
+      "titel": "Ein eigener jüdischer Staat",
+      "text": "Simon Makkabäus erreicht die Anerkennung der Unabhängigkeit. Die Hasmonäer vereinen Hohepriesteramt und weltliche Herrschaft – eine Verbindung, die fromme Kreise von Anfang an ablehnten. Aus diesem Streit entstehen die Gruppen, die später als Pharisäer, Sadduzäer und Essener auftreten.",
+      "herrschaft": "Hasmonäisch"
+    },
+    {
+      "jahr": -63,
+      "titel": "Pompeius nimmt Jerusalem",
+      "text": "Ein Streit zweier hasmonäischer Brüder um den Thron führt dazu, dass beide Rom um Schiedsspruch bitten. Pompeius nutzt die Gelegenheit, belagert die Stadt drei Monate und betritt danach das Allerheiligste – er findet es leer und rührt den Tempelschatz nicht an. Judäa wird tributpflichtig; die Unabhängigkeit ist nach 78 Jahren beendet.",
+      "herrschaft": "Römisch"
+    },
+    {
+      "jahr": -37,
+      "titel": "Herodes wird König von Roms Gnaden",
+      "text": "Herodes, ein Idumäer und damit für viele kein vollwertiger Jude, regiert als Klientelkönig 33 Jahre. Er lässt den Tempel in einer Größenordnung umbauen, die alles Frühere übertrifft: eine Plattform von 14 Hektar, gestützt von Mauern aus bis zu 500 Tonnen schweren Steinen. Die Westmauer dieser Plattform ist die heutige Klagemauer – sie gehörte nie zum Tempel selbst, sondern zu seinem Unterbau.",
+      "herrschaft": "Römisch"
+    },
+    {
+      "jahr": 6,
+      "titel": "Judäa wird römische Provinz",
+      "text": "Nach der Absetzung von Herodes' Sohn Archelaos übernehmen römische Präfekten die direkte Verwaltung. Sie residieren in Caesarea am Meer und kommen nur zu den Festen nach Jerusalem, wenn die Stadt mit Pilgern überfüllt und die Lage angespannt ist. Der bekannteste von ihnen ist Pontius Pilatus, dessen Name 1961 auf einer Inschrift in Caesarea gefunden wurde.",
+      "herrschaft": "Römisch"
+    },
+    {
+      "jahr": 30,
+      "titel": "Die Hinrichtung Jesu",
+      "text": "Ein galiläischer Wanderprediger wird während eines Passahfestes in Jerusalem verhaftet und von Pilatus gekreuzigt – eine Strafe, die Rom für Aufrührer und Sklaven vorsah. Das genaue Jahr ist unsicher, 30 und 33 gelten als wahrscheinlichste Möglichkeiten. Aus der Bewegung um ihn entsteht in derselben Stadt die erste christliche Gemeinde.",
+      "herrschaft": "Römisch"
+    },
+    {
+      "jahr": 70,
+      "titel": "Titus zerstört den Zweiten Tempel",
+      "text": "Nach vier Jahren Aufstand und fünf Monaten Belagerung fällt Jerusalem. Der Tempel brennt; ob auf Befehl oder gegen ihn, berichten die Quellen unterschiedlich. Der Titusbogen in Rom zeigt bis heute die Menora im Triumphzug. Der Opferkult endet für immer – das Judentum wird zu einer Religion des Studiums und des Gebets.",
+      "herrschaft": "Römisch",
+      "vertiefung": "jerusalem-70"
+    },
+    {
+      "jahr": 132,
+      "titel": "Bar Kochba und das Ende jüdischen Jerusalems",
+      "text": "Hadrian lässt an der Stelle der Stadt eine römische Kolonie namens Aelia Capitolina gründen, mit einem Jupitertempel auf dem Tempelberg. Der Aufstand unter Simon bar Kochba dauert drei Jahre und endet in einer Katastrophe: Judäa wird in Syria Palaestina umbenannt, Juden ist das Betreten der Stadt verboten – eine Regelung, die Jahrhunderte gilt.",
+      "herrschaft": "Römisch"
+    },
+    {
+      "jahr": 326,
+      "titel": "Helena, Konstantin und die Grabeskirche",
+      "text": "Nach der Wende zum Christentum lässt Kaiser Konstantin über der Stelle, die als Grab Jesu gilt, eine Kirche errichten. Seine Mutter Helena reist selbst in die Stadt; die Überlieferung schreibt ihr die Auffindung des Kreuzes zu. Jerusalem wird zum Pilgerziel und binnen weniger Generationen zu einer überwiegend christlichen Stadt.",
+      "herrschaft": "Byzantinisch"
+    },
+    {
+      "jahr": 614,
+      "titel": "Die Perser nehmen die Stadt",
+      "text": "Sasanidische Truppen unter Chosrau II. erobern Jerusalem, plündern die Grabeskirche und nehmen das Kreuzesreliquiar mit nach Persien. Fünfzehn Jahre später bringt Kaiser Herakleios es persönlich zurück – ein Triumph, der nur neun Jahre hält.",
+      "herrschaft": "Byzantinisch",
+      "vertiefung": "kaiser-herakleios"
+    },
+    {
+      "jahr": 638,
+      "titel": "Kalif Umar übernimmt Jerusalem",
+      "text": "Nach der Niederlage von Byzanz am Jarmuk ergibt sich die Stadt vertraglich. Der Überlieferung nach lehnte Umar es ab, in der Grabeskirche zu beten, damit sie nicht später in eine Moschee umgewandelt würde. Christen und Juden erhalten den Status von Schutzbefohlenen: eigene Gerichtsbarkeit und Religionsausübung gegen Sonderabgabe und rechtliche Nachrangigkeit. Juden dürfen sich erstmals seit 500 Jahren wieder in der Stadt niederlassen.",
+      "herrschaft": "Frühislamisch",
+      "vertiefung": "jerusalem-638"
+    },
+    {
+      "jahr": 691,
+      "titel": "Der Felsendom entsteht",
+      "text": "Abd al-Malik lässt auf dem seit 70 leerstehenden Tempelberg einen Kuppelbau errichten – eines der ältesten erhaltenen Bauwerke des Islam. Die Inschriften im Inneren wenden sich ausdrücklich gegen die christliche Lehre von der Dreieinigkeit. Wenige Jahre später folgt die al-Aqsa-Moschee am Südrand des Platzes.",
+      "herrschaft": "Frühislamisch",
+      "vertiefung": "jerusalem-638"
+    },
+    {
+      "jahr": 1009,
+      "titel": "Al-Hakim lässt die Grabeskirche zerstören",
+      "text": "Der fatimidische Kalif, dessen Regierung auch von Zeitgenossen als unberechenbar beschrieben wird, ordnet die Zerstörung der Kirche an. Der Wiederaufbau beginnt erst Jahrzehnte später mit byzantinischer Unterstützung. In Europa wirkt die Nachricht lange nach und fließt später in die Kreuzzugspropaganda ein.",
+      "herrschaft": "Frühislamisch"
+    },
+    {
+      "jahr": 1073,
+      "titel": "Seldschuken statt Fatimiden",
+      "text": "Türkische Verbände nehmen die Stadt; die Bedingungen für Pilger verschlechtern sich. 1098 erobern die Fatimiden Jerusalem zurück – ein Jahr, bevor die Kreuzfahrer eintreffen.",
+      "herrschaft": "Frühislamisch"
+    },
+    {
+      "jahr": 1099,
+      "titel": "Die Kreuzfahrer erobern Jerusalem",
+      "text": "Nach fünf Wochen Belagerung fällt die Stadt am 15. Juli. Es folgt ein Massaker an Muslimen, Juden und einheimischen Christen, dessen Ausmaß umstritten, dessen Tatsache aber unbestritten ist. Das Königreich Jerusalem entsteht; die al-Aqsa-Moschee wird Sitz der Templer, der Felsendom eine Kirche.",
+      "herrschaft": "Kreuzfahrer",
+      "vertiefung": "kreuzfahrerstaaten"
+    },
+    {
+      "jahr": 1187,
+      "titel": "Saladin nimmt die Stadt zurück",
+      "text": "Nach dem Sieg bei Hattin ergibt sich Jerusalem gegen Lösegeld. Saladin verzichtet auf Vergeltung für 1099 – ein Verhalten, das ihm schon bei europäischen Zeitgenossen Achtung eintrug. Die Grabeskirche bleibt christlich, der Tempelberg wird wieder muslimisch, Juden dürfen zurückkehren.",
+      "herrschaft": "Ayyubidisch",
+      "vertiefung": "jerusalem-saladin"
+    },
+    {
+      "jahr": 1229,
+      "titel": "Ein Kaiser bekommt Jerusalem per Vertrag",
+      "text": "Friedrich II. erhält die Stadt in einem Zehnjahresvertrag mit Sultan al-Kamil, ohne dass gekämpft wird. Der Tempelberg bleibt muslimisch. Beide Seiten sind entsetzt: Der Kaiser ist zu diesem Zeitpunkt exkommuniziert, und der Sultan gilt vielen als Verräter. Der Vertrag hält, bis er ausläuft.",
+      "herrschaft": "Kreuzfahrer"
+    },
+    {
+      "jahr": 1244,
+      "titel": "Choresmische Reiter beenden die christliche Herrschaft",
+      "text": "Vor den Mongolen fliehende Verbände plündern Jerusalem und zerstören die Grabeskirche. Die Stadt bleibt bis 1917 unter muslimischer Herrschaft. Für die Kreuzfahrerstaaten ist es das Ende jeder Aussicht auf Jerusalem.",
+      "herrschaft": "Ayyubidisch"
+    },
+    {
+      "jahr": 1260,
+      "titel": "Die Mamluken übernehmen",
+      "text": "Nach dem Sieg über die Mongolen bei Ain Dschalut regieren die Mamluken von Kairo aus. Jerusalem verliert politisch an Bedeutung und wird zur frommen Provinzstadt: Es entstehen Koranschulen, Sufi-Konvente und Stiftungen, deren Bauten das Bild der Altstadt bis heute prägen.",
+      "herrschaft": "Mamlukisch"
+    },
+    {
+      "jahr": 1517,
+      "titel": "Selim I. nimmt die Stadt kampflos",
+      "text": "Nach dem Sieg über die Mamluken geht Jerusalem an das Osmanische Reich über. Es bleibt vier Jahrhunderte dort – die längste ununterbrochene Herrschaft einer einzigen Macht in der Geschichte der Stadt.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1537,
+      "titel": "Süleyman baut die heutigen Mauern",
+      "text": "In vier Jahren entsteht die Stadtmauer, die die Altstadt bis heute umschließt: vier Kilometer lang, sieben offene Tore. Süleyman lässt auch die Wasserversorgung erneuern. Danach geschieht dreihundert Jahre lang wenig – Jerusalem ist eine kleine Stadt am Rand des Reiches.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1700,
+      "titel": "Eine arme Provinzstadt",
+      "text": "Um 1800 leben schätzungsweise 8.000 bis 10.000 Menschen in Jerusalem, überwiegend Muslime, dazu christliche und jüdische Gemeinden. Die Stadt lebt von Pilgern und Stiftungsgeldern. Reisende beschreiben verfallene Häuser und ungepflasterte Gassen.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1831,
+      "titel": "Neun Jahre unter Muhammad Ali",
+      "text": "Der ägyptische Statthalter besetzt Syrien und Palästina und öffnet die Region europäischem Einfluss: Konsulate werden zugelassen, Christen und Juden erhalten mehr Rechte. Nach dem Rückzug 1840 bleiben diese Öffnungen bestehen – der Beginn der europäischen Präsenz in Jerusalem.",
+      "herrschaft": "Ägyptisch"
+    },
+    {
+      "jahr": 1852,
+      "titel": "Der Status quo der heiligen Stätten",
+      "text": "Ein osmanischer Erlass regelt nach jahrzehntelangem Streit, welche Konfession welchen Teil der Grabeskirche und anderer Stätten nutzen darf. Die Regelung gilt bis heute. Ihre bekannteste Folge: Eine Leiter am Fenster der Grabeskirche steht seit dem 18. Jahrhundert unverändert dort, weil keine Seite sie allein bewegen darf.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1860,
+      "titel": "Die erste Siedlung außerhalb der Mauern",
+      "text": "Mit Mischkenot Scha'ananim entsteht der erste jüdische Wohnbau außerhalb der Altstadt, finanziert von Moses Montefiore. Anfangs wollte niemand dort übernachten, weil es nachts vor den Toren als unsicher galt. In den folgenden Jahrzehnten wächst die Neustadt schnell.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1892,
+      "titel": "Die Eisenbahn erreicht Jerusalem",
+      "text": "Die Strecke von Jaffa verkürzt die Reise von drei Tagen auf wenige Stunden. Pilgerzahlen und Handel steigen; die Stadt wächst erstmals seit Jahrhunderten wieder deutlich.",
+      "herrschaft": "Osmanisch"
+    },
+    {
+      "jahr": 1917,
+      "titel": "Allenby zieht ein, Balfour verspricht",
+      "text": "Am 11. Dezember betritt General Allenby die Stadt zu Fuß durch das Jaffator – eine bewusst bescheidene Geste. Wenige Wochen zuvor hatte die britische Regierung in der Balfour-Erklärung die Errichtung einer nationalen Heimstätte für das jüdische Volk in Palästina zugesagt, mit dem Zusatz, die Rechte der bestehenden nichtjüdischen Gemeinschaften dürften nicht beeinträchtigt werden. Beide Zusagen zugleich einzulösen, erwies sich als unmöglich.",
+      "herrschaft": "Britisch"
+    },
+    {
+      "jahr": 1929,
+      "titel": "Gewalt um die Klagemauer",
+      "text": "Ein Streit um Gebetsrechte an der Westmauer eskaliert zu Unruhen in ganz Palästina mit 249 Toten auf beiden Seiten. Die jüdische Gemeinde von Hebron, die dort seit Jahrhunderten lebte, wird ausgelöscht oder vertrieben. Die britische Untersuchungskommission empfiehlt erstmals, die Einwanderung zu begrenzen.",
+      "herrschaft": "Britisch"
+    },
+    {
+      "jahr": 1947,
+      "titel": "Der Teilungsplan macht Jerusalem international",
+      "text": "Die UN-Vollversammlung beschließt die Teilung Palästinas in einen jüdischen und einen arabischen Staat. Jerusalem soll als corpus separatum unter internationale Verwaltung gestellt werden – wegen seiner Bedeutung für drei Religionen. Die jüdische Seite nimmt den Plan an, die arabischen Staaten und die palästinensische Führung lehnen ihn ab. Umgesetzt wird er nie.",
+      "herrschaft": "Britisch"
+    },
+    {
+      "jahr": 1948,
+      "titel": "Krieg und Teilung der Stadt",
+      "text": "Im Krieg nach der israelischen Staatsgründung nimmt die jordanische Legion die Altstadt ein; das jüdische Viertel wird zerstört, seine Bewohner vertrieben. Israel hält den Westen. Eine Waffenstillstandslinie – die Grüne Linie – zerschneidet die Stadt mit Stacheldraht und Minenfeldern. Zehntausende Palästinenser verlieren ihre Häuser im Westteil.",
+      "herrschaft": "Geteilt",
+      "vertiefung": "jerusalem-1948"
+    },
+    {
+      "jahr": 1949,
+      "titel": "Zwei Hauptstädte, kein Zugang",
+      "text": "Israel erklärt West-Jerusalem zur Hauptstadt, Jordanien annektiert den Osten – international kaum anerkannt. Der im Waffenstillstand zugesagte Zugang von Juden zur Klagemauer wird nicht gewährt; auf der anderen Seite bleiben Muslimen und Christen aus Israel die Stätten im Osten weitgehend verschlossen. Neunzehn Jahre lang lebt die Stadt geteilt.",
+      "herrschaft": "Geteilt"
+    },
+    {
+      "jahr": 1967,
+      "titel": "Der Sechstagekrieg verändert alles",
+      "text": "Am dritten Kriegstag nehmen israelische Fallschirmjäger die Altstadt ein. Israel gibt die Verwaltung des Tempelbergs unmittelbar danach an die islamische Stiftung Waqf zurück und erlaubt Juden das Betreten, nicht aber das Beten – eine Regelung, die bis heute gilt und regelmäßig zu Konflikten führt. Das maghrebinische Viertel vor der Westmauer wird binnen Tagen abgerissen, um den heutigen Platz zu schaffen; über hundert Familien verlieren ihre Wohnungen.",
+      "herrschaft": "Seit 1967",
+      "vertiefung": "jerusalem-1967"
+    },
+    {
+      "jahr": 1980,
+      "titel": "Das Jerusalemgesetz",
+      "text": "Die Knesset erklärt Jerusalem in seiner Gesamtheit zur ewigen Hauptstadt Israels. Der UN-Sicherheitsrat erklärt das Gesetz für null und nichtig; die verbliebenen Botschaften verlassen die Stadt. Völkerrechtlich gilt Ost-Jerusalem seither überwiegend als besetztes Gebiet – eine Einordnung, die Israel bestreitet.",
+      "herrschaft": "Seit 1967"
+    },
+    {
+      "jahr": 2000,
+      "titel": "Camp David scheitert an Jerusalem",
+      "text": "Bei den Verhandlungen zwischen Barak und Arafat unter Vermittlung Clintons erweist sich die Frage der Souveränität über den Tempelberg als unlösbar. Wenige Wochen später löst ein Besuch Ariel Scharons auf dem Platz die Zweite Intifada aus, die über fünf Jahre und mehrere tausend Tote fordert.",
+      "herrschaft": "Seit 1967"
+    },
+    {
+      "jahr": 2017,
+      "titel": "Die USA verlegen ihre Botschaft",
+      "text": "Präsident Trump erkennt Jerusalem als Hauptstadt Israels an; 2018 zieht die Botschaft von Tel Aviv um. Die UN-Vollversammlung verurteilt den Schritt mit großer Mehrheit. Einige wenige Staaten folgen, die meisten nicht.",
+      "herrschaft": "Seit 1967"
+    },
+    {
+      "jahr": 2026,
+      "titel": "Eine Stadt ohne geklärten Status",
+      "text": "In Jerusalem leben heute etwa eine Million Menschen, rund 60 Prozent jüdisch, rund 38 Prozent arabisch. Die meisten arabischen Einwohner Ost-Jerusalems haben einen dauerhaften Aufenthaltsstatus, aber keine israelische Staatsbürgerschaft. Beide Seiten beanspruchen die Stadt als Hauptstadt; eine Lösung ist nach über hundert Jahren Konflikt nicht in Sicht. Stand der Angaben: 2026 – Bevölkerungszahlen ändern sich laufend, aktuelle Werte veröffentlicht das israelische Zentralbüro für Statistik.",
+      "herrschaft": "Seit 1967",
+      "vertiefung": "jerusalem-status"
+    }
+  ],
+  "strittig": "Bei Jerusalem ist mehr strittig als bei fast jedem anderen Ort. Drei Ebenen sollte man auseinanderhalten. Erstens die Archäologie: Für David und Salomo gibt es keinen zeitgenössischen Beleg außerhalb der Bibel; die Tel-Dan-Stele aus dem 9. Jahrhundert v. Chr. nennt ein Haus Davids, sagt aber nichts über die Größe seines Reiches. Ob Jerusalem um 1000 v. Chr. eine Hauptstadt oder ein Bergdorf war, trennt in der Fachwelt zwei Lager, und die Grabungsbefunde lassen beide Lesarten zu. Der Tempelberg selbst ist nie archäologisch untersucht worden. Zweitens die Zahlen: Opferzahlen von Belagerungen — 1099 ebenso wie 70 — schwanken in den Quellen um den Faktor zehn und stammen fast immer von Siegern oder von Autoren mit theologischer Absicht. Drittens die Gegenwart: Der völkerrechtliche Status Ost-Jerusalems, die Frage der Souveränität über den Tempelberg beziehungsweise das Haram asch-Scharif und die Bezeichnungen selbst sind Gegenstand eines aktiven politischen Konflikts. Diese Darstellung nennt die belegten Vorgänge und benennt, wo Deutungen auseinandergehen; sie entscheidet den Streit nicht.",
+  "quellen": [
+    "Encyclopaedia Britannica: Jerusalem, history",
+    "Simon Sebag Montefiore: Jerusalem – Die Biographie",
+    "Karen Armstrong: Jerusalem – One City, Three Faiths",
+    "Israel Finkelstein und Neil Asher Silberman: Keine Posaunen vor Jericho (zur Archäologie der Königszeit)",
+    "Amnon Ben-Tor (Hrsg.): The Archaeology of Ancient Israel",
+    "UN-Sicherheitsratsresolutionen 242 (1967), 478 (1980) und 2334 (2016)",
+    "Israelisches Zentralbüro für Statistik: Bevölkerungsdaten Jerusalem"
+  ]
 }
 ];
