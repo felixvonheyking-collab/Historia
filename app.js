@@ -2331,20 +2331,23 @@ function Historia() {
     setZiel(h.eintrag ? { reiter: h.reiter, eintrag: h.eintrag, n: Date.now() } : null);
     setBereich(b.bereich);
     setUnter(b.unter);
-    // Erst scrollen, wenn die Seite wieder lang genug ist. Zwei Bildlaeufe
-    // reichten nicht: Die Zielansicht baut sich in mehreren Schritten auf,
-    // und ein zu frueher Sprung landet am Seitenende statt an der alten
-    // Stelle. Deshalb wird bis zu einer halben Sekunde lang nachgefasst.
-    const ziel = h.scrollY || 0;
-    if (typeof window !== "undefined" && ziel > 0) {
+    // Erst scrollen, wenn die Seite wieder lang genug ist: Die Zielansicht
+    // baut sich in mehreren Schritten auf, und ein zu frueher Sprung landet
+    // oben statt an der alten Stelle. Deshalb wird eine halbe Sekunde lang
+    // nachgefasst, bis die Position sitzt.
+    //
+    // Bewusst mit Timern statt requestAnimationFrame: In einem Tab im
+    // Hintergrund laeuft rAF gar nicht. Genau daran ist die erste Fassung
+    // gescheitert - der Reiter wechselte, die Position blieb oben.
+    const zielHoehe = h.scrollY || 0;
+    if (typeof window !== "undefined" && zielHoehe > 0) {
       let versuche = 0;
       const scrollen = () => {
-        window.scrollTo(0, ziel);
+        window.scrollTo(0, zielHoehe);
         versuche++;
-        const erreicht = Math.abs(window.scrollY - ziel) < 4;
-        if (!erreicht && versuche < 30) requestAnimationFrame(scrollen);
+        if (Math.abs(window.scrollY - zielHoehe) > 4 && versuche < 25) setTimeout(scrollen, 20);
       };
-      requestAnimationFrame(scrollen);
+      setTimeout(scrollen, 0);
     }
   };
 
