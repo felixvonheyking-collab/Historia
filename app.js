@@ -2331,9 +2331,20 @@ function Historia() {
     setZiel(h.eintrag ? { reiter: h.reiter, eintrag: h.eintrag, n: Date.now() } : null);
     setBereich(b.bereich);
     setUnter(b.unter);
-    // Erst nach dem Neuzeichnen scrollen, sonst ist die Seite noch zu kurz.
-    if (typeof window !== "undefined") {
-      requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, h.scrollY || 0)));
+    // Erst scrollen, wenn die Seite wieder lang genug ist. Zwei Bildlaeufe
+    // reichten nicht: Die Zielansicht baut sich in mehreren Schritten auf,
+    // und ein zu frueher Sprung landet am Seitenende statt an der alten
+    // Stelle. Deshalb wird bis zu einer halben Sekunde lang nachgefasst.
+    const ziel = h.scrollY || 0;
+    if (typeof window !== "undefined" && ziel > 0) {
+      let versuche = 0;
+      const scrollen = () => {
+        window.scrollTo(0, ziel);
+        versuche++;
+        const erreicht = Math.abs(window.scrollY - ziel) < 4;
+        if (!erreicht && versuche < 30) requestAnimationFrame(scrollen);
+      };
+      requestAnimationFrame(scrollen);
     }
   };
 
