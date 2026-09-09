@@ -5043,5 +5043,362 @@ const VERTIEFUNGEN = [
     "John Lynn: The Wars of Louis XIV",
     "Friede von Utrecht, Vertragstexte"
   ]
+},
+{
+  "id": "han-wudi",
+  "titel": "Han Wudi und die Erfindung des chinesischen Staates",
+  "epoche": "antike",
+  "jahr": -141,
+  "zeitraum": "141–87 v. Chr.",
+  "region": "China",
+  "leitsatz": "Er machte den Konfuzianismus zur Staatslehre und finanzierte seine Kriege mit dem Salzmonopol — beides überlebte ihn um zwei Jahrtausende.",
+  "vorgeschichte": "Die Qin hatten China geeint und waren an ihrer Härte zerbrochen. Die frühen Han regierten sparsam und zurückhaltend; die Xiongnu, ein Reiternomadenverband im Norden, wurden mit Tributzahlungen und Heiratsallianzen ruhiggestellt – eine teure Dauerlösung.",
+  "verlauf": "Wudi kehrte das um. Er führte jahrzehntelang Krieg gegen die Xiongnu und dehnte das Reich nach Korea, Vietnam und weit nach Zentralasien aus. Um das zu bezahlen, verstaatlichte er Salz, Eisen und Alkohol – die erste große Wirtschaftslenkung der Geschichte, über deren Sinn seine Beamten in einer erhaltenen Streitschrift bereits kontrovers diskutierten. Zugleich erhob er den Konfuzianismus zur verbindlichen Grundlage der Beamtenauswahl und richtete eine Reichsakademie ein. Seine Gesandtschaft unter Zhang Qian nach Westen suchte Verbündete, fand sie nicht und brachte stattdessen Kenntnisse über Länder mit, von denen China nichts gewusst hatte – der Beginn der Seidenstraße.",
+  "folgen": "Der Beamtenstaat auf konfuzianischer Grundlage bestand bis 1905. Die Handelsverbindungen nach Westen wurden zur wichtigsten Landroute der Alten Welt. Am Ende seiner Regierung war das Reich größer als je zuvor und finanziell erschöpft; in einem Edikt bedauerte er selbst die Härte seiner Politik.",
+  "strittig": "Ob dieses Edikt echt ist, wird bezweifelt – es könnte eine spätere Zuschreibung sein, die einen reuigen Herrscher zeigen sollte. Umstritten ist auch, wie einheitlich der Staatskonfuzianismus wirklich war: Neuere Arbeiten sehen eine Mischung aus legalistischer Verwaltungspraxis und konfuzianischer Rhetorik.",
+  "zahlen": [
+    {
+      "wert": "54 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "3",
+      "was": "Staatsmonopole: Salz, Eisen, Alkohol"
+    },
+    {
+      "wert": "über 2.000 Jahre",
+      "was": "Dauer des konfuzianischen Beamtenstaats"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Wudi",
+    "The Cambridge History of China, Band 1",
+    "Sima Qian: Shiji",
+    "Diskurse über Salz und Eisen, 81 v. Chr."
+  ]
+},
+{
+  "id": "wu-zetian",
+  "titel": "Wu Zetian, die einzige Kaiserin Chinas",
+  "epoche": "mittelalter",
+  "jahr": 690,
+  "zeitraum": "655–705",
+  "region": "China",
+  "leitsatz": "In zweitausend Jahren Kaiserzeit regierte genau eine Frau aus eigenem Recht — und die Geschichtsschreibung hat sie dafür nie verziehen.",
+  "vorgeschichte": "Sie kam als Nebenfrau an den Hof des Kaisers Taizong und wurde nach dessen Tod, wie üblich, in ein Kloster geschickt. Sein Sohn Gaozong holte sie zurück und machte sie zur Kaiserin. Als er einen Schlaganfall erlitt, führte sie die Geschäfte.",
+  "verlauf": "Nach Gaozongs Tod setzte sie zwei Söhne nacheinander ein und wieder ab und ließ sich 690 selbst zur Kaiserin ausrufen – mit eigener Dynastie, der Zhou. Sie regierte fünfzehn Jahre. Ihre Politik: Ausbau des Beamtenexamens und Förderung von Kandidaten aus niederem Adel gegen die alten Familien, Unterstützung des Buddhismus als Gegengewicht zum konfuzianischen Establishment, erfolgreiche Feldzüge in Zentralasien. Sie richtete zugleich einen Apparat aus Denunzianten und Geheimpolizei ein und ließ zahlreiche Gegner töten, darunter Angehörige der eigenen Familie. 705 zwang ein Staatsstreich sie zur Abdankung; sie starb im selben Jahr.",
+  "folgen": "Die Tang setzten sich fort und erreichten unter ihrem Enkel Xuanzong ihre kulturelle Blüte – auf Grundlagen, die sie gelegt hatte. Ihr Grabmal trägt eine unbeschriftete Stele; warum, ist unbekannt und Gegenstand vieler Deutungen.",
+  "strittig": "Fast alles, was über ihre Grausamkeit erzählt wird, stammt aus Geschichtswerken konfuzianischer Beamter, für die eine herrschende Frau eine Verkehrung der Ordnung war – die Erzählung, sie habe die eigene Tochter erwürgt, um eine Rivalin zu belasten, taucht erst Jahrhunderte später auf. Die Forschung ist sich einig, dass sie hart regierte, und uneinig, wie viel der Überlieferung darüber hinaus zutrifft.",
+  "zahlen": [
+    {
+      "wert": "15 Jahre",
+      "was": "als Kaiserin aus eigenem Recht"
+    },
+    {
+      "wert": "ca. 50 Jahre",
+      "was": "Einfluss auf die Reichspolitik insgesamt"
+    },
+    {
+      "wert": "1",
+      "was": "regierende Kaiserin in der chinesischen Geschichte"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Wuhou",
+    "The Cambridge History of China, Band 3",
+    "Jonathan Clements: Wu – The Chinese Empress"
+  ]
+},
+{
+  "id": "song-dynastie",
+  "titel": "Die Song und die Frage, warum die Industrialisierung nicht dort begann",
+  "epoche": "mittelalter",
+  "jahr": 1000,
+  "zeitraum": "960–1279",
+  "region": "China",
+  "leitsatz": "Papiergeld, Buchdruck, Kompass, Hochöfen, Schießpulver — alles vorhanden, dreihundert Jahre vor Europa, und doch kein Durchbruch.",
+  "vorgeschichte": "Nach dem Zerfall der Tang einte die Song-Dynastie 960 den größten Teil Chinas. Sie stellte die Zivilverwaltung bewusst über das Militär: Der Gründer entmachtete seine Generäle bei einem Bankett und ließ sie in den Ruhestand gehen – eine Lehre aus dem Jahrhundert der Militärherrscher.",
+  "verlauf": "Es folgte eine wirtschaftliche Entwicklung ohne Beispiel. Die Eisenproduktion erreichte im 11. Jahrhundert eine Menge, die England erst um 1700 wieder erzielte. Papiergeld wurde staatlich ausgegeben, der Buchdruck verbreitete Bücher in einer Auflage, die Bildung über den Adel hinaus möglich machte, der Kompass ermöglichte Hochseefahrt. Die Bevölkerung überschritt erstmals hundert Millionen. Kanzler Wang Anshi versuchte ab 1069, den Staat entsprechend umzubauen – mit staatlichen Krediten für Bauern, neuen Steuern und praxisorientierten Prüfungen. Der Widerstand der konservativen Beamten um Sima Guang war so heftig, dass die Reformen mehrfach eingeführt und wieder zurückgenommen wurden.",
+  "folgen": "Militärisch blieb die Dynastie in der Defensive: Erst die Jurchen nahmen den Norden, dann beendeten die Mongolen 1279 die Südliche Song. Die technischen Errungenschaften gingen nicht verloren, führten aber zu keiner selbsttragenden industriellen Entwicklung.",
+  "strittig": "Warum nicht – das ist eine der meistdiskutierten Fragen der Wirtschaftsgeschichte, oft als Bedingungsfrage nach Joseph Needham benannt. Vorgeschlagen wurden: fehlender Arbeitskräftemangel, der Maschinen unnötig machte; die Ausrichtung der Eliten auf Beamtenlaufbahn statt Unternehmertum; der Abbruch durch die mongolische Eroberung; geographische Faktoren wie die Lage der Kohle. Keine dieser Erklärungen ist allgemein anerkannt, und die Frage selbst wird zunehmend als eurozentrisch gestellt kritisiert.",
+  "zahlen": [
+    {
+      "wert": "über 100 Mio.",
+      "was": "Einwohner erstmals im 11. Jahrhundert"
+    },
+    {
+      "wert": "ca. 125.000 t",
+      "was": "jährliche Eisenproduktion um 1078"
+    },
+    {
+      "wert": "1023",
+      "was": "erste staatliche Papiergeldausgabe"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Song dynasty",
+    "The Cambridge History of China, Band 5",
+    "Mark Elvin: The Pattern of the Chinese Past",
+    "Joseph Needham: Science and Civilisation in China"
+  ]
+},
+{
+  "id": "kangxi",
+  "titel": "Kangxi",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1661,
+  "zeitraum": "1661–1722",
+  "region": "China",
+  "leitsatz": "61 Jahre auf dem Thron — und ein Mandschu-Herrscher, der China regierte, indem er chinesischer wurde als seine Kritiker erwarteten.",
+  "vorgeschichte": "Die Qing waren 1644 als Fremddynastie nach Peking gekommen. Ihre Herrschaft war im Süden nicht gefestigt, Taiwan war in der Hand eines Ming-treuen Geschlechts, und die chinesische Bildungsschicht verweigerte sich teilweise dem Dienst.",
+  "verlauf": "Kangxi kam mit sieben Jahren auf den Thron und übernahm mit fünfzehn selbst die Regierung. Er schlug die Revolte der Drei Fürstentümer nieder, nahm 1683 Taiwan, drängte Russland im Vertrag von Nertschinsk 1689 zurück – der erste Vertrag Chinas mit einer europäischen Macht auf gleicher Augenhöhe – und unterwarf die Dsungaren. Innenpolitisch senkte er Steuern, ließ das Gelbe-Fluss-Deichsystem instand setzen und beauftragte ein Wörterbuch mit über 47.000 Schriftzeichen, das bis ins 20. Jahrhundert maßgeblich blieb. Jesuiten am Hof brachten Astronomie, Kartografie und Mathematik ein; er ließ sich selbst von ihnen unterrichten und erlaubte die Missionierung – bis Rom im Ritenstreit den chinesischen Christen die Ahnenverehrung verbot. Daraufhin schränkte er die Mission ein.",
+  "folgen": "Zusammen mit seinem Sohn Yongzheng und seinem Enkel Qianlong bilden seine Jahre die längste Zeit innerer Stabilität und Ausdehnung der chinesischen Geschichte. Das Reich verdoppelte sein Gebiet, die Bevölkerung wuchs stark. Der Ritenstreit brach zugleich die vielversprechendste Verbindung zwischen europäischer und chinesischer Gelehrsamkeit ab.",
+  "strittig": "Ob die Qing-Herrschaft als chinesische Dynastie oder als Fremdherrschaft zu verstehen ist, trennt bis heute zwei Forschungsrichtungen: Die ältere sah eine weitgehende Sinisierung, die neuere Qing-Forschung betont die bewusst mandschurische Identität, die eigene Sprache und die Bedeutung der inneren Asien zugewandten Reichsteile.",
+  "zahlen": [
+    {
+      "wert": "61 Jahre",
+      "was": "längste Regierung der chinesischen Geschichte"
+    },
+    {
+      "wert": "47.035",
+      "was": "Schriftzeichen im Kangxi-Wörterbuch"
+    },
+    {
+      "wert": "1689",
+      "was": "Vertrag von Nertschinsk"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Kangxi",
+    "Jonathan Spence: Emperor of China – Self-Portrait of K'ang-hsi",
+    "The Cambridge History of China, Band 9"
+  ]
+},
+{
+  "id": "cixi",
+  "titel": "Cixi und das Ende des chinesischen Kaiserreichs",
+  "epoche": "moderne",
+  "jahr": 1861,
+  "zeitraum": "1861–1912",
+  "region": "China",
+  "leitsatz": "Ein halbes Jahrhundert bestimmte eine Frau die Politik eines Reiches, das in dieser Zeit fast alles verlor, was es zu verlieren hatte.",
+  "vorgeschichte": "Als Cixi 1861 zur Mitregentin wurde, lag hinter China der verlorene Erste Opiumkrieg, die erzwungene Öffnung der Häfen und der Taiping-Aufstand mit vermutlich über zwanzig Millionen Toten – der verlustreichste Bürgerkrieg der Geschichte. Der Staat war finanziell und militärisch am Ende.",
+  "verlauf": "Cixi, ursprünglich Nebenfrau, wurde nach dem Tod des Kaisers Regentin für ihren Sohn, später für ihren Neffen. Sie stützte die Selbststärkungsbewegung, die Arsenale, Werften, Bergwerke und Telegrafen aufbaute – Technik übernehmen, Ordnung behalten. Der verlorene Krieg gegen Japan 1894/95 zeigte die Grenzen: Die neue Flotte war schlecht ausgerüstet, während Mittel in den Sommerpalast geflossen waren. 1898 versuchte Kaiser Guangxu mit den Hundert-Tage-Reformen einen radikalen Umbau; Cixi setzte ihn ab und stellte ihn unter Hausarrest. 1900 unterstützte sie zeitweise den Boxeraufstand gegen die Ausländer; die Niederlage gegen acht Mächte brachte eine Entschädigung, die den Staatshaushalt für Jahrzehnte belastete. Danach setzte sie selbst weitreichende Reformen in Gang – Abschaffung des Beamtenexamens 1905, Pläne für eine Verfassung.",
+  "folgen": "Sie starb 1908, einen Tag nach Guangxu; eine Untersuchung von 2008 wies in dessen Überresten eine tödliche Arsendosis nach. Der zweijährige Puyi folgte, 1911 begann die Revolution, 1912 dankte er ab. Nach über zweitausend Jahren endete das Kaisertum.",
+  "strittig": "Ihr Bild schwankt zwischen der reaktionären Intrigantin, die China ruinierte, und der pragmatischen Reformerin unter unmöglichen Bedingungen. Beide Deutungen stützen sich auf Belege; das negative Bild geht wesentlich auf zeitgenössische Schriften ihrer politischen Gegner zurück, die im Westen breit rezipiert wurden. Wer Guangxu vergiften ließ, ist nicht erwiesen – der Verdacht richtet sich auf ihr Umfeld.",
+  "zahlen": [
+    {
+      "wert": "47 Jahre",
+      "was": "Einfluss auf die Reichspolitik"
+    },
+    {
+      "wert": "1905",
+      "was": "Abschaffung des Beamtenexamens nach 1.300 Jahren"
+    },
+    {
+      "wert": "1912",
+      "was": "Abdankung des letzten Kaisers"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cixi",
+    "Jung Chang: Kaiserinwitwe Cixi (deutlich positive Deutung)",
+    "Pamela Kyle Crossley: The Wobbling Pivot – China since 1800",
+    "Untersuchungsbericht zur Todesursache Guangxus, 2008"
+  ]
+},
+{
+  "id": "silla",
+  "titel": "Silla einigt Korea",
+  "epoche": "mittelalter",
+  "jahr": 668,
+  "zeitraum": "660–676",
+  "region": "Korea",
+  "leitsatz": "Das schwächste der drei Reiche gewann — mit chinesischer Hilfe, die es danach wieder loswerden musste.",
+  "vorgeschichte": "Seit Jahrhunderten teilten Goguryeo im Norden, Baekje im Südwesten und Silla im Südosten die Halbinsel. Goguryeo hatte drei chinesische Großinvasionen abgewehrt und dabei die Sui-Dynastie mit zu Fall gebracht. Silla war das kleinste und lange das schwächste der drei.",
+  "verlauf": "Silla schloss ein Bündnis mit dem chinesischen Tang-Reich. 660 fiel Baekje, 668 nach jahrelangen Kämpfen auch Goguryeo. Danach zeigte sich, dass die Tang die Halbinsel selbst verwalten wollten: Sie richteten Kommandanturen ein und beanspruchten die eroberten Gebiete. Silla verbündete sich daraufhin mit den Resten der unterworfenen Reiche und führte acht Jahre Krieg gegen den eigenen Verbündeten. 676 zogen die Tang ab.",
+  "folgen": "Erstmals stand der größte Teil der Halbinsel unter einer Herrschaft. Im Norden entstand aus dem Erbe Goguryeos das Reich Balhae. Die Vereinigung schuf die Grundlage für eine gemeinsame koreanische Kultur, die alle folgenden Dynastien trug. Zugleich blieb die Erfahrung, dass Hilfe einer Großmacht ihren Preis hat – ein wiederkehrendes Muster der koreanischen Geschichte.",
+  "strittig": "In Südkorea wird die Vereinigung teils kritisch gesehen, weil sie mit fremder Hilfe erfolgte und das nördliche Gebiet Goguryeos verlorenging. Die Zugehörigkeit von Goguryeo und Balhae zur koreanischen oder chinesischen Geschichte ist zwischen beiden Ländern ein aktiver politischer Streit, der über wissenschaftliche Argumente hinausgeht.",
+  "zahlen": [
+    {
+      "wert": "676",
+      "was": "Abzug der Tang-Truppen"
+    },
+    {
+      "wert": "8 Jahre",
+      "was": "Krieg gegen den früheren Verbündeten"
+    },
+    {
+      "wert": "über 700 Jahre",
+      "was": "Dauer der Drei-Reiche-Zeit davor"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Silla",
+    "Michael J. Seth: A History of Korea",
+    "Samguk Sagi (späte, deutende Quelle)"
+  ]
+},
+{
+  "id": "akbar",
+  "titel": "Akbar",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1556,
+  "zeitraum": "1556–1605",
+  "region": "Mogulreich",
+  "leitsatz": "Ein Herrscher, der weder lesen noch schreiben konnte, ließ sich jeden Abend vorlesen und die Religionen seines Reiches miteinander diskutieren.",
+  "vorgeschichte": "Sein Großvater Babur hatte das Reich gegründet, sein Vater Humayun es verloren und zurückgewonnen. Akbar kam mit dreizehn Jahren auf den Thron, über ein Reich, das kaum mehr war als der Norden um Delhi und Agra, in einem Land, in dem Muslime eine Minderheit über eine hinduistische Mehrheit herrschten.",
+  "verlauf": "Er dehnte das Reich über Nordindien, Gujarat und Bengalen aus – militärisch, aber ebenso durch Bündnisse: Er nahm rajputische Fürsten in die Reichsführung auf, heiratete rajputische Prinzessinnen und ließ ihnen ihre Religion. 1564 schaffte er die Dschizya ab, die Sondersteuer für Nichtmuslime. In seiner neuen Residenz Fatehpur Sikri ließ er in einem eigens gebauten Saal Gelehrte verschiedener Religionen streiten – Muslime, Hindus, Jainas, Zoroastrier, später auch jesuitische Missionare. Daraus entwickelte er eine eigene Hoflehre, die Din-i Ilahi, die kaum Anhänger fand. Verwaltungstechnisch führte er ein einheitliches Rang- und Besoldungssystem ein und ließ das Steuerwesen auf Ertragsmessungen statt Schätzungen umstellen.",
+  "folgen": "Das Reich blieb anderthalb Jahrhunderte stabil und wurde zur reichsten Macht der Zeit. Die Verbindung persischer, zentralasiatischer und indischer Formen prägte Architektur, Malerei und Sprache – aus ihr ging auch das Urdu hervor. Sein Urenkel Aurangzeb machte die Religionspolitik weitgehend rückgängig.",
+  "strittig": "Ob Akbars Toleranz religiöse Überzeugung oder Herrschaftskalkül war, wird seit langem diskutiert; die Quellen erlauben beide Lesarten. In der politischen Auseinandersetzung des heutigen Indien ist er zu einer Figur geworden, um die gestritten wird – als Beleg für ein pluralistisches Erbe oder als Fremdherrscher, je nach Standpunkt.",
+  "zahlen": [
+    {
+      "wert": "49 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "1564",
+      "was": "Abschaffung der Dschizya"
+    },
+    {
+      "wert": "ca. 100 Mio.",
+      "was": "Einwohner des Reiches um 1600"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Akbar",
+    "John F. Richards: The Mughal Empire",
+    "Abu'l Fazl: Akbarnama (Hofchronik, entsprechend parteiisch)"
+  ]
+},
+{
+  "id": "aurangzeb",
+  "titel": "Aurangzeb und die Überdehnung des Mogulreichs",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1658,
+  "zeitraum": "1658–1707",
+  "region": "Mogulreich",
+  "leitsatz": "Unter ihm war das Reich am größten und am schwächsten zugleich — er verbrachte die letzten 25 Jahre im Feld und gewann nichts, was sich halten ließ.",
+  "vorgeschichte": "Er kam an die Macht, indem er seine Brüder ausschaltete und den eigenen Vater Shah Jahan absetzte, der die letzten acht Jahre als Gefangener im Roten Fort von Agra verbrachte – mit Blick auf das Taj Mahal, das er für seine Frau errichtet hatte.",
+  "verlauf": "Aurangzeb kehrte die Religionspolitik Akbars um: 1679 führte er die Dschizya wieder ein, ließ mehrere bedeutende Tempel zerstören und regierte nach strengerer Auslegung des islamischen Rechts. Militärisch dehnte er das Reich bis fast an die Südspitze Indiens aus. Der Preis war ein Dauerkrieg im Dekkan gegen die Marathen unter Shivaji und dessen Nachfolgern, der ein Vierteljahrhundert dauerte und Heer wie Staatskasse aufzehrte. Gleichzeitig wuchsen Widerstände bei Rajputen, Sikhs und Jats.",
+  "folgen": "Nach seinem Tod 1707 zerfiel das Reich rasch: Innerhalb weniger Jahrzehnte wurden die Provinzen faktisch selbständig, 1739 plünderte Nader Schah Delhi und nahm den Pfauenthron mit. In das Machtvakuum stießen die Marathen und die europäischen Handelskompanien – 1757 kontrollierte die britische Ostindien-Kompanie Bengalen.",
+  "strittig": "Kaum ein Herrscher Indiens ist heute so umkämpft. Hindunationalistische Darstellungen sehen in ihm den Inbegriff religiöser Verfolgung; Gegenpositionen – etwa von Audrey Truschke – verweisen darauf, dass er auch Tempel förderte, hinduistische Beamte in großer Zahl beschäftigte und viele Maßnahmen politisch statt religiös motiviert waren. Die Zerstörung bedeutender Tempel ist belegt und wird von der Forschung nicht bestritten; strittig sind Ausmaß, Motiv und Einordnung.",
+  "zahlen": [
+    {
+      "wert": "49 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "25 Jahre",
+      "was": "Krieg im Dekkan"
+    },
+    {
+      "wert": "1679",
+      "was": "Wiedereinführung der Dschizya"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Aurangzeb",
+    "John F. Richards: The Mughal Empire",
+    "Audrey Truschke: Aurangzeb – The Man and the Myth"
+  ]
+},
+{
+  "id": "songhai-reich",
+  "titel": "Songhai und die Bibliotheken von Timbuktu",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1493,
+  "zeitraum": "1464–1591",
+  "region": "Westafrika",
+  "leitsatz": "Eine Stadt in der Sahelzone besaß im 16. Jahrhundert mehr Bücher, als die meisten europäischen Universitäten aufweisen konnten.",
+  "vorgeschichte": "Nach dem Niedergang Malis übernahm Songhai die Kontrolle über den Niger und die Handelswege durch die Sahara. Sonni Ali Ber baute eine Flussflotte auf und nahm 1468 Timbuktu, 1473 Djenné.",
+  "verlauf": "Askia Muhammad stürzte 1493 den Sohn Sonni Alis und baute den eroberten Raum zu einem Staat um: Provinzgouverneure statt bestätigter Vasallen, einheitliche Maße und Gewichte, ein Handelsrecht, ein stehendes Heer. Er unternahm die Pilgerfahrt nach Mekka und kehrte mit dem Titel eines Kalifen des Sudan zurück. Vor allem förderte er die Gelehrsamkeit: In Timbuktu lehrten hunderte Gelehrte an der Sankoré-Moschee; Handschriften wurden kopiert, gehandelt und in Familienbibliotheken gesammelt – Recht, Theologie, Astronomie, Medizin, Mathematik und Poesie. Der Buchhandel gehörte zu den einträglichsten Gewerben der Stadt.",
+  "folgen": "1591 zerschlug ein marokkanisches Heer mit Feuerwaffen das Songhai-Heer bei Tondibi. Der Handel verlagerte sich an die Küste, wo die Europäer ihre Stützpunkte hatten. Die Handschriften blieben in Privatbesitz und überdauerten Jahrhunderte; als 2012 bewaffnete Gruppen Timbuktu besetzten, schmuggelten Bibliothekare und Familien schätzungsweise 350.000 Bände in Metallkisten nach Bamako.",
+  "strittig": "Die oft genannte Zahl von 25.000 Studenten in Timbuktu ist eine Schätzung ohne belastbare Grundlage. Auch die Bestandszahlen der Handschriften schwanken erheblich. Unbestritten ist, dass die Stadt ein Zentrum der Gelehrsamkeit war – ein Befund, der die verbreitete Vorstellung eines schriftlosen Afrika südlich der Sahara widerlegt.",
+  "zahlen": [
+    {
+      "wert": "1591",
+      "was": "Niederlage bei Tondibi"
+    },
+    {
+      "wert": "ca. 350.000",
+      "was": "2012 in Sicherheit gebrachte Handschriften"
+    },
+    {
+      "wert": "3",
+      "was": "aufeinanderfolgende Sahelreiche: Ghana, Mali, Songhai"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Songhai Empire",
+    "Tarikh al-Sudan, Chronik aus Timbuktu",
+    "Michael Gomez: African Dominion",
+    "UNESCO: Timbuktu Manuscripts Project"
+  ]
+},
+{
+  "id": "maya-koenige",
+  "titel": "Die Maya-Könige und die Entzifferung ihrer Schrift",
+  "epoche": "antike",
+  "jahr": 615,
+  "zeitraum": "ca. 250–900, entziffert ab 1952",
+  "region": "Mesoamerika",
+  "leitsatz": "Ein Jahrhundert lang galten die Maya als friedliche Sterndeuter — bis ihre eigene Schrift lesbar wurde und von Kriegen, Dynastien und Gefangenenopfern berichtete.",
+  "vorgeschichte": "Die Maya hinterließen tausende Inschriften auf Stelen, Türstürzen und Gefäßen. Bis in die 1950er Jahre galten sie als unlesbar, abgesehen von den Kalenderangaben. Der einflussreichste Forscher des Fachs, Eric Thompson, hielt die Schrift für rein symbolisch und die Maya für eine friedliche Theokratie ohne Geschichte im eigentlichen Sinn.",
+  "verlauf": "1952 zeigte der russische Sprachwissenschaftler Juri Knorosow, dass die Zeichen überwiegend Silben wiedergeben – gegen Thompsons Widerspruch, der die Arbeit jahrzehntelang blockierte. Tatiana Prosjurjakowa wies 1960 nach, dass wiederkehrende Zeichenfolgen Geburts- und Thronbesteigungsdaten realer Herrscher sind. Damit hatten die Maya plötzlich Geschichte: Namen, Regierungsjahre, Kriege, Bündnisse. Palenque, Tikal, Calakmul und Copán erwiesen sich als konkurrierende Mächte mit wechselnden Allianzen. Pakals Grab, 1952 unter dem Inschriftentempel geöffnet, ließ sich einer Person mit Namen und Lebensdaten zuordnen.",
+  "folgen": "Das Bild kippte vollständig: aus friedlichen Priesterastronomen wurden Dynastien, die Krieg führten, Gefangene opferten und ihre Siege in Stein festhielten. Heute sind über 150 Herrscher namentlich bekannt, viele mit auf den Tag genauen Daten – für eine vorkoloniale amerikanische Kultur eine einzigartige Quellenlage.",
+  "strittig": "Der Zusammenbruch der Tieflandstädte im 9. Jahrhundert ist weiter ungeklärt: Dürre, Übernutzung der Böden, Dauerkrieg und Aufstände werden diskutiert, vermutlich wirkten mehrere Ursachen zusammen. Und ein Missverständnis hält sich hartnäckig: Der Kalender endete 2012 nicht, es begann lediglich ein neuer Zyklus – die Maya selbst haben nie ein Weltende vorhergesagt.",
+  "zahlen": [
+    {
+      "wert": "1952",
+      "was": "Knorosows Entzifferungsansatz"
+    },
+    {
+      "wert": "über 150",
+      "was": "namentlich bekannte Herrscher"
+    },
+    {
+      "wert": "68 Jahre",
+      "was": "Regierungszeit Pakals von Palenque"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Maya",
+    "Michael D. Coe: Breaking the Maya Code",
+    "Simon Martin und Nikolai Grube: Chronicle of the Maya Kings and Queens"
+  ]
+},
+{
+  "id": "moctezuma2",
+  "titel": "Motecuhzoma II. und der Fall Tenochtitlans",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1521,
+  "zeitraum": "1502–1521",
+  "region": "Mesoamerika",
+  "leitsatz": "Nicht 500 Spanier stürzten ein Reich von Millionen, sondern zehntausende indigene Verbündete, eine Pockenepidemie — und ein Tributsystem, das genug Feinde geschaffen hatte.",
+  "vorgeschichte": "Tenochtitlan stand seit 1428 an der Spitze eines Dreibunds und beherrschte hunderte Orte, die Tribut leisteten. Diese Orte behielten ihre eigenen Herrscher und ihre Wut. Als Cortés 1519 landete, fand er Verbündete, bevor er Gegner fand – allen voran die Tlaxcalteken, die den Azteken nie unterworfen worden waren.",
+  "verlauf": "Motecuhzoma empfing die Spanier in der Stadt und wurde in seinem eigenen Palast festgesetzt. Während Cortés abwesend war, richteten seine Leute beim Tempelfest ein Massaker an; die Stadt erhob sich. Motecuhzoma starb 1520 – nach spanischer Darstellung durch Steinwürfe der eigenen Leute, nach indigenen Quellen durch die Spanier. In der Noche Triste flohen die Spanier unter schweren Verlusten. Zurück kamen sie 1521 mit zehntausenden Verbündeten und dreizehn eigens gebauten Schiffen für den See. Die Belagerung dauerte 93 Tage; eine Pockenepidemie hatte die Verteidiger zuvor dezimiert. Der letzte Tlatoani Cuauhtemoc wurde gefangen und 1525 hingerichtet.",
+  "folgen": "Auf den Trümmern entstand Mexiko-Stadt. Die Bevölkerung Mexikos sank innerhalb eines Jahrhunderts durch eingeschleppte Krankheiten um schätzungsweise 90 Prozent. Amerikanisches Silber finanzierte für zwei Jahrhunderte die spanische Macht in Europa.",
+  "strittig": "Die Erzählung, Motecuhzoma habe Cortés für den zurückkehrenden Gott Quetzalcoatl gehalten, findet sich in keiner Quelle vor der Eroberung; sie taucht erst Jahrzehnte später auf und diente beiden Seiten – den Spaniern als Rechtfertigung, dem unterworfenen Adel als Erklärung für die eigene Niederlage. Neuere Arbeiten wie die von Camilla Townsend lesen Motecuhzomas Verhalten als Versuch, Zeit zu gewinnen und die Fremden einzuordnen.",
+  "zahlen": [
+    {
+      "wert": "93 Tage",
+      "was": "Belagerung von Tenochtitlan"
+    },
+    {
+      "wert": "ca. 200.000",
+      "was": "Einwohner Tenochtitlans, eine der größten Städte der Welt"
+    },
+    {
+      "wert": "ca. 90 %",
+      "was": "Bevölkerungsrückgang in Mexiko binnen eines Jahrhunderts"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Montezuma II",
+    "Camilla Townsend: Fifth Sun – A New History of the Aztecs",
+    "Codex Florentinus, Buch 12 (indigene Sicht, nach 1550 aufgezeichnet)",
+    "Matthew Restall: Seven Myths of the Spanish Conquest"
+  ]
 }
 ];

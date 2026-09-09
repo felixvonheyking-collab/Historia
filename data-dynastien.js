@@ -3182,5 +3182,915 @@ const DYNASTIEN = [
    ]
   }
  ]
+},
+{
+ "id": "china",
+ "reich": "China",
+ "untertitel": "Vom Himmelsmandat bis zum letzten Kaiser",
+ "zeitraum": "ca. 1600 v. Chr. – 1912",
+ "farbe": "#b8452f",
+ "einleitung": "Über dreitausend Jahre Kaiser- und Königsherrschaft, getragen von einer Idee: dem Himmelsmandat. Herrschaft ist demnach verliehen, nicht angeboren – wer sie missbraucht, verwirkt sie, und ein erfolgreicher Aufstand beweist rückwirkend, dass der Himmel entzogen hatte. Das rechtfertigte jeden Dynastiewechsel und machte China zugleich zu einem der beständigsten Staatswesen der Geschichte: Die Verwaltung überdauerte jede Dynastie, weil die Beamten nach Prüfungen ausgewählt wurden, nicht nach Geburt.",
+ "hinweis": "Drei Dinge sind zu beachten. Erstens die Zählung: China hatte über 500 Kaiser in mehr als einem Dutzend Dynastien; genannt sind hier die, deren Wirken erkennbar ist. Zweitens die Namen: Kaiser werden meist nicht mit ihrem Geburtsnamen genannt, sondern mit Tempelnamen (Taizong), Ehrennamen oder – ab den Ming – mit dem Namen ihrer Regierungsdevise (Kangxi, Qianlong). Dieselbe Person kann in verschiedenen Büchern verschieden heißen. Drittens die Datierung: Xia und die frühen Shang-Könige sind aus Überlieferung erschlossen; zeitgenössische Schriftzeugnisse setzen erst mit den Orakelknochen der späten Shang um 1250 v. Chr. ein.",
+ "quellen": [
+  "Encyclopaedia Britannica: China, history; Chinese dynasties",
+  "The Cambridge History of China, Bände 1–15",
+  "John King Fairbank und Merle Goldman: China – Eine neue Geschichte",
+  "Kai Vogelsang: Geschichte Chinas"
+ ],
+ "perioden": [
+  {
+   "name": "Vor der Kaiserzeit",
+   "zeitraum": "ca. 1600–221 v. Chr.",
+   "dynastien": [
+    {
+     "name": "Shang",
+     "zeitraum": "ca. 1600–1046 v. Chr.",
+     "kurz": "Die erste Dynastie, die sich durch eigene Schriftzeugnisse belegen lässt: Orakelknochen mit Fragen an die Ahnen, deren Antworten aus Rissen im erhitzten Knochen gelesen wurden. Bronzeguss auf einem technischen Niveau, das anderswo nicht erreicht wurde.",
+     "herrscher": [
+      {
+       "name": "Tang",
+       "regierung": "ca. 1600 v. Chr.",
+       "kurz": "Gründer der Dynastie nach der Überlieferung. Historisch kaum fassbar."
+      },
+      {
+       "name": "Wu Ding",
+       "regierung": "ca. 1250–1192 v. Chr.",
+       "kurz": "Erster Herrscher, für den zeitgenössische Belege existieren. Seine Gemahlin Fu Hao führte selbst Truppen; ihr ungeplündertes Grab wurde 1976 gefunden."
+      },
+      {
+       "name": "Di Xin",
+       "regierung": "ca. 1075–1046 v. Chr.",
+       "kurz": "Letzter Shang-König, in der Überlieferung als Inbegriff des Tyrannen gezeichnet – von den Siegern."
+      }
+     ],
+     "weitere": "Die Xia-Dynastie davor (ca. 2070–1600 v. Chr.) gilt in China als erste Dynastie, ist archäologisch aber nicht eindeutig belegt; die Zuordnung zur Erlitou-Kultur ist umstritten."
+    },
+    {
+     "name": "Zhou",
+     "zeitraum": "1046–256 v. Chr.",
+     "kurz": "Die längste Dynastie Chinas. Sie begründete das Himmelsmandat und zerfiel in ihrer zweiten Hälfte in konkurrierende Staaten – gerade in dieser Unordnung entstanden Konfuzianismus, Daoismus und Legalismus.",
+     "herrscher": [
+      {
+       "name": "König Wu",
+       "regierung": "1046–1043 v. Chr.",
+       "kurz": "Stürzte die Shang in der Schlacht bei Muye und berief sich erstmals auf das Himmelsmandat."
+      },
+      {
+       "name": "Herzog von Zhou",
+       "regierung": "als Regent 1042–1035 v. Chr.",
+       "kurz": "Regierte für seinen minderjährigen Neffen und gab die Macht danach zurück – für Konfuzius das Vorbild des selbstlosen Staatsmanns."
+      },
+      {
+       "name": "König Ping",
+       "regierung": "770–720 v. Chr.",
+       "kurz": "Verlegte die Hauptstadt nach Osten. Danach war der König nur noch nomineller Oberherr; die Macht lag bei den Territorialfürsten."
+      }
+     ],
+     "weitere": "Es folgten die Frühlings- und Herbstperiode (770–476 v. Chr.) und die Zeit der Streitenden Reiche (475–221 v. Chr.) mit dutzenden Königen konkurrierender Staaten. Der letzte Zhou-König Nan wurde 256 v. Chr. abgesetzt."
+    }
+   ]
+  },
+  {
+   "name": "Frühe Kaiserzeit",
+   "zeitraum": "221 v. Chr. – 220 n. Chr.",
+   "dynastien": [
+    {
+     "name": "Qin",
+     "zeitraum": "221–206 v. Chr.",
+     "kurz": "Fünfzehn Jahre, die alles veränderten: ein Reich, eine Schrift, ein Maß, ein Gewicht, eine Achsenbreite. Der Preis war eine Härte, die die Dynastie selbst nicht überlebte.",
+     "herrscher": [
+      {
+       "name": "Qin Shihuangdi",
+       "regierung": "221–210 v. Chr.",
+       "kurz": "Erster Kaiser Chinas. Vereinheitlichte Schrift, Maße und Recht, ließ Mauern zu einem Grenzwall verbinden und für sein Grab eine Armee aus Terrakotta anfertigen.",
+       "vertiefung": "qin-einigung"
+      },
+      {
+       "name": "Qin Er Shi",
+       "regierung": "210–207 v. Chr.",
+       "kurz": "Zweiter und letzter Kaiser der Dynastie. Unter ihm brach das Reich in Aufständen zusammen."
+      }
+     ]
+    },
+    {
+     "name": "Han",
+     "zeitraum": "206 v. Chr. – 220 n. Chr.",
+     "kurz": "Vier Jahrhunderte, die China prägten: Die Mehrheitsbevölkerung nennt sich bis heute Han. Konfuzianismus wird Staatslehre, die Seidenstraße öffnet sich, das Beamtenexamen entsteht.",
+     "herrscher": [
+      {
+       "name": "Gaozu",
+       "regierung": "202–195 v. Chr.",
+       "kurz": "Als Liu Bang aus einfachen Verhältnissen aufgestiegen. Behielt die Verwaltung der Qin bei, milderte aber die Strafen."
+      },
+      {
+       "name": "Han Wudi",
+       "regierung": "141–87 v. Chr.",
+       "kurz": "54 Jahre Regierung. Machte den Konfuzianismus zur Staatsdoktrin, dehnte das Reich weit nach Westen aus und öffnete damit die Seidenstraße – finanziert durch Staatsmonopole auf Salz und Eisen.",
+       "vertiefung": "han-wudi"
+      },
+      {
+       "name": "Wang Mang",
+       "regierung": "9–23 n. Chr.",
+       "kurz": "Unterbrach die Han mit der Xin-Dynastie und versuchte eine radikale Landreform. Sie scheiterte, und mit ihr er."
+      },
+      {
+       "name": "Guangwu",
+       "regierung": "25–57 n. Chr.",
+       "kurz": "Stellte die Han wieder her und verlegte die Hauptstadt nach Luoyang – Beginn der Östlichen Han."
+      },
+      {
+       "name": "Xian",
+       "regierung": "189–220",
+       "kurz": "Letzter Han-Kaiser, Marionette wechselnder Feldherren. Seine Abdankung beendete vier Jahrhunderte Han-Herrschaft."
+      }
+     ],
+     "weitere": "Zwischen Gaozu und Wudi regierten Hui, Wen und Jing, deren sparsame Regierung als Vorbild galt; nach Wudi folgten über zwanzig weitere Kaiser, viele davon als Kinder eingesetzt und von Eunuchen oder Kaiserinwitwen gelenkt."
+    }
+   ]
+  },
+  {
+   "name": "Zeit der Teilung",
+   "zeitraum": "220–589",
+   "dynastien": [
+    {
+     "name": "Drei Reiche, Jin, Nord- und Südreiche",
+     "zeitraum": "220–589",
+     "kurz": "Fast vier Jahrhunderte ohne Einheit. Für die Geschichtsschreibung eine Zeit des Zerfalls, für die Kultur eine der fruchtbarsten: Der Buddhismus setzt sich durch, Malerei und Dichtung nehmen ihre klassische Form an.",
+     "herrscher": [
+      {
+       "name": "Cao Pi",
+       "regierung": "220–226",
+       "kurz": "Nahm dem letzten Han-Kaiser die Würde ab und gründete Wei – eines der Drei Reiche, deren Kämpfe der bekannteste Roman Chinas erzählt."
+      },
+      {
+       "name": "Sima Yan",
+       "regierung": "265–290",
+       "kurz": "Einte China 280 noch einmal unter der Jin-Dynastie. Die Einheit hielt keine vierzig Jahre."
+      },
+      {
+       "name": "Xiaowen",
+       "regierung": "471–499",
+       "kurz": "Herrscher der Nördlichen Wei, eines nichtchinesischen Volkes. Verlegte die Hauptstadt, verbot die eigene Sprache am Hof und übernahm chinesische Namen und Kleidung – eine Anpassung von oben, die auch die Eroberer veränderte."
+      }
+     ],
+     "weitere": "In dieser Zeit bestanden nacheinander und nebeneinander Wei, Shu und Wu, die Westliche und Östliche Jin, die Sechzehn Reiche und die Nord- und Süddynastien – zusammen über hundert Herrscher, viele mit Regierungszeiten von wenigen Jahren."
+    }
+   ]
+  },
+  {
+   "name": "Sui und Tang",
+   "zeitraum": "581–907",
+   "dynastien": [
+    {
+     "name": "Sui",
+     "zeitraum": "581–618",
+     "kurz": "Kurz wie die Qin und mit ähnlicher Wirkung: Die Einheit wird wiederhergestellt, der Kaiserkanal gebaut – und die Dynastie an der eigenen Bauwut zugrunde gerichtet.",
+     "herrscher": [
+      {
+       "name": "Kaiser Wen",
+       "regierung": "581–604",
+       "kurz": "Einte China nach fast 300 Jahren Teilung, führte das Beamtenexamen in dauerhafter Form ein und ordnete Recht und Steuern neu."
+      },
+      {
+       "name": "Kaiser Yang",
+       "regierung": "604–618",
+       "kurz": "Vollendete den Kaiserkanal, der Norden und Süden bis heute verbindet – unter Einsatz von Millionen Zwangsarbeitern. Drei gescheiterte Feldzüge gegen Korea beendeten die Dynastie."
+      }
+     ]
+    },
+    {
+     "name": "Tang",
+     "zeitraum": "618–907",
+     "kurz": "Für viele das goldene Zeitalter: Chang'an war mit vielleicht einer Million Einwohnern die größte Stadt der Welt, offen für persische, indische und arabische Einflüsse. Buchdruck, Porzellan und die klassische Dichtung entstehen.",
+     "herrscher": [
+      {
+       "name": "Taizong",
+       "regierung": "626–649",
+       "kurz": "Kam durch die Ermordung seiner Brüder an die Macht und gilt trotzdem als vorbildlicher Herrscher: Er ließ sich widersprechen und machte Kritik zur Pflicht seiner Beamten."
+      },
+      {
+       "name": "Wu Zetian",
+       "regierung": "690–705",
+       "kurz": "Die einzige Frau, die in China als Kaiserin aus eigenem Recht regierte. Gründete eine eigene Dynastie, förderte Beamte nach Leistung statt Herkunft und wurde von der späteren Geschichtsschreibung gründlich verunglimpft.",
+       "vertiefung": "wu-zetian"
+      },
+      {
+       "name": "Xuanzong",
+       "regierung": "712–756",
+       "kurz": "Höhepunkt und Wendepunkt: Unter ihm blühte die Kultur, und unter ihm brach 755 die Rebellion des An Lushan aus, von der sich die Tang nie erholten."
+      }
+     ],
+     "weitere": "Weitere: Gaozu (618–626) als Gründer, Gaozong, Zhongzong und Ruizong zwischen Wu Zetians Aufstieg und Rückzug, dazu über ein Dutzend Kaiser nach 756, deren Macht zunehmend bei Militärgouverneuren und Hofeunuchen lag. Der letzte, Ai, wurde 907 abgesetzt."
+    }
+   ]
+  },
+  {
+   "name": "Song, Fremddynastien und Mongolen",
+   "zeitraum": "907–1368",
+   "dynastien": [
+    {
+     "name": "Song",
+     "zeitraum": "960–1279",
+     "kurz": "Wirtschaftlich und technisch die vielleicht fortgeschrittenste Gesellschaft der Welt ihrer Zeit: Papiergeld, Buchdruck mit beweglichen Lettern, Kompass, Hochofen, Schießpulver. Militärisch dagegen dauerhaft in der Defensive.",
+     "herrscher": [
+      {
+       "name": "Taizu",
+       "regierung": "960–976",
+       "kurz": "Beendete die Zeit der Fünf Dynastien, entmachtete die Generäle bei einem Bankett und stellte die Zivilverwaltung über das Militär – mit Folgen für Jahrhunderte."
+      },
+      {
+       "name": "Shenzong",
+       "regierung": "1067–1085",
+       "kurz": "Ließ seinen Kanzler Wang Anshi weitreichende Reformen durchführen: staatliche Kredite für Bauern, neue Steuern, Umbau der Prüfungen. Der Streit darüber spaltete die Beamtenschaft für Generationen.",
+       "vertiefung": "song-dynastie"
+      },
+      {
+       "name": "Huizong",
+       "regierung": "1100–1126",
+       "kurz": "Bedeutender Maler und Kalligraf, katastrophaler Politiker. Wurde von den Jurchen gefangen genommen; der Hof floh nach Süden."
+      },
+      {
+       "name": "Gaozong",
+       "regierung": "1127–1162",
+       "kurz": "Begründete die Südliche Song mit Hauptstadt Hangzhou. Ließ den erfolgreichen General Yue Fei hinrichten, um Frieden mit den Jurchen zu schließen – bis heute ein Streitfall der Erinnerung."
+      }
+     ],
+     "weitere": "Parallel bestanden die Liao der Kitan (916–1125) unter Abaoji und die Jin der Jurchen (1115–1234) unter Aguda im Norden – beide nichtchinesische Dynastien, die chinesische Verwaltung übernahmen. Die Südliche Song endete 1279 mit dem Untergang der Flotte bei Yamen."
+    },
+    {
+     "name": "Yuan",
+     "zeitraum": "1271–1368",
+     "kurz": "Erstmals beherrscht eine Fremddynastie ganz China. Die Mongolen ordnen die Bevölkerung in vier Ränge, mit den Chinesen des Südens zuunterst, und stützen sich auf ausländische Beamte.",
+     "herrscher": [
+      {
+       "name": "Kublai Khan",
+       "regierung": "1260–1294",
+       "kurz": "Enkel Dschingis Khans, vollendete die Eroberung Chinas und verlegte die Hauptstadt nach Dadu, dem heutigen Peking. Zwei Invasionsversuche gegen Japan scheiterten.",
+       "vertiefung": "mongolisches-reich"
+      },
+      {
+       "name": "Toghon Temür",
+       "regierung": "1333–1368",
+       "kurz": "Letzter Yuan-Kaiser. Nach Überschwemmungen, Hungersnöten und dem Aufstand der Roten Turbane floh er in die Steppe."
+      }
+     ],
+     "weitere": "Dazwischen neun weitere Kaiser in vierzig Jahren – die ungeklärte Nachfolge blieb die Schwäche der Dynastie."
+    }
+   ]
+  },
+  {
+   "name": "Ming und Qing",
+   "zeitraum": "1368–1912",
+   "dynastien": [
+    {
+     "name": "Ming",
+     "zeitraum": "1368–1644",
+     "kurz": "Eine chinesische Dynastie nach mongolischer Herrschaft, entsprechend betont traditionell. Die Verbotene Stadt entsteht, die Große Mauer erhält ihre heutige Gestalt – und nach den Schatzflotten wendet sich das Reich vom Meer ab.",
+     "herrscher": [
+      {
+       "name": "Hongwu",
+       "regierung": "1368–1398",
+       "kurz": "Als Bettelmönch und Bauernsohn aufgestiegen. Regierte mit äußerstem Misstrauen, schaffte das Kanzleramt ab und ließ zehntausende Beamte hinrichten."
+      },
+      {
+       "name": "Yongle",
+       "regierung": "1402–1424",
+       "kurz": "Riss die Macht von seinem Neffen an sich, verlegte die Hauptstadt nach Peking, ließ die Verbotene Stadt bauen und die Flotten Zheng Hes ausrüsten.",
+       "vertiefung": "zheng-he"
+      },
+      {
+       "name": "Wanli",
+       "regierung": "1572–1620",
+       "kurz": "48 Jahre auf dem Thron, davon zwei Jahrzehnte im Streik gegen die eigene Beamtenschaft – er empfing keine Minister mehr. Die Verwaltung erstarrte."
+      },
+      {
+       "name": "Chongzhen",
+       "regierung": "1627–1644",
+       "kurz": "Letzter Ming-Kaiser. Als Rebellen Peking einnahmen, erhängte er sich an einem Baum im Palastgarten."
+      }
+     ],
+     "weitere": "Weitere: Jianwen (1398–1402, von Yongle gestürzt und verschollen), Xuande, Zhengtong, der 1449 von den Mongolen gefangen genommen wurde, Jiajing, der Jahrzehnte der Alchemie widmete, und ein Dutzend weiterer Kaiser."
+    },
+    {
+     "name": "Qing",
+     "zeitraum": "1644–1912",
+     "kurz": "Die letzte Dynastie kam aus der Mandschurei. Sie verdoppelte das Reichsgebiet, regierte über 400 Millionen Menschen – und zerbrach im 19. Jahrhundert an Aufständen, Opiumkriegen und der eigenen Reformunfähigkeit.",
+     "herrscher": [
+      {
+       "name": "Nurhaci",
+       "regierung": "1616–1626",
+       "kurz": "Einte die Jurchen-Stämme, schuf das Bannersystem und legte den Grund für die Eroberung Chinas."
+      },
+      {
+       "name": "Kangxi",
+       "regierung": "1661–1722",
+       "kurz": "61 Jahre Regierung, die längste der chinesischen Geschichte. Befriedete das Reich, ließ das größte Wörterbuch seiner Zeit anlegen und beschäftigte jesuitische Astronomen am Hof.",
+       "vertiefung": "kangxi"
+      },
+      {
+       "name": "Qianlong",
+       "regierung": "1735–1796",
+       "kurz": "Größte Ausdehnung des Reiches. Dankte nach sechzig Jahren ab, um seinen Großvater Kangxi nicht zu übertreffen. Wies 1793 die britische Gesandtschaft mit dem Hinweis ab, China brauche nichts."
+      },
+      {
+       "name": "Cixi",
+       "regierung": "als Regentin 1861–1908",
+       "kurz": "Keine Kaiserin, aber fast fünfzig Jahre die entscheidende Figur. Ließ die Reformen von 1898 nach hundert Tagen abbrechen und unterstützte zeitweise den Boxeraufstand.",
+       "vertiefung": "cixi"
+      },
+      {
+       "name": "Puyi",
+       "regierung": "1908–1912",
+       "kurz": "Letzter Kaiser Chinas, mit zwei Jahren eingesetzt, mit sechs abgedankt. Später japanische Marionette in der Mandschurei, danach Gefangener, zuletzt Gärtner in Peking.",
+       "vertiefung": "cixi"
+      }
+     ],
+     "weitere": "Weitere: Hong Taiji, Shunzhi (1644 erster Kaiser in Peking), Yongzheng (1722–1735, straffe Verwaltungsreformen), Jiaqing, Daoguang, unter dem der Erste Opiumkrieg verloren ging, Xianfeng, Tongzhi und Guangxu, der nach dem Reformversuch von 1898 bis zu seinem Tod unter Hausarrest stand."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "korea-dyn",
+ "reich": "Korea",
+ "untertitel": "Von den Drei Reichen bis zum letzten Kaiser",
+ "zeitraum": "57 v. Chr. – 1910",
+ "farbe": "#4f8a3f",
+ "einleitung": "Zwei Jahrtausende zwischen zwei Großmächten. Korea übernahm chinesische Schrift, Verwaltung und Philosophie und blieb doch eigenständig – mit einer eigenen Schrift, einer eigenen Adelsordnung und einer Dynastie, die 518 Jahre bestand und damit zu den langlebigsten der Welt gehört.",
+ "hinweis": "Zur Datierung: Die Gründungsdaten der Drei Reiche stammen aus dem Samguk Sagi von 1145, der Jahrhunderte nach den Ereignissen entstand; die frühen Herrscher sind teils sagenhaft. Zur Namensschreibung: Verwendet wird die seit 2000 amtliche südkoreanische Umschrift – in älterer Literatur finden sich abweichende Formen wie Silla und Shilla oder Joseon und Chosŏn. Herrscher tragen wie in China meist Tempelnamen.",
+ "quellen": [
+  "Encyclopaedia Britannica: Korea, history; Joseon dynasty",
+  "Carter J. Eckert u. a.: Korea Old and New",
+  "Michael J. Seth: A History of Korea",
+  "Samguk Sagi und Samguk Yusa als späte, deutende Quellen"
+ ],
+ "perioden": [
+  {
+   "name": "Drei Reiche und Vereinigung",
+   "zeitraum": "57 v. Chr. – 935",
+   "dynastien": [
+    {
+     "name": "Goguryeo, Baekje und Silla",
+     "zeitraum": "57 v. Chr. – 668",
+     "kurz": "Drei Königreiche teilen die Halbinsel und Teile der Mandschurei. Goguryeo im Norden ist militärisch stark, Baekje im Südwesten kulturell führend und Vermittler nach Japan, Silla im Südosten zunächst das schwächste.",
+     "herrscher": [
+      {
+       "name": "Gwanggaeto",
+       "regierung": "391–413",
+       "kurz": "Herrscher von Goguryeo, der das Reich weit nach Norden und Süden ausdehnte. Eine über sechs Meter hohe Stele seines Sohnes hält seine Feldzüge fest – die wichtigste Quelle der Zeit."
+      },
+      {
+       "name": "Seong",
+       "regierung": "523–554",
+       "kurz": "König von Baekje, schickte Mönche und Buddhabilder an den japanischen Hof und brachte damit den Buddhismus nach Japan."
+      },
+      {
+       "name": "Munmu",
+       "regierung": "661–681",
+       "kurz": "König von Silla, vollendete die Vereinigung der Halbinsel – zunächst mit chinesischer Hilfe, dann gegen die Tang, die bleiben wollten. Ließ sich der Überlieferung nach im Meer bestatten, um als Drache das Reich zu schützen.",
+       "vertiefung": "silla"
+      }
+     ],
+     "weitere": "Dazu die sagenhaften Gründer Jumong (Goguryeo), Onjo (Baekje) und Bak Hyeokgeose (Silla) sowie über hundert weitere Könige der drei Reiche."
+    },
+    {
+     "name": "Vereintes Silla und Balhae",
+     "zeitraum": "668–935",
+     "kurz": "Silla beherrscht die Halbinsel, im Norden entsteht aus dem Erbe Goguryeos das Reich Balhae. Der Buddhismus erreicht seine Blüte; die Höhlengrotte Seokguram und der Bulguksa-Tempel entstehen.",
+     "herrscher": [
+      {
+       "name": "Silla-König Gyeongdeok",
+       "regierung": "742–765",
+       "kurz": "Unter ihm entstanden die bedeutendsten buddhistischen Bauten Koreas."
+      },
+      {
+       "name": "Dae Joyeong",
+       "regierung": "698–719",
+       "kurz": "Gründer von Balhae, das China als blühendes Land des Ostens bezeichnete. Ob es koreanisch war, ist zwischen den heutigen Nachbarstaaten bis heute strittig."
+      }
+     ],
+     "weitere": "Silla zerfiel im 9. Jahrhundert in die Späteren Drei Reiche; der letzte König Gyeongsun übergab 935 die Herrschaft an Goryeo."
+    }
+   ]
+  },
+  {
+   "name": "Goryeo",
+   "zeitraum": "918–1392",
+   "dynastien": [
+    {
+     "name": "Goryeo",
+     "zeitraum": "918–1392",
+     "kurz": "Von diesem Namen leitet sich Korea ab. Buddhismus als Staatsreligion, ein Beamtenwesen nach chinesischem Vorbild – und eine Adelsordnung, die den Aufstieg nach Geburt regelte.",
+     "herrscher": [
+      {
+       "name": "Taejo Wang Geon",
+       "regierung": "918–943",
+       "kurz": "Gründer der Dynastie. Einte die Halbinsel und hinterließ seinen Nachfolgern zehn Gebote als Regierungsleitfaden."
+      },
+      {
+       "name": "Gwangjong",
+       "regierung": "949–975",
+       "kurz": "Führte das Beamtenexamen ein und ließ zahlreiche Sklaven freistellen – beides gegen den Adel gerichtet."
+      },
+      {
+       "name": "Gojong von Goryeo",
+       "regierung": "1213–1259",
+       "kurz": "Unter ihm überzogen die Mongolen das Land in sechs Feldzügen. Der Hof floh auf die Insel Ganghwa; in dieser Zeit entstand die Tripitaka Koreana mit über 80.000 Druckstöcken."
+      },
+      {
+       "name": "Gongmin",
+       "regierung": "1351–1374",
+       "kurz": "Nutzte den Zerfall der Yuan, um die mongolische Oberhoheit abzuschütteln, und versuchte Reformen gegen den Großgrundbesitz. Er wurde ermordet."
+      }
+     ],
+     "weitere": "34 Könige regierten in Goryeo. Von 1170 bis 1270 lag die tatsächliche Macht bei Militärherrschern, vor allem der Familie Choe; die Könige waren Repräsentanten."
+    }
+   ]
+  },
+  {
+   "name": "Joseon",
+   "zeitraum": "1392–1897",
+   "dynastien": [
+    {
+     "name": "Joseon",
+     "zeitraum": "1392–1897",
+     "kurz": "518 Jahre eine Dynastie, gestützt auf den Neokonfuzianismus als Staatslehre. Der Buddhismus wird zurückgedrängt, die Gesellschaft nach Ständen geordnet, die Verwaltung durch Prüfungen besetzt.",
+     "herrscher": [
+      {
+       "name": "Taejo Yi Seong-gye",
+       "regierung": "1392–1398",
+       "kurz": "General, der die Dynastie begründete und die Hauptstadt nach Hanyang, dem heutigen Seoul, verlegte."
+      },
+      {
+       "name": "Sejong",
+       "regierung": "1418–1450",
+       "kurz": "Der Große: ließ das Hangul entwickeln, förderte Astronomie, Regenmesser und Landwirtschaftskunde und ließ das Recht in verständlicher Sprache bekanntmachen.",
+       "vertiefung": "hangul"
+      },
+      {
+       "name": "Seonjo",
+       "regierung": "1567–1608",
+       "kurz": "Unter ihm fielen 1592 japanische Heere ein. Sein Admiral Yi Sun-sin rettete das Land zur See – und wurde zwischenzeitlich durch eine Hofintrige degradiert.",
+       "vertiefung": "imjin-krieg"
+      },
+      {
+       "name": "Yeongjo",
+       "regierung": "1724–1776",
+       "kurz": "52 Jahre Regierung, Reformen für Steuergerechtigkeit – und der Befehl, den eigenen Sohn in einer Reiskiste sterben zu lassen, einer der dunkelsten Vorgänge der koreanischen Hofgeschichte."
+      },
+      {
+       "name": "Jeongjo",
+       "regierung": "1776–1800",
+       "kurz": "Förderte praktische Wissenschaften und die Silhak-Bewegung, ließ die Festung Hwaseong bauen und versuchte, die Fraktionskämpfe am Hof zu befrieden."
+      }
+     ],
+     "weitere": "27 Könige regierten in Joseon. Die Fraktionskämpfe zwischen Gelehrtengruppen bestimmten die Hofpolitik über Jahrhunderte; mehrere Könige wurden abgesetzt, darunter Yeonsangun und Gwanghaegun, die deshalb keinen Tempelnamen tragen."
+    }
+   ]
+  },
+  {
+   "name": "Kaiserreich und Ende",
+   "zeitraum": "1897–1910",
+   "dynastien": [
+    {
+     "name": "Koreanisches Kaiserreich",
+     "zeitraum": "1897–1910",
+     "kurz": "Der Versuch, durch die Erhebung zum Kaiserreich Gleichrangigkeit mit China und Japan zu behaupten – dreizehn Jahre, in denen der Handlungsspielraum immer kleiner wurde.",
+     "herrscher": [
+      {
+       "name": "Gojong",
+       "regierung": "1863–1907",
+       "kurz": "Regierte zunächst unter der Vormundschaft seines Vaters, öffnete das Land unter Druck und rief 1897 das Kaiserreich aus. Seine Frau, Königin Min, wurde 1895 von japanischen Agenten im Palast ermordet.",
+       "vertiefung": "korea-kolonialzeit"
+      },
+      {
+       "name": "Sunjong",
+       "regierung": "1907–1910",
+       "kurz": "Letzter Monarch Koreas. Unterzeichnete den Annexionsvertrag nicht selbst; die Unterschrift leistete ein Minister. Mit ihm endete nach über zwei Jahrtausenden die koreanische Monarchie.",
+       "vertiefung": "korea-kolonialzeit"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "indien",
+ "reich": "Indien",
+ "untertitel": "Von den Maurya bis zum letzten Großmogul",
+ "zeitraum": "322 v. Chr. – 1858",
+ "farbe": "#c9762f",
+ "einleitung": "Indien war über den größten Teil seiner Geschichte kein Reich, sondern viele. Nur dreimal reichte eine Herrschaft über fast den gesamten Subkontinent: unter den Maurya, unter den Moguln und unter den Briten. Dazwischen lagen Jahrhunderte, in denen Nord und Süd, Hindus, Buddhisten, Jainas und Muslime nebeneinander und gegeneinander regierten – und in denen gerade diese Vielfalt die kulturelle Hervorbringung trug.",
+ "hinweis": "Diese Liste kann keine vollständige Herrscherreihe sein: Zu keiner Zeit vor 1858 gab es einen Thron für ganz Indien. Aufgenommen sind die Dynastien, deren Reichweite über eine Region hinausging, dazu mit den Chola und Vijayanagar zwei südindische Reiche, die in europäischen Darstellungen häufig fehlen. Die Datierungen der Maurya- und Gupta-Zeit beruhen auf Inschriften, Münzen und griechischen Berichten und schwanken um Jahre bis Jahrzehnte.",
+ "quellen": [
+  "Encyclopaedia Britannica: India, history; Mughal dynasty",
+  "The Cambridge History of India",
+  "John Keay: India – A History",
+  "Hermann Kulke und Dietmar Rothermund: Geschichte Indiens"
+ ],
+ "perioden": [
+  {
+   "name": "Frühe Großreiche",
+   "zeitraum": "322 v. Chr. – 550 n. Chr.",
+   "dynastien": [
+    {
+     "name": "Maurya",
+     "zeitraum": "322–185 v. Chr.",
+     "kurz": "Das erste Reich, das fast den ganzen Subkontinent umfasste. Ein Handbuch der Staatskunst, das Arthaschastra, beschreibt seine Verwaltung mit einer Nüchternheit, die europäische Leser des 20. Jahrhunderts überraschte.",
+     "herrscher": [
+      {
+       "name": "Chandragupta Maurya",
+       "regierung": "322–298 v. Chr.",
+       "kurz": "Stürzte die Nanda-Dynastie und drängte die Nachfolger Alexanders zurück; im Vertrag mit Seleukos tauschte er Gebiete gegen 500 Kriegselefanten. Der Überlieferung nach dankte er ab und starb als Jaina-Asket durch Fasten."
+      },
+      {
+       "name": "Ashoka",
+       "regierung": "268–232 v. Chr.",
+       "kurz": "Nach dem blutigen Krieg gegen Kalinga wandte er sich vom Krieg ab und ließ seine Grundsätze auf Felsen und Säulen in ganz Indien einmeißeln – die frühesten datierbaren Schriftzeugnisse des Subkontinents.",
+       "vertiefung": "ashoka"
+      }
+     ],
+     "weitere": "Dazwischen Bindusara (298–272 v. Chr.); nach Ashoka zerfiel das Reich unter mehreren schwachen Nachfolgern binnen fünfzig Jahren."
+    },
+    {
+     "name": "Gupta",
+     "zeitraum": "320–550",
+     "kurz": "Oft als klassisches Zeitalter bezeichnet: Aryabhata berechnet die Erdrotation, das Dezimalsystem mit der Null nimmt Gestalt an, Kalidasa schreibt seine Dramen. Die Herrschaft war lockerer als bei den Maurya – viele Gebiete blieben tributpflichtige Vasallen.",
+     "herrscher": [
+      {
+       "name": "Chandragupta I.",
+       "regierung": "320–335",
+       "kurz": "Begründete die Dynastie und ihre Zählung; nach seinem Krönungsjahr rechnet die Gupta-Ära."
+      },
+      {
+       "name": "Samudragupta",
+       "regierung": "335–375",
+       "kurz": "Dehnte das Reich durch Feldzüge weit aus. Eine Inschrift auf einer Ashoka-Säule listet seine Siege auf – Herrschaftszeichen auf dem Denkmal eines Herrschers, der dem Krieg abgeschworen hatte."
+      },
+      {
+       "name": "Chandragupta II.",
+       "regierung": "375–415",
+       "kurz": "Höhepunkt des Reiches. Der chinesische Pilger Faxian bereiste damals Indien und beschrieb ein wohlhabendes, friedliches Land.",
+       "vertiefung": "null-und-ziffern"
+      }
+     ],
+     "weitere": "Nach Kumaragupta und Skandagupta schwächten Einfälle der Hunnen das Reich; um 550 war es zerfallen."
+    }
+   ]
+  },
+  {
+   "name": "Regionalreiche und Sultanate",
+   "zeitraum": "850–1526",
+   "dynastien": [
+    {
+     "name": "Chola",
+     "zeitraum": "850–1279",
+     "kurz": "Eine südindische Seemacht, die als eine der wenigen indischen Dynastien über See expandierte – bis Sri Lanka, Sumatra und Malaya. Ihre Tempel und Bronzen gehören zum Bedeutendsten der indischen Kunst.",
+     "herrscher": [
+      {
+       "name": "Rajaraja I.",
+       "regierung": "985–1014",
+       "kurz": "Baute den Brihadishvara-Tempel in Thanjavur, dessen Turm über sechzig Meter misst, und schuf eine Flotte, die den Golf von Bengalen beherrschte."
+      },
+      {
+       "name": "Rajendra I.",
+       "regierung": "1014–1044",
+       "kurz": "Führte einen Feldzug bis zum Ganges und eine Seeexpedition gegen das Reich Srivijaya in Südostasien – der einzige indische Herrscher, der Seemacht in dieser Reichweite ausübte."
+      }
+     ],
+     "weitere": "Über zwanzig weitere Chola-Herrscher regierten bis 1279; die Dynastie ging in den Kämpfen mit den Pandya unter."
+    },
+    {
+     "name": "Sultanat von Delhi",
+     "zeitraum": "1206–1526",
+     "kurz": "Fünf Dynastien in drei Jahrhunderten. Persische Hofkultur, indische Verwaltung, türkisch-afghanische Militärelite – aus dieser Mischung entstand vieles, was später als typisch indo-islamisch gilt.",
+     "herrscher": [
+      {
+       "name": "Qutb ud-Din Aibak",
+       "regierung": "1206–1210",
+       "kurz": "Ehemaliger Militärsklave, der das Sultanat begründete. Ließ das Qutb Minar beginnen, das höchste Ziegelminarett der Welt."
+      },
+      {
+       "name": "Iltutmish",
+       "regierung": "1211–1236",
+       "kurz": "Festigte das Sultanat und bestimmte seine Tochter Raziyya zur Nachfolgerin – gegen alle Gewohnheit."
+      },
+      {
+       "name": "Raziyya",
+       "regierung": "1236–1240",
+       "kurz": "Die einzige Sultanin von Delhi. Regierte vier Jahre, wurde vom türkischen Adel gestürzt und getötet."
+      },
+      {
+       "name": "Muhammad bin Tughluq",
+       "regierung": "1325–1351",
+       "kurz": "Verlegte die Hauptstadt samt Bevölkerung 1.100 Kilometer nach Süden und wieder zurück und führte eine Kupferwährung ein, die massenhaft gefälscht wurde. Gebildet und zugleich in seinen Projekten katastrophal."
+      }
+     ],
+     "weitere": "Die fünf Dynastien waren Mamluken, Khalji, Tughluq, Sayyid und Lodi. Alauddin Khalji (1296–1316) wehrte mehrere mongolische Einfälle ab; 1398 plünderte Timur Delhi. Der letzte Sultan Ibrahim Lodi fiel 1526 bei Panipat."
+    },
+    {
+     "name": "Vijayanagar",
+     "zeitraum": "1336–1646",
+     "kurz": "Ein hinduistisches Großreich im Süden, das über drei Jahrhunderte den Sultanaten des Nordens standhielt. Portugiesische Reisende beschrieben die Hauptstadt als eine der größten Städte der Welt.",
+     "herrscher": [
+      {
+       "name": "Krishnadevaraya",
+       "regierung": "1509–1529",
+       "kurz": "Höhepunkt des Reiches: Feldzüge, Tempelbauten und selbst verfasste Dichtung in Telugu. Sein Hof gilt als Blütezeit südindischer Literatur."
+      }
+     ],
+     "weitere": "Vier Dynastien regierten das Reich. 1565 verlor es die Schlacht von Talikota gegen ein Bündnis der Dekkan-Sultanate; die Hauptstadt Hampi wurde geplündert und nie wieder aufgebaut – ihre Ruinen sind heute Weltkulturerbe."
+    }
+   ]
+  },
+  {
+   "name": "Mogulreich",
+   "zeitraum": "1526–1858",
+   "dynastien": [
+    {
+     "name": "Großmoguln",
+     "zeitraum": "1526–1858",
+     "kurz": "Sechs Herrscher in zwei Jahrhunderten prägen ein Reich, das auf seinem Höhepunkt 150 Millionen Menschen umfasste und ein Viertel der Weltwirtschaftsleistung erbrachte. Danach bleibt der Titel noch anderthalb Jahrhunderte bestehen, die Macht nicht.",
+     "herrscher": [
+      {
+       "name": "Babur",
+       "regierung": "1526–1530",
+       "kurz": "Timuride aus Kabul, siegte bei Panipat durch Artillerie und Wagenburg. Sein Tagebuch, das Baburnama, ist eine der offensten Selbstdarstellungen eines Herrschers vor der Neuzeit."
+      },
+      {
+       "name": "Akbar",
+       "regierung": "1556–1605",
+       "kurz": "Kam mit dreizehn auf den Thron und regierte 49 Jahre. Schaffte die Sondersteuer für Nichtmuslime ab, heiratete rajputische Prinzessinnen, ließ Religionsgespräche führen und konnte selbst weder lesen noch schreiben.",
+       "vertiefung": "akbar"
+      },
+      {
+       "name": "Shah Jahan",
+       "regierung": "1628–1658",
+       "kurz": "Ließ für seine verstorbene Frau das Taj Mahal errichten und Delhi als Shahjahanabad neu bauen. Wurde vom eigenen Sohn abgesetzt und verbrachte die letzten Jahre in Haft im Roten Fort von Agra."
+      },
+      {
+       "name": "Aurangzeb",
+       "regierung": "1658–1707",
+       "kurz": "Dehnte das Reich am weitesten aus und überdehnte es zugleich. Führte die Sondersteuer wieder ein und verbrachte die letzten 25 Jahre im Krieg im Dekkan.",
+       "vertiefung": "aurangzeb"
+      },
+      {
+       "name": "Bahadur Shah II.",
+       "regierung": "1837–1858",
+       "kurz": "Letzter Großmogul, faktisch britischer Pensionär. Wurde vom Aufstand von 1857 zur Symbolfigur gemacht, danach nach Rangun verbannt – das formale Ende des Reiches."
+      }
+     ],
+     "weitere": "Weitere: Humayun (1530–1556), der sein Reich verlor und zurückgewann, Jahangir (1605–1627), dessen Frau Nur Jahan als einzige Mogulin Münzen mit ihrem Namen prägen ließ, und nach 1707 rund ein Dutzend Herrscher, deren Macht kaum über Delhi hinausreichte."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "westafrika",
+ "reich": "Westafrikanische Reiche",
+ "untertitel": "Ghana, Mali, Songhai und ihre Nachbarn",
+ "zeitraum": "ca. 700–1900",
+ "farbe": "#c9a53f",
+ "einleitung": "Drei große Reiche folgten am Niger aufeinander, alle gestützt auf dieselbe Grundlage: die Kontrolle des Handels durch die Sahara. Nach Norden ging Gold, nach Süden Salz – zeitweise wurden beide Waren Gewicht gegen Gewicht getauscht. Timbuktu und Djenné wurden Städte des Handels und der Gelehrsamkeit, mit Bibliotheken, deren Handschriften bis heute erhalten sind.",
+ "hinweis": "Die Quellenlage unterscheidet sich grundlegend von der europäischen. Herrscherlisten stammen aus drei Arten von Quellen: arabischen Reiseberichten von außen, den Chroniken von Timbuktu aus dem 17. Jahrhundert und mündlicher Überlieferung durch Griots, die über Generationen weitergegeben wurde. Regierungsdaten sind deshalb oft Näherungen, und für einzelne Herrscher konkurrieren mehrere Namensformen. Wer hier feste Jahreszahlen liest, sollte sie als Rahmen verstehen, nicht als Urkunde.",
+ "quellen": [
+  "Encyclopaedia Britannica: Mali; Songhai; Ghana (historical kingdom)",
+  "Nehemia Levtzion und J. F. P. Hopkins: Corpus of Early Arabic Sources for West African History",
+  "Tarikh al-Sudan und Tarikh al-Fattash, Chroniken aus Timbuktu",
+  "Michael Gomez: African Dominion"
+ ],
+ "perioden": [
+  {
+   "name": "Reich von Ghana",
+   "zeitraum": "ca. 700–1240",
+   "dynastien": [
+    {
+     "name": "Ghana",
+     "zeitraum": "ca. 700–1240",
+     "kurz": "Das erste der großen Sahelreiche, von arabischen Autoren als Land des Goldes beschrieben. Sein Kernland lag nicht im heutigen Ghana, sondern im Grenzgebiet von Mali und Mauretanien.",
+     "herrscher": [
+      {
+       "name": "Tunka Manin",
+       "regierung": "um 1068",
+       "kurz": "Der einzige Herrscher, den ein zeitgenössischer Bericht näher beschreibt: Der Geograph al-Bakri schildert seinen Hof, die Rechtsprechung und ein Heer, dessen Größe er mit 200.000 Mann angibt – gewiss zu hoch."
+      }
+     ],
+     "weitere": "Weitere Herrscher sind nur namentlich oder gar nicht überliefert. Das Reich zerfiel im 13. Jahrhundert unter dem Druck der Almoraviden und innerer Konflikte; die genaue Ursache ist umstritten."
+    }
+   ]
+  },
+  {
+   "name": "Reich von Mali",
+   "zeitraum": "1235–1600",
+   "dynastien": [
+    {
+     "name": "Mali",
+     "zeitraum": "1235–1600",
+     "kurz": "Auf seinem Höhepunkt eines der größten Reiche der Welt, mit Timbuktu und Djenné als Zentren. Das Epos von Sundiata, über Jahrhunderte mündlich weitergegeben, gehört zur Weltliteratur.",
+     "herrscher": [
+      {
+       "name": "Sundiata Keita",
+       "regierung": "1235–1255",
+       "kurz": "Gründer des Reiches nach dem Sieg über die Sosso. Ihm wird die Kouroukan Fouga zugeschrieben, eine Ordnung mit Regeln über Rechtspflege, Eigentum und den Schutz von Fremden.",
+       "vertiefung": "mali-reich"
+      },
+      {
+       "name": "Mansa Musa",
+       "regierung": "1312–1337",
+       "kurz": "Seine Pilgerfahrt nach Mekka 1324 mit riesigem Gefolge und so viel Gold, dass der Goldpreis in Kairo jahrelang gedrückt blieb, machte Mali in Europa bekannt – die katalanische Weltkarte von 1375 zeigt ihn mit Goldklumpen.",
+       "vertiefung": "mali-reich"
+      },
+      {
+       "name": "Mansa Suleyman",
+       "regierung": "1341–1360",
+       "kurz": "Unter ihm besuchte Ibn Battuta das Reich und hinterließ den einzigen ausführlichen Augenzeugenbericht: Er lobte die Rechtssicherheit und die Gebetsdisziplin und kritisierte Hofzeremoniell und Kleidung der Frauen."
+      }
+     ],
+     "weitere": "Zwischen und nach ihnen regierten mehrere Mansa, deren Reihenfolge in den Quellen abweicht – darunter Abu Bakr II., dem die Überlieferung eine Atlantikexpedition zuschreibt, für die es keinen Beleg gibt."
+    }
+   ]
+  },
+  {
+   "name": "Songhai und Nachbarn",
+   "zeitraum": "1464–1900",
+   "dynastien": [
+    {
+     "name": "Songhai",
+     "zeitraum": "1464–1591",
+     "kurz": "Das letzte und größte der Sahelreiche, mit stehendem Heer, Flussflotte und einer Verwaltung, die Provinzgouverneure einsetzte statt Vasallen zu bestätigen.",
+     "herrscher": [
+      {
+       "name": "Sonni Ali Ber",
+       "regierung": "1464–1492",
+       "kurz": "Militärischer Begründer des Reiches, nahm Timbuktu und Djenné. Die Chroniken der Timbuktuer Gelehrten zeichnen ihn als Tyrannen – sie schrieben über den Mann, der ihre Stadt unterworfen hatte."
+      },
+      {
+       "name": "Askia Muhammad I.",
+       "regierung": "1493–1528",
+       "kurz": "Stürzte Sonni Alis Sohn und baute das Reich zu einem geordneten Staat um: einheitliche Maße, Handelsrecht, Förderung der Gelehrsamkeit in Timbuktu. Unternahm selbst die Pilgerfahrt nach Mekka.",
+       "vertiefung": "songhai-reich"
+      }
+     ],
+     "weitere": "Nach Askia Muhammad folgten mehrere Askia in oft kurzen Regierungen. 1591 zerschlug ein marokkanisches Heer mit Feuerwaffen das Reich bei Tondibi – der Übergang zur Schusswaffe entschied die Schlacht."
+    },
+    {
+     "name": "Weitere Reiche der Region",
+     "zeitraum": "1380–1900",
+     "kurz": "Neben den Sahelreichen bestanden im Süden und Osten Staaten mit ganz eigener Ordnung – von der Wahlmonarchie bis zum Bund mehrerer Stadtstaaten.",
+     "herrscher": [
+      {
+       "name": "Idris Alooma",
+       "regierung": "1564–1596",
+       "kurz": "Herrscher von Kanem-Bornu am Tschadsee. Führte Feuerwaffen und türkische Militärberater ein und ließ das Recht nach islamischem Vorbild ordnen."
+      },
+      {
+       "name": "Osei Tutu",
+       "regierung": "ca. 1680–1717",
+       "kurz": "Begründer des Aschanti-Reiches im heutigen Ghana. Der Goldene Stuhl als Sinnbild der Einheit geht auf ihn zurück und ist bis heute das wichtigste Symbol der Aschanti."
+      },
+      {
+       "name": "Usman dan Fodio",
+       "regierung": "1804–1817",
+       "kurz": "Gelehrter, der einen Reformkrieg führte und das Kalifat von Sokoto begründete – bis zur britischen Eroberung 1903 einer der größten Staaten Afrikas."
+      }
+     ],
+     "weitere": "Dazu die Stadtstaaten der Yoruba mit Oyo und Ife, das Königreich Benin mit seinen Bronzen, das Königreich Dahomey und die Hausa-Stadtstaaten. Die meisten wurden zwischen 1890 und 1903 von Frankreich und Großbritannien erobert."
+    }
+   ]
+  }
+ ]
+},
+{
+ "id": "amerika",
+ "reich": "Mesoamerika und Anden",
+ "untertitel": "Maya, Azteken und Inka",
+ "zeitraum": "ca. 250–1572",
+ "farbe": "#2f8a7d",
+ "einleitung": "Drei Hochkulturen, drei völlig verschiedene Ordnungen. Die Maya waren nie ein Reich, sondern konkurrierende Stadtstaaten mit eigener Schrift und Kalenderrechnung. Die Azteken beherrschten ein Tributsystem über hunderte unterworfene Orte. Die Inka verwalteten ein Reich von 4.000 Kilometern Länge ohne Schrift, Geld und Rad. Alle drei endeten innerhalb weniger Jahrzehnte – durch Eroberung, Bündnisse ihrer Untertanen mit den Eroberern und vor allem durch eingeschleppte Krankheiten.",
+ "hinweis": "Bei den Maya sind Namen und Daten überwiegend aus eigenen Inschriften bekannt, seit die Schrift ab den 1950er Jahren entziffert wurde – die Regierungsdaten sind dadurch teilweise auf den Tag genau. Bei Azteken und Inka stammen die Herrscherlisten aus Aufzeichnungen, die erst nach der Eroberung entstanden, meist von spanischen Autoren oder von Angehörigen des unterworfenen Adels, die sich gegenüber den neuen Herren darstellen mussten. Frühe Herrscher beider Reiche sind deshalb schwer von Gründungserzählungen zu trennen.",
+ "quellen": [
+  "Encyclopaedia Britannica: Maya; Aztec; Inca",
+  "Michael D. Coe und Stephen Houston: The Maya",
+  "Camilla Townsend: Fifth Sun – A New History of the Aztecs",
+  "Gordon McEwan: The Incas – New Perspectives",
+  "Simon Martin und Nikolai Grube: Chronicle of the Maya Kings and Queens"
+ ],
+ "perioden": [
+  {
+   "name": "Maya-Stadtstaaten",
+   "zeitraum": "ca. 250–900",
+   "dynastien": [
+    {
+     "name": "Könige der Klassik",
+     "zeitraum": "ca. 250–900",
+     "kurz": "Kein Reich, sondern dutzende Stadtstaaten mit wechselnden Bündnissen und Kriegen. Jede Stadt hatte ihren eigenen Herrscher, der sich in Stelen und Tempelinschriften mit Namen, Titeln und Daten verewigen ließ.",
+     "herrscher": [
+      {
+       "name": "Yax K'uk' Mo'",
+       "regierung": "426–437",
+       "kurz": "Begründer der Dynastie von Copán im heutigen Honduras. Knochenanalysen seines Grabes zeigen, dass er nicht von dort stammte – er kam vermutlich aus dem Gebiet von Tikal."
+      },
+      {
+       "name": "K'inich Janaab' Pakal",
+       "regierung": "615–683",
+       "kurz": "Herrscher von Palenque, 68 Jahre auf dem Thron. Sein 1952 geöffnetes Grab unter dem Inschriftentempel gehört zu den bedeutendsten Funden Amerikas; die Deckplatte seines Sarkophags zeigt ihn beim Übergang in die Unterwelt.",
+       "vertiefung": "maya-koenige"
+      },
+      {
+       "name": "Jasaw Chan K'awiil I.",
+       "regierung": "682–734",
+       "kurz": "Führte Tikal nach über hundert Jahren der Unterlegenheit zum Sieg über die Rivalen von Calakmul und ließ die großen Tempelpyramiden errichten."
+      },
+      {
+       "name": "Yuknoom Ch'een II.",
+       "regierung": "636–686",
+       "kurz": "Herrscher von Calakmul, der über Bündnisse und eingesetzte Vasallen ein Netz aufbaute, das dem eines Reiches nahekam – der erfolgreichste Gegenspieler Tikals."
+      }
+     ],
+     "weitere": "Über 150 Maya-Herrscher sind namentlich aus Inschriften bekannt, darunter mehrere Königinnen wie die Sechs-Himmel-Herrin von Naranjo. Im 9. Jahrhundert brachen die Städte des Tieflands nacheinander zusammen; die Ursachen – Dürre, Krieg, Übernutzung – werden bis heute diskutiert."
+    }
+   ]
+  },
+  {
+   "name": "Azteken",
+   "zeitraum": "1376–1521",
+   "dynastien": [
+    {
+     "name": "Tlatoani von Tenochtitlan",
+     "zeitraum": "1376–1521",
+     "kurz": "Kein Kaiserreich im europäischen Sinn: Tenochtitlan stand seit 1428 einem Dreibund vor und beherrschte hunderte Orte, die Tribut leisteten, ihre eigenen Herrscher aber behielten. Genau diese Ordnung machte das Reich verwundbar.",
+     "herrscher": [
+      {
+       "name": "Itzcoatl",
+       "regierung": "1427–1440",
+       "kurz": "Begründete mit dem Dreibund die Vormacht Tenochtitlans und ließ die älteren Aufzeichnungen verbrennen, um die Geschichte neu schreiben zu lassen."
+      },
+      {
+       "name": "Motecuhzoma I.",
+       "regierung": "1440–1469",
+       "kurz": "Dehnte das Tributsystem weit aus, ließ den Damm gegen Überschwemmungen und die Wasserleitung nach Tenochtitlan bauen."
+      },
+      {
+       "name": "Ahuitzotl",
+       "regierung": "1486–1502",
+       "kurz": "Größte Ausdehnung des Reiches. Bei der Einweihung des erweiterten Haupttempels fanden Massenopferungen statt, deren Zahl in den Quellen stark schwankt."
+      },
+      {
+       "name": "Motecuhzoma II.",
+       "regierung": "1502–1520",
+       "kurz": "Empfing Cortés in Tenochtitlan und starb während des Aufstands gegen die Spanier – ob durch spanische Hand oder durch Steinwürfe der eigenen Leute, ist ungeklärt.",
+       "vertiefung": "moctezuma2"
+      },
+      {
+       "name": "Cuauhtemoc",
+       "regierung": "1520–1521",
+       "kurz": "Letzter Tlatoani, verteidigte die Stadt 93 Tage lang. Wurde gefoltert, um das Versteck des Goldes zu erfahren, und 1525 hingerichtet.",
+       "vertiefung": "moctezuma2"
+      }
+     ],
+     "weitere": "Weitere: Acamapichtli, Huitzilihuitl und Chimalpopoca als frühe Herrscher unter fremder Oberhoheit, Axayacatl, Tizoc und Cuitlahuac, der nach achtzig Tagen an den Pocken starb."
+    }
+   ]
+  },
+  {
+   "name": "Inka",
+   "zeitraum": "1438–1572",
+   "dynastien": [
+    {
+     "name": "Sapa Inka",
+     "zeitraum": "1438–1572",
+     "kurz": "In drei Generationen entstand aus einem Talkönigtum das größte Reich Amerikas. Es beruhte auf Arbeitsabgabe statt Steuern, auf Straßen, Vorratsspeichern und Umsiedlungen ganzer Bevölkerungen.",
+     "herrscher": [
+      {
+       "name": "Pachacútec",
+       "regierung": "1438–1471",
+       "kurz": "Begründer des Reiches. Ordnete Cusco neu, ließ die Terrassen und vermutlich Machu Picchu anlegen und begann die Expansion.",
+       "vertiefung": "inka"
+      },
+      {
+       "name": "Túpac Yupanqui",
+       "regierung": "1471–1493",
+       "kurz": "Dehnte das Reich nach Norden bis Ecuador und nach Süden bis Chile aus – der größte Gebietsgewinn der Inka-Geschichte."
+      },
+      {
+       "name": "Huayna Cápac",
+       "regierung": "1493–1524",
+       "kurz": "Letzter Herrscher des ungeteilten Reiches. Starb vermutlich an den Pocken, die den Spaniern vorauseilten – sein Tod löste den Bürgerkrieg zwischen seinen Söhnen aus."
+      },
+      {
+       "name": "Atahualpa",
+       "regierung": "1532–1533",
+       "kurz": "Gewann den Bürgerkrieg gegen seinen Bruder und wurde wenige Monate später in Cajamarca gefangen genommen. Füllte einen Raum mit Gold als Lösegeld und wurde trotzdem hingerichtet.",
+       "vertiefung": "inka"
+      }
+     ],
+     "weitere": "Vor Pachacútec nennen die Überlieferungen acht weitere Sapa Inka, deren Historizität unsicher ist. Nach 1533 hielt sich in Vilcabamba ein Rest-Inkastaat unter Manco Inca, Sayri Túpac, Titu Cusi und Túpac Amaru, der 1572 hingerichtet wurde."
+    }
+   ]
+  }
+ ]
 }
 ];

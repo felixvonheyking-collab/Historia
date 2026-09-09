@@ -245,12 +245,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": -221,
     "title": "Erste Reichseinigung durch Qin Shi Huang",
-    "text": "Der erste Kaiser Chinas vereinigt die zerstrittenen Reiche, standardisiert Schrift und Maße und beginnt den Bau der Großen Mauer."
+    "text": "Der erste Kaiser Chinas vereinigt die zerstrittenen Reiche, standardisiert Schrift und Maße und beginnt den Bau der Großen Mauer.",
+    "vertiefung": "qin-einigung"
    },
    {
     "year": -206,
     "title": "Han-Dynastie beginnt",
-    "text": "Eine der prägendsten chinesischen Dynastien fördert Konfuzianismus, Verwaltung und Seidenstraßenhandel."
+    "text": "Eine der prägendsten chinesischen Dynastien fördert Konfuzianismus, Verwaltung und Seidenstraßenhandel.",
+    "vertiefung": "han-wudi"
    },
    {
     "year": 220,
@@ -260,27 +262,32 @@ const COUNTRY_TIMELINES = {
    {
     "year": 618,
     "title": "Tang-Dynastie beginnt",
-    "text": "Gilt als eines der 'goldenen Zeitalter' Chinas mit kultureller Blüte, Handel und territorialer Ausdehnung."
+    "text": "Gilt als eines der 'goldenen Zeitalter' Chinas mit kultureller Blüte, Handel und territorialer Ausdehnung.",
+    "vertiefung": "wu-zetian"
    },
    {
     "year": 960,
     "title": "Song-Dynastie beginnt",
-    "text": "Technologische Innovationen wie Papiergeld, Kompass und Schießpulver verbreiten sich."
+    "text": "Technologische Innovationen wie Papiergeld, Kompass und Schießpulver verbreiten sich.",
+    "vertiefung": "song-dynastie"
    },
    {
     "year": 1271,
     "title": "Yuan-Dynastie (Mongolenherrschaft)",
-    "text": "Kublai Khan begründet eine mongolische Fremdherrschaft über China; Marco Polo besucht seinen Hof."
+    "text": "Kublai Khan begründet eine mongolische Fremdherrschaft über China; Marco Polo besucht seinen Hof.",
+    "vertiefung": "mongolisches-reich"
    },
    {
     "year": 1368,
     "title": "Ming-Dynastie beginnt",
-    "text": "Chinesische Restauration nach der Mongolenherrschaft, Bau der Verbotenen Stadt, große Seefahrtsexpeditionen."
+    "text": "Chinesische Restauration nach der Mongolenherrschaft, Bau der Verbotenen Stadt, große Seefahrtsexpeditionen.",
+    "vertiefung": "zheng-he"
    },
    {
     "year": 1644,
     "title": "Qing-Dynastie beginnt",
-    "text": "Die aus der Mandschurei stammenden Qing errichten das letzte chinesische Kaiserreich."
+    "text": "Die aus der Mandschurei stammenden Qing errichten das letzte chinesische Kaiserreich.",
+    "vertiefung": "kangxi"
    },
    {
     "year": 1839,
@@ -295,7 +302,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1912,
     "title": "Ende des chinesischen Kaisertums",
-    "text": "Nach über 2000 Jahren Kaiserherrschaft wird China Republik."
+    "text": "Nach über 2000 Jahren Kaiserherrschaft wird China Republik.",
+    "vertiefung": "cixi"
    },
    {
     "year": 1949,
@@ -305,7 +313,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1966,
     "title": "Beginn der Kulturrevolution",
-    "text": "Maos radikale Massenbewegung stürzt China für ein Jahrzehnt in Chaos und Verfolgung."
+    "text": "Maos radikale Massenbewegung stürzt China für ein Jahrzehnt in Chaos und Verfolgung.",
+    "vertiefung": "kulturrevolution"
    },
    {
     "year": 1978,
@@ -1135,17 +1144,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": -321,
     "title": "Maurya-Reich",
-    "text": "Chandragupta Maurya begründet das erste Großreich des Subkontinents."
+    "text": "Chandragupta Maurya begründet das erste Großreich des Subkontinents.",
+    "vertiefung": "ashoka"
    },
    {
     "year": -250,
     "title": "Ashokas Edikte",
-    "text": "Kaiser Ashoka lässt seine Erlasse in Stein hauen – die frühesten datierbaren Schriftzeugnisse Indiens und ein früher Fall staatlich verkündeter Gewaltlosigkeit."
+    "text": "Kaiser Ashoka lässt seine Erlasse in Stein hauen – die frühesten datierbaren Schriftzeugnisse Indiens und ein früher Fall staatlich verkündeter Gewaltlosigkeit.",
+    "vertiefung": "ashoka"
    },
    {
     "year": 380,
     "title": "Gupta-Zeit",
-    "text": "Vom späten 4. bis ins späte 5. Jahrhundert erlebt Nordindien unter den Gupta eine Blüte in Mathematik, Astronomie und Literatur; das Dezimalsystem mit Null entsteht in diesem Umfeld."
+    "text": "Vom späten 4. bis ins späte 5. Jahrhundert erlebt Nordindien unter den Gupta eine Blüte in Mathematik, Astronomie und Literatur; das Dezimalsystem mit Null entsteht in diesem Umfeld.",
+    "vertiefung": "null-und-ziffern"
    },
    {
     "year": 1206,
@@ -1160,17 +1172,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1556,
     "title": "Akbar",
-    "text": "Unter Akbar erreicht das Mogulreich seine größte innere Festigkeit; er sucht den Ausgleich zwischen den Religionen seines Reiches."
+    "text": "Unter Akbar erreicht das Mogulreich seine größte innere Festigkeit; er sucht den Ausgleich zwischen den Religionen seines Reiches.",
+    "vertiefung": "akbar"
    },
    {
     "year": 1632,
     "title": "Bau des Taj Mahal",
-    "text": "Shah Jahan lässt für seine verstorbene Frau Mumtaz Mahal das Grabmal errichten, das zum Sinnbild der Mogulkunst wird."
+    "text": "Shah Jahan lässt für seine verstorbene Frau Mumtaz Mahal das Grabmal errichten, das zum Sinnbild der Mogulkunst wird.",
+    "vertiefung": "aurangzeb"
    },
    {
     "year": 1757,
     "title": "Schlacht bei Plassey",
-    "text": "Mit dem Sieg bei Plassey wird die Britische Ostindien-Kompanie von einer Handels- zu einer Militärmacht in Bengalen."
+    "text": "Mit dem Sieg bei Plassey wird die Britische Ostindien-Kompanie von einer Handels- zu einer Militärmacht in Bengalen.",
+    "vertiefung": "teilung-indiens"
    },
    {
     "year": 1857,
@@ -1185,7 +1200,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1947,
     "title": "Unabhängigkeit und Teilung",
-    "text": "Am 14./15. August 1947 endet die britische Herrschaft. Die Teilung in Indien und Pakistan löst eine der größten Fluchtbewegungen der Geschichte aus."
+    "text": "Am 14./15. August 1947 endet die britische Herrschaft. Die Teilung in Indien und Pakistan löst eine der größten Fluchtbewegungen der Geschichte aus.",
+    "vertiefung": "teilung-indiens"
    },
    {
     "year": 1950,
@@ -1793,7 +1809,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": -400,
     "title": "Frühe Maya-Städte",
-    "text": "Im Tiefland entstehen erste größere Zentren mit Monumentalbauten und Schrift."
+    "text": "Im Tiefland entstehen erste größere Zentren mit Monumentalbauten und Schrift.",
+    "vertiefung": "maya-koenige"
    },
    {
     "year": 100,
@@ -1803,12 +1820,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 250,
     "title": "Klassische Maya-Zeit",
-    "text": "Die Maya bringen Astronomie, Mathematik, Kalenderrechnung und Hieroglyphenschrift zur höchsten Entfaltung der vorkolumbischen Welt."
+    "text": "Die Maya bringen Astronomie, Mathematik, Kalenderrechnung und Hieroglyphenschrift zur höchsten Entfaltung der vorkolumbischen Welt.",
+    "vertiefung": "maya-koenige"
    },
    {
     "year": 900,
     "title": "Ende der klassischen Zeit",
-    "text": "Bis etwa 700–900 enden die klassischen Zentren; über die Ursachen – Dürre, Krieg, Übernutzung – wird bis heute geforscht."
+    "text": "Bis etwa 700–900 enden die klassischen Zentren; über die Ursachen – Dürre, Krieg, Übernutzung – wird bis heute geforscht.",
+    "vertiefung": "maya-koenige"
    },
    {
     "year": 1325,
@@ -1823,12 +1842,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1519,
     "title": "Ankunft der Spanier",
-    "text": "Hernán Cortés landet an der Küste; entscheidend für seinen Erfolg werden Bündnisse mit unterworfenen Völkern und eingeschleppte Seuchen."
+    "text": "Hernán Cortés landet an der Küste; entscheidend für seinen Erfolg werden Bündnisse mit unterworfenen Völkern und eingeschleppte Seuchen.",
+    "vertiefung": "moctezuma2"
    },
    {
     "year": 1521,
     "title": "Fall Tenochtitlans",
-    "text": "Die Hauptstadt fällt; auf ihren Ruinen entsteht Mexiko-Stadt, und die spanische Kolonialherrschaft beginnt."
+    "text": "Die Hauptstadt fällt; auf ihren Ruinen entsteht Mexiko-Stadt, und die spanische Kolonialherrschaft beginnt.",
+    "vertiefung": "moctezuma2"
    },
    {
     "year": 1531,
@@ -2275,7 +2296,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 57,
     "title": "Die Drei Reiche",
-    "text": "Goguryeo, Baekje und Silla teilen die Halbinsel und Teile der Mandschurei unter sich auf. Sieben Jahrhunderte Rivalität prägen Kultur und Selbstbild."
+    "text": "Goguryeo, Baekje und Silla teilen die Halbinsel und Teile der Mandschurei unter sich auf. Sieben Jahrhunderte Rivalität prägen Kultur und Selbstbild.",
+    "vertiefung": "silla"
    },
    {
     "year": 372,
@@ -2290,7 +2312,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 676,
     "title": "Silla einigt die Halbinsel",
-    "text": "Mit chinesischer Hilfe und anschließend gegen sie setzt sich Silla durch – die erste Einigung Koreas."
+    "text": "Mit chinesischer Hilfe und anschließend gegen sie setzt sich Silla durch – die erste Einigung Koreas.",
+    "vertiefung": "silla"
    },
    {
     "year": 698,
@@ -2468,7 +2491,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 300,
     "title": "Aufstieg des Reiches Ghana",
-    "text": "Zwischen Senegal und Niger entsteht ein Reich, das den Handel mit Gold und Salz über die Sahara kontrolliert. Mit dem heutigen Staat Ghana ist es geografisch nicht identisch."
+    "text": "Zwischen Senegal und Niger entsteht ein Reich, das den Handel mit Gold und Salz über die Sahara kontrolliert. Mit dem heutigen Staat Ghana ist es geografisch nicht identisch.",
+    "vertiefung": "transsahara"
    },
    {
     "year": 800,
@@ -2478,12 +2502,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1235,
     "title": "Gründung des Mali-Reiches",
-    "text": "Sundiata Keïta besiegt seine Gegner und begründet ein Großreich. Die Kouroukan Fouga, eine mündlich überlieferte Verfassung, regelt Rechte und Pflichten."
+    "text": "Sundiata Keïta besiegt seine Gegner und begründet ein Großreich. Die Kouroukan Fouga, eine mündlich überlieferte Verfassung, regelt Rechte und Pflichten.",
+    "vertiefung": "mali-reich"
    },
    {
     "year": 1324,
     "title": "Pilgerfahrt des Mansa Musa",
-    "text": "Der Herrscher Malis reist mit einem riesigen Gefolge nach Mekka und verschenkt in Kairo so viel Gold, dass dessen Wert dort jahrelang gedrückt bleibt."
+    "text": "Der Herrscher Malis reist mit einem riesigen Gefolge nach Mekka und verschenkt in Kairo so viel Gold, dass dessen Wert dort jahrelang gedrückt bleibt.",
+    "vertiefung": "mali-reich"
    },
    {
     "year": 1375,
@@ -2493,17 +2519,20 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1468,
     "title": "Songhai erobert Timbuktu",
-    "text": "Unter Sonni Ali löst Songhai Mali als Vormacht ab. Timbuktu wird zum Zentrum von Handel und Gelehrsamkeit."
+    "text": "Unter Sonni Ali löst Songhai Mali als Vormacht ab. Timbuktu wird zum Zentrum von Handel und Gelehrsamkeit.",
+    "vertiefung": "songhai-reich"
    },
    {
     "year": 1500,
     "title": "Universität Sankoré",
-    "text": "In Timbuktu lehren und schreiben Gelehrte; die Handschriftensammlungen der Stadt umfassen bis heute Zehntausende Bände zu Recht, Astronomie und Medizin."
+    "text": "In Timbuktu lehren und schreiben Gelehrte; die Handschriftensammlungen der Stadt umfassen bis heute Zehntausende Bände zu Recht, Astronomie und Medizin.",
+    "vertiefung": "songhai-reich"
    },
    {
     "year": 1591,
     "title": "Schlacht von Tondibi",
-    "text": "Eine marokkanische Armee mit Feuerwaffen zerschlägt das Songhai-Reich – ein früher Fall, in dem Schusswaffen ein Großreich entscheiden."
+    "text": "Eine marokkanische Armee mit Feuerwaffen zerschlägt das Songhai-Reich – ein früher Fall, in dem Schusswaffen ein Großreich entscheiden.",
+    "vertiefung": "songhai-reich"
    },
    {
     "year": 1600,
@@ -2543,7 +2572,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 2012,
     "title": "Bedrohung der Handschriften von Timbuktu",
-    "text": "Bibliothekare bringen Zehntausende Manuskripte heimlich aus der Stadt, um sie vor Zerstörung zu bewahren."
+    "text": "Bibliothekare bringen Zehntausende Manuskripte heimlich aus der Stadt, um sie vor Zerstörung zu bewahren.",
+    "vertiefung": "songhai-reich"
    }
   ]
  },
@@ -2733,7 +2763,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1438,
     "title": "Beginn der Inka-Expansion",
-    "text": "Unter Pachacútec wächst ein Reich mit über 30.000 Kilometern Straßen, Terrassenfeldern und Knotenschnüren als Verwaltungsmedium – ohne Rad, Geld und Alphabetschrift."
+    "text": "Unter Pachacútec wächst ein Reich mit über 30.000 Kilometern Straßen, Terrassenfeldern und Knotenschnüren als Verwaltungsmedium – ohne Rad, Geld und Alphabetschrift.",
+    "vertiefung": "inka"
    },
    {
     "year": 1500,
@@ -2743,7 +2774,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1532,
     "title": "Cajamarca",
-    "text": "Pizarro nimmt Atahualpa mit weniger als zweihundert Mann gefangen. Entscheidend waren Bürgerkrieg im Reich, Verbündete und vor allem eingeschleppte Seuchen."
+    "text": "Pizarro nimmt Atahualpa mit weniger als zweihundert Mann gefangen. Entscheidend waren Bürgerkrieg im Reich, Verbündete und vor allem eingeschleppte Seuchen.",
+    "vertiefung": "inka"
    },
    {
     "year": 1630,
