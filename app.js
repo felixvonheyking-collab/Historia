@@ -105,8 +105,45 @@ function Buchempfehlungen({ liste }) {
   );
 }
 
+/* Grafiken: eigene Vektorzeichnungen, nach Vertiefungs-Id in
+   data-grafiken.js abgelegt statt im Vertiefungseintrag selbst - so bleibt
+   die grosse Datendatei unberuehrt und Grafiken lassen sich unabhaengig
+   nachliefern.
+
+   Zwei bewusste Festlegungen:
+   - Die Geometrie steht als SVG-Quelltext in den Daten und wird mit
+     dangerouslySetInnerHTML eingesetzt. Das ist hier vertretbar, weil der
+     Inhalt ausschliesslich aus dieser Datei stammt; es gelangt keine
+     Eingabe von aussen hinein.
+   - Farben und Maße stehen im SVG selbst, nicht in Tailwind-Klassen. Das
+     vorgebaute tailwind.css kennt neu erfundene Klassen nicht, und ein
+     Fehler dort waere unsichtbar - dieselbe Falle wie beim Zeitstrahl. */
+function Grafik({ bild }) {
+  return /* @__PURE__ */ React.createElement("figure", { className: "mb-5 rounded-lg border border-[#5c2018] bg-[#4a1418] p-3" },
+    /* @__PURE__ */ React.createElement("div", {
+      style: { width: "100%", overflowX: "auto" },
+      dangerouslySetInnerHTML: {
+        __html: '<svg viewBox="' + bild.viewBox + '" role="img" aria-label="' +
+          bild.titel.replace(/"/g, "&quot;") + '" ' +
+          'style="width:100%;height:auto;display:block;min-width:' + (bild.mindestbreite || 320) + 'px">' +
+          bild.svg + "</svg>"
+      }
+    }),
+    /* @__PURE__ */ React.createElement("figcaption", { className: "mt-2" },
+      /* @__PURE__ */ React.createElement("div", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37]" }, bild.titel),
+      bild.beschriftung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-1" }, bild.beschriftung),
+      bild.quelle && /* @__PURE__ */ React.createElement("p", { className: "text-[11px] text-[#8a6238] leading-snug mt-1" }, "Grundlage: ", bild.quelle)
+    )
+  );
+}
+
+function grafikenFuer(id) {
+  return (typeof GRAFIKEN !== "undefined" && GRAFIKEN[id]) || [];
+}
+
 function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
   const epoche = EPOCHS.find((e) => e.id === eintrag.epoche);
+  const bilder = grafikenFuer(eintrag.id);
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("button", {
       onClick: onBack,
@@ -134,6 +171,10 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
 
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Vorgeschichte", text: eintrag.vorgeschichte }),
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Verlauf", text: eintrag.verlauf }),
+
+    // Die Grafik steht nach dem Verlauf: Sie soll das Gelesene ordnen,
+    // nicht vorwegnehmen.
+    bilder.map((b, i) => /* @__PURE__ */ React.createElement(Grafik, { key: "g" + i, bild: b })),
 
     // Nur bei den grossen Wendepunkten: zusaetzliche Abschnitte mit eigener
     // Ueberschrift, zwischen Verlauf und Folgen.

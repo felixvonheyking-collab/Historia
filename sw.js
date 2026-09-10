@@ -14,7 +14,7 @@
  * verweist eine neue index.html zwangsläufig auf neue Dateien.
  */
 
-const VERSION = '2026-09-10-2';
+const VERSION = '2026-09-10-3';
 const CACHE = 'historia-' + VERSION;
 
 // Dateien ohne Versionsmarke (Bilder, Schriften, Manifest ändern sich selten)
@@ -43,6 +43,7 @@ const VERSIONIERT = [
   './data-themen.js',
   './data-mysterien.js',
   './data-dynastien.js',
+  './data-grafiken.js',
   './app.js'
 ].map((p) => p + '?v=' + VERSION);
 

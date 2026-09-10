@@ -31,7 +31,8 @@ const DATEN = [
   "data-vertiefungen.js",
   "data-themen.js",
   "data-mysterien.js",
-  "data-dynastien.js"
+  "data-dynastien.js",
+  "data-grafiken.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -54,7 +55,8 @@ function lade() {
   try {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
-      "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN })",
+      "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
+      "   GRAFIKEN })",
       kontext
     );
   } catch (e) {
@@ -338,6 +340,50 @@ function pruefeWiderspruecheZwischenSammlungen(D) {
   }
 }
 
+/* --------------------------------------------------------------- Grafiken */
+
+// Die Grafiken stehen als SVG-Quelltext in den Daten. Ein Tippfehler in
+// einer der Vorlagen wuerde nur ein schiefes Bild ergeben, keinen Fehler -
+// deshalb hier ein paar harte Bedingungen.
+function pruefeGrafiken(D) {
+  const vertIds = new Set(D.VERTIEFUNGEN.map((v) => v.id));
+  const eintraege = Object.entries(D.GRAFIKEN || {});
+  let bilder = 0;
+  eintraege.forEach(([id, liste]) => {
+    if (!vertIds.has(id)) {
+      meldeFehler("Grafik '" + id + "': keine Vertiefung mit dieser Id");
+      return;
+    }
+    if (!Array.isArray(liste)) {
+      meldeFehler("Grafik '" + id + "': muss eine Liste sein");
+      return;
+    }
+    liste.forEach((b, i) => {
+      const wo = "Grafik '" + id + "' Nr. " + (i + 1);
+      ["titel", "viewBox", "svg", "beschriftung", "quelle"].forEach((f) => {
+        if (!b[f]) meldeFehler(wo + ": Feld '" + f + "' fehlt");
+      });
+      if (b.viewBox && !/^0 0 \d+ \d+$/.test(b.viewBox)) {
+        meldeFehler(wo + ": viewBox sollte die Form '0 0 Breite Hoehe' haben, ist '" + b.viewBox + "'");
+      }
+      // Vorlagen mit Rechenfehlern hinterlassen genau diese Spuren.
+      const spuren = String(b.svg).match(/undefined|NaN|\[object Object\]/);
+      if (spuren) meldeFehler(wo + ": '" + spuren[0] + "' im SVG - Rechnung in der Vorlage prüfen");
+      // Offene Tags fallen sonst erst im Browser auf.
+      const auf = (String(b.svg).match(/<(?!\/)[a-zA-Z]/g) || []).length;
+      const zu = (String(b.svg).match(/<\/[a-zA-Z]|\/>/g) || []).length;
+      if (auf !== zu) meldeFehler(wo + ": " + auf + " oeffnende gegen " + zu + " schliessende Tags");
+      // Unter 13 Einheiten ist es auf dem Handy nach der Skalierung unlesbar.
+      (String(b.svg).match(/font-size="(\d+(?:\.\d+)?)"/g) || []).forEach((m) => {
+        const gr = parseFloat(m.replace(/[^0-9.]/g, ""));
+        if (gr < 13) meldeHinweis(wo + ": Schriftgroeße " + gr + " ist zu klein fuer kleine Displays");
+      });
+      bilder++;
+    });
+  });
+  console.log("  Grafiken: " + bilder + " zu " + eintraege.length + " Vertiefungen");
+}
+
 /* --------------------------------------------------------------- Inhalte */
 
 function pruefeInhalte(D) {
@@ -542,6 +588,7 @@ function pruefeInhalte(D) {
     D.DYNASTIEN.reduce((a, r) => a + r.perioden.reduce((b, p) => b + p.dynastien.length, 0), 0) + " Dynastien · " +
     D.DYNASTIEN.reduce((a, r) => a + r.perioden.reduce((b, p) =>
       b + p.dynastien.reduce((c, d) => c + d.herrscher.length, 0), 0), 0) + " Herrscher");
+  pruefeGrafiken(D);
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
