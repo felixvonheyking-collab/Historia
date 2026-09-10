@@ -7416,5 +7416,735 @@ const VERTIEFUNGEN = [
     "Martin J. S. Rudwick: Bursting the Limits of Time",
     "Clair Patterson, Geochimica et Cosmochimica Acta 1956: Age of meteorites and the Earth"
   ]
+},
+{
+  "id": "kaiser-tiberius",
+  "titel": "Tiberius und die Erfindung des Hochverratsprozesses",
+  "epoche": "antike",
+  "jahr": 26,
+  "zeitraum": "14–37",
+  "region": "Römisches Reich",
+  "leitsatz": "Er hinterließ dem Reich prall gefüllte Kassen, befestigte Grenzen — und ein Verfahren, mit dem sich jeder Bürger vernichten ließ.",
+  "vorgeschichte": "Tiberius war nicht als Nachfolger gedacht. Augustus hatte ihn erst nach dem Tod seiner Enkel und Neffen adoptiert, und Tiberius wusste das. Er war fünfundfünfzig, ein erfahrener Feldherr, düster, misstrauisch und nach dem Zeugnis aller Quellen ohne jedes Bedürfnis nach Beliebtheit.",
+  "verlauf": "Die ersten Jahre waren unauffällig gut regiert: Provinzverwaltung überwacht, Prozesse gegen korrupte Statthalter geführt, keine Kriege ohne Grund. Dann starb 23 sein Sohn Drusus, und 26 verließ Tiberius Rom für immer. Von Capri aus regierte er durch Briefe, während der Gardepräfekt Seianus in Rom die Macht ausübte — bis Tiberius ihn 31 durch einen im Senat verlesenen Brief stürzte und hinrichten ließ, samt Anhang und Kindern.\n\nDas eigentliche Erbe ist ein Gesetz. Die maiestas, die Verletzung der Würde des römischen Volkes, war ein alter Straftatbestand gegen Verrat. Unter Tiberius wurde daraus ein Instrument gegen Worte: ein unbedachter Satz, ein Gedicht, das Schmelzen einer Kaiserstatue. Wer anklagte, erhielt bei Verurteilung ein Viertel des Vermögens — es entstand ein Berufsstand von Denunzianten. Die Verurteilten kamen dem Urteil meist durch Selbstmord zuvor, weil dann das Testament gültig blieb.",
+  "folgen": "Tiberius starb 37 mit siebenundsiebzig, und die Staatskasse enthielt nach Sueton 2,7 Milliarden Sesterzen — Caligula gab sie in vier Jahren aus. Der Hochverratsprozess aber blieb und wurde von fast jedem Kaiser benutzt, der Widerstand fürchtete: Nero, Domitian, Commodus. Tacitus schrieb seine Annalen achtzig Jahre später ausdrücklich als Anklage gegen dieses Verfahren, und was er beschreibt, ist weniger Tyrannei als etwas Moderneres: eine Gesellschaft, in der jeder jeden anzeigen kann und alle sich selbst zensieren.",
+  "strittig": "Suetons Bericht über Capri — organisierte Ausschweifungen, Missbrauch von Kindern, Menschen von Klippen gestürzt — steht in keiner zeitnahen Quelle und wurde achtzig Jahre nach den Ereignissen aufgeschrieben. Die moderne Forschung, insbesondere Barbara Levick, hält das für Gerüchte über einen Mann, der sich der Öffentlichkeit entzog und deshalb jedes Gerücht auf sich zog. Ungeklärt bleibt auch, ob Tiberius den Tod des Germanicus veranlasste; die Vorwürfe sind zeitgenössisch, Beweise gibt es nicht.",
+  "tiefe": [
+    {
+      "titel": "Wie ein Sturz vorbereitet wurde",
+      "text": "Der Fall des Seianus ist das genaueste Bild davon, wie Macht in diesem System funktionierte. Seianus war Präfekt der Prätorianergarde, kontrollierte den Zugang zum abwesenden Kaiser und damit dessen Informationen. Er beseitigte über Jahre Rivalen durch Prozesse, verlobte sich in die Kaiserfamilie und ließ sich Statuen setzen — Cassius Dio berichtet, man habe Opfer vor seinen Bildern dargebracht wie vor denen des Kaisers.\n\nTiberius konnte ihn nicht offen angreifen, weil Seianus die einzigen Truppen in Italien befehligte. Also arbeitete er verdeckt: Er ernannte Seianus zum Mitkonsul, was ihn ehrte und aus dem Gardekommando löste, setzte gleichzeitig heimlich einen neuen Präfekten ein und schickte einen langen Brief in den Senat. Der Brief begann mit Belanglosigkeiten, lobte Seianus, wandte sich langsam, tadelte, klagte an — und die Senatoren, so schildert es Dio, sahen im Verlauf des Vorlesens, wie derjenige, dem sie eben noch zugejubelt hatten, verloren war. Seianus wurde am selben Tag hingerichtet.\n\nDanach folgten Jahre von Prozessen gegen alle, die ihm nahegestanden hatten. Seine Kinder wurden getötet; über die Tochter berichtet Tacitus, sie habe nicht verstanden, was ihr geschah, und gefragt, was sie falsch gemacht habe. Weil die Hinrichtung einer Jungfrau als Frevel galt, wurde sie zuvor vergewaltigt. Tacitus nennt das ausdrücklich als Beispiel dafür, wozu die Angst einen Staat treibt."
+    },
+    {
+      "titel": "Was ein Prozess ohne Beweisregeln anrichtet",
+      "text": "Die maiestas-Prozesse sind der Grund, weshalb Tacitus überhaupt schrieb, und sie sind der Punkt, an dem sich die Kaiserzeit von der Republik unterscheidet. Formal blieb alles beim Alten: Der Senat urteilte, es gab Anklage, Verteidigung und Zeugen. Was fehlte, war eine Grenze, was als Tat gelten kann.\n\nÜberliefert sind Anklagen wegen des Verkaufs einer Kaiserstatue mitsamt dem Garten, in dem sie stand; wegen einer Rede, die auf den Kaiser gemünzt gewesen sein soll; wegen des Tragens eines Namens, der Erinnerungen weckte. Zeugen konnten Sklaven sein, deren Aussagen unter Folter erlangt wurden — was im römischen Recht bei Verfahren gegen ihre eigenen Herren sonst ausgeschlossen war, hier aber zugelassen wurde.\n\nDas Ergebnis war kein Terror mit Massenverhaftungen, sondern etwas Leiseres: Vorsicht. Tacitus beschreibt Senatoren, die schweigen, weil auch Schweigen verdächtig ist, und die dann übertrieben zustimmen, weil das der einzige sichere Ausweg bleibt. Genau daraus formulierte er den Satz, der über den Anlass hinausreicht: Es sei nicht die Grausamkeit des Herrschers, die eine Gesellschaft zerstöre, sondern die Bereitschaft der anderen, ihm dabei zu helfen."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "11 Jahre",
+      "was": "Abwesenheit von Rom, 26 bis zum Tod 37"
+    },
+    {
+      "wert": "2,7 Mrd.",
+      "was": "Sesterzen in der Staatskasse bei seinem Tod, nach Sueton"
+    },
+    {
+      "wert": "1/4",
+      "was": "Anteil am Vermögen des Verurteilten für den Anklänger"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Annalen",
+      "autor": "Tacitus",
+      "warum": "Die Quelle selbst, in jeder guten Übersetzung. Die Bücher 1 bis 6 behandeln Tiberius — Weltliteratur, aber lies mit, dass der Autor Partei ist."
+    },
+    {
+      "titel": "Tiberius",
+      "autor": "Barbara Levick",
+      "jahr": "1976",
+      "warum": "Die maßgebliche Biographie, die den Verwalter vom Gerücht trennt. Nüchtern und gründlich."
+    },
+    {
+      "titel": "Kaiser und Senat",
+      "autor": "Aloys Winterling",
+      "jahr": "2001",
+      "warum": "Warum die Beziehung zwischen Kaiser und Senat notwendig vergiftet war — erklärt das Muster hinter allen Skandalgeschichten."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire; einzelne Kaiserartikel",
+    "Sueton: De vita Caesarum",
+    "Tacitus: Annalen",
+    "Cassius Dio: Römische Geschichte",
+    "Barbara Levick: Tiberius the Politician"
+  ]
+},
+{
+  "id": "kaiser-caligula",
+  "titel": "Caligula — Wahnsinn oder Kalkül",
+  "epoche": "antike",
+  "jahr": 39,
+  "zeitraum": "37–41",
+  "region": "Römisches Reich",
+  "leitsatz": "Das Pferd wurde nie Konsul. Aber die Geschichte, dass es fast passierte, war für den Senat eine schwerere Beleidigung als jede Hinrichtung.",
+  "vorgeschichte": "Gaius, genannt Caligula nach den Soldatenstiefeln seiner Kindheit im Feldlager, war der Sohn des beliebten Germanicus. Seine Mutter und zwei Brüder starben unter Tiberius in Haft oder Verbannung; er selbst wuchs jahrelang unter Beobachtung auf und wusste, dass sein Leben von der Laune eines Mannes abhing. Als er mit vierundzwanzig Kaiser wurde, jubelte das Volk.",
+  "verlauf": "Die ersten Monate waren großzügig: Prozesse eingestellt, Verbannte zurückgerufen, Spiele, Geldgeschenke. Dann erkrankte er schwer, und die Quellen setzen dort die Wende an. Es folgten Hinrichtungen im Umfeld, die Beseitigung des Gardepräfekten und des eigenen Schwiegervaters, die Ehrung seiner Schwestern in bis dahin unbekanntem Ausmaß und Auftritte, in denen er sich göttliche Verehrung geben ließ.\n\nDie berühmten Episoden: Er soll sein Pferd Incitatus zum Konsul machen wollen; er soll dem Meer den Krieg erklärt und Soldaten Muscheln sammeln lassen haben; er soll eine Brücke aus Schiffen über den Golf von Baiae geschlagen haben, um darüber zu reiten; er soll gesagt haben, er wünschte, das römische Volk hätte einen einzigen Hals. 41 erstachen ihn Offiziere seiner eigenen Garde in einem Gang des Palasts, gemeinsam mit Frau und Tochter.",
+  "folgen": "Der Senat erwog kurz, die Republik wiederherzustellen — und die Garde machte stattdessen Claudius zum Kaiser. Damit war eine Frage entschieden, die seit Augustus offen war: Die Kaiserherrschaft hing nicht am einzelnen Kaiser und nicht am Senat, sondern an den Truppen in Rom. Caligulas vier Jahre kosteten außerdem die Staatskasse, die Tiberius gefüllt hatte; sein Nachfolger musste sparen.",
+  "strittig": "Hier ist fast alles strittig. Aloys Winterling hat 2003 gezeigt, dass sich mehrere der absurden Taten als politische Botschaften lesen lassen: Das Pferd zum Konsul zu erheben ist keine Geistesverwirrung, sondern die Feststellung, dass das höchste Amt der Republik nichts mehr bedeutet — eine Demütigung, die genau ankam. Das Muschelsammeln geht möglicherweise auf ein Missverständnis zurück, weil das lateinische Wort für Muschel auch Zeltteile oder Bootsformen bezeichnen konnte. Andere Fachleute halten dem entgegen, dass sich nicht jede Nachricht wegdeuten lässt und ein wirklich gestörter Herrscher ebenso in die Quellenlage passt. Gesichert ist nur, dass alle Berichte von Autoren stammen, die auf der Gegenseite standen, und dass keiner davon Augenzeuge war.",
+  "tiefe": [
+    {
+      "titel": "Die Sprache der Demütigung",
+      "text": "Um zu verstehen, warum Caligulas Taten als Wahnsinn erzählt wurden, muss man wissen, in welcher Lage der Senat war. Formal war er die höchste Instanz des Staates: Konsuln wurden gewählt, Beschlüsse gefasst, Ehren verliehen. Tatsächlich entschied seit Augustus einer allein, und alle Beteiligten mussten so tun, als wäre das nicht so. Augustus hatte diese Höflichkeitsfiktion sorgfältig gepflegt.\n\nCaligula weigerte sich mitzuspielen. Wenn Senatoren ihm Ehren beschlossen, die er nicht verlangt hatte, nahm er sie wörtlich und forderte mehr. Wenn sie ihm schmeichelten, ließ er sie neben seiner Sänfte herlaufen. Er soll angekündigt haben, das Konsulat einem Pferd zu geben — und die Pointe ist nicht das Pferd, sondern der unausgesprochene Nachsatz: Es würde niemandem auffallen.\n\nWinterlings Deutung ist deshalb überzeugend, weil sie erklärt, warum genau diese Geschichten überliefert sind. Von Tiberius wird berichtet, dass er tötete; von Caligula, dass er lächerlich machte. Für eine Oberschicht, deren ganzes Selbstverständnis am Amt und an der Würde hing, war das Zweite schlimmer. Die Erzählung vom Wahnsinn war dann die einzige Möglichkeit, es zu verarbeiten: Ein Verrückter meint nichts damit."
+    },
+    {
+      "titel": "Was archäologisch übrig bleibt",
+      "text": "Neben den literarischen Quellen gibt es Befunde, und die sind unspektakulär, aber verlässlich. Münzen zeigen Caligula mit seinen drei Schwestern auf der Rückseite — eine Darstellung, die es vorher nicht gab und die die Familie ungewöhnlich stark in den Vordergrund stellte. Das ist der harte Kern hinter den Gerüchten über sein Verhältnis zu ihnen: eine auffällige politische Betonung, aus der die Quellen Inzest machten.\n\nIm Nemisee wurden zwei riesige Prunkschiffe geborgen, unter Mussolini durch Absenken des Seespiegels freigelegt und 1944 verbrannt. Sie bestätigten, was die Quellen über Caligulas Bauluxus schreiben: Marmorböden, Heizungen, Bleirohre mit seinem Namen. Und die Wasserleitungen, die er begann, versorgten Rom noch Jahrhunderte — Claudius vollendete sie.\n\nAuffällig ist schließlich, was fehlt. Nach seinem Tod wurden seine Bildnisse umgearbeitet oder beseitigt, ohne dass der Senat formal die Tilgung des Namens beschloss. Erhaltene Porträts zeigen ein gewöhnliches Gesicht, das später Bildhauer in ein anderes verwandelten. Wir sehen ihn buchstäblich durch die Augen derer, die ihn wegräumen wollten."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "3 Jahre 10 Monate",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "24",
+      "was": "Alter beim Regierungsantritt"
+    },
+    {
+      "wert": "2",
+      "was": "geborgene Prunkschiffe aus dem Nemisee, 1944 verbrannt"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Caligula – Eine Biographie",
+      "autor": "Aloys Winterling",
+      "jahr": "2003",
+      "warum": "Das Buch, das die Deutung verschoben hat: Es liest die Taten als Politik, nicht als Krankheit. Streitbar und schlüssig."
+    },
+    {
+      "titel": "Caligula – Die Wahrheit über Roms verrückten Kaiser",
+      "autor": "Anthony A. Barrett",
+      "jahr": "1989",
+      "warum": "Vorsichtiger als Winterling und näher an den Quellen. Gut, um beide Sichtweisen zu vergleichen."
+    },
+    {
+      "titel": "Kaiser und Senat",
+      "autor": "Aloys Winterling",
+      "jahr": "2001",
+      "warum": "Die theoretische Grundlage: warum Kaiser und Senat sich zwangsläufig missverstehen mussten."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire; einzelne Kaiserartikel",
+    "Sueton: De vita Caesarum",
+    "Tacitus: Annalen",
+    "Cassius Dio: Römische Geschichte",
+    "Aloys Winterling: Caligula. Eine Biographie",
+    "Anthony A. Barrett: Caligula – The Corruption of Power"
+  ]
+},
+{
+  "id": "kaiser-claudius",
+  "titel": "Claudius, der unterschätzte Kaiser",
+  "epoche": "antike",
+  "jahr": 43,
+  "zeitraum": "41–54",
+  "region": "Römisches Reich",
+  "leitsatz": "Weil man ihn für schwachsinnig hielt, überlebte er als einziger Mann seiner Familie — und regierte dann besser als alle vor ihm.",
+  "vorgeschichte": "Claudius hinkte, zitterte, sprach undeutlich und hatte als Kind eine Krankheit überstanden, deren Art unbekannt bleibt; erwogen werden Zerebralparese oder eine Form von Tourette. Seine Familie hielt ihn deshalb versteckt: Augustus schrieb in einem erhaltenen Brief, man müsse überlegen, ob man ihn überhaupt öffentlich auftreten lassen könne. Er verbrachte fünfzig Jahre mit Geschichtsschreibung — er schrieb Werke über die Etrusker und Karthager, die alle verloren sind — und wurde genau deshalb nie als Gefahr angesehen.",
+  "verlauf": "Nach Caligulas Ermordung fand ihn ein Gardist hinter einem Vorhang, und die Garde erhob ihn zum Kaiser, weil sie einen Kaiser brauchte, um bezahlt zu werden. Er regierte dreizehn Jahre und tat mehr als seine drei Vorgänger zusammen: Britannien wurde erobert und Provinz, der künstliche Hafen von Ostia gebaut, ein Tunnel zur Trockenlegung des Fuciner Sees angelegt, zwei große Wasserleitungen vollendet, das Bürgerrecht großzügig an Provinziale verliehen und die Reichsverwaltung erstmals mit festen Zuständigkeiten organisiert. Erhalten ist eine Rede von ihm auf Bronzetafeln, in der er dem Senat erklärt, warum Gallier aufgenommen werden sollen — sie argumentiert historisch, weitschweifig und sichtbar aus der Feder eines Gelehrten.",
+  "folgen": "Die Verwaltungsreform hielt: Die Trennung von Kanzleien für Finanzen, Petitionen und Korrespondenz wurde zur Grundlage der Reichsbürokratie. Britannien blieb dreieinhalb Jahrhunderte römisch. Und die Öffnung des Bürgerrechts wies in die Richtung, die 212 unter Caracalla endete — jeder Reichsbewohner wurde Bürger.\n\nSein Ruf litt trotzdem, aus zwei Gründen: Er stützte sich auf Freigelassene statt auf Senatoren, was die Oberschicht als Entwürdigung empfand, und er führte in dreizehn Jahren zahlreiche Hochverratsprozesse. Sein Nachfolger Nero ließ ihn vergöttlichen und machte sich gleichzeitig über ihn lustig; Senecas Spottschrift auf die Vergöttlichung ist erhalten und macht sich über sein Stottern lustig.",
+  "strittig": "Ob Agrippina ihn mit Pilzen vergiftete, ist nicht zu entscheiden. Alle Quellen berichten es, aber alle schrieben nach dem Sturz Neros, dem der Tod nützte; ein siebenundsechzigjähriger Mann mit langer Krankheitsgeschichte kann auch ohne Gift sterben. Umstritten ist außerdem, wie viel der guten Verwaltung auf Claudius selbst und wie viel auf seine Freigelassenen zurückgeht — die Quellen behaupten das Zweite, aber sie hatten ein Interesse daran, ihn schwach erscheinen zu lassen.",
+  "zahlen": [
+    {
+      "wert": "50 Jahre",
+      "was": "als Privatgelehrter, bevor er Kaiser wurde"
+    },
+    {
+      "wert": "13 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "1",
+      "was": "erhaltene eigene Rede, auf Bronzetafeln in Lyon"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Claudius",
+      "autor": "Barbara Levick",
+      "jahr": "1990",
+      "warum": "Die Biographie, die den Verwalter ernst nimmt und die Anekdoten einordnet."
+    },
+    {
+      "titel": "Ich, Claudius, Kaiser und Gott",
+      "autor": "Robert Graves",
+      "jahr": "1934",
+      "warum": "Roman, nicht Geschichte — aber er hat das Bild dieser Familie im 20. Jahrhundert geprägt. Lies ihn als Literatur und die Biographie daneben."
+    },
+    {
+      "titel": "Die Annalen",
+      "autor": "Tacitus",
+      "warum": "Bücher 11 und 12 zu Claudius. Man sieht dem Text die Verachtung an, was ihn als Quelle interessant macht."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire; einzelne Kaiserartikel",
+    "Sueton: De vita Caesarum",
+    "Tacitus: Annalen",
+    "Cassius Dio: Römische Geschichte",
+    "Barbara Levick: Claudius",
+    "Tabula Claudiana (Rede über die Aufnahme der Gallier), Lyon"
+  ]
+},
+{
+  "id": "kaiser-domitian",
+  "titel": "Domitian und das gelöschte Gedächtnis",
+  "epoche": "antike",
+  "jahr": 93,
+  "zeitraum": "81–96",
+  "region": "Römisches Reich",
+  "leitsatz": "Nach seiner Ermordung wurde sein Name aus allen Inschriften gemeißelt — und die Historiker, die anschließend über ihn schrieben, hatten unter ihm Karriere gemacht.",
+  "vorgeschichte": "Domitian war der jüngere Sohn Vespasians und stand zwölf Jahre im Schatten seines Bruders Titus. Als dieser 81 nach zwei Jahren starb, übernahm er mit dreißig — ohne militärische Erfolge, ohne Rückhalt im Senat, mit dem Ruf des zweiten Sohnes.",
+  "verlauf": "Fünfzehn Jahre regierte er wirksam und unbeliebt. Die Provinzverwaltung wurde streng überwacht, die Finanzen saniert, das Münzgewicht wieder erhöht, Bauwerke vollendet — der Palast auf dem Palatin stammt von ihm, und das Wort Palast kommt von diesem Hügel. Militärisch sicherte er die Donaugrenze und schloss mit den Dakern einen Frieden, für den er verspottet wurde.\n\nGegen den Senat trat er offen als Herr auf. Er ließ sich in Schriftstücken dominus et deus nennen, Herr und Gott, übernahm die Zensur auf Lebenszeit und führte ab 93 vermehrt Hochverratsprozesse. Betroffen waren Senatoren, Philosophen, die er aus Rom verbannte, und Vestalinnen, von denen eine lebendig begraben wurde. Am 18. September 96 erstachen ihn Männer des eigenen Hofes, darunter Palastbeamte und mutmaßlich mit Wissen seiner Frau — es war kein Aufstand, sondern eine Verschwörung von Menschen, die Angst um sich selbst hatten.",
+  "folgen": "Der Senat beschloss noch am selben Tag die Tilgung seines Namens: Inschriften wurden ausgemeißelt, Statuen eingeschmolzen, Bögen abgetragen. In Rom sind bis heute Steine zu sehen, in denen der Name herausgehauen ist. Anschließend setzte der Senat Nerva ein, der einen fähigen Nachfolger adoptierte — das Verfahren der Adoptivkaiser begann also als Reaktion auf Domitian.\n\nDas Bemerkenswerte ist die Quellenlage danach. Tacitus, Plinius der Jüngere und Sueton schrieben unter Trajan über Domitian — und alle drei hatten unter Domitian Ämter innegehabt. Plinius' Lobrede auf Trajan lebt davon, den Vorgänger als Ungeheuer zu zeichnen. Tacitus gibt seine eigene Verstrickung sogar zu und nennt es die Schuld des Schweigens.",
+  "strittig": "Die moderne Forschung, seit Brian Jones' Biographie von 1992, hält das Bild vom Tyrannen für stark übertrieben: Die belegbare Zahl hingerichteter Senatoren liegt bei rund einem Dutzend über fünfzehn Jahre, nicht bei Massen. Umgekehrt lässt sich nicht behaupten, es sei alles Verleumdung — die Prozesse und die Verbannungen sind dokumentiert. Strittig bleibt auch die Christenverfolgung: Die Vorstellung einer großen Verfolgung unter Domitian stützt sich auf spätere christliche Autoren und ist quellenkritisch schwach.",
+  "tiefe": [
+    {
+      "titel": "Damnatio memoriae — wie man ein Gedächtnis löscht",
+      "text": "Die Tilgung des Namens war kein Wutausbruch, sondern ein geregeltes Verfahren, das der Senat mehrfach beschloss — gegen Caligula faktisch, gegen Nero, Domitian, Commodus, Geta, Elagabal förmlich. Was dabei geschah, lässt sich an Steinen ablesen: Der Name wird aus der Inschrift gemeißelt, Statuen werden umgearbeitet, Münzen eingezogen, Bauwerke umgewidmet, der Geburtstag aus dem Festkalender gestrichen, Angehörige der Nachkommenschaft aus der Familienreihe entfernt.\n\nDas Verfahren ist in seiner Absicht paradox und in seiner Wirkung noch mehr. Es soll vergessen machen und erzeugt ein sichtbares Loch: Auf dem Severusbogen in Rom ist die ausgemeißelte Stelle, an der Geta stand, seit 1800 Jahren die auffälligste Zeile. Wer eine Inschrift liest, in der eine Zeile fehlt, denkt an nichts anderes.\n\nRömische Bildhauer arbeiteten außerdem sparsam: Statuen wurden nicht zerstört, sondern die Köpfe überarbeitet — ein Domitian wurde zu einem Nerva, indem man Wangen und Haaransatz nachschlug. Deshalb tragen manche Kaiserporträts in Museen heute die Züge zweier Männer, und deshalb ist die Zuweisung mancher Bildnisse bis heute unsicher."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "15 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "18. September 96",
+      "was": "Ermordung im Palast"
+    },
+    {
+      "wert": "ca. 12",
+      "was": "belegbar hingerichtete Senatoren, nach heutiger Forschung"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "The Emperor Domitian",
+      "autor": "Brian W. Jones",
+      "jahr": "1992",
+      "warum": "Die Biographie, die das Tyrannenbild systematisch gegen die Belege prüft. Auf Englisch, aber die Grundlage der heutigen Sicht."
+    },
+    {
+      "titel": "Agricola",
+      "autor": "Tacitus",
+      "warum": "Kurz, brillant — und die Stelle, an der Tacitus über sein eigenes Schweigen unter Domitian spricht."
+    },
+    {
+      "titel": "Damnatio memoriae",
+      "autor": "Charles Hedrick",
+      "jahr": "2000",
+      "warum": "Über das Löschen von Erinnerung als politische Technik. Für den größeren Zusammenhang."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire; einzelne Kaiserartikel",
+    "Sueton: De vita Caesarum",
+    "Tacitus: Annalen",
+    "Cassius Dio: Römische Geschichte",
+    "Brian W. Jones: The Emperor Domitian",
+    "Tacitus: Agricola",
+    "Plinius der Jüngere: Panegyricus"
+  ]
+},
+{
+  "id": "kaiser-commodus",
+  "titel": "Commodus, der Kaiser in der Arena",
+  "epoche": "antike",
+  "jahr": 192,
+  "zeitraum": "180–192",
+  "region": "Römisches Reich",
+  "leitsatz": "Er trat als Gladiator auf und ließ sich dafür aus der Staatskasse bezahlen — für die römische Oberschicht war das Letztere der eigentliche Skandal.",
+  "vorgeschichte": "Commodus war der erste Kaiser seit fast einem Jahrhundert, der ein leiblicher Sohn war. Mark Aurel hatte keinen anderen Erben, und damit endete das Verfahren der Adoption, das vier Regierungen getragen hatte. Der Sohn war neunzehn, hatte die beste Erziehung des Reiches erhalten und interessierte sich für keinen Teil davon.",
+  "verlauf": "Er schloss den Krieg an der Donau, den sein Vater geführt hatte, schnell ab und überließ die Regierung Günstlingen — zuerst dem Präfekten Perennis, dann dem Freigelassenen Cleander, der Ämter verkaufte, bis eine Hungerkrise in Rom zu Unruhen führte und Commodus ihn der Menge auslieferte.\n\nParallel baute er eine eigene Selbstdarstellung: Er ließ sich als wiedergeborener Herkules zeigen, mit Löwenfell und Keule, und benannte Rom nach sich, dazu die Monate, die Legionen, die Flotte und den Senat. Er trat in der Arena auf — nach der Historia Augusta 735 Mal — gegen Tiere und gegen Gegner, die nicht ernsthaft kämpfen durften. 192 versuchte seine Umgebung ihn zu vergiften; als das misslang, erdrosselte ihn der Ringkämpfer Narcissus im Bad.",
+  "folgen": "Nach seinem Tod folgte das Fünfkaiserjahr 193, in dem die Herrschaft in einer Auktion verkauft wurde. Danach begründete Septimius Severus eine Dynastie, die sich offen aufs Heer stützte — die Fiktion, der Kaiser sei ein Bürger unter Bürgern, war endgültig aufgegeben. Für Edward Gibbon begann mit Commodus der Verfall des Reiches; die heutige Forschung sieht den Bruch stärker im dritten Jahrhundert, hält aber daran fest, dass 180 eine Zäsur war.",
+  "strittig": "Die Zahl von 735 Arenaauftritten steht in der Historia Augusta, deren Angaben zu Teilen erfunden sind, und ist wahrscheinlich stark übertrieben. Gesichert sind Auftritte durch Cassius Dio, der als Senator anwesend war und beschreibt, wie die Senatoren gezwungen wurden zuzujubeln — die einzige Augenzeugenschilderung, die wir von einem Kaiser in der Arena haben. Unklar bleibt, ob eine geistige Erkrankung vorlag; die Quellen legen es nahe, aber sie legen es bei jedem missliebigen Kaiser nahe.",
+  "zahlen": [
+    {
+      "wert": "12 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "735",
+      "was": "Arenaauftritte nach der Historia Augusta — vermutlich übertrieben"
+    },
+    {
+      "wert": "1 Mio.",
+      "was": "Sesterzen, die er sich pro Auftritt aus der Kasse zahlen ließ, nach Cassius Dio"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Römische Geschichte",
+      "autor": "Cassius Dio",
+      "warum": "Buch 72 zu Commodus — Augenzeugenbericht eines Senators, der dabeisitzen musste. Die wichtigste Quelle überhaupt."
+    },
+    {
+      "titel": "Commodus – An Emperor at the Crossroads",
+      "autor": "Olivier Hekster",
+      "jahr": "2002",
+      "warum": "Untersucht die Selbstdarstellung als Herkules als politisches Programm statt als Verrücktheit."
+    },
+    {
+      "titel": "Verfall und Untergang des Römischen Imperiums",
+      "autor": "Edward Gibbon",
+      "jahr": "1776",
+      "warum": "Historisch überholt, sprachlich unerreicht — und Commodus ist der Punkt, an dem sein Werk einsetzt. Als Klassiker lesen, nicht als Handbuch."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire; einzelne Kaiserartikel",
+    "Sueton: De vita Caesarum",
+    "Tacitus: Annalen",
+    "Cassius Dio: Römische Geschichte",
+    "Historia Augusta: Commodus (mit Vorbehalt)",
+    "Olivier Hekster: Commodus – An Emperor at the Crossroads"
+  ]
+},
+{
+  "id": "kaiser-elagabal",
+  "titel": "Elagabal und die unzuverlässigste Quelle Roms",
+  "epoche": "antike",
+  "jahr": 220,
+  "zeitraum": "218–222",
+  "region": "Römisches Reich",
+  "leitsatz": "Fast alles, was man über ihn zu wissen glaubt, steht in einem Buch, dessen Verfasser Quellen erfand und in einem Fall einen ganzen Kaiser.",
+  "vorgeschichte": "Er hieß Varius Avitus Bassianus, war Priester des Sonnengottes Elagabal in Emesa im heutigen Syrien und wurde mit vierzehn von Truppen zum Kaiser erhoben, weil seine Großmutter Julia Maesa behauptete, er sei ein unehelicher Sohn Caracallas. Vier Jahre später war er tot.",
+  "verlauf": "Was sich belegen lässt: Er brachte den Kult seines Heimatgottes nach Rom, ließ einen Tempel auf dem Palatin bauen und den schwarzen Meteorstein von Emesa dorthin bringen. Er stellte diesen Gott über Jupiter — das ist auf Münzen und in Inschriften dokumentiert und war der eigentliche Bruch: Nicht ein fremder Kult neben den römischen, sondern über ihnen. Er heiratete eine Vestalin, was religiös ein schwerer Frevel war. 222 ließen seine Großmutter und die Garde ihn und seine Mutter töten, die Leichen durch die Straßen schleifen und in den Tiber werfen; der Stein ging zurück nach Emesa.\n\nWas dagegen nur in der Historia Augusta steht: Gäste, die unter herabregnenden Rosenblättern erstickten; Mahlzeiten aus Glas und Elfenbein; Löwen und Bären, die schlafenden Gästen ins Zimmer gelassen wurden; die Suche nach einem Arzt, der ihn zur Frau machen sollte; hunderte weitere Anekdoten.",
+  "folgen": "Sein Nachfolger Severus Alexander stellte die alten Kulte wieder her, und der Senat verhängte die Tilgung des Namens. Interessant ist die Nachwirkung: Ein halbes Jahrhundert später machte Aurelian den Sonnengott unter dem Namen Sol Invictus zum Reichsgott — dieselbe Idee, diesmal politisch erfolgreich. Elagabal selbst wurde im 19. Jahrhundert zur Lieblingsfigur der Dekadenzliteratur und der Malerei; das Bild, das die meisten Menschen von ihm haben, stammt aus dieser Zeit, nicht aus der Antike.",
+  "strittig": "Die Historia Augusta ist die Hauptquelle und als solche unbrauchbar: Die Forschung hat seit Hermann Dessau (1889) nachgewiesen, dass sie im späten vierten Jahrhundert von einem einzigen Autor stammt, der mehrere Verfasser vortäuschte, Briefe und Urkunden erfand und mit dem Kaiser Firmus eine Person hinzufügte, die nie existierte. Die Vita Elagabals gehört zu den ausgeschmücktesten. Ebenfalls strittig ist die moderne Deutung seines Verhaltens: Manche Autoren lesen die Berichte über Kleidung, Bezeichnungen und Wunsch nach körperlicher Veränderung als Zeugnis einer Geschlechtsidentität, andere halten das für eine Rückprojektion auf einen feindlichen Text, dessen Zweck es war, einen Kaiser als unrömisch darzustellen. Beide Lesarten stützen sich auf dieselben unzuverlässigen Sätze.",
+  "tiefe": [
+    {
+      "titel": "Wie man eine gefälschte Quelle erkennt",
+      "text": "Die Historia Augusta gibt sich als Sammlung von Kaiserbiographien sechs verschiedener Autoren aus der Zeit Diokletians und Konstantins. Hermann Dessau zeigte 1889, dass das nicht stimmen kann, und zwar mit Argumenten, die man an keiner einzelnen Stelle sieht, sondern erst im Ganzen:\n\nErstens die Sprache — alle sechs angeblichen Verfasser schreiben in derselben Eigenart, mit denselben Vorlieben für bestimmte Wörter. Zweitens die Anachronismen: Der Text nennt Personen, Verhältnisse und Wendungen, die es erst am Ende des vierten Jahrhunderts gab. Drittens die Quellen, die er zitiert: Namen von Geschichtsschreibern, die nirgends sonst vorkommen, wörtlich zitierte Senatsbeschlüsse und Briefe, die nach Aufbau und Wortwahl aus einer Hand stammen. Viertens Firmus, ein Kaiser, den nur dieses Werk kennt.\n\nDaraus folgt eine Regel, die weit über diesen Text hinausreicht: Eine Fälschung wird selten durch einen einzelnen Fehler entlarvt, sondern durch Häufungen, die dem Fälscher nicht auffallen — Sprachgewohnheiten, Zeitbezüge, die Neigung, Lücken zu füllen statt offenzulassen. Genau so wurden auch die Hitler-Tagebücher und die Konstantinische Schenkung überführt.\n\nFür Elagabal heißt das: Wir haben vier gesicherte Jahre, ein bezeugtes religiöses Programm, Münzen, einen Tempel und eine Ermordung. Alles Übrige ist Literatur."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "14",
+      "was": "Alter beim Regierungsantritt"
+    },
+    {
+      "wert": "4 Jahre",
+      "was": "Regierungszeit"
+    },
+    {
+      "wert": "1889",
+      "was": "Dessau weist die Historia Augusta als Werk eines einzelnen späteren Autors nach"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Images of Elagabalus",
+      "autor": "Martijn Icks",
+      "jahr": "2011",
+      "warum": "Trennt konsequent den belegbaren Kaiser von seinem Nachleben in Literatur und Malerei. Das maßgebliche Buch."
+    },
+    {
+      "titel": "Die Historia Augusta – Ein römisches Geschichtswerk",
+      "autor": "Klaus-Peter Johne (Hrsg.)",
+      "jahr": "2013",
+      "warum": "Zur Quelle selbst: wie die Fälschung erkannt wurde und was trotzdem brauchbar ist."
+    },
+    {
+      "titel": "Die Severer",
+      "autor": "Michael Sommer",
+      "jahr": "2004",
+      "warum": "Ordnet die Dynastie insgesamt ein — hilfreich, weil Elagabal allein unverständlich bleibt."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Elagabalus",
+    "Cassius Dio: Römische Geschichte, Buch 80",
+    "Historia Augusta: Antoninus Heliogabalus (als unzuverlässig gekennzeichnet)",
+    "Martijn Icks: The Crimes of Elagabalus",
+    "Hermann Dessau, Hermes 1889: Über Zeit und Persönlichkeit der Scriptores Historiae Augustae"
+  ]
+},
+{
+  "id": "vierkaiserjahr",
+  "titel": "Das Vierkaiserjahr 69",
+  "epoche": "antike",
+  "jahr": 69,
+  "zeitraum": "68–69",
+  "region": "Römisches Reich",
+  "leitsatz": "In achtzehn Monaten vier Kaiser — und die Entdeckung, dass jeder Feldherr mit genug Truppen Kaiser werden konnte.",
+  "vorgeschichte": "Nero starb 68 durch eigene Hand, nachdem Statthalter und Garde sich von ihm abgewandt hatten. Damit war die Familie des Augustus ausgestorben, und zum ersten Mal seit hundert Jahren gab es keinen Erben. Die Frage, wer nun Kaiser wird und wer das entscheidet, war nie geregelt worden — Augustus hatte sie bewusst offen gelassen, weil jede Regelung die Fiktion der Republik zerstört hätte.",
+  "verlauf": "Galba, Statthalter in Spanien, marschierte nach Rom, verweigerte der Garde eine versprochene Zahlung und war nach sieben Monaten erschlagen. Otho, der die Garde gewonnen hatte, verlor gegen das Rheinheer bei Bedriacum und nahm sich nach drei Monaten das Leben. Vitellius, den dieses Heer erhoben hatte, hielt acht Monate, bis die Donau- und Ostlegionen für Vespasian erklärten und bei Bedriacum ein zweites Mal kämpften — diesmal umgekehrt. Vitellius wurde in Rom durch die Straßen geschleift und getötet, während auf dem Kapitol der Jupitertempel brannte, den die Parteien im Straßenkampf in Flammen setzten.\n\nVespasian selbst war zu diesem Zeitpunkt in Judäa und traf erst Monate später in Rom ein.",
+  "folgen": "Vespasian begründete eine Dynastie und stellte die Finanzen wieder her; das Kolosseum wurde aus der Beute des Jüdischen Krieges gebaut. Politisch aber war etwas anderes geschehen. Tacitus formulierte es in einem Satz, der zum bekanntesten seiner Werke wurde: Das Geheimnis der Herrschaft lag nun offen — man konnte auch außerhalb Roms Kaiser werden.\n\nDas Muster kehrte wieder, 193 im Fünfkaiserjahr, dann durchgehend im dritten Jahrhundert. Für die spätere Kaiserzeit wurde das Heer der eigentliche Wahlkörper, und die Kaiser mussten die Truppen entsprechend bezahlen — mit Folgen für Steuern, Münzwert und Verwaltung.",
+  "strittig": "Wie eigenständig die Legionen handelten und wie stark ihre Kommandeure sie lenkten, wird unterschiedlich beurteilt. Umstritten ist auch, ob Vespasians Erhebung von langer Hand vorbereitet war — Tacitus deutet es an, die Chronologie erlaubt beides.",
+  "zahlen": [
+    {
+      "wert": "4 Kaiser",
+      "was": "Galba, Otho, Vitellius, Vespasian in 18 Monaten"
+    },
+    {
+      "wert": "2",
+      "was": "Schlachten bei Bedriacum, im April und im Oktober 69"
+    },
+    {
+      "wert": "ca. 50.000",
+      "was": "geschätzte Gefallene der Bürgerkriegsjahre — die Angaben schwanken stark"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Historien",
+      "autor": "Tacitus",
+      "warum": "Die Darstellung des Jahres 69 durch den größten römischen Historiker. Der erhaltene Anfang gehört zum Besten der antiken Literatur."
+    },
+    {
+      "titel": "69 n. Chr. – Das Jahr der vier Kaiser",
+      "autor": "Gwyn Morgan",
+      "jahr": "2006",
+      "warum": "Rekonstruiert den Ablauf Woche für Woche und prüft Tacitus gegen die anderen Quellen."
+    },
+    {
+      "titel": "Die Kaiserzeit",
+      "autor": "Karl Christ",
+      "jahr": "1988",
+      "warum": "Der deutsche Standardüberblick — für die Einordnung, warum 69 die Grundfrage der Kaiserherrschaft offenlegte."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Year of the Four Emperors",
+    "Tacitus: Historien, Bücher 1–3",
+    "Sueton: Galba, Otho, Vitellius, Vespasian",
+    "Gwyn Morgan: 69 A.D. – The Year of Four Emperors"
+  ]
+},
+{
+  "id": "kaisertod",
+  "titel": "Wie römische Kaiser starben",
+  "epoche": "antike",
+  "jahr": 200,
+  "zeitraum": "27 v. Chr. – 476 n. Chr.",
+  "region": "Römisches Reich",
+  "leitsatz": "Der mächtigste Posten der antiken Welt hatte eine Lebenserwartung, die jeder Versicherung Sorgen gemacht hätte.",
+  "vorgeschichte": "Die Kaiserherrschaft war nie ein Amt mit Regeln. Es gab keine Wahl, keine feste Erbfolge, keine Amtszeit und kein Verfahren zur Absetzung. Wer Kaiser war, war es, solange genug bewaffnete Menschen ihn dafür hielten. Diese Lücke im Verfassungsbau ist der Grund für fast alle Gewalt in der Kaiserliste.",
+  "verlauf": "Von den etwa achtzig allgemein anerkannten Kaisern zwischen Augustus und dem Ende des Westreichs starben rund zwei Drittel gewaltsam: ermordet, in der Schlacht gefallen, hingerichtet oder zum Selbstmord gedrängt. Die häufigste Todesart war nicht die Verschwörung des Senats, sondern der Mord durch die eigene Garde oder die eigenen Offiziere — die Prätorianer beseitigten Caligula, Galba, Commodus indirekt, Pertinax, Elagabal, Severus Alexander und weitere, und sie setzten mehrfach den Nachfolger ein.\n\nDie durchschnittliche Regierungsdauer sinkt im Verlauf dramatisch: Augustus regierte 41 Jahre, im dritten Jahrhundert liegt der Durchschnitt bei wenigen Jahren, und mehrere Kaiser hielten nur Wochen. Umgekehrt gilt: Kaiser, die einen erwachsenen Sohn hatten und ihn früh beteiligten, starben häufiger im Bett.",
+  "folgen": "Zwei Antworten wurden versucht. Die Adoptivkaiser des zweiten Jahrhunderts wählten ihren Nachfolger nach Fähigkeit statt nach Blut — es funktionierte vier Regierungen lang und endete, sobald ein Kaiser einen leiblichen Sohn hatte. Diokletian versuchte ab 293 eine Ordnung mit zwei Ober- und zwei Unterkaisern und geregeltem Aufstieg; sie zerfiel unmittelbar nach seinem Rücktritt in Bürgerkriege.\n\nDauerhaft gelöst wurde das Problem erst im oströmischen Reich, und dort nicht durch ein Gesetz, sondern durch die Verbindung von Krönung, Kirche und Hauptstadtbürokratie — eine Nachfolge, die von einer Institution beglaubigt wurde, die den einzelnen Kaiser überlebte.",
+  "strittig": "Jede Zahl hängt daran, wen man zählt. Rechnet man Usurpatoren, Gegenkaiser und die Herrscher der Sonderreiche mit, kommt man für das dritte Jahrhundert allein auf über fünfzig Namen. Auch die Todesursachen sind nicht immer klar: Bei mehreren Kaisern — Claudius, Domitians Vorgänger Titus, Gordian III. — stehen Gift, Krankheit oder Kampf gegeneinander, ohne dass sich entscheiden ließe, was zutrifft. Die hier genannten Anteile sind daher Näherungen und keine Statistik.",
+  "zahlen": [
+    {
+      "wert": "ca. 2/3",
+      "was": "Anteil gewaltsamer Todesfälle unter den anerkannten Kaisern"
+    },
+    {
+      "wert": "41 Jahre",
+      "was": "längste Regierung, Augustus"
+    },
+    {
+      "wert": "3 Monate",
+      "was": "Otho — und mehrere kamen nicht einmal so weit"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Kaiserzeit",
+      "autor": "Karl Christ",
+      "jahr": "1988",
+      "warum": "Der Überblick, in dem sich die Muster erkennen lassen: wann Nachfolgen gelangen und warum meist nicht."
+    },
+    {
+      "titel": "The Roman Emperor and His Court",
+      "autor": "Andrew Wallace-Hadrill u. a.",
+      "jahr": "2023",
+      "warum": "Wie der Hof funktionierte — und damit, wer tatsächlich in Reichweite eines Kaisers war."
+    },
+    {
+      "titel": "Kaiser und Senat",
+      "autor": "Aloys Winterling",
+      "jahr": "2001",
+      "warum": "Die strukturelle Erklärung: eine Herrschaft, die sich selbst nicht eingestehen durfte, was sie war."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Roman Empire, list of emperors",
+    "Karl Christ: Geschichte der römischen Kaiserzeit",
+    "Cambridge Ancient History, Bände 10–13"
+  ]
+},
+{
+  "id": "hammurapi",
+  "titel": "Der Kodex Hammurapi",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -1754,
+  "zeitraum": "um 1754 v. Chr.",
+  "region": "Mesopotamien",
+  "leitsatz": "Nicht das älteste Gesetzbuch der Welt und kein Gesetzbuch im heutigen Sinn — aber der Moment, in dem ein Herrscher sein Recht öffentlich ausstellte.",
+  "vorgeschichte": "Hammurapi war der sechste König von Babylon und regierte rund 42 Jahre. Ältere Rechtssammlungen gab es bereits: die des Ur-Nammu von Ur (um 2100 v. Chr.) und die von Lipit-Ischtar und Eschnunna. Die verbreitete Aussage, Hammurapis Text sei das erste Gesetzbuch, ist deshalb falsch — er ist der umfangreichste und am besten erhaltene.",
+  "verlauf": "Die Stele, 1901 von französischen Archäologen in Susa gefunden und heute im Louvre, ist über zwei Meter hoch aus schwarzem Diorit. Oben steht Hammurapi vor dem Sonnengott Schamasch, darunter in Keilschrift ein Vorwort, 282 Rechtssätze und ein Nachwort mit Flüchen gegen jeden, der den Text verändert.\n\nDie Sätze folgen einem einheitlichen Muster: Wenn jemand dies tut, dann geschieht das. Sie behandeln Diebstahl, Bauwesen, Ehe, Erbschaft, Sklaverei, Arztlohn, Schiffsmiete, Pacht. Das berühmte Auge um Auge steht darin — aber nur zwischen Angehörigen desselben Standes. Verletzt ein Freier einen Halbfreien, zahlt er Silber; verletzt er einen Sklaven, entschädigt er den Eigentümer. Auch der Arztlohn ist gestaffelt, und ein Arzt, der einem Freien das Auge verdirbt, verliert die Hand — bei einem Sklaven zahlt er Ersatz.",
+  "folgen": "Der Text wurde über tausend Jahre in Schreiberschulen kopiert; Fragmente aus späteren Jahrhunderten sind erhalten. Für die Rechtsgeschichte ist er die früheste umfassende Quelle über Alltag, Preise, Familienverhältnisse und Streitfälle im Zweistromland — mehr als über Recht sagt er über Gesellschaft.\n\nSein eigentlicher Beitrag ist die Veröffentlichung. Ein aufgestellter Text, den man lesen oder vorlesen lassen kann, macht Herrschaft nachprüfbar: Wer sich benachteiligt fühlt, kann sich auf etwas berufen. Denselben Schritt vollzogen Athen mit Drakon und Rom mit den Zwölftafeln, und in beiden Fällen war er politisch erzwungen.",
+  "strittig": "Ob die Sammlung überhaupt angewandtes Recht war, ist Fachstreit. In den tausenden erhaltenen babylonischen Prozessurkunden wird der Kodex nie zitiert, und einzelne Urteile weichen davon ab. Ein Teil der Forschung sieht darin deshalb weniger ein Gesetzbuch als ein Denkmal königlicher Gerechtigkeit — eine Selbstdarstellung mit Beispielfällen. Andere halten ihn für Richtlinien, die mündlich angewandt wurden. Sicher ist nur, dass er nicht wie ein modernes Gesetzbuch funktionierte.",
+  "literatur": [
+    {
+      "titel": "Kodex Hammurapi",
+      "autor": "Hans Neumann (Übersetzung und Kommentar)",
+      "jahr": "2011",
+      "warum": "Der deutsche Text mit Erläuterungen — man liest die 282 Sätze schneller als erwartet und lernt viel über den Alltag."
+    },
+    {
+      "titel": "Der Alte Orient",
+      "autor": "Michael Roaf",
+      "jahr": "1991",
+      "warum": "Bild- und Kartenatlas zur Einordnung: wer Babylon war, wo Susa lag, wie die Keilschriftwelt zusammenhing."
+    },
+    {
+      "titel": "Hammurabi's Laws",
+      "autor": "Martha T. Roth",
+      "jahr": "1997",
+      "warum": "Die Standardausgabe der altorientalischen Rechtssammlungen im Vergleich — zeigt, was Hammurapi von Ur-Nammu übernahm."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "282",
+      "was": "Rechtssätze auf der Stele"
+    },
+    {
+      "wert": "1901",
+      "was": "Fund in Susa, heute im Louvre"
+    },
+    {
+      "wert": "ca. 350 Jahre",
+      "was": "älter ist die Sammlung des Ur-Nammu"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Code of Hammurabi",
+    "Musée du Louvre: Stèle du Code de Hammurabi",
+    "Martha T. Roth: Law Collections from Mesopotamia and Asia Minor"
+  ]
+},
+{
+  "id": "spartacus",
+  "titel": "Spartacus und der letzte Sklavenkrieg",
+  "epoche": "antike",
+  "jahr": -73,
+  "zeitraum": "73–71 v. Chr.",
+  "region": "Italien",
+  "leitsatz": "Zwei Jahre lang schlug ein Heer entlaufener Sklaven römische Legionen — und wir wissen nicht, was es eigentlich wollte.",
+  "vorgeschichte": "Roms Eroberungen hatten Italien mit Sklaven gefüllt: Kriegsgefangene aus Griechenland, Kleinasien, Gallien und Thrakien arbeiteten auf Großgütern und in Bergwerken. Zwei vorangegangene Sklavenkriege in Sizilien (135–132 und 104–100 v. Chr.) waren mühsam niedergeschlagen worden. Spartacus war Thraker, hatte nach den Quellen im römischen Heer gedient und war in eine Gladiatorenschule in Capua verkauft worden.",
+  "verlauf": "73 v. Chr. brachen rund siebzig Gladiatoren aus, bewaffnet mit Küchengerät, und verschanzten sich am Vesuv. Die erste römische Truppe belagerte sie dort, und der Ausbruch — an Weinranken die Steilwand hinab und in den Rücken des Gegners — machte den Aufstand bekannt. Über Monate wuchs die Zahl auf mehrere zehntausend; Rom schickte erst Prätoren, dann Konsuln, und beide verloren.\n\n72 v. Chr. zog das Heer nach Norden und schlug bei Mutina den Statthalter Galliens — der Weg über die Alpen war frei. Dann kehrte es um und marschierte wieder nach Süden. Warum, weiß niemand. Crassus übernahm den Befehl mit acht Legionen, ließ nach einer Flucht seiner eigenen Soldaten die Dezimierung vollstrecken, sperrte das Sklavenheer im Süden Italiens mit einem Wall ab und schlug es 71 v. Chr. am Silarus. Spartacus fiel; sein Leichnam wurde nicht gefunden. Rund 6.000 Gefangene wurden entlang der Via Appia gekreuzigt.",
+  "folgen": "Es war der letzte große Sklavenaufstand in Italien. Rom verstärkte danach die Aufsicht, ohne das System zu ändern — die Sklaverei blieb bis zum Ende des Reiches Grundlage der Wirtschaft. Crassus und Pompeius, der die letzten Reste aufrieb und den Ruhm mitnahm, standen bald an der Spitze des Staates; der Weg zu Caesar und zum Ende der Republik führt auch durch diesen Krieg.\n\nDie Nachwirkung ist größer als die Wirkung. Seit dem 19. Jahrhundert wurde Spartacus zum Symbol des Befreiungskampfs: Marx nannte ihn den prächtigsten Kerl der antiken Geschichte, der Spartakusbund von 1916 trug seinen Namen, und der Film von 1960 prägte das heutige Bild — die Szene, in der alle sich als Spartacus bezeichnen, ist erfunden.",
+  "strittig": "Die Ziele des Aufstands sind unbekannt und in den Quellen widersprüchlich. Plutarch schreibt, Spartacus habe über die Alpen in die Heimat wollen; Appian deutet einen Marsch auf Rom an. Warum das Heer im Norden umkehrte, wird unterschiedlich erklärt: Uneinigkeit der Führer, Beutelust, oder eine Fehlnachricht. Auch die Vorstellung, es sei um die Abschaffung der Sklaverei gegangen, ist eine moderne Deutung — in den antiken Berichten fordert niemand das. Alle Quellen stammen von römischen Autoren, die kein Interesse hatten, den Gegnern ein Programm zuzugestehen.",
+  "literatur": [
+    {
+      "titel": "Spartacus",
+      "autor": "Aldo Schiavone",
+      "jahr": "2011",
+      "warum": "Kurz und quellenkritisch: was wir wissen, was gedeutet wird, und wie aus dem Aufstand ein Symbol wurde."
+    },
+    {
+      "titel": "Der Spartacus-Krieg",
+      "autor": "Barry Strauss",
+      "jahr": "2009",
+      "warum": "Rekonstruiert den Feldzug militärisch nachvollziehbar. Erzählend, aber solide."
+    },
+    {
+      "titel": "Sklaverei in der Antike",
+      "autor": "Moses I. Finley",
+      "jahr": "1980",
+      "warum": "Warum antike Gesellschaften ohne Sklaverei nicht funktionierten — der Rahmen, ohne den der Aufstand unverständlich bleibt."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "ca. 70",
+      "was": "Gladiatoren beim Ausbruch aus Capua"
+    },
+    {
+      "wert": "2 Jahre",
+      "was": "Dauer des Krieges"
+    },
+    {
+      "wert": "ca. 6.000",
+      "was": "Kreuzigungen entlang der Via Appia"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Spartacus",
+    "Plutarch: Crassus",
+    "Appian: Römische Geschichte, Bürgerkriege I",
+    "Barry Strauss: The Spartacus War"
+  ]
+},
+{
+  "id": "beccaria",
+  "titel": "Beccaria und das Ende der Folter",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1764,
+  "zeitraum": "1764–1786",
+  "region": "Europa",
+  "leitsatz": "Ein 26-Jähriger veröffentlichte anonym hundert Seiten — und zwanzig Jahre später hatte der erste Staat Europas die Todesstrafe abgeschafft.",
+  "vorgeschichte": "Um 1760 war das Strafrecht in Europa uneinheitlich, geheim und hart. Verfahren fanden ohne Öffentlichkeit statt, Angeklagte erfuhren die Vorwürfe oft nicht, Verteidigung war die Ausnahme, Folter Verfahrensschritt und die Todesstrafe für Dutzende Delikte vorgesehen — auch für Eigentumsdelikte. Cesare Beccaria war ein junger Mailänder Adliger im Kreis der Brüder Verri, der sich mit Ökonomie beschäftigte und über Verfahren nachdachte, die er in der Praxis beobachtete.",
+  "verlauf": "1764 erschien anonym Dei delitti e delle pene, Über Verbrechen und Strafen. Die Argumente sind knapp und praktisch: Strafe hat nur einen Zweck, künftige Taten zu verhindern, nicht zu rächen und nicht zu sühnen. Daraus folgt alles Weitere. Sie muss verhältnismäßig sein, weil sonst kein Unterschied bleibt zwischen kleinem und großem Verbrechen. Sie muss sicher und schnell folgen, weil Wahrscheinlichkeit stärker abschreckt als Härte. Gesetze müssen veröffentlicht und verständlich sein. Folter ist zu verwerfen, weil sie nicht Schuld, sondern Schmerzresistenz messe und den Starken freispreche und den Schwachen überführe. Die Todesstrafe sei unnötig, weil lebenslange Arbeit stärker wirke, und schädlich, weil ein Staat, der tötet, das Töten vorführt.\n\nDas Buch wurde innerhalb weniger Jahre in ganz Europa gelesen, ins Französische übersetzt, von Voltaire kommentiert und von der Kirche 1766 auf den Index gesetzt. Beccaria selbst blieb still, wurde Beamter und schrieb nichts Vergleichbares mehr.",
+  "folgen": "Die Wirkung war ungewöhnlich schnell. Katharina II. ließ Teile in ihre Gesetzesinstruktion aufnehmen, Preußen hatte die Folter bereits 1740 eingeschränkt, Österreich schaffte sie 1776 ab, Frankreich 1780. 1786 strich die Toskana unter Leopold II. die Todesstrafe — der erste Staat der Welt. Die amerikanischen Verfassungsväter lasen ihn: Der Verweis auf grausame und ungewöhnliche Strafen im achten Zusatzartikel steht in dieser Linie.\n\nDie Grundsätze sind heute so selbstverständlich, dass ihre Herkunft verschwindet: Gesetzlichkeit, Verhältnismäßigkeit, öffentliches Verfahren, Unschuldsvermutung, kein Zwang zur Selbstbelastung. Jede moderne Strafprozessordnung enthält sie.",
+  "strittig": "Beccarias Anteil ist umstritten: Pietro Verri behauptete später, wesentliche Teile stammten von ihm und seinem Bruder, und Beccaria habe nur formuliert. Nachweisen lässt sich, dass das Buch im Diskussionskreis entstand. Ebenso strittig ist, wie viel die Schrift bewirkte und wie viel eine Entwicklung, die ohnehin lief — die preußischen Reformen kamen vorher, und die Beweisregeln hatten sich mit Indizien- und Spurenbeweis bereits verschoben. Beccarias Leistung war vielleicht weniger die Erfindung der Argumente als ihre unwiderlegbare Ordnung.",
+  "tiefe": [
+    {
+      "titel": "Der Kern des Arguments gegen die Folter",
+      "text": "Beccarias Widerlegung nimmt eine Seite und ist bis heute nicht bestritten worden. Sie geht so: Die Folter soll die Wahrheit erzwingen. Der Gefolterte hat zwei Möglichkeiten — gestehen oder aushalten. Wer schuldig ist und Schmerz gut erträgt, hält aus und wird freigesprochen. Wer unschuldig ist und Schmerz schlecht erträgt, gesteht und wird verurteilt. Die Folter misst also die Empfindlichkeit des Körpers und nicht die Schuld. Beccaria formuliert die Folge scharf: Sie ist ein Verfahren, bei dem der Unschuldige schlechter dasteht als der Schuldige, weil er nichts zu gestehen hat und deshalb weiter gefoltert wird.\n\nDazu kommt ein zweiter Punkt, der oft übersehen wird. Die Folter wurde damit gerechtfertigt, dass sie nur bei hinreichendem Verdacht zulässig sei. Beccaria dreht das um: Entweder reichen die Beweise für eine Verurteilung — dann braucht man das Geständnis nicht. Oder sie reichen nicht — dann darf man den Menschen nicht behandeln, als sei er schon verurteilt. Ein Dritter existiert nicht. Damit ist die Folter nicht als grausam, sondern als logisch überflüssig erwiesen.\n\nGenau diese Struktur macht die Schrift so wirksam. Sie appelliert nicht an Mitgefühl, sondern an das Selbstverständnis von Juristen, die glaubten, ein Erkenntnisverfahren zu betreiben. Als 2014 der Bericht des US-Senats zu verschärften Verhörmethoden zum Ergebnis kam, dass sie keine anders unerreichbaren Erkenntnisse brachten, war das dieselbe Feststellung, 250 Jahre später und mit Aktenmaterial belegt."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Über Verbrechen und Strafen",
+      "autor": "Cesare Beccaria",
+      "jahr": "1764",
+      "warum": "Das Original, gut hundert Seiten, in mehreren deutschen Ausgaben. Schneller gelesen als jede Sekundärliteratur darüber."
+    },
+    {
+      "titel": "Torture and the Law of Proof",
+      "autor": "John H. Langbein",
+      "jahr": "1977",
+      "warum": "Die Gegenthese: Die Folter verschwand nicht wegen Beccaria, sondern weil sich die Beweisregeln geändert hatten. Zwingend argumentiert."
+    },
+    {
+      "titel": "Die Erfindung der Menschenrechte",
+      "autor": "Lynn Hunt",
+      "jahr": "2007",
+      "warum": "Wie im 18. Jahrhundert überhaupt die Vorstellung entstand, dass Fremden Schmerz nicht zugefügt werden darf. Ergänzt Beccaria um das Warum."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "26",
+      "was": "Beccarias Alter bei der Veröffentlichung"
+    },
+    {
+      "wert": "1766",
+      "was": "Aufnahme in den Index der verbotenen Bücher"
+    },
+    {
+      "wert": "1786",
+      "was": "Toskana schafft als erster Staat die Todesstrafe ab"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Cesare Beccaria",
+    "Cesare Beccaria: Dei delitti e delle pene, 1764",
+    "John H. Langbein: Torture and the Law of Proof",
+    "Senate Select Committee on Intelligence: Study of the CIA's Detention and Interrogation Program, 2014"
+  ]
+},
+{
+  "id": "affaire-des-poisons",
+  "titel": "Die Giftaffäre am Hof Ludwigs XIV.",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1679,
+  "zeitraum": "1676–1682",
+  "region": "Frankreich",
+  "leitsatz": "Die Ermittlungen reichten so weit in den Hof hinein, dass der König sie beendete und die Akten verbrennen ließ.",
+  "vorgeschichte": "1676 wurde die Marquise de Brinvilliers hingerichtet: Sie hatte ihren Vater und zwei Brüder mit Arsen getötet, über Monate hinweg, mit Kostproben an Kranken im Hospital. Aufgedeckt wurde die Sache erst, weil ihr Liebhaber starb und in seinem Nachlass Briefe lagen. Sie wurde gefoltert, gestand und wurde enthauptet und verbrannt. Der Fall löste in Paris eine Welle von Verdächtigungen aus — jeder Todesfall in einer wohlhabenden Familie erschien nun erklärbar.",
+  "verlauf": "Der Polizeichef La Reynie fand ein weit verzweigtes Gewerbe: Wahrsagerinnen, Alchemisten und Apothekergehilfen, die Liebestränke, Abtreibungsmittel und Gift verkauften und dabei Kundenwissen sammelten. Zentralfigur war Catherine Monvoisin, genannt La Voisin. Ludwig XIV. richtete 1679 ein Sondergericht ein, die Chambre ardente, das ohne die üblichen Instanzen urteilte.\n\nIn den Verhören fielen Namen aus dem höchsten Adel, darunter die Gräfin von Soissons und schließlich Madame de Montespan, die langjährige Mätresse des Königs — sie soll Mittel gekauft haben, um seine Zuneigung zu erhalten und Rivalinnen zu schaden. Aussagen über schwarze Messen mit getöteten Neugeborenen kamen von La Voisins Tochter, nach der Hinrichtung der Mutter und im eigenen Interesse. 1682 löste der König das Gericht auf, ließ die betreffenden Akten verbrennen und die wichtigsten Zeugen ohne Urteil in Festungen einsperren, wo sie bis zum Tod blieben.",
+  "folgen": "36 Menschen wurden hingerichtet, darunter La Voisin, die verbrannt wurde. Ludwig erließ 1682 eine Verordnung, die Wahrsagerei verbot und den Handel mit Giften der Aufsicht unterstellte — Apotheker mussten Käufer registrieren. Es ist eine der ersten Stoffkontrollen Europas und entstand nicht aus Gesundheitspolitik, sondern aus einem Skandal.\n\nMadame de Montespan wurde nie angeklagt, verlor aber ihre Stellung am Hof. Und der König zog aus der Affäre die Lehre, die Hofgesellschaft strenger zu beaufsichtigen; die Verlegung des Hofes nach Versailles diente auch der Kontrolle.",
+  "strittig": "Was tatsächlich geschah, ist wegen der vernichteten Akten teilweise nicht mehr feststellbar. Die schwersten Vorwürfe — Kindstötungen bei schwarzen Messen, ein geplanter Giftanschlag auf den König — stützen sich auf Aussagen von Beteiligten, die im Verhör Vorteile suchten, teils unter Folter. Anne Somersets Auswertung der erhaltenen Ermittlungsakten kommt zu dem Ergebnis, dass Giftmorde und ein Gewerbe damit belegt sind, die spektakulärsten Behauptungen aber nicht. Bei Montespan bleiben Kauf von Mitteln und Mordabsicht ungeklärt und werden von Historikern unterschiedlich beurteilt.",
+  "literatur": [
+    {
+      "titel": "Die Affäre der Gifte",
+      "autor": "Anne Somerset",
+      "jahr": "2003",
+      "warum": "Die gründlichste Darstellung: verfolgt jede Aussage zurück auf ihre Quelle und trennt Belegtes von Verhörphantasie."
+    },
+    {
+      "titel": "Der Sonnenkönig",
+      "autor": "Jean-Christian Petitfils",
+      "jahr": "1995",
+      "warum": "Für den Hof, in dem das alles stattfand — Rangkämpfe, Mätressen, Abhängigkeiten."
+    },
+    {
+      "titel": "Das Jahrhundert des Giftes",
+      "autor": "Deborah Blum",
+      "jahr": "2010",
+      "warum": "Nicht über Paris, aber über die Frage, ab wann Gift überhaupt nachweisbar wurde. Erklärt, warum diese Affäre nur mit Aussagen aufzuklären versucht wurde."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "36",
+      "was": "Hinrichtungen"
+    },
+    {
+      "wert": "442",
+      "was": "eingeleitete Verfahren vor der Chambre ardente"
+    },
+    {
+      "wert": "1682",
+      "was": "Auflösung des Gerichts und Verbrennung der Akten"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Affair of the Poisons",
+    "Anne Somerset: The Affair of the Poisons",
+    "Édit du Roi contre les devins, empoisonneurs et faiseurs de poisons, Juli 1682"
+  ]
+},
+{
+  "id": "assassinen",
+  "titel": "Die Nizariten und die Erfindung der Assassinen",
+  "epoche": "mittelalter",
+  "jahr": 1090,
+  "zeitraum": "1090–1256",
+  "region": "Persien und Syrien",
+  "leitsatz": "Eine kleine Gemeinschaft in Bergfestungen wurde zur Vorlage für jede Verschwörungsphantasie des Westens — und ihre eigenen Bücher verbrannten 1256.",
+  "vorgeschichte": "Die Nizariten entstanden 1094 aus einer Spaltung der ismailitischen Schia, als um die Nachfolge des fatimidischen Kalifen gestritten wurde. Sie waren eine Minderheit innerhalb einer Minderheit, umgeben von Seldschuken und sunnitischen Herrschern, die sie verfolgten. Militärisch waren sie hoffnungslos unterlegen — daraus erklärt sich ihre Methode.",
+  "verlauf": "Hasan-i Sabbah nahm 1090 die Bergfestung Alamut im Elburs-Gebirge und baute ein Netz kaum einnehmbarer Burgen in Persien und später in Syrien auf, dazu ein bemerkenswertes Bewässerungs- und Vorratssystem und eine große Bibliothek. Statt Heere einzusetzen, richteten sich die Nizariten gegen einzelne Personen: Wesire, Feldherren, Statthalter. Die Täter handelten meist am helllichten Tag und in der Öffentlichkeit, oft in einer Moschee, und rechneten nicht mit dem Entkommen. Das erste bekannte Opfer war 1092 der seldschukische Wesir Nizam al-Mulk.\n\nDie Wirkung lag im Schrecken: Herrscher trugen Kettenhemden unter der Kleidung und ließen sich nicht allein sprechen. 1256 zerstörten die Mongolen unter Hülegü Alamut, und die Bibliothek verbrannte — deshalb kennen wir die Gemeinschaft fast nur durch die Berichte ihrer Feinde. Die Nizariten selbst verschwanden nicht: Sie bestehen als religiöse Gemeinschaft bis heute, mit dem Aga Khan als Imam und mehreren Millionen Angehörigen.",
+  "folgen": "Das Wort Assassine wanderte über die Kreuzfahrer in die europäischen Sprachen und bedeutet dort seither Attentäter. Damit ist der Name einer religiösen Gemeinschaft zum Wort für politischen Mord geworden — ein Vorgang, der sich bei Vandalen und Thugs wiederholt.\n\nDie Methode, mit Anschlägen auf Einzelne einen überlegenen Gegner zu treffen, wurde später vielfach beschrieben und zugeschrieben. Historiker warnen dabei vor dem verbreiteten Kurzschluss, die Nizariten seien die ersten Terroristen gewesen: Sie richteten sich gezielt gegen militärische und politische Führung, nicht gegen die Bevölkerung, was der wesentliche Unterschied ist.",
+  "strittig": "Die berühmtesten Bestandteile der Erzählung sind nicht belegt. Der Haschischkonsum, dem der Name entstammen soll, findet sich in keiner nizaritischen Quelle; die arabische Bezeichnung hashishiyya war ein Schimpfwort für Außenseiter, vergleichbar mit Pöbel, und muss nicht wörtlich verstanden werden. Der Paradiesgarten, in dem junge Männer betäubt aufwachten, um für den Auftrag bereit zu sein, stammt aus Marco Polos Reisebericht — er kam über hundert Jahre nach Hasans Tod durch die Region und gibt Hörensagen wieder. Auch die Zahl der Anschläge ist unsicher; die Listen stammen von gegnerischen Chronisten.",
+  "literatur": [
+    {
+      "titel": "Die Assassinen",
+      "autor": "Bernard Lewis",
+      "jahr": "1967",
+      "warum": "Die klassische Darstellung, die die Legenden von den Belegen trennt. Schmal und klar."
+    },
+    {
+      "titel": "Die Ismailiten",
+      "autor": "Farhad Daftary",
+      "jahr": "1990",
+      "warum": "Von einem Fachmann der Gemeinschaft selbst — ausführlich, und mit dem Kapitel über die Entstehung der Assassinen-Legende."
+    },
+    {
+      "titel": "Die Kreuzzüge aus arabischer Sicht",
+      "autor": "Amin Maalouf",
+      "jahr": "1983",
+      "warum": "Für den Rahmen: dieselben Jahrzehnte von der anderen Seite erzählt, aus arabischen Chroniken."
+    }
+  ],
+  "zahlen": [
+    {
+      "wert": "1090",
+      "was": "Einnahme von Alamut"
+    },
+    {
+      "wert": "166 Jahre",
+      "was": "Bestand des nizaritischen Burgenstaats bis 1256"
+    },
+    {
+      "wert": "1256",
+      "was": "Zerstörung Alamuts und Verbrennung der Bibliothek"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Assassin (Nizari Ismailis)",
+    "Bernard Lewis: The Assassins",
+    "Farhad Daftary: The Assassin Legends",
+    "Marco Polo: Il Milione (als Legendenquelle)"
+  ]
 }
 ];

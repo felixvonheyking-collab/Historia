@@ -2864,5 +2864,627 @@ const THEMEN = [
     "warum": "Der Text, der die Debatte des 20. Jahrhunderts prägte. Umfangreich, in Teilen zeitgebunden, in der Grundfrage unverändert aktuell."
    }
   ]
+ },
+ {
+  "id": "verbrechen",
+  "titel": "Verbrechen & Strafe",
+  "kurz": "Wer bestrafte wen, wofür — und wer entschied, was überhaupt ein Verbrechen ist.",
+  "einleitung": "Strafrecht ist die Geschichte davon, wer als Person zählt. Über Jahrtausende richtete sich die Strafe nach dem Stand des Opfers und des Täters, nicht nach der Tat: Dieselbe Verletzung kostete einen Adligen ein Bußgeld und einen Unfreien die Hand. Der Gedanke, dass Strafe der Person und nicht dem Rang gilt, dass sie verhältnismäßig sein soll und dass ein Zweifel dem Angeklagten zugutekommt, ist jünger als die Dampfmaschine. Dieser Querschnitt verfolgt beides — die Taten und die Verfahren, mit denen man sie beantwortete.",
+  "stationen": [
+   {
+    "jahr": -1754,
+    "titel": "Der Kodex Hammurapi",
+    "text": "Auf einer Stele in Susa gefunden, 282 Rechtssätze. Berühmt für Auge um Auge — tatsächlich gilt das nur zwischen Gleichgestellten. Verletzt ein Freier einen Sklaven, zahlt er dem Eigentümer; verletzt ein Sklave einen Freien, verliert er ein Körperteil. Der Kodex ist damit weniger ein Zeugnis der Härte als der Ungleichheit vor dem Recht.",
+    "vertiefung": "hammurapi"
+   },
+   {
+    "jahr": -621,
+    "titel": "Drakons Gesetze in Athen",
+    "text": "Athens erste schriftliche Gesetzessammlung, so streng, dass drakonisch bis heute ein Wort ist. Ihr eigentlicher Fortschritt: Sie stand geschrieben und war nachlesbar. Vorher entschieden Adelsfamilien nach ungeschriebener Überlieferung, und niemand konnte prüfen, ob sie sich daran hielten."
+   },
+   {
+    "jahr": -450,
+    "titel": "Die Zwölftafeln",
+    "text": "Rom schreibt sein Recht auf und stellt es öffentlich aus, nachdem die Plebejer es erzwungen hatten. Auch hier ist die Veröffentlichung wichtiger als der Inhalt: Recht, das man kennt, lässt sich einfordern."
+   },
+   {
+    "jahr": 71,
+    "titel": "Kreuzigung als Machtmittel",
+    "text": "Nach dem Spartacusaufstand ließ Rom rund 6.000 Gefangene entlang der Via Appia kreuzigen. Die Kreuzigung war keine gewöhnliche Strafe, sondern eine für Sklaven, Aufrührer und Provinziale — nie für römische Bürger. Ihre Wirkung lag im öffentlichen Sterben über Tage, sichtbar an der Hauptstraße.",
+    "vertiefung": "spartacus"
+   },
+   {
+    "jahr": 533,
+    "titel": "Das Corpus Iuris Civilis",
+    "text": "Justinian lässt tausend Jahre römischer Rechtsprechung ordnen. Darin steht der Satz, dass niemand wegen eines Gedankens gestraft werden soll, und die Beweisregel, dass die Last beim Ankläger liegt. Beides ging Jahrhunderte verloren und kehrte über die mittelalterlichen Rechtsschulen zurück."
+   },
+   {
+    "jahr": 1215,
+    "titel": "Habeas Corpus im Ansatz",
+    "text": "Die Magna Carta enthält den Satz, dass kein freier Mann verhaftet werden darf außer nach rechtmäßigem Urteil seiner Standesgenossen. Gemeint waren die Barone, nicht das Volk — aber der Satz wurde über Jahrhunderte immer weiter gelesen und ist die Wurzel des Verbots willkürlicher Haft.",
+    "vertiefung": "magna-carta"
+   },
+   {
+    "jahr": 1215,
+    "titel": "Das Ende des Gottesurteils",
+    "text": "Das Vierte Laterankonzil verbietet Priestern die Mitwirkung an Feuer- und Wasserproben. Damit bricht das bisherige Beweisverfahren zusammen: Wenn Gott nicht mehr urteilt, muss ein Gericht ermitteln. In England führte das zur Jury, auf dem Kontinent zum Inquisitionsverfahren mit Geständnis als Königsbeweis — und damit zur Folter."
+   },
+   {
+    "jahr": 1252,
+    "titel": "Folter wird für die Ketzerverfolgung erlaubt",
+    "text": "Papst Innozenz IV. gestattet mit der Bulle Ad extirpanda die Folter in Ketzerprozessen, mit Einschränkungen, die in der Praxis umgangen wurden. Das römische Recht hatte Folter gekannt, das frühe Mittelalter kaum — hier kehrt sie als Ermittlungsmittel zurück."
+   },
+   {
+    "jahr": 1532,
+    "titel": "Die Constitutio Criminalis Carolina",
+    "text": "Karls V. Halsgerichtsordnung, das erste reichsweite Strafrecht im deutschsprachigen Raum. Sie ist hart — Todesstrafe für Mord, Raub, Brandstiftung, Hexerei — und gleichzeitig ein Fortschritt: Sie regelt genau, wann gefoltert werden darf, verlangt Indizien vorher und verbietet Verurteilung ohne Geständnis oder zwei Zeugen."
+   },
+   {
+    "jahr": 1670,
+    "titel": "Die Galeeren als Strafe",
+    "text": "Frankreichs Ordonnance criminelle macht die Verurteilung zur Galeere zur Standardstrafe für Hunderte Delikte. Die Ruderer waren angekettet, die Sterblichkeit hoch; Strafe wird hier zum Wirtschaftsfaktor, weil der Staat Arbeitskraft braucht. Dasselbe Muster wiederholt sich bei Zuchthäusern, Deportation und Straflagern."
+   },
+   {
+    "jahr": 1764,
+    "titel": "Beccaria gegen Folter und Todesstrafe",
+    "text": "Cesare Beccaria veröffentlicht anonym Über Verbrechen und Strafen: Strafe soll abschrecken, nicht rächen, sie muss verhältnismäßig, schnell und sicher sein, Folter ist ein Beweismittel, das nur Schmerzresistenz messe, und die Todesstrafe sei unnötig. Das Buch wirkte in wenigen Jahren — Toskana schaffte die Todesstrafe 1786 als erster Staat ab.",
+    "vertiefung": "beccaria"
+   },
+   {
+    "jahr": 1787,
+    "titel": "Deportation nach Australien",
+    "text": "Die First Fleet bringt 750 Verurteilte nach Botany Bay. Bis 1868 werden rund 162.000 Menschen nach Australien deportiert, viele für Eigentumsdelikte. Deportation galt als milde Alternative zum Galgen — und war zugleich Kolonialpolitik mit Zwangsarbeitern."
+   },
+   {
+    "jahr": 1791,
+    "titel": "Benthams Panoptikum",
+    "text": "Jeremy Bentham entwirft ein Gefängnis, in dem ein einzelner Wächter von einem Turm aus in alle Zellen sehen kann, ohne selbst gesehen zu werden. Gebaut wurde es kaum, gedacht wurde es viel: Michel Foucault machte daraus 1975 das Bild moderner Kontrolle — Disziplin wirkt am besten, wenn man nicht weiß, ob gerade hingesehen wird."
+   },
+   {
+    "jahr": 1829,
+    "titel": "Die erste moderne Polizei",
+    "text": "Robert Peel gründet die Metropolitan Police in London — uniformiert, unbewaffnet, ohne militärischen Rang, mit dem Grundsatz, dass die Polizei die Öffentlichkeit ist und die Öffentlichkeit die Polizei. Vorher gab es Nachtwächter und private Kopfgeldjäger. Erst mit einer ermittelnden Polizei entsteht überhaupt die Möglichkeit, Serientaten als Serie zu erkennen."
+   },
+   {
+    "jahr": 1879,
+    "titel": "Bertillon vermisst Verbrecher",
+    "text": "Alphonse Bertillon führt in Paris die Anthropometrie ein: elf Körpermaße pro Person, in Karteikarten geordnet. Erstmals lässt sich eine festgenommene Person mit früheren Akten abgleichen. Die Methode war fehleranfällig und wurde von den Fingerabdrücken verdrängt — aber sie begründete die Idee der kriminalistischen Registratur."
+   },
+   {
+    "jahr": 1892,
+    "titel": "Fingerabdrücke werden Beweismittel",
+    "text": "Juan Vucetich in Argentinien und Francis Galton in England machen Fingerabdrücke systematisch verwendbar; 1892 führt ein Abdruck in Argentinien erstmals zur Überführung einer Mörderin. Damit verschiebt sich die Beweislast vom Geständnis zur Spur — der wichtigste Schritt gegen Folter, den keine moralische Debatte, sondern eine Technik bewirkte."
+   },
+   {
+    "jahr": 1901,
+    "titel": "Blutgruppen und die Spur am Tatort",
+    "text": "Karl Landsteiner beschreibt die Blutgruppen; ab 1915 lassen sich Blutspuren Gruppen zuordnen. Was vorher nur Blut war, wird zum Ausschlusskriterium. Die Linie führt weiter zum genetischen Fingerabdruck, den Alec Jeffreys 1984 entdeckt und der 1986 in England erstmals einen Verdächtigen entlastete, bevor er einen anderen überführte."
+   },
+   {
+    "jahr": 1948,
+    "titel": "Recht auf ein faires Verfahren",
+    "text": "Die Allgemeine Erklärung der Menschenrechte schreibt Unschuldsvermutung, Verbot der Folter und das Recht auf Verteidigung als weltweiten Anspruch fest. Rechtlich ist sie nicht bindend, praktisch ist sie die Grundlage aller späteren Konventionen — und der Maßstab, an dem sich Staaten messen lassen müssen."
+   },
+   {
+    "jahr": 1963,
+    "titel": "Wer keinen Anwalt bezahlen kann",
+    "text": "Der US-Oberste Gerichtshof entscheidet in Gideon v. Wainwright, dass jedem Angeklagten ein Verteidiger gestellt werden muss. Clarence Gideon hatte seine Beschwerde mit Bleistift aus dem Gefängnis geschrieben. Der Fall zeigt, wie spät die Selbstverständlichkeiten des Strafverfahrens entstanden sind."
+   },
+   {
+    "jahr": 1989,
+    "titel": "DNA befreit Unschuldige",
+    "text": "In den USA beginnt mit Gary Dotson die Reihe der Freilassungen durch DNA-Analyse; das Innocence Project zählt seither hunderte Fälle. Auffällig ist, was die Wiederaufnahmen gemeinsam haben: falsche Zeugenidentifizierung, fehlerhafte Gutachten und erzwungene Geständnisse. Es sind dieselben Fehlerquellen, die Beccaria 1764 benannte.",
+    "vertiefung": "dna-alte"
+   }
+  ],
+  "strittig": "Kriminalitätsstatistiken sind für die Zeit vor dem 19. Jahrhundert kaum vergleichbar: Sie zählen Anzeigen und Verfahren, nicht Taten, und beides hängt daran, wie dicht Verwaltung und Polizei sind. Die verbreitete Aussage, Gewalt sei über die Jahrhunderte stark zurückgegangen — von Steven Pinker prominent vertreten — stützt sich auf lokale Gerichtsakten und Skelettbefunde und ist in ihrer Größenordnung umstritten. Ebenso strittig ist die Wirkung der Todesstrafe: Vergleichsstudien zwischen Staaten mit und ohne finden überwiegend keinen abschreckenden Effekt, die Methodik solcher Vergleiche wird aber angegriffen.",
+  "quellen": [
+   "Encyclopaedia Britannica: criminal law; punishment; police",
+   "Cesare Beccaria: Dei delitti e delle pene, 1764",
+   "Constitutio Criminalis Carolina, 1532",
+   "Allgemeine Erklärung der Menschenrechte, 1948, Artikel 5 und 11",
+   "Innocence Project: Fallstatistiken, laufend aktualisiert"
+  ],
+  "literatur": [
+   {
+    "titel": "Überwachen und Strafen",
+    "autor": "Michel Foucault",
+    "jahr": "1975",
+    "warum": "Die einflussreichste Deutung des Übergangs von der Körperstrafe zum Gefängnis. Anspruchsvoll, teils überspitzt — aber man liest Strafrecht danach anders."
+   },
+   {
+    "titel": "Über Verbrechen und Strafen",
+    "autor": "Cesare Beccaria",
+    "jahr": "1764",
+    "warum": "Schmal, klar und in wenigen Jahren wirksamer als jede spätere Reformschrift. Immer noch lesbar."
+   },
+   {
+    "titel": "Die Geschichte der Strafe",
+    "autor": "Wolfgang Schild",
+    "jahr": "1997",
+    "warum": "Deutschsprachiger Überblick mit den Verfahren, Gerichten und Hinrichtungsarten im Detail."
+   }
+  ]
+ },
+ {
+  "id": "gift",
+  "titel": "Gift & Giftmischerinnen",
+  "kurz": "Die Waffe der Ohnmächtigen — und der Grund, warum die Chemie ins Gerichtssaal kam.",
+  "einleitung": "Gift hatte über Jahrhunderte einen besonderen Schrecken, weil es nicht nachweisbar war: Wer vergiftet wurde, starb wie an einer Krankheit, und wer vergiftete, brauchte keine Kraft, keine Waffe und keine Gelegenheit zum Zweikampf. Deshalb galt Gift als Waffe von Frauen, Sklaven und Höflingen — und deshalb wurde der Vorwurf so oft erhoben, wo nichts zu beweisen war. Die Geschichte des Giftes ist zur Hälfte eine Geschichte der Verdächtigungen und erst ab dem 19. Jahrhundert eine der Nachweise.",
+  "stationen": [
+   {
+    "jahr": -1550,
+    "titel": "Der Papyrus Ebers kennt die Wirkstoffe",
+    "text": "Die ägyptische Sammlung nennt Bleisalze, Opium, Bilsenkraut und Schierling mit Dosierungen. Heilmittel und Gift sind darin dieselben Stoffe in verschiedener Menge — eine Unterscheidung, die erst Paracelsus im 16. Jahrhundert auf den Satz brachte, allein die Dosis mache das Gift."
+   },
+   {
+    "jahr": -399,
+    "titel": "Sokrates trinkt den Schierling",
+    "text": "Athen vollstreckt Todesurteile mit gefleckten Schierling. Platons Schilderung — aufsteigende Lähmung von den Füßen, klarer Kopf bis zuletzt — passt pharmakologisch zum Wirkstoff Coniin und gilt als medizinisch glaubwürdig, auch wenn Platon literarisch gestaltet."
+   },
+   {
+    "jahr": -63,
+    "titel": "Mithridates und das Gegengift",
+    "text": "Der König von Pontos soll sich über Jahre an Gifte gewöhnt haben und ein Universalgegenmittel besessen haben, das Mithridatikum. Als er sich nach der Niederlage vergiften wollte, wirkte kein Gift mehr, und er ließ sich erstechen. Die Anekdote ist wohl Legende, das Rezept aber blieb: Mithridat wurde bis ins 18. Jahrhundert in Apotheken verkauft."
+   },
+   {
+    "jahr": 54,
+    "titel": "Locusta, Roms Giftmischerin von Staat",
+    "text": "Tacitus und Sueton berichten, Agrippina habe Claudius mit vergifteten Pilzen töten lassen und Nero anschließend die Giftmischerin Locusta beschäftigt, um den Thronrivalen Britannicus zu beseitigen. Sie wurde nach Neros Sturz hingerichtet. Ob die Vergiftungen stattfanden, ist nicht beweisbar — bezeugt ist, dass am Kaiserhof mit dieser Möglichkeit gerechnet wurde."
+   },
+   {
+    "jahr": 1140,
+    "titel": "Der erste Gesetzesversuch",
+    "text": "Roger II. von Sizilien verbietet den Verkauf von Arzneien ohne Prüfung — der Anfang der Apothekenaufsicht. Sie entstand nicht aus Sorge um Qualität, sondern weil derselbe Laden Gift und Medizin führte."
+   },
+   {
+    "jahr": 1419,
+    "titel": "Der Rat der Zehn führt Buch",
+    "text": "Venedigs Sicherheitsrat unterhielt nachweislich Akten über Giftaufträge, mit Namen der Zielpersonen und Honorarangeboten — überliefert sind Beschlüsse, in denen über Angebote von Giftmischern beraten wird. Gift war hier kein Verbrechen aus Leidenschaft, sondern ein Instrument der Außenpolitik.",
+    "vertiefung": "venedig"
+   },
+   {
+    "jahr": 1503,
+    "titel": "Die Borgia und die Cantarella",
+    "text": "Cesare und Lucrezia Borgia gelten als berühmteste Giftmörder der Geschichte, und die Belege sind dünn. Das Gift Cantarella wird erst Jahrzehnte später beschrieben, in Formeln, die chemisch nicht funktionieren. Alexander VI. und Cesare erkrankten 1503 gleichzeitig schwer; heute gilt Malaria als wahrscheinlichste Ursache. Lucrezias Ruf stammt weitgehend aus der Propaganda gegner Familien und aus der Romantik des 19. Jahrhunderts."
+   },
+   {
+    "jahr": 1531,
+    "titel": "Sieden als Strafe für Gift",
+    "text": "Englands Act of Poisoning erklärt Giftmord zum Hochverrat und schreibt das Sieden im Kessel vor. Die Härte hat einen Grund: Gift zerstörte das Vertrauen im Haushalt — Köchin, Diener, Ehefrau. Genau deshalb wurde es als Angriff auf die Ordnung selbst behandelt, nicht als Mord unter Gleichen."
+   },
+   {
+    "jahr": 1659,
+    "titel": "Die Affaire des poisons",
+    "text": "In Paris beginnt mit der Marquise de Brinvilliers, die Vater und Brüder mit Arsen tötete, die größte Giftaffäre Europas. Die Ermittlungen führen zu einem Netz von Wahrsagerinnen und Giftlieferantinnen um La Voisin und reichen bis an den Hof Ludwigs XIV. — die Mätresse Madame de Montespan wurde verdächtigt. 36 Menschen wurden hingerichtet, die Akten teils vom König verbrannt.",
+    "vertiefung": "affaire-des-poisons"
+   },
+   {
+    "jahr": 1775,
+    "titel": "Arsen wird nachweisbar",
+    "text": "Carl Wilhelm Scheele findet eine Reaktion, mit der Arsen chemisch angezeigt werden kann. Zum ersten Mal gibt es eine Antwort, die nicht auf Aussagen beruht. Bis dahin war das Erbschaftspulver — Arsenik, geschmacklos, in kleinen Mengen wie eine Magenerkrankung wirkend — praktisch straflos zu verwenden."
+   },
+   {
+    "jahr": 1836,
+    "titel": "Der Marshsche Nachweis",
+    "text": "James Marsh entwickelt einen Test, der noch winzige Arsenmengen in Gewebe sichtbar macht, ausgelöst durch einen Prozess, in dem er als Gutachter nichts beweisen konnte und der Angeklagte freikam. 1840 überführt der Test im Fall Lafarge in Frankreich erstmals eine Angeklagte. Die Toxikologie wird damit zum Fach — und Arsenmorde gehen messbar zurück."
+   },
+   {
+    "jahr": 1851,
+    "titel": "Gift wird reglementiert",
+    "text": "Der britische Arsenic Act verlangt Färbung von Arsenpulver, Registrierung des Verkaufs und Zeugen beim Kauf. Es ist die erste Regelung, die einen Stoff nicht verbietet, sondern seine Wege dokumentiert — dieselbe Logik, nach der heute Grundstoffe kontrolliert werden."
+   },
+   {
+    "jahr": 1889,
+    "titel": "Tödliche Tapeten",
+    "text": "Schweinfurter Grün, ein arsenhaltiges Pigment, färbte Tapeten, Kleider und Spielzeug. Ärzte berichteten über Jahrzehnte von Erkrankungen in grün tapezierten Zimmern; die Debatte endete erst mit dem Verzicht der Hersteller. Der bekannteste Verdacht betrifft Napoleons Tod auf St. Helena — in seinen Haaren wurde Arsen gefunden, doch der Wert liegt im Bereich der damaligen Umweltbelastung, und die Autopsie beschreibt Magenkrebs."
+   },
+   {
+    "jahr": 1934,
+    "titel": "Der Fall Nozière und die Grenzen des Gutachters",
+    "text": "Violette Nozière vergiftete in Paris ihre Eltern; der Fall wurde zum Prozess über Glaubwürdigkeit, weil sie schweren Missbrauch durch den Vater angab. Die Toxikologie konnte die Tat beweisen, über das Motiv sagte sie nichts — die Grenze jeder forensischen Methode."
+   },
+   {
+    "jahr": 1978,
+    "titel": "Der Regenschirm auf der Waterloo Bridge",
+    "text": "Der bulgarische Exilschriftsteller Georgi Markow stirbt in London, nachdem ihm eine winzige, mit Rizin gefüllte Metallkugel ins Bein geschossen wurde. Die Kugel wurde in der Autopsie gefunden. Der Fall zeigt die neue Form: Gift nicht mehr im Haushalt, sondern als Werkzeug von Staaten."
+   },
+   {
+    "jahr": 2006,
+    "titel": "Polonium und die Grenze des Nachweisbaren",
+    "text": "Alexander Litwinenko stirbt in London an Polonium-210, einem Alphastrahler, der in gewöhnlichen Untersuchungen unsichtbar bleibt; erst ein Zufallsverdacht führte zur richtigen Messung. Die britische Untersuchungskommission kam 2016 zu dem Ergebnis, die Tat sei wahrscheinlich vom russischen Staat gebilligt worden; Russland bestreitet das."
+   },
+   {
+    "jahr": 2018,
+    "titel": "Nowitschok in Salisbury",
+    "text": "Sergej und Julia Skripal werden mit einem Nervenkampfstoff angegriffen und überleben; eine unbeteiligte Frau stirbt später an einem weggeworfenen Behälter. Die OVCW bestätigte den Stoff. Die Episode führte zur Ausweitung der Chemiewaffenkonvention auf diese Stoffgruppe — das Recht folgt dem Nachweis, wie schon 1836."
+   }
+  ],
+  "strittig": "Bei kaum einem Deliktfeld sind die berühmten Fälle so unsicher wie hier. Die Borgia-Gifte, Locustas Aufträge, Napoleons Arsen und die Beteiligung der Madame de Montespan sind alle bestritten; bei mehreren wurden die Akten vernichtet. Ebenfalls umstritten ist die verbreitete Aussage, Gift sei überwiegend eine Frauenwaffe: Statistisch stimmt es, dass Frauen unter überführten Giftmördern häufiger vertreten sind als bei anderen Tötungsdelikten, doch die absolute Zahl ist klein, und historische Aufklärungsquoten sind zu niedrig, um daraus ein Muster zu belegen. Der Vorwurf der Giftmischerei wurde außerdem nachweislich als Mittel gegen unbequeme Frauen benutzt.",
+  "quellen": [
+   "Encyclopaedia Britannica: poison; toxicology; Affair of the Poisons",
+   "James Marsh, Edinburgh New Philosophical Journal 1836: Account of a method of separating small quantities of arsenic",
+   "The Litvinenko Inquiry, Report of Sir Robert Owen, 2016",
+   "OPCW: Report on the Salisbury incident, 2018",
+   "Tacitus: Annalen, Bücher 12 und 13"
+  ],
+  "literatur": [
+   {
+    "titel": "Das Handbuch der Giftmörder",
+    "autor": "Neil Bradbury",
+    "jahr": "2022",
+    "warum": "Elf Gifte, elf Fälle, und jeweils die Chemie dahinter verständlich erklärt. Der beste Einstieg."
+   },
+   {
+    "titel": "Das Jahrhundert des Giftes",
+    "autor": "Deborah Blum",
+    "jahr": "2010",
+    "warum": "Wie die Gerichtstoxikologie in New York entstand — spannend erzählt und methodisch genau."
+   },
+   {
+    "titel": "Die Affäre der Gifte",
+    "autor": "Anne Somerset",
+    "jahr": "2003",
+    "warum": "Der Pariser Skandal in ganzer Länge, mit dem, was die Akten hergeben und was nicht."
+   }
+  ]
+ },
+ {
+  "id": "folter",
+  "titel": "Folter & Hinrichtung",
+  "kurz": "Nicht Ausnahme, sondern Verfahren — und warum es abgeschafft wurde, lange bevor es verschwand.",
+  "einleitung": "Folter war über Jahrhunderte kein Verbrechen, sondern ein geregelter Verfahrensschritt: Sie stand in Gesetzbüchern, hatte Zuständigkeiten, Protokolle und Höchstgrenzen. Genau das macht sie erklärungsbedürftig — nicht die Grausamkeit einzelner, sondern die Logik eines Beweisrechts, das ohne Geständnis nicht verurteilen konnte. Und die Hinrichtung war bis ins 19. Jahrhundert ein öffentliches Ereignis mit Publikum, Ritual und Predigt. Die Abschaffung beider begann nicht mit Mitleid, sondern mit Zweifeln an ihrem Nutzen. Warnung: Dieser Abschnitt beschreibt Gewalt sachlich, aber ohne Ausschmückung.",
+  "stationen": [
+   {
+    "jahr": -450,
+    "titel": "Folter nur gegen Unfreie",
+    "text": "In Athen und später in Rom durfte an Sklaven gefoltert werden, an Bürgern nicht. Die Aussage eines Sklaven galt erst unter Folter als verwertbar — man traute ihr sonst nicht. Der Rang entschied also, ob ein Mensch als Zeuge oder als Erkenntnisquelle behandelt wurde."
+   },
+   {
+    "jahr": 33,
+    "titel": "Kreuzigung",
+    "text": "Die römische Hinrichtungsart für Sklaven und Aufrührer, angelegt auf langes öffentliches Sterben. Cicero nannte sie die grausamste und schändlichste Strafe und forderte, das Wort in Anwesenheit römischer Bürger nicht auszusprechen. Konstantin schaffte sie im 4. Jahrhundert ab — ein Beispiel dafür, wie Religion eine Strafform beendete, weil sie zum eigenen Symbol geworden war."
+   },
+   {
+    "jahr": 438,
+    "titel": "Der Kodex regelt die Peinigung",
+    "text": "Der Codex Theodosianus enthält Vorschriften, in welchen Fällen und wie lange gefoltert werden darf und wer davon ausgenommen ist — Kinder, Schwangere, hohe Beamte. Aus heutiger Sicht ein Widerspruch, aus damaliger eine Begrenzung."
+   },
+   {
+    "jahr": 1215,
+    "titel": "Warum die Folter zurückkam",
+    "text": "Mit dem Verbot der Gottesurteile brauchte das kontinentale Verfahren einen neuen Königsbeweis. Es wurde das Geständnis. Damit war die Folter nicht Ausdruck von Rohheit, sondern die logische Folge einer Beweisregel: Wo ohne Geständnis nicht verurteilt werden konnte, musste das Geständnis beschafft werden."
+   },
+   {
+    "jahr": 1252,
+    "titel": "Ad extirpanda",
+    "text": "Innozenz IV. erlaubt die Folter in Ketzerprozessen. Formal galten Einschränkungen: keine Verstümmelung, kein Todesrisiko, nur einmalige Anwendung. In der Praxis wurde die Einmaligkeit umgangen, indem man die Sitzung als Fortsetzung derselben Anwendung führte."
+   },
+   {
+    "jahr": 1478,
+    "titel": "Die spanische Inquisition — und was sie nicht war",
+    "text": "Die Behörde verfolgte vor allem getaufte Juden und Muslime, die des Rückfalls verdächtigt wurden. Ihr Ruf als schlimmste Institution Europas geht auf niederländische und englische Kriegspropaganda des 16. Jahrhunderts zurück. Die Aktenauswertung durch Henry Kamen ergibt: Folter war in einem Bruchteil der Verfahren belegt, Todesurteile in rund zwei Prozent — grausam genug, aber ein anderes Bild als die Legende. Umgekehrt war die Behörde in einem Punkt fortgeschritten: Sie protokollierte alles, weshalb wir es überhaupt wissen."
+   },
+   {
+    "jahr": 1532,
+    "titel": "Regeln für die peinliche Befragung",
+    "text": "Die Carolina schreibt vor, dass ohne hinreichende Anzeigen nicht gefoltert werden darf, dass das Geständnis anschließend außerhalb der Folter wiederholt und durch Tatdetails bestätigt werden muss. Die Vorschriften wurden vielfach missachtet — aber sie zeigen, dass die Unzuverlässigkeit erzwungener Aussagen bekannt war."
+   },
+   {
+    "jahr": 1600,
+    "titel": "Der Scharfrichter als Handwerk",
+    "text": "Hinrichtungen wurden von Berufsleuten vollstreckt, die zugleich Wunden behandelten, Abfälle entsorgten und als unehrlich galten — ihre Kinder durften keine Zunft betreten. Die Aufzeichnungen des Nürnberger Scharfrichters Franz Schmidt aus 45 Dienstjahren sind erhalten und die genaueste Quelle über die Praxis: 361 Hinrichtungen, mit Namen, Tat und Verfahren."
+   },
+   {
+    "jahr": 1631,
+    "titel": "Spee widerlegt das Verfahren",
+    "text": "Friedrich Spee zeigt in der Cautio Criminalis, dass ein Verfahren, das jeden überführen kann, niemanden überführt: Unter Folter gesteht jeder, und aus dem Geständnis folgen die nächsten Namen. Er greift nicht die Moral an, sondern die Beweislogik — deshalb wirkte er.",
+    "vertiefung": "hexenverfolgung-ende"
+   },
+   {
+    "jahr": 1740,
+    "titel": "Preußen schafft die Folter ab",
+    "text": "Friedrich II. beendet mit einem Erlass die Folter in Preußen fast vollständig; endgültig 1754. Es folgen Sachsen, Österreich 1776, Frankreich 1780. Die Begründung ist selten Mitleid, meist Nutzlosigkeit — die Geständnisse taugten nicht."
+   },
+   {
+    "jahr": 1757,
+    "titel": "Die letzte öffentliche Marter in Frankreich",
+    "text": "Die Vierteilung Robert-François Damiens' nach seinem Attentat auf Ludwig XV. wurde vor großem Publikum vollzogen und dauerte Stunden. Foucault beginnt sein Buch mit dieser Szene, um den Bruch zu zeigen: Vierzig Jahre später richtete derselbe Staat mit einer Maschine in Sekunden."
+   },
+   {
+    "jahr": 1789,
+    "titel": "Die Guillotine als Gleichheitsforderung",
+    "text": "Joseph-Ignace Guillotin schlug ein mechanisches Verfahren vor, damit alle Verurteilten gleich und schnell starben — vorher wurden Adlige enthauptet und Bürgerliche gehängt oder gerädert. Das Gerät war als humanitärer Fortschritt gedacht und wurde zum Symbol des Terrors: Zwischen 1793 und 1794 wurden allein in Paris rund 2.600 Menschen damit hingerichtet."
+   },
+   {
+    "jahr": 1793,
+    "titel": "Hinrichtung als Massenverfahren",
+    "text": "In der Schreckensherrschaft wird die Todesstrafe zum Verwaltungsvorgang mit Quoten und beschleunigten Verfahren; das Gesetz vom Juni 1794 strich die Verteidigung. Das Muster kehrt im 20. Jahrhundert wieder, wo Massentötung nicht mehr öffentlich, sondern bürokratisch organisiert wird.",
+    "vertiefung": "franzoesische-revolution"
+   },
+   {
+    "jahr": 1832,
+    "titel": "Das Ende des öffentlichen Rades",
+    "text": "In Europa verschwinden Rädern, Vierteilen und Verbrennen aus den Gesetzbüchern; Hinrichtungen werden zunehmend hinter Mauern verlegt — England 1868, Preußen 1851. Der Grund war nicht nur Milde: Die Behörden fürchteten die Menge, die zu Hinrichtungen kam, und den Spott, den missglückte Vollstreckungen auslösten."
+   },
+   {
+    "jahr": 1874,
+    "titel": "Die eiserne Jungfrau ist eine Fälschung",
+    "text": "Das berühmte Folterinstrument mit Innenstacheln wurde erstmals 1793 beschrieben und in Nürnberg im 19. Jahrhundert für Schaustellungen zusammengebaut, teils aus alten Einzelteilen. Kein mittelalterlicher Beleg existiert. Dasselbe gilt für einen Großteil der Instrumente in Folterkammer-Museen — eine Erfindung der Schauergeschichte, nicht des Mittelalters."
+   },
+   {
+    "jahr": 1929,
+    "titel": "Genfer Regeln für Gefangene",
+    "text": "Das Genfer Abkommen verbietet Zwang zur Aussage bei Kriegsgefangenen; sie müssen nur Name, Rang und Nummer angeben. Es ist der erste völkerrechtliche Schritt, dem 1949 die vier Abkommen und 1984 die Antifolterkonvention folgen."
+   },
+   {
+    "jahr": 1984,
+    "titel": "Die Antifolterkonvention",
+    "text": "Die UN-Konvention verbietet Folter ausnahmslos — auch im Krieg, auch im Notstand, auch auf Befehl. Sie ist eines der wenigen Verbote des Völkerrechts, das keine Abwägung zulässt. Über 170 Staaten sind beigetreten."
+   },
+   {
+    "jahr": 2004,
+    "titel": "Warum das Verbot ausnahmslos ist",
+    "text": "Die Bilder aus Abu Ghraib und die Debatte über verschärfte Verhörmethoden lösten die Frage neu aus, ob Folter in Ausnahmefällen zulässig sei. Der Bericht des US-Senats von 2014 kam zu dem Ergebnis, dass die Methoden keine verwertbaren Erkenntnisse brachten, die nicht anders zu erlangen waren — dasselbe Ergebnis, das Spee 1631 und die preußischen Juristen 1740 notierten."
+   }
+  ],
+  "strittig": "Die Zahl der Hinrichtungen in Europa vor 1800 lässt sich nur regional schätzen; überregionale Summen in populären Darstellungen sind Hochrechnungen. Die Wirkung der Todesstrafe auf Kriminalität ist empirisch umstritten, wobei die Mehrzahl der Vergleichsstudien keinen Abschreckungseffekt findet. Bei der spanischen Inquisition stehen Kamens Aktenauswertung und ältere, deutlich höhere Zahlen nebeneinander; die Größenordnung der Todesurteile gilt heute als geklärt, die Häufigkeit der Folter weniger. Und die Frage, ob Folter je verlässliche Erkenntnisse erbringt, wird von Nachrichtendiensten teils anders beantwortet als vom Senatsbericht 2014 — die Beleglage stützt den Bericht.",
+  "quellen": [
+   "Encyclopaedia Britannica: torture; capital punishment; Spanish Inquisition",
+   "UN-Konvention gegen Folter, 1984, Artikel 2",
+   "Constitutio Criminalis Carolina, 1532, Artikel 20 und 58",
+   "Henry Kamen: The Spanish Inquisition – A Historical Revision",
+   "Senate Select Committee on Intelligence: Study of the CIA's Detention and Interrogation Program, 2014"
+  ],
+  "literatur": [
+   {
+    "titel": "Der Scharfrichter",
+    "autor": "Joel F. Harrington",
+    "jahr": "2013",
+    "warum": "Rekonstruiert das Leben des Nürnberger Scharfrichters Franz Schmidt aus seinem eigenen Tagebuch. Menschlich und ohne Sensationslust."
+   },
+   {
+    "titel": "Überwachen und Strafen",
+    "autor": "Michel Foucault",
+    "jahr": "1975",
+    "warum": "Beginnt mit der Hinrichtung Damiens' und fragt, warum die Körperstrafe verschwand. Die einflussreichste Antwort, wenn auch nicht die einzige."
+   },
+   {
+    "titel": "Torture and the Law of Proof",
+    "autor": "John H. Langbein",
+    "jahr": "1977",
+    "warum": "Der Nachweis, dass Folter aus einer Beweisregel folgte und mit deren Änderung verschwand. Schmal und zwingend."
+   }
+  ]
+ },
+ {
+  "id": "kulte",
+  "titel": "Kulte & Sekten",
+  "kurz": "Wie geschlossene Gruppen entstehen, was sie zusammenhält — und wann der Vorwurf selbst zur Waffe wird.",
+  "einleitung": "Der Vorwurf, eine Gruppe sei ein gefährlicher Geheimkult, ist älter als jeder Kult: Rom erhob ihn gegen Bacchusanhänger und später gegen Christen, das Christentum gegen Ketzer, Kolonialverwaltungen gegen einheimische Bünde. Deshalb braucht dieser Querschnitt zwei Blicke gleichzeitig — auf die Gruppen, in denen Menschen tatsächlich zu Schaden kamen, und auf die Verfahren, mit denen Behörden Minderheiten zu Verschwörern machten. Beides steht hier nebeneinander, und es ist jeweils vermerkt, worauf sich unser Wissen stützt.",
+  "stationen": [
+   {
+    "jahr": -186,
+    "titel": "Rom verbietet die Bacchanalien",
+    "text": "Der Senat verbietet den Bacchuskult in Italien; ein erhaltener Bronzeerlass regelt die Einzelheiten. Livius schildert nächtliche Verbrechen, Vergiftungen und Verschwörung — die Vorwürfe folgen dem Muster, das später gegen Christen, Juden und Ketzer wiederkehrt. Was tatsächlich stattfand, wissen wir nicht; belegt ist nur die Repression, mit tausenden Verurteilungen."
+   },
+   {
+    "jahr": 64,
+    "titel": "Die Christen als Sekte",
+    "text": "Nach dem Brand Roms wurden Christen als Brandstifter hingerichtet. Tacitus nennt ihren Glauben einen verderblichen Aberglauben und berichtet gleichzeitig, sie seien nicht des Brandes, sondern des Hasses gegen das Menschengeschlecht überführt worden. Die Vorwürfe gegen sie — Kindermord, Kannibalismus, Inzest — sind dieselben, die Christen später gegen andere erhoben.",
+    "vertiefung": "kaiser-nero"
+   },
+   {
+    "jahr": 1090,
+    "titel": "Die Nizariten und das Wort Assassine",
+    "text": "Hasan-i Sabbah gründete in der Bergfestung Alamut eine schiitische Gemeinschaft, die politische Morde als Mittel gegen weit stärkere Gegner einsetzte — Täter handelten öffentlich und rechneten mit dem eigenen Tod. Die Geschichten von Haschischrauschen und einem vorgetäuschten Paradiesgarten stammen von Marco Polo und späteren Autoren, nicht aus nizaritischen Quellen; Alamuts Bibliothek wurde 1256 von den Mongolen verbrannt. Das Wort Assassine geht auf eine abwertende Fremdbezeichnung zurück.",
+    "vertiefung": "assassinen"
+   },
+   {
+    "jahr": 1209,
+    "titel": "Der Albigenserkreuzzug",
+    "text": "Gegen die Katharer in Südfrankreich wird ein Kreuzzug innerhalb der Christenheit geführt, mit Massakern wie in Béziers. Die Katharer werden fast ausschließlich durch die Akten ihrer Verfolger überliefert — ein Teil der neueren Forschung bestreitet inzwischen, dass sie eine organisierte Gegenkirche mit einheitlicher Lehre waren, und sieht darin eine Konstruktion der Inquisitoren."
+   },
+   {
+    "jahr": 1307,
+    "titel": "Die Templer",
+    "text": "Philipp IV. von Frankreich lässt die Templer an einem Tag verhaften und der Ketzerei, Sodomie und Götzenverehrung anklagen. Die Geständnisse entstanden unter Folter und wurden widerrufen, sobald die Folter aussetzte. Das 2007 veröffentlichte Chinon-Pergament zeigt, dass Papst Clemens V. die Führung 1308 insgeheim absolvierte. Der König hatte Schulden beim Orden; das Vermögen fiel an die Krone."
+   },
+   {
+    "jahr": 1534,
+    "titel": "Das Täuferreich in Münster",
+    "text": "Radikale Täufer übernehmen die Stadt, führen Gütergemeinschaft und Vielehe ein, und Jan van Leiden lässt sich zum König ausrufen. Nach 16 Monaten Belagerung wird die Stadt gestürmt, die Anführer hingerichtet und ihre Körper in Käfigen am Lambertikirchturm aufgehängt — die Käfige hängen dort bis heute. Der Fall wurde jahrhundertelang als Warnung gegen religiöse Schwärmerei erzählt und gegen alle Täufer verwendet, obwohl die Mehrheit von ihnen Gewaltlosigkeit lehrte."
+   },
+   {
+    "jahr": 1830,
+    "titel": "Der Thuggee-Vorwurf",
+    "text": "Die britische Kolonialverwaltung erklärte Reiseüberfälle in Indien zum Werk eines geheimen Würgerkults im Dienst der Göttin Kali und schuf eine eigene Behörde, die tausende Menschen verurteilte — Geständnisse stammten meist von Kronzeugen, die dadurch selbst freikamen. Dass Straßenräuberbanden existierten, ist unbestritten; die neuere Forschung, etwa bei Kim Wagner, hält den religiösen Kult für eine Konstruktion, die Massenverhaftungen rechtfertigte."
+   },
+   {
+    "jahr": 1890,
+    "titel": "Der Geistertanz und Wounded Knee",
+    "text": "Die Ghost-Dance-Bewegung versprach den Lakota die Wiederkehr der Büffel und das Ende der Fremdherrschaft — eine friedliche religiöse Erneuerung. US-Behörden lasen sie als Aufstandsvorbereitung, verboten sie und töteten am 29. Dezember 1890 bei Wounded Knee rund 250 bis 300 Menschen, überwiegend Unbewaffnete. Ein Lehrstück darüber, was passiert, wenn eine Behörde eine Religion für eine Verschwörung hält."
+   },
+   {
+    "jahr": 1955,
+    "titel": "Die Untersuchung geschlossener Gruppen beginnt",
+    "text": "Leon Festinger und Kollegen begleiteten verdeckt eine Gruppe, die den Weltuntergang für einen bestimmten Tag erwartete, und beobachteten, was nach dem Ausbleiben geschah: Die Überzeugung wurde nicht aufgegeben, sondern verstärkt, und die Gruppe begann zu werben. Daraus entstand die Theorie der kognitiven Dissonanz — eine der folgenreichsten Erklärungen dafür, warum widerlegte Überzeugungen zäher werden."
+   },
+   {
+    "jahr": 1969,
+    "titel": "Die Manson-Gruppe",
+    "text": "Eine kleine Kommune um Charles Manson begeht in Kalifornien mehrere Morde, angeblich um einen Rassenkrieg auszulösen. Der Prozess prägte den Begriff cult im amerikanischen Sprachgebrauch und die Vorstellung von willenloser Beeinflussung — eine Vorstellung, die die Forschung für zu einfach hält, weil sie die freiwilligen Schritte auf dem Weg hinein unsichtbar macht."
+   },
+   {
+    "jahr": 1978,
+    "titel": "Jonestown",
+    "text": "In der Siedlung des Peoples Temple in Guyana sterben am 18. November 1978 über 900 Menschen, darunter rund 300 Kinder, an Zyanid in Getränken. Aufnahmen der letzten Stunden sind erhalten und zeigen, dass es kein einheitlicher freier Entschluss war: Es gab Widerspruch, Bewaffnete am Rand und Kindern wurde das Gift verabreicht. Der Ausdruck von einem Kool-Aid trinken stammt hierher und verharmlost, was geschah."
+   },
+   {
+    "jahr": 1993,
+    "titel": "Waco",
+    "text": "Nach 51 Tagen Belagerung der Branch-Davidians-Siedlung endet der Zugriff des FBI mit einem Brand, in dem 76 Menschen sterben, darunter Kinder. Die Ursache des Feuers ist bis heute strittig; eine Sonderuntersuchung von 2000 kam zum Ergebnis, dass es aus dem Inneren gelegt wurde. Der Fall wirkte doppelt: Er wurde zum Argument gegen Sekten und zum Gründungsmythos amerikanischer Milizen — Timothy McVeigh nannte ihn 1995 als Motiv."
+   },
+   {
+    "jahr": 1994,
+    "titel": "Der Sonnentempel",
+    "text": "In der Schweiz und in Kanada sterben in mehreren Wellen 74 Mitglieder des Ordre du Temple Solaire, teils durch Selbsttötung, teils erschossen. Die Untersuchungen zeigten, dass Führungsfiguren Vermögen der Mitglieder abgezogen hatten — ein Muster, das sich in vielen Fällen wiederholt: Der wirtschaftliche Vorteil einzelner steht am Anfang, die Lehre folgt."
+   },
+   {
+    "jahr": 1995,
+    "titel": "Der Giftgasanschlag in Tokio",
+    "text": "Aum Shinrikyo versprüht Sarin in der Tokioter U-Bahn: 13 Tote, tausende Verletzte. Die Gruppe hatte Chemiker in eigenen Laboren und war Behörden bekannt, ohne dass eingegriffen wurde. Es ist der erste Fall, in dem eine private Gruppe einen Kampfstoff selbst herstellte und einsetzte, und er veränderte weltweit die Bewertung solcher Gruppen als Sicherheitsrisiko."
+   },
+   {
+    "jahr": 2004,
+    "titel": "Wie Menschen hineingeraten",
+    "text": "Die Forschung, etwa bei Eileen Barker und Janja Lalich, zeichnet ein anderes Bild als die Vorstellung von Gehirnwäsche: Menschen treten meist über bestehende Beziehungen ein, in Lebensphasen mit Umbruch, und die Bindung entsteht durch schrittweise Verpflichtungen, Abschneiden von Außenkontakten, gemeinsame Sprache und die Umdeutung von Zweifeln als eigenes Versagen. Zwang steht am Ende dieses Wegs, nicht am Anfang — was auch erklärt, warum Aussteigen so schwer ist."
+   },
+   {
+    "jahr": 2018,
+    "titel": "Zwang ohne Religion",
+    "text": "Der Prozess gegen NXIVM in den USA zeigt eine Gruppe, die sich als Seminaranbieter für Selbstoptimierung darstellte und in deren Kern Frauen mit erpressbaren Unterlagen gebunden und gebrandmarkt wurden. Der Fall ist wichtig, weil er ohne Religion und ohne Weltuntergang auskommt: Die Mechanik geschlossener Gruppen funktioniert auch mit Karriereversprechen."
+   }
+  ],
+  "strittig": "Der Begriff Sekte oder Kult hat keine wissenschaftliche Definition und wird in der Religionssoziologie überwiegend vermieden, weil er wertet statt zu beschreiben; gebräuchlich sind neue religiöse Bewegung und, für die problematischen Fälle, Beschreibungen der Kontrollmechanismen. Die Vorstellung einer Gehirnwäsche, die Menschen den Willen nimmt, wird von der Mehrheit der Forschung abgelehnt, ist in Gerichtsverfahren aber verwendet worden. Bei mehreren historischen Fällen — Bacchanalien, Katharer, Templer, Thuggee — ist bis heute offen, wie viel von der beschriebenen Gruppe überhaupt existierte und wie viel die Verfolger konstruierten. Und über Waco gibt es zwei Untersuchungsergebnisse mit unterschiedlicher Gewichtung der Verantwortung, die hier beide genannt sind.",
+  "quellen": [
+   "Encyclopaedia Britannica: cult; new religious movement; Aum Shinrikyo; Jonestown",
+   "Senatus consultum de Bacchanalibus, 186 v. Chr. (Bronzetafel, Wien)",
+   "Chinon-Pergament, Vatikanisches Geheimarchiv, veröffentlicht 2007",
+   "Leon Festinger u. a.: When Prophecy Fails, 1956",
+   "Report to the Deputy Attorney General on the Events at Waco (Danforth-Untersuchung), 2000"
+  ],
+  "literatur": [
+   {
+    "titel": "Bounded Choice",
+    "autor": "Janja Lalich",
+    "jahr": "2004",
+    "warum": "Wie geschlossene Gruppen Entscheidungen einengen, ohne den Willen zu brechen — die überzeugendste Erklärung, die ich kenne."
+   },
+   {
+    "titel": "Die Assassinen",
+    "autor": "Bernard Lewis",
+    "jahr": "1967",
+    "warum": "Trennt die Nizariten von der Legende. Älter, aber immer noch die klarste Darstellung."
+   },
+   {
+    "titel": "Thuggee – Banditry and the British in Early Nineteenth-Century India",
+    "autor": "Kim A. Wagner",
+    "jahr": "2007",
+    "warum": "Zeigt, wie aus Straßenraub ein Kult wurde — ein Musterfall dafür, wie Verwaltungen Feindbilder erzeugen."
+   }
+  ]
+ },
+ {
+  "id": "moerder",
+  "titel": "Mörder vor der Kriminalistik",
+  "kurz": "Fälle, in denen niemand die Serie erkennen konnte — und die Legenden, die daraus wurden.",
+  "einleitung": "Bevor es Polizeiakten, Fotografien, Fingerabdrücke und Telegrafen gab, war eine Serie von Taten kaum als Serie erkennbar: Jede Ortschaft ermittelte für sich, Verdächtige zogen weiter, Vermisste galten als abgereist. Deshalb sagen die berühmten Fälle des 15. bis 19. Jahrhunderts weniger über die Täter aus als über die Verfahren, mit denen man sie behandelte — und über die Zeitungen, die aus ihnen Ungeheuer machten. Dieser Abschnitt behandelt ausschließlich historisch abgeschlossene Fälle und verzichtet auf Tatschilderungen; wo die überlieferten Zahlen unglaubwürdig sind, steht es dabei.",
+  "stationen": [
+   {
+    "jahr": 1440,
+    "titel": "Gilles de Rais",
+    "text": "Der Marschall von Frankreich und Waffengefährte Jeanne d'Arcs wird der Ermordung von Kindern angeklagt, gesteht und wird hingerichtet. Der Prozess wurde von Herzog Johann V. geführt, der bei ihm hoch verschuldet war und dessen Güter erhielt; das Geständnis erfolgte unter Androhung der Folter und der Exkommunikation. Ein Teil der Forschung hält die Taten für erwiesen, ein anderer den Prozess für konstruiert — die Akten erlauben beides."
+   },
+   {
+    "jahr": 1580,
+    "titel": "Peter Stumpp und der Werwolfprozess",
+    "text": "In Bedburg bei Köln wird ein Bauer hingerichtet, nachdem er unter Folter gestanden hatte, als Werwolf sechzehn Menschen getötet zu haben. Der Fall ist ein Beispiel dafür, wie Tötungsdelikte im Rahmen des damaligen Weltbilds erklärt wurden: nicht als Verbrechen eines Menschen, sondern als Wirken des Teufels. Was tatsächlich geschah, ist aus einem Foltergeständnis nicht zu erschließen."
+   },
+   {
+    "jahr": 1611,
+    "titel": "Erzsébet Báthory und die Zahl 650",
+    "text": "Die ungarische Adlige wird auf ihrer Burg eingemauert, nachdem eine Untersuchung im Auftrag des Palatins Thurzó Zeugen befragt hatte. Ihre Bediensteten wurden gefoltert und hingerichtet, sie selbst nie vor Gericht gestellt — was ungewöhnlich ist und mit ihrem Rang und ihrem Vermögen zu tun hat, das die Krone schuldete. Die Zahl von 650 Opfern stammt aus einer einzigen Zeugenaussage über ein angebliches Verzeichnis, das nie gefunden wurde. Das Blutbad zur Verjüngung erscheint erst 1729 bei einem Jesuiten, hundert Jahre nach ihrem Tod."
+   },
+   {
+    "jahr": 1751,
+    "titel": "Zeitungen entdecken das Verbrechen",
+    "text": "Mit billigen Druckschriften und Flugblättern entsteht ein Markt für Hinrichtungsberichte, Geständnisse und Moritaten — oft mit erfundenen Details. Diese Broschüren sind für viele frühe Fälle unsere Hauptquelle, und sie waren nie zur Aufklärung, sondern zum Verkauf geschrieben. Wer historische Kriminalfälle liest, liest fast immer diese Schicht mit."
+   },
+   {
+    "jahr": 1828,
+    "titel": "Burke und Hare",
+    "text": "In Edinburgh töten zwei Männer sechzehn Menschen und verkaufen die Leichen an die Anatomie, die für den Unterricht auf Nachschub angewiesen war und nicht nach Herkunft fragte. Hare wurde Kronzeuge und kam frei, Burke wurde gehängt und öffentlich seziert; sein Skelett ist noch heute in Edinburgh ausgestellt. Der Fall führte 1832 zum Anatomy Act, der die legale Versorgung regelte — Kriminalität als Folge einer Marktlücke."
+   },
+   {
+    "jahr": 1849,
+    "titel": "Die Post macht Fahndung möglich",
+    "text": "Der Mörder John Tawell wird 1845 gefasst, weil seine Beschreibung dem Zug per Telegraf vorauseilte — der erste Fall dieser Art. Mit Telegraf, Eisenbahn und Fotografie entsteht die technische Grundlage überörtlicher Fahndung. Davor war Weiterziehen die zuverlässigste Verteidigung."
+   },
+   {
+    "jahr": 1888,
+    "titel": "Whitechapel",
+    "text": "Im Londoner Osten werden fünf Frauen getötet, deren Fälle heute als eine Reihe gelten. Der Name Jack the Ripper stammt aus einem Brief, den die Polizei damals für eine Fälschung eines Journalisten hielt. Der Fall wurde bedeutsam, weil erstmals die Presse landesweit mitfahndete, weil erstmals Tatortfotografie und Profilerstellung versucht wurden — der Polizeiarzt Thomas Bond schrieb 1888 eine Täterbeschreibung, die als frühestes Profil gilt — und weil die Berichte die Lebensverhältnisse in Whitechapel öffentlich machten."
+   },
+   {
+    "jahr": 1893,
+    "titel": "Das Mordschloss, das es nicht gab",
+    "text": "H. H. Holmes wurde in Chicago für einen Mord hingerichtet und gestand nach wechselnden Angaben 27 weitere, von denen mehrere Personen betrafen, die nachweislich lebten. Das berühmte Hotel mit Gaskammern, Rutschen und Verbrennungsofen stammt aus Zeitungsberichten von 1895 und aus einem Bestseller von 2003; bauliche Belege dafür fehlen. Nachweisbar ist ein Versicherungsbetrüger, der mindestens vier Menschen tötete — schlimm genug, aber eine andere Geschichte."
+   },
+   {
+    "jahr": 1896,
+    "titel": "Jane Toppan und der Beruf als Zugang",
+    "text": "Die amerikanische Krankenpflegerin gestand 31 Tötungen mit Morphin und Atropin. Der Fall gehört zu den ersten, in denen erkannt wurde, dass Pflegeberufe Zugang und Gelegenheit bieten und dass Sterbefälle dort selten hinterfragt werden. Die Konsequenzen — Dokumentationspflichten, Kontrolle von Betäubungsmitteln, Meldewege bei Häufungen — wurden erst im 20. Jahrhundert gezogen."
+   },
+   {
+    "jahr": 1913,
+    "titel": "Die Mordkommission entsteht",
+    "text": "In Berlin und anderen Großstädten werden feste Kommissionen für Tötungsdelikte eingerichtet, mit Tatortsicherung, Fotografie, Spurenkunde und Aktenvergleich. Erst damit wird sichtbar, was vorher unsichtbar war: Ähnlichkeiten zwischen Fällen an verschiedenen Orten."
+   },
+   {
+    "jahr": 1925,
+    "titel": "Fritz Haarmann und die Grenzen der Akte",
+    "text": "In Hannover wird Haarmann für die Tötung von 24 jungen Männern verurteilt; er war der Polizei als Spitzel bekannt und mehrfach aufgefallen. Der Fall wurde in Deutschland zum Anlass, Vermisstenmeldungen zentral zu erfassen — die Opfer waren überwiegend Obdachlose und Ausreißer, deren Verschwinden niemand meldete. Die soziale Unsichtbarkeit der Opfer ist bei fast allen diesen Fällen der eigentliche Ermittlungshemmnis."
+   },
+   {
+    "jahr": 1930,
+    "titel": "Peter Kürten und die Anfänge der Fallanalyse",
+    "text": "Der Düsseldorfer Fall führte zu einer der ersten systematischen Auswertungen von Tatmerkmalen über mehrere Fälle hinweg und zu einer Massenfahndung mit über einer Million überprüften Hinweisen. Die Ermittlungen scheiterten lange an fehlendem Abgleich zwischen Behörden — dieselbe Lücke, die später bei anderen Fällen wiederkehrte."
+   },
+   {
+    "jahr": 1972,
+    "titel": "Vom Profil zur Methode",
+    "text": "Das FBI beginnt, Täterprofile systematisch zu erstellen, später auf Grundlage von Interviews mit verurteilten Tätern. Die Wirksamkeit ist begrenzt: Überprüfungen zeigen, dass Profile bei der Eingrenzung helfen, aber selten zur Identifizierung führen, und dass ihre Trefferquote überschätzt wird. Sie sind ein Hilfsmittel, kein Beweismittel."
+   },
+   {
+    "jahr": 1986,
+    "titel": "Der genetische Fingerabdruck im Ermittlungsverfahren",
+    "text": "In Leicestershire werden erstmals Massentests mit DNA durchgeführt; über 5.000 Männer geben Proben ab. Das Verfahren entlastete zuerst einen Verdächtigen, der bereits gestanden hatte — ein falsches Geständnis — und überführte dann den Täter. Beides gehört zusammen: Die Technik, die überführt, ist dieselbe, die falsche Geständnisse aufdeckt.",
+    "vertiefung": "dna-alte"
+   },
+   {
+    "jahr": 1995,
+    "titel": "Warum wir uns diese Fälle erzählen",
+    "text": "Die Forschung zur Faszination am Verbrechen — etwa bei Scott Bonn — nennt mehrere Gründe: das kontrollierte Erschrecken, das Bedürfnis, Gefahr verstehen und dadurch vermeiden zu können, und die moralische Klarheit, die solche Geschichten anbieten. Gleichzeitig warnt sie vor der Verzerrung: Schwere Gewaltverbrechen sind selten, während ihre Erzähldichte sie häufig erscheinen lässt, und die Opfer verschwinden hinter den Tätern, deren Namen bleiben. Historische Fälle lassen sich untersuchen, ohne das zu wiederholen — jüngere kaum."
+   }
+  ],
+  "strittig": "Fast jede überlieferte Opferzahl in diesem Feld ist unsicher. Bei Báthory (650) und Holmes (27 bis 200) sind die hohen Zahlen nachweislich nicht belegbar; bei Gilles de Rais steht die Echtheit des Verfahrens selbst infrage. Geständnisse aus Folter oder aus dem Wunsch nach Aufmerksamkeit sind in mehreren Fällen die einzige Grundlage. Ebenfalls umstritten ist, ob Serientaten zugenommen haben oder ob nur ihre Erkennbarkeit gestiegen ist: Die dokumentierten Fallzahlen steigen ab dem späten 19. Jahrhundert genau dort, wo Polizeiverwaltung und Meldewesen entstehen — was Ursache und was Wirkung ist, lässt sich nicht trennen.",
+  "quellen": [
+   "Encyclopaedia Britannica: Jack the Ripper; H. H. Holmes; Elizabeth Báthory",
+   "Thomas Bond, Bericht an Scotland Yard, 10. November 1888",
+   "Anatomy Act 1832, Vereinigtes Königreich",
+   "Alec Jeffreys u. a., Nature 1985: Individual-specific fingerprints of human DNA",
+   "Kimberly Craft: Infamous Lady – The True Story of Countess Erzsébet Báthory (Quellenedition der Prozessaussagen)"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Fünf",
+    "autor": "Hallie Rubenhold",
+    "jahr": "2019",
+    "warum": "Erzählt die Whitechapel-Morde von den fünf getöteten Frauen aus, nicht vom Täter. Verändert den Blick auf das ganze Feld."
+   },
+   {
+    "titel": "The Italian Boy",
+    "autor": "Sarah Wise",
+    "jahr": "2004",
+    "warum": "Der Londoner Leichenhandel um 1830 und die Welt, in der Burke und Hare möglich waren. Vorzügliche Sozialgeschichte."
+   },
+   {
+    "titel": "Why We Love Serial Killers",
+    "autor": "Scott Bonn",
+    "jahr": "2014",
+    "warum": "Über die Faszination selbst und darüber, wie Medien Täter groß und Opfer klein machen."
+   }
+  ]
  }
 ];

@@ -262,6 +262,9 @@ const ERLAUBTE_ABWEICHUNGEN = [
   // (Deutschland); die Zeitleiste USA nennt das US-Wahlrecht von 1920.
   ["Frauenwahlrecht", "Wie das Frauenwahlrecht erkämpft wurde", "1918 Deutschland, 1920 USA – die Vertiefung behandelt beide"],
   ["Osmanische Herrschaft", "Osmanische Herrschaft beginnt", "1516 Levante, 1517 Ägypten"],
+  // Landsteiner notierte die Beobachtung 1900 in einer Fussnote und legte
+  // 1901 die ausfuehrliche Arbeit vor - beide Jahre sind gebraeuchlich.
+  ["Blutgruppen", "Blutgruppen und die Spur am Tatort", "1900 erste Notiz, 1901 die Arbeit"],
   ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Frankreich", "Oktober 1347 Sizilien, 1348 Frankreich"],
