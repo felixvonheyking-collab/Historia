@@ -147,7 +147,13 @@ function AufklappKarte({ jahr, titel, zeile, marken, akzent, anker, kinder, offe
           }, m))
         ),
         /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[17px] text-[#e0b84a] leading-snug" }, titel),
-        zeile && !offen && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-snug mt-1" }, zeile)
+        zeile && !offen && /* @__PURE__ */ React.createElement("p", {
+          className: "text-sm text-[#c2a06a] leading-snug mt-1",
+          // Auf zwei Zeilen beschneiden. Ohne das steht der ganze Text in
+          // der Zusammenfassung, und die Karte ist zugeklappt so hoch wie
+          // offen - genau das hatte die Messung gezeigt.
+          style: { display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }
+        }, zeile)
       ),
       /* @__PURE__ */ React.createElement(ChevronRight, {
         size: 18,
@@ -157,6 +163,27 @@ function AufklappKarte({ jahr, titel, zeile, marken, akzent, anker, kinder, offe
     ),
     offen && /* @__PURE__ */ React.createElement("div", { className: "px-4 pb-4 pt-1 border-t border-[#5c2018]" }, kinder)
   );
+}
+
+/* Nachladen in Haeppchen. Auf einem Telefon bleibt jede Liste
+   einspaltig; die zusaetzlichen Spalten greifen erst ab 1024 Pixel und
+   halfen dort gar nichts. Was hilft, ist weniger auf einmal: 30
+   Eintraege, dann auf Wunsch mehr. Wer sucht oder filtert, faengt wieder
+   bei 30 an - sonst muesste man sich durch alte Nachladungen scrollen. */
+function useNachladen(anzahl, schritt, alleZeigen) {
+  const [grenze, setGrenze] = useState(schritt || 30);
+  React.useEffect(() => { setGrenze(schritt || 30); }, [anzahl]);
+  // Ein Sprung aus der Suche zeigt auf einen bestimmten Eintrag. Waere
+  // der noch nicht geladen, fehlte der Anker und der Sprung ginge ins
+  // Leere - gemessen genau so beim ersten Versuch.
+  if (alleZeigen) return [anzahl, null];
+  const mehr = /* @__PURE__ */ React.createElement("div", null,
+    anzahl > grenze && /* @__PURE__ */ React.createElement("button", {
+      onClick: () => setGrenze(grenze + (schritt || 30)),
+      className: "mt-4 w-full rounded-md border border-[#5c2018] bg-[#5c1a1e] py-2.5 text-sm text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]"
+    }, "Weitere ", Math.min(schritt || 30, anzahl - grenze), " von ", anzahl - grenze, " zeigen")
+  );
+  return [grenze, mehr];
 }
 
 /* Sprungziele in langen Listen.
@@ -374,6 +401,17 @@ function VertiefungenTab({ ziel }) {
 
   const toggleGelesen = (id) => setGelesen((bisher) => bisher.includes(id) ? bisher.filter((x) => x !== id) : [...bisher, id]);
 
+  const q = suche.trim().toLowerCase();
+  const gefiltert = VERTIEFUNGEN.filter((v) => {
+    const passtEpoche = epochenFilter === "Alle" || v.epoche === epochenFilter;
+    const passtSuche = !q || (v.titel + " " + v.leitsatz + " " + v.region + " " + v.zeitraum).toLowerCase().includes(q);
+    return passtEpoche && passtSuche;
+  });
+  // Der Haken muss vor jeder Verzweigung stehen: Haken laufen bei jedem
+  // Durchlauf in derselben Reihenfolge, sonst bricht React ab. Genau das
+  // war Fehler 300, den der Klicktest gefunden hat.
+  const [grenze, mehr] = useNachladen(gefiltert.length, 40, !!ziel);
+
   if (offen) {
     const eintrag = VERTIEFUNGEN.find((v) => v.id === offen);
     if (eintrag) {
@@ -385,13 +423,6 @@ function VertiefungenTab({ ziel }) {
       });
     }
   }
-
-  const q = suche.trim().toLowerCase();
-  const gefiltert = VERTIEFUNGEN.filter((v) => {
-    const passtEpoche = epochenFilter === "Alle" || v.epoche === epochenFilter;
-    const passtSuche = !q || (v.titel + " " + v.leitsatz + " " + v.region + " " + v.zeitraum).toLowerCase().includes(q);
-    return passtEpoche && passtSuche;
-  });
 
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
@@ -420,7 +451,7 @@ function VertiefungenTab({ ziel }) {
     gefiltert.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Nichts gefunden."),
 
     /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
-      gefiltert.map((v) => {
+      gefiltert.slice(0, grenze).map((v) => {
         const epoche = EPOCHS.find((e) => e.id === v.epoche);
         const istGelesen = gelesen.includes(v.id);
         return /* @__PURE__ */ React.createElement("button", {
@@ -439,6 +470,7 @@ function VertiefungenTab({ ziel }) {
         );
       })
     ),
+    mehr,
 
     gelesen.length > 0 && /* @__PURE__ */ React.createElement("p", { className: "mt-6 text-xs text-[#bd9563]" },
       gelesen.length, " von ", VERTIEFUNGEN.length, " gelesen. Der Stand bleibt in diesem Browser gespeichert.")
@@ -2161,6 +2193,7 @@ function ZitateTab({ ziel }) {
   };
   const gefiltert = QUOTES.filter((q) => (statusFilter === "Alle" || q.status === statusFilter)
     && passt(q, ["text", "author", "note", "status"], suche));
+  const [grenze, mehr] = useNachladen(gefiltert.length, 30, !!ziel);
   const falsche = QUOTES.filter((q) => q.status === "falsch zugeschrieben" || q.status === "falsch zitiert").length;
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" }, QUOTES.length, " historische Zitate \u2014 jedes mit einer Angabe dazu, wie gut es belegt ist."),
@@ -2174,7 +2207,7 @@ function ZitateTab({ ziel }) {
       }, s, s === "Alle" ? "" : ` (${QUOTES.filter((q) => q.status === s).length})`))
     ),
     /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" },
-      gefiltert.map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(q.text), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" },
+      gefiltert.slice(0, grenze).map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(q.text), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" },
         /* @__PURE__ */ React.createElement("span", { className: "inline-block text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5 mb-2", style: stil(q.status) }, q.status),
         /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug mb-2" }, "\u201E", q.text, '"'),
         /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d4af37] font-medium" }, q.author),
@@ -2247,6 +2280,7 @@ function MythenTab({ ziel }) {
     (m) => (cat === "Alle" || m.category === cat) && (typeFilter === "Alle" || m.type === typeFilter)
       && passt(m, ["title", "text", "category", "type", "quelle"], suche)
   );
+  const [grenze, mehr] = useNachladen(filtered.length, 30, !!ziel);
   const typeStyle = (t) => {
     if (t === "Mythos") return { backgroundColor: "#6b2024", color: "#e2a45c", borderColor: "#8a3020" };
     if (t === "Kuriosum") return { backgroundColor: "#3a2a0a", color: "#f0c869", borderColor: "#bd9563" };
@@ -2268,24 +2302,40 @@ function MythenTab({ ziel }) {
       className: `px-2.5 py-1.5 rounded text-xs font-medium border ${typeFilter === t ? "bg-[#5c1a1e] text-[#f0d878] border-[#e0b84a]" : "border-[#5c2018] text-[#c2a06a]"}`
     },
     t
-  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(m.title), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#bd9563] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")));
+  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, filtered.slice(0, grenze).map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(m.title), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#bd9563] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")), mehr);
 }
 function PersonenTab() {
   const [query, setQuery] = useState("");
   const all = useMemo(
-    () => EPOCHS.flatMap((ep) => ep.figures.map((f) => ({ ...f, epochName: ep.name, color: ep.color }))),
+    () => EPOCHS.flatMap((ep) => ep.figures.map((f) => ({ ...f, epochName: ep.name, akzent: ep.accent }))),
     []
   );
-  const filtered = all.filter((f) => f.name.toLowerCase().includes(query.toLowerCase()));
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "relative mb-2 max-w-sm" }, /* @__PURE__ */ React.createElement(Search, { size: 15, className: "absolute left-3 top-1/2 -translate-y-1/2 text-[#bd9563]" }), /* @__PURE__ */ React.createElement(
-    "input",
-    {
-      value: query,
-      onChange: (e) => setQuery(e.target.value),
-      placeholder: "Person suchen\u2026",
-      className: "w-full pl-9 pr-3 py-2 rounded-md bg-[#5c1a1e] border border-[#5c2018] text-[#e0b84a] text-sm placeholder-[#bd9563] focus:outline-none focus:border-[#d4af37]"
-    }
-  )), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#bd9563] mb-4 font-mono" }, all.length, " Pers\xF6nlichkeiten insgesamt"), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, filtered.map((f, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4", style: { borderLeft: `3px solid ${f.color}` } }, /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, f.name), /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs mb-1", style: { color: f.color } }, f.years), /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#bd9563] mb-2" }, f.epochName), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, f.text))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")));
+  // Suche jetzt auch im Text und in der Epoche, nicht nur im Namen -
+  // "Feldherr" oder "Antike" fand vorher nichts.
+  const filtered = all.filter((f) => passt(f, ["name", "years", "text", "epochName"], query));
+  const [grenze, mehr] = useNachladen(filtered.length, 30);
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement(Suchfeld, {
+      wert: query, setWert: setQuery, platzhalter: "Person, Jahr oder Stichwort suchen …",
+      anzahl: all.length, gefunden: filtered.length
+    }),
+    !query && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#bd9563] mb-4 font-mono" },
+      all.length, " Persönlichkeiten insgesamt · die Farbe am Rand nennt die Epoche"),
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" },
+      filtered.slice(0, grenze).map((f, i) => /* @__PURE__ */ React.createElement("div", {
+        key: i,
+        className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4",
+        style: { borderLeft: "3px solid " + f.akzent }
+      },
+        /* @__PURE__ */ React.createElement("p", { className: "font-semibold text-[#e0b84a]" }, f.name),
+        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs mb-1", style: { color: f.akzent } }, f.years),
+        /* @__PURE__ */ React.createElement("p", { className: "text-xs uppercase tracking-wide text-[#bd9563] mb-2" }, f.epochName),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, f.text)
+      ))
+    ),
+    mehr,
+    filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")
+  );
 }
 function NationenTab() {
   const [suche, setSuche] = useState("");
@@ -2605,15 +2655,34 @@ function VerblueffendTab({ ziel }) {
   useSprungziel(ziel);
   const [suche, setSuche] = useState("");
   const [shown, setShown] = useState(SURPRISING_FACTS.map((_, i) => i).sort(() => Math.random() - 0.5));
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mb-5 gap-3" }, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] max-w-xl" }, SURPRISING_FACTS.length, " kuriose, \xFCberraschende und wenig bekannte historische Zusammenh\xE4nge."), /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      onClick: () => setShown([...shown].sort(() => Math.random() - 0.5)),
-      className: "flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-[#5c2018] text-[#c2a06a] text-sm hover:text-[#d8c690] shrink-0"
-    },
-    /* @__PURE__ */ React.createElement(RotateCcw, { size: 14 }),
-    " Mischen"
-  )), /* @__PURE__ */ React.createElement(Suchfeld, { wert: suche, setWert: setSuche, platzhalter: "Stichwort suchen \u2026", anzahl: SURPRISING_FACTS.length, gefunden: shown.filter((i) => passt({ t: SURPRISING_FACTS[i] }, ["t"], suche)).length }), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, shown.filter((i) => passt({ t: SURPRISING_FACTS[i] }, ["t"], suche)).map((i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(SURPRISING_FACTS[i]), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4 flex gap-3" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 16, className: "text-[#d4af37] shrink-0 mt-0.5" }), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] leading-relaxed" }, SURPRISING_FACTS[i])))));
+  const sichtbar = shown.filter((i) => passt({ t: SURPRISING_FACTS[i] }, ["t"], suche));
+  const [grenze, mehr] = useNachladen(sichtbar.length, 30, !!ziel);
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mb-3 gap-3" },
+      /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] max-w-xl" },
+        SURPRISING_FACTS.length, " kuriose, überraschende und wenig bekannte historische Zusammenhänge."),
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: () => setShown([...shown].sort(() => Math.random() - 0.5)),
+        className: "flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-[#5c2018] text-[#c2a06a] text-sm hover:text-[#d8c690] shrink-0"
+      }, /* @__PURE__ */ React.createElement(RotateCcw, { size: 14 }), " Mischen")
+    ),
+    /* @__PURE__ */ React.createElement(Suchfeld, {
+      wert: suche, setWert: setSuche, platzhalter: "Stichwort suchen …",
+      anzahl: SURPRISING_FACTS.length, gefunden: sichtbar.length
+    }),
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" },
+      sichtbar.slice(0, grenze).map((i) => /* @__PURE__ */ React.createElement("div", {
+        key: i,
+        "data-anker": ankerName(SURPRISING_FACTS[i]),
+        className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4 flex gap-3"
+      },
+        /* @__PURE__ */ React.createElement(Sparkles, { size: 16, className: "text-[#d4af37] shrink-0 mt-0.5" }),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] leading-relaxed" }, SURPRISING_FACTS[i])
+      ))
+    ),
+    mehr,
+    sichtbar.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Nichts gefunden.")
+  );
 }
 function Historia() {
   // Der zuletzt geoeffnete Bereich bleibt ueber Sitzungen hinweg erhalten.

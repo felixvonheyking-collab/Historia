@@ -6,3 +6,4 @@
 .text-\[\#bd9563\]{--tw-text-opacity:1;color:rgb(189 149 99/var(--tw-text-opacity,1))}.placeholder-\[\#bd9563\]::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(189 149 99/var(--tw-placeholder-opacity,1))}.placeholder-\[\#bd9563\]::placeholder{--tw-placeholder-opacity:1;color:rgb(189 149 99/var(--tw-placeholder-opacity,1))}
 .items-start{align-items:flex-start}.pb-4{padding-bottom:1rem}.pt-1{padding-top:.25rem}
 @media (min-width:1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}
