@@ -222,7 +222,11 @@ function pruefeAppSyntax() {
 
 function pruefeKlassen() {
   const app = fs.readFileSync(path.join(WURZEL, "app.js"), "utf8");
-  const css = fs.readFileSync(path.join(WURZEL, "tailwind.css"), "utf8");
+  // Nicht jede Klasse kommt aus Tailwind: app.js hat einen eigenen
+  // Style-Block fuer Schriften und Sonderfaelle. Was dort definiert ist,
+  // gilt genauso - sonst meldet die Pruefung eigene Regeln als Fehler.
+  const eigeneStile = (app.match(/React\.createElement\("style", null, `([\s\S]*?)`\)/) || [])[1] || "";
+  const css = fs.readFileSync(path.join(WURZEL, "tailwind.css"), "utf8") + "\n" + eigeneStile;
   const klassen = new Set();
   const re = /className:\s*(?:"([^"]*)"|`([^`]*)`)/g;
   let m;
@@ -232,7 +236,7 @@ function pruefeKlassen() {
   // Tailwind schreibt Sonderzeichen im Selektor mit vorangestelltem Backslash
   const alsSelektor = (k) => "." + k.replace(/[^a-zA-Z0-9_-]/g, (c) => "\\" + c);
   const fehlend = [...klassen].filter((k) => !css.includes(alsSelektor(k)));
-  fehlend.sort().forEach((k) => meldeFehler("CSS-Klasse ohne Regel in tailwind.css: " + k));
+  fehlend.sort().forEach((k) => meldeFehler("CSS-Klasse ohne Regel in tailwind.css oder im Style-Block von app.js: " + k));
   return { geprueft: klassen.size, fehlend: fehlend.length };
 }
 

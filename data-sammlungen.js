@@ -7,12 +7,70 @@
 
 const SCHLUESSELMOMENTE = [
  {
+  "year": -3300,
+  "title": "Ötzi stirbt am Tisenjoch",
+  "category": "Kultur",
+  "text": "Der Fund von 1991 liefert die dichteste Momentaufnahme eines Menschenlebens der Kupferzeit – bis hin zu seiner letzten Mahlzeit und dem Pfeil in seiner Schulter."
+ },
+ {
   "year": -3200,
   "title": "Erfindung der Schrift",
   "category": "Erfindung",
   "text": "Mit der Keilschrift und den Hieroglyphen wird Wissen erstmals dauerhaft speicher- und übertragbar – die Voraussetzung für Verwaltung, Recht, Wissenschaft und Geschichtsschreibung selbst.",
   "vertiefung": "erfindung-schrift",
   "thema": "kommunikation"
+ },
+ {
+  "year": -3100,
+  "title": "Vereinigung Ober- und Unterägyptens",
+  "category": "Politischer Umbruch",
+  "text": "Menes/Narmer eint zwei Königreiche zu einem der ersten Territorialstaaten der Geschichte – Grundlage für 3000 Jahre pharaonische Kontinuität."
+ },
+ {
+  "year": -3000,
+  "category": "Erfindung",
+  "text": "Das Rad taucht zunächst nicht im Verkehr auf, sondern als Töpferscheibe. Erst später wird daraus das Wagenrad – eine Erfindung, die den Transport von Lasten und damit Handel und Krieg grundlegend verändert.",
+  "title": "Rad und Töpferscheibe",
+  "thema": "energie"
+ },
+ {
+  "year": -1754,
+  "category": "Politischer Umbruch",
+  "title": "Kodex Hammurapi",
+  "text": "Der babylonische König lässt Rechtssätze in Stein hauen und öffentlich aufstellen. Entscheidend ist weniger der Inhalt als das Prinzip: Recht wird nachprüfbar, weil es geschrieben und sichtbar ist.",
+  "thema": "recht"
+ },
+ {
+  "year": -1754,
+  "title": "Der Codex Hammurabi",
+  "category": "Recht",
+  "text": "Die umfangreichste erhaltene Gesetzessammlung der Bronzezeit wird auf eine Stele gemeißelt und öffentlich aufgestellt: Recht wird nachlesbar.",
+  "thema": "recht"
+ },
+ {
+  "year": -1274,
+  "title": "Schlacht bei Kadesch & erster Friedensvertrag",
+  "category": "Wendepunkt im Krieg",
+  "text": "Nach der größten Streitwagenschlacht der Geschichte schließen Ägypter und Hethiter den ältesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit."
+ },
+ {
+  "year": -776,
+  "title": "Erste Olympische Spiele",
+  "category": "Kultur",
+  "text": "Ein religiös-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause für Wettkampfkultur bis heute."
+ },
+ {
+  "year": -600,
+  "category": "Erfindung",
+  "title": "Erfindung der Münze",
+  "text": "In Lydien entstehen erste geprägte Münzen aus Elektron. Geld als genormtes, staatlich garantiertes Tauschmittel macht Handel über Vertrauensgrenzen hinweg möglich.",
+  "thema": "geld"
+ },
+ {
+  "year": -539,
+  "title": "Kyros nimmt Babylon",
+  "category": "Herrschaft",
+  "text": "Der Kyros-Zylinder verkündet die Rückkehr verschleppter Gruppen – oft als erste Menschenrechtserklärung bezeichnet, tatsächlich ein Text persischer Herrschaftslegitimation."
  },
  {
   "year": -508,
@@ -23,6 +81,13 @@ const SCHLUESSELMOMENTE = [
   "thema": "recht"
  },
  {
+  "year": -221,
+  "title": "Erste Reichseinigung Chinas",
+  "category": "Politischer Umbruch",
+  "text": "Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute.",
+  "vertiefung": "qin-einigung"
+ },
+ {
   "year": -218,
   "title": "Hannibal überquert die Alpen",
   "category": "Wendepunkt im Krieg",
@@ -30,10 +95,31 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "karthago"
  },
  {
+  "year": -44,
+  "title": "Ermordung Caesars",
+  "category": "Herrschaft",
+  "text": "Der Versuch, die Republik zu retten, beschleunigt ihr Ende: Vierzehn Jahre später ist Rom eine Monarchie."
+ },
+ {
   "year": 33,
   "title": "Entstehung des Christentums",
   "category": "Religion",
   "text": "Aus einer kleinen jüdischen Reformbewegung wird binnen dreier Jahrhunderte die Staatsreligion Roms – und später die prägende religiöse Kraft des Abendlandes."
+ },
+ {
+  "year": 105,
+  "title": "Erfindung des Papiers",
+  "category": "Erfindung",
+  "text": "Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus.",
+  "thema": "kommunikation",
+  "vertiefung": "china-erfindungen"
+ },
+ {
+  "year": 105,
+  "category": "Erfindung",
+  "title": "Papier in China",
+  "text": "Dem Hofbeamten Cai Lun wird die Verbesserung der Papierherstellung zugeschrieben. Über die islamische Welt erreicht das Verfahren erst rund tausend Jahre später Europa.",
+  "thema": "kommunikation"
  },
  {
   "year": 476,
@@ -43,12 +129,111 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "ende-westrom"
  },
  {
+  "year": 476,
+  "category": "Wendepunkt",
+  "title": "Absetzung des letzten Westkaisers",
+  "text": "Odoaker setzt Romulus Augustulus ab. Zeitgenossen sahen darin kaum einen Einschnitt – das Datum wurde erst von späteren Historikern zur Epochengrenze erhoben.",
+  "vertiefung": "ende-westrom"
+ },
+ {
+  "year": 622,
+  "category": "Religion",
+  "title": "Hidschra",
+  "text": "Mohammeds Auswanderung von Mekka nach Medina markiert den Beginn der islamischen Zeitrechnung – ein Kalender, der von einem politischen Neuanfang aus zählt, nicht von einer Geburt.",
+  "vertiefung": "islamische-expansion"
+ },
+ {
+  "year": 751,
+  "title": "Schlacht am Talas",
+  "category": "Konflikt",
+  "text": "Der Vormarsch der Tang nach Westen endet. China zieht sich für ein Jahrtausend aus Zentralasien zurück.",
+  "vertiefung": "seidenstrasse"
+ },
+ {
+  "year": 800,
+  "category": "Politischer Umbruch",
+  "title": "Kaiserkrönung Karls des Großen",
+  "text": "Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."
+ },
+ {
+  "year": 868,
+  "title": "Ältestes datiertes gedrucktes Buch",
+  "category": "Erfindung",
+  "text": "Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern.",
+  "thema": "kommunikation"
+ },
+ {
+  "year": 868,
+  "title": "Das älteste datierte gedruckte Buch",
+  "category": "Erfindung",
+  "text": "Das chinesische Diamant-Sutra trägt ein Datum und den Vermerk, es sei zur freien Verteilung bestimmt – Druck und Wissensfreiheit treten gemeinsam auf.",
+  "thema": "kommunikation"
+ },
+ {
+  "year": 1044,
+  "title": "Erfindung des Schießpulvers",
+  "category": "Erfindung",
+  "text": "Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend.",
+  "vertiefung": "china-erfindungen"
+ },
+ {
+  "year": 1088,
+  "title": "Gründung der ersten europäischen Universität",
+  "category": "Kultur",
+  "text": "Die Universität von Bologna entsteht als älteste durchgehend bestehende Universität Europas – Grundstein institutionalisierter höherer Bildung.",
+  "thema": "kommunikation"
+ },
+ {
+  "year": 1204,
+  "title": "Plünderung Konstantinopels durch Kreuzfahrer",
+  "category": "Wendepunkt im Krieg",
+  "text": "Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – ein Verrat, der Byzanz dauerhaft schwächt und den Fall an die Osmanen 1453 vorbereitet.",
+  "vertiefung": "kreuzzuege"
+ },
+ {
+  "year": 1206,
+  "title": "Dschingis Khan wird ausgerufen",
+  "category": "Herrschaft",
+  "text": "Aus rivalisierenden Steppenverbänden wird ein Staat. Innerhalb einer Generation entsteht das größte zusammenhängende Landreich der Geschichte.",
+  "vertiefung": "mongolisches-reich"
+ },
+ {
+  "year": 1215,
+  "category": "Politischer Umbruch",
+  "title": "Magna Carta",
+  "text": "König Johann muss zugestehen, dass auch der Herrscher an Recht gebunden ist – ein Satz, der über Jahrhunderte weiterwirkt, obwohl das Dokument zunächst Adelsinteressen sicherte.",
+  "thema": "recht"
+ },
+ {
+  "year": 1258,
+  "title": "Mongolische Zerstörung Bagdads",
+  "category": "Katastrophe",
+  "text": "Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der größten kulturellen Katastrophen der Geschichte.",
+  "vertiefung": "mongolisches-reich"
+ },
+ {
+  "year": 1324,
+  "title": "Mansa Musas Pilgerfahrt",
+  "category": "Wirtschaft",
+  "text": "Der Herrscher Malis verschenkt in Kairo so viel Gold, dass dessen Wert dort über Jahre gedrückt bleibt – Westafrika tritt ins europäische Weltbild.",
+  "vertiefung": "mali-reich",
+  "thema": "geld"
+ },
+ {
   "year": 1347,
   "title": "Der Schwarze Tod",
   "category": "Katastrophe",
   "text": "Ein Drittel der europäischen Bevölkerung stirbt innerhalb weniger Jahre – der dadurch entstehende Arbeitskräftemangel verschiebt langfristig die Machtverhältnisse zwischen Adel und einfachem Volk.",
   "vertiefung": "schwarzer-tod",
   "thema": "medizin"
+ },
+ {
+  "year": 1450,
+  "category": "Wissenschaft",
+  "title": "Der Buchdruck",
+  "text": "Gutenbergs bewegliche Lettern senken den Buchpreis binnen weniger Jahrzehnte um zwei Drittel. Wissen wird erstmals in großer Zahl vergleichbar – und damit überprüfbar.",
+  "vertiefung": "buchdruck",
+  "thema": "kommunikation"
  },
  {
   "year": 1453,
@@ -65,12 +250,78 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "columbian-exchange"
  },
  {
+  "year": 1492,
+  "title": "Fall von Granada",
+  "category": "Politischer Umbruch",
+  "text": "Das Ende von 800 Jahren islamischer Präsenz in Spanien fällt zufällig mit dem Beginn der europäischen Expansion nach Amerika zusammen."
+ },
+ {
+  "year": 1492,
+  "title": "Ende von Al-Andalus",
+  "category": "Herrschaft",
+  "text": "Mit dem Fall Granadas endet fast achthundert Jahre islamische Herrschaft in Spanien. Im selben Jahr werden Juden vertrieben und Kolumbus segelt los."
+ },
+ {
+  "year": 1494,
+  "title": "Vertrag von Tordesillas",
+  "category": "Politischer Umbruch",
+  "text": "Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."
+ },
+ {
+  "year": 1500,
+  "title": "Der Kolumbianische Austausch",
+  "category": "Wendepunkt",
+  "text": "Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen.",
+  "vertiefung": "columbian-exchange",
+  "thema": "ernaehrung"
+ },
+ {
   "year": 1517,
   "title": "Beginn der Reformation",
   "category": "Religion",
   "text": "Luthers Thesen spalten die westliche Christenheit dauerhaft und lösen jahrhundertelange religiöse und politische Konflikte in Europa aus.",
   "vertiefung": "reformation",
   "thema": "kommunikation"
+ },
+ {
+  "year": 1543,
+  "category": "Wissenschaft",
+  "title": "Kopernikus stellt die Erde beiseite",
+  "text": "In 'De revolutionibus' rückt Kopernikus die Sonne ins Zentrum. Der Bruch liegt weniger in der Astronomie als im Selbstbild: Der Mensch wohnt nicht mehr im Mittelpunkt."
+ },
+ {
+  "year": 1555,
+  "title": "Augsburger Religionsfrieden",
+  "category": "Religion",
+  "text": "Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen – ein früher Schritt hin zu religiöser Koexistenz in Europa."
+ },
+ {
+  "year": 1602,
+  "title": "Gründung der ersten Börse der Welt",
+  "category": "Erfindung",
+  "text": "Mit handelbaren VOC-Aktien in Amsterdam entsteht ein völlig neues Finanzinstrument, das die Grundlage moderner Kapitalmärkte legt.",
+  "thema": "geld"
+ },
+ {
+  "year": 1648,
+  "title": "Westfälischer Friede",
+  "category": "Politischer Umbruch",
+  "text": "Der Friede beendete den Versuch, Europa religiös zu vereinheitlichen. Weil kein Lager den anderen besiegen konnte, wurde aus der Frage nach der wahren Konfession eine Frage der Zuständigkeit – ein Verfahren statt einer Wahrheit. Ob damit schon das moderne Staatensystem begann, ist umstritten.",
+  "vertiefung": "westfaelischer-friede",
+  "thema": "recht"
+ },
+ {
+  "year": 1687,
+  "category": "Wissenschaft",
+  "title": "Newtons Principia",
+  "text": "Newton zeigt, dass fallende Äpfel und kreisende Planeten denselben Gesetzen folgen. Die Vorstellung, die Natur sei mathematisch beschreibbar, wird zur Grundlage der modernen Wissenschaft."
+ },
+ {
+  "year": 1755,
+  "category": "Katastrophe",
+  "title": "Erdbeben von Lissabon",
+  "text": "Das Beben an Allerheiligen zerstört eine europäische Hauptstadt und erschüttert das theologische Weltbild: Wie lässt sich ein solches Unglück mit einer guten Weltordnung vereinbaren? Die Frage prägt die Aufklärung.",
+  "vertiefung": "aufklaerung"
  },
  {
   "year": 1776,
@@ -87,6 +338,48 @@ const SCHLUESSELMOMENTE = [
   "thema": "recht"
  },
  {
+  "year": 1796,
+  "title": "Erfindung der Pockenimpfung",
+  "category": "Wissenschaft",
+  "text": "Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken.",
+  "thema": "medizin",
+  "vertiefung": "pockenimpfung"
+ },
+ {
+  "year": 1804,
+  "category": "Politischer Umbruch",
+  "title": "Unabhängigkeit Haitis",
+  "text": "Aus dem einzigen erfolgreichen Sklavenaufstand der Geschichte geht ein unabhängiger Staat hervor. Die europäischen Mächte und die USA reagieren mit Isolation statt Anerkennung.",
+  "vertiefung": "sklavenhandel",
+  "thema": "zwangsarbeit"
+ },
+ {
+  "year": 1804,
+  "title": "Haiti wird unabhängig",
+  "category": "Herrschaft",
+  "text": "Der einzige Staat, der aus einem erfolgreichen Sklavenaufstand hervorgeht – und dafür jahrzehntelang isoliert und mit Reparationen belastet wird.",
+  "vertiefung": "sklavenhandel",
+  "thema": "zwangsarbeit"
+ },
+ {
+  "year": 1815,
+  "title": "Wiener Kongress",
+  "category": "Politischer Umbruch",
+  "text": "Die europäischen Großmächte etablieren ein Mächtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Großkrieg bewahrt."
+ },
+ {
+  "year": 1839,
+  "title": "Erster Opiumkrieg",
+  "category": "Wendepunkt im Krieg",
+  "text": "Großbritanniens militärische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Demütigung' ein und verschiebt die globale Machtbalance zugunsten Europas."
+ },
+ {
+  "year": 1848,
+  "category": "Politischer Umbruch",
+  "title": "Revolutionen von 1848",
+  "text": "In fast ganz Europa fordern Bewegungen Verfassungen, Pressefreiheit und nationale Einheit. Fast überall scheitern sie kurzfristig – und setzen langfristig den Rahmen."
+ },
+ {
   "year": 1859,
   "title": "Darwins Evolutionstheorie",
   "category": "Wissenschaft",
@@ -94,10 +387,72 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "entdeckung-tiefenzeit"
  },
  {
+  "year": 1865,
+  "title": "Verfassungsrechtliches Ende der Sklaverei in den USA",
+  "category": "Politischer Umbruch",
+  "text": "Nach der Emanzipationserklärung von 1863, die zunächst nur Sklaven in den Konföderierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endgültig – tatsächliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg.",
+  "vertiefung": "sklavenhandel",
+  "thema": "zwangsarbeit"
+ },
+ {
+  "year": 1865,
+  "category": "Wissenschaft",
+  "title": "Mendel stellt seine Vererbungsregeln vor",
+  "text": "Der Augustinermönch Gregor Mendel beschreibt an Erbsen die Regeln der Vererbung. Seine Arbeit bleibt 35 Jahre unbeachtet, bis sie um 1900 wiederentdeckt wird.",
+  "thema": "ernaehrung"
+ },
+ {
+  "year": 1867,
+  "category": "Wissenschaft",
+  "title": "Antiseptische Chirurgie",
+  "text": "Joseph Lister führt Antiseptik in den Operationssaal ein. Zuvor starben Patienten häufiger an der Infektion als am Eingriff.",
+  "thema": "medizin"
+ },
+ {
   "year": 1869,
   "title": "Eröffnung des Suezkanals",
   "category": "Erfindung",
   "text": "Der Kanal veränderte die Landkarte der Macht: Wer ihn kontrollierte, kontrollierte den Weg nach Indien. 1875 zwang die Schuldenlast den Khediven Ismail, seine 176.602 Anteile zu verkaufen; auf Betreiben Disraelis kaufte sie die britische Regierung. Ägypten blieb danach bis 1949 ohne Sitz im Verwaltungsrat – am eigenen Kanal."
+ },
+ {
+  "year": 1871,
+  "title": "Deutsche Reichsgründung",
+  "category": "Politischer Umbruch",
+  "text": "Die Einigung unter preußischer Führung schafft eine neue Großmacht im Zentrum Europas und verändert das europäische Kräftegleichgewicht dauerhaft.",
+  "vertiefung": "reichsgruendung"
+ },
+ {
+  "year": 1885,
+  "title": "Die Berliner Konferenz endet",
+  "category": "Herrschaft",
+  "text": "Europäische Mächte teilen Afrika unter sich auf, ohne dass ein Afrikaner am Tisch sitzt. Die gezogenen Grenzen bestehen weitgehend fort.",
+  "vertiefung": "dekolonisation"
+ },
+ {
+  "year": 1893,
+  "category": "Politischer Umbruch",
+  "title": "Erstes Frauenwahlrecht",
+  "text": "Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern.",
+  "thema": "recht",
+  "vertiefung": "frauenwahlrecht"
+ },
+ {
+  "year": 1896,
+  "title": "Adwa",
+  "category": "Konflikt",
+  "text": "Äthiopien schlägt eine europäische Invasionsarmee und bleibt unkolonisiert – ein Bezugspunkt antikolonialer Bewegungen weltweit."
+ },
+ {
+  "year": 1903,
+  "category": "Erfindung",
+  "title": "Erster Motorflug",
+  "text": "Die Brüder Wright halten sich mit einem motorisierten Flugzeug in der Luft. Keine sechs Jahrzehnte später fliegen Menschen zum Mond."
+ },
+ {
+  "year": 1905,
+  "title": "Russisch-Japanischer Krieg endet",
+  "category": "Wendepunkt im Krieg",
+  "text": "Erstmals besiegt eine asiatische Macht eine europäische Großmacht – erschüttert den europäischen Überlegenheitsglauben und inspiriert Unabhängigkeitsbewegungen in ganz Asien."
  },
  {
   "year": 1914,
@@ -107,11 +462,31 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "julikrise"
  },
  {
+  "year": 1916,
+  "title": "Sykes-Picot-Abkommen",
+  "category": "Politischer Umbruch",
+  "text": "Großbritannien und Frankreich ziehen im Geheimen willkürliche Grenzen durch den Nahen Osten – mit Konfliktfolgen, die bis heute spürbar sind."
+ },
+ {
   "year": 1917,
   "title": "Russische Revolution",
   "category": "Politischer Umbruch",
   "text": "Erstmals übernimmt eine kommunistische Bewegung dauerhaft die Staatsmacht – prägt Weltpolitik und Ideologiekonflikte für das gesamte 20. Jahrhundert.",
   "vertiefung": "russische-revolution"
+ },
+ {
+  "year": 1917,
+  "title": "Balfour-Deklaration",
+  "category": "Politischer Umbruch",
+  "text": "Großbritannien unterstützt erstmals offiziell eine 'nationale Heimstätte' für das jüdische Volk in Palästina – Ausgangspunkt späterer Nahostkonflikte."
+ },
+ {
+  "year": 1928,
+  "category": "Wissenschaft",
+  "title": "Entdeckung des Penicillins",
+  "text": "Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit.",
+  "thema": "medizin",
+  "vertiefung": "antibiotika"
  },
  {
   "year": 1929,
@@ -130,355 +505,10 @@ const SCHLUESSELMOMENTE = [
   "thema": "energie"
  },
  {
-  "year": 1969,
-  "title": "Erste Mondlandung",
-  "category": "Erfindung",
-  "text": "Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All.",
-  "vertiefung": "mondlandung-technik"
- },
- {
-  "year": 1989,
-  "title": "Fall der Berliner Mauer",
-  "category": "Politischer Umbruch",
-  "text": "Friedliche Massenproteste beenden die deutsche und europäische Teilung und läuten das Ende des Kalten Krieges ein.",
-  "vertiefung": "mauerfall"
- },
- {
-  "year": 2022,
-  "title": "Durchbruch generativer KI",
-  "category": "Erfindung",
-  "text": "Große Sprachmodelle werden erstmals massentauglich – mit potenziell ähnlich weitreichenden Folgen für Arbeit und Wissen wie einst der Buchdruck."
- },
- {
-  "year": -3100,
-  "title": "Vereinigung Ober- und Unterägyptens",
-  "category": "Politischer Umbruch",
-  "text": "Menes/Narmer eint zwei Königreiche zu einem der ersten Territorialstaaten der Geschichte – Grundlage für 3000 Jahre pharaonische Kontinuität."
- },
- {
-  "year": -1274,
-  "title": "Schlacht bei Kadesch & erster Friedensvertrag",
-  "category": "Wendepunkt im Krieg",
-  "text": "Nach der größten Streitwagenschlacht der Geschichte schließen Ägypter und Hethiter den ältesten erhaltenen zwischenstaatlichen Friedensvertrag der Menschheit."
- },
- {
-  "year": -776,
-  "title": "Erste Olympische Spiele",
-  "category": "Kultur",
-  "text": "Ein religiös-sportliches Fest wird zum verbindenden Element der zerstrittenen griechischen Stadtstaaten und zur Blaupause für Wettkampfkultur bis heute."
- },
- {
-  "year": -221,
-  "title": "Erste Reichseinigung Chinas",
-  "category": "Politischer Umbruch",
-  "text": "Qin Shi Huang vereinigt die zerstrittenen chinesischen Reiche gewaltsam und schafft mit einheitlicher Schrift und Verwaltung die Grundlage des chinesischen Staates bis heute.",
-  "vertiefung": "qin-einigung"
- },
- {
-  "year": 1204,
-  "title": "Plünderung Konstantinopels durch Kreuzfahrer",
-  "category": "Wendepunkt im Krieg",
-  "text": "Der Vierte Kreuzzug richtet sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – ein Verrat, der Byzanz dauerhaft schwächt und den Fall an die Osmanen 1453 vorbereitet.",
-  "vertiefung": "kreuzzuege"
- },
- {
-  "year": 1258,
-  "title": "Mongolische Zerstörung Bagdads",
-  "category": "Katastrophe",
-  "text": "Die Vernichtung der abbasidischen Hauptstadt beendet abrupt das islamische 'Goldene Zeitalter' der Wissenschaft und gilt als eine der größten kulturellen Katastrophen der Geschichte.",
-  "vertiefung": "mongolisches-reich"
- },
- {
-  "year": 1492,
-  "title": "Fall von Granada",
-  "category": "Politischer Umbruch",
-  "text": "Das Ende von 800 Jahren islamischer Präsenz in Spanien fällt zufällig mit dem Beginn der europäischen Expansion nach Amerika zusammen."
- },
- {
-  "year": 1602,
-  "title": "Gründung der ersten Börse der Welt",
-  "category": "Erfindung",
-  "text": "Mit handelbaren VOC-Aktien in Amsterdam entsteht ein völlig neues Finanzinstrument, das die Grundlage moderner Kapitalmärkte legt.",
-  "thema": "geld"
- },
- {
-  "year": 1648,
-  "title": "Westfälischer Friede",
-  "category": "Politischer Umbruch",
-  "text": "Der Friede beendete den Versuch, Europa religiös zu vereinheitlichen. Weil kein Lager den anderen besiegen konnte, wurde aus der Frage nach der wahren Konfession eine Frage der Zuständigkeit – ein Verfahren statt einer Wahrheit. Ob damit schon das moderne Staatensystem begann, ist umstritten.",
-  "vertiefung": "westfaelischer-friede",
-  "thema": "recht"
- },
- {
-  "year": 1839,
-  "title": "Erster Opiumkrieg",
-  "category": "Wendepunkt im Krieg",
-  "text": "Großbritanniens militärische Erzwingung des Opiumhandels leitet Chinas 'Jahrhundert der Demütigung' ein und verschiebt die globale Machtbalance zugunsten Europas."
- },
- {
-  "year": 1871,
-  "title": "Deutsche Reichsgründung",
-  "category": "Politischer Umbruch",
-  "text": "Die Einigung unter preußischer Führung schafft eine neue Großmacht im Zentrum Europas und verändert das europäische Kräftegleichgewicht dauerhaft.",
-  "vertiefung": "reichsgruendung"
- },
- {
-  "year": 1905,
-  "title": "Russisch-Japanischer Krieg endet",
-  "category": "Wendepunkt im Krieg",
-  "text": "Erstmals besiegt eine asiatische Macht eine europäische Großmacht – erschüttert den europäischen Überlegenheitsglauben und inspiriert Unabhängigkeitsbewegungen in ganz Asien."
- },
- {
-  "year": 1917,
-  "title": "Balfour-Deklaration",
-  "category": "Politischer Umbruch",
-  "text": "Großbritannien unterstützt erstmals offiziell eine 'nationale Heimstätte' für das jüdische Volk in Palästina – Ausgangspunkt späterer Nahostkonflikte."
- },
- {
-  "year": 1947,
-  "title": "Teilung Indiens",
-  "category": "Katastrophe",
-  "text": "Die überstürzte Teilung in Indien und Pakistan löst eine der größten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus.",
-  "vertiefung": "teilung-indiens",
-  "thema": "migration"
- },
- {
-  "year": 105,
-  "title": "Erfindung des Papiers",
-  "category": "Erfindung",
-  "text": "Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus.",
-  "thema": "kommunikation",
-  "vertiefung": "china-erfindungen"
- },
- {
-  "year": 868,
-  "title": "Ältestes datiertes gedrucktes Buch",
-  "category": "Erfindung",
-  "text": "Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern.",
-  "thema": "kommunikation"
- },
- {
-  "year": 1044,
-  "title": "Erfindung des Schießpulvers",
-  "category": "Erfindung",
-  "text": "Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend.",
-  "vertiefung": "china-erfindungen"
- },
- {
-  "year": 1088,
-  "title": "Gründung der ersten europäischen Universität",
-  "category": "Kultur",
-  "text": "Die Universität von Bologna entsteht als älteste durchgehend bestehende Universität Europas – Grundstein institutionalisierter höherer Bildung.",
-  "thema": "kommunikation"
- },
- {
-  "year": 1494,
-  "title": "Vertrag von Tordesillas",
-  "category": "Politischer Umbruch",
-  "text": "Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."
- },
- {
-  "year": 1500,
-  "title": "Der Kolumbianische Austausch",
-  "category": "Wendepunkt",
-  "text": "Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen.",
-  "vertiefung": "columbian-exchange",
-  "thema": "ernaehrung"
- },
- {
-  "year": 1555,
-  "title": "Augsburger Religionsfrieden",
-  "category": "Religion",
-  "text": "Das Prinzip 'Cuius regio, eius religio' erlaubt Landesherren erstmals, die Konfession ihres Territoriums selbst zu bestimmen – ein früher Schritt hin zu religiöser Koexistenz in Europa."
- },
- {
-  "year": 1796,
-  "title": "Erfindung der Pockenimpfung",
-  "category": "Wissenschaft",
-  "text": "Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken.",
-  "thema": "medizin",
-  "vertiefung": "pockenimpfung"
- },
- {
-  "year": 1815,
-  "title": "Wiener Kongress",
-  "category": "Politischer Umbruch",
-  "text": "Die europäischen Großmächte etablieren ein Mächtegleichgewicht-System, das Europa fast ein Jahrhundert lang vor einem erneuten Großkrieg bewahrt."
- },
- {
-  "year": 1865,
-  "title": "Verfassungsrechtliches Ende der Sklaverei in den USA",
-  "category": "Politischer Umbruch",
-  "text": "Nach der Emanzipationserklärung von 1863, die zunächst nur Sklaven in den Konföderierten Staaten betraf, beendet der 13. Verfassungszusatz 1865 die Sklaverei landesweit rechtlich endgültig – tatsächliche gesellschaftliche Gleichstellung blieb dennoch ein langer Weg.",
-  "vertiefung": "sklavenhandel",
-  "thema": "zwangsarbeit"
- },
- {
-  "year": 1916,
-  "title": "Sykes-Picot-Abkommen",
-  "category": "Politischer Umbruch",
-  "text": "Großbritannien und Frankreich ziehen im Geheimen willkürliche Grenzen durch den Nahen Osten – mit Konfliktfolgen, die bis heute spürbar sind."
- },
- {
   "year": 1945,
   "title": "Gründung der Vereinten Nationen",
   "category": "Politischer Umbruch",
   "text": "Der entscheidende Unterschied zum gescheiterten Völkerbund liegt im Sicherheitsrat: Die fünf Siegermächte erhielten ein Vetorecht und blieben damit dauerhaft an Bord – um den Preis, dass die Organisation gegen eines ihrer eigenen Mitglieder kaum handlungsfähig ist. Diese Bauweise war Bedingung dafür, dass es sie überhaupt gab."
- },
- {
-  "year": 1960,
-  "title": "'Afrikanisches Jahr'",
-  "category": "Politischer Umbruch",
-  "text": "Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabhängigkeit von europäischen Kolonialmächten – Höhepunkt der weltweiten Dekolonisierungswelle.",
-  "vertiefung": "dekolonisation"
- },
- {
-  "year": 1969,
-  "title": "Geburtsstunde des Internets (ARPANET)",
-  "category": "Erfindung",
-  "text": "Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet.",
-  "thema": "kommunikation",
-  "vertiefung": "internet"
- },
- {
-  "year": 2003,
-  "title": "Entschlüsselung des menschlichen Genoms",
-  "category": "Wissenschaft",
-  "text": "Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie.",
-  "vertiefung": "doppelhelix",
-  "thema": "medizin"
- },
- {
-  "year": -3000,
-  "category": "Erfindung",
-  "text": "Das Rad taucht zunächst nicht im Verkehr auf, sondern als Töpferscheibe. Erst später wird daraus das Wagenrad – eine Erfindung, die den Transport von Lasten und damit Handel und Krieg grundlegend verändert.",
-  "title": "Rad und Töpferscheibe",
-  "thema": "energie"
- },
- {
-  "year": -1754,
-  "category": "Politischer Umbruch",
-  "title": "Kodex Hammurapi",
-  "text": "Der babylonische König lässt Rechtssätze in Stein hauen und öffentlich aufstellen. Entscheidend ist weniger der Inhalt als das Prinzip: Recht wird nachprüfbar, weil es geschrieben und sichtbar ist.",
-  "thema": "recht"
- },
- {
-  "year": -600,
-  "category": "Erfindung",
-  "title": "Erfindung der Münze",
-  "text": "In Lydien entstehen erste geprägte Münzen aus Elektron. Geld als genormtes, staatlich garantiertes Tauschmittel macht Handel über Vertrauensgrenzen hinweg möglich.",
-  "thema": "geld"
- },
- {
-  "year": 105,
-  "category": "Erfindung",
-  "title": "Papier in China",
-  "text": "Dem Hofbeamten Cai Lun wird die Verbesserung der Papierherstellung zugeschrieben. Über die islamische Welt erreicht das Verfahren erst rund tausend Jahre später Europa.",
-  "thema": "kommunikation"
- },
- {
-  "year": 476,
-  "category": "Wendepunkt",
-  "title": "Absetzung des letzten Westkaisers",
-  "text": "Odoaker setzt Romulus Augustulus ab. Zeitgenossen sahen darin kaum einen Einschnitt – das Datum wurde erst von späteren Historikern zur Epochengrenze erhoben.",
-  "vertiefung": "ende-westrom"
- },
- {
-  "year": 622,
-  "category": "Religion",
-  "title": "Hidschra",
-  "text": "Mohammeds Auswanderung von Mekka nach Medina markiert den Beginn der islamischen Zeitrechnung – ein Kalender, der von einem politischen Neuanfang aus zählt, nicht von einer Geburt.",
-  "vertiefung": "islamische-expansion"
- },
- {
-  "year": 800,
-  "category": "Politischer Umbruch",
-  "title": "Kaiserkrönung Karls des Großen",
-  "text": "Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."
- },
- {
-  "year": 1215,
-  "category": "Politischer Umbruch",
-  "title": "Magna Carta",
-  "text": "König Johann muss zugestehen, dass auch der Herrscher an Recht gebunden ist – ein Satz, der über Jahrhunderte weiterwirkt, obwohl das Dokument zunächst Adelsinteressen sicherte.",
-  "thema": "recht"
- },
- {
-  "year": 1450,
-  "category": "Wissenschaft",
-  "title": "Der Buchdruck",
-  "text": "Gutenbergs bewegliche Lettern senken den Buchpreis binnen weniger Jahrzehnte um zwei Drittel. Wissen wird erstmals in großer Zahl vergleichbar – und damit überprüfbar.",
-  "vertiefung": "buchdruck",
-  "thema": "kommunikation"
- },
- {
-  "year": 1543,
-  "category": "Wissenschaft",
-  "title": "Kopernikus stellt die Erde beiseite",
-  "text": "In 'De revolutionibus' rückt Kopernikus die Sonne ins Zentrum. Der Bruch liegt weniger in der Astronomie als im Selbstbild: Der Mensch wohnt nicht mehr im Mittelpunkt."
- },
- {
-  "year": 1687,
-  "category": "Wissenschaft",
-  "title": "Newtons Principia",
-  "text": "Newton zeigt, dass fallende Äpfel und kreisende Planeten denselben Gesetzen folgen. Die Vorstellung, die Natur sei mathematisch beschreibbar, wird zur Grundlage der modernen Wissenschaft."
- },
- {
-  "year": 1755,
-  "category": "Katastrophe",
-  "title": "Erdbeben von Lissabon",
-  "text": "Das Beben an Allerheiligen zerstört eine europäische Hauptstadt und erschüttert das theologische Weltbild: Wie lässt sich ein solches Unglück mit einer guten Weltordnung vereinbaren? Die Frage prägt die Aufklärung.",
-  "vertiefung": "aufklaerung"
- },
- {
-  "year": 1804,
-  "category": "Politischer Umbruch",
-  "title": "Unabhängigkeit Haitis",
-  "text": "Aus dem einzigen erfolgreichen Sklavenaufstand der Geschichte geht ein unabhängiger Staat hervor. Die europäischen Mächte und die USA reagieren mit Isolation statt Anerkennung.",
-  "vertiefung": "sklavenhandel",
-  "thema": "zwangsarbeit"
- },
- {
-  "year": 1848,
-  "category": "Politischer Umbruch",
-  "title": "Revolutionen von 1848",
-  "text": "In fast ganz Europa fordern Bewegungen Verfassungen, Pressefreiheit und nationale Einheit. Fast überall scheitern sie kurzfristig – und setzen langfristig den Rahmen."
- },
- {
-  "year": 1865,
-  "category": "Wissenschaft",
-  "title": "Mendel stellt seine Vererbungsregeln vor",
-  "text": "Der Augustinermönch Gregor Mendel beschreibt an Erbsen die Regeln der Vererbung. Seine Arbeit bleibt 35 Jahre unbeachtet, bis sie um 1900 wiederentdeckt wird.",
-  "thema": "ernaehrung"
- },
- {
-  "year": 1867,
-  "category": "Wissenschaft",
-  "title": "Antiseptische Chirurgie",
-  "text": "Joseph Lister führt Antiseptik in den Operationssaal ein. Zuvor starben Patienten häufiger an der Infektion als am Eingriff.",
-  "thema": "medizin"
- },
- {
-  "year": 1893,
-  "category": "Politischer Umbruch",
-  "title": "Erstes Frauenwahlrecht",
-  "text": "Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern.",
-  "thema": "recht",
-  "vertiefung": "frauenwahlrecht"
- },
- {
-  "year": 1903,
-  "category": "Erfindung",
-  "title": "Erster Motorflug",
-  "text": "Die Brüder Wright halten sich mit einem motorisierten Flugzeug in der Luft. Keine sechs Jahrzehnte später fliegen Menschen zum Mond."
- },
- {
-  "year": 1928,
-  "category": "Wissenschaft",
-  "title": "Entdeckung des Penicillins",
-  "text": "Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit.",
-  "thema": "medizin",
-  "vertiefung": "antibiotika"
  },
  {
   "year": 1945,
@@ -487,6 +517,14 @@ const SCHLUESSELMOMENTE = [
   "text": "Zum ersten und bisher einzigen Mal werden Kernwaffen im Krieg eingesetzt. Seither prägt die Möglichkeit der Selbstauslöschung die internationale Politik.",
   "vertiefung": "zweiter-weltkrieg",
   "thema": "energie"
+ },
+ {
+  "year": 1947,
+  "title": "Teilung Indiens",
+  "category": "Katastrophe",
+  "text": "Die überstürzte Teilung in Indien und Pakistan löst eine der größten Zwangsmigrationen der Geschichte mit hunderttausenden Toten aus.",
+  "vertiefung": "teilung-indiens",
+  "thema": "migration"
  },
  {
   "year": 1948,
@@ -504,11 +542,53 @@ const SCHLUESSELMOMENTE = [
   "thema": "medizin"
  },
  {
+  "year": 1955,
+  "title": "Die Konferenz von Bandung",
+  "category": "Herrschaft",
+  "text": "29 Staaten Asiens und Afrikas verständigen sich ohne europäische Beteiligung – die Geburtsstunde des globalen Südens als politischer Größe.",
+  "vertiefung": "bandung"
+ },
+ {
+  "year": 1957,
+  "title": "Ghana wird unabhängig",
+  "category": "Herrschaft",
+  "text": "Als erste Kolonie südlich der Sahara. Drei Jahre später folgen siebzehn weitere Staaten.",
+  "vertiefung": "dekolonisation"
+ },
+ {
+  "year": 1960,
+  "title": "'Afrikanisches Jahr'",
+  "category": "Politischer Umbruch",
+  "text": "Binnen eines einzigen Jahres erlangen 17 afrikanische Staaten ihre Unabhängigkeit von europäischen Kolonialmächten – Höhepunkt der weltweiten Dekolonisierungswelle.",
+  "vertiefung": "dekolonisation"
+ },
+ {
+  "year": 1969,
+  "title": "Erste Mondlandung",
+  "category": "Erfindung",
+  "text": "Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All.",
+  "vertiefung": "mondlandung-technik"
+ },
+ {
+  "year": 1969,
+  "title": "Geburtsstunde des Internets (ARPANET)",
+  "category": "Erfindung",
+  "text": "Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet.",
+  "thema": "kommunikation",
+  "vertiefung": "internet"
+ },
+ {
   "year": 1972,
   "category": "Wendepunkt",
   "title": "Die Grenzen des Wachstums",
   "text": "Der Bericht an den Club of Rome bringt die Frage, ob unbegrenztes Wachstum auf einem begrenzten Planeten möglich ist, erstmals in die breite Öffentlichkeit.",
   "thema": "energie"
+ },
+ {
+  "year": 1972,
+  "title": "Der Blick zurück",
+  "category": "Kultur",
+  "text": "Die Apollo-17-Besatzung fotografiert die Erde als vollständige Kugel. Das Bild wird zum Sinnbild der Umweltbewegung."
  },
  {
   "year": 1980,
@@ -517,6 +597,13 @@ const SCHLUESSELMOMENTE = [
   "text": "Die WHO erklärt die Pocken für ausgerottet – der bislang einzige derartige Erfolg bei einer menschlichen Infektionskrankheit.",
   "thema": "medizin",
   "vertiefung": "pockenimpfung"
+ },
+ {
+  "year": 1989,
+  "title": "Fall der Berliner Mauer",
+  "category": "Politischer Umbruch",
+  "text": "Friedliche Massenproteste beenden die deutsche und europäische Teilung und läuten das Ende des Kalten Krieges ein.",
+  "vertiefung": "mauerfall"
  },
  {
   "year": 1989,
@@ -534,107 +621,6 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "ende-apartheid"
  },
  {
-  "year": -3300,
-  "title": "Ötzi stirbt am Tisenjoch",
-  "category": "Kultur",
-  "text": "Der Fund von 1991 liefert die dichteste Momentaufnahme eines Menschenlebens der Kupferzeit – bis hin zu seiner letzten Mahlzeit und dem Pfeil in seiner Schulter."
- },
- {
-  "year": -1754,
-  "title": "Der Codex Hammurabi",
-  "category": "Recht",
-  "text": "Die umfangreichste erhaltene Gesetzessammlung der Bronzezeit wird auf eine Stele gemeißelt und öffentlich aufgestellt: Recht wird nachlesbar.",
-  "thema": "recht"
- },
- {
-  "year": -539,
-  "title": "Kyros nimmt Babylon",
-  "category": "Herrschaft",
-  "text": "Der Kyros-Zylinder verkündet die Rückkehr verschleppter Gruppen – oft als erste Menschenrechtserklärung bezeichnet, tatsächlich ein Text persischer Herrschaftslegitimation."
- },
- {
-  "year": -44,
-  "title": "Ermordung Caesars",
-  "category": "Herrschaft",
-  "text": "Der Versuch, die Republik zu retten, beschleunigt ihr Ende: Vierzehn Jahre später ist Rom eine Monarchie."
- },
- {
-  "year": 751,
-  "title": "Schlacht am Talas",
-  "category": "Konflikt",
-  "text": "Der Vormarsch der Tang nach Westen endet. China zieht sich für ein Jahrtausend aus Zentralasien zurück.",
-  "vertiefung": "seidenstrasse"
- },
- {
-  "year": 868,
-  "title": "Das älteste datierte gedruckte Buch",
-  "category": "Erfindung",
-  "text": "Das chinesische Diamant-Sutra trägt ein Datum und den Vermerk, es sei zur freien Verteilung bestimmt – Druck und Wissensfreiheit treten gemeinsam auf.",
-  "thema": "kommunikation"
- },
- {
-  "year": 1206,
-  "title": "Dschingis Khan wird ausgerufen",
-  "category": "Herrschaft",
-  "text": "Aus rivalisierenden Steppenverbänden wird ein Staat. Innerhalb einer Generation entsteht das größte zusammenhängende Landreich der Geschichte.",
-  "vertiefung": "mongolisches-reich"
- },
- {
-  "year": 1324,
-  "title": "Mansa Musas Pilgerfahrt",
-  "category": "Wirtschaft",
-  "text": "Der Herrscher Malis verschenkt in Kairo so viel Gold, dass dessen Wert dort über Jahre gedrückt bleibt – Westafrika tritt ins europäische Weltbild.",
-  "vertiefung": "mali-reich",
-  "thema": "geld"
- },
- {
-  "year": 1492,
-  "title": "Ende von Al-Andalus",
-  "category": "Herrschaft",
-  "text": "Mit dem Fall Granadas endet fast achthundert Jahre islamische Herrschaft in Spanien. Im selben Jahr werden Juden vertrieben und Kolumbus segelt los."
- },
- {
-  "year": 1804,
-  "title": "Haiti wird unabhängig",
-  "category": "Herrschaft",
-  "text": "Der einzige Staat, der aus einem erfolgreichen Sklavenaufstand hervorgeht – und dafür jahrzehntelang isoliert und mit Reparationen belastet wird.",
-  "vertiefung": "sklavenhandel",
-  "thema": "zwangsarbeit"
- },
- {
-  "year": 1885,
-  "title": "Die Berliner Konferenz endet",
-  "category": "Herrschaft",
-  "text": "Europäische Mächte teilen Afrika unter sich auf, ohne dass ein Afrikaner am Tisch sitzt. Die gezogenen Grenzen bestehen weitgehend fort.",
-  "vertiefung": "dekolonisation"
- },
- {
-  "year": 1896,
-  "title": "Adwa",
-  "category": "Konflikt",
-  "text": "Äthiopien schlägt eine europäische Invasionsarmee und bleibt unkolonisiert – ein Bezugspunkt antikolonialer Bewegungen weltweit."
- },
- {
-  "year": 1955,
-  "title": "Die Konferenz von Bandung",
-  "category": "Herrschaft",
-  "text": "29 Staaten Asiens und Afrikas verständigen sich ohne europäische Beteiligung – die Geburtsstunde des globalen Südens als politischer Größe.",
-  "vertiefung": "bandung"
- },
- {
-  "year": 1957,
-  "title": "Ghana wird unabhängig",
-  "category": "Herrschaft",
-  "text": "Als erste Kolonie südlich der Sahara. Drei Jahre später folgen siebzehn weitere Staaten.",
-  "vertiefung": "dekolonisation"
- },
- {
-  "year": 1972,
-  "title": "Der Blick zurück",
-  "category": "Kultur",
-  "text": "Die Apollo-17-Besatzung fotografiert die Erde als vollständige Kugel. Das Bild wird zum Sinnbild der Umweltbewegung."
- },
- {
   "year": 1994,
   "title": "Erste allgemeine Wahlen in Südafrika",
   "category": "Herrschaft",
@@ -648,6 +634,20 @@ const SCHLUESSELMOMENTE = [
   "text": "Die erste Rohfassung wird veröffentlicht. Sie zeigt weniger Gene als erwartet – und dass genetische Unterschiede zwischen Menschengruppen geringer sind als innerhalb von ihnen.",
   "vertiefung": "doppelhelix",
   "thema": "medizin"
+ },
+ {
+  "year": 2003,
+  "title": "Entschlüsselung des menschlichen Genoms",
+  "category": "Wissenschaft",
+  "text": "Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie.",
+  "vertiefung": "doppelhelix",
+  "thema": "medizin"
+ },
+ {
+  "year": 2022,
+  "title": "Durchbruch generativer KI",
+  "category": "Erfindung",
+  "text": "Große Sprachmodelle werden erstmals massentauglich – mit potenziell ähnlich weitreichenden Folgen für Arbeit und Wissen wie einst der Buchdruck."
  }
 ];
 const SURPRISING_FACTS = [

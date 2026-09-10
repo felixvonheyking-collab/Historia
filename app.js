@@ -80,6 +80,42 @@ function useGespeichert(schluessel, anfangswert) {
 
 const Layers = (p) => /* @__PURE__ */ React.createElement(Icon, { ...p }, /* @__PURE__ */ React.createElement("path", { d: "M12 3 2.5 8 12 13l9.5-5L12 3z" }), /* @__PURE__ */ React.createElement("path", { d: "M2.5 16 12 21l9.5-5" }), /* @__PURE__ */ React.createElement("path", { d: "M2.5 12 12 17l9.5-5" }));
 
+/* Sprungziele in langen Listen.
+
+   Die Suche kann auf einen einzelnen Eintrag zeigen, der in einer Liste
+   von 80.000 Pixeln Laenge steht. Ohne Hilfe landet man oben und sucht
+   von Hand - gemessen lag ein Treffer 9.797 Pixel unter dem Seitenanfang.
+   Deshalb tragen die Eintraege dieser Listen ein data-anker-Merkmal, und
+   dieser Haken rollt es in den Blick und hebt es kurz hervor.
+
+   Warum mit Timer statt requestAnimationFrame: rAF laeuft in einem
+   Browsertab im Hintergrund nicht, und genau dort wird die App oft
+   geoeffnet. Derselbe Grund wie bei der Zurueck-Navigation. */
+function useSprungziel(ziel) {
+  React.useEffect(() => {
+    if (!ziel || typeof document === "undefined") return;
+    let versuche = 0;
+    const suchen = () => {
+      const el = document.querySelector('[data-anker="' + String(ziel).replace(/"/g, '\\"') + '"]');
+      if (el) {
+        el.scrollIntoView({ block: "center" });
+        el.setAttribute("data-hervor", "1");
+        setTimeout(() => el.removeAttribute("data-hervor"), 2800);
+        return;
+      }
+      // Der Eintrag kann noch nicht gerendert sein, deshalb nachfassen.
+      if (++versuche < 25) setTimeout(suchen, 40);
+    };
+    setTimeout(suchen, 0);
+  }, [ziel]);
+}
+
+// Aus einem Titel einen Ankernamen machen. Muss in der Suche und in der
+// Liste dasselbe ergeben, sonst findet der Sprung nichts.
+function ankerName(text) {
+  return String(text).toLowerCase().replace(/[^a-z0-9äöüß]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
+}
+
 function VertiefungAbschnitt({ titel, text }) {
   return /* @__PURE__ */ React.createElement("div", { className: "mb-5" },
     /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, titel),
@@ -298,7 +334,7 @@ function VertiefungenTab({ ziel }) {
       ["Alle", ...EPOCHS.map((e) => e.id)].map((id) => /* @__PURE__ */ React.createElement("button", {
         key: id,
         onClick: () => setEpochenFilter(id),
-        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${epochenFilter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+        className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${epochenFilter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
       }, id === "Alle" ? "Alle" : (EPOCHS.find((e) => e.id === id) || {}).name))
     ),
 
@@ -749,7 +785,7 @@ function ZeitstrahlTab() {
       ZEITFENSTER.map((f) => /* @__PURE__ */ React.createElement("button", {
         key: f.id,
         onClick: () => { setFensterId(f.id); setGewaehlt(null); },
-        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${
+        className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${
           f.id === fensterId ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
       }, f.label))),
 
@@ -968,7 +1004,7 @@ function ZeitschnittTab() {
       /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
         vertiefungen.map((v) => /* @__PURE__ */ React.createElement("span", {
           key: v.id,
-          className: "px-2.5 py-1 rounded text-xs border border-[#5c2018] text-[#c2a06a]"
+          className: "px-2.5 py-1.5 rounded text-xs border border-[#5c2018] text-[#c2a06a]"
         }, v.titel)))
     )
   );
@@ -1066,7 +1102,7 @@ function MysterienTab({ ziel }) {
       [["alle", "Alle (" + MYSTERIEN.length + ")"], ["ungeklaert", "Ungeklärt (" + zaehler.ungeklaert + ")"], ["teilweise", "Teilweise (" + zaehler.teilweise + ")"], ["geloest", "Gelöst (" + zaehler.geloest + ")"]]
         .map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
           key: id, onClick: () => setFilter(id),
-          className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${filter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+          className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${filter === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
         }, label))),
 
     /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
@@ -1152,22 +1188,22 @@ function sucheIndex() {
 
   SCHLUESSELMOMENTE.forEach((s) => rein({
     art: "Schlüsselmoment", titel: s.title, text: s.text,
-    kontext: formatYear(s.year) + " · " + s.category, jahr: s.year, reiter: "schluessel", ziel: null
+    kontext: formatYear(s.year) + " · " + s.category, jahr: s.year, reiter: "schluessel", ziel: ankerName(s.title)
   }));
 
   BATTLES.forEach((b) => rein({
     art: "Schlacht", titel: b.name, text: b.text,
-    kontext: formatYear(b.year) + " · " + b.war, jahr: b.year, reiter: "schlachten", ziel: null
+    kontext: formatYear(b.year) + " · " + b.war, jahr: b.year, reiter: "schlachten", ziel: ankerName(b.name)
   }));
 
   QUOTES.forEach((q) => rein({
     art: "Zitat", titel: q.text, text: (q.note || "") + " " + q.author,
-    kontext: q.author + (q.year ? " · " + q.year : "") + " · " + q.status, reiter: "zitate", ziel: null
+    kontext: q.author + (q.year ? " · " + q.year : "") + " · " + q.status, reiter: "zitate", ziel: ankerName(q.text)
   }));
 
   MYTHEN.forEach((m) => rein({
     art: m.type === "Mythos" ? "Mythos" : m.type, titel: m.title, text: m.text + " " + (m.quelle || ""),
-    kontext: m.category, reiter: "mythen", ziel: null
+    kontext: m.category, reiter: "mythen", ziel: ankerName(m.title)
   }));
 
   MYSTERIEN.forEach((m) => rein({
@@ -1176,7 +1212,7 @@ function sucheIndex() {
   }));
 
   SURPRISING_FACTS.forEach((f) => rein({
-    art: "Verblüffender Fakt", titel: f, text: "", kontext: "", reiter: "verblueffend", ziel: null
+    art: "Verblüffender Fakt", titel: f, text: "", kontext: "", reiter: "verblueffend", ziel: ankerName(f)
   }));
 
   return eintraege;
@@ -1248,7 +1284,7 @@ function SucheTab() {
       ["Alle", ...arten].map((a) => /* @__PURE__ */ React.createElement("button", {
         key: a,
         onClick: () => setArtFilter(a),
-        className: `px-2.5 py-1 rounded text-xs border ${artFilter === a ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+        className: `px-2.5 py-1.5 rounded text-xs border ${artFilter === a ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
       }, a, a === "Alle" ? "" : ` (${treffer.filter((t) => t.art === a).length})`))
     ),
 
@@ -1259,7 +1295,7 @@ function SucheTab() {
           /* @__PURE__ */ React.createElement("button", {
             key: b,
             onClick: () => setFrage(b),
-            className: "px-2.5 py-1 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a] hover:border-[#d4af37]"
+            className: "px-2.5 py-1.5 rounded text-xs border border-[#5c2018] text-[#b8905a] hover:text-[#e0b84a] hover:border-[#d4af37]"
           }, b))
       )
     ),
@@ -1308,15 +1344,15 @@ function StartTab() {
     const quellen = [
       () => {
         const f = zufall(SURPRISING_FACTS);
-        return { art: "Verblüffender Fakt", titel: null, text: f, reiter: "verblueffend", ziel: null };
+        return { art: "Verblüffender Fakt", titel: null, text: f, reiter: "verblueffend", ziel: ankerName(f) };
       },
       () => {
         const m = zufall(MYTHEN.filter((x) => x.type === "Mythos"));
-        return { art: "Mythos", titel: m.title, text: m.text, kontext: m.category, reiter: "mythen", ziel: null };
+        return { art: "Mythos", titel: m.title, text: m.text, kontext: m.category, reiter: "mythen", ziel: ankerName(m.title) };
       },
       () => {
         const q = zufall(QUOTES);
-        return { art: "Zitat", titel: "„" + q.text + "\"", text: q.note || "", kontext: q.author + " · " + q.status, reiter: "zitate", ziel: null };
+        return { art: "Zitat", titel: "„" + q.text + "\"", text: q.note || "", kontext: q.author + " · " + q.status, reiter: "zitate", ziel: ankerName(q.text) };
       },
       () => {
         const v = zufall(VERTIEFUNGEN);
@@ -1324,7 +1360,7 @@ function StartTab() {
       },
       () => {
         const s = zufall(SCHLUESSELMOMENTE);
-        return { art: "Schlüsselmoment", titel: s.title, text: s.text, kontext: formatYear(s.year), reiter: "schluessel", ziel: null };
+        return { art: "Schlüsselmoment", titel: s.title, text: s.text, kontext: formatYear(s.year), reiter: "schluessel", ziel: ankerName(s.title) };
       }
     ];
     return zufall(quellen)();
@@ -1658,7 +1694,7 @@ function DynastienTab({ ziel }) {
     DYNASTIEN.length > 1 && /* @__PURE__ */ React.createElement("button", {
       onClick: () => { setOffen(null); setSuche(""); },
       className: "flex items-center gap-1.5 text-[#c9a877] hover:text-[#f0d878] mb-4 text-sm"
-    }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Alle Reiche"),
+    }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu allen Reichen"),
 
     /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878]" }, reich.reich),
     /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-3" }, reich.zeitraum),
@@ -1786,7 +1822,8 @@ function Header({ bereich, setBereich, unter, setUnter }) {
         /* @__PURE__ */ React.createElement("span", { className: "text-[#b8905a] font-mono text-[11px] uppercase tracking-widest" }, "Steinzeit \u2014 Gegenwart")
       )
     ),
-    /* @__PURE__ */ React.createElement("nav", { className: "max-w-6xl mx-auto px-4 flex gap-1 overflow-x-auto no-scrollbar" },
+    /* @__PURE__ */ React.createElement("div", { className: "relative" },
+      /* @__PURE__ */ React.createElement("nav", { className: "max-w-6xl mx-auto px-4 flex gap-1 overflow-x-auto no-scrollbar", "data-leiste": "bereiche" },
       BEREICHE.map((b) => {
         const Icon2 = b.icon;
         const aktiv = bereich === b.id;
@@ -1796,13 +1833,15 @@ function Header({ bereich, setBereich, unter, setUnter }) {
           className: `flex items-center gap-1.5 whitespace-nowrap px-3 py-2 rounded-t-md text-sm font-medium transition-colors border-b-2 ${aktiv ? "text-[#e0b84a] border-[#d4af37]" : "text-[#b8905a] border-transparent hover:text-[#d8c690]"}`
         }, /* @__PURE__ */ React.createElement(Icon2, { size: 15 }), b.label);
       })
+      ),
+      /* @__PURE__ */ React.createElement("div", { "aria-hidden": "true", className: "verlauf-rechts" })
     ),
     aktuell.unter.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "border-t border-[#5c2018] bg-[#5c1a1e]" },
       /* @__PURE__ */ React.createElement("div", { className: "max-w-6xl mx-auto px-4 py-1.5 flex gap-1 overflow-x-auto no-scrollbar" },
         aktuell.unter.map((u) => /* @__PURE__ */ React.createElement("button", {
           key: u.id,
           onClick: () => setUnter(u.id),
-          className: `whitespace-nowrap px-2.5 py-1 rounded text-xs border ${unter === u.id ? "bg-[#4a1015] text-[#f0d878] border-[#d4af37]" : "border-transparent text-[#b8905a] hover:text-[#e0b84a]"}`
+          className: `whitespace-nowrap px-2.5 py-1.5 rounded text-xs border ${unter === u.id ? "bg-[#4a1015] text-[#f0d878] border-[#d4af37]" : "border-transparent text-[#b8905a] hover:text-[#e0b84a]"}`
         }, u.label))
       )
     )
@@ -1823,7 +1862,7 @@ function EpochCard({ ep, onOpen }) {
   );
 }
 function EpochDetail({ ep, onBack }) {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { onClick: onBack, className: "flex items-center gap-1.5 text-sm text-[#b8905a] hover:text-[#d8c690] mb-4" }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), " Zur\xFCck zur \xDCbersicht"), /* @__PURE__ */ React.createElement("div", { className: "mb-6", style: { borderLeft: `4px solid ${ep.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-3xl text-[#e0b84a]" }, ep.name), /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs uppercase tracking-wider mb-3", style: { color: ep.accent } }, ep.span), /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] leading-relaxed max-w-3xl" }, ep.description)), /* @__PURE__ */ React.createElement("h3", { className: "font-serif text-lg text-[#e0b84a] mb-3" }, "Wichtigste Ereignisse (", ep.events.length, ")"), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l border-[#5c2018] ml-2 mb-8" }, ep.events.map((e, i) => /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-6 ml-5" }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { onClick: onBack, className: "flex items-center gap-1.5 text-sm text-[#b8905a] hover:text-[#d8c690] mb-4" }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zur Übersicht"), /* @__PURE__ */ React.createElement("div", { className: "mb-6", style: { borderLeft: `4px solid ${ep.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-3xl text-[#e0b84a]" }, ep.name), /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs uppercase tracking-wider mb-3", style: { color: ep.accent } }, ep.span), /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] leading-relaxed max-w-3xl" }, ep.description)), /* @__PURE__ */ React.createElement("h3", { className: "font-serif text-lg text-[#e0b84a] mb-3" }, "Wichtigste Ereignisse (", ep.events.length, ")"), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l border-[#5c2018] ml-2 mb-8" }, ep.events.map((e, i) => /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-6 ml-5" }, /* @__PURE__ */ React.createElement(
     "span",
     {
       className: "absolute -left-[7px] w-3.5 h-3.5 rounded-full border-2 border-[#4a1015]",
@@ -1841,8 +1880,9 @@ function EpochenTab({ ziel }) {
   const totalNations = EPOCHS.reduce((s, e) => s + e.nations.length, 0);
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" }, "Sieben Epochen, von der Steinzeit bis zur Gegenwart. W\xE4hle eine Epoche f\xFCr Ereignisse, Pers\xF6nlichkeiten und Nationen im Detail."), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#8a6238] mb-5 font-mono" }, totalEvents, " Ereignisse \xB7 ", totalFigures, " Pers\xF6nlichkeiten \xB7 ", totalNations, " Nationen & Reiche"), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-4" }, EPOCHS.map((ep2) => /* @__PURE__ */ React.createElement(EpochCard, { key: ep2.id, ep: ep2, onOpen: setOpenId }))));
 }
-function SchluesselmomenteTab() {
+function SchluesselmomenteTab({ ziel }) {
   const [cat, setCat] = useState("Alle");
+  useSprungziel(ziel);
   const categories = ["Alle", ...Array.from(new Set(SCHLUESSELMOMENTE.map((m) => m.category)))];
   const filtered = SCHLUESSELMOMENTE.filter((m) => cat === "Alle" || m.category === cat).sort((a, b) => a.year - b.year);
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-4 max-w-2xl" }, SCHLUESSELMOMENTE.length, " kuratierte Wendepunkte, die den Lauf der Geschichte grundlegend ver\xE4nderten \u2014 Momente, ohne die die Welt heute anders auss\xE4he."), /* @__PURE__ */ React.createElement("p", { className: "text-[#8a6238] text-sm mb-4 max-w-2xl" }, "Wo es eine ausf\xFChrliche Darstellung oder einen passenden Querschnitt gibt, f\xFChrt darunter ein Verweis dorthin."), /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" }, categories.map((c) => /* @__PURE__ */ React.createElement(
@@ -1850,10 +1890,10 @@ function SchluesselmomenteTab() {
     {
       key: c,
       onClick: () => setCat(c),
-      className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${cat === c ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${cat === c ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
     },
     c
-  ))), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l-2 border-[#5c2018] ml-2" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("li", { key: i, className: "mb-8 ml-6" }, /* @__PURE__ */ React.createElement("span", { className: "absolute -left-[9px] w-4 h-4 rounded-full bg-[#d4af37] border-2 border-[#4a1015] flex items-center justify-center" }, /* @__PURE__ */ React.createElement(Zap, { size: 9, className: "text-[#4a1015]" })), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(m.year)), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), (m.vertiefung || m.thema) && /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mt-3" }, m.vertiefung && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", m.vertiefung); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Vertiefung: ", (VERTIEFUNGEN.find((v) => v.id === m.vertiefung) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })), m.thema && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("themen", m.thema); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Thema: ", (THEMEN.find((t) => t.id === m.thema) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))))))));
+  ))), /* @__PURE__ */ React.createElement("ol", { className: "relative border-l-2 border-[#5c2018] ml-2" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("li", { key: i, "data-anker": ankerName(m.title), className: "mb-8 ml-6" }, /* @__PURE__ */ React.createElement("span", { className: "absolute -left-[9px] w-4 h-4 rounded-full bg-[#d4af37] border-2 border-[#4a1015] flex items-center justify-center" }, /* @__PURE__ */ React.createElement(Zap, { size: 9, className: "text-[#4a1015]" })), /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" }, /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(m.year)), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), (m.vertiefung || m.thema) && /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mt-3" }, m.vertiefung && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", m.vertiefung); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Vertiefung: ", (VERTIEFUNGEN.find((v) => v.id === m.vertiefung) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })), m.thema && /* @__PURE__ */ React.createElement("button", { onClick: () => { if (SPRINGE) SPRINGE("themen", m.thema); }, className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]" }, "Thema: ", (THEMEN.find((t) => t.id === m.thema) || {}).titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }))))))));
 }
 /* =========================================================
    SCHLACHTEN
@@ -1877,7 +1917,8 @@ const SCHLACHT_ZEITRAEUME = [
   { id: "20./21. Jh.", von: 1900, bis: 9999 }
 ];
 
-function SchlachtenTab() {
+function SchlachtenTab({ ziel }) {
+  useSprungziel(ziel);
   const [suche, setSuche] = useState("");
   const [zeit, setZeit] = useState("Alle");
 
@@ -1923,7 +1964,7 @@ function SchlachtenTab() {
       SCHLACHT_ZEITRAEUME.map((z) => /* @__PURE__ */ React.createElement("button", {
         key: z.id,
         onClick: () => setZeit(z.id),
-        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${
+        className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${
           zeit === z.id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
       }, z.id))),
 
@@ -1941,6 +1982,7 @@ function SchlachtenTab() {
 
     /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "12px" } },
       gefiltert.map((b, i) => /* @__PURE__ */ React.createElement("div", {
+        "data-anker": ankerName(b.name),
         key: i,
         className: "rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 max-w-4xl"
       },
@@ -1976,8 +2018,9 @@ function SchlachtenTab() {
     )
   );
 }
-function ZitateTab() {
+function ZitateTab({ ziel }) {
   const [statusFilter, setStatusFilter] = useState("Alle");
+  useSprungziel(ziel);
   const reihenfolge = ["belegt", "sinngem\xE4\xDF", "zugeschrieben", "falsch zitiert", "falsch zugeschrieben", "Sprichwort"];
   const vorhanden = reihenfolge.filter((s) => QUOTES.some((q) => q.status === s));
   const stil = (s) => {
@@ -1995,11 +2038,11 @@ function ZitateTab() {
       ["Alle", ...vorhanden].map((s) => /* @__PURE__ */ React.createElement("button", {
         key: s,
         onClick: () => setStatusFilter(s),
-        className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${statusFilter === s ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+        className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${statusFilter === s ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
       }, s, s === "Alle" ? "" : ` (${QUOTES.filter((q) => q.status === s).length})`))
     ),
     /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
-      gefiltert.map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" },
+      gefiltert.map((q, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(q.text), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" },
         /* @__PURE__ */ React.createElement("span", { className: "inline-block text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5 mb-2", style: stil(q.status) }, q.status),
         /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug mb-2" }, "\u201E", q.text, '"'),
         /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d4af37] font-medium" }, q.author),
@@ -2061,8 +2104,9 @@ function LaenderTab({ ziel }) {
     )
   );
 }
-function MythenTab() {
+function MythenTab({ ziel }) {
   const [cat, setCat] = useState("Alle");
+  useSprungziel(ziel);
   const [typeFilter, setTypeFilter] = useState("Alle");
   const categories = ["Alle", ...Array.from(new Set(MYTHEN.map((m) => m.category)))];
   const types = ["Alle", ...Array.from(new Set(MYTHEN.map((m) => m.type)))];
@@ -2079,7 +2123,7 @@ function MythenTab() {
     {
       key: c,
       onClick: () => setCat(c),
-      className: `px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border ${cat === c ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
+      className: `px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${cat === c ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#b8905a]"}`
     },
     c
   ))), /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-6" }, types.map((t) => /* @__PURE__ */ React.createElement(
@@ -2087,10 +2131,10 @@ function MythenTab() {
     {
       key: t,
       onClick: () => setTypeFilter(t),
-      className: `px-2.5 py-1 rounded text-xs font-medium border ${typeFilter === t ? "bg-[#5c1a1e] text-[#f0d878] border-[#e0b84a]" : "border-[#5c2018] text-[#b8905a]"}`
+      className: `px-2.5 py-1.5 rounded text-xs font-medium border ${typeFilter === t ? "bg-[#5c1a1e] text-[#f0d878] border-[#e0b84a]" : "border-[#5c2018] text-[#b8905a]"}`
     },
     t
-  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#8a6238] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Keine Treffer.")));
+  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, filtered.map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(m.title), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#8a6238] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#b8905a] text-sm" }, "Keine Treffer.")));
 }
 function PersonenTab() {
   const [query, setQuery] = useState("");
@@ -2285,7 +2329,7 @@ function LernenTab() {
     setTimeout(naechste, 1400);
   }
 
-  const knopf = "px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wide border";
+  const knopf = "px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border";
 
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
@@ -2398,7 +2442,8 @@ function LernenTab() {
     }, /* @__PURE__ */ React.createElement(RotateCcw, { size: 12 }), "Andere Karte")
   );
 }
-function VerblueffendTab() {
+function VerblueffendTab({ ziel }) {
+  useSprungziel(ziel);
   const [shown, setShown] = useState(SURPRISING_FACTS.map((_, i) => i).sort(() => Math.random() - 0.5));
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "flex justify-between items-center mb-5 gap-3" }, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] max-w-xl" }, SURPRISING_FACTS.length, " kuriose, \xFCberraschende und wenig bekannte historische Zusammenh\xE4nge."), /* @__PURE__ */ React.createElement(
     "button",
@@ -2408,7 +2453,7 @@ function VerblueffendTab() {
     },
     /* @__PURE__ */ React.createElement(RotateCcw, { size: 14 }),
     " Mischen"
-  )), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, shown.map((i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4 flex gap-3" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 16, className: "text-[#d4af37] shrink-0 mt-0.5" }), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] leading-relaxed" }, SURPRISING_FACTS[i])))));
+  )), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" }, shown.map((i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(SURPRISING_FACTS[i]), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4 flex gap-3" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 16, className: "text-[#d4af37] shrink-0 mt-0.5" }), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] leading-relaxed" }, SURPRISING_FACTS[i])))));
 }
 function Historia() {
   // Der zuletzt geoeffnete Bereich bleibt ueber Sitzungen hinweg erhalten.
@@ -2469,8 +2514,14 @@ function Historia() {
 
   // Wer selbst im Menue umschaltet, verlaesst den Sprungweg - die alte
   // Zurueck-Marke waere dann irrefuehrend.
-  const wechsleBereich = (id) => { setHerkunft(null); setBereich(id); };
-  const wechsleUnter = (id) => { setHerkunft(null); setUnter(id); };
+  //
+  // Und: an den Anfang scrollen. Ohne das landet man beim Wechsel dort,
+  // wo man in der vorigen Liste stand - bei Listen von mehreren
+  // zehntausend Pixeln Laenge mitten im Nichts, ohne Einleitung und
+  // ohne die Filterknoepfe gesehen zu haben.
+  const nachOben = () => { if (typeof window !== "undefined") window.scrollTo(0, 0); };
+  const wechsleBereich = (id) => { setHerkunft(null); setZiel(null); setBereich(id); nachOben(); };
+  const wechsleUnter = (id) => { setHerkunft(null); setZiel(null); setUnter(id); nachOben(); };
 
   const zielFuer = (reiter) => (ziel && ziel.reiter === reiter ? ziel.eintrag : null);
   // Welcher einzelne Reiter ist gerade sichtbar?
@@ -2498,8 +2549,16 @@ function Historia() {
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Sprungziel aus der Suche: kurz hervorheben, damit der Eintrag
+           in einer langen Liste zu finden ist. */
+        [data-hervor] { outline: 2px solid #d4af37; outline-offset: 3px; border-radius: 8px; }
+        /* Hinweis, dass die Bereichsleiste seitlich weitergeht. Nur dann
+           sichtbar, wenn tatsaechlich etwas ausserhalb liegt. */
+        .verlauf-rechts { position: absolute; top: 0; right: 0; bottom: 0; width: 28px;
+          pointer-events: none; background: linear-gradient(to right, rgba(74,16,21,0), #4a1015); }
+        @media (min-width: 780px) { .verlauf-rechts { display: none; } }
       `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich: wechsleBereich, unter, setUnter: wechsleUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, herkunft && /* @__PURE__ */ React.createElement("button", {
         onClick: geheZurueck,
         className: "inline-flex items-center gap-1.5 mb-4 text-sm text-[#c9a877] hover:text-[#f0d878]"
-      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, null), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, null), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, null), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, null), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, null)));
+      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
 }
