@@ -13,7 +13,7 @@ const EPOCHS = [
   "startYear": -2600000,
   "endYear": -2200,
   "color": "#8c6a2e",
-  "accent": "#d9b56a",
+  "accent": "#c9a05a",
   "lead": "Der lange Anfang: Werkzeuge, Feuer, Sesshaftwerdung.",
   "description": "Die Steinzeit umfasst den bei weitem längsten Abschnitt der Menschheitsgeschichte. Sie beginnt mit den ersten Steinwerkzeugen früher Hominiden und endet mit der Erfindung der Metallverarbeitung. Entscheidend war die 'Neolithische Revolution': der Übergang vom Jäger-und-Sammler-Dasein zu Ackerbau und Viehzucht, der feste Siedlungen, Vorratshaltung und erste soziale Hierarchien ermöglichte.",
   "literatur": [
@@ -248,7 +248,7 @@ const EPOCHS = [
   "startYear": -3300,
   "endYear": -800,
   "color": "#b8860b",
-  "accent": "#f0c869",
+  "accent": "#e8c14a",
   "lead": "Schrift, Staat und Stadt: die ersten Hochkulturen entstehen.",
   "description": "An großen Flüssen – Nil, Euphrat/Tigris, Indus und Gelber Fluss – entwickeln sich die ersten Hochkulturen mit Bewässerungswirtschaft, Arbeitsteilung, Schrift und zentralisierter Herrschaft. Bronze als Werkstoff ermöglicht bessere Werkzeuge und Waffen und treibt Handel über weite Strecken an.",
   "literatur": [
@@ -586,7 +586,7 @@ const EPOCHS = [
   "startYear": -800,
   "endYear": 500,
   "color": "#9c1c1c",
-  "accent": "#e2a45c",
+  "accent": "#e2884a",
   "lead": "Griechenland, Rom und die Grundlagen der westlichen Kultur.",
   "description": "Die Antike prägt Philosophie, Demokratie, Recht und Architektur bis heute. Griechische Stadtstaaten entwickeln Demokratie und Wissenschaft, Alexander der Große verbreitet hellenistische Kultur bis nach Asien, und Rom baut ein Weltreich, das schließlich in West- und Ostrom zerfällt.",
   "literatur": [
@@ -1168,7 +1168,7 @@ const EPOCHS = [
   "startYear": 500,
   "endYear": 1500,
   "color": "#7a2a3a",
-  "accent": "#c98a5c",
+  "accent": "#b878b0",
   "lead": "Zwischen Glaube, Feudalismus und aufblühenden Städten.",
   "description": "Nach dem Untergang Westroms entstehen neue Reiche in Europa, geprägt von Christentum, Feudalismus und wechselnden Machtzentren. Gleichzeitig blühen im islamischen Kalifat, in Byzanz und in Ostasien hochentwickelte Kulturen. Kreuzzüge, Pest und die beginnende Stadtkultur prägen das Spätmittelalter.",
   "literatur": [
@@ -1801,7 +1801,7 @@ const EPOCHS = [
   "startYear": 1500,
   "endYear": 1789,
   "color": "#8a3020",
-  "accent": "#d4a24a",
+  "accent": "#7aa8cc",
   "lead": "Reformation, Kolonialismus und die Wissenschaftliche Revolution.",
   "description": "Die Frühe Neuzeit bringt weitreichende Umbrüche: Die Reformation spaltet die Kirche, europäische Mächte errichten Kolonialreiche, und die Wissenschaftliche Revolution verändert das Weltbild grundlegend. Absolutistische Monarchien konzentrieren Macht, während Aufklärung und Bürgertum die Grundlagen für Umwälzungen legen.",
   "literatur": [
@@ -2308,7 +2308,7 @@ const EPOCHS = [
   "startYear": 1789,
   "endYear": 1914,
   "color": "#6b1f1f",
-  "accent": "#d4af37",
+  "accent": "#74b58c",
   "lead": "Bürgerliche Revolutionen, Dampfmaschinen und Nationalstaaten.",
   "description": "Das 'lange 19. Jahrhundert' beginnt mit der Französischen Revolution und endet mit dem Ersten Weltkrieg. Die Industrielle Revolution verändert Wirtschaft und Gesellschaft radikal, Nationalstaaten entstehen oder einigen sich (Deutschland, Italien), und europäische Mächte teilen weite Teile der Welt kolonial unter sich auf.",
   "literatur": [
@@ -2799,7 +2799,7 @@ const EPOCHS = [
   "startYear": 1914,
   "endYear": 2026,
   "color": "#a01f1f",
-  "accent": "#e8c14a",
+  "accent": "#e8706a",
   "lead": "Weltkriege, Digitalisierung und eine vernetzte Welt.",
   "description": "Kein Jahrhundert veränderte die Welt so schnell wie das 20. Jahrhundert: zwei Weltkriege, der Kalte Krieg, Dekolonisierung, technologische Revolutionen von der Raumfahrt bis zum Internet. Das 21. Jahrhundert ist geprägt von Globalisierung, Digitalisierung und neuen geopolitischen Verschiebungen.",
   "literatur": [
