@@ -2623,5 +2623,170 @@ const BILDER = [
   "urheber": "Zelma / Георгий Зельма",
   "lizenz": "CC BY-SA 3.0",
   "herkunft": "https://commons.wikimedia.org/wiki/File:RIAN_archive_2383_The_ruins_of_Stalingrad.jpg"
+ },
+ {
+  "id": "sulla",
+  "datei": "bilder/sulla.jpg",
+  "breite": 799,
+  "hoehe": 1300,
+  "zeigt": "Bildnis Sullas, Glyptothek München",
+  "bildunterschrift": "Ob der Kopf Sulla darstellt, ist nicht gesichert — antike Bildnisse sind selten beschriftet. Sicher ist, dass er als Diktator ohne Zeitbegrenzung regierte und das Amt freiwillig niederlegte.",
+  "urheber": "Yair-haklai",
+  "lizenz": "CC BY-SA 4.0",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Bust_of_Sulla_(GL_309).jpg"
+ },
+ {
+  "id": "caesar-gallien-rubikon",
+  "datei": "bilder/caesar-gallien-rubikon.jpg",
+  "breite": 900,
+  "hoehe": 600,
+  "zeigt": "Vercingetorix legt die Waffen vor Caesar nieder, gemalt von Lionel Royer, 1899",
+  "bildunterschrift": "Ein Bild des 19. Jahrhunderts, nicht der Antike: Der Gallier steht aufrecht und würdevoll, weil Frankreich in ihm einen Nationalhelden suchte. Caesars eigener Bericht schildert die Szene knapp und ohne Pathos.",
+  "urheber": "Lionel Royer",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Lionel_Royer_-_Vercingetorix_Throwing_down_His_Weapons_at_the_feet_of_Julius_Caesar.jpg"
+ },
+ {
+  "id": "iden-des-maerz",
+  "datei": "bilder/iden-des-maerz.jpg",
+  "breite": 900,
+  "hoehe": 510,
+  "zeigt": "Der Tod Caesars, gemalt von Vincenzo Camuccini um 1805",
+  "bildunterschrift": "Die Verschwörer als antike Helden, die Tat als Bühnenszene — so hat es das klassizistische 19. Jahrhundert gesehen. Der Arzt Antistius zählte 23 Stiche, von denen nur einer tödlich war.",
+  "urheber": "Vincenzo Camuccini",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg"
+ },
+ {
+  "id": "antonius-kleopatra",
+  "datei": "bilder/antonius-kleopatra.jpg",
+  "breite": 900,
+  "hoehe": 633,
+  "zeigt": "Die Schlacht bei Actium, gemalt von Laureys a Castro, 1672",
+  "bildunterschrift": "Ein Seegemälde des 17. Jahrhunderts mit Schiffen des 17. Jahrhunderts. Was 31 v. Chr. tatsächlich geschah — Durchbruchsversuch oder Flucht aus einer Blockade —, ist militärisch bis heute unklar.",
+  "urheber": "Laureys a Castro",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:The_Battle_of_Actium,_2_September_31BC_RMG_BHC0251.tiff"
+ },
+ {
+  "id": "cicero",
+  "datei": "bilder/cicero.jpg",
+  "breite": 900,
+  "hoehe": 876,
+  "zeigt": "Bildnis Ciceros, Kapitolinische Museen, Rom",
+  "bildunterschrift": "Antonius ließ Ciceros Kopf und Hände an der Rednertribüne ausstellen, von der aus er gesprochen hatte. Erhalten sind 58 Reden und über 900 Briefe — mehr als von jedem anderen Römer.",
+  "urheber": "Wilfredor",
+  "lizenz": "CC0",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:M._Tullius_Cicero,_Capitoline_Museum,_Rome.jpg"
+ },
+ {
+  "id": "perserkriege",
+  "datei": "bilder/perserkriege.jpg",
+  "breite": 900,
+  "hoehe": 600,
+  "zeigt": "Der Grabhügel der Athener bei Marathon",
+  "bildunterschrift": "Unter diesem Hügel liegen nach der Überlieferung die 192 gefallenen Athener von 490 v. Chr. Er ist das einzige Denkmal des Krieges, das an der Stelle steht, an der gekämpft wurde.",
+  "urheber": "George E. Koronaios",
+  "lizenz": "CC0",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:The_tumulus_(tomb)_of_the_Athenians_at_Marathon.jpg"
+ },
+ {
+  "id": "napoleonische-kriege",
+  "datei": "bilder/napoleonische-kriege.jpg",
+  "breite": 900,
+  "hoehe": 656,
+  "zeigt": "Wellington und Blücher treffen sich nach der Schlacht bei Waterloo, gemalt von Henry Baynes",
+  "bildunterschrift": "Das Treffen am Abend des 18. Juni 1815 wurde sofort zum Bildmotiv — und zum Streitfall: Britische und preußische Darstellungen widersprechen sich darin, wessen Eingreifen den Tag entschied.",
+  "urheber": "H. Baynes",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Henry_Baynes_(1800-1886)_-_The_Meeting_of_Wellington_and_Blucher_at_La_Belle_Alliance_after_the_Battle_of_Waterloo,_18_June_1815_-_NAM._1962-06-18_-_National_Army_Museum.jpg"
+ },
+ {
+  "id": "lepanto",
+  "datei": "bilder/lepanto.jpg",
+  "breite": 900,
+  "hoehe": 339,
+  "zeigt": "Die Seeschlacht von Lepanto, gemalt von Andrea Vicentino um 1600",
+  "bildunterschrift": "Gemalt für den Dogenpalast in Venedig, also von der Siegerseite und zur Erinnerung an einen Erfolg, der militärisch fast nichts änderte: Zwei Jahre später zahlte Venedig Kriegsentschädigung und verzichtete auf Zypern.",
+  "urheber": "Andrea Vicentino",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Battle_of_Lepanto_1595-1605_Andrea_Vicentino.jpg"
+ },
+ {
+  "id": "wien-1683",
+  "datei": "bilder/wien-1683.jpg",
+  "breite": 900,
+  "hoehe": 595,
+  "zeigt": "Die Entsatzschlacht vor Wien 1683, zeitgenössisches Panorama",
+  "bildunterschrift": "Ein zeitgenössisches Panorama: das osmanische Lager mit den Zeltreihen, davor die Entsatzschlacht. Die Belagerung selbst wurde nicht mit Stürmen geführt, sondern mit Minen unter den Bastionen — zwei Monate Krieg unter der Erde.",
+  "urheber": "Frans Geffels",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Vienna_Battle_1683.jpg"
+ },
+ {
+  "id": "plassey",
+  "datei": "bilder/plassey.jpg",
+  "breite": 900,
+  "hoehe": 701,
+  "zeigt": "Clive trifft Mir Jafar nach der Schlacht bei Plassey, gemalt von Francis Hayman um 1762",
+  "bildunterschrift": "Das Bild zeigt den eigentlichen Vorgang genauer als jede Schlachtdarstellung: Entschieden wurde nicht im Gefecht, sondern in der Absprache mit dem Heerführer des Gegners.",
+  "urheber": "Francis Hayman",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Robert_Clive_and_Mir_Jafar_after_the_Battle_of_Plassey,_1757_by_Francis_Hayman.jpg"
+ },
+ {
+  "id": "tet-offensive",
+  "datei": "bilder/tet-offensive.jpg",
+  "breite": 900,
+  "hoehe": 702,
+  "zeigt": "Das Tor des südvietnamesischen Marinehauptquartiers in Saigon nach dem Angriff, Februar 1968",
+  "bildunterschrift": "Bilder wie dieses aus dem Zentrum Saigons widersprachen den offiziellen Fortschrittsmeldungen. Militärisch war die Offensive für die Angreifer eine Niederlage, politisch ihr größter Erfolg.",
+  "urheber": "Chief Nhu VNN",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Gate_of_RVNN_Headquarters_after_Tet_Offensive_attack.jpg"
+ },
+ {
+  "id": "jerusalem-586",
+  "datei": "bilder/jerusalem-586.jpg",
+  "breite": 900,
+  "hoehe": 662,
+  "zeigt": "Babylonische Verwaltungstafel mit Rationen für Jojachin, den König von Juda",
+  "bildunterschrift": "Der stärkste außerbiblische Beleg für das Exil: eine Keilschrifttafel aus der Hofverwaltung Babylons, die dem verschleppten judäischen König und seinen Söhnen Öl und Gerste zuweist.",
+  "urheber": "Scallaham",
+  "lizenz": "CC BY-SA 4.0",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Jehoiachin_Ration_Tablet.JPG"
+ },
+ {
+  "id": "grosser-terror",
+  "datei": "bilder/grosser-terror.jpg",
+  "breite": 832,
+  "hoehe": 1149,
+  "zeigt": "Erschießungsbefehl einer NKWD-Troika, 1937",
+  "bildunterschrift": "Der Terror lief als Verwaltungsvorgang: Drei Beamte, eine Liste, ein Beschluss. Für die Regionen gab es Zielzahlen, und wer sie übererfüllte, konnte um eine Erhöhung bitten.",
+  "urheber": "Unknown authorUnknown author",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:NKVD_troika_execution_order_for_Samson_Dadiani.jpg"
+ },
+ {
+  "id": "shaka",
+  "datei": "bilder/shaka.jpg",
+  "breite": 877,
+  "hoehe": 1300,
+  "zeigt": "Zulu-Schild aus Rindsleder, Peabody Museum",
+  "bildunterschrift": "Von Shaka selbst existiert kein gesichertes Bildnis — die bekannte Zeichnung entstand nach seinem Tod. Das große Lederschild gehört dagegen zu seiner belegten Militärreform: Schild und kurzer Stoßspeer erzwingen den Nahkampf statt des Speerwurfs aus der Distanz.",
+  "urheber": "Daderot",
+  "lizenz": "Public domain",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Shield,_Zulu,_Southern_Africa,_cow_hide_-_Peabody_Museum,_Harvard_University_-_DSC05996.jpg"
+ },
+ {
+  "id": "china-erfindungen",
+  "datei": "bilder/china-erfindungen.jpg",
+  "breite": 900,
+  "hoehe": 541,
+  "zeigt": "Das Diamant-Sutra von 868 — das älteste datierte gedruckte Buch der Welt",
+  "bildunterschrift": "Gefunden in einer zugemauerten Kammer in Dunhuang, mit Datum im Kolophon. Der Blockdruck war in China rund sechshundert Jahre vor Gutenberg in Gebrauch.",
+  "urheber": "unbekannt",
+  "lizenz": "CC0",
+  "herkunft": "https://commons.wikimedia.org/wiki/File:Diamond_Sutra_of_868_AD_-_The_Diamond_Sutra_(868),_frontispiece_and_text_-_BL_Or._8210-P.2.jpg"
  }
 ];
