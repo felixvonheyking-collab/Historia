@@ -1043,7 +1043,8 @@ const BATTLES = [
   ],
   "ausgang": "Ägyptischer Sieg im Feld. Weil die Truppen sofort zu plündern begannen, entkam die Koalition in die Stadt – es folgte eine siebenmonatige Belagerung.",
   "folgen": "Ägypten beherrschte Kanaan für Jahrhunderte. Beute laut Annalen: 924 Streitwagen, 2.238 Pferde, über 200 Rüstungen.",
-  "hinweis": "Die Angaben stammen aus den in Karnak eingemeißelten Annalen des Feldschreibers Tjaneni – die erste Schlacht der Geschichte, für die ein detaillierter Bericht existiert. Er ist Siegespropaganda, aber ungewöhnlich nüchtern in den Zahlen."
+  "hinweis": "Die Angaben stammen aus den in Karnak eingemeißelten Annalen des Feldschreibers Tjaneni – die erste Schlacht der Geschichte, für die ein detaillierter Bericht existiert. Er ist Siegespropaganda, aber ungewöhnlich nüchtern in den Zahlen.",
+  "vertiefung": "pharao-thutmosis3"
  },
  {
   "year": -1274,
@@ -1116,7 +1117,8 @@ const BATTLES = [
   ],
   "ausgang": "Athenischer Sieg. Miltiades verstärkte die Flügel und ließ die Mitte bewusst dünn – die Perser brachen dort durch und wurden von beiden Seiten eingeschlossen.",
   "folgen": "Der erste persische Feldzug gegen Griechenland scheiterte. Athen gewann ein Selbstbewusstsein, das die folgenden fünfzig Jahre trug – Marathon wurde zum Gründungsmythos der Demokratie.",
-  "hinweis": "Das Verhältnis 192 zu 6.400 stammt von Herodot und ist auffällig günstig. Der Läufer, der die Nachricht nach Athen brachte und starb, taucht erst 500 Jahre später bei Plutarch auf; Herodot kennt ihn nicht."
+  "hinweis": "Das Verhältnis 192 zu 6.400 stammt von Herodot und ist auffällig günstig. Der Läufer, der die Nachricht nach Athen brachte und starb, taucht erst 500 Jahre später bei Plutarch auf; Herodot kennt ihn nicht.",
+  "vertiefung": "perserkriege"
  },
  {
   "year": -480,
@@ -1140,7 +1142,8 @@ const BATTLES = [
   ],
   "ausgang": "Persischer Sieg. Ein Einheimischer namens Ephialtes zeigte den Persern einen Bergpfad; Leonidas blieb mit einer Nachhut zurück und fiel.",
   "folgen": "Der Weg nach Athen war frei, die Stadt wurde geräumt und niedergebrannt. Der Aufschub verschaffte den Griechen jedoch Zeit – wenige Wochen später entschied die Seeschlacht von Salamis den Feldzug.",
-  "hinweis": "Herodots 2,6 Millionen Perser sind logistisch unmöglich; moderne Schätzungen liegen ein bis zwei Größenordnungen darunter. Die 300 Spartaner kämpften nicht allein: Thespier und Thebaner blieben ebenfalls."
+  "hinweis": "Herodots 2,6 Millionen Perser sind logistisch unmöglich; moderne Schätzungen liegen ein bis zwei Größenordnungen darunter. Die 300 Spartaner kämpften nicht allein: Thespier und Thebaner blieben ebenfalls.",
+  "vertiefung": "perserkriege"
  },
  {
   "year": -480,
@@ -1189,7 +1192,8 @@ const BATTLES = [
   ],
   "ausgang": "Griechischer Sieg. Ein missverstandener nächtlicher Stellungswechsel sah wie Flucht aus; Mardonios griff an und traf auf geschlossene spartanische Phalangen.",
   "folgen": "Die persische Landmacht verließ Griechenland endgültig. Am selben Tag soll die griechische Flotte bei Mykale gesiegt haben. Athen und Sparta waren fortan die beiden Pole der griechischen Welt – ihre Rivalität führte fünfzig Jahre später in den Peloponnesischen Krieg.",
-  "hinweis": "Herodots Zahlen für die persische Seite gelten als überhöht; die Forschung rechnet mit etwa 70.000."
+  "hinweis": "Herodots Zahlen für die persische Seite gelten als überhöht; die Forschung rechnet mit etwa 70.000.",
+  "vertiefung": "perserkriege"
  },
  {
   "year": -405,
@@ -1287,7 +1291,8 @@ const BATTLES = [
   ],
   "ausgang": "Erster römischer Seesieg überhaupt. Rom glich die eigene Unerfahrenheit mit dem Corvus aus – einer Enterbrücke, die das Seegefecht in einen Nahkampf verwandelte.",
   "folgen": "Rom bewies, dass es zur See bestehen konnte, und baute die Flotte weiter aus. Duilius erhielt die erste Ehrensäule Roms für einen Seesieg. Der Corvus machte die Schiffe allerdings kopflastig; in Stürmen gingen später ganze Flotten verloren.",
-  "hinweis": "Die Schiffszahlen stammen von Polybios, der rund hundert Jahre später schrieb, aber gute Quellen hatte."
+  "hinweis": "Die Schiffszahlen stammen von Polybios, der rund hundert Jahre später schrieb, aber gute Quellen hatte.",
+  "vertiefung": "karthago"
  },
  {
   "year": -218,
@@ -1311,7 +1316,8 @@ const BATTLES = [
   ],
   "ausgang": "Karthagischer Sieg. Hannibal lockte die Römer bei Kälte durch den eiskalten Fluss und ließ dann eine verborgene Abteilung in ihren Rücken stoßen.",
   "folgen": "Norditalien fiel weitgehend an Hannibal, keltische Stämme schlossen sich ihm an. Es folgten der Trasimenische See und Cannae – drei Siege in achtzehn Monaten. Rom stand am Rand der Niederlage und hielt trotzdem durch.",
-  "hinweis": "Welchen Alpenpass Hannibal nahm, ist bis heute ungeklärt; mindestens ein halbes Dutzend Routen werden vertreten. Von den 37 Elefanten überlebte nach kurzer Zeit nur einer."
+  "hinweis": "Welchen Alpenpass Hannibal nahm, ist bis heute ungeklärt; mindestens ein halbes Dutzend Routen werden vertreten. Von den 37 Elefanten überlebte nach kurzer Zeit nur einer.",
+  "vertiefung": "karthago"
  },
  {
   "year": -216,
@@ -1335,7 +1341,8 @@ const BATTLES = [
   ],
   "ausgang": "Vernichtender karthagischer Sieg. Hannibal ließ die Mitte bewusst zurückweichen und schloss die vorstoßenden Römer mit den Flügeln und der Reiterei vollständig ein.",
   "folgen": "Der schwerste Verlust der römischen Geschichte an einem einzigen Tag. Ein Konsul, achtzig Senatoren und ein großer Teil der politischen Führung fielen. Rom lehnte trotzdem jede Verhandlung ab, mied fortan die offene Feldschlacht und zermürbte Hannibal über Jahre.",
-  "hinweis": "Polybios nennt 70.000 Tote, Livius 55.000. Selbst die niedrigere Zahl bedeutet, dass an einem Nachmittag mehr Menschen starben als an jedem Tag des Ersten Weltkriegs."
+  "hinweis": "Polybios nennt 70.000 Tote, Livius 55.000. Selbst die niedrigere Zahl bedeutet, dass an einem Nachmittag mehr Menschen starben als an jedem Tag des Ersten Weltkriegs.",
+  "vertiefung": "karthago"
  },
  {
   "year": -202,
@@ -1359,7 +1366,8 @@ const BATTLES = [
   ],
   "ausgang": "Römischer Sieg. Scipio ließ Gassen in seiner Aufstellung öffnen, durch die die Elefanten wirkungslos hindurchliefen; die numidische Reiterei entschied die Schlacht in Hannibals Rücken.",
   "folgen": "Ende des Zweiten Punischen Krieges. Karthago verlor alle überseeischen Gebiete, die Flotte und das Recht, ohne römische Erlaubnis Krieg zu führen. Rom war unbestrittene Macht des westlichen Mittelmeers.",
-  "hinweis": "Zama ist die einzige Schlacht, die Hannibal verlor. Entscheidend war, dass Massinissas Reiterei diesmal auf römischer Seite stand – bei Cannae hatte die überlegene Reiterei Hannibal den Sieg gebracht."
+  "hinweis": "Zama ist die einzige Schlacht, die Hannibal verlor. Entscheidend war, dass Massinissas Reiterei diesmal auf römischer Seite stand – bei Cannae hatte die überlegene Reiterei Hannibal den Sieg gebracht.",
+  "vertiefung": "karthago"
  },
  {
   "year": -53,
@@ -1457,7 +1465,8 @@ const BATTLES = [
   ],
   "ausgang": "Vollständige germanische Vernichtung. Arminius hatte als römischer Offizier gedient und Varus' Vertrauen; er lockte den Zug in unwegsames Gelände und griff über mehrere Tage aus dem Hinterhalt an.",
   "folgen": "Rom gab die Provinz Germanien auf und machte den Rhein zur Grenze. Die Legionsnummern XVII, XVIII und XIX wurden nie wieder vergeben. Die kulturelle Trennung zwischen romanisiertem und nicht romanisiertem Europa geht auf diese Entscheidung zurück.",
-  "hinweis": "Der Ort war jahrhundertelang unbekannt. Erst ab 1987 machten Münz- und Waffenfunde bei Kalkriese die Zuordnung wahrscheinlich – endgültig bewiesen ist sie nicht."
+  "hinweis": "Der Ort war jahrhundertelang unbekannt. Erst ab 1987 machten Münz- und Waffenfunde bei Kalkriese die Zuordnung wahrscheinlich – endgültig bewiesen ist sie nicht.",
+  "vertiefung": "kaiser-augustus"
  },
  {
   "year": 260,
@@ -1506,7 +1515,8 @@ const BATTLES = [
   ],
   "ausgang": "Gotischer Sieg. Valens griff an, ohne die Verstärkung seines Neffen abzuwarten; die gotische Reiterei kehrte während des Gefechts zurück und fiel den Römern in die Flanke.",
   "folgen": "Der schwerste römische Verlust seit Cannae. Rom musste die Goten erstmals als geschlossenen Verband auf Reichsgebiet siedeln lassen – ein Vorbild für alle folgenden Ansiedlungen und ein Schritt auf dem Weg zur Auflösung des Westreichs.",
-  "hinweis": "Ammianus Marcellinus, die Hauptquelle, war Offizier und schrieb kurz danach – für die Spätantike ungewöhnlich gut. Die Truppenzahlen nennt er trotzdem nicht."
+  "hinweis": "Ammianus Marcellinus, die Hauptquelle, war Offizier und schrieb kurz danach – für die Spätantike ungewöhnlich gut. Die Truppenzahlen nennt er trotzdem nicht.",
+  "vertiefung": "ende-westrom"
  },
  {
   "year": 451,
@@ -1604,7 +1614,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Abbasiden. Entscheidend war der Seitenwechsel der karluk-türkischen Hilfstruppen mitten in der Schlacht.",
   "folgen": "China gab die Expansion nach Westen auf; Zentralasien wurde islamisch geprägt. Der Überlieferung nach gerieten chinesische Papiermacher in Gefangenschaft und brachten ihr Handwerk nach Samarkand – von dort erreichte das Papier Bagdad und später Europa.",
-  "hinweis": "Die Geschichte der gefangenen Papiermacher stammt aus einer arabischen Quelle des 11. Jahrhunderts und ist nicht unabhängig belegt. Papier war in Zentralasien vermutlich schon vorher bekannt; die Schlacht beschleunigte die Verbreitung, erklärt sie aber nicht allein."
+  "hinweis": "Die Geschichte der gefangenen Papiermacher stammt aus einer arabischen Quelle des 11. Jahrhunderts und ist nicht unabhängig belegt. Papier war in Zentralasien vermutlich schon vorher bekannt; die Schlacht beschleunigte die Verbreitung, erklärt sie aber nicht allein.",
+  "vertiefung": "seidenstrasse"
  },
  {
   "year": 955,
@@ -1677,7 +1688,8 @@ const BATTLES = [
   ],
   "ausgang": "Seldschukischer Sieg. Ein Teil des byzantinischen Heeres unter Andronikos Dukas verließ das Feld, ohne zu kämpfen – Hofpolitik entschied die Schlacht mit.",
   "folgen": "Anatolien, das Kernland byzantinischer Rekrutierung, ging über die folgenden Jahrzehnte weitgehend verloren. Der Hilferuf Konstantinopels an den Westen führte 1095 zum Aufruf zum Ersten Kreuzzug. Die Türkisierung Kleinasiens begann hier.",
-  "hinweis": "Alp Arslan behandelte den gefangenen Kaiser nachsichtig und ließ ihn gegen Tribut frei. In Konstantinopel wurde Romanos abgesetzt, geblendet und starb an den Folgen – die Niederlage kostete ihn mehr als der Sieger."
+  "hinweis": "Alp Arslan behandelte den gefangenen Kaiser nachsichtig und ließ ihn gegen Tribut frei. In Konstantinopel wurde Romanos abgesetzt, geblendet und starb an den Folgen – die Niederlage kostete ihn mehr als der Sieger.",
+  "vertiefung": "kreuzzuege"
  },
  {
   "year": 1097,
@@ -1801,7 +1813,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Kreuzfahrer. Richard hielt sein Heer trotz stundenlangem Pfeilbeschuss in strenger Marschordnung; als die Johanniter vorzeitig ausbrachen, ließ er den Angriff geschlossen nachstoßen.",
   "folgen": "Saladins Ruf der Unbesiegbarkeit war beschädigt, die Küste blieb in Kreuzfahrerhand. Jerusalem eroberte Richard jedoch nie: Der Vertrag von 1192 sicherte Christen nur freien Zugang als Pilger.",
-  "hinweis": "Die Verlustzahlen stammen aus christlichen Quellen und sind entsprechend günstig gerechnet."
+  "hinweis": "Die Verlustzahlen stammen aus christlichen Quellen und sind entsprechend günstig gerechnet.",
+  "vertiefung": "kreuzfahrerstaaten"
  },
  {
   "year": 1192,
@@ -2046,7 +2059,8 @@ const BATTLES = [
   ],
   "ausgang": "Englischer Sieg gegen große Übermacht. Ein aufgeweichter Acker zwischen zwei Waldstücken zwang die Franzosen in eine enge Front; wer stürzte, kam in der Rüstung nicht mehr hoch.",
   "folgen": "Frankreich verlor erneut große Teile des Hochadels. 1420 erkannte es einen englischen Thronerben an. Erst Jeanne d'Arc drehte die Lage ab 1429.",
-  "hinweis": "Heinrich ließ während der Schlacht einen großen Teil der Gefangenen töten, weil er einen Angriff im Rücken fürchtete. Das galt schon Zeitgenossen als Bruch der Regeln und wird bis heute diskutiert."
+  "hinweis": "Heinrich ließ während der Schlacht einen großen Teil der Gefangenen töten, weil er einen Angriff im Rücken fürchtete. Das galt schon Zeitgenossen als Bruch der Regeln und wird bis heute diskutiert.",
+  "vertiefung": "hundertjaehriger-krieg"
  },
  {
   "year": 1453,
@@ -2120,7 +2134,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg Baburs. Er verband Wagenburg und Artillerie nach osmanischem Vorbild mit umfassenden Reiterangriffen; der Kanonendonner brachte zudem die Elefanten außer Kontrolle.",
   "folgen": "Gründung des Mogulreichs, das Indien bis ins 18. Jahrhundert beherrschte und dessen Bauten – vom Taj Mahal bis zum Roten Fort – bis heute das Bild des Landes prägen.",
-  "hinweis": "Die Zahlen stammen aus Baburs eigenem Tagebuch, dem Baburnama. Es ist eine bemerkenswert offene Quelle, aber der Verfasser hatte kein Interesse daran, den Gegner klein zu rechnen."
+  "hinweis": "Die Zahlen stammen aus Baburs eigenem Tagebuch, dem Baburnama. Es ist eine bemerkenswert offene Quelle, aber der Verfasser hatte kein Interesse daran, den Gegner klein zu rechnen.",
+  "vertiefung": "akbar"
  },
  {
   "year": 1529,
@@ -2144,7 +2159,8 @@ const BATTLES = [
   ],
   "ausgang": "Die Osmanen brachen die Belagerung nach knapp drei Wochen ab. Ein verregneter Sommer hatte den Vormarsch verzögert; ohne schwere Geschütze und mit einbrechendem Winter war die Stadt nicht zu nehmen.",
   "folgen": "Die osmanische Expansion nach Mitteleuropa erreichte ihre Grenze. Ungarn blieb über anderthalb Jahrhunderte geteilt. In Europa verfestigte sich das Bild der Türkengefahr, das die Politik bis ins 18. Jahrhundert prägte.",
-  "hinweis": "Die Legende, das Croissant sei als Spottgebäck aus dieser Belagerung entstanden, ist nicht belegt – ebenso wenig die Kaffee-Geschichte, die sich auf 1683 bezieht."
+  "hinweis": "Die Legende, das Croissant sei als Spottgebäck aus dieser Belagerung entstanden, ist nicht belegt – ebenso wenig die Kaffee-Geschichte, die sich auf 1683 bezieht.",
+  "vertiefung": "sueleyman"
  },
  {
   "year": 1571,
@@ -2168,7 +2184,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Liga. Die venezianischen Galeassen – schwimmende Geschützplattformen – zerrissen die osmanische Linie, bevor der Nahkampf begann.",
   "folgen": "Die letzte große Galeerenschlacht der Geschichte. Militärisch änderte sie wenig: Die Osmanen hatten die Flotte binnen eines Jahres ersetzt und behielten Zypern. Symbolisch beendete sie den Ruf osmanischer Unbesiegbarkeit zur See. Miguel de Cervantes verlor hier den Gebrauch seiner linken Hand.",
-  "hinweis": "Beide Seiten setzten Zehntausende Rudersklaven ein. In den Verlustzahlen tauchen sie kaum auf."
+  "hinweis": "Beide Seiten setzten Zehntausende Rudersklaven ein. In den Verlustzahlen tauchen sie kaum auf.",
+  "vertiefung": "lepanto"
  },
  {
   "year": 1588,
@@ -2292,7 +2309,8 @@ const BATTLES = [
   ],
   "ausgang": "Schwedischer Sieg. Als die sächsischen Verbündeten flohen, schwenkte die bewegliche schwedische Aufstellung – kleine Einheiten mit eigener leichter Artillerie – in die entstandene Lücke ein und rollte die schwerfälligen Tercios auf.",
   "folgen": "Der Krieg wendete sich zugunsten der protestantischen Seite; Schweden wurde europäische Großmacht. Gustav Adolfs Militärreform – leichtere Geschütze, gemischte Verbände, salvenweises Feuer – wurde in ganz Europa nachgeahmt.",
-  "hinweis": "Ein Jahr später fiel Gustav Adolf bei Lützen. Der schwedische Vormarsch verlor damit seine Führungsfigur, der Krieg aber ging weitere sechzehn Jahre."
+  "hinweis": "Ein Jahr später fiel Gustav Adolf bei Lützen. Der schwedische Vormarsch verlor damit seine Führungsfigur, der Krieg aber ging weitere sechzehn Jahre.",
+  "vertiefung": "dreissigjaehriger-krieg"
  },
  {
   "year": 1683,
@@ -2316,7 +2334,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Entsatzarmee. Nach zwei Monaten Belagerung stand die Stadt kurz vor dem Fall; der Angriff vom Kahlenberg herab endete mit dem vermutlich größten Reiterangriff der Geschichte – etwa 18.000 Reiter, darunter die polischen Flügelhusaren.",
   "folgen": "Die osmanische Expansion in Mitteleuropa endete endgültig. In den folgenden Jahren fiel Ungarn an die Habsburger. Kara Mustafa wurde auf Befehl des Sultans erdrosselt.",
-  "hinweis": "Die Geschichte vom Wiener Kaffeehaus aus erbeuteten osmanischen Kaffeesäcken ist Legende; Kaffee war in Wien schon vorher bekannt."
+  "hinweis": "Die Geschichte vom Wiener Kaffeehaus aus erbeuteten osmanischen Kaffeesäcken ist Legende; Kaffee war in Wien schon vorher bekannt.",
+  "vertiefung": "wien-1683"
  },
  {
   "year": 1704,
@@ -2340,7 +2359,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Verbündeten. Marlborough band die Flügel und stieß mit der Reiterei durch die geschwächte Mitte.",
   "folgen": "Die erste schwere Niederlage Ludwigs XIV. im Feld. Wien war gerettet, Bayern besetzt, der Nimbus der französischen Unbesiegbarkeit dahin. Marlborough erhielt vom Parlament Blenheim Palace – dort wurde 170 Jahre später Winston Churchill geboren.",
-  "hinweis": "Der deutsche und der englische Name bezeichnen dieselbe Schlacht: Blenheim ist die englische Form von Blindheim, dem Nachbarort."
+  "hinweis": "Der deutsche und der englische Name bezeichnen dieselbe Schlacht: Blenheim ist die englische Form von Blindheim, dem Nachbarort.",
+  "vertiefung": "spanischer-erbfolgekrieg"
  },
  {
   "year": 1709,
@@ -2389,7 +2409,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Kompanie – erkauft, nicht erkämpft. Clive hatte den Heerführer Mir Jafar vorab bestochen; dessen Truppen, der größte Teil des Heeres, griffen nicht ein. Ein Regenschauer machte zudem das Pulver der bengalischen Geschütze unbrauchbar, das der Briten war abgedeckt.",
   "folgen": "Bengalen fiel unter die Kontrolle eines Handelsunternehmens. Aus den Steuereinnahmen der reichsten Provinz Indiens finanzierte die Kompanie ihre weitere Ausdehnung – der Beginn der britischen Herrschaft über Indien. Clive selbst nahm ein Vermögen mit nach England und musste sich später im Parlament rechtfertigen.",
-  "hinweis": "Mit 70 Toten auf der Siegerseite ist Plassey kaum eine Schlacht im militärischen Sinn. Ihre Folgen gehören trotzdem zu den weitreichendsten der Neuzeit."
+  "hinweis": "Mit 70 Toten auf der Siegerseite ist Plassey kaum eine Schlacht im militärischen Sinn. Ihre Folgen gehören trotzdem zu den weitreichendsten der Neuzeit.",
+  "vertiefung": "plassey"
  },
  {
   "year": 1781,
@@ -2463,7 +2484,8 @@ const BATTLES = [
   ],
   "ausgang": "Britischer Sieg. Nelson durchbrach die gegnerische Linie in zwei Kolonnen quer statt parallel zu segeln – riskant beim Anlauf, vernichtend danach, weil die eigenen Breitseiten die Gegner der Länge nach trafen.",
   "folgen": "Napoleons Invasionspläne gegen England waren erledigt; Großbritannien beherrschte für ein Jahrhundert die Meere. Nelson wurde von einem Scharfschützen getroffen und starb, als der Sieg feststand.",
-  "hinweis": "Trafalgar entschied den Krieg nicht – Napoleon siegte sechs Wochen später bei Austerlitz. Es entschied aber, dass er zur See nichts mehr ausrichten konnte."
+  "hinweis": "Trafalgar entschied den Krieg nicht – Napoleon siegte sechs Wochen später bei Austerlitz. Es entschied aber, dass er zur See nichts mehr ausrichten konnte.",
+  "vertiefung": "napoleonische-kriege"
  },
  {
   "year": 1805,
@@ -2487,7 +2509,8 @@ const BATTLES = [
   ],
   "ausgang": "Napoleons überzeugendster Sieg. Er gab seinen rechten Flügel absichtlich schwach, lockte die Verbündeten dorthin und stieß dann in die geräumte Mitte auf den Pratzenberg.",
   "folgen": "Österreich schied aus dem Krieg aus, das Heilige Römische Reich wurde ein Jahr später aufgelöst. Der Rheinbund entstand unter französischem Schutz. Die Schlacht der drei Kaiser gilt bis heute als Musterbeispiel operativer Führung.",
-  "hinweis": "Die Erzählung, hunderte Russen seien beim Rückzug im Eis eingebrochen und ertrunken, geht auf Napoleons Bulletin zurück. Beim Abfischen der Teiche fand man wenige Leichen."
+  "hinweis": "Die Erzählung, hunderte Russen seien beim Rückzug im Eis eingebrochen und ertrunken, geht auf Napoleons Bulletin zurück. Beim Abfischen der Teiche fand man wenige Leichen.",
+  "vertiefung": "napoleonische-kriege"
  },
  {
   "year": 1813,
@@ -2511,7 +2534,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Verbündeten nach vier Tagen. Sächsische Truppen liefen während der Schlacht über. Beim Rückzug wurde die einzige Elsterbrücke zu früh gesprengt – tausende Franzosen blieben zurück.",
   "folgen": "Die größte Schlacht Europas vor dem Ersten Weltkrieg. Napoleons Herrschaft über Deutschland endete, der Rheinbund zerfiel, ein halbes Jahr später war Paris besetzt.",
-  "hinweis": "Rund 600.000 Soldaten aus mehr als einem Dutzend Ländern kämpften – daher der Name. Erst Verdun übertraf diese Größenordnung wieder."
+  "hinweis": "Rund 600.000 Soldaten aus mehr als einem Dutzend Ländern kämpften – daher der Name. Erst Verdun übertraf diese Größenordnung wieder.",
+  "vertiefung": "napoleonische-kriege"
  },
  {
   "year": 1815,
@@ -2535,7 +2559,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Verbündeten. Wellington hielt den ganzen Tag in Verteidigung aus; am Abend traf Blücher mit den Preußen in Napoleons rechter Flanke ein und entschied die Schlacht.",
   "folgen": "Ende der Herrschaft der Hundert Tage. Napoleon dankte ab und starb 1821 auf St. Helena. Die auf dem Wiener Kongress ausgehandelte Ordnung hielt in Grundzügen bis 1914.",
-  "hinweis": "Ohne das preußische Eintreffen wäre Wellington vermutlich unterlegen. In der britischen Erinnerung tritt Blüchers Anteil oft zurück, in der deutschen Wellingtons."
+  "hinweis": "Ohne das preußische Eintreffen wäre Wellington vermutlich unterlegen. In der britischen Erinnerung tritt Blüchers Anteil oft zurück, in der deutschen Wellingtons.",
+  "vertiefung": "napoleonische-kriege"
  },
  {
   "year": 1836,
@@ -2632,7 +2657,8 @@ const BATTLES = [
   ],
   "ausgang": "Kapitulation der Konföderierten am 4. Juli nach 47 Tagen Belagerung. Grant hatte seine Nachschublinie bewusst aufgegeben und die Stadt von Süden her umfasst.",
   "folgen": "Die Union kontrollierte den gesamten Mississippi; die Konföderation war in zwei Teile geschnitten. Zusammen mit Gettysburg am Vortag gilt der Juli 1863 als Wendepunkt des Krieges. Grant wurde zum Oberbefehlshaber – und später Präsident.",
-  "hinweis": "Vicksburg feierte den 4. Juli danach achtzig Jahre lang nicht mehr."
+  "hinweis": "Vicksburg feierte den 4. Juli danach achtzig Jahre lang nicht mehr.",
+  "vertiefung": "amerikanischer-buergerkrieg"
  },
  {
   "year": 1866,
@@ -2681,7 +2707,8 @@ const BATTLES = [
   ],
   "ausgang": "Deutscher Sieg. Die französische Armee wurde in einem Talkessel eingeschlossen und von gezogenen Stahlgeschützen aus der Höhe zusammengeschossen. Napoleon III. kapitulierte persönlich.",
   "folgen": "Das Zweite Kaiserreich brach zusammen, in Paris wurde die Republik ausgerufen. Der Krieg ging trotzdem weiter bis Januar 1871 – mit der Belagerung von Paris und der Kaiserproklamation in Versailles. Elsass-Lothringen ging an das neue Deutsche Reich und belastete das Verhältnis beider Länder bis 1945.",
-  "hinweis": "Der Sedantag wurde im Kaiserreich zum nationalen Feiertag. In Frankreich hieß dieselbe Erinnerung revanche."
+  "hinweis": "Der Sedantag wurde im Kaiserreich zum nationalen Feiertag. In Frankreich hieß dieselbe Erinnerung revanche.",
+  "vertiefung": "reichsgruendung"
  },
  {
   "year": 1879,
@@ -2779,7 +2806,8 @@ const BATTLES = [
   ],
   "ausgang": "Japanischer Sieg nach elf Monaten. Frontalangriffe gegen befestigte Höhen kosteten zehntausende Leben, bis der 203-Meter-Hügel fiel und die Artillerie den Hafen beschießen konnte.",
   "folgen": "Die russische Pazifikflotte wurde im Hafen versenkt; deshalb musste die Ostseeflotte um die halbe Welt fahren – und wurde bei Tsushima vernichtet. Militärbeobachter aus ganz Europa sahen zu, wie Maschinengewehre Angriffe zerschlugen, und zogen daraus zehn Jahre später kaum Konsequenzen.",
-  "hinweis": "Port Arthur zeigte alle Merkmale des späteren Stellungskriegs. Die europäischen Generalstäbe deuteten es überwiegend als asiatische Besonderheit."
+  "hinweis": "Port Arthur zeigte alle Merkmale des späteren Stellungskriegs. Die europäischen Generalstäbe deuteten es überwiegend als asiatische Besonderheit.",
+  "vertiefung": "meiji"
  },
  {
   "year": 1905,
@@ -2803,7 +2831,8 @@ const BATTLES = [
   ],
   "ausgang": "Nahezu vollständige japanische Vernichtung der russischen Flotte in zwei Tagen. Tōgō kreuzte den russischen Kurs und brachte alle Breitseiten zur Wirkung; die russischen Schiffe waren nach sieben Monaten Fahrt bewuchert und langsam.",
   "folgen": "Erster Sieg einer asiatischen Macht über eine europäische Großmacht in einer modernen Seeschlacht. Russland musste Frieden schließen; die Niederlage löste die Revolution von 1905 aus. In Asien wirkte sie als Signal, dass europäische Überlegenheit kein Naturgesetz war.",
-  "hinweis": "Die russische Flotte war von der Ostsee um Afrika gefahren, weil Großbritannien den Suezkanal sperrte – 33.000 Kilometer ohne eigene Stützpunkte."
+  "hinweis": "Die russische Flotte war von der Ostsee um Afrika gefahren, weil Großbritannien den Suezkanal sperrte – 33.000 Kilometer ohne eigene Stützpunkte.",
+  "vertiefung": "meiji"
  },
  {
   "year": 1914,
@@ -2852,7 +2881,8 @@ const BATTLES = [
   ],
   "ausgang": "Deutscher Sieg durch Umfassung. Die Russen funkten unverschlüsselt; die deutsche Führung wusste, wo die Lücke zwischen den beiden russischen Armeen lag, und schlug sie einzeln.",
   "folgen": "Ostpreußen war gesichert. Hindenburg und Ludendorff wurden zu Nationalhelden und übernahmen 1916 faktisch die Führung des Reiches – mit Folgen weit über den Krieg hinaus. Der Name wurde bewusst gewählt: als Revanche für die Niederlage des Deutschen Ordens 1410.",
-  "hinweis": "Die Schlacht fand nicht bei Tannenberg statt. Die Umbenennung war ein politischer Akt."
+  "hinweis": "Die Schlacht fand nicht bei Tannenberg statt. Die Umbenennung war ein politischer Akt.",
+  "vertiefung": "julikrise"
  },
  {
   "year": 1915,
@@ -2975,7 +3005,8 @@ const BATTLES = [
   ],
   "ausgang": "Polnischer Sieg. Piłsudski zog heimlich Truppen ab und stieß in die ungeschützte Flanke der vorgestoßenen Roten Armee. Polnische Funkaufklärung hatte den sowjetischen Code gebrochen.",
   "folgen": "Der sowjetische Vorstoß nach Westen endete. Die Hoffnung, die Revolution nach Deutschland zu tragen, war zunächst begraben. Polen blieb unabhängig bis 1939. In Polen heißt die Schlacht Wunder an der Weichsel.",
-  "hinweis": "Der Codebruch wurde erst in den 2000er Jahren aus Archiven belegt – vorher galt der Sieg als militärisches Rätsel oder Wunder."
+  "hinweis": "Der Codebruch wurde erst in den 2000er Jahren aus Archiven belegt – vorher galt der Sieg als militärisches Rätsel oder Wunder.",
+  "vertiefung": "russische-revolution"
  },
  {
   "year": 1937,
@@ -2999,7 +3030,8 @@ const BATTLES = [
   ],
   "ausgang": "Japanischer Sieg nach drei Monaten Häuserkampf.",
   "folgen": "Chiang verlor seine besten Verbände und konnte sie nie ersetzen. Japans Erwartung, China binnen drei Monaten zu unterwerfen, war widerlegt – der Krieg dauerte acht Jahre. Auf den Fall Shanghais folgte das Massaker von Nanking.",
-  "hinweis": "Der Zweite Japanisch-Chinesische Krieg begann 1937 und damit vor dem europäischen Kriegsbeginn. In westlichen Darstellungen erscheint er oft nur als Nebenschauplatz."
+  "hinweis": "Der Zweite Japanisch-Chinesische Krieg begann 1937 und damit vor dem europäischen Kriegsbeginn. In westlichen Darstellungen erscheint er oft nur als Nebenschauplatz.",
+  "vertiefung": "zweiter-weltkrieg"
  },
  {
   "year": 1939,
@@ -3047,7 +3079,8 @@ const BATTLES = [
   ],
   "ausgang": "Britischer Abwehrerfolg. Die geplante Invasion wurde im September verschoben und nie ausgeführt.",
   "folgen": "Die erste rein in der Luft entschiedene Schlacht der Geschichte. Deutschland verlor erstmals einen Feldzug. Entscheidend waren weniger die Flugzeuge als das Dowding-System: eine Kette von Radarstationen, Beobachtern und Leitzentralen, die Jäger gezielt dorthin schickte, wo sie gebraucht wurden.",
-  "hinweis": "Die deutsche Verlagerung von Flugplätzen auf Städte im September verschaffte der Royal Air Force Zeit zur Erholung – eine Entscheidung, die den Ausgang mitbestimmte."
+  "hinweis": "Die deutsche Verlagerung von Flugplätzen auf Städte im September verschaffte der Royal Air Force Zeit zur Erholung – eine Entscheidung, die den Ausgang mitbestimmte.",
+  "vertiefung": "zweiter-weltkrieg"
  },
  {
   "year": 1941,
@@ -3095,7 +3128,8 @@ const BATTLES = [
   ],
   "ausgang": "Amerikanischer Sieg innerhalb weniger Minuten am Vormittag des 4. Juni. Die US-Marine hatte den japanischen Funkcode teilweise entschlüsselt und wusste, wohin der Angriff zielte. Sturzkampfbomber trafen drei Träger, während deren Decks mit umgerüsteten Maschinen voll waren.",
   "folgen": "Japan verlor vier Träger und einen großen Teil seiner erfahrenen Flugzeugführer – beides nicht ersetzbar. Die Initiative im Pazifik wechselte endgültig zu den USA.",
-  "hinweis": "Das Codeknacken wurde erst nach dem Krieg bekannt. Ohne diesen Vorteil hätte die zahlenmäßig unterlegene US-Flotte die japanische Flotte kaum stellen können."
+  "hinweis": "Das Codeknacken wurde erst nach dem Krieg bekannt. Ohne diesen Vorteil hätte die zahlenmäßig unterlegene US-Flotte die japanische Flotte kaum stellen können.",
+  "vertiefung": "wende-1942"
  },
  {
   "year": 1942,
@@ -3119,7 +3153,8 @@ const BATTLES = [
   ],
   "ausgang": "Sieg der Alliierten nach zwölf Tagen. Montgomery hatte klare Material- und Nachschubüberlegenheit; Rommels Treibstoff reichte nicht für eine bewegliche Verteidigung.",
   "folgen": "Der Vormarsch auf Suez und die Ölfelder des Nahen Ostens war beendet. Zusammen mit der Landung in Marokko und Algerien begann die Räumung Nordafrikas; im Mai 1943 kapitulierten dort 250.000 Achsensoldaten. Churchill: nicht das Ende, aber vielleicht das Ende des Anfangs.",
-  "hinweis": "Der britische Vorteil beruhte auch auf entschlüsselten Funksprüchen, aus denen die Alliierten Rommels Nachschubkonvois kannten und versenkten."
+  "hinweis": "Der britische Vorteil beruhte auch auf entschlüsselten Funksprüchen, aus denen die Alliierten Rommels Nachschubkonvois kannten und versenkten.",
+  "vertiefung": "wende-1942"
  },
  {
   "year": 1942,
@@ -3143,7 +3178,8 @@ const BATTLES = [
   ],
   "ausgang": "Taktisch japanischer Vorteil, strategisch amerikanischer: Die geplante japanische Landung in Port Moresby wurde abgebrochen.",
   "folgen": "Australien blieb außer Reichweite. Zwei japanische Träger fielen wegen Schäden und Flugzeugverlusten für Midway aus – ein Monat später fehlten sie dort entscheidend. Die Schlacht markierte das Ende der Ära, in der Schlachtschiffe den Seekrieg bestimmten.",
-  "hinweis": "Erste Trägerschlacht der Geschichte: Kein Schiff kam in Sichtweite eines gegnerischen Schiffs."
+  "hinweis": "Erste Trägerschlacht der Geschichte: Kein Schiff kam in Sichtweite eines gegnerischen Schiffs.",
+  "vertiefung": "wende-1942"
  },
  {
   "year": 1943,
@@ -3192,7 +3228,8 @@ const BATTLES = [
   ],
   "ausgang": "Sowjetischer Abwehrerfolg. Die Rote Armee kannte den Angriffsplan über die Aufklärung, baute acht gestaffelte Verteidigungsgürtel und ließ den Angriff sich festlaufen. Am 12. Juli trafen bei Prochorowka große Panzerverbände aufeinander.",
   "folgen": "Die letzte deutsche Großoffensive im Osten scheiterte. Von hier an lag die Initiative bis Kriegsende bei der Roten Armee. Die deutschen Panzerverluste waren zwar geringer, aber im Gegensatz zu den sowjetischen nicht ersetzbar.",
-  "hinweis": "Prochorowka galt lange als größte Panzerschlacht der Geschichte mit angeblich 1.500 Panzern. Neuere Archivauswertungen kommen auf deutlich kleinere Zahlen und einen weniger dramatischen Verlauf."
+  "hinweis": "Prochorowka galt lange als größte Panzerschlacht der Geschichte mit angeblich 1.500 Panzern. Neuere Archivauswertungen kommen auf deutlich kleinere Zahlen und einen weniger dramatischen Verlauf.",
+  "vertiefung": "wende-1942"
  },
  {
   "year": 1943,
@@ -3266,7 +3303,8 @@ const BATTLES = [
   ],
   "ausgang": "Britisch-indischer Sieg. Die japanische Offensive nach Indien rechnete mit erbeuteten Vorräten, die ausblieben; Luftversorgung hielt die eingeschlossenen Verteidiger am Leben, während die Angreifer verhungerten.",
   "folgen": "Die größte Niederlage der japanischen Landstreitkräfte im Krieg. Der Weg zur Rückeroberung Burmas war frei. Ein Großteil der Verluste ging nicht auf Kämpfe zurück, sondern auf Nachschubmangel und Krankheit.",
-  "hinweis": "2013 wählte das britische National Army Museum Imphal/Kohima zur größten Schlacht der britischen Militärgeschichte – bekannter sind Waterloo und die Somme."
+  "hinweis": "2013 wählte das britische National Army Museum Imphal/Kohima zur größten Schlacht der britischen Militärgeschichte – bekannter sind Waterloo und die Somme.",
+  "vertiefung": "zweiter-weltkrieg"
  },
  {
   "year": 1945,
@@ -3290,7 +3328,8 @@ const BATTLES = [
   ],
   "ausgang": "Amerikanischer Sieg nach 82 Tagen. Die japanische Verteidigung setzte auf tief gestaffelte Höhlenstellungen im Inneren statt auf Abwehr am Strand; rund 1.900 Kamikaze-Angriffe trafen die Flotte.",
   "folgen": "Die letzte große Schlacht des Pazifikkriegs. Die Verlustzahlen flossen unmittelbar in die amerikanische Abwägung über eine Invasion des japanischen Hauptlands – und damit über den Einsatz der Atombombe. Ein Viertel bis ein Drittel der Zivilbevölkerung Okinawas starb.",
-  "hinweis": "Zu den zivilen Opfern zählen auch Massenselbsttötungen, zu denen japanische Soldaten die Bevölkerung gedrängt hatten. Die Aufarbeitung ist in Japan bis heute umstritten."
+  "hinweis": "Zu den zivilen Opfern zählen auch Massenselbsttötungen, zu denen japanische Soldaten die Bevölkerung gedrängt hatten. Die Aufarbeitung ist in Japan bis heute umstritten.",
+  "vertiefung": "zweiter-weltkrieg"
  },
  {
   "year": 1945,
@@ -3314,7 +3353,8 @@ const BATTLES = [
   ],
   "ausgang": "Sowjetischer Sieg. Hitler nahm sich am 30. April das Leben, die Stadtkommandantur kapitulierte am 2. Mai, das Reich am 8. Mai.",
   "folgen": "Ende des Krieges in Europa. Berlin lag zu großen Teilen in Trümmern; die Stadt wurde in vier Sektoren geteilt – der Ausgangspunkt der deutschen Teilung. Zehntausende Frauen wurden Opfer von Vergewaltigungen durch sowjetische Soldaten, ein lange verschwiegenes Kapitel.",
-  "hinweis": "Die deutschen Verluste enthalten viele Volkssturmmänner und Jugendliche, die kaum ausgebildet waren. Ein Waffenstillstand hätte den größten Teil dieser Toten vermieden."
+  "hinweis": "Die deutschen Verluste enthalten viele Volkssturmmänner und Jugendliche, die kaum ausgebildet waren. Ein Waffenstillstand hätte den größten Teil dieser Toten vermieden.",
+  "vertiefung": "zweiter-weltkrieg"
  },
  {
   "year": 1950,
@@ -3388,7 +3428,8 @@ const BATTLES = [
   ],
   "ausgang": "Militärisch eine schwere Niederlage für den Norden: Der erhoffte Volksaufstand blieb aus, alle eroberten Positionen gingen verloren. Politisch der Wendepunkt.",
   "folgen": "Die Bilder aus Saigon und Huế widerlegten die amerikanische Darstellung, der Krieg sei so gut wie gewonnen. Präsident Johnson verzichtete auf eine erneute Kandidatur, Westmoreland wurde abgelöst, Verhandlungen begannen. Der Krieg dauerte noch sieben Jahre.",
-  "hinweis": "Ein Lehrstück darüber, dass Kriege nicht nur an der Front entschieden werden – und dass die FNL nach Tet militärisch so geschwächt war, dass Nordvietnam die Führung übernahm."
+  "hinweis": "Ein Lehrstück darüber, dass Kriege nicht nur an der Front entschieden werden – und dass die FNL nach Tet militärisch so geschwächt war, dass Nordvietnam die Führung übernahm.",
+  "vertiefung": "tet-offensive"
  },
  {
   "year": 1968,
@@ -3412,7 +3453,8 @@ const BATTLES = [
   ],
   "ausgang": "Die Basis hielt. Massive Luftunterstützung – rund 100.000 Tonnen Bomben – hielt die Belagerer auf Abstand. Wenige Monate später gaben die USA den Stützpunkt freiwillig auf.",
   "folgen": "Ob Khe Sanh ein Ablenkungsmanöver für Tet war oder ein ernst gemeinter Versuch, ein zweites Dien Bien Phu zu schaffen, ist bis heute umstritten. Die Aufgabe des mit so vielen Toten gehaltenen Stützpunkts wirkte in der amerikanischen Öffentlichkeit verheerend.",
-  "hinweis": "Die nordvietnamesischen Verluste beruhen auf amerikanischen Schätzungen aus Bombenwirkungsberechnungen – eine notorisch unzuverlässige Methode."
+  "hinweis": "Die nordvietnamesischen Verluste beruhen auf amerikanischen Schätzungen aus Bombenwirkungsberechnungen – eine notorisch unzuverlässige Methode.",
+  "vertiefung": "tet-offensive"
  },
  {
   "year": 1971,
@@ -3436,7 +3478,8 @@ const BATTLES = [
   ],
   "ausgang": "Indischer Sieg nach dreizehn Tagen. Die pakistanische Kapitulation in Dhaka am 16. Dezember war die größte Waffenstreckung seit dem Zweiten Weltkrieg.",
   "folgen": "Bangladesch wurde unabhängig. Vorausgegangen war eine Militäraktion der pakistanischen Armee mit hunderttausenden Toten und rund zehn Millionen Flüchtlingen nach Indien – der Auslöser des Krieges. Pakistan verlor über die Hälfte seiner Bevölkerung.",
-  "hinweis": "Die Opferzahlen der vorangegangenen Gewalt sind politisch hoch umstritten: Bangladesch nennt drei Millionen, unabhängige Schätzungen liegen deutlich darunter, pakistanische Angaben noch tiefer. Dass es sich um systematische Massengewalt handelte, ist nicht strittig."
+  "hinweis": "Die Opferzahlen der vorangegangenen Gewalt sind politisch hoch umstritten: Bangladesch nennt drei Millionen, unabhängige Schätzungen liegen deutlich darunter, pakistanische Angaben noch tiefer. Dass es sich um systematische Massengewalt handelte, ist nicht strittig.",
+  "vertiefung": "teilung-indiens"
  },
  {
   "year": 1973,

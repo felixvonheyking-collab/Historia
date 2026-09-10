@@ -9609,4 +9609,383 @@ const VERTIEFUNGEN = [
    "Cicero, Reden und Briefe (Selbstzeugnis); Sallust, De coniuratione Catilinae; Plutarch, Cicero"
   ]
  }
+, {
+  "id": "perserkriege",
+  "titel": "Die Perserkriege",
+  "epoche": "antike",
+  "jahr": -479,
+  "zeitraum": "499–449 v. Chr.",
+  "region": "Griechenland, Ägäis, Kleinasien",
+  "leitsatz": "Ein Weltreich verlor gegen ein Bündnis von Kleinstaaten – und weil die Verlierer keine Geschichtsschreibung hatten, kennen wir nur die Version der Sieger.",
+  "vorgeschichte": "Das Perserreich der Achaimeniden reichte vom Indus bis zur Ägäis und hatte die griechischen Städte Kleinasiens unter seine Herrschaft gebracht. 499 v. Chr. erhoben sich diese Städte; Athen schickte Schiffe. Der Aufstand wurde niedergeschlagen, aber Dareios I. hatte damit einen Grund, sich mit dem griechischen Festland zu befassen – und ein Reich, das seine Grenzen für gewöhnlich weiter hinausschob als bis zum nächsten Widerstand.",
+  "verlauf": "490 v. Chr. landete ein persisches Heer in der Bucht von Marathon und wurde von den Athenern geschlagen. Zehn Jahre später kam Xerxes I. mit Heer und Flotte über den Hellespont: Ein spartanisch geführtes Aufgebot hielt den Pass bei den Thermopylen drei Tage und wurde umgangen, Athen wurde eingenommen und niedergebrannt. Bei Salamis schlug die griechische Flotte in der Enge die überlegene persische, 479 v. Chr. entschied das Landheer bei Plataiai den Krieg. Die Kämpfe in der Ägäis zogen sich noch dreißig Jahre hin.",
+  "folgen": "Athen wurde zur Seemacht: Aus dem Bündnis gegen Persien wurde der Attische Seebund und daraus ein athenisches Reich, dessen Beiträge den Parthenon und die Flotte finanzierten. Aus dieser Vormacht entstand der Konflikt mit Sparta, der im Peloponnesischen Krieg endete. Und es entstand eine Erzählung, die Europa zwei Jahrtausende begleitet hat: Freiheit gegen Despotie, Westen gegen Osten. Für das Perserreich war der Feldzug ein gescheitertes Randunternehmen; es bestand weitere 150 Jahre.",
+  "strittig": "Fast alles, was wir wissen, steht bei Herodot – geschrieben eine Generation danach, aus athenischer Perspektive, mit erklärter Absicht, die Taten zu bewahren. Seine Zahlen sind unhaltbar: Er nennt für Xerxes' Heer über 2,6 Millionen Mann; moderne Schätzungen liegen bei 70.000 bis 300.000, und selbst das ist umstritten, weil die Versorgung eines solchen Heeres über den Landweg kaum darstellbar ist. Die dreihundert Spartaner an den Thermopylen kämpften nicht allein: Es waren mehrere Tausend Griechen, und die Thespier blieben bis zuletzt. Ob Marathon militärisch entscheidend oder ein abgebrochener Erkundungszug war, wird ebenfalls diskutiert.",
+  "zahlen": [
+   {
+    "wert": "490 v. Chr.",
+    "was": "Marathon"
+   },
+   {
+    "wert": "480 v. Chr.",
+    "was": "Thermopylen und Salamis"
+   },
+   {
+    "wert": "479 v. Chr.",
+    "was": "Plataiai – Entscheidung an Land"
+   },
+   {
+    "wert": "2.641.610",
+    "was": "Herodots Angabe zur Stärke von Xerxes' Heer – unmöglich, moderne Schätzungen liegen bei einem Bruchteil"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Warum ein Weltreich an Kleinstaaten scheiterte",
+    "text": "Die üblichen Erklärungen – Freiheitsliebe, bessere Waffen, klügere Feldherren – tragen nur teilweise. Belastbarer sind drei nüchterne Punkte.\n\nErstens die Versorgung. Ein persisches Heer in Griechenland musste über den Landweg oder über die Flotte versorgt werden, weil das Land selbst karg ist und die Ernten nicht für Zehntausende fremde Münder reichten. Deshalb marschierte das Heer entlang der Küste, und deshalb war die Flotte kein Nebenschauplatz, sondern die Lebensadere. Nach Salamis war der Nachschub gefährdet, und Xerxes zog den größten Teil des Heeres zurück, bevor überhaupt entschieden war.\n\nZweitens das Gelände. Die griechische Halbinsel besteht aus Engstellen: Pässe, Meerengen, schmale Ebenen. Wo die persische Überlegenheit in Reiterei und Bogenschützen zur Wirkung gekommen wäre, nämlich auf offenem Feld, kam sie kaum zum Einsatz – an den Thermopylen war der Pass wenige Meter breit, bei Salamis die Meerenge so eng, dass die Zahl der Schiffe zum Nachteil wurde.\n\nDrittens das Kriegsziel. Für Persien war Griechenland Grenzsicherung, für die Griechen eine Existenzfrage. Ein Reich, das an einer Peripherie kämpft, bricht ab, wenn die Kosten steigen; wer um seine Stadt kämpft, kann nicht abbrechen. Diese Asymmetrie erklärt mehr als jeder Charaktervergleich – und sie wiederholt sich in der Kriegsgeschichte bis heute."
+   },
+   {
+    "titel": "Wie aus einem Krieg ein Weltbild wurde",
+    "text": "Die Perserkriege sind das wirkungsmächtigste Beispiel dafür, dass nicht der Verlauf eines Krieges Geschichte macht, sondern seine Erzählung. Aischylos brachte 472 v. Chr. mit den Persern ein Stück auf die Bühne, in dem der persische Hof die Niederlage beklagt – das älteste erhaltene Drama überhaupt, und ein Stück Kriegsdeutung, aufgeführt vor Männern, die dabei gewesen waren. Herodot lieferte die Prosa, und in beiden steht dasselbe Gegensatzpaar: Griechen, die freiwillig einem Gesetz gehorchen, gegen Untertanen, die einem Herrn gehorchen müssen.\n\nDieses Paar ist in der europäischen Bildungsgeschichte weitergegeben worden, bis es wie eine Tatsache aussah. Im 19. Jahrhundert wurde Marathon zum Gründungsdatum der westlichen Zivilisation erklärt, und noch heute erscheinen die Perser in populären Darstellungen als anonyme Masse.\n\nDie persische Seite hat dazu nichts hinterlassen: keine Kriegsberichte, keine Verlustlisten, keine Gegenerzählung. Was es gibt – Verwaltungsurkunden aus Persepolis, Königsinschriften, die Organisation der Satrapien –, zeigt ein Reich, das Vielsprachigkeit und lokale Religionen weitgehend duldete, Straßen und ein Postsystem betrieb und in dem Griechen Karriere machten. Wer die Perserkriege nur aus Herodot kennt, kennt einen Krieg, aber nicht die beteiligten Gesellschaften."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Persisches Feuer",
+    "autor": "Tom Holland",
+    "jahr": "2005",
+    "warum": "Erzählt den Krieg von beiden Seiten und nimmt das Perserreich als Reich ernst, nicht als Kulisse. Bester Einstieg."
+   },
+   {
+    "titel": "Die Perserkriege",
+    "autor": "Josef Wiesehöfer",
+    "jahr": "2011",
+    "warum": "Knapp, quellenkritisch und von einem Iranisten geschrieben – genau die Perspektive, die in der klassischen Darstellung fehlt."
+   },
+   {
+    "titel": "Historien",
+    "autor": "Herodot",
+    "warum": "Die Quelle, ohne die wir nichts wüssten, und ein großartiges Buch – zu lesen als der erste Versuch überhaupt, einen Krieg zu erklären statt zu besingen, mit allen Fehlern eines ersten Versuchs."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Greco-Persian Wars; Battle of Marathon; Battle of Thermopylae; Battle of Salamis",
+   "Herodot, Historien (Hauptquelle, athenische Perspektive); Aischylos, Die Perser"
+  ]
+ },
+ {
+  "id": "napoleonische-kriege",
+  "titel": "Napoleons Kriege: Trafalgar, Austerlitz, Leipzig, Waterloo",
+  "epoche": "industrialisierung",
+  "jahr": 1815,
+  "zeitraum": "1803–1815",
+  "region": "Europa, Atlantik, Russland",
+  "leitsatz": "Napoleon verlor nie eine Schlacht, in der es nur um die Schlacht ging – und gewann keine, in der es um die Versorgung ging.",
+  "vorgeschichte": "Aus der Französischen Revolution war ein Staat hervorgegangen, der alle wehrfähigen Männer einziehen konnte: die Konskription. Damit standen Frankreich Heere zur Verfügung, die größer waren als alles, was Berufsarmeen aufbieten konnten, und die Verluste besser verkraftete. Napoleon, 1799 durch Staatsstreich an die Macht gekommen und 1804 Kaiser, verfügte über dieses Instrument und über eine Führungsstruktur mit selbstständigen Korps, die getrennt marschieren und zur Schlacht zusammentreten konnten.",
+  "verlauf": "1805 vernichtete die britische Flotte unter Nelson bei Trafalgar die französisch-spanische Seemacht – die Landung in England war damit für immer erledigt. Wenige Wochen später schlug Napoleon bei Austerlitz Österreicher und Russen und beherrschte den Kontinent. Der Versuch, Britannien wirtschaftlich zu erdrücken, führte ihn nach Spanien und 1812 nach Russland: Von rund 600.000 Mann kehrte ein Bruchteil zurück. 1813 verlor er die Völkerschlacht bei Leipzig gegen eine Koalition aller Großmächte, 1814 dankte er ab. Die Rückkehr 1815 endete nach hundert Tagen bei Waterloo.",
+  "folgen": "Der Wiener Kongress richtete eine Ordnung ein, die große Kriege zwischen den Mächten vier Jahrzehnte verhinderte – und liberale und nationale Bewegungen unterdrückte. Napoleons Verwaltungswerk überlebte ihn: der Code civil, Grundbuch, Präfekturen, das metrische System und die Idee einer Verwaltung nach gleichen Regeln gelten in großen Teilen Europas weiter. Und sein Feldzug in Deutschland und Italien hat den Nationalismus, gegen den er kämpfte, überhaupt erst breit gemacht.",
+  "strittig": "Über Waterloo wird bis heute gestritten, weil die Beteiligten unmittelbar begannen, sich das Verdienst zuzuschreiben: Wellingtons Bericht, die preußische Darstellung und die französische Verteidigungsliteratur widersprechen sich in Zeitangaben, Truppenstärken und der Frage, wann Blüchers Eintreffen entschied. Umstritten ist auch die Bewertung des Russlandfeldzugs: Ob Winter, Versorgung, Krankheiten oder die russische Ausweichstrategie ausschlaggebend waren, wird unterschiedlich gewichtet – Typhus und Ruhr töteten nach heutigem Forschungsstand mehr Soldaten als der Frost. Die Gesamtzahl der Kriegstoten von 1803 bis 1815 wird zwischen 2,5 und 6 Millionen geschätzt.",
+  "zahlen": [
+   {
+    "wert": "21. Oktober 1805",
+    "was": "Trafalgar – Nelson fällt, die britische Seeherrschaft steht für ein Jahrhundert"
+   },
+   {
+    "wert": "2. Dezember 1805",
+    "was": "Austerlitz – Napoleons klarster Sieg"
+   },
+   {
+    "wert": "ca. 600.000",
+    "was": "Stärke der Armee beim Einmarsch in Russland 1812"
+   },
+   {
+    "wert": "16.–19. Oktober 1813",
+    "was": "Völkerschlacht bei Leipzig, rund 600.000 Beteiligte – die größte Schlacht Europas vor 1914"
+   },
+   {
+    "wert": "18. Juni 1815",
+    "was": "Waterloo"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Was an Napoleons Kriegführung neu war",
+    "text": "Drei Dinge, keines davon eine Waffe.\n\nErstens die Gliederung in Korps. Ein Korps war ein kleines Heer mit eigener Infanterie, Reiterei, Artillerie und Versorgung, geführt von einem Marschall, der selbstständig entscheiden konnte. Die Armee marschierte auf getrennten Straßen – schneller, weil weniger Stau, und breiter, weil mehr Land abzuernten war – und trat erst am Schlachtfeld zusammen. Napoleons Grundsatz dazu ist überliefert als: getrennt marschieren, vereint schlagen.\n\nZweitens die Verpflegung aus dem Land. Wo frühere Heere von Magazinen abhingen und deshalb langsam waren, nahm sich die französische Armee, was sie brauchte. Das machte sie beweglich und in dünn besiedelten Gebieten wehrlos: In Spanien und in Russland funktionierte es nicht, und in beiden Fällen verlor Napoleon.\n\nDrittens das Schlachtziel. Zeitgenössische Feldherren suchten Stellungen und Geländevorteile; Napoleon suchte die Vernichtung des feindlichen Heeres in einer Entscheidungsschlacht, weil ein Staat ohne Armee zum Frieden gezwungen ist. Das funktionierte gegen Gegner, die eine Schlacht annahmen. Die Russen 1812 nahmen keine an, sondern zogen sich zurück und ließen ihn Moskau erreichen – ein leeres Moskau. Damit war seine Methode ausgehebelt, ohne dass eine Schlacht verloren war."
+   },
+   {
+    "titel": "Trafalgar und der lange Arm des Geldes",
+    "text": "Militärisch war Trafalgar eine Vernichtungsschlacht: Nelson durchbrach die Linie in zwei Kolonnen statt parallel aufzufahren, nahm dabei das Risiko auf sich, unter Feuer zu segeln, ohne antworten zu können, und zerlegte die feindliche Linie in Stücke, die einzeln bekämpft wurden. Britannien verlor kein Schiff, die Gegner zweiundzwanzig, Nelson sein Leben.\n\nDie eigentliche Wirkung lag aber nicht auf dem Wasser. Die Seeherrschaft entschied, wer Handel treiben, Kolonien halten und Verbündete bezahlen konnte. Britannien finanzierte die Koalitionen gegen Napoleon mit Subsidien – nach den Rechnungen des Schatzamtes über die Kriegsjahre mehr als 60 Millionen Pfund –, aufgebracht aus Zolleinnahmen und Staatsanleihen, die nur ein Land aufnehmen kann, dessen Handel gesichert ist.\n\nNapoleons Antwort war die Kontinentalsperre: Europa sollte britische Waren aussperren. Sie schadete den Verbündeten mehr als dem Gegner, förderte Schmuggel in großem Stil und war der Grund, warum er in Spanien einmarschierte und Russland zum Feind machte. Der Bogen von Trafalgar über Spanien bis Moskau ist einer: Wer die See verliert, muss den Kontinent lückenlos beherrschen – und das kann niemand."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Napoleon. Eine Biographie",
+    "autor": "Andrew Roberts",
+    "jahr": "2014",
+    "warum": "Ausführlich, aus den Briefen gearbeitet und dem Gegenstand zugewandt – man sollte wissen, dass der Verfasser Sympathie hat, und es dann lesen."
+   },
+   {
+    "titel": "Der Preis des Ruhms. Europa und Napoleon",
+    "autor": "Charles Esdaile",
+    "jahr": "2007",
+    "warum": "Der Gegenpol: rechnet die Kosten für die Gesellschaften Europas auf und bestreitet den Reformnutzen."
+   },
+   {
+    "titel": "Waterloo. Vier Tage, die Europa veränderten",
+    "autor": "Bernard Cornwell",
+    "jahr": "2014",
+    "warum": "Die Schlacht Stunde für Stunde aus Augenzeugenberichten, ohne Nationalstolz auf einer Seite. Gut, um zu sehen, wie widersprüchlich die Quellen zu einem einzigen Tag sind."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Napoleonic Wars; Battle of Trafalgar; Battle of Austerlitz; Battle of Leipzig; Battle of Waterloo",
+   "Britisches Nationalarchiv: Subsidienzahlungen an die Koalitionen"
+  ]
+ },
+ {
+  "id": "lepanto",
+  "titel": "Lepanto 1571",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1571,
+  "zeitraum": "7. Oktober 1571",
+  "region": "Golf von Patras, Mittelmeer",
+  "leitsatz": "Die größte Galeerenschlacht der Geschichte änderte fast nichts an der Machtverteilung – und alles an der Selbstwahrnehmung Europas.",
+  "vorgeschichte": "Das Osmanische Reich beherrschte das östliche Mittelmeer und nahm 1570 Zypern von Venedig. Papst Pius V. brachte daraufhin eine Heilige Liga aus Spanien, Venedig, Genua, Savoyen, dem Kirchenstaat und den Malteserrittern zusammen – ein Bündnis von Mächten, die einander misstrauten und deren Interessen auseinandergingen: Venedig wollte den Handel, Spanien wollte Nordafrika.",
+  "verlauf": "Am 7. Oktober 1571 trafen im Golf von Patras rund 210 Schiffe der Liga auf etwa 250 osmanische. Entscheidend waren zwei Dinge: die venezianischen Galeassen, schwere Ruderschiffe mit Geschützen an allen Seiten, die die osmanische Linie vor dem Zusammenstoß aufbrachen, und die höhere Zahl von Feuerwaffen bei den Soldaten an Bord. Nach vier Stunden war die osmanische Flotte vernichtet; ihr Oberbefehlshaber fiel. Rund zwölftausend christliche Rudersklaven wurden befreit.",
+  "folgen": "Militärisch hielt der Erfolg nicht: Die Osmanen bauten binnen eines Jahres eine neue Flotte, behielten Zypern und schlossen 1573 mit Venedig einen Frieden, in dem Venedig zahlte. 1574 nahmen sie Tunis. Was blieb, war das Ende der Vorstellung, die osmanische Flotte sei unbesiegbar – und ein Bildprogramm: Lepanto wurde in Gemälden, Fresken, Prozessionen und Gedichten das Sinnbild eines geeinten Europa. Cervantes, der als Soldat dabei war und eine Hand verlor, nannte es den größten Tag der Geschichte.",
+  "strittig": "Über die militärische Bedeutung gehen die Urteile weit auseinander. Eine Deutung sieht Lepanto als Wendepunkt, der die osmanische Expansion im Mittelmeer stoppte; die Gegenposition verweist auf Tunis 1574 und darauf, dass sich die osmanische Aufmerksamkeit ohnehin nach Persien und ins Rote Meer verlagerte. Die zeitgenössischen Verlustzahlen – rund 30.000 osmanische Tote – sind Siegermeldungen. Auch die Zahl der befreiten Rudersklaven schwankt zwischen zehn- und fünfzehntausend.",
+  "zahlen": [
+   {
+    "wert": "ca. 460",
+    "was": "beteiligte Kriegsschiffe – die größte Galeerenschlacht der Geschichte"
+   },
+   {
+    "wert": "ca. 170.000",
+    "was": "beteiligte Männer auf beiden Seiten, davon ein großer Teil Ruderer"
+   },
+   {
+    "wert": "6",
+    "was": "venezianische Galeassen, die die osmanische Linie aufbrachen"
+   },
+   {
+    "wert": "1573",
+    "was": "Frieden: Venedig verzichtet auf Zypern und zahlt Kriegsentschädigung"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Das letzte Gefecht einer Waffengattung",
+    "text": "Lepanto war der Höhepunkt und das Ende der Galeerenkriegführung. Eine Galeere ist ein Ruderschiff mit einem Sporn am Bug und Soldaten an Deck; die Schlacht ist ein Landkampf auf dem Wasser, entschieden durch Rammen und Entern. Das setzt zwei Dinge voraus: ruhiges, küstennahes Wasser und sehr viele Menschen – eine Galeere brauchte 150 bis 200 Ruderer, die aus Sträflingen, Kriegsgefangenen und Sklaven zusammenkamen und deren Arbeit tödlich war.\n\nGenau diese Kriegführung war 1571 schon überholt. Im Atlantik hatten sich Segelschiffe mit Breitseitenartillerie durchgesetzt, die hochseefähig sind, ein Vielfaches an Geschützen tragen und mit einem Bruchteil der Besatzung fahren. Die venezianischen Galeassen von Lepanto sind ein Zwitter aus beidem und zeigen, wohin es geht: Was entschied, war nicht der Sporn, sondern das Geschütz.\n\nBeide Seiten lernten daraus. Nach 1600 verschwinden große Galeerenschlachten aus der Geschichte; das Mittelmeer wird zum Nebenkriegsschauplatz, weil die Weltwirtschaft über den Atlantik und um Afrika läuft. Lepanto steht damit an derselben Stelle wie viele letzte große Siege: Es bewies eine Methode, die kurz danach niemand mehr brauchte."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Lepanto 1571. Die Seeschlacht",
+    "autor": "Arnold Cassola",
+    "warum": "Nüchterne Darstellung von Aufstellung, Verlauf und Verlusten, mit maltesischen und italienischen Quellen."
+   },
+   {
+    "titel": "Empires of the Sea",
+    "autor": "Roger Crowley",
+    "jahr": "2008",
+    "warum": "Erzählt den Kampf um das Mittelmeer von Malta bis Lepanto und macht verständlich, warum beide Seiten glaubten, um alles zu spielen."
+   },
+   {
+    "titel": "Der geniale Ritter Don Quijote",
+    "autor": "Miguel de Cervantes",
+    "warum": "Kein Sachbuch, aber der Verfasser war bei Lepanto dabei – die Stellen über Soldatenleben und Gefangenschaft in Algier sind Zeitzeugnis."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Battle of Lepanto; Holy League; Ottoman Empire",
+   "Vertrag von 1573 zwischen Venedig und dem Osmanischen Reich"
+  ]
+ },
+ {
+  "id": "wien-1683",
+  "titel": "Wien 1683 und was daraus erzählt wurde",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1683,
+  "zeitraum": "Juli bis September 1683",
+  "region": "Wien, Ungarn, Osmanisches Reich",
+  "leitsatz": "Der Entsatz Wiens war eine echte Wende der osmanischen Geschichte – und die Ausgangspunkt für mehr erfundene Überlieferung als fast jedes andere Ereignis.",
+  "vorgeschichte": "Nach 1660 hatte das Osmanische Reich unter dem Großwesir Kara Mustafa Pascha wieder eine offensive Politik aufgenommen; ein Aufstand ungarischer Adliger gegen die Habsburger bot den Anlass. Kaiser Leopold I. war militärisch schwach aufgestellt, weil Frankreich im Westen band. Papst Innozenz XI. finanzierte ein Bündnis, und der polnische König Johann III. Sobieski verpflichtete sich zur Hilfe – ohne ihn wäre kein Entsatzheer zustande gekommen.",
+  "verlauf": "Im Juli 1683 begann die Belagerung mit rund 100.000 bis 150.000 osmanischen Soldaten gegen eine Garnison von etwa 15.000. Zwei Monate lang wurde nicht gestürmt, sondern untergraben: Minen sprengten die Bastionen Stück für Stück, die Verteidiger gruben Gegenminen. Am 12. September griff das Entsatzheer aus etwa 70.000 Mann vom Kahlenberg an – Polen, Kaiserliche, Bayern, Sachsen, Franken. Der Angriff der polnischen Reiterei am Nachmittag entschied den Tag; das osmanische Lager wurde genommen.",
+  "folgen": "Kara Mustafa wurde in Belgrad erdrosselt. Es folgte der Große Türkenkrieg, an dessen Ende 1699 Ungarn und Siebenbürgen habsburgisch waren – die größte Gebietsabtretung der osmanischen Geschichte bis dahin. Für Wien begann eine Bauperiode, in der Vorstädte, Palais und Kirchen neu entstanden. Und für die europäische Erinnerung wurde 1683 zum Datum der Rettung – eine Deutung, die bis heute politisch benutzt wird.",
+  "strittig": "Die berühmten Folgen sind fast alle nicht belegt. Kaffeehäuser gab es in Wien vor 1683 (der erste Betreiber war ein armenischer Kaufmann); Kolschitzkys Rolle wurde im 18. Jahrhundert ausgeschmückt. Das Kipferl in Halbmondform als Nachbildung der osmanischen Fahne, der Bäckerlehrling, der die Minierer hörte, und der Bagel als Dank an Sobieski sind Erzählungen des 19. und 20. Jahrhunderts ohne zeitgenössische Grundlage. Auch die Truppenstärken schwanken erheblich, weil osmanische und europäische Angaben unterschiedlich zählen. Umstritten ist ferner, wie viel Sobieskis Reiterangriff und wie viel die vorangegangenen Stunden der kaiserlichen und deutschen Verbände entschieden – beide Seiten haben unmittelbar begonnen, sich das Verdienst zuzuschreiben.",
+  "zahlen": [
+   {
+    "wert": "14. Juli 1683",
+    "was": "Beginn der Belagerung"
+   },
+   {
+    "wert": "ca. 15.000",
+    "was": "Verteidiger gegen ein Mehrfaches an Belagerern"
+   },
+   {
+    "wert": "12. September 1683",
+    "was": "Entsatzschlacht am Kahlenberg"
+   },
+   {
+    "wert": "1699",
+    "was": "Frieden von Karlowitz: Ungarn und Siebenbürgen fallen an die Habsburger"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Wie eine Belagerung wirklich entschieden wurde",
+    "text": "Die verbreitete Vorstellung von Sturmangriffen auf Mauern trifft für 1683 nicht zu. Wien war seit 1529 nach italienischem Vorbild befestigt: keine hohen Mauern, sondern niedrige, dicke Bastionen mit vorgelagertem Graben und einem freien Schussfeld, in dem kein Angreifer Deckung findet. Gegen solche Anlagen half kein Sturm, sondern nur der Spaten.\n\nDie osmanischen Minierer – ein hochspezialisiertes Korps – trieben Stollen unter die Bastionen, um sie zu sprengen; die Verteidiger trieben Gegenstollen, um die Minen zu finden und zu ersticken. Zwei Monate lang bestand der Krieg um Wien aus dieser Arbeit unter der Erde, dazu aus Ruhr, Hunger und Erschöpfung. Als das Entsatzheer eintraf, war ein Teil der Befestigung schon aufgegeben und die Garnison auf einen Bruchteil geschrumpft; Zeitgenossen rechneten mit dem Fall der Stadt in Tagen.\n\nDas erklärt auch, warum die Entsatzschlacht überhaupt gewonnen werden konnte. Das osmanische Heer stand mit dem Rücken zu einer Belagerung, die es nicht aufgeben wollte, und musste gleichzeitig nach vorn gegen ein Feldheer kämpfen – die klassische Lage, in der eine Belagerungsarmee verliert. Kara Mustafas Entscheidung, die Belagerung nicht abzubrechen und in geordneter Feldstellung zu kämpfen, gilt als sein Hauptfehler."
+   },
+   {
+    "titel": "Warum sich um dieses Datum so viele Legenden gesammelt haben",
+    "text": "Kaum ein Ereignis der Neuzeit trägt so viel erfundene Überlieferung wie 1683, und der Grund liegt nicht im 17., sondern im 19. Jahrhundert. Damals brauchten die entstehenden Nationalstaaten Gründungserzählungen, und Wien 1683 bot eine, die zu allem passte: die gerettete Stadt, der fremde Angreifer, die Rettung in letzter Minute. In dieses Muster wurden Alltagsdinge eingebaut, deren Herkunft niemand mehr prüfte – Kaffee, Hörnchen, Backwaren, ein Held aus dem Volk.\n\nDie Prüfung ist einfach und in jedem Fall gleich: Man sucht die früheste Nennung. Kolschitzky als Kaffeehausgründer erscheint über hundert Jahre nach 1683; das Kipferl ist als Gebäck lange vorher belegt und hat mit dem Halbmond nichts zu tun; die Geschichte vom Bäckerlehrling steht in keiner zeitgenössischen Quelle. Was zeitgenössisch belegt ist, sind Tagebücher der Belagerung, Kriegsberichte, Rechnungen – und die sprechen von Minen, Krankheit und Geldmangel.\n\nDas ist mehr als Kleinigkeitenkrämerei, weil dasselbe Datum bis heute politisch angeführt wird. Wer sich auf 1683 beruft, beruft sich meist auf die Erzählung des 19. Jahrhunderts und nicht auf das Ereignis: einen Krieg zwischen zwei Reichen, in dem Frankreich mit dem Osmanischen Reich verhandelte, ungarische Protestanten auf osmanischer Seite standen und die Konfessionsgrenzen quer durch die Bündnisse liefen."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Der Feind vor den Toren",
+    "autor": "Andrew Wheatcroft",
+    "jahr": "2008",
+    "warum": "Behandelt die Belagerung militärisch genau und zugleich die Geschichte ihrer Deutung bis in die Gegenwart. Das beste Buch zum Thema."
+   },
+   {
+    "titel": "Die Türken vor Wien",
+    "autor": "Walter Sturminger",
+    "jahr": "1968",
+    "warum": "Sammlung zeitgenössischer Berichte beider Seiten – gut, um zu sehen, wie die Belagerung von innen aussah."
+   },
+   {
+    "titel": "Das Osmanische Reich",
+    "autor": "Suraiya Faroqhi",
+    "jahr": "2000",
+    "warum": "Für die Gegenseite: was 1683 aus osmanischer Sicht war, und wie ein Reich funktionierte, das man in Europa nur als Bedrohung beschrieb."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Siege of Vienna (1683); Great Turkish War; Treaty of Karlowitz",
+   "Wien Geschichte Wiki (Stadt Wien) zu Kolschitzky und den Kaffeehauslegenden"
+  ]
+ },
+ {
+  "id": "plassey",
+  "titel": "Plassey 1757: Wie eine Handelsgesellschaft ein Reich erbte",
+  "epoche": "industrialisierung",
+  "jahr": 1757,
+  "zeitraum": "23. Juni 1757",
+  "region": "Bengalen",
+  "leitsatz": "Der Anfang der britischen Herrschaft über Indien war keine Eroberung, sondern ein gekaufter Seitenwechsel.",
+  "vorgeschichte": "Bengalen war die reichste Provinz des zerfallenden Mogulreichs, mit Textilausfuhr, Salpeter und Getreide. Die britische East India Company handelte dort seit Jahrzehnten mit Zollprivilegien, die sie ausweitete, indem sie sie auch auf Privatgeschäfte ihrer Angestellten anwandte. Der neue Nawab Siraj ud-Daula bestand auf Durchsetzung der Regeln, nahm 1756 die Handelsstation Kalkutta ein – und die Company entschied, ihn austauschen zu lassen.",
+  "verlauf": "Robert Clive verhandelte vor der Schlacht mit dem Heerführer und Bankier des Nawabs: Mir Jafar sollte selbst Nawab werden, wenn er im Gefecht nicht kämpfte, finanziert wurde die Absprache über das Bankhaus Jagat Seth. Am 23. Juni 1757 standen bei Plassey rund 3.000 Mann der Company gegen etwa 50.000 des Nawabs. Ein Regenschauer machte die bengalische Artillerie unbrauchbar, die britische blieb abgedeckt; der größte Teil des Heeres griff nicht ein. Der Nawab floh und wurde getötet.",
+  "folgen": "Mir Jafar wurde Nawab und zahlte; die Company erhielt 1765 das Recht, in Bengalen die Steuern einzuziehen. Damit war ein Handelsunternehmen mit eigener Armee zur Steuerbehörde einer Provinz von zwanzig Millionen Menschen geworden – ein Vorgang ohne Vorbild. Die folgenden Jahre gelten als eine Phase systematischer Ausplünderung; die Hungersnot von 1770 in Bengalen kostete nach Schätzungen Millionen Menschen das Leben. Aus dieser Verwaltung wuchs bis 1858 die britische Herrschaft über den Subkontinent.",
+  "strittig": "Plassey wird oft als militärische Meisterleistung dargestellt; die Forschung betont dagegen die Absprache. Wie entscheidend Verrat, Regen, Artillerie und Clives Führung jeweils waren, lässt sich nicht sauber trennen – die Berichte stammen überwiegend von Clive und seinen Offizieren, die vor einem Untersuchungsausschuss in London Rechenschaft ablegen mussten und entsprechend erzählten. Die Zahlen zur Hungersnot von 1770 (üblich: bis zu zehn Millionen) beruhen auf Schätzungen aus Steuerausfällen und sind nicht überprüfbar; unstrittig ist, dass die Company während der Hungersnot Steuern weiter erhob.",
+  "zahlen": [
+   {
+    "wert": "ca. 3.000 gegen ca. 50.000",
+    "was": "Truppenstärken bei Plassey"
+   },
+   {
+    "wert": "ca. 22",
+    "was": "gefallene Soldaten auf Seiten der Company – die Zahl, an der die Absprache am deutlichsten ablesbar ist"
+   },
+   {
+    "wert": "1765",
+    "was": "Die Company erhält das Steuerrecht (Diwani) für Bengalen, Bihar und Orissa"
+   },
+   {
+    "wert": "1770",
+    "was": "Hungersnot in Bengalen; die Schätzungen der Todesopfer gehen weit auseinander"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Ein Unternehmen mit eigener Armee",
+    "text": "Die East India Company war eine Aktiengesellschaft mit Sitz in London, gegründet 1600, mit einem königlichen Monopol für den Handel östlich des Kaps. Was sie zur Macht machte, war eine Nebenerlaubnis: Sie durfte Festungen bauen, Soldaten anwerben und Krieg führen, weil im Indischen Ozean kein Staat für ihre Sicherheit sorgte. Bis 1800 hatte sie eine Armee von über 200.000 Mann – größer als die britische.\n\nDamit entstand ein Gebilde, für das das Staatsrecht keine Kategorie hatte: Es zog Steuern ein, sprach Recht, prägte Münzen und führte Krieg, war aber seinen Aktionären verantwortlich und zahlte Dividende. Die Interessen von Anteilseignern und Verwalteten liefen systematisch auseinander: Eine Verwaltung, die den Ertrag maximieren muss, investiert nicht in Vorratshaltung gegen Hungersnöte.\n\nDas Parlament in London hat diesen Widerspruch über achtzig Jahre in Schritten korrigiert – Untersuchungsausschüsse gegen Clive und Hastings, das Regulierungsgesetz von 1773, die Doppelverwaltung von 1784, das Ende des Handelsmonopols 1813 –, bis die Company 1858 nach dem großen Aufstand ganz aufgelöst und Indien der Krone unterstellt wurde. Der Fall ist bis heute das Standardbeispiel für die Frage, was passiert, wenn ein Unternehmen staatliche Aufgaben übernimmt."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Der Anarch. Die Geschichte der East India Company",
+    "autor": "William Dalrymple",
+    "jahr": "2019",
+    "warum": "Erzählt den Aufstieg der Company aus indischen und britischen Quellen und behandelt Plassey als das, was es war: ein Geschäft."
+   },
+   {
+    "titel": "The Transition to a Colonial Economy",
+    "autor": "Tirthankar Roy",
+    "jahr": "2011",
+    "warum": "Wirtschaftsgeschichtlich nüchtern, mit Zahlen statt Empörung – und mit Widerspruch gegen einfache Ausplünderungsthesen."
+   },
+   {
+    "titel": "Indien. Eine Geschichte",
+    "autor": "John Keay",
+    "jahr": "2000",
+    "warum": "Für den größeren Zusammenhang: warum das Mogulreich zerfiel und was das für die Regionalmächte bedeutete."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Battle of Plassey; East India Company; Robert Clive",
+   "Berichte der Untersuchungsausschüsse des britischen Parlaments zu Clive (1772/73)"
+  ]
+ },
+ {
+  "id": "tet-offensive",
+  "titel": "Die Tet-Offensive 1968",
+  "epoche": "moderne",
+  "jahr": 1968,
+  "zeitraum": "Januar bis September 1968",
+  "region": "Vietnam, USA",
+  "leitsatz": "Militärisch eine Niederlage der Angreifer, politisch ihr größter Erfolg – der Lehrbuchfall dafür, dass Kriege nicht nur auf dem Schlachtfeld entschieden werden.",
+  "vorgeschichte": "Bis Ende 1967 hatten die USA über 480.000 Soldaten in Vietnam und meldeten laufend Fortschritte; der Oberbefehlshaber Westmoreland sprach öffentlich davon, das Ende sei in Sicht. Die nordvietnamesische Führung entschied sich für einen landesweiten Angriff, der die südvietnamesische Bevölkerung zum Aufstand bringen und die Regierung in Saigon stürzen sollte. Als Termin wählte sie das Neujahrsfest Tet, für das ein Waffenstillstand galt.",
+  "verlauf": "Ab dem 30. Januar 1968 griffen rund 80.000 Soldaten und Kämpfer über hundert Städte gleichzeitig an, darunter Saigon, wo eine Gruppe in das Gelände der US-Botschaft eindrang. Die meisten Angriffe brachen innerhalb von Tagen zusammen; in Huế hielten sich die Angreifer fast einen Monat, und die Rückeroberung zerstörte die Stadt. Parallel lief die Belagerung von Khe Sanh, auf die sich die amerikanische Aufmerksamkeit zunächst gerichtet hatte. Die Verluste der Angreifer waren sehr hoch, ein Aufstand der Bevölkerung blieb aus.",
+  "folgen": "Der Widerspruch zwischen den offiziellen Fortschrittsmeldungen und Bildern von Kämpfen im Zentrum Saigons zerstörte die Glaubwürdigkeit der Kriegsführung in den USA. Die Zustimmung zum Krieg fiel, Westmoreland wurde abgelöst, sein Antrag auf 200.000 weitere Soldaten abgelehnt. Präsident Johnson kündigte am 31. März Verhandlungen an und verzichtete auf eine Wiederkandidatur. Der Krieg dauerte noch sieben Jahre, aber die amerikanische Strategie war ab 1968 auf Rückzug angelegt.",
+  "strittig": "Umstritten ist bis heute die Rolle der Berichterstattung. Eine Lesart macht die Medien für den Stimmungsumschwung verantwortlich; Untersuchungen der Umfragedaten zeigen dagegen, dass die Zustimmung schon seit 1967 sank und Tet den Trend beschleunigte, nicht auslöste. Die Verlustzahlen sind unsicher, weil beide Seiten Anlass zur Verzerrung hatten: Amerikanische Angaben nennen rund 45.000 gefallene Angreifer, was mit den geschätzten Truppenstärken schwer vereinbar ist. Über die Massenerschießungen in Huế während der Besetzung – die Zahl der gefundenen Toten liegt bei mehreren Tausend – gibt es unterschiedliche Angaben zu Umfang und Befehlslage.",
+  "zahlen": [
+   {
+    "wert": "30. Januar 1968",
+    "was": "Beginn der Offensive während des Tet-Waffenstillstands"
+   },
+   {
+    "wert": "über 100",
+    "was": "gleichzeitig angegriffene Städte und Stützpunkte"
+   },
+   {
+    "wert": "26 Tage",
+    "was": "Kampf um Huế; die Altstadt wurde weitgehend zerstört"
+   },
+   {
+    "wert": "31. März 1968",
+    "was": "Johnson kündigt Verhandlungen an und verzichtet auf eine Wiederkandidatur"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Warum die Zahlen den Krieg nicht abbildeten",
+    "text": "Die amerikanische Kriegsführung in Vietnam arbeitete mit Kennzahlen, weil es keine Front gab, an der Fortschritt ablesbar wäre. Die wichtigste war der body count, die Zahl getöteter Gegner. Verteidigungsminister McNamara, aus der Automobilindustrie kommend, hatte das Verteidigungsministerium auf statistische Steuerung umgestellt, und in einem Krieg ohne Geländegewinn wurde die Verlustzahl des Feindes zum Erfolgsmaß.\n\nDas hatte zwei Folgen. Erstens wurde gemeldet, was gebraucht wurde: Einheiten, deren Beurteilung an der Zahl hing, zählten großzügig, und die Zahlen wurden nach oben aggregiert, ohne dass jemand sie prüfen konnte. Zweitens – und schwerer – maß die Kennzahl das Falsche. Nordvietnam war bereit, Verluste zu tragen, die für die USA unvorstellbar waren, weil es um das eigene Land ging; hohe Verluste des Gegners bedeuteten also nicht, dass er dem Aufgeben näher war.\n\nTet hat beides offengelegt. Nach der Statistik war der Krieg fast gewonnen, und dann standen Kämpfer im Botschaftsgelände. Der Vorgang gilt seither in der Militärsoziologie als Standardbeispiel dafür, dass eine Kennzahl, an der Karrieren hängen, aufhört, die Wirklichkeit zu messen – und dafür, dass die Wahl der Kennzahl schon die Strategie ist."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Vietnam. Eine Geschichte des Krieges",
+    "autor": "Max Hastings",
+    "jahr": "2018",
+    "warum": "Umfassend und aus Quellen beider Seiten, mit vietnamesischen Stimmen – die beste Gesamtdarstellung."
+   },
+   {
+    "titel": "Hue 1968",
+    "autor": "Mark Bowden",
+    "jahr": "2017",
+    "warum": "Rekonstruiert die härteste Schlacht der Offensive aus Interviews mit Amerikanern, Südvietnamesen und Nordvietnamesen."
+   },
+   {
+    "titel": "Dereliction of Duty",
+    "autor": "H. R. McMaster",
+    "jahr": "1997",
+    "warum": "Über die Entscheidungswege in Washington und darüber, wie Kennzahlen und Rücksichten die Lagebeurteilung ersetzten."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Tet Offensive; Vietnam War; Battle of Hue",
+   "Gallup-Umfragedaten zur Zustimmung zum Vietnamkrieg 1965–1971"
+  ]
+ }
 ];

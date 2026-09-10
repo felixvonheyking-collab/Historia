@@ -3885,7 +3885,8 @@ const THEMEN = [
     "jahr": 1798,
     "titel": "Napoleon landet",
     "text": "Die französische Ägyptenexpedition beginnt mit der Einnahme Alexandrias. Mit dem Heer kommen über hundertfünfzig Gelehrte, deren Beschreibung Ägyptens die Ägyptologie begründet; einer von ihnen findet den Stein von Rosette. Drei Jahre später vertreiben Briten und Osmanen die Franzosen, aber die Öffnung des Landes für europäische Interessen ist nicht rückgängig zu machen.",
-    "herrschaft": "Französische Besetzung"
+    "herrschaft": "Französische Besetzung",
+    "vertiefung": "napoleonische-kriege"
    },
    {
     "jahr": 1820,
@@ -4032,7 +4033,8 @@ const THEMEN = [
     "jahr": 1683,
     "titel": "Die zweite Belagerung",
     "text": "Ein osmanisches Heer belagert Wien zwei Monate und untergräbt die Bastionen mit Minen; die Garnison ist auf ein Drittel geschrumpft, als ein Entsatzheer unter dem polnischen König Johann III. Sobieski und Karl von Lothringen vom Kahlenberg angreift und die Belagerer schlägt. Es folgt der Große Türkenkrieg, an dessen Ende Ungarn habsburgisch ist. Die Stadt baut anschließend die Vorstädte neu – der Wiener Barock ist eine Nachkriegsarchitektur.",
-    "herrschaft": "Habsburger"
+    "herrschaft": "Habsburger",
+    "vertiefung": "wien-1683"
    },
    {
     "jahr": 1700,
@@ -4063,13 +4065,15 @@ const THEMEN = [
     "jahr": 1809,
     "titel": "Napoleon in Schönbrunn",
     "text": "Französische Truppen besetzen Wien zum zweiten Mal innerhalb von vier Jahren; Napoleon nimmt Quartier in Schönbrunn und lässt beim Abzug Teile der Stadtmauer sprengen. Der anschließende Friede kostet Österreich große Gebiete und führt in den Staatsbankrott von 1811. Aus dieser Schwächephase geht Metternich als bestimmende Figur hervor.",
-    "herrschaft": "Habsburger, französische Besetzung"
+    "herrschaft": "Habsburger, französische Besetzung",
+    "vertiefung": "napoleonische-kriege"
    },
    {
     "jahr": 1814,
     "titel": "Der Wiener Kongress",
     "text": "Ein Dreivierteljahr verhandeln die Mächte in Wien die Ordnung Europas nach Napoleon; parallel finden Bälle, Jagden und Empfänge statt, die die Stadt Millionen kosten und ihren Ruf begründen. Das Ergebnis ist ein Gleichgewicht, das große Kriege zwischen den Großmächten für vier Jahrzehnte verhindert – und ein System der Unterdrückung nationaler und liberaler Bewegungen. Beides gehört zusammen.",
-    "herrschaft": "Habsburger"
+    "herrschaft": "Habsburger",
+    "vertiefung": "napoleonische-kriege"
    },
    {
     "jahr": 1848,
@@ -4236,7 +4240,8 @@ const THEMEN = [
     "jahr": 1806,
     "titel": "Napoleon zieht durch das Brandenburger Tor",
     "text": "Nach der Niederlage bei Jena und Auerstedt besetzen französische Truppen Berlin; die Quadriga wird nach Paris abtransportiert und kehrt 1814 zurück. Die Besetzung löst die preußischen Reformen aus: Bauernbefreiung, Gewerbefreiheit, Städteordnung, Heeresreform. Berlin erhält 1808 erstmals eine gewählte Stadtverordnetenversammlung.",
-    "herrschaft": "Königreich Preußen, französische Besetzung"
+    "herrschaft": "Königreich Preußen, französische Besetzung",
+    "vertiefung": "napoleonische-kriege"
    },
    {
     "jahr": 1810,
@@ -4500,7 +4505,8 @@ const THEMEN = [
     "jahr": 751,
     "titel": "Talas",
     "text": "Am Fluss Talas in Zentralasien wird ein Tang-Heer von arabischen Truppen geschlagen; die chinesische Ausdehnung nach Westen endet damit. Nach einer späteren Überlieferung gelangte durch chinesische Kriegsgefangene die Papierherstellung nach Samarkand – der Weg des Papiers nach Bagdad und später nach Europa. Der Beleg dafür ist spät und dünn, die Datierung der Papierproduktion in Samarkand passt aber.",
-    "herrschaft": "Tang-Dynastie"
+    "herrschaft": "Tang-Dynastie",
+    "vertiefung": "seidenstrasse"
    },
    {
     "jahr": 755,
