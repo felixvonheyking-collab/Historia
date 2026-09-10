@@ -141,9 +141,47 @@ function grafikenFuer(id) {
   return (typeof GRAFIKEN !== "undefined" && GRAFIKEN[id]) || [];
 }
 
+/* Fotos und Abbildungen. Anders als die Grafiken sind das fremde Werke,
+   deshalb steht unter jedem Bild die Herkunft: Urheber, Lizenz und ein
+   Verweis auf die Quellenseite. Bei CC-BY und CC-BY-SA ist das Bedingung
+   der Lizenz, bei gemeinfreien Werken eine Frage des Anstands.
+
+   loading="lazy" und die festen Maße sind kein Beiwerk: Ohne sie laedt
+   das Handy Bilder, die niemand ansieht, und die Seite springt beim
+   Nachladen. */
+function Abbildung({ bild }) {
+  return /* @__PURE__ */ React.createElement("figure", { className: "mb-5 rounded-lg border border-[#5c2018] bg-[#4a1418] p-3" },
+    /* @__PURE__ */ React.createElement("img", {
+      src: bild.datei,
+      alt: bild.zeigt,
+      width: bild.breite,
+      height: bild.hoehe,
+      loading: "lazy",
+      decoding: "async",
+      style: { width: "100%", height: "auto", display: "block", borderRadius: "4px" }
+    }),
+    /* @__PURE__ */ React.createElement("figcaption", { className: "mt-2" },
+      /* @__PURE__ */ React.createElement("div", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37]" }, bild.zeigt),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-1" }, bild.bildunterschrift),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[11px] text-[#8a6238] leading-snug mt-1" },
+        bild.urheber, " · ", bild.lizenz, " · ",
+        /* @__PURE__ */ React.createElement("a", {
+          href: bild.herkunft, target: "_blank", rel: "noopener noreferrer",
+          className: "underline hover:text-[#d4af37]"
+        }, "Quelle")
+      )
+    )
+  );
+}
+
+function bildFuer(id) {
+  return typeof BILDER !== "undefined" ? BILDER.find((b) => b.id === id) : undefined;
+}
+
 function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
   const epoche = EPOCHS.find((e) => e.id === eintrag.epoche);
   const bilder = grafikenFuer(eintrag.id);
+  const foto = bildFuer(eintrag.id);
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("button", {
       onClick: onBack,
@@ -161,6 +199,11 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     ),
     /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-3" }, eintrag.titel),
     /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic leading-relaxed border-l-2 border-[#d4af37] pl-4 mb-6" }, eintrag.leitsatz),
+
+    // Das Foto steht oben, die erklaerende Grafik weiter unten nach dem
+    // Verlauf. Ein Bild zeigt, worum es geht; eine Grafik ordnet, was
+    // man gelesen hat.
+    foto && /* @__PURE__ */ React.createElement(Abbildung, { bild: foto }),
 
     eintrag.zahlen && eintrag.zahlen.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-6" },
       eintrag.zahlen.map((z, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded border border-[#5c2018] bg-[#5c1a1e] px-3 py-2" },

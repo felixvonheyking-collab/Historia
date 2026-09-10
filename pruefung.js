@@ -32,7 +32,8 @@ const DATEN = [
   "data-themen.js",
   "data-mysterien.js",
   "data-dynastien.js",
-  "data-grafiken.js"
+  "data-grafiken.js",
+  "data-bilder.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -56,7 +57,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN })",
+      "   GRAFIKEN, BILDER })",
       kontext
     );
   } catch (e) {
@@ -340,6 +341,41 @@ function pruefeWiderspruecheZwischenSammlungen(D) {
   }
 }
 
+// Bilder sind fremde Werke. Ohne Urheber, Lizenz und Herkunftsseite darf
+// keines in der App stehen - bei CC-BY und CC-BY-SA ist die Nennung
+// Bedingung der Lizenz. Und eine Datei, die es nicht gibt, ergibt in der
+// App ein kaputtes Bild ohne Fehlermeldung.
+function pruefeBilder(D) {
+  const vertIds = new Set(D.VERTIEFUNGEN.map((v) => v.id));
+  const liste = D.BILDER || [];
+  pruefeDubletten("Bilder", liste, "id");
+  pruefeFelder("Bilder", liste,
+    ["id", "datei", "breite", "hoehe", "zeigt", "bildunterschrift",
+     "urheber", "lizenz", "herkunft"], "id");
+  const ERLAUBT = ["public domain", "cc0", "cc by", "cc-by"];
+  liste.forEach((b) => {
+    if (!vertIds.has(b.id)) meldeFehler("Bild '" + b.id + "': keine Vertiefung mit dieser Id");
+    if (!fs.existsSync(path.join(WURZEL, b.datei))) {
+      meldeFehler("Bild '" + b.id + "': Datei " + b.datei + " fehlt");
+    }
+    if (!ERLAUBT.some((e) => String(b.lizenz).toLowerCase().includes(e))) {
+      meldeFehler("Bild '" + b.id + "': Lizenz '" + b.lizenz + "' ist nicht freigegeben");
+    }
+    if (!/^https:\/\//.test(b.herkunft)) {
+      meldeFehler("Bild '" + b.id + "': Herkunft ist keine https-Adresse");
+    }
+    const kb = fs.existsSync(path.join(WURZEL, b.datei))
+      ? Math.round(fs.statSync(path.join(WURZEL, b.datei)).size / 1024) : 0;
+    if (kb > 700) meldeHinweis("Bild '" + b.id + "': " + kb + " KB - fuer Mobilfunk viel");
+  });
+  const summe = liste.reduce((a, b) => {
+    const p = path.join(WURZEL, b.datei);
+    return a + (fs.existsSync(p) ? fs.statSync(p).size : 0);
+  }, 0);
+  console.log("  Bilder: " + liste.length + " Dateien, zusammen " +
+    Math.round(summe / 1024 / 1024 * 10) / 10 + " MB");
+}
+
 /* --------------------------------------------------------------- Grafiken */
 
 // Die Grafiken stehen als SVG-Quelltext in den Daten. Ein Tippfehler in
@@ -589,6 +625,7 @@ function pruefeInhalte(D) {
     D.DYNASTIEN.reduce((a, r) => a + r.perioden.reduce((b, p) =>
       b + p.dynastien.reduce((c, d) => c + d.herrscher.length, 0), 0), 0) + " Herrscher");
   pruefeGrafiken(D);
+  pruefeBilder(D);
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
