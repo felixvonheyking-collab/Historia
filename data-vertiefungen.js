@@ -8146,5 +8146,1142 @@ const VERTIEFUNGEN = [
     "Farhad Daftary: The Assassin Legends",
     "Marco Polo: Il Milione (als Legendenquelle)"
   ]
+},
+{
+  "id": "dampfmaschine",
+  "titel": "Die Dampfmaschine und der Kondensator",
+  "epoche": "industrialisierung",
+  "jahr": 1769,
+  "zeitraum": "1712–1800",
+  "region": "England und Schottland",
+  "leitsatz": "Newcomen baute die erste brauchbare Maschine, Watt machte sie bezahlbar — und der Unterschied war ein zweiter Behälter.",
+  "vorgeschichte": "Um 1700 war das Grundproblem des englischen Bergbaus das Wasser: Je tiefer ein Schacht, desto mehr lief hinein, und Pferde am Göpel schafften nur begrenzte Mengen. Wer Kohle wollte, brauchte eine Pumpe, die selbst mit Kohle lief. Denis Papin und Thomas Savery hatten Vorstufen gebaut, die kaum funktionierten.",
+  "verlauf": "Thomas Newcomen stellte 1712 die erste dauerhaft arbeitende atmosphärische Dampfmaschine auf: Dampf füllt einen Zylinder, kaltes Wasser kühlt ihn, der Unterdruck zieht den Kolben nach unten. Sie lief zuverlässig und verbrauchte enorm viel Kohle, weil der Zylinder in jedem Takt aufgeheizt und wieder abgekühlt wurde. Direkt an der Zeche war das gleichgültig — dort lag der Brennstoff.\n\nJames Watt reparierte 1763 als Instrumentenmacher in Glasgow ein Modell einer Newcomen-Maschine und rechnete nach, wieviel Wärme das Abkühlen des Zylinders kostete. Sein Einfall von 1765, patentiert 1769, war ein getrennter Kondensator: Der Zylinder bleibt heiß, der Dampf wird in einem zweiten, gekühlten Gefäß niedergeschlagen. Das senkte den Kohleverbrauch auf etwa ein Viertel. Erst damit war die Maschine auch dort wirtschaftlich, wo Kohle transportiert werden musste — also überall.",
+  "folgen": "Mit Watts Verbesserung, der Drehbewegung über Kurbel und Planetengetriebe und der Fertigung durch Matthew Boultons Werkstatt wurde die Maschine zum Antrieb der Fabrik. Die Folge war eine Verschiebung der Geografie: Produktion musste nicht länger an Flüssen mit Wasserkraft liegen, sondern konnte dorthin, wo Arbeitskräfte und Absatz waren. Die Städte des 19. Jahrhunderts sind das Ergebnis.\n\nWatts Patente wirkten dabei zweischneidig: Sie sicherten die Entwicklung, blockierten aber bis 1800 die Arbeit anderer am Hochdruckdampf, mit dem Richard Trevithick danach die Lokomotive möglich machte.",
+  "strittig": "Die Erzählung, Watt habe die Dampfmaschine erfunden, ist falsch und hält sich zäh; die Legende mit dem Teekessel stammt aus Erbauungsliteratur des 19. Jahrhunderts. Umstritten ist, wie entscheidend die Dampfmaschine für die Industrialisierung war: Bis in die 1830er Jahre lieferte in Großbritannien Wasserkraft mehr Antriebsleistung als Dampf, und Wirtschaftshistoriker streiten, ob Dampf Ursache oder Folge des Wachstums war.",
+  "zahlen": [
+    {
+      "wert": "ca. 75 %",
+      "was": "Kohleersparnis durch den getrennten Kondensator"
+    },
+    {
+      "wert": "1769",
+      "was": "Watts Patent, 57 Jahre nach Newcomens erster Maschine"
+    },
+    {
+      "wert": "1800",
+      "was": "Ablauf des Patents — danach Hochdruckdampf und Lokomotive"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Dampfmaschine",
+      "autor": "Ben Marsden",
+      "jahr": "2002",
+      "warum": "Kurz und genau: was Newcomen, was Watt, und was die Legende dazuerfand."
+    },
+    {
+      "titel": "Die industrielle Revolution",
+      "autor": "Robert C. Allen",
+      "jahr": "2009",
+      "warum": "Warum sie in England begann — hohe Löhne, billige Kohle. Die überzeugendste wirtschaftliche Erklärung."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: steam engine; James Watt",
+    "Patent Nr. 913 (Watt, 1769)",
+    "Robert C. Allen: The British Industrial Revolution in Global Perspective"
+  ]
+},
+{
+  "id": "elektrifizierung",
+  "titel": "Die ersten Kraftwerke und der Stromkrieg",
+  "epoche": "industrialisierung",
+  "jahr": 1882,
+  "zeitraum": "1882–1900",
+  "region": "USA und Europa",
+  "leitsatz": "Der Streit um Gleich- und Wechselstrom wurde nicht im Labor entschieden, sondern an der Frage, wie weit sich Strom transportieren lässt.",
+  "vorgeschichte": "Nach Faradays Induktion von 1831 und der Dynamomaschine war Strom technisch verfügbar, aber ohne Zweck: Es fehlte ein Gerät, das viele Menschen kaufen wollten. Die Bogenlampe war zu hell für Wohnräume. Erst die haltbare Glühlampe schuf einen Massenmarkt — und damit die Notwendigkeit, Strom zu verteilen.",
+  "verlauf": "1882 gingen fast gleichzeitig Edisons Pearl Street Station in New York und ein Kraftwerk in London in Betrieb, beide mit Gleichstrom. Gleichstrom hat einen technischen Nachteil: Er lässt sich nicht einfach in der Spannung ändern, und bei niedriger Spannung gehen die Verluste in der Leitung so hoch, dass ein Kraftwerk nur wenige Straßenzüge versorgen kann. Edison hätte in jedem Viertel eines bauen müssen.\n\nWechselstrom ließ sich mit Transformatoren hochspannen, über Land führen und beim Verbraucher wieder heruntersetzen. George Westinghouse setzte darauf, gestützt auf Nikola Teslas Mehrphasenmotor. Edison bekämpfte das mit einer Kampagne über die Gefährlichkeit — bis zur Vorführung von Tierversuchen und der Mitwirkung an der Einführung des elektrischen Stuhls, der mit Wechselstrom betrieben wurde. Entschieden war die Sache 1893 mit der Weltausstellung in Chicago und 1895 mit dem Kraftwerk an den Niagarafällen, das Strom über 40 Kilometer nach Buffalo lieferte.",
+  "folgen": "Die Entscheidung für Wechselstrom machte das zentrale Kraftwerk und damit das Netz möglich — die Grundform der Stromversorgung bis heute. Damit begann auch etwas anderes: die Trennung von Erzeugung und Verbrauch. Wer Strom nutzt, muss nicht wissen, woher er kommt, und das ist der Grund, weshalb der Umbau der Erzeugung heute technisch möglich ist, ohne dass Geräte getauscht werden müssen.\n\nGleichstrom kehrte übrigens zurück: Höchstspannungs-Gleichstromübertragung ist heute das Verfahren für sehr lange Strecken und Seekabel.",
+  "strittig": "Die Rollen sind in der Erzählung stark zugespitzt. Tesla war ein wichtiger, aber nicht der einzige Kopf hinter dem Mehrphasensystem — Galileo Ferraris beschrieb das Drehfeld unabhängig, und die deutsche Entwicklung um Michail Dolivo-Dobrowolski lief parallel. Auch Edisons Anteil an der Kampagne gegen Wechselstrom ist in Einzelheiten strittig; belegt ist, dass er sie führte, nicht jede zugeschriebene Handlung.",
+  "zahlen": [
+    {
+      "wert": "1882",
+      "was": "erste öffentliche Kraftwerke in New York und London"
+    },
+    {
+      "wert": "ca. 800 m",
+      "was": "praktische Reichweite eines Gleichstromnetzes bei damaliger Spannung"
+    },
+    {
+      "wert": "40 km",
+      "was": "Übertragung Niagara–Buffalo, 1896"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: electric power; war of the currents",
+    "Thomas P. Hughes: Networks of Power",
+    "IEEE: Niagara Falls power transmission, historische Dokumentation"
+  ]
+},
+{
+  "id": "erdoel",
+  "titel": "Die erste Ölbohrung und was daraus wurde",
+  "epoche": "industrialisierung",
+  "jahr": 1859,
+  "zeitraum": "1859–1911",
+  "region": "USA und weltweit",
+  "leitsatz": "Gesucht wurde Lampenöl, weil die Wale ausgingen. Der Stoff, der heute alles antreibt, war zunächst ein Abfallprodukt.",
+  "vorgeschichte": "Mitte des 19. Jahrhunderts beleuchtete sich die Welt mit Walöl, und der Walfang hatte die Bestände schwer geschädigt; die Preise stiegen. Erdöl war bekannt, wo es an die Oberfläche trat, und wurde als Heilmittel verkauft. Die Idee, gezielt danach zu bohren, stammt von einer Gruppe um George Bissell, die zuvor chemisch hatte prüfen lassen, dass sich aus dem Rohstoff Leuchtöl gewinnen lässt.",
+  "verlauf": "Edwin Drake bohrte 1859 in Titusville, Pennsylvania, mit einer umgebauten Salzbohrtechnik und dem entscheidenden Griff, ein Rohr in das Bohrloch zu treiben, damit es nicht einstürzte. In gut 21 Metern Tiefe stieß er auf Öl. Innerhalb von Monaten entstand ein Bohrfieber, innerhalb von Jahren eine Industrie — und mit John D. Rockefellers Standard Oil ab 1870 ein Konzern, der über die Raffinerien und die Bahnfrachten fast den ganzen Markt beherrschte, bis das Oberste Gericht ihn 1911 zerlegte.\n\nBenzin, das leichte Destillat, war zunächst schwer verkäuflich und wurde teils in Flüsse geleitet. Erst der Verbrennungsmotor gab ihm einen Zweck. Militärisch wurde Öl 1911 entscheidend, als die britische Marine unter Winston Churchill von Kohle auf Öl umstellte: schneller, weniger Personal — aber Großbritannien hatte keine eigenen Ölquellen, und das verband Energiepolitik mit Nahost-Politik.",
+  "folgen": "Öl deckt heute rund ein Drittel des weltweiten Energiebedarfs und ist Grundstoff für Kunststoffe, Düngemittel, Arzneien und Asphalt. Aus der Umstellung von 1911 folgt eine Linie, die über die Ölkrise von 1973 bis in die Gegenwart reicht: Wer Öl braucht und keines hat, betreibt Außenpolitik darum. Und der Kohlenstoff, den 165 Jahre Förderung freigesetzt haben, ist die Hauptursache der Erderwärmung.",
+  "strittig": "Ob Drake wirklich der Erste war, hängt an der Definition: In Baku wurde bereits 1846 gebohrt, in Ontario 1858 Öl gefördert. Drakes Bohrung war die erste, die als Verfahren nachgeahmt wurde. Umstritten sind die Vorräte: Hubberts Peak-Oil-These von 1956 traf für die USA zunächst zu und wurde durch die Förderung aus Schiefergestein widerlegt — was nichts darüber sagt, ob Öl endlich ist, sondern nur, wann.",
+  "zahlen": [
+    {
+      "wert": "21 m",
+      "was": "Tiefe der Bohrung von Titusville"
+    },
+    {
+      "wert": "1911",
+      "was": "Zerlegung von Standard Oil und Umstellung der britischen Flotte auf Öl"
+    },
+    {
+      "wert": "ca. 1/3",
+      "was": "Anteil des Öls am heutigen Weltenergieverbrauch"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der Preis",
+      "autor": "Daniel Yergin",
+      "jahr": "1991",
+      "warum": "Die Geschichte des Öls als Geschichte der Macht, von Titusville bis zum Golfkrieg. Umfangreich und mitreißend."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: petroleum industry; Standard Oil",
+    "Daniel Yergin: The Prize",
+    "IEA: World Energy Outlook, laufende Ausgaben"
+  ]
+},
+{
+  "id": "haber-bosch",
+  "titel": "Brot aus Luft — und Sprengstoff dazu",
+  "epoche": "moderne",
+  "jahr": 1909,
+  "zeitraum": "1909–heute",
+  "region": "Deutschland und weltweit",
+  "leitsatz": "Etwa die Hälfte des Stickstoffs im Körper eines heute lebenden Menschen ist durch dieses Verfahren gegangen. Es hat mehr Menschen ernährt und mehr getötet als fast jede andere Erfindung.",
+  "vorgeschichte": "Pflanzen brauchen Stickstoff, und der Stickstoff der Luft ist für sie unbrauchbar, weil das Molekül sehr fest gebunden ist. Bis 1900 kam Düngerstickstoff aus Guano und aus den Salpeterlagern Chiles — endliche Vorräte, die per Schiff nach Europa gingen. Malthus' Voraussage, dass die Bevölkerung schneller wachse als die Nahrung, schien sich zu bestätigen.",
+  "verlauf": "Fritz Haber gelang 1909 im Labor die Verbindung von Luftstickstoff und Wasserstoff zu Ammoniak, unter hohem Druck und mit einem Katalysator. Carl Bosch und Alwin Mittasch machten daraus bei der BASF ein Großverfahren; dafür mussten Druckbehälter entwickelt werden, die es noch nicht gab, und über 2.500 Katalysatorstoffe wurden durchprobiert. 1913 lief die Anlage in Oppau.\n\nDer Krieg kam ein Jahr später. Die britische Seeblockade schnitt Deutschland vom chilenischen Salpeter ab — ohne den auch kein Schießpulver und kein Sprengstoff herzustellen war. Das Haber-Bosch-Verfahren machte Deutschland unabhängig davon und verlängerte damit den Krieg um Jahre. Haber selbst leitete zudem den Einsatz von Chlorgas 1915 bei Ypern; seine Frau Clara Immerwahr, selbst Chemikerin, nahm sich kurz darauf das Leben. 1918 erhielt Haber den Nobelpreis für die Ammoniaksynthese, 1933 musste er als Jude Deutschland verlassen.",
+  "folgen": "Ohne synthetischen Dünger könnte die Erde nach den gängigen Schätzungen etwa die Hälfte ihrer heutigen Bevölkerung ernähren. Das Verfahren verbraucht rund ein bis zwei Prozent der Weltenergie und ist damit auch ein Klimafaktor. Und der überschüssige Stickstoff ist zum eigenen Problem geworden: Er gelangt ins Grundwasser, überdüngt Flüsse und Küsten und erzeugt sauerstofffreie Zonen im Meer. Der Stickstoffkreislauf gilt in der Forschung als eine der planetaren Grenzen, die am deutlichsten überschritten sind.",
+  "strittig": "Die Zahl, wieviele Menschen ohne das Verfahren nicht leben würden, ist eine Modellrechnung; Vaclav Smils Schätzung von etwa der Hälfte ist die verbreitetste, andere liegen niedriger. Umstritten ist auch die Bewertung Habers: Ob und wie ein Wissenschaftler für die Verwendung seiner Arbeit verantwortlich ist, wird an seinem Fall seit hundert Jahren diskutiert, ohne dass es eine gemeinsame Antwort gäbe.",
+  "zahlen": [
+    {
+      "wert": "ca. 50 %",
+      "was": "Anteil der Weltbevölkerung, der ohne synthetischen Dünger nicht ernährt würde (Schätzung)"
+    },
+    {
+      "wert": "über 2.500",
+      "was": "geprüfte Katalysatorstoffe bis zum brauchbaren Ergebnis"
+    },
+    {
+      "wert": "1–2 %",
+      "was": "Anteil am weltweiten Energieverbrauch"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Enriching the Earth",
+      "autor": "Vaclav Smil",
+      "jahr": "2001",
+      "warum": "Das Standardwerk: Technik, Zahlen und Folgen des Verfahrens, ohne Beschönigung in beide Richtungen."
+    },
+    {
+      "titel": "Meister der Zerstörung",
+      "autor": "Daniel Charles",
+      "jahr": "2005",
+      "warum": "Habers Biographie — Nobelpreis und Giftgas in einem Leben. Abwägend erzählt."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Haber-Bosch process; Fritz Haber",
+    "Vaclav Smil: Enriching the Earth",
+    "Nobelprize.org: Chemie 1918 und 1931",
+    "Stockholm Resilience Centre: Planetary Boundaries, laufende Fassung"
+  ]
+},
+{
+  "id": "kernspaltung",
+  "titel": "Die Kernspaltung und die vier Monate bis zur Bombe im Kopf",
+  "epoche": "moderne",
+  "jahr": 1938,
+  "zeitraum": "1938–1942",
+  "region": "Deutschland, Schweden, USA",
+  "leitsatz": "Die Entdeckung geschah in Berlin, die Erklärung im schwedischen Exil — und den Nobelpreis bekam nur einer von beiden.",
+  "vorgeschichte": "Nach der Entdeckung des Neutrons 1932 beschossen mehrere Arbeitsgruppen Elemente damit, um schwerere zu erzeugen. Enrico Fermi in Rom, Irène Curie in Paris und die Gruppe um Otto Hahn und Lise Meitner in Berlin arbeiteten am selben Problem und deuteten ihre Ergebnisse jahrelang falsch: Sie erwarteten Elemente schwerer als Uran und fanden Dinge, die nicht passten.",
+  "verlauf": "Lise Meitner musste 1938 als Jüdin aus Deutschland fliehen und ging nach Schweden. Im Dezember 1938 fanden Otto Hahn und Fritz Strassmann in Berlin bei einem Uranversuch Barium — ein Element mit etwa halber Masse. Hahn schrieb es Meitner, weil er es chemisch nicht erklären konnte. Sie rechnete es mit ihrem Neffen Otto Frisch über Weihnachten in Schweden durch: Der Kern war nicht verändert, er war zerplatzt, und die frei werdende Energie ließ sich aus dem Massendefekt berechnen. Frisch prägte den Namen Kernspaltung.\n\nDie Tragweite war innerhalb weniger Monate klar: Wenn bei der Spaltung Neutronen frei werden, können sie weitere Kerne spalten. Im August 1939 unterschrieb Einstein den von Leó Szilárd verfassten Brief an Roosevelt. Am 2. Dezember 1942 erreichte Fermis Reaktor unter der Tribüne des Sportplatzes von Chicago die erste kontrollierte Kettenreaktion.",
+  "folgen": "Aus derselben Entdeckung kamen Kernwaffen und Kernkraftwerke. Der Nobelpreis für Chemie 1944 ging allein an Hahn; Meitners Anteil an der Deutung wurde vom Komitee nicht gewürdigt, was heute als eine der klarsten Fehlentscheidungen seiner Geschichte gilt. Nach ihr ist das Element 109 benannt, Meitnerium.\n\nDas deutsche Uranprojekt kam bis 1945 nicht zu einem Reaktor. Warum, ist eine der bekanntesten Streitfragen der Wissenschaftsgeschichte.",
+  "strittig": "Ob die deutschen Physiker die Bombe nicht bauen konnten oder nicht bauen wollten, wird seit den Farm-Hall-Protokollen von 1945 diskutiert; die Mehrheit der Forschung sieht Fehleinschätzungen und mangelnde Mittel, nicht Verweigerung. Umstritten ist auch, wie stark Hahn Meitners Beitrag später kleinredete — die Briefwechsel lassen beide Lesarten zu und sind veröffentlicht.",
+  "zahlen": [
+    {
+      "wert": "Dezember 1938",
+      "was": "Nachweis von Barium in Berlin"
+    },
+    {
+      "wert": "2. Dezember 1942",
+      "was": "erste kontrollierte Kettenreaktion, Chicago"
+    },
+    {
+      "wert": "109",
+      "was": "das Element, das Meitners Namen trägt"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: nuclear fission; Lise Meitner",
+    "Naturwissenschaften 27 (1939): Hahn/Strassmann; Nature 143 (1939): Meitner/Frisch",
+    "Ruth Lewin Sime: Lise Meitner – A Life in Physics"
+  ]
+},
+{
+  "id": "erste-muenzen",
+  "titel": "Die ersten Münzen",
+  "epoche": "antike",
+  "jahr": -600,
+  "zeitraum": "um 600 v. Chr.",
+  "region": "Lydien und Griechenland",
+  "leitsatz": "Geld gab es lange vor der Münze. Neu war, dass ein Staat den Wert eines Stücks Metall garantierte — und damit das Vertrauen zur Ware machte.",
+  "vorgeschichte": "Seit Jahrtausenden wurde in Mesopotamien mit Silber gerechnet, in Gewicht abgewogen, und Schulden wurden auf Tontafeln geführt. Der Tempel gab Kredit, Zinsen waren geregelt, Schuldenerlasse wurden von Königen ausgerufen. Geld als Rechengröße ist also viel älter als die Münze; was fehlte, war ein tragbares, standardisiertes Stück.",
+  "verlauf": "Im Reich der Lyder in Westanatolien entstanden um 600 v. Chr. Klumpen aus Elektron, einer natürlichen Gold-Silber-Legierung, mit einem eingeschlagenen Stempel — Löwenkopf und Sonne, das Zeichen des Königs. Der Stempel sagte: Dieses Stück hat das Gewicht und den Feingehalt, den es zu haben behauptet. Damit entfiel das Abwägen bei jedem Kauf.\n\nGriechische Städte übernahmen die Idee schnell und machten daraus etwas Neues: Jede Stadt prägte ihr eigenes Bild — die Eule Athens, die Schildkröte Aeginas. Münzen wurden damit auch politische Erklärung. Und sie erwiesen sich als Verwaltungsmittel: Soldaten und Bauleute ließen sich damit bezahlen, ohne Naturalien zu verteilen.",
+  "folgen": "Die Münze veränderte, was Handel bedeutet: Er wurde unpersönlich möglich, ohne Vertrauen zwischen den Beteiligten, weil das Vertrauen im Metall steckte. Damit entstand aber auch die Möglichkeit der Entwertung — schon in der Antike wurde der Silbergehalt heimlich gesenkt, wenn ein Staat Geld brauchte. Die römische Kaiserzeit ist ein Lehrstück: Der Denar verlor zwischen Nero und dem 3. Jahrhundert fast seinen ganzen Silbergehalt, und die Inflation, die folgte, war eine der Ursachen der Reichskrise.",
+  "strittig": "Ob Münzen zuerst zum Handel oder zur Bezahlung von Söldnern und Abgaben eingeführt wurden, ist unter Wirtschaftshistorikern strittig; David Graeber und andere halten den Staat und nicht den Markt für den Ausgangspunkt. Ebenso strittig ist der verbreitete Ablauf Tauschwirtschaft, dann Geld, dann Kredit — die ältesten Zeugnisse zeigen Kredit und Buchhaltung vor jeder Münze.",
+  "zahlen": [
+    {
+      "wert": "um 600 v. Chr.",
+      "was": "erste gestempelte Münzen in Lydien"
+    },
+    {
+      "wert": "ca. 1.500 Jahre",
+      "was": "Vorsprung mesopotamischer Buchführung vor der Münze"
+    },
+    {
+      "wert": "unter 5 %",
+      "was": "Silbergehalt des römischen Denars im 3. Jahrhundert"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Schulden – Die ersten 5000 Jahre",
+      "autor": "David Graeber",
+      "jahr": "2011",
+      "warum": "Streitbar und anregend: bestreitet, dass Geld aus dem Tauschhandel entstand. Nicht in allem überzeugend, aber lehrreich."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: coin; money",
+    "British Museum: Lydian coins, Sammlungsdokumentation",
+    "Kenneth Harl: Coinage in the Roman Economy"
+  ]
+},
+{
+  "id": "papiergeld",
+  "titel": "Papiergeld in China — und die erste Inflation daraus",
+  "epoche": "mittelalter",
+  "jahr": 1024,
+  "zeitraum": "1024–1425",
+  "region": "China",
+  "leitsatz": "Sieben Jahrhunderte vor Europa druckte China Banknoten. Es lernte dabei auch als erstes, was passiert, wenn man zu viele druckt.",
+  "vorgeschichte": "Chinas Wirtschaft der Song-Zeit war die größte der Welt, und sie hatte ein praktisches Problem: Die Währung waren Kupfermünzen mit Loch, auf Schnüren getragen. Für größere Geschäfte wurden das Zentnerlasten. Kaufleute hinterlegten deshalb Münzen bei Händlern und erhielten Quittungen, die sie weitergaben — privates Papiergeld aus reiner Bequemlichkeit.",
+  "verlauf": "1024 übernahm der Staat das Verfahren und gab in Sichuan amtliche Scheine aus, die Jiaozi, zunächst mit Deckung und begrenzter Laufzeit. Unter den Song, dann den Jin und schließlich den Yuan wurde daraus die Hauptwährung; Marco Polo beschrieb sie im 13. Jahrhundert mit unverhohlenem Staunen, weil Papier in Europa wertlos war.\n\nDie Mongolenherrschaft der Yuan finanzierte Feldzüge und Verwaltung mit der Notenpresse, ohne Deckung. Die Kaufkraft fiel, Löhne und Preise stiegen, das Vertrauen brach. Die Ming versuchten es noch einmal und stellten die Ausgabe 1425 ein; China kehrte zu Silber zurück und blieb dabei bis ins 20. Jahrhundert.",
+  "folgen": "Europa kam auf denselben Weg über die Goldschmiede Londons und die schwedische Stockholms Banco von 1661, die als erste europäische Bank Noten ausgab — und ebenfalls zu viele. Die Lehre, die beide Erfahrungen enthalten, steckt in der heutigen Einrichtung unabhängiger Zentralbanken: Wer Geld schöpfen kann, darf nicht derselbe sein, der es ausgeben will.\n\nDie chinesische Episode ist auch ein Beispiel dafür, dass eine Technik verlorengehen kann, wenn die Erfahrung mit ihr schlecht war.",
+  "strittig": "Wie stark die Yuan-Inflation tatsächlich war, lässt sich nur an Preisangaben in Chroniken abschätzen; die Angaben schwanken erheblich. Und ob das Papiergeld ursächlich zum Sturz der Yuan beitrug oder nur ein Symptom von Kriegskosten und Seuchen war, ist unter Sinologen umstritten.",
+  "zahlen": [
+    {
+      "wert": "1024",
+      "was": "erste staatliche Banknoten, Sichuan"
+    },
+    {
+      "wert": "1425",
+      "was": "Einstellung durch die Ming — Rückkehr zum Silber"
+    },
+    {
+      "wert": "637 Jahre",
+      "was": "Vorsprung vor der ersten europäischen Notenbank, 1661"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: paper money; Song dynasty",
+    "Richard von Glahn: Fountain of Fortune – Money and Monetary Policy in China",
+    "Marco Polo: Il Milione, Kapitel über die Notenausgabe"
+  ]
+},
+{
+  "id": "doppelte-buchfuehrung",
+  "titel": "Die doppelte Buchführung",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1494,
+  "zeitraum": "1300–1494",
+  "region": "Italien",
+  "leitsatz": "Eine Rechentechnik aus Venedig entscheidet bis heute, was ein Unternehmen wert ist — und sie funktioniert, weil sie sich selbst kontrolliert.",
+  "vorgeschichte": "Ein Kaufmann, der eine Ladung nach Alexandria schickt, muss wissen, wieviel ihm gehört, wieviel er schuldet, was unterwegs ist und ob das Geschäft überhaupt Gewinn macht. Einfache Listen von Einnahmen und Ausgaben leisten das nicht: Sie sagen, wieviel Geld in der Kasse liegt, nicht wie es dem Unternehmen geht. Italienische Handelshäuser entwickelten ab dem 13. Jahrhundert Verfahren, die mehr konnten.",
+  "verlauf": "Das Prinzip: Jeder Vorgang wird zweimal gebucht, als Soll und als Haben, auf zwei verschiedenen Konten. Wer Ware für Geld kauft, verringert das Kassenkonto und erhöht das Warenkonto um denselben Betrag. Am Ende müssen die Summen beider Seiten gleich sein — und wenn nicht, liegt ein Fehler vor. Genau darin liegt die Stärke: Die Technik prüft sich selbst.\n\nDie ältesten vollständig erhaltenen Bücher dieser Art stammen aus Genua von 1340; die Medici-Bank führte sie um 1400 mit Filialen in mehreren Ländern. Beschrieben und damit verbreitet wurde das Verfahren 1494 vom Franziskaner und Mathematiker Luca Pacioli in seiner Summa de arithmetica — er erfand es nicht, er schrieb auf, was Venedigs Kaufleute taten. Das Buch wurde in ganz Europa gelesen.",
+  "folgen": "Ohne diese Technik gäbe es keine Kapitalgesellschaft: Wer Anteile an einem Unternehmen kauft, muss von außen erkennen können, was es besitzt und schuldet. Bilanz, Gewinn- und Verlustrechnung, Wirtschaftsprüfung und Steuerrecht bauen darauf auf. Werner Sombart hielt die doppelte Buchführung für eine der Voraussetzungen des Kapitalismus überhaupt — eine Behauptung, die noch diskutiert wird, aber die Größenordnung trifft.\n\nDie Kehrseite: Was nicht in Zahlen erfasst wird, kommt in der Bilanz nicht vor. Umweltschäden und unbezahlte Arbeit fehlen dort systematisch, und das ist keine Nachlässigkeit, sondern eine Eigenschaft des Verfahrens.",
+  "strittig": "Ob die Technik in Italien entstand oder aus der islamischen Welt übernommen wurde, ist nicht entschieden; es gibt Hinweise auf ähnliche Verfahren im Nahen Osten, aber keine erhaltenen Bücher. Sombarts These vom Zusammenhang mit dem Kapitalismus wird von Wirtschaftshistorikern teils als übertrieben angesehen, weil auch Unternehmen ohne doppelte Buchführung erfolgreich wirtschafteten.",
+  "zahlen": [
+    {
+      "wert": "1340",
+      "was": "älteste vollständig erhaltene doppelte Buchführung, Genua"
+    },
+    {
+      "wert": "1494",
+      "was": "Paciolis Beschreibung im Druck"
+    },
+    {
+      "wert": "2",
+      "was": "Buchungen je Vorgang — daraus folgt die Selbstkontrolle"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: accounting; Luca Pacioli",
+    "Jane Gleeson-White: Double Entry",
+    "Raymond de Roover: The Rise and Decline of the Medici Bank"
+  ]
+},
+{
+  "id": "potosi",
+  "titel": "Das Silber von Potosí",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1545,
+  "zeitraum": "1545–1800",
+  "region": "Anden, Spanien, China",
+  "leitsatz": "Ein Berg in Bolivien finanzierte Spaniens Kriege, trieb Europas Preise hoch und landete am Ende überwiegend in China.",
+  "vorgeschichte": "Der Cerro Rico bei Potosí in den Anden auf über 4.000 Metern Höhe war den Inka bekannt. Nach der spanischen Eroberung begann 1545 der systematische Abbau, und ab 1572 wurde das Amalgamverfahren mit Quecksilber eingeführt, das auch armes Erz nutzbar machte. Für die Arbeit griff die Kolonialverwaltung auf die Mita zurück, eine Arbeitsverpflichtung der Inka, und machte daraus Zwangsarbeit im Bergwerk.",
+  "verlauf": "Potosí wurde um 1600 mit geschätzt 100.000 bis 160.000 Einwohnern eine der größten Städte der Welt, größer als London oder Sevilla. Aus dem Berg kam über zwei Jahrhunderte ein erheblicher Teil des Weltsilbers. Die Sterblichkeit in den Schächten und in den Quecksilberhütten war hoch; Zahlen sind unsicher, die Größenordnung ist es nicht.\n\nDas Silber ging über Sevilla nach Europa und finanzierte die Kriege der spanischen Krone — und weiter: Über Manila gelangten große Mengen nach China, das Silber als Währung brauchte und dafür Seide und Porzellan lieferte. Damit war zum ersten Mal ein Kreis um die Erde geschlossen, in dem Geld und Waren zusammenhingen.",
+  "folgen": "Die Silberflut trug zur Preisrevolution des 16. Jahrhunderts bei: In Europa stiegen die Preise über hundert Jahre deutlich, was Schuldner entlastete und Lohnempfänger traf. Spanien selbst blieb arm an Gewerbe — es kaufte, was es brauchte, statt es herzustellen, und der Silberstrom finanzierte Krieg statt Aufbau. Wirtschaftshistoriker nennen das als frühes Beispiel für den Fluch des Rohstoffreichtums.\n\nDer Satz vale un Potosí, es ist ein Potosí wert, steht bis heute im Spanischen für unermesslichen Wert. Der Berg selbst ist ausgehöhlt und stellenweise einsturzgefährdet, und in seinen Stollen wird weiter gearbeitet.",
+  "strittig": "Die Zahl der Toten in Potosí wird in der Literatur zwischen mehreren hunderttausend und acht Millionen angegeben; die höheren Werte stammen aus politisch geprägten Darstellungen und lassen sich nicht belegen. Auch der Anteil des amerikanischen Silbers an der Preisrevolution ist strittig: Neuere Arbeiten gewichten Bevölkerungswachstum und Münzverschlechterung stärker.",
+  "zahlen": [
+    {
+      "wert": "über 4.000 m",
+      "was": "Höhe der Stadt — eine der höchsten der Welt"
+    },
+    {
+      "wert": "ca. 100.000–160.000",
+      "was": "Einwohner um 1600, Schätzungen"
+    },
+    {
+      "wert": "ca. 1/3 bis 1/2",
+      "was": "geschätzter Anteil Potosís am Weltsilber des 16./17. Jahrhunderts"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Potosí; price revolution",
+    "Kenneth Pomeranz und Steven Topik: The World That Trade Created",
+    "UNESCO-Welterbe: Ciudad de Potosí, Dokumentation"
+  ]
+},
+{
+  "id": "bretton-woods",
+  "titel": "Bretton Woods und das Ende der Goldbindung",
+  "epoche": "moderne",
+  "jahr": 1944,
+  "zeitraum": "1944–1971",
+  "region": "weltweit",
+  "leitsatz": "Die Weltwirtschaftsordnung nach dem Krieg wurde in einem Hotel in New Hampshire beschlossen — und 27 Jahre später an einem Sonntagabend im Fernsehen beendet.",
+  "vorgeschichte": "Die Zwischenkriegszeit hatte gezeigt, was ohne Regeln geschieht: Nach 1929 werteten Staaten der Reihe nach ab, um ihre Ausfuhren zu retten, erhoben Zölle und schnürten den Handel ein. Der Welthandel brach um rund zwei Drittel ein. Diese Erfahrung, nicht ökonomische Theorie, war der Antrieb: Man wollte eine Ordnung, in der Abwertungswettläufe nicht möglich sind.",
+  "verlauf": "Im Juli 1944 trafen sich Vertreter von 44 Staaten in Bretton Woods. Zwei Entwürfe standen gegeneinander: John Maynard Keynes wollte eine Weltverrechnungseinheit und eine Ordnung, die auch Überschussländer zur Anpassung zwingt; Harry Dexter White für die USA wollte den Dollar im Zentrum. Die USA hatten damals rund zwei Drittel der Weltgoldreserven und setzten sich durch.\n\nDas Ergebnis: Der Dollar war mit 35 Dollar je Feinunze an Gold gebunden, alle anderen Währungen mit festen, in engen Grenzen anpassbaren Kursen an den Dollar. Internationaler Währungsfonds und Weltbank entstanden zur Überwachung und Kreditvergabe. Das System trug den Aufschwung der 1950er und 1960er Jahre. Es hatte einen eingebauten Widerspruch, den Robert Triffin 1960 benannte: Die Welt brauchte immer mehr Dollar als Reserve, und je mehr Dollar im Umlauf waren, desto weniger glaubhaft war die Goldeinlösung. Am 15. August 1971 kündigte Richard Nixon im Fernsehen an, das Goldfenster zu schließen.",
+  "folgen": "Seither gibt es keine Bindung des Geldes an Metall — alle wichtigen Währungen sind Papier- und Buchgeld, dessen Wert an der Politik der Zentralbanken und am Vertrauen hängt. Die Wechselkurse schwanken, was Absicherungsgeschäfte, Devisenhandel und ganze Finanzmärkte hervorgebracht hat, die es vorher nicht gab. IWF und Weltbank bestehen weiter, mit verändertem Zweck und anhaltender Kritik an ihren Auflagen für Schuldnerländer.",
+  "strittig": "Ob Keynes' Entwurf besser funktioniert hätte, ist offen und wird bei jeder Währungskrise neu diskutiert. Umstritten ist auch, was 1971 tatsächlich beendete: die amerikanischen Kriegs- und Sozialausgaben, die europäischen Goldforderungen oder der strukturelle Widerspruch, den Triffin beschrieb — die Fachliteratur gewichtet unterschiedlich.",
+  "zahlen": [
+    {
+      "wert": "44",
+      "was": "vertretene Staaten in Bretton Woods"
+    },
+    {
+      "wert": "35 $",
+      "was": "Goldpreis je Feinunze, festgesetzt 1944"
+    },
+    {
+      "wert": "15. August 1971",
+      "was": "Nixon schließt das Goldfenster"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Schlacht von Bretton Woods",
+      "autor": "Benn Steil",
+      "jahr": "2013",
+      "warum": "Keynes gegen White, Verhandlung für Verhandlung. Zeigt, dass Währungsordnungen Machtfragen sind."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Bretton Woods Agreement; Nixon shock",
+    "IMF: Articles of Agreement, 1944",
+    "Robert Triffin: Gold and the Dollar Crisis, 1960"
+  ]
+},
+{
+  "id": "uruk",
+  "titel": "Uruk — die erste Großstadt",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -3000,
+  "zeitraum": "ca. 4000–3000 v. Chr.",
+  "region": "Südmesopotamien",
+  "leitsatz": "Hier lebten erstmals Zehntausende zusammen, die einander nicht kannten — und dafür musste fast alles erfunden werden, was Verwaltung heißt.",
+  "vorgeschichte": "Zwischen Euphrat und Tigris gab es Regen kaum, aber Schwemmland und Flüsse. Bewässerung machte Überschüsse möglich, Überschüsse machten Vorräte möglich, und Vorräte mussten verteilt und bewacht werden. Aus Dörfern wuchsen im 4. Jahrtausend v. Chr. Siedlungen von bis dahin unbekannter Größe.",
+  "verlauf": "Uruk erreichte um 3000 v. Chr. schätzungsweise 40.000 bis 50.000 Einwohner auf rund 250 Hektar, umgeben von einer neun Kilometer langen Mauer. Im Zentrum standen Tempelbezirke, der größte für Inanna. Die Stadt beherrschte ein Umland, das sie ernährte, und tauschte über weite Strecken: Zedernholz aus dem Libanon, Lapislazuli aus Afghanistan.\n\nAus der Verwaltung dieser Größe kam die Schrift. Die ältesten Tontafeln aus Uruk sind Buchhaltung: Mengen von Gerste, Bier, Vieh, Arbeitskräften. Rund neunzig Prozent der frühesten Texte sind Wirtschaftsurkunden — geschrieben wurde nicht, um Gedanken festzuhalten, sondern um nachzuhalten, wer wieviel bekommen hat. Dazu gehören genormte Gefäße, das Rollsiegel als Verschluss und Unterschrift, und die Sechziger-Rechnung, aus der unsere Stunden und Minuten stammen.",
+  "folgen": "Die Größenordnung blieb lange einmalig; erst Babylon, Rom und Chang'an übertrafen sie deutlich. Was aber blieb, sind die Erfindungen der Verwaltung: Schrift, Siegel, Maßnormen, Vertrag, Zins, Rechnungsjahr. Fast alles, was ein Staat braucht, entstand als Antwort auf die Frage, wie man den Überblick über eine Stadt behält.\n\nUruk gab auch der Zeit ihren Namen: Die Uruk-Zeit ist die Epoche, in der diese Bündel von Neuerungen auftreten. Und Gilgamesch, der Held des ältesten überlieferten Epos, ist der König von Uruk.",
+  "strittig": "Die Einwohnerzahlen sind Hochrechnungen aus Siedlungsfläche und angenommener Bebauungsdichte; die Schätzungen schwanken um den Faktor zwei. Umstritten ist, wie stark der Tempel die Wirtschaft steuerte — die ältere Vorstellung einer reinen Tempelwirtschaft gilt heute als zu einfach. Und ob die Schrift in Uruk oder gleichzeitig an mehreren Orten entstand, ist nicht entschieden.",
+  "zahlen": [
+    {
+      "wert": "ca. 40.000–50.000",
+      "was": "geschätzte Einwohner um 3000 v. Chr."
+    },
+    {
+      "wert": "9 km",
+      "was": "Länge der Stadtmauer"
+    },
+    {
+      "wert": "ca. 90 %",
+      "was": "Anteil der Wirtschaftsurkunden an den ältesten Texten"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Uruk – 5000 Jahre Megacity",
+      "autor": "Nicola Crüsemann u. a. (Hrsg.)",
+      "jahr": "2013",
+      "warum": "Der Ausstellungsband mit dem Grabungsstand — Bilder, Karten und die Funde selbst."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Uruk; cuneiform",
+    "Deutsches Archäologisches Institut: Uruk-Warka, Grabungsberichte",
+    "Hans J. Nissen: Geschichte Altvorderasiens"
+  ]
+},
+{
+  "id": "kanalisation-london",
+  "titel": "Cholera, Kanalisation und der große Gestank",
+  "epoche": "industrialisierung",
+  "jahr": 1854,
+  "zeitraum": "1854–1875",
+  "region": "London",
+  "leitsatz": "Der Beweis lag 1854 auf dem Tisch und wurde abgelehnt. Gebaut wurde die Kanalisation erst, als der Gestank ins Parlament zog.",
+  "vorgeschichte": "London hatte 1850 über zwei Millionen Einwohner und keine Abwasserentsorgung, die den Namen verdiente: Gruben unter den Häusern, Rinnsale in der Straße, alles am Ende in die Themse — aus der die Wasserwerke schöpften. Die herrschende Lehre erklärte Krankheit mit Miasma, schlechter Luft. Diese Vorstellung war nicht dumm, sie erklärte nur das Falsche: Wo es stank, wurden Menschen krank, aber nicht wegen des Geruchs.",
+  "verlauf": "Im August 1854 brach in Soho eine Cholera-Epidemie aus; in zehn Tagen starben über 500 Menschen. Der Arzt John Snow trug jeden Todesfall in einen Stadtplan ein und sah, dass sie sich um eine einzige Wasserpumpe in der Broad Street häuften. Die Ausnahmen bestätigten es: Im nahen Armenhaus mit eigenem Brunnen starb fast niemand, und eine Witwe, die weit entfernt wohnte und sich Wasser von dieser Pumpe bringen ließ, starb. Snow überzeugte die Gemeinde, den Pumpenschwengel abzunehmen. Die amtliche Untersuchungskommission wies seine Deutung zurück.\n\nVier Jahre später, im heißen Sommer 1858, wurde der Geruch der Themse so stark, dass im Parlamentsgebäude die Vorhänge mit Chlorkalk getränkt wurden. Der Great Stink brachte in achtzehn Tagen ein Gesetz zustande, das jahrelang blockiert war. Joseph Bazalgette baute von 1859 bis 1875 rund 132 Kilometer Hauptsammler und über 1.800 Kilometer Straßenkanäle, mit Rohrdurchmessern, die er bewusst überdimensionierte — nach eigener Aussage, weil man so etwas nur einmal baut.",
+  "folgen": "Die Cholera verschwand aus London. Bazalgettes Kanäle tragen die Stadt bis heute, und seine Überdimensionierung gilt in der Ingenieurausbildung als Musterbeispiel für vernünftige Vorsorge. Snows Karte wurde zum Gründungsbild der Epidemiologie, und sein Vorgehen — Fälle räumlich auftragen, Ausnahmen prüfen — ist die Grundform jeder Ausbruchsuntersuchung.\n\nDie unbequeme Pointe: Gehandelt wurde nicht, als der Beweis vorlag, sondern als die Entscheider selbst betroffen waren.",
+  "strittig": "Snows Anteil wird gelegentlich überzeichnet: William Farrs Statistiken und Arbeiten anderer wiesen in dieselbe Richtung, und die Karte allein überzeugte die Fachwelt nicht — durchgesetzt hat sich die Wassertheorie erst mit Robert Kochs Nachweis des Erregers 1884. Umstritten ist auch, wieviel der Rückgang der Sterblichkeit im 19. Jahrhundert der Kanalisation und wieviel Ernährung und Wohnverhältnissen zuzuschreiben ist.",
+  "zahlen": [
+    {
+      "wert": "über 500",
+      "was": "Tote in Soho in zehn Tagen, August 1854"
+    },
+    {
+      "wert": "18 Tage",
+      "was": "vom Great Stink zum beschlossenen Gesetz"
+    },
+    {
+      "wert": "132 km",
+      "was": "Hauptsammler, dazu über 1.800 km Straßenkanäle"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Geisterkarte",
+      "autor": "Steven Johnson",
+      "jahr": "2006",
+      "warum": "Der Ausbruch von 1854 Tag für Tag, mit Snows Vorgehen und dem Widerstand dagegen. Spannend und genau."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: John Snow; London sewerage system",
+    "John Snow: On the Mode of Communication of Cholera, 1855",
+    "Metropolitan Board of Works: Bazalgette-Berichte"
+  ]
+},
+{
+  "id": "haussmann",
+  "titel": "Haussmann baut Paris um",
+  "epoche": "industrialisierung",
+  "jahr": 1853,
+  "zeitraum": "1853–1870",
+  "region": "Frankreich",
+  "leitsatz": "Breite Straßen, gleiche Fassaden, Kanäle und Parks — und dazu die Vertreibung der Armen aus dem Zentrum. Beides gehört zusammen.",
+  "vorgeschichte": "Paris war 1850 eine mittelalterliche Stadt mit über einer Million Menschen: enge Gassen, kein Abwassersystem, Cholera 1832 mit fast 20.000 Toten. Es war außerdem eine Stadt, die in sechzig Jahren vier Revolutionen erlebt hatte, und in engen Gassen ließen sich Barrikaden leicht bauen und schwer nehmen. Napoleon III. hatte beides im Sinn, als er Georges-Eugène Haussmann 1853 zum Präfekten machte.",
+  "verlauf": "In siebzehn Jahren wurden rund 20.000 Häuser abgerissen und 34.000 gebaut, dazu ein Netz breiter Boulevards durch die alten Viertel geschlagen, das Kanalnetz auf 600 Kilometer erweitert, Wasserleitungen gebaut, die Bois de Boulogne und Vincennes als Parks angelegt, Bahnhöfe angebunden, Gasbeleuchtung eingeführt. Die Bauordnung schrieb Höhe, Dachneigung und Fassadengliederung vor — daraus entstand das gleichmäßige Bild, das man heute für typisch Paris hält.\n\nFinanziert wurde das mit Anleihen und der Erwartung steigender Grundstückswerte. Haussmann wurde 1870 entlassen, als die Kosten öffentlich wurden. Die Mieten in den umgebauten Vierteln stiegen so, dass die frühere Bevölkerung sie nicht zahlen konnte und in die Randbezirke zog — ein Vorgang, der später Gentrifizierung genannt wurde und hier zum ersten Mal in dieser Größe stattfand.",
+  "folgen": "Das Vorbild wirkte weltweit: Barcelonas Erweiterung, Wiens Ringstraße, Bukarest, Kairo, Buenos Aires, Chicagos City Beautiful. Der moderne Stadtplaner als Beruf entstand aus dieser Arbeit. Und die Verbindung von Hygiene, Verkehr und Repräsentation blieb das Programm der Stadtplanung bis ins 20. Jahrhundert.\n\n1871 zeigte die Pariser Kommune, dass breite Straßen Aufstände nicht verhindern — gekämpft wurde trotzdem, und die Boulevards halfen am Ende dem Militär.",
+  "strittig": "Ob die militärische Absicht der Hauptgrund war, ist strittig. Haussmann selbst nannte Verkehr und Hygiene; die Boulevards verbinden tatsächlich vor allem Bahnhöfe und Märkte. Zeitgenossen und ein Teil der Forschung sehen die Aufstandsbekämpfung als mindestens gleichrangiges Motiv. Beides lässt sich belegen, und die Quellen widersprechen sich nicht — sie betonen Verschiedenes.",
+  "zahlen": [
+    {
+      "wert": "ca. 20.000",
+      "was": "abgerissene Häuser, 34.000 neu gebaute"
+    },
+    {
+      "wert": "600 km",
+      "was": "Kanalnetz nach dem Umbau"
+    },
+    {
+      "wert": "17 Jahre",
+      "was": "Amtszeit Haussmanns, 1853 bis 1870"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Georges-Eugène Haussmann; Paris, history",
+    "David Harvey: Paris, Capital of Modernity",
+    "Ville de Paris: Archives, Travaux haussmanniens"
+  ]
+},
+{
+  "id": "hochhaus",
+  "titel": "Das Hochhaus — Stahl, Aufzug, Bodenpreis",
+  "epoche": "industrialisierung",
+  "jahr": 1885,
+  "zeitraum": "1857–1931",
+  "region": "USA",
+  "leitsatz": "Hoch bauen konnte man länger. Erst der Aufzug machte obere Stockwerke wertvoll — und die Bremse dafür war die eigentliche Erfindung.",
+  "vorgeschichte": "Mauerwerk trägt sich selbst nur begrenzt: Ein zwölfgeschossiges Backsteinhaus in Chicago brauchte im Erdgeschoss fast zwei Meter dicke Wände, was Fläche und Licht kostete. Und in einem Haus ohne Aufzug war das oberste Geschoss das billigste, weil niemand Treppen steigen wollte. Beides begrenzte die Höhe aus wirtschaftlichen, nicht aus technischen Gründen.",
+  "verlauf": "Elisha Otis führte 1854 auf der Weltausstellung in New York eine Fangvorrichtung vor: Er ließ das Seil seines Aufzugs durchschneiden, und die Kabine blieb stehen. Die Erfindung war nicht der Aufzug, sondern die Sicherung — sie machte das Fahren zumutbar. 1857 ging der erste Personenaufzug in Betrieb.\n\nDas zweite Stück war der Stahlskelettbau: Das Gebäude trägt sich über einen inneren Rahmen, die Außenwand hängt daran und kann dünn und verglast sein. Das Home Insurance Building in Chicago von 1885 gilt als erstes Hochhaus dieser Bauart, mit zehn Geschossen. Die Umkehrung folgte prompt: Nun war oben die beste Lage — Licht, Aussicht, weniger Lärm. Der Grundstückspreis im Zentrum machte Höhe zur Rechenaufgabe, und der Wettlauf begann: Woolworth 1913, Chrysler 1930, Empire State 1931 in vierzehn Monaten Bauzeit.",
+  "folgen": "Aus der Umkehrung von unten teuer zu oben teuer folgt die Form der modernen Innenstadt. Dazu kamen Stahlbeton, Klimatechnik und Brandschutzvorschriften, die nach Bränden verschärft wurden. Der Wolkenkratzer wurde außerdem ein Ausdrucksmittel: Wer eines baut, sagt etwas über sich — deshalb stehen die höchsten Häuser heute nicht in New York, sondern dort, wo Staaten sichtbar aufsteigen wollen.\n\nDie Chicago School um Louis Sullivan formulierte dabei den Satz, der die Architektur des 20. Jahrhunderts prägte: Die Form folgt der Funktion.",
+  "strittig": "Welches Gebäude das erste Hochhaus war, hängt an der Definition — Stahlskelett, Höhe, Aufzug, Geschosszahl. Das Home Insurance Building wird meist genannt, aber es hatte teils tragende Mauern, und es wurde 1931 abgerissen, sodass sich die Frage nicht mehr am Bau prüfen lässt. Konkurrierende Ansprüche gibt es für Gebäude in New York und Manchester.",
+  "zahlen": [
+    {
+      "wert": "1854",
+      "was": "Otis führt die Fangvorrichtung vor"
+    },
+    {
+      "wert": "10",
+      "was": "Geschosse des Home Insurance Building, 1885"
+    },
+    {
+      "wert": "14 Monate",
+      "was": "Bauzeit des Empire State Building, 1930/31"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: skyscraper; elevator",
+    "Carol Willis: Form Follows Finance",
+    "Chicago Architecture Center: Home Insurance Building"
+  ]
+},
+{
+  "id": "hoehlenmalerei",
+  "titel": "Die ältesten Bilder",
+  "epoche": "steinzeit",
+  "jahr": -36000,
+  "zeitraum": "ca. 45.000–12.000 v. Chr.",
+  "region": "Europa, Asien, Australien",
+  "leitsatz": "Vor 36.000 Jahren malte jemand in Chauvet Nashörner im Kampf — und die Darstellung von Bewegung war schon gelöst.",
+  "vorgeschichte": "Farbe wurde lange vor Bildern benutzt: Ocker in Gräbern und auf Körpern ist seit über 100.000 Jahren belegt. Der Schritt zum Bild — eine Fläche, die etwas anderes zeigt als sich selbst — ist ein anderer, und wann er geschah, verschiebt sich mit jedem Fund nach hinten.",
+  "verlauf": "Die Höhle von Chauvet in Südfrankreich, 1994 entdeckt und seither unzugänglich, enthält über 400 Darstellungen, die auf etwa 36.000 Jahre datiert sind. Gezeigt werden Löwen, Nashörner, Bären, Mammuts — überwiegend Tiere, die man nicht jagt. Die Technik ist voll entwickelt: Umrisse gekratzt, Flächen gewischt, Felsvorsprünge in die Körperform einbezogen, und mehrfach gezeichnete Beine, die Bewegung anzeigen.\n\nLascaux ist mit etwa 17.000 Jahren halb so alt, Altamira ähnlich. In Sulawesi und auf Borneo sind Handumrisse und Tierbilder auf über 40.000 Jahre datiert, in Australien reichen Felsbildtraditionen weit zurück — die Vorstellung, Bildkunst sei in Europa entstanden, hält der Fundlage nicht stand.\n\nMenschen kommen fast nicht vor. Wo Gestalten auftauchen, sind sie schematisch oder mit Tiermerkmalen. Handumrisse gibt es häufig, oft von kleinen Händen.",
+  "folgen": "Diese Bilder sind der Grund, weshalb wir wissen, dass Menschen der Altsteinzeit nicht anders dachten als wir. Sie planten Beleuchtung, mischten Farben, arbeiteten in Höhlenteilen, die nur durch enge Gänge erreichbar sind, und hielten Traditionen über Jahrtausende — in Chauvet liegen zwischen den ältesten und jüngsten Malereien mehrere Tausend Jahre.\n\nFür die Kunstgeschichte folgt daraus etwas Unbequemes: Es gibt keine Entwicklung vom Einfachen zum Können. Die ältesten bekannten Bilder gehören zu den besten.",
+  "strittig": "Wozu die Bilder dienten, ist unbekannt. Jagdzauber, schamanische Praxis, Erzählung, Unterricht, Ritual — alle Deutungen stützen sich auf Analogien zu heutigen Gesellschaften, was methodisch heikel ist. Die Datierung von Chauvet war umstritten und ist durch mehrere unabhängige Verfahren inzwischen gestützt. Und ob Neandertaler ebenfalls malten, ist offen: Für spanische Höhlen wurden 2018 Datierungen von über 64.000 Jahren veröffentlicht, die von einem Teil der Fachwelt bestritten werden.",
+  "zahlen": [
+    {
+      "wert": "ca. 36.000 Jahre",
+      "was": "Alter der Malereien von Chauvet"
+    },
+    {
+      "wert": "über 400",
+      "was": "Darstellungen in Chauvet"
+    },
+    {
+      "wert": "über 40.000 Jahre",
+      "was": "Felsbilder in Sulawesi und Borneo"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Höhle der vergessenen Träume",
+      "autor": "Werner Herzog",
+      "jahr": "2010",
+      "warum": "Kein Buch, ein Film — aber die einzige Möglichkeit, Chauvet zu sehen. Die Höhle ist für Besucher gesperrt."
+    },
+    {
+      "titel": "Der Ursprung der Kunst",
+      "autor": "Jean Clottes",
+      "jahr": "2002",
+      "warum": "Vom Fachmann, der Chauvet untersuchte: was die Bilder zeigen und was man über sie nicht wissen kann."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Chauvet-Pont d'Arc; rock art",
+    "UNESCO-Welterbe: Grotte Chauvet",
+    "Nature (2014): Datierung der Chauvet-Malereien",
+    "Science (2018): Nachweise zu iberischen Höhlenmalereien (strittig)"
+  ]
+},
+{
+  "id": "perspektive",
+  "titel": "Als die Perspektive berechenbar wurde",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1425,
+  "zeitraum": "1413–1435",
+  "region": "Florenz",
+  "leitsatz": "Ein Architekt zeigte mit einem Spiegel und einem Loch in einer Tafel, dass Raum sich konstruieren lässt — und die Malerei war eine andere.",
+  "vorgeschichte": "Mittelalterliche Bilder ordnen die Größe nach Bedeutung: Christus ist groß, der Stifter klein, unabhängig von der Entfernung. Das ist keine Unfähigkeit, sondern eine andere Absicht — das Bild zeigt eine Ordnung, nicht einen Anblick. Giotto hatte um 1305 begonnen, Räume plausibel wirken zu lassen, aber ohne Regel.",
+  "verlauf": "Filippo Brunelleschi führte um 1413 in Florenz eine Tafel mit dem Baptisterium vor: Der Betrachter schaute von hinten durch ein Loch in der Tafel auf einen Spiegel, der die gemalte Vorderseite zeigte, und verglich sie mit dem wirklichen Gebäude daneben. Die Übereinstimmung war der Beweis, dass Raum nach Regeln abbildbar ist.\n\nMasaccio setzte es um 1425 in der Dreifaltigkeit von Santa Maria Novella erstmals in einem großen Wandbild um; die gemalte Architektur ist so konstruiert, dass sie vom Standpunkt des Betrachters aus stimmt. Leon Battista Alberti schrieb 1435 in De pictura die Regeln auf: ein Augpunkt, ein Fluchtpunkt, Verkürzung nach einem berechenbaren Verhältnis. Damit war die Perspektive lehrbar.",
+  "folgen": "Die Folge ist mehr als eine Bildtechnik. Das Bild wird zum Fenster mit einem einzigen richtigen Standpunkt — und dieser Standpunkt ist der des Betrachters. Kunsthistoriker sehen darin einen Zusammenhang mit dem neuzeitlichen Denken überhaupt: Die Welt wird von einem Ort aus vermessen. Für Kartografie, Architektur und später Fotografie und Film gilt dieselbe Geometrie.\n\nDas Verfahren wurde so selbstverständlich, dass sein Bruch 1907 durch Picasso und Braque als Skandal empfunden wurde — dabei war es nur eine von vielen möglichen Konventionen. Chinesische und japanische Malerei arbeiten mit anderen Raumordnungen, ohne Mangel.",
+  "strittig": "Wieweit Brunelleschi eine Theorie hatte und wieweit ein Verfahren, ist unklar — seine Tafeln sind verloren, und wir kennen die Vorführung nur aus einer Biographie von 1480. Umstritten ist auch, ob die Perspektive eine Entdeckung oder eine Erfindung ist: Erwin Panofsky hielt sie für eine Konvention, andere für die richtige Abbildung des Sehens. Da ein Auge eine Kugel ist und die Bildfläche eben, kann sie es nicht ganz sein.",
+  "zahlen": [
+    {
+      "wert": "um 1413",
+      "was": "Brunelleschis Vorführung mit Spiegel und Tafel"
+    },
+    {
+      "wert": "1425",
+      "was": "Masaccios Dreifaltigkeit, erste große Umsetzung"
+    },
+    {
+      "wert": "1435",
+      "was": "Albertis De pictura — die Regeln werden lehrbar"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Perspektive als symbolische Form",
+      "autor": "Erwin Panofsky",
+      "jahr": "1927",
+      "warum": "Der klassische Aufsatz: Perspektive als Konvention, nicht als Naturgesetz. Schmal und anspruchsvoll."
+    },
+    {
+      "titel": "Brunelleschis Dom",
+      "autor": "Ross King",
+      "jahr": "2000",
+      "warum": "Über die Kuppel, aber mit dem besten Bild dieses Kopfes und dieser Stadt."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: perspective; Filippo Brunelleschi",
+    "Leon Battista Alberti: De pictura, 1435",
+    "Antonio Manetti: Vita di Filippo Brunelleschi, um 1480"
+  ]
+},
+{
+  "id": "bilderstreit",
+  "titel": "Der Bilderstreit",
+  "epoche": "mittelalter",
+  "jahr": 726,
+  "zeitraum": "726–843",
+  "region": "Byzantinisches Reich",
+  "leitsatz": "Über hundert Jahre stritt ein Reich darüber, ob man Gott abbilden darf — und wer verlor, dessen Bilder wurden vernichtet, in beide Richtungen.",
+  "vorgeschichte": "Das zweite Gebot verbietet Bilder. Das Christentum hatte es faktisch beiseitegeschoben: Ikonen waren seit dem 6. Jahrhundert Mittelpunkt der Frömmigkeit, wurden geküsst, als Paten eingesetzt, in Prozessionen getragen, und ihnen wurden Wunder zugeschrieben. Für Juden und für die seit 632 aufsteigenden Muslime, die beide bildlose Verehrung kannten, war das ein Vorwurf gegen die Christen — und Byzanz verlor gegen die Muslime Provinz nach Provinz.",
+  "verlauf": "Kaiser Leon III. ließ ab 726 Bilder entfernen, sein Sohn Konstantin V. verschärfte das auf einer Synode 754 zur Lehre: Wer Christus malt, so das Argument, trennt entweder seine göttliche von seiner menschlichen Natur oder vermischt sie — beides Ketzerei. Klöster, die Ikonen verteidigten, wurden verfolgt, Bilder übertüncht oder zerstört.\n\nDie Gegenposition formulierte Johannes von Damaskus, der außerhalb des Reiches im muslimischen Herrschaftsgebiet schrieb und deshalb sicher war: Weil Gott in Christus Fleisch geworden ist, ist er darstellbar geworden; die Verehrung gilt nicht dem Holz, sondern dem Abgebildeten. Kaiserin Irene setzte 787 auf dem Zweiten Konzil von Nikaia die Bilderverehrung wieder ein, unter Leon V. begann 815 eine zweite bilderfeindliche Phase, und 843 wurde die Verehrung endgültig hergestellt — bis heute als Fest der Orthodoxie gefeiert.",
+  "folgen": "Der Streit hat die Kunstgeschichte doppelt geprägt. Erstens materiell: Aus den drei Jahrhunderten vor 726 ist in Byzanz fast keine Ikone erhalten, weil die Bilderfeinde gründlich waren. Zweitens theoretisch: Die Begründung des Johannes von Damaskus, dass ein Bild nicht ist, was es zeigt, aber darauf verweist, ist eine der ersten Bildtheorien überhaupt und wirkt in der Kunstphilosophie bis heute nach.\n\nDas Muster kehrte wieder: beim Bildersturm der Reformation 1566, in der Französischen Revolution, bei den Taliban 2001. Bilder werden dann zerstört, wenn sie als Macht empfunden werden.",
+  "strittig": "Wie weit die Zerstörungen tatsächlich reichten, ist strittig: Die Quellen stammen überwiegend von den Siegern, den Bilderfreunden, die Grund hatten zu übertreiben. Auch die Ursachen sind umstritten — theologische Überzeugung, Anpassung an den islamischen Nachbarn, oder ein Machtkampf zwischen Kaiser und Klöstern, die reich und einflussreich waren.",
+  "zahlen": [
+    {
+      "wert": "117 Jahre",
+      "was": "von 726 bis 843, mit Unterbrechung"
+    },
+    {
+      "wert": "787",
+      "was": "Zweites Konzil von Nikaia, Wiedereinsetzung der Bilder"
+    },
+    {
+      "wert": "843",
+      "was": "endgültiges Ende — heute Fest der Orthodoxie"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Iconoclastic Controversy",
+    "Johannes von Damaskus: Drei Reden gegen die Bilderstürmer",
+    "Leslie Brubaker und John Haldon: Byzantium in the Iconoclast Era"
+  ]
+},
+{
+  "id": "entartete-kunst",
+  "titel": "Entartete Kunst",
+  "epoche": "moderne",
+  "jahr": 1937,
+  "zeitraum": "1937–1945",
+  "region": "Deutschland",
+  "leitsatz": "Die Ausstellung, die moderne Kunst verhöhnen sollte, hatte über zwei Millionen Besucher — mehr als jede Kunstausstellung davor.",
+  "vorgeschichte": "Deutschland war vor 1933 ein Zentrum der modernen Kunst: Expressionismus, Bauhaus, Neue Sachlichkeit, dazu Museen, die zeitgenössisch ankauften. Der Begriff entartet stammt aus der Medizin und war über die Rassenlehre in die Kulturkritik gewandert; er behauptete, moderne Kunst sei Ausdruck einer krankhaften Veranlagung.",
+  "verlauf": "Ab 1937 beschlagnahmte eine Kommission über 20.000 Werke aus deutschen Museen. Im Juli 1937 wurden in München zwei Ausstellungen gleichzeitig eröffnet: die Große Deutsche Kunstausstellung mit staatlich genehmigter Malerei und, wenige Minuten entfernt, Entartete Kunst mit 650 beschlagnahmten Werken von Beckmann, Kirchner, Nolde, Dix, Klee, Chagall und anderen. Sie waren dicht gehängt, mit Spottsprüchen an den Wänden und mit Ankaufspreisen daneben, um Empörung über Steuergeld zu erzeugen.\n\nDie Rechnung ging nicht auf. Die Schauausstellung zählte über zwei Millionen Besucher, die genehmigte Kunst nebenan etwa 400.000. 1939 wurden Teile der Bestände in Luzern versteigert, um Devisen zu beschaffen; über tausend Gemälde und fast viertausend Blätter wurden 1939 in Berlin verbrannt.",
+  "folgen": "Deutsche Museen verloren ihre modernen Sammlungen und kauften nach 1945 mit hohem Aufwand zurück, was zu bekommen war. Viele Künstler emigrierten oder erhielten Malverbot; einige, wie Emil Nolde, waren Anhänger des Regimes und wurden dennoch ausgestellt — was zeigt, dass die Auswahl nicht politisch, sondern stilistisch getroffen wurde.\n\nDie Rückgabefrage ist offen: Beschlagnahmte Werke tauchen bis heute auf, der Schwabinger Kunstfund von 2012 mit über 1.400 Werken ist der größte Fall. Und die Ausstellung selbst ist zum Lehrstück geworden: Wer Kunst zeigt, um sie zu vernichten, gibt ihr Öffentlichkeit.",
+  "strittig": "Die Besucherzahl von über zwei Millionen stammt aus der Zählung der Veranstalter und ist nicht unabhängig geprüft; die Größenordnung gilt als glaubhaft. Umstritten ist, wie das Publikum reagierte — Zustimmung, Neugier oder stiller Abschied. Zeitzeugenberichte gibt es für alles, und sie sind nachträglich geschrieben.",
+  "zahlen": [
+    {
+      "wert": "über 20.000",
+      "was": "beschlagnahmte Werke aus deutschen Museen"
+    },
+    {
+      "wert": "650",
+      "was": "gezeigte Werke in München 1937"
+    },
+    {
+      "wert": "über 2 Mio.",
+      "was": "Besucher der Schauausstellung, gegen ca. 400.000 der genehmigten"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Degenerate Art Exhibition",
+    "Deutsches Historisches Museum: Datenbank Entartete Kunst",
+    "Freie Universität Berlin: Beschlagnahmeinventar Entartete Kunst"
+  ]
+},
+{
+  "id": "notenschrift",
+  "titel": "Guido von Arezzo erfindet die Linien",
+  "epoche": "mittelalter",
+  "jahr": 1025,
+  "zeitraum": "um 1025",
+  "region": "Italien",
+  "leitsatz": "Vor ihm musste man jede Melodie von jemandem hören, der sie kannte. Danach konnte man sie lesen — und Musik über Jahrhunderte weitergeben.",
+  "vorgeschichte": "Der gregorianische Gesang wurde mündlich überliefert; ein Sänger brauchte nach zeitgenössischen Berichten zehn Jahre, um das Repertoire zu lernen. Es gab Zeichen über den Textzeilen, die Neumen, aber sie zeigten nur die Richtung der Bewegung — höher, tiefer — nicht wie weit. Wer die Melodie nicht kannte, konnte sie daraus nicht ableiten.",
+  "verlauf": "Guido, Benediktiner in Arezzo, ordnete die Zeichen um 1025 auf Linien mit festen Tonhöhen an, farbig markiert für zwei Bezugstöne. Damit war der Abstand ablesbar. Dazu kam die Solmisation: Er nahm einen Hymnus an Johannes den Täufer, dessen Zeilen jeweils eine Stufe höher beginnen, und benannte die Töne nach den Anfangssilben — ut, re, mi, fa, sol, la. Aus ut wurde später do, aus dem Namen Sancte Iohannes das si.\n\nGuido schrieb selbst, seine Schüler lernten in wenigen Tagen, was vorher Jahre brauchte. Das ist Eigenlob, aber die Verbreitung gibt ihm recht: Innerhalb weniger Generationen war das Verfahren in ganz Europa in Gebrauch.",
+  "folgen": "Aus der Aufzeichnung folgt alles Weitere. Mehrstimmigkeit lässt sich nur komponieren, wenn man Stimmen aufeinander abstimmen kann, ohne sie gleichzeitig zu hören — die Notre-Dame-Schule und später Guillaume de Machaut bauen darauf. Rhythmusnotation kommt im 13. Jahrhundert hinzu, der Musikdruck 1501 durch Ottaviano Petrucci. Und das Werk entsteht als Begriff: Musik wird etwas, das einen Verfasser hat und den Tod seiner Sänger überlebt.\n\nDie Kehrseite ist eine Verengung. Was sich nicht notieren lässt — Zwischentöne, Verzierungen, Klangfarbe, Rhythmen außerhalb des Raster — fällt aus der Überlieferung heraus. Europäische Musikgeschichte ist deshalb die Geschichte der notierbaren Musik.",
+  "strittig": "Wieviel Guido erfand und wieviel er ordnete, ist unklar; Linien wurden vorher vereinzelt benutzt. Sein Ruhm stützt sich auch darauf, dass er selbst schrieb und sich verständlich machte. Und ob der Johannes-Hymnus tatsächlich seine Vorlage war oder nachträglich passend gemacht wurde, ist unter Musikwissenschaftlern strittig.",
+  "zahlen": [
+    {
+      "wert": "um 1025",
+      "was": "Guidos Micrologus und die Linienordnung"
+    },
+    {
+      "wert": "6",
+      "was": "Silben der ursprünglichen Solmisation"
+    },
+    {
+      "wert": "1501",
+      "was": "erster Musikdruck durch Petrucci in Venedig"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Guido of Arezzo; musical notation",
+    "Guido von Arezzo: Micrologus, um 1026",
+    "Richard Taruskin: Oxford History of Western Music, Band 1"
+  ]
+},
+{
+  "id": "wohltemperiert",
+  "titel": "Die wohltemperierte Stimmung",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1722,
+  "zeitraum": "1600–1722",
+  "region": "Deutschland",
+  "leitsatz": "Reine Intervalle und die Möglichkeit, in jeder Tonart zu spielen, schließen sich mathematisch aus. Die Lösung war, alles ein wenig falsch zu stimmen.",
+  "vorgeschichte": "Pythagoras hatte gefunden, dass die schönen Zusammenklänge einfachen Zahlenverhältnissen entsprechen: die Oktave 2:1, die Quinte 3:2. Daraus folgt aber ein Problem, das keine Stimmung auflösen kann: Zwölf reine Quinten übereinander ergeben nicht genau sieben Oktaven, sondern etwas mehr — die pythagoreische Komma. Irgendwo muss dieser Rest untergebracht werden.\n\nDie mitteltönige Stimmung der Renaissance verteilte ihn so, dass die gebräuchlichen Tonarten sehr rein klangen und einige andere unbrauchbar wurden, mit der berüchtigten Wolfsquinte. Solange man in wenigen Tonarten blieb, war das kein Mangel.",
+  "verlauf": "Im 17. Jahrhundert wurde Modulation zum Ausdrucksmittel: Man wollte während eines Stücks die Tonart wechseln, und dann müssen alle brauchbar sein. Andreas Werckmeister beschrieb 1691 Stimmungen, die den Rest ungleich, aber überall erträglich verteilen — jede Tonart klingt etwas anders gefärbt, keine ist unspielbar.\n\nJohann Sebastian Bach schrieb 1722 das Wohltemperierte Klavier: 24 Präludien und Fugen, durch alle Tonarten, Dur und Moll. Es ist eine Demonstration und ein Lehrwerk zugleich, und der zweite Teil folgte 1742.",
+  "folgen": "Damit war der Weg frei für die Harmonik der folgenden zwei Jahrhunderte, bis zu Wagner und über ihn hinaus. Die heute übliche gleichstufige Stimmung, in der alle zwölf Halbtöne exakt gleich groß sind, setzte sich erst im 19. Jahrhundert durch — sie ist bequem und stimmt nirgends ganz. Jede Tonart klingt darin gleich, was Chöre und Streicher bis heute leise unterlaufen, indem sie Intervalle nach Gehör reiner nehmen.\n\nDie Pointe für das Hören: Der Klang, den wir für natürlich halten, ist ein technischer Kompromiss aus dem 18. und 19. Jahrhundert.",
+  "strittig": "Welche Stimmung Bach genau meinte, ist eine der bekanntesten offenen Fragen der Musikwissenschaft — wohltemperiert ist nicht gleichstufig, und aus den Schnörkeln auf dem Titelblatt seiner Handschrift wurden Stimmungsanweisungen herausgelesen, was umstritten ist. Sicher ist nur: nicht gleichstufig.",
+  "zahlen": [
+    {
+      "wert": "24",
+      "was": "Präludien und Fugen je Teil — alle Tonarten"
+    },
+    {
+      "wert": "1722 und 1742",
+      "was": "die beiden Teile des Wohltemperierten Klaviers"
+    },
+    {
+      "wert": "ca. 23,5 Cent",
+      "was": "pythagoreisches Komma — der Rest, der untergebracht werden muss"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: temperament; Johann Sebastian Bach",
+    "Andreas Werckmeister: Musicalische Temperatur, 1691",
+    "Bach-Archiv Leipzig: Das Wohltemperierte Klavier, Quellenlage"
+  ]
+},
+{
+  "id": "tonaufnahme",
+  "titel": "Als Klang speicherbar wurde",
+  "epoche": "industrialisierung",
+  "jahr": 1877,
+  "zeitraum": "1877–1948",
+  "region": "USA und Europa",
+  "leitsatz": "Bis 1877 verschwand jeder Ton in dem Augenblick, in dem er erklang. Wir sind die erste Generation, die die Stimmen der Toten hören kann.",
+  "vorgeschichte": "Édouard-Léon Scott de Martinville hatte 1857 einen Apparat gebaut, der Schall als Linie auf berußtes Papier zeichnete — mit der Absicht, Sprache zu untersuchen, nicht sie wiederzugeben. Die Aufnahmen galten als stumm, bis Forscher sie 2008 mit Bildabtastung hörbar machten: darunter ein Fragment eines Volkslieds von 1860, die älteste hörbare menschliche Stimme.",
+  "verlauf": "Thomas Edison stellte 1877 den Phonographen vor, der eine Rille in Zinnfolie und später in Wachs prägte und sie wieder abtasten konnte. Er dachte dabei zuerst an Diktate und an sprechende Puppen, nicht an Musik. Emile Berliner ersetzte 1887 den Zylinder durch die Scheibe — die sich pressen und damit vervielfältigen ließ. Damit entstand die Schallplattenindustrie.\n\nDie Technik erzwang Formen: Eine Schellackseite trug rund drei Minuten, und daher stammt die Länge des Popsongs. 1948 kam die Langspielplatte von Columbia mit über zwanzig Minuten je Seite — daher stammt das Album. 1917 wurde der erste Jazz auf Platte veröffentlicht, und dass diese Musik weltweit gehört wurde, ohne dass Noten nötig waren, hat die Musikgeschichte des 20. Jahrhunderts mehr verändert als jede Kompositionstechnik.",
+  "folgen": "Aufnahme verändert das Musizieren selbst. Sie schafft ein Vorbild, das man beliebig oft hören und nachahmen kann, und macht den Interpreten wichtiger als das Werk. Sie ermöglicht Musik, die live nicht existieren muss — vom Overdub bis zur elektronischen Produktion. Und sie schafft, was heute die größte Veränderung ist: Die Musik aller Zeiten ist gleichzeitig verfügbar, weshalb neue Musik nicht mehr gegen ihre Zeitgenossen, sondern gegen die ganze Vergangenheit antritt.\n\nEine unerwartete Folge betrifft die Forschung: Ohne Aufnahmen wüssten wir fast nichts über Musiktraditionen, die im 20. Jahrhundert verschwunden sind.",
+  "strittig": "Wem die Erfindung zugeschrieben wird, hängt vom Maßstab ab: Scott 1857 nahm auf, ohne abspielen zu können; Charles Cros beschrieb das Verfahren 1877 wenige Monate vor Edison, baute es aber nicht. Umstritten ist auch, ob Aufnahmen die Vielfalt der Musik erhöht oder eingeengt haben — beides lässt sich belegen, je nachdem, ob man Verfügbarkeit oder lokale Traditionen betrachtet.",
+  "zahlen": [
+    {
+      "wert": "1860",
+      "was": "älteste hörbar gemachte Aufnahme, 2008 entschlüsselt"
+    },
+    {
+      "wert": "ca. 3 Minuten",
+      "was": "Spielzeit einer Schellackseite — daher die Länge des Popsongs"
+    },
+    {
+      "wert": "1948",
+      "was": "Langspielplatte, und damit das Album als Form"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: sound recording; phonograph",
+    "First Sounds: Édouard-Léon Scott de Martinville, Übertragung von 2008",
+    "Mark Katz: Capturing Sound"
+  ]
+},
+{
+  "id": "kaffeehaus",
+  "titel": "Das Kaffeehaus",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1650,
+  "zeitraum": "1554–1750",
+  "region": "Osmanisches Reich und Europa",
+  "leitsatz": "Ein Ort, an dem man für einen Penny stundenlang sitzen, lesen und mit Fremden reden durfte — Obrigkeiten fanden das gefährlich, und sie hatten recht.",
+  "vorgeschichte": "Kaffee kam aus Äthiopien über den Jemen ins Osmanische Reich; 1554 eröffneten die ersten Kaffeehäuser in Istanbul. Sie wurden mehrfach verboten, weil sich dort Menschen unbeaufsichtigt versammelten und redeten. Nach Europa gelangte das Getränk über Venedig; das erste englische Kaffeehaus eröffnete 1650 in Oxford.",
+  "verlauf": "In London gab es um 1700 mehrere hundert Kaffeehäuser. Der Eintritt kostete einen Penny, dafür bekam man Kaffee, Zeitungen und Gesellschaft, und die Häuser hatten Schwerpunkte: In Lloyd's trafen sich Schiffseigner und Versicherer — daraus entstand die Versicherungsbörse Lloyd's of London. In Jonathan's Coffee-House wurden Aktien gehandelt; daraus wurde die Londoner Börse. Die Royal Society diskutierte im Grecian, Zeitungen entstanden aus dem, was in Kaffeehäusern erzählt wurde. Karl II. versuchte 1675 ein Verbot und musste es nach elf Tagen zurücknehmen.\n\nDas Neue war nicht der Kaffee, sondern die Sitzordnung: Anders als im Wirtshaus setzte man sich an gemeinsame Tische, unabhängig vom Stand, und das Thema war Nachricht und Meinung. Jürgen Habermas hat daraus den Begriff der bürgerlichen Öffentlichkeit entwickelt.",
+  "folgen": "Aus Kaffeehäusern kamen Zeitungen, Versicherungen, Börsen, gelehrte Gesellschaften, politische Klubs — und in Paris die Zirkel, in denen 1789 diskutiert wurde. Der Ort selbst blieb: das Wiener Kaffeehaus als literarische Werkstatt, das Café als Teil der Stadt.\n\nEine Nebenwirkung war körperlich. Wer vorher tagsüber Dünnbier trank, weil Wasser unsicher war, trank nun ein Getränk aus abgekochtem Wasser, das wach macht statt müde. Für eine Gesellschaft, die gerade begann, den Arbeitstag nach der Uhr einzuteilen, war das kein Zufall.",
+  "strittig": "Habermas' Bild einer offenen bürgerlichen Öffentlichkeit ist kritisiert worden: Frauen waren in englischen Kaffeehäusern meist ausgeschlossen — in deutschen und französischen nicht durchgehend —, und die Runden waren durch Beruf und Vermögen sehr wohl gesiebt. Die Zahl der Londoner Kaffeehäuser wird in zeitgenössischen Angaben mit bis zu 3.000 genannt, was als weit überhöht gilt.",
+  "zahlen": [
+    {
+      "wert": "1554",
+      "was": "erste Kaffeehäuser in Istanbul"
+    },
+    {
+      "wert": "1 Penny",
+      "was": "Eintritt in ein Londoner Kaffeehaus um 1700"
+    },
+    {
+      "wert": "11 Tage",
+      "was": "so lange hielt das königliche Verbot von 1675"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Eine Geschichte der Welt in sechs Gläsern",
+      "autor": "Tom Standage",
+      "jahr": "2005",
+      "warum": "Bier, Wein, Spirituosen, Kaffee, Tee, Cola — Weltgeschichte über Getränke, und das Kaffeehauskapitel ist das beste."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: coffeehouse",
+    "Brian Cowan: The Social Life of Coffee",
+    "Jürgen Habermas: Strukturwandel der Öffentlichkeit, 1962"
+  ]
+},
+{
+  "id": "uhr-arbeitstag",
+  "titel": "Als die Uhr den Tag einteilte",
+  "epoche": "industrialisierung",
+  "jahr": 1800,
+  "zeitraum": "1300–1900",
+  "region": "Europa",
+  "leitsatz": "Erst wurde die Zeit gemessen, dann wurde sie bezahlt. Wer nach Stunden entlohnt wird, arbeitet in einer anderen Welt als wer nach Stück entlohnt wird.",
+  "vorgeschichte": "Über den größten Teil der Geschichte richtete sich der Tag nach Sonne und Aufgabe: Man molk, wenn die Kühe voll waren, und erntete, wenn das Korn reif war. Die Klöster hatten mit den Gebetszeiten eine erste Ordnung, die den Tag in Abschnitte teilte, und läuteten sie aus — die Glocke war die erste öffentliche Zeitangabe.",
+  "verlauf": "Ab dem 14. Jahrhundert bekamen europäische Städte mechanische Turmuhren. Sie zeigten zunächst nur Stunden, und ihre Genauigkeit war schlecht — aber sie machten die Stunde zu einer gleich langen Einheit, unabhängig von der Jahreszeit. Vorher war die Tagesstunde im Sommer länger als im Winter. Die Uhr war zudem Sache der Stadt: Wer die Glocke kontrollierte, bestimmte, wann der Markt begann und die Arbeit endete.\n\nMit der Fabrik wurde die Uhr zum Maß der Arbeit. Der Arbeitstag begann und endete auf Ansage, Verspätung wurde mit Lohnabzug bestraft, Fabrikordnungen regelten den Gang zur Toilette. E. P. Thompson hat 1967 gezeigt, wie sehr das ein Bruch war: Arbeit wurde von der Aufgabe gelöst und in Zeit gemessen. Der Widerstand richtete sich entsprechend gegen die Uhr — es gibt Berichte über zurückgestellte Fabrikuhren und über Arbeiter, die keine eigene Uhr besitzen durften.",
+  "folgen": "Aus der Zeitmessung folgt der Kampf um ihre Länge. Der Zehnstundentag, der Achtstundentag, die Fünftagewoche, der bezahlte Urlaub — alle diese Auseinandersetzungen setzen voraus, dass Arbeit in Stunden gerechnet wird. Der 1. Mai geht auf die Forderung nach acht Stunden zurück.\n\n1884 kamen die Zeitzonen, weil Eisenbahnfahrpläne mit Ortszeiten nicht funktionierten. Und mit der Zeitmessung kam der Gedanke, Zeit lasse sich verlieren und sparen — eine Vorstellung, die vorher keinen Sinn hatte.",
+  "strittig": "Thompsons Deutung, die Fabrik habe die Zeitdisziplin erzeugt, ist einflussreich und teilweise bestritten: Kaufleute und Klöster rechneten schon vorher genau, und in der Landwirtschaft blieb die Aufgabenzeit lange bestehen. Umstritten ist auch, ob die Arbeitszeit im 19. Jahrhundert tatsächlich stieg oder ob nur ihre Erfassung genauer wurde — die Quellen aus vorindustrieller Zeit sind für Vergleiche zu dünn.",
+  "zahlen": [
+    {
+      "wert": "14. Jahrhundert",
+      "was": "erste mechanische Turmuhren in europäischen Städten"
+    },
+    {
+      "wert": "1884",
+      "was": "Zeitzonen, erzwungen durch die Eisenbahn"
+    },
+    {
+      "wert": "8",
+      "was": "die Stundenzahl, um die ein Jahrhundert lang gestritten wurde"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Zeit, die Arbeitsdisziplin und der Industriekapitalismus",
+      "autor": "E. P. Thompson",
+      "jahr": "1967",
+      "warum": "Der Aufsatz, der das Thema begründete. Vierzig Seiten, die man nicht vergisst."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: clock; time zone",
+    "E. P. Thompson, Past & Present (1967): Time, Work-Discipline, and Industrial Capitalism",
+    "Gerhard Dohrn-van Rossum: Die Geschichte der Stunde"
+  ]
+},
+{
+  "id": "geteilter-schlaf",
+  "titel": "Der geteilte Schlaf",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1600,
+  "zeitraum": "Antike bis 19. Jahrhundert",
+  "region": "Europa",
+  "leitsatz": "Bis ins 19. Jahrhundert schlief man in zwei Abschnitten, mit einer wachen Stunde dazwischen — und niemand hielt das für eine Störung.",
+  "vorgeschichte": "Wer keine künstliche Beleuchtung hat, geht bei Dunkelheit zu Bett. Im europäischen Winter sind das vierzehn Stunden Nacht, und niemand schläft vierzehn Stunden durch. Was dazwischen geschah, ist in hunderten Quellen erwähnt, wurde aber lange nicht als Muster erkannt, weil es so selbstverständlich war, dass niemand es erklärte.",
+  "verlauf": "Der Historiker A. Roger Ekirch fand bei der Arbeit an einer Geschichte der Nacht in Gerichtsakten, Tagebüchern, Arztschriften und Literatur immer wieder die Begriffe erster Schlaf und zweiter Schlaf, in mehreren Sprachen — first sleep, premier sommeil, primo sonno. Zwischen beiden lag eine Wachzeit von etwa einer Stunde: Man betete, redete, flickte, ging zum Nachbarn, hatte Verkehr — Ärzte empfahlen ausdrücklich diese Zeit dafür — oder lag einfach wach. Es gab Gebete für diese Stunde und Namen dafür.\n\nDas Muster verschwand im 19. Jahrhundert mit Gas- und dann elektrischem Licht, das den Abend verlängerte, und mit der Arbeitszeit nach der Uhr, die den Morgen festlegte. Der ununterbrochene Achtstundenschlaf ist danach zur Norm geworden — und Abweichungen davon gelten seither als Krankheit.",
+  "folgen": "Für die Schlafforschung ist das mehr als eine Kuriosität. Thomas Wehr wies 1992 in einem Versuch nach: Wenn Menschen wochenlang vierzehn Stunden Dunkelheit ausgesetzt werden, stellt sich der Schlaf von selbst auf zwei Abschnitte mit einer wachen Phase dazwischen ein. Das legt nahe, dass das durchgehende Schlafen eine Anpassung an Licht und Arbeitszeit ist, nicht umgekehrt.\n\nPraktisch heißt das: Wer nachts eine Stunde wach liegt und deshalb in Sorge gerät, hat möglicherweise kein Symptom, sondern ein älteres Muster.",
+  "strittig": "Ekirchs Befund ist gut belegt, seine Reichweite umstritten. Kritiker halten entgegen, dass die Quellen überwiegend europäisch und städtisch sind und dass geteilter Schlaf eine Folge von Kälte, Lärm und Ungeziefer sein könnte, nicht eine natürliche Form. Auch ob es sich um ein weltweites Muster handelte, ist offen — Berichte aus anderen Regionen gibt es, sie sind aber nicht systematisch untersucht.",
+  "zahlen": [
+    {
+      "wert": "über 500",
+      "was": "Belegstellen, die Ekirch für den zweigeteilten Schlaf zusammentrug"
+    },
+    {
+      "wert": "ca. 1 Stunde",
+      "was": "übliche Wachzeit zwischen den beiden Abschnitten"
+    },
+    {
+      "wert": "1992",
+      "was": "Wehrs Versuch mit vierzehn Stunden Dunkelheit"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "In der Stunde der Nacht",
+      "autor": "A. Roger Ekirch",
+      "jahr": "2005",
+      "warum": "Eine Kulturgeschichte der Nacht vor dem künstlichen Licht — Schlaf, Verbrechen, Angst, Arbeit. Ungewöhnlich und sehr gut."
+    }
+  ],
+  "quellen": [
+    "A. Roger Ekirch: At Day's Close – Night in Times Past",
+    "A. Roger Ekirch, American Historical Review (2001): Sleep We Have Lost",
+    "Thomas A. Wehr, Journal of Sleep Research (1992): In short photoperiods, human sleep is biphasic"
+  ]
+},
+{
+  "id": "goebekli-tepe",
+  "titel": "Göbekli Tepe",
+  "epoche": "steinzeit",
+  "jahr": -9500,
+  "zeitraum": "ca. 9500–8000 v. Chr.",
+  "region": "Südostanatolien",
+  "leitsatz": "Monumentale Steinkreise, errichtet von Menschen ohne Ackerbau, ohne Töpferei und ohne Metall — und am Ende absichtlich zugeschüttet.",
+  "vorgeschichte": "Die übliche Reihenfolge lautete: erst Ackerbau, dann Sesshaftigkeit, dann Überschüsse, dann Priester und Monumente. Göbekli Tepe stellt sie in Frage, denn hier steht das Monument am Anfang. Der Hügel bei Şanlıurfa wurde 1963 begangen und für ein mittelalterliches Gräberfeld gehalten; erst Klaus Schmidt begann 1995 zu graben.",
+  "verlauf": "Freigelegt sind mehrere Kreise aus T-förmigen Kalksteinpfeilern, bis zu 5,5 Meter hoch und 10 Tonnen schwer, in der Mitte jeweils zwei größere. Auf den Pfeilern sind Tiere im Relief gearbeitet: Wildschweine, Schlangen, Füchse, Skorpione, Kraniche, Raubkatzen — überwiegend gefährliche Tiere, kaum Beutetiere. Die T-Form mit angedeuteten Armen und Händen an einigen Pfeilern legt nahe, dass sie Gestalten darstellen.\n\nDatiert ist die älteste Bauphase auf etwa 9500 v. Chr. — rund 7.000 Jahre vor Stonehenge und den Pyramiden. Die Erbauer waren Jäger und Sammler; Knochenfunde zeigen Wildtiere, keine Haustiere, und Getreide wurde gesammelt, nicht angebaut. Die Anlagen wurden nach Gebrauch mit Schutt verfüllt und neue darüber gebaut. Nur dadurch ist überhaupt etwas erhalten. Geophysikalische Messungen weisen auf weitere, noch nicht ergrabene Kreise; erst ein Bruchteil ist untersucht.",
+  "folgen": "Der Fund hat die Reihenfolge der neolithischen Revolution zur offenen Frage gemacht. Schmidts These lautete: Erst kam der Kult, der viele Menschen zusammenbrachte, und die Notwendigkeit, sie zu verpflegen, führte zum Ackerbau. In der Nähe liegen tatsächlich die Regionen, in denen Weizen und Gerste zuerst domestiziert wurden.\n\nSeit 2018 ist Göbekli Tepe Welterbe. In der Umgebung wurden weitere Anlagen derselben Art gefunden — Karahan Tepe und andere —, was zeigt, dass es kein Einzelfall war, sondern eine Bauweise einer ganzen Region.",
+  "strittig": "Ob es ein Heiligtum, ein Versammlungsort, ein Wohnplatz oder mehreres nacheinander war, ist umstritten; neuere Grabungen fanden Hinweise auf Wohnbauten und Wasserzisternen, was Schmidts Bild vom reinen Kultort schwächt. Die verbreiteten Deutungen der Reliefs als Sternbilder oder als Bericht über einen Kometeneinschlag gelten in der Fachwelt als unbelegt. Und warum die Anlagen verfüllt wurden, weiß niemand.",
+  "zahlen": [
+    {
+      "wert": "ca. 9500 v. Chr.",
+      "was": "älteste Bauphase — rund 7.000 Jahre vor den Pyramiden"
+    },
+    {
+      "wert": "5,5 m",
+      "was": "Höhe der größten Pfeiler, bis zu 10 Tonnen"
+    },
+    {
+      "wert": "unter 10 %",
+      "was": "geschätzter Anteil der bislang ergrabenen Fläche"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Sie bauten die ersten Tempel",
+      "autor": "Klaus Schmidt",
+      "jahr": "2006",
+      "warum": "Vom Ausgräber selbst. Seine Deutung ist heute teils überholt, seine Beschreibung der Funde nicht."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Göbekli Tepe",
+    "UNESCO-Welterbe: Göbekli Tepe",
+    "Deutsches Archäologisches Institut: Göbekli Tepe, Grabungsberichte",
+    "Antiquity (2019/2020): Neubewertung der Nutzung"
+  ]
+},
+{
+  "id": "hund",
+  "titel": "Der Hund — die erste Domestikation",
+  "epoche": "steinzeit",
+  "jahr": -15000,
+  "zeitraum": "ca. 30.000–15.000 v. Chr.",
+  "region": "Eurasien",
+  "leitsatz": "Der Hund kam Jahrtausende vor jedem Nutztier und vor jedem Getreide. Er ist die einzige Domestikation aus der Zeit der Jäger.",
+  "vorgeschichte": "Alle anderen Haustiere und Kulturpflanzen gehören zur Sesshaftigkeit: Schaf, Ziege, Rind, Schwein, Weizen, Gerste, alles ab etwa 10.000 v. Chr. Der Hund fällt aus dieser Reihe. Er stammt vom Wolf und wurde von Menschen begleitet, die noch umherzogen und keine Vorräte hatten, die ein Tier hätten anziehen können.",
+  "verlauf": "Die genetischen Befunde sprechen für eine Trennung vom Wolf zwischen etwa 30.000 und 20.000 Jahren; eindeutige Hundeskelette sind ab etwa 15.000 Jahren belegt. Der Fund von Bonn-Oberkassel, rund 14.000 Jahre alt, ist besonders aufschlussreich: Ein Hund wurde dort mit zwei Menschen bestattet, und das Tier war jung, hatte eine schwere Staupe überlebt — was ohne Pflege durch Menschen kaum möglich ist. Es war also kein Nutztier allein.\n\nWie es begann, ist nicht geklärt. Die verbreitete Vorstellung, Menschen hätten Wolfswelpen aufgezogen, konkurriert mit der Annahme, dass sich weniger scheue Wölfe an menschliche Lagerplätze und Abfälle gewöhnten und dadurch selbst zahmer wurden — eine Auslese, die niemand betrieb. Der Fuchsversuch von Dmitri Beljajew in Sibirien ab 1959 zeigte, dass Auslese allein auf Zahmheit binnen weniger Generationen auch Fell, Ohren und Schwanz verändert.",
+  "folgen": "Der Hund veränderte die Jagd, den Schutz des Lagers und später das Hüten von Herden. Kulturell reicht seine Stellung weiter: Er ist das einzige Tier, das in vielen Gesellschaften bestattet, benannt und beweint wird. Und er hat sich auf Menschen eingestellt in einer Weise, die selbst Wölfe nicht können — Hunde folgen dem menschlichen Blick und der Zeigegeste, was bei anderen Tieren erst gelernt werden muss.\n\nDie Domestikation ging in beide Richtungen: Auch Menschen veränderten sich, indem sie mit einem Tier lebten, das Gefahren früher bemerkt.",
+  "strittig": "Ort und Zeit sind offen. Studien haben Europa, Sibirien, Zentralasien und Ostasien vorgeschlagen; eine große Arbeit von 2016 hielt zwei unabhängige Domestikationen für möglich, was inzwischen wieder bestritten wird. Die Datierungen aus genetischen Uhren und die aus Knochenfunden weichen um Jahrtausende voneinander ab. Sicher ist nur die Reihenfolge: der Hund zuerst.",
+  "zahlen": [
+    {
+      "wert": "ca. 15.000 Jahre",
+      "was": "eindeutige Hundeskelette; genetisch bis 30.000"
+    },
+    {
+      "wert": "ca. 14.000 Jahre",
+      "was": "Alter des Doppelgrabs von Bonn-Oberkassel"
+    },
+    {
+      "wert": "ca. 5.000 Jahre",
+      "was": "Vorsprung vor der ersten Nutztierdomestikation"
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: dog, domestication",
+    "Journal of Archaeological Science (2018): Der Hund von Bonn-Oberkassel",
+    "Science (2016): Genomic and archaeological evidence suggests a dual origin of domestic dogs (strittig)"
+  ]
+},
+{
+  "id": "zong",
+  "titel": "Der Fall des Sklavenschiffs Zong",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1781,
+  "zeitraum": "1781–1783",
+  "region": "Atlantik und England",
+  "leitsatz": "Vor Gericht ging es nicht um Mord, sondern um eine Versicherungssumme. Genau das machte den Fall zum Wendepunkt.",
+  "vorgeschichte": "Der Sklavenhandel über den Atlantik war Geschäft mit eigenen Rechtsformen: Menschen galten als Ladung, waren als solche versichert, und die Versicherung zahlte bei Verlust auf See. Was Verlust bedeutete, war in Klauseln geregelt — Tod durch Krankheit war Sache des Eigentümers, ein Verlust zur Rettung des Schiffs war ersetzbar.",
+  "verlauf": "Die Zong verließ 1781 Westafrika mit 442 verschleppten Menschen, weit mehr als für das Schiff vorgesehen. Durch Navigationsfehler verlängerte sich die Reise, Trinkwasser wurde knapp, Menschen starben. Kapitän Luke Collingwood ließ über mehrere Tage 132 Menschen ins Meer werfen; zehn weitere sprangen. Der Eigentümer forderte anschließend von der Versicherung Ersatz mit der Begründung, das Über-Bord-Werfen sei zur Rettung des Restes notwendig gewesen.\n\nDie Versicherung weigerte sich zu zahlen, und so kam der Fall 1783 vor Gericht — als Streit über Geld. Lord Chief Justice Mansfield ordnete ein neues Verfahren an, weil Zweifel bestanden, ob wirklich Wassermangel vorlag; er stellte auch fest, dass der Fall rechtlich wie der Verlust von Pferden zu behandeln sei. Niemand wurde angeklagt.",
+  "folgen": "Der Abolitionist Granville Sharp verbreitete die Gerichtsakten und schrieb an Behörden und Zeitungen. Der Fall wurde zum stärksten Argument der Bewegung, weil er nichts erklären musste: Ein Gericht in London hatte über die Tötung von 142 Menschen als Sachfrage verhandelt. 1787 gründete sich das Komitee zur Abschaffung des Sklavenhandels, 1789 sprach William Wilberforce erstmals im Parlament, 1807 verbot Großbritannien den Handel, 1834 die Sklaverei im Reich.\n\nJ. M. W. Turners Gemälde Das Sklavenschiff von 1840 bezieht sich auf die Zong. Und der Fall ist ein Lehrstück über eine Eigenschaft von Unrecht: Solange es rechtsförmig geregelt ist, braucht es niemanden, der es beabsichtigt.",
+  "strittig": "Ob tatsächlich Wassermangel bestand, ist unklar — es regnete während der Fahrt, und das Schiff hatte bei der Ankunft in Jamaika noch Wasservorrat, was gegen die Notlage spricht. Die genaue Zahl der Getöteten schwankt zwischen 132 und 150, je nachdem, welche Gerichtsakte man zugrunde legt. Und wieviel der Fall zur Abschaffung beitrug, ist Ermessensfrage: Die Bewegung war im Entstehen, er gab ihr ein Beispiel.",
+  "zahlen": [
+    {
+      "wert": "442",
+      "was": "verschleppte Menschen an Bord, weit über der Kapazität"
+    },
+    {
+      "wert": "132",
+      "was": "über Bord geworfen, dazu zehn Sprünge"
+    },
+    {
+      "wert": "0",
+      "was": "Angeklagte"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Das Zong-Massaker",
+      "autor": "James Walvin",
+      "jahr": "2011",
+      "warum": "Der Fall aus den Akten, mit dem Handelssystem drumherum. Nüchtern und deshalb umso härter."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Zong massacre; abolitionism",
+    "Gregson v. Gilbert, 1783 (Gerichtsakte)",
+    "James Walvin: The Zong – A Massacre, the Law and the End of Slavery"
+  ]
+},
+{
+  "id": "kongo-freistaat",
+  "titel": "Der Kongo-Freistaat",
+  "epoche": "industrialisierung",
+  "jahr": 1885,
+  "zeitraum": "1885–1908",
+  "region": "Zentralafrika",
+  "leitsatz": "Ein Staat, der einem einzelnen Mann persönlich gehörte, betrieb Zwangsarbeit für Kautschuk — und wurde von einer der ersten internationalen Menschenrechtskampagnen gestürzt.",
+  "vorgeschichte": "Leopold II., König der Belgier, wollte eine Kolonie, und sein Land wollte keine. Also erwarb er das Gebiet privat: Auf der Berliner Konferenz 1884/85 ließ er sich den Kongo als persönlichen Besitz zusprechen, mit der erklärten Absicht, Sklavenhandel zu bekämpfen und Handel zu öffnen. Kein afrikanischer Vertreter war anwesend. Der Staat hieß Freistaat und war das Eigentum eines Mannes, der ihn nie besuchte.",
+  "verlauf": "Zunächst ging es um Elfenbein, dann um Kautschuk, dessen Preis mit dem Fahrrad- und Automobilbau stieg. Wilder Kautschuk wächst in Lianen im Wald und lässt sich nicht anbauen; er musste gesammelt werden. Die Verwaltung setzte Sammelquoten je Dorf fest und erzwang sie mit einer Truppe, der Force Publique: Geiselnahme von Frauen und Kindern, Niederbrennen von Dörfern, Verstümmelung. Das Abhacken von Händen entstand aus einer Kontrollvorschrift — Soldaten mussten für verbrauchte Patronen einen Nachweis erbringen.\n\nDer Reeder-Angestellte Edmund Dene Morel bemerkte in Antwerpen, dass Schiffe mit Kautschuk ankamen und mit Waffen und Ketten zurückfuhren, aber kaum mit Handelsware — es konnte kein Handel sein. Er gab seine Stellung auf und baute mit dem britischen Konsul Roger Casement, dessen Bericht 1904 amtlich erschien, eine Kampagne auf: Broschüren, Vorträge, Fotografien der Verstümmelten, aufgenommen von der Missionarin Alice Seeley Harris. 1908 musste Leopold den Kongo an Belgien abtreten.",
+  "folgen": "Die Opferzahl ist unbekannt; die verbreitete Schätzung eines Bevölkerungsrückgangs um etwa zehn Millionen zwischen 1885 und 1908 stammt von Adam Hochschild und beruht auf einer Volkszählung von 1924 im Rückschluss — sie umfasst Getötete, Verhungerte, an Krankheiten Gestorbene und Nichtgeborene. Fachleute halten die Größenordnung für plausibel, die Genauigkeit nicht.\n\nDie Kongo-Reformbewegung war eine der ersten Menschenrechtskampagnen mit Fotografien als Beweismittel — ein Verfahren, das seither jede solche Bewegung nutzt. Und die belgische Herrschaft nach 1908 war milder, aber Kolonialherrschaft; die Folgen reichen bis in die Gegenwart des Landes.",
+  "strittig": "Die Zahl zehn Millionen ist die bekannteste und die bestrittene: Historiker wie Jean-Luc Vellut nennen niedrigere Werte, andere halten sie für zu niedrig. Sicher ist ein schwerer Bevölkerungsverlust, unsicher seine Höhe und die Aufteilung auf Gewalt, Hunger und Seuchen — besonders die Schlafkrankheit wütete gleichzeitig. Umstritten ist auch, ob der Begriff Völkermord zutrifft; die Mehrheit der Forschung spricht von Massengewalt und Ausbeutung mit millionenfachen Todesfolgen, ohne Vernichtungsabsicht gegen eine Gruppe.",
+  "zahlen": [
+    {
+      "wert": "1885–1908",
+      "was": "der Kongo als persönlicher Besitz Leopolds II."
+    },
+    {
+      "wert": "1904",
+      "was": "Casements amtlicher Bericht"
+    },
+    {
+      "wert": "ca. 10 Mio.",
+      "was": "geschätzter Bevölkerungsverlust — Größenordnung plausibel, Zahl strittig"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Schatten über dem Kongo",
+      "autor": "Adam Hochschild",
+      "jahr": "1998",
+      "warum": "Das Buch, das den Fall einem breiten Publikum zurückbrachte. Mitreißend; die Opferzahl liest man am besten mit der Kritik daran."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Congo Free State; Leopold II",
+    "Casement Report, 1904 (britisches Parlament)",
+    "Adam Hochschild: King Leopold's Ghost",
+    "Jean-Luc Vellut (Hrsg.): La mémoire du Congo (Gegenposition zur Opferzahl)"
+  ]
+},
+{
+  "id": "gruene-revolution",
+  "titel": "Die Grüne Revolution",
+  "epoche": "moderne",
+  "jahr": 1961,
+  "zeitraum": "1943–2000",
+  "region": "Mexiko, Indien, Asien",
+  "leitsatz": "Ein Pflanzenzüchter erhielt den Friedensnobelpreis, weil er Weizen kleiner machte — und die vorhergesagte Hungerkatastrophe fand nicht statt.",
+  "vorgeschichte": "In den 1960er Jahren galt eine Hungerkrise in Asien als unvermeidlich. Indien und Pakistan konnten sich nicht selbst ernähren, die Bevölkerung wuchs, und Bücher wie Paul Ehrlichs Bevölkerungsbombe von 1968 sagten Massensterben für die 1970er Jahre voraus. Die Vorhersage war nicht abwegig — sie rechnete mit den Erträgen, die es damals gab.",
+  "verlauf": "Norman Borlaug arbeitete ab 1944 in Mexiko an Weizen. Sein entscheidender Griff war nicht mehr Dünger, sondern kürzere Halme: Hochgezüchteter Weizen mit viel Dünger wächst hoch, wird kopflastig und knickt um. Kurzhalmige Sorten, in die er Zwerggene aus japanischen Züchtungen einkreuzte, tragen schwere Ähren, ohne zu lagern. Dazu kamen Rostresistenz und Sorten, die nicht auf die Tageslänge reagieren und deshalb in verschiedenen Breiten wachsen.\n\nAb 1961 wurden diese Sorten in Indien und Pakistan eingeführt, zusammen mit Dünger, Bewässerung und Pflanzenschutz. Indiens Weizenernte stieg zwischen 1965 und 1970 um mehr als die Hälfte; das Land wurde vom Empfänger von Nahrungsmittelhilfe zum Selbstversorger und später zum Ausführer. Für Reis leistete das Internationale Reisforschungsinstitut auf den Philippinen mit der Sorte IR8 Ähnliches. Borlaug erhielt 1970 den Friedensnobelpreis.",
+  "folgen": "Die Schätzungen, wieviele Menschen dadurch nicht verhungerten, gehen bis in die Hunderte Millionen. Zugleich ist die Grüne Revolution das Musterbeispiel dafür, dass eine Lösung ihre eigenen Probleme erzeugt: Die neuen Sorten brauchen Dünger, Bewässerung und Pflanzenschutz, also Geld — wer es hatte, gewann, kleine Betriebe verloren und verkauften. In Teilen Indiens sanken die Grundwasserspiegel dramatisch, Böden versalzten, und die Sortenvielfalt ging zurück, was Anfälligkeit erzeugt.\n\nAfrika wurde weitgehend nicht erfasst, unter anderem weil dort andere Grundnahrungspflanzen wachsen und die Infrastruktur fehlte.",
+  "strittig": "Ob die Grüne Revolution Hunger beseitigte oder nur verschob, ist eine der lebhaftesten Debatten der Entwicklungsforschung. Amartya Sen hat gezeigt, dass Hungersnöte selten aus Mangel an Nahrung entstehen, sondern aus fehlendem Zugang dazu — dann wäre Ertragssteigerung nicht die entscheidende Größe. Vandana Shiva kritisiert die soziale und ökologische Rechnung scharf; Verteidiger halten entgegen, dass die Alternative dokumentierte Hungertote gewesen wären. Die Zahl der Geretteten ist in jedem Fall eine Modellrechnung.",
+  "zahlen": [
+    {
+      "wert": "1970",
+      "was": "Friedensnobelpreis für Norman Borlaug"
+    },
+    {
+      "wert": "über 50 %",
+      "was": "Anstieg der indischen Weizenernte zwischen 1965 und 1970"
+    },
+    {
+      "wert": "IR8",
+      "was": "die Reissorte, die dasselbe für Asiens Grundnahrung leistete"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der Mann, der die Welt ernährte",
+      "autor": "Leon Hesser",
+      "jahr": "2006",
+      "warum": "Borlaugs Arbeit von der Züchtung bis zur Einführung. Wohlwollend — die Kritik lies daneben."
+    },
+    {
+      "titel": "Ökonomie und Freiheit",
+      "autor": "Amartya Sen",
+      "jahr": "1999",
+      "warum": "Warum Hungersnöte politische und nicht landwirtschaftliche Ereignisse sind. Der wichtigste Einspruch."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Green Revolution; Norman Borlaug",
+    "Nobelprize.org: Friedenspreis 1970",
+    "FAO: Statistiken zu Getreideerträgen, laufend",
+    "Amartya Sen: Poverty and Famines"
+  ]
+},
+{
+  "id": "dust-bowl",
+  "titel": "Der Dust Bowl",
+  "epoche": "moderne",
+  "jahr": 1935,
+  "zeitraum": "1931–1939",
+  "region": "Große Ebenen der USA",
+  "leitsatz": "Nicht die Dürre allein trug den Boden davon, sondern die Art, wie er zuvor gepflügt worden war.",
+  "vorgeschichte": "Die Prärie der Großen Ebenen war Grasland mit tief wurzelnden Gräsern, die den Boden auch in Trockenjahren hielten. Ab den 1900er Jahren wurde sie umgebrochen: Der Homestead Act gab Land billig ab, die Weizenpreise waren im Ersten Weltkrieg hoch, Traktoren machten das Pflügen großer Flächen möglich, und mehrere feuchte Jahre nährten die Annahme, das Klima sei geeignet. Ein verbreiteter Spruch lautete, der Regen folge dem Pflug.",
+  "verlauf": "1931 begann eine Dürre, die fast ein Jahrzehnt anhielt. Der nackte Ackerboden hatte keine Wurzeln mehr, die ihn hielten, und der Wind der Ebenen nahm ihn mit. Es entstanden Staubstürme, die Zehntausende Quadratkilometer erfassten; der 14. April 1935 ging als Black Sunday in die Erinnerung ein, als eine Wand aus Staub den Tag verdunkelte. Staub aus Kansas fiel in Washington und auf Schiffe im Atlantik. Menschen erkrankten an Staublunge.\n\nEtwa 2,5 Millionen Menschen verließen die Ebenen, viele nach Kalifornien, wo sie als Okies auf Wanderarbeit angewiesen waren — John Steinbecks Früchte des Zorns und Dorothea Langes Fotografien machten das sichtbar. Die Regierung Roosevelt gründete 1935 den Soil Conservation Service, pflanzte Windschutzstreifen und förderte Konturpflügen und Fruchtwechsel.",
+  "folgen": "Der Dust Bowl ist der Fall, an dem die Verbindung von Landwirtschaft und Bodenerhalt in die Politik kam: Bodenschutz wurde staatliche Aufgabe. Und er ist das am besten dokumentierte Beispiel einer menschengemachten Umweltkatastrophe vor der Klimaforschung — Dürre gab es vorher, den Bodenverlust in dieser Höhe nicht.\n\nDie Ebenen werden heute weiter bebaut, überwiegend mit Bewässerung aus dem Ogallala-Grundwasserleiter, der schneller entnommen als aufgefüllt wird. Das nächste Problem hat also dieselbe Form: eine Nutzung, die auf einen Vorrat setzt.",
+  "strittig": "Wie stark der Pflug und wie stark die Dürre wirkten, ist quantitativ nicht sauber zu trennen; Modellrechnungen zeigen, dass die Entfernung der Grasdecke die Staubstürme deutlich verstärkte und über Rückkopplungen die Trockenheit selbst mit verschärfte. Die Zahl der Abwanderer schwankt in der Literatur zwischen zwei und drei Millionen, weil unklar ist, wer wegen des Staubs und wer wegen der Weltwirtschaftskrise ging.",
+  "zahlen": [
+    {
+      "wert": "14. April 1935",
+      "was": "Black Sunday, der schwerste Staubsturm"
+    },
+    {
+      "wert": "ca. 2,5 Mio.",
+      "was": "Menschen, die die Ebenen verließen"
+    },
+    {
+      "wert": "1935",
+      "was": "Gründung des Soil Conservation Service"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der große Sturm",
+      "autor": "Timothy Egan",
+      "jahr": "2006",
+      "warum": "Die Katastrophe aus der Sicht der Menschen, die blieben. Ausgezeichnet erzählt und quellennah."
+    },
+    {
+      "titel": "Dust Bowl",
+      "autor": "Donald Worster",
+      "jahr": "1979",
+      "warum": "Die Umweltgeschichte dazu: warum die Wirtschaftsweise die Ursache war. Der Standard des Fachs."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Dust Bowl",
+    "NOAA: Drought reconstruction of the 1930s",
+    "Donald Worster: Dust Bowl"
+  ]
 }
 ];

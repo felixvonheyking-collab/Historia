@@ -43,7 +43,8 @@ const THEMEN = [
    {
     "jahr": 165,
     "titel": "Die Antoninische Pest",
-    "text": "Eine reichsweite Epidemie kostet nach Schätzungen Millionen Menschen das Leben. Ob es sich um Pocken handelte, ist mangels Erregernachweis bis heute nicht gesichert."
+    "text": "Eine reichsweite Epidemie kostet nach Schätzungen Millionen Menschen das Leben. Ob es sich um Pocken handelte, ist mangels Erregernachweis bis heute nicht gesichert.",
+    "vertiefung": "kaiser-markaurel"
    },
    {
     "jahr": 170,
@@ -53,7 +54,8 @@ const THEMEN = [
    {
     "jahr": 541,
     "titel": "Die Justinianische Pest",
-    "text": "Die erste sicher belegte Pestpandemie. Dass es tatsächlich Yersinia pestis war, wurde erst 2013 durch DNA aus bayerischen Gräbern bewiesen – vorher war es eine gut begründete Vermutung."
+    "text": "Die erste sicher belegte Pestpandemie. Dass es tatsächlich Yersinia pestis war, wurde erst 2013 durch DNA aus bayerischen Gräbern bewiesen – vorher war es eine gut begründete Vermutung.",
+    "vertiefung": "justinian-pest"
    },
    {
     "jahr": 900,
@@ -73,12 +75,14 @@ const THEMEN = [
    {
     "jahr": 1348,
     "titel": "Die Pest und die Grenzen der Medizin",
-    "text": "Gegen den Schwarzen Tod half nichts, was die Ärzte kannten. Die wirksamsten Maßnahmen waren Verwaltungsakte: Quarantäne, Absperrung, Gesundheitsämter. Der Ansehensverlust der galenischen Medizin begann hier."
+    "text": "Gegen den Schwarzen Tod half nichts, was die Ärzte kannten. Die wirksamsten Maßnahmen waren Verwaltungsakte: Quarantäne, Absperrung, Gesundheitsämter. Der Ansehensverlust der galenischen Medizin begann hier.",
+    "vertiefung": "schwarzer-tod"
    },
    {
     "jahr": 1377,
     "titel": "Die erste Quarantäne",
-    "text": "Ragusa, das heutige Dubrovnik, verpflichtet Ankömmlinge zu dreißig Tagen Isolation; später sind es vierzig – quaranta. Öffentliche Gesundheitsverwaltung entsteht aus der Angst vor der Pest."
+    "text": "Ragusa, das heutige Dubrovnik, verpflichtet Ankömmlinge zu dreißig Tagen Isolation; später sind es vierzig – quaranta. Öffentliche Gesundheitsverwaltung entsteht aus der Angst vor der Pest.",
+    "vertiefung": "schwarzer-tod"
    },
    {
     "jahr": 1543,
@@ -129,7 +133,8 @@ const THEMEN = [
    {
     "jahr": 1854,
     "titel": "John Snow und die Broad Street",
-    "text": "Snow trägt Cholerafälle in einen Stadtplan ein und findet eine verseuchte Wasserpumpe. Aus dieser Karte entsteht die moderne Epidemiologie – Jahre bevor der Erreger bekannt ist."
+    "text": "Snow trägt Cholerafälle in einen Stadtplan ein und findet eine verseuchte Wasserpumpe. Aus dieser Karte entsteht die moderne Epidemiologie – Jahre bevor der Erreger bekannt ist.",
+    "vertiefung": "kanalisation-london"
    },
    {
     "jahr": 1867,
@@ -144,7 +149,8 @@ const THEMEN = [
    {
     "jahr": 1895,
     "titel": "Röntgenstrahlen",
-    "text": "Wilhelm Conrad Röntgen fotografiert die Hand seiner Frau und veröffentlicht den Befund binnen Wochen; ein Patent lehnt er ab. Erstmals lässt sich in einen lebenden Körper hineinsehen, ohne ihn zu öffnen. Die Gefahren der Strahlung erkannte man erst nach vielen Erkrankungen bei den frühen Anwendern."
+    "text": "Wilhelm Conrad Röntgen fotografiert die Hand seiner Frau und veröffentlicht den Befund binnen Wochen; ein Patent lehnt er ab. Erstmals lässt sich in einen lebenden Körper hineinsehen, ohne ihn zu öffnen. Die Gefahren der Strahlung erkannte man erst nach vielen Erkrankungen bei den frühen Anwendern.",
+    "vertiefung": "physik-1900"
    },
    {
     "jahr": 1900,
@@ -154,7 +160,8 @@ const THEMEN = [
    {
     "jahr": 1918,
     "titel": "Die Influenzapandemie",
-    "text": "Schätzungen reichen von 25 bis über 50 Millionen Toten; die Spanne zeigt, wie lückenhaft die Erfassung war. Spanische Grippe heißt sie nur, weil das neutrale Spanien als einziges Land offen berichten durfte."
+    "text": "Schätzungen reichen von 25 bis über 50 Millionen Toten; die Spanne zeigt, wie lückenhaft die Erfassung war. Spanische Grippe heißt sie nur, weil das neutrale Spanien als einziges Land offen berichten durfte.",
+    "vertiefung": "grippe-1918"
    },
    {
     "jahr": 1921,
@@ -180,7 +187,8 @@ const THEMEN = [
    {
     "jahr": 1953,
     "titel": "Die Doppelhelix",
-    "text": "Die Struktur der DNA erklärt, wie Erbinformation gespeichert und weitergegeben wird. Rosalind Franklins Röntgenaufnahme war entscheidend; ihr Anteil wurde jahrzehntelang kaum genannt."
+    "text": "Die Struktur der DNA erklärt, wie Erbinformation gespeichert und weitergegeben wird. Rosalind Franklins Röntgenaufnahme war entscheidend; ihr Anteil wurde jahrzehntelang kaum genannt.",
+    "vertiefung": "doppelhelix"
    },
    {
     "jahr": 1955,
@@ -211,7 +219,8 @@ const THEMEN = [
    {
     "jahr": 2001,
     "titel": "Das menschliche Genom",
-    "text": "Die erste Fassung der vollständigen Sequenz erscheint. Die Erwartung, damit ließen sich Krankheiten unmittelbar erklären, erfüllte sich nicht – die Zahl der Gene lag deutlich unter den Schätzungen, und ihr Zusammenspiel erwies sich als komplexer als gedacht."
+    "text": "Die erste Fassung der vollständigen Sequenz erscheint. Die Erwartung, damit ließen sich Krankheiten unmittelbar erklären, erfüllte sich nicht – die Zahl der Gene lag deutlich unter den Schätzungen, und ihr Zusammenspiel erwies sich als komplexer als gedacht.",
+    "vertiefung": "doppelhelix"
    },
    {
     "jahr": 2020,
@@ -296,12 +305,14 @@ const THEMEN = [
    {
     "jahr": 1712,
     "titel": "Newcomens Dampfmaschine",
-    "text": "Gebaut, um Wasser aus Kohlebergwerken zu pumpen – Kohle liefert also zuerst die Energie, um mehr Kohle zu fördern. Der Wirkungsgrad lag unter einem Prozent."
+    "text": "Gebaut, um Wasser aus Kohlebergwerken zu pumpen – Kohle liefert also zuerst die Energie, um mehr Kohle zu fördern. Der Wirkungsgrad lag unter einem Prozent.",
+    "vertiefung": "dampfmaschine"
    },
    {
     "jahr": 1769,
     "titel": "Watts separater Kondensator",
-    "text": "Eine scheinbar kleine Änderung vervierfacht die Effizienz und macht die Dampfmaschine außerhalb von Bergwerken einsetzbar. Erst damit wird sie zur Universalmaschine."
+    "text": "Eine scheinbar kleine Änderung vervierfacht die Effizienz und macht die Dampfmaschine außerhalb von Bergwerken einsetzbar. Erst damit wird sie zur Universalmaschine.",
+    "vertiefung": "dampfmaschine"
    },
    {
     "jahr": 1800,
@@ -321,7 +332,8 @@ const THEMEN = [
    {
     "jahr": 1859,
     "titel": "Erste Ölbohrung in Titusville",
-    "text": "Gesucht wurde ein Ersatz für Walöl als Lampenbrennstoff. Dass daraus der Treibstoff des 20. Jahrhunderts würde, ahnte niemand."
+    "text": "Gesucht wurde ein Ersatz für Walöl als Lampenbrennstoff. Dass daraus der Treibstoff des 20. Jahrhunderts würde, ahnte niemand.",
+    "vertiefung": "erdoel"
    },
    {
     "jahr": 1876,
@@ -331,32 +343,38 @@ const THEMEN = [
    {
     "jahr": 1882,
     "titel": "Die ersten Kraftwerke",
-    "text": "Edison versorgt einen Bezirk in Manhattan mit Gleichstrom. Im folgenden Stromkrieg setzt sich Wechselstrom durch, weil er sich über große Entfernungen transportieren lässt – Energie wird vom Ort ihrer Erzeugung gelöst."
+    "text": "Edison versorgt einen Bezirk in Manhattan mit Gleichstrom. Im folgenden Stromkrieg setzt sich Wechselstrom durch, weil er sich über große Entfernungen transportieren lässt – Energie wird vom Ort ihrer Erzeugung gelöst.",
+    "vertiefung": "elektrifizierung"
    },
    {
     "jahr": 1886,
     "titel": "Wechselstrom setzt sich durch",
-    "text": "Der Streit zwischen Edison und Westinghouse endet zugunsten des Wechselstroms, weil er sich hochspannen und damit über weite Strecken übertragen lässt. Erst damit muss ein Kraftwerk nicht mehr im selben Stadtviertel stehen wie seine Kunden."
+    "text": "Der Streit zwischen Edison und Westinghouse endet zugunsten des Wechselstroms, weil er sich hochspannen und damit über weite Strecken übertragen lässt. Erst damit muss ein Kraftwerk nicht mehr im selben Stadtviertel stehen wie seine Kunden.",
+    "vertiefung": "elektrifizierung"
    },
    {
     "jahr": 1909,
     "titel": "Das Haber-Bosch-Verfahren",
-    "text": "Stickstoff aus der Luft wird zu Dünger. Schätzungen zufolge hängt die Ernährung von etwa der Hälfte der heutigen Menschheit daran. Dasselbe Verfahren lieferte Deutschland im Ersten Weltkrieg den Sprengstoff."
+    "text": "Stickstoff aus der Luft wird zu Dünger. Schätzungen zufolge hängt die Ernährung von etwa der Hälfte der heutigen Menschheit daran. Dasselbe Verfahren lieferte Deutschland im Ersten Weltkrieg den Sprengstoff.",
+    "vertiefung": "haber-bosch"
    },
    {
     "jahr": 1911,
     "titel": "Öl für die Flotte",
-    "text": "Die britische Marine stellt von Kohle auf Öl um: schnellere Schiffe, kürzere Betankung, weniger Heizer. Damit wird Erdöl erstmals zur strategischen Ressource – und der Nahe Osten zum Gegenstand von Großmachtpolitik."
+    "text": "Die britische Marine stellt von Kohle auf Öl um: schnellere Schiffe, kürzere Betankung, weniger Heizer. Damit wird Erdöl erstmals zur strategischen Ressource – und der Nahe Osten zum Gegenstand von Großmachtpolitik.",
+    "vertiefung": "erdoel"
    },
    {
     "jahr": 1938,
     "titel": "Die Kernspaltung wird entdeckt",
-    "text": "Otto Hahn und Fritz Straßmann finden Barium nach dem Beschuss von Uran; Lise Meitner und Otto Frisch deuten den Befund im Exil richtig als Spaltung. Meitner wurde bei der Nobelpreisvergabe übergangen."
+    "text": "Otto Hahn und Fritz Straßmann finden Barium nach dem Beschuss von Uran; Lise Meitner und Otto Frisch deuten den Befund im Exil richtig als Spaltung. Meitner wurde bei der Nobelpreisvergabe übergangen.",
+    "vertiefung": "kernspaltung"
    },
    {
     "jahr": 1942,
     "titel": "Die erste kontrollierte Kettenreaktion",
-    "text": "Unter der Tribüne eines Sportstadions in Chicago läuft der erste Kernreaktor. Er war Teil des Waffenprogramms – die zivile Nutzung kam danach, nicht davor."
+    "text": "Unter der Tribüne eines Sportstadions in Chicago läuft der erste Kernreaktor. Er war Teil des Waffenprogramms – die zivile Nutzung kam danach, nicht davor.",
+    "vertiefung": "kernspaltung"
    },
    {
     "jahr": 1954,
@@ -386,7 +404,8 @@ const THEMEN = [
    {
     "jahr": 1986,
     "titel": "Tschernobyl",
-    "text": "Der Reaktorunfall verändert die Energiepolitik ganzer Länder und beschleunigt die Auflösung der Sowjetunion, weil die Vertuschung öffentlich wurde."
+    "text": "Der Reaktorunfall verändert die Energiepolitik ganzer Länder und beschleunigt die Auflösung der Sowjetunion, weil die Vertuschung öffentlich wurde.",
+    "vertiefung": "tschernobyl"
    },
    {
     "jahr": 1988,
@@ -456,7 +475,8 @@ const THEMEN = [
    {
     "jahr": -1754,
     "titel": "Der Codex Hammurabi",
-    "text": "Nicht die erste Gesetzessammlung – der Codex Ur-Nammu ist rund drei Jahrhunderte älter –, aber die umfangreichste erhaltene. Die Strafen sind nach Stand gestaffelt: Wessen Auge zerstört wird, entscheidet über das Strafmaß."
+    "text": "Nicht die erste Gesetzessammlung – der Codex Ur-Nammu ist rund drei Jahrhunderte älter –, aber die umfangreichste erhaltene. Die Strafen sind nach Stand gestaffelt: Wessen Auge zerstört wird, entscheidet über das Strafmaß.",
+    "vertiefung": "hammurapi"
    },
    {
     "jahr": -1300,
@@ -466,12 +486,14 @@ const THEMEN = [
    {
     "jahr": -594,
     "titel": "Solons Reformen in Athen",
-    "text": "Die Schuldknechtschaft wird abgeschafft: Wer seine Schulden nicht zahlen kann, verliert nicht mehr seine Freiheit. Damit wird zum ersten Mal eine Grenze gezogen, die Vermögen nicht überschreiten darf."
+    "text": "Die Schuldknechtschaft wird abgeschafft: Wer seine Schulden nicht zahlen kann, verliert nicht mehr seine Freiheit. Damit wird zum ersten Mal eine Grenze gezogen, die Vermögen nicht überschreiten darf.",
+    "vertiefung": "athener-demokratie"
    },
    {
     "jahr": -450,
     "titel": "Das Zwölftafelgesetz",
-    "text": "Rom schreibt sein Recht auf öffentliche Tafeln. Der Fortschritt liegt nicht im Inhalt, sondern in der Sichtbarkeit – wer die Regel kennt, kann sich auf sie berufen."
+    "text": "Rom schreibt sein Recht auf öffentliche Tafeln. Der Fortschritt liegt nicht im Inhalt, sondern in der Sichtbarkeit – wer die Regel kennt, kann sich auf sie berufen.",
+    "vertiefung": "roemische-republik"
    },
    {
     "jahr": -300,
@@ -486,12 +508,14 @@ const THEMEN = [
    {
     "jahr": 212,
     "titel": "Das Bürgerrecht für alle Freien",
-    "text": "Caracalla verleiht allen freien Bewohnern des Reiches das römische Bürgerrecht. Der Anlass war vermutlich fiskalisch, die Wirkung grundlegend: Ein einziges Recht galt von Britannien bis Ägypten."
+    "text": "Caracalla verleiht allen freien Bewohnern des Reiches das römische Bürgerrecht. Der Anlass war vermutlich fiskalisch, die Wirkung grundlegend: Ein einziges Recht galt von Britannien bis Ägypten.",
+    "vertiefung": "roemisches-buergerrecht"
    },
    {
     "jahr": 533,
     "titel": "Die Digesten des Corpus Iuris Civilis",
-    "text": "Justinian lässt das römische Recht ordnen. Im 11. Jahrhundert in Italien wiederentdeckt, wird es zur Grundlage der Rechtswissenschaft in weiten Teilen Europas – ein Text überlebt sein Reich um anderthalb Jahrtausende."
+    "text": "Justinian lässt das römische Recht ordnen. Im 11. Jahrhundert in Italien wiederentdeckt, wird es zur Grundlage der Rechtswissenschaft in weiten Teilen Europas – ein Text überlebt sein Reich um anderthalb Jahrtausende.",
+    "vertiefung": "kaiser-justinian"
    },
    {
     "jahr": 653,
@@ -506,7 +530,8 @@ const THEMEN = [
    {
     "jahr": 1215,
     "titel": "Die Magna Carta",
-    "text": "Englische Barone zwingen dem König Zugeständnisse ab. Es war ein Adelsprivileg, kein Freiheitsdokument; zu einem solchen wurde es erst im 17. Jahrhundert umgedeutet, als man es gegen die Krone brauchte."
+    "text": "Englische Barone zwingen dem König Zugeständnisse ab. Es war ein Adelsprivileg, kein Freiheitsdokument; zu einem solchen wurde es erst im 17. Jahrhundert umgedeutet, als man es gegen die Krone brauchte.",
+    "vertiefung": "magna-carta"
    },
    {
     "jahr": 1230,
@@ -516,7 +541,8 @@ const THEMEN = [
    {
     "jahr": 1532,
     "titel": "Die Carolina",
-    "text": "Die peinliche Halsgerichtsordnung Karls V. vereinheitlicht das Strafverfahren im Reich. Sie regelt auch die Folter – nicht als Willkür, sondern mit Bedingungen und Grenzen. Das war gemessen an der Praxis ein Fortschritt und bleibt aus heutiger Sicht schwer erträglich."
+    "text": "Die peinliche Halsgerichtsordnung Karls V. vereinheitlicht das Strafverfahren im Reich. Sie regelt auch die Folter – nicht als Willkür, sondern mit Bedingungen und Grenzen. Das war gemessen an der Praxis ein Fortschritt und bleibt aus heutiger Sicht schwer erträglich.",
+    "vertiefung": "hexenverfolgung-ende"
    },
    {
     "jahr": 1625,
@@ -536,12 +562,14 @@ const THEMEN = [
    {
     "jahr": 1764,
     "titel": "Beccaria gegen Folter und Todesstrafe",
-    "text": "Ein 26-Jähriger veröffentlicht anonym eine Schrift, die binnen Jahren in ganz Europa gelesen wird. Seine Argumente – Sicherheit der Strafe wirkt stärker als ihre Härte – führten in mehreren Staaten zur Abschaffung der Folter."
+    "text": "Ein 26-Jähriger veröffentlicht anonym eine Schrift, die binnen Jahren in ganz Europa gelesen wird. Seine Argumente – Sicherheit der Strafe wirkt stärker als ihre Härte – führten in mehreren Staaten zur Abschaffung der Folter.",
+    "vertiefung": "beccaria"
    },
    {
     "jahr": 1789,
     "titel": "Die Erklärung der Menschen- und Bürgerrechte",
-    "text": "Frankreich erklärt Rechte für allgemein und angeboren. Zwei Jahre später fordert Olympe de Gouges dieselben Rechte für Frauen ein – 1793 wird sie hingerichtet."
+    "text": "Frankreich erklärt Rechte für allgemein und angeboren. Zwei Jahre später fordert Olympe de Gouges dieselben Rechte für Frauen ein – 1793 wird sie hingerichtet.",
+    "vertiefung": "franzoesische-revolution"
    },
    {
     "jahr": 1791,
@@ -561,7 +589,8 @@ const THEMEN = [
    {
     "jahr": 1865,
     "titel": "Der 13. Zusatzartikel",
-    "text": "Die US-Verfassung verbietet Sklaverei – mit einer Ausnahme für Strafgefangene. Diese Klausel wurde unmittelbar danach genutzt, um schwarze Amerikaner massenhaft zu verurteilen und ihre Arbeitskraft zu verpachten."
+    "text": "Die US-Verfassung verbietet Sklaverei – mit einer Ausnahme für Strafgefangene. Diese Klausel wurde unmittelbar danach genutzt, um schwarze Amerikaner massenhaft zu verurteilen und ihre Arbeitskraft zu verpachten.",
+    "vertiefung": "amerikanischer-buergerkrieg"
    },
    {
     "jahr": 1899,
@@ -576,7 +605,8 @@ const THEMEN = [
    {
     "jahr": 1945,
     "titel": "Nürnberg",
-    "text": "Erstmals stehen Staatsführer vor einem internationalen Gericht. Der Einwand, hier werde rückwirkend Recht geschaffen, wurde damals erhoben und wird bis heute diskutiert. Die Kategorie Verbrechen gegen die Menschlichkeit stammt von hier."
+    "text": "Erstmals stehen Staatsführer vor einem internationalen Gericht. Der Einwand, hier werde rückwirkend Recht geschaffen, wurde damals erhoben und wird bis heute diskutiert. Die Kategorie Verbrechen gegen die Menschlichkeit stammt von hier.",
+    "vertiefung": "holocaust"
    },
    {
     "jahr": 1948,
@@ -676,7 +706,8 @@ const THEMEN = [
    {
     "jahr": 1500,
     "titel": "Der Kolumbianische Austausch",
-    "text": "Kartoffel, Mais und Tomate kommen nach Europa, Afrika und Asien; Weizen, Rind und Zuckerrohr nach Amerika. Die Kartoffel allein hat das Bevölkerungswachstum Europas maßgeblich getragen – und Irland in eine gefährliche Abhängigkeit geführt."
+    "text": "Kartoffel, Mais und Tomate kommen nach Europa, Afrika und Asien; Weizen, Rind und Zuckerrohr nach Amerika. Die Kartoffel allein hat das Bevölkerungswachstum Europas maßgeblich getragen – und Irland in eine gefährliche Abhängigkeit geführt.",
+    "vertiefung": "columbian-exchange"
    },
    {
     "jahr": 1500,
@@ -706,7 +737,8 @@ const THEMEN = [
    {
     "jahr": 1845,
     "titel": "Die Große Hungersnot in Irland",
-    "text": "Eine Kartoffelfäule zerstört die Ernten. Rund eine Million Menschen sterben, mindestens 1,3 Millionen wandern aus – während Getreide und Vieh weiter nach Britannien exportiert werden. Der Hunger war eine Folge der Marktordnung, nicht nur des Pilzes."
+    "text": "Eine Kartoffelfäule zerstört die Ernten. Rund eine Million Menschen sterben, mindestens 1,3 Millionen wandern aus – während Getreide und Vieh weiter nach Britannien exportiert werden. Der Hunger war eine Folge der Marktordnung, nicht nur des Pilzes.",
+    "vertiefung": "irische-hungersnot"
    },
    {
     "jahr": 1866,
@@ -721,7 +753,8 @@ const THEMEN = [
    {
     "jahr": 1909,
     "titel": "Das Haber-Bosch-Verfahren",
-    "text": "Stickstoffdünger aus der Luft hebt die natürliche Ertragsgrenze auf. Schätzungen zufolge beruht die Ernährung etwa der Hälfte der heutigen Menschheit darauf – bei erheblichen Folgen für Gewässer und Klima."
+    "text": "Stickstoffdünger aus der Luft hebt die natürliche Ertragsgrenze auf. Schätzungen zufolge beruht die Ernährung etwa der Hälfte der heutigen Menschheit darauf – bei erheblichen Folgen für Gewässer und Klima.",
+    "vertiefung": "haber-bosch"
    },
    {
     "jahr": 1912,
@@ -731,7 +764,8 @@ const THEMEN = [
    {
     "jahr": 1930,
     "titel": "Der Dust Bowl",
-    "text": "Pflügen der Prärie und Dürre verwandeln Ackerland in Staubstürme. Hunderttausende verlieren ihre Existenz – die erste große Erfahrung, dass moderne Landwirtschaft ihre Grundlage zerstören kann."
+    "text": "Pflügen der Prärie und Dürre verwandeln Ackerland in Staubstürme. Hunderttausende verlieren ihre Existenz – die erste große Erfahrung, dass moderne Landwirtschaft ihre Grundlage zerstören kann.",
+    "vertiefung": "dust-bowl"
    },
    {
     "jahr": 1932,
@@ -751,7 +785,8 @@ const THEMEN = [
    {
     "jahr": 1961,
     "titel": "Die Grüne Revolution",
-    "text": "Kurzhalmige Hochertragssorten, Dünger und Bewässerung verdoppeln die Weizenernten in Indien und Pakistan zwischen 1965 und 1970. Der Preis: Abhängigkeit von Betriebsmitteln, sinkende Grundwasserspiegel und Vorteile vor allem für größere Betriebe."
+    "text": "Kurzhalmige Hochertragssorten, Dünger und Bewässerung verdoppeln die Weizenernten in Indien und Pakistan zwischen 1965 und 1970. Der Preis: Abhängigkeit von Betriebsmitteln, sinkende Grundwasserspiegel und Vorteile vor allem für größere Betriebe.",
+    "vertiefung": "gruene-revolution"
    },
    {
     "jahr": 1962,
@@ -826,12 +861,14 @@ const THEMEN = [
    {
     "jahr": -1800,
     "titel": "Zins und Schuldenerlass",
-    "text": "Mesopotamische Verträge kennen Zinsen von 20 Prozent auf Silber und 33 Prozent auf Getreide. Weil sich Schulden dadurch aufschaukelten, erließen Könige regelmäßig alle Schulden – ein Reset, der die Gesellschaft vor dem Zerfall in Gläubiger und Schuldknechte bewahren sollte."
+    "text": "Mesopotamische Verträge kennen Zinsen von 20 Prozent auf Silber und 33 Prozent auf Getreide. Weil sich Schulden dadurch aufschaukelten, erließen Könige regelmäßig alle Schulden – ein Reset, der die Gesellschaft vor dem Zerfall in Gläubiger und Schuldknechte bewahren sollte.",
+    "vertiefung": "erste-muenzen"
    },
    {
     "jahr": -600,
     "titel": "Die ersten Münzen in Lydien",
-    "text": "Geprägtes Elektron macht Wert prüfbar, ohne zu wiegen. Die Erfindung breitet sich in griechischen Städten rasend schnell aus – und ermöglicht Söldnerheere, Steuern und Märkte in neuer Form."
+    "text": "Geprägtes Elektron macht Wert prüfbar, ohne zu wiegen. Die Erfindung breitet sich in griechischen Städten rasend schnell aus – und ermöglicht Söldnerheere, Steuern und Märkte in neuer Form.",
+    "vertiefung": "erste-muenzen"
    },
    {
     "jahr": -350,
@@ -851,7 +888,8 @@ const THEMEN = [
    {
     "jahr": 1024,
     "titel": "Papiergeld in China",
-    "text": "Unter der Song-Dynastie wird staatlich gedecktes Papiergeld ausgegeben. Übermäßige Ausgabe führt später zu Entwertung – die erste dokumentierte Inflation durch Notendruck."
+    "text": "Unter der Song-Dynastie wird staatlich gedecktes Papiergeld ausgegeben. Übermäßige Ausgabe führt später zu Entwertung – die erste dokumentierte Inflation durch Notendruck.",
+    "vertiefung": "papiergeld"
    },
    {
     "jahr": 1150,
@@ -866,17 +904,20 @@ const THEMEN = [
    {
     "jahr": 1397,
     "titel": "Die Medici-Bank",
-    "text": "Filialen in mehreren Städten, doppelte Buchführung und Wechselgeschäfte statt verbotener Zinsen. Die Bank machte die Familie so mächtig, dass sie Florenz regierte und vier Päpste stellte – und ging am Ende an schlechten Krediten an Fürsten zugrunde."
+    "text": "Filialen in mehreren Städten, doppelte Buchführung und Wechselgeschäfte statt verbotener Zinsen. Die Bank machte die Familie so mächtig, dass sie Florenz regierte und vier Päpste stellte – und ging am Ende an schlechten Krediten an Fürsten zugrunde.",
+    "vertiefung": "doppelte-buchfuehrung"
    },
    {
     "jahr": 1494,
     "titel": "Pacioli beschreibt die doppelte Buchführung",
-    "text": "Jede Buchung erscheint zweimal, Fehler fallen auf. Die Technik ist älter, aber erst ihre Veröffentlichung macht sie zum Standard – und Unternehmen erstmals nachprüfbar."
+    "text": "Jede Buchung erscheint zweimal, Fehler fallen auf. Die Technik ist älter, aber erst ihre Veröffentlichung macht sie zum Standard – und Unternehmen erstmals nachprüfbar.",
+    "vertiefung": "doppelte-buchfuehrung"
    },
    {
     "jahr": 1545,
     "titel": "Silber aus Potosí",
-    "text": "Der Berg in den Anden liefert jahrzehntelang das meiste Silber der Welt. Es floss über Spanien nach Europa und weiter nach China, das Silber als Steuerwährung verlangte. Der erste wirklich weltumspannende Geldkreislauf – bezahlt mit der Zwangsarbeit der Mita."
+    "text": "Der Berg in den Anden liefert jahrzehntelang das meiste Silber der Welt. Es floss über Spanien nach Europa und weiter nach China, das Silber als Steuerwährung verlangte. Der erste wirklich weltumspannende Geldkreislauf – bezahlt mit der Zwangsarbeit der Mita.",
+    "vertiefung": "potosi"
    },
    {
     "jahr": 1602,
@@ -931,7 +972,8 @@ const THEMEN = [
    {
     "jahr": 1944,
     "titel": "Bretton Woods",
-    "text": "Feste Wechselkurse gegenüber dem an Gold gebundenen Dollar; Weltbank und Währungsfonds entstehen. Die USA werden zum Anker des Systems – und damit zur Ordnungsmacht der Weltwirtschaft."
+    "text": "Feste Wechselkurse gegenüber dem an Gold gebundenen Dollar; Weltbank und Währungsfonds entstehen. Die USA werden zum Anker des Systems – und damit zur Ordnungsmacht der Weltwirtschaft.",
+    "vertiefung": "bretton-woods"
    },
    {
     "jahr": 1950,
@@ -941,7 +983,8 @@ const THEMEN = [
    {
     "jahr": 1971,
     "titel": "Das Ende der Goldbindung",
-    "text": "Nixon hebt die Einlösepflicht auf. Seither ist alles Geld reines Vertrauensgeld, gedeckt allein durch die Erwartung, dass es angenommen wird."
+    "text": "Nixon hebt die Einlösepflicht auf. Seither ist alles Geld reines Vertrauensgeld, gedeckt allein durch die Erwartung, dass es angenommen wird.",
+    "vertiefung": "bretton-woods"
    },
    {
     "jahr": 1973,
@@ -1062,12 +1105,14 @@ const THEMEN = [
    {
     "jahr": 1450,
     "titel": "Gutenbergs Druckpresse",
-    "text": "Nicht die beweglichen Lettern allein, sondern ihr Zusammenspiel mit Presse, Legierung und Ölfarbe macht den Unterschied. Innerhalb von fünfzig Jahren entstehen Millionen Bücher – und die Reformation wird organisierbar."
+    "text": "Nicht die beweglichen Lettern allein, sondern ihr Zusammenspiel mit Presse, Legierung und Ölfarbe macht den Unterschied. Innerhalb von fünfzig Jahren entstehen Millionen Bücher – und die Reformation wird organisierbar.",
+    "vertiefung": "buchdruck"
    },
    {
     "jahr": 1517,
     "titel": "Flugschriften und die Reformation",
-    "text": "Luthers Schriften erreichen binnen Wochen den gesamten deutschen Sprachraum. Zwischen 1518 und 1525 erscheinen schätzungsweise sechs Millionen Exemplare reformatorischer Flugschriften – die erste Medienkampagne der Geschichte."
+    "text": "Luthers Schriften erreichen binnen Wochen den gesamten deutschen Sprachraum. Zwischen 1518 und 1525 erscheinen schätzungsweise sechs Millionen Exemplare reformatorischer Flugschriften – die erste Medienkampagne der Geschichte.",
+    "vertiefung": "reformation"
    },
    {
     "jahr": 1605,
@@ -1239,7 +1284,8 @@ const THEMEN = [
    {
     "jahr": 1492,
     "titel": "Vertreibung aus Spanien",
-    "text": "Nach der Eroberung Granadas werden Juden und später Muslime zur Konversion oder zum Verlassen des Landes gezwungen – der Beginn europäischer Vertreibungspolitik im großen Maßstab."
+    "text": "Nach der Eroberung Granadas werden Juden und später Muslime zur Konversion oder zum Verlassen des Landes gezwungen – der Beginn europäischer Vertreibungspolitik im großen Maßstab.",
+    "vertiefung": "1492"
    },
    {
     "jahr": 1620,
@@ -1259,12 +1305,14 @@ const THEMEN = [
    {
     "jahr": 1830,
     "titel": "Der Pfad der Tränen",
-    "text": "Der Indian Removal Act ermöglicht die Zwangsumsiedlung ganzer Nationen westlich des Mississippi. Vertreibung im Inneren eines Staates, gestützt auf ein Gesetz und gegen ein Urteil des Obersten Gerichtshofs."
+    "text": "Der Indian Removal Act ermöglicht die Zwangsumsiedlung ganzer Nationen westlich des Mississippi. Vertreibung im Inneren eines Staates, gestützt auf ein Gesetz und gegen ein Urteil des Obersten Gerichtshofs.",
+    "vertiefung": "trail-of-tears"
    },
    {
     "jahr": 1845,
     "titel": "Die irische Auswanderung",
-    "text": "Die Hungersnot treibt über eine Million Menschen außer Landes. Irland hat bis heute weniger Einwohner als vor 1845 – ein in Europa einmaliger Fall."
+    "text": "Die Hungersnot treibt über eine Million Menschen außer Landes. Irland hat bis heute weniger Einwohner als vor 1845 – ein in Europa einmaliger Fall.",
+    "vertiefung": "irische-hungersnot"
    },
    {
     "jahr": 1860,
@@ -1294,7 +1342,8 @@ const THEMEN = [
    {
     "jahr": 1947,
     "titel": "Die größte Fluchtbewegung der Geschichte",
-    "text": "Die Teilung Indiens setzt rund 15 Millionen Menschen in Bewegung – mehr als jede andere Migration in so kurzer Zeit."
+    "text": "Die Teilung Indiens setzt rund 15 Millionen Menschen in Bewegung – mehr als jede andere Migration in so kurzer Zeit.",
+    "vertiefung": "teilung-indiens"
    },
    {
     "jahr": 1948,
@@ -1319,7 +1368,8 @@ const THEMEN = [
    {
     "jahr": 1989,
     "titel": "Nach dem Kalten Krieg",
-    "text": "Der Fall der Blöcke setzt Bewegungen frei, die vier Jahrzehnte unterdrückt waren – und lässt zugleich neue Grenzregime entstehen."
+    "text": "Der Fall der Blöcke setzt Bewegungen frei, die vier Jahrzehnte unterdrückt waren – und lässt zugleich neue Grenzregime entstehen.",
+    "vertiefung": "ende-kalter-krieg"
    },
    {
     "jahr": 2000,
@@ -1374,7 +1424,8 @@ const THEMEN = [
    {
     "jahr": -3000,
     "titel": "Uruk",
-    "text": "Mit vielleicht 40.000 Einwohnern die größte Stadt ihrer Zeit. Verwaltung, Schrift und Tempelwirtschaft entstehen hier gemeinsam, nicht nacheinander."
+    "text": "Mit vielleicht 40.000 Einwohnern die größte Stadt ihrer Zeit. Verwaltung, Schrift und Tempelwirtschaft entstehen hier gemeinsam, nicht nacheinander.",
+    "vertiefung": "uruk"
    },
    {
     "jahr": -2600,
@@ -1404,7 +1455,8 @@ const THEMEN = [
    {
     "jahr": 800,
     "titel": "Chang'an und Bagdad",
-    "text": "Beide Städte übertreffen alles Europäische ihrer Zeit an Größe und Ordnung. Chang'an war rechtwinklig geplant, Bagdad kreisrund angelegt."
+    "text": "Beide Städte übertreffen alles Europäische ihrer Zeit an Größe und Ordnung. Chang'an war rechtwinklig geplant, Bagdad kreisrund angelegt.",
+    "vertiefung": "haus-der-weisheit"
    },
    {
     "jahr": 1000,
@@ -1434,12 +1486,14 @@ const THEMEN = [
    {
     "jahr": 1853,
     "titel": "Haussmann baut Paris um",
-    "text": "Boulevards, einheitliche Fassaden, Kanalisation, Parks – und breite Achsen, die auch das Errichten von Barrikaden erschwerten. Rund 20.000 Häuser wurden abgerissen; hunderttausende Menschen verloren ihre Wohnung. Stadtplanung war von Anfang an auch Machtpolitik."
+    "text": "Boulevards, einheitliche Fassaden, Kanalisation, Parks – und breite Achsen, die auch das Errichten von Barrikaden erschwerten. Rund 20.000 Häuser wurden abgerissen; hunderttausende Menschen verloren ihre Wohnung. Stadtplanung war von Anfang an auch Machtpolitik.",
+    "vertiefung": "haussmann"
    },
    {
     "jahr": 1854,
     "titel": "Cholera und Kanalisation",
-    "text": "John Snows Karte und der große Gestank von 1858 führen in London zum Bau der modernen Kanalisation. Städte hören auf, ihre Bewohner regelmäßig umzubringen."
+    "text": "John Snows Karte und der große Gestank von 1858 führen in London zum Bau der modernen Kanalisation. Städte hören auf, ihre Bewohner regelmäßig umzubringen.",
+    "vertiefung": "kanalisation-london"
    },
    {
     "jahr": 1863,
@@ -1449,7 +1503,8 @@ const THEMEN = [
    {
     "jahr": 1885,
     "titel": "Das Hochhaus",
-    "text": "In Chicago erlauben Stahlskelett und Aufzug erstmals Gebäude, deren Höhe nicht von der Mauerdicke begrenzt ist. Der Bodenpreis wird zum Motor der Vertikalen."
+    "text": "In Chicago erlauben Stahlskelett und Aufzug erstmals Gebäude, deren Höhe nicht von der Mauerdicke begrenzt ist. Der Bodenpreis wird zum Motor der Vertikalen.",
+    "vertiefung": "hochhaus"
    },
    {
     "jahr": 1889,
@@ -1559,7 +1614,8 @@ const THEMEN = [
    {
     "jahr": -73,
     "titel": "Der Aufstand des Spartacus",
-    "text": "Zwei Jahre lang schlägt ein Sklavenheer römische Armeen. Rom antwortet mit 6.000 Kreuzigungen entlang der Via Appia."
+    "text": "Zwei Jahre lang schlägt ein Sklavenheer römische Armeen. Rom antwortet mit 6.000 Kreuzigungen entlang der Via Appia.",
+    "vertiefung": "spartacus"
    },
    {
     "jahr": 900,
@@ -1579,7 +1635,8 @@ const THEMEN = [
    {
     "jahr": 1500,
     "titel": "Die Mita in den Anden",
-    "text": "Spanien übernahm die inkaische Arbeitspflicht und richtete sie auf die Silberminen von Potosí aus. Ganze Dörfer mussten jährlich Männer stellen; viele kehrten nicht zurück. Regionen, die zum Einzugsgebiet gehörten, sind statistisch bis heute ärmer."
+    "text": "Spanien übernahm die inkaische Arbeitspflicht und richtete sie auf die Silberminen von Potosí aus. Ganze Dörfer mussten jährlich Männer stellen; viele kehrten nicht zurück. Regionen, die zum Einzugsgebiet gehörten, sind statistisch bis heute ärmer.",
+    "vertiefung": "potosi"
    },
    {
     "jahr": 1550,
@@ -1594,7 +1651,8 @@ const THEMEN = [
    {
     "jahr": 1781,
     "titel": "Der Fall des Sklavenschiffs Zong",
-    "text": "Die Besatzung wirft über 130 Menschen über Bord, um Versicherungsgeld zu kassieren. Der Prozess drehte sich nicht um Mord, sondern um Sachschaden. Der Fall wurde zum wirksamsten Argument der britischen Abolitionisten."
+    "text": "Die Besatzung wirft über 130 Menschen über Bord, um Versicherungsgeld zu kassieren. Der Prozess drehte sich nicht um Mord, sondern um Sachschaden. Der Fall wurde zum wirksamsten Argument der britischen Abolitionisten.",
+    "vertiefung": "zong"
    },
    {
     "jahr": 1791,
@@ -1629,7 +1687,8 @@ const THEMEN = [
    {
     "jahr": 1885,
     "titel": "Der Kongo-Freistaat",
-    "text": "Leopold II. lässt Kautschuk mit Geiselnahme, Verstümmelung und Mord erzwingen. Schätzungen der Todesopfer gehen weit auseinander, liegen aber im Millionenbereich. Der internationale Druck führte 1908 zur Übernahme durch den belgischen Staat."
+    "text": "Leopold II. lässt Kautschuk mit Geiselnahme, Verstümmelung und Mord erzwingen. Schätzungen der Todesopfer gehen weit auseinander, liegen aber im Millionenbereich. Der internationale Druck führte 1908 zur Übernahme durch den belgischen Staat.",
+    "vertiefung": "kongo-freistaat"
    },
    {
     "jahr": 1888,
@@ -1709,7 +1768,8 @@ const THEMEN = [
    {
     "jahr": -40000,
     "titel": "Die ältesten Bilder",
-    "text": "Höhlenmalereien in Sulawesi, Chauvet und El Castillo zeigen Tiere, Handabdrücke und Zeichen. Was sie bedeuteten, ist unbekannt; jede Deutung als Jagdzauber oder Schamanismus ist Vermutung, nicht Befund."
+    "text": "Höhlenmalereien in Sulawesi, Chauvet und El Castillo zeigen Tiere, Handabdrücke und Zeichen. Was sie bedeuteten, ist unbekannt; jede Deutung als Jagdzauber oder Schamanismus ist Vermutung, nicht Befund.",
+    "vertiefung": "hoehlenmalerei"
    },
    {
     "jahr": -2600,
@@ -1734,7 +1794,8 @@ const THEMEN = [
    {
     "jahr": 726,
     "titel": "Der Bilderstreit",
-    "text": "Byzanz verbietet religiöse Bilder und zerstört sie; über hundert Jahre wird gestritten, ob das Bild Gotteslästerung oder Zeugnis der Menschwerdung ist. Der Ausgang zugunsten der Bilder prägte die europäische Kunst."
+    "text": "Byzanz verbietet religiöse Bilder und zerstört sie; über hundert Jahre wird gestritten, ob das Bild Gotteslästerung oder Zeugnis der Menschwerdung ist. Der Ausgang zugunsten der Bilder prägte die europäische Kunst.",
+    "vertiefung": "bilderstreit"
    },
    {
     "jahr": 1305,
@@ -1744,7 +1805,8 @@ const THEMEN = [
    {
     "jahr": 1425,
     "titel": "Die Perspektive wird berechenbar",
-    "text": "Brunelleschi zeigt die Zentralperspektive im Experiment, Alberti beschreibt sie 1435 als Regel. Bild wird zur Konstruktion – Mathematik betritt das Atelier."
+    "text": "Brunelleschi zeigt die Zentralperspektive im Experiment, Alberti beschreibt sie 1435 als Regel. Bild wird zur Konstruktion – Mathematik betritt das Atelier.",
+    "vertiefung": "perspektive"
    },
    {
     "jahr": 1434,
@@ -1789,7 +1851,8 @@ const THEMEN = [
    {
     "jahr": 1937,
     "titel": "Entartete Kunst",
-    "text": "Die NS-Diktatur beschlagnahmt über 20.000 Werke, verkauft einen Teil ins Ausland und verfemt die Moderne. Viele Künstler emigrieren – das Zentrum der Kunstwelt verschiebt sich nach New York."
+    "text": "Die NS-Diktatur beschlagnahmt über 20.000 Werke, verkauft einen Teil ins Ausland und verfemt die Moderne. Viele Künstler emigrieren – das Zentrum der Kunstwelt verschiebt sich nach New York.",
+    "vertiefung": "entartete-kunst"
    },
    {
     "jahr": 1962,
@@ -1864,7 +1927,8 @@ const THEMEN = [
    {
     "jahr": 1025,
     "titel": "Guido von Arezzo erfindet die Linien",
-    "text": "Töne werden auf Notenlinien festgelegt und mit Silben benannt. Erstmals kann jemand ein Stück singen, das er nie gehört hat – Musik wird übertragbar."
+    "text": "Töne werden auf Notenlinien festgelegt und mit Silben benannt. Erstmals kann jemand ein Stück singen, das er nie gehört hat – Musik wird übertragbar.",
+    "vertiefung": "notenschrift"
    },
    {
     "jahr": 1320,
@@ -1884,7 +1948,8 @@ const THEMEN = [
    {
     "jahr": 1722,
     "titel": "Die wohltemperierte Stimmung",
-    "text": "Bachs Sammlung nutzt eine Stimmung, in der alle Tonarten brauchbar klingen. Der Preis: Kein Intervall außer der Oktave ist mehr rein – ein Kompromiss, auf dem die westliche Musik bis heute beruht."
+    "text": "Bachs Sammlung nutzt eine Stimmung, in der alle Tonarten brauchbar klingen. Der Preis: Kein Intervall außer der Oktave ist mehr rein – ein Kompromiss, auf dem die westliche Musik bis heute beruht.",
+    "vertiefung": "wohltemperiert"
    },
    {
     "jahr": 1824,
@@ -1894,7 +1959,8 @@ const THEMEN = [
    {
     "jahr": 1877,
     "titel": "Klang wird speicherbar",
-    "text": "Edisons Phonograph zeichnet Schall auf und gibt ihn wieder. Zum ersten Mal überdauert Musik den Moment ihrer Aufführung – die gesamte spätere Musikgeschichte hängt daran."
+    "text": "Edisons Phonograph zeichnet Schall auf und gibt ihn wieder. Zum ersten Mal überdauert Musik den Moment ihrer Aufführung – die gesamte spätere Musikgeschichte hängt daran.",
+    "vertiefung": "tonaufnahme"
    },
    {
     "jahr": 1889,
@@ -1914,7 +1980,8 @@ const THEMEN = [
    {
     "jahr": 1948,
     "titel": "Die Langspielplatte",
-    "text": "Die LP fasst über zwanzig Minuten pro Seite. Musik wird in Alben gedacht, nicht in Einzelstücken – eine Form, die bis ins Streaming-Zeitalter nachwirkt."
+    "text": "Die LP fasst über zwanzig Minuten pro Seite. Musik wird in Alben gedacht, nicht in Einzelstücken – eine Form, die bis ins Streaming-Zeitalter nachwirkt.",
+    "vertiefung": "tonaufnahme"
    },
    {
     "jahr": 1951,
@@ -2004,7 +2071,8 @@ const THEMEN = [
    {
     "jahr": 1300,
     "titel": "Die öffentliche Uhr",
-    "text": "Räderuhren an Kirch- und Rathaustürmen geben allen dieselbe Zeit. Der Tag wird in gleich lange Stunden geteilt statt in Tageslicht, das im Winter kürzer ist."
+    "text": "Räderuhren an Kirch- und Rathaustürmen geben allen dieselbe Zeit. Der Tag wird in gleich lange Stunden geteilt statt in Tageslicht, das im Winter kürzer ist.",
+    "vertiefung": "uhr-arbeitstag"
    },
    {
     "jahr": 1350,
@@ -2019,12 +2087,14 @@ const THEMEN = [
    {
     "jahr": 1600,
     "titel": "Der geteilte Schlaf",
-    "text": "Quellen aus ganz Europa beschreiben zwei Schlafphasen mit einer wachen Stunde dazwischen, in der gebetet, geredet oder gearbeitet wurde. Der durchgehende Achtstundenschlaf setzt sich erst mit künstlichem Licht durch."
+    "text": "Quellen aus ganz Europa beschreiben zwei Schlafphasen mit einer wachen Stunde dazwischen, in der gebetet, geredet oder gearbeitet wurde. Der durchgehende Achtstundenschlaf setzt sich erst mit künstlichem Licht durch.",
+    "vertiefung": "geteilter-schlaf"
    },
    {
     "jahr": 1650,
     "titel": "Das Kaffeehaus",
-    "text": "Kaffee kommt über das Osmanische Reich nach Europa. Die Kaffeehäuser werden Orte für Nachrichten, Geschäfte und Politik – aus einem Londoner entsteht die Versicherungsbörse Lloyd's."
+    "text": "Kaffee kommt über das Osmanische Reich nach Europa. Die Kaffeehäuser werden Orte für Nachrichten, Geschäfte und Politik – aus einem Londoner entsteht die Versicherungsbörse Lloyd's.",
+    "vertiefung": "kaffeehaus"
    },
    {
     "jahr": 1750,
@@ -2034,12 +2104,14 @@ const THEMEN = [
    {
     "jahr": 1800,
     "titel": "Der Arbeitstag nach der Uhr",
-    "text": "In der Fabrik ersetzt die Uhrzeit die Aufgabe als Maß der Arbeit. Wer zu spät kommt, wird bestraft – ein Zeitverständnis, das erst gelernt werden musste."
+    "text": "In der Fabrik ersetzt die Uhrzeit die Aufgabe als Maß der Arbeit. Wer zu spät kommt, wird bestraft – ein Zeitverständnis, das erst gelernt werden musste.",
+    "vertiefung": "uhr-arbeitstag"
    },
    {
     "jahr": 1854,
     "titel": "Sauberes Wasser",
-    "text": "John Snow weist in London eine Choleraquelle im Brunnen nach. Es folgen Kanalisation und Wasserwerke – die Maßnahme, die die Lebenserwartung in Städten am stärksten erhöhte."
+    "text": "John Snow weist in London eine Choleraquelle im Brunnen nach. Es folgen Kanalisation und Wasserwerke – die Maßnahme, die die Lebenserwartung in Städten am stärksten erhöhte.",
+    "vertiefung": "kanalisation-london"
    },
    {
     "jahr": 1880,
@@ -2154,7 +2226,8 @@ const THEMEN = [
    {
     "jahr": -45000,
     "titel": "Bilder an Höhlenwänden",
-    "text": "Jagddarstellungen auf Sulawesi gehören zu den ältesten bekannten Bildern. Höhlenkunst ist keine europäische Erfindung – dort wurde nur früher gegraben."
+    "text": "Jagddarstellungen auf Sulawesi gehören zu den ältesten bekannten Bildern. Höhlenkunst ist keine europäische Erfindung – dort wurde nur früher gegraben.",
+    "vertiefung": "hoehlenmalerei"
    },
    {
     "jahr": -40000,
@@ -2175,7 +2248,8 @@ const THEMEN = [
    {
     "jahr": -15000,
     "titel": "Der Hund",
-    "text": "Wölfe werden zum ersten domestizierten Tier – vor dem Ackerbau, vor jeder Nutztierhaltung. Ort und Zeitpunkt sind umstritten, die Priorität nicht."
+    "text": "Wölfe werden zum ersten domestizierten Tier – vor dem Ackerbau, vor jeder Nutztierhaltung. Ort und Zeitpunkt sind umstritten, die Priorität nicht.",
+    "vertiefung": "hund"
    },
    {
     "jahr": -12000,
@@ -2185,7 +2259,8 @@ const THEMEN = [
    {
     "jahr": -11500,
     "titel": "Göbekli Tepe",
-    "text": "Jäger und Sammler errichten in Anatolien monumentale Steinkreise. Der Befund kehrt eine alte Annahme um: Möglicherweise stand der gemeinsame Bau am Anfang, nicht der Ackerbau."
+    "text": "Jäger und Sammler errichten in Anatolien monumentale Steinkreise. Der Befund kehrt eine alte Annahme um: Möglicherweise stand der gemeinsame Bau am Anfang, nicht der Ackerbau.",
+    "vertiefung": "goebekli-tepe"
    },
    {
     "jahr": -9500,
@@ -2683,7 +2758,8 @@ const THEMEN = [
    {
     "jahr": -1479,
     "titel": "Hatschepsut regiert als König",
-    "text": "Sie übernahm die Herrschaft für ihren minderjährigen Stiefsohn und behielt sie zwei Jahrzehnte. In Bildwerken erscheint sie mit Königsbart – nicht als Verkleidung, sondern weil das Amt eine männlich definierte Ikonographie hatte. Nach ihrem Tod wurden ihre Namen an vielen Denkmälern getilgt."
+    "text": "Sie übernahm die Herrschaft für ihren minderjährigen Stiefsohn und behielt sie zwei Jahrzehnte. In Bildwerken erscheint sie mit Königsbart – nicht als Verkleidung, sondern weil das Amt eine männlich definierte Ikonographie hatte. Nach ihrem Tod wurden ihre Namen an vielen Denkmälern getilgt.",
+    "vertiefung": "pharao-hatschepsut"
    },
    {
     "jahr": -1200,
@@ -2698,7 +2774,8 @@ const THEMEN = [
    {
     "jahr": -500,
     "titel": "Athen: Demokratie ohne Frauen",
-    "text": "In der Stadt, die als Wiege der Demokratie gilt, waren Frauen von der Volksversammlung ausgeschlossen, rechtlich lebenslang unter Vormundschaft und im Alltag weitgehend auf das Haus beschränkt. In Sparta hatten Frauen mehr Rechte, Grundbesitz und Bewegungsfreiheit – ein Umstand, über den athenische Autoren sich empörten."
+    "text": "In der Stadt, die als Wiege der Demokratie gilt, waren Frauen von der Volksversammlung ausgeschlossen, rechtlich lebenslang unter Vormundschaft und im Alltag weitgehend auf das Haus beschränkt. In Sparta hatten Frauen mehr Rechte, Grundbesitz und Bewegungsfreiheit – ein Umstand, über den athenische Autoren sich empörten.",
+    "vertiefung": "athener-demokratie"
    },
    {
     "jahr": -100,
@@ -2744,7 +2821,8 @@ const THEMEN = [
    {
     "jahr": 1791,
     "titel": "Olympe de Gouges antwortet der Revolution",
-    "text": "Auf die Erklärung der Menschen- und Bürgerrechte, die Frauen nicht einschloss, antwortete sie mit einer Erklärung der Rechte der Frau und Bürgerin. Zwei Jahre später wurde sie guillotiniert – unter anderem mit der Begründung, sie habe die Tugenden ihres Geschlechts vergessen."
+    "text": "Auf die Erklärung der Menschen- und Bürgerrechte, die Frauen nicht einschloss, antwortete sie mit einer Erklärung der Rechte der Frau und Bürgerin. Zwei Jahre später wurde sie guillotiniert – unter anderem mit der Begründung, sie habe die Tugenden ihres Geschlechts vergessen.",
+    "vertiefung": "franzoesische-revolution"
    },
    {
     "jahr": 1792,
@@ -2896,7 +2974,8 @@ const THEMEN = [
    {
     "jahr": 533,
     "titel": "Das Corpus Iuris Civilis",
-    "text": "Justinian lässt tausend Jahre römischer Rechtsprechung ordnen. Darin steht der Satz, dass niemand wegen eines Gedankens gestraft werden soll, und die Beweisregel, dass die Last beim Ankläger liegt. Beides ging Jahrhunderte verloren und kehrte über die mittelalterlichen Rechtsschulen zurück."
+    "text": "Justinian lässt tausend Jahre römischer Rechtsprechung ordnen. Darin steht der Satz, dass niemand wegen eines Gedankens gestraft werden soll, und die Beweisregel, dass die Last beim Ankläger liegt. Beides ging Jahrhunderte verloren und kehrte über die mittelalterlichen Rechtsschulen zurück.",
+    "vertiefung": "kaiser-justinian"
    },
    {
     "jahr": 1215,
@@ -2907,17 +2986,20 @@ const THEMEN = [
    {
     "jahr": 1215,
     "titel": "Das Ende des Gottesurteils",
-    "text": "Das Vierte Laterankonzil verbietet Priestern die Mitwirkung an Feuer- und Wasserproben. Damit bricht das bisherige Beweisverfahren zusammen: Wenn Gott nicht mehr urteilt, muss ein Gericht ermitteln. In England führte das zur Jury, auf dem Kontinent zum Inquisitionsverfahren mit Geständnis als Königsbeweis — und damit zur Folter."
+    "text": "Das Vierte Laterankonzil verbietet Priestern die Mitwirkung an Feuer- und Wasserproben. Damit bricht das bisherige Beweisverfahren zusammen: Wenn Gott nicht mehr urteilt, muss ein Gericht ermitteln. In England führte das zur Jury, auf dem Kontinent zum Inquisitionsverfahren mit Geständnis als Königsbeweis — und damit zur Folter.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1252,
     "titel": "Folter wird für die Ketzerverfolgung erlaubt",
-    "text": "Papst Innozenz IV. gestattet mit der Bulle Ad extirpanda die Folter in Ketzerprozessen, mit Einschränkungen, die in der Praxis umgangen wurden. Das römische Recht hatte Folter gekannt, das frühe Mittelalter kaum — hier kehrt sie als Ermittlungsmittel zurück."
+    "text": "Papst Innozenz IV. gestattet mit der Bulle Ad extirpanda die Folter in Ketzerprozessen, mit Einschränkungen, die in der Praxis umgangen wurden. Das römische Recht hatte Folter gekannt, das frühe Mittelalter kaum — hier kehrt sie als Ermittlungsmittel zurück.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1532,
     "titel": "Die Constitutio Criminalis Carolina",
-    "text": "Karls V. Halsgerichtsordnung, das erste reichsweite Strafrecht im deutschsprachigen Raum. Sie ist hart — Todesstrafe für Mord, Raub, Brandstiftung, Hexerei — und gleichzeitig ein Fortschritt: Sie regelt genau, wann gefoltert werden darf, verlangt Indizien vorher und verbietet Verurteilung ohne Geständnis oder zwei Zeugen."
+    "text": "Karls V. Halsgerichtsordnung, das erste reichsweite Strafrecht im deutschsprachigen Raum. Sie ist hart — Todesstrafe für Mord, Raub, Brandstiftung, Hexerei — und gleichzeitig ein Fortschritt: Sie regelt genau, wann gefoltert werden darf, verlangt Indizien vorher und verbietet Verurteilung ohne Geständnis oder zwei Zeugen.",
+    "vertiefung": "hexenverfolgung-ende"
    },
    {
     "jahr": 1670,
@@ -3030,7 +3112,8 @@ const THEMEN = [
    {
     "jahr": 54,
     "titel": "Locusta, Roms Giftmischerin von Staat",
-    "text": "Tacitus und Sueton berichten, Agrippina habe Claudius mit vergifteten Pilzen töten lassen und Nero anschließend die Giftmischerin Locusta beschäftigt, um den Thronrivalen Britannicus zu beseitigen. Sie wurde nach Neros Sturz hingerichtet. Ob die Vergiftungen stattfanden, ist nicht beweisbar — bezeugt ist, dass am Kaiserhof mit dieser Möglichkeit gerechnet wurde."
+    "text": "Tacitus und Sueton berichten, Agrippina habe Claudius mit vergifteten Pilzen töten lassen und Nero anschließend die Giftmischerin Locusta beschäftigt, um den Thronrivalen Britannicus zu beseitigen. Sie wurde nach Neros Sturz hingerichtet. Ob die Vergiftungen stattfanden, ist nicht beweisbar — bezeugt ist, dass am Kaiserhof mit dieser Möglichkeit gerechnet wurde.",
+    "vertiefung": "kaiser-nero"
    },
    {
     "jahr": 1140,
@@ -3046,7 +3129,8 @@ const THEMEN = [
    {
     "jahr": 1503,
     "titel": "Die Borgia und die Cantarella",
-    "text": "Cesare und Lucrezia Borgia gelten als berühmteste Giftmörder der Geschichte, und die Belege sind dünn. Das Gift Cantarella wird erst Jahrzehnte später beschrieben, in Formeln, die chemisch nicht funktionieren. Alexander VI. und Cesare erkrankten 1503 gleichzeitig schwer; heute gilt Malaria als wahrscheinlichste Ursache. Lucrezias Ruf stammt weitgehend aus der Propaganda gegner Familien und aus der Romantik des 19. Jahrhunderts."
+    "text": "Cesare und Lucrezia Borgia gelten als berühmteste Giftmörder der Geschichte, und die Belege sind dünn. Das Gift Cantarella wird erst Jahrzehnte später beschrieben, in Formeln, die chemisch nicht funktionieren. Alexander VI. und Cesare erkrankten 1503 gleichzeitig schwer; heute gilt Malaria als wahrscheinlichste Ursache. Lucrezias Ruf stammt weitgehend aus der Propaganda gegner Familien und aus der Romantik des 19. Jahrhunderts.",
+    "vertiefung": "renaissance"
    },
    {
     "jahr": 1531,
@@ -3062,12 +3146,14 @@ const THEMEN = [
    {
     "jahr": 1775,
     "titel": "Arsen wird nachweisbar",
-    "text": "Carl Wilhelm Scheele findet eine Reaktion, mit der Arsen chemisch angezeigt werden kann. Zum ersten Mal gibt es eine Antwort, die nicht auf Aussagen beruht. Bis dahin war das Erbschaftspulver — Arsenik, geschmacklos, in kleinen Mengen wie eine Magenerkrankung wirkend — praktisch straflos zu verwenden."
+    "text": "Carl Wilhelm Scheele findet eine Reaktion, mit der Arsen chemisch angezeigt werden kann. Zum ersten Mal gibt es eine Antwort, die nicht auf Aussagen beruht. Bis dahin war das Erbschaftspulver — Arsenik, geschmacklos, in kleinen Mengen wie eine Magenerkrankung wirkend — praktisch straflos zu verwenden.",
+    "vertiefung": "affaire-des-poisons"
    },
    {
     "jahr": 1836,
     "titel": "Der Marshsche Nachweis",
-    "text": "James Marsh entwickelt einen Test, der noch winzige Arsenmengen in Gewebe sichtbar macht, ausgelöst durch einen Prozess, in dem er als Gutachter nichts beweisen konnte und der Angeklagte freikam. 1840 überführt der Test im Fall Lafarge in Frankreich erstmals eine Angeklagte. Die Toxikologie wird damit zum Fach — und Arsenmorde gehen messbar zurück."
+    "text": "James Marsh entwickelt einen Test, der noch winzige Arsenmengen in Gewebe sichtbar macht, ausgelöst durch einen Prozess, in dem er als Gutachter nichts beweisen konnte und der Angeklagte freikam. 1840 überführt der Test im Fall Lafarge in Frankreich erstmals eine Angeklagte. Die Toxikologie wird damit zum Fach — und Arsenmorde gehen messbar zurück.",
+    "vertiefung": "affaire-des-poisons"
    },
    {
     "jahr": 1851,
@@ -3143,7 +3229,8 @@ const THEMEN = [
    {
     "jahr": 33,
     "titel": "Kreuzigung",
-    "text": "Die römische Hinrichtungsart für Sklaven und Aufrührer, angelegt auf langes öffentliches Sterben. Cicero nannte sie die grausamste und schändlichste Strafe und forderte, das Wort in Anwesenheit römischer Bürger nicht auszusprechen. Konstantin schaffte sie im 4. Jahrhundert ab — ein Beispiel dafür, wie Religion eine Strafform beendete, weil sie zum eigenen Symbol geworden war."
+    "text": "Die römische Hinrichtungsart für Sklaven und Aufrührer, angelegt auf langes öffentliches Sterben. Cicero nannte sie die grausamste und schändlichste Strafe und forderte, das Wort in Anwesenheit römischer Bürger nicht auszusprechen. Konstantin schaffte sie im 4. Jahrhundert ab — ein Beispiel dafür, wie Religion eine Strafform beendete, weil sie zum eigenen Symbol geworden war.",
+    "vertiefung": "kaiser-nero"
    },
    {
     "jahr": 438,
@@ -3153,12 +3240,14 @@ const THEMEN = [
    {
     "jahr": 1215,
     "titel": "Warum die Folter zurückkam",
-    "text": "Mit dem Verbot der Gottesurteile brauchte das kontinentale Verfahren einen neuen Königsbeweis. Es wurde das Geständnis. Damit war die Folter nicht Ausdruck von Rohheit, sondern die logische Folge einer Beweisregel: Wo ohne Geständnis nicht verurteilt werden konnte, musste das Geständnis beschafft werden."
+    "text": "Mit dem Verbot der Gottesurteile brauchte das kontinentale Verfahren einen neuen Königsbeweis. Es wurde das Geständnis. Damit war die Folter nicht Ausdruck von Rohheit, sondern die logische Folge einer Beweisregel: Wo ohne Geständnis nicht verurteilt werden konnte, musste das Geständnis beschafft werden.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1252,
     "titel": "Ad extirpanda",
-    "text": "Innozenz IV. erlaubt die Folter in Ketzerprozessen. Formal galten Einschränkungen: keine Verstümmelung, kein Todesrisiko, nur einmalige Anwendung. In der Praxis wurde die Einmaligkeit umgangen, indem man die Sitzung als Fortsetzung derselben Anwendung führte."
+    "text": "Innozenz IV. erlaubt die Folter in Ketzerprozessen. Formal galten Einschränkungen: keine Verstümmelung, kein Todesrisiko, nur einmalige Anwendung. In der Praxis wurde die Einmaligkeit umgangen, indem man die Sitzung als Fortsetzung derselben Anwendung führte.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1478,
@@ -3168,7 +3257,8 @@ const THEMEN = [
    {
     "jahr": 1532,
     "titel": "Regeln für die peinliche Befragung",
-    "text": "Die Carolina schreibt vor, dass ohne hinreichende Anzeigen nicht gefoltert werden darf, dass das Geständnis anschließend außerhalb der Folter wiederholt und durch Tatdetails bestätigt werden muss. Die Vorschriften wurden vielfach missachtet — aber sie zeigen, dass die Unzuverlässigkeit erzwungener Aussagen bekannt war."
+    "text": "Die Carolina schreibt vor, dass ohne hinreichende Anzeigen nicht gefoltert werden darf, dass das Geständnis anschließend außerhalb der Folter wiederholt und durch Tatdetails bestätigt werden muss. Die Vorschriften wurden vielfach missachtet — aber sie zeigen, dass die Unzuverlässigkeit erzwungener Aussagen bekannt war.",
+    "vertiefung": "hexenverfolgung-ende"
    },
    {
     "jahr": 1600,
@@ -3184,17 +3274,20 @@ const THEMEN = [
    {
     "jahr": 1740,
     "titel": "Preußen schafft die Folter ab",
-    "text": "Friedrich II. beendet mit einem Erlass die Folter in Preußen fast vollständig; endgültig 1754. Es folgen Sachsen, Österreich 1776, Frankreich 1780. Die Begründung ist selten Mitleid, meist Nutzlosigkeit — die Geständnisse taugten nicht."
+    "text": "Friedrich II. beendet mit einem Erlass die Folter in Preußen fast vollständig; endgültig 1754. Es folgen Sachsen, Österreich 1776, Frankreich 1780. Die Begründung ist selten Mitleid, meist Nutzlosigkeit — die Geständnisse taugten nicht.",
+    "vertiefung": "beccaria"
    },
    {
     "jahr": 1757,
     "titel": "Die letzte öffentliche Marter in Frankreich",
-    "text": "Die Vierteilung Robert-François Damiens' nach seinem Attentat auf Ludwig XV. wurde vor großem Publikum vollzogen und dauerte Stunden. Foucault beginnt sein Buch mit dieser Szene, um den Bruch zu zeigen: Vierzig Jahre später richtete derselbe Staat mit einer Maschine in Sekunden."
+    "text": "Die Vierteilung Robert-François Damiens' nach seinem Attentat auf Ludwig XV. wurde vor großem Publikum vollzogen und dauerte Stunden. Foucault beginnt sein Buch mit dieser Szene, um den Bruch zu zeigen: Vierzig Jahre später richtete derselbe Staat mit einer Maschine in Sekunden.",
+    "vertiefung": "beccaria"
    },
    {
     "jahr": 1789,
     "titel": "Die Guillotine als Gleichheitsforderung",
-    "text": "Joseph-Ignace Guillotin schlug ein mechanisches Verfahren vor, damit alle Verurteilten gleich und schnell starben — vorher wurden Adlige enthauptet und Bürgerliche gehängt oder gerädert. Das Gerät war als humanitärer Fortschritt gedacht und wurde zum Symbol des Terrors: Zwischen 1793 und 1794 wurden allein in Paris rund 2.600 Menschen damit hingerichtet."
+    "text": "Joseph-Ignace Guillotin schlug ein mechanisches Verfahren vor, damit alle Verurteilten gleich und schnell starben — vorher wurden Adlige enthauptet und Bürgerliche gehängt oder gerädert. Das Gerät war als humanitärer Fortschritt gedacht und wurde zum Symbol des Terrors: Zwischen 1793 und 1794 wurden allein in Paris rund 2.600 Menschen damit hingerichtet.",
+    "vertiefung": "franzoesische-revolution"
    },
    {
     "jahr": 1793,
@@ -3210,7 +3303,8 @@ const THEMEN = [
    {
     "jahr": 1874,
     "titel": "Die eiserne Jungfrau ist eine Fälschung",
-    "text": "Das berühmte Folterinstrument mit Innenstacheln wurde erstmals 1793 beschrieben und in Nürnberg im 19. Jahrhundert für Schaustellungen zusammengebaut, teils aus alten Einzelteilen. Kein mittelalterlicher Beleg existiert. Dasselbe gilt für einen Großteil der Instrumente in Folterkammer-Museen — eine Erfindung der Schauergeschichte, nicht des Mittelalters."
+    "text": "Das berühmte Folterinstrument mit Innenstacheln wurde erstmals 1793 beschrieben und in Nürnberg im 19. Jahrhundert für Schaustellungen zusammengebaut, teils aus alten Einzelteilen. Kein mittelalterlicher Beleg existiert. Dasselbe gilt für einen Großteil der Instrumente in Folterkammer-Museen — eine Erfindung der Schauergeschichte, nicht des Mittelalters.",
+    "vertiefung": "hexenverfolgung-ende"
    },
    {
     "jahr": 1929,
@@ -3266,7 +3360,8 @@ const THEMEN = [
    {
     "jahr": -186,
     "titel": "Rom verbietet die Bacchanalien",
-    "text": "Der Senat verbietet den Bacchuskult in Italien; ein erhaltener Bronzeerlass regelt die Einzelheiten. Livius schildert nächtliche Verbrechen, Vergiftungen und Verschwörung — die Vorwürfe folgen dem Muster, das später gegen Christen, Juden und Ketzer wiederkehrt. Was tatsächlich stattfand, wissen wir nicht; belegt ist nur die Repression, mit tausenden Verurteilungen."
+    "text": "Der Senat verbietet den Bacchuskult in Italien; ein erhaltener Bronzeerlass regelt die Einzelheiten. Livius schildert nächtliche Verbrechen, Vergiftungen und Verschwörung — die Vorwürfe folgen dem Muster, das später gegen Christen, Juden und Ketzer wiederkehrt. Was tatsächlich stattfand, wissen wir nicht; belegt ist nur die Repression, mit tausenden Verurteilungen.",
+    "vertiefung": "roemische-republik"
    },
    {
     "jahr": 64,
@@ -3283,17 +3378,20 @@ const THEMEN = [
    {
     "jahr": 1209,
     "titel": "Der Albigenserkreuzzug",
-    "text": "Gegen die Katharer in Südfrankreich wird ein Kreuzzug innerhalb der Christenheit geführt, mit Massakern wie in Béziers. Die Katharer werden fast ausschließlich durch die Akten ihrer Verfolger überliefert — ein Teil der neueren Forschung bestreitet inzwischen, dass sie eine organisierte Gegenkirche mit einheitlicher Lehre waren, und sieht darin eine Konstruktion der Inquisitoren."
+    "text": "Gegen die Katharer in Südfrankreich wird ein Kreuzzug innerhalb der Christenheit geführt, mit Massakern wie in Béziers. Die Katharer werden fast ausschließlich durch die Akten ihrer Verfolger überliefert — ein Teil der neueren Forschung bestreitet inzwischen, dass sie eine organisierte Gegenkirche mit einheitlicher Lehre waren, und sieht darin eine Konstruktion der Inquisitoren.",
+    "vertiefung": "kreuzzuege"
    },
    {
     "jahr": 1307,
     "titel": "Die Templer",
-    "text": "Philipp IV. von Frankreich lässt die Templer an einem Tag verhaften und der Ketzerei, Sodomie und Götzenverehrung anklagen. Die Geständnisse entstanden unter Folter und wurden widerrufen, sobald die Folter aussetzte. Das 2007 veröffentlichte Chinon-Pergament zeigt, dass Papst Clemens V. die Führung 1308 insgeheim absolvierte. Der König hatte Schulden beim Orden; das Vermögen fiel an die Krone."
+    "text": "Philipp IV. von Frankreich lässt die Templer an einem Tag verhaften und der Ketzerei, Sodomie und Götzenverehrung anklagen. Die Geständnisse entstanden unter Folter und wurden widerrufen, sobald die Folter aussetzte. Das 2007 veröffentlichte Chinon-Pergament zeigt, dass Papst Clemens V. die Führung 1308 insgeheim absolvierte. Der König hatte Schulden beim Orden; das Vermögen fiel an die Krone.",
+    "vertiefung": "kreuzfahrerstaaten"
    },
    {
     "jahr": 1534,
     "titel": "Das Täuferreich in Münster",
-    "text": "Radikale Täufer übernehmen die Stadt, führen Gütergemeinschaft und Vielehe ein, und Jan van Leiden lässt sich zum König ausrufen. Nach 16 Monaten Belagerung wird die Stadt gestürmt, die Anführer hingerichtet und ihre Körper in Käfigen am Lambertikirchturm aufgehängt — die Käfige hängen dort bis heute. Der Fall wurde jahrhundertelang als Warnung gegen religiöse Schwärmerei erzählt und gegen alle Täufer verwendet, obwohl die Mehrheit von ihnen Gewaltlosigkeit lehrte."
+    "text": "Radikale Täufer übernehmen die Stadt, führen Gütergemeinschaft und Vielehe ein, und Jan van Leiden lässt sich zum König ausrufen. Nach 16 Monaten Belagerung wird die Stadt gestürmt, die Anführer hingerichtet und ihre Körper in Käfigen am Lambertikirchturm aufgehängt — die Käfige hängen dort bis heute. Der Fall wurde jahrhundertelang als Warnung gegen religiöse Schwärmerei erzählt und gegen alle Täufer verwendet, obwohl die Mehrheit von ihnen Gewaltlosigkeit lehrte.",
+    "vertiefung": "reformation"
    },
    {
     "jahr": 1830,
@@ -3389,12 +3487,14 @@ const THEMEN = [
    {
     "jahr": 1580,
     "titel": "Peter Stumpp und der Werwolfprozess",
-    "text": "In Bedburg bei Köln wird ein Bauer hingerichtet, nachdem er unter Folter gestanden hatte, als Werwolf sechzehn Menschen getötet zu haben. Der Fall ist ein Beispiel dafür, wie Tötungsdelikte im Rahmen des damaligen Weltbilds erklärt wurden: nicht als Verbrechen eines Menschen, sondern als Wirken des Teufels. Was tatsächlich geschah, ist aus einem Foltergeständnis nicht zu erschließen."
+    "text": "In Bedburg bei Köln wird ein Bauer hingerichtet, nachdem er unter Folter gestanden hatte, als Werwolf sechzehn Menschen getötet zu haben. Der Fall ist ein Beispiel dafür, wie Tötungsdelikte im Rahmen des damaligen Weltbilds erklärt wurden: nicht als Verbrechen eines Menschen, sondern als Wirken des Teufels. Was tatsächlich geschah, ist aus einem Foltergeständnis nicht zu erschließen.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1611,
     "titel": "Erzsébet Báthory und die Zahl 650",
-    "text": "Die ungarische Adlige wird auf ihrer Burg eingemauert, nachdem eine Untersuchung im Auftrag des Palatins Thurzó Zeugen befragt hatte. Ihre Bediensteten wurden gefoltert und hingerichtet, sie selbst nie vor Gericht gestellt — was ungewöhnlich ist und mit ihrem Rang und ihrem Vermögen zu tun hat, das die Krone schuldete. Die Zahl von 650 Opfern stammt aus einer einzigen Zeugenaussage über ein angebliches Verzeichnis, das nie gefunden wurde. Das Blutbad zur Verjüngung erscheint erst 1729 bei einem Jesuiten, hundert Jahre nach ihrem Tod."
+    "text": "Die ungarische Adlige wird auf ihrer Burg eingemauert, nachdem eine Untersuchung im Auftrag des Palatins Thurzó Zeugen befragt hatte. Ihre Bediensteten wurden gefoltert und hingerichtet, sie selbst nie vor Gericht gestellt — was ungewöhnlich ist und mit ihrem Rang und ihrem Vermögen zu tun hat, das die Krone schuldete. Die Zahl von 650 Opfern stammt aus einer einzigen Zeugenaussage über ein angebliches Verzeichnis, das nie gefunden wurde. Das Blutbad zur Verjüngung erscheint erst 1729 bei einem Jesuiten, hundert Jahre nach ihrem Tod.",
+    "vertiefung": "hexenverfolgung"
    },
    {
     "jahr": 1751,
@@ -3414,7 +3514,8 @@ const THEMEN = [
    {
     "jahr": 1888,
     "titel": "Whitechapel",
-    "text": "Im Londoner Osten werden fünf Frauen getötet, deren Fälle heute als eine Reihe gelten. Der Name Jack the Ripper stammt aus einem Brief, den die Polizei damals für eine Fälschung eines Journalisten hielt. Der Fall wurde bedeutsam, weil erstmals die Presse landesweit mitfahndete, weil erstmals Tatortfotografie und Profilerstellung versucht wurden — der Polizeiarzt Thomas Bond schrieb 1888 eine Täterbeschreibung, die als frühestes Profil gilt — und weil die Berichte die Lebensverhältnisse in Whitechapel öffentlich machten."
+    "text": "Im Londoner Osten werden fünf Frauen getötet, deren Fälle heute als eine Reihe gelten. Der Name Jack the Ripper stammt aus einem Brief, den die Polizei damals für eine Fälschung eines Journalisten hielt. Der Fall wurde bedeutsam, weil erstmals die Presse landesweit mitfahndete, weil erstmals Tatortfotografie und Profilerstellung versucht wurden — der Polizeiarzt Thomas Bond schrieb 1888 eine Täterbeschreibung, die als frühestes Profil gilt — und weil die Berichte die Lebensverhältnisse in Whitechapel öffentlich machten.",
+    "vertiefung": "industrielle-revolution"
    },
    {
     "jahr": 1893,
