@@ -87,6 +87,24 @@ function VertiefungAbschnitt({ titel, text }) {
   );
 }
 
+/* Buchempfehlungen: gemeinsam genutzt von Vertiefungen und Themen.
+   Absichtlich getrennt von den Quellen - Quellen belegen, Empfehlungen
+   fuehren weiter. Jeder Eintrag sagt, warum er dasteht. */
+function Buchempfehlungen({ liste }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "mt-6 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2.5" }, "Zum Weiterlesen"),
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "10px" } },
+      liste.map((b, i) => /* @__PURE__ */ React.createElement("div", { key: i },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-serif text-[15px] text-[#e0b84a]" }, b.titel),
+          b.jahr && /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#8a6238]" }, b.jahr)),
+        /* @__PURE__ */ React.createElement("div", { className: "text-sm text-[#c9a877]" }, b.autor),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-0.5" }, b.warum)
+      ))
+    )
+  );
+}
+
 function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
   const epoche = EPOCHS.find((e) => e.id === eintrag.epoche);
   return /* @__PURE__ */ React.createElement("div", null,
@@ -98,7 +116,11 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" },
       /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, eintrag.zeitraum),
       epoche && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, epoche.name),
-      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, eintrag.region)
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#8a6238] border border-[#5c2018] rounded px-1.5 py-0.5" }, eintrag.region),
+      // Wer zehn Minuten Zeit hat, soll vorher sehen, dass es dreissig werden.
+      eintrag.tiefe && /* @__PURE__ */ React.createElement("span", {
+        className: "text-[10px] uppercase tracking-wide text-[#f0d878] border border-[#d4af37] rounded px-1.5 py-0.5"
+      }, "Ausführlich")
     ),
     /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-3" }, eintrag.titel),
     /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic leading-relaxed border-l-2 border-[#d4af37] pl-4 mb-6" }, eintrag.leitsatz),
@@ -112,12 +134,20 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
 
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Vorgeschichte", text: eintrag.vorgeschichte }),
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Verlauf", text: eintrag.verlauf }),
+
+    // Nur bei den grossen Wendepunkten: zusaetzliche Abschnitte mit eigener
+    // Ueberschrift, zwischen Verlauf und Folgen.
+    (eintrag.tiefe || []).map((a, i) => /* @__PURE__ */ React.createElement(VertiefungAbschnitt, {
+      key: "t" + i, titel: a.titel, text: a.text
+    })),
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Folgen", text: eintrag.folgen }),
 
     /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Was strittig ist"),
       /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, eintrag.strittig)
     ),
+
+    eintrag.literatur && /* @__PURE__ */ React.createElement(Buchempfehlungen, { liste: eintrag.literatur }),
 
     /* @__PURE__ */ React.createElement("div", { className: "mt-6 pt-4 border-t border-[#5c2018]" },
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Quellen"),
@@ -279,6 +309,8 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Was strittig ist"),
       /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, eintrag.strittig)
     ),
+
+    eintrag.literatur && /* @__PURE__ */ React.createElement(Buchempfehlungen, { liste: eintrag.literatur }),
 
     /* @__PURE__ */ React.createElement("div", { className: "mt-6 pt-4 border-t border-[#5c2018]" },
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#8a6238] mb-1.5" }, "Quellen"),

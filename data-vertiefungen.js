@@ -32,6 +32,36 @@ const VERTIEFUNGEN = [
         "was": "unabhängige Entstehungsherde des Ackerbaus weltweit"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Warum wurde jemand sesshaft, dem es besser ging?",
+        "text": "Der auffälligste Befund der Forschung ist ein Widerspruch. Skelette der ersten Bauern zeigen im Vergleich zu Jägern und Sammlern derselben Region: geringere Körpergröße, schlechtere Zähne, mehr Anzeichen von Mangelernährung, mehr Gelenkverschleiß, mehr Infektionskrankheiten. Die Arbeitszeit stieg – Feldbau, Vorratshaltung und Viehpflege verlangen mehr Stunden als das Sammeln in einer nahrungsreichen Umgebung. Und die Ernährung wurde einseitiger: Wo Jäger und Sammler dutzende Pflanzen und Tiere nutzten, hingen Bauern an wenigen Arten und damit an deren Ernte.\n\nWarum also? Mehrere Erklärungen stehen nebeneinander. Erstens: Es war keine Entscheidung. Der Übergang zog sich über Jahrtausende, jede einzelne Generation traf nur kleine Schritte – etwas mehr Wildgetreide pflegen, etwas länger an einem Ort bleiben. Zweitens: Ackerbau ernährt auf gleicher Fläche mehr Menschen, auch wenn er sie schlechter ernährt. Wer mehr Kinder durchbringt, verdrängt langfristig die Nachbarn, selbst bei niedrigerer Lebensqualität. Drittens: Rückwege waren versperrt. Eine gewachsene Bevölkerung kann nicht zum Sammeln zurückkehren – das Land trägt sie nicht mehr. Der Anthropologe Jared Diamond nannte den Ackerbau deshalb den schlimmsten Fehler in der Geschichte der Menschheit, was zugespitzt ist, aber den Befund ernst nimmt."
+      },
+      {
+        "titel": "Was mit dem Ackerbau noch entstand",
+        "text": "Vorräte lassen sich anhäufen, und was sich anhäufen lässt, lässt sich ungleich verteilen. In Jäger-und-Sammler-Gruppen ist Besitz begrenzt durch das, was man tragen kann; Vorratsspeicher heben diese Grenze auf. Aus dieser Möglichkeit folgt nichts zwangsläufig – Çatalhöyük hatte tausende Einwohner und keine erkennbaren Paläste –, aber die Voraussetzung für dauerhafte Ungleichheit war geschaffen.\n\nDazu kommen die Krankheiten. Fast alle großen Seuchen der Menschheitsgeschichte stammen von Tieren: Masern und Tuberkulose vom Rind, Grippe von Schwein und Geflügel, Pocken vermutlich von Kamel oder Nagern. Enges Zusammenleben mit Vieh, dichte Siedlung und Fäkalien in Wassernähe schufen die Bedingungen. Die Bevölkerungsdichte, die Ackerbau ermöglichte, machte Epidemien zugleich erst tragfähig – ein Erreger braucht genug Wirte in Reichweite.\n\nUnd das Eigentum an Boden erzeugte einen neuen Streitgegenstand. Die ältesten Rechtstexte der Welt regeln überwiegend Feld, Vieh, Wasser und Schulden."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Welt von gestern",
+        "autor": "Jared Diamond",
+        "jahr": "2012",
+        "warum": "Vergleicht traditionelle Lebensweisen mit unserer und behandelt dabei ausführlich, was der Übergang zur Sesshaftigkeit kostete. Gut lesbar, mit einer klaren Thesenrichtung, die man kennen sollte."
+      },
+      {
+        "titel": "Anfänge",
+        "autor": "David Graeber und David Wengrow",
+        "jahr": "2021",
+        "warum": "Bestreitet die gängige Erzählung vom geraden Weg über Ackerbau zum Staat und führt Gegenbeispiele aus der Archäologie an. Umstritten, streitbar und genau deshalb lohnend – am besten nach einer klassischen Darstellung lesen."
+      },
+      {
+        "titel": "Gegen den Strich",
+        "autor": "James C. Scott",
+        "jahr": "2019",
+        "warum": "Fragt, warum frühe Staaten Getreide bevorzugten und Menschen festhielten. Der schärfste Blick auf die Kehrseite der Sesshaftigkeit, in gutem Umfang und ohne Thesenkitsch."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Origins of agriculture; Neolithic",
       "Scientific Reports (Nature): Natufian Epipalaeolithic and Pre-Pottery Neolithic"
@@ -57,6 +87,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "über 250",
         "was": "europäische Städte mit Druckerpresse 1500 – zum Vergleich, wie lange Schriftverbreitung dauerte"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Was zuerst geschrieben wurde",
+        "text": "Die ältesten Texte der Menschheit sind Buchhaltung. Keine Gebete, keine Erzählungen, keine Gesetze – Listen: so viele Krüge Bier, so viele Scheffel Gerste, so viele Schafe, an diesen Empfänger, von diesem Verwalter. Die frühen Tafeln aus Uruk bestehen zu weit über neunzig Prozent aus Wirtschaftsaufzeichnungen. Schrift entstand nicht, um Gedanken zu bewahren, sondern um Waren zu zählen, die niemand mehr überblicken konnte.\n\nDer Weg dorthin lässt sich in Stufen nachvollziehen. Vor der Schrift gab es Tonmarken in Warenform, die in Hüllen versiegelt mitgeschickt wurden. Dann wurden die Marken auf die Hülle abgedrückt – das Innere war entbehrlich. Dann wurde der Abdruck zum Zeichen, das Zeichen abstrakt, und schließlich stand das Zeichen nicht mehr für einen Gegenstand, sondern für einen Laut. Erst mit diesem letzten Schritt lässt sich alles schreiben, auch Namen und Sätze."
+      },
+      {
+        "titel": "Vier unabhängige Erfindungen — und ein Rätsel",
+        "text": "Schrift wurde mindestens dreimal, vermutlich viermal unabhängig erfunden: in Mesopotamien um 3300 v. Chr., in Ägypten fast gleichzeitig, in China spätestens um 1250 v. Chr. mit den Orakelknochen und in Mesoamerika bei Zapoteken und Maya um 500 v. Chr. Alle vier entwickelten Zeichen für Laute, und alle vier begannen mit Bildern.\n\nDas Rätsel liegt beim Alphabet. Die semitische Konsonantenschrift, aus der über die Phönizier das griechische, lateinische, arabische, hebräische und indische Schriftsystem hervorging, wurde offenbar nur einmal erfunden – um 1800 v. Chr. vermutlich von semitischen Arbeitern in Ägypten, die ägyptische Zeichen für die Laute ihrer eigenen Sprache verwendeten. Fast alle Alphabete der Welt gehen auf diesen einen Vorgang zurück. Warum er sich nicht wiederholte, ist offen.\n\nEntziffert wurden die alten Schriften erst im 19. und 20. Jahrhundert: Hieroglyphen 1822 über den Stein von Rosetta, die Keilschrift über die dreisprachige Behistun-Inschrift, Linear B 1952 durch Michael Ventris. Die Maya-Schrift wurde erst ab 1952 lesbar. Die Indus-Schrift ist bis heute nicht entziffert – es fehlt ein zweisprachiger Text."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Geschichte der Schrift",
+        "autor": "Harald Haarmann",
+        "jahr": "2002",
+        "warum": "Knapp, systematisch und weltweit angelegt statt nur europäisch. Ein guter erster Zugang, wenn man die Systeme unterscheiden lernen will."
+      },
+      {
+        "titel": "Breaking the Maya Code",
+        "autor": "Michael D. Coe",
+        "jahr": "1992",
+        "warum": "Die Geschichte einer Entzifferung als Krimi – samt der Rolle, die persönliche Autorität und Rechthaberei in der Wissenschaft spielen können. Auf Englisch."
+      },
+      {
+        "titel": "Schrift und Schriftlichkeit",
+        "autor": "Hartmut Günther und Otto Ludwig (Hrsg.)",
+        "jahr": "1994",
+        "warum": "Das Standardhandbuch, kein Lesebuch – zum Nachschlagen einzelner Fragen sehr nützlich."
       }
     ],
     "quellen": [
@@ -118,6 +178,20 @@ const VERTIEFUNGEN = [
         "was": "Tod in Babylon"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Alexander der Große",
+        "autor": "Robin Lane Fox",
+        "jahr": "1973",
+        "warum": "Die einflussreichste Biographie, erzählend und mit Sinn für die Quellenprobleme – alles Überlieferte stammt von Autoren, die Jahrhunderte später schrieben."
+      },
+      {
+        "titel": "Alexander der Große und die Öffnung der Welt",
+        "autor": "Hans-Ulrich Wiemer",
+        "jahr": "2005",
+        "warum": "Der nüchterne deutsche Gegenentwurf: fragt nach Herrschaftspraxis statt nach Genie."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Alexander the Great; Hellenistic Age"
     ]
@@ -142,6 +216,20 @@ const VERTIEFUNGEN = [
       {
         "wert": "ab 112 v. Chr.",
         "was": "regelmäßige Han-Expeditionen nach Zentralasien"
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Seidenstraßen",
+        "autor": "Peter Frankopan",
+        "jahr": "2015",
+        "warum": "Weltgeschichte von Zentralasien aus gedacht statt von Europa. Ein Perspektivwechsel, der überraschend viel erklärt."
+      },
+      {
+        "titel": "Die Seidenstraße",
+        "autor": "Susan Whitfield",
+        "jahr": "2019",
+        "warum": "Zwölf Orte, zwölf Kapitel – konkreter und archäologisch näher als Frankopan."
       }
     ],
     "quellen": [
@@ -174,6 +262,36 @@ const VERTIEFUNGEN = [
         "was": "Octavian wird princeps – traditionelles Ende der Republik"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Wie eine Verfassung ohne Verfassungstext funktionierte",
+        "text": "Rom hatte kein Grundgesetz. Was die Republik zusammenhielt, war eine Mischung aus Ämtern, Gremien und Gewohnheiten, die Polybios im 2. Jahrhundert v. Chr. bewundernd beschrieb: zwei Konsuln als monarchisches Element, der Senat als aristokratisches, die Volksversammlungen als demokratisches. Jedes Amt hatte einen Kollegen mit Vetorecht und eine Amtszeit von einem Jahr. Wer ein Amt niederlegte, war rechenschaftspflichtig.\n\nGetragen wurde das von einer Norm, für die es einen eigenen Begriff gab: mos maiorum, die Sitte der Vorfahren. Sie war stärker als jedes Gesetz, weil sie nicht geschrieben war und deshalb nicht geändert werden musste – man verstieß gegen sie oder man tat es nicht. Genau darin lag die Schwäche. Als sich Einzelne über die Gewohnheit hinwegsetzten und dafür nicht belangt wurden, gab es keine Instanz, die es hätte verhindern können.\n\nDie Reihe der Verstöße ist lang: die Ermordung des Tribunen Tiberius Gracchus 133 v. Chr. – erstmals wurde politischer Streit in Rom mit Mord entschieden; Marius' sechs Konsulate hintereinander; Sullas Marsch auf Rom 88 v. Chr., der erste eines römischen Heeres gegen die eigene Stadt; die Proskriptionslisten; Pompeius' Sonderkommandos; Caesars Rubikonüberschreitung. Jeder Schritt machte den nächsten denkbar."
+      },
+      {
+        "titel": "Was die Eroberungen mit der Republik machten",
+        "text": "Die Institutionen waren für einen Stadtstaat gebaut. Als Rom das Mittelmeer beherrschte, passten sie nicht mehr. Ein Statthalter in Spanien oder Syrien war Monate von Rom entfernt, verfügte über Legionen und Steuereinnahmen und war praktisch unkontrolliert. Wer aus einer Provinz zurückkam, war reich genug, um Wahlen zu kaufen.\n\nGleichzeitig veränderte sich das Heer. Ursprünglich dienten Bauern, die nach dem Feldzug zurück auf ihre Höfe gingen. Mit jahrelangen Feldzügen in fernen Provinzen verarmten diese Höfe; das Land ging an Großgrundbesitzer, bewirtschaftet von Versklavten aus den Eroberungen. Die Landlosen wurden Berufssoldaten – und Berufssoldaten waren nicht mehr dem Staat verpflichtet, sondern dem Feldherrn, der ihnen Beute und am Ende Land verschaffte. Damit war die entscheidende Voraussetzung geschaffen: Privatarmeen im Dienst einzelner Männer.\n\nDie Gracchen hatten 133 und 123 v. Chr. versucht, das Landproblem zu lösen. Beide wurden erschlagen. Ein Reformweg innerhalb der Ordnung wurde damit für hundert Jahre unglaubwürdig."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "SPQR – Die tausendjährige Geschichte Roms",
+        "autor": "Mary Beard",
+        "jahr": "2016",
+        "warum": "Die beste Gesamtdarstellung der letzten Jahre: fragt konsequent, woher wir etwas wissen, statt Erzählungen weiterzugeben."
+      },
+      {
+        "titel": "Der Untergang der Römischen Republik",
+        "autor": "Karl Christ",
+        "jahr": "1979",
+        "warum": "Die deutsche Standarddarstellung zum Zerfall – knapp, klar gegliedert, mit Blick auf die strukturellen Ursachen."
+      },
+      {
+        "titel": "Rubikon",
+        "autor": "Tom Holland",
+        "jahr": "2003",
+        "warum": "Erzählend und spannend, mit starkem Gespür für die handelnden Personen. Gut als Einstieg, danach eine nüchternere Darstellung dazu."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Roman Republic; Augustus; Roman Empire"
     ]
@@ -198,6 +316,26 @@ const VERTIEFUNGEN = [
       {
         "wert": "1453",
         "was": "Ende des oströmischen Reiches – fast tausend Jahre später"
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Der Untergang des Römischen Reiches",
+        "autor": "Peter Heather",
+        "jahr": "2005",
+        "warum": "Vertritt die These, dass äußerer Druck entscheidend war. Gut lesbar und klar argumentiert."
+      },
+      {
+        "titel": "Untergang",
+        "autor": "Bryan Ward-Perkins",
+        "jahr": "2005",
+        "warum": "Der archäologische Einspruch gegen die These vom sanften Übergang: Es wurde tatsächlich schlechter, und das lässt sich an Töpfen und Dächern zeigen."
+      },
+      {
+        "titel": "Das Ende des Römischen Reiches",
+        "autor": "Mischa Meier",
+        "jahr": "2019",
+        "warum": "Der ausführlichste deutsche Stand, mit der Völkerwanderung als vielschichtigem Vorgang statt als Einwanderungswelle."
       }
     ],
     "quellen": [
@@ -230,6 +368,36 @@ const VERTIEFUNGEN = [
         "was": "Schlacht von Tours"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Warum es so schnell ging",
+        "text": "In hundert Jahren entstand ein Reich von Spanien bis zum Indus – schneller als jede vergleichbare Ausdehnung der Geschichte. Der Grund liegt nur zum Teil bei den Angreifern.\n\nByzanz und das Sasanidenreich hatten sich in einem 26 Jahre dauernden Krieg gegeneinander erschöpft, der 628 endete. Beide Reiche waren finanziell ausgeblutet, ihre Heere abgekämpft, ihre Grenzverteidigung in Arabien aufgegeben. Dazu kam die Justinianische Pest, die seit 541 in Wellen wiederkehrte und die Bevölkerung des Mittelmeerraums stark reduziert hatte. In Syrien und Ägypten lebten außerdem christliche Gemeinschaften, die von Konstantinopel als Ketzer verfolgt wurden – für sie bedeutete der Herrschaftswechsel zunächst eine Verbesserung, weil die neuen Herren sich um innerchristliche Streitfragen nicht kümmerten.\n\nDie Eroberer boten überdies Bedingungen an, die man annehmen konnte: Wer sich vertraglich ergab, behielt Religion, Gerichtsbarkeit und Eigentum gegen eine Kopfsteuer. Das war für viele Städte günstiger als eine Belagerung – und günstiger als die byzantinische Steuerlast."
+      },
+      {
+        "titel": "Was aus der Eroberung wurde",
+        "text": "Massenkonversionen fanden zunächst nicht statt, im Gegenteil: Für die neuen Herren war die Kopfsteuer der Nichtmuslime eine Haupteinnahme, ein Übertritt also fiskalisch unerwünscht. In Ägypten war die Mehrheit noch im 9. Jahrhundert christlich. Die Islamisierung verlief über Jahrhunderte, nicht über Jahrzehnte.\n\nDie kulturelle Wirkung ging in eine Richtung, die die Eroberer selbst nicht geplant hatten. Das Kalifat übernahm persische Verwaltung, griechische Wissenschaft und indische Mathematik – und machte daraus etwas Neues. In Bagdad wurden ab dem 8. Jahrhundert systematisch griechische Werke ins Arabische übersetzt; ohne diese Übersetzungsbewegung wären Aristoteles, Galen, Ptolemäus und Euklid in Westeuropa nicht wieder aufgetaucht. Der Weg zurück führte über Toledo und Sizilien, wo im 12. Jahrhundert aus dem Arabischen ins Lateinische übersetzt wurde. Die europäische Universitätsphilosophie beruht auf Texten, die diesen Umweg genommen haben.\n\nArabisch wurde von Marokko bis zum Irak zur Verkehrs- und Verwaltungssprache und ist es geblieben – eine der weitreichendsten Sprachverschiebungen der Geschichte."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Das Kalifat",
+        "autor": "Hugh Kennedy",
+        "jahr": "2016",
+        "warum": "Der beste knappe Überblick über Entstehung und Gestalt des islamischen Reichs, von einem der führenden Fachleute."
+      },
+      {
+        "titel": "Die großen arabischen Eroberungen",
+        "autor": "Hugh Kennedy",
+        "jahr": "2008",
+        "warum": "Ausführlich zu den Feldzügen selbst und zur Frage, warum sie gelangen. Nüchtern gegenüber den arabischen Quellen, die Jahrhunderte später entstanden."
+      },
+      {
+        "titel": "Im Schatten des Schwertes",
+        "autor": "Tom Holland",
+        "jahr": "2012",
+        "warum": "Fragt provokant nach der Quellenlage der Frühzeit des Islam. Umstritten und in Teilen zugespitzt – lesenswert, wenn man die Debatte über die Quellen kennenlernen will."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Islamic world – Conversion and crystallization 634–870; Caliphate; Battle of Tours; Spain – Muslim Spain"
     ]
@@ -258,6 +426,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "1227",
         "was": "Tod Dschingis Khans"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Wie ein Steppenverband das größte Landreich der Geschichte schuf",
+        "text": "Die militärische Überlegenheit lag nicht in der Zahl – die mongolischen Heere waren meist kleiner als die ihrer Gegner. Sie lag in vier Dingen.\n\nErstens Beweglichkeit: Jeder Reiter führte mehrere Pferde mit und konnte hundert Kilometer am Tag zurücklegen, ohne Nachschubtross. Zweitens Aufklärung und Koordination: Kundschafter, Botenstaffeln und die Fähigkeit, getrennt marschierende Heere auf denselben Punkt zu führen – 1241 gewannen zwei mongolische Armeen binnen zweier Tage Schlachten in Polen und Ungarn, 500 Kilometer auseinander. Drittens die Organisation: Dschingis Khan löste die Stammesverbände auf und ordnete die Krieger in Zehner-, Hunderter- und Tausendereinheiten neu, mit Aufstieg nach Leistung. Viertens die Übernahme fremden Wissens: chinesische Belagerungsingenieure, persische Verwaltungsbeamte, muslimische Kaufleute als Steuerpächter.\n\nDie Kriegführung setzte gezielt auf Schrecken. Wer sich ergab, wurde verschont; wer Widerstand leistete, wurde ausgelöscht – und das wurde absichtlich verbreitet, um die nächste Stadt zur Übergabe zu bewegen. Die überlieferten Opferzahlen von Städten wie Merw oder Bagdad sind teils sicher übertrieben, aber sie waren als Nachricht gemeint und funktionierten so."
+      },
+      {
+        "titel": "Die Pax Mongolica und ihr Ende",
+        "text": "Nach der Eroberung folgte etwas, das kaum jemand erwartet hätte: ein Jahrhundert relativ sicherer Fernverbindungen von China bis zum Schwarzen Meer. Karawanen konnten die Strecke unter einheitlicher Oberherrschaft zurücklegen; die Mongolen förderten Handel, weil sie an Zöllen verdienten, und ließen Religionen gewähren. In dieser Zeit reiste Marco Polo, wurden Techniken westwärts weitergegeben – Papiergeld, Schießpulver, Buchdruckverfahren – und Karten genauer.\n\nDieselbe Verbindung trug auch die Pest. Die heute wahrscheinlichste Rekonstruktion lässt Yersinia pestis über die Karawanenwege und die genuesischen Häfen der Krim nach Europa gelangen; 1347 erreichte sie Messina. Das Reich, das den Austausch ermöglichte, ermöglichte damit auch die verheerendste Epidemie der europäischen Geschichte.\n\nZerfallen ist es nicht durch Niederlagen, sondern an der Nachfolge. Es gab keine Regel, wer Großkhan wird; jeder Wechsel führte zu Machtkämpfen. Nach 1260 zerfiel das Reich in vier Teilreiche, die einander bekriegten. Die Ilchane in Persien und die Yuan in China wurden binnen weniger Generationen kulturell von den Unterworfenen aufgenommen – die Ilchane muslimisch, die Yuan chinesisch geprägt."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Dschingis Khan und seine Erben",
+        "autor": "Michal Biran",
+        "jahr": "2007",
+        "warum": "Knapp und auf dem Stand der Forschung, mit Blick auf Verwaltung und Wirtschaft statt nur auf Feldzüge."
+      },
+      {
+        "titel": "Die Mongolen",
+        "autor": "Michael Weiers",
+        "jahr": "2004",
+        "warum": "Der deutschsprachige Überblick von der Steppe bis zum Zerfall der Teilreiche."
+      },
+      {
+        "titel": "Dschingis Khan",
+        "autor": "Frank McLynn",
+        "jahr": "2015",
+        "warum": "Ausführliche Biographie mit gutem Gespür für die Quellenprobleme – fast alles Überlieferte stammt von Gegnern oder von Nachfahren mit eigenem Interesse."
       }
     ],
     "quellen": [
@@ -289,6 +487,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "1370er",
         "was": "Jahrzehnt der stärksten Lohnsteigerungen"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Wie eine Gesellschaft reagiert, die nichts tun kann",
+        "text": "Die Medizin der Zeit war ratlos, und das war allen bewusst. Was blieb, waren Deutungen und Maßnahmen. Die Deutungen: Gottesstrafe, verdorbene Luft, eine Konstellation der Planeten – letzteres die offizielle Erklärung der Pariser medizinischen Fakultät von 1348. Die Maßnahmen dagegen wirkten teilweise, obwohl niemand wusste, warum: Absperrung befallener Häuser, Wachen an den Stadttoren, die vierzigtägige Wartezeit für Schiffe, aus der das Wort Quarantäne stammt. Venedig, Ragusa und Mailand richteten Gesundheitsbehörden ein, die es vorher nicht gab – Seuchenschutz wurde zur Verwaltungsaufgabe.\n\nDaneben stand die Gewalt. In Dutzenden Städten Mitteleuropas wurden jüdische Gemeinden beschuldigt, Brunnen vergiftet zu haben, und ausgelöscht – in Straßburg, Basel, Mainz, Köln, Erfurt. Papst Clemens VI. erklärte die Anschuldigung ausdrücklich für falsch und wies darauf hin, dass Juden gleichermaßen starben. Es half nicht. Die Pogrome begannen vielerorts, bevor die Seuche überhaupt eintraf – sie waren keine Panikreaktion auf Tote, sondern eine vorauseilende."
+      },
+      {
+        "titel": "Was danach anders war",
+        "text": "Der Arbeitskräftemangel verschob die Machtverhältnisse. Wo vorher Land knapp und Arbeit billig war, war es nun umgekehrt. Löhne stiegen, Pachten fielen, Bauern konnten den Herrn wechseln. Obrigkeiten reagierten mit Gesetzen – die englische Statute of Labourers von 1351 fror Löhne auf dem Stand vor der Pest ein. Die Statuten scheiterten am Markt und trugen zu Aufständen bei: 1358 in Frankreich, 1381 in England.\n\nWirtschaftlich lohnte sich auf einmal, was Arbeit spart. Historiker verbinden die Zeit nach der Pest mit einer Welle arbeitssparender Technik – Wassermühlen, Windmühlen, später der Buchdruck. Dass Europa lohnintensiver war als andere Weltregionen, wird in der Wirtschaftsgeschichte als ein Grund dafür diskutiert, warum Maschinen dort attraktiver wurden.\n\nGeistig veränderte sich das Verhältnis zur Autorität. Die Kirche hatte keine Antwort gehabt und viele ihrer Priester verloren; wer nachrückte, war schlechter ausgebildet. Die Kritik daran – bei Wyclif, bei Hus – steht am Anfang eines Weges, der zur Reformation führte."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Der Schwarze Tod in Europa",
+        "autor": "Klaus Bergdolt",
+        "jahr": "1994",
+        "warum": "Die deutsche Standarddarstellung: knapp, quellennah und nüchtern gegenüber den vielen kursierenden Zahlen."
+      },
+      {
+        "titel": "The Black Death",
+        "autor": "John Hatcher",
+        "jahr": "2008",
+        "warum": "Erzählt die Pest aus der Sicht eines englischen Dorfes, für das die Akten außergewöhnlich gut erhalten sind. Nah dran und trotzdem belegt."
+      },
+      {
+        "titel": "Die Große Sterbende",
+        "autor": "Ole J. Benedictow",
+        "jahr": "2004",
+        "warum": "Die umfangreichste Auswertung der Verbreitungswege und Sterberaten. Trocken zu lesen, aber die Grundlage der heutigen Zahlen."
       }
     ],
     "quellen": [
@@ -356,6 +584,36 @@ const VERTIEFUNGEN = [
         "was": "Rückgang des Buchpreises in unter 40 Jahren"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Was Gutenberg wirklich erfand",
+        "text": "Bewegliche Lettern gab es vor ihm: In Korea wurde 1234 mit Metalltypen gedruckt, in China schon im 11. Jahrhundert mit Ton. Gutenbergs Leistung war kein einzelner Einfall, sondern ein Verfahren aus mehreren Teilen, die zusammenpassen mussten – und genau das ist die interessantere Geschichte.\n\nErstens der Handgießapparat: eine Form, in der sich beliebig viele identische Lettern gießen lassen, aus einer Legierung aus Blei, Zinn und Antimon, die scharf ausformt, schnell erstarrt und wiederverwertbar ist. Zweitens die Druckerpresse, abgeleitet von der Wein- oder Papierpresse, die gleichmäßigen Flächendruck erzeugt. Drittens eine ölbasierte Druckfarbe, die auf Metall haftet – Wasserfarbe perlt ab. Viertens Papier statt Pergament, das in Europa gerade billig verfügbar wurde. Keines dieser Teile allein hätte genügt.\n\nGutenberg selbst hatte davon wenig. Sein Geldgeber Johannes Fust verklagte ihn 1455, gewann und übernahm die Werkstatt samt Typen. Die Bibel, für die er bekannt ist, trägt seinen Namen nicht."
+      },
+      {
+        "titel": "Der Sprung von 30.000 auf zwölf Millionen",
+        "text": "Vor 1450 besaß Europa schätzungsweise 30.000 Bücher, fast alle in Klöstern und Universitäten. Um 1500 waren es rund zwölf Millionen. Diese Größenordnung ist der eigentliche Vorgang – nicht die Technik, sondern was sie mit dem Zugang zu Wissen tat.\n\nDie Folgen waren nicht alle absehbar. Bücher wurden vergleichbar: Wer zwei Ausgaben desselben Textes nebeneinanderlegen konnte, sah Widersprüche – die Textkritik entstand als Fach. Wissen wurde kumulativ: Ein Astronom konnte auf gedruckte Tabellen bauen, statt Kopierfehler zu erben. Sprachen wurden vereinheitlicht, weil Drucker Formen wählen mussten – Luthers Bibel prägte das Hochdeutsche. Und Öffentlichkeit entstand als Größe: Zwischen 1518 und 1525 erschienen im deutschen Sprachraum schätzungsweise sechs Millionen Exemplare reformatorischer Flugschriften.\n\nDaneben verbreitete die Presse auch den Hexenhammer, Pestrezepte ohne Wirkung und politische Hetze. Der Druck war ein Verstärker, kein Filter – ein Gedanke, der bei jeder neuen Verbreitungstechnik seither wiederkehrt."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Druckerpresse",
+        "autor": "Elizabeth L. Eisenstein",
+        "jahr": "1997",
+        "warum": "Die einflussreichste Untersuchung darüber, was der Druck mit dem Denken machte. Nicht ganz leicht, aber die Bezugsgröße jeder späteren Debatte."
+      },
+      {
+        "titel": "Johannes Gutenberg",
+        "autor": "Albert Kapr",
+        "jahr": "1986",
+        "warum": "Die gründlichste deutsche Biographie, mit dem seltenen Vorzug, zwischen Belegtem und Überliefertem klar zu trennen."
+      },
+      {
+        "titel": "Die Erfindung der Nachricht",
+        "autor": "Andrew Pettegree",
+        "jahr": "2016",
+        "warum": "Wie Nachrichten vor der Zeitung zirkulierten und was der Druck daran änderte. Erhellend auch für die Gegenwart."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Johannes Gutenberg; History of publishing – The age of early printing 1450–1550; Incunabula",
       "Library of Congress: Incunabula"
@@ -381,6 +639,20 @@ const VERTIEFUNGEN = [
       {
         "wert": "29. Mai 1453",
         "was": "Fall der Stadt"
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "1453 – Der letzte Kampf um Konstantinopel",
+        "autor": "Roger Crowley",
+        "jahr": "2005",
+        "warum": "Die Belagerung Tag für Tag, aus beiden Perspektiven. Spannend und quellennah."
+      },
+      {
+        "titel": "Byzanz",
+        "autor": "Judith Herrin",
+        "jahr": "2007",
+        "warum": "Was das Reich war, das 1453 endete – und warum es mehr war als ein Nachspiel Roms."
       }
     ],
     "quellen": [
@@ -414,6 +686,36 @@ const VERTIEFUNGEN = [
         "was": "amerikanische Grundnahrungspflanzen, die nach Eurasien und Afrika gelangten"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Der größte Bevölkerungseinbruch der Geschichte",
+        "text": "Wie viele Menschen 1492 in Amerika lebten, ist umstritten – Schätzungen reichen von 40 bis über 100 Millionen. Unbestritten ist, was in den 150 Jahren danach geschah: Die indigene Bevölkerung sank um schätzungsweise 90 Prozent. Der Hauptgrund waren nicht Waffen, sondern Krankheiten, gegen die niemand in Amerika Abwehrkräfte hatte: Pocken, Masern, Grippe, Typhus, Malaria, später Gelbfieber.\n\nDie Epidemien liefen den Eroberern voraus. Als Pizarro 1532 in Peru eintraf, hatte eine Pockenwelle bereits den Herrscher Huayna Cápac getötet und einen Bürgerkrieg zwischen seinen Söhnen ausgelöst. Als die Spanier 1521 Tenochtitlan belagerten, war die Stadt durch Pocken geschwächt. Die Vorstellung, wenige hundert Europäer hätten Reiche von Millionen bezwungen, unterschlägt beides: die indigenen Verbündeten und die Seuchen.\n\nDer Einbruch war so groß, dass er in Eisbohrkernen messbar ist. Die Aufgabe der Felder ließ Wald nachwachsen, der Kohlendioxid bindet – Forscher diskutieren, ob dieser Effekt zur Kleinen Eiszeit des 17. Jahrhunderts beitrug."
+      },
+      {
+        "titel": "Was in beide Richtungen wanderte",
+        "text": "Nach Europa, Afrika und Asien kamen Kartoffel, Mais, Tomate, Bohne, Kürbis, Kakao, Chili, Ananas, Erdnuss, Maniok, Tabak und Kautschuk. Die Wirkung war enorm: Kartoffel und Mais liefern auf gleicher Fläche mehr Kalorien als Getreide und wachsen dort, wo Getreide nicht gedeiht. Wirtschaftshistoriker rechnen einen erheblichen Teil des europäischen Bevölkerungswachstums nach 1700 der Kartoffel zu; in China ermöglichten Mais und Süßkartoffel die Besiedlung von Hanglagen. Maniok wurde in Afrika zum Grundnahrungsmittel. Chili prägt heute die Küche Indiens, Thailands und Sichuans – vor 1492 kannte sie keine davon.\n\nNach Amerika kamen Weizen, Reis, Zuckerrohr, Kaffee, Bananen, Rind, Schwein, Schaf und Pferd. Das Pferd veränderte die Lebensweise der Prärievölker so tief, dass die berittene Jagd auf Bison, die als uralt gilt, tatsächlich erst im 17. Jahrhundert entstand. Zuckerrohr wurde zum Motor des transatlantischen Sklavenhandels: Es wächst nur in den Tropen und verlangt enorm viel Arbeit.\n\nDer Historiker Alfred Crosby, der den Begriff 1972 prägte, nannte das Ergebnis eine biologische Vereinigung der Kontinente – irreversibel und in ihrer Wirkung größer als jedes politische Ereignis der Epoche."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Kolumbus' Erbe",
+        "autor": "Charles C. Mann",
+        "jahr": "2013",
+        "warum": "Erzählt den Austausch als weltumspannenden Vorgang, mit ungewöhnlichen Beispielen – vom Silber Chinas bis zur Kartoffel Irlands. Das zugängliche Standardwerk."
+      },
+      {
+        "titel": "1491",
+        "autor": "Charles C. Mann",
+        "jahr": "2005",
+        "warum": "Was in Amerika vor Kolumbus war. Räumt gründlich mit dem Bild vom leeren, unberührten Kontinent auf."
+      },
+      {
+        "titel": "Ecological Imperialism",
+        "autor": "Alfred W. Crosby",
+        "jahr": "1986",
+        "warum": "Der Begründer des Themas. Sperriger als Mann, aber unverzichtbar, wenn man die Argumentation im Original nachlesen will."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Columbian exchange; Why did European diseases cause such a massive decline in Indigenous populations",
       "Nature Ecology & Evolution: Ecological consequences of post-Columbian indigenous depopulation"
@@ -443,6 +745,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "1555",
         "was": "Augsburger Religionsfrieden"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Warum diesmal nicht wie bei Hus",
+        "text": "Kritik an der Kirche war nicht neu. Wyclif in England und Hus in Böhmen hatten hundert Jahre vor Luther Ähnliches gefordert – Hus wurde 1415 in Konstanz verbrannt, trotz kaiserlichem Geleitbrief. Die Frage ist also nicht, warum Luther kritisierte, sondern warum er überlebte und Wirkung hatte.\n\nDrei Unterschiede. Erstens der Druck: Seine Schriften erreichten binnen Wochen den gesamten Sprachraum; zwischen 1518 und 1525 erschienen schätzungsweise sechs Millionen Exemplare reformatorischer Flugschriften, viele mit Bildern für Leseunkundige. Zweitens der politische Schutz: Friedrich der Weise von Sachsen gab ihn nicht heraus – nicht unbedingt aus Glaubensüberzeugung, sondern weil ein eigener Reformer die fürstliche Stellung gegenüber Kaiser und Papst stärkte. Drittens die Lage des Kaisers: Karl V. hätte durchgreifen können, war aber gleichzeitig durch Frankreich und die Osmanen gebunden. Als er 1547 endlich militärisch siegte, war die Reformation längst institutionell verankert.\n\nDer Ablasshandel, an dem alles begann, war überdies ein Finanzgeschäft: Albrecht von Brandenburg hatte sich sein Erzbistum bei den Fuggern finanziert und zahlte den Kredit aus Ablasseinnahmen zurück. Die Hälfte ging nach Rom für den Neubau von St. Peter."
+      },
+      {
+        "titel": "Was aus der Bewegung wurde, die keiner steuerte",
+        "text": "Luther hatte den Ablass angegriffen, nicht die Gesellschaftsordnung. Andere zogen weiter. Als sich 1524 die Bauern erhoben und ihre Zwölf Artikel biblisch begründeten – Abschaffung der Leibeigenschaft, freie Pfarrerwahl, Jagd- und Fischereirechte –, schrieb Luther gegen sie: die Obrigkeit solle dreinschlagen. Der Aufstand wurde mit vermutlich 70.000 bis 100.000 Toten niedergeschlagen. Von da an war die Reformation eine Sache der Fürsten.\n\nParallel entstanden Richtungen, die sich untereinander bekämpften: Zwingli in Zürich, Calvin in Genf mit einer strengeren Kirchenzucht, die Täufer, die Erwachsenentaufe forderten und in Münster 1534 einen Gottesstaat errichteten. Täufer wurden von Katholiken und Protestanten gleichermaßen verfolgt.\n\nDas Ergebnis war nicht Glaubensfreiheit, sondern ihr Gegenteil in geordneter Form: Der Augsburger Religionsfrieden von 1555 gab dem Landesherrn das Recht, die Konfession seines Gebiets zu bestimmen. Wer anders glaubte, durfte auswandern. Erst der Westfälische Friede erweiterte das, und erst das 18. Jahrhundert brachte Toleranz als Rechtsprinzip."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Luther – Rebell in einer Zeit des Umbruchs",
+        "autor": "Heinz Schilling",
+        "jahr": "2012",
+        "warum": "Die maßgebliche deutsche Biographie: erklärt Luther aus seiner Zeit statt aus dem Rückblick, ohne Heldenverehrung und ohne Abrechnung."
+      },
+      {
+        "titel": "Die Reformation",
+        "autor": "Diarmaid MacCulloch",
+        "jahr": "2003",
+        "warum": "Europaweit angelegt, mit Zwingli, Calvin, England und den Täufern gleichgewichtig neben Luther. Umfangreich, aber die beste Gesamtschau."
+      },
+      {
+        "titel": "Der Bauernkrieg",
+        "autor": "Peter Blickle",
+        "jahr": "1998",
+        "warum": "Die Kehrseite: Was die Menschen aus der Reformation machten, die nicht Fürsten waren."
       }
     ],
     "quellen": [
@@ -479,6 +811,26 @@ const VERTIEFUNGEN = [
         "was": "Brasilien – letzte Abschaffung in Amerika"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Der atlantische Sklavenhandel",
+        "autor": "Herbert S. Klein",
+        "jahr": "1999",
+        "warum": "Die zahlenmäßige Grundlage: wer verschleppt wurde, wohin, von wem – gestützt auf die Transatlantic Slave Trade Database."
+      },
+      {
+        "titel": "Bury the Chains",
+        "autor": "Adam Hochschild",
+        "jahr": "2005",
+        "warum": "Die Geschichte der britischen Abolitionisten und der ersten Menschenrechtskampagne der Geschichte."
+      },
+      {
+        "titel": "Kapitalismus und Sklaverei",
+        "autor": "Eric Williams",
+        "jahr": "1944",
+        "warum": "Die These, dass die Sklaverei die Industrialisierung finanzierte. Seit achtzig Jahren umstritten und nie erledigt."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Transatlantic slave trade – Key Facts; Abolitionism; Transatlantic Slave Trade Timeline",
       "UNESCO: Slave voyages"
@@ -510,6 +862,20 @@ const VERTIEFUNGEN = [
         "was": "Verhandlungsdauer ab 1644"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Der Dreißigjährige Krieg",
+        "autor": "Peter H. Wilson",
+        "jahr": "2009",
+        "warum": "Die maßgebliche Gesamtdarstellung: europäisch angelegt, mit dem Befund, dass es weniger ein Religionskrieg war als oft dargestellt."
+      },
+      {
+        "titel": "Der Westfälische Frieden",
+        "autor": "Christoph Kampmann",
+        "jahr": "2008",
+        "warum": "Was dort tatsächlich verhandelt und beschlossen wurde – knapp und ohne den Mythos vom Beginn des modernen Staatensystems."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Peace of Westphalia; Thirty Years' War; Germany – The Thirty Years War and the Peace of Westphalia"
     ]
@@ -534,6 +900,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "1830",
         "was": "erste kommerzielle Eisenbahnstrecke Liverpool–Manchester"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Warum England und nicht China oder Indien",
+        "text": "Um 1700 war Europa technisch nicht überlegen. China hatte Hochöfen, Papiergeld, Kompass und Buchdruck Jahrhunderte früher; Indien produzierte den Großteil der weltweiten Textilien. Die Frage, warum die Industrialisierung dennoch in England begann, ist eine der meistdiskutierten der Wirtschaftsgeschichte.\n\nDie gängigen Erklärungen: Erstens Kohle in Küstennähe und Wasserwege, die sie billig verteilten – der Zusammenhang zwischen Kohlelage und Frühindustrie ist geographisch nachweisbar. Zweitens hohe Löhne bei billiger Energie: Wo Arbeit teuer und Kohle billig ist, lohnt eine Maschine, die Arbeit durch Energie ersetzt. Robert Allen hat daraus die einflussreichste These der letzten Jahrzehnte gemacht. Drittens Institutionen: Patentwesen, durchsetzbare Verträge, ein Parlament, das Eigentumsrechte schützte. Viertens Kolonien und Sklaverei: Rohbaumwolle aus den Südstaaten und der Karibik, Absatzmärkte in Indien, Kapital aus dem Dreieckshandel. Wie viel davon notwendig war, ist strittig – Kenneth Pomeranz betont die Rolle der Kolonien deutlich stärker als Allen.\n\nWas sich sagen lässt: Es gab keinen einzelnen Grund, und keiner der genannten Faktoren wirkte allein. Wer eine einfache Antwort liest, liest eine Vereinfachung."
+      },
+      {
+        "titel": "Was es für die Menschen bedeutete",
+        "text": "Die Lebenserwartung in englischen Industriestädten sank in der ersten Hälfte des 19. Jahrhunderts unter das Niveau der Landbevölkerung. Manchester hatte um 1840 eine durchschnittliche Lebenserwartung von etwa 26 Jahren. Die Reallöhne der Arbeiter stiegen über Jahrzehnte kaum – die Wirtschaftshistoriker sprechen von der Engels-Pause, benannt nach Friedrich Engels' Beschreibung der Lage in Manchester von 1845.\n\nDie Arbeit selbst veränderte sich grundlegender als der Lohn. Vorher bestimmte die Aufgabe den Tag – wenn das Feld bestellt war, war Schluss. In der Fabrik bestimmte die Uhr, weil die Maschine lief. Wer zu spät kam, wurde bestraft; Pausen wurden festgelegt; Kinderarbeit war nicht neu, aber ihre Form war es: zwölf Stunden am Webstuhl statt Mithilfe im Haushalt.\n\nErst ab etwa 1850 stiegen die Reallöhne deutlich, sanken die Arbeitszeiten und wirkten die ersten Fabrikgesetze und Kanalisationen. Die Verbesserung kam also nicht aus der Industrialisierung selbst, sondern aus politischer Auseinandersetzung darüber – Gewerkschaften, Wahlrechtsausweitung, Gesetzgebung."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Große Divergenz",
+        "autor": "Kenneth Pomeranz",
+        "jahr": "2000",
+        "warum": "Der Ausgangspunkt der modernen Debatte: Warum liefen Europa und China auseinander, obwohl sie 1750 ähnlich weit waren? Fordernd, aber zentral."
+      },
+      {
+        "titel": "The British Industrial Revolution in Global Perspective",
+        "autor": "Robert C. Allen",
+        "jahr": "2009",
+        "warum": "Die Lohn- und Energiethese in ihrer klaren Fassung. Wer verstehen will, warum Maschinen sich gerade dort rechneten, findet es hier."
+      },
+      {
+        "titel": "Die Verwandlung der Welt",
+        "autor": "Jürgen Osterhammel",
+        "jahr": "2009",
+        "warum": "Kein Buch über die Industrialisierung allein, aber die beste Einordnung des 19. Jahrhunderts insgesamt. Umfangreich – als Nachschlagewerk zu lesen, nicht in einem Zug."
       }
     ],
     "quellen": [
@@ -565,6 +961,40 @@ const VERTIEFUNGEN = [
       {
         "wert": "26. August 1789",
         "was": "Erklärung der Menschen- und Bürgerrechte"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Wie aus einer Finanzkrise eine Revolution wurde",
+        "text": "Der Auslöser war Geld. Frankreich hatte den amerikanischen Unabhängigkeitskrieg mitfinanziert und war zahlungsunfähig; die Hälfte des Haushalts ging für Zinsen weg. Steuern hätten geholfen, aber Adel und Kirche waren weitgehend befreit, und keine Reform kam gegen ihren Widerstand durch. Deshalb berief Ludwig XVI. 1789 die Generalständeversammlung ein – erstmals seit 175 Jahren.\n\nDann kam die Verfahrensfrage, an der sich alles entschied: Wird nach Stand oder nach Kopf abgestimmt? Nach Stand hätten Adel und Klerus den Dritten Stand immer überstimmt. Als die Abstimmung nach Köpfen verweigert wurde, erklärte sich der Dritte Stand zur Nationalversammlung und schwor im Ballhaus, nicht auseinanderzugehen, bis Frankreich eine Verfassung habe. Aus einer Steuerfrage war eine Frage der Souveränität geworden – wer das Land vertritt.\n\nDer Sturm auf die Bastille am 14. Juli war militärisch belanglos: Die Festung war fast leer, sieben Gefangene saßen darin, gesucht wurden Pulver und Waffen. Politisch war er entscheidend, weil er zeigte, dass der König Paris nicht kontrollierte."
+      },
+      {
+        "titel": "Der Terror und die Frage, ob er dazugehörte",
+        "text": "Zwischen 1793 und 1794 wurden nach Urteilen der Revolutionstribunale rund 17.000 Menschen hingerichtet; in den Bürgerkriegsgebieten, vor allem in der Vendée, starben nach Schätzungen 170.000 bis 250.000 Menschen. Die Revolution, die mit der Erklärung der Menschen- und Bürgerrechte begann, führte binnen vier Jahren zu Massenerschießungen.\n\nDarüber geht die Deutung seit zweihundert Jahren auseinander. Eine Linie – klassisch bei Georges Lefebvre, später bei Albert Soboul – sieht den Terror als Reaktion auf eine reale Notlage: Krieg gegen halb Europa, Aufstand im Inneren, Hunger in den Städten. Die andere – bei Alexis de Tocqueville angelegt, scharf formuliert von François Furet – sieht ihn in der Sache selbst angelegt: Wer im Namen eines einheitlichen Volkswillens regiert, muss jeden Widerspruch als Verrat behandeln.\n\nBeide Seiten stützen sich auf dieselben Ereignisse. Wer die Debatte kennt, liest die Revolution anders – und auch jede spätere, die sich auf sie berief."
+      },
+      {
+        "titel": "Was blieb, obwohl die Republik fiel",
+        "text": "1799 war die Revolution vorbei, 1804 gab es wieder einen Kaiser, 1814 wieder einen König. Und trotzdem ließ sich das Meiste nicht zurücknehmen. Die Feudalrechte blieben abgeschafft, die Kirchengüter verkauft und in den Händen ihrer neuen Besitzer, der Code civil von 1804 in Kraft – und mit ihm die Gleichheit vor dem Gesetz, das Zivilrecht ohne Standesunterschiede, die Trennung von Amt und Geburt.\n\nDie Verwaltungsordnung überdauerte alle Regimewechsel: Departements, Präfekten, einheitliche Maße, das metrische System, die Zentralisierung. Napoleon trug den Code civil in halb Europa; noch heute beruhen die Zivilgesetzbücher von Belgien, Italien, Spanien, Louisiana und weiteren Ländern darauf.\n\nUnd der Begriffsapparat der modernen Politik stammt von hier: links und rechts nach der Sitzordnung, Nation als Träger der Souveränität, Verfassung als Vertrag, Bürger statt Untertan. Wer heute politisch argumentiert, benutzt Wörter, die zwischen 1789 und 1794 ihre Bedeutung bekamen."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Französische Revolution",
+        "autor": "Hans-Ulrich Thamer",
+        "jahr": "2009",
+        "warum": "Der beste knappe deutsche Einstieg: rund 130 Seiten, ordnet Ereignisse und Deutungsstreit gleichzeitig."
+      },
+      {
+        "titel": "Der Zauber der Revolution",
+        "autor": "Simon Schama",
+        "jahr": "1989",
+        "warum": "Erzählend, ausführlich und mit deutlicher Skepsis gegenüber der Gewalt. Liest sich wie ein Roman und hat genau deshalb Kritik geerntet – lesenswert, aber nicht als einzige Darstellung."
+      },
+      {
+        "titel": "1789 – Die Revolution der Menschenrechte",
+        "autor": "Lynn Hunt",
+        "jahr": "2009",
+        "warum": "Fragt, wie Menschenrechte überhaupt denkbar wurden, und verbindet Politikgeschichte mit Kulturgeschichte. Ein anderer Zugang zum gleichen Stoff."
       }
     ],
     "quellen": [
@@ -627,6 +1057,20 @@ const VERTIEFUNGEN = [
         "was": "Eisenbahnnetz bis 1890, ab 1872"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Die Meiji-Restauration",
+        "autor": "Marius B. Jansen",
+        "jahr": "2000",
+        "warum": "Wie Japan sich in einer Generation umbaute – und warum es dabei nicht Kolonie wurde."
+      },
+      {
+        "titel": "Japan – Geschichte und Kultur",
+        "autor": "Wolfgang Schwentker",
+        "jahr": "2022",
+        "warum": "Der aktuelle deutsche Gesamtüberblick, mit der Meiji-Zeit im Zentrum der Moderne."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Meiji Restoration; Japan – The opening of Japan; Empire of Japan – The emergence of modern Japan"
     ]
@@ -687,6 +1131,20 @@ const VERTIEFUNGEN = [
         "was": "vom Attentat zum europäischen Krieg"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Die Schlafwandler",
+        "autor": "Christopher Clark",
+        "jahr": "2012",
+        "warum": "Verteilt die Verantwortung auf alle Beteiligten statt auf eine Macht. Das meistdiskutierte Geschichtsbuch der letzten Jahre."
+      },
+      {
+        "titel": "Der Große Krieg",
+        "autor": "Herfried Münkler",
+        "jahr": "2013",
+        "warum": "Der deutschsprachige Gegenpol: hält an der besonderen Rolle der deutschen Führung fest. Beide zusammen ergeben das Bild."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: World War I; World War I – Causes and Effects; 20th-century international relations – The war guilt question; German Empire – The outbreak of World War I"
     ]
@@ -715,6 +1173,36 @@ const VERTIEFUNGEN = [
       {
         "wert": "ca. 10 Mio.",
         "was": "Tote im Bürgerkrieg 1917–1922, meist Zivilisten"
+      }
+    ],
+    "tiefe": [
+      {
+        "titel": "Zwei Revolutionen in einem Jahr",
+        "text": "Die Februarrevolution war kein bolschewistisches Werk. Sie begann mit Brotschlangen und Streiks in Petrograd, wuchs binnen Tagen, und die Garnison verweigerte den Schießbefehl. Nikolaus II. dankte ab, ohne dass eine Partei den Umsturz geplant hätte. Lenin war zu diesem Zeitpunkt in der Schweiz, Stalin in Sibirien, Trotzki in New York.\n\nDanach bestand eine Doppelherrschaft: die Provisorische Regierung, aus dem Parlament hervorgegangen, und die Sowjets – Räte von Arbeitern und Soldaten, die tatsächliche Macht über Betriebe und Truppen hatten. Die Regierung machte den entscheidenden Fehler: Sie setzte den Krieg fort. Damit blieben die Gründe für den Aufstand bestehen, und die einzige Partei, die konsequent Frieden versprach, gewann Zulauf.\n\nDer Oktoberumsturz war deshalb weniger Volksaufstand als Machtergreifung einer entschlossenen Minderheit in einem Vakuum: wenige Tote, die Besetzung von Telegrafenamt, Bahnhöfen und Winterpalais. Die Wahlen zur Konstituierenden Versammlung, die kurz darauf stattfanden, gewannen die Bolschewiki nicht – sie kamen auf etwa ein Viertel. Die Versammlung tagte einen Tag und wurde aufgelöst."
+      },
+      {
+        "titel": "Vom Umsturz zum Staat",
+        "text": "Was die Bolschewiki zusammenhielt, war der Bürgerkrieg. Fünf Jahre kämpften Rote gegen Weiße, dazu Intervention britischer, französischer, amerikanischer und japanischer Truppen, Bauernaufstände und Hungersnöte. Millionen starben, mehr durch Hunger und Seuchen als durch Kämpfe. In dieser Zeit entstanden die Einrichtungen, die den Staat für siebzig Jahre prägten: Geheimpolizei, Requirierung, Einparteiensystem, Verbot der übrigen Parteien.\n\nDer Kronstadt-Aufstand von 1921 ist der Wendepunkt, der am wenigsten erinnert wird: Ausgerechnet die Matrosen, die 1917 die Revolution getragen hatten, forderten freie Sowjets ohne Parteiherrschaft – und wurden von der Roten Armee niedergeschlagen. Danach war klar, dass die Partei auch gegen ihre eigene Basis regieren würde.\n\nDer Streit darüber, ob dieser Weg im Oktober 1917 angelegt war oder sich aus dem Bürgerkrieg ergab, prägt die Forschung bis heute. Für die eine Seite folgt der Terror aus der Idee einer Avantgarde, die für das Volk handelt; für die andere aus den Umständen eines Landes im Zusammenbruch. Wie bei der Französischen Revolution stützen sich beide Seiten auf dieselben Ereignisse."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Tragödie eines Volkes",
+        "autor": "Orlando Figes",
+        "jahr": "1996",
+        "warum": "Die eindringlichste Gesamtdarstellung, von 1891 bis 1924, mit vielen Einzelschicksalen. Umfangreich und lesbar."
+      },
+      {
+        "titel": "Die Russische Revolution",
+        "autor": "Manfred Hildermeier",
+        "jahr": "2016",
+        "warum": "Der knappe, nüchterne deutsche Überblick – gut als erste Orientierung vor Figes."
+      },
+      {
+        "titel": "Terror und Traum. Moskau 1937",
+        "autor": "Karl Schlögel",
+        "jahr": "2008",
+        "warum": "Nicht über 1917, sondern über das, was daraus wurde. Ein Buch über ein einzelnes Jahr, das die Verbindung sichtbar macht."
       }
     ],
     "quellen": [
@@ -751,6 +1239,26 @@ const VERTIEFUNGEN = [
         "was": "Aufgabe des Goldstandards in Großbritannien / Abwertung in den USA"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Der Große Crash 1929",
+        "autor": "John Kenneth Galbraith",
+        "jahr": "1955",
+        "warum": "Schmal, ironisch und nach siebzig Jahren noch treffend. Der Klassiker über Spekulation und ihre Selbsttäuschungen."
+      },
+      {
+        "titel": "Die Geschichte der Weltwirtschaftskrise",
+        "autor": "Charles Kindleberger",
+        "jahr": "1973",
+        "warum": "Warum die Krise weltweit wurde: fehlende Führung im internationalen Finanzsystem."
+      },
+      {
+        "titel": "Golden Fetters",
+        "autor": "Barry Eichengreen",
+        "jahr": "1992",
+        "warum": "Die Rolle des Goldstandards – die einflussreichste Erklärung der letzten Jahrzehnte."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Great Depression; Causes of the Great Depression; Great Depression – Sources of recovery; Economic impact"
     ]
@@ -781,6 +1289,36 @@ const VERTIEFUNGEN = [
         "was": "UN-Erklärung zur Gewährung der Unabhängigkeit"
       }
     ],
+    "tiefe": [
+      {
+        "titel": "Warum es nach 1945 so schnell ging",
+        "text": "1939 beherrschten europäische Mächte etwa ein Drittel der Landfläche der Erde. Vierzig Jahre später war davon fast nichts übrig. Der Grund liegt in mehreren Entwicklungen, die zusammenfielen.\n\nDer Krieg hatte die Kolonialmächte erschöpft: Großbritannien war hoch verschuldet, Frankreich und die Niederlande besetzt gewesen, Japans Siege 1941 und 1942 hatten die Vorstellung europäischer Unbesiegbarkeit in Asien zerstört. Millionen Kolonialsoldaten hatten für Freiheit gekämpft und stellten die Frage nach ihrer eigenen. Die Atlantik-Charta von 1941 hatte das Selbstbestimmungsrecht der Völker verkündet – Churchill meinte es nicht global, Roosevelt schon, und die Bewegungen in den Kolonien beriefen sich darauf.\n\nDazu kam der Kalte Krieg: Beide Supermächte waren aus verschiedenen Gründen gegen die alten Kolonialreiche, und Nationalbewegungen konnten zwischen ihnen manövrieren. Und die UN-Vollversammlung wurde mit jedem neuen Mitglied zu einem Forum, in dem Kolonialherrschaft zu begründen war."
+      },
+      {
+        "titel": "Warum die Unabhängigkeit so oft schwer wurde",
+        "text": "Die Grenzen waren geerbt, nicht gewachsen. Auf der Berliner Konferenz 1884/85 hatten europäische Mächte Afrika nach Lineal und Interessenlage geteilt; etwa ein Drittel der afrikanischen Grenzen verläuft geometrisch. Die Organisation für Afrikanische Einheit beschloss 1964 trotzdem, sie beizubehalten – aus der Überzeugung, jede Öffnung dieser Frage würde Kriege ohne Ende auslösen. Die Folge waren Staaten, in denen dutzende Sprachgruppen zusammenlebten, während einzelne Völker über mehrere Grenzen verteilt waren.\n\nDazu kam die wirtschaftliche Struktur: Kolonien waren auf Rohstoffausfuhr angelegt, mit Eisenbahnen von der Mine zum Hafen statt zwischen den Regionen, ohne verarbeitende Industrie und ohne breite Ausbildung – im belgischen Kongo gab es 1960 kaum ein Dutzend Hochschulabsolventen. Verwaltungen mussten von Menschen übernommen werden, die man dafür nicht ausgebildet hatte.\n\nUnd die Unabhängigkeit fiel in den Kalten Krieg. Staatsstreiche, Bürgerkriege und Diktaturen wurden von beiden Seiten unterstützt, wo es der eigenen Aufstellung nützte – Kongo, Angola, Mosambik, Äthiopien. Wer die Schwierigkeiten postkolonialer Staaten allein auf die Zeit nach 1960 datiert, lässt beides weg."
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Die Dekolonisation",
+        "autor": "Jan C. Jansen und Jürgen Osterhammel",
+        "jahr": "2013",
+        "warum": "Rund 130 Seiten, weltweit angelegt, sehr klar. Der beste Einstieg überhaupt."
+      },
+      {
+        "titel": "Afrikanische Geschichte",
+        "autor": "Franz Ansprenger",
+        "jahr": "2002",
+        "warum": "Kompakt und mit dem Verdienst, Afrika nicht bei der Kolonialzeit beginnen zu lassen."
+      },
+      {
+        "titel": "Die Erfindung Afrikas",
+        "autor": "V. Y. Mudimbe",
+        "jahr": "1988",
+        "warum": "Wie das europäische Bild von Afrika entstand und was es mit dem Blick auf die Gegenwart macht. Theoretisch fordernd."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Decolonization; Decolonization of Africa; Partition of India; Western colonialism – Decolonization from 1945",
       "United Nations: Decolonization"
@@ -806,6 +1344,20 @@ const VERTIEFUNGEN = [
       {
         "wert": "über 25 Jahre",
         "was": "Geheimhaltung der Türkei-Abmachung"
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Dreizehn Tage",
+        "autor": "Robert F. Kennedy",
+        "jahr": "1969",
+        "warum": "Der Bericht aus dem Krisenstab. Nicht objektiv – und gerade deshalb aufschlussreich über das Entscheiden unter Druck."
+      },
+      {
+        "titel": "One Minute to Midnight",
+        "autor": "Michael Dobbs",
+        "jahr": "2008",
+        "warum": "Stunde für Stunde, mit den sowjetischen Akten. Zeigt, wie viel näher es am Krieg war, als die Beteiligten wussten."
       }
     ],
     "quellen": [
@@ -836,6 +1388,20 @@ const VERTIEFUNGEN = [
         "was": "Inkrafttreten des Einigungsvertrags"
       }
     ],
+    "literatur": [
+      {
+        "titel": "Der Mauerfall",
+        "autor": "Hans-Hermann Hertle",
+        "jahr": "2009",
+        "warum": "Der Ablauf des 9. November aus Protokollen und Zeitzeugenberichten – Stunde für Stunde."
+      },
+      {
+        "titel": "1989",
+        "autor": "Mary Elise Sarotte",
+        "jahr": "2009",
+        "warum": "Was im Jahr danach verhandelt wurde und wie die deutsche Einheit zustande kam."
+      }
+    ],
     "quellen": [
       "Encyclopaedia Britannica: Berlin Wall; Germany – The reunification of Germany; German reunification; Egon Krenz"
     ]
@@ -864,6 +1430,20 @@ const VERTIEFUNGEN = [
       {
         "wert": "30. April 1993",
         "was": "CERN stellt die Software gemeinfrei"
+      }
+    ],
+    "literatur": [
+      {
+        "titel": "Weaving the Web",
+        "autor": "Tim Berners-Lee",
+        "jahr": "1999",
+        "warum": "Vom Erfinder selbst: warum er auf ein Patent verzichtete und was er sich anders vorgestellt hatte."
+      },
+      {
+        "titel": "Die Herrschaft der Plattformen",
+        "autor": "Shoshana Zuboff",
+        "jahr": "2018",
+        "warum": "Was aus dem offenen Netz wurde. Streitbar, umfangreich und in der Diagnose schwer zu übergehen."
       }
     ],
     "quellen": [
@@ -898,6 +1478,20 @@ const VERTIEFUNGEN = [
       "was": "nach Regierungsantritt beginnen die Edikte"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Ashoka – Der Suchende",
+      "autor": "Nayanjot Lahiri",
+      "jahr": "2015",
+      "warum": "Die gründlichste neuere Biographie, konsequent aus den Inschriften gearbeitet statt aus buddhistischer Legende."
+    },
+    {
+      "titel": "India – A History",
+      "autor": "John Keay",
+      "jahr": "2000",
+      "warum": "Der beste einbändige Überblick über die indische Geschichte, mit Ashoka als einem Höhepunkt."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Ashoka; India – Ashoka's edicts; Kalinga; Mauryan empire"
   ]
@@ -926,6 +1520,20 @@ const VERTIEFUNGEN = [
     {
       "wert": "mehrere hunderttausend",
       "was": "Arbeitskräfte für die Verbindung der Schutzwälle"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der Erste Kaiser von China",
+      "autor": "Jonathan Clements",
+      "jahr": "2006",
+      "warum": "Zugänglich, mit klarer Trennung zwischen Beleg und Legende – bei Qin Shihuangdi keine geringe Aufgabe."
+    },
+    {
+      "titel": "Geschichte Chinas",
+      "autor": "Kai Vogelsang",
+      "jahr": "2013",
+      "warum": "Der beste deutsche Überblick über die gesamte chinesische Geschichte, mit ausführlichem Qin- und Han-Teil."
     }
   ],
   "quellen": [
@@ -958,6 +1566,36 @@ const VERTIEFUNGEN = [
       "was": "Plünderung Konstantinopels im Vierten Kreuzzug"
     }
   ],
+  "tiefe": [
+    {
+      "titel": "Was 1095 in Clermont wirklich beschlossen wurde",
+      "text": "Vom Aufruf Urbans II. existieren fünf Fassungen, alle Jahre später aufgeschrieben, alle unterschiedlich. Was er gesagt hat, wissen wir nicht genau – nur, was Zuhörer und Chronisten daraus machten. Der Ruf Deus lo vult, Gott will es, gehört zur Legende, nicht sicher zur Rede.\n\nDer Anlass war ein Hilfegesuch: Byzanz hatte nach Manzikert 1071 Anatolien weitgehend verloren und bat den Westen um Söldner. Was ankam, war etwas anderes – kein Söldnerheer, sondern ein bewaffneter Massenzug mit religiöser Legitimation, der nach eigenen Zielen handelte. Kaiser Alexios musste den Kreuzfahrern Eide abnehmen, eroberte Gebiete an Byzanz zurückzugeben; sie hielten sie nicht.\n\nNeu war die Verbindung zweier Dinge, die vorher unvereinbar schienen: Pilgerfahrt und Krieg. Wer mitzog, erhielt Ablass für seine Sünden. Damit wurde Töten zum verdienstvollen Werk – eine Umdeutung, die in der Kirche selbst nicht unumstritten war."
+    },
+    {
+      "titel": "Vier Jahrhunderte Folgen",
+      "text": "Militärisch waren die Kreuzzüge langfristig erfolglos: 1291 fiel Akkon, der letzte Stützpunkt. Ihre Wirkung liegt anderswo.\n\nIm östlichen Mittelmeer entstand ein Handelsnetz, von dem Venedig und Genua lebten – Zucker, Gewürze, Seide, Alaun. Der Vierte Kreuzzug 1204 endete nicht in Jerusalem, sondern in der Plünderung Konstantinopels durch die Kreuzfahrer selbst; Byzanz erholte sich davon nie und fiel 1453 an die Osmanen. Die Spaltung zwischen Ost- und Westkirche wurde damit endgültig.\n\nIn Europa begannen die Kreuzzüge mit Pogromen: Die Rheinlandmassaker von 1096 vernichteten die jüdischen Gemeinden von Worms, Mainz und Köln, bevor ein Kreuzfahrer den Orient sah. Das Muster – Aufbruch gegen einen äußeren Feind, Gewalt gegen die Nachbarn – wiederholte sich bei späteren Zügen.\n\nIn der Erinnerung wirkten sie am längsten. Im arabischen Raum war der Begriff jahrhundertelang unwichtig; erst im 19. Jahrhundert, unter dem Eindruck europäischer Kolonialherrschaft, wurden die Kreuzzüge dort zum Bezugspunkt. Umgekehrt beriefen sich europäische Kolonialmächte und später westliche Politiker auf sie. Wer heute vom Kreuzzug spricht, benutzt ein Wort, dessen Bedeutung sich mehrfach gewandelt hat."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Kreuzzüge",
+      "autor": "Thomas Asbridge",
+      "jahr": "2010",
+      "warum": "Die beste erzählende Gesamtdarstellung, die arabische Quellen gleichgewichtig nutzt statt nur europäische."
+    },
+    {
+      "titel": "Der Heilige Krieg der Barbaren",
+      "autor": "Amin Maalouf",
+      "jahr": "1983",
+      "warum": "Die Kreuzzüge aus arabischer Sicht, aus arabischen Chroniken gearbeitet. Schmal und perspektivisch erhellend."
+    },
+    {
+      "titel": "Kreuzzüge",
+      "autor": "Nikolas Jaspert",
+      "jahr": "2003",
+      "warum": "Der knappe deutsche Überblick, mit klarem Blick auf die Forschungsdebatten und die Wirkungsgeschichte."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Crusades; First Crusade; Fourth Crusade; Urban II"
   ]
@@ -988,6 +1626,20 @@ const VERTIEFUNGEN = [
       "was": "Große Moschee von Timbuktu, nach der Rückkehr errichtet"
     }
   ],
+  "literatur": [
+    {
+      "titel": "African Dominion",
+      "autor": "Michael Gomez",
+      "jahr": "2018",
+      "warum": "Die neueste umfassende Darstellung der westafrikanischen Reiche, aus arabischen Quellen und Archäologie."
+    },
+    {
+      "titel": "Sundiata – Ein Epos aus Alt-Mali",
+      "autor": "D. T. Niane",
+      "jahr": "1960",
+      "warum": "Das Gründungsepos, aufgezeichnet von einem Griot. Keine Geschichtsquelle im engen Sinn, aber die Überlieferung selbst."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Mūsā I of Mali; Mali empire; Timbuktu",
     "The Metropolitan Museum of Art: The Trans-Saharan Gold Trade (7th–14th Century)"
@@ -1015,6 +1667,20 @@ const VERTIEFUNGEN = [
       "was": "des Humanismus: Mensch als Gegenstand, Einheit der Lehren, Würde des Einzelnen"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Die Kultur der Renaissance in Italien",
+      "autor": "Jacob Burckhardt",
+      "jahr": "1860",
+      "warum": "Das Buch, das den Begriff prägte. Historisch überholt in vielem, als Deutung noch immer wirksam."
+    },
+    {
+      "titel": "Die Renaissance",
+      "autor": "Peter Burke",
+      "jahr": "1987",
+      "warum": "Der knappe Gegenentwurf: fragt, wie viel Bruch tatsächlich war und wie viel Selbstinszenierung."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Renaissance; Renaissance – Causes and Effects; History of Europe – The Italian Renaissance; Italy – The early Italian Renaissance"
   ]
@@ -1039,6 +1705,36 @@ const VERTIEFUNGEN = [
     {
       "wert": "Encyclopédie",
       "was": "Diderot und d'Alembert – Kompendium des Jahrhunderts"
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Ein Streit, keine Lehre",
+      "text": "Die Aufklärung wird oft als einheitliches Programm dargestellt: Vernunft, Fortschritt, Toleranz. Tatsächlich war sie ein Streit, in dem sich die Beteiligten heftig widersprachen.\n\nVoltaire verteidigte religiöse Toleranz und hielt gleichzeitig die Herrschaft eines aufgeklärten Fürsten für die beste Ordnung. Rousseau bestritt genau das und setzte auf den Willen des Volkes – Voltaire nannte ihn dafür verrückt. Hume bezweifelte, dass die Vernunft überhaupt begründen kann, was wir für sicher halten; Kant nannte das Erwachen aus dem dogmatischen Schlummer und versuchte, die Vernunft gegen Humes Einwand zu retten. Adam Smith beschrieb, wie Eigennutz Wohlstand schafft, und warnte im selben Buch vor der Zusammenrottung der Kaufleute gegen die Allgemeinheit.\n\nGetragen wurde das von neuen Orten: Kaffeehäusern, Salons, Lesegesellschaften, Zeitschriften, Akademien – und von der Encyclopédie, die zwischen 1751 und 1772 in 28 Bänden das Wissen der Zeit sammelte und unter den Vorbehalt der Prüfung stellte. Sie wurde zeitweise verboten und trotzdem weitergeführt; über 140 Autoren arbeiteten daran."
+    },
+    {
+      "titel": "Die Kehrseite und die Nachwirkung",
+      "text": "Dieselbe Epoche, die Menschenrechte formulierte, entwickelte auch die ersten systematischen Rassentheorien. Kant schrieb Sätze über außereuropäische Völker, die heute unlesbar sind; Hume ähnlich. Voltaire investierte in den Sklavenhandel. Die Sortierung der Menschheit in Rassen mit Rangfolge ist eine Erfindung dieser Jahrzehnte, nicht des Mittelalters – sie brauchte den Anspruch, wissenschaftlich zu ordnen.\n\nDaraus folgt nicht, dass die Aufklärung zu verwerfen ist. Es folgt, dass ihre Maßstäbe auch gegen sie selbst gerichtet werden konnten – und wurden. Olympe de Gouges hielt der Erklärung der Menschenrechte von 1789 entgegen, dass Frauen darin nicht vorkamen. Die Abolitionisten begründeten die Abschaffung der Sklaverei mit ebenderselben Vernunft, mit der sie gerechtfertigt worden war. Der Aufstand in Haiti berief sich auf die französische Erklärung.\n\nGenau darin liegt die Wirkung: Ein Maßstab, der einmal formuliert ist, lässt sich einklagen. Die Aufklärung hat weniger eine Antwort hinterlassen als ein Verfahren – die Bereitschaft, Autorität zu begründen statt zu behaupten."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Aufklärung",
+      "autor": "Steffen Martus",
+      "jahr": "2015",
+      "warum": "Erzählt die deutsche Aufklärung als soziales Geschehen – Briefe, Zeitschriften, Streitigkeiten. Lebendig und ohne Denkmalpflege."
+    },
+    {
+      "titel": "Der Radikale Aufklärer",
+      "autor": "Jonathan Israel",
+      "jahr": "2001",
+      "warum": "Vertritt die These, die eigentliche Aufklärung sei die radikale um Spinoza gewesen. Streitbar, einflussreich, umstritten."
+    },
+    {
+      "titel": "Was ist Aufklärung?",
+      "autor": "Immanuel Kant",
+      "jahr": "1784",
+      "warum": "Zwölf Seiten, der Ausgangstext. Lohnt sich im Original, gerade weil er vorsichtiger ist, als seine Zitate vermuten lassen."
     }
   ],
   "quellen": [
@@ -1070,6 +1766,36 @@ const VERTIEFUNGEN = [
     {
       "wert": "ca. 20 %",
       "was": "Bevölkerungsverlust Polens"
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Kein europäischer Krieg",
+      "text": "Die deutsche Erinnerung datiert den Beginn auf den 1. September 1939. In China beginnt derselbe Krieg 1937 mit dem japanischen Angriff, für manche Historiker bereits 1931 mit der Besetzung der Mandschurei. Rund 20 Millionen Chinesen starben – nach der Sowjetunion die höchste Zahl eines einzelnen Landes. In den westlichen Darstellungen erscheint dieser Kriegsteil oft als Nebenschauplatz.\n\nAuch anderswo war es kein europäischer Krieg. Über zwei Millionen Inder dienten in der britischen Armee, die größte Freiwilligenarmee der Geschichte; in Bengalen starben 1943 bis zu drei Millionen Menschen in einer Hungersnot, die durch Kriegsprioritäten und Beschlagnahmungen verschärft wurde. Nordafrika, Äthiopien, Burma, die Philippinen, die Pazifikinseln, die Atlantikkonvois – der Krieg fand auf allen Kontinenten außer Südamerika und der Antarktis statt.\n\nVon den geschätzten 60 bis 80 Millionen Toten waren etwa zwei Drittel Zivilisten. Das unterscheidet diesen Krieg vom Ersten, in dem Soldaten die Mehrheit der Opfer bildeten."
+    },
+    {
+      "titel": "Die vier Entscheidungen des Jahres 1941",
+      "text": "1941 war das Jahr, in dem der Krieg seinen Ausgang festlegte – durch vier Entscheidungen, die alle in wenigen Monaten fielen.\n\nIm Juni griff Deutschland die Sowjetunion an, obwohl der Krieg im Westen nicht beendet war. Die Rechnung setzte auf einen Zusammenbruch binnen Monaten; als er ausblieb, war der Zweifrontenkrieg da, den die deutsche Führung seit 1914 hatte vermeiden wollen.\n\nIm Dezember griff Japan Pearl Harbor an, statt nach Norden gegen die Sowjetunion zu gehen – eine Entscheidung, die auf der Niederlage von 1939 am Chalchyn Gol beruhte. Damit trat die größte Wirtschaftsmacht der Welt in den Krieg ein.\n\nWenige Tage später erklärte Deutschland den USA den Krieg, ohne dazu verpflichtet zu sein. Das nahm Roosevelt die Notwendigkeit, seinen Kongress von einem Krieg in Europa zu überzeugen.\n\nUnd im Laufe des Jahres verschob sich die Verfolgung der Juden zum systematischen Mord: Massenerschießungen hinter der Ostfront ab Juni, erste Vergasungen im Herbst, die Wannseekonferenz zur Organisation im Januar 1942.\n\nEnde 1941 stand fest, dass Deutschland und Japan gegen eine Koalition kämpften, deren Wirtschaftskraft ihre eigene um ein Mehrfaches überstieg. Die restlichen dreieinhalb Jahre entschieden über das Wie und über die Zahl der Toten, nicht mehr über den Sieger."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der Zweite Weltkrieg",
+      "autor": "Antony Beevor",
+      "jahr": "2012",
+      "warum": "Die zugänglichste Gesamtdarstellung: alle Kriegsschauplätze, erzählend geschrieben, mit vielen Einzelschicksalen. Rund 1.000 Seiten, aber gut portionierbar."
+    },
+    {
+      "titel": "Der Krieg",
+      "autor": "Richard Overy",
+      "jahr": "2021",
+      "warum": "Ordnet den Krieg nicht chronologisch, sondern nach Fragen – Ursachen, Mobilisierung, Besatzung, Moral. Der beste Zugang, wenn man das Warum sucht statt der Reihenfolge."
+    },
+    {
+      "titel": "Ökonomie der Zerstörung",
+      "autor": "Adam Tooze",
+      "jahr": "2007",
+      "warum": "Die deutsche Kriegswirtschaft und warum sie nicht gewinnen konnte. Verändert den Blick auf die militärischen Entscheidungen grundlegend."
     }
   ],
   "quellen": [
@@ -1104,6 +1830,46 @@ const VERTIEFUNGEN = [
     {
       "wert": "6",
       "was": "Vernichtungslager auf besetztem polnischem Gebiet"
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Vom Ausschluss zum Mord",
+      "text": "Es gab keinen einzelnen Beschluss, mit dem der Völkermord begann, und das gehört zum Verständnis. Der Weg verlief in Stufen, die einzeln jeweils als Steigerung des Bekannten erschienen: Berufsverbote 1933, die Nürnberger Gesetze 1935, Enteignung und Novemberpogrome 1938, Ghettoisierung ab 1939, Massenerschießungen hinter der Ostfront ab Juni 1941, Deportationen und Vernichtungslager ab Ende 1941.\n\nDie Forschung hat lange darüber gestritten, ob dieser Weg von Anfang an geplant war – die intentionalistische Position – oder ob er sich aus Radikalisierung, Konkurrenz zwischen Behörden und den Bedingungen des Krieges ergab, die funktionalistische. Der heutige Stand liegt dazwischen: Die Absicht, Europa judenfrei zu machen, war früh formuliert; wie das geschehen sollte, wurde in Etappen entschieden, oft von Instanzen vor Ort, die Zustimmung von oben erhielten.\n\nDie Wannseekonferenz vom Januar 1942 beschloss den Mord nicht – er lief bereits. Sie regelte die Zuständigkeiten. Genau das macht das Protokoll so aufschlussreich: Es zeigt Verwaltung, nicht Wahnsinn."
+    },
+    {
+      "titel": "Wie viele wussten es",
+      "text": "Die Massenerschießungen im Osten wurden von Wehrmachtsangehörigen beobachtet, fotografiert und in Feldpostbriefen erwähnt. Die Deportationen fanden in aller Öffentlichkeit statt: Nachbarn sahen die Sammelstellen, Bahnbeamte fuhren die Züge, Behörden verwalteten die zurückgelassenen Wohnungen und versteigerten den Hausrat. Zwangsarbeiter arbeiteten in Betrieben und Privathaushalten.\n\nDie Frage ist deshalb nicht, ob man es wissen konnte, sondern was genau wie viele wussten. Der Historiker Peter Longerich hat die Formel geprägt, dass viele Deutsche vom Mord wussten, ohne die Einzelheiten zu kennen – und dass Nichtwissenwollen eine verbreitete Haltung war. Die alliierten Regierungen waren ab 1942 durch entschlüsselte Funksprüche und polnische Berichte informiert; die Erklärung der Alliierten vom Dezember 1942 benannte die Vernichtung öffentlich.\n\nDiese Frage ist nicht abgeschlossen und wird an jeder neuen Quellenlage neu diskutiert – Tagebücher, Feldpost, Gerichtsakten der Nachkriegszeit."
+    },
+    {
+      "titel": "Warum die Zahlen so genau bekannt sind",
+      "text": "Rund sechs Millionen jüdische Opfer – diese Zahl steht seit den Nürnberger Prozessen und ist seither durch Archivforschung eher bestätigt als korrigiert worden. Sie beruht auf mehreren unabhängigen Wegen: Vorkriegszählungen im Vergleich mit Nachkriegszählungen, Transportlisten der Reichsbahn, Meldungen der Einsatzgruppen, Lagerunterlagen, Gemeindeverzeichnisse.\n\nDass die Täter buchführten, ist ein Grund dafür. Die Einsatzgruppen meldeten ihre Erschießungen zahlenmäßig nach Berlin; die Korherr-Statistik von 1943 fasste den Stand für Himmler zusammen. Dazu kommen über Jahrzehnte gesammelte Namenslisten – Yad Vashem hat inzwischen mehr als 4,8 Millionen Opfer namentlich erfasst.\n\nGenau deshalb ist die Leugnung des Holocaust keine historische Position, sondern eine Behauptung gegen die dichteste Quellenlage, die es zu einem Verbrechen dieser Größe gibt."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Holocaust – Der unbegreifliche Völkermord",
+      "autor": "Peter Longerich",
+      "jahr": "2010",
+      "warum": "Die deutsche Standarddarstellung: nüchtern, quellennah, ohne rhetorische Überhöhung. Wenn man ein Buch liest, dann dieses."
+    },
+    {
+      "titel": "Die Vernichtung der europäischen Juden",
+      "autor": "Raul Hilberg",
+      "jahr": "1961",
+      "warum": "Das Werk, das das Fach begründete – Hilberg rekonstruierte den Vorgang aus deutschen Verwaltungsakten. Drei Bände, sperrig, unumgänglich."
+    },
+    {
+      "titel": "Ganz normale Männer",
+      "autor": "Christopher Browning",
+      "jahr": "1992",
+      "warum": "Untersucht ein einzelnes Polizeibataillon und die Frage, wie gewöhnliche Menschen zu Mördern wurden. Schmal und erschütternd."
+    },
+    {
+      "titel": "Vertraute Feinde",
+      "autor": "Saul Friedländer",
+      "jahr": "2006",
+      "warum": "Verbindet die Sicht der Täter mit Tagebüchern und Briefen der Opfer. Der Zugang, der am wenigsten zulässt, dass Zahlen abstrakt bleiben."
     }
   ],
   "quellen": [
@@ -1197,6 +1963,36 @@ const VERTIEFUNGEN = [
     {
       "wert": "500",
       "was": "ausgeloste Ratsmitglieder"
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Wie sie tatsächlich funktionierte",
+      "text": "Athen kannte keine Wahlen im heutigen Sinn und keine Berufspolitiker. Die Volksversammlung tagte etwa vierzigmal im Jahr, beschlussfähig ab 6.000 Anwesenden, und entschied über Krieg, Verträge, Gesetze und Steuern. Wer reden wollte, trat vor. Die Verwaltung besetzte man durch Los: Die 500 Mitglieder des Rats, die Geschworenen und die meisten Ämter wurden ausgelost, nicht gewählt – gewählt wurden nur die Feldherren, weil dort Können zählte.\n\nDas Losverfahren war Absicht. Es verhinderte, dass Wohlhabende Ämter durch Beziehungen oder Geld erlangen, und es setzte voraus, dass jeder Bürger fähig ist zu regieren. Ab 403 v. Chr. gab es zudem Tagegeld für Ratsdienst und Geschworenentätigkeit – ohne Entschädigung hätten nur Reiche teilnehmen können.\n\nEs gab auch Sicherungen gegen Machtansammlung. Das Ostrakismos-Verfahren erlaubte, jährlich eine Person für zehn Jahre zu verbannen, ohne Vorwurf einer Tat – gefunden wurden über 10.000 beschriftete Tonscherben mit Namen. Und die Rechenschaftspflicht war streng: Wer ein Amt niederlegte, wurde geprüft."
+    },
+    {
+      "titel": "Wer nicht dazugehörte",
+      "text": "Von schätzungsweise 250.000 bis 300.000 Menschen in Attika waren etwa 30.000 bis 40.000 Bürger – Männer über achtzehn mit athenischen Eltern. Frauen hatten kein politisches Recht und lebenslang einen Vormund. Metöken, in Athen lebende Fremde, zahlten Steuern und dienten im Heer, ohne mitzustimmen. Und ein Viertel bis ein Drittel der Bevölkerung war unfrei; in den Silberminen von Laurion arbeiteten Tausende unter Bedingungen, die kaum jemand lange überlebte – aus diesen Einnahmen wurde die Flotte finanziert, die Salamis gewann.\n\nDie Rechenschaft ist damit doppelt: Athen erfand die Institutionen, auf die sich moderne Demokratien berufen – Versammlung, Rechenschaftspflicht, Gleichheit vor dem Gesetz, Losverfahren gegen Ämterkauf. Und es tat das auf der Grundlage von Sklavenarbeit und dem Ausschluss der Hälfte der Erwachsenen. Beides gehört zur Geschichte derselben Einrichtung.\n\nDie Athener selbst diskutierten das Verfahren kritisch. Platon hielt es für die Herrschaft der Unwissenden, Aristoteles für eine von mehreren möglichen Ordnungen mit eigenen Schwächen. Die wichtigsten frühen Texte über Demokratie stammen von ihren Gegnern."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die athenische Demokratie",
+      "autor": "Mogens Herman Hansen",
+      "jahr": "1995",
+      "warum": "Das Standardwerk zur Funktionsweise: Verfahren, Zahlen, Ämter. Trocken, aber unübertroffen genau."
+    },
+    {
+      "titel": "Demokratie – Eine deutsche Affäre",
+      "autor": "Hedwig Richter",
+      "jahr": "2020",
+      "warum": "Kein Buch über Athen, aber die beste Anregung, den Begriff historisch statt zeitlos zu lesen."
+    },
+    {
+      "titel": "Die Griechen und wir",
+      "autor": "Christian Meier",
+      "jahr": "2019",
+      "warum": "Fragt, was von der griechischen Politik tatsächlich bei uns angekommen ist und was Zuschreibung ist."
     }
   ],
   "quellen": [
@@ -1341,6 +2137,20 @@ const VERTIEFUNGEN = [
       "was": "Verlust europäischen Staatsgebiets"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Die Friedensmacher",
+      "autor": "Margaret MacMillan",
+      "jahr": "2001",
+      "warum": "Sechs Monate Pariser Konferenz, aus den Akten und mit den Personen. Die beste Darstellung – und ein Korrektiv zur Erzählung vom Diktatfrieden."
+    },
+    {
+      "titel": "Die Schlafwandler",
+      "autor": "Christopher Clark",
+      "jahr": "2012",
+      "warum": "Über den Kriegsbeginn, nicht das Ende – aber unerlässlich, um die Schuldfrage von 1919 einzuordnen."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Treaty of Versailles 1919; Article 231; Weimar Republic – The Treaty of Versailles; 20th-century international relations – Reaction to the treaty"
   ]
@@ -1461,6 +2271,36 @@ const VERTIEFUNGEN = [
       "was": "Auflösung der Sowjetunion"
     }
   ],
+  "tiefe": [
+    {
+      "titel": "Warum niemand es vorhersah",
+      "text": "1985 rechnete kein Geheimdienst, kein Institut und kaum ein Fachmann damit, dass die Sowjetunion binnen sechs Jahren verschwinden würde. Die CIA schätzte ihre Wirtschaftskraft noch Ende der Achtziger deutlich zu hoch ein. Das ist ein lehrreicher Befund über die Grenzen von Prognosen: Alle Beteiligten hatten dieselben Daten, und fast alle lasen sie falsch.\n\nDie Ursachen wirkten übereinander. Wirtschaftlich: Das System wuchs seit den Siebzigern kaum, die Rüstung verschlang einen erheblichen Teil der Leistung, und der Ölpreisverfall ab 1985 nahm der Sowjetunion ihre wichtigste Devisenquelle. Militärisch: Afghanistan kostete zehn Jahre, viel Geld und Ansehen. Politisch: Gorbatschows Reformen – Perestroika als Umbau, Glasnost als Öffnung – sollten das System retten und setzten Kräfte frei, die es auflösten. Sobald offen berichtet werden durfte, wurde sichtbar, was verschwiegen worden war, von Tschernobyl bis Stalin.\n\nEntscheidend war eine Entscheidung, die leicht anders hätte ausfallen können: Gorbatschow ließ 1989 die Reformen in Osteuropa laufen, ohne Panzer zu schicken – anders als 1956 in Budapest und 1968 in Prag. Ohne diesen Verzicht wäre 1989 vermutlich blutig ausgegangen."
+    },
+    {
+      "titel": "Was aus dem Ende folgte",
+      "text": "Für Osteuropa brachten die Jahre nach 1989 Freiheit und einen wirtschaftlichen Einbruch, der in manchen Ländern schwerer war als die Weltwirtschaftskrise: Industriebetriebe ohne Absatz, Inflation, Arbeitslosigkeit in Regionen, die sie nicht gekannt hatten. Die Lebenserwartung russischer Männer sank in den Neunzigern um mehrere Jahre. Diese Erfahrung erklärt einen Teil der späteren Politik.\n\nWeltweit endete die Zweiteilung, aber nicht der Konflikt. Jugoslawien zerfiel in Kriege, die Sowjetunion in fünfzehn Staaten mit ungeklärten Grenzen und Minderheiten. Die Frage, was 1990 über eine NATO-Osterweiterung gesagt wurde, ist bis heute Streitgegenstand: Es gibt Gesprächsprotokolle mit entsprechenden Äußerungen westlicher Politiker, aber keine vertragliche Zusage – beide Seiten berufen sich auf dieselben Akten und lesen sie verschieden.\n\nDie kurze Erwartung, mit dem Kalten Krieg sei ein Streit über Ordnungen beendet, hat sich nicht gehalten. Aber das Ergebnis von 1989 bleibt bemerkenswert: Ein Machtblock löste sich weitgehend ohne Krieg auf – dafür gibt es in der Geschichte kaum ein Beispiel."
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Der Kalte Krieg",
+      "autor": "Odd Arne Westad",
+      "jahr": "2017",
+      "warum": "Der neue Standard: nicht nur Washington und Moskau, sondern die Wirkung auf die ganze Welt. Umfangreich und klar."
+    },
+    {
+      "titel": "1989",
+      "autor": "Mary Elise Sarotte",
+      "jahr": "2009",
+      "warum": "Der Aushandlungsprozess des Jahres 1989 aus den Akten, einschließlich der Gespräche zur NATO-Frage. Die nüchternste Grundlage für diese Debatte."
+    },
+    {
+      "titel": "Der Zauberberg der Geschichte",
+      "autor": "Timothy Garton Ash",
+      "jahr": "1990",
+      "warum": "Berichte eines Augenzeugen aus Warschau, Budapest, Berlin und Prag im Herbst 1989. Kein Rückblick, sondern Gegenwart – deshalb unersetzlich."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Cold War; Mikhail Gorbachev; perestroika; Soviet Union – Dissolution; Revolutions of 1989"
   ]
@@ -1505,6 +2345,20 @@ const VERTIEFUNGEN = [
       { wert: "762", was: "Gründung Bagdads als Reichshauptstadt" },
       { wert: "ca. 200 Jahre", was: "Dauer der intensiven Übersetzungstätigkeit" },
       { wert: "1085", was: "Fall Toledos – Beginn der Rückübersetzung ins Lateinische" }
+    ],
+    "literatur": [
+      {
+        "titel": "Das Haus der Weisheit",
+        "autor": "Jim al-Khalili",
+        "jahr": "2011",
+        "warum": "Die arabische Wissenschaftsgeschichte für Leser ohne Vorkenntnisse, von einem Physiker geschrieben."
+      },
+      {
+        "titel": "Die Kultur der Ambiguität",
+        "autor": "Thomas Bauer",
+        "jahr": "2011",
+        "warum": "Warum die islamische Welt Widersprüche lange aushielt – und was sich daran änderte. Anspruchsvoll und erhellend."
+      }
     ],
     quellen: [
       "Dimitri Gutas: Greek Thought, Arabic Culture",
@@ -1554,6 +2408,20 @@ const VERTIEFUNGEN = [
       { wert: "75–80 %", was: "Anteil der Frauen unter den Opfern" },
       { wert: "1486", was: "Druck des Hexenhammers" }
     ],
+    "literatur": [
+      {
+        "titel": "Hexen – Glaube, Verfolgung, Vermarktung",
+        "autor": "Wolfgang Behringer",
+        "jahr": "1998",
+        "warum": "Knapp, zahlenfest und aufräumend: nicht das Mittelalter, nicht neun Millionen Opfer, nicht nur Frauen."
+      },
+      {
+        "titel": "Die Hexen und ihre Henker",
+        "autor": "Kurt Baschwitz",
+        "jahr": "1963",
+        "warum": "Älter, aber mit dem seltenen Blick darauf, wie die Verfolgung endete – und wer sie beendete."
+      }
+    ],
     quellen: [
       "Brian P. Levack: The Witch-Hunt in Early Modern Europe",
       "Wolfgang Behringer: Hexen. Glaube, Verfolgung, Vermarktung",
@@ -1602,6 +2470,20 @@ const VERTIEFUNGEN = [
       { wert: "ca. 1 Million", was: "am häufigsten genannte Größenordnung für 1915/16" },
       { wert: "1944", was: "Lemkin prägt den Begriff Genozid, auch mit Blick hierauf" }
     ],
+    "literatur": [
+      {
+        "titel": "Der Völkermord an den Armeniern",
+        "autor": "Mihran Dabag und Kristin Platt",
+        "jahr": "2015",
+        "warum": "Der knappe deutsche Überblick mit Blick auf Forschungsstand und Leugnungsdebatte."
+      },
+      {
+        "titel": "They Can Live in the Desert but Nowhere Else",
+        "autor": "Ronald Grigor Suny",
+        "jahr": "2015",
+        "warum": "Die gründlichste neuere Darstellung, aus osmanischen und internationalen Akten."
+      }
+    ],
     quellen: [
       "United States Holocaust Memorial Museum: The Armenian Genocide (1915–16), Overview",
       "Encyclopaedia Britannica: Armenian Genocide",
@@ -1625,6 +2507,20 @@ const VERTIEFUNGEN = [
       { wert: "ca. 15 Mio.", was: "Vertriebene und Flüchtende" },
       { wert: "200.000–2 Mio.", was: "Spanne der Opferschätzungen" },
       { wert: "15. August 1947", was: "Unabhängigkeit Indiens, einen Tag nach Pakistan" }
+    ],
+    "literatur": [
+      {
+        "titel": "Mitternachtsfreiheit",
+        "autor": "Nisid Hajari",
+        "jahr": "2015",
+        "warum": "Die Teilung als politischer Vorgang und als Katastrophe, mit beiden Seiten gleichgewichtig."
+      },
+      {
+        "titel": "Die andere Seite der Stille",
+        "autor": "Urvashi Butalia",
+        "jahr": "1998",
+        "warum": "Die Teilung aus Interviews mit Betroffenen, vor allem Frauen. Was in politischen Darstellungen nicht vorkommt."
+      }
     ],
     quellen: [
       "Encyclopaedia Britannica: Partition of India",
@@ -1674,6 +2570,20 @@ const VERTIEFUNGEN = [
       { wert: "1962", was: "Nobelpreis für Watson, Crick und Wilkins" },
       { wert: "2003", was: "Abschluss des Humangenomprojekts" }
     ],
+    "literatur": [
+      {
+        "titel": "Rosalind Franklin – Die Entdeckung der DNA",
+        "autor": "Brenda Maddox",
+        "jahr": "2002",
+        "warum": "Die Biographie, die ihren Anteil belegt hat. Nach diesem Buch liest man die Geschichte der Doppelhelix anders."
+      },
+      {
+        "titel": "Die Doppelhelix",
+        "autor": "James D. Watson",
+        "jahr": "1968",
+        "warum": "Der Bericht eines Beteiligten – aufschlussreich auch dort, wo er unfreiwillig zeigt, wie mit Franklins Daten umgegangen wurde."
+      }
+    ],
     quellen: [
       "Nature (1953): Watson und Crick, Molecular Structure of Nucleic Acids",
       "Nature (2023): Neubewertung von Rosalind Franklins Rolle anhand unveröffentlichter Dokumente",
@@ -1697,6 +2607,20 @@ const VERTIEFUNGEN = [
       { wert: "11. Februar 1990", was: "Freilassung Mandelas" },
       { wert: "April 1994", was: "erste allgemeine Wahlen" },
       { wert: "über 21.000", was: "bei der Wahrheitskommission eingereichte Opferaussagen" }
+    ],
+    "literatur": [
+      {
+        "titel": "Der lange Weg zur Freiheit",
+        "autor": "Nelson Mandela",
+        "jahr": "1994",
+        "warum": "Die Autobiographie, geschrieben teilweise im Gefängnis. Nicht neutral und genau deshalb eine Quelle."
+      },
+      {
+        "titel": "Apartheid",
+        "autor": "Christoph Marx",
+        "jahr": "2012",
+        "warum": "Der deutsche Überblick: wie das System aufgebaut war und wie es endete – ohne Heldengeschichte."
+      }
     ],
     quellen: [
       "Encyclopaedia Britannica: Apartheid; Nelson Mandela",
@@ -3495,6 +4419,20 @@ const VERTIEFUNGEN = [
       "was": "Anteil Versklavter an der Bevölkerung 1790"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Die Radikalität der Amerikanischen Revolution",
+      "autor": "Gordon S. Wood",
+      "jahr": "1992",
+      "warum": "Warum die Revolution mehr veränderte als die Staatsform. Der maßgebliche Beitrag der letzten Jahrzehnte."
+    },
+    {
+      "titel": "Die Amerikanische Revolution",
+      "autor": "Charlotte A. Lerg",
+      "jahr": "2010",
+      "warum": "Der knappe deutsche Überblick, auch zu dem, was die Revolution für Versklavte und indigene Nationen bedeutete."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: American Revolution",
     "Gordon S. Wood: The Radicalism of the American Revolution",
@@ -3559,6 +4497,20 @@ const VERTIEFUNGEN = [
       "was": "Ende der Reconstruction"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Battle Cry of Freedom",
+      "autor": "James M. McPherson",
+      "jahr": "1988",
+      "warum": "Die maßgebliche einbändige Darstellung, Pulitzer-Preis. Militär, Politik und Gesellschaft in einem."
+    },
+    {
+      "titel": "Der amerikanische Bürgerkrieg",
+      "autor": "Jörg Nagler",
+      "jahr": "2000",
+      "warum": "Der deutsche Überblick, mit gutem Blick auf die Frage, worum gekämpft wurde."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: American Civil War",
     "James M. McPherson: Battle Cry of Freedom",
@@ -3589,6 +4541,20 @@ const VERTIEFUNGEN = [
     {
       "wert": "1965",
       "was": "Voting Rights Act"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Parting the Waters",
+      "autor": "Taylor Branch",
+      "jahr": "1988",
+      "warum": "Der erste Band einer dreiteiligen Geschichte der Bewegung, Pulitzer-Preis. Umfangreich und unübertroffen."
+    },
+    {
+      "titel": "Die Farbe des Rechts",
+      "autor": "Richard Rothstein",
+      "jahr": "2017",
+      "warum": "Wie die Rassentrennung in amerikanischen Städten durch Gesetze und Behörden hergestellt wurde – nicht durch Zufall."
     }
   ],
   "quellen": [
@@ -3879,6 +4845,20 @@ const VERTIEFUNGEN = [
       "was": "Regierungszeit nach biblischer Angabe"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Keine Posaunen vor Jericho",
+      "autor": "Israel Finkelstein und Neil Asher Silberman",
+      "jahr": "2002",
+      "warum": "Die archäologische Gegenlesung der biblischen Geschichte. Umstritten, wirkungsvoll und der Ausgangspunkt der Debatte."
+    },
+    {
+      "titel": "The Quest for the Historical Israel",
+      "autor": "Israel Finkelstein und Amihai Mazar",
+      "jahr": "2007",
+      "warum": "Beide Seiten der Debatte in einem Band, von den Hauptvertretern selbst. Die fairste Möglichkeit, sich ein Urteil zu bilden."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: David; Jerusalem",
     "Israel Finkelstein und Neil Asher Silberman: Keine Posaunen vor Jericho",
@@ -4138,6 +5118,20 @@ const VERTIEFUNGEN = [
       "was": "abgerissene Häuser im maghrebinischen Viertel"
     }
   ],
+  "literatur": [
+    {
+      "titel": "1967 – Israels zweite Geburt",
+      "autor": "Tom Segev",
+      "jahr": "2005",
+      "warum": "Der Krieg und das Jahr, aus israelischen Akten und mit kritischem Blick auf die eigene Seite."
+    },
+    {
+      "titel": "Six Days of War",
+      "autor": "Michael B. Oren",
+      "jahr": "2002",
+      "warum": "Die militärische und diplomatische Darstellung, breit aus Akten aller Beteiligten. Die Deutung ist israelfreundlicher als bei Segev."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Six-Day War",
     "UN-Sicherheitsratsresolutionen 242 (1967) und 478 (1980)",
@@ -4332,6 +5326,20 @@ const VERTIEFUNGEN = [
       "was": "Spanier bei der Gefangennahme Atahualpas"
     }
   ],
+  "literatur": [
+    {
+      "titel": "The Incas – New Perspectives",
+      "autor": "Gordon McEwan",
+      "jahr": "2006",
+      "warum": "Der aktuelle archäologische Stand, mit klarer Trennung zwischen Befund und spanischer Überlieferung."
+    },
+    {
+      "titel": "Die letzten Tage der Inkas",
+      "autor": "Kim MacQuarrie",
+      "jahr": "2007",
+      "warum": "Die Eroberung und der Widerstand in Vilcabamba, erzählend und quellennah."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Inca",
     "Gordon McEwan: The Incas – New Perspectives",
@@ -4524,6 +5532,20 @@ const VERTIEFUNGEN = [
       "was": "aufs Land geschickte Jugendliche"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Die Kulturrevolution",
+      "autor": "Frank Dikötter",
+      "jahr": "2016",
+      "warum": "Aus Parteiarchiven gearbeitet, dritter Band einer Trilogie über die Mao-Zeit. Erschütternd und belegt."
+    },
+    {
+      "titel": "Wilde Schwäne",
+      "autor": "Jung Chang",
+      "jahr": "1991",
+      "warum": "Drei Frauengenerationen einer Familie durch das chinesische 20. Jahrhundert. Kein Fachbuch, aber das Buch, das vielen den Zugang öffnete."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Cultural Revolution",
     "Frank Dikötter: Die Kulturrevolution",
@@ -4586,6 +5608,20 @@ const VERTIEFUNGEN = [
     {
       "wert": "über 420 ppm",
       "was": "Stand der 2020er Jahre – laufende Werte bei der NOAA"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Entdeckung des Klimawandels",
+      "autor": "Spencer Weart",
+      "jahr": "2003",
+      "warum": "Wie das Wissen entstand, Schritt für Schritt, von Fourier bis zum IPCC. Nüchtern und unpolemisch."
+    },
+    {
+      "titel": "Die Händler des Zweifels",
+      "autor": "Naomi Oreskes und Erik Conway",
+      "jahr": "2010",
+      "warum": "Wie Zweifel an gesicherter Forschung gezielt erzeugt wurde – von Tabak bis Klima, mit denselben Personen."
     }
   ],
   "quellen": [
@@ -5103,6 +6139,20 @@ const VERTIEFUNGEN = [
       "was": "regierende Kaiserin in der chinesischen Geschichte"
     }
   ],
+  "literatur": [
+    {
+      "titel": "Wu – The Chinese Empress",
+      "autor": "Jonathan Clements",
+      "jahr": "2007",
+      "warum": "Die zugänglichste Darstellung, mit sorgfältigem Umgang gegenüber der feindlichen Überlieferung."
+    },
+    {
+      "titel": "The Cambridge History of China, Band 3",
+      "autor": "Denis Twitchett (Hrsg.)",
+      "jahr": "1979",
+      "warum": "Der Fachstand zur Tang-Zeit. Zum Nachschlagen, nicht zum Durchlesen."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Wuhou",
     "The Cambridge History of China, Band 3",
@@ -5427,6 +6477,20 @@ const VERTIEFUNGEN = [
       "was": "Regierungszeit Jayavarmans VII."
     }
   ],
+  "literatur": [
+    {
+      "titel": "The Civilization of Angkor",
+      "autor": "Charles Higham",
+      "jahr": "2001",
+      "warum": "Der archäologische Überblick von einem der führenden Ausgräber Südostasiens."
+    },
+    {
+      "titel": "Angkor und das Khmer-Reich",
+      "autor": "Michael Falser",
+      "jahr": "2020",
+      "warum": "Auch über die europäische Aneignung Angkors – wie aus einem lebenden Heiligtum eine wiederentdeckte Ruine wurde."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Angkor",
     "Charles Higham: The Civilization of Angkor",
@@ -5490,6 +6554,20 @@ const VERTIEFUNGEN = [
     {
       "wert": "40 Jahre",
       "was": "vor der Erhebung des Christentums zur römischen Staatsreligion"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Aksum – An African Civilisation of Late Antiquity",
+      "autor": "Stuart Munro-Hay",
+      "jahr": "1991",
+      "warum": "Das Standardwerk, vollständig frei im Netz verfügbar. Aus Münzen, Inschriften und Grabungen gearbeitet."
+    },
+    {
+      "titel": "A History of Ethiopia",
+      "autor": "Harold G. Marcus",
+      "jahr": "1994",
+      "warum": "Der Überblick von Aksum bis in die Gegenwart, knapp und verlässlich."
     }
   ],
   "quellen": [
@@ -5589,6 +6667,20 @@ const VERTIEFUNGEN = [
       "was": "erster wissenschaftlicher Nachweis der afrikanischen Herkunft"
     }
   ],
+  "literatur": [
+    {
+      "titel": "The Zimbabwe Culture",
+      "autor": "Innocent Pikirayi",
+      "jahr": "2001",
+      "warum": "Der archäologische Stand von einem simbabwischen Forscher – und die Geschichte der Deutungskämpfe."
+    },
+    {
+      "titel": "Great Zimbabwe",
+      "autor": "Peter Garlake",
+      "jahr": "1973",
+      "warum": "Von einem der Archäologen, die unter Rhodesien nicht sagen durften, was sie wussten. Auch als Dokument zu lesen."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Great Zimbabwe",
     "Innocent Pikirayi: The Zimbabwe Culture",
@@ -5622,11 +6714,707 @@ const VERTIEFUNGEN = [
       "was": "Cobbings Kritik an der Mfecane-Erzählung"
     }
   ],
+  "literatur": [
+    {
+      "titel": "The Mfecane Aftermath",
+      "autor": "Carolyn Hamilton (Hrsg.)",
+      "jahr": "1995",
+      "warum": "Die Debatte über Shaka und die Mfecane in einem Band, mit Cobbings These und den Gegenpositionen."
+    },
+    {
+      "titel": "The Rise and Fall of the Zulu Nation",
+      "autor": "John Laband",
+      "jahr": "1997",
+      "warum": "Die militärische und politische Geschichte des Zulu-Reichs, nüchtern und quellennah."
+    }
+  ],
   "quellen": [
     "Encyclopaedia Britannica: Shaka",
     "John Laband: The Rise and Fall of the Zulu Nation",
     "Carolyn Hamilton (Hrsg.): The Mfecane Aftermath",
     "Julian Cobbing, Journal of African History 1988"
+  ]
+},
+{
+  "id": "karthago",
+  "titel": "Karthago und die drei Punischen Kriege",
+  "epoche": "antike",
+  "jahr": -264,
+  "zeitraum": "814–146 v. Chr.",
+  "region": "Westliches Mittelmeer",
+  "leitsatz": "Die Stadt, die Rom fast besiegte, wurde so vollständig vernichtet, dass wir sie fast nur durch die Augen ihrer Feinde kennen.",
+  "vorgeschichte": "Karthago war eine phönizische Gründung an der Küste des heutigen Tunesien und wurde über Jahrhunderte zur führenden Handelsmacht des westlichen Mittelmeers – mit Kolonien in Spanien, Sardinien, Sizilien und einer Flotte, die Rom nichts entgegenzusetzen hatte. Regiert wurde es nicht von Königen, sondern von zwei jährlich gewählten Beamten und einem Rat; Aristoteles nannte die Verfassung ausdrücklich lobend.",
+  "verlauf": "Der Erste Punische Krieg (264–241 v. Chr.) begann als Streit um Sizilien und wurde zur See entschieden – Rom baute erstmals eine Flotte und siegte. Der Zweite (218–201 v. Chr.) ist der berühmte: Hannibal zog über die Alpen, schlug Rom bei Trasimenus und Cannae und stand fünfzehn Jahre in Italien, ohne die Stadt nehmen zu können. Entschieden wurde er in Afrika bei Zama. Der Dritte (149–146 v. Chr.) war kein Krieg mehr, sondern eine Belagerung mit vorher festgelegtem Ausgang: Karthago hatte alle Bedingungen erfüllt, entwaffnet und Tribut gezahlt. Rom forderte, die Stadt zu verlassen und im Binnenland neu zu bauen. Sie verweigerte, hielt drei Jahre und wurde niedergebrannt.",
+  "folgen": "Rom beherrschte das westliche Mittelmeer und wurde durch die Beute und die Provinzen zur Großmacht – mit Folgen für die eigene Republik, deren Institutionen dem nicht gewachsen waren. Für Karthago blieb fast nichts: Die Bibliotheken verbrannten, die Sprache verschwand über Jahrhunderte, und unser Bild der Stadt stammt fast vollständig von römischen und griechischen Autoren.",
+  "strittig": "Zwei Legenden halten sich. Erstens: Die Römer hätten Salz in die Felder gestreut, um sie unfruchtbar zu machen – das taucht erst in Darstellungen des 19. Jahrhunderts auf, in keiner antiken Quelle. Zweitens die Kinderopfer: Die Tophet-Gräberfelder mit tausenden Urnen von Kleinkindern sind archäologisch gesichert, ihre Deutung nicht. Ein Teil der Forschung sieht Opferungen, wie die feindlichen Quellen behaupten, ein anderer einen Bestattungsplatz für früh Gestorbene. Beide Lager verweisen auf dieselben Funde.",
+  "zahlen": [
+    {
+      "wert": "118 Jahre",
+      "was": "von Kriegsbeginn 264 bis zur Vernichtung 146 v. Chr."
+    },
+    {
+      "wert": "3 Jahre",
+      "was": "Belagerung im Dritten Punischen Krieg"
+    },
+    {
+      "wert": "17 Jahre",
+      "was": "Hannibals Aufenthalt in Italien"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Karthago",
+      "autor": "Werner Huß",
+      "jahr": "1990",
+      "warum": "Der deutsche Standardüberblick, der konsequent zwischen karthagischem Befund und römischer Darstellung trennt."
+    },
+    {
+      "titel": "Der Untergang Karthagos",
+      "autor": "Richard Miles",
+      "jahr": "2010",
+      "warum": "Ausführlich und mit dem Versuch, die Stadt aus eigenen Zeugnissen statt aus Feindesberichten zu rekonstruieren."
+    },
+    {
+      "titel": "Hannibal",
+      "autor": "Pedro Barceló",
+      "jahr": "2003",
+      "warum": "Die Biographie ohne Legendenpflege, mit Blick auf die politische Lage in Karthago selbst."
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Hannibals Feldzug – warum er siegte und doch verlor",
+      "text": "Hannibal gewann in Italien drei Schlachten, die bis heute in Militärakademien gelehrt werden. Am Trasimenischen See 217 v. Chr. legte er ein ganzes Heer im Nebel an einem Ufer in einen Hinterhalt. Bei Cannae 216 v. Chr. ließ er sein Zentrum absichtlich nachgeben, so dass die vorstürmenden Römer in einen Sack liefen und von den Flügeln umschlossen wurden – die Doppelumfassung, das klassische Beispiel für die Vernichtung einer überlegenen Streitmacht. Die römischen Verluste werden auf 50.000 bis 70.000 Mann an einem Tag geschätzt; für die Republik war es die schwerste Niederlage ihrer Geschichte.\n\nUnd dann geschah nichts. Hannibal marschierte nicht auf Rom. Warum, ist seit der Antike Streitfrage: Ihm fehlte Belagerungsgerät, seine Verstärkungen aus Spanien kamen nicht durch, und er hatte darauf gesetzt, dass Roms italische Bundesgenossen nach Cannae abfallen würden. Ein Teil tat es, der Kern der latinischen Verbündeten aber nicht. Genau dieses Bündnissystem war Roms eigentliche Waffe – belastbarer als jedes Heer.\n\nRom lernte zudem, den Krieg nicht mehr anzunehmen. Fabius Maximus, spöttisch der Zögerer genannt, vermied Schlachten, störte den Nachschub und ließ Hannibal in Italien verhungern. Der Sieg wurde schließlich woanders errungen: Scipio nahm Spanien und landete in Afrika, worauf Hannibal zur Verteidigung der Heimat zurückgerufen wurde und bei Zama 202 v. Chr. verlor – gegen einen Gegner, der von ihm gelernt hatte."
+    },
+    {
+      "titel": "Wie eine Handelsstadt regiert wurde",
+      "text": "Karthago hatte keinen König, sondern zwei jährlich gewählte Beamte, die Sufeten, einen Rat der Ältesten, einen Ausschuss von hundertvier Mitgliedern zur Kontrolle der Feldherren und eine Volksversammlung, die bei Uneinigkeit der Gremien entschied. Aristoteles behandelt die Verfassung in der Politik ausdrücklich als gelungene Mischform und lobt, dass sie weder in Tyrannis noch in Aufstände abgeglitten sei.\n\nBemerkenswert ist der Umgang mit Feldherren. Sie wurden für einen Krieg bestellt, führten über Jahre eigenständig und mussten anschließend Rechenschaft ablegen; die Familie der Barkiden – Hamilkar, Hannibal, Hasdrubal – hatte in Spanien eine fast eigenständige Machtstellung, blieb aber der Heimat verantwortlich. Diese Trennung von Politik und Kriegsführung erklärt manches an Hannibals Lage: Er konnte in Italien schalten, aber keine Verstärkung erzwingen, weil der Rat in Karthago darüber entschied.\n\nDas Heer war überwiegend angeworben: Libyer, Numider, Iberer, Kelten, Balearen-Schleuderer. Das war teuer und flexibel, aber es hatte eine Kehrseite, die Karthago fast das Leben kostete – nach dem Ersten Punischen Krieg konnte es die Söldner nicht bezahlen, und der daraus entstandene Aufstand 241 bis 237 v. Chr. wurde gefährlicher als der verlorene Krieg selbst."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Carthage; Punic Wars",
+    "Polybios: Historien",
+    "Werner Huß: Geschichte der Karthager",
+    "Josephine Quinn: In Search of the Phoenicians"
+  ]
+},
+{
+  "id": "pyramiden-bau",
+  "titel": "Wer die Pyramiden baute",
+  "epoche": "fruehe-hochkulturen",
+  "jahr": -2550,
+  "zeitraum": "ca. 2600–2500 v. Chr.",
+  "region": "Ägypten",
+  "leitsatz": "Nicht Sklaven, nicht Außerirdische, sondern bezahlte Arbeiter mit Bierrationen und Krankenversorgung — und wir wissen ihre Namen.",
+  "vorgeschichte": "Die drei Pyramiden von Gizeh entstanden in etwa 85 Jahren unter Cheops, Chephren und Mykerinos. Vorher hatte Ägypten die Bauweise in mehreren Schritten entwickelt: Stufenpyramide für Djoser, die gescheiterte Pyramide von Meidum, die Knickpyramide von Dahschur, bei der der Winkel während des Baus korrigiert wurde – man sieht dem Bauwerk die Lernkurve an.",
+  "verlauf": "Seit 1990 sind die Arbeitersiedlungen südlich der Pyramiden ausgegraben: Bäckereien, Brauereien, Speicher, Schlafsäle, ein Verwaltungsgebäude, dazu Friedhöfe der Arbeiter mit Grabsteinen und Titeln. Die Knochen zeigen ausgeheilte Brüche – es gab medizinische Versorgung. Papyri aus Wadi al-Jarf, 2013 gefunden, enthalten das Tagebuch eines Aufsehers namens Merer, der Kalksteinblöcke aus Tura nach Gizeh brachte: mit Datum, Schiffsladungen, Mannschaftsstärken und Rationen. Es ist die älteste bekannte Arbeitsdokumentation der Welt.\n\nDie Arbeiter waren in Mannschaften mit eigenen Namen organisiert, die sie in die Steine kritzelten – Die Freunde des Cheops, Die Betrunkenen des Mykerinos. Geschätzt arbeiteten gleichzeitig einige tausend, nicht hunderttausend, in wechselnden Schichten, viele davon Bauern während der Nilüberschwemmung, wenn die Felder unbrauchbar waren.",
+  "folgen": "Der Pyramidenbau war weniger ein Bauprojekt als ein Verwaltungsvorgang: Er verlangte Vermessung, Materiallogistik über hunderte Kilometer, Versorgung tausender Menschen und eine Bürokratie, die das erfasste. Historiker sehen darin einen wesentlichen Grund für die Entstehung des ägyptischen Staates in dieser Form – nicht der Staat baute die Pyramiden, das Bauen formte den Staat.",
+  "strittig": "Wie die Blöcke nach oben kamen, ist nicht abschließend geklärt: gerade Rampe, umlaufende Rampe, Innenrampe, Hebelwerk – für jede Variante gibt es Argumente und Gegenargumente. Herodots Angabe von 100.000 Arbeitern gilt als weit überhöht; er schrieb zweitausend Jahre später. Und die Behauptung, das Wissen um den Bau sei verloren oder unerklärlich, hält der Fundlage nicht stand: Sie ist die am besten dokumentierte Großbaustelle der Antike.",
+  "zahlen": [
+    {
+      "wert": "ca. 2,3 Mio.",
+      "was": "Steinblöcke der Cheopspyramide"
+    },
+    {
+      "wert": "146,6 m",
+      "was": "ursprüngliche Höhe"
+    },
+    {
+      "wert": "ca. 20 Jahre",
+      "was": "geschätzte Bauzeit der Cheopspyramide"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Pyramiden",
+      "autor": "Miroslav Verner",
+      "jahr": "1997",
+      "warum": "Das gründlichste Werk zu allen ägyptischen Pyramiden, mit Bauverfahren und Grabungsbefunden."
+    },
+    {
+      "titel": "Giza and the Pyramids",
+      "autor": "Mark Lehner und Zahi Hawass",
+      "jahr": "2017",
+      "warum": "Von den Ausgräbern der Arbeitersiedlung – der aktuelle Stand, mit den Papyri von Wadi al-Jarf."
+    },
+    {
+      "titel": "Ägypten – Eine Sinngeschichte",
+      "autor": "Jan Assmann",
+      "jahr": "1996",
+      "warum": "Nicht über den Bau, sondern über das Denken, das ihn nötig machte. Anspruchsvoll und erhellend."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Pyramids of Giza",
+    "Mark Lehner: The Complete Pyramids",
+    "Pierre Tallet: Les papyrus de la mer Rouge (Wadi al-Jarf)",
+    "Ancient Egypt Research Associates: Ausgrabungsberichte"
+  ]
+},
+{
+  "id": "china-erfindungen",
+  "titel": "Papier, Kompass, Schießpulver, Druck",
+  "epoche": "mittelalter",
+  "jahr": 1000,
+  "zeitraum": "105–1400",
+  "region": "China",
+  "leitsatz": "Die vier Erfindungen, auf die China sich beruft, hatten dort andere Folgen als in Europa — und das ist die interessantere Geschichte.",
+  "vorgeschichte": "Die Aufzählung der vier großen Erfindungen stammt nicht aus China, sondern von Francis Bacon und wurde später in China selbst übernommen. Alle vier entstanden dort Jahrhunderte vor ihrer europäischen Verwendung – und wirkten jeweils anders.",
+  "verlauf": "Papier wird um 105 dem Hofbeamten Cai Lun zugeschrieben; Funde belegen es früher. Es erreichte über Samarkand die islamische Welt und im 12. Jahrhundert Europa. Der Kompass wurde zunächst zur Ausrichtung von Gräbern und Gebäuden nach geomantischen Regeln benutzt, erst im 11. Jahrhundert zur Navigation. Schießpulver entstand vermutlich bei alchemistischen Versuchen zur Lebensverlängerung – die Ironie ist überliefert; ab dem 10. Jahrhundert militärisch genutzt, mit Brandpfeilen, Feuerlanzen und Bomben. Der Druck begann als Holztafeldruck im 7. Jahrhundert; das Diamant-Sutra von 868 ist das älteste datierte gedruckte Buch. Bewegliche Lettern erfand Bi Sheng um 1040 – sie setzten sich nicht durch, weil bei zehntausenden Schriftzeichen der Tafeldruck praktischer blieb.",
+  "folgen": "In Europa fielen dieselben Techniken auf andere Verhältnisse. Der Druck traf auf ein Alphabet mit 26 Zeichen und auf konkurrierende Fürstentümer, in denen sich Verbotenes anderswo drucken ließ. Das Schießpulver traf auf hunderte befestigte Burgen und rivalisierende Staaten, die Kanonen als Vorteil brauchten – in China, das lange geeint war, fehlte dieser Wettbewerbsdruck. Der Kompass traf auf Atlantikküsten, hinter denen man etwas suchte.\n\nDie Lehre, die Technikhistoriker daraus ziehen: Eine Erfindung entscheidet nichts. Was sie auslöst, hängt davon ab, auf welche wirtschaftlichen, politischen und schriftlichen Verhältnisse sie trifft.",
+  "strittig": "Die Frage, warum China trotz technischen Vorsprungs nicht industrialisierte, ist nach Joseph Needham benannt und nicht beantwortet. Erklärungsversuche: fehlender Arbeitskräftemangel, Ausrichtung der Eliten auf die Beamtenlaufbahn, das Ende der Seefahrt nach Zheng He, geographische Faktoren. Zunehmend wird die Frage selbst als eurozentrisch gestellt kritisiert – sie nimmt die europäische Entwicklung als Normalfall an, von dem China abwich.",
+  "zahlen": [
+    {
+      "wert": "105",
+      "was": "traditionelles Jahr der Papiererfindung"
+    },
+    {
+      "wert": "868",
+      "was": "Diamant-Sutra, ältestes datiertes gedrucktes Buch"
+    },
+    {
+      "wert": "ca. 1040",
+      "was": "bewegliche Lettern durch Bi Sheng, 400 Jahre vor Gutenberg"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Science and Civilisation in China",
+      "autor": "Joseph Needham",
+      "jahr": "1954",
+      "warum": "Das monumentale Werk, das das Fach begründete – über zwanzig Bände. Zum Nachschlagen; die Einbändigen Auszüge sind ein guter Ersatz."
+    },
+    {
+      "titel": "The Genius of China",
+      "autor": "Robert Temple",
+      "jahr": "1986",
+      "warum": "Der lesbare Auszug aus Needham: 100 Erfindungen auf 250 Seiten. Etwas begeistert im Ton, aber sachlich brauchbar."
+    },
+    {
+      "titel": "Geschichte Chinas",
+      "autor": "Kai Vogelsang",
+      "jahr": "2013",
+      "warum": "Ordnet die Erfindungen in die Gesellschaft ein, aus der sie kamen – das fehlt bei Temple."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Four Great Inventions",
+    "Joseph Needham: Science and Civilisation in China",
+    "Mark Elvin: The Pattern of the Chinese Past",
+    "British Library: Diamond Sutra"
+  ]
+},
+{
+  "id": "venedig",
+  "titel": "Venedig — tausend Jahre Republik",
+  "epoche": "mittelalter",
+  "jahr": 1204,
+  "zeitraum": "697–1797",
+  "region": "Adria und östliches Mittelmeer",
+  "leitsatz": "Ein Staat ohne Land, ohne Rohstoffe und ohne Dynastie hielt sich elf Jahrhunderte — länger als jede andere Republik der Geschichte.",
+  "vorgeschichte": "Venedig entstand aus Flüchtlingssiedlungen in einer Lagune, die niemand haben wollte. Genau das wurde zur Grundlage: In der Lagune war die Stadt vor Reiterheeren sicher, und weil es kein Ackerland gab, musste sie handeln. Formal blieb sie lange byzantinisch – eine Bindung, die sie geschickt nutzte und lockerte.",
+  "verlauf": "Die Verfassung war darauf ausgelegt, Einzelherrschaft zu verhindern. Der Doge wurde auf Lebenszeit gewählt, aber in einem Verfahren aus mehreren Los- und Wahlrunden, das Absprachen nahezu unmöglich machte; seine Befugnisse wurden über Jahrhunderte beschnitten, seine Familie durfte keine Ämter häufen, sein Nachlass wurde nach dem Tod geprüft. Die Macht lag beim Großen Rat, dem Senat und dem Rat der Zehn.\n\nWirtschaftlich beruhte alles auf dem Handel mit dem Osten: Gewürze, Seide, Alaun, Sklaven, Salz. Das Arsenal, die staatliche Werft, fertigte im 16. Jahrhundert nach Baukastenprinzip – Zeitgenossen berichten von einer Galeere pro Tag. Der Vierte Kreuzzug wurde 1204 auf venezianischen Schiffen nach Konstantinopel umgelenkt: Die Stadt lieh den Kreuzfahrern die Flotte, ließ sich in Beute bezahlen und erwarb Häfen und Inseln, die ihr Reich begründeten.",
+  "folgen": "Venedig überdauerte Kaiser, Päpste und Fürstenhäuser und endete 1797 kampflos, als Napoleon einmarschierte. Seine Wirkung lag im Handel und in der Verwaltung: doppelte Buchführung, Wechsel, Staatsanleihen, Seeversicherung, ein Quarantänewesen – Einrichtungen, die von dort nach Europa gingen. Die Verfassung galt Jahrhunderte als Vorbild einer gemischten Ordnung und wurde von Autoren bis zu den amerikanischen Verfassungsvätern studiert.",
+  "strittig": "Die Erzählung von der stabilen Republik glättet: Der Große Rat wurde 1297 geschlossen, danach war die Zugehörigkeit erblich – aus der Republik wurde eine Adelsherrschaft von wenigen Familien. Ob Venedig eine Republik oder eine Oligarchie war, hängt an der Definition. Und das Bild der friedlichen Handelsstadt unterschlägt, dass ihr Reich erobert war und ihr Wohlstand teilweise auf Sklavenhandel beruhte.",
+  "zahlen": [
+    {
+      "wert": "1.100 Jahre",
+      "was": "Bestand der Republik"
+    },
+    {
+      "wert": "1297",
+      "was": "Schließung des Großen Rats"
+    },
+    {
+      "wert": "ca. 16.000",
+      "was": "Beschäftigte im Arsenal im 16. Jahrhundert"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Venedig – Biographie einer Stadt",
+      "autor": "Peter Ackroyd",
+      "jahr": "2009",
+      "warum": "Erzählend und atmosphärisch, mit gutem Gespür für das Eigentümliche der Stadt."
+    },
+    {
+      "titel": "Die Stadt der Fortuna",
+      "autor": "Roger Crowley",
+      "jahr": "2011",
+      "warum": "Venedig als Seemacht: Handel, Kriege, das Arsenal. Die spannendste Darstellung des Aufstiegs."
+    },
+    {
+      "titel": "Venedig – Eine neue Geschichte",
+      "autor": "Elisabeth Crouzet-Pavan",
+      "jahr": "2007",
+      "warum": "Der Fachstand zur Verfassung und Gesellschaft, mit dem nötigen Abstand zur Selbstdarstellung der Republik."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Venice, history",
+    "Frederic C. Lane: Venice – A Maritime Republic",
+    "Roger Crowley: City of Fortune",
+    "Elisabeth Crouzet-Pavan: Venise triomphante"
+  ]
+},
+{
+  "id": "hexenverfolgung-ende",
+  "titel": "Wie die Hexenverfolgung endete",
+  "epoche": "fruehe-neuzeit",
+  "jahr": 1700,
+  "zeitraum": "1650–1782",
+  "region": "Europa",
+  "leitsatz": "Sie endete nicht, weil Menschen aufhörten an Hexen zu glauben, sondern weil Juristen dem Beweisverfahren nicht mehr trauten.",
+  "vorgeschichte": "Zwischen 1450 und 1750 wurden in Europa schätzungsweise 40.000 bis 60.000 Menschen als Hexen hingerichtet, etwa drei Viertel davon Frauen – regional sehr unterschiedlich, in Island und Estland waren die meisten Hingerichteten Männer. Die Verfolgung war kein mittelalterliches Phänomen: Ihr Höhepunkt lag zwischen 1580 und 1630, in der Zeit von Kepler und Galilei.",
+  "verlauf": "Das Ende begann nicht mit Aufklärung im Allgemeinen, sondern mit einem juristischen Einwand. Der Jesuit Friedrich Spee, der als Beichtvater Verurteilte begleitet hatte, veröffentlichte 1631 anonym die Cautio Criminalis: Er bestritt nicht die Existenz von Hexen, sondern zeigte, dass das Verfahren jeden Beliebigen überführen konnte. Unter Folter gestehe jeder; wer gesteht, wird verbrannt; wer leugnet, wird weiter gefoltert. Aus dem Geständnis folgten Namen weiterer Verdächtiger – das Verfahren erzeugte seine eigenen Beweise.\n\nDiese Argumentation wirkte, weil sie Fachleute in ihrem eigenen Feld traf. Juristen und Räte begannen, Folter zu beschränken, Denunziationen nicht mehr als Beweis zu akzeptieren und Verfahren an höhere Gerichte zu ziehen, die skeptischer urteilten. Die letzten Hinrichtungen fanden 1749 in Würzburg, 1775 in Kempten und 1782 in Glarus in der Schweiz statt.",
+  "folgen": "Die Beweislehre veränderte sich dauerhaft: Ein Geständnis unter Zwang gilt seither nicht als Beweis – ein Grundsatz, der in jeder modernen Strafprozessordnung steht. Der Weg dorthin führte über die Erkenntnis, dass ein Verfahren falsche Ergebnisse zuverlässig hervorbringen kann, wenn es so gebaut ist. Das ist die Lehre, die über den Anlass hinausreicht.",
+  "strittig": "Die Zahl von neun Millionen Opfern, die bis heute kursiert, geht auf eine Schätzung von 1784 zurück, die aus einem einzelnen Ort hochgerechnet wurde; sie wurde im 19. Jahrhundert und später von verschiedenen politischen Richtungen weiterverbreitet. Umstritten bleibt, wie stark die Verfolgung geschlechtsspezifisch zu deuten ist, und welche Rolle Wetterkatastrophen, Konfessionsstreit und Konflikte in Dorfgemeinschaften jeweils spielten.",
+  "zahlen": [
+    {
+      "wert": "40.000–60.000",
+      "was": "geschätzte Hinrichtungen in Europa"
+    },
+    {
+      "wert": "1631",
+      "was": "Spees Cautio Criminalis"
+    },
+    {
+      "wert": "1782",
+      "was": "letzte Hinrichtung in Europa, in Glarus"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Hexen – Glaube, Verfolgung, Vermarktung",
+      "autor": "Wolfgang Behringer",
+      "jahr": "1998",
+      "warum": "Knapp, zahlenfest und aufräumend gegenüber allen kursierenden Legenden."
+    },
+    {
+      "titel": "Cautio Criminalis",
+      "autor": "Friedrich Spee",
+      "jahr": "1631",
+      "warum": "Der Text selbst, in moderner Übersetzung erhältlich. Erschütternd sachlich – ein Musterbeispiel für Argumentation gegen ein Verfahren."
+    },
+    {
+      "titel": "Hexen und Hexenprozesse",
+      "autor": "Wolfgang Behringer (Hrsg.)",
+      "jahr": "2000",
+      "warum": "Quellensammlung: Prozessakten, Gutachten, Verteidigungsschriften. Zeigt, wie es tatsächlich zuging."
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Wie ein Prozess seine eigenen Beweise erzeugt",
+      "text": "Spees Argument in der Cautio Criminalis ist kein Appell an Mitleid, sondern eine Verfahrenskritik in Schritten. Erstens: Die Anzeige genügt für die Verhaftung, denn bei einem so geheimen Verbrechen könne man keine Zeugen erwarten. Zweitens: Wer verhaftet ist, gilt als verdächtig, denn die Obrigkeit verhaftet keine Unschuldigen. Drittens: Wer leugnet, wird gefoltert, denn Leugnen sei Hartnäckigkeit, vom Teufel eingegeben. Viertens: Wer unter der Folter gesteht, ist überführt. Fünftens: Wer die Folter aushält, beweist damit teuflische Hilfe – und ist ebenfalls überführt. Sechstens: Das Geständnis muss Mitschuldige nennen, sonst ist es unvollständig. Diese Namen sind die Anzeigen des nächsten Verfahrens.\n\nSpee zieht den Schluss, den kein Theologe widerlegen konnte, ohne die Rechtspraxis aufzugeben: Ein Verfahren, das jeden Beliebigen überführen kann, überführt niemanden. Es misst nicht Schuld, sondern die Belastbarkeit des Körpers. Er selbst schreibt, er habe niemanden begleitet, den er nach dem Prozess für schuldig gehalten habe.\n\nDas Buch erschien anonym und gegen den Willen seines Ordens; die Verfasserschaft war in Fachkreisen bald bekannt. Seine Wirkung entfaltete es nicht in Predigten, sondern in Gutachten, Prozessordnungen und Rechtsfakultäten – dort, wo über Beweise entschieden wurde."
+    },
+    {
+      "titel": "Wer angeklagt wurde und warum",
+      "text": "Das Bild der Hexenverfolgung als reines Massenphänomen der Kirche greift an mehreren Punkten daneben. Die Prozesse führten überwiegend weltliche Gerichte, und ausgerechnet die römische Inquisition urteilte in Hexenfällen vergleichsweise zurückhaltend, weil sie strengere Beweisanforderungen anlegte. Die Verfolgung war zudem regional äußerst ungleich: Ein Großteil der Hinrichtungen fällt auf das zersplitterte Reichsgebiet mit seinen vielen kleinen Gerichtsherren ohne höhere Berufungsinstanz. Wo eine starke Zentralgewalt Verfahren an sich zog – Spanien, Frankreich in Teilen, das Parlement von Paris – sanken die Zahlen.\n\nWer verdächtigt wurde, lässt sich aus den Akten ablesen: überwiegend Frauen, häufig ältere, alleinstehende, arme, oft solche mit Ruf für Heilkunde, Hebammendienste oder scharfe Zunge – Menschen, mit denen ein Dorf im Streit lag und die niemanden hinter sich hatten. Aber es traf auch Wohlhabende, Ratsherren, Kinder und in manchen Wellen mehrheitlich Männer.\n\nAuffällig ist der Zusammenhang mit den Lebensumständen. Die Hochphase liegt in der Kleinen Eiszeit: Missernten, Hagelschlag im Sommer, Viehseuchen, Teuerung, dazu Konfessionskrieg. Historiker sehen in den Prozessen unter anderem eine Antwort auf Katastrophen, für die es eine Erklärung und einen Verantwortlichen geben musste. Das erklärt nicht jeden Fall, aber die Wellenform der Verfolgung."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: witchcraft",
+    "Wolfgang Behringer: Hexen und Hexenprozesse in Deutschland",
+    "Friedrich Spee: Cautio Criminalis, 1631",
+    "Brian Levack: The Witch-Hunt in Early Modern Europe"
+  ]
+},
+{
+  "id": "pockenimpfung",
+  "titel": "Die Ausrottung der Pocken",
+  "epoche": "moderne",
+  "jahr": 1980,
+  "zeitraum": "1796–1980",
+  "region": "weltweit",
+  "leitsatz": "Die einzige Krankheit des Menschen, die je ausgerottet wurde — gelungen mitten im Kalten Krieg, durch Zusammenarbeit von Ost und West.",
+  "vorgeschichte": "Pocken töteten im 18. Jahrhundert in Europa jährlich schätzungsweise 400.000 Menschen und blendeten viele Überlebende. Schutzverfahren gab es früh: In China, Indien und dem Osmanischen Reich wurde Material von Kranken übertragen, um eine leichte Erkrankung auszulösen – Variolation. Lady Mary Wortley Montagu brachte das Verfahren 1721 aus Istanbul nach England. Es half, tötete aber einen von fünfzig Behandelten.",
+  "verlauf": "Edward Jenner nutzte 1796 die Beobachtung, dass Melkerinnen mit Kuhpocken nicht an echten Pocken erkrankten, und impfte einen Achtjährigen mit Kuhpockenmaterial. Der Begriff Vakzine stammt von vacca, der Kuh. Die Methode war ungleich sicherer und verbreitete sich rasch – Bayern führte 1807 die erste Impfpflicht ein.\n\nDie Ausrottung wurde 1959 von der WHO beschlossen und ab 1967 mit einem Programm betrieben, das die entscheidende Idee enthielt: nicht alle impfen, sondern jeden Ausbruch aufspüren und die Umgebung ringförmig impfen. Der Vorschlag ging maßgeblich auf den sowjetischen Virologen Viktor Zhdanov zurück; das Programm leitete der Amerikaner Donald Henderson. Sowjetische und amerikanische Fachleute arbeiteten während des Kalten Krieges eng zusammen. Der letzte natürliche Fall trat 1977 in Somalia auf, 1980 erklärte die WHO die Krankheit für ausgerottet.",
+  "folgen": "Etwa 300 Millionen Menschen starben allein im 20. Jahrhundert an Pocken – mehr als in allen Kriegen desselben Jahrhunderts. Die Ausrottung gilt als größter Erfolg der öffentlichen Gesundheit. Das Verfahren der Ringimpfung wird seither bei Ebola und anderen Ausbrüchen angewandt. Reste des Virus liegen in zwei Hochsicherheitslabors in den USA und Russland; ob sie vernichtet werden sollen, ist seit Jahrzehnten offen.",
+  "strittig": "Jenner wird die Erfindung zugeschrieben, obwohl der Landwirt Benjamin Jesty seine Familie zwanzig Jahre früher mit Kuhpocken geimpft hatte. Jenners Leistung war, es systematisch zu prüfen und zu veröffentlichen. Diskutiert wird auch, wie viel des Erfolgs auf das Programm und wie viel auf die Eigenschaften des Virus zurückgeht: Pocken haben keinen Tierwirt, keine symptomlosen Träger und ein auffälliges Krankheitsbild – Bedingungen, die bei Masern oder Polio nicht so günstig liegen.",
+  "zahlen": [
+    {
+      "wert": "ca. 300 Mio.",
+      "was": "Pockentote allein im 20. Jahrhundert"
+    },
+    {
+      "wert": "1977",
+      "was": "letzter natürlicher Fall, in Somalia"
+    },
+    {
+      "wert": "8. Mai 1980",
+      "was": "Erklärung der Ausrottung durch die WHO"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Pocken",
+      "autor": "Donald A. Henderson",
+      "jahr": "2009",
+      "warum": "Vom Leiter des Ausrottungsprogramms selbst – wie die Arbeit vor Ort tatsächlich aussah."
+    },
+    {
+      "titel": "Die Pocken",
+      "autor": "Gareth Williams",
+      "jahr": "2010",
+      "warum": "Die Geschichte der Krankheit und der Impfung, mit dem Streit um Jenner und Jesty."
+    },
+    {
+      "titel": "Die Geschichte der Medizin",
+      "autor": "Roy Porter",
+      "jahr": "2000",
+      "warum": "Zur Einordnung: was Impfung im Vergleich zu anderen medizinischen Fortschritten bewirkte."
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Ringimpfung – die Idee, die den Unterschied machte",
+      "text": "Der ursprüngliche Plan war, achtzig Prozent der Bevölkerung jedes Landes zu impfen. In Indien und Nigeria zeigte sich, dass das nicht erreichbar war: zu viele Menschen, zu wenig Personal, zu abgelegene Dörfer. Die Umkehrung kam aus der Not. William Foege stand 1966 in Nigeria mit zu wenig Impfstoff vor einem Ausbruch und entschied, nicht flächig zu impfen, sondern nur die Kontakte der Kranken und deren Umgebung. Es funktionierte – der Ausbruch erlosch, obwohl die Impfquote niedrig blieb.\n\nDas Verfahren nutzt eine Eigenschaft der Krankheit: Pocken übertragen sich nur bei engem Kontakt und erst, wenn der Ausschlag sichtbar ist. Wer sichtbar krank ist, ist auffindbar; wer noch nicht krank ist, überträgt nichts. Also braucht man keine Immunität in der Bevölkerung, sondern eine Mauer um jeden Ausbruch. Das verlangte etwas anderes als Impfstoff: Meldewege, Belohnungen für Hinweise, Suchtrupps mit Erkennungskarten – Tausende von Menschen, die Fälle aufspürten.\n\nDas Programm wurde damit vor allem eine Aufgabe der Erfassung. In Indien wurden im Suchmonat über hunderttausend Mitarbeiter eingesetzt, die von Haus zu Haus gingen. Der letzte Fall in Indien trat 1975 auf, zwei Jahre später der letzte weltweit."
+    },
+    {
+      "titel": "Zwei Tote nach der Ausrottung",
+      "text": "Die Krankheit war 1977 aus der Welt verschwunden, aber nicht aus den Laboren. 1978 infizierte sich Janet Parker, medizinische Fotografin an der Universität Birmingham, mit Pocken – das Labor lag ein Stockwerk unter ihrer Dunkelkammer. Sie starb. Der Leiter des Labors nahm sich das Leben. Es war die letzte Pockentote der Geschichte, und ihr Tod hatte nichts mit einem Ausbruch zu tun, sondern mit Laborsicherheit.\n\nDie Folge war eine weltweite Vernichtungskampagne für Laborbestände. Übrig blieben zwei genehmigte Aufbewahrungsorte: die CDC in Atlanta und das Institut Vector bei Nowosibirsk. Ob diese Bestände vernichtet werden sollen, ist seit den 1990er Jahren regelmäßig Gegenstand von WHO-Beschlüssen, die immer wieder verschoben wurden. Die Argumente dafür: Jeder Bestand ist ein Risiko. Dagegen: Man braucht das Virus zur Prüfung neuer Impfstoffe und Medikamente, falls es je zurückkehrt – und die Gensequenz ist ohnehin veröffentlicht, das Virus wäre im Prinzip nachbaubar.\n\n2014 wurden bei einer Aufräumarbeit in einem FDA-Gebäude vergessene Ampullen mit lebensfähigen Pockenviren gefunden, die dort seit den 1950er Jahren gelagert hatten. Sie waren in keinem Verzeichnis erfasst."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: smallpox",
+    "WHO: The Global Eradication of Smallpox, Abschlussbericht 1980",
+    "Donald A. Henderson: Smallpox – The Death of a Disease"
+  ]
+},
+{
+  "id": "antibiotika",
+  "titel": "Antibiotika und das Ende der Wirkung",
+  "epoche": "moderne",
+  "jahr": 1928,
+  "zeitraum": "1928–heute",
+  "region": "weltweit",
+  "leitsatz": "Der Entdecker warnte 1945 in seiner Nobelpreisrede genau vor dem, was heute geschieht — es hörte niemand zu.",
+  "vorgeschichte": "Bis in die 1940er Jahre starben Menschen an Infektionen, die heute in einer Woche ausgeheilt sind: Blutvergiftung nach einem Kratzer, Lungenentzündung, Wundinfektion nach einer Operation, Kindbettfieber. Chirurgie war deshalb begrenzt – jeder Eingriff riskierte eine Infektion, gegen die es nichts gab.",
+  "verlauf": "Alexander Fleming bemerkte 1928, dass ein Schimmelpilz auf einer versehentlich offen gelassenen Bakterienkultur die Bakterien abtötete. Er veröffentlichte den Befund und ließ ihn dann liegen – ihm fehlten die chemischen Mittel, den Wirkstoff zu isolieren. Erst Howard Florey und Ernst Boris Chain gelang das ab 1939 in Oxford; die Massenproduktion begann in den USA während des Krieges, für die Behandlung Verwundeter. Bis 1945 war Penicillin verfügbar, es folgten Streptomycin gegen Tuberkulose und dutzende weitere Wirkstoffe.\n\nFleming warnte in seiner Nobelpreisrede 1945 ausdrücklich: Wer das Mittel zu niedrig dosiert oder ohne Grund einnimmt, züchtet widerstandsfähige Erreger – und er beschrieb den Vorgang genau. Die Warnung wurde gedruckt, gelesen und in der Praxis über Jahrzehnte übergangen.",
+  "folgen": "Die Lebenserwartung stieg in den Industrieländern in wenigen Jahrzehnten deutlich; Operationen, Chemotherapie, Transplantationen und Intensivmedizin wurden erst mit Antibiotika möglich. Zugleich trat ein, was Fleming beschrieb: Rund zwei Drittel aller weltweit eingesetzten Antibiotika gehen in die Tiermast, oft zur Wachstumsförderung. Die WHO schätzt die jährlichen Todesfälle durch resistente Erreger auf über eine Million. Neue Wirkstoffklassen werden kaum entwickelt, weil sie wirtschaftlich unattraktiv sind: Ein Mittel, das sparsam und kurz eingesetzt werden soll, verdient nichts.",
+  "strittig": "Die Geschichte des Zufallsfundes ist wahr, aber unvollständig: Der Effekt war vor Fleming mehrfach beobachtet und wieder vergessen worden. Diskutiert wird auch, wie viel des Rückgangs der Infektionssterblichkeit auf Antibiotika und wie viel auf Kanalisation, Ernährung und Wohnverhältnisse zurückgeht – für die Zeit vor 1940 war Letzteres deutlich wichtiger. Die Zahlen zur Resistenzsterblichkeit sind Modellrechnungen mit erheblicher Unsicherheit; Stand: laufende Berichte der WHO.",
+  "zahlen": [
+    {
+      "wert": "1928",
+      "was": "Flemings Beobachtung"
+    },
+    {
+      "wert": "1945",
+      "was": "Nobelpreis und die Warnung vor Resistenzen"
+    },
+    {
+      "wert": "ca. 2/3",
+      "was": "Anteil der Tiermast am weltweiten Antibiotikaeinsatz"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Miracle Cure",
+      "autor": "William Rosen",
+      "jahr": "2017",
+      "warum": "Die Geschichte der Antibiotika von Fleming bis zur Massenproduktion, gut erzählt und mit Blick auf die Industrie."
+    },
+    {
+      "titel": "Der stille Feind",
+      "autor": "Muhammad Zaman",
+      "jahr": "2020",
+      "warum": "Über Resistenzen und warum die Forschung stockt. Die aktuelle Lage nüchtern beschrieben."
+    },
+    {
+      "titel": "Die Geschichte der Medizin",
+      "autor": "Roy Porter",
+      "jahr": "2000",
+      "warum": "Zur Einordnung in die längere Entwicklung der Infektionsbekämpfung."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: antibiotic; Alexander Fleming",
+    "Alexander Fleming: Nobelvortrag, 11. Dezember 1945",
+    "WHO: Global antimicrobial resistance surveillance, laufende Berichte"
+  ]
+},
+{
+  "id": "frauenwahlrecht",
+  "titel": "Wie das Frauenwahlrecht erkämpft wurde",
+  "epoche": "moderne",
+  "jahr": 1918,
+  "zeitraum": "1869–1990",
+  "region": "weltweit",
+  "leitsatz": "Von der ersten Forderung bis zur letzten Einlösung in Europa vergingen 140 Jahre — der letzte Schweizer Kanton führte es 1990 auf Gerichtsbeschluss ein.",
+  "vorgeschichte": "Die Forderung wurde 1848 in Seneca Falls erstmals in einer Versammlung beschlossen – als umstrittenster Punkt der Tagesordnung, nur knapp angenommen. In Europa entstanden ab den 1860er Jahren Vereine, die zunächst um Eigentums-, Bildungs- und Sorgerecht kämpften; das Wahlrecht galt vielen als aussichtslos.",
+  "verlauf": "Der Weg war überall anders. Neuseeland führte es 1893 als erster selbstverwalteter Staat landesweit ein, Australien 1902 – allerdings unter Ausschluss der Aborigines. In Finnland 1906, mit dem passiven Wahlrecht zugleich: 1907 zogen 19 Frauen ins Parlament ein, die ersten der Welt. In Großbritannien wurde der Kampf am härtesten geführt: Die Suffragetten um Emmeline Pankhurst gingen ab 1905 zu Sachbeschädigung, Brandstiftung und Hungerstreiks über; der Staat antwortete mit Zwangsernährung und dem Cat and Mouse Act, der Hungerstreikende freiließ und nach Erholung erneut einsperrte. Emily Davison starb 1913, als sie beim Derby vor das Pferd des Königs lief.\n\nIn Deutschland kam das Wahlrecht mit der Novemberrevolution 1918; bei der Wahl 1919 lag die Beteiligung der Frauen bei 82 Prozent, 37 zogen in die Nationalversammlung ein. In Frankreich dauerte es bis 1944, in Italien bis 1945, in Griechenland bis 1952. Die Schweiz führte es auf Bundesebene 1971 ein; der Kanton Appenzell Innerrhoden weigerte sich weiter, bis das Bundesgericht 1990 entschied.",
+  "folgen": "Politische Gleichheit war damit rechtlich hergestellt, nicht tatsächlich. Der Anteil von Frauen in Parlamenten liegt weltweit bei etwa einem Viertel bis einem Drittel, in Regierungsämtern niedriger. Und das formale Recht galt nicht überall gleich: Schwarze Frauen in den amerikanischen Südstaaten konnten nach 1920 wegen Lesetests und Kopfsteuern jahrzehntelang nicht wählen – erst der Voting Rights Act von 1965 änderte das.",
+  "strittig": "Ob die militanten Aktionen der Suffragetten den Erfolg beschleunigten oder verzögerten, ist unter Historikern umstritten: Sie erzeugten Aufmerksamkeit und gleichzeitig Gegenwehr. Und über die Rolle des Ersten Weltkriegs gehen die Urteile auseinander – die Erfahrung, dass Frauen Fabriken und Verwaltung trugen, wird häufig als entscheidend genannt, doch Neuseeland, Australien und Finnland hatten das Recht schon vorher.",
+  "zahlen": [
+    {
+      "wert": "1893",
+      "was": "Neuseeland, erster selbstverwalteter Staat"
+    },
+    {
+      "wert": "72 Jahre",
+      "was": "von Seneca Falls 1848 bis zum US-Wahlrecht 1920"
+    },
+    {
+      "wert": "1990",
+      "was": "Appenzell Innerrhoden, auf Gerichtsbeschluss"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Geschichte der Frauenbewegung",
+      "autor": "Ute Gerhard",
+      "jahr": "2009",
+      "warum": "Der knappe deutsche Überblick von den Anfängen bis heute, mit dem Wahlrecht als einem Strang von mehreren."
+    },
+    {
+      "titel": "Rise Up, Women!",
+      "autor": "Diane Atkinson",
+      "jahr": "2018",
+      "warum": "Die britischen Suffragetten, aus Tagebüchern und Prozessakten. Ausführlich und packend."
+    },
+    {
+      "titel": "Frauen und Macht",
+      "autor": "Mary Beard",
+      "jahr": "2018",
+      "warum": "Warum der Ausschluss so zäh war – ein schmaler Essay, der bis zu Homer zurückgeht."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: woman suffrage",
+    "Ute Gerhard: Frauenbewegung und Feminismus",
+    "Interparlamentarische Union: Women in Parliament, laufende Statistiken"
+  ]
+},
+{
+  "id": "mondlandung-technik",
+  "titel": "Wie man 1969 zum Mond flog",
+  "epoche": "moderne",
+  "jahr": 1969,
+  "zeitraum": "1961–1972",
+  "region": "USA",
+  "leitsatz": "Der Bordcomputer hatte 4 Kilobyte Arbeitsspeicher — weniger als eine heutige Textnachricht mit Bildern.",
+  "vorgeschichte": "Als Kennedy 1961 das Ziel setzte, war noch unklar, wie man es überhaupt anstellen sollte. Drei Verfahren standen zur Wahl: direkt hinfliegen mit einer riesigen Rakete, im Erdorbit zusammensetzen, oder im Mondorbit trennen. Die dritte Variante – ein Mutterschiff im Mondorbit, eine kleine Fähre für die Landung – war die riskanteste, weil zwei Fahrzeuge im Mondorbit wieder zusammenfinden mussten. Sie wurde gewählt, weil sie am wenigsten Masse brauchte. Ihr Fürsprecher John Houbolt hatte sich über Jahre gegen den Widerstand der Hierarchie durchgesetzt.",
+  "verlauf": "Die Saturn V wog beim Start 2.900 Tonnen, davon über 90 Prozent Treibstoff, und leistete 34 Meganewton Schub – bis heute die stärkste je erfolgreich geflogene Rakete. Der Bordcomputer, in Handarbeit aus Ringkernspeicher gefertigt, hatte etwa 4 KB Arbeits- und 72 KB Festspeicher; die Software wurde unter Leitung von Margaret Hamilton geschrieben, die dabei den Begriff Software Engineering prägte. Ihr Beharren auf Fehlerbehandlung für unmögliche Fälle rettete die Landung: Beim Anflug meldete der Computer Alarme wegen Überlastung, ohne abzustürzen, und Armstrong steuerte die letzten Meter von Hand – der Treibstoff reichte noch für etwa 30 Sekunden.\n\nAm Boden arbeiteten auf dem Höhepunkt rund 400.000 Menschen am Programm, das bis zu 4 Prozent des Bundeshaushalts verschlang. Ein Feuer bei einem Bodentest kostete 1967 drei Astronauten das Leben und führte zur Neukonstruktion der Kapsel.",
+  "folgen": "Sechs Landungen bis 1972, zwölf Menschen auf dem Mond, 382 Kilogramm Gestein zurück – die Proben stützten die Theorie, dass der Mond durch einen Einschlag entstand. Nach dem politischen Sieg verlor das Programm seinen Zweck; die Saturn V wurde nie wieder gebaut, und die Fertigungsunterlagen sind teilweise nicht mehr vollständig nachvollziehbar, weil das Wissen in den Händen der Beteiligten lag.",
+  "strittig": "Die Behauptung, die Landung sei gefälscht, ist mehrfach widerlegt – durch Laserreflektoren auf dem Mond, deren Signal bis heute gemessen wird, durch unabhängige Verfolgung der Funksignale auch durch sowjetische Stationen, und durch die Gesteinsproben, die weltweit untersucht wurden. Sachlich diskutiert wird dagegen, ob bemannte Raumfahrt wissenschaftlich mehr leistet als unbemannte Sonden – bei erheblich höheren Kosten und Risiken.",
+  "zahlen": [
+    {
+      "wert": "ca. 4 KB",
+      "was": "Arbeitsspeicher des Bordcomputers"
+    },
+    {
+      "wert": "2.900 t",
+      "was": "Startmasse der Saturn V"
+    },
+    {
+      "wert": "ca. 30 Sekunden",
+      "was": "verbleibender Treibstoff bei der Landung von Apollo 11"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Apollo",
+      "autor": "Charles Murray und Catherine Bly Cox",
+      "jahr": "1989",
+      "warum": "Die Technik- und Organisationsgeschichte des Programms – wie 400.000 Menschen koordiniert wurden."
+    },
+    {
+      "titel": "Digital Apollo",
+      "autor": "David Mindell",
+      "jahr": "2008",
+      "warum": "Über den Bordcomputer und die Frage, wie viel der Mensch und wie viel die Maschine steuern sollte. Ungewöhnlich und erhellend."
+    },
+    {
+      "titel": "Aufbruch zum Mond",
+      "autor": "James R. Hansen",
+      "jahr": "2005",
+      "warum": "Die autorisierte Armstrong-Biographie, Grundlage des Films. Nüchtern, wo der Mythos laut ist."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Apollo 11",
+    "NASA: Apollo Program Summary Report",
+    "David Mindell: Digital Apollo",
+    "Charles Fishman: One Giant Leap"
+  ]
+},
+{
+  "id": "internet",
+  "titel": "Wie das Internet gebaut wurde",
+  "epoche": "moderne",
+  "jahr": 1969,
+  "zeitraum": "1969–heute",
+  "region": "weltweit",
+  "leitsatz": "Es wurde nicht als Atomkriegsnetz gebaut, sondern weil Rechenzeit teuer war und Forscher sie teilen wollten.",
+  "vorgeschichte": "In den 1960er Jahren waren Großrechner selten und teuer; wer Rechenzeit brauchte, musste dorthin fahren, wo die Maschine stand. Die Idee, Rechner zu verbinden, damit mehrere Standorte sie gemeinsam nutzen, kam aus dieser Not. Parallel entwickelten Paul Baran in den USA und Donald Davies in Großbritannien unabhängig das Prinzip der Paketvermittlung: Nachrichten werden in Stücke zerlegt, die einzeln durchs Netz laufen und am Ziel wieder zusammengesetzt werden.",
+  "verlauf": "1969 verband das ARPANET vier Universitätsrechner; die erste übertragene Nachricht sollte LOGIN heißen und brach nach zwei Buchstaben ab. 1974 veröffentlichten Vint Cerf und Robert Kahn TCP/IP – ein Protokoll, das absichtlich nichts über die Anwendung festlegt und nur regelt, wie Pakete ankommen. Genau diese Beschränkung machte alles Weitere möglich: E-Mail, Dateiübertragung, später das Web und Video liefen über dieselbe Grundlage, ohne dass sie geändert werden musste.\n\n1983 wurde TCP/IP verbindlich, damit gilt dieses Jahr manchen als Geburt des Internets. 1989 schlug Tim Berners-Lee am CERN ein System aus Hypertext-Dokumenten vor; 1993 gab das CERN die Technik gebührenfrei frei – eine Entscheidung ohne die es das Web in dieser Form nicht gäbe. 1993 hatte das Web rund 130 Server, 1996 über einhunderttausend.",
+  "folgen": "Die entscheidenden Bausteine – Paketvermittlung, TCP/IP, DNS, das Web – entstanden mit öffentlichem Geld an Universitäten und Forschungseinrichtungen und wurden ohne Patent freigegeben. Der wirtschaftliche Ertrag fiel später privat an. Diese Reihenfolge ist bei mehreren Basistechniken so verlaufen und gehört zur Debatte über die Rolle staatlicher Forschung.\n\nDie Architektur hatte zudem eine Folge, die niemand plante: Weil das Netz nichts über den Inhalt weiß, kann es ihn auch nicht bewerten. Das ermöglichte jede neue Anwendung ohne Erlaubnis – und macht es ebenso schwer, Missbrauch technisch zu verhindern.",
+  "strittig": "Die Erzählung, das ARPANET sei zur Kommunikation nach einem Atomschlag gebaut worden, ist verbreitet und falsch – sie vermischt Barans Studien zu ausfallsicheren Militärnetzen mit dem tatsächlichen Auftrag des ARPANET, Rechenzeit zu teilen. Umstritten ist auch die Frage der Erfinderschaft: Paketvermittlung wurde mehrfach unabhängig entwickelt, und die Vorstellung eines einzelnen Erfinders trifft auf keine Schicht des Netzes zu.",
+  "zahlen": [
+    {
+      "wert": "4",
+      "was": "verbundene Rechner im ARPANET 1969"
+    },
+    {
+      "wert": "1974",
+      "was": "Veröffentlichung von TCP/IP"
+    },
+    {
+      "wert": "1993",
+      "was": "gebührenfreie Freigabe der Web-Technik durch das CERN"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Wo Zauberer aufbleiben",
+      "autor": "Katie Hafner und Matthew Lyon",
+      "jahr": "1996",
+      "warum": "Die Entstehung des ARPANET aus Interviews mit den Beteiligten. Die beste erzählende Darstellung."
+    },
+    {
+      "titel": "Weaving the Web",
+      "autor": "Tim Berners-Lee",
+      "jahr": "1999",
+      "warum": "Vom Erfinder des Web: warum er auf ein Patent verzichtete und was er sich anders vorgestellt hatte."
+    },
+    {
+      "titel": "Das Unternehmerische Staat",
+      "autor": "Mariana Mazzucato",
+      "jahr": "2013",
+      "warum": "Über die Rolle öffentlicher Forschung bei Techniken, die als private Erfolge gelten. Streitbar und mit Belegen."
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Warum die Architektur so aussieht, wie sie aussieht",
+      "text": "Die entscheidende Entwurfsentscheidung heißt Ende-zu-Ende-Prinzip: Das Netz selbst bleibt dumm, alle Intelligenz sitzt an den Rändern. Es kennt keine Verbindungen, merkt sich keinen Zustand und garantiert nichts – es leitet Pakete weiter und darf sie im Zweifel verwerfen. Ob eine Nachricht vollständig ankommt, klären die beiden Endgeräte untereinander.\n\nDas war gegen den damaligen Stand der Technik gedacht. Die Telefongesellschaften bauten das Gegenteil: ein intelligentes Netz mit fest geschalteten Leitungen, in dem die Endgeräte dumm sein durften – ein Telefon konnte nichts außer klingeln. Ein solches Netz garantiert Qualität, aber jede neue Dienstart muss vom Netzbetreiber eingebaut werden. Im Internet muss niemand gefragt werden: Wer eine neue Anwendung will, schreibt sie an den Rändern und schickt Pakete.\n\nGenau daraus folgt beides, das Gute und das Schwierige. E-Mail, Web, Telefonie über IP, Video, Verschlüsselung und Kryptowährungen kamen ohne Erlaubnis in ein Netz, das nichts davon vorgesehen hatte. Und weil das Netz den Inhalt nicht kennt, kann es ihn auch nicht filtern, nicht abrechnen und nicht bevorzugen – die Debatte um Netzneutralität ist im Kern ein Streit darüber, ob dieses Prinzip bestehen bleibt."
+    },
+    {
+      "titel": "Die Teile, die keiner besitzt",
+      "text": "Damit ein Netz aus Millionen unabhängiger Netze funktioniert, müssen sich alle über wenige Dinge einigen: die Nummernvergabe, die Namen und die Regeln. Zuständig sind dafür Einrichtungen, die keine Staaten und keine Konzerne sind. Die IETF entwickelt die Protokolle in offenen Arbeitsgruppen; ihre Dokumente heißen bis heute Request for Comments, und Beschlüsse werden nicht abgestimmt, sondern nach grobem Einvernehmen und funktionierendem Code gefasst. ICANN verwaltet die Namensräume, das W3C die Webstandards.\n\nDas Domain Name System, 1983 von Paul Mockapetris entworfen, ist die eine zentrale Stelle im dezentralen Netz: Es übersetzt Namen in Adressen und ist hierarchisch aufgebaut, mit dreizehn Wurzel-Adressen an der Spitze. Wer das DNS kontrolliert, kontrolliert die Erreichbarkeit – deshalb ist die Aufsicht darüber seit Jahrzehnten Gegenstand internationaler Auseinandersetzungen, die 2016 mit der Ablösung der US-Regierungsaufsicht über ICANN einen Zwischenstand erreichten.\n\nDie eigentliche Verschiebung fand woanders statt. Die Protokolle sind offen geblieben, der Verkehr aber nicht: Ein großer Teil des weltweiten Datenverkehrs läuft heute über die Netze und Rechenzentren einiger weniger Unternehmen, mitsamt eigenen Seekabeln. Das Netz ist technisch dezentral und wirtschaftlich konzentriert – ein Widerspruch, der die Debatten der Gegenwart trägt."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: Internet; World Wide Web",
+    "Internet Society: Brief History of the Internet",
+    "CERN: The birth of the web",
+    "Janet Abbate: Inventing the Internet"
+  ]
+},
+{
+  "id": "dna-alte",
+  "titel": "Alte DNA verändert die Geschichte",
+  "epoche": "moderne",
+  "jahr": 2010,
+  "zeitraum": "1984–heute",
+  "region": "weltweit",
+  "leitsatz": "Seit man Erbgut aus Knochen lesen kann, sind mehrere Kapitel der Vorgeschichte neu geschrieben worden — und das Fach ist noch nicht fertig.",
+  "vorgeschichte": "Bis in die 2000er Jahre beruhte die Vorgeschichte auf Knochenformen, Werkzeugen, Keramikstilen und Sprachvergleichen. Ob eine neue Töpferform bedeutete, dass Menschen zugewandert waren oder nur eine Mode übernommen hatten, ließ sich nicht entscheiden. Genau diese Frage – Wanderung oder Übernahme – hatte das Fach jahrzehntelang gespalten, teilweise mit politisch belasteten Antworten.",
+  "verlauf": "Erste Versuche in den 1980er Jahren scheiterten überwiegend an Verunreinigung: In alten Proben ist fast alles moderne DNA von Menschen, die sie angefasst haben. Erst Reinraumverfahren, Hochdurchsatz-Sequenzierung und Rechenverfahren zur Aussortierung machten die Methode ab etwa 2010 belastbar. Entscheidend war die Erkenntnis, dass das Felsenbein im Schädel DNA besonders gut bewahrt.\n\nDie Befunde kamen schnell. 2010: Neandertaler-Genom entschlüsselt – Menschen außerhalb Afrikas tragen ein bis zwei Prozent neandertalerisches Erbgut. Ebenfalls 2010: Aus einem einzelnen Fingerknochen in Sibirien wird eine bis dahin unbekannte Menschenform bestimmt, die Denisova-Menschen – entdeckt nicht durch Knochenform, sondern durch Genetik. 2015: Europa wurde in zwei großen Wanderungswellen besiedelt, von anatolischen Bauern und von Steppenhirten der Jamnaja-Kultur, die vor etwa 5.000 Jahren einwanderten und deren Erbgut heute in Mitteleuropa den größten Anteil hat. Damit war die alte Streitfrage entschieden: Es war Wanderung.",
+  "folgen": "Mehrere Bereiche sind neu geordnet: die Besiedlung Europas, Amerikas und des Pazifiks, die Ausbreitung der indoeuropäischen Sprachen, die Herkunft von Krankheitserregern. Die Pest von 541 und die von 1347 wurden über alte DNA aus Zähnen als Yersinia pestis bestimmt – vorher war das Vermutung.\n\nGleichzeitig entsteht eine Verantwortung: Erbgut von Verstorbenen zu untersuchen, betrifft ihre Nachkommen. In Nordamerika, Australien und Neuseeland gibt es inzwischen Verfahren, die die Zustimmung indigener Gemeinschaften voraussetzen – nachdem frühere Untersuchungen ohne sie stattfanden.",
+  "strittig": "Die Geschwindigkeit des Fachs ist selbst ein Problem: Manche Schlussfolgerung von heute wird in einigen Jahren überholt sein, und einzelne Genome werden gelegentlich zu weit verallgemeinert. Kritisiert wird außerdem, dass genetische Befunde in der öffentlichen Darstellung zu Aussagen über Völker und Identitäten werden – Erbgut sagt etwas über Abstammung, nichts über Sprache, Kultur oder Zugehörigkeit. Die Fußspuren von White Sands, die die Besiedlung Amerikas um Jahrtausende vorverlegen könnten, sind ein laufender Streitfall.",
+  "zahlen": [
+    {
+      "wert": "2010",
+      "was": "Neandertaler-Genom und Entdeckung der Denisova-Menschen"
+    },
+    {
+      "wert": "1–2 %",
+      "was": "neandertalerisches Erbgut bei Menschen außerhalb Afrikas"
+    },
+    {
+      "wert": "2022",
+      "was": "Nobelpreis für Svante Pääbo"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Reise unserer Gene",
+      "autor": "Johannes Krause und Thomas Trappe",
+      "jahr": "2019",
+      "warum": "Der beste deutsche Einstieg, von einem der führenden Forscher verständlich erzählt."
+    },
+    {
+      "titel": "Who We Are and How We Got Here",
+      "autor": "David Reich",
+      "jahr": "2018",
+      "warum": "Ausführlicher und weltweit angelegt, mit den methodischen Grenzen offen benannt. Auf Englisch."
+    },
+    {
+      "titel": "Die Neandertaler und wir",
+      "autor": "Svante Pääbo",
+      "jahr": "2014",
+      "warum": "Wie die Methode entstand, samt der Fehlschläge – vom Begründer des Fachs."
+    }
+  ],
+  "tiefe": [
+    {
+      "titel": "Wie man DNA aus einem 40.000 Jahre alten Knochen liest",
+      "text": "Nach dem Tod zerfällt DNA in immer kürzere Stücke; nach einigen zehntausend Jahren sind nur noch Bruchstücke von wenigen Dutzend Bausteinen übrig, chemisch verändert und vermischt mit dem Erbgut von Bakterien und Pilzen, die den Knochen bewohnt haben. In einer typischen Probe stammt weniger als ein Prozent der gefundenen DNA vom untersuchten Menschen; der Rest ist Umwelt – und ein Teil davon moderne menschliche DNA von jedem, der den Knochen je in der Hand hatte.\n\nDrei Entwicklungen machten die Sache lösbar. Erstens Reinräume mit Überdruck, UV-Bestrahlung und Schutzanzügen, in denen die Proben zerlegt werden. Zweitens die Hochdurchsatz-Sequenzierung, die Millionen kurzer Bruchstücke gleichzeitig liest, statt lange Abschnitte zu brauchen. Drittens ein Erkennungsmerkmal: Alte DNA weist an den Enden eine typische chemische Veränderung auf, die Desaminierung von Cytosin. Damit lässt sich rechnerisch trennen, welche Bruchstücke alt und welche modern sind – Verunreinigung wird sichtbar, statt unerkannt in das Ergebnis zu wandern.\n\nDazu kam eine anatomische Beobachtung: Das Felsenbein, der dichteste Knochen des Körpers, bewahrt bis zu hundertmal mehr DNA als andere Skelettteile. Seit das bekannt ist, richtet sich die Probenentnahme darauf aus – und die Zahl auswertbarer Genome stieg von Dutzenden auf mehrere Tausend."
+    },
+    {
+      "titel": "Was die Steppenhirten mitbrachten",
+      "text": "Um 2800 v. Chr. wanderten Menschen aus den Steppen nördlich des Schwarzen Meeres nach Mitteleuropa ein, Träger der Jamnaja-Kultur. Die Genetik zeigt einen Austausch, der in manchen Regionen bis zu drei Viertel der vorherigen Abstammung ersetzte – innerhalb weniger Jahrhunderte. Auffällig ist die Verteilung: In den ersten Generationen stammt die väterliche Linie fast vollständig von den Zuwanderern, die mütterliche gemischt. Was das gesellschaftlich bedeutete, ist Gegenstand vorsichtiger Deutungen und heftiger Auseinandersetzungen.\n\nMit den Hirten kamen mutmaßlich Wagen, Pferdehaltung, eine andere Wirtschaftsform – und nach der verbreitetsten Deutung die indoeuropäischen Sprachen, von denen fast alle heutigen europäischen Sprachen abstammen. Damit hat die Genetik in einen Streit eingegriffen, der seit dem 19. Jahrhundert läuft: Kam die Sprachfamilie mit den anatolischen Bauern oder mit den Steppenhirten? Die Befunde stützen überwiegend die Steppenhypothese, ohne die Frage zu schließen.\n\nEin Nebenbefund erklärt eine Alltäglichkeit: Die Fähigkeit, als Erwachsener Milchzucker zu verdauen, verbreitete sich in Europa erst nach dieser Zuwanderung – und noch später, als man lange annahm. Über Jahrtausende hielten Menschen Vieh und Milch, ohne sie in Rohform gut zu verdauen; verarbeitet zu Käse und Sauermilch war sie verträglich.\n\nZugleich mahnt der Fall zur Vorsicht. Ein Erbgutanteil sagt, von wem jemand abstammt. Er sagt nicht, welche Sprache jemand sprach, welcher Gruppe er sich zugehörig fühlte oder wem ein Landstrich gehört. Wo genetische Befunde als Beweis für Ansprüche der Gegenwart benutzt werden, geschieht das gegen die Methode, nicht mit ihr."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: ancient DNA",
+    "David Reich: Who We Are and How We Got Here",
+    "Nature 2010: A draft sequence of the Neandertal genome",
+    "Nobelprize.org: Medizinpreis 2022"
+  ]
+},
+{
+  "id": "entdeckung-tiefenzeit",
+  "titel": "Die Entdeckung der Tiefenzeit",
+  "epoche": "industrialisierung",
+  "jahr": 1830,
+  "zeitraum": "1785–1956",
+  "region": "Europa und weltweit",
+  "leitsatz": "Bevor jemand die Evolution denken konnte, musste die Erde alt werden — und das war der schwerere Schritt.",
+  "vorgeschichte": "Bis ins 18. Jahrhundert galt die Erde in Europa als wenige tausend Jahre alt; die Rechnung des Bischofs Ussher von 1650 setzte die Schöpfung auf 4004 v. Chr. In diesem Zeitrahmen ist Evolution unmöglich – für allmähliche Veränderung fehlt die Zeit. Wer Fossilien fand, deutete sie als Reste der Sintflut oder als Spiele der Natur.",
+  "verlauf": "James Hutton beobachtete ab 1785 an schottischen Küstenaufschlüssen Gesteinsschichten, die schräg auf anderen lagen – abgelagert, gekippt, abgetragen, neu abgelagert. Er zog den Schluss, dass die Erde keinen erkennbaren Anfang habe, und formulierte das Prinzip, dass dieselben Kräfte, die heute wirken, immer gewirkt haben. Charles Lyell machte daraus 1830 mit den Principles of Geology ein Lehrbuch – Darwin nahm es auf die Beagle mit und nannte es später prägend für sein Denken.\n\nDann kam ein physikalischer Einspruch: Lord Kelvin berechnete ab 1862 aus der Abkühlung eines glühenden Körpers ein Erdalter von 20 bis 100 Millionen Jahren – zu kurz für die Geologen und zu kurz für Darwin, der das als schwerwiegenden Einwand einräumte. Der Streit wurde erst durch die Entdeckung der Radioaktivität gelöst: Sie liefert im Erdinnern Wärme, die Kelvins Rechnung nicht kannte, und sie liefert zugleich die Uhr. 1907 datierte Bertram Boltwood erste Gesteine über den Uran-Blei-Zerfall; 1956 bestimmte Clair Patterson das Alter der Erde an einem Meteoriten auf 4,55 Milliarden Jahre – ein Wert, der bis heute gilt.",
+  "folgen": "Ohne Tiefenzeit gibt es keine Evolutionstheorie, keine Plattentektonik und keine Klimageschichte. Der Begriff selbst, deep time, stammt vom Schriftsteller John McPhee. Patterson stieß bei seinen Messungen auf ein Nebenproblem: Er musste Bleiverunreinigungen aus der Umgebung ausschließen und stellte fest, wie viel Blei aus Benzin in der Umwelt war – seine Arbeit trug maßgeblich zum Verbot von Bleibenzin bei.",
+  "strittig": "Die Erzählung eines Kampfes zwischen Wissenschaft und Kirche greift zu kurz: Viele frühe Geologen waren Geistliche, und der schärfste Einwand gegen ein hohes Erdalter kam von einem Physiker, nicht von Theologen. Umstritten war lange auch, wie gleichmäßig geologische Prozesse verlaufen – Huttons und Lyells strenge Gleichförmigkeit ist heute abgemildert: Es gibt Katastrophen, etwa Einschläge und Flutbasalte, die schnell große Wirkung haben.",
+  "zahlen": [
+    {
+      "wert": "4004 v. Chr.",
+      "was": "Usshers Schöpfungsdatum von 1650"
+    },
+    {
+      "wert": "1830",
+      "was": "Lyells Principles of Geology"
+    },
+    {
+      "wert": "4,55 Mrd. Jahre",
+      "was": "Erdalter nach Patterson, 1956"
+    }
+  ],
+  "literatur": [
+    {
+      "titel": "Die Entdeckung der Zeit",
+      "autor": "Martin Rudwick",
+      "jahr": "2005",
+      "warum": "Wie aus einer kurzen eine unvorstellbar lange Erdgeschichte wurde. Das gründlichste Werk zum Thema."
+    },
+    {
+      "titel": "Eine kurze Geschichte von fast allem",
+      "autor": "Bill Bryson",
+      "jahr": "2003",
+      "warum": "Die Kapitel zu Erdalter und Datierung sind eine hervorragende, unterhaltsame Einführung – mit der Geschichte Pattersons und des Bleibenzins."
+    },
+    {
+      "titel": "Zeitpfeil und Zeitzyklus",
+      "autor": "Stephen Jay Gould",
+      "jahr": "1987",
+      "warum": "Über Hutton und Lyell und darüber, wie Wissenschaftsgeschichte im Rückblick geglättet wird."
+    }
+  ],
+  "quellen": [
+    "Encyclopaedia Britannica: geochronology; age of the Earth",
+    "Martin J. S. Rudwick: Bursting the Limits of Time",
+    "Clair Patterson, Geochimica et Cosmochimica Acta 1956: Age of meteorites and the Earth"
   ]
 }
 ];

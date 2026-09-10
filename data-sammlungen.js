@@ -26,7 +26,8 @@ const SCHLUESSELMOMENTE = [
   "year": -218,
   "title": "Hannibal überquert die Alpen",
   "category": "Wendepunkt im Krieg",
-  "text": "Der scheinbar unmögliche Alpenübergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung – hätte Hannibal Rom eingenommen, wäre die Weltgeschichte grundlegend anders verlaufen."
+  "text": "Der scheinbar unmögliche Alpenübergang mit Kriegselefanten bringt Rom an den Rand der Vernichtung – hätte Hannibal Rom eingenommen, wäre die Weltgeschichte grundlegend anders verlaufen.",
+  "vertiefung": "karthago"
  },
  {
   "year": 33,
@@ -89,7 +90,8 @@ const SCHLUESSELMOMENTE = [
   "year": 1859,
   "title": "Darwins Evolutionstheorie",
   "category": "Wissenschaft",
-  "text": "Die Idee der natürlichen Auslese verändert nicht nur die Biologie, sondern auch das philosophische und religiöse Selbstverständnis des Menschen."
+  "text": "Die Idee der natürlichen Auslese verändert nicht nur die Biologie, sondern auch das philosophische und religiöse Selbstverständnis des Menschen.",
+  "vertiefung": "entdeckung-tiefenzeit"
  },
  {
   "year": 1869,
@@ -131,7 +133,8 @@ const SCHLUESSELMOMENTE = [
   "year": 1969,
   "title": "Erste Mondlandung",
   "category": "Erfindung",
-  "text": "Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All."
+  "text": "Der erste Schritt eines Menschen auf einem anderen Himmelskörper markiert den technologischen und symbolischen Höhepunkt des Kalten-Kriegs-Wettlaufs ins All.",
+  "vertiefung": "mondlandung-technik"
  },
  {
   "year": 1989,
@@ -244,7 +247,8 @@ const SCHLUESSELMOMENTE = [
   "title": "Erfindung des Papiers",
   "category": "Erfindung",
   "text": "Der chinesische Hofbeamte Cai Lun verfeinert die Papierherstellung entscheidend – über Jahrhunderte breitet sich diese Beschreibstoff-Revolution allmählich bis nach Europa aus.",
-  "thema": "kommunikation"
+  "thema": "kommunikation",
+  "vertiefung": "china-erfindungen"
  },
  {
   "year": 868,
@@ -257,7 +261,8 @@ const SCHLUESSELMOMENTE = [
   "year": 1044,
   "title": "Erfindung des Schießpulvers",
   "category": "Erfindung",
-  "text": "Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend."
+  "text": "Chinesische Alchemisten entdecken die explosive Mischung zunächst für medizinische Zwecke – ihre militärische Nutzung verändert binnen Jahrhunderten die Kriegsführung weltweit grundlegend.",
+  "vertiefung": "china-erfindungen"
  },
  {
   "year": 1088,
@@ -291,7 +296,8 @@ const SCHLUESSELMOMENTE = [
   "title": "Erfindung der Pockenimpfung",
   "category": "Wissenschaft",
   "text": "Edward Jenner entwickelt die erste wissenschaftlich fundierte Impfung der Geschichte – Grundstein der modernen Immunologie und späteren Ausrottung der Pocken.",
-  "thema": "medizin"
+  "thema": "medizin",
+  "vertiefung": "pockenimpfung"
  },
  {
   "year": 1815,
@@ -331,7 +337,8 @@ const SCHLUESSELMOMENTE = [
   "title": "Geburtsstunde des Internets (ARPANET)",
   "category": "Erfindung",
   "text": "Die erste Datenverbindung zwischen zwei Universitätscomputern legt den technischen Grundstein für das spätere globale Internet.",
-  "thema": "kommunikation"
+  "thema": "kommunikation",
+  "vertiefung": "internet"
  },
  {
   "year": 2003,
@@ -456,7 +463,8 @@ const SCHLUESSELMOMENTE = [
   "category": "Politischer Umbruch",
   "title": "Erstes Frauenwahlrecht",
   "text": "Am 19. September 1893 unterzeichnet der Gouverneur den Electoral Act: Neuseeland ist der erste selbstverwaltete Staat, in dem alle Frauen bei Parlamentswahlen wählen dürfen. Einzelne Territorien hatten Frauen schon früher zugelassen. Zehn Wochen später gingen rund 90.000 Neuseeländerinnen zur Wahl – eine Beteiligung von 82 Prozent und damit höher als bei den Männern.",
-  "thema": "recht"
+  "thema": "recht",
+  "vertiefung": "frauenwahlrecht"
  },
  {
   "year": 1903,
@@ -469,7 +477,8 @@ const SCHLUESSELMOMENTE = [
   "category": "Wissenschaft",
   "title": "Entdeckung des Penicillins",
   "text": "Alexander Fleming bemerkt, dass ein Schimmelpilz Bakterien abtötet. Erst der Massenproduktion im Zweiten Weltkrieg verdankt das Antibiotikum seine Wirkung auf die Sterblichkeit.",
-  "thema": "medizin"
+  "thema": "medizin",
+  "vertiefung": "antibiotika"
  },
  {
   "year": 1945,
@@ -506,7 +515,8 @@ const SCHLUESSELMOMENTE = [
   "category": "Wissenschaft",
   "title": "Pocken ausgerottet",
   "text": "Die WHO erklärt die Pocken für ausgerottet – der bislang einzige derartige Erfolg bei einer menschlichen Infektionskrankheit.",
-  "thema": "medizin"
+  "thema": "medizin",
+  "vertiefung": "pockenimpfung"
  },
  {
   "year": 1989,

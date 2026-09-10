@@ -855,7 +855,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1692,
     "title": "Hexenprozesse von Salem",
-    "text": "Zwanzig Menschen werden hingerichtet, bevor die Gerichte Geistererscheinungen als Beweis verwerfen. Der Fall gilt bis heute als Warnung vor Massenhysterie im Rechtssystem."
+    "text": "Zwanzig Menschen werden hingerichtet, bevor die Gerichte Geistererscheinungen als Beweis verwerfen. Der Fall gilt bis heute als Warnung vor Massenhysterie im Rechtssystem.",
+    "vertiefung": "hexenverfolgung-ende"
    },
    {
     "year": 1754,
@@ -950,7 +951,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1920,
     "title": "Frauenwahlrecht",
-    "text": "Der 19. Verfassungszusatz gilt landesweit. Für schwarze Frauen im Süden blieb er wegen Wahlhürden jahrzehntelang wirkungslos."
+    "text": "Der 19. Verfassungszusatz gilt landesweit. Für schwarze Frauen im Süden blieb er wegen Wahlhürden jahrzehntelang wirkungslos.",
+    "vertiefung": "frauenwahlrecht"
    },
    {
     "year": 1929,
@@ -1386,7 +1388,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1928,
     "title": "Gleiches Wahlrecht für Frauen",
-    "text": "Nach dem Teilwahlrecht von 1918 erhalten Frauen dieselben Bedingungen wie Männer."
+    "text": "Nach dem Teilwahlrecht von 1918 erhalten Frauen dieselben Bedingungen wie Männer.",
+    "vertiefung": "frauenwahlrecht"
    },
    {
     "year": 1940,
@@ -1729,7 +1732,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": -2543,
     "title": "Die großen Pyramiden",
-    "text": "Die Pyramiden der 4. Dynastie entstehen zwischen etwa 2543 und 2436 v. Chr. – bis ins Mittelalter die höchsten Bauwerke der Menschheit."
+    "text": "Die Pyramiden der 4. Dynastie entstehen zwischen etwa 2543 und 2436 v. Chr. – bis ins Mittelalter die höchsten Bauwerke der Menschheit.",
+    "vertiefung": "pyramiden-bau"
    },
    {
     "year": -1473,
@@ -1906,12 +1910,14 @@ const COUNTRY_TIMELINES = {
    {
     "year": -264,
     "title": "Erster Punischer Krieg",
-    "text": "Rom baut erstmals eine Kriegsflotte und fordert die Seemacht Karthago heraus. Aus einer italischen Landmacht wird ein Mittelmeerreich."
+    "text": "Rom baut erstmals eine Kriegsflotte und fordert die Seemacht Karthago heraus. Aus einer italischen Landmacht wird ein Mittelmeerreich.",
+    "vertiefung": "karthago"
    },
    {
     "year": -146,
     "title": "Zerstörung Karthagos",
-    "text": "Nach drei Punischen Kriegen ist Rom unbestrittene Macht des westlichen Mittelmeers."
+    "text": "Nach drei Punischen Kriegen ist Rom unbestrittene Macht des westlichen Mittelmeers.",
+    "vertiefung": "karthago"
    },
    {
     "year": -73,
@@ -2027,7 +2033,8 @@ const COUNTRY_TIMELINES = {
    {
     "year": 1797,
     "title": "Napoleon beendet Venedig",
-    "text": "Nach über tausend Jahren erlischt die Republik ohne Kampf. Der Freistaat wurde im Vertrag von Campo Formio an Österreich abgetreten."
+    "text": "Nach über tausend Jahren erlischt die Republik ohne Kampf. Der Freistaat wurde im Vertrag von Campo Formio an Österreich abgetreten.",
+    "vertiefung": "venedig"
    },
    {
     "year": 1848,

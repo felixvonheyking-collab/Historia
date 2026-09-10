@@ -258,6 +258,9 @@ const ERLAUBTE_ABWEICHUNGEN = [
   ["Aufstand im Warschauer Ghetto", "Der Warschauer Aufstand", "1943 Ghettoaufstand, 1944 Aufstand der Heimatarmee – zwei verschiedene Ereignisse"],
   ["Frauenwahlrecht", "Frauenwahlrecht in Deutschland", "1918 Deutschland, 1920 USA – verschiedene Länder, nicht dasselbe Ereignis"],
   ["Gleiches Wahlrecht für Frauen", "Gleiches Wahlrecht in Großbritannien", "1928 Großbritannien – dieselbe Reform, zwei Sammlungen"],
+  // Die Vertiefung behandelt den weltweiten Weg und ist auf 1918 datiert
+  // (Deutschland); die Zeitleiste USA nennt das US-Wahlrecht von 1920.
+  ["Frauenwahlrecht", "Wie das Frauenwahlrecht erkämpft wurde", "1918 Deutschland, 1920 USA – die Vertiefung behandelt beide"],
   ["Osmanische Herrschaft", "Osmanische Herrschaft beginnt", "1516 Levante, 1517 Ägypten"],
   ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
@@ -366,6 +369,23 @@ function pruefeInhalte(D) {
   D.VERTIEFUNGEN.forEach((v) => {
     if (!epochenIds.includes(v.epoche)) meldeFehler("Vertiefung '" + v.titel + "': unbekannte Epoche '" + v.epoche + "'");
     if (v.vertiefungVon) meldeHinweis("Vertiefung '" + v.titel + "': unbekanntes Feld vertiefungVon");
+    // Zusatzabschnitte der ausfuehrlichen Artikel
+    (v.tiefe || []).forEach((a, i) => {
+      ["titel", "text"].forEach((f) => {
+        if (!a[f]) meldeFehler("Vertiefung '" + v.titel + "', Zusatzabschnitt " + (i + 1) + ": '" + f + "' fehlt");
+      });
+      // Ein Zusatzabschnitt, der kuerzer ist als der Haupttext, ist keiner.
+      if (a.text && a.text.length < 400) {
+        meldeHinweis("Vertiefung '" + v.titel + "': Zusatzabschnitt '" + a.titel + "' ist mit " +
+                     a.text.length + " Zeichen sehr kurz");
+      }
+    });
+    // Buchempfehlungen: jede muss sagen, warum sie dasteht.
+    (v.literatur || []).forEach((b, i) => {
+      ["titel", "autor", "warum"].forEach((f) => {
+        if (!b[f]) meldeFehler("Vertiefung '" + v.titel + "', Buch " + (i + 1) + ": '" + f + "' fehlt");
+      });
+    });
   });
 
   // Themen
@@ -378,6 +398,11 @@ function pruefeInhalte(D) {
       if (s.vertiefung && !vertIds.has(s.vertiefung)) {
         meldeFehler("Thema '" + t.titel + "': Station '" + s.titel + "' verweist auf fehlende Vertiefung '" + s.vertiefung + "'");
       }
+    });
+    (t.literatur || []).forEach((b, i) => {
+      ["titel", "autor", "warum"].forEach((f) => {
+        if (!b[f]) meldeFehler("Thema '" + t.titel + "', Buch " + (i + 1) + ": '" + f + "' fehlt");
+      });
     });
     (t.abschnitte || []).forEach((a, i) => {
       ["name", "zeitraum", "kurz"].forEach((f) => {
@@ -519,6 +544,13 @@ function pruefeInhalte(D) {
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
   const laenderVerweise = Object.values(D.COUNTRY_TIMELINES)
     .reduce((a, d) => a + d.events.filter((e) => e.vertiefung).length, 0);
+  const ausfuehrlich = D.VERTIEFUNGEN.filter((v) => v.tiefe).length;
+  const mitBuechern = D.VERTIEFUNGEN.filter((v) => v.literatur).length +
+                      D.THEMEN.filter((t) => t.literatur).length;
+  const buchZahl = D.VERTIEFUNGEN.reduce((a, v) => a + (v.literatur || []).length, 0) +
+                   D.THEMEN.reduce((a, t) => a + (t.literatur || []).length, 0);
+  console.log("  Davon ausführlich: " + ausfuehrlich +
+    " · mit Buchempfehlungen: " + mitBuechern + " (" + buchZahl + " Titel)");
   console.log("  Zeitleisten-Einträge mit Verweis auf eine Vertiefung: " + laenderVerweise);
   console.log("  Schlüsselmomente mit Verweis auf eine Vertiefung: " + verknuepft);
 }

@@ -108,7 +108,8 @@ const THEMEN = [
    {
     "jahr": 1796,
     "titel": "Jenners Kuhpockenimpfung",
-    "text": "Weniger riskant als die Variolation und der Beginn der Impfung im heutigen Sinn. Der Name Vakzine kommt von vacca, der Kuh."
+    "text": "Weniger riskant als die Variolation und der Beginn der Impfung im heutigen Sinn. Der Name Vakzine kommt von vacca, der Kuh.",
+    "vertiefung": "pockenimpfung"
    },
    {
     "jahr": 1816,
@@ -163,7 +164,8 @@ const THEMEN = [
    {
     "jahr": 1928,
     "titel": "Fleming entdeckt das Penicillin",
-    "text": "Die Entdeckung blieb dreizehn Jahre folgenlos. Erst Florey und Chain machten daraus 1941 ein anwendbares Medikament – Entdeckung und Nutzen fallen in der Wissenschaft oft weit auseinander."
+    "text": "Die Entdeckung blieb dreizehn Jahre folgenlos. Erst Florey und Chain machten daraus 1941 ein anwendbares Medikament – Entdeckung und Nutzen fallen in der Wissenschaft oft weit auseinander.",
+    "vertiefung": "antibiotika"
    },
    {
     "jahr": 1932,
@@ -198,7 +200,8 @@ const THEMEN = [
    {
     "jahr": 1980,
     "titel": "Die Pocken sind ausgerottet",
-    "text": "Die WHO erklärt als einzige menschliche Infektionskrankheit überhaupt eine für besiegt. Möglich war das nur durch Zusammenarbeit über den Eisernen Vorhang hinweg."
+    "text": "Die WHO erklärt als einzige menschliche Infektionskrankheit überhaupt eine für besiegt. Möglich war das nur durch Zusammenarbeit über den Eisernen Vorhang hinweg.",
+    "vertiefung": "pockenimpfung"
    },
    {
     "jahr": 1981,
@@ -222,6 +225,26 @@ const THEMEN = [
    "Nature (2013): Yersinia pestis DNA aus dem Gräberfeld Aschheim, Justinianische Pest",
    "WHO: Smallpox eradication programme, Abschlussbericht 1980",
    "Encyclopaedia Britannica: History of medicine; Influenza pandemic of 1918–19"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Geschichte der Medizin",
+    "autor": "Roy Porter",
+    "jahr": "2000",
+    "warum": "Weltweit angelegt, von der Antike bis zur Gentechnik, und dabei durchgehend skeptisch gegenüber Fortschrittserzählungen. Das Standardwerk."
+   },
+   {
+    "titel": "Der Kaiser aller Krankheiten",
+    "autor": "Siddhartha Mukherjee",
+    "jahr": "2010",
+    "warum": "Die Geschichte des Krebses und ihrer Behandlung, erzählt von einem Onkologen. Preisgekrönt und ungewöhnlich gut geschrieben."
+   },
+   {
+    "titel": "Seuchen",
+    "autor": "Malte Thießen",
+    "jahr": "2021",
+    "warum": "Wie Gesellschaften auf Epidemien reagieren – und wie ähnlich diese Reaktionen über Jahrhunderte bleiben."
+   }
   ]
  },
  {
@@ -397,6 +420,26 @@ const THEMEN = [
    "Encyclopaedia Britannica: History of technology; Industrial Revolution",
    "IEA: World Energy Outlook 2020, Kapitel zu Photovoltaik-Kosten",
    "Nature (2011/2012): Debatte zu frühen Feuerbelegen, Wonderwerk Cave und Gesher Benot Ya'aqov"
+  ],
+  "literatur": [
+   {
+    "titel": "Energie und Zivilisation",
+    "autor": "Vaclav Smil",
+    "jahr": "2017",
+    "warum": "Die Geschichte der Menschheit als Geschichte der nutzbaren Energie, mit belastbaren Zahlen statt Schlagworten. Anspruchsvoll und erhellend."
+   },
+   {
+    "titel": "Fossiles Kapital",
+    "autor": "Andreas Malm",
+    "jahr": "2016",
+    "warum": "Warum Dampf sich gegen Wasserkraft durchsetzte – und dass die Entscheidung nicht technisch, sondern machtpolitisch war."
+   },
+   {
+    "titel": "Die Kohleverbrennung",
+    "autor": "Barbara Freese",
+    "jahr": "2003",
+    "warum": "Kohle als Stoff, der Politik, Krieg und Klima geprägt hat. Zugänglich und mit gutem Blick fürs Detail."
+   }
   ]
  },
  {
@@ -567,6 +610,26 @@ const THEMEN = [
    "Encyclopaedia Britannica: Code of Hammurabi; Magna Carta; Corpus Juris Civilis",
    "Vereinte Nationen: Allgemeine Erklärung der Menschenrechte, Text und Entstehungsgeschichte",
    "Internationaler Strafgerichtshof: Rom-Statut, Stand der Ratifizierungen"
+  ],
+  "literatur": [
+   {
+    "titel": "Rechtsgeschichte",
+    "autor": "Uwe Wesel",
+    "jahr": "2014",
+    "warum": "Von den ersten Gesetzestexten bis zur Gegenwart, in einem Band. Der beste deutsche Überblick, mit Sinn für die politischen Hintergründe."
+   },
+   {
+    "titel": "Die Erfindung der Menschenrechte",
+    "autor": "Lynn Hunt",
+    "jahr": "2009",
+    "warum": "Wie eine Idee entstand, die vorher nicht denkbar war – und was Romane und Briefe damit zu tun hatten."
+   },
+   {
+    "titel": "Über Verbrechen und Strafen",
+    "autor": "Cesare Beccaria",
+    "jahr": "1764",
+    "warum": "Der Text, der die Folter aus dem europäischen Strafrecht argumentierte. Schmal, gut lesbar und in seiner Wirkung kaum zu überschätzen."
+   }
   ]
  },
  {
@@ -727,6 +790,26 @@ const THEMEN = [
    "FAO: The State of Food Security and Nutrition in the World, laufende Ausgaben",
    "Nobelprize.org: Norman Borlaug, Friedensnobelpreis 1970",
    "James C. Scott: Against the Grain. Eine tiefe Geschichte der frühesten Staaten"
+  ],
+  "literatur": [
+   {
+    "titel": "Salz – Der Stoff, der die Welt veränderte",
+    "autor": "Mark Kurlansky",
+    "jahr": "2002",
+    "warum": "Ein einziges Handelsgut als Faden durch die Weltgeschichte. Das Muster hat viele Nachahmer gefunden, das Original ist das beste."
+   },
+   {
+    "titel": "Hungersnöte",
+    "autor": "Cormac Ó Gráda",
+    "jahr": "2009",
+    "warum": "Vergleichende Untersuchung von Hungersnöten über Jahrhunderte und Kontinente – mit dem zentralen Befund, dass sie selten an fehlender Nahrung liegen."
+   },
+   {
+    "titel": "Die Ernährungsfalle",
+    "autor": "Michael Pollan",
+    "jahr": "2006",
+    "warum": "Wie industrielle Nahrungsmittelproduktion funktioniert und was sie mit dem Essen macht. Streitbar und wirkungsvoll."
+   }
   ]
  },
  {
@@ -897,6 +980,26 @@ const THEMEN = [
    "Encyclopaedia Britannica: Money; Gold standard; Tulip mania",
    "Anne Goldgar: Tulipmania. Money, Honor, and Knowledge in the Dutch Golden Age",
    "Bank for International Settlements: Annual Economic Report, Kapitel zu Zahlungssystemen"
+  ],
+  "literatur": [
+   {
+    "titel": "Schulden – Die ersten 5.000 Jahre",
+    "autor": "David Graeber",
+    "jahr": "2011",
+    "warum": "Stellt die gängige Erzählung von Tauschwirtschaft zu Geld auf den Kopf: Kredit war zuerst. Streitbar, in Einzelheiten kritisiert, insgesamt anregend wie kaum ein anderes Buch zum Thema."
+   },
+   {
+    "titel": "Der Aufstieg des Geldes",
+    "autor": "Niall Ferguson",
+    "jahr": "2008",
+    "warum": "Die Geschichte der Finanzmärkte von den italienischen Bankiers bis zur Krise 2008. Zugänglich, mit klarer wirtschaftsliberaler Perspektive."
+   },
+   {
+    "titel": "Diesmal ist alles anders",
+    "autor": "Carmen Reinhart und Kenneth Rogoff",
+    "jahr": "2009",
+    "warum": "Acht Jahrhunderte Finanzkrisen im Vergleich – und die Regelmäßigkeiten, die dabei sichtbar werden."
+   }
   ]
  },
  {
@@ -938,7 +1041,8 @@ const THEMEN = [
    {
     "jahr": 105,
     "titel": "Papier in China",
-    "text": "Cai Lun wird die Erfindung zugeschrieben, ältere Funde sind bekannt. Papier ist billiger als Papyrus und Pergament – die Voraussetzung dafür, dass Schrift Massenware werden kann."
+    "text": "Cai Lun wird die Erfindung zugeschrieben, ältere Funde sind bekannt. Papier ist billiger als Papyrus und Pergament – die Voraussetzung dafür, dass Schrift Massenware werden kann.",
+    "vertiefung": "china-erfindungen"
    },
    {
     "jahr": 868,
@@ -1033,12 +1137,14 @@ const THEMEN = [
    {
     "jahr": 1969,
     "titel": "Das ARPANET",
-    "text": "Vier Rechner werden verbunden. Entscheidend ist nicht die Zahl, sondern das Prinzip: ein Netz ohne Zentrum, in dem Daten sich ihren Weg suchen."
+    "text": "Vier Rechner werden verbunden. Entscheidend ist nicht die Zahl, sondern das Prinzip: ein Netz ohne Zentrum, in dem Daten sich ihren Weg suchen.",
+    "vertiefung": "internet"
    },
    {
     "jahr": 1991,
     "titel": "Das World Wide Web",
-    "text": "Tim Berners-Lee gibt die Technik ohne Patent frei. Diese Entscheidung – nicht die Erfindung selbst – ist der Grund, warum das Web allen offensteht."
+    "text": "Tim Berners-Lee gibt die Technik ohne Patent frei. Diese Entscheidung – nicht die Erfindung selbst – ist der Grund, warum das Web allen offensteht.",
+    "vertiefung": "internet"
    },
    {
     "jahr": 2004,
@@ -1062,6 +1168,26 @@ const THEMEN = [
    "Encyclopaedia Britannica: History of publishing; Telegraph; Library of Alexandria",
    "British Library: Diamond Sutra, Beschreibung des Exemplars von 868",
    "CERN: The birth of the web, Freigabe der Web-Technologie 1993"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Informationsgeschichte",
+    "autor": "James Gleick",
+    "jahr": "2011",
+    "warum": "Von der Trommelsprache bis Shannon: wie aus Nachricht Information wurde. Das anregendste Buch zum Thema."
+   },
+   {
+    "titel": "Die Druckerpresse",
+    "autor": "Elizabeth L. Eisenstein",
+    "jahr": "1997",
+    "warum": "Der Klassiker über die Folgen des Buchdrucks für das Denken."
+   },
+   {
+    "titel": "Die Erfindung der Nachricht",
+    "autor": "Andrew Pettegree",
+    "jahr": "2016",
+    "warum": "Wie Nachrichten vor der Zeitung zirkulierten – und wie oft sie falsch waren."
+   }
   ]
  },
  {
@@ -1212,6 +1338,26 @@ const THEMEN = [
    "David Reich: Who We Are and How We Got Here",
    "UNHCR: Global Trends, jährliche Berichte zu Flucht und Vertreibung",
    "Klaus J. Bade: Europa in Bewegung. Migration vom späten 18. Jahrhundert bis zur Gegenwart"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Geschichte der Migration",
+    "autor": "Klaus J. Bade",
+    "jahr": "2002",
+    "warum": "Europa als Wanderungsraum, von der Frühen Neuzeit bis heute. Der deutsche Standardüberblick."
+   },
+   {
+    "titel": "Die Ausgewanderten",
+    "autor": "Isabel Wilkerson",
+    "jahr": "2010",
+    "warum": "Die Große Migration der Schwarzen aus dem amerikanischen Süden, erzählt über drei Lebensläufe. Preisgekrönt und eindringlich."
+   },
+   {
+    "titel": "Exodus",
+    "autor": "Paul Collier",
+    "jahr": "2013",
+    "warum": "Migration wirtschaftswissenschaftlich betrachtet, mit Schlussfolgerungen, die in beide politische Richtungen unbequem sind."
+   }
   ]
  },
  {
@@ -1357,6 +1503,26 @@ const THEMEN = [
    "Jane Jacobs: Tod und Leben großer amerikanischer Städte",
    "UN-Habitat: World Cities Report",
    "Peter Clark (Hrsg.): The Oxford Handbook of Cities in World History"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Stadt in der Geschichte",
+    "autor": "Lewis Mumford",
+    "jahr": "1961",
+    "warum": "Der Klassiker: die Stadt als Form des Zusammenlebens, von Uruk bis zur Vorstadt. Mit deutlichen Urteilen, die man nicht teilen muss."
+   },
+   {
+    "titel": "Tod und Leben großer amerikanischer Städte",
+    "autor": "Jane Jacobs",
+    "jahr": "1961",
+    "warum": "Der Einspruch gegen die Planung von oben, geschrieben aus der Beobachtung einer Straße. Hat die Stadtplanung dauerhaft verändert."
+   },
+   {
+    "titel": "Planet der Slums",
+    "autor": "Mike Davis",
+    "jahr": "2006",
+    "warum": "Über die informelle Stadt, in der inzwischen über eine Milliarde Menschen lebt. Düster und faktenreich."
+   }
   ]
  },
  {
@@ -1512,6 +1678,26 @@ const THEMEN = [
    "Eric Williams: Capitalism and Slavery (mit der bis heute diskutierten Rentabilitätsthese)",
    "Trans-Atlantic Slave Trade Database, Emory University",
    "Internationale Arbeitsorganisation: Global Estimates of Modern Slavery"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Geschichte der Sklaverei",
+    "autor": "Michael Zeuske",
+    "jahr": "2013",
+    "warum": "Weltweit und über alle Epochen, nicht nur atlantisch. Der gründlichste deutsche Überblick."
+   },
+   {
+    "titel": "Die Hälfte, die nie erzählt wurde",
+    "autor": "Edward E. Baptist",
+    "jahr": "2014",
+    "warum": "Wie die Sklaverei die amerikanische Wirtschaft aufbaute. Umstritten in einzelnen Rechnungen, wirkungsvoll in der Gesamtaussage."
+   },
+   {
+    "titel": "König Leopolds Geist",
+    "autor": "Adam Hochschild",
+    "jahr": "1998",
+    "warum": "Der Kongo-Freistaat und die erste internationale Menschenrechtskampagne. Erschütternd und hervorragend erzählt."
+   }
   ]
  },
  {
@@ -1627,6 +1813,26 @@ const THEMEN = [
    "Ernst Gombrich: Die Geschichte der Kunst",
    "Horst Bredekamp: Der Bildakt",
    "Washingtoner Erklärung 1998, Originaltext"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Geschichte der Kunst",
+    "autor": "Ernst H. Gombrich",
+    "jahr": "1950",
+    "warum": "Seit siebzig Jahren der Einstieg: klar, ohne Fachjargon, mit einem Blick fürs Wesentliche. Der europäische Zuschnitt ist die bekannte Grenze."
+   },
+   {
+    "titel": "Sehen, Denken, Wissen",
+    "autor": "Horst Bredekamp",
+    "jahr": "2010",
+    "warum": "Was Bilder tun, statt was sie darstellen. Der wichtigste deutschsprachige Beitrag der letzten Jahrzehnte."
+   },
+   {
+    "titel": "Weltgeschichte der Kunst",
+    "autor": "Hugh Honour und John Fleming",
+    "jahr": "1982",
+    "warum": "Der Gegenentwurf zu Gombrich: alle Kontinente gleichgewichtig, entsprechend umfangreich."
+   }
   ]
  },
  {
@@ -1742,6 +1948,26 @@ const THEMEN = [
    "Richard Taruskin: The Oxford History of Western Music",
    "Nicholas Conard u. a., Nature 2009: Palaeolithic flutes",
    "Anne Kilmer: The Hurrian Hymn, Rekonstruktionen und Kritik"
+  ],
+  "literatur": [
+   {
+    "titel": "The Oxford History of Western Music",
+    "autor": "Richard Taruskin",
+    "jahr": "2005",
+    "warum": "Das gründlichste Werk zur westlichen Musikgeschichte, mit einem eigenwilligen, streitbaren Blick. Fünf Bände – zum Nachschlagen."
+   },
+   {
+    "titel": "The Rest Is Noise",
+    "autor": "Alex Ross",
+    "jahr": "2007",
+    "warum": "Die Musik des 20. Jahrhunderts im politischen Zusammenhang, brillant geschrieben. Auch für Menschen ohne Notenkenntnis."
+   },
+   {
+    "titel": "Musik und Gesellschaft",
+    "autor": "Christian Kaden",
+    "jahr": "2004",
+    "warum": "Warum Musik in verschiedenen Gesellschaften Verschiedenes ist. Theoretisch, aber lohnend."
+   }
   ]
  },
  {
@@ -1857,6 +2083,26 @@ const THEMEN = [
    "A. Roger Ekirch: At Day's Close – Night in Times Past",
    "Ruth Schwartz Cowan: More Work for Mother",
    "Parco Archeologico di Pompei, Grabungsberichte"
+  ],
+  "literatur": [
+   {
+    "titel": "At Day's Close – Night in Times Past",
+    "autor": "A. Roger Ekirch",
+    "jahr": "2005",
+    "warum": "Die Nacht als eigener Lebensraum vor dem künstlichen Licht, samt dem zweigeteilten Schlaf. Ein Buch, das den Blick auf den eigenen Alltag verändert."
+   },
+   {
+    "titel": "More Work for Mother",
+    "autor": "Ruth Schwartz Cowan",
+    "jahr": "1983",
+    "warum": "Warum Haushaltstechnik die Arbeit nicht verringerte. Der Klassiker zur Technikgeschichte des Alltags."
+   },
+   {
+    "titel": "Eine kurze Geschichte der Alltagsdinge",
+    "autor": "Bill Bryson",
+    "jahr": "2010",
+    "warum": "Ein Rundgang durch ein Haus, bei dem jeder Raum in die Geschichte führt. Unterhaltsam und sorgfältiger belegt, als es wirkt."
+   }
   ]
  },
  {
@@ -1918,7 +2164,8 @@ const THEMEN = [
    {
     "jahr": -30000,
     "titel": "Das Ende der Neandertaler",
-    "text": "Die letzten Neandertaler sterben aus. Ihre Gene leben weiter: Menschen außerhalb Afrikas tragen ein bis zwei Prozent neandertalerisches Erbgut."
+    "text": "Die letzten Neandertaler sterben aus. Ihre Gene leben weiter: Menschen außerhalb Afrikas tragen ein bis zwei Prozent neandertalerisches Erbgut.",
+    "vertiefung": "dna-alte"
    },
    {
     "jahr": -20000,
@@ -1973,6 +2220,26 @@ const THEMEN = [
    "Sonia Harmand u. a., Nature 2015: 3.3-million-year-old stone tools from Lomekwi",
    "Jean-Jacques Hublin u. a., Nature 2017: Jebel Irhoud",
    "Klaus Schmidt: Sie bauten die ersten Tempel"
+  ],
+  "literatur": [
+   {
+    "titel": "Die Reise unserer Gene",
+    "autor": "Johannes Krause und Thomas Trappe",
+    "jahr": "2019",
+    "warum": "Was alte DNA über die Besiedlung Europas verrät, von einem der führenden Forscher verständlich erklärt. Der beste Einstieg in das neue Bild."
+   },
+   {
+    "titel": "Who We Are and How We Got Here",
+    "autor": "David Reich",
+    "jahr": "2018",
+    "warum": "Ausführlicher und weltweit angelegt, vom Begründer des Fachs. Auf Englisch."
+   },
+   {
+    "titel": "Sie bauen die ersten Tempel",
+    "autor": "Klaus Schmidt",
+    "jahr": "2006",
+    "warum": "Göbekli Tepe vom Ausgräber selbst. Die Deutungen sind teils überholt, der Bericht bleibt lesenswert."
+   }
   ]
  },
  {
@@ -2380,178 +2647,222 @@ const THEMEN = [
    "Amnon Ben-Tor (Hrsg.): The Archaeology of Ancient Israel",
    "UN-Sicherheitsratsresolutionen 242 (1967), 478 (1980) und 2334 (2016)",
    "Israelisches Zentralbüro für Statistik: Bevölkerungsdaten Jerusalem"
+  ],
+  "literatur": [
+   {
+    "titel": "Jerusalem – Die Biographie",
+    "autor": "Simon Sebag Montefiore",
+    "jahr": "2011",
+    "warum": "Dreitausend Jahre in einem Band, erzählend und mit Gespür für die Menschen. Der beste Einstieg."
+   },
+   {
+    "titel": "Jerusalem – One City, Three Faiths",
+    "autor": "Karen Armstrong",
+    "jahr": "1996",
+    "warum": "Die Stadt als religiöses Problem: was sie für Juden, Christen und Muslime bedeutet und warum das nicht auflösbar ist."
+   },
+   {
+    "titel": "Der Hundertjährige Krieg um Palästina",
+    "autor": "Rashid Khalidi",
+    "jahr": "2020",
+    "warum": "Die palästinensische Perspektive von einem Historiker, dessen Familie in Jerusalem lebte. Als Gegenlektüre zu israelischen Darstellungen zu lesen, nicht als Ersatz."
+   }
   ]
  },
-{
+ {
   "id": "frauen",
   "titel": "Frauen in der Geschichte",
   "kurz": "Nicht eine Geschichte des Fehlens, sondern eine des Überlieferns — und der Rechte, die erst in den letzten hundert Jahren kamen.",
   "einleitung": "Frauen sind in historischen Quellen unterrepräsentiert, nicht weil sie weniger taten, sondern weil das, was sie taten, seltener aufgeschrieben wurde: Haushalt, Textilherstellung, Pflege, Kindererziehung und Landarbeit hinterlassen kaum Akten. Wo Frauen dennoch aktenkundig werden, geschieht es meist an drei Stellen — im Recht, im Kloster und am Hof. Dieser Querschnitt folgt beiden Linien: den einzelnen Frauen, die überliefert sind, und der Frage, welche Rechte wann galten. Auffällig ist dabei, wie jung fast alles ist: Die meisten rechtlichen Gleichstellungen sind keine hundert Jahre alt, manche keine fünfzig.",
   "stationen": [
-    {
-      "jahr": -2285,
-      "titel": "Enheduanna, die erste namentlich bekannte Autorin",
-      "text": "Die Tochter Sargons von Akkad war Hohepriesterin in Ur und verfasste Tempelhymnen, die sie ausdrücklich sich selbst zuschrieb. Damit ist sie die früheste Person der Weltliteratur, deren Name mit einem Werk verbunden ist – rund 1.500 Jahre vor Homer."
-    },
-    {
-      "jahr": -1479,
-      "titel": "Hatschepsut regiert als König",
-      "text": "Sie übernahm die Herrschaft für ihren minderjährigen Stiefsohn und behielt sie zwei Jahrzehnte. In Bildwerken erscheint sie mit Königsbart – nicht als Verkleidung, sondern weil das Amt eine männlich definierte Ikonographie hatte. Nach ihrem Tod wurden ihre Namen an vielen Denkmälern getilgt."
-    },
-    {
-      "jahr": -1200,
-      "titel": "Frauenarbeit ist unsichtbar überliefert",
-      "text": "Textilherstellung war über Jahrtausende die zeitaufwendigste Produktion nach der Landwirtschaft und lag fast überall in Frauenhand. In den Quellen taucht sie kaum auf, weil sie im Haushalt stattfand – ein Muster, das sich durch die gesamte Wirtschaftsgeschichte zieht."
-    },
-    {
-      "jahr": -600,
-      "titel": "Sappho",
-      "text": "Ihre Lyrik galt in der Antike als so bedeutend, dass Platon sie die zehnte Muse nannte. Erhalten sind fast nur Bruchstücke, die meisten aus Zitaten anderer und aus Papyrusfunden ägyptischer Müllhalden."
-    },
-    {
-      "jahr": -500,
-      "titel": "Athen: Demokratie ohne Frauen",
-      "text": "In der Stadt, die als Wiege der Demokratie gilt, waren Frauen von der Volksversammlung ausgeschlossen, rechtlich lebenslang unter Vormundschaft und im Alltag weitgehend auf das Haus beschränkt. In Sparta hatten Frauen mehr Rechte, Grundbesitz und Bewegungsfreiheit – ein Umstand, über den athenische Autoren sich empörten."
-    },
-    {
-      "jahr": -100,
-      "titel": "Rechtsstellung in Rom",
-      "text": "Römerinnen konnten erben, Eigentum besitzen und Geschäfte führen; unter Augustus entfiel für Mütter mehrerer Kinder die Vormundschaft. Politische Ämter blieben verschlossen, doch der Einfluss über Familiennetzwerke war real – Livia, Agrippina und Iulia Domna sind belegte Beispiele."
-    },
-    {
-      "jahr": 400,
-      "titel": "Hypatia",
-      "text": "Die Mathematikerin und Philosophin lehrte in Alexandria und wurde 415 von einem Mob getötet. Ihr Tod wurde später zur Chiffre für den Untergang antiker Gelehrsamkeit gemacht; die Hintergründe waren vor allem lokale Machtkämpfe. Das ihr zugeschriebene Zitat über das Recht zu denken stammt aus dem 19. Jahrhundert."
-    },
-    {
-      "jahr": 600,
-      "titel": "Klöster als Bildungsraum",
-      "text": "Für Frauen, die nicht heiraten wollten oder sollten, war das Kloster über tausend Jahre der einzige Ort mit Bibliothek, Schreibstube und eigener Leitung. Äbtissinnen verwalteten Grundbesitz und führten Prozesse – eine Machtstellung, die es sonst nirgends gab."
-    },
-    {
-      "jahr": 1000,
-      "titel": "Murasaki Shikibu schreibt den ersten Roman",
-      "text": "Am japanischen Hof entsteht das Genji Monogatari, oft als erster psychologischer Roman der Weltliteratur bezeichnet. Frauen schrieben in der Hofsprache Japanisch, Männer schrieben Chinesisch – gerade der Ausschluss von der Gelehrtensprache schuf eine eigene Literatur."
-    },
-    {
-      "jahr": 1150,
-      "titel": "Hildegard von Bingen",
-      "text": "Äbtissin, Naturkundlerin, Komponistin und Beraterin von Fürsten und Päpsten. Sie berief sich auf Visionen, um überhaupt öffentlich sprechen zu dürfen – eine Legitimation, die Frauen zugänglich war, wo das Amt es nicht war."
-    },
-    {
-      "jahr": 1405,
-      "titel": "Christine de Pizan lebt vom Schreiben",
-      "text": "Als Witwe ohne Versorgung wurde sie Berufsschriftstellerin – die erste in Europa, die ihren Unterhalt damit bestritt. In der Stadt der Frauen widerlegte sie systematisch die frauenfeindlichen Argumente ihrer Zeit."
-    },
-    {
-      "jahr": 1560,
-      "titel": "Die Hexenverfolgung",
-      "text": "Zwischen 1450 und 1750 wurden in Europa schätzungsweise 40.000 bis 60.000 Menschen als Hexen hingerichtet, rund drei Viertel davon Frauen. Die Verfolgung war kein mittelalterliches, sondern ein frühneuzeitliches Phänomen und ging oft von weltlichen Gerichten aus."
-    },
-    {
-      "jahr": 1678,
-      "titel": "Die erste Doktorandin",
-      "text": "Elena Cornaro Piscopia promoviert in Padua in Philosophie – gegen den Widerstand der theologischen Fakultät, die einen Abschluss in Theologie verhinderte. Es dauerte weitere zweihundert Jahre, bis Frauen regulär studieren durften."
-    },
-    {
-      "jahr": 1791,
-      "titel": "Olympe de Gouges antwortet der Revolution",
-      "text": "Auf die Erklärung der Menschen- und Bürgerrechte, die Frauen nicht einschloss, antwortete sie mit einer Erklärung der Rechte der Frau und Bürgerin. Zwei Jahre später wurde sie guillotiniert – unter anderem mit der Begründung, sie habe die Tugenden ihres Geschlechts vergessen."
-    },
-    {
-      "jahr": 1792,
-      "titel": "Mary Wollstonecraft begründet die Debatte",
-      "text": "Ihre Verteidigung der Rechte der Frau argumentiert nicht mit Gleichheit der Natur, sondern mit Bildung: Frauen erschienen schwächer, weil man sie schwach erzog. Das Buch wurde breit gelesen und nach Bekanntwerden ihres Privatlebens jahrzehntelang gemieden."
-    },
-    {
-      "jahr": 1848,
-      "titel": "Seneca Falls",
-      "text": "Die erste Frauenrechtskonvention der USA formuliert eine Erklärung nach dem Vorbild der Unabhängigkeitserklärung und fordert das Wahlrecht – der umstrittenste Punkt, der nur knapp angenommen wurde. Bis zur Einlösung vergingen 72 Jahre."
-    },
-    {
-      "jahr": 1851,
-      "titel": "Sojourner Truth in Akron",
-      "text": "Die ehemalige Sklavin hält eine Rede, die den Widerspruch offenlegt: Die Schutzbedürftigkeit, mit der man Frauen Rechte verweigerte, hatte für schwarze Frauen nie gegolten. Die berühmte Fassung mit dem wiederholten Ain't I a Woman stammt aus einer zwölf Jahre späteren Wiedergabe und ist sprachlich verändert."
-    },
-    {
-      "jahr": 1869,
-      "titel": "Das erste Frauenwahlrecht",
-      "text": "Das Territorium Wyoming führt das Wahlrecht für Frauen ein – teils aus Überzeugung, teils um Siedlerinnen anzulocken. 1893 folgt Neuseeland als erster selbstverwalteter Staat landesweit."
-    },
-    {
-      "jahr": 1889,
-      "titel": "Die Sozialarbeit als Beruf",
-      "text": "Jane Addams gründet in Chicago das Hull House, eine Nachbarschaftseinrichtung für Einwandererfamilien. Aus dieser Arbeit entstanden Sozialarbeit und empirische Stadtforschung als Fächer – und 1931 der Friedensnobelpreis für Addams."
-    },
-    {
-      "jahr": 1903,
-      "titel": "Marie Curie erhält den Nobelpreis",
-      "text": "Zunächst war nur ihr Mann für den Physikpreis vorgeschlagen; erst auf dessen Einspruch wurde sie aufgenommen. 1911 erhielt sie einen zweiten Preis, für Chemie – sie ist bis heute die einzige Person mit Nobelpreisen in zwei Naturwissenschaften."
-    },
-    {
-      "jahr": 1918,
-      "titel": "Frauenwahlrecht in Deutschland",
-      "text": "Mit der Novemberrevolution erhalten Frauen das aktive und passive Wahlrecht; bei der Wahl zur Nationalversammlung 1919 liegt die Wahlbeteiligung der Frauen bei 82 Prozent. 37 Frauen ziehen ins Parlament ein. In der Schweiz dauerte es bis 1971, im Kanton Appenzell Innerrhoden bis 1990."
-    },
-    {
-      "jahr": 1928,
-      "titel": "Gleiches Wahlrecht in Großbritannien",
-      "text": "Seit 1918 durften Frauen über 30 mit Eigentum wählen; erst 1928 gilt dasselbe Alter wie für Männer. Der Weg dorthin führte über Massenproteste, Hungerstreiks und Zwangsernährung inhaftierter Suffragetten."
-    },
-    {
-      "jahr": 1949,
-      "titel": "Simone de Beauvoir",
-      "text": "Das andere Geschlecht unterscheidet zwischen biologischem und gesellschaftlich zugewiesenem Geschlecht – der Satz, man komme nicht als Frau zur Welt, man werde es, prägte die Debatte des ganzen Jahrhunderts. Das Buch stand bis 1966 auf dem kirchlichen Index."
-    },
-    {
-      "jahr": 1960,
-      "titel": "Die Pille",
-      "text": "Erstmals lässt sich Empfängnis zuverlässig und unabhängig vom Partner verhüten. Die Folgen für Bildungs- und Berufsverläufe von Frauen sind ökonomisch messbar: Studien zeigen einen deutlichen Anstieg von Studienabschlüssen und späterer Heirat dort, wo der Zugang früher möglich war."
-    },
-    {
-      "jahr": 1963,
-      "titel": "Der Weiblichkeitswahn",
-      "text": "Betty Friedans Buch beschreibt das Unbehagen von Hausfrauen der amerikanischen Vorstädte und löst die zweite Welle der Frauenbewegung aus. Kritisiert wurde später zu Recht, dass es die Lage von Arbeiterinnen und schwarzen Frauen kaum berührte."
-    },
-    {
-      "jahr": 1975,
-      "titel": "Der Frauenstreik in Island",
-      "text": "90 Prozent der isländischen Frauen legen für einen Tag jede Arbeit nieder – bezahlte wie unbezahlte. Das Land steht still. Fünf Jahre später wird Vigdís Finnbogadóttir als erste Frau der Welt direkt zur Staatspräsidentin gewählt."
-    },
-    {
-      "jahr": 1977,
-      "titel": "Ehemann darf nicht mehr entscheiden",
-      "text": "In der Bundesrepublik entfällt der Paragraf, nach dem die Frau nur berufstätig sein durfte, soweit es mit ihren Pflichten in Ehe und Familie vereinbar war. Bis 1958 hatte der Mann sogar das Recht, das Arbeitsverhältnis seiner Frau zu kündigen."
-    },
-    {
-      "jahr": 1979,
-      "titel": "Die UN-Frauenrechtskonvention",
-      "text": "CEDAW verpflichtet die Vertragsstaaten, Diskriminierung in Recht und Praxis zu beseitigen. Sie gehört zu den am häufigsten mit Vorbehalten unterzeichneten Menschenrechtsverträgen – ein Hinweis darauf, wie umstritten der Gegenstand blieb."
-    },
-    {
-      "jahr": 1997,
-      "titel": "Vergewaltigung in der Ehe wird strafbar",
-      "text": "In Deutschland fällt die Straflosigkeit erst 1997, nach jahrzehntelanger Debatte und gegen erheblichen Widerstand. In vielen Ländern ist sie bis heute nicht oder nur eingeschränkt strafbar."
-    },
-    {
-      "jahr": 2013,
-      "titel": "Malala Yousafzai vor den Vereinten Nationen",
-      "text": "Ein Jahr nach dem Attentat der Taliban spricht die Sechzehnjährige über das Recht auf Bildung. Weltweit gehen mehr Mädchen zur Schule als je zuvor – zugleich sind es in Krisenregionen die ersten, die wieder herausgenommen werden."
-    },
-    {
-      "jahr": 2020,
-      "titel": "Was noch offen ist",
-      "text": "Frauen leisten weltweit den überwiegenden Teil unbezahlter Sorgearbeit; in Parlamenten liegt ihr Anteil bei etwa einem Viertel bis einem Drittel; in Vorständen großer Unternehmen deutlich darunter. Der Abstand bei Löhnen besteht in allen Industrieländern fort, wenn auch in unterschiedlicher Höhe. Stand der Angaben: 2026 – laufende Zahlen bei UN Women und der Interparlamentarischen Union."
-    }
+   {
+    "jahr": -2285,
+    "titel": "Enheduanna, die erste namentlich bekannte Autorin",
+    "text": "Die Tochter Sargons von Akkad war Hohepriesterin in Ur und verfasste Tempelhymnen, die sie ausdrücklich sich selbst zuschrieb. Damit ist sie die früheste Person der Weltliteratur, deren Name mit einem Werk verbunden ist – rund 1.500 Jahre vor Homer."
+   },
+   {
+    "jahr": -1479,
+    "titel": "Hatschepsut regiert als König",
+    "text": "Sie übernahm die Herrschaft für ihren minderjährigen Stiefsohn und behielt sie zwei Jahrzehnte. In Bildwerken erscheint sie mit Königsbart – nicht als Verkleidung, sondern weil das Amt eine männlich definierte Ikonographie hatte. Nach ihrem Tod wurden ihre Namen an vielen Denkmälern getilgt."
+   },
+   {
+    "jahr": -1200,
+    "titel": "Frauenarbeit ist unsichtbar überliefert",
+    "text": "Textilherstellung war über Jahrtausende die zeitaufwendigste Produktion nach der Landwirtschaft und lag fast überall in Frauenhand. In den Quellen taucht sie kaum auf, weil sie im Haushalt stattfand – ein Muster, das sich durch die gesamte Wirtschaftsgeschichte zieht."
+   },
+   {
+    "jahr": -600,
+    "titel": "Sappho",
+    "text": "Ihre Lyrik galt in der Antike als so bedeutend, dass Platon sie die zehnte Muse nannte. Erhalten sind fast nur Bruchstücke, die meisten aus Zitaten anderer und aus Papyrusfunden ägyptischer Müllhalden."
+   },
+   {
+    "jahr": -500,
+    "titel": "Athen: Demokratie ohne Frauen",
+    "text": "In der Stadt, die als Wiege der Demokratie gilt, waren Frauen von der Volksversammlung ausgeschlossen, rechtlich lebenslang unter Vormundschaft und im Alltag weitgehend auf das Haus beschränkt. In Sparta hatten Frauen mehr Rechte, Grundbesitz und Bewegungsfreiheit – ein Umstand, über den athenische Autoren sich empörten."
+   },
+   {
+    "jahr": -100,
+    "titel": "Rechtsstellung in Rom",
+    "text": "Römerinnen konnten erben, Eigentum besitzen und Geschäfte führen; unter Augustus entfiel für Mütter mehrerer Kinder die Vormundschaft. Politische Ämter blieben verschlossen, doch der Einfluss über Familiennetzwerke war real – Livia, Agrippina und Iulia Domna sind belegte Beispiele."
+   },
+   {
+    "jahr": 400,
+    "titel": "Hypatia",
+    "text": "Die Mathematikerin und Philosophin lehrte in Alexandria und wurde 415 von einem Mob getötet. Ihr Tod wurde später zur Chiffre für den Untergang antiker Gelehrsamkeit gemacht; die Hintergründe waren vor allem lokale Machtkämpfe. Das ihr zugeschriebene Zitat über das Recht zu denken stammt aus dem 19. Jahrhundert."
+   },
+   {
+    "jahr": 600,
+    "titel": "Klöster als Bildungsraum",
+    "text": "Für Frauen, die nicht heiraten wollten oder sollten, war das Kloster über tausend Jahre der einzige Ort mit Bibliothek, Schreibstube und eigener Leitung. Äbtissinnen verwalteten Grundbesitz und führten Prozesse – eine Machtstellung, die es sonst nirgends gab."
+   },
+   {
+    "jahr": 1000,
+    "titel": "Murasaki Shikibu schreibt den ersten Roman",
+    "text": "Am japanischen Hof entsteht das Genji Monogatari, oft als erster psychologischer Roman der Weltliteratur bezeichnet. Frauen schrieben in der Hofsprache Japanisch, Männer schrieben Chinesisch – gerade der Ausschluss von der Gelehrtensprache schuf eine eigene Literatur."
+   },
+   {
+    "jahr": 1150,
+    "titel": "Hildegard von Bingen",
+    "text": "Äbtissin, Naturkundlerin, Komponistin und Beraterin von Fürsten und Päpsten. Sie berief sich auf Visionen, um überhaupt öffentlich sprechen zu dürfen – eine Legitimation, die Frauen zugänglich war, wo das Amt es nicht war."
+   },
+   {
+    "jahr": 1405,
+    "titel": "Christine de Pizan lebt vom Schreiben",
+    "text": "Als Witwe ohne Versorgung wurde sie Berufsschriftstellerin – die erste in Europa, die ihren Unterhalt damit bestritt. In der Stadt der Frauen widerlegte sie systematisch die frauenfeindlichen Argumente ihrer Zeit."
+   },
+   {
+    "jahr": 1560,
+    "titel": "Die Hexenverfolgung",
+    "text": "Zwischen 1450 und 1750 wurden in Europa schätzungsweise 40.000 bis 60.000 Menschen als Hexen hingerichtet, rund drei Viertel davon Frauen. Die Verfolgung war kein mittelalterliches, sondern ein frühneuzeitliches Phänomen und ging oft von weltlichen Gerichten aus.",
+    "vertiefung": "hexenverfolgung-ende"
+   },
+   {
+    "jahr": 1678,
+    "titel": "Die erste Doktorandin",
+    "text": "Elena Cornaro Piscopia promoviert in Padua in Philosophie – gegen den Widerstand der theologischen Fakultät, die einen Abschluss in Theologie verhinderte. Es dauerte weitere zweihundert Jahre, bis Frauen regulär studieren durften."
+   },
+   {
+    "jahr": 1791,
+    "titel": "Olympe de Gouges antwortet der Revolution",
+    "text": "Auf die Erklärung der Menschen- und Bürgerrechte, die Frauen nicht einschloss, antwortete sie mit einer Erklärung der Rechte der Frau und Bürgerin. Zwei Jahre später wurde sie guillotiniert – unter anderem mit der Begründung, sie habe die Tugenden ihres Geschlechts vergessen."
+   },
+   {
+    "jahr": 1792,
+    "titel": "Mary Wollstonecraft begründet die Debatte",
+    "text": "Ihre Verteidigung der Rechte der Frau argumentiert nicht mit Gleichheit der Natur, sondern mit Bildung: Frauen erschienen schwächer, weil man sie schwach erzog. Das Buch wurde breit gelesen und nach Bekanntwerden ihres Privatlebens jahrzehntelang gemieden."
+   },
+   {
+    "jahr": 1848,
+    "titel": "Seneca Falls",
+    "text": "Die erste Frauenrechtskonvention der USA formuliert eine Erklärung nach dem Vorbild der Unabhängigkeitserklärung und fordert das Wahlrecht – der umstrittenste Punkt, der nur knapp angenommen wurde. Bis zur Einlösung vergingen 72 Jahre."
+   },
+   {
+    "jahr": 1851,
+    "titel": "Sojourner Truth in Akron",
+    "text": "Die ehemalige Sklavin hält eine Rede, die den Widerspruch offenlegt: Die Schutzbedürftigkeit, mit der man Frauen Rechte verweigerte, hatte für schwarze Frauen nie gegolten. Die berühmte Fassung mit dem wiederholten Ain't I a Woman stammt aus einer zwölf Jahre späteren Wiedergabe und ist sprachlich verändert."
+   },
+   {
+    "jahr": 1869,
+    "titel": "Das erste Frauenwahlrecht",
+    "text": "Das Territorium Wyoming führt das Wahlrecht für Frauen ein – teils aus Überzeugung, teils um Siedlerinnen anzulocken. 1893 folgt Neuseeland als erster selbstverwalteter Staat landesweit.",
+    "vertiefung": "frauenwahlrecht"
+   },
+   {
+    "jahr": 1889,
+    "titel": "Die Sozialarbeit als Beruf",
+    "text": "Jane Addams gründet in Chicago das Hull House, eine Nachbarschaftseinrichtung für Einwandererfamilien. Aus dieser Arbeit entstanden Sozialarbeit und empirische Stadtforschung als Fächer – und 1931 der Friedensnobelpreis für Addams."
+   },
+   {
+    "jahr": 1903,
+    "titel": "Marie Curie erhält den Nobelpreis",
+    "text": "Zunächst war nur ihr Mann für den Physikpreis vorgeschlagen; erst auf dessen Einspruch wurde sie aufgenommen. 1911 erhielt sie einen zweiten Preis, für Chemie – sie ist bis heute die einzige Person mit Nobelpreisen in zwei Naturwissenschaften."
+   },
+   {
+    "jahr": 1918,
+    "titel": "Frauenwahlrecht in Deutschland",
+    "text": "Mit der Novemberrevolution erhalten Frauen das aktive und passive Wahlrecht; bei der Wahl zur Nationalversammlung 1919 liegt die Wahlbeteiligung der Frauen bei 82 Prozent. 37 Frauen ziehen ins Parlament ein. In der Schweiz dauerte es bis 1971, im Kanton Appenzell Innerrhoden bis 1990.",
+    "vertiefung": "frauenwahlrecht"
+   },
+   {
+    "jahr": 1928,
+    "titel": "Gleiches Wahlrecht in Großbritannien",
+    "text": "Seit 1918 durften Frauen über 30 mit Eigentum wählen; erst 1928 gilt dasselbe Alter wie für Männer. Der Weg dorthin führte über Massenproteste, Hungerstreiks und Zwangsernährung inhaftierter Suffragetten.",
+    "vertiefung": "frauenwahlrecht"
+   },
+   {
+    "jahr": 1949,
+    "titel": "Simone de Beauvoir",
+    "text": "Das andere Geschlecht unterscheidet zwischen biologischem und gesellschaftlich zugewiesenem Geschlecht – der Satz, man komme nicht als Frau zur Welt, man werde es, prägte die Debatte des ganzen Jahrhunderts. Das Buch stand bis 1966 auf dem kirchlichen Index."
+   },
+   {
+    "jahr": 1960,
+    "titel": "Die Pille",
+    "text": "Erstmals lässt sich Empfängnis zuverlässig und unabhängig vom Partner verhüten. Die Folgen für Bildungs- und Berufsverläufe von Frauen sind ökonomisch messbar: Studien zeigen einen deutlichen Anstieg von Studienabschlüssen und späterer Heirat dort, wo der Zugang früher möglich war."
+   },
+   {
+    "jahr": 1963,
+    "titel": "Der Weiblichkeitswahn",
+    "text": "Betty Friedans Buch beschreibt das Unbehagen von Hausfrauen der amerikanischen Vorstädte und löst die zweite Welle der Frauenbewegung aus. Kritisiert wurde später zu Recht, dass es die Lage von Arbeiterinnen und schwarzen Frauen kaum berührte."
+   },
+   {
+    "jahr": 1975,
+    "titel": "Der Frauenstreik in Island",
+    "text": "90 Prozent der isländischen Frauen legen für einen Tag jede Arbeit nieder – bezahlte wie unbezahlte. Das Land steht still. Fünf Jahre später wird Vigdís Finnbogadóttir als erste Frau der Welt direkt zur Staatspräsidentin gewählt."
+   },
+   {
+    "jahr": 1977,
+    "titel": "Ehemann darf nicht mehr entscheiden",
+    "text": "In der Bundesrepublik entfällt der Paragraf, nach dem die Frau nur berufstätig sein durfte, soweit es mit ihren Pflichten in Ehe und Familie vereinbar war. Bis 1958 hatte der Mann sogar das Recht, das Arbeitsverhältnis seiner Frau zu kündigen."
+   },
+   {
+    "jahr": 1979,
+    "titel": "Die UN-Frauenrechtskonvention",
+    "text": "CEDAW verpflichtet die Vertragsstaaten, Diskriminierung in Recht und Praxis zu beseitigen. Sie gehört zu den am häufigsten mit Vorbehalten unterzeichneten Menschenrechtsverträgen – ein Hinweis darauf, wie umstritten der Gegenstand blieb."
+   },
+   {
+    "jahr": 1997,
+    "titel": "Vergewaltigung in der Ehe wird strafbar",
+    "text": "In Deutschland fällt die Straflosigkeit erst 1997, nach jahrzehntelanger Debatte und gegen erheblichen Widerstand. In vielen Ländern ist sie bis heute nicht oder nur eingeschränkt strafbar."
+   },
+   {
+    "jahr": 2013,
+    "titel": "Malala Yousafzai vor den Vereinten Nationen",
+    "text": "Ein Jahr nach dem Attentat der Taliban spricht die Sechzehnjährige über das Recht auf Bildung. Weltweit gehen mehr Mädchen zur Schule als je zuvor – zugleich sind es in Krisenregionen die ersten, die wieder herausgenommen werden."
+   },
+   {
+    "jahr": 2020,
+    "titel": "Was noch offen ist",
+    "text": "Frauen leisten weltweit den überwiegenden Teil unbezahlter Sorgearbeit; in Parlamenten liegt ihr Anteil bei etwa einem Viertel bis einem Drittel; in Vorständen großer Unternehmen deutlich darunter. Der Abstand bei Löhnen besteht in allen Industrieländern fort, wenn auch in unterschiedlicher Höhe. Stand der Angaben: 2026 – laufende Zahlen bei UN Women und der Interparlamentarischen Union."
+   }
   ],
   "strittig": "Zwei Fallen sind verbreitet. Die erste ist die Verklärung: Aus wenigen überlieferten Herrscherinnen und Gelehrten lässt sich keine allgemein bessere Lage ableiten — Hatschepsut und Hildegard waren Ausnahmen, und gerade weil sie Ausnahmen waren, wurden sie überliefert. Die zweite ist die Verallgemeinerung: Die Lage von Frauen unterschied sich zu jeder Zeit stärker nach Stand, Region und Vermögen als nach Jahrhundert. Eine Bäuerin des 13. Jahrhunderts und eine Äbtissin derselben Zeit lebten in verschiedenen Welten. Umstritten ist außerdem, wie stark die Hexenverfolgung geschlechtsspezifisch zu deuten ist: Der Frauenanteil lag bei etwa drei Vierteln, regional aber sehr unterschiedlich — in Island und Estland waren die meisten Hingerichteten Männer. Und viele bekannte Zitate — Hypatia, Sojourner Truth — sind in der umlaufenden Form nicht zeitgenössisch belegt.",
   "quellen": [
-    "Encyclopaedia Britannica: women's rights movement; Einzelartikel",
-    "Merry Wiesner-Hanks: Gender in History – Global Perspectives",
-    "Bonnie S. Anderson und Judith P. Zinsser: A History of Their Own",
-    "Wolfgang Behringer: Hexen – Glaube, Verfolgung, Vermarktung",
-    "UN Women und Interparlamentarische Union: laufende Statistiken",
-    "Nobelprize.org: Preisträgerinnen"
+   "Encyclopaedia Britannica: women's rights movement; Einzelartikel",
+   "Merry Wiesner-Hanks: Gender in History – Global Perspectives",
+   "Bonnie S. Anderson und Judith P. Zinsser: A History of Their Own",
+   "Wolfgang Behringer: Hexen – Glaube, Verfolgung, Vermarktung",
+   "UN Women und Interparlamentarische Union: laufende Statistiken",
+   "Nobelprize.org: Preisträgerinnen"
+  ],
+  "literatur": [
+   {
+    "titel": "Gender in History – Global Perspectives",
+    "autor": "Merry Wiesner-Hanks",
+    "jahr": "2011",
+    "warum": "Der beste weltweite Überblick: was sich wo und wann tatsächlich unterschied, statt einer einzigen Erzählung."
+   },
+   {
+    "titel": "Frauen und Macht",
+    "autor": "Mary Beard",
+    "jahr": "2018",
+    "warum": "Ein schmaler Essay darüber, wie tief die Muster reichen, mit denen Frauen von öffentlicher Rede ausgeschlossen wurden. Beginnt bei Homer."
+   },
+   {
+    "titel": "Das andere Geschlecht",
+    "autor": "Simone de Beauvoir",
+    "jahr": "1949",
+    "warum": "Der Text, der die Debatte des 20. Jahrhunderts prägte. Umfangreich, in Teilen zeitgebunden, in der Grundfrage unverändert aktuell."
+   }
   ]
-}
+ }
 ];
