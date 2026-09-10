@@ -3055,6 +3055,1738 @@ const THEMEN = [
   ]
  },
  {
+  "id": "rom-stadt",
+  "titel": "Rom",
+  "kurz": "Von der Hüttensiedlung zur Millionenstadt, von 30.000 Einwohnern im Mittelalter zurück zur Hauptstadt — dieselbe Stadt in drei Aggregatzuständen.",
+  "einleitung": "Keine andere Stadt hat einen so tiefen Absturz und eine so vollständige Rückkehr hinter sich. Um 100 n. Chr. lebten hier rund eine Million Menschen, mehr als in jeder europäischen Stadt vor dem 19. Jahrhundert; um 1400 waren es etwa zwanzigtausend, die zwischen Ruinen Vieh weideten. Was Rom über die Jahrhunderte trug, war nicht Wirtschaftskraft, sondern zweimal dasselbe Prinzip: Es war der Ort, von dem aus regiert wurde – erst weltlich, dann geistlich. Diese Geschichte folgt der Stadt selbst, nicht dem Reich: ihrem Wasser, ihren Mauern, ihren Bränden und ihren Einwohnerzahlen.",
+  "stationen": [
+   {
+    "jahr": -1000,
+    "titel": "Hütten auf dem Palatin",
+    "text": "Grabungen auf dem Palatin haben Pfostenlöcher von Hütten und zugehörige Gräber freigelegt, datiert auf das 10. Jahrhundert v. Chr. Die Lage ist gut gewählt: Hügel über der Tiberfurt, wo eine Insel den Fluss teilt und die Salzstraße von der Küste ins Bergland kreuzt. Rom entsteht nicht an einem heiligen Ort, sondern an einer Kreuzung.",
+    "herrschaft": "Latinische Siedlungen"
+   },
+   {
+    "jahr": -753,
+    "titel": "Der Gründungsmythos",
+    "text": "Die römische Überlieferung datiert die Gründung durch Romulus auf dieses Jahr und rechnet ihre Geschichte danach: ab urbe condita. Die Zwillinge, die Wölfin, der Brudermord und der Raub der Sabinerinnen sind Erzählungen, die erst Jahrhunderte später aufgeschrieben wurden. Bemerkenswert ist, was die Römer sich selbst erzählten: Ihre Stadt begann mit einem Mord und einer Bande von Flüchtigen.",
+    "herrschaft": "Königszeit (Überlieferung)"
+   },
+   {
+    "jahr": -600,
+    "titel": "Die Etrusker legen den Sumpf trocken",
+    "text": "Unter den letzten, etruskischen Königen wird das sumpfige Tal zwischen den Hügeln entwässert – die Cloaca Maxima leitet das Wasser in den Tiber. Erst dadurch entsteht ein trockener, befestigter Platz in der Mitte: das Forum. Die Kanalisation ist damit älter als die Republik und die erste bauliche Voraussetzung dafür, dass aus Dörfern auf Hügeln eine Stadt wird.",
+    "herrschaft": "Etruskische Könige"
+   },
+   {
+    "jahr": -509,
+    "titel": "Die Vertreibung der Könige",
+    "text": "Nach der Überlieferung wird der letzte König vertrieben und eine Republik eingerichtet, in der zwei jährlich gewählte Konsuln an der Spitze stehen. Die Abneigung gegen die Alleinherrschaft wird zum Kern des römischen Selbstbildes und begleitet die Stadt fünfhundert Jahre. Sie ist auch der Grund, warum Augustus später jede monarchische Bezeichnung vermied.",
+    "herrschaft": "Römische Republik",
+    "vertiefung": "roemische-republik"
+   },
+   {
+    "jahr": -390,
+    "titel": "Die Kelten nehmen die Stadt",
+    "text": "Ein keltisches Heer schlägt die römische Armee an der Allia und besetzt Rom; nur das Kapitol hält. Die Römer zahlen Lösegeld – die Erzählung von den Gänsen, die die Verteidiger weckten, und vom Schwert in der Waagschale gehört zur späteren Ausschmückung. Die Folge ist die erste große Stadtmauer, die sogenannte Servianische Mauer, deren Reste bis heute stehen.",
+    "herrschaft": "Römische Republik"
+   },
+   {
+    "jahr": -312,
+    "titel": "Wasser und Straße",
+    "text": "Im selben Jahr beginnen die Via Appia nach Süden und die Aqua Appia, die erste Wasserleitung der Stadt. Beides geht auf denselben Zensor zurück und beschreibt das römische Verfahren: Erst wird die Versorgung gebaut, dann wächst die Bevölkerung. Bis zur Kaiserzeit kommen zehn weitere Leitungen hinzu, die täglich mehrere Hunderttausend Kubikmeter in die Stadt bringen.",
+    "herrschaft": "Römische Republik"
+   },
+   {
+    "jahr": -123,
+    "titel": "Getreide für die Hauptstadt",
+    "text": "Ein Gesetz sichert den Bürgern Rom Getreide zu festem Preis zu, später kostenlos. Die Stadt ernährt sich schon damals nicht aus ihrem Umland, sondern aus Sizilien, Nordafrika und Ägypten – ein Versorgungssystem mit Häfen, Speichern und Flottenverträgen. Wer Rom regieren wollte, musste die Getreideflotte kontrollieren; wer sie unterbrach, brachte die Stadt binnen Wochen in Aufruhr.",
+    "herrschaft": "Römische Republik"
+   },
+   {
+    "jahr": -46,
+    "titel": "Caesar baut um",
+    "text": "Caesar legt ein eigenes Forum an, plant die Verlegung des Tiberbetts, gründet Kolonien für die Armen der Stadt und reformiert den Kalender. Rom ist zu diesem Zeitpunkt eine Großstadt ohne Stadtplanung: enge Gassen, Holzobergeschosse, keine Feuerwehr, keine Bauaufsicht. Die Bauprogramme der folgenden Jahrhunderte sind auch Antworten auf dieses Chaos.",
+    "herrschaft": "Diktatur Caesars",
+    "vertiefung": "caesar-gallien-rubikon"
+   },
+   {
+    "jahr": -7,
+    "titel": "Augustus ordnet die Stadt",
+    "text": "Augustus teilt Rom in vierzehn Regionen mit Unterbezirken, richtet eine Feuerwehr aus siebentausend Mann ein, setzt einen Verwalter für die Wasserleitungen ein und lässt Getreideversorgung und Tiberufer beaufsichtigen. Er selbst rühmte sich, eine Stadt aus Ziegeln in eine aus Marmor verwandelt zu haben. Die eigentliche Leistung war unsichtbar: eine Stadtverwaltung für eine Million Menschen.",
+    "herrschaft": "Prinzipat",
+    "vertiefung": "kaiser-augustus"
+   },
+   {
+    "jahr": 64,
+    "titel": "Der große Brand",
+    "text": "Ein Feuer zerstört große Teile der Stadt; von vierzehn Regionen bleiben drei unversehrt. Nero erließ danach eine Bauordnung mit Höhenbegrenzung, Steinvorschriften, Abstandsflächen und Wasservorräten in den Häusern – die erste bekannte Brandschutzverordnung. Die Erzählung, er habe selbst gelegt und dabei gesungen, stammt von Autoren, die Jahrzehnte später und aus senatorischer Sicht schrieben.",
+    "herrschaft": "Prinzipat",
+    "vertiefung": "kaiser-nero"
+   },
+   {
+    "jahr": 80,
+    "titel": "Das Kolosseum",
+    "text": "Auf dem trockengelegten See von Neros Palastanlage entsteht ein Amphitheater für geschätzt fünfzigtausend Zuschauer, mit numerierten Eingängen, Sitzplätzen nach Stand und einem unterirdischen System aus Aufzügen. Der Bau war ein politisches Zeichen: Der neue Kaiser gab dem Volk zurück, was der letzte für sich genommen hatte. Finanziert wurde er aus der Beute des Jüdischen Krieges.",
+    "herrschaft": "Prinzipat"
+   },
+   {
+    "jahr": 110,
+    "titel": "Wohnen in der Insula",
+    "text": "Die Mehrheit der Römer lebt in mehrgeschossigen Mietshäusern ohne Wasseranschluss, ohne Küche und ohne Abort; gekocht und gegessen wird in Garküchen, geholt wird das Wasser am Brunnen. Ein Baugesetz begrenzte die Höhe auf etwa zwanzig Meter, weil Einstürze häufig waren. Das monumentale Rom der Bildbände und das Rom der Mehrheit sind zwei verschiedene Städte am selben Ort.",
+    "herrschaft": "Prinzipat"
+   },
+   {
+    "jahr": 216,
+    "titel": "Die Thermen des Caracalla",
+    "text": "Die Anlage bedeckt rund elf Hektar und ist für über tausend Badegäste gleichzeitig ausgelegt, mit beheizten Böden, Bibliothek, Sportplatz und eigener Wasserleitung. Bäder waren keine Luxuseinrichtungen, sondern öffentliche Infrastruktur mit geringem oder keinem Eintritt. Rom hatte zu dieser Zeit über tausend Badeanstalten unterschiedlicher Größe.",
+    "herrschaft": "Prinzipat"
+   },
+   {
+    "jahr": 271,
+    "titel": "Die Aurelianische Mauer",
+    "text": "Nach fast dreihundert Jahren ohne Stadtmauer lässt Aurelian eine neue bauen: neunzehn Kilometer, achtzehn Tore, in wenigen Jahren errichtet und dabei bestehende Gebäude einfach einbezogen. Der Bau ist das deutlichste Zeichen dafür, dass die Grenzen des Reiches nicht mehr sicher sind. Die Mauer blieb bis 1870 die militärische Umgrenzung Roms.",
+    "herrschaft": "Kaiserzeit"
+   },
+   {
+    "jahr": 313,
+    "titel": "Die Kirche zieht ein",
+    "text": "Nach der Duldung des Christentums schenkt Konstantin dem Bischof von Rom den Lateranpalast und lässt große Kirchen bauen – nicht im Zentrum, sondern am Rand, bei den Gräbern der Märtyrer außerhalb der Mauern. Damit entsteht die räumliche Ordnung, die Rom bis heute prägt: das antike Zentrum und ein Ring von Basiliken. Die wichtigste steht über einem Grab im vatikanischen Zirkusgelände.",
+    "herrschaft": "Kaiserzeit",
+    "vertiefung": "kaiser-konstantin"
+   },
+   {
+    "jahr": 410,
+    "titel": "Alarich in Rom",
+    "text": "Westgotische Truppen nehmen die Stadt nach achthundert Jahren wieder ein und plündern drei Tage. Materiell war der Schaden begrenzt, die Wirkung im Reich enorm – Augustinus begann daraufhin sein Werk über den Gottesstaat, um zu erklären, warum der Fall Roms nicht der Fall der Welt sei. Der Kaiser residierte längst in Ravenna; Rom war nicht mehr Hauptstadt, sondern Symbol.",
+    "herrschaft": "Weströmisches Reich",
+    "vertiefung": "ende-westrom"
+   },
+   {
+    "jahr": 455,
+    "titel": "Die Vandalen",
+    "text": "Ein vandalisches Heer aus Nordafrika plündert Rom zwei Wochen lang, systematischer als Alarich, und nimmt Kupferdächer, Statuen und Geiseln mit. Die Getreidezufuhr aus Afrika, von der die Stadt lebte, war schon zuvor abgeschnitten. Die Einwohnerzahl sinkt in diesem Jahrhundert von mehreren Hunderttausend auf schätzungsweise unter hunderttausend.",
+    "herrschaft": "Weströmisches Reich"
+   },
+   {
+    "jahr": 537,
+    "titel": "Die Aquädukte werden zerschnitten",
+    "text": "Im Gotenkrieg zwischen Ostrom und den Ostgoten wird Rom mehrfach belagert und wechselt fünfmal den Herrn; die Belagerer kappen die Wasserleitungen. Damit endet die antike Stadt endgültig: Ohne Aquädukte sind die Höhenlagen unbewohnbar, und die Bevölkerung zieht in die Tiberniederung, wo Brunnen und Fluss erreichbar sind. Der Krieg richtete mehr Schaden an als alle Plünderungen zusammen.",
+    "herrschaft": "Ostgoten und Ostrom",
+    "vertiefung": "kaiser-justinian"
+   },
+   {
+    "jahr": 590,
+    "titel": "Der Bischof übernimmt die Verwaltung",
+    "text": "Gregor der Große findet eine Stadt ohne funktionierende weltliche Obrigkeit vor: Pest, Hochwasser, Flüchtlinge, keine Getreidezufuhr. Er organisiert Versorgung, verhandelt mit den Langobarden und verwaltet die Kirchengüter wie einen Staat. Damit tritt der Papst an die Stelle, die vorher der Kaiser hatte – nicht durch einen Rechtsakt, sondern weil sonst niemand da war.",
+    "herrschaft": "Papst und Ostrom"
+   },
+   {
+    "jahr": 800,
+    "titel": "Eine Kaiserkrönung in Sankt Peter",
+    "text": "Karl der Große wird am Weihnachtstag in der Peterskirche zum Kaiser gekrönt. Für Rom bedeutet es Schutz und einen mächtigen Verbündeten, für das Papsttum den Anspruch, Kaiser zu machen – ein Anspruch, der die nächsten fünfhundert Jahre Streit erzeugt. Die Stadt selbst hat zu diesem Zeitpunkt vielleicht dreißigtausend Einwohner.",
+    "herrschaft": "Papst, Frankenreich als Schutzmacht"
+   },
+   {
+    "jahr": 1084,
+    "titel": "Rom im Investiturstreit",
+    "text": "Im Kampf zwischen Kaiser und Papst wird Rom belagert und eingenommen; die zur Hilfe gerufenen Normannen plündern die Stadt schwerer als jeder Germaneneinfall und verheeren ganze Viertel. Der Papst muss ins Exil. Rom ist in diesen Jahrhunderten weniger Hauptstadt als Schlachtfeld zwischen Adelsfamilien, Kaiser und Kurie.",
+    "herrschaft": "Papst und Stadtadel",
+    "vertiefung": "investiturstreit"
+   },
+   {
+    "jahr": 1309,
+    "titel": "Die Päpste gehen nach Avignon",
+    "text": "Für fast siebzig Jahre residiert das Papsttum in Südfrankreich. Rom verliert damit seine einzige Einnahmequelle – Pilger, Kurie und die Verwaltung der Kirche – und schrumpft auf geschätzt zwanzigtausend Einwohner. Auf dem Forum weidet Vieh; der Ortsname Campo Vaccino, Kuhfeld, hält sich bis ins 19. Jahrhundert.",
+    "herrschaft": "Stadtadel, Papst in Avignon"
+   },
+   {
+    "jahr": 1347,
+    "titel": "Cola di Rienzo",
+    "text": "Der Notar Cola di Rienzo ruft in Rom eine Republik nach antikem Vorbild aus, lässt sich Volkstribun nennen und beruft sich auf eine wiedergefundene Inschrift über die Übertragung der Macht an Vespasian. Nach sieben Monaten wird er gestürzt, kehrt 1354 zurück und wird von einer Menge erschlagen. Der Versuch ist der erste einer Reihe von Wiederbelebungen der römischen Antike als politisches Programm.",
+    "herrschaft": "Kurzlebige Stadtrepublik"
+   },
+   {
+    "jahr": 1420,
+    "titel": "Die Rückkehr und der Wiederaufbau",
+    "text": "Mit dem Ende des Kirchenschismas wird Rom wieder Residenz. Die Päpste des 15. Jahrhunderts betreiben Stadtpolitik: Straßen werden geöffnet, Brücken repariert, die erste Wasserleitung seit der Antike wieder in Betrieb genommen, eine Bibliothek gegründet. Die Antike wird dabei als Steinbruch benutzt und gleichzeitig zum ersten Mal geschützt – ein Widerspruch, der die Denkmalpflege begründet.",
+    "herrschaft": "Kirchenstaat",
+    "vertiefung": "renaissance"
+   },
+   {
+    "jahr": 1506,
+    "titel": "Der Neubau von Sankt Peter",
+    "text": "Julius II. lässt die konstantinische Basilika abreißen und durch einen Neubau ersetzen, der 120 Jahre dauert und an dem Bramante, Raffael, Michelangelo und Bernini arbeiten. Die Finanzierung über Ablässe löst den Streit aus, aus dem die Reformation wird. Selten hängt ein weltgeschichtlicher Bruch so direkt an einer Baustelle.",
+    "herrschaft": "Kirchenstaat"
+   },
+   {
+    "jahr": 1527,
+    "titel": "Sacco di Roma",
+    "text": "Meuternde Truppen Karls V., unbezahlt und zu einem Teil lutherisch, nehmen Rom und plündern es monatelang; die Bevölkerung sinkt von etwa fünfundfünfzigtausend auf unter dreißigtausend. Für die Künstler und Gelehrten der Stadt ist es das Ende einer Epoche – viele gehen und verbreiten die römische Formensprache in ganz Europa. Der Papst musste im Kastell Sant'Angelo ausharren und kapitulieren.",
+    "herrschaft": "Kirchenstaat",
+    "vertiefung": "karl5"
+   },
+   {
+    "jahr": 1585,
+    "titel": "Sixtus V. legt die Achsen an",
+    "text": "In einem fünfjährigen Pontifikat wird Rom neu erschlossen: gerade Straßen zwischen den großen Pilgerkirchen, Obelisken als Blickpunkte an den Kreuzungen, eine neue Wasserleitung für die Höhenlagen. Damit ist die Stadt zum ersten Mal seit der Antike planmäßig geordnet – nicht nach Wirtschaft, sondern nach Prozessionswegen. Diese Achsen bestimmen die Innenstadt bis heute.",
+    "herrschaft": "Kirchenstaat"
+   },
+   {
+    "jahr": 1656,
+    "titel": "Die letzte große Pest",
+    "text": "Eine Pestwelle erreicht Rom aus Neapel; die Verwaltung reagiert mit Absperrung ganzer Viertel, Lazaretten auf dem Tiberufer und Gesundheitspässen, und die Stadt verliert mit etwa zehntausend Toten deutlich weniger als Neapel. Die Maßnahmen gelten als früher Erfolg organisierter Seuchenpolitik. Gleichzeitig entsteht die barocke Stadt der Brunnen und Plätze, die Rom im Bild der Welt bis heute ist.",
+    "herrschaft": "Kirchenstaat"
+   },
+   {
+    "jahr": 1798,
+    "titel": "Die Römische Republik",
+    "text": "Französische Truppen besetzen Rom, der Papst wird abgesetzt und stirbt in französischer Gefangenschaft; eine Republik nach französischem Muster hält knapp zwanzig Monate. Kunstwerke werden nach Paris abtransportiert, ein Teil kehrt nach 1815 zurück. Die Episode zeigt, wie sehr die Stadt inzwischen von einer einzigen Institution lebte: Mit dem Papst verschwand ihre Verwaltung.",
+    "herrschaft": "Französische Besetzung"
+   },
+   {
+    "jahr": 1849,
+    "titel": "Der zweite republikanische Versuch",
+    "text": "Im Revolutionsjahr flieht der Papst, eine Römische Republik wird ausgerufen und von Mazzini geführt, Garibaldi verteidigt sie militärisch. Französische Truppen stellen nach mehrmonatiger Belagerung den Kirchenstaat wieder her. Die Verteidigung wird zum Gründungsmythos des italienischen Nationalstaats, der einundzwanzig Jahre später hier seine Hauptstadt einrichtet.",
+    "herrschaft": "Kirchenstaat, wiederhergestellt"
+   },
+   {
+    "jahr": 1870,
+    "titel": "Rom wird Hauptstadt Italiens",
+    "text": "Italienische Truppen schießen bei der Porta Pia eine Bresche in die Aurelianische Mauer und nehmen die Stadt; ein Plebiszit bestätigt den Anschluss, der Papst zieht sich in den Vatikan zurück und erklärt sich zum Gefangenen. Rom hat rund zweihundertzwanzigtausend Einwohner und keine Verwaltung für eine Hauptstadt. In den folgenden dreißig Jahren entstehen Ministerien, Kasernen, Tiberdämme und ganze Neubauviertel.",
+    "herrschaft": "Königreich Italien",
+    "vertiefung": "risorgimento"
+   },
+   {
+    "jahr": 1929,
+    "titel": "Lateranverträge und Freilegungen",
+    "text": "Der Vertrag zwischen Italien und dem Papst schafft den Vatikanstaat und beendet den Konflikt von 1870. Gleichzeitig lässt Mussolini das Zentrum umbauen: Für die Via dei Fori Imperiali und die Achse zum Petersplatz werden dichte Wohnviertel abgerissen und Zehntausende umgesiedelt. Die freigelegten Kaiserforen sind ein archäologischer Gewinn und ein städtebaulicher Eingriff, der bis heute diskutiert wird.",
+    "herrschaft": "Faschistisches Italien",
+    "vertiefung": "faschismus-italien"
+   },
+   {
+    "jahr": 1943,
+    "titel": "Besetzung, Razzia, Befreiung",
+    "text": "Nach dem Sturz Mussolinis besetzen deutsche Truppen Rom. Im Oktober werden über tausend Juden aus dem alten Ghetto deportiert, im März 1944 als Vergeltung dreihundertfünfunddreißig Menschen in den Ardeatinischen Höhlen erschossen. Im Juni 1944 wird die Stadt eingenommen, weitgehend ohne Zerstörung – sie war als offene Stadt erklärt worden, was nur teilweise eingehalten wurde.",
+    "herrschaft": "Deutsche Besetzung, dann Alliierte"
+   },
+   {
+    "jahr": 1960,
+    "titel": "Olympia und die Peripherie",
+    "text": "Die Olympischen Spiele bringen Sportbauten, eine Schnellstraße und die erste Metrolinie; gleichzeitig wächst Rom durch Zuwanderung aus dem Süden auf über zwei Millionen Einwohner. Der Zuwachs landet in ungeplanten Siedlungen am Stadtrand, den borgate, teils ohne Wasser und Kanalisation. Die Filme dieser Jahre – von Fellini bis Pasolini – handeln von genau diesem Abstand zwischen Zentrum und Rand.",
+    "herrschaft": "Republik Italien"
+   },
+   {
+    "jahr": 2000,
+    "titel": "Das Heilige Jahr und der Massentourismus",
+    "text": "Zum Jubeljahr kommen geschätzt fünfundzwanzig Millionen Besucher; die Stadt baut Untergrundparkplätze, Fußgängerzonen und Museen um. Seither ist Tourismus der wichtigste Wirtschaftszweig – mit denselben Folgen wie in Venedig: steigende Mieten, verdrängte Bewohner, Innenstadtwohnungen als Ferienwohnungen. Die Zahlen dazu ändern sich jährlich und sind bei der Stadtverwaltung nachzuschauen, nicht als feste Größe zu merken.",
+    "herrschaft": "Republik Italien"
+   }
+  ],
+  "strittig": "Bei Rom ist vor allem die Frühzeit strittig. Die Königsliste, die Gründung 753 v. Chr. und die Vertreibung des letzten Königs 509 v. Chr. stammen aus Darstellungen, die vierhundert Jahre später geschrieben wurden; die Archäologie belegt Siedlung und Stadtwerdung, nicht die Personen. Zweiter Streitpunkt sind die Einwohnerzahlen: Die verbreitete Million für die Kaiserzeit ist eine Schätzung aus Getreidemengen, Wasserverbrauch und bebauter Fläche, und seriöse Rechnungen reichen von 600.000 bis über eine Million. Drittens die Spätantike: Ob der Bevölkerungsverlust vor allem auf Plünderungen, auf die abgeschnittene Getreideversorgung oder auf den Gotenkrieg von 535 bis 554 zurückgeht, wird unterschiedlich gewichtet – die Zerstörung der Aquädukte gilt heute als der schwerere Einschnitt als die Plünderungen von 410 und 455. Viertens der faschistische Umbau: Über den Wert der Freilegungen gegenüber dem Abriss ganzer Wohnviertel wird in der italienischen Denkmalpflege bis heute gestritten.",
+  "quellen": [
+   "Encyclopaedia Britannica: Rome, history; Aurelian Walls; Sack of Rome",
+   "Christopher Hibbert: Rom – Biographie einer Stadt",
+   "Robert Hughes: Rom – Eine Kulturgeschichte",
+   "Filippo Coarelli: Rom – Ein archäologischer Führer",
+   "Neil Christie: From Constantine to Charlemagne (zur spätantiken Stadt)",
+   "Roma Capitale, Statistikamt: Bevölkerungs- und Tourismusdaten (laufend aktualisiert)"
+  ]
+ },
+ {
+  "id": "konstantinopel",
+  "titel": "Konstantinopel / Istanbul",
+  "kurz": "Die Stadt, die 1.100 Jahre nicht erobert wurde, dann zweimal — und die als Hauptstadt zweier Weltreiche und heute keines mehr steht.",
+  "einleitung": "Es gibt in der Welt vielleicht keinen besseren Stadtplatz: eine Halbinsel zwischen zwei Meeren, mit einem tiefen Naturhafen, an der einzigen Stelle, an der Europa und Asien einander berühren, und von drei Seiten durch Wasser geschützt. Wer diesen Ort hält, kontrolliert den Weg vom Mittelmeer ins Schwarze Meer und den Landweg zwischen den Kontinenten. Genau deshalb ist die Geschichte dieser Stadt eine Geschichte von Mauern, Belagerungen und Umbenennungen: Byzantion, Konstantinopel, Istanbul – dreimal dieselbe Halbinsel, dreimal ein anderes Zentrum der Welt.",
+  "stationen": [
+   {
+    "jahr": -660,
+    "titel": "Byzantion",
+    "text": "Siedler aus Megara gründen an der Spitze der Halbinsel eine Kolonie. Nach der Überlieferung hatte ein Orakel geraten, gegenüber der Stadt der Blinden zu bauen – gemeint sei Chalkedon auf der asiatischen Seite, dessen Gründer den besseren Platz übersehen hätten. Die Anekdote beschreibt genau das, was folgt: Der Naturhafen des Goldenen Horns entscheidet über tausend Jahre Geschichte.",
+    "herrschaft": "Griechische Kolonie"
+   },
+   {
+    "jahr": 196,
+    "titel": "Severus zerstört und baut wieder",
+    "text": "Byzantion hatte im römischen Bürgerkrieg auf den Verlierer gesetzt und wird nach dreijähriger Belagerung von Septimius Severus geschleift. Derselbe Kaiser lässt es kurz darauf wieder aufbauen, mit Hippodrom und Thermen – die Lage war zu wichtig, um sie leer zu lassen. Diese Anlagen stehen bereit, als Konstantin gut hundert Jahre später eine Hauptstadt sucht.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 330,
+    "titel": "Konstantins Neugründung",
+    "text": "Konstantin weiht die Stadt als neue Hauptstadt ein, mit Senat, Getreideversorgung aus Ägypten, Foren und aus dem ganzen Reich zusammengetragenen Kunstwerken. Die Gründe sind nüchtern: nähere Lage zu den bedrohten Donau- und Ostgrenzen, gute Verteidigung, ein Ort ohne alteingesessene senatorische Familien. Rom bleibt Symbol, hier fallen die Entscheidungen.",
+    "herrschaft": "Römisches Reich",
+    "vertiefung": "kaiser-konstantin"
+   },
+   {
+    "jahr": 413,
+    "titel": "Die Theodosianische Mauer",
+    "text": "Unter Theodosius II. entsteht ein Verteidigungssystem, das in dieser Form einmalig ist: ein Graben, eine Vormauer, eine Hauptmauer von zwölf Metern Höhe mit sechsundneunzig Türmen, über fünf Kilometer quer über die Halbinsel. Die Mauer hält gegen Awaren, Perser, Araber, Rus, Bulgaren und Osmanen – rund tausend Jahre. Sie ist der wichtigste einzelne Grund dafür, dass das oströmische Reich das weströmische um ein Jahrtausend überlebte.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "kaiser-theodosius"
+   },
+   {
+    "jahr": 532,
+    "titel": "Der Nika-Aufstand",
+    "text": "Aus einem Streit der Wagenrennparteien im Hippodrom wird ein Aufstand, der große Teile der Stadt in Brand setzt und Justinian fast den Thron kostet; er wollte fliehen, blieb nach der Überlieferung auf das Zureden der Kaiserin Theodora. Der Aufstand wird im Hippodrom niedergeschlagen, nach Prokop mit dreißigtausend Toten – eine Zahl aus einer einzigen, parteiischen Quelle. Der Brand schafft den Platz für den folgenden Neubau.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "kaiser-justinian"
+   },
+   {
+    "jahr": 537,
+    "titel": "Die Hagia Sophia",
+    "text": "In knapp sechs Jahren entsteht eine Kirche mit einer Kuppel von zweiunddreißig Metern Durchmesser, die auf Pendentifs über einem quadratischen Raum sitzt – eine statische Lösung, die es vorher nicht gab. Die erste Kuppel stürzte 558 nach Erdbeben ein und wurde steiler wieder aufgebaut. Fast tausend Jahre bleibt es das größte umschlossene Raumvolumen der Welt.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 542,
+    "titel": "Die Pest erreicht die Hauptstadt",
+    "text": "Die justinianische Pest kommt mit Getreideschiffen aus Ägypten und tötet nach den Berichten über Monate täglich Tausende; Prokop beschreibt, dass die Bestattung zusammenbrach. Die Bevölkerung der Stadt sinkt drastisch, die Steuereinnahmen und die Rekrutierung ebenso. Justinians Rückeroberungspläne im Westen scheitern nicht an Feldherren, sondern an dieser Epidemie.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "justinian-pest"
+   },
+   {
+    "jahr": 626,
+    "titel": "Awaren und Perser vor den Mauern",
+    "text": "Während der Kaiser im Osten kämpft, belagern Awaren von Land und Perser von der asiatischen Seite die Stadt gleichzeitig – der gefährlichste Angriff vor 1204. Die Verteidigung hält, weil die byzantinische Flotte verhindert, dass sich die beiden Heere vereinigen. Der Sieg wird der Gottesmutter zugeschrieben; der Hymnus, der daran erinnert, wird bis heute gesungen.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "kaiser-herakleios"
+   },
+   {
+    "jahr": 678,
+    "titel": "Das griechische Feuer",
+    "text": "Gegen eine arabische Flotte wird erstmals eine brennbare Flüssigkeit eingesetzt, die aus Rohren auf Schiffe geschleudert wird und auf Wasser weiterbrennt. Die Zusammensetzung war Staatsgeheimnis und ist bis heute unbekannt; vermutet werden Erdöl, Harze und Kalk. Es ist die einzige antike Waffentechnik, deren Rezept vollständig verloren ging, weil sie zu gut gehütet wurde.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 717,
+    "titel": "Die große arabische Belagerung",
+    "text": "Ein umayyadisches Heer mit Flottenunterstützung belagert die Stadt ein Jahr lang und scheitert an Mauern, Winter, Seuchen und dem griechischen Feuer. Die Belagerung gilt als eine der Entscheidungen der europäischen Geschichte: Wäre die Stadt gefallen, hätte dem Kalifat der Landweg auf den Balkan offengestanden. Danach bleibt die Grenze für dreihundert Jahre in Anatolien.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "islamische-expansion"
+   },
+   {
+    "jahr": 860,
+    "titel": "Die Rus vor der Stadt",
+    "text": "Eine Flotte aus dem Norden erscheint überraschend vor Konstantinopel, plündert die Vorstädte und zieht wieder ab. Aus dem Schrecken wird über zwei Jahrhunderte eine Beziehung: Handelsverträge, eine Leibgarde aus Skandinaviern und Rus, und schließlich die Übernahme des orthodoxen Christentums in Kiew. Die kulturelle Prägung Russlands beginnt an diesen Mauern.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 1054,
+    "titel": "Das Schisma",
+    "text": "Ein päpstlicher Gesandter legt in der Hagia Sophia die Bannbulle gegen den Patriarchen auf den Altar, der Bann wird erwidert. Der Bruch war das Ergebnis jahrhundertelanger Entfremdung in Sprache, Liturgie und Vorrangfragen; die Bullen von 1054 wurden erst 1965 gegenseitig zurückgenommen. Für die Stadt bedeutet die Spaltung, dass Hilfe aus dem Westen künftig einen Preis hat.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 1082,
+    "titel": "Die Venezianer bekommen den Handel",
+    "text": "Gegen Flottenhilfe erhält Venedig Zollfreiheit und eigene Quartiere am Goldenen Horn. Die Regelung wird für die italienischen Seestädte immer günstiger; ein wachsender Teil des Handels der Hauptstadt liegt in fremder Hand, mit Steuerausfällen und wiederholten Ausschreitungen gegen die Kaufleute. Die Abhängigkeit von Venedig ist eine der Vorbedingungen für 1204.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 1204,
+    "titel": "Der Vierte Kreuzzug nimmt die Stadt",
+    "text": "Ein Kreuzzugsheer, das nach Ägypten ziehen sollte, greift auf venetianisches Drängen und wegen eines Thronstreits Konstantinopel an, nimmt es und plündert drei Tage. Reliquien, Bronzen und Bibliotheken werden abtransportiert – die vier Pferde von San Marco stammen von hier. Zum ersten Mal seit der Gründung fällt die Stadt, und zwar an Christen.",
+    "herrschaft": "Lateinisches Kaiserreich",
+    "vertiefung": "kreuzzuege"
+   },
+   {
+    "jahr": 1261,
+    "titel": "Die Rückeroberung",
+    "text": "Byzantinische Truppen nehmen die Stadt beinahe ohne Kampf zurück, weil die lateinische Garnison ausgerückt war. Was zurückkehrt, ist ein Rumpfstaat: Die Bevölkerung ist auf einen Bruchteil geschrumpft, ganze Viertel liegen brach, die Staatskasse ist leer, die Flotte verpfändet. Konstantinopel bleibt formal Hauptstadt eines Reiches, das nur noch aus Fragmenten besteht.",
+    "herrschaft": "Oströmisches Reich, wiederhergestellt"
+   },
+   {
+    "jahr": 1347,
+    "titel": "Der Schwarze Tod trifft ein",
+    "text": "Über die genuesische Handelsstation Kaffa auf der Krim erreicht die Pest Konstantinopel und von dort das Mittelmeer. Die Stadt, ohnehin geschwächt, verliert nach den Berichten einen großen Teil ihrer Einwohner; der Sohn des Kaisers stirbt. Konstantinopel ist an dieser Stelle nicht Ziel, sondern Verteiler – der Umschlagplatz, über den die Seuche nach Europa gelangt.",
+    "herrschaft": "Oströmisches Reich",
+    "vertiefung": "schwarzer-tod"
+   },
+   {
+    "jahr": 1394,
+    "titel": "Die lange Blockade",
+    "text": "Die Osmanen halten die Stadt jahrelang eingeschlossen, ohne sie zu nehmen; der Kaiser reist selbst durch Europa und bittet um Hilfe. Vorübergehend gerettet wird Konstantinopel durch Timur, der 1402 das osmanische Heer in Anatolien schlägt. Die Stadt gewinnt fünfzig Jahre und schrumpft in ihnen weiter – Schätzungen für die Zeit vor der Eroberung liegen bei fünfzigtausend Einwohnern.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 1453,
+    "titel": "Die Eroberung",
+    "text": "Mehmed II. belagert die Stadt siebenundfünfzig Tage, mit Artillerie, die Mauern erstmals brechen kann, und einer Flotte, die er über Land um die Kette des Goldenen Horns bringt. Am 29. Mai fällt die Stadt, der letzte Kaiser stirbt im Kampf. Die Hagia Sophia wird Moschee, und die neue Hauptstadt des Osmanischen Reiches entsteht am selben Ort.",
+    "herrschaft": "Osmanisches Reich",
+    "vertiefung": "fall-konstantinopel"
+   },
+   {
+    "jahr": 1459,
+    "titel": "Mehmed baut eine Hauptstadt",
+    "text": "Die halbleere Stadt wird planmäßig wiederbesiedelt: Kaufleute und Handwerker werden aus dem ganzen Reich hierher versetzt, teils gegen ihren Willen, teils mit Steuerfreiheit gelockt. Es entstehen der Große Basar, der Topkapı-Palast, Stiftungskomplexe mit Moschee, Schule, Küche und Bad. Innerhalb von fünfzig Jahren hat Istanbul mehr Einwohner als je unter den letzten Kaisern.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1478,
+    "titel": "Eine Stadt mit vielen Gemeinden",
+    "text": "Eine Zählung zeigt eine Bevölkerung aus Muslimen, orthodoxen Christen, Armeniern und Juden – letztere verstärkt nach 1492 durch Vertriebene aus Spanien, die der Sultan ausdrücklich aufnahm. Die Gemeinden regeln Personenstand, Schule und Recht in eigener Zuständigkeit und zahlen dafür eine Sondersteuer. Das ist keine Gleichberechtigung, aber eine funktionierende Ordnung für eine vielsprachige Metropole.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1550,
+    "titel": "Sinan baut die Silhouette",
+    "text": "Der Hofarchitekt Sinan errichtet in fünfzig Jahren mehrere Hundert Bauwerke, darunter die Süleymaniye mit einer Kuppel, die sich ausdrücklich an der Hagia Sophia misst. Dazu kommt eine Infrastruktur, die selten erwähnt wird: Wasserleitungen, Aquädukte und Brücken. Die Ansicht Istanbuls vom Wasser, wie sie heute auf jedem Bild erscheint, ist im Wesentlichen das Werk dieser Jahrzehnte.",
+    "herrschaft": "Osmanisches Reich",
+    "vertiefung": "sueleyman"
+   },
+   {
+    "jahr": 1660,
+    "titel": "Feuer als Dauerzustand",
+    "text": "Ein Brand vernichtet rund zwei Drittel der Wohnbebauung; die Stadt bestand überwiegend aus Holzhäusern, und Großbrände wiederholen sich bis ins 20. Jahrhundert. Nach jedem Brand wurde schneller und wieder aus Holz gebaut, weil Erdbeben Steinbauten gefährlich machten und Holz billiger war. Die osmanische Feuerwehr, gebildet aus Janitscharen, war eine eigene, einflussreiche Institution.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1730,
+    "titel": "Der Aufstand des Patrona Halil",
+    "text": "Ein Aufstand von Handwerkern und Janitscharen stürzt Sultan Ahmed III. und beendet eine Phase der Öffnung nach Europa. Die Hauptstadt ist damit nicht nur Sitz der Herrschaft, sondern deren Risiko: Wer die Janitscharen und die Zünfte der Stadt gegen sich hat, verliert den Thron. Erst 1826 wird das Janitscharenkorps aufgelöst – mit Kanonen, in der Stadt.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1839,
+    "titel": "Tanzimat",
+    "text": "Ein kaiserlicher Erlass verspricht Rechtsgleichheit unabhängig von der Religion, geordnete Steuern und Schutz von Leben und Eigentum. Für Istanbul bedeutet die Reformzeit europäische Bauformen, Botschaftsviertel, Zeitungen, ein Stadtparlament für einen Bezirk und die erste moderne Stadtverwaltung. Sie bedeutet auch eine hohe Staatsschuld gegenüber europäischen Banken, die 1875 im Staatsbankrott endet.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1875,
+    "titel": "Der Tünel",
+    "text": "Zwischen Karaköy am Hafen und Beyoğlu auf dem Hügel wird eine unterirdische Standseilbahn eröffnet – nach London die zweitälteste U-Bahn der Welt und noch heute in Betrieb. Sie überwindet sechzig Höhenmeter auf gut fünfhundert Metern. Solche Bauten zeigen die Doppelnatur der Stadt im 19. Jahrhundert: technisch auf europäischem Stand, finanziert mit fremdem Geld.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1889,
+    "titel": "Der Orient-Express",
+    "text": "Mit dem durchgehenden Zug aus Paris ist Istanbul in gut drei Tagen erreichbar. Die Stadt wird zum Ziel eines westlichen Publikums und zum Schauplatz einer Literatur, die mehr über die Erwartungen der Reisenden aussagt als über den Ort. Gleichzeitig bindet die Bahn das Reich an europäische Kapitalgeber, die die Strecken bauen und betreiben.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1908,
+    "titel": "Die jungtürkische Revolution",
+    "text": "Eine Offiziersbewegung erzwingt die Wiedereinsetzung der Verfassung von 1876; in Istanbul feiern Menschen unterschiedlicher Gemeinden gemeinsam auf den Straßen. Die Hoffnung auf ein gleichberechtigtes Vielvölkerreich hält nicht: Es folgen Gegenputsch, Balkankriege und im Ersten Weltkrieg der Völkermord an den Armeniern. Die Hauptstadt bleibt bis 1918 Sitz einer Regierung, die das Reich verliert.",
+    "herrschaft": "Osmanisches Reich",
+    "vertiefung": "voelkermord-armenier"
+   },
+   {
+    "jahr": 1918,
+    "titel": "Die Besetzung",
+    "text": "Nach der Niederlage besetzen alliierte Truppen Istanbul; britische, französische und italienische Zonen teilen die Stadt, im Hafen liegt eine fremde Flotte. Es ist die erste Besetzung seit 1204. Der Widerstand organisiert sich nicht hier, sondern in Anatolien – ein Umstand, der die Zukunft der Stadt entscheidet.",
+    "herrschaft": "Alliierte Besetzung",
+    "vertiefung": "osmanen-ende"
+   },
+   {
+    "jahr": 1923,
+    "titel": "Die Hauptstadt zieht nach Ankara",
+    "text": "Die neue Republik macht Ankara zur Hauptstadt: sicherer im Landesinneren, unbelastet von Sultan, Kalifat und Botschaften, und ein Zeichen für den Bruch mit dem Reich. Istanbul verliert Regierung, Hof und Verwaltung und damit Jahrzehnte lang Bevölkerung und Bedeutung. Nach fast sechzehnhundert Jahren ist es keine Hauptstadt mehr.",
+    "herrschaft": "Republik Türkei"
+   },
+   {
+    "jahr": 1955,
+    "titel": "Die Nacht des 6. September",
+    "text": "Nach einer Falschmeldung über einen Anschlag greifen organisierte Menschenmengen griechische, armenische und jüdische Geschäfte, Kirchen und Wohnungen an; es gibt Tote, tausende Läden werden zerstört. Ein Militärgericht stellte später eine Beteiligung staatlicher Stellen an der Organisation fest. In den folgenden Jahren verlässt die Mehrheit der griechischen Gemeinde die Stadt – das Ende einer Bevölkerungsgruppe, die seit der Gründung dort lebte.",
+    "herrschaft": "Republik Türkei"
+   },
+   {
+    "jahr": 1973,
+    "titel": "Die Brücke über den Bosporus",
+    "text": "Zum fünfzigsten Jahrestag der Republik wird die erste Hängebrücke zwischen Europa und Asien eröffnet. Sie beschleunigt ein Wachstum, das ohnehin läuft: Istanbul wächst durch Zuwanderung aus Anatolien von etwa 1,5 Millionen 1960 auf über 15 Millionen heute, ein großer Teil zunächst in selbstgebauten Siedlungen. Die aktuellen Zahlen sind beim türkischen Statistikinstitut nachzuschauen und ändern sich laufend.",
+    "herrschaft": "Republik Türkei"
+   },
+   {
+    "jahr": 2013,
+    "titel": "Der Gezi-Park",
+    "text": "Der geplante Umbau eines kleinen Parks am Taksim-Platz löst die größten Proteste der türkischen Geschichte aus, die sich schnell auf Fragen von Stadtentwicklung, Pressefreiheit und Regierungsstil ausweiten. Der Streit um wenige Bäume steht für einen größeren: wer über den öffentlichen Raum einer Stadt entscheidet, in der jährlich Milliarden verbaut werden.",
+    "herrschaft": "Republik Türkei"
+   },
+   {
+    "jahr": 2020,
+    "titel": "Die Hagia Sophia wird wieder Moschee",
+    "text": "Ein Gerichtsurteil hebt den Museumsstatus von 1934 auf; das Gebäude wird wieder als Moschee genutzt und bleibt für Besucher zugänglich. Als Kirche gebaut, 1453 Moschee, 1934 Museum, 2020 wieder Moschee – der Bau hat in fünfzehnhundert Jahren viermal die Funktion gewechselt und dabei jedes Mal dieselbe Rolle gespielt: Er zeigt an, wem die Stadt gehört.",
+    "herrschaft": "Republik Türkei"
+   }
+  ],
+  "strittig": "Die Überlieferung zu Konstantinopel ist reich, aber einseitig: Fast alle byzantinischen Quellen stammen aus dem Umfeld des Hofes oder der Kirche. Prokops Zahlen – dreißigtausend Tote beim Nika-Aufstand, die Pesttoten von 542 – sind die einzigen Angaben, die wir haben, und derselbe Autor hat in seiner Geheimgeschichte eine gegenteilige Wertung derselben Personen geliefert; man kann ihm die Vorgänge glauben und die Größenordnungen nicht. Strittig sind ferner die Einwohnerzahlen aller Epochen: Für die Zeit Justinians werden zwischen 350.000 und 500.000 genannt, für 1453 zwischen 30.000 und 50.000 – jeweils Schätzungen aus Fläche, Getreidelieferungen und Häuserzahlen. Umstritten ist außerdem die Rolle des Vierten Kreuzzugs: Ob 1204 der eigentliche Untergang des Reiches war oder nur der Beschleuniger eines längeren Verfalls, trennt die Forschung. Für die Ereignisse des 20. Jahrhunderts ist die Aktenlage in der Türkei teils eingeschränkt; der Pogrom von 1955 ist durch Militärgerichtsakten und Untersuchungen gut belegt, andere Vorgänge weniger.",
+  "quellen": [
+   "Encyclopaedia Britannica: Istanbul; Constantinople; Fall of Constantinople; Hagia Sophia",
+   "Philip Mansel: Konstantinopel – Stadt der Sehnsucht",
+   "Judith Herrin: Byzanz – Das erstaunliche Leben eines mittelalterlichen Weltreichs",
+   "Roger Crowley: 1453 – Der Fall von Konstantinopel",
+   "Speros Vryonis: The Mechanism of Catastrophe (zum Pogrom von 1955)",
+   "Türkisches Statistikinstitut TÜIK: Bevölkerungsdaten Istanbul (laufend aktualisiert)"
+  ]
+ },
+ {
+  "id": "bagdad",
+  "titel": "Bagdad",
+  "kurz": "In 150 Jahren von der Planstadt zur größten Stadt der Welt — und danach ein Dauerzustand aus Eroberungen, aus dem die Stadt bis heute nicht heraus ist.",
+  "einleitung": "Bagdad ist die einzige der großen Weltstädte, die als Verwaltungsprojekt am Reißbrett entstand: 762 auf freiem Feld gegründet, kreisrund angelegt, mit dem Palast des Kalifen in der Mitte. Der Ort war gut gewählt, dort, wo Tigris und Euphrat einander am nächsten kommen und Kanäle beide verbinden – Getreide aus dem Süden, Holz aus dem Norden, Seewege bis Indien und China. Innerhalb von zwei Generationen war Bagdad wahrscheinlich die größte Stadt der Erde und für zweihundert Jahre ihr wichtigster Ort für Mathematik, Medizin und Übersetzung. Danach ist seine Geschichte eine Reihe von Belagerungen: Buyiden, Seldschuken, Mongolen, Timur, Safawiden, Osmanen, Briten, und zuletzt zwei Kriege innerhalb von zwölf Jahren.",
+  "strittig": "Die Einwohnerzahlen des 9. Jahrhunderts – oft mit über einer Million angegeben – beruhen auf mittelalterlichen Angaben über Bäder, Moscheen und Brote und sind nicht überprüfbar; die Größenordnung einer Stadt in der Spitzengruppe der Welt gilt als sicher, die Zahl nicht. Ebenso strittig sind die Opferzahlen der mongolischen Eroberung von 1258: Die Quellen nennen zwischen achtzigtausend und zwei Millionen, und die niedrigeren Zahlen gelten als plausibler. Ob die Bibliotheken 1258 vollständig zerstört wurden, ist offen – Teile der Bestände sind nachweislich vorher oder danach anderswo aufgetaucht. Für die Verluste des Nationalmuseums 2003 gibt es eine belegte Zahl gestohlener Objekte und eine laufend fortgeschriebene Zahl zurückgegebener; sie ist beim Museum nachzuschauen und nicht als feste Größe zu merken.",
+  "quellen": [
+   "Encyclopaedia Britannica: Baghdad; Abbasid dynasty; House of Wisdom",
+   "Justin Marozzi: Baghdad – City of Peace, City of Blood",
+   "Hugh Kennedy: When Baghdad Ruled the Muslim World",
+   "Jim Al-Khalili: Im Haus der Weisheit",
+   "Charles Tripp: A History of Iraq",
+   "Irakisches Nationalmuseum / UNESCO: Berichte zu Verlusten und Rückgaben seit 2003"
+  ],
+  "stationen": [
+   {
+    "jahr": 762,
+    "titel": "Die Runde Stadt",
+    "text": "Der Kalif al-Mansur lässt auf freiem Feld am Tigris eine kreisrunde Residenz anlegen: doppelter Mauerring, vier Tore in die vier Himmelsrichtungen, in der Mitte Palast und Moschee. Astrologen bestimmten den Zeitpunkt des ersten Steins. Die Anlage ist reine Herrschaftsarchitektur – Handel und Wohnen wachsen außerhalb der Mauern, und innerhalb weniger Jahrzehnte ist die Stadt vielfach größer als der Kreis.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 786,
+    "titel": "Harun ar-Raschid",
+    "text": "Unter Harun ar-Raschid gilt Bagdad als reichste Stadt der bekannten Welt; Gesandtschaften kommen aus China und vom Frankenreich. Die Erzählungen aus Tausendundeiner Nacht spielen in dieser Zeit, sind aber Jahrhunderte später gesammelt und beschreiben eine Erinnerung, nicht die Stadt. Belegt sind Papierherstellung, ein Postsystem, Krankenhäuser und ein Kanalnetz, das die Vorstädte versorgte.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 795,
+    "titel": "Papier statt Papyrus",
+    "text": "Nach chinesischem Vorbild – die Technik war über Samarkand gekommen – entsteht in Bagdad eine Papierherstellung. Papier ist billiger als Papyrus, haltbarer als Wachstafeln und fälschungssicherer als Pergament, weil sich Geschriebenes nicht abschaben lässt; die Verwaltung schreibt es deshalb für Urkunden vor. Ohne diese Umstellung wäre die Übersetzungsbewegung der folgenden Jahrzehnte in diesem Umfang nicht möglich gewesen.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 813,
+    "titel": "Der erste Bürgerkrieg um die Stadt",
+    "text": "Der Streit zweier Kalifensöhne endet mit einer einjährigen Belagerung Bagdads durch das eigene Heer; Katapulte beschießen die Viertel, ganze Bezirke brennen. Es ist der erste Fall, in dem die Stadt Kriegsschauplatz einer innerdynastischen Auseinandersetzung wird. Die Sieger bauen wieder auf, aber die runde Stadt al-Mansurs verliert damit ihre Bedeutung.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 830,
+    "titel": "Das Haus der Weisheit",
+    "text": "Unter al-Ma'mun wird die Übersetzung griechischer, persischer und indischer Werke ins Arabische zu einem staatlich finanzierten Vorhaben; Bagdad wird der Ort, an dem Ptolemäus, Euklid und Galen bearbeitet und weitergedacht werden. Al-Chwarizmi schreibt hier über das Rechnen mit indischen Ziffern und über die Algebra, deren Name aus seinem Buchtitel stammt. Ohne diese zweihundert Jahre wäre ein Teil der antiken Wissenschaft verloren – Europa kennt Aristoteles zuerst in Übersetzungen aus dem Arabischen.",
+    "herrschaft": "Abbasidisches Kalifat",
+    "vertiefung": "haus-der-weisheit"
+   },
+   {
+    "jahr": 836,
+    "titel": "Der Kalif zieht weg",
+    "text": "Wegen Spannungen zwischen der Stadtbevölkerung und der türkischen Garde verlegt al-Mu'tasim die Residenz nach Samarra, hundert Kilometer nördlich, und baut dort eine neue Palaststadt. Für fünfundfünfzig Jahre ist Bagdad Großstadt ohne Hof. Der Vorgang zeigt eine dauerhafte Schwäche des Kalifats: Die Herrscher misstrauten dem Militär, auf das sie sich stützten.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 869,
+    "titel": "Der Zandsch-Aufstand",
+    "text": "Versklavte Landarbeiter, die in den Salzsümpfen Südmesopotamiens Böden urbar machen sollten, erheben sich und halten sich vierzehn Jahre gegen die Kalifentruppen; zeitweise stehen sie siebzig Kilometer vor Bagdad. Es ist einer der größten Sklavenaufstände der Geschichte, und er wird nur mit dem Aufgebot des gesamten Reichsheeres beendet. Danach verzichten die Abbasiden auf große Plantagen mit Zwangsarbeit im Umland der Hauptstadt.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 892,
+    "titel": "Die Rückkehr des Hofes",
+    "text": "Der Kalif kehrt nach Bagdad zurück, das inzwischen auf beiden Tigrisufern gewachsen ist und durch Schiffbrücken verbunden wird. Es folgt die Zeit der großen Gelehrten der Stadt: der Arzt ar-Razi, der Historiker at-Tabari, der Mathematiker al-Battani. Politisch dagegen schrumpft das Kalifat: Ägypten, Nordafrika und Teile Persiens sind faktisch eigenständig.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 945,
+    "titel": "Die Buyiden übernehmen die Macht",
+    "text": "Eine schiitische Dynastie aus Persien nimmt Bagdad ein und lässt den Kalifen im Amt, aber ohne Macht – er wird zur religiösen Instanz, während weltlich ein Emir regiert. Diese Trennung bleibt für die restlichen dreihundert Jahre des Kalifats bestehen. Die Buyiden bauen Krankenhäuser und Bibliotheken; gleichzeitig beginnen die Straßenkämpfe zwischen sunnitischen und schiitischen Vierteln, die die Stadt jahrzehntelang prägen.",
+    "herrschaft": "Buyiden"
+   },
+   {
+    "jahr": 1055,
+    "titel": "Die Seldschuken",
+    "text": "Türkische Seldschuken ziehen in Bagdad ein, beenden die buyidische Herrschaft und lassen sich vom Kalifen als Sultane bestätigen – eine Formel, die Macht und Legitimität ausdrücklich trennt. Der Hof zieht nach Isfahan, Bagdad bleibt geistliches Zentrum. Zwanzig Jahre später gründet der Wesir Nizam al-Mulk hier die Nizamiyya, eine der ersten staatlich finanzierten Hochschulen, an der al-Ghazali lehrt.",
+    "herrschaft": "Seldschuken"
+   },
+   {
+    "jahr": 1067,
+    "titel": "Die Nizamiyya",
+    "text": "Der seldschukische Wesir Nizam al-Mulk gründet eine Hochschule mit festen Stiftungseinkünften, angestellten Lehrern, Stipendien und Wohnheim – ein Modell, das im ganzen islamischen Raum nachgeahmt wird. Al-Ghazali lehrt hier, bricht seine Karriere ab und schreibt danach das Werk, das Theologie und Mystik miteinander versöhnt. Die Madrasa mit dauerhafter Finanzierung ist eine der einflussreichsten Institutionen, die aus Bagdad kommen.",
+    "herrschaft": "Seldschuken",
+    "vertiefung": "universitaet"
+   },
+   {
+    "jahr": 1157,
+    "titel": "Die Kalifen holen sich die Stadt zurück",
+    "text": "Nach dem Zerfall der seldschukischen Macht regieren die Kalifen in Bagdad und Umgebung wieder selbst und halten eine Belagerung durch einen Sultan aus. Für gut hundert Jahre ist Bagdad noch einmal Hauptstadt eines kleinen, aber eigenständigen Staates. Diese letzte Phase endet 1258 – ausgerechnet, weil der Kalif sich diplomatisch als eigenständige Macht verhielt und die Unterwerfung verweigerte.",
+    "herrschaft": "Abbasidisches Kalifat"
+   },
+   {
+    "jahr": 1258,
+    "titel": "Die Mongolen",
+    "text": "Hülegü belagert Bagdad zwölf Tage, nimmt es ein und lässt plündern; der letzte Kalif wird getötet, die Kanäle und Deiche des Umlands beschädigt. Die Opferzahlen der Quellen schwanken um mehr als den Faktor zwanzig. Der schwerere und dauerhaftere Verlust war die Bewässerung: Ein Kanalsystem, das seit Jahrtausenden gepflegt worden war, wurde nicht wieder vollständig hergestellt, und mit ihm ging die Grundlage der Landwirtschaft.",
+    "herrschaft": "Ilchanat (Mongolen)",
+    "vertiefung": "mongolisches-reich"
+   },
+   {
+    "jahr": 1327,
+    "titel": "Ein Reisender beschreibt die Reste",
+    "text": "Ibn Battuta besucht Bagdad und findet eine Stadt, in der die meisten Viertel verlassen sind, aber Bäder, Brücken und einzelne Märkte funktionieren. Sein Bericht ist eine der wenigen Beschreibungen des Zustands zwischen den Katastrophen. Bagdad ist jetzt Provinzstadt eines mongolischen Nachfolgestaats, nicht mehr Hauptstadt.",
+    "herrschaft": "Ilchanat, dann Dschalairiden"
+   },
+   {
+    "jahr": 1401,
+    "titel": "Timur",
+    "text": "Timur nimmt die Stadt nach einer Belagerung ein und lässt sie schwerer verheeren als die Mongolen 1258; Zeitgenossen berichten von Türmen aus Schädeln. Danach ist Bagdad für Jahrhunderte eine mittelgroße Stadt an der Grenze zwischen zwei Reichen. Die Rolle des Handelsknotens übernehmen andere Städte, vor allem Tabris, Aleppo und später Basra.",
+    "herrschaft": "Timuridenreich"
+   },
+   {
+    "jahr": 1534,
+    "titel": "Süleyman nimmt Bagdad",
+    "text": "Das Osmanische Reich erobert die Stadt von den persischen Safawiden und macht sie zum Sitz eines Wilajets an der umstrittenen Ostgrenze. Süleyman lässt das Grab Abu Hanifas wiederherstellen – ein Zeichen an die sunnitische Bevölkerung. In den folgenden hundert Jahren wechselt Bagdad mehrfach zwischen Osmanen und Safawiden; die Bevölkerung zahlt jedes Mal.",
+    "herrschaft": "Osmanisches Reich",
+    "vertiefung": "sueleyman"
+   },
+   {
+    "jahr": 1623,
+    "titel": "Die Safawiden nehmen Bagdad",
+    "text": "Persische Truppen erobern die Stadt und halten sie fünfzehn Jahre; Berichte über Übergriffe gegen die sunnitische Bevölkerung sind Teil der osmanischen Begründung für die Rückeroberung. In diesen Jahrzehnten wird Bagdad zum Grenzfall zwischen zwei Reichen, die sich religiös voneinander abgrenzen. Die Schreine in Nadschaf, Kerbela und Samarra bleiben durch alle Herrschaftswechsel Pilgerziele.",
+    "herrschaft": "Safawidenreich"
+   },
+   {
+    "jahr": 1638,
+    "titel": "Murad IV. erobert zurück",
+    "text": "Nach fünfzehn Jahren persischer Herrschaft nimmt Sultan Murad IV. Bagdad in einer der verlustreichsten Belagerungen des 17. Jahrhunderts. Der anschließende Vertrag von Zuhab legt die Grenze zwischen dem Osmanischen und dem Persischen Reich fest – im Wesentlichen die heutige Grenze zwischen Irak und Iran. Die Stadt bleibt bis 1917 osmanisch.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1831,
+    "titel": "Pest, Flut und ein Neuanfang der Verwaltung",
+    "text": "Eine Pestwelle und ein Tigrishochwasser töten in wenigen Monaten einen großen Teil der Bevölkerung und zerstören ganze Viertel. Die Osmanen nutzen die Gelegenheit, die halbautonome Herrschaft der georgischen Mamluken-Statthalter zu beenden und direkte Verwaltung einzuführen. Bagdad hat zu diesem Zeitpunkt schätzungsweise fünfzigtausend Einwohner – weniger als tausend Jahre zuvor.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1869,
+    "titel": "Midhat Pascha reformiert",
+    "text": "Der neue Gouverneur baut in drei Jahren Straßen, eine Druckerei, ein Krankenhaus, eine Schule und eine Dampfschifflinie auf dem Tigris und führt ein Grundbuch ein. Die Reform bringt Verwaltung und Infrastruktur, aber auch Landtitel, mit denen Stammesland in Privatbesitz übergeht – eine Ursache späterer Konflikte. Bagdad wird wieder eine Stadt mit regionaler Anziehungskraft.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1917,
+    "titel": "Britische Truppen ziehen ein",
+    "text": "Im Ersten Weltkrieg nehmen britisch-indische Truppen Bagdad; der Kommandeur erklärt, man komme als Befreier, nicht als Eroberer. Drei Jahre später führt die Mandatsverwaltung zu einem landesweiten Aufstand, der mit Luftangriffen niedergeschlagen wird. Der Irak entsteht als Staat aus drei osmanischen Provinzen, deren Grenzen in London und Paris gezogen wurden.",
+    "herrschaft": "Britische Besetzung"
+   },
+   {
+    "jahr": 1921,
+    "titel": "Hauptstadt eines neuen Königreichs",
+    "text": "Faisal I. wird König des Irak, Bagdad wird Hauptstadt. Es entstehen Ministerien, eine Universität, ein Radiosender und ein modernes Stadtviertel; die Bevölkerung wächst bis 1947 auf über fünfhunderttausend. Zum ersten Mal seit 1258 ist Bagdad wieder Regierungssitz und nicht Provinzstadt.",
+    "herrschaft": "Königreich Irak (britisches Mandat)"
+   },
+   {
+    "jahr": 1932,
+    "titel": "Unabhängigkeit",
+    "text": "Der Irak wird als erster arabischer Mandatsstaat Mitglied des Völkerbunds. Die Unabhängigkeit bleibt eingeschränkt: Ein Bündnisvertrag sichert Großbritannien Militärbasen und Einfluss auf die Ölförderung. Bagdad wird in den 1930er Jahren zum Zentrum arabischer Presse, Musik und Literatur – eine kurze Phase, in der die Stadt kulturell wieder ausstrahlt.",
+    "herrschaft": "Königreich Irak"
+   },
+   {
+    "jahr": 1941,
+    "titel": "Der Farhud",
+    "text": "Nach dem Zusammenbruch einer nationalistischen Putschregierung kommt es in Bagdad zu einem zweitägigen Pogrom gegen die jüdische Gemeinde mit über hundertfünfzig Toten und massenhaften Plünderungen. Die Gemeinde war eine der ältesten der Welt und stellte zu Beginn des 20. Jahrhunderts etwa ein Viertel der Stadtbevölkerung. Bis 1952 verlassen fast alle irakischen Juden das Land.",
+    "herrschaft": "Königreich Irak"
+   },
+   {
+    "jahr": 1958,
+    "titel": "Das Ende der Monarchie",
+    "text": "Offiziere stürzen die Monarchie; der König und die Regierungsspitze werden getötet, der Irak wird Republik. Es beginnt eine Phase von Umsturz und Gegenumsturz, die 1968 mit der Machtübernahme der Baath-Partei endet. Bagdad wächst in diesen Jahrzehnten stark durch Zuwanderung aus dem Süden; die Siedlung, aus der später Sadr-City wird, entsteht 1959 für diese Zuwanderer.",
+    "herrschaft": "Republik Irak"
+   },
+   {
+    "jahr": 1972,
+    "titel": "Das Öl wird verstaatlicht",
+    "text": "Die Verstaatlichung der Iraq Petroleum Company und der Preisanstieg nach 1973 bringen dem Staat innerhalb weniger Jahre ein Vielfaches seiner Einnahmen. In Bagdad entstehen Universitäten, Krankenhäuser, Schnellstraßen und Wohnsiedlungen; die Alphabetisierung steigt stark, auch bei Frauen. Dieselben Einnahmen finanzieren den Ausbau des Sicherheitsapparats und ab 1980 den Krieg – die Blüte und ihr Ende haben dieselbe Quelle.",
+    "herrschaft": "Republik Irak",
+    "vertiefung": "erdoel"
+   },
+   {
+    "jahr": 1980,
+    "titel": "Acht Jahre Krieg",
+    "text": "Der Krieg gegen Iran dauert bis 1988, kostet nach Schätzungen hunderttausende Menschenleben auf beiden Seiten und wird ab 1985 auch mit Raketen gegen die Städte geführt. Bagdad wird mehrfach beschossen. Die Ölerlöse der 1970er Jahre, die zunächst in Universitäten, Kliniken und Wohnungsbau flossen, gehen in Rüstung und Schulden.",
+    "herrschaft": "Republik Irak"
+   },
+   {
+    "jahr": 1991,
+    "titel": "Die Bombardierung",
+    "text": "Im Golfkrieg nach dem Überfall auf Kuwait werden Kraftwerke, Wasserwerke, Brücken und Telefonnetz getroffen; die Stadt ist wochenlang ohne Strom und sauberes Wasser. Der Wiederaufbau erfolgt unter Sanktionen, die bis 2003 gelten und die Versorgung mit Medikamenten, Ersatzteilen und Chlor stark einschränken. Fachleute streiten über die Zahl der zivilen Todesopfer dieser Jahre; unstrittig ist der Zusammenbruch von Gesundheitswesen und Schulen.",
+    "herrschaft": "Republik Irak"
+   },
+   {
+    "jahr": 2003,
+    "titel": "Einnahme und Plünderung",
+    "text": "Im April 2003 nehmen amerikanische Truppen Bagdad ein. In den Tagen danach werden Ministerien, die Nationalbibliothek und das Nationalmuseum geplündert; tausende Objekte aus fünftausend Jahren mesopotamischer Geschichte verschwinden, ein Teil kehrt später zurück. Die Stadt verliert für Monate Polizei, Verwaltung und Stromversorgung.",
+    "herrschaft": "Besatzungsverwaltung, dann Republik Irak"
+   },
+   {
+    "jahr": 2007,
+    "titel": "Die Stadt der Mauern",
+    "text": "Im Bürgerkrieg zwischen sunnitischen und schiitischen Milizen werden ganze Viertel ethnisch-konfessionell entmischt; die Besatzungstruppen ziehen Betonmauern zwischen den Bezirken und richten Kontrollpunkte ein. Ein Teil dieser Mauern steht bis heute. Aus einer gemischten Millionenstadt wird ein Mosaik getrennter Gebiete – der tiefste soziale Umbau in Bagdads neuerer Geschichte.",
+    "herrschaft": "Republik Irak"
+   },
+   {
+    "jahr": 2019,
+    "titel": "Der Tahrir-Platz",
+    "text": "Monatelange Proteste vor allem junger Menschen richten sich gegen Korruption, konfessionelle Ämterverteilung und fehlende Arbeit; hunderte Demonstrierende werden getötet, die Regierung tritt zurück. Die Bewegung stellt eine Frage, die die Stadtgeschichte seit 1258 begleitet: wer für Wasser, Strom und Ordnung zuständig ist. Bagdad hat heute mehr als sieben Millionen Einwohner; die aktuellen Zahlen sind beim irakischen Statistikamt nachzuschauen.",
+    "herrschaft": "Republik Irak"
+   }
+  ]
+ },
+ {
+  "id": "alexandria",
+  "titel": "Alexandria",
+  "kurz": "Eine Stadt, die als Forschungsstätte gegründet wurde, tausend Jahre die Hauptstadt Ägyptens war und dann für tausend Jahre fast verschwand.",
+  "einleitung": "Alexandria ist der erfolgreichste Städtebau der Antike: an einem Ort ohne Vorgeschichte gegründet, mit rechtwinkligem Raster, zwei Häfen, einem Leuchtturm als Wahrzeichen und einer staatlich bezahlten Forschungseinrichtung im Palastbezirk. Sie war Hauptstadt der Ptolemäer, dann die zweitgrößte Stadt des Römischen Reiches, das Getreidelager Roms und Konstantinopels, ein Zentrum des Christentums und der Ort, an dem der Erdumfang zum ersten Mal berechnet wurde. Nach der arabischen Eroberung verlagerte sich die Herrschaft ins Landesinnere, und Alexandria schrumpfte über ein Jahrtausend zu einem Fischerort mit antiken Trümmern – bis das 19. Jahrhundert es als Hafen wiederentdeckte.",
+  "strittig": "Über den berühmtesten Teil der Stadtgeschichte wissen wir am wenigsten. Die Bibliothek ist in ihrer Größe, ihrem Standort und ihrem Ende ungeklärt: Die Angaben zur Zahl der Buchrollen schwanken zwischen vierzigtausend und siebenhunderttausend, und für den Untergang gibt es vier konkurrierende Erzählungen – Caesars Hafenbrand 48 v. Chr., die Zerstörung des Serapeums 391, die arabische Eroberung 642 und ein langsamer Verfall durch Geldmangel. Die Forschung hält den langsamen Verfall für das Wahrscheinlichste, weil die Bibliothek in römischer Zeit nicht mehr als arbeitende Einrichtung erscheint. Auch der Tod Hypatias 415 wird unterschiedlich gedeutet: als Religionskonflikt oder als Machtkampf zwischen Patriarch und Statthalter, in dem sie die Verbündete der falschen Seite war. Vom antiken Stadtkern liegt ein großer Teil unter Wasser oder unter der heutigen Stadt und ist nicht ausgrabbar.",
+  "quellen": [
+   "Encyclopaedia Britannica: Alexandria; Library of Alexandria; Pharos of Alexandria; Hypatia",
+   "Judith McKenzie: The Architecture of Alexandria and Egypt",
+   "Roger Bagnall: Alexandria – Library of Dreams (zur Quellenlage der Bibliothek)",
+   "Michael Haag: Alexandria – City of Memory (19. und 20. Jahrhundert)",
+   "Franck Goddio / Europäisches Institut für Unterwasserarchäologie: Berichte zur versunkenen Stadt",
+   "Bibliotheca Alexandrina: Angaben zur heutigen Einrichtung"
+  ],
+  "stationen": [
+   {
+    "jahr": -331,
+    "titel": "Die Gründung",
+    "text": "Alexander lässt an der Westspitze des Nildeltas eine Stadt anlegen, an einer Stelle mit Süßwassersee im Rücken, einer schützenden Insel vor der Küste und ohne Nilschlamm, der den Hafen versanden würde. Der Plan folgt dem Raster des Hippodamos: gerade Hauptachsen, gleichmäßige Blöcke. Alexander sah die Stadt nie fertig; sein Leichnam wurde später hierher gebracht und war jahrhundertelang zu sehen.",
+    "herrschaft": "Makedonisch",
+    "vertiefung": "alexanderzug"
+   },
+   {
+    "jahr": -297,
+    "titel": "Museion und Bibliothek",
+    "text": "Die Ptolemäer richten im Palastbezirk eine Forschungseinrichtung ein: freie Kost, Gehalt und Bibliothek für Gelehrte, die keine Lehrpflicht haben. Das ist die erste bekannte staatlich finanzierte Grundlagenforschung. Bücher wurden systematisch beschafft – nach den Berichten wurden Schiffsladungen im Hafen beschlagnahmt, kopiert und die Kopie zurückgegeben.",
+    "herrschaft": "Ptolemäer"
+   },
+   {
+    "jahr": -280,
+    "titel": "Der Pharos",
+    "text": "Auf der Insel Pharos entsteht ein Leuchtturm von geschätzt hundert Metern Höhe, sichtbar über Dutzende Kilometer, mit Feuer und einem Spiegel. Er zählt zu den Sieben Weltwundern und ist das einzige, das einen praktischen Zweck hatte. Sein Name wurde in vielen Sprachen zum Wort für Leuchtturm – im Französischen phare, im Italienischen faro.",
+    "herrschaft": "Ptolemäer"
+   },
+   {
+    "jahr": -250,
+    "titel": "Die Septuaginta",
+    "text": "In Alexandria entsteht die griechische Übersetzung der hebräischen Bibel, weil die große jüdische Gemeinde der Stadt griechisch sprach und las. Die Legende von zweiundsiebzig Übersetzern, die getrennt arbeiteten und wörtlich übereinstimmten, stammt aus einem späteren Schreiben und ist Werbung für die Autorität des Textes. Diese Übersetzung ist die Bibel, die das frühe Christentum benutzt – die neutestamentlichen Zitate folgen ihr, nicht dem hebräischen Wortlaut.",
+    "herrschaft": "Ptolemäer"
+   },
+   {
+    "jahr": -240,
+    "titel": "Eratosthenes berechnet die Erde",
+    "text": "Der Bibliotheksleiter Eratosthenes vergleicht den Sonnenstand am Mittag in Alexandria und in Syene und schließt aus dem Winkelunterschied auf den Erdumfang. Sein Ergebnis liegt je nach Umrechnung des verwendeten Längenmaßes zwischen einem und sechzehn Prozent vom heutigen Wert entfernt. Wichtiger als die Genauigkeit ist die Methode: eine Messung, die mit zwei Stöcken und einer Wegstrecke auskommt.",
+    "herrschaft": "Ptolemäer"
+   },
+   {
+    "jahr": -196,
+    "titel": "Der Stein von Rosette",
+    "text": "Priester beschließen ein Ehrendekret für Ptolemaios V. und lassen es dreifach in Stein schlagen: in Hieroglyphen, in Demotisch und auf Griechisch. Es ist eine Verwaltungsroutine des ptolemäischen Ägypten, in dem griechische Herrscher und ägyptische Priesterschaft aufeinander angewiesen waren. Zweitausend Jahre später wird gerade dieser Stein zum Schlüssel für die Entzifferung der Hieroglyphen.",
+    "herrschaft": "Ptolemäer",
+    "vertiefung": "hieroglyphen"
+   },
+   {
+    "jahr": -48,
+    "titel": "Caesar im Hafen",
+    "text": "Im ptolemäischen Thronstreit wird Caesar in Alexandria eingeschlossen und lässt die feindliche Flotte im Hafen verbrennen; das Feuer greift auf Lagerhäuser über. Spätere Autoren machen daraus die Zerstörung der Bibliothek – Caesar selbst erwähnt sie nicht, und Gelehrte arbeiteten danach nachweislich weiter in der Stadt. Aus diesem Aufenthalt stammt auch die Verbindung mit Kleopatra.",
+    "herrschaft": "Ptolemäer"
+   },
+   {
+    "jahr": -30,
+    "titel": "Ägypten wird römische Provinz",
+    "text": "Nach dem Tod von Antonius und Kleopatra fällt Ägypten an Rom, und zwar als Sondergebiet unter kaiserlicher Verwaltung: Senatoren durften es nicht ohne Erlaubnis betreten. Der Grund ist das Getreide – wer Ägypten hielt, konnte Rom aushungern. Alexandria bleibt die zweitgrößte Stadt des Reiches, verliert aber den Hof.",
+    "herrschaft": "Römisches Reich",
+    "vertiefung": "antonius-kleopatra"
+   },
+   {
+    "jahr": 38,
+    "titel": "Gewalt gegen die jüdische Gemeinde",
+    "text": "Alexandria hatte eine der größten jüdischen Gemeinden der Antike mit eigener Verwaltung und griechischsprachiger Bibelübersetzung. 38 n. Chr. kommt es zu schweren Ausschreitungen; Philon von Alexandria reist als Gesandter zum Kaiser. Die Konflikte um Bürgerrechte zwischen Griechen, Juden und Ägyptern durchziehen die römische Zeit der Stadt und eskalieren 115 in einem Aufstand.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 150,
+    "titel": "Ptolemäus ordnet Himmel und Erde",
+    "text": "Claudius Ptolemäus schreibt in Alexandria zwei Werke, die je vierzehnhundert Jahre maßgeblich bleiben: eine mathematische Astronomie mit der Erde im Zentrum und eine Geographie mit Koordinaten für achttausend Orte. Beide sind falsch in ihren Grundannahmen und beide außerordentlich brauchbar – die Planetenpositionen ließen sich damit vorausberechnen. Kolumbus segelte mit einer Erde, die nach ptolemäischen Angaben zu klein war.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 215,
+    "titel": "Caracallas Strafaktion",
+    "text": "Nach Spottreden über den Kaiser lässt Caracalla nach den Berichten Cassius Dios in Alexandria ein Blutbad anrichten und Versammlungen verbieten. Die Zahlen sind unbelegt, das Muster nicht: Die Stadt hatte den Ruf, aufsässig und spottlustig zu sein, und wurde dafür mehrfach bestraft. Ihre Getreidebedeutung schützte sie vor Schlimmerem.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 250,
+    "titel": "Die Katechetenschule",
+    "text": "Alexandria wird zu einem Zentrum christlicher Gelehrsamkeit; Klemens und Origenes verbinden griechische Philosophie mit christlicher Theologie und begründen die allegorische Bibelauslegung. Gleichzeitig lehrt hier die neuplatonische Schule. Die Stadt ist für zwei Jahrhunderte der Ort, an dem die Grundbegriffe der christlichen Lehre erarbeitet – und heftig bestritten – werden.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 365,
+    "titel": "Das Erdbeben und die Flutwelle",
+    "text": "Ein Erdbeben im Mittelmeer löst eine Flutwelle aus, die die Küste Alexandrias trifft; nach den Berichten wurden Schiffe auf Dächer geworfen. Der Jahrestag wurde noch Jahrzehnte später begangen. Das Beben ist einer der Gründe, warum ein Teil der antiken Stadt heute unter Wasser liegt – der Boden senkte sich hier über die Jahrhunderte um mehrere Meter.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 391,
+    "titel": "Das Ende des Serapeums",
+    "text": "Auf Anordnung des Kaisers und unter Führung des Patriarchen Theophilos wird das Serapeum, der größte Tempel der Stadt, zerstört. Es war zugleich ein Ort mit Buchbestand, weshalb die Zerstörung oft mit dem Untergang der Bibliothek gleichgesetzt wird; ob und wie viele Rollen dort noch lagen, ist unbekannt. Der Vorgang markiert den Wechsel: Aus der Stadt der Museion-Gelehrten wird die Stadt eines Patriarchen.",
+    "herrschaft": "Römisches Reich",
+    "vertiefung": "kaiser-theodosius"
+   },
+   {
+    "jahr": 415,
+    "titel": "Der Tod Hypatias",
+    "text": "Die Mathematikerin und Philosophin Hypatia, angesehene Lehrerin und Beraterin des kaiserlichen Statthalters, wird von einer christlichen Menge auf der Straße getötet. Die Quellen unterscheiden sich in der Deutung: Der Kirchenhistoriker Sokrates Scholastikos sieht die Ursache im Machtkampf zwischen Patriarch Kyrill und dem Statthalter, spätere Darstellungen machen daraus einen reinen Glaubenskonflikt. Ihre Werke sind nicht erhalten; bekannt sind Titel und die Mitarbeit an Kommentaren zu Ptolemäus und Diophant.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 451,
+    "titel": "Chalkedon und die Spaltung",
+    "text": "Das Konzil von Chalkedon entscheidet die Frage nach den Naturen Christi gegen die alexandrinische Position; die ägyptische Kirche folgt der Entscheidung nicht. Aus dem Streit entsteht die koptische Kirche, die bis heute besteht. Die Spaltung entfremdet Ägypten von Konstantinopel – zwei Jahrhunderte später ist das ein Grund dafür, dass die arabische Eroberung wenig Widerstand findet.",
+    "herrschaft": "Oströmisches Reich"
+   },
+   {
+    "jahr": 619,
+    "titel": "Die Perser nehmen Ägypten",
+    "text": "Sassanidische Truppen erobern Alexandria und halten Ägypten zehn Jahre; die Getreidelieferungen nach Konstantinopel brechen ab, was die Versorgungskrise dort verschärft. Herakleios gewinnt das Land zurück, doch das Reich ist erschöpft. Die kurze Perserzeit hat die Verteidigungsfähigkeit Ägyptens dauerhaft geschwächt.",
+    "herrschaft": "Sassanidenreich",
+    "vertiefung": "kaiser-herakleios"
+   },
+   {
+    "jahr": 642,
+    "titel": "Die arabische Eroberung",
+    "text": "Nach einer Belagerung übergibt Alexandria sich vertraglich an das arabische Heer. Die neuen Herren gründen ihre Verwaltungsstadt weiter südlich, Fustat, aus dem später Kairo wird. Damit verliert Alexandria in einem Jahrzehnt, was es tausend Jahre ausgemacht hatte: Es ist nicht mehr die Hauptstadt Ägyptens.",
+    "herrschaft": "Arabisches Kalifat",
+    "vertiefung": "islamische-expansion"
+   },
+   {
+    "jahr": 750,
+    "titel": "Der langsame Rückgang",
+    "text": "Ohne Hof, ohne Verwaltung und mit einem Handel, der zunehmend über das Rote Meer läuft, schrumpft die Stadt. Der Süßwasserkanal, der sie versorgte, versandet immer wieder und wird nur unregelmäßig instand gehalten – das ist der eigentliche Grund für den Bevölkerungsverlust. Alexandria bleibt Bischofssitz und Hafen, aber ein Hafen unter mehreren.",
+    "herrschaft": "Kalifat, später Fatimiden und Ayyubiden"
+   },
+   {
+    "jahr": 1303,
+    "titel": "Der Pharos stürzt",
+    "text": "Ein starkes Erdbeben zerstört den Leuchtturm endgültig; er hatte in mehr als fünfzehnhundert Jahren mehrere Beben überstanden und war zuletzt stark beschädigt. 1477 lässt der Mamlukensultan Qaitbay aus seinen Steinen eine Festung auf derselben Landzunge bauen, die heute noch dort steht. Das Weltwunder ist damit im Fundament seines Nachfolgers verbaut.",
+    "herrschaft": "Mamluken"
+   },
+   {
+    "jahr": 1365,
+    "titel": "Der Überfall aus Zypern",
+    "text": "Eine Flotte des Königreichs Zypern nimmt und plündert Alexandria mehrere Tage lang. Der Angriff trifft eine Stadt, die vom Gewürzhandel mit Venedig lebte, und beschädigt das Vertrauen, auf dem dieser Handel beruhte. In der Folge verstärken die Mamluken die Befestigungen und schränken den Aufenthalt europäischer Kaufleute ein.",
+    "herrschaft": "Mamluken"
+   },
+   {
+    "jahr": 1517,
+    "titel": "Osmanische Provinzstadt",
+    "text": "Mit der osmanischen Eroberung Ägyptens wird Alexandria Hafenstadt eines Reiches, dessen Zentren woanders liegen. Die Umschiffung Afrikas hat den Gewürzhandel über Ägypten ohnehin entwertet. Schätzungen für das 18. Jahrhundert nennen wenige tausend Einwohner – eine Stadt, die einmal mehrere Hunderttausend hatte.",
+    "herrschaft": "Osmanisches Reich"
+   },
+   {
+    "jahr": 1798,
+    "titel": "Napoleon landet",
+    "text": "Die französische Ägyptenexpedition beginnt mit der Einnahme Alexandrias. Mit dem Heer kommen über hundertfünfzig Gelehrte, deren Beschreibung Ägyptens die Ägyptologie begründet; einer von ihnen findet den Stein von Rosette. Drei Jahre später vertreiben Briten und Osmanen die Franzosen, aber die Öffnung des Landes für europäische Interessen ist nicht rückgängig zu machen.",
+    "herrschaft": "Französische Besetzung"
+   },
+   {
+    "jahr": 1820,
+    "titel": "Muhammad Ali baut die Stadt neu",
+    "text": "Der ägyptische Vizekönig lässt einen neuen Kanal zum Nil graben, Werften, Arsenal und Zollhaus errichten und siedelt Kaufleute aus dem Mittelmeerraum an. Alexandria wird der Ausgangspunkt seiner Modernisierung Ägyptens und wächst innerhalb von vierzig Jahren von wenigen tausend auf über hunderttausend Einwohner. Damit beginnt die zweite Blüte der Stadt.",
+    "herrschaft": "Ägypten unter osmanischer Oberhoheit"
+   },
+   {
+    "jahr": 1860,
+    "titel": "Baumwolle und Kosmopolis",
+    "text": "Der amerikanische Bürgerkrieg lässt die Baumwollpreise steigen; Ägypten wird Exporteur, und Alexandria ist der Hafen. Griechen, Italiener, Juden, Syrer, Malteser, Briten und Franzosen bilden eine Stadt mit mehreren Sprachen, Zeitungen und Börsen. Diese Gesellschaft prägt die Literatur der Stadt – bei Kavafis, später bei Durrell –, und sie beruht auf Sonderrechten für Ausländer, die ägyptische Gerichte umgingen.",
+    "herrschaft": "Chediven-Ägypten"
+   },
+   {
+    "jahr": 1882,
+    "titel": "Britische Kanonen und der Beginn der Besetzung",
+    "text": "Nach Unruhen beschießt die britische Flotte Alexandria; große Teile der Innenstadt brennen. Die anschließende Landung führt zur britischen Besetzung Ägyptens, die formal bis 1922 und faktisch bis 1956 dauert. Für die Stadt bedeutet es: Der Aufstieg unter Muhammad Ali endet in fremder Kontrolle über den eigenen Hafen.",
+    "herrschaft": "Britische Besetzung"
+   },
+   {
+    "jahr": 1904,
+    "titel": "Kavafis und die Stadt der Erinnerung",
+    "text": "Der griechische Dichter Konstantinos Kavafis lebt als Beamter in Alexandria und schreibt Gedichte, die die hellenistische Vergangenheit der Stadt gegen ihre Gegenwart stellen. Er veröffentlichte kaum, verteilte Blätter an Freunde und wurde erst nach seinem Tod bekannt. Seine Gedichte sind heute die verbreiteteste Form, in der Alexandria als Idee weiterlebt – ein Ort, an dem man die Vergangenheit nicht loswird.",
+    "herrschaft": "Ägypten unter britischer Besetzung"
+   },
+   {
+    "jahr": 1942,
+    "titel": "Die Front bei El Alamein",
+    "text": "Deutsche und italienische Truppen stehen hundert Kilometer westlich; die britische Mittelmeerflotte verlässt vorsorglich den Hafen, Akten werden verbrannt. Nach der Schlacht von El Alamein ist die Gefahr vorbei. Alexandria bleibt bis Kriegsende Flottenbasis – der letzte große militärische Wert, den die Stadt hatte.",
+    "herrschaft": "Königreich Ägypten unter britischem Einfluss"
+   },
+   {
+    "jahr": 1956,
+    "titel": "Suez und das Ende der kosmopolitischen Stadt",
+    "text": "Nasser verkündet in Alexandria die Verstaatlichung des Suezkanals; es folgen die Suezkrise und danach Enteignungen und Ausweisungen. Innerhalb weniger Jahre verlassen die griechische, italienische, jüdische und britische Gemeinde die Stadt fast vollständig. Alexandria wird eine ägyptische Großstadt – wirtschaftlich stabil, kulturell einsprachig, und ihrer eigenen Erinnerung entfremdet.",
+    "herrschaft": "Republik Ägypten",
+    "vertiefung": "suezkanal"
+   },
+   {
+    "jahr": 2002,
+    "titel": "Die neue Bibliothek",
+    "text": "Am Hafen wird die Bibliotheca Alexandrina eröffnet, ein Neubau mit Lesesaal für mehrere Tausend Plätze, Museen und Forschungszentren. Sie ist kein Wiederaufbau – von der antiken Bibliothek ist nichts erhalten, nicht einmal der Standort ist gesichert –, sondern ein bewusster Anschluss an eine Idee. Gleichzeitig laufen Unterwassergrabungen im Hafen, die Teile der ptolemäischen Stadt kartieren.",
+    "herrschaft": "Republik Ägypten"
+   },
+   {
+    "jahr": 2011,
+    "titel": "Die Stadt in der Revolution",
+    "text": "Alexandria ist neben Kairo ein Zentrum der Proteste, die zum Sturz Mubaraks führen; ein Auslöser war der Tod eines jungen Mannes in Polizeigewahrsam im Jahr davor. Die Stadt hat heute über fünf Millionen Einwohner und die üblichen Probleme einer Küstenmetropole – dazu eine besondere: Teile Alexandrias liegen wenig über dem Meeresspiegel und gelten als durch Anstieg und Küstenerosion gefährdet. Die aktuellen Prognosen dazu sind bei den zuständigen Forschungseinrichtungen nachzuschauen.",
+    "herrschaft": "Republik Ägypten"
+   }
+  ]
+ },
+ {
+  "id": "wien",
+  "titel": "Wien",
+  "kurz": "Römisches Grenzlager, zweimal osmanisches Belagerungsziel, Hauptstadt eines Vielvölkerreichs — und nach 1918 eine Millionenstadt ohne Reich.",
+  "einleitung": "Wien liegt dort, wo die Donau die Ostalpen verlässt und die Ebene nach Ungarn beginnt: ein Durchgang, den man befestigen muss. Die Römer legten hier ein Legionslager an, das Mittelalter machte daraus eine Handelsstadt, die Habsburger ihre Residenz. Zwei osmanische Belagerungen, 1529 und 1683, entschieden hier über die Grenze zwischen zwei Reichen. Um 1910 war Wien mit über zwei Millionen Menschen die fünftgrößte Stadt Europas und Hauptstadt eines Reiches mit zwölf Amtssprachen; acht Jahre später war sie die überdimensionierte Hauptstadt eines Kleinstaats. Diese Geschichte folgt der Stadt durch beide Zustände.",
+  "strittig": "Zwei Punkte werden regelmäßig überzeichnet. Erstens 1683: Die Erzählung von der Rettung Europas am Kahlenberg ist ein späterer Zusatz, ebenso wie Kipferl, Kaffeehaus und Bagel als Folgen der Belagerung – Kaffee war in Wien vorher bekannt, und die Legende vom Bäckerlehrling ist nicht belegt. Zweitens das Wien um 1900: Die Vorstellung einer einzigartigen Blüte von Freud bis Schönberg stammt zu einem großen Teil aus Darstellungen der 1970er Jahre und blendet aus, dass dieselbe Stadt in denselben Jahren einen organisierten politischen Antisemitismus und einen Bürgermeister hervorbrachte, der ihn als Wahlkampfmittel benutzte. Bevölkerungszahlen der Vorkriegszeit sind außerdem nur eingeschränkt vergleichbar, weil die Stadtgrenzen 1850, 1890 und 1938 stark verändert wurden.",
+  "quellen": [
+   "Encyclopaedia Britannica: Vienna; Siege of Vienna; Congress of Vienna",
+   "Peter Csendes / Ferdinand Opll (Hrsg.): Wien – Geschichte einer Stadt",
+   "Carl E. Schorske: Wien – Geist und Gesellschaft im Fin de Siècle",
+   "Andrew Wheatcroft: Der Feind vor den Toren (zu 1683)",
+   "Helmut Konrad / Wolfgang Maderthaner (Hrsg.): Das Rote Wien",
+   "Statistik Austria und Stadt Wien: Bevölkerungsdaten (laufend aktualisiert)"
+  ],
+  "stationen": [
+   {
+    "jahr": 15,
+    "titel": "Vindobona",
+    "text": "Am Donauufer entsteht ein römisches Militärlager, später Standort einer Legion, mit Zivilsiedlung, Bad und Wasserleitung. Die Straßen des heutigen ersten Bezirks folgen an mehreren Stellen noch den Lagergrenzen. Es ist eine Grenzstation, nicht eine Stadt: Was hier zählt, ist der Fluss als Verteidigungslinie.",
+    "herrschaft": "Römisches Reich"
+   },
+   {
+    "jahr": 180,
+    "titel": "Ein Kaiser stirbt an der Grenze",
+    "text": "Marcus Aurelius stirbt während der Markomannenkriege im Feldlager an der Donau; nach einer alten Überlieferung in Vindobona, nach einer anderen in Sirmium. Die Kriege selbst sind gut belegt und zeigen, dass die Donaugrenze seit dem 2. Jahrhundert dauerhaft unter Druck stand. Die Selbstbetrachtungen, das bekannteste Buch eines römischen Kaisers, entstanden in diesen Feldzügen.",
+    "herrschaft": "Römisches Reich",
+    "vertiefung": "kaiser-markaurel"
+   },
+   {
+    "jahr": 400,
+    "titel": "Das Lager wird aufgegeben",
+    "text": "Mit dem Rückzug der römischen Verwaltung von der Donau verliert Vindobona seine Funktion; die Siedlung besteht in kleinerem Umfang weiter, aber ohne Verwaltung, Münzen und Fernhandel. Für rund vier Jahrhunderte gibt es fast keine schriftlichen Nachrichten aus der Gegend. Was Wien in dieser Zeit war, wissen wir nur aus Bodenfunden.",
+    "herrschaft": "Übergangszeit"
+   },
+   {
+    "jahr": 1137,
+    "titel": "Erste Nennung als Stadt",
+    "text": "In einem Tauschvertrag zwischen dem Bischof von Passau und dem Markgrafen von Österreich wird Wien als civitas bezeichnet. Kurz darauf verlegen die Babenberger ihre Residenz hierher; Stephansdom und Schottenkloster werden gegründet. Wien wird von einer Marktsiedlung zum Verwaltungsmittelpunkt eines Landes.",
+    "herrschaft": "Babenberger"
+   },
+   {
+    "jahr": 1194,
+    "titel": "Lösegeld und Stadtmauer",
+    "text": "Auf dem Rückweg vom Kreuzzug wird der englische König Richard I. in der Nähe Wiens gefangen genommen; das Lösegeld, ein Teil davon in Silber, finanziert nach der Überlieferung den Ausbau der Stadtmauer und die Gründung von Wiener Neustadt. Die Silbermenge ist nicht sicher belegt, der Bauschub schon. Wien wird damit zur größten befestigten Stadt im Südosten des Reiches.",
+    "herrschaft": "Babenberger"
+   },
+   {
+    "jahr": 1221,
+    "titel": "Das Stadtrecht",
+    "text": "Wien erhält Stadtrecht mit einem entscheidenden Zusatz: dem Stapelrecht. Fremde Kaufleute mussten ihre Waren hier anbieten, bevor sie weiterzogen. Das macht die Stadt zum Zwischenhändler zwischen Süddeutschland, Italien und Ungarn – ihr Reichtum im Mittelalter kommt aus einer rechtlichen Bestimmung, nicht aus Produktion.",
+    "herrschaft": "Babenberger"
+   },
+   {
+    "jahr": 1278,
+    "titel": "Die Habsburger kommen",
+    "text": "Nach dem Sieg Rudolfs von Habsburg über den böhmischen König Ottokar fallen die österreichischen Länder an die Habsburger. Sie bleiben bis 1918 – 640 Jahre in derselben Familie, eine der längsten Herrschaftsreihen Europas. Wien ist zunächst eine ihrer Residenzen unter mehreren; die Stadt wehrt sich mehrfach gegen die neuen Landesherren.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1365,
+    "titel": "Die Universität",
+    "text": "Herzog Rudolf IV. gründet die Universität Wien, nach Prag die zweite im Reich. Sie beginnt mit einer eingeschränkten Fakultätenausstattung und wird erst nach der päpstlichen Zustimmung für Theologie vollständig. Die Universität ist der Grund, warum Wien im Spätmittelalter eine gelehrte Stadt wird – und warum die Reformation hier früh diskutiert wird.",
+    "herrschaft": "Habsburger",
+    "vertiefung": "universitaet"
+   },
+   {
+    "jahr": 1485,
+    "titel": "Ein ungarischer König in der Hofburg",
+    "text": "Matthias Corvinus von Ungarn nimmt Wien nach Belagerung ein und residiert bis zu seinem Tod 1490 hier. Es ist die einzige Zeit, in der die Stadt einer anderen Dynastie gehört. Der Vorgang erinnert daran, dass die habsburgische Macht im 15. Jahrhundert keineswegs gesichert war.",
+    "herrschaft": "Königreich Ungarn"
+   },
+   {
+    "jahr": 1529,
+    "titel": "Die erste osmanische Belagerung",
+    "text": "Süleymans Heer erreicht Wien im September, zu spät im Jahr für eine lange Belagerung, und ohne die schwere Artillerie, die im Schlamm zurückblieb. Nach drei Wochen und mehreren Sturmangriffen wird abgebrochen. Die Folge ist ein jahrzehntelanger Festungsbau: Wien erhält Bastionen nach italienischem Vorbild und ein freies Schussfeld vor der Mauer, das später zur Ringstraße wird.",
+    "herrschaft": "Habsburger",
+    "vertiefung": "sueleyman"
+   },
+   {
+    "jahr": 1551,
+    "titel": "Die Gegenreformation zieht ein",
+    "text": "Ferdinand I. holt Jesuiten nach Wien; die Mehrheit der Bürgerschaft war zu diesem Zeitpunkt protestantisch. In den folgenden achtzig Jahren wird die Stadt mit Schulen, Universitätsreform, Zensur und Ausweisungen wieder katholisch gemacht. Der barocke Kirchenbau des 17. und 18. Jahrhunderts ist das sichtbare Ergebnis dieser Politik.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1679,
+    "titel": "Die große Pest",
+    "text": "Eine Pestwelle tötet in Wien nach Schätzungen mehrere Zehntausend Menschen; die Zahlen der Zeitgenossen sind zu hoch angesetzt. Der Kaiser verlässt die Stadt, Pestgruben werden vor den Mauern angelegt, und danach entsteht die Pestsäule am Graben. Das Lied vom lieben Augustin, der die Grube überlebte, ist erst im 19. Jahrhundert belegt.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1683,
+    "titel": "Die zweite Belagerung",
+    "text": "Ein osmanisches Heer belagert Wien zwei Monate und untergräbt die Bastionen mit Minen; die Garnison ist auf ein Drittel geschrumpft, als ein Entsatzheer unter dem polnischen König Johann III. Sobieski und Karl von Lothringen vom Kahlenberg angreift und die Belagerer schlägt. Es folgt der Große Türkenkrieg, an dessen Ende Ungarn habsburgisch ist. Die Stadt baut anschließend die Vorstädte neu – der Wiener Barock ist eine Nachkriegsarchitektur.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1700,
+    "titel": "Der barocke Ausbau",
+    "text": "Adelsfamilien errichten Stadtpalais und Sommerschlösser vor den Mauern: Schönbrunn, Belvedere, Karlskirche. Wien wird zur Residenzstadt im vollen Sinn – eine Stadt, deren Wirtschaft aus Hof, Verwaltung und Adelshaushalten besteht. Die Bevölkerung wächst auf etwa hunderttausend, ein großer Teil davon Dienstpersonal.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1740,
+    "titel": "Maria Theresia reformiert",
+    "text": "Nach dem Verlust Schlesiens baut Maria Theresia den Staat um: Beamtenausbildung, Zentralbehörden, Volkszählung, Schulpflicht ab 1774, Reform des Strafrechts. Wien wird dadurch zur Verwaltungshauptstadt eines Reiches, das erstmals nach einheitlichen Regeln regiert wird. Die Kehrseite: strenge Zensur und eine Sittenkommission, über die sich Zeitgenossen lustig machten.",
+    "herrschaft": "Habsburger",
+    "vertiefung": "maria-theresia"
+   },
+   {
+    "jahr": 1781,
+    "titel": "Toleranzpatent und Klosteraufhebung",
+    "text": "Joseph II. gewährt Protestanten und Orthodoxen die private Religionsausübung, ein Jahr später den Juden erweiterte Rechte, und löst Klöster auf, die keine sozialen Aufgaben erfüllen. Aus deren Vermögen entstehen Pfarren, Schulen und das Allgemeine Krankenhaus mit über zweitausend Betten. Wien wird in diesen Jahren zu einem Zentrum der Medizin, das es das ganze 19. Jahrhundert bleibt.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1791,
+    "titel": "Die Musikstadt",
+    "text": "Mozart stirbt in Wien, Haydn und später Beethoven und Schubert leben und arbeiten hier. Der Grund ist wirtschaftlich: Ein dichtes Adelsmilieu bezahlte Musiker, und mit dem aufkommenden bürgerlichen Konzert- und Verlagswesen ließ sich zum ersten Mal auch ohne festen Dienstherrn davon leben. Beethoven ist der erste große Komponist, der überwiegend von Aufführungen, Widmungen und Notenverkauf lebte.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1809,
+    "titel": "Napoleon in Schönbrunn",
+    "text": "Französische Truppen besetzen Wien zum zweiten Mal innerhalb von vier Jahren; Napoleon nimmt Quartier in Schönbrunn und lässt beim Abzug Teile der Stadtmauer sprengen. Der anschließende Friede kostet Österreich große Gebiete und führt in den Staatsbankrott von 1811. Aus dieser Schwächephase geht Metternich als bestimmende Figur hervor.",
+    "herrschaft": "Habsburger, französische Besetzung"
+   },
+   {
+    "jahr": 1814,
+    "titel": "Der Wiener Kongress",
+    "text": "Ein Dreivierteljahr verhandeln die Mächte in Wien die Ordnung Europas nach Napoleon; parallel finden Bälle, Jagden und Empfänge statt, die die Stadt Millionen kosten und ihren Ruf begründen. Das Ergebnis ist ein Gleichgewicht, das große Kriege zwischen den Großmächten für vier Jahrzehnte verhindert – und ein System der Unterdrückung nationaler und liberaler Bewegungen. Beides gehört zusammen.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1848,
+    "titel": "Die Revolution",
+    "text": "Im März erzwingen Studenten und Arbeiter Metternichs Sturz und eine Verfassung; im Oktober wird die Stadt von kaiserlichen Truppen unter Beschuss zurückerobert. Danach wird Franz Joseph Kaiser, und die Verfassung verschwindet für zwölf Jahre. Als Folge des Aufstands wird eine Kaserne im Zentrum gebaut und die Stadtbefestigung zunächst noch verstärkt – gegen die eigene Bevölkerung.",
+    "herrschaft": "Habsburger",
+    "vertiefung": "franz-joseph"
+   },
+   {
+    "jahr": 1857,
+    "titel": "Die Ringstraße",
+    "text": "Franz Joseph verfügt den Abriss der Stadtmauer; auf dem freigewordenen Schussfeld entsteht ein Boulevard mit Oper, Parlament, Rathaus, Universität, Museen und Wohnpalais. Es ist eines der größten Stadtbauprojekte des 19. Jahrhunderts und ein Programm in Stein: Jede Institution des liberalen Bürgertums erhält ein Gebäude in einem eigenen historischen Stil. Otto Wagner und Adolf Loos formulieren um 1900 die Gegenposition dazu.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1873,
+    "titel": "Weltausstellung und Börsenkrach",
+    "text": "Im Mai eröffnet Wien die Weltausstellung, im Mai bricht die Börse zusammen; der Krach beendet die Gründerzeit und beginnt eine lange Depression. Zwei bleibende Werke stammen aus diesen Jahren: die Donauregulierung, die die Hochwasser beendete, und die erste Hochquellenwasserleitung, die die Stadt seit 1873 mit Trinkwasser aus den Alpen versorgt. Die Wasserleitung senkte die Sterblichkeit stärker als jede medizinische Neuerung derselben Zeit.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1890,
+    "titel": "Die Vorstädte kommen dazu",
+    "text": "Mit der Einbeziehung der Vororte wächst Wien auf über eineinhalb Millionen Einwohner, ein großer Teil davon Zuwanderer aus Böhmen, Mähren, Galizien und Ungarn. Gewohnt wird in Zinshäusern mit Bassena am Gang, oft mit Bettgehern, die tagsüber arbeitende Nachbarn im Bett ablösten. Die Wohnungsnot dieser Jahre ist die Vorgeschichte des kommunalen Wohnbaus der 1920er Jahre.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1897,
+    "titel": "Ein Bürgermeister und der politische Antisemitismus",
+    "text": "Karl Lueger wird nach mehrfacher Weigerung des Kaisers Bürgermeister. Seine Verwaltung kommunalisiert Gas, Strom, Straßenbahn, baut Schulen und Spitäler – und sie führt Antisemitismus erstmals als organisiertes Wahlkampfmittel einer Massenpartei ein. Beides gehört zur Bilanz derselben Amtszeit, und der junge Hitler nannte Lueger später ausdrücklich als Vorbild.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1900,
+    "titel": "Wien um 1900",
+    "text": "In wenigen Jahren und wenigen Quadratkilometern arbeiten Freud, Mahler, Schnitzler, Klimt, Schönberg, Loos, Wittgenstein und der Kreis um Ernst Mach. Was die Gleichzeitigkeit erklärt, ist keine Genialität der Luft, sondern eine Stadt mit dichten Netzwerken, Kaffeehäusern als Arbeitsplätzen, einem gebildeten und teilweise ausgeschlossenen jüdischen Bürgertum und einer Öffentlichkeit, in der Kunstfragen politisch verhandelt wurden. Ein großer Teil dieser Menschen wurde nach 1938 vertrieben oder ermordet.",
+    "herrschaft": "Habsburger"
+   },
+   {
+    "jahr": 1918,
+    "titel": "Zu groß für den eigenen Staat",
+    "text": "Mit dem Ende der Monarchie wird Wien Hauptstadt eines Staates mit sechs Millionen Einwohnern, von denen zwei Millionen in der Hauptstadt leben – ein Verhältnis, für das es kein Vorbild gibt. Hof, Armee, Diplomatie und ein Binnenmarkt von fünfzig Millionen Menschen fallen weg. Wien hat in den 1920er Jahren Hunger, Inflation und Tuberkulose, und gleichzeitig die ambitionierteste Kommunalpolitik Europas.",
+    "herrschaft": "Republik Österreich",
+    "vertiefung": "osmanen-ende"
+   },
+   {
+    "jahr": 1923,
+    "titel": "Das Rote Wien",
+    "text": "Die sozialdemokratische Stadtverwaltung finanziert über eine Wohnbausteuer den Bau von über sechzigtausend Gemeindewohnungen, dazu Bäder, Kindergärten, Schulärzte und Fürsorgestellen. Die Wohnungen bleiben im Eigentum der Stadt – der Grund, warum Wien bis heute einen sehr großen kommunalen Wohnungsbestand hat und der Mietmarkt anders funktioniert als in vergleichbaren Städten. Politisch war das Projekt zugleich Kampfmittel gegen die bürgerliche Bundesregierung.",
+    "herrschaft": "Republik Österreich"
+   },
+   {
+    "jahr": 1934,
+    "titel": "Bürgerkrieg und Ständestaat",
+    "text": "Im Februar kommt es zu Kämpfen zwischen Heimwehr, Bundesheer und Schutzbund, unter anderem um Gemeindebauten; Artillerie wird gegen Wohnhäuser eingesetzt. Die Sozialdemokratie wird verboten, die Stadtverwaltung abgesetzt, und Österreich wird ein autoritärer Ständestaat. Im Juli erschießen Nationalsozialisten den Kanzler Dollfuß im Bundeskanzleramt.",
+    "herrschaft": "Ständestaat"
+   },
+   {
+    "jahr": 1938,
+    "titel": "Der Anschluss",
+    "text": "Nach dem Einmarsch der Wehrmacht wird Österreich Teil des Deutschen Reiches; auf dem Heldenplatz jubelt eine große Menge. Unmittelbar beginnen Entlassungen, Enteignungen und öffentliche Erniedrigungen der jüdischen Bevölkerung, im November das Pogrom, in dem fast alle Synagogen der Stadt brennen. Von rund hundertachtzigtausend Wiener Juden wurden über sechzigtausend ermordet; die meisten Überlebenden kehrten nie zurück.",
+    "herrschaft": "Deutsches Reich",
+    "vertiefung": "holocaust"
+   },
+   {
+    "jahr": 1945,
+    "titel": "Schlacht, Trümmer, vier Sektoren",
+    "text": "Im April 1945 wird Wien nach zehntägigen Kämpfen von der Roten Armee eingenommen; der Stephansdom brennt nach Plünderungsbränden aus. Die Stadt wird in vier Besatzungssektoren geteilt, der erste Bezirk international verwaltet – ein Modell, das der Film Der dritte Mann bekannt gemacht hat. Der Wiederaufbau von Oper und Dom wird zum nationalen Symbolprojekt.",
+    "herrschaft": "Alliierte Besatzung"
+   },
+   {
+    "jahr": 1955,
+    "titel": "Der Staatsvertrag",
+    "text": "Im Belvedere wird der Staatsvertrag unterzeichnet, die Besatzungsmächte ziehen ab, Österreich erklärt seine Neutralität. Diese Neutralität wird zur Grundlage einer neuen Rolle Wiens: als Ort für Verhandlungen zwischen Ost und West. Gleichzeitig beginnt eine lange Phase, in der die eigene Beteiligung an den NS-Verbrechen öffentlich kaum verhandelt wird.",
+    "herrschaft": "Republik Österreich"
+   },
+   {
+    "jahr": 1979,
+    "titel": "Die UNO-City",
+    "text": "Wien wird nach New York und Genf dritter Amtssitz der Vereinten Nationen; die Internationale Atomenergie-Organisation, die OPEC und später die OSZE haben hier ihren Sitz. Aus der Hauptstadt ohne Reich wird eine Konferenzstadt. Der Gebäudekomplex am anderen Donauufer ist außerdem der Anfang der Stadtentwicklung nach Norden, die heute mit der Seestadt Aspern weitergeht.",
+    "herrschaft": "Republik Österreich"
+   },
+   {
+    "jahr": 2010,
+    "titel": "Eine Zuwanderungsstadt",
+    "text": "Wien wächst nach Jahrzehnten der Stagnation wieder und liegt heute bei rund zwei Millionen Einwohnern – etwa so viel wie 1910, jetzt aber mit anderer Herkunft: Ein großes Drittel der Bevölkerung ist im Ausland geboren, viele aus dem früheren Jugoslawien, der Türkei, Polen, Deutschland, Syrien und der Ukraine. In internationalen Lebensqualitätsvergleichen steht die Stadt regelmäßig vorn, was vor allem an Wohnungsbestand, Wasser und öffentlichem Verkehr liegt. Die aktuellen Zahlen sind bei Statistik Austria nachzuschauen.",
+    "herrschaft": "Republik Österreich"
+   }
+  ]
+ },
+ {
+  "id": "berlin",
+  "titel": "Berlin",
+  "kurz": "Die jüngste der großen europäischen Hauptstädte: 1237 ein Dorf am Sumpf, 1900 die Industriemetropole des Kontinents, danach zweimal Trümmerfeld.",
+  "einleitung": "Berlin hat keinen Hafen, keine Bodenschätze und kein mildes Klima; es liegt an einer Furt durch das Spreetal, dort wo eine Handelsstraße von Magdeburg nach Posen den Fluss überquert. Bis 1600 war es eine Kleinstadt unter vielen. Was Berlin groß gemacht hat, ist zweimal eine politische Entscheidung: Die Hohenzollern machten es zur Residenz eines Staates, der über seine Verhältnisse Armee und Verwaltung aufbaute, und 1871 wurde es Hauptstadt eines neuen Reiches. Innerhalb von siebzig Jahren wuchs die Stadt von 400.000 auf über vier Millionen Menschen – und verlor danach in zwölf Jahren ihre jüdische Bevölkerung, ihre Substanz und ihre Einheit.",
+  "strittig": "Umstritten ist weniger der Verlauf als die Bewertung. Erstens die Bevölkerungszahlen: Ein Sprung wie der von 1861 und 1920 beruht auf Eingemeindungen, nicht auf Zuwanderung allein – Vergleiche über die Jahrhunderte hinweg sind ohne Angabe der Stadtgrenzen wertlos. Zweitens die Zahl der Toten der Bombenangriffe und der Schlacht um Berlin: Die Angaben schwanken erheblich, weil Flüchtlinge, Kriegsgefangene und Zwangsarbeiter in den Meldedaten fehlen. Drittens die goldenen Zwanziger: Die Erzählung von der freien, kreativen Stadt trifft für Teile Berlins zu, während gleichzeitig Massenarbeitslosigkeit, Wohnungsnot und ein Straßenkampf zwischen politischen Verbänden herrschten – beides ist belegt und wird je nach Blickwinkel betont. Viertens die Deutungen der Wende- und Nachwendejahre, über die in der Stadt bis heute unterschiedlich gesprochen wird.",
+  "quellen": [
+   "Encyclopaedia Britannica: Berlin; Berlin blockade; Berlin Wall",
+   "Alexandra Richie: Faust's Metropolis – A History of Berlin",
+   "Wolfgang Ribbe (Hrsg.): Geschichte Berlins",
+   "Antony Beevor: Berlin 1945 – Das Ende",
+   "Gedenkstätte Berliner Mauer / Zentrum für Zeithistorische Forschung: Todesopfer an der Mauer",
+   "Amt für Statistik Berlin-Brandenburg: Bevölkerungsdaten (laufend aktualisiert)"
+  ],
+  "stationen": [
+   {
+    "jahr": 1237,
+    "titel": "Cölln wird erstmals genannt",
+    "text": "Eine Urkunde nennt einen Geistlichen aus Cölln, der Siedlung auf der Spreeinsel; sieben Jahre später erscheint auch Berlin auf dem anderen Ufer. Beide sind Handelsorte an einer Flussquerung, in der Mark Brandenburg, die gerade erst deutsch besiedelt wird. Aus dem Datum dieser Urkunde rechnet die Stadt heute ihr Alter.",
+    "herrschaft": "Mark Brandenburg (Askanier)"
+   },
+   {
+    "jahr": 1307,
+    "titel": "Zwei Städte, ein Rathaus",
+    "text": "Berlin und Cölln schließen sich zu einer Verwaltungsgemeinschaft mit gemeinsamem Rat zusammen und treten der Hanse bei. Der wichtigste Handel ist Roggen und Holz nach Hamburg und Fisch nach Süden. Die Doppelstadt hat wenige Tausend Einwohner – kleiner als Stendal oder Brandenburg an der Havel.",
+    "herrschaft": "Mark Brandenburg"
+   },
+   {
+    "jahr": 1442,
+    "titel": "Der Kurfürst nimmt die Stadt an die Kette",
+    "text": "Nach einem Streit mit der Bürgerschaft trennt Friedrich II. die beiden Städte wieder, hebt Privilegien auf und lässt eine Burg auf der Spreeinsel bauen. Ein Aufstand 1448, der Berliner Unwille, scheitert. Damit endet die städtische Selbstverwaltung; Berlin wird Residenz und bleibt es – die politische Entscheidung, aus der alles Weitere folgt.",
+    "herrschaft": "Hohenzollern"
+   },
+   {
+    "jahr": 1539,
+    "titel": "Die Reformation",
+    "text": "Kurfürst Joachim II. führt die Reformation in Brandenburg ein, behutsam und mit vielen beibehaltenen Bräuchen. Kirchengut geht an den Landesherrn und finanziert Verwaltung und Schulen. Für Berlin bedeutet es eine Landesherrschaft, die auch über die Kirche verfügt – ein Merkmal des preußischen Staates bis 1918.",
+    "herrschaft": "Hohenzollern",
+    "vertiefung": "reformation"
+   },
+   {
+    "jahr": 1648,
+    "titel": "Nach dem Dreißigjährigen Krieg",
+    "text": "Berlin hat am Ende des Krieges nach den Steuerlisten weniger als sechstausend Einwohner, ein großer Teil der Häuser ist unbewohnbar; die Mark Brandenburg hat vermutlich die Hälfte ihrer Bevölkerung verloren. Der Große Kurfürst beginnt danach ein Programm aus Festungsbau, Kanälen und Ansiedlung. Preußens spätere Politik – Zuwanderung als Wirtschaftsprogramm – hat hier ihren Ursprung.",
+    "herrschaft": "Brandenburg-Preußen",
+    "vertiefung": "dreissigjaehriger-krieg"
+   },
+   {
+    "jahr": 1671,
+    "titel": "Aufnahme jüdischer Familien",
+    "text": "Fünfzig aus Wien vertriebene jüdische Familien erhalten Schutzbriefe für Brandenburg – der Anfang der neuzeitlichen jüdischen Gemeinde Berlins. Die Aufnahme war an Bedingungen und Sonderabgaben gebunden und wurde mehrfach eingeschränkt. Aus dieser Gemeinde geht im 18. Jahrhundert mit Moses Mendelssohn eine der Zentralfiguren der Aufklärung hervor.",
+    "herrschaft": "Brandenburg-Preußen"
+   },
+   {
+    "jahr": 1685,
+    "titel": "Das Edikt von Potsdam",
+    "text": "Nach der Aufhebung der Religionsfreiheit in Frankreich lädt der Große Kurfürst hugenottische Flüchtlinge ein und bietet Steuerfreiheit, Baugrund und Gewerberechte. Rund zwanzigtausend kommen nach Brandenburg, mehrere Tausend nach Berlin, wo sie zeitweise ein Fünftel der Bevölkerung bilden. Sie bringen Textilgewerbe, Handel und Französisch als Bildungssprache; die Nachnamen sind im Berliner Telefonbuch noch heute zu finden.",
+    "herrschaft": "Brandenburg-Preußen"
+   },
+   {
+    "jahr": 1701,
+    "titel": "Residenz eines Königreichs",
+    "text": "Mit der Selbstkrönung Friedrichs I. in Königsberg wird Brandenburg-Preußen Königreich, und Berlin die Hauptstadt eines Staates, der über seine Größe hinaus Ansprüche stellt. 1709 werden die fünf Städte auf und um die Spreeinsel zu einer Stadt vereinigt: rund sechzigtausend Einwohner. Es beginnt der planmäßige Ausbau nach Westen, aus dem Friedrichstadt und Unter den Linden werden.",
+    "herrschaft": "Königreich Preußen"
+   },
+   {
+    "jahr": 1740,
+    "titel": "Friedrich II.",
+    "text": "Berlin wird Hauptstadt einer Militärmacht: Ein Fünftel der Einwohner sind Soldaten oder gehören zu Soldatenhaushalten, dazu kommen Manufakturen, die für die Armee produzieren. Friedrich lässt Opernhaus, Bibliothek und Akademie ausbauen und holt Gelehrte nach Berlin – und schreibt seine eigenen Werke auf Französisch, weil er Deutsch für ungeeignet hielt. Im Siebenjährigen Krieg wird die Stadt zweimal von feindlichen Truppen besetzt.",
+    "herrschaft": "Königreich Preußen",
+    "vertiefung": "aufklaerung"
+   },
+   {
+    "jahr": 1806,
+    "titel": "Napoleon zieht durch das Brandenburger Tor",
+    "text": "Nach der Niederlage bei Jena und Auerstedt besetzen französische Truppen Berlin; die Quadriga wird nach Paris abtransportiert und kehrt 1814 zurück. Die Besetzung löst die preußischen Reformen aus: Bauernbefreiung, Gewerbefreiheit, Städteordnung, Heeresreform. Berlin erhält 1808 erstmals eine gewählte Stadtverordnetenversammlung.",
+    "herrschaft": "Königreich Preußen, französische Besetzung"
+   },
+   {
+    "jahr": 1810,
+    "titel": "Die Universität",
+    "text": "Auf Wilhelm von Humboldts Konzept wird eine Universität gegründet, in der Forschung und Lehre verbunden sind und die Professoren selbst forschen, statt nur zu überliefern. Das Modell wird weltweit übernommen und ist bis heute die Grundlage der Forschungsuniversität. Hegel, Ranke, Virchow, Planck und Einstein lehren hier; zwischen 1933 und 1945 verliert die Universität einen großen Teil ihres Lehrkörpers durch Entlassung und Vertreibung.",
+    "herrschaft": "Königreich Preußen",
+    "vertiefung": "universitaet"
+   },
+   {
+    "jahr": 1838,
+    "titel": "Eisenbahn und Maschinenbau",
+    "text": "Die Strecke nach Potsdam wird eröffnet, kurz darauf beginnt August Borsig, Lokomotiven zu bauen; bis 1858 sind es tausend. Berlin wird zum Zentrum des deutschen Maschinenbaus, weil hier Kapital, Verwaltung, Fachkräfte und ein Eisenbahnknoten zusammenkommen. Aus Borsig, Siemens und der AEG wird die Industrie, die die Stadt im Kaiserreich trägt.",
+    "herrschaft": "Königreich Preußen",
+    "vertiefung": "eisenbahn"
+   },
+   {
+    "jahr": 1848,
+    "titel": "Barrikaden im März",
+    "text": "Nach Straßenkämpfen mit über zweihundert Toten muss der König die Truppen aus der Stadt abziehen und dem Trauerzug der Gefallenen salutieren. Die Berliner Nationalversammlung arbeitet an einer Verfassung, wird im November aufgelöst; eine oktroyierte Verfassung mit Dreiklassenwahlrecht folgt. Das Wahlrecht, das Besitz in Stimmgewicht umrechnete, prägt die preußische Politik bis 1918.",
+    "herrschaft": "Königreich Preußen"
+   },
+   {
+    "jahr": 1862,
+    "titel": "Der Hobrecht-Plan",
+    "text": "Ein Bebauungsplan legt für ein Vielfaches der bestehenden Stadt Straßen und Baublöcke fest, ohne die Bebauung im Inneren zu regeln. Zusammen mit der Bauordnung, die nur einen Hof von 5,34 Metern Seitenlänge verlangte – gerade genug für die Feuerspritze –, entsteht daraus die Berliner Mietskaserne mit vier bis fünf Hinterhöfen. Sie ist der Grund für Berlins berüchtigte Wohnverhältnisse und gleichzeitig für die dichte, gemischte Struktur, die heute geschätzt wird.",
+    "herrschaft": "Königreich Preußen"
+   },
+   {
+    "jahr": 1871,
+    "titel": "Reichshauptstadt",
+    "text": "Mit der Reichsgründung wird Berlin Hauptstadt eines Staates von 41 Millionen Menschen. Die französischen Reparationen lösen einen Bauboom aus, der 1873 im Börsenkrach endet. Die Bevölkerung wächst von 800.000 auf 1,9 Millionen im Jahr 1900 – Berlin ist damit die schnellstwachsende Großstadt Europas und um 1900 die drittgrößte der Welt.",
+    "herrschaft": "Deutsches Kaiserreich",
+    "vertiefung": "reichsgruendung"
+   },
+   {
+    "jahr": 1884,
+    "titel": "Die Kongokonferenz",
+    "text": "Im Reichskanzlerpalais verhandeln vierzehn Staaten über Handel und Einflusszonen in Afrika; Vertreter afrikanischer Gesellschaften sind nicht anwesend. Die Schlussakte von 1885 regelt, unter welchen Bedingungen Gebietsansprüche anerkannt werden, und beschleunigt damit die Aufteilung des Kontinents. Der Ort war keine Nebensache: Berlin trat hier zum ersten Mal als Zentrum der Weltpolitik auf.",
+    "herrschaft": "Deutsches Kaiserreich"
+   },
+   {
+    "jahr": 1902,
+    "titel": "Die Hochbahn",
+    "text": "Die erste U-Bahnstrecke wird eröffnet, dazu kommen S-Bahn, Straßenbahn und ein Ringnetz – Berlin bekommt in zwanzig Jahren ein Verkehrssystem, das die Trennung von Wohnen und Arbeiten möglich macht. Mit ihm entstehen die Villenkolonien im Südwesten und die Arbeiterviertel im Norden und Osten. Der Nahverkehr formt die soziale Geographie der Stadt bis heute.",
+    "herrschaft": "Deutsches Kaiserreich"
+   },
+   {
+    "jahr": 1918,
+    "titel": "Novemberrevolution",
+    "text": "Am 9. November wird in Berlin zweimal die Republik ausgerufen, von Scheidemann und von Liebknecht; der Kaiser dankt ab. Im Januar 1919 werden der Januaraufstand niedergeschlagen und Rosa Luxemburg und Karl Liebknecht ermordet. Die Republik beginnt in Berlin mit einem Bürgerkrieg in den eigenen Straßen – eine Belastung, von der sie sich nie löst.",
+    "herrschaft": "Weimarer Republik"
+   },
+   {
+    "jahr": 1920,
+    "titel": "Groß-Berlin",
+    "text": "Ein Gesetz vereinigt die Stadt mit sieben Nachbarstädten, neunundfünfzig Landgemeinden und siebenundzwanzig Gutsbezirken; die Fläche wird dreizehnmal größer, die Bevölkerung springt auf 3,8 Millionen. Berlin ist damit nach London und New York die drittgrößte Stadt der Welt. Die zwanzig Bezirke dieser Reform sind die Grundlage der heutigen Verwaltungsgliederung.",
+    "herrschaft": "Weimarer Republik"
+   },
+   {
+    "jahr": 1926,
+    "titel": "Die Zwanziger",
+    "text": "Berlin wird zum Zentrum von Film, Kabarett, Zeitungswesen, moderner Architektur und Wissenschaft; die Ufa produziert in Babelsberg, Einstein und Planck arbeiten hier, die Siedlungen von Taut und Gropius entstehen. Gleichzeitig lebt ein großer Teil der Bevölkerung in überbelegten Wohnungen, und ab 1929 steigt die Arbeitslosigkeit auf ein Drittel. Die freie Stadt und die verzweifelte Stadt sind dieselbe.",
+    "herrschaft": "Weimarer Republik",
+    "vertiefung": "weltwirtschaftskrise"
+   },
+   {
+    "jahr": 1933,
+    "titel": "Machtübernahme und Bücherverbrennung",
+    "text": "Nach dem 30. Januar werden politische Gegner verhaftet, Zeitungen verboten und die Stadtverwaltung ausgetauscht; im Mai verbrennen Studenten am Opernplatz Bücher verfemter Autoren. Berlin verliert innerhalb weniger Jahre einen großen Teil seiner Wissenschaftler, Schriftsteller, Verleger, Ärzte und Künstler – durch Entlassung, Emigration und Verfolgung. Kein anderer Vorgang hat die geistige Substanz der Stadt so schnell und dauerhaft geschwächt.",
+    "herrschaft": "Nationalsozialistisches Deutschland"
+   },
+   {
+    "jahr": 1936,
+    "titel": "Olympische Spiele",
+    "text": "Die Spiele werden als Werbung für das Regime organisiert: antisemitische Schilder werden vorübergehend abgehängt, ein neues Stadion und das erste Fernsehprogramm der Welt gehören dazu. Die Erzählung, Hitler habe Jesse Owens demonstrativ den Handschlag verweigert, ist so nicht belegt; Owens selbst hat später berichtet, vom amerikanischen Präsidenten nicht empfangen worden zu sein. Nach den Spielen wird die Verfolgung fortgesetzt und verschärft.",
+    "herrschaft": "Nationalsozialistisches Deutschland"
+   },
+   {
+    "jahr": 1938,
+    "titel": "Das Novemberpogrom",
+    "text": "In der Nacht zum 10. November brennen in Berlin Synagogen, jüdische Geschäfte werden zerstört, tausende Männer in Konzentrationslager verschleppt. Von den rund 160.000 Berliner Juden des Jahres 1933 werden über 50.000 deportiert und ermordet; die Deportationen laufen über den Bahnhof Grunewald und den Anhalter Bahnhof. 1942 wird in einer Villa am Wannsee die Organisation des Völkermords zwischen Behörden abgestimmt.",
+    "herrschaft": "Nationalsozialistisches Deutschland",
+    "vertiefung": "holocaust"
+   },
+   {
+    "jahr": 1943,
+    "titel": "Der Bombenkrieg",
+    "text": "Zwischen November 1943 und März 1944 greift die britische Luftwaffe Berlin in großen Angriffen an, später auch die amerikanische am Tag; ein großer Teil der Innenstadt wird zerstört. Über 1,5 Millionen Menschen werden obdachlos, Kinder und Frauen in Ostgebiete verschickt. Das Ziel, durch Angriffe auf die Hauptstadt den Krieg zu verkürzen, wurde nicht erreicht.",
+    "herrschaft": "Nationalsozialistisches Deutschland"
+   },
+   {
+    "jahr": 1945,
+    "titel": "Die Schlacht um Berlin",
+    "text": "Ab dem 16. April greift die Rote Armee mit über zwei Millionen Soldaten an; die Stadt wird nach zwei Wochen Straßenkampf am 2. Mai eingenommen. Hitler nimmt sich am 30. April das Leben. Berlin hat am Ende etwa 2,8 Millionen Einwohner, überwiegend Frauen, Kinder und Alte; ein Viertel des Wohnraums ist zerstört, und die Massenvergewaltigungen dieser Wochen bleiben Jahrzehnte unbesprochen.",
+    "herrschaft": "Alliierte Besatzung",
+    "vertiefung": "zweiter-weltkrieg"
+   },
+   {
+    "jahr": 1948,
+    "titel": "Blockade und Luftbrücke",
+    "text": "Nach der Währungsreform sperrt die Sowjetunion die Land- und Wasserwege nach West-Berlin; die Westmächte versorgen die Stadt elf Monate über drei Luftkorridore mit Lebensmitteln und Kohle, bis zu tausend Flüge am Tag. Die Blockade macht aus einer besetzten Feindeshauptstadt einen westlichen Vorposten – der politische Umschlagpunkt der Nachkriegsgeschichte Berlins. 1949 entstehen zwei deutsche Staaten und zwei Stadtverwaltungen.",
+    "herrschaft": "Geteiltes Berlin",
+    "vertiefung": "kalter-krieg-entsteht"
+   },
+   {
+    "jahr": 1953,
+    "titel": "Der 17. Juni",
+    "text": "Ein Streik von Bauarbeitern in der Stalinallee gegen erhöhte Arbeitsnormen wächst zu einem Aufstand in über fünfhundert Orten der DDR; sowjetische Panzer beenden ihn, es gibt Dutzende Tote und tausende Verhaftungen. Für die DDR-Führung ist es der Beweis, dass sie sich auf die Sowjetarmee stützen muss. In der Bundesrepublik wird der Tag Feiertag – und ein Argument dafür, dass die deutsche Frage offen bleibt.",
+    "herrschaft": "Geteiltes Berlin"
+   },
+   {
+    "jahr": 1961,
+    "titel": "Der Mauerbau",
+    "text": "In der Nacht zum 13. August riegelt die DDR die Sektorengrenze ab, zunächst mit Draht, dann mit einer 155 Kilometer langen Mauer um West-Berlin. Vorher waren über zweieinhalb Millionen Menschen aus der DDR abgewandert, viele über Berlin. Mindestens 140 Menschen kommen an der Berliner Mauer zu Tode; die exakte Zahl wird von Forschungsprojekten weiter geprüft.",
+    "herrschaft": "Geteiltes Berlin",
+    "vertiefung": "mauerbau"
+   },
+   {
+    "jahr": 1989,
+    "titel": "Der Mauerfall",
+    "text": "Nach Wochen von Massendemonstrationen und der Öffnung der ungarischen Grenze erklärt ein Mitglied der SED-Führung am Abend des 9. November die Reisefreiheit für sofort gültig; Menschenmengen an den Übergängen erzwingen die Öffnung. Es war keine Entscheidung, sondern eine Panne in einer ohnehin zerfallenden Lage. Ein Jahr später ist Deutschland vereinigt.",
+    "herrschaft": "Geteiltes Berlin",
+    "vertiefung": "mauerfall"
+   },
+   {
+    "jahr": 1991,
+    "titel": "Der Hauptstadtbeschluss",
+    "text": "Der Bundestag entscheidet mit knapper Mehrheit, Parlament und Regierungssitz von Bonn nach Berlin zu verlegen; der Umzug dauert bis 1999. Es folgen die größten Baustellen Europas: Potsdamer Platz, Regierungsviertel, Hauptbahnhof. Gleichzeitig verliert Berlin durch das Ende der Subventionen und der DDR-Industrie über hunderttausend Arbeitsplätze – die Stadt ist bis in die 2000er Jahre hoch verschuldet.",
+    "herrschaft": "Bundesrepublik Deutschland",
+    "vertiefung": "wiedervereinigung"
+   },
+   {
+    "jahr": 2006,
+    "titel": "Arm, aber billig",
+    "text": "Berlin ist nach der Wiedervereinigung eine Hauptstadt ohne Industrie und mit niedrigen Mieten – die Grundlage für Clubs, Kunst, Start-ups und Zuwanderung aus ganz Europa. Der Bürgermeister prägt dafür den Satz, die Stadt sei arm, aber sexy. Seit etwa 2010 kehrt sich der Vorteil um: Die Mieten steigen schneller als in jeder anderen deutschen Stadt, und der Streit um Wohnraum wird zum bestimmenden Thema der Stadtpolitik.",
+    "herrschaft": "Bundesrepublik Deutschland"
+   },
+   {
+    "jahr": 2020,
+    "titel": "Die Stadt der offenen Rechnungen",
+    "text": "Berlin hat wieder rund 3,8 Millionen Einwohner, so viele wie 1920, und wächst weiter durch Zuwanderung; ein Drittel der Bevölkerung hat einen Migrationshintergrund. Die großen Streitfragen sind Wohnen, Verkehr und Verwaltung – dazu der Umgang mit der eigenen Geschichte, sichtbar an Debatten über Denkmäler, Straßennamen und Restitution. Die aktuellen Zahlen sind beim Amt für Statistik Berlin-Brandenburg nachzuschauen.",
+    "herrschaft": "Bundesrepublik Deutschland"
+   }
+  ]
+ },
+ {
+  "id": "changan",
+  "titel": "Chang'an / Xi'an",
+  "kurz": "Zweimal die größte Stadt der Welt, zweimal vollständig zerstört — das östliche Ende der Seidenstraße und die Hauptstadt von zehn Dynastien.",
+  "einleitung": "In der Ebene des Wei-Flusses, geschützt durch Gebirge und Pässe, aber offen nach Westen zur Steppe, lag über zwei Jahrtausende der politische Mittelpunkt Chinas. Die Zhou, die Qin, die Han, die Sui und die Tang hatten hier ihre Hauptstadt – unter verschiedenen Namen und an leicht verschobenen Stellen. Um 750 lebten in Chang'an nach den Steuerlisten etwa eine Million Menschen innerhalb der Mauern, mehr als in jeder anderen Stadt der Erde, darunter Sogder, Perser, Araber, Japaner, Koreaner und Turkvölker. Zweimal wurde diese Stadt in Bürgerkriegen völlig verwüstet, und beim zweiten Mal kehrte die Hauptstadtfunktion nicht zurück. Was blieb, ist eine Provinzstadt mit einer kompletten Ming-Stadtmauer – und dem größten archäologischen Bestand Chinas unter den Feldern.",
+  "strittig": "Die Einwohnerzahl der Tang-Hauptstadt hängt davon ab, was man zählt: Die Steuerregister der Hauptstadtregion nennen fast zwei Millionen, innerhalb der Mauern werden meist achthunderttausend bis eine Million angenommen, und beide Zahlen beruhen auf Haushaltslisten, die Soldaten, Klöster und Zugewanderte unterschiedlich erfassen. Die Verlustzahlen der An-Lushan-Rebellion – in älteren Darstellungen bis zu sechsunddreißig Millionen – gelten heute als Artefakt der Zensusüberlieferung: Nach dem Krieg brach die Erfassung zusammen, sodass der Rückgang der registrierten Bevölkerung nicht mit der Zahl der Toten gleichzusetzen ist. Auch das Erdbeben von 1556 mit angeblich 830.000 Toten ist eine amtliche Ming-Zahl, die nicht nachprüfbar, aber die höchste überlieferte Opferzahl eines Erdbebens überhaupt ist. Die Datierung einzelner Funde in der Region wird laufend präzisiert.",
+  "quellen": [
+   "Encyclopaedia Britannica: Xi'an; Chang'an; Tang dynasty; An Lushan Rebellion",
+   "Mark Edward Lewis: China's Cosmopolitan Empire – The Tang Dynasty",
+   "Valerie Hansen: Die Seidenstraße",
+   "Victor Cunrui Xiong: Sui-Tang Chang'an – A Study in the Urban History of Medieval China",
+   "Peter Hessler / National Geographic und Berichte des Shaanxi-Museums zu den Grabungen",
+   "Chinesisches Statistikamt: Bevölkerungsdaten Xi'an (laufend aktualisiert)"
+  ],
+  "stationen": [
+   {
+    "jahr": -1046,
+    "titel": "Die Zhou verlegen ihr Zentrum ins Wei-Tal",
+    "text": "Nach dem Sturz der Shang errichten die Zhou ihre Hauptstädte Feng und Hao im Wei-Tal, wenige Kilometer vom späteren Chang'an. Der Grund ist geographisch: fruchtbarer Lössboden, ein Fluss zum Transport, und Pässe, die die Ebene nach allen Seiten verschließen. Diese Kombination macht die Region für zwei Jahrtausende zum bevorzugten Hauptstadtplatz.",
+    "herrschaft": "Zhou-Dynastie"
+   },
+   {
+    "jahr": -350,
+    "titel": "Xianyang, die Hauptstadt der Qin",
+    "text": "Die Qin machen Xianyang am Nordufer des Wei zu ihrer Hauptstadt und bauen von hier aus den Staat, der China einigt: Straßen, standardisierte Achsbreiten, Gewichte und Schrift. Der erste Kaiser lässt in der Umgebung seine Grabanlage errichten, deren Tonarmee 1974 gefunden wird. Nach dem Sturz der Qin wird Xianyang niedergebrannt.",
+    "herrschaft": "Qin-Dynastie",
+    "vertiefung": "qin-einigung"
+   },
+   {
+    "jahr": -202,
+    "titel": "Die Han gründen Chang'an",
+    "text": "Der erste Han-Kaiser lässt südlich der Qin-Ruinen eine neue Hauptstadt anlegen und nennt sie Chang'an, dauerhafter Frieden. Die Stadt erhält eine Mauer aus gestampfter Erde, zwölf Tore und Paläste im Süden; die Anlage folgt nicht dem strengen Raster der späteren Städte, sondern dem Gelände. Ihre Mauerreste sind noch heute im Nordwesten Xi'ans sichtbar.",
+    "herrschaft": "Han-Dynastie"
+   },
+   {
+    "jahr": -138,
+    "titel": "Zhang Qian bricht nach Westen auf",
+    "text": "Kaiser Wu schickt den Gesandten Zhang Qian nach Zentralasien, um Bündnispartner gegen die Xiongnu zu finden; er wird gefangen, kehrt nach dreizehn Jahren zurück und bringt Berichte über Reiche, von denen China nichts wusste. Aus diesen Kontakten entsteht der Handel, den das 19. Jahrhundert Seidenstraße nennen wird. Chang'an ist ihr östlicher Ausgangspunkt.",
+    "herrschaft": "Han-Dynastie",
+    "vertiefung": "seidenstrasse"
+   },
+   {
+    "jahr": -104,
+    "titel": "Der Kalender wird Staatsaufgabe",
+    "text": "Kaiser Wu lässt einen neuen Kalender einführen, berechnet vom kaiserlichen Astronomenamt in Chang'an. Die Himmelsbeobachtung ist in China nicht Wissenschaft neben der Herrschaft, sondern Teil davon: Ein Kaiser, dessen Kalender die Finsternisse verfehlt, verliert das Mandat des Himmels. Chang'an wird damit auch der Ort, an dem systematisch Beobachtungen aufgezeichnet werden – die längste durchgehende Beobachtungsreihe der Welt.",
+    "herrschaft": "Han-Dynastie"
+   },
+   {
+    "jahr": -100,
+    "titel": "Zwei Märkte und neun Tempel",
+    "text": "Die Han-Hauptstadt hat rund 250.000 Einwohner, zwei amtlich zugelassene Marktbezirke mit festen Öffnungszeiten und Preisaufsicht, dazu Kornspeicher, Waffenarsenale und eine Akademie für Beamtenanwärter. Wirtschaft findet nur an genehmigten Orten statt – ein Grundsatz chinesischer Hauptstadtplanung, der bis in die Tang-Zeit gilt. Wer außerhalb handelte, wurde bestraft.",
+    "herrschaft": "Han-Dynastie"
+   },
+   {
+    "jahr": 9,
+    "titel": "Wang Mang und ein kurzer Umbau",
+    "text": "Der Regent Wang Mang setzt die Han ab, gründet eine eigene Dynastie und versucht in Chang'an eine radikale Reform: Verstaatlichung von Großgrundbesitz, staatliche Kreditvergabe, neue Münzen. Nach vierzehn Jahren wird er im Aufstand getötet und die Stadt geplündert. Der Versuch ist der erste große Fall eines chinesischen Reformprogramms, das an Verwaltung und Widerstand der Grundbesitzer scheitert.",
+    "herrschaft": "Xin-Dynastie"
+   },
+   {
+    "jahr": 25,
+    "titel": "Die Hauptstadt zieht nach Luoyang",
+    "text": "Die wiederhergestellten Han verlegen den Hof nach Luoyang im Osten, näher an den fruchtbaren Ebenen und leichter zu versorgen. Chang'an bleibt Nebenhauptstadt und Garnison, verliert aber Hof, Verwaltung und Einwohner. Die Versorgungsfrage – Getreide muss gegen die Strömung ins Wei-Tal geschleppt werden – ist der dauernde Nachteil dieses Standorts.",
+    "herrschaft": "Östliche Han-Dynastie"
+   },
+   {
+    "jahr": 190,
+    "titel": "Zerstörung im Untergang der Han",
+    "text": "Im Zusammenbruch der Han wird der Hof nach Chang'an zurückverlegt, Luoyang niedergebrannt, und wenige Jahre später verheeren Soldatenaufstände auch Chang'an; Berichte sprechen von einer weitgehend entvölkerten Stadt. Es folgen dreieinhalb Jahrhunderte Teilung. In dieser Zeit ist Chang'an mehrfach Hauptstadt kleiner nordchinesischer Reiche, ohne die alte Größe zu erreichen.",
+    "herrschaft": "Zerfallszeit"
+   },
+   {
+    "jahr": 582,
+    "titel": "Die Sui bauen eine Planstadt",
+    "text": "Die Sui gründen südöstlich der Han-Ruinen eine völlig neue Hauptstadt, Daxing: ein Rechteck von etwa neun mal acht Kilometern, mit rechtwinkligem Straßenraster, 108 ummauerten Wohnblöcken, einer 150 Meter breiten Prachtstraße und dem Palast im Norden. Es ist die größte planmäßig angelegte Stadt der vormodernen Welt. Ihr Grundriss wird zum Vorbild für Heijō-kyō und Heian-kyō in Japan und für Gyeongju in Korea.",
+    "herrschaft": "Sui-Dynastie"
+   },
+   {
+    "jahr": 618,
+    "titel": "Tang-Hauptstadt Chang'an",
+    "text": "Die Tang übernehmen die Sui-Stadt, geben ihr den alten Namen zurück und erweitern die Palastanlagen nach Norden. Chang'an ist Verwaltungszentrum eines Reiches von etwa fünfzig Millionen Menschen, Prüfungsort für die Beamtenexamen und Endpunkt der Karawanenwege. Die nächsten hundertvierzig Jahre gelten als die kosmopolitischste Phase der chinesischen Geschichte.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 645,
+    "titel": "Xuanzang kehrt zurück",
+    "text": "Nach sechzehn Jahren in Zentralasien und Indien kommt der Mönch Xuanzang mit hunderten Sanskrit-Handschriften nach Chang'an; der Kaiser stellt ihm ein Übersetzungsbüro zur Verfügung. Sein Reisebericht ist bis heute eine Hauptquelle für die Geschichte Indiens im 7. Jahrhundert, weil indische Quellen dieser Zeit fehlen. Für die spätere Literatur wird aus seiner Reise der Roman Die Reise nach Westen.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 652,
+    "titel": "Die Große Wildganspagode",
+    "text": "Für die von Xuanzang mitgebrachten Schriften wird eine Pagode errichtet, die nach mehreren Erdbeben und Umbauten noch heute steht – das bekannteste erhaltene Bauwerk der Tang-Zeit in Xi'an. Buddhistische Klöster waren in Chang'an Großgrundbesitzer, Bankiers und Bildungseinrichtungen. Ihre wirtschaftliche Macht ist der Grund, warum sie zweihundert Jahre später zum Ziel des Staates werden.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 700,
+    "titel": "Die Stadt der Fremden",
+    "text": "In Chang'an leben zehntausende Ausländer: sogdische Karawanenhändler, persische Flüchtlinge nach dem Untergang der Sassaniden, arabische Kaufleute, japanische und koreanische Studenten, uigurische Söldner. Es gibt zoroastrische Feuertempel, manichäische und nestorianisch-christliche Gemeinden und später Moscheen. Die Beamtenprüfung war offen genug, dass Ausländer Karriere machen konnten – ein japanischer Gelehrter starb als kaiserlicher Beamter in China.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 713,
+    "titel": "Der Westmarkt",
+    "text": "Der westliche der beiden Märkte, näher an den Karawanenstraßen, umfasst über zweihundert Gewerbezweige in eigenen Gassen: Seide, Pferde, Sklaven, Arzneien, Metall, Geldwechsel. Hier tauchen die ersten Belege für Wechselbriefe auf – Zahlungsversprechen, die den Transport von Kupfermünzen ersparen und die Vorgeschichte des Papiergeldes sind. Der Ostmarkt versorgte den Hof und den Adel.",
+    "herrschaft": "Tang-Dynastie",
+    "vertiefung": "papiergeld"
+   },
+   {
+    "jahr": 745,
+    "titel": "Der Höhepunkt",
+    "text": "Um die Mitte des 8. Jahrhunderts hat Chang'an nach den Registern der Hauptstadtregion beinahe zwei Millionen und innerhalb der Mauern schätzungsweise achthunderttausend bis eine Million Einwohner. Am Hof leben die Dichter Li Bai und Du Fu, im Palast wird die Musik von sechs Kulturen gespielt. Zehn Jahre später ist die Stadt in der Hand von Aufständischen.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 751,
+    "titel": "Talas",
+    "text": "Am Fluss Talas in Zentralasien wird ein Tang-Heer von arabischen Truppen geschlagen; die chinesische Ausdehnung nach Westen endet damit. Nach einer späteren Überlieferung gelangte durch chinesische Kriegsgefangene die Papierherstellung nach Samarkand – der Weg des Papiers nach Bagdad und später nach Europa. Der Beleg dafür ist spät und dünn, die Datierung der Papierproduktion in Samarkand passt aber.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 755,
+    "titel": "Die An-Lushan-Rebellion",
+    "text": "Der General An Lushan erhebt sich, nimmt Chang'an ein, und der Kaiser flieht nach Sichuan; auf dem Weg wird seine Lieblingskonkubine Yang Guifei von der eigenen Eskorte zum Tod gezwungen. Der Krieg dauert acht Jahre, die Hauptstadt wechselt mehrfach den Herrn und wird geplündert. Die Tang bestehen weiter, aber mit abhängigen Provinzgouverneuren, uigurischen Hilfstruppen und einem Misstrauen gegen alles Fremde, das die kosmopolitische Phase beendet.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 781,
+    "titel": "Die nestorianische Stele",
+    "text": "Eine Steintafel in Chang'an dokumentiert auf Chinesisch und Syrisch die Geschichte der christlichen Gemeinde in China seit 635, mit Namen von Bischöfen und kaiserlichen Erlassen. Sie wurde 1625 wiederentdeckt und ist der wichtigste Einzelbeleg für ein Christentum in Ostasien, das dann verschwand. Jesuiten hielten sie zunächst für eine Fälschung, weil sie nicht in ihr Bild der Missionsgeschichte passte.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 845,
+    "titel": "Der Schlag gegen die Klöster",
+    "text": "Kaiser Wuzong lässt tausende buddhistische Klöster auflösen, Mönche und Nonnen in den Laienstand zurückversetzen und Bronzestatuen zu Münzen umschmelzen; auch Manichäer, Zoroastrier und Christen werden erfasst. Die Gründe sind vor allem fiskalisch – der Klosterbesitz war steuerfrei. Der Buddhismus erholt sich, die anderen Religionen Chang'ans verschwinden praktisch vollständig.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 881,
+    "titel": "Huang Chao",
+    "text": "Der Aufstand des Salzhändlers Huang Chao erreicht Chang'an; die Stadt wird eingenommen und bei der Rückeroberung der kaiserlichen Truppen schwer verwüstet. Ein Gedicht der Zeit beschreibt leere Straßen und niedergebrannte Märkte. Die Tang halten sich noch fünfundzwanzig Jahre, ohne Kontrolle über ihr eigenes Kernland.",
+    "herrschaft": "Tang-Dynastie"
+   },
+   {
+    "jahr": 904,
+    "titel": "Die Stadt wird abgetragen",
+    "text": "Ein Warlord lässt den Hof nach Luoyang zwangsumsiedeln und die Paläste und Häuser Chang'ans abreißen; das Bauholz wird auf dem Fluss abtransportiert. Es ist das Ende der Hauptstadt: Chang'an wird nicht wieder aufgebaut, sondern eine kleinere Verwaltungsstadt im Nordostteil des alten Rasters. Keine chinesische Dynastie danach hat hier ihre Hauptstadt.",
+    "herrschaft": "Späte Tang-Zeit"
+   },
+   {
+    "jahr": 1000,
+    "titel": "Provinzstadt Jingzhaofu",
+    "text": "Unter den Song ist die Stadt Verwaltungssitz einer Grenzregion; das wirtschaftliche Gewicht Chinas hat sich endgültig nach Süden und Osten verlagert, zum Yangzi und an die Küste. Der Landweg nach Zentralasien verliert gegenüber dem Seeweg. Die Stadt bleibt bedeutend als Militärstützpunkt und als Sitz einer der ältesten Moscheegemeinden Chinas.",
+    "herrschaft": "Song-Dynastie",
+    "vertiefung": "song-dynastie"
+   },
+   {
+    "jahr": 1370,
+    "titel": "Die Ming bauen die Mauer",
+    "text": "Die Ming errichten um den verkleinerten Stadtkern eine Ziegelmauer von vierzehn Kilometern Länge, zwölf Metern Höhe und bis zu achtzehn Metern Breite, mit Graben, Türmen und vier Tortürmen. Sie ist heute die vollständigste erhaltene Stadtmauer Chinas und die Ursache dafür, dass Xi'ans Innenstadt noch als Rechteck erkennbar ist. Der Name Xi'an, westlicher Frieden, stammt aus dieser Zeit.",
+    "herrschaft": "Ming-Dynastie"
+   },
+   {
+    "jahr": 1556,
+    "titel": "Das Erdbeben von Shaanxi",
+    "text": "Ein Erdbeben in der Region zerstört Städte und Dörfer über Hunderte Kilometer; besonders tödlich war es, weil viele Menschen in Höhlenwohnungen im Löss lebten, die einstürzten. Die amtliche Ming-Angabe nennt 830.000 Todesopfer – die höchste überlieferte Zahl eines Erdbebens überhaupt, und nicht überprüfbar. Der Gelehrte Qin Keda zog daraus die praktische Lehre, bei Beben nicht hinauszulaufen, sondern in Deckung zu gehen.",
+    "herrschaft": "Ming-Dynastie"
+   },
+   {
+    "jahr": 1862,
+    "titel": "Der Dunganenaufstand",
+    "text": "In Shaanxi und Gansu erhebt sich die muslimische Bevölkerung; der Krieg dauert bis 1873 und endet mit Niederschlagung, Massakern auf beiden Seiten und Zwangsumsiedlungen. Xi'an selbst hält, die Umgebung wird entvölkert – die Schätzungen des Bevölkerungsverlusts der beiden Provinzen liegen im Millionenbereich und sind wegen des Zusammenbruchs der Erfassung nicht überprüfbar. Die muslimische Gemeinde innerhalb der Stadtmauern überlebte und besteht bis heute rund um die Große Moschee.",
+    "herrschaft": "Qing-Dynastie"
+   },
+   {
+    "jahr": 1900,
+    "titel": "Der Hof flieht nach Xi'an",
+    "text": "Nach der Niederschlagung des Boxeraufstands und der Einnahme Pekings durch ausländische Truppen zieht sich die Kaiserinwitwe Cixi mit dem Hof nach Xi'an zurück und regiert von hier gut ein Jahr. Die Stadt ist zum letzten Mal Sitz einer chinesischen Regierung. Nach der Rückkehr beginnen die späten Qing-Reformen, die die Dynastie nicht mehr retten.",
+    "herrschaft": "Qing-Dynastie",
+    "vertiefung": "cixi"
+   },
+   {
+    "jahr": 1936,
+    "titel": "Der Xi'an-Zwischenfall",
+    "text": "Regionale Truppen nehmen Chiang Kai-shek in Xi'an gefangen und lassen ihn erst frei, nachdem er zugestimmt hat, den Bürgerkrieg gegen die Kommunisten zu unterbrechen und gemeinsam gegen Japan zu kämpfen. Die daraus entstandene Einheitsfront hält bis 1941. Historiker sehen darin einen der Vorgänge, die den Kommunisten das Überleben und langfristig den Sieg ermöglichten.",
+    "herrschaft": "Republik China"
+   },
+   {
+    "jahr": 1974,
+    "titel": "Bauern finden die Tonarmee",
+    "text": "Beim Brunnenbau östlich von Xi'an stoßen Bauern auf Tonscherben; die Grabungen legen bis heute mehrere Tausend lebensgroße Figuren aus dem Grabbezirk des ersten Kaisers frei. Der Grabhügel selbst ist bislang nicht geöffnet – aus Rücksicht auf Konservierungsprobleme, nachdem die Farbe der Figuren nach dem Freilegen verlorenging. Der Fund macht Xi'an zu einem der wichtigsten Reiseziele Chinas.",
+    "herrschaft": "Volksrepublik China",
+    "vertiefung": "qin-einigung"
+   },
+   {
+    "jahr": 2013,
+    "titel": "Wieder ein Knotenpunkt",
+    "text": "Xi'an ist heute Millionenstadt mit Luft- und Raumfahrtindustrie, Universitäten und einem Güterbahnhof, von dem Containerzüge nach Europa fahren – das erklärte Programm der neuen Landverbindungen beruft sich ausdrücklich auf die alte Seidenstraße. Unter der Stadt und den Feldern der Umgebung liegen die Reste von acht Hauptstädten. Aktuelle Einwohner- und Wirtschaftszahlen sind beim chinesischen Statistikamt nachzuschauen.",
+    "herrschaft": "Volksrepublik China"
+   }
+  ]
+ },
+ {
+  "id": "tenochtitlan",
+  "titel": "Tenochtitlán / Mexiko-Stadt",
+  "kurz": "Eine Inselstadt für 200.000 Menschen, in zwei Jahren zerstört und darüber neu gebaut — und seither dabei, im trockengelegten See zu versinken.",
+  "einleitung": "Tenochtitlán wurde 1325 auf einer Insel im Texcoco-See gegründet, nach der eigenen Überlieferung an der Stelle, an der ein Adler auf einem Kaktus saß – das Bild steht heute in der mexikanischen Flagge. In knapp zweihundert Jahren wuchs daraus die größte Stadt Amerikas: Dämme, Aquädukte, schwimmende Felder, ein Markt, über den die spanischen Berichterstatter staunten, weil er größer war als alles, was sie in Europa kannten. 1521 wurde sie nach einer dreimonatigen Belagerung eingenommen und systematisch überbaut. Mexiko-Stadt steht auf ihren Fundamenten – und weil die Spanier den See ableiteten, sinkt sie seither in den trockenen Seeboden. Diese Geschichte behandelt beide Städte als eine.",
+  "strittig": "Die Einwohnerzahl Tenochtitláns wird zwischen 150.000 und über 200.000 geschätzt, aus Fläche, Hausdichte und Tributlisten – gesicherte Zahlen gibt es nicht. Weit strittiger ist der Umfang der Menschenopfer: Die Angaben reichen von den zehntausenden der spanischen und aztekischen Quellen bis zu Schätzungen, die eher hunderte pro Jahr annehmen; beide Seiten hatten Interesse an hohen Zahlen – die Eroberer zur Rechtfertigung, die aztekische Selbstdarstellung zur Einschüchterung. Archäologische Funde am Templo Mayor, darunter ein Schädelturm, belegen die Praxis, nicht die Größenordnung. Der Bevölkerungsrückgang Mexikos im 16. Jahrhundert wird auf 50 bis über 90 Prozent geschätzt, überwiegend durch eingeführte Krankheiten; die Streuung ist enorm, weil die Ausgangszahlen unbekannt sind. Für die Toten des Erdbebens 1985 und des Massakers von 1968 gibt es amtliche und deutlich höhere unabhängige Angaben.",
+  "quellen": [
+   "Encyclopaedia Britannica: Tenochtitlán; Mexico City; Aztec; Hernán Cortés",
+   "Camilla Townsend: Fifth Sun – A New History of the Aztecs (aus Nahuatl-Quellen)",
+   "Matthew Restall: Als Cortés Moctezuma traf (zur Quellenkritik der Eroberung)",
+   "Bernal Díaz del Castillo: Die Eroberung von Mexiko (Augenzeuge, mit klarer Interessenlage)",
+   "Instituto Nacional de Antropología e Historia: Berichte zu den Grabungen am Templo Mayor",
+   "INEGI (Mexikanisches Statistikinstitut): Bevölkerungs- und Senkungsdaten (laufend aktualisiert)"
+  ],
+  "stationen": [
+   {
+    "jahr": 1325,
+    "titel": "Die Gründung auf der Insel",
+    "text": "Die Mexica, spät zugewanderte Gruppe im Hochtal, siedeln auf einer sumpfigen Insel im Texcoco-See – dem Land, das niemand sonst wollte. Die eigene Überlieferung erklärt es mit einem göttlichen Zeichen: ein Adler auf einem Kaktus. Der praktische Vorteil war die Verteidigungslage, der praktische Nachteil das Fehlen von Süßwasser, Bauholz und Ackerland.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1350,
+    "titel": "Die Chinampas",
+    "text": "Auf dem Flachwasser werden aus Schlamm, Pfählen und Weidengeflecht rechteckige Beete angelegt, umgeben von Kanälen: Chinampas. Sie tragen mehrere Ernten im Jahr, brauchen keine Bewässerung und liefern nach heutigen Schätzungen einen erheblichen Teil der Nahrung der Stadt. Es ist eines der produktivsten Landwirtschaftssysteme der vorindustriellen Welt; Reste sind in Xochimilco noch in Betrieb.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1428,
+    "titel": "Der Dreibund",
+    "text": "Tenochtitlán verbündet sich mit Texcoco und Tlacopan, stürzt die bisherige Vormacht Azcapotzalco und teilt Tribut und Beute unter sich auf. Aus diesem Bündnis entsteht das, was wir Aztekenreich nennen – kein Territorialstaat, sondern ein Netz tributpflichtiger Städte, die ihre eigenen Herrscher behielten. Genau diese Struktur macht es 1519 angreifbar.",
+    "herrschaft": "Mexica (Dreibund)"
+   },
+   {
+    "jahr": 1440,
+    "titel": "Wasser aus Chapultepec",
+    "text": "Unter Moctezuma I. wird eine doppelte Tonrohrleitung vom Festland auf die Insel gebaut: zwei Rohre, damit eines gereinigt werden kann, während das andere läuft. Dazu kommen ein Deich von rund sechzehn Kilometern gegen das salzige Ostwasser des Sees und drei Dammstraßen mit Zugbrücken. Die Infrastruktur ist die Voraussetzung für eine Großstadt an diesem Ort – und im Krieg ihre Schwachstelle.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1450,
+    "titel": "Die große Hungersnot",
+    "text": "Mehrere Jahre Frost und Dürre führen zu einer Hungersnot, in der nach den Quellen Menschen sich in Tributgebiete verkauften, um zu überleben. Danach werden staatliche Kornspeicher angelegt und die Eroberungen nach Süden verstärkt, wo Klima und Ernten sicherer sind. Die Erinnerung an diese Jahre bleibt in den Bilderhandschriften als Wendepunkt verzeichnet.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1487,
+    "titel": "Die Einweihung des Templo Mayor",
+    "text": "Der doppelte Tempel im Zentrum, den Göttern Huitzilopochtli und Tlaloc gewidmet, wird nach einem Erweiterungsbau eingeweiht. Die Anlage wurde in sieben Bauphasen jeweils über die vorige gesetzt, weshalb die Archäologie sie heute wie eine Zwiebel abtragen kann. Die Zahl der bei der Einweihung geopferten Menschen wird in den Quellen mit zwanzigtausend angegeben – eine Zahl, die als Machtdemonstration gemeint war und nicht als Statistik.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1502,
+    "titel": "Moctezuma II.",
+    "text": "Der neue Herrscher zentralisiert die Verwaltung, ersetzt Beamte durch Angehörige des Hochadels und verstärkt den Tributdruck. Das Reich ist auf seinem größten Umfang und gleichzeitig unbeliebt: Mehrere unterworfene Städte, darunter Tlaxcala, sind unabhängig und feindlich. Diese Unzufriedenheit wird die entscheidende Ressource der Spanier.",
+    "herrschaft": "Mexica",
+    "vertiefung": "moctezuma2"
+   },
+   {
+    "jahr": 1519,
+    "titel": "Cortés erreicht die Stadt",
+    "text": "Eine spanische Truppe von einigen hundert Mann zieht mit tausenden tlaxkaltekischen Verbündeten über die Dammstraße nach Tenochtitlán und wird zunächst aufgenommen; Moctezuma gerät in Gefangenschaft. Was in diesen Wochen tatsächlich gesprochen wurde, ist nicht rekonstruierbar – alle Berichte sind Jahre später und von Beteiligten mit Interessen verfasst, und die Erzählung, die Azteken hätten Cortés für einen Gott gehalten, gilt heute als spätere Konstruktion.",
+    "herrschaft": "Mexica"
+   },
+   {
+    "jahr": 1520,
+    "titel": "Noche Triste und die Pocken",
+    "text": "Nach einem Massaker beim Fest im Tempelbezirk erhebt sich die Stadt und treibt die Spanier in einer Nacht über die Dämme hinaus; ein großer Teil von ihnen stirbt. Wenige Monate später bricht die von einem spanischen Schiff eingeschleppte Pockenepidemie aus und tötet einen erheblichen Teil der Bevölkerung, darunter den neuen Herrscher. Die Seuche hat die militärische Lage stärker verändert als jede Schlacht.",
+    "herrschaft": "Mexica",
+    "vertiefung": "columbian-exchange"
+   },
+   {
+    "jahr": 1521,
+    "titel": "Die Belagerung",
+    "text": "Cortés kehrt mit tausenden indigenen Verbündeten und dreizehn auf dem See gebauten Brigantinen zurück, kappt die Wasserleitung und schneidet die Nachschubwege ab. Die Stadt hält dreiundneunzig Tage; Häuser werden Straße für Straße abgetragen, um die Kanäle zu füllen. Am 13. August ergibt sich der letzte Herrscher Cuauhtémoc – nach Schätzungen sind die Verluste der Verteidiger und der Zivilbevölkerung sechsstellig.",
+    "herrschaft": "Spanische Eroberung"
+   },
+   {
+    "jahr": 1524,
+    "titel": "Die neue Stadt über der alten",
+    "text": "Cortés lässt an derselben Stelle eine spanische Stadt anlegen, mit dem Hauptplatz über dem Tempelbezirk und der Kathedrale aus den Steinen des Templo Mayor. Die Wahl war umstritten: Der Ort war sumpfig, ungesund und schwer zu versorgen. Entschieden hat die Symbolik – wer im Zentrum der alten Macht residiert, tritt an ihre Stelle.",
+    "herrschaft": "Spanien"
+   },
+   {
+    "jahr": 1535,
+    "titel": "Hauptstadt Neuspaniens",
+    "text": "Mexiko-Stadt wird Sitz des Vizekönigs und damit Verwaltungszentrum eines Gebiets von Kalifornien bis Mittelamerika und, über Manila, bis zu den Philippinen. Über den Hafen Veracruz und die Manila-Galeone läuft der Silber-, Seiden- und Porzellanhandel zwischen Amerika, Europa und Asien. Die Stadt ist für zweihundertfünfzig Jahre der reichste Ort der westlichen Hemisphäre.",
+    "herrschaft": "Vizekönigreich Neuspanien",
+    "vertiefung": "potosi"
+   },
+   {
+    "jahr": 1553,
+    "titel": "Die Universität",
+    "text": "Die Königliche Universität von Mexiko nimmt den Lehrbetrieb auf, eine der ersten Amerikas. Kurz davor entstand das Kolleg von Tlatelolco, an dem indigene Adelssöhne Latein, Nahuatl und Spanisch lernten – aus dieser Schule kommen die Mitarbeiter, die mit Bernardino de Sahagún den Codex Florentinus zusammenstellen. Ein großer Teil dessen, was wir über die aztekische Welt wissen, verdankt sich diesem Projekt.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1571,
+    "titel": "Die Inquisition richtet sich ein",
+    "text": "In Mexiko-Stadt wird ein Tribunal des Heiligen Offiziums eingerichtet, zuständig für ganz Neuspanien. Indigene Bevölkerung war ausdrücklich ausgenommen – als Neubekehrte galt sie als nicht zurechnungsfähig für Glaubensabweichung –, verfolgt wurden vor allem Konvertiten jüdischer Herkunft, Protestanten und später Bücherbesitz. Das Tribunal betrieb auch die Bücherzensur: Die Listen verbotener Werke sind heute eine Quelle dafür, was in der Kolonie gelesen wurde.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1607,
+    "titel": "Der Desagüe",
+    "text": "Um die Überflutungen zu beenden, beginnt eines der größten Bauvorhaben der Kolonialzeit: ein Abflusskanal und Tunnel, der das Wasser des abflusslosen Hochtals in ein Nachbartal leitet. Gearbeitet wird über Jahrzehnte in Zwangsarbeit indigener Gemeinden, mit hoher Sterblichkeit. Das Projekt löst das Hochwasserproblem nur teilweise – und schafft ein neues, das noch heute besteht.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1629,
+    "titel": "Fünf Jahre unter Wasser",
+    "text": "Nach anhaltenden Regenfällen steht die Stadt teilweise mehrere Jahre unter Wasser; ein großer Teil der Bevölkerung verlässt sie, eine Verlegung der Hauptstadt wird erwogen und verworfen. Die Katastrophe beschleunigt die Trockenlegung der Seen, die im 19. und 20. Jahrhundert vollendet wird. Damit verschwindet das Wassersystem, das die Inselstadt getragen hatte, endgültig.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1692,
+    "titel": "Der Maisaufstand",
+    "text": "Nach Missernten und Getreidespekulation stürmt eine Menge den Hauptplatz, setzt den Vizekönigspalast und das Rathaus in Brand und plündert Läden. Die Behörden reagieren mit Hinrichtungen und mit dem Versuch, indigene Bevölkerung aus dem Zentrum in eigene Viertel zu verlegen. Der Aufstand zeigt, dass die reiche Kolonialstadt von einer Getreideversorgung abhing, die regelmäßig ausfiel.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1785,
+    "titel": "Das Hungerjahr",
+    "text": "Ein Frost im August vernichtet die Maisernte im Hochland; die folgende Hungersnot und die Seuchen kosten nach Schätzungen mehrere Hunderttausend Menschen das Leben, und Zehntausende ziehen in die Hauptstadt. Die Krise ist Teil des Hintergrunds, auf dem die Unabhängigkeitsbewegung entsteht. In derselben Zeit richtet die Verwaltung Straßenbeleuchtung, Nummerierung und Müllabfuhr ein – Aufklärung und Hungersnot in einer Stadt.",
+    "herrschaft": "Vizekönigreich Neuspanien"
+   },
+   {
+    "jahr": 1810,
+    "titel": "Der Ruf von Dolores",
+    "text": "Der Priester Miguel Hidalgo ruft zum Aufstand gegen die spanische Herrschaft; sein Heer erreicht die Umgebung der Hauptstadt, kehrt aber um, ohne sie anzugreifen – eine der meistdiskutierten Entscheidungen der mexikanischen Geschichte. Der Krieg dauert elf Jahre und kostet nach Schätzungen mehrere Hunderttausend Menschen das Leben. Mexiko-Stadt bleibt bis zum Schluss in royalistischer Hand.",
+    "herrschaft": "Vizekönigreich Neuspanien",
+    "vertiefung": "lateinamerika-unabhaengigkeit"
+   },
+   {
+    "jahr": 1821,
+    "titel": "Unabhängigkeit",
+    "text": "Die Unabhängigkeit wird nicht von den Aufständischen, sondern durch das Bündnis eines royalistischen Offiziers mit ihnen erreicht; Mexiko-Stadt wird Hauptstadt eines kurzlebigen Kaiserreichs und dann einer Republik. Es folgen fünfzig Jahre mit über dreißig Regierungswechseln, Staatsbankrotten und Bürgerkriegen. Die Stadt ist in dieser Zeit Beute jeder Erhebung.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1847,
+    "titel": "Amerikanische Truppen im Zentrum",
+    "text": "Im Krieg mit den USA wird Mexiko-Stadt nach den Kämpfen um Chapultepec eingenommen; die Flagge der Vereinigten Staaten weht auf dem Nationalpalast. Der Friede kostet Mexiko rund die Hälfte seines Staatsgebiets. Für die Hauptstadt beginnt damit eine dauerhafte Nachbarschaftsbeziehung, die Wirtschaft und Politik bis heute prägt.",
+    "herrschaft": "Mexiko, US-Besetzung"
+   },
+   {
+    "jahr": 1864,
+    "titel": "Ein Kaiser aus Wien",
+    "text": "Frankreich setzt den Habsburger Maximilian als Kaiser von Mexiko ein; er lässt einen Prachtboulevard vom Schloss Chapultepec zum Zentrum anlegen, den heutigen Paseo de la Reforma. Nach dem Abzug der französischen Truppen wird er 1867 gefangen genommen und erschossen. Die Straße blieb – die wichtigste Achse der Stadt geht auf eine dreijährige Fremdherrschaft zurück.",
+    "herrschaft": "Zweites Mexikanisches Kaiserreich"
+   },
+   {
+    "jahr": 1900,
+    "titel": "Der Porfiriato baut um",
+    "text": "Unter Porfirio Díaz erhält die Stadt Kanalisation, elektrisches Licht, Straßenbahnen, Bahnhöfe und Repräsentationsbauten; der große Abflusskanal wird endlich fertig und legt die letzten Seen trocken. Finanziert wird das mit ausländischem Kapital, während Landbesitz konzentriert und Löhne gedrückt werden. Beide Seiten dieser Bilanz führen 1910 in die Revolution.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1913,
+    "titel": "Die zehn tragischen Tage",
+    "text": "In der Revolution wird das Zentrum der Hauptstadt zehn Tage lang mit Artillerie beschossen; der Präsident Madero wird gestürzt und ermordet. Die Kämpfe treffen Wohnviertel, die Zahl der zivilen Toten ist unbekannt. Aus dem Bürgerkrieg der folgenden Jahre geht ein Staat hervor, der von 1929 bis 2000 von einer einzigen Partei regiert wird.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1929,
+    "titel": "Die Universität wird autonom",
+    "text": "Die Nationale Autonome Universität erhält Selbstverwaltung; sie wird zur größten Universität Lateinamerikas und ab 1950 in einem eigenen Campus mit Wandbildern von Rivera, Siqueiros und O'Gorman gebaut. Die Wandmalerei dieser Jahrzehnte ist Staatsauftrag und Kunstprogramm zugleich: Geschichte für ein Publikum, das nicht liest. Der Campus ist heute Weltkulturerbe.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1968,
+    "titel": "Tlatelolco",
+    "text": "Zehn Tage vor der Eröffnung der Olympischen Spiele schießen Militär und Sicherheitskräfte auf eine Studentenversammlung auf dem Platz der drei Kulturen; die Regierung sprach von etwa dreißig Toten, unabhängige Untersuchungen und später zugängliche Akten von mehreren Hundert. Der Ort trägt seinen Namen von den drei Schichten, die dort sichtbar sind: aztekischer Tempel, spanische Kirche, moderner Wohnblock. Das Massaker ist der Bruch, an dem die Legitimität des Einparteienstaats zu erodieren beginnt.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1978,
+    "titel": "Der Templo Mayor kommt zurück",
+    "text": "Elektriker stoßen im Zentrum auf eine acht Tonnen schwere Steinscheibe mit der Darstellung der Mondgöttin Coyolxauhqui; daraufhin wird ein ganzer Häuserblock abgerissen und der Tempelbezirk ausgegraben. Zum ersten Mal ist die aztekische Stadt im Zentrum der modernen sichtbar. Die Grabungen laufen bis heute und liefern regelmäßig Funde, die frühere Annahmen korrigieren.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 1985,
+    "titel": "Das Erdbeben",
+    "text": "Ein Beben der Stärke 8,0 trifft die Stadt; besonders schwer betroffen sind die Viertel auf dem alten Seeboden, wo der weiche Untergrund die Schwingungen verstärkt und Gebäude in Resonanz geraten. Die amtliche Zahl von rund zehntausend Toten wird von unabhängigen Schätzungen auf bis zu vierzigtausend erhöht. Weil die Behörden versagten, organisierten Nachbarschaften die Rettung selbst – aus dieser Erfahrung entsteht eine Zivilgesellschaft, die die Politik der folgenden Jahrzehnte verändert.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 2000,
+    "titel": "Die sinkende Megastadt",
+    "text": "Der Großraum Mexiko-Stadt hat über zwanzig Millionen Einwohner und bezieht einen großen Teil seines Trinkwassers aus dem Grundwasser unter der Stadt. Weil der Seeboden dabei entwässert wird, senkt sich der Untergrund in Teilen der Stadt um mehrere Zentimeter pro Jahr; Straßen, Leitungen und Kirchen kippen sichtbar. Es ist die direkte Spätfolge der Entscheidung von 1524, eine europäische Stadt in ein Seebecken zu bauen.",
+    "herrschaft": "Mexiko"
+   },
+   {
+    "jahr": 2016,
+    "titel": "Eine Stadt mit eigener Verfassung",
+    "text": "Der Bundesdistrikt wird in einen Bundesstaat mit eigener Verfassung umgewandelt, die 2017 verabschiedet wird; die Stadt erhält damit mehr Selbstverwaltung als in ihrer gesamten Geschichte. Die großen offenen Fragen bleiben Wasser, Verkehr, Erdbebensicherheit und Ungleichheit. Aktuelle Bevölkerungs- und Senkungsdaten sind bei INEGI und den zuständigen Forschungsinstituten nachzuschauen.",
+    "herrschaft": "Mexiko"
+   }
+  ]
+ },
+ {
   "id": "frauen",
   "titel": "Frauen in der Geschichte",
   "kurz": "Nicht eine Geschichte des Fehlens, sondern eine des Überlieferns — und der Rechte, die erst in den letzten hundert Jahren kamen.",

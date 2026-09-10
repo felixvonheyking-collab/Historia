@@ -272,6 +272,12 @@ const ERLAUBTE_ABWEICHUNGEN = [
   // Landsteiner notierte die Beobachtung 1900 in einer Fussnote und legte
   // 1901 die ausfuehrliche Arbeit vor - beide Jahre sind gebraeuchlich.
   ["Blutgruppen", "Blutgruppen und die Spur am Tatort", "1900 erste Notiz, 1901 die Arbeit"],
+  // Der Feldzug begann 639/640 im Osten des Landes, Alexandria kapitulierte
+  // erst 641/642 vertraglich - Land und Stadt haben verschiedene Daten.
+  ["Arabische Eroberung", "Die arabische Eroberung", "639 Beginn des Feldzugs in Ägypten, 642 Übergabe Alexandrias"],
+  // Der Kongress begann im September 1814 und endete mit der Schlussakte
+  // vom 9. Juni 1815 - beide Jahre sind gebraeuchlich.
+  ["Wiener Kongress", "Der Wiener Kongress", "1814 Beginn, 1815 Schlussakte"],
   ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Italien", "Oktober 1347 Sizilien, 1348 Festland"],
   ["Der Schwarze Tod", "Der Schwarze Tod erreicht Frankreich", "Oktober 1347 Sizilien, 1348 Frankreich"],
