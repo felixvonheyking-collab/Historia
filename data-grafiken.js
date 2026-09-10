@@ -56,22 +56,39 @@ const GRAFIKEN = {
       ${[0, 1, 2].map((i) => {
         const x = 20 + i * 262;
         const titel = ["1 — Aufstellung", "2 — Die Mitte gibt nach", "3 — Der Ring schließt sich"][i];
-        // Roemer als geschlossener Block, Karthager als Bogen. Die Kurve
-        // wird je Zug staerker nach innen gezogen.
-        const bogen = [40, -10, -55][i];
+        // Karthago ist eine durchgehende Linie, deren Enden nach unten
+        // umbiegen - so liest man die Umfassung als Bewegung derselben
+        // Truppe und nicht als drei getrennte Bloecke. Die Roemer ruecken
+        // von unten nach oben vor, deshalb bedeutet ein groesseres y
+        // "in Richtung Rom".
+        const linie = [
+          // Zug 1: Mitte nach vorn gebogen, Fluegel noch weit aussen
+          `M${x + 22},96 L${x + 44},112 Q${x + 115},158 ${x + 186},112 L${x + 208},96`,
+          // Zug 2: Mitte weicht zurueck, es entsteht eine Tasche
+          `M${x + 22},96 L${x + 44},110 Q${x + 115},74 ${x + 186},110 L${x + 208},96`,
+          // Zug 3: die Fluegel sind hinter den Gegner geschwenkt
+          `M${x + 30},84 Q${x + 26},150 ${x + 62},188 Q${x + 115},214 ${x + 168},188 Q${x + 204},150 ${x + 200},84`
+        ][i];
+        const roemer = [
+          // Zug 1: geschlossener Block vor der karthagischen Linie
+          `<rect x="${x + 52}" y="182" width="126" height="52" rx="3" fill="${G_FARBEN.blau}" opacity="0.8"/>`,
+          // Zug 2: in die Tasche vorgestoßen, dadurch schmaler und tiefer
+          `<rect x="${x + 74}" y="96" width="82" height="132" rx="3" fill="${G_FARBEN.blau}" opacity="0.8"/>`,
+          // Zug 3: eingeschlossen und zusammengedraengt
+          `<rect x="${x + 78}" y="110" width="74" height="64" rx="3" fill="${G_FARBEN.blau}" opacity="0.85"/>`
+        ][i];
         return `
         <text x="${x}" y="18" fill="${G_FARBEN.gold}" font-size="14">${titel}</text>
         <rect x="${x}" y="30" width="230" height="250" fill="none" stroke="${G_FARBEN.linie}" stroke-width="1" opacity="0.35" rx="4"/>
-        <path d="M${x + 30},${100} Q${x + 115},${100 + bogen} ${x + 200},${100}"
-              fill="none" stroke="${G_FARBEN.rot}" stroke-width="9" stroke-linecap="round"/>
-        <rect x="${x + 40}" y="${168 + (i === 0 ? 0 : i === 1 ? -14 : -26)}" width="150" height="${i === 0 ? 46 : i === 1 ? 54 : 40}"
-              fill="${G_FARBEN.blau}" opacity="0.75" rx="3"/>
-        <rect x="${x + 26}" y="82" width="14" height="120" fill="${G_FARBEN.rot}" rx="3"/>
-        <rect x="${x + 190}" y="82" width="14" height="120" fill="${G_FARBEN.rot}" rx="3"/>
-        ${i > 0 ? `<path d="M${x + 33},205 Q${x + 60},245 ${x + 105},240" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" marker-end="url(#pf)"/>
-                   <path d="M${x + 197},205 Q${x + 170},245 ${x + 125},240" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" marker-end="url(#pf)"/>` : ""}
-        ${i === 2 ? `<path d="M${x + 40},${146} Q${x + 115},${120} ${x + 190},${146}" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" stroke-dasharray="4 3"/>` : ""}
-        <text x="${x + 115}" y="272" text-anchor="middle" font-size="13">${["Karthager im Bogen, Römer massiert", "Römer stoßen durch", "Umfassung vollendet"][i]}</text>`;
+        ${roemer}
+        <path d="${linie}" fill="none" stroke="${G_FARBEN.rot}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        ${i === 0 ? `<path d="M${x + 115},250 L${x + 115},242" stroke="${G_FARBEN.gold}" stroke-width="2" marker-end="url(#pf)"/>
+                     <text x="${x + 115}" y="266" text-anchor="middle">Römer rücken vor</text>` : ""}
+        ${i === 1 ? `<path d="M${x + 44},128 Q${x + 40},166 ${x + 74},186" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" marker-end="url(#pf)"/>
+                     <path d="M${x + 186},128 Q${x + 190},166 ${x + 156},186" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" marker-end="url(#pf)"/>
+                     <text x="${x + 115}" y="266" text-anchor="middle">Flügel schwenken ein</text>` : ""}
+        ${i === 2 ? `<path d="M${x + 96},198 L${x + 115},198 L${x + 134},198" fill="none" stroke="${G_FARBEN.gold}" stroke-width="2" stroke-dasharray="4 3"/>
+                     <text x="${x + 115}" y="266" text-anchor="middle">Nur hier noch ein Ausweg</text>` : ""}`;
       }).join("")}
       <g transform="translate(20,292)">
         <rect x="0" y="-9" width="12" height="9" fill="${G_FARBEN.rot}" rx="2"/>
