@@ -95,10 +95,32 @@ const SCHLUESSELMOMENTE = [
   "vertiefung": "karthago"
  },
  {
+  "year": -88,
+  "title": "Sullas Marsch auf Rom",
+  "category": "Politischer Umbruch",
+  "text": "Zum ersten Mal nimmt ein römisches Heer die eigene Stadt. Danach ist es denkbar – Caesar, Antonius und Octavian werden es wiederholen.",
+  "vertiefung": "sulla"
+ },
+ {
+  "year": -49,
+  "title": "Caesar überschreitet den Rubikon",
+  "category": "Politischer Umbruch",
+  "text": "Mit einer einzigen Legion verletzt Caesar die Grenze seiner Provinz und beginnt damit rechtlich den Bürgerkrieg.",
+  "vertiefung": "caesar-gallien-rubikon"
+ },
+ {
   "year": -44,
   "title": "Ermordung Caesars",
   "category": "Herrschaft",
-  "text": "Der Versuch, die Republik zu retten, beschleunigt ihr Ende: Vierzehn Jahre später ist Rom eine Monarchie."
+  "text": "Der Versuch, die Republik zu retten, beschleunigt ihr Ende: Vierzehn Jahre später ist Rom eine Monarchie.",
+  "vertiefung": "iden-des-maerz"
+ },
+ {
+  "year": -43,
+  "title": "Cicero auf der Proskriptionsliste",
+  "category": "Herrschaft",
+  "text": "Das zweite Triumvirat greift auf Sullas Verfahren zurück. Mit Cicero stirbt die letzte Stimme, die die Republik noch verteidigte.",
+  "vertiefung": "cicero"
  },
  {
   "year": 33,
@@ -1385,7 +1407,8 @@ const BATTLES = [
   ],
   "ausgang": "Römischer Sieg. Caesar baute zwei Befestigungsringe – einen nach innen gegen die Belagerten, einen nach außen gegen das Entsatzheer – und hielt beide Angriffe zugleich aus. Vercingetorix ergab sich.",
   "folgen": "Der gallische Widerstand brach zusammen; Gallien wurde römische Provinz und blieb es fünf Jahrhunderte. Caesars Ruhm aus diesem Feldzug trug seinen Griff nach der Macht in Rom. Vercingetorix wurde sechs Jahre später im Triumphzug mitgeführt und hingerichtet.",
-  "hinweis": "Caesar beziffert das Entsatzheer in seinem eigenen Bericht auf 250.000 Mann. Die Forschung hält 80.000 bis 100.000 für realistischer – er schrieb für ein römisches Publikum, das seine Leistung würdigen sollte."
+  "hinweis": "Caesar beziffert das Entsatzheer in seinem eigenen Bericht auf 250.000 Mann. Die Forschung hält 80.000 bis 100.000 für realistischer – er schrieb für ein römisches Publikum, das seine Leistung würdigen sollte.",
+  "vertiefung": "caesar-gallien-rubikon"
  },
  {
   "year": -31,
@@ -1410,7 +1433,7 @@ const BATTLES = [
   "ausgang": "Sieg Octavians. Antonius' Flotte war durch Blockade und Krankheit geschwächt; mitten im Gefecht durchbrach Kleopatras Geschwader die Linie und segelte nach Ägypten, Antonius folgte.",
   "folgen": "Ein Jahr später nahmen sich beide in Alexandria das Leben. Ägypten wurde römische Provinz, die letzte hellenistische Monarchie endete. Octavian stand ohne Rivalen da und wurde vier Jahre später Augustus.",
   "hinweis": "Ob Kleopatras Abzug Flucht oder abgesprochener Plan war, ist seit der Antike umstritten. Die Berichte stammen von der Siegerseite.",
-  "vertiefung": "pharao-kleopatra"
+  "vertiefung": "antonius-kleopatra"
  },
  {
   "year": 9,

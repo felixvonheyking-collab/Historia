@@ -9284,4 +9284,329 @@ const VERTIEFUNGEN = [
     "Donald Worster: Dust Bowl"
   ]
 }
+, {
+  "id": "sulla",
+  "titel": "Sulla und der erste Marsch auf Rom",
+  "epoche": "antike",
+  "jahr": -82,
+  "zeitraum": "91–78 v. Chr.",
+  "region": "Italien, Griechenland, Kleinasien",
+  "leitsatz": "Sulla stellte die Ordnung der Senatsherrschaft mit Mitteln wieder her, die sie unwiederbringlich zerstörten.",
+  "vorgeschichte": "Rom beherrschte das Mittelmeer, aber die italischen Bundesgenossen, die die Legionen füllten, hatten kein Bürgerrecht. Als der Tribun Livius Drusus 91 v. Chr. bei dem Versuch ermordet wurde, es ihnen zu verschaffen, brach der Bundesgenossenkrieg aus – der verlustreichste Krieg, den Rom auf italischem Boden führte. Er endete damit, dass Rom nachgab und das Bürgerrecht gewährte, aber die politische Klasse war zerrüttet, und mit Marius und Sulla standen sich zwei Feldherren gegenüber, die beide auf die Loyalität eigener Truppen zählen konnten.",
+  "verlauf": "88 v. Chr. wurde Sulla das Kommando gegen Mithridates VI. von Pontos übertragen und durch einen Volksbeschluss wieder entzogen. Er marschierte mit seinem Heer nach Rom – das erste Mal, dass ein römischer Feldherr die eigene Stadt militärisch nahm –, ließ seine Gegner für vogelfrei erklären und zog dann in den Osten. In seiner Abwesenheit übernahmen Marius und Cinna Rom und führten eigene Tötungslisten. 83 v. Chr. kehrte Sulla zurück, siegte 82 v. Chr. an der Porta Collina und ließ sich zum Diktator ohne Zeitbegrenzung ernennen, ausdrücklich zum Zweck, die Gesetze neu zu schreiben.",
+  "folgen": "Sulla stärkte den Senat, entmachtete das Volkstribunat, ordnete die Gerichte neu und legte die Ämterlaufbahn fest. Dann tat er das Unerwartete: Er legte 79 v. Chr. die Diktatur nieder und starb ein Jahr später als Privatmann. Seine Verfassung hielt keine zehn Jahre; Pompeius baute die Rechte des Tribunats wieder auf. Was blieb, war das Beispiel: Ein Heer kann die Stadt nehmen, ein Sieger kann Gegner ohne Verfahren töten lassen, und ein Amt kann ohne Frist verliehen werden. Caesar, der Sullas Herrschaft als junger Mann erlebte, hat beides gelernt – dass es möglich ist, und dass der Rücktritt tödlich sein kann.",
+  "strittig": "Ob Sulla ein Reaktionär war, der die alte Ordnung retten wollte, oder der erste Alleinherrscher, ist eine alte Streitfrage. Für die Rettungsabsicht spricht sein Rücktritt, gegen sie der Weg dorthin. Umstritten ist auch die Zahl der Proskriptionsopfer: Die antiken Angaben schwanken zwischen wenigen Tausend und Zehntausenden, und alle Zahlen stammen von Autoren, die deutlich später und mit klarer Wertung schrieben – Appian, Plutarch und der Sulla-Gegner Sallust.",
+  "zahlen": [
+   {
+    "wert": "88 v. Chr.",
+    "was": "Erster Marsch eines römischen Heeres auf Rom"
+   },
+   {
+    "wert": "82 v. Chr.",
+    "was": "Sieg an der Porta Collina, Beginn der Diktatur"
+   },
+   {
+    "wert": "ca. 1.500–4.700",
+    "was": "Namen auf den Proskriptionslisten – die Angaben der antiken Autoren gehen weit auseinander"
+   },
+   {
+    "wert": "79 v. Chr.",
+    "was": "Freiwilliger Rücktritt vom Diktatorenamt"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Die Proskription: Mord als Verwaltungsakt",
+    "text": "Neu an Sullas Terror war nicht das Töten, sondern die Form. Auf dem Forum wurden Listen mit Namen angeschlagen. Wer darauf stand, war rechtlos: Jeder durfte ihn töten, es gab eine Belohnung dafür, das Vermögen fiel an den Staat und wurde versteigert, und Söhne und Enkel der Betroffenen wurden von den Ämtern ausgeschlossen. Wer einen Geächteten versteckte, machte sich selbst strafbar.\n\nDamit wurde politische Vernichtung ein Verfahren, an dem sich beteiligen konnte, wer wollte. Die Versteigerungen schufen eine Schicht von Nutznießern, die Sullas Ordnung verteidigten, weil ihr Besitz an ihr hing – Crassus, später der reichste Mann Roms, gehörte dazu. Und weil die Listen fortlaufend ergänzt wurden, konnte man Namen einfügen lassen: Cicero berichtet in seiner ersten großen Verteidigungsrede von einem Fall, in dem ein längst Verstorbener nachträglich auf die Liste gesetzt wurde, damit die Erben ihr Land verloren.\n\nDie eigentliche Wirkung war die Gewöhnung. Als vierzig Jahre später das zweite Triumvirat wieder Listen anschlug – und Cicero selbst darauf setzte –, war die Technik bekannt und der Widerstand gering. Ein Werkzeug, das einmal funktioniert hat, verschwindet nicht wieder."
+   },
+   {
+    "titel": "Warum das Heer dem Feldherrn gehorchte und nicht der Stadt",
+    "text": "Sullas Marsch auf Rom war nur möglich, weil ein römisches Heer nicht mehr die bewaffnete Bürgerschaft war. Die Heeresreform, die Marius zugeschrieben wird, öffnete den Dienst den Besitzlosen. Wer nichts hatte, diente lange, und was er am Ende erwartete, war nicht ein Ackerhof, den er ohnehin besaß, sondern Land und Beute, die ihm der Feldherr verschaffen musste – vom Senat war nichts zu erwarten, denn der lehnte Landverteilungen regelmäßig ab.\n\nDamit hing die Zukunft jedes Soldaten an der politischen Durchsetzungskraft eines einzelnen Mannes. Die Legion war nicht bestechlich, sie war interessiert. Als Sulla seinen Truppen sagte, das Kommando sei ihm unrechtmäßig genommen worden, hörten sie: Der Feldzug, aus dem unsere Versorgung kommt, wird gestrichen. Nur sechs seiner Offiziere folgten ihm nicht.\n\nDieses Muster erklärt die folgenden fünfzig Jahre besser als jede Charakterschilderung. Pompeius, Caesar, Antonius und Octavian standen alle vor derselben Rechnung: Wer seine Veteranen nicht versorgte, verlor sie, und wer sie versorgen wollte, musste sich gegen den Senat durchsetzen. Die Republik ist nicht an Ehrgeiz zugrunde gegangen, sondern an einem unbezahlten Pensionsversprechen."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Sulla. Eine Biographie",
+    "autor": "Karl Christ",
+    "jahr": "2002",
+    "warum": "Nüchterne deutsche Standardbiographie, die Sullas Maßnahmen als Verfassungspolitik ernst nimmt statt ihn zum Ungeheuer zu machen."
+   },
+   {
+    "titel": "Sulla. The Last Republican",
+    "autor": "Arthur Keaveney",
+    "jahr": "2005",
+    "warum": "Vertritt die Gegenposition: Sulla habe die Republik retten wollen. Gut, um die Streitfrage von beiden Seiten zu sehen."
+   },
+   {
+    "titel": "Sulla",
+    "autor": "Plutarch",
+    "warum": "Die wichtigste antike Quelle, rund 200 Jahre nach den Ereignissen geschrieben – lesbar, anschaulich und erkennbar auf moralische Lehren hin gebaut. Man sollte sie gelesen haben und ihr nicht glauben."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Sulla; Social War; Roman Republic",
+   "Plutarch, Sulla; Appian, Bürgerkriege I (antike Quellen, spätere Wertung)"
+  ]
+ },
+ {
+  "id": "caesar-gallien-rubikon",
+  "titel": "Caesar in Gallien und der Rubikon",
+  "epoche": "antike",
+  "jahr": -49,
+  "zeitraum": "58–49 v. Chr.",
+  "region": "Gallien, Britannien, Norditalien",
+  "leitsatz": "Der Eroberer Galliens hatte am Ende nur noch die Wahl zwischen dem Prozess und dem Bürgerkrieg.",
+  "vorgeschichte": "60 v. Chr. verbanden sich Caesar, Pompeius und Crassus zu einer informellen Absprache, die die Politik Roms unter sich aufteilte. Caesar erhielt das Konsulat und danach für fünf Jahre – später verlängert – das Kommando über Gallien und Illyrien. Er brauchte den Feldzug: Er war hoch verschuldet, hatte keine militärischen Erfolge und benötigte beides, Geld und Ruhm, um in Rom bestehen zu können.",
+  "verlauf": "Zwischen 58 und 51 v. Chr. unterwarf Caesar ganz Gallien, überschritt zweimal den Rhein und landete zweimal in Britannien. 52 v. Chr. schlug er den bis dahin gefährlichsten Aufstand nieder: Vercingetorix' Koalition endete mit der Belagerung von Alesia. Während dieser Jahre starb Crassus in Parthien, und Pompeius rückte an den Senat heran. 50 v. Chr. verlangte der Senat, dass Caesar sein Kommando aufgab, während Pompeius seines behielt. Ohne Amt und ohne Immunität drohte ihm ein Prozess wegen Amtsvergehen. Im Januar 49 v. Chr. überschritt er mit einer einzigen Legion den Rubikon, die Grenze seiner Provinz.",
+  "folgen": "Der Bürgerkrieg dauerte vier Jahre. Pompeius verließ Italien, wurde 48 v. Chr. bei Pharsalos geschlagen und in Ägypten ermordet; die letzten Gegner fielen 45 v. Chr. in Spanien. Caesar ließ sich schrittweise mehr Vollmachten übertragen, zuletzt die Diktatur auf Lebenszeit. Gallien blieb römisch und wurde in den folgenden Jahrhunderten so vollständig romanisiert, dass daraus Frankreich hervorging – die Sprache, die dort heute gesprochen wird, ist eine Folge dieser acht Feldzüge.",
+  "strittig": "Die Opferzahlen des Gallischen Krieges sind nicht zu halten: Caesar selbst nennt in seinen Berichten über eine Million Getötete und Verkaufte. Die Angaben stammen aus seinem eigenen, für die Öffentlichkeit in Rom geschriebenen Werk und sind Propaganda; die Forschung hält die Größenordnung eines Bevölkerungsverlusts für real, die Zahlen für unbelegbar. Ob Caesars Vorgehen gegen die Usipeter und Tenkterer 55 v. Chr. als Vernichtungsfeldzug zu werten ist, wird bis heute diskutiert – Cato beantragte damals im Senat, Caesar dafür an die Germanen auszuliefern.",
+  "zahlen": [
+   {
+    "wert": "58–51 v. Chr.",
+    "was": "Acht Feldzugsjahre in Gallien"
+   },
+   {
+    "wert": "52 v. Chr.",
+    "was": "Alesia: Doppelbelagerung, Ende des großen Aufstands"
+   },
+   {
+    "wert": "10. Januar 49 v. Chr.",
+    "was": "Überschreitung des Rubikon (Datum nach dem damaligen, ungenauen Kalender)"
+   },
+   {
+    "wert": "1 Legion",
+    "was": "Truppenstärke beim Rubikon – der Rest stand noch in Gallien"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Der Bericht als Waffe: Caesar schreibt seinen eigenen Krieg",
+    "text": "Caesars Commentarii de bello Gallico sind die Hauptquelle für den Gallischen Krieg – und sie sind von ihm selbst geschrieben, in der dritten Person, in schlichtem Stil, offenbar jahrweise nach Rom geschickt. Das ist ein Glücksfall und ein Problem in einem. Kein anderer antiker Feldzug ist so genau von einem Beteiligten dokumentiert; und keine andere Quelle hat ein so klares Interesse.\n\nDie Technik ist an drei Stellen greifbar. Erstens: Jeder Feldzug beginnt mit einer Bedrohung Roms oder eines Bundesgenossen, sodass der Angriff Verteidigung wird. Zweitens: Caesars eigene Entscheidungen erscheinen als notwendige Folge von Umständen, seine Niederlagen als Wetter, Verrat oder Ungehorsam von Unterführern. Drittens: Die Gegner werden vor der Schlacht groß gemacht, nach der Schlacht gezählt.\n\nWo die Archäologie prüfen kann, fällt das Ergebnis gemischt aus. Die Grabungen bei Alise-Sainte-Reine haben die von Caesar beschriebenen Doppelwälle im Grundsatz bestätigt – ein starkes Argument für seine Zuverlässigkeit in militärischen Fragen. Die Bevölkerungszahlen dagegen halten keiner Prüfung stand. Man kann Caesar also glauben, wenn er sagt, wie er einen Graben zog, und nicht, wenn er sagt, wie viele darin lagen."
+   },
+   {
+    "titel": "Was der Rubikon wirklich war",
+    "text": "Der Rubikon war kein bedeutender Fluss, sondern ein kleiner Wasserlauf an der Adria, der die Provinz Gallia cisalpina von Italien trennte. Genau darin lag seine Bedeutung: Ein Statthalter hatte militärische Befehlsgewalt in seiner Provinz und nur dort. Wer mit Truppen die Grenze nach Italien überschritt, ohne dass der Senat es angeordnet hatte, begann damit einen Bürgerkrieg – nicht sinnbildlich, sondern rechtlich.\n\nCaesar tat es mit einer einzigen Legion, etwa fünftausend Mann, weil Schnelligkeit mehr wert war als Stärke: Pompeius hatte in Italien Truppen, aber verstreut, und rechnete mit einem langsamen Aufmarsch. Die Rechnung ging auf. Innerhalb von zwei Monaten war Italien ohne große Schlacht in Caesars Hand, Pompeius setzte nach Griechenland über.\n\nDer Satz alea iacta est ist bei Sueton und Plutarch überliefert, in griechischer Form, und Plutarch nennt ihn ein Zitat aus einer Komödie – gesagt hat Caesar an dieser Stelle wohl etwas in dieser Richtung, aber die berühmte lateinische Fassung ist eine spätere Zuspitzung. Wo der Fluss lag, ist bis heute nicht endgültig geklärt; drei italienische Flüsse beanspruchen den Namen."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Caesar",
+    "autor": "Adrian Goldsworthy",
+    "jahr": "2006",
+    "warum": "Die beste moderne Biographie: militärisch kompetent, quellenkritisch, ohne Bewunderung und ohne Anklage."
+   },
+   {
+    "titel": "Caesar. Politiker und Staatsmann",
+    "autor": "Matthias Gelzer",
+    "jahr": "1921",
+    "warum": "Der Klassiker der deutschen Forschung, noch immer maßgeblich für die Verfassungsfragen. Trocken, aber genau."
+   },
+   {
+    "titel": "Der Gallische Krieg",
+    "autor": "Gaius Iulius Caesar",
+    "warum": "Kurz, klar und unentbehrlich – am besten in einer kommentierten Ausgabe, die dazusagt, wo der Verfasser für sich schreibt."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Julius Caesar; Gallic Wars; Alesia",
+   "Caesar, De bello Gallico (Selbstzeugnis); Plutarch, Caesar; Sueton, Divus Iulius"
+  ]
+ },
+ {
+  "id": "iden-des-maerz",
+  "titel": "Die Iden des März",
+  "epoche": "antike",
+  "jahr": -44,
+  "zeitraum": "44 v. Chr.",
+  "region": "Rom",
+  "leitsatz": "Die Verschwörer töteten den Alleinherrscher und retteten damit nicht die Republik, sondern gaben ihr den letzten Stoß.",
+  "vorgeschichte": "Nach dem Sieg über die letzten Pompeianer war Caesar ohne Gegner. Er regierte mit einer Fülle von Ehren und Vollmachten: Diktatur auf Lebenszeit, Kontrolle über die Ämtervergabe, sein Bild auf Münzen, ein Standbild unter denen der Könige, ein eigener Monat im Kalender. Für einen Teil des Senats war die Grenze überschritten – nicht weil Caesar grausam war, im Gegenteil, er hatte auffällig viele Gegner begnadigt, sondern weil eine Ordnung, in der Ehren von einem Einzelnen vergeben werden, für Aristokraten keine Ordnung mehr war.",
+  "verlauf": "An den Iden des März, dem 15. März 44 v. Chr., wurde Caesar in einer Senatssitzung in der Curia des Pompeius-Theaters von einer Gruppe von rund sechzig Verschwörern erstochen. Die Anführer waren Marcus Iunius Brutus und Gaius Cassius Longinus, beide von Caesar begnadigt und befördert. Die Verschwörer hatten keinen Plan für den Tag danach: kein Programm, keine Truppen, keine Absprache mit dem Volk. Antonius, den sie am Leben ließen, hielt die Leichenrede, verlas Caesars Testament – das jedem Bürger Geld vermachte – und brachte die Stadt gegen sie auf.",
+  "folgen": "Die Verschwörer mussten Rom verlassen. Antonius, Octavian und Lepidus bildeten das zweite Triumvirat, ließen Proskriptionslisten anschlagen und schlugen Brutus und Cassius 42 v. Chr. bei Philippi; beide nahmen sich das Leben. Aus dem Konflikt der Sieger ging Octavian als Alleinherrscher hervor. Die Tat hatte also das Gegenteil ihres Ziels erreicht: Sie beseitigte einen Diktator, der die Formen wahrte, und machte den Weg frei für eine Monarchie, die vierhundert Jahre hielt.",
+  "strittig": "Die Motive der Verschwörer sind bis heute umstritten – hohe Ideale, verletzter Stolz, gekränkte Karriereerwartungen oder alles zusammen. Auch Caesars eigene Absichten sind unklar: Ob er das Königtum anstrebte, ist aus den Quellen nicht zu entscheiden, und alle Berichte über sein Verhalten in den letzten Wochen stammen von Autoren, die wussten, wie es endete. Sicher ist nur, dass die Verschwörer glaubten, es sei so.",
+  "zahlen": [
+   {
+    "wert": "15. März 44 v. Chr.",
+    "was": "Die Tat"
+   },
+   {
+    "wert": "ca. 60",
+    "was": "Beteiligte an der Verschwörung nach antiker Überlieferung"
+   },
+   {
+    "wert": "23",
+    "was": "Stichwunden, von denen nach dem Bericht des Arztes Antistius nur eine tödlich war"
+   },
+   {
+    "wert": "42 v. Chr.",
+    "was": "Philippi: Ende der Verschwörer"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Der Tag danach, der nie geplant wurde",
+    "text": "Das auffälligste Merkmal der Verschwörung ist, wie gut sie den Mord und wie schlecht sie alles Weitere vorbereitet hatte. Es gab keinen Gesetzesentwurf, keine Übernahme der Staatskasse, keine Besetzung des Kapitols mit Truppen, keine Ansprache an die Volksversammlung. Brutus ging offenbar davon aus, dass mit dem Tod des Tyrannen die alte Ordnung von selbst zurückkehrte, weil sie die natürliche sei.\n\nCicero, der nicht beteiligt war, aber jubelte, hat den Fehler später selbst benannt: Die Tat sei mit männlichem Mut, aber kindischem Verstand ausgeführt worden. Zwei Entscheidungen fielen sofort ins Gewicht. Erstens ließen die Verschwörer Antonius leben, den amtierenden Konsul, weil sie nicht als Mörderbande erscheinen wollten – und schenkten ihm damit den Staatsapparat. Zweitens erlaubten sie ein öffentliches Begräbnis mit Leichenrede und die Vollstreckung des Testaments.\n\nDas Testament war die eigentliche Waffe. Caesar vermachte jedem römischen Bürger dreihundert Sesterzen und seine Gärten am Tiber der Öffentlichkeit; sein Haupterbe war ein achtzehnjähriger Großneffe, Gaius Octavius. Innerhalb von Tagen brannten die Häuser der Verschwörer, und aus dem unbekannten Erben wurde der Mann, der die Republik beendete."
+   },
+   {
+    "titel": "Warum wir mehr über diesen Mord wissen als über die meisten Kriege",
+    "text": "Die Quellenlage ist für einen antiken Vorgang außergewöhnlich dicht – und deshalb ein gutes Beispiel dafür, wie Nähe und Zuverlässigkeit auseinanderfallen. Am nächsten dran ist Cicero: Seine Briefe aus den Wochen danach sind unmittelbar, ungeschminkt und voller Fehleinschätzungen, weil er nicht wusste, wie es weitergeht. Genau das macht sie wertvoll.\n\nDie ausführlichen Darstellungen stammen dagegen von Nikolaos von Damaskus, einem Hofhistoriker des Augustus, sowie von Plutarch, Sueton, Appian und Cassius Dio – geschrieben ein bis zweieinhalb Jahrhunderte später, in einer Zeit, in der die Monarchie selbstverständlich war. Bei ihnen finden sich die berühmten Einzelheiten: die Warnung des Sehers, der Traum der Calpurnia, die Vorzeichen. Solche Motive gehören zum antiken Erzählmuster vom Tod eines Großen und sind als Bericht wertlos.\n\nDer bekannteste Satz überhaupt steht in keiner antiken Quelle in der Form, in der man ihn kennt: Et tu, Brute stammt aus Shakespeares Drama von 1599. Sueton berichtet, Caesar habe geschwiegen, und erwähnt nur als Gerücht, er habe griechisch gesagt: Auch du, mein Kind. Die Wirkung des Ereignisses auf die europäische Vorstellung von Tyrannenmord verdankt sich mehr Shakespeare als den Akten."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Die Iden des März. Das älteste Attentat der Weltgeschichte",
+    "autor": "Barry Strauss",
+    "jahr": "2015",
+    "warum": "Rekonstruiert Tag und Vorgeschichte aus den Quellen und benennt, wo die Überlieferung ausschmückt."
+   },
+   {
+    "titel": "Die römische Revolution",
+    "autor": "Ronald Syme",
+    "jahr": "1939",
+    "warum": "Das einflussreichste Buch zur Zeit zwischen Caesar und Augustus: fragt nicht nach Charakteren, sondern nach Netzwerken und Interessen. Anspruchsvoll und lohnend."
+   },
+   {
+    "titel": "Cicero. Ein Leben in Briefen",
+    "autor": "Marcus Tullius Cicero",
+    "warum": "Wer wissen will, wie sich diese Wochen anfühlten, liest die Briefe an Atticus. Kein anderer antiker Text ist so ungefiltert."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Julius Caesar; Marcus Junius Brutus; Ides of March",
+   "Cicero, Briefe an Atticus (zeitnah); Sueton, Divus Iulius; Plutarch, Caesar/Brutus (spätere Wertung)"
+  ]
+ },
+ {
+  "id": "antonius-kleopatra",
+  "titel": "Marcus Antonius, Kleopatra und Actium",
+  "epoche": "antike",
+  "jahr": -31,
+  "zeitraum": "44–30 v. Chr.",
+  "region": "Rom, Griechenland, Ägypten",
+  "leitsatz": "Der Krieg um die Herrschaft über Rom wurde als Krieg gegen eine ausländische Königin verkauft – und diese Erzählung hat gewonnen, nicht nur die Schlacht.",
+  "vorgeschichte": "Nach Caesars Tod war Antonius der mächtigste Mann Roms: amtierender Konsul, erfahrener Feldherr, Verwalter des caesarischen Nachlasses. Der junge Octavian, Caesars Erbe, hatte nur einen Namen und Geld. Beide brauchten einander gegen die Caesarmörder und bildeten mit Lepidus das zweite Triumvirat, das die Herrschaft und die Gewalt förmlich unter sich aufteilte – einschließlich neuer Proskriptionslisten, auf denen Cicero stand. Nach Philippi 42 v. Chr. teilten sie das Reich: Antonius den Osten, Octavian den Westen.",
+  "verlauf": "Antonius übernahm die Aufgabe, das reiche Ägypten als Verbündeten zu gewinnen und Parthien anzugreifen. Aus dem Bündnis mit Kleopatra VII. wurde eine Verbindung mit Kindern und gemeinsamer Herrschaftsdarstellung; sein Parthienfeldzug 36 v. Chr. scheiterte mit schweren Verlusten. 34 v. Chr. verteilte er bei einer Zeremonie in Alexandria römische Ostprovinzen an Kleopatras Kinder. Octavian nutzte das: Er ließ das Testament öffentlich machen, erklärte Antonius für entmachtet und den Krieg nicht ihm, sondern Kleopatra. 31 v. Chr. wurde die Flotte bei Actium eingeschlossen und geschlagen; 30 v. Chr. nahmen sich beide in Alexandria das Leben.",
+  "folgen": "Ägypten, das letzte große hellenistische Königreich, wurde römische Provinz und mit seinem Getreide zur Grundlage der Versorgung Roms. Octavian hatte keine Gegner mehr und konnte vier Jahre später als Augustus die neue Ordnung einrichten. Kleopatras Sohn von Caesar wurde getötet, ihre Kinder von Antonius in Rom aufgezogen. Und Octavian schrieb die Geschichte: Antonius erscheint bis heute als der Mann, der sich von einer Frau um die Weltherrschaft bringen ließ.",
+  "strittig": "Über Actium ist militärisch weniger bekannt, als die Darstellungen suggerieren – ob es eine Durchbruchsschlacht oder ein Fluchtversuch aus einer Blockade war, wird diskutiert, und die antiken Berichte über Kleopatras vorzeitigen Abzug stammen aus der Siegerpropaganda. Auch die Todesart ist offen: Die Schlange ist erst bei späteren Autoren belegt und toxikologisch unwahrscheinlich; ein Gift ist wahrscheinlicher, ein erzwungener Tod nicht auszuschließen. Über Kleopatra selbst gibt es kein einziges erhaltenes Zeugnis aus ihrer eigenen Sicht.",
+  "zahlen": [
+   {
+    "wert": "42 v. Chr.",
+    "was": "Philippi – Ende der Caesarmörder, Teilung des Reiches"
+   },
+   {
+    "wert": "2. September 31 v. Chr.",
+    "was": "Seeschlacht bei Actium"
+   },
+   {
+    "wert": "30 v. Chr.",
+    "was": "Tod von Antonius und Kleopatra, Ägypten wird Provinz"
+   },
+   {
+    "wert": "ca. 300 Jahre",
+    "was": "Dauer der ptolemäischen Herrschaft, die damit endet"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Wie ein Bürgerkrieg zum Krieg gegen eine Fremde wurde",
+    "text": "Octavian hatte ein Problem: Ein Krieg gegen Antonius war ein Bürgerkrieg, und Bürgerkriege hatten die Römer nach fünfzig Jahren gründlich satt. Seine Lösung war eine Umdeutung, die als Meisterstück politischer Kommunikation gilt. Der Feind war nicht der römische Feldherr, sondern die ägyptische Königin; Antonius war ihr Werkzeug, verweichlicht, betrunken, orientalisiert. Die Kriegserklärung richtete sich formell gegen Kleopatra.\n\nDas Material dafür lieferte Antonius teilweise selbst: Die Zeremonie von Alexandria, bei der er römische Gebiete an Kinder einer fremden Herrscherin gab, war in Rom nicht zu verteidigen. Octavian ließ zusätzlich ein Testament verlesen, in dem Antonius seine Bestattung in Alexandria wünschte – wie er an das Dokument kam und was darin stand, ist nicht überprüfbar. Ganz Italien wurde in einen persönlichen Treueeid auf Octavian genommen, ein Verfahren ohne Vorbild.\n\nDie Bilder aus dieser Kampagne sind so wirkungsvoll, dass sie die Überlieferung geformt haben: Vergil, Horaz und Properz schreiben in den Jahren danach, unter Augustus, und ihre Verse über die Königin und ihre Schlangen sind Literatur, nicht Bericht. Wer über Kleopatra liest, liest fast immer die Version ihres Gegners – zweitausend Jahre später noch."
+   },
+   {
+    "titel": "Kleopatra ohne die Legende",
+    "text": "Was sich unabhängig von der römischen Erzählung belegen lässt, zeichnet ein anderes Bild. Kleopatra VII. war die letzte Herrscherin einer makedonisch-griechischen Dynastie, die Ägypten seit Alexander regierte; sie war nach den Berichten die erste ihrer Familie, die Ägyptisch lernte, und beherrschte nach Plutarch eine Reihe weiterer Sprachen, was für die Verwaltung eines vielsprachigen Reiches praktisch war. Sie führte selbst Krieg gegen ihre Geschwister, ordnete die Staatsfinanzen, wertete die Währung ab und bewältigte mehrere schlechte Nilfluten.\n\nIhre Verbindungen zu Caesar und Antonius waren, was auch immer sie persönlich waren, außenpolitisch die einzige verfügbare Strategie: Ägypten war reich und militärisch schwach, Rom war unausweichlich, und die Frage war nur, mit welchem Römer man sich verband. Dass sie damit dreißig Jahre die Unabhängigkeit ihres Landes bewahrte – während alle anderen hellenistischen Reiche längst Provinzen waren –, ist die sachlichste Bilanz ihrer Regierung.\n\nÜber ihr Aussehen wissen wir aus Münzen, die eine kräftige Nase und ein vorstehendes Kinn zeigen, und diese Münzen waren Staatskunst, kein Porträt. Plutarch schreibt ausdrücklich, ihre Wirkung habe nicht auf Schönheit beruht, sondern auf Gespräch und Stimme. Die Verführerin ist eine römische Erfindung, die spätere Jahrhunderte gern übernommen haben."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Kleopatra. Ein Leben",
+    "autor": "Stacy Schiff",
+    "jahr": "2010",
+    "warum": "Arbeitet konsequent heraus, welche Teile der Überlieferung von Gegnern stammen, und liest die Quellen gegen den Strich. Sehr gut geschrieben."
+   },
+   {
+    "titel": "Antony and Cleopatra",
+    "autor": "Adrian Goldsworthy",
+    "jahr": "2010",
+    "warum": "Behandelt beide als Politiker mit begrenzten Möglichkeiten, nicht als Liebespaar. Der beste nüchterne Zugang."
+   },
+   {
+    "titel": "Augustus. Der Weg zur Alleinherrschaft",
+    "autor": "Werner Eck",
+    "jahr": "1998",
+    "warum": "Knapp und präzise zur Gegenseite: wie Octavian aus dem Sieg eine dauerhafte Ordnung machte."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Mark Antony; Cleopatra; Battle of Actium; Ptolemaic dynasty",
+   "Plutarch, Antonius; Cassius Dio, Römische Geschichte 50–51 (spätere, augustusnahe Wertung)"
+  ]
+ },
+ {
+  "id": "cicero",
+  "titel": "Cicero und die Rede als Waffe",
+  "epoche": "antike",
+  "jahr": -43,
+  "zeitraum": "80–43 v. Chr.",
+  "region": "Rom",
+  "leitsatz": "Cicero verteidigte die Republik mit dem einzigen Mittel, das er beherrschte, und dieses Mittel war gegen Legionen wirkungslos.",
+  "vorgeschichte": "Cicero stammte aus einer Familie ohne Konsuln, aus Arpinum, nicht aus Rom. Ein solcher Aufsteiger konnte in der Republik nur über einen Weg nach oben kommen: den Gerichtssaal. Wer erfolgreich verteidigte oder anklagte, erwarb Klienten, Bekanntheit und Stimmen. 70 v. Chr. machte ihn die Anklage gegen den Statthalter Verres bekannt, 63 v. Chr. erreichte er als erster seiner Familie das Konsulat.",
+  "verlauf": "In seinem Konsulatsjahr deckte er die Verschwörung des Catilina auf und ließ fünf Beteiligte ohne Gerichtsverfahren hinrichten – mit Zustimmung des Senats, aber ohne rechtliche Grundlage. Fünf Jahre später wurde er deswegen verbannt und durfte erst nach einem Jahr zurückkehren. In den Bürgerkriegen wählte er die Seite des Pompeius, wurde von Caesar begnadigt und zog sich in die Philosophie zurück. Nach Caesars Tod trat er noch einmal hervor: In vierzehn Reden gegen Antonius, den Philippischen Reden, versuchte er den Senat gegen ihn zu mobilisieren und setzte auf den jungen Octavian. Der verbündete sich stattdessen mit Antonius. Cicero stand auf der Proskriptionsliste und wurde 43 v. Chr. auf der Flucht getötet.",
+  "folgen": "Antonius ließ Ciceros Kopf und Hände auf dem Forum ausstellen – an der Rednertribüne, von der aus er gesprochen hatte. Sein Werk überlebte in einem Umfang, den kein anderer antiker Autor erreicht: Reden, Briefe, philosophische und rhetorische Schriften. Über sie hat Cicero die europäische Bildungsgeschichte geprägt: Seine Prosa wurde der Maßstab des Lateinischen, seine Staatsschriften eine Quelle des Naturrechtsdenkens, seine Briefe das Vorbild des Briefes als Literaturform. Die Renaissance beginnt teilweise damit, dass Petrarca eine Handschrift seiner Briefe wiederfindet.",
+  "strittig": "Ciceros Rolle wird unterschiedlich beurteilt: als aufrechter Verteidiger der Verfassung oder als eitler Rhetor, der Machtverhältnisse falsch einschätzte und im Fall Catilina selbst gegen das Recht handelte, das er verteidigte. Beides lässt sich aus seinen eigenen Texten begründen – was für die Quellenlage bemerkenswert ist: Wir kennen ihn so genau, weil er so viel über sich geschrieben hat, und wir kennen ihn deshalb auch so kritisch.",
+  "zahlen": [
+   {
+    "wert": "63 v. Chr.",
+    "was": "Konsulat, Verschwörung des Catilina"
+   },
+   {
+    "wert": "14",
+    "was": "Philippische Reden gegen Antonius"
+   },
+   {
+    "wert": "58",
+    "was": "erhaltene Reden"
+   },
+   {
+    "wert": "über 900",
+    "was": "erhaltene Briefe von und an Cicero"
+   },
+   {
+    "wert": "7. Dezember 43 v. Chr.",
+    "was": "Ermordung auf der Flucht"
+   }
+  ],
+  "tiefe": [
+   {
+    "titel": "Wie ein Prozess in Rom funktionierte",
+    "text": "Der römische Strafprozess der späten Republik war eine öffentliche Veranstaltung mit politischen Folgen und ohne Staatsanwaltschaft. Anklagen erhoben Privatleute, oft junge Aufsteiger, die sich damit einen Namen machten; die Geschworenengerichte hatten Dutzende bis über hundert Mitglieder, und verhandelt wurde auf dem Forum, vor Publikum. Zeugen wurden vernommen, aber die Rede war das entscheidende Beweismittel – wer besser sprach, gewann häufiger.\n\nDeshalb bestand die Redekunst nicht nur aus Argumenten. Cicero arbeitete mit Charakterzeichnung, Spott, Empörung und dem gezielten Wechsel zwischen Sachverhalt und Grundsatz. Der Angeklagte erschien in Trauerkleidung, Kinder und Verwandte wurden vorgeführt, Verdienste der Vorfahren aufgezählt. Über die Schuld im heutigen Sinn wurde selten verhandelt, über die Frage, welche Art Mensch der Beschuldigte sei, ständig.\n\nEin Nebeneffekt: Die Reden wurden nachträglich für die Veröffentlichung bearbeitet. Die zweite Rede gegen Verres, in der die berühmten Belege für die Ausplünderung Siziliens stehen, wurde nie gehalten – Verres ging vorher ins Exil. Was wir lesen, ist also Literatur über einen Prozess, geschrieben vom Sieger, und nicht das Protokoll."
+   },
+   {
+    "titel": "Der Fall Catilina: Staatsnotstand oder Justizmord?",
+    "text": "63 v. Chr. bereitete der verschuldete Adlige Catilina nach der verlorenen Konsulatswahl einen Umsturz vor. Cicero deckte Kontakte zu einem gallischen Stamm auf und ließ die Verschwörer in Rom festnehmen. Der Senat beriet über ihr Schicksal: Caesar sprach für Haft, Cato für die Todesstrafe. Cicero ließ die fünf Männer noch in derselben Nacht erdrosseln – römische Bürger, ohne Verfahren, ohne Berufung an das Volk, gestützt auf einen Senatsbeschluss, der keine Rechtsgrundlage dafür hergab.\n\nEr hielt es für seine größte Leistung und ließ nicht auf, es zu erwähnen. Aber es war ein Präzedenzfall der falschen Art. Fünf Jahre später betrieb sein Feind Clodius ein Gesetz gegen jeden, der römische Bürger ohne Urteil getötet hatte; Cicero ging ins Exil, sein Haus wurde niedergerissen.\n\nDer Fall ist über die Antike hinaus interessant, weil er die Grundfrage stellt, die jede Verfassung kennt: Darf man das Recht brechen, um die Ordnung zu retten, die das Recht garantiert? Cicero hat die Frage in seinen Schriften mit Ja beantwortet, mit dem Argument des Staatswohls. Sallust, unser Hauptzeuge für die Verschwörung, schrieb zwanzig Jahre später und stand Caesar nahe – dessen Rede für die Haft kommt bei ihm bemerkenswert gut weg."
+   }
+  ],
+  "literatur": [
+   {
+    "titel": "Cicero. Der Staatsmann",
+    "autor": "Anthony Everitt",
+    "jahr": "2001",
+    "warum": "Lebendige Biographie, die die politische Lage verständlich macht, ohne die Schwächen ihres Helden zu verstecken."
+   },
+   {
+    "titel": "Cicero. Ein Leben",
+    "autor": "Manfred Fuhrmann",
+    "jahr": "1989",
+    "warum": "Die deutsche Standarddarstellung, vom wichtigsten Cicero-Übersetzer geschrieben. Genau, mit starkem Blick auf die Werke."
+   },
+   {
+    "titel": "Über die Verschwörung Catilinas",
+    "autor": "Sallust",
+    "warum": "Kurz, scharf geschrieben und die wichtigste Gegenstimme zu Ciceros eigener Darstellung. Ein Musterfall dafür, wie sehr die Nähe zu einer Partei den Bericht formt."
+   }
+  ],
+  "quellen": [
+   "Encyclopaedia Britannica: Cicero; Catiline; Second Triumvirate",
+   "Cicero, Reden und Briefe (Selbstzeugnis); Sallust, De coniuratione Catilinae; Plutarch, Cicero"
+  ]
+ }
 ];
