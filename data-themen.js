@@ -794,9 +794,19 @@ const THEMEN = [
     "text": "Rachel Carsons Buch über die Folgen von DDT löst die moderne Umweltbewegung aus. Die chemische Industrie bekämpfte es massiv; zehn Jahre später wurde DDT in den USA verboten."
    },
    {
+    "jahr": 1963,
+    "titel": "Der Codex Alimentarius",
+    "text": "FAO und WHO richten ein Gremium ein, das Standards für Lebensmittel festlegt: Höchstwerte für Rückstände, Hygieneregeln, Kennzeichnung. Die Normen sind rechtlich nicht bindend, werden aber in Handelsstreitigkeiten als Maßstab herangezogen und damit faktisch verbindlich. Wer die Norm setzt, entscheidet mit, wessen Ware exportfähig ist."
+   },
+   {
     "jahr": 1970,
     "titel": "Industrielle Tierhaltung",
     "text": "Soja aus Südamerika ermöglicht Fleisch in bisher unbekannter Menge und zu bisher unbekanntem Preis. Flächenverbrauch, Antibiotikaeinsatz und Klimawirkung sind die Kehrseite."
+   },
+   {
+    "jahr": 1974,
+    "titel": "Die Welternährungskonferenz",
+    "text": "In Rom erklärt die erste Welternährungskonferenz das Ziel, Hunger innerhalb eines Jahrzehnts zu beseitigen. Erreicht wurde das nicht; entstanden ist aber die Einsicht, die die Forschung seither bestätigt: Große Hungersnöte des 20. Jahrhunderts beruhten selten auf fehlender Nahrungsmenge, sondern auf Kaufkraft, Transport und politischen Entscheidungen. Amartya Sen hat das 1981 an mehreren Fällen belegt."
    },
    {
     "jahr": 1996,
@@ -1272,6 +1282,11 @@ const THEMEN = [
     "text": "Der Begriff täuscht Geschlossenheit vor. Tatsächlich handelte es sich um wandernde Verbände wechselnder Zusammensetzung, die sich oft erst unterwegs als Volk formierten."
    },
    {
+    "jahr": 622,
+    "titel": "Die Hidschra",
+    "text": "Die Auswanderung Mohammeds und seiner Anhänger von Mekka nach Medina wird zum Ausgangspunkt des islamischen Kalenders – eine Zeitrechnung, die nicht mit einer Geburt oder einem Sieg beginnt, sondern mit einer Flucht. Aus der Gemeinde von Auswanderern und Ortsansässigen entsteht die erste islamische Gemeinschaft. Der Begriff bezeichnet später allgemein den Fortzug aus einem Gebiet, in dem man den Glauben nicht leben kann."
+   },
+   {
     "jahr": 750,
     "titel": "Die Bantu-Ausbreitung",
     "text": "Über etwa zweitausend Jahre breiten sich Bantu-sprechende Gruppen von Westafrika über den halben Kontinent aus, mit Ackerbau und Eisenverarbeitung. Es ist eine der größten Sprachausbreitungen der Weltgeschichte – und sie ist überwiegend nur sprachlich und archäologisch fassbar."
@@ -1296,6 +1311,11 @@ const THEMEN = [
     "jahr": 1685,
     "titel": "Die Hugenotten",
     "text": "Nach dem Widerruf des Edikts von Nantes verlassen Hunderttausende Frankreich. Brandenburg-Preußen warb sie gezielt an; in Berlin stellten sie zeitweise ein Fünftel der Bevölkerung. Ein früher Fall von Zuwanderung als Wirtschaftspolitik."
+   },
+   {
+    "jahr": 1755,
+    "titel": "Die Vertreibung der Akadier",
+    "text": "Britische Truppen deportieren die französischsprachige Bevölkerung Neuschottlands, rund zehntausend Menschen, auf Schiffe und verteilen sie über die Kolonien, Frankreich und England; ein großer Teil stirbt unterwegs. Ein Teil der Überlebenden gelangt nach Louisiana, wo aus Acadiens die Cajuns werden. Es ist eine der ersten von einer Regierung geplanten Massendeportationen einer ganzen Bevölkerungsgruppe in der Neuzeit."
    },
    {
     "jahr": 1788,
@@ -1364,6 +1384,16 @@ const THEMEN = [
     "jahr": 1961,
     "titel": "Anwerbeabkommen und ihre Folgen",
     "text": "Deutschland schließt Abkommen mit der Türkei, später mit weiteren Staaten. Erwartet wurde eine befristete Rotation, tatsächlich entstand Einwanderung. Der Satz, man habe Arbeitskräfte gerufen und es kamen Menschen, stammt von Max Frisch."
+   },
+   {
+    "jahr": 1972,
+    "titel": "Ausweisung aus Uganda",
+    "text": "Idi Amin setzt der südasiatischen Minderheit Ugandas eine Frist von neunzig Tagen zur Ausreise; rund fünfzigtausend Menschen verlieren Geschäfte, Häuser und Staatsangehörigkeit. Die meisten waren in Uganda geboren. Großbritannien nahm einen großen Teil auf, nach politischem Streit; die ugandische Wirtschaft brach in den folgenden Jahren ein."
+   },
+   {
+    "jahr": 1975,
+    "titel": "Flucht über das Südchinesische Meer",
+    "text": "Nach dem Ende des Vietnamkriegs verlassen über eine Million Menschen das Land, viele auf überladenen Booten; die Schätzungen der Todesopfer auf See reichen von zweihunderttausend bis vierhunderttausend. Ein internationales Umsiedlungsprogramm verteilte die Geflüchteten auf Dutzende Länder. Der Begriff boat people stammt aus dieser Zeit und ist seither auf jede Fluchtbewegung über Wasser übertragen worden."
    },
    {
     "jahr": 1989,
@@ -1474,6 +1504,11 @@ const THEMEN = [
     "text": "Enge und Handel machten Städte zu Brutstätten. Danach entstanden die ersten Gesundheitsbehörden, Quarantänevorschriften und Bauordnungen – Seuchenschutz wurde zur städtischen Aufgabe."
    },
    {
+    "jahr": 1500,
+    "titel": "Tenochtitlán",
+    "text": "Die Hauptstadt der Azteken liegt auf einer Insel im Texcoco-See, verbunden durch Dämme, versorgt durch eine doppelte Trinkwasserleitung und ernährt von schwimmenden Feldern; die Schätzungen der Einwohnerzahl reichen von hundertfünfzigtausend bis über zweihunderttausend. Die spanischen Berichte beschreiben eine Stadt, die größer und sauberer war als jede, die die Verfasser kannten. Zwei Jahre nach der Belagerung von 1521 wurde sie überbaut – Mexiko-Stadt steht auf ihren Fundamenten und sinkt seither in den trockengelegten Seeboden."
+   },
+   {
     "jahr": 1600,
     "titel": "Edo",
     "text": "Die japanische Hauptstadt wird zur vermutlich größten Stadt der Welt – mit einem Recyclingsystem für Abfälle und Fäkalien, das sie erstaunlich sauber hielt."
@@ -1482,6 +1517,11 @@ const THEMEN = [
     "jahr": 1666,
     "titel": "Der Brand von London",
     "text": "Vier Tage Feuer zerstören 13.000 Häuser. Die Neubauordnung schreibt Stein statt Holz und breitere Straßen vor; zugleich entsteht das Feuerversicherungswesen, weil die Verluste privat nicht tragbar waren."
+   },
+   {
+    "jahr": 1811,
+    "titel": "Das Raster von Manhattan",
+    "text": "Eine Kommission legt für die noch unbebaute Insel ein Netz aus zwölf Avenues und 155 Straßen fest – ohne Rücksicht auf Hügel, Bäche und bestehende Wege, und fast ohne Plätze. Der Plan war ein Verkaufsinstrument: Rechteckige Parzellen lassen sich handeln, unregelmäßige nicht. Erst vierzig Jahre später wird der Central Park nachträglich hineingeschnitten, weil der Plan keinen Freiraum vorsah."
    },
    {
     "jahr": 1853,
@@ -1532,9 +1572,19 @@ const THEMEN = [
     "text": "Ein wachsender Teil der Weltbevölkerung wohnt in selbstgebauten Siedlungen ohne Rechtstitel. Heute betrifft das über eine Milliarde Menschen. Entscheidend für ihre Lage ist selten die Bausubstanz, sondern die Frage, ob Wasser, Strom und Rechtssicherheit dazukommen."
    },
    {
+    "jahr": 1960,
+    "titel": "Brasília",
+    "text": "Innerhalb von vier Jahren entsteht im Landesinneren eine Hauptstadt nach einem einzigen Entwurf, mit getrennten Zonen für Wohnen, Verwaltung und Verkehr und ohne Straßenkreuzungen im Zentrum. Die Trennung funktioniert für Autos und schlecht für alles andere; die Arbeiter, die sie bauten, durften nicht im Plangebiet wohnen und errichteten Satellitenstädte, in denen heute die Mehrheit der Bevölkerung lebt. Brasília ist das größte gebaute Beispiel dafür, was ein Plan nicht vorsehen kann."
+   },
+   {
     "jahr": 1961,
     "titel": "Der Widerspruch",
     "text": "Jane Jacobs zeigt, dass lebendige Viertel Dichte, Mischung und Fußgänger brauchen – und stellt sich erfolgreich gegen Abrisspläne in New York."
+   },
+   {
+    "jahr": 1970,
+    "titel": "Die Straße zurückholen",
+    "text": "Europäische Städte richten Fußgängerzonen ein, zunächst als Handelsmaßnahme gegen die Einkaufszentren am Rand. In Kopenhagen wird die Strøget schrittweise erweitert und über Jahrzehnte gezählt, was daraufhin geschieht – der Aufenthalt im öffentlichen Raum nimmt zu, ohne dass der Umsatz einbricht. Damit beginnt die Umkehrung der autogerechten Stadt, jetzt mit Messwerten statt mit Leitbildern."
    },
    {
     "jahr": 1990,
@@ -1696,6 +1746,11 @@ const THEMEN = [
     "text": "Ein Jahr später fällt die Monarchie, weil die Grundbesitzer ihr die Unterstützung entziehen."
    },
    {
+    "jahr": 1900,
+    "titel": "Schuldknechtschaft nach der Abschaffung",
+    "text": "In den US-Südstaaten wird nach 1865 die Verpachtung von Strafgefangenen an Plantagen, Bergwerke und Eisenbahnen zum Geschäftsmodell; Landstreicherei und Vertragsbruch werden strafbar gemacht, damit Arbeitskräfte verfügbar bleiben. Die Sterblichkeit in einzelnen Lagern war höher als in der Sklaverei, weil der Pächter kein Eigentum verlor. Das System endete formal erst 1941, in einer Weisung des US-Justizministeriums nach Kriegseintritt."
+   },
+   {
     "jahr": 1926,
     "titel": "Das Sklavereiabkommen des Völkerbunds",
     "text": "Erstmals völkerrechtlich verboten. Zwangsarbeit blieb dennoch verbreitet, auch in Kolonien der Unterzeichnerstaaten."
@@ -1719,6 +1774,11 @@ const THEMEN = [
     "jahr": 1944,
     "titel": "Zwangsarbeit in der Kriegswirtschaft",
     "text": "Über 13 Millionen Menschen arbeiteten im Deutschen Reich unter Zwang, in Fabriken, Landwirtschaft und Privathaushalten – sichtbar für alle. Entschädigungszahlungen an Überlebende begannen erst im Jahr 2000, als die meisten bereits gestorben waren."
+   },
+   {
+    "jahr": 1962,
+    "titel": "Das letzte gesetzliche Ende",
+    "text": "Saudi-Arabien und der Jemen schaffen die Sklaverei ab, Mauretanien folgt 1981 und stellt sie erst 2007 unter Strafe. Damit ist die Sklaverei überall auf der Welt gesetzlich verboten. Die Verbote sind der Schlusspunkt der Rechtsgeschichte und nicht der Praxis – Schätzungen zur heutigen Zahl betroffener Menschen sind laufend zu prüfen und nicht als feste Zahl haltbar."
    },
    {
     "jahr": 2000,
@@ -1777,9 +1837,19 @@ const THEMEN = [
     "text": "Ägyptische Kunst folgt über drei Jahrtausende festen Proportionsregeln und Ansichtsvorschriften. Nicht Unvermögen, sondern Absicht: Dargestellt wird nicht, wie etwas aussieht, sondern was es ist."
    },
    {
+    "jahr": -1350,
+    "titel": "Der Bruch von Amarna",
+    "text": "Unter Echnaton wird der jahrtausendealte ägyptische Kanon für eine Generation aufgegeben: lange Schädel, schwere Hüften, Familienszenen, in denen der König seine Töchter küsst. Nach seinem Tod kehrt die Kunst zur alten Regel zurück und seine Bauten werden abgetragen. Der Vorgang zeigt, dass ein Stil eine politische Entscheidung sein kann – und dass er mit ihr fällt."
+   },
+   {
     "jahr": -480,
     "titel": "Der griechische Umbruch",
     "text": "Innerhalb weniger Jahrzehnte lösen sich starre Standfiguren in bewegte Körper auf. Der Kontrapost verlagert das Gewicht auf ein Bein – der Beginn einer Kunst, die Körper als Organismen darstellt."
+   },
+   {
+    "jahr": -210,
+    "titel": "Die Terrakotta-Armee",
+    "text": "Für das Grab des ersten Kaisers von China werden mehrere Tausend lebensgroße Figuren gefertigt, aus Modulen für Beine, Rumpf, Arme und Kopf, mit individuell nachgearbeiteten Gesichtern. Es ist Serienproduktion mit dem Anspruch der Einmaligkeit – ein Verfahren, das erst wieder in der Industrie auftaucht. Ursprünglich waren die Figuren bemalt; die Farbe hielt der Luft nach der Ausgrabung nicht stand."
    },
    {
     "jahr": -30,
@@ -1787,15 +1857,30 @@ const THEMEN = [
     "text": "Römische Bildnisse zeigen Falten, Warzen und Alter. Wo Griechen idealisierten, war in Rom das gelebte Leben ein Ausweis von Würde und Verdienst."
    },
    {
+    "jahr": 100,
+    "titel": "Der erste Buddha",
+    "text": "In Gandhara im heutigen Pakistan entstehen die frühesten menschlichen Buddha-Darstellungen, in Faltengewändern, die griechischer Skulptur entstammen. Vorher wurde der Buddha durch Zeichen angedeutet: Fußspuren, ein leerer Thron, ein Rad. Die Bilder gehen mit dem Buddhismus nach Zentralasien, China und Japan – eine der weitreichendsten Wirkungen des Kulturkontakts nach Alexander."
+   },
+   {
     "jahr": 550,
     "titel": "Die Ikone",
     "text": "In der Ostkirche entsteht ein Bildtyp, der nicht abbilden, sondern vergegenwärtigen will. Bildregeln werden theologisch begründet und bleiben über Jahrhunderte gültig."
+   },
+   {
+    "jahr": 700,
+    "titel": "Die Höhlen von Dunhuang",
+    "text": "An der Seidenstraße entsteht über Jahrhunderte ein Komplex von fast fünfhundert bemalten Höhlen, gestiftet von Kaufleuten, Mönchen und Familien. Die Malereien zeigen, wie indische, chinesische und zentralasiatische Formen ineinander übergehen, und sie sind datierbar, weil die Stifter genannt werden. In einer zugemauerten Kammer fand sich 1900 zudem eine Bibliothek von zehntausenden Handschriften."
    },
    {
     "jahr": 726,
     "titel": "Der Bilderstreit",
     "text": "Byzanz verbietet religiöse Bilder und zerstört sie; über hundert Jahre wird gestritten, ob das Bild Gotteslästerung oder Zeugnis der Menschwerdung ist. Der Ausgang zugunsten der Bilder prägte die europäische Kunst.",
     "vertiefung": "bilderstreit"
+   },
+   {
+    "jahr": 1250,
+    "titel": "Die Köpfe von Ife",
+    "text": "In Ife im heutigen Nigeria entstehen Bronze- und Terrakottaköpfe von einer Naturtreue, die europäische Betrachter des frühen 20. Jahrhunderts für unmöglich hielten – der deutsche Ausgräber Leo Frobenius erklärte sie mit einer versunkenen Kolonie aus dem Mittelmeer. Die Zuschreibung war falsch und rassistisch motiviert; die Werke sind vollständig lokaler Herkunft, hergestellt im Wachsausschmelzverfahren. Der Fall gehört zur Geschichte der Kunst wie zur Geschichte ihrer Deutung."
    },
    {
     "jahr": 1305,
@@ -1814,6 +1899,11 @@ const THEMEN = [
     "text": "Die niederländische Ölmalerei erlaubt Lasuren, Übergänge und Details, die vorher unmöglich waren. Jan van Eycks Oberflächen wirken auf Zeitgenossen wie Zauberei."
    },
    {
+    "jahr": 1495,
+    "titel": "Die leere Fläche",
+    "text": "Der japanische Mönch Sesshū Tōyō malt Landschaften, in denen der unbemalte Grund zum Bildmittel wird: Nebel, Wasser und Ferne entstehen dort, wo keine Tusche ist. Die Technik ist aus China übernommen und in Japan radikalisiert worden. Sie ist der genaue Gegenentwurf zur gleichzeitig in Italien entstehenden Vorstellung vom Bild als Fenster, das ganz gefüllt sein muss."
+   },
+   {
     "jahr": 1508,
     "titel": "Die Sixtinische Decke",
     "text": "Michelangelo arbeitet vier Jahre auf einem Gerüst. Der Auftrag kommt von einem Papst, der Kunst als politisches Mittel einsetzt – Kunst und Macht sind hier nicht zu trennen."
@@ -1824,9 +1914,19 @@ const THEMEN = [
     "text": "In den Niederlanden zerstören Reformierte Altäre und Figuren. Die protestantischen Gebiete entwickeln daraufhin Landschaft, Stillleben und Porträt – Bildgattungen ohne Heilige."
    },
    {
+    "jahr": 1590,
+    "titel": "Die Werkstatt des Großmoguls",
+    "text": "Akbar unterhält in Fatehpur Sikri eine Malschule mit über hundert Künstlern, in der persische Technik, indische Farbigkeit und europäische Perspektive – aus mitgebrachten Stichen – zusammenkommen. Die Bilder sind signiert, oft von zwei Händen: einer für die Komposition, einer für die Gesichter. Der Kaiser ließ sich Chroniken bebildern; Malerei war hier ein Regierungsmittel."
+   },
+   {
     "jahr": 1656,
     "titel": "Das Bild denkt über sich selbst nach",
     "text": "Velázquez malt in Las Meninas den Maler, das Modell und den Betrachter in ein unauflösbares Verhältnis. Das Bild wird zum Gegenstand seiner eigenen Frage."
+   },
+   {
+    "jahr": 1765,
+    "titel": "Der Farbholzschnitt in Japan",
+    "text": "Mit dem Mehrplattendruck wird das farbige Bild in Edo zur Massenware: Schauspieler, Kurtisanen, Landschaften, für den Preis einer Portion Nudeln. Verleger, Zeichner, Formschneider und Drucker arbeiten getrennt – das Werk hat keinen einzelnen Urheber. Als diese Blätter im 19. Jahrhundert als Packpapier nach Europa gelangen, verändern sie die Malerei von Manet bis van Gogh."
    },
    {
     "jahr": 1785,
@@ -1834,9 +1934,19 @@ const THEMEN = [
     "text": "Der Klassizismus greift auf römische Vorbilder zurück, um bürgerliche Tugend zu predigen. Davids Bilder werden zur Bildsprache der Französischen Revolution."
    },
    {
+    "jahr": 1793,
+    "titel": "Der Louvre wird öffentlich",
+    "text": "Die französische Republik öffnet die königlichen Sammlungen als Museum für alle. Damit wechselt der Ort der Kunst: aus Palast, Kirche und Kabinett in einen Raum, in dem Werke aus verschiedenen Jahrhunderten nebeneinander hängen und verglichen werden. Die Kunstgeschichte als Fach ist eine Folge dieser Anordnung – und die napoleonischen Raubzüge füllten sie."
+   },
+   {
     "jahr": 1839,
     "titel": "Die Fotografie entlastet die Malerei",
     "text": "Als eine Maschine das Abbilden übernimmt, verliert die Malerei ihre älteste Aufgabe. Was folgt – Impressionismus, Expressionismus, Abstraktion – ist auch eine Antwort darauf."
+   },
+   {
+    "jahr": 1863,
+    "titel": "Der Salon der Zurückgewiesenen",
+    "text": "Nachdem die Jury des Pariser Salons über zweitausend Werke abgelehnt hat, lässt Napoleon III. sie in einer eigenen Ausstellung zeigen – zur Blamage der Künstler, wie er meinte. Das Publikum lachte über Manets Frühstück im Grünen, aber die Ausstellung machte sichtbar, dass es eine Kunst außerhalb der Institution gibt. Von hier aus organisieren sich die Impressionisten elf Jahre später selbst."
    },
    {
     "jahr": 1907,
@@ -1855,9 +1965,19 @@ const THEMEN = [
     "vertiefung": "entartete-kunst"
    },
    {
+    "jahr": 1948,
+    "titel": "Der Markt zieht nach New York",
+    "text": "Nach dem Krieg verlagert sich der Handel mit zeitgenössischer Kunst nach New York; Galerien, Sammler und Museen dort setzen die Preise, und das amerikanische Außenministerium fördert Ausstellungen abstrakter Malerei im Ausland. Wie viel dieser Förderung Wirkung hatte, ist umstritten – dass sie stattfand, ist belegt. Der Fall zeigt, dass Kunstgeschichte auch eine Geschichte von Budgets ist."
+   },
+   {
     "jahr": 1962,
     "titel": "Kunst und Massenware",
     "text": "Die Pop Art übernimmt Werbebild, Comic und Serienproduktion. Die Grenze zwischen hoher Kunst und Alltagsbild wird bewusst durchlässig gemacht."
+   },
+   {
+    "jahr": 1989,
+    "titel": "Magiciens de la terre",
+    "text": "Eine Pariser Ausstellung zeigt fünfzig westliche und fünfzig nichtwestliche Künstler in gleicher Größe und gleichem Raum. Die Kritik war heftig: zu beliebig, zu exotisierend, zu wenig Kontext. Sie gilt trotzdem als Wendepunkt, weil danach keine große Ausstellung zeitgenössischer Kunst mehr allein europäisch-amerikanisch besetzt werden konnte, ohne dass es begründet werden musste."
    },
    {
     "jahr": 1998,
@@ -1910,6 +2030,11 @@ const THEMEN = [
     "text": "Funde von der Schwäbischen Alb belegen Instrumente mit Grifflöchern – gebaut, nicht gefunden. Musik ist mindestens so alt wie die figürliche Kunst."
    },
    {
+    "jahr": -2500,
+    "titel": "Die Leiern von Ur",
+    "text": "In den Königsgräbern von Ur finden sich Leiern mit Stierkopf, Einlegearbeit und elf Saiten, dazu die Skelette der Musikerinnen, die mit bestattet wurden. Die Instrumente belegen ein ausgebildetes Musikwesen am Hof: mehrere Saiten bedeuten mehrere Töne, und mehrere Töne bedeuten eine Ordnung. Eine der Leiern wurde 2003 im Irakmuseum zerstört und aus Fotografien rekonstruiert."
+   },
+   {
     "jahr": -1400,
     "titel": "Die älteste notierte Melodie",
     "text": "Auf Tontafeln aus Ugarit steht ein hurritischer Hymnus mit Angaben zu Saiten und Intervallen. Die Übertragung in heutige Töne bleibt umstritten – mehrere Rekonstruktionen klingen völlig verschieden."
@@ -1920,9 +2045,24 @@ const THEMEN = [
     "text": "Der pythagoreischen Schule wird die Entdeckung zugeschrieben, dass wohlklingende Intervalle einfachen Längenverhältnissen entsprechen. Musik gilt seither als Teil der Mathematik – im mittelalterlichen Studium steht sie neben Arithmetik und Astronomie."
    },
    {
+    "jahr": -433,
+    "titel": "Die Glocken des Markgrafen Yi",
+    "text": "Aus einem chinesischen Fürstengrab wird ein Satz von 65 Bronzeglocken gehoben, jede mit zwei verschiedenen Tönen je nach Anschlagstelle, dazu Inschriften über Tonhöhen und Stimmungen. Der Satz umfasst fünf Oktaven und ist chromatisch spielbar. Er beweist, dass in China eine ausgearbeitete Tonlehre existierte, lange bevor die europäischen Quellen einsetzen."
+   },
+   {
+    "jahr": 200,
+    "titel": "Der Raga",
+    "text": "Das indische Natyashastra beschreibt Tonarten, Rhythmen und ihre Wirkung auf die Stimmung und bindet Musik an Theater und Tanz. Aus dieser Tradition entwickelt sich der Raga: nicht ein Stück, sondern ein Tonvorrat mit Regeln, aus dem in jeder Aufführung neu gestaltet wird. Europäische Musik notiert das Werk und lässt die Aufführung offen; hier ist es umgekehrt."
+   },
+   {
     "jahr": 600,
     "titel": "Der gregorianische Gesang",
     "text": "Die römische Kirche vereinheitlicht die Liturgiegesänge. Die Zuschreibung an Papst Gregor I. ist Legende; die Sammlung entsteht über Jahrhunderte."
+   },
+   {
+    "jahr": 822,
+    "titel": "Ziryab in Córdoba",
+    "text": "Der aus Bagdad geflohene Musiker Ziryab richtet am Hof von Córdoba eine Musikschule ein, fügt der Laute eine fünfte Saite hinzu und ordnet Stücke zu festen Folgen – dem Vorbild der andalusischen Nuba. Vieles über ihn stammt aus späteren Sammlungen und ist ausgeschmückt. Belegt ist die Wirkung: Von al-Andalus geht der Weg der Laute, der Rhythmusmodelle und der Theorie nach Europa."
    },
    {
     "jahr": 1025,
@@ -1931,9 +2071,19 @@ const THEMEN = [
     "vertiefung": "notenschrift"
    },
    {
+    "jahr": 1150,
+    "titel": "Hildegard von Bingen",
+    "text": "Die Äbtissin hinterlässt siebenundsiebzig geistliche Gesänge samt Melodien – das größte namentlich zugeschriebene Repertoire des 12. Jahrhunderts. Ihre Melodien überschreiten den üblichen Umfang weit und folgen der Sprache mehr als dem Modell. Dass wir sie überhaupt haben, liegt daran, dass ihr Kloster sie in prächtigen Handschriften sammelte, was für Werke von Frauen die Ausnahme war."
+   },
+   {
     "jahr": 1320,
     "titel": "Mehrstimmigkeit wird komponierbar",
     "text": "Die Ars nova bringt genaue Rhythmusnotation. Musik ist nicht mehr nur Aufführung, sondern Komposition: ein Werk, das ein Einzelner entwirft und das andere ausführen."
+   },
+   {
+    "jahr": 1361,
+    "titel": "Die Orgel wird eine Maschine",
+    "text": "Die Orgel im Dom von Halberstadt hat drei Manuale, Pedal und über tausend Pfeifen; ein Bericht von 1361 beschreibt sie mit einer Tastatur, die der heutigen entspricht. Sie ist damit das komplizierteste Gerät ihrer Zeit außerhalb der Uhrmacherei. Mit ihr entsteht ein Instrument, das mehrere Stimmen gleichzeitig unter der Kontrolle eines Einzelnen hält – Voraussetzung für alles, was später am Klavier gedacht wird."
    },
    {
     "jahr": 1501,
@@ -1941,9 +2091,19 @@ const THEMEN = [
     "text": "Petrucci druckt in Venedig mehrstimmige Musik mit beweglichen Lettern. Noten werden Ware, Komponisten werden über ihre Region hinaus bekannt."
    },
    {
+    "jahr": 1567,
+    "titel": "Das Konzil greift in die Musik ein",
+    "text": "Das Konzil von Trient verlangt, dass der Text der Messe verständlich bleibt und weltliche Melodien aus der Kirche verschwinden. Palestrina liefert mit der Missa Papae Marcelli das Muster: Mehrstimmigkeit, in der jedes Wort hörbar bleibt. Die Erzählung, er habe damit die Kirchenmusik gerettet, stammt aus dem 17. Jahrhundert – die Reform war breiter, aber sein Satzmodell wurde jahrhundertelang gelehrt."
+   },
+   {
     "jahr": 1607,
     "titel": "Die Oper entsteht",
     "text": "Monteverdis Orfeo verbindet Text, Musik und Bühne zu einer neuen Gattung. Aus einem Experiment florentinischer Gelehrter, die die antike Tragödie nachbilden wollten, wird die aufwendigste Kunstform Europas."
+   },
+   {
+    "jahr": 1700,
+    "titel": "Cremona",
+    "text": "In den Werkstätten von Stradivari und Guarneri entstehen Geigen, die bis heute als Maßstab gelten; die Erklärungen reichen von Holzdichte nach der kleinen Eiszeit über Lackrezepte bis zu chemischer Behandlung. Blindtests mit professionellen Solisten fanden mehrfach keine verlässliche Bevorzugung alter Instrumente gegenüber neuen. Was messbar bleibt, ist nicht der Klang, sondern der Preis."
    },
    {
     "jahr": 1722,
@@ -1952,9 +2112,19 @@ const THEMEN = [
     "vertiefung": "wohltemperiert"
    },
    {
+    "jahr": 1781,
+    "titel": "Das öffentliche Konzert",
+    "text": "In Leipzig zieht das Gewandhausorchester in einen eigenen Saal – Musik gegen Eintritt, für ein Publikum, das nicht eingeladen, sondern zahlend erscheint. Vorher spielte man für Hof, Kirche oder Gesellschaft. Mit dem Konzertsaal entstehen Programm, Applausordnung, Kritik und schließlich das Repertoire: Stücke, die nicht für einen Anlass, sondern für die Wiederholung geschrieben sind."
+   },
+   {
     "jahr": 1824,
     "titel": "Musik als Bekenntnis",
     "text": "Beethovens Neunte stellt am Ende einer Sinfonie einen Chor mit einem Text über Menschenverbrüderung. Die Sinfonie wird zur weltanschaulichen Aussage – seit 1985 ist der Satz Europahymne."
+   },
+   {
+    "jahr": 1859,
+    "titel": "Wie hoch ist ein A?",
+    "text": "Frankreich legt das Kammerton-A gesetzlich auf 435 Hertz fest, weil die Stimmung von Ort zu Ort um einen Halbton und mehr abwich und Sänger unter der steigenden Höhe litten. Die internationale Einigung auf 440 Hertz folgt erst 1939. Ohne diese Festlegung wäre keine Orchesterreise und keine Schallplatte möglich – Standardisierung ist eine Voraussetzung der Musikindustrie."
    },
    {
     "jahr": 1877,
@@ -1978,6 +2148,11 @@ const THEMEN = [
     "text": "Die erste Jazzaufnahme macht eine aus afroamerikanischer Tradition entstandene Musik weltweit hörbar. Die Erfinder profitierten am wenigsten – die erste Platte spielte eine weiße Band ein."
    },
    {
+    "jahr": 1927,
+    "titel": "Der Tonfilm",
+    "text": "Mit dem Jazz Singer wird Musik Teil eines Massenmediums, das sie überall gleich klingen lässt. Für die Musiker ist es ein Bruch: Zehntausende Kinomusiker, die zum Stummfilm gespielt hatten, verlieren innerhalb weniger Jahre ihre Arbeit. Gleichzeitig entsteht der erste Beruf, der Musik für Bilder schreibt."
+   },
+   {
     "jahr": 1948,
     "titel": "Die Langspielplatte",
     "text": "Die LP fasst über zwanzig Minuten pro Seite. Musik wird in Alben gedacht, nicht in Einzelstücken – eine Form, die bis ins Streaming-Zeitalter nachwirkt.",
@@ -1989,6 +2164,11 @@ const THEMEN = [
     "text": "John Cages 4'33'' besteht aus Stille; zu hören ist, was ohnehin im Raum geschieht. Die Frage, was überhaupt Musik ist, wird zur künstlerischen Aufgabe."
    },
    {
+    "jahr": 1953,
+    "titel": "Das Studio in Köln",
+    "text": "Im Studio für elektronische Musik des WDR wird Klang erstmals nicht aufgenommen, sondern aus Sinustönen erzeugt und auf Band montiert. Was zählt, ist nicht mehr die Spielbarkeit, sondern die Bearbeitbarkeit. Von hier führt eine gerade Linie zum Synthesizer, zur Studioproduktion als eigentlichem Werk und zu der Frage, was eine Aufführung noch sein soll."
+   },
+   {
     "jahr": 1963,
     "titel": "Der Synthesizer",
     "text": "Elektronisch erzeugte Klänge lösen die Bindung an schwingende Körper. Popmusik, Filmmusik und später ganze Genres beruhen auf Klängen, die kein Instrument erzeugen kann."
@@ -1997,6 +2177,11 @@ const THEMEN = [
     "jahr": 1979,
     "titel": "Musik wird tragbar",
     "text": "Der Walkman macht das Hören privat und ortsunabhängig. Musik begleitet erstmals den Alltag, statt einen eigenen Anlass zu verlangen."
+   },
+   {
+    "jahr": 1983,
+    "titel": "MIDI",
+    "text": "Konkurrierende Hersteller vereinbaren einen gemeinsamen Standard, mit dem Instrumente einander Tonhöhe, Anschlagstärke und Zeit übermitteln können. MIDI überträgt keinen Klang, sondern Anweisungen – deshalb ist eine Aufnahme nachträglich in Tempo, Tonart und Instrument veränderbar. Der Standard ist über vierzig Jahre nahezu unverändert in Gebrauch und der Grund, warum Musikproduktion am Computer möglich wurde."
    },
    {
     "jahr": 1999,
@@ -2054,6 +2239,11 @@ const THEMEN = [
     "text": "Mesopotamische Texte belegen Bierrationen als Teil der Bezahlung. Vergorene Getränke waren keimarm und kalorienreich – über Jahrtausende ein Grundnahrungsmittel, kein Genussmittel."
    },
    {
+    "jahr": -1500,
+    "titel": "Kopfstütze statt Kissen",
+    "text": "Ägyptische Gräber enthalten Bettgestelle mit geflochtener Liegefläche und hölzerne Kopfstützen – Möbel, die auf Hitze und Insekten antworten, nicht auf Weichheit. Wer kein Bett hatte, schlief auf einer Matte, in Kleidern, mit der Familie im selben Raum. Das eigene Bett für die eigene Person ist eine der jüngsten Erfindungen des Wohnens."
+   },
+   {
     "jahr": -100,
     "titel": "Wohnen in der Mietskaserne",
     "text": "In Rom leben die meisten Menschen in mehrstöckigen Insulae ohne Küche und Wasseranschluss. Gekocht wird auswärts; Einsturz und Brand sind ständige Gefahren."
@@ -2064,9 +2254,24 @@ const THEMEN = [
     "text": "Pompeji bewahrt Wandkritzeleien, Wahlwerbung, Garküchen und Latrinen. Erst dieser Fund zeigt, wie römischer Alltag aussah – die Literatur der Zeit schweigt darüber weitgehend."
    },
    {
+    "jahr": 100,
+    "titel": "Die Latrine ohne Wände",
+    "text": "Römische Städte haben öffentliche Bedürfnisanstalten mit bis zu sechzig Sitzen an einer durchlaufenden Rinne, ohne Trennwände, mit Wasserspülung. Was heute als Zumutung gilt, war ein Ort des Gesprächs. Parasitenfunde in Kloaken zeigen zugleich, dass die Kanalisation die Krankheitslast weniger senkte, als lange angenommen wurde – gespült wurde, aber nicht getrennt."
+   },
+   {
+    "jahr": 216,
+    "titel": "Die Thermen",
+    "text": "Die Caracalla-Thermen in Rom können mehr als tausend Badegäste gleichzeitig aufnehmen und enthalten Bibliothek, Sportplatz und Läden; der Eintritt war billig oder frei. Baden war weniger Hygiene als Tagesablauf – man kam nach der Arbeit und blieb Stunden. Mit dem Ende der römischen Wasserleitungen verschwindet diese Form des öffentlichen Alltags in Europa für über tausend Jahre."
+   },
+   {
     "jahr": 600,
     "titel": "Die Stundenordnung des Klosters",
     "text": "Klösterliche Gebetszeiten gliedern den Tag in feste Abschnitte. Zeitdisziplin entsteht als religiöse Übung, lange bevor sie wirtschaftlich verlangt wird."
+   },
+   {
+    "jahr": 1200,
+    "titel": "Das Mittelalter wusch sich",
+    "text": "Städtische Badestuben sind im Hochmittelalter verbreitet, mit Badeknechten, festen Öffnungstagen und Zunftordnungen; Seife wird in Marseille, Venedig und Aleppo gewerblich hergestellt. Die Vorstellung vom durchweg schmutzigen Mittelalter stammt aus dem 19. Jahrhundert. Zurückgedrängt wird das Badehaus erst in der frühen Neuzeit – wegen Holzmangels, Syphilis und Sittenstrenge."
    },
    {
     "jahr": 1300,
@@ -2083,6 +2288,16 @@ const THEMEN = [
     "jahr": 1450,
     "titel": "Der Kamin und das eigene Zimmer",
     "text": "Wandkamine mit Schornstein ersetzen die offene Feuerstelle in der Mitte. Häuser können in beheizbare Einzelräume geteilt werden – die Voraussetzung dafür, allein zu sein."
+   },
+   {
+    "jahr": 1550,
+    "titel": "Glas im Fenster",
+    "text": "Fensterglas wird für bürgerliche Häuser erschwinglich; vorher waren Öffnungen mit Holzläden, Tuch oder geöltem Pergament verschlossen – Licht oder Wärme, nicht beides. Mit dem Glasfenster wird der Innenraum am Tag benutzbar, ohne offene Wand. Lesen, Nähen und Feinarbeit im Haus setzen dieses Fenster voraus."
+   },
+   {
+    "jahr": 1560,
+    "titel": "Die Gabel",
+    "text": "Aus Byzanz über Venedig kommt die Tischgabel nach Italien und wird dort zuerst für Süßfrüchte, dann allgemein benutzt; in Frankreich und England gilt sie über hundert Jahre als weibisch oder lächerlich. Geistliche Kritiker hielten es für Hochmut, die Finger nicht zu benutzen, die Gott gegeben hatte. Erst im 18. Jahrhundert ist das Gedeck mit Messer, Gabel und eigenem Teller Standard."
    },
    {
     "jahr": 1600,
@@ -2108,15 +2323,30 @@ const THEMEN = [
     "vertiefung": "uhr-arbeitstag"
    },
    {
+    "jahr": 1830,
+    "titel": "Feuer auf Verlangen",
+    "text": "Das Reibstreichholz macht Feuer in Sekunden verfügbar; vorher musste im Haus eine Glut gehütet oder beim Nachbarn geholt werden, und Feuerschlagen mit Stahl und Zunder dauerte Minuten. Die frühen Hölzer enthielten weißen Phosphor und verursachten bei den Arbeiterinnen der Fabriken Knochennekrosen im Gesicht. Der Stoff wurde erst 1906 international verboten."
+   },
+   {
     "jahr": 1854,
     "titel": "Sauberes Wasser",
     "text": "John Snow weist in London eine Choleraquelle im Brunnen nach. Es folgen Kanalisation und Wasserwerke – die Maßnahme, die die Lebenserwartung in Städten am stärksten erhöhte.",
     "vertiefung": "kanalisation-london"
    },
    {
+    "jahr": 1860,
+    "titel": "Die Nähmaschine",
+    "text": "Mit der Nähmaschine sinkt die Zeit für ein Hemd von vierzehn Stunden auf etwa eine. Kleidung wird zur Ware, die man kauft statt herstellt, Konfektionsgrößen werden nötig, und die Heimarbeiterin wird zur Figur der Städte. Der Zusammenhang gilt in beide Richtungen: Dasselbe Gerät, das Hausarbeit verkürzte, machte Lohnarbeit im Wohnzimmer möglich."
+   },
+   {
     "jahr": 1880,
     "titel": "Licht in der Nacht",
     "text": "Gas- und dann elektrisches Licht verlängern den nutzbaren Tag. Nachtarbeit, Abendunterhaltung und späteres Zubettgehen werden möglich – und üblich."
+   },
+   {
+    "jahr": 1885,
+    "titel": "Das Fahrrad",
+    "text": "Mit dem Niederrad und dem Luftreifen entsteht das erste bezahlbare persönliche Verkehrsmittel. Es erweitert den Aktionsradius eines Arbeiters von wenigen Kilometern auf zwanzig – Heiratskreise, Arbeitsplätze und Vereine verändern sich messbar. Für Frauen war es außerdem ein Kleidungsstreit: Ohne Reformkleid ließ sich nicht fahren."
    },
    {
     "jahr": 1900,
@@ -2129,14 +2359,29 @@ const THEMEN = [
     "text": "Industrielle Konservierung und später der Haushaltskühlschrank lösen die Ernährung von der Jahreszeit. Der Speiseplan wird gleichförmiger und sicherer zugleich."
    },
    {
+    "jahr": 1920,
+    "titel": "Das Radio im Wohnzimmer",
+    "text": "Der Rundfunk bringt zum ersten Mal denselben Klang zur selben Zeit in Millionen Wohnungen. Der Abend bekommt ein Programm, das Möbel werden um das Gerät herum gestellt, und ein Ereignis kann national gleichzeitig erlebt werden. Damit entsteht auch das Werkzeug, mit dem die Diktaturen der folgenden zwei Jahrzehnte in die Wohnungen sprechen."
+   },
+   {
     "jahr": 1950,
     "titel": "Die Hausarbeit wird technisiert",
     "text": "Waschmaschine und Staubsauger verkürzen einzelne Arbeitsgänge drastisch. Die Gesamtzeit für Hausarbeit sinkt aber kaum – die Ansprüche an Sauberkeit steigen mit."
    },
    {
+    "jahr": 1957,
+    "titel": "Der Supermarkt",
+    "text": "Selbstbedienung ersetzt den Verkäufer hinter der Theke: Der Kunde geht am Regal vorbei, greift selbst und entscheidet ohne Gespräch. Damit ändert sich die Verpackung – sie muss jetzt bewerben, nicht nur schützen –, und der Wochenkauf ersetzt den täglichen Gang. Voraussetzung sind Kühlschrank und Auto; ohne beides funktioniert der Großeinkauf nicht."
+   },
+   {
     "jahr": 1970,
     "titel": "Fernsehen als Taktgeber",
     "text": "Der Fernsehabend synchronisiert Millionen Haushalte. Erstmals verbringt ein Großteil einer Gesellschaft die Freizeit gleichzeitig mit demselben Inhalt."
+   },
+   {
+    "jahr": 1980,
+    "titel": "Was übrig bleibt",
+    "text": "Mit Einwegverpackungen wird der Hausmüll pro Kopf innerhalb einer Generation zum Mehrfachen; Trennung, Tonnen und Sammelsysteme werden Teil des Wohnens. Der Aufwand verschiebt sich damit von der Entsorgung zum Haushalt – Sortieren ist unbezahlte Arbeit. Wie viel davon tatsächlich stofflich wiederverwertet wird, ist von Material und Land abhängig; die Quoten sind fortlaufend zu prüfen und nicht als feste Zahl haltbar."
    },
    {
     "jahr": 2007,
@@ -2189,14 +2434,29 @@ const THEMEN = [
     "text": "Bearbeitete Steine aus Lomekwi in Kenia sind älter als die Gattung Homo. Werkzeuggebrauch ist damit keine Erfindung des Menschen, sondern älter als er."
    },
    {
+    "jahr": -2000000,
+    "titel": "Fleisch und Mark",
+    "text": "Aufgeschlagene Knochen mit Schnittspuren zeigen, dass frühe Menschen Kadaver zerlegten und an das Knochenmark kamen – eine sehr energiereiche Nahrung, an die kein anderes Tier ohne Werkzeug gelangt. Der Zugang zu dieser Kalorienquelle gilt als eine Voraussetzung für das Wachstum des Gehirns, das viel Energie verbraucht. Ob gejagt oder von Rissen abgetragen wurde, ist im Einzelfall meist nicht entscheidbar."
+   },
+   {
     "jahr": -1800000,
     "titel": "Der Auszug aus Afrika",
     "text": "Homo erectus erreicht Georgien und später Ostasien – die erste weite Ausbreitung einer Menschenform. Sie gelingt ohne Nadel, Boot oder Vorratshaltung."
    },
    {
+    "jahr": -1700000,
+    "titel": "Der Faustkeil",
+    "text": "Mit dem Acheuléen entsteht ein Werkzeug, das nicht nur brauchbar, sondern symmetrisch ist – beidseitig bearbeitet, oft sorgfältiger als nötig. Die Form bleibt über eine Million Jahre und über drei Kontinente nahezu gleich. Diese Beständigkeit ist so ungewöhnlich, dass sie weniger nach Erfindung als nach Weitergabe aussieht: Werkzeugmachen wurde gelernt, nicht jedes Mal neu gefunden."
+   },
+   {
     "jahr": -1000000,
     "titel": "Feuer",
     "text": "Verbrannte Knochen und Asche in der Wonderwerk-Höhle gelten als früher Beleg für kontrolliertes Feuer. Gekochte Nahrung liefert mehr verwertbare Energie – eine Voraussetzung für größere Gehirne."
+   },
+   {
+    "jahr": -800000,
+    "titel": "Die ersten Europäer",
+    "text": "Funde in Atapuerca in Spanien und Fußspuren an der englischen Küste bei Happisburgh belegen Menschen in Europa lange vor dem Neandertaler. Sie lebten in einem Klima mit kalten Wintern, ohne dass Feuerstellen in dieser Zeit sicher nachgewiesen sind. Wie sie das überstanden, ist offen – eine der wichtigsten unbeantworteten Fragen der frühen Besiedlung."
    },
    {
     "jahr": -400000,
@@ -2209,9 +2469,24 @@ const THEMEN = [
     "text": "Funde aus Jebel Irhoud in Marokko verschieben die Entstehung unserer Art um über hunderttausend Jahre nach hinten – und weg von Ostafrika als einzigem Ursprungsort."
    },
    {
+    "jahr": -250000,
+    "titel": "Werkzeug nach Plan",
+    "text": "Die Levallois-Technik bearbeitet einen Steinkern so vor, dass sich am Ende Klingen mit vorherbestimmter Form abschlagen lassen. Das setzt voraus, dass mehrere Schritte im Voraus gedacht werden, bevor der erste Schlag fällt. Archäologen sehen darin einen der greifbarsten Hinweise auf planendes Denken, weil sich das Ergebnis nicht durch Ausprobieren erreichen lässt."
+   },
+   {
+    "jahr": -176000,
+    "titel": "Bauwerk im Dunkeln",
+    "text": "In der Höhle von Bruniquel in Frankreich stehen dreihundert Meter vom Eingang entfernt kreisförmige Strukturen aus abgebrochenen Stalagmiten mit Brandspuren, datiert auf etwa 176.000 Jahre. In dieser Tiefe ist Licht zwingend, es gibt keinen Tag. Erbaut haben sie Neandertaler – der Fund gehört zu den Gründen, warum das Bild des kulturlosen Neandertalers nicht mehr zu halten ist."
+   },
+   {
     "jahr": -100000,
     "titel": "Bestattung und Farbe",
     "text": "Gräber mit Beigaben und Ockerverwendung deuten auf Vorstellungen, die über das Sichtbare hinausgehen. Was genau gedacht wurde, sagen die Funde nicht."
+   },
+   {
+    "jahr": -75000,
+    "titel": "Die Perlen von Blombos",
+    "text": "In der Blombos-Höhle in Südafrika finden sich durchbohrte Schneckenschalen mit Abnutzungsspuren von Schnüren und Ockerstücke mit eingeritzten Rautenmustern. Perlen sind nur sinnvoll, wenn jemand sie sieht und deutet – Schmuck ist damit ein Beleg für Zeichen, nicht nur für Geschick. Die Funde sind rund vierzigtausend Jahre älter als die europäischen Höhlenbilder."
    },
    {
     "jahr": -70000,
@@ -2241,9 +2516,19 @@ const THEMEN = [
     "vertiefung": "dna-alte"
    },
    {
+    "jahr": -26000,
+    "titel": "Der erste Stoff",
+    "text": "In Dolní Věstonice in Mähren zeigen gebrannte Lehmklumpen Abdrücke von gewebtem Textil, geknoteten Netzen und gedrehten Schnüren. Gewebe selbst verrottet, deshalb sind solche Abdrücke oft der einzige Nachweis. Sie verschieben die Textilherstellung um Zehntausende Jahre nach hinten – Fadendrehen ist älter als Ackerbau, Töpferei und Metall."
+   },
+   {
     "jahr": -20000,
     "titel": "Die Eiszeit auf dem Höhepunkt",
     "text": "Eisschilde binden so viel Wasser, dass der Meeresspiegel etwa 120 Meter tiefer liegt. Landbrücken verbinden Sibirien mit Alaska und die britischen Inseln mit dem Festland."
+   },
+   {
+    "jahr": -18000,
+    "titel": "Der Topf vor dem Ackerbau",
+    "text": "Die ältesten bekannten Keramikgefäße kommen aus Südchina und Japan und sind rund achttausend Jahre älter als die Landwirtschaft. Sie wurden zum Kochen benutzt – Rußspuren und Fischfettreste belegen es. Damit fällt eine alte Ordnung der Vorgeschichte: Töpfe sind keine Folge der Sesshaftigkeit, sondern eine Technik von Jägern und Fischern."
    },
    {
     "jahr": -15000,
@@ -2263,6 +2548,11 @@ const THEMEN = [
     "vertiefung": "goebekli-tepe"
    },
    {
+    "jahr": -10500,
+    "titel": "Pfeil und Bogen",
+    "text": "In Stellmoor bei Hamburg liegen über hundert Kiefernschäfte mit Nocken und Spitzenansatz – die ältesten sicher als Pfeile bestimmbaren Funde. Der Bogen speichert Muskelkraft und gibt sie schnell frei; damit wird auf Distanz jagbar, was vorher nur im Nahkampf erreichbar war. Er ist außerdem die erste Waffe, mit der ein Mensch einen anderen töten kann, ohne ihn zu berühren."
+   },
+   {
     "jahr": -9500,
     "titel": "Sesshaftigkeit",
     "text": "In der Levante beginnen Getreideanbau und Tierhaltung. Der Preis ist hoch: einseitigere Ernährung, kleinere Körper, mehr Krankheiten und mehr Arbeitszeit als bei Jägern und Sammlern."
@@ -2278,14 +2568,34 @@ const THEMEN = [
     "text": "Eine Genmutation macht Milchzucker im Erwachsenenalter verdaulich. Sie breitet sich dort aus, wo Vieh gehalten wird – Kultur verändert messbar die Biologie."
    },
    {
+    "jahr": -6000,
+    "titel": "Wein",
+    "text": "Tongefäße aus Georgien enthalten Weinsäurereste und Traubenpollen – der früheste Nachweis systematischen Weinbaus. Alkohol war vermutlich schon vorher aus vergorenen Früchten bekannt; neu ist die absichtliche Herstellung in Menge und Lagerung. Beides setzt Vorratsdenken voraus und gehört zu den frühesten Belegen für Feste, an denen mehr Menschen teilnehmen als eine Familie."
+   },
+   {
+    "jahr": -5500,
+    "titel": "Salz von Provadia",
+    "text": "In Bulgarien wird an einer Salzquelle eine befestigte Siedlung betrieben, die Salz durch Sieden gewinnt und in Blöcken handelt. Salz ist das erste Gut, das nicht am Ort verbraucht, sondern zum Tausch produziert wird und über weite Strecken wandert. Die Gräber der Umgebung enthalten das älteste bekannte verarbeitete Gold – Reichtum und Salzhandel treten gemeinsam auf."
+   },
+   {
     "jahr": -5000,
     "titel": "Kupfer",
     "text": "Metallverarbeitung beginnt mit gediegenem und dann verhüttetem Kupfer. Ötzi trägt um 3300 v. Chr. ein Kupferbeil – ein Wertgegenstand, kein Alltagswerkzeug."
    },
    {
+    "jahr": -4000,
+    "titel": "Der Pflug",
+    "text": "Ritzzeichnungen und Pflugspuren unter späteren Erdwerken belegen den Hakenpflug, der von Rindern gezogen wird. Damit bearbeitet ein Bauer ein Mehrfaches der Fläche, die mit Hacke und Grabstock möglich war, und Überschuss wird planbar. Weil Zugtiere Besitz sind, verstärkt derselbe Schritt die Unterschiede zwischen Haushalten."
+   },
+   {
     "jahr": -3500,
     "titel": "Rad und Wagen",
     "text": "Radfunde in Mesopotamien, im Alpenraum und in der Steppe erscheinen fast gleichzeitig. Ob eine Erfindung sich ausbreitete oder mehrere unabhängig entstanden, ist ungeklärt."
+   },
+   {
+    "jahr": -3300,
+    "titel": "Ein Mann aus dem Eis",
+    "text": "Die Gletschermumie aus dem Ötztal ist der besterforschte einzelne Mensch der Vorgeschichte: Wir kennen seine letzten Mahlzeiten, seine Gelenkabnutzung, seine Tätowierungen, seine Kupferaxt und die Pfeilspitze in seiner Schulter, die ihn tötete. An diesem einen Fund hängt mehr Wissen über Alltag, Ausrüstung und Ernährung als an ganzen Fundplätzen. Er zeigt auch, wie viel wir sonst nicht wissen – weil sich Leichen normalerweise nicht erhalten."
    }
   ],
   "strittig": "Fast jede Zahl in diesem Bereich ist eine Spanne mit Fehlerbalken. Datierungen werden regelmäßig korrigiert, wenn neue Verfahren oder Funde hinzukommen – etwa bei den Fußspuren von White Sands, die die Besiedlung Amerikas um Jahrtausende vorverlegen könnten und intensiv diskutiert werden. Alte DNA hat das Fach seit den 2010er Jahren umgewälzt; manche Schlussfolgerung von heute wird in zehn Jahren überholt sein. Wer hier feste Jahreszahlen liest, sollte sie als besten derzeitigen Stand verstehen, nicht als Befund.",
@@ -2950,6 +3260,11 @@ const THEMEN = [
   "einleitung": "Strafrecht ist die Geschichte davon, wer als Person zählt. Über Jahrtausende richtete sich die Strafe nach dem Stand des Opfers und des Täters, nicht nach der Tat: Dieselbe Verletzung kostete einen Adligen ein Bußgeld und einen Unfreien die Hand. Der Gedanke, dass Strafe der Person und nicht dem Rang gilt, dass sie verhältnismäßig sein soll und dass ein Zweifel dem Angeklagten zugutekommt, ist jünger als die Dampfmaschine. Dieser Querschnitt verfolgt beides — die Taten und die Verfahren, mit denen man sie beantwortete.",
   "stationen": [
    {
+    "jahr": -2100,
+    "titel": "Der Kodex Ur-Nammu",
+    "text": "Die älteste erhaltene Gesetzessammlung ist dreihundert Jahre älter als der Kodex Hammurapi und arbeitet anders: Für Körperverletzung stehen Geldbußen, nicht Vergeltung. Erst bei Mord, Raub und Ehebruch droht der Tod. Die Reihenfolge der Rechtsgeschichte ist damit nicht die vom Rohen zum Milden – Buße stand am Anfang, das Spiegelstrafrecht kam später."
+   },
+   {
     "jahr": -1754,
     "titel": "Der Kodex Hammurapi",
     "text": "Auf einer Stele in Susa gefunden, 282 Rechtssätze. Berühmt für Auge um Auge — tatsächlich gilt das nur zwischen Gleichgestellten. Verletzt ein Freier einen Sklaven, zahlt er dem Eigentümer; verletzt ein Sklave einen Freien, verliert er ein Körperteil. Der Kodex ist damit weniger ein Zeugnis der Härte als der Ungleichheit vor dem Recht.",
@@ -2978,6 +3293,16 @@ const THEMEN = [
     "vertiefung": "kaiser-justinian"
    },
    {
+    "jahr": 653,
+    "titel": "Der Tang-Kodex",
+    "text": "China erhält ein Strafgesetzbuch mit fünfhundert Artikeln, fünf abgestuften Strafarten und dem Grundsatz, dass keine Strafe ohne Vorschrift verhängt werden darf; Beamte haften für Fehlurteile. Der Kodex bleibt über tausend Jahre die Grundlage des chinesischen Rechts und wird in Japan, Korea und Vietnam übernommen. Er ist damit das langlebigste Strafrecht der Geschichte."
+   },
+   {
+    "jahr": 800,
+    "titel": "Das Wergeld",
+    "text": "In den germanischen Volksrechten hat jeder Mensch einen Preis: Für die Tötung eines Freien ist eine festgesetzte Summe an die Sippe zu zahlen, gestaffelt nach Rang, Alter und Geschlecht. Das ist kein Ersatz für Strafe, sondern ein Ersatz für die Fehde – der Staat ist zu schwach zum Strafen, aber stark genug zum Vermitteln. Die Vorstellung, dass die Tat gegen die Gemeinschaft und nicht gegen die Familie gerichtet ist, kommt erst mit dem Hochmittelalter."
+   },
+   {
     "jahr": 1215,
     "titel": "Habeas Corpus im Ansatz",
     "text": "Die Magna Carta enthält den Satz, dass kein freier Mann verhaftet werden darf außer nach rechtmäßigem Urteil seiner Standesgenossen. Gemeint waren die Barone, nicht das Volk — aber der Satz wurde über Jahrhunderte immer weiter gelesen und ist die Wurzel des Verbots willkürlicher Haft.",
@@ -2988,6 +3313,11 @@ const THEMEN = [
     "titel": "Das Ende des Gottesurteils",
     "text": "Das Vierte Laterankonzil verbietet Priestern die Mitwirkung an Feuer- und Wasserproben. Damit bricht das bisherige Beweisverfahren zusammen: Wenn Gott nicht mehr urteilt, muss ein Gericht ermitteln. In England führte das zur Jury, auf dem Kontinent zum Inquisitionsverfahren mit Geständnis als Königsbeweis — und damit zur Folter.",
     "vertiefung": "hexenverfolgung"
+   },
+   {
+    "jahr": 1231,
+    "titel": "Die Konstitutionen von Melfi",
+    "text": "Friedrich II. erlässt für Sizilien ein Gesetzbuch, das die Fehde verbietet, das Gottesurteil abschafft und die Verfolgung von Verbrechen dem königlichen Richter überträgt. Damit wird Strafe zur Sache des Staates, nicht der Verletzten. Das Reich, für das es galt, hielt nicht lange – das Prinzip schon."
    },
    {
     "jahr": 1252,
@@ -3002,9 +3332,19 @@ const THEMEN = [
     "vertiefung": "hexenverfolgung-ende"
    },
    {
+    "jahr": 1596,
+    "titel": "Das Amsterdamer Zuchthaus",
+    "text": "Im Rasphuis müssen Verurteilte Brasilholz zu Farbpulver raspeln; das Ziel ist nicht Vergeltung, sondern Erziehung durch Arbeit. Die Einrichtung wird in ganz Nordeuropa nachgeahmt und ist der Anfang der Freiheitsstrafe als Regelstrafe – bis dahin war Gefängnis vor allem Untersuchungshaft. Die Arbeit war so hart, dass die Sterblichkeit hoch blieb; die Erziehungsabsicht und die Praxis lagen von Anfang an weit auseinander."
+   },
+   {
     "jahr": 1670,
     "titel": "Die Galeeren als Strafe",
     "text": "Frankreichs Ordonnance criminelle macht die Verurteilung zur Galeere zur Standardstrafe für Hunderte Delikte. Die Ruderer waren angekettet, die Sterblichkeit hoch; Strafe wird hier zum Wirtschaftsfaktor, weil der Staat Arbeitskraft braucht. Dasselbe Muster wiederholt sich bei Zuchthäusern, Deportation und Straflagern."
+   },
+   {
+    "jahr": 1723,
+    "titel": "Der blutige Kodex",
+    "text": "Der englische Black Act stellt das maskierte Erscheinen im Wald unter Todesstrafe und ist Teil einer Entwicklung, in der die Zahl der todeswürdigen Delikte auf über zweihundert steigt – meist zum Schutz von Eigentum. Weil die Strafe so unverhältnismäßig war, sprachen Geschworene häufig frei oder bewerteten den Wert der Beute herunter. Härte erzeugte Nachsicht: ein Grundproblem, das die Reformer des folgenden Jahrhunderts aufgreifen."
    },
    {
     "jahr": 1764,
@@ -3023,9 +3363,19 @@ const THEMEN = [
     "text": "Jeremy Bentham entwirft ein Gefängnis, in dem ein einzelner Wächter von einem Turm aus in alle Zellen sehen kann, ohne selbst gesehen zu werden. Gebaut wurde es kaum, gedacht wurde es viel: Michel Foucault machte daraus 1975 das Bild moderner Kontrolle — Disziplin wirkt am besten, wenn man nicht weiß, ob gerade hingesehen wird."
    },
    {
+    "jahr": 1810,
+    "titel": "Der Code pénal",
+    "text": "Napoleons Strafgesetzbuch macht drei Dinge verbindlich: Keine Strafe ohne Gesetz, gleiche Strafe für alle Stände, ein festes Strafmaß je Tat. Die Milde ist begrenzt – Brandmarken und Zwangsarbeit bleiben zunächst –, aber die Willkür des Richters ist eingeschränkt. Der Kodex wird in halb Europa übernommen und ist die Grundlage, auf der die Kodifikationen des 19. Jahrhunderts aufbauen."
+   },
+   {
     "jahr": 1829,
     "titel": "Die erste moderne Polizei",
     "text": "Robert Peel gründet die Metropolitan Police in London — uniformiert, unbewaffnet, ohne militärischen Rang, mit dem Grundsatz, dass die Polizei die Öffentlichkeit ist und die Öffentlichkeit die Polizei. Vorher gab es Nachtwächter und private Kopfgeldjäger. Erst mit einer ermittelnden Polizei entsteht überhaupt die Möglichkeit, Serientaten als Serie zu erkennen."
+   },
+   {
+    "jahr": 1876,
+    "titel": "Der geborene Verbrecher",
+    "text": "Cesare Lombroso behauptet, Kriminalität sei an Schädelform, Ohren und Tätowierungen erkennbar, und stützt das auf Messungen an Gefangenen. Der englische Arzt Charles Goring widerlegte die Befunde 1913 durch einen Vergleich mit Nichtgefangenen – Lombroso hatte keine Kontrollgruppe. Die Lehre war methodisch von Anfang an haltlos und hat trotzdem Rassenkunde, Sicherungsverwahrung und Zwangssterilisation mit Argumenten versorgt."
    },
    {
     "jahr": 1879,
@@ -3038,9 +3388,19 @@ const THEMEN = [
     "text": "Juan Vucetich in Argentinien und Francis Galton in England machen Fingerabdrücke systematisch verwendbar; 1892 führt ein Abdruck in Argentinien erstmals zur Überführung einer Mörderin. Damit verschiebt sich die Beweislast vom Geständnis zur Spur — der wichtigste Schritt gegen Folter, den keine moralische Debatte, sondern eine Technik bewirkte."
    },
    {
+    "jahr": 1899,
+    "titel": "Das erste Jugendgericht",
+    "text": "In Chicago wird ein Gericht eingerichtet, das Minderjährige nicht bestraft, sondern erzieht: kein öffentliches Verfahren, kein Strafmaß, sondern Auflagen und Fürsorge. Die Idee verbreitet sich innerhalb von zwanzig Jahren über Europa und Amerika. Die Kehrseite zeigte sich erst später: Ohne Verfahren gab es auch keine Verteidigung – dieser Widerspruch wurde in den USA erst 1967 gerichtlich korrigiert."
+   },
+   {
     "jahr": 1901,
     "titel": "Blutgruppen und die Spur am Tatort",
     "text": "Karl Landsteiner beschreibt die Blutgruppen; ab 1915 lassen sich Blutspuren Gruppen zuordnen. Was vorher nur Blut war, wird zum Ausschlusskriterium. Die Linie führt weiter zum genetischen Fingerabdruck, den Alec Jeffreys 1984 entdeckt und der 1986 in England erstmals einen Verdächtigen entlastete, bevor er einen anderen überführte."
+   },
+   {
+    "jahr": 1920,
+    "titel": "Die Prohibition erfindet ein Geschäftsmodell",
+    "text": "Das Alkoholverbot in den USA verbietet einen Massenkonsum, ohne die Nachfrage zu ändern. Die Folge ist eine Branche mit Import, Verteilung, Bestechung und Gewaltmonopol – organisierte Kriminalität in der Form, die sie behält, nachdem das Verbot 1933 fällt. Das Beispiel ist das häufigste Argument in Debatten über Verbote von Drogen und anderen Gütern: Ein Verbot verlagert einen Markt, es beseitigt ihn nicht."
    },
    {
     "jahr": 1948,
@@ -3053,10 +3413,20 @@ const THEMEN = [
     "text": "Der US-Oberste Gerichtshof entscheidet in Gideon v. Wainwright, dass jedem Angeklagten ein Verteidiger gestellt werden muss. Clarence Gideon hatte seine Beschwerde mit Bleistift aus dem Gefängnis geschrieben. Der Fall zeigt, wie spät die Selbstverständlichkeiten des Strafverfahrens entstanden sind."
    },
    {
+    "jahr": 1966,
+    "titel": "Die Belehrung",
+    "text": "Der Oberste Gerichtshof der USA entscheidet, dass eine Aussage nur verwertbar ist, wenn der Beschuldigte vorher über Schweigerecht und Anwalt aufgeklärt wurde. Ernesto Miranda selbst wurde im zweiten Verfahren erneut verurteilt. Die Entscheidung verlegt den Schutz vom Gerichtssaal in den Verhörraum – dorthin, wo die meisten Verfahren tatsächlich entschieden werden."
+   },
+   {
     "jahr": 1989,
     "titel": "DNA befreit Unschuldige",
     "text": "In den USA beginnt mit Gary Dotson die Reihe der Freilassungen durch DNA-Analyse; das Innocence Project zählt seither hunderte Fälle. Auffällig ist, was die Wiederaufnahmen gemeinsam haben: falsche Zeugenidentifizierung, fehlerhafte Gutachten und erzwungene Geständnisse. Es sind dieselben Fehlerquellen, die Beccaria 1764 benannte.",
     "vertiefung": "dna-alte"
+   },
+   {
+    "jahr": 2016,
+    "titel": "Der Algorithmus im Urteil",
+    "text": "US-Gerichte nutzen Risikoprognosen aus Software, um über Haft und Bewährung zu entscheiden; eine Untersuchung von ProPublica zeigt, dass die Fehler ungleich verteilt sind – schwarze Angeklagte werden häufiger falsch als gefährlich eingestuft. Der Hersteller widersprach mit einer anderen Definition von Fairness, und mathematisch lassen sich beide Ansprüche nicht gleichzeitig erfüllen. Der Streit ist offen und betrifft jedes Prognoseverfahren, auch das des Gutachters aus Fleisch und Blut."
    }
   ],
   "strittig": "Kriminalitätsstatistiken sind für die Zeit vor dem 19. Jahrhundert kaum vergleichbar: Sie zählen Anzeigen und Verfahren, nicht Taten, und beides hängt daran, wie dicht Verwaltung und Polizei sind. Die verbreitete Aussage, Gewalt sei über die Jahrhunderte stark zurückgegangen — von Steven Pinker prominent vertreten — stützt sich auf lokale Gerichtsakten und Skelettbefunde und ist in ihrer Größenordnung umstritten. Ebenso strittig ist die Wirkung der Todesstrafe: Vergleichsstudien zwischen Staaten mit und ohne finden überwiegend keinen abschreckenden Effekt, die Methodik solcher Vergleiche wird aber angegriffen.",
@@ -3100,9 +3470,24 @@ const THEMEN = [
     "text": "Die ägyptische Sammlung nennt Bleisalze, Opium, Bilsenkraut und Schierling mit Dosierungen. Heilmittel und Gift sind darin dieselben Stoffe in verschiedener Menge — eine Unterscheidung, die erst Paracelsus im 16. Jahrhundert auf den Satz brachte, allein die Dosis mache das Gift."
    },
    {
+    "jahr": -800,
+    "titel": "Vergiftete Pfeile bei Homer",
+    "text": "In der Odyssee reist Odysseus nach Ephyra, um ein Gift für seine Pfeilspitzen zu erhalten – und wird abgewiesen, weil der Gastgeber die Götter fürchtet. Die Stelle ist die früheste griechische Erwähnung des Pfeilgifts und zeigt schon die Bewertung, die dem Gift bis heute anhaftet: als Waffe, die man führt, ohne sich zu zeigen. Das griechische Wort für Gift, tóxikon, kommt vom Bogen."
+   },
+   {
     "jahr": -399,
     "titel": "Sokrates trinkt den Schierling",
     "text": "Athen vollstreckt Todesurteile mit gefleckten Schierling. Platons Schilderung — aufsteigende Lähmung von den Füßen, klarer Kopf bis zuletzt — passt pharmakologisch zum Wirkstoff Coniin und gilt als medizinisch glaubwürdig, auch wenn Platon literarisch gestaltet."
+   },
+   {
+    "jahr": -331,
+    "titel": "Roms erster Giftprozess",
+    "text": "Livius berichtet von einer Häufung plötzlicher Todesfälle in Rom, die auf Gift zurückgeführt wurden; nach seiner Darstellung wurden über hundert Frauen verurteilt. Die Erzählung folgt einem Muster, das in der römischen Überlieferung immer wiederkehrt: Eine Epidemie ohne erkennbare Ursache wird als Verbrechen erklärt, und die Beschuldigten sind Frauen. Ob überhaupt vergiftet wurde, lässt sich aus dem Text nicht entscheiden."
+   },
+   {
+    "jahr": -330,
+    "titel": "Theophrast beschreibt die Wirkung",
+    "text": "In seiner Pflanzenkunde beschreibt Theophrast Schierling, Eisenhut und Mohn samt Wirkung, Dosis und Zubereitung – nicht als Zauber, sondern als Eigenschaft der Pflanze. Damit steht am Anfang der Giftkunde derselbe Text, der am Anfang der Botanik steht. Die Trennung zwischen Heilmittel und Gift ist in dieser Tradition von vornherein eine Frage der Menge."
    },
    {
     "jahr": -63,
@@ -3116,9 +3501,24 @@ const THEMEN = [
     "vertiefung": "kaiser-nero"
    },
    {
+    "jahr": 77,
+    "titel": "Plinius und die Gegenmittel",
+    "text": "Plinius der Ältere sammelt in seiner Naturkunde hunderte angebliche Gegengifte, vom Rautenblatt bis zum Nashorn-Horn. Fast nichts davon wirkt. Der Wert der Sammlung liegt darin, dass sie zeigt, wie groß die Angst vor Gift in der römischen Oberschicht war – Vorkoster und Gegengifte gehören zum Haushalt wie Wachen."
+   },
+   {
+    "jahr": 175,
+    "titel": "Der Theriak",
+    "text": "Galen stellt für Marc Aurel ein Vielstoffgemisch aus über sechzig Bestandteilen her, das gegen alle Gifte und Bisse schützen soll. Der Theriak wird zum bekanntesten Arzneimittel der nächsten anderthalb Jahrtausende, in Venedig noch im 18. Jahrhundert öffentlich gerührt. Wirksam war er nicht, aber er bindet die Giftkunde an die Apotheke statt an den Zauber."
+   },
+   {
     "jahr": 1140,
     "titel": "Der erste Gesetzesversuch",
     "text": "Roger II. von Sizilien verbietet den Verkauf von Arzneien ohne Prüfung — der Anfang der Apothekenaufsicht. Sie entstand nicht aus Sorge um Qualität, sondern weil derselbe Laden Gift und Medizin führte."
+   },
+   {
+    "jahr": 1198,
+    "titel": "Maimonides schreibt eine Anleitung",
+    "text": "Der Arzt und Gelehrte Moses Maimonides verfasst im Auftrag eines Wesirs eine Abhandlung über Gifte und ihre Behandlung. Sie empfiehlt Erbrechen, Aussaugen der Wunde und Abbinden – Maßnahmen, die bei Schlangenbiss teilweise sinnvoll sind. Bemerkenswert ist die Form: eine praktische Handreichung für Laien, weil ein Arzt selten rechtzeitig da ist."
    },
    {
     "jahr": 1419,
@@ -3138,6 +3538,16 @@ const THEMEN = [
     "text": "Englands Act of Poisoning erklärt Giftmord zum Hochverrat und schreibt das Sieden im Kessel vor. Die Härte hat einen Grund: Gift zerstörte das Vertrauen im Haushalt — Köchin, Diener, Ehefrau. Genau deshalb wurde es als Angriff auf die Ordnung selbst behandelt, nicht als Mord unter Gleichen."
    },
    {
+    "jahr": 1538,
+    "titel": "Paracelsus und die Dosis",
+    "text": "Paracelsus formuliert in einer Verteidigungsschrift den Satz, alle Dinge seien Gift, und es komme allein auf die Menge an. Damit ist die Grundregel der Toxikologie ausgesprochen, zweihundert Jahre bevor sie messbar wird. Paracelsus selbst verabreichte Quecksilber und Arsen als Arznei – die Regel war für ihn eine Erlaubnis, nicht eine Warnung."
+   },
+   {
+    "jahr": 1633,
+    "titel": "Aqua Tofana",
+    "text": "Um eine Neapolitanerin namens Giulia Tofana entsteht die Erzählung eines geschmacklosen Arsenpräparats, das Ehefrauen kaufen konnten. Belegt sind Prozesse gegen eine Gruppe von Giftverkäuferinnen in Rom in den 1650er Jahren; alles Weitere – die Zahl von sechshundert Opfern, das Fläschchen mit dem Heiligenbild – stammt aus späteren Erzählungen. Der Fall ist ein Beispiel dafür, wie ein knapper Aktenbestand eine große Legende tragen kann."
+   },
+   {
     "jahr": 1659,
     "titel": "Die Affaire des poisons",
     "text": "In Paris beginnt mit der Marquise de Brinvilliers, die Vater und Brüder mit Arsen tötete, die größte Giftaffäre Europas. Die Ermittlungen führen zu einem Netz von Wahrsagerinnen und Giftlieferantinnen um La Voisin und reichen bis an den Hof Ludwigs XIV. — die Mätresse Madame de Montespan wurde verdächtigt. 36 Menschen wurden hingerichtet, die Akten teils vom König verbrannt.",
@@ -3150,10 +3560,20 @@ const THEMEN = [
     "vertiefung": "affaire-des-poisons"
    },
    {
+    "jahr": 1814,
+    "titel": "Orfila begründet ein Fach",
+    "text": "Mathieu Orfila veröffentlicht in Paris seine Toxikologie und stellt sie auf Tierversuche: Wirkung, Symptom und Nachweis werden systematisch zusammengeführt. Aus der Sammlung von Rezepten und Anekdoten wird ein Fach, das vor Gericht auftreten kann. Orfila wird der erste Sachverständige, dessen Gutachten Urteile trägt – und dessen Irrtümer damit auch Urteile tragen."
+   },
+   {
     "jahr": 1836,
     "titel": "Der Marshsche Nachweis",
     "text": "James Marsh entwickelt einen Test, der noch winzige Arsenmengen in Gewebe sichtbar macht, ausgelöst durch einen Prozess, in dem er als Gutachter nichts beweisen konnte und der Angeklagte freikam. 1840 überführt der Test im Fall Lafarge in Frankreich erstmals eine Angeklagte. Die Toxikologie wird damit zum Fach — und Arsenmorde gehen messbar zurück.",
     "vertiefung": "affaire-des-poisons"
+   },
+   {
+    "jahr": 1840,
+    "titel": "Der Prozess Lafarge",
+    "text": "Marie Lafarge wird in Frankreich wegen Arsenmordes an ihrem Mann verurteilt – im ersten großen Prozess, in dem der Marshsche Nachweis vor Gericht vorgeführt wird. Die Gutachter widersprachen sich: Der örtliche Apotheker fand Arsen, Orfila fand es in einer anderen Probe, ein Gegengutachter nicht. Der Fall machte die Chemie im Gerichtssaal berühmt und zeigte gleichzeitig, wie stark das Ergebnis von der Probe abhängt."
    },
    {
     "jahr": 1851,
@@ -3161,9 +3581,24 @@ const THEMEN = [
     "text": "Der britische Arsenic Act verlangt Färbung von Arsenpulver, Registrierung des Verkaufs und Zeugen beim Kauf. Es ist die erste Regelung, die einen Stoff nicht verbietet, sondern seine Wege dokumentiert — dieselbe Logik, nach der heute Grundstoffe kontrolliert werden."
    },
    {
+    "jahr": 1857,
+    "titel": "Nicht bewiesen",
+    "text": "In Glasgow endet der Prozess gegen Madeleine Smith mit dem schottischen Urteil not proven: Arsen im Körper des Toten war nachweisbar, Arsenkäufe der Angeklagten belegt, ein Zusammenhang nicht. Der Fall wird zum Musterbeispiel dafür, dass der chemische Nachweis eines Stoffes und der Nachweis einer Tat zwei verschiedene Dinge sind."
+   },
+   {
+    "jahr": 1858,
+    "titel": "Die Bonbons von Bradford",
+    "text": "Ein Süßwarenhersteller streckt Pfefferminzbonbons mit einem billigen weißen Pulver, das der Gehilfe des Apothekers versehentlich als Arsentrioxid ausgibt; über zwanzig Menschen sterben, mehr als zweihundert werden krank. Der Vorfall war kein Mord, sondern eine Folge davon, dass Gifte und Lebensmittelzusätze im gleichen Regal standen. Er führte in Großbritannien zu den ersten Vorschriften über Abgabe und Kennzeichnung von Arzneistoffen."
+   },
+   {
     "jahr": 1889,
     "titel": "Tödliche Tapeten",
     "text": "Schweinfurter Grün, ein arsenhaltiges Pigment, färbte Tapeten, Kleider und Spielzeug. Ärzte berichteten über Jahrzehnte von Erkrankungen in grün tapezierten Zimmern; die Debatte endete erst mit dem Verzicht der Hersteller. Der bekannteste Verdacht betrifft Napoleons Tod auf St. Helena — in seinen Haaren wurde Arsen gefunden, doch der Wert liegt im Bereich der damaligen Umweltbelastung, und die Autopsie beschreibt Magenkrebs."
+   },
+   {
+    "jahr": 1910,
+    "titel": "Der Fall Crippen",
+    "text": "In London werden in einem Keller menschliche Überreste gefunden; der Toxikologe William Willcox weist darin Hyoscin nach, ein Alkaloid, das der Verdächtige nachweislich gekauft hatte. Die Verurteilung Hawley Crippens gilt als erster Fall, in dem ein Alkaloid – nicht ein Metall – den Ausschlag gab. Eine DNA-Untersuchung der aufbewahrten Gewebeprobe stellte 2007 die Identität des Opfers in Frage; die Debatte darüber ist nicht abgeschlossen."
    },
    {
     "jahr": 1934,
@@ -3171,9 +3606,19 @@ const THEMEN = [
     "text": "Violette Nozière vergiftete in Paris ihre Eltern; der Fall wurde zum Prozess über Glaubwürdigkeit, weil sie schweren Missbrauch durch den Vater angab. Die Toxikologie konnte die Tat beweisen, über das Motiv sagte sie nichts — die Grenze jeder forensischen Methode."
    },
    {
+    "jahr": 1937,
+    "titel": "Das Elixier, das nicht geprüft war",
+    "text": "Ein US-Hersteller löst das Sulfonamid Sulfanilamid in Diethylenglykol, weil es sich darin gut löst und süß schmeckt; das Lösungsmittel ist nierentoxisch. Über hundert Menschen sterben, viele davon Kinder. Ein Jahr später verpflichtet ein neues Gesetz Hersteller erstmals, die Sicherheit eines Mittels vor dem Verkauf nachzuweisen – die moderne Arzneimittelzulassung beginnt mit einem Vergiftungsfall."
+   },
+   {
     "jahr": 1978,
     "titel": "Der Regenschirm auf der Waterloo Bridge",
     "text": "Der bulgarische Exilschriftsteller Georgi Markow stirbt in London, nachdem ihm eine winzige, mit Rizin gefüllte Metallkugel ins Bein geschossen wurde. Die Kugel wurde in der Autopsie gefunden. Der Fall zeigt die neue Form: Gift nicht mehr im Haushalt, sondern als Werkzeug von Staaten."
+   },
+   {
+    "jahr": 2004,
+    "titel": "Dioxin im Wahlkampf",
+    "text": "Der ukrainische Präsidentschaftskandidat Wiktor Juschtschenko erkrankt mitten im Wahlkampf schwer; Wiener Ärzte weisen eine extrem hohe Dioxinkonzentration in seinem Blut nach, das Gesicht bleibt monatelang entstellt. Der medizinische Befund ist unstrittig, die Täterschaft nie geklärt und strafrechtlich nicht aufgearbeitet. Der Fall zeigt, was moderne Analytik kann und wo sie endet: Sie identifiziert den Stoff, nicht die Hand."
    },
    {
     "jahr": 2006,
@@ -3222,6 +3667,16 @@ const THEMEN = [
   "einleitung": "Folter war über Jahrhunderte kein Verbrechen, sondern ein geregelter Verfahrensschritt: Sie stand in Gesetzbüchern, hatte Zuständigkeiten, Protokolle und Höchstgrenzen. Genau das macht sie erklärungsbedürftig — nicht die Grausamkeit einzelner, sondern die Logik eines Beweisrechts, das ohne Geständnis nicht verurteilen konnte. Und die Hinrichtung war bis ins 19. Jahrhundert ein öffentliches Ereignis mit Publikum, Ritual und Predigt. Die Abschaffung beider begann nicht mit Mitleid, sondern mit Zweifeln an ihrem Nutzen. Warnung: Dieser Abschnitt beschreibt Gewalt sachlich, aber ohne Ausschmückung.",
   "stationen": [
    {
+    "jahr": -1754,
+    "titel": "Die Wasserprobe im Kodex Hammurapi",
+    "text": "Der Kodex sieht vor, dass ein Beschuldigter, gegen den kein Zeuge auftritt, in den Fluss geworfen wird: Geht er unter, gilt er als schuldig. Das ist keine Folter zur Erlangung eines Geständnisses, sondern ein Gottesurteil – die Entscheidung wird an eine Instanz abgegeben, die nicht irren kann. Wo das Verfahren fehlt, tritt das Ordal an seine Stelle; das bleibt drei Jahrtausende so."
+   },
+   {
+    "jahr": -519,
+    "titel": "Dareios lässt es in Stein schreiben",
+    "text": "Die Inschrift von Behistun zählt auf, was mit den Aufständischen geschah: Nasen, Ohren und Zunge abgeschnitten, ein Auge ausgestochen, danach zur Schau gestellt und gepfählt. Der Text ist keine Anklage, sondern die Selbstdarstellung des Königs. Grausamkeit ist hier kein Ermittlungsmittel, sondern eine Botschaft an alle, die lesen oder zuhören können."
+   },
+   {
     "jahr": -450,
     "titel": "Folter nur gegen Unfreie",
     "text": "In Athen und später in Rom durfte an Sklaven gefoltert werden, an Bürgern nicht. Die Aussage eines Sklaven galt erst unter Folter als verwertbar — man traute ihr sonst nicht. Der Rang entschied also, ob ein Mensch als Zeuge oder als Erkenntnisquelle behandelt wurde."
@@ -3238,6 +3693,11 @@ const THEMEN = [
     "text": "Der Codex Theodosianus enthält Vorschriften, in welchen Fällen und wie lange gefoltert werden darf und wer davon ausgenommen ist — Kinder, Schwangere, hohe Beamte. Aus heutiger Sicht ein Widerspruch, aus damaliger eine Begrenzung."
    },
    {
+    "jahr": 866,
+    "titel": "Ein Papst verbietet das Foltergeständnis",
+    "text": "In einem Antwortschreiben an die Bulgaren erklärt Nikolaus I., ein unter Folter erzwungenes Geständnis sei wertlos: Wer die Schmerzen nicht erträgt, sagt, was der Peiniger hören will, und wer sie erträgt, bleibt ungestraft. Das Argument ist genau dasselbe, mit dem die Folter neunhundert Jahre später abgeschafft wird. Es war also nicht unbekannt – es war nur nicht durchsetzbar."
+   },
+   {
     "jahr": 1215,
     "titel": "Warum die Folter zurückkam",
     "text": "Mit dem Verbot der Gottesurteile brauchte das kontinentale Verfahren einen neuen Königsbeweis. Es wurde das Geständnis. Damit war die Folter nicht Ausdruck von Rohheit, sondern die logische Folge einer Beweisregel: Wo ohne Geständnis nicht verurteilt werden konnte, musste das Geständnis beschafft werden.",
@@ -3250,15 +3710,30 @@ const THEMEN = [
     "vertiefung": "hexenverfolgung"
    },
    {
+    "jahr": 1310,
+    "titel": "Die Templer widerrufen",
+    "text": "Vor der päpstlichen Kommission in Paris nehmen dutzende Templer ihre Geständnisse zurück und geben an, sie seien gefoltert worden. Kurz darauf werden vierundfünfzig von ihnen als Rückfällige verbrannt – der Widerruf selbst wurde zum Beweis. Der Vorgang zeigt die Falle des Verfahrens: Innerhalb seiner Logik gab es keine Aussage, die entlasten konnte."
+   },
+   {
     "jahr": 1478,
     "titel": "Die spanische Inquisition — und was sie nicht war",
     "text": "Die Behörde verfolgte vor allem getaufte Juden und Muslime, die des Rückfalls verdächtigt wurden. Ihr Ruf als schlimmste Institution Europas geht auf niederländische und englische Kriegspropaganda des 16. Jahrhunderts zurück. Die Aktenauswertung durch Henry Kamen ergibt: Folter war in einem Bruchteil der Verfahren belegt, Todesurteile in rund zwei Prozent — grausam genug, aber ein anderes Bild als die Legende. Umgekehrt war die Behörde in einem Punkt fortgeschritten: Sie protokollierte alles, weshalb wir es überhaupt wissen."
+   },
+   {
+    "jahr": 1487,
+    "titel": "Der Hexenhammer als Handbuch",
+    "text": "Heinrich Kramers Malleus Maleficarum enthält nicht nur eine Dämonenlehre, sondern eine Verfahrensanleitung: wie zu befragen, wie zu drohen, wie ein Widerruf zu behandeln sei. Das Buch hatte nie amtliche Geltung und wurde von Theologen kritisiert, verbreitete sich aber im Druck massenhaft. Seine Wirkung liegt weniger im Glauben als in der Technik."
    },
    {
     "jahr": 1532,
     "titel": "Regeln für die peinliche Befragung",
     "text": "Die Carolina schreibt vor, dass ohne hinreichende Anzeigen nicht gefoltert werden darf, dass das Geständnis anschließend außerhalb der Folter wiederholt und durch Tatdetails bestätigt werden muss. Die Vorschriften wurden vielfach missachtet — aber sie zeigen, dass die Unzuverlässigkeit erzwungener Aussagen bekannt war.",
     "vertiefung": "hexenverfolgung-ende"
+   },
+   {
+    "jahr": 1563,
+    "titel": "Weyer bestreitet die Grundlage",
+    "text": "Der Arzt Johann Weyer argumentiert, die angeklagten Frauen seien nicht Hexen, sondern krank, verwirrt oder eingebildet – und ihre Geständnisse Produkte der Folter. Er hält am Teufel fest, entzieht aber den Prozessen ihren Tatbestand. Weyer wird heftig angegriffen, unter anderem von Jean Bodin, und bleibt lange in der Minderheit."
    },
    {
     "jahr": 1600,
@@ -3272,6 +3747,11 @@ const THEMEN = [
     "vertiefung": "hexenverfolgung-ende"
    },
    {
+    "jahr": 1689,
+    "titel": "Grausame und ungewöhnliche Strafen",
+    "text": "Die englische Bill of Rights verbietet cruel and unusual punishments. Der Satz richtet sich zunächst gegen willkürlich überhöhte Strafen einzelner Richter, nicht gegen die Folter, die in England ohnehin nur mit königlicher Sondervollmacht angewandt wurde. Über den Umweg der amerikanischen Verfassung wird daraus die Formel, mit der Gerichte bis heute Strafen für unzulässig erklären."
+   },
+   {
     "jahr": 1740,
     "titel": "Preußen schafft die Folter ab",
     "text": "Friedrich II. beendet mit einem Erlass die Folter in Preußen fast vollständig; endgültig 1754. Es folgen Sachsen, Österreich 1776, Frankreich 1780. Die Begründung ist selten Mitleid, meist Nutzlosigkeit — die Geständnisse taugten nicht.",
@@ -3282,6 +3762,16 @@ const THEMEN = [
     "titel": "Die letzte öffentliche Marter in Frankreich",
     "text": "Die Vierteilung Robert-François Damiens' nach seinem Attentat auf Ludwig XV. wurde vor großem Publikum vollzogen und dauerte Stunden. Foucault beginnt sein Buch mit dieser Szene, um den Bruch zu zeigen: Vierzig Jahre später richtete derselbe Staat mit einer Maschine in Sekunden.",
     "vertiefung": "beccaria"
+   },
+   {
+    "jahr": 1766,
+    "titel": "Der Fall Calas",
+    "text": "Der protestantische Kaufmann Jean Calas wird in Toulouse gerädert, nachdem man ihm den Mord an seinem Sohn zur Last gelegt hatte; Voltaire treibt eine dreijährige Kampagne, bis das Urteil aufgehoben wird. Es ist einer der ersten Fälle, in denen öffentliche Meinung ein Gerichtsurteil kassiert. Voltaire ging es nicht nur um Calas, sondern um den Zusammenhang von Religionshass und Justizirrtum."
+   },
+   {
+    "jahr": 1772,
+    "titel": "Pressen bis zum Geständnis endet",
+    "text": "England kannte keine Folter zur Wahrheitsfindung, aber die peine forte et dure: Wer sich weigerte, sich schuldig oder nicht schuldig zu erklären, wurde unter Gewichten gepresst, bis er es tat oder starb. Weil bei einem Urteil das Vermögen einzog, war das Schweigen bis zum Tod manchmal die bessere Wahl für die Familie. 1772 wird das Pressen abgeschafft und Schweigen als Nicht-schuldig gewertet."
    },
    {
     "jahr": 1789,
@@ -3312,14 +3802,39 @@ const THEMEN = [
     "text": "Das Genfer Abkommen verbietet Zwang zur Aussage bei Kriegsgefangenen; sie müssen nur Name, Rang und Nummer angeben. Es ist der erste völkerrechtliche Schritt, dem 1949 die vier Abkommen und 1984 die Antifolterkonvention folgen."
    },
    {
+    "jahr": 1948,
+    "titel": "Artikel 5",
+    "text": "Die Allgemeine Erklärung der Menschenrechte verbietet Folter und grausame, unmenschliche oder erniedrigende Behandlung – ohne Ausnahme, ohne Notstandsklausel. Die Erklärung ist rechtlich nicht bindend, aber ihr Wortlaut geht fast unverändert in die Europäische Menschenrechtskonvention, den UN-Zivilpakt und die Antifolterkonvention ein."
+   },
+   {
+    "jahr": 1961,
+    "titel": "Warum Menschen quälen",
+    "text": "Stanley Milgram lässt Versuchspersonen unter Anweisung eines Versuchsleiters angebliche Stromschläge verabreichen; ein großer Teil geht bis zur höchsten Stufe. Die Deutung ist umstritten – der Versuchsleiter drängte stärker als berichtet, und die Teilnehmenden zweifelten teilweise am Aufbau. Was der Versuch belegt, ist schwächer als die berühmte Behauptung, aber nicht harmlos: Gehorsam gegenüber einer als legitim erlebten Instanz senkt die Schwelle deutlich."
+   },
+   {
+    "jahr": 1978,
+    "titel": "Die fünf Techniken vor Gericht",
+    "text": "Der Europäische Gerichtshof für Menschenrechte verurteilt das Vereinigte Königreich wegen der Behandlung nordirischer Gefangener: Wandstehen, Kapuze, Lärm, Schlaf- und Nahrungsentzug. Das Gericht nennt es unmenschliche Behandlung, nicht Folter – eine Unterscheidung, die später zur Rechtfertigung ähnlicher Methoden herangezogen wurde. Der irische Antrag auf Revision dieses Punkts wurde 2018 abgelehnt."
+   },
+   {
     "jahr": 1984,
     "titel": "Die Antifolterkonvention",
     "text": "Die UN-Konvention verbietet Folter ausnahmslos — auch im Krieg, auch im Notstand, auch auf Befehl. Sie ist eines der wenigen Verbote des Völkerrechts, das keine Abwägung zulässt. Über 170 Staaten sind beigetreten."
    },
    {
+    "jahr": 1999,
+    "titel": "Ein Höchstgericht verbietet die Ausnahme",
+    "text": "Israels Oberster Gerichtshof erklärt körperliche Druckmittel bei Verhören des Inlandsgeheimdienstes für unzulässig und stellt fest, dass der Dienst dazu keine gesetzliche Grundlage habe. Das Urteil lässt offen, ob der Gesetzgeber eine schaffen könnte, und bezieht sich im Einzelfall auf den strafrechtlichen Notstand. Es gilt als Beispiel dafür, wie ein Gericht mitten in einer Sicherheitslage entscheidet – und als Beispiel dafür, wie schmal die dabei gelassene Tür ist."
+   },
+   {
     "jahr": 2004,
     "titel": "Warum das Verbot ausnahmslos ist",
     "text": "Die Bilder aus Abu Ghraib und die Debatte über verschärfte Verhörmethoden lösten die Frage neu aus, ob Folter in Ausnahmefällen zulässig sei. Der Bericht des US-Senats von 2014 kam zu dem Ergebnis, dass die Methoden keine verwertbaren Erkenntnisse brachten, die nicht anders zu erlangen waren — dasselbe Ergebnis, das Spee 1631 und die preußischen Juristen 1740 notierten."
+   },
+   {
+    "jahr": 2014,
+    "titel": "Ein Parlament prüft den eigenen Geheimdienst",
+    "text": "Der Geheimdienstausschuss des US-Senats veröffentlicht die Zusammenfassung eines mehrtausendseitigen Berichts über die Verhörmethoden der CIA nach 2001. Kernbefund: Die Methoden waren härter als dargestellt, die Aufsicht mangelhaft und die behaupteten Erkenntnisgewinne nicht belegt. Der Bericht selbst bleibt größtenteils geheim; die Zusammenfassung ist die ausführlichste amtliche Aufarbeitung eines Folterprogramms durch das eigene Parlament."
    }
   ],
   "strittig": "Die Zahl der Hinrichtungen in Europa vor 1800 lässt sich nur regional schätzen; überregionale Summen in populären Darstellungen sind Hochrechnungen. Die Wirkung der Todesstrafe auf Kriminalität ist empirisch umstritten, wobei die Mehrzahl der Vergleichsstudien keinen Abschreckungseffekt findet. Bei der spanischen Inquisition stehen Kamens Aktenauswertung und ältere, deutlich höhere Zahlen nebeneinander; die Größenordnung der Todesurteile gilt heute als geklärt, die Häufigkeit der Folter weniger. Und die Frage, ob Folter je verlässliche Erkenntnisse erbringt, wird von Nachrichtendiensten teils anders beantwortet als vom Senatsbericht 2014 — die Beleglage stützt den Bericht.",
@@ -3358,6 +3873,16 @@ const THEMEN = [
   "einleitung": "Der Vorwurf, eine Gruppe sei ein gefährlicher Geheimkult, ist älter als jeder Kult: Rom erhob ihn gegen Bacchusanhänger und später gegen Christen, das Christentum gegen Ketzer, Kolonialverwaltungen gegen einheimische Bünde. Deshalb braucht dieser Querschnitt zwei Blicke gleichzeitig — auf die Gruppen, in denen Menschen tatsächlich zu Schaden kamen, und auf die Verfahren, mit denen Behörden Minderheiten zu Verschwörern machten. Beides steht hier nebeneinander, und es ist jeweils vermerkt, worauf sich unser Wissen stützt.",
   "stationen": [
    {
+    "jahr": -450,
+    "titel": "Die Mysterien von Eleusis",
+    "text": "Der Kult der Demeter in Eleusis nahm über Jahrhunderte tausende Eingeweihte auf – Bürger, Frauen und Sklaven – und verpflichtete alle zur Verschwiegenheit über das, was im Inneren geschah. Diese Schweigepflicht wurde so gut gehalten, dass wir bis heute nicht wissen, was gezeigt wurde. Der Kult war nicht verboten, sondern staatlich getragen: Geheimhaltung allein macht eine Gruppe nicht verdächtig."
+   },
+   {
+    "jahr": -415,
+    "titel": "Der Mysterienskandal in Athen",
+    "text": "Kurz vor der Sizilienexpedition werden in Athen nachts Hermenstatuen beschädigt; im Zuge der Ermittlungen wird auch angezeigt, jemand habe die eleusinischen Mysterien in einem Privathaus nachgespielt. Alkibiades wird angeklagt, flieht und wechselt zum Feind. Der Vorgang zeigt früh, wie leicht ein Vorwurf religiöser Abweichung politisch verwendbar ist."
+   },
+   {
     "jahr": -186,
     "titel": "Rom verbietet die Bacchanalien",
     "text": "Der Senat verbietet den Bacchuskult in Italien; ein erhaltener Bronzeerlass regelt die Einzelheiten. Livius schildert nächtliche Verbrechen, Vergiftungen und Verschwörung — die Vorwürfe folgen dem Muster, das später gegen Christen, Juden und Ketzer wiederkehrt. Was tatsächlich stattfand, wissen wir nicht; belegt ist nur die Repression, mit tausenden Verurteilungen.",
@@ -3368,6 +3893,31 @@ const THEMEN = [
     "titel": "Die Christen als Sekte",
     "text": "Nach dem Brand Roms wurden Christen als Brandstifter hingerichtet. Tacitus nennt ihren Glauben einen verderblichen Aberglauben und berichtet gleichzeitig, sie seien nicht des Brandes, sondern des Hasses gegen das Menschengeschlecht überführt worden. Die Vorwürfe gegen sie — Kindermord, Kannibalismus, Inzest — sind dieselben, die Christen später gegen andere erhoben.",
     "vertiefung": "kaiser-nero"
+   },
+   {
+    "jahr": 170,
+    "titel": "Die neue Prophetie",
+    "text": "In Phrygien treten Montanus und zwei Prophetinnen mit unmittelbaren Offenbarungen auf, fordern strenge Askese und erwarten das nahe Ende. Die entstehende Kirche reagiert nicht auf die Lehre, sondern auf die Struktur: Wer direkt von Gott hört, braucht keinen Bischof. Die Auseinandersetzung mit dem Montanismus ist einer der Vorgänge, in denen sich Amt gegen Charisma durchsetzt."
+   },
+   {
+    "jahr": 250,
+    "titel": "Mani und eine Weltreligion, die verschwand",
+    "text": "Mani verkündet im Sassanidenreich eine Lehre, die Elemente aus Christentum, Zoroastrismus und Buddhismus verbindet, und schreibt seine Schriften selbst – gegen die Verfälschung durch Schüler. Der Manichäismus breitet sich von Nordafrika bis China aus und wird über Jahrhunderte verfolgt, bis er erlischt. Lange kannte man ihn fast nur aus den Schriften seiner Gegner; erst Handschriftenfunde des 20. Jahrhunderts geben die eigene Stimme zurück."
+   },
+   {
+    "jahr": 385,
+    "titel": "Die erste Hinrichtung wegen Ketzerei",
+    "text": "Der spanische Asket Priscillian wird in Trier auf Betreiben von Amtsbrüdern und mit weltlichem Urteil hingerichtet – wegen Zauberei, nachdem der Vorwurf der Häresie allein nicht ausreichte. Ambrosius und Martin von Tours protestieren gegen das Verfahren. Der Fall markiert die Verbindung, die für die nächsten anderthalb Jahrtausende bestimmend wird: Der Vorwurf kommt von der Kirche, die Vollstreckung vom Staat."
+   },
+   {
+    "jahr": 950,
+    "titel": "Die Bogomilen",
+    "text": "In Bulgarien entsteht eine Bewegung, die die sichtbare Welt als Werk eines bösen Schöpfers deutet und Kirche, Sakramente und Herrschaft ablehnt. Sie breitet sich über den Balkan bis nach Italien und Südfrankreich aus. Fast alles, was wir über die Lehre wissen, stammt aus Widerlegungsschriften – ein wiederkehrendes Problem: Die Quellen zu abweichenden Gruppen sind meist von denen geschrieben, die sie beseitigen wollten."
+   },
+   {
+    "jahr": 1022,
+    "titel": "Orléans",
+    "text": "In Orléans lässt König Robert II. eine Gruppe von Klerikern verbrennen, die abweichende Lehren vertreten haben soll – der erste bekannte Ketzerbrand des lateinischen Mittelalters. Die Berichte widersprechen sich in fast allem: in der Lehre, in der Zahl, im Anlass. Deutlich ist nur, dass hier ein Vorgehen erfunden wird, das später Routine wird."
    },
    {
     "jahr": 1090,
@@ -3382,10 +3932,20 @@ const THEMEN = [
     "vertiefung": "kreuzzuege"
    },
    {
+    "jahr": 1260,
+    "titel": "Die Geißler",
+    "text": "Von Perugia aus zieht eine Bewegung durch Italien, deren Anhänger sich öffentlich geißeln, um eine erwartete Katastrophe abzuwenden. Während der Pest 1349 kehrt sie in größerem Umfang zurück, jetzt mit eigenen Liedern, eigener Ordnung und ohne Priester – und vielerorts mit Gewalt gegen Juden. Papst und Obrigkeiten verbieten die Züge, weil eine Buße ohne Kirche gefährlicher schien als keine Buße."
+   },
+   {
     "jahr": 1307,
     "titel": "Die Templer",
     "text": "Philipp IV. von Frankreich lässt die Templer an einem Tag verhaften und der Ketzerei, Sodomie und Götzenverehrung anklagen. Die Geständnisse entstanden unter Folter und wurden widerrufen, sobald die Folter aussetzte. Das 2007 veröffentlichte Chinon-Pergament zeigt, dass Papst Clemens V. die Führung 1308 insgeheim absolvierte. Der König hatte Schulden beim Orden; das Vermögen fiel an die Krone.",
     "vertiefung": "kreuzfahrerstaaten"
+   },
+   {
+    "jahr": 1420,
+    "titel": "Der Berg Tabor",
+    "text": "Radikale Hussiten gründen in Böhmen die Stadt Tábor, schaffen Abgaben und Privateigentum weitgehend ab und erwarten die Wiederkunft Christi. Als sie ausbleibt, wird die Gemeinschaft zur militärischen Macht und schlägt mehrere Kreuzzugsheere. Der Fall zeigt beides: wie eine Endzeiterwartung eine Gesellschaft neu ordnen kann, und wie sie nach dem ausgebliebenen Termin weiterläuft."
    },
    {
     "jahr": 1534,
@@ -3394,14 +3954,39 @@ const THEMEN = [
     "vertiefung": "reformation"
    },
    {
+    "jahr": 1666,
+    "titel": "Sabbatai Zwi",
+    "text": "Ein Gelehrter aus Smyrna wird von einem großen Teil der jüdischen Gemeinden vom Jemen bis Amsterdam als Messias anerkannt; Handel und Alltag geraten in Erwartung des Endes durcheinander. Nach seiner Vorführung beim Sultan tritt er zum Islam über. Ein Teil seiner Anhänger deutet daraufhin den Abfall selbst als Teil der Erlösung – ein Lehrbuchfall dafür, wie Bewegungen eine widerlegte Prophetie verarbeiten."
+   },
+   {
+    "jahr": 1776,
+    "titel": "Die Illuminaten",
+    "text": "Adam Weishaupt gründet in Ingolstadt einen Geheimbund aufklärerischer Beamter und Gelehrter; 1785 wird er in Bayern verboten und löst sich auf. Die Akten sind gut erhalten, der Bund hatte wenige hundert Mitglieder und keine erkennbare Wirkung. Seine zweite, viel größere Karriere führt er als Erklärung für alles Weitere – die Illuminaten sind das Muster der modernen Verschwörungserzählung."
+   },
+   {
     "jahr": 1830,
     "titel": "Der Thuggee-Vorwurf",
     "text": "Die britische Kolonialverwaltung erklärte Reiseüberfälle in Indien zum Werk eines geheimen Würgerkults im Dienst der Göttin Kali und schuf eine eigene Behörde, die tausende Menschen verurteilte — Geständnisse stammten meist von Kronzeugen, die dadurch selbst freikamen. Dass Straßenräuberbanden existierten, ist unbestritten; die neuere Forschung, etwa bei Kim Wagner, hält den religiösen Kult für eine Konstruktion, die Massenverhaftungen rechtfertigte."
    },
    {
+    "jahr": 1875,
+    "titel": "Die Theosophie",
+    "text": "Helena Blavatsky gründet in New York die Theosophische Gesellschaft und beruft sich auf verborgene Meister in Tibet, von denen sie Botschaften empfängt. Eine Untersuchung der Society for Psychical Research erklärte die Botschaften 1885 für gefälscht; die Bewegung wuchs trotzdem weiter. Aus ihrem Umfeld stammen Vorstellungen, die im 20. Jahrhundert weit über sie hinaus wirken – von der Anthroposophie bis zu esoterischen Rassenlehren."
+   },
+   {
     "jahr": 1890,
     "titel": "Der Geistertanz und Wounded Knee",
     "text": "Die Ghost-Dance-Bewegung versprach den Lakota die Wiederkehr der Büffel und das Ende der Fremdherrschaft — eine friedliche religiöse Erneuerung. US-Behörden lasen sie als Aufstandsvorbereitung, verboten sie und töteten am 29. Dezember 1890 bei Wounded Knee rund 250 bis 300 Menschen, überwiegend Unbewaffnete. Ein Lehrstück darüber, was passiert, wenn eine Behörde eine Religion für eine Verschwörung hält."
+   },
+   {
+    "jahr": 1935,
+    "titel": "Der völkische Okkultismus und seine Legende",
+    "text": "Aus Vorkriegszirkeln wie der Ariosophie und der Thule-Gesellschaft stammen Motive, die einzelne NS-Funktionäre aufnahmen; Himmlers Ahnenerbe finanzierte pseudowissenschaftliche Forschung, und die SS pflegte eine eigene Symbolik. Die populäre Vorstellung eines okkult gesteuerten Dritten Reichs geht dagegen auf Nachkriegsbücher zurück und ist von der Forschung als Legende zurückgewiesen. Der Unterschied ist wichtig, weil die Legende die Verbrechen ins Mysteriöse verschiebt, statt sie zu erklären."
+   },
+   {
+    "jahr": 1954,
+    "titel": "Die Prophezeiung, die nicht eintrat",
+    "text": "Eine kleine Gruppe um eine Hausfrau in Chicago erwartet eine Flut und die Rettung durch ein Raumschiff; drei Sozialpsychologen schließen sich verdeckt an und beobachten, was nach dem verstrichenen Termin geschieht. Die Anhänger geben den Glauben nicht auf, sondern deuten ihn um und werben erstmals öffentlich. Aus dieser Studie stammt der Begriff der kognitiven Dissonanz – und die Einsicht, dass Widerlegung eine Gruppe festigen kann."
    },
    {
     "jahr": 1955,
@@ -3419,6 +4004,11 @@ const THEMEN = [
     "text": "In der Siedlung des Peoples Temple in Guyana sterben am 18. November 1978 über 900 Menschen, darunter rund 300 Kinder, an Zyanid in Getränken. Aufnahmen der letzten Stunden sind erhalten und zeigen, dass es kein einheitlicher freier Entschluss war: Es gab Widerspruch, Bewaffnete am Rand und Kindern wurde das Gift verabreicht. Der Ausdruck von einem Kool-Aid trinken stammt hierher und verharmlost, was geschah."
    },
    {
+    "jahr": 1984,
+    "titel": "Der Anschlag von The Dalles",
+    "text": "Mitglieder der Rajneesh-Kommune in Oregon bringen Salmonellen an Salatbars von Restaurants aus, um eine Kommunalwahl zu beeinflussen; über siebenhundert Menschen erkranken. Es ist der größte bioterroristische Anschlag in der Geschichte der USA und wurde erst Jahre später aufgeklärt, weil niemand mit einer solchen Ursache rechnete. Führende Mitglieder wurden verurteilt, der Guru des Ordens verließ das Land."
+   },
+   {
     "jahr": 1993,
     "titel": "Waco",
     "text": "Nach 51 Tagen Belagerung der Branch-Davidians-Siedlung endet der Zugriff des FBI mit einem Brand, in dem 76 Menschen sterben, darunter Kinder. Die Ursache des Feuers ist bis heute strittig; eine Sonderuntersuchung von 2000 kam zum Ergebnis, dass es aus dem Inneren gelegt wurde. Der Fall wirkte doppelt: Er wurde zum Argument gegen Sekten und zum Gründungsmythos amerikanischer Milizen — Timothy McVeigh nannte ihn 1995 als Motiv."
@@ -3432,6 +4022,16 @@ const THEMEN = [
     "jahr": 1995,
     "titel": "Der Giftgasanschlag in Tokio",
     "text": "Aum Shinrikyo versprüht Sarin in der Tokioter U-Bahn: 13 Tote, tausende Verletzte. Die Gruppe hatte Chemiker in eigenen Laboren und war Behörden bekannt, ohne dass eingegriffen wurde. Es ist der erste Fall, in dem eine private Gruppe einen Kampfstoff selbst herstellte und einsetzte, und er veränderte weltweit die Bewertung solcher Gruppen als Sicherheitsrisiko."
+   },
+   {
+    "jahr": 1997,
+    "titel": "Heaven's Gate",
+    "text": "In Kalifornien nehmen sich neununddreißig Mitglieder einer Gruppe das Leben, die den Körper als Fahrzeug betrachtete und den Kometen Hale-Bopp als Abholung deutete. Die Gruppe existierte über zwanzig Jahre, war klein und nach außen unauffällig. Ihre Selbstdarstellung im frühen Web hat den Fall zu einem der ersten gemacht, in denen die Quellen einer Gruppe vollständig online nachlesbar sind."
+   },
+   {
+    "jahr": 2000,
+    "titel": "Kanungu",
+    "text": "In Uganda sterben mehrere hundert Mitglieder der Bewegung zur Wiederherstellung der Zehn Gebote in einer verschlossenen und in Brand gesetzten Kirche; weitere Leichen werden auf Grundstücken der Gruppe gefunden. Die Zahl von etwa siebenhundertachtzig Toten macht es zu einem der größten Fälle dieser Art, und einer der am wenigsten aufgeklärten – die Führung blieb verschwunden. Ausgelöst hatte die Zuspitzung ein verstrichenes Weltende zur Jahrtausendwende."
    },
    {
     "jahr": 2004,
@@ -3485,6 +4085,11 @@ const THEMEN = [
     "text": "Der Marschall von Frankreich und Waffengefährte Jeanne d'Arcs wird der Ermordung von Kindern angeklagt, gesteht und wird hingerichtet. Der Prozess wurde von Herzog Johann V. geführt, der bei ihm hoch verschuldet war und dessen Güter erhielt; das Geständnis erfolgte unter Androhung der Folter und der Exkommunikation. Ein Teil der Forschung hält die Taten für erwiesen, ein anderer den Prozess für konstruiert — die Akten erlauben beides."
    },
    {
+    "jahr": 1560,
+    "titel": "Der Mord in der Flugschrift",
+    "text": "Mit dem billigen Einblattdruck entsteht ein eigenes Genre: die Neue Zeitung über eine schreckliche Mordtat, mit Holzschnitt, Reimen und moralischer Nutzanwendung. Diese Blätter sind oft die einzige Überlieferung eines Falls – und sie sind keine Berichte, sondern Ware. Ort, Zahl und Ablauf wurden dem Effekt angepasst; nachprüfbar ist meist nur, dass ein Verfahren stattfand."
+   },
+   {
     "jahr": 1580,
     "titel": "Peter Stumpp und der Werwolfprozess",
     "text": "In Bedburg bei Köln wird ein Bauer hingerichtet, nachdem er unter Folter gestanden hatte, als Werwolf sechzehn Menschen getötet zu haben. Der Fall ist ein Beispiel dafür, wie Tötungsdelikte im Rahmen des damaligen Weltbilds erklärt wurden: nicht als Verbrechen eines Menschen, sondern als Wirken des Teufels. Was tatsächlich geschah, ist aus einem Foltergeständnis nicht zu erschließen.",
@@ -3497,9 +4102,19 @@ const THEMEN = [
     "vertiefung": "hexenverfolgung"
    },
    {
+    "jahr": 1700,
+    "titel": "Sawney Bean, eine Erfindung",
+    "text": "Die Geschichte einer schottischen Höhlenfamilie, die über Jahrzehnte Reisende getötet und gegessen haben soll, steht in populären Verbrechenssammlungen des 18. Jahrhunderts. Es gibt dazu keine Gerichtsakte, keinen Zeitungsbericht, keine zeitgenössische Erwähnung. Der Fall gehört in diesen Abschnitt, weil er zeigt, was ohne Akten passiert: Der Schrecken wächst weiter, solange ihn niemand prüfen kann."
+   },
+   {
     "jahr": 1751,
     "titel": "Zeitungen entdecken das Verbrechen",
     "text": "Mit billigen Druckschriften und Flugblättern entsteht ein Markt für Hinrichtungsberichte, Geständnisse und Moritaten — oft mit erfundenen Details. Diese Broschüren sind für viele frühe Fälle unsere Hauptquelle, und sie waren nie zur Aufklärung, sondern zum Verkauf geschrieben. Wer historische Kriminalfälle liest, liest fast immer diese Schicht mit."
+   },
+   {
+    "jahr": 1811,
+    "titel": "Die Morde an der Ratcliffe Highway",
+    "text": "Zwei Überfälle mit sieben Toten versetzen London in Panik; die Aufklärung liegt bei mehreren nebeneinander arbeitenden Wachinstanzen ohne gemeinsame Akte. Ein Verdächtiger erhängt sich in Haft, der Fall gilt damit als erledigt, ohne verhandelt zu werden. Die Empörung über das Durcheinander ist ein Argument in der Debatte, die achtzehn Jahre später zur Metropolitan Police führt."
    },
    {
     "jahr": 1828,
@@ -3507,9 +4122,24 @@ const THEMEN = [
     "text": "In Edinburgh töten zwei Männer sechzehn Menschen und verkaufen die Leichen an die Anatomie, die für den Unterricht auf Nachschub angewiesen war und nicht nach Herkunft fragte. Hare wurde Kronzeuge und kam frei, Burke wurde gehängt und öffentlich seziert; sein Skelett ist noch heute in Edinburgh ausgestellt. Der Fall führte 1832 zum Anatomy Act, der die legale Versorgung regelte — Kriminalität als Folge einer Marktlücke."
    },
    {
+    "jahr": 1835,
+    "titel": "Die Kugel und die Gussform",
+    "text": "Der Londoner Ermittler Henry Goddard vergleicht eine Kugel aus einem Tatort mit der Gussform des Verdächtigen und findet denselben Materialfehler in beiden. Es ist einer der ersten Fälle, in denen ein physischer Spurenvergleich ein Geständnis erzwingt. Die Schussspurenkunde als Fach entsteht erst neunzig Jahre später – hier ist es die Beobachtung eines Einzelnen."
+   },
+   {
+    "jahr": 1841,
+    "titel": "Mary Rogers und die Zeitung als Ermittler",
+    "text": "Der Tod einer New Yorker Verkäuferin wird von konkurrierenden Blättern über Monate ausgebreitet, mit eigenen Theorien, erfundenen Zeugen und Belohnungsaufrufen. Edgar Allan Poe verarbeitet den Fall in einer Erzählung und beansprucht, ihn gelöst zu haben. Aufgeklärt wurde er nie; was bleibt, ist das Muster der Presseermittlung, das bis heute funktioniert."
+   },
+   {
     "jahr": 1849,
     "titel": "Die Post macht Fahndung möglich",
     "text": "Der Mörder John Tawell wird 1845 gefasst, weil seine Beschreibung dem Zug per Telegraf vorauseilte — der erste Fall dieser Art. Mit Telegraf, Eisenbahn und Fotografie entsteht die technische Grundlage überörtlicher Fahndung. Davor war Weiterziehen die zuverlässigste Verteidigung."
+   },
+   {
+    "jahr": 1860,
+    "titel": "Road Hill House",
+    "text": "Nach dem Mord an einem Kind in einem Landhaus schickt Scotland Yard den Inspektor Jonathan Whicher, der die Familie selbst verdächtigt – und dafür öffentlich zerrissen wird. Fünf Jahre später gesteht die Halbschwester des Kindes. Der Fall macht den Detektiv zur öffentlichen Figur und liefert das Muster für den Kriminalroman: geschlossenes Haus, begrenzter Personenkreis, ein Fachmann von außen."
    },
    {
     "jahr": 1888,
@@ -3518,9 +4148,19 @@ const THEMEN = [
     "vertiefung": "industrielle-revolution"
    },
    {
+    "jahr": 1890,
+    "titel": "Der Tatort wird fotografiert",
+    "text": "Alphonse Bertillon führt in Paris die metrische Tatortfotografie ein: festgelegte Kamerahöhe, Maßstab im Bild, Aufnahme von oben. Damit wird ein Tatort nachträglich vermessbar, auch wenn er längst geräumt ist. Zuvor gab es Skizzen und Erinnerungen – ab jetzt kann ein Gericht sich das ansehen, was der Ermittler gesehen hat."
+   },
+   {
     "jahr": 1893,
     "titel": "Das Mordschloss, das es nicht gab",
     "text": "H. H. Holmes wurde in Chicago für einen Mord hingerichtet und gestand nach wechselnden Angaben 27 weitere, von denen mehrere Personen betrafen, die nachweislich lebten. Das berühmte Hotel mit Gaskammern, Rutschen und Verbrennungsofen stammt aus Zeitungsberichten von 1895 und aus einem Bestseller von 2003; bauliche Belege dafür fehlen. Nachweisbar ist ein Versicherungsbetrüger, der mindestens vier Menschen tötete — schlimm genug, aber eine andere Geschichte."
+   },
+   {
+    "jahr": 1893,
+    "titel": "Das erste Handbuch der Kriminalistik",
+    "text": "Der Grazer Untersuchungsrichter Hans Gross veröffentlicht ein Handbuch, das Spurensicherung, Vernehmung, Sachverständige und Aktenführung zusammen behandelt und den Begriff Kriminalistik prägt. Seine Grundregel: Der Ermittler soll nicht vom Verdacht ausgehen und Spuren suchen, sondern von den Spuren ausgehen. Das Buch wird in ganz Europa übersetzt und ist der Grund, dass die Verfahren der folgenden Jahrzehnte einander so ähnlich sehen."
    },
    {
     "jahr": 1896,
@@ -3528,9 +4168,29 @@ const THEMEN = [
     "text": "Die amerikanische Krankenpflegerin gestand 31 Tötungen mit Morphin und Atropin. Der Fall gehört zu den ersten, in denen erkannt wurde, dass Pflegeberufe Zugang und Gelegenheit bieten und dass Sterbefälle dort selten hinterfragt werden. Die Konsequenzen — Dokumentationspflichten, Kontrolle von Betäubungsmitteln, Meldewege bei Häufungen — wurden erst im 20. Jahrhundert gezogen."
    },
    {
+    "jahr": 1905,
+    "titel": "Ein Fingerabdruck trägt ein Todesurteil",
+    "text": "Im Londoner Stadtteil Deptford werden zwei Brüder wegen eines Doppelmordes verurteilt, im Wesentlichen aufgrund eines Daumenabdrucks auf einer Geldkassette. Die Verteidigung ließ einen Sachverständigen aufbieten, der das Verfahren für unzuverlässig hielt; die Jury folgte ihm nicht. Es ist der erste Mordprozess, in dem ein Fingerabdruck den Ausschlag gibt – und der Anfang der Debatte, wie viel ein einzelner Abdruck beweist."
+   },
+   {
+    "jahr": 1908,
+    "titel": "Belle Gunness und die Leiche ohne Kopf",
+    "text": "Auf einer Farm in Indiana werden nach einem Brand die Überreste mehrerer Männer gefunden, die über Heiratsanzeigen dorthin gekommen waren; eine kopflose Frauenleiche im Haus wurde als die Farmbesitzerin identifiziert, war aber kleiner und leichter als sie. Ob Belle Gunness starb oder verschwand, ist bis heute offen; eine DNA-Untersuchung 2008 brachte kein eindeutiges Ergebnis. Der Fall zeigt, wie sehr die Identifizierung von Leichen bis zur Zahnmedizin und Genetik Glaubenssache blieb."
+   },
+   {
+    "jahr": 1910,
+    "titel": "Locard und die Spur",
+    "text": "Edmond Locard richtet in Lyon ein polizeiliches Labor ein und formuliert den Grundsatz, der später seinen Namen trägt: Jeder Kontakt hinterlässt eine Spur in beide Richtungen. Aus dieser Annahme folgt die Praxis, Staub, Fasern und Erde zu sammeln, statt nur Zeugen zu befragen. Der Satz ist eine Arbeitshypothese, kein Naturgesetz – aber er hat die Ermittlungsarbeit umgebaut."
+   },
+   {
     "jahr": 1913,
     "titel": "Die Mordkommission entsteht",
     "text": "In Berlin und anderen Großstädten werden feste Kommissionen für Tötungsdelikte eingerichtet, mit Tatortsicherung, Fotografie, Spurenkunde und Aktenvergleich. Erst damit wird sichtbar, was vorher unsichtbar war: Ähnlichkeiten zwischen Fällen an verschiedenen Orten."
+   },
+   {
+    "jahr": 1924,
+    "titel": "Der Gutachter im Gerichtssaal",
+    "text": "Im Chicagoer Prozess gegen Nathan Leopold und Richard Loeb, die ein Kind ohne Motiv getötet hatten, lässt der Verteidiger Clarence Darrow psychiatrische Sachverständige über die Herkunft der Tat aussagen und erreicht damit lebenslange Haft statt Todesstrafe. Der Prozess ist ein Wendepunkt für die Rolle des Gutachters: Nicht mehr nur die Frage der Zurechnungsfähigkeit, sondern die Erklärung der Person wird verhandelt. Ob das Gericht dafür der richtige Ort ist, wird seit damals gestritten."
    },
    {
     "jahr": 1925,
@@ -3541,6 +4201,21 @@ const THEMEN = [
     "jahr": 1930,
     "titel": "Peter Kürten und die Anfänge der Fallanalyse",
     "text": "Der Düsseldorfer Fall führte zu einer der ersten systematischen Auswertungen von Tatmerkmalen über mehrere Fälle hinweg und zu einer Massenfahndung mit über einer Million überprüften Hinweisen. Die Ermittlungen scheiterten lange an fehlendem Abgleich zwischen Behörden — dieselbe Lücke, die später bei anderen Fällen wiederkehrte."
+   },
+   {
+    "jahr": 1935,
+    "titel": "Der Fall Ruxton",
+    "text": "In Schottland werden verstreute Leichenteile gefunden, denen Finger, Zähne und Gesichtszüge entfernt worden waren, um eine Identifizierung zu verhindern. Anatomen der Universitäten Edinburgh und Glasgow rekonstruieren die Körper und legen Fotografien der Vermissten über die Schädel. Die Verurteilung Buck Ruxtons gilt als Geburt der forensischen Anthropologie in Europa – ausgerechnet in einem Fall, der auf Unidentifizierbarkeit angelegt war."
+   },
+   {
+    "jahr": 1948,
+    "titel": "Zweiundvierzigtausend Abdrücke",
+    "text": "Nach dem Mord an einem Kind im Krankenhaus von Blackburn nimmt die Polizei die Fingerabdrücke praktisch aller erwachsenen Männer der Stadt und findet nach Monaten eine Übereinstimmung. Es ist die erste Massenerfassung dieser Art und der Vorläufer der späteren DNA-Reihenuntersuchungen. Die Abdrücke wurden nach dem Verfahren vernichtet – eine Zusage, die für die Akzeptanz entscheidend war und bei heutigen Datenbanken so nicht mehr gilt."
+   },
+   {
+    "jahr": 1966,
+    "titel": "Der Freispruch nach der Hinrichtung",
+    "text": "Timothy Evans wurde 1950 wegen des Mordes an Frau und Kind gehängt; im Haus lebte John Christie, der drei Jahre später als vielfacher Mörder überführt wurde und dessen Aussage Evans belastet hatte. 1966 wird Evans posthum begnadigt. Der Fall ist das wichtigste einzelne Argument in der britischen Debatte, die 1965 zur Abschaffung der Todesstrafe führte."
    },
    {
     "jahr": 1972,
