@@ -718,7 +718,7 @@ const MYSTERIEN = [
    {
     "these": "Ein kleines Schneebrett löste sich über dem Zelt",
     "dafuer": "Die Gruppe hatte das Zelt in einen Hang mit rund 28 Grad Neigung gegraben, Wind lud dort Schnee ab. Johan Gaume (EPFL) und Alexander Puzrin (ETH Zürich) zeigten 2021 in Communications Earth & Environment mit Modellen und Crashtest-Daten, dass schon eine kleine Schneeplatte das Zelt eindrücken und solche Verletzungen verursachen kann, auch mit Verzögerung nach dem Hangeinschnitt.",
-    "dagegen": "Die Suchtrupps berichteten 1959 von keinen Lawinenspuren, und der Hang gilt vielen Ortskundigen als zu flach. Die Verfasser erklären das mit Sturm und Neuschnee in den drei Wochen bis zur Entdeckung."
+    "dagegen": "Die Suchtrupps berichteten 1959 von keinen Lawinenspuren, und der Hang gilt vielen Ortskundigen als zu flach. Die Verfasser erklären das mit Sturm und Neuschnee in den drei Wochen bis zur Entdeckung; bei Folgeexpeditionen dokumentierten sie 2022 mehrere Schneebretter an einem Osthang keine drei Kilometer vom Zeltplatz."
    },
    {
     "these": "Ein katabatischer Fallwind oder Sturm vertrieb die Gruppe",
@@ -831,7 +831,7 @@ const MYSTERIEN = [
     "dagegen": "Keine dieser Aussagen ließ sich zweifelsfrei bestätigen; manche widersprechen einander."
    }
   ],
-  "forschungsstand": "Die schwedische Steuerbehörde erklärte Wallenberg 2016 auf Antrag der Familie formell für tot, mit dem fiktiven Todesdatum 31. Juli 1952. Historiker wie Johan Matz untersuchen die sowjetische Bürokratie hinter dem Fall; zentrale Bestände der Geheimdienstarchive bleiben für Forscher gesperrt. Die Frage nach dem Motiv – Spionageverdacht, Verbindungen zum US-Geheimdienst OSS, ein mögliches Austauschobjekt – ist offen.",
+  "forschungsstand": "Die schwedische Steuerbehörde erklärte Wallenberg 2016 auf Antrag der Familie formell für tot, mit dem fiktiven Todesdatum 31. Juli 1952. Historiker wie Johan Matz untersuchen die sowjetische Bürokratie hinter dem Fall; zentrale Bestände der russischen Geheimdienstarchive bleiben für Forscher gesperrt. Im August 2026 machte das schwedische Außenministerium rund 71.000 Seiten seiner eigenen Wallenberg-Akten in einer öffentlichen Datenbank zugänglich; neue Erkenntnisse zum Schicksal enthielt die Freigabe nicht. Die Frage nach dem Motiv – Spionageverdacht, Verbindungen zum US-Geheimdienst OSS, ein mögliches Austauschobjekt – ist offen.",
   "abgrenzung": "Wallenberg ist vor allem als Retter bekannt, und das zu Recht. Die Zahlen, wie viele Menschen er rettete, werden in populären Darstellungen oft überhöht; Historiker betonen, dass er Teil einer größeren Hilfsaktion neutraler Diplomaten in Budapest war.",
   "quellen": [
    "Encyclopaedia Britannica: Raoul Wallenberg",
@@ -934,7 +934,7 @@ const MYSTERIEN = [
     "dagegen": "Warbeck gestand nach seiner Gefangennahme 1497, ein Hochstapler aus Tournai zu sein. Die neuen Dokumente sind in der Fachwelt umstritten, ihre Deutung hängt an einzelnen, mehrdeutigen Formulierungen."
    }
   ],
-  "forschungsstand": "Die Mehrheit der Historiker hält einen Tod der Prinzen 1483 unter Richard III. für am wahrscheinlichsten, beweisen lässt er sich nicht. Nach dem Fund von Richards Skelett 2012 in Leicester und seiner Identifizierung 2013 wurde gefordert, auch die Knochen in Westminster Abbey genetisch zu untersuchen; die Krone hat das bisher nicht genehmigt. Selbst ein Treffer würde den Täter nicht benennen.",
+  "forschungsstand": "Die Mehrheit der Historiker hält einen Tod der Prinzen 1483 unter Richard III. für am wahrscheinlichsten, beweisen lässt er sich nicht. Nach dem Fund von Richards Skelett 2012 in Leicester und seiner Identifizierung 2013 wurde gefordert, auch die Knochen in Westminster Abbey genetisch zu untersuchen; die Abtei hat das mit Rückendeckung des Königshauses bisher abgelehnt (Stand: Oktober 2026). Selbst ein Treffer würde den Täter nicht benennen.",
   "abgrenzung": "Shakespeares Richard III. hat das Bild des buckligen Kindermörders geprägt. Gegen dieses Bild kämpfen seit Langem die Anhänger der Richard III Society. Zwischen Tudor-Propaganda und Ehrenrettung liegt die nüchterne Lage: ein starkes Motiv, eine dichte Indizienkette, kein Beweis.",
   "quellen": [
    "Encyclopaedia Britannica: Princes in the Tower; Edward V",
@@ -965,7 +965,7 @@ const MYSTERIEN = [
     "dagegen": "Keiner der Verdächtigen ließ sich überführen; DNA-Spuren an Coopers zurückgelassener Krawatte führten bisher zu niemandem, und McCoy passte nach Aussagen der Zeugen nicht zur Beschreibung."
    }
   ],
-  "forschungsstand": "Das FBI stellte die aktiven Ermittlungen im Juli 2016 ein, ohne den Fall abzuschließen; Hinweise zu Fallschirm oder Geld werden weiter geprüft. Private Gruppen werten bis heute Partikel von der Krawatte aus, die auf ein Arbeitsumfeld mit Titan und seltenen Metallen deuten. Ein belastbarer Durchbruch ist nicht bekannt.",
+  "forschungsstand": "Das FBI stellte die aktiven Ermittlungen im Juli 2016 ein, ohne den Fall abzuschließen; Hinweise zu Fallschirm oder Geld werden weiter geprüft. Private Gruppen werten bis heute Partikel von der Krawatte aus, die auf ein Arbeitsumfeld mit Titan und seltenen Metallen deuten. Einen 2022 auf dem Grundstück der Familie von Richard McCoy gefundenen Fallschirm stellte das FBI 2024 sicher und gab ihn Ende 2025 ohne veröffentlichtes Ergebnis zurück. Ein belastbarer Durchbruch ist nicht bekannt (Stand: Oktober 2026).",
   "abgrenzung": "Cooper wurde in den USA zum Volkshelden, der eine Fluggesellschaft ausraubte und verschwand. Es war ein Verbrechen mit Bombendrohung gegen Passagiere und Besatzung, und sein scheinbarer Erfolg löste 1972 eine Welle von Nachahmungstaten aus. Sie führte unter anderem dazu, dass Hecktreppen an Verkehrsflugzeugen gesichert werden mussten.",
   "quellen": [
    "Federal Bureau of Investigation: D. B. Cooper Hijacking (fbi.gov, History – Famous Cases)",

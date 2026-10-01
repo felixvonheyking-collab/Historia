@@ -553,7 +553,7 @@ const THEMEN = [
    {
     "jahr": 2022,
     "titel": "Die europäische Gaskrise",
-    "text": "Nach dem russischen Angriff auf die Ukraine drosselt Russland seine Gaslieferungen nach Europa; im September 2022 beschädigen Explosionen die Ostseepipelines Nord Stream. Gas- und Strompreise erreichen Rekordhöhen. Deutschland, das gut die Hälfte seines Erdgases aus Russland bezogen hatte, baut binnen Monaten Flüssiggasterminals. Die Bundesanwaltschaft ermittelt gegen mehrere Ukrainer; ob staatliche Stellen beteiligt waren, ist offen (Stand: Oktober 2026). Wie schon 1973 zeigte sich: Energieversorgung ist Außenpolitik.",
+    "text": "Nach dem russischen Angriff auf die Ukraine drosselt Russland seine Gaslieferungen nach Europa; im September 2022 beschädigen Explosionen die Ostseepipelines Nord Stream. Gas- und Strompreise erreichen Rekordhöhen. Deutschland, das gut die Hälfte seines Erdgases aus Russland bezogen hatte, baut binnen Monaten Flüssiggasterminals. 2026 klagte die Bundesanwaltschaft einen Ukrainer an; ob staatliche Stellen beteiligt waren, ist gerichtlich offen (Stand: Oktober 2026). Wie schon 1973 zeigte sich: Energieversorgung ist Außenpolitik.",
     "seit": "2026-10-01"
    }
   ],
@@ -940,7 +940,7 @@ const THEMEN = [
    {
     "jahr": 1315,
     "titel": "Die Große Hungersnot in Europa",
-    "text": "Ab 1315 vernichten mehrere verregnete Sommer die Ernten in Nordeuropa; die Hungersnot dauert bis 1317, Viehseuchen verlängern die Not. Städte wie Ypern verloren nach Schätzungen rund ein Zehntel ihrer Einwohner. Europa war nach zwei Jahrhunderten Bevölkerungswachstum an die Grenze dessen gestoßen, was seine Felder hergaben. Eine Generation später traf die Pest eine Bevölkerung, deren Kindheit vom Hunger geprägt war; ob das ihre Anfälligkeit erhöhte, wird in der Forschung diskutiert.",
+    "text": "Ab 1315 vernichten mehrere verregnete Sommer die Ernten in Nordeuropa; die Hungersnot dauert bis 1317, Viehseuchen verlängern die Not. Städte wie Ypern und Brügge verloren nach Schätzungen fünf bis zehn Prozent ihrer Einwohner. Europa war nach zwei Jahrhunderten Bevölkerungswachstum an die Grenze dessen gestoßen, was seine Felder hergaben. Eine Generation später traf die Pest eine Bevölkerung, deren Kindheit vom Hunger geprägt war; ob das ihre Anfälligkeit erhöhte, wird in der Forschung diskutiert.",
     "seit": "2026-10-01"
    },
    {
@@ -3113,7 +3113,7 @@ const THEMEN = [
    {
     "jahr": 2020,
     "titel": "Der lange Schwanz der Vergangenheit",
-    "text": "Auf Streamingdiensten entfallen in den USA nach Branchenauswertungen inzwischen mehr Abrufe auf ältere Aufnahmen als auf neue; als Grenze gilt meist ein Alter von achtzehn Monaten. Erstmals konkurriert neue Musik dauerhaft mit der gesamten aufgezeichneten Vergangenheit. Empfehlungsalgorithmen bestimmen mit, was gehört wird, und belohnen Stücke, die in den ersten Sekunden fesseln; täglich kommen Zehntausende neue Titel hinzu. Für Musiker bedeutet das Sichtbarkeit ohne Plattenfirma, aber Erlöse von Bruchteilen eines Cents pro Abruf.",
+    "text": "Auf Streamingdiensten entfallen in den USA nach Branchenauswertungen inzwischen mehr Abrufe auf ältere Aufnahmen als auf neue; als Grenze gilt meist ein Alter von achtzehn Monaten. Erstmals konkurriert neue Musik dauerhaft mit der gesamten aufgezeichneten Vergangenheit. Empfehlungsalgorithmen bestimmen mit, was gehört wird, und belohnen Stücke, die in den ersten Sekunden fesseln; täglich kommen rund hunderttausend neue Titel hinzu. Für Musiker bedeutet das Sichtbarkeit ohne Plattenfirma, aber Erlöse von Bruchteilen eines Cents pro Abruf.",
     "seit": "2026-10-01"
    }
   ],
@@ -3472,12 +3472,6 @@ const THEMEN = [
    },
    {
     "jahr": -300000,
-    "titel": "Die Speere von Schöningen",
-    "text": "Im Braunkohletagebau von Schöningen in Niedersachsen wurden zwischen 1994 und 1999 rund zehn hölzerne Waffen geborgen, darunter mehrere bis über zwei Meter lange Wurfspeere, meist aus Fichte, mit dem Schwerpunkt im vorderen Drittel, wie bei modernen Wettkampfspeeren. Dazu kamen Pferdeknochen mit Schnittspuren. Ursprünglich auf rund 400.000 Jahre geschätzt, werden sie heute meist auf etwa 337.000 bis 300.000 Jahre datiert; eine Studie von 2025 schlägt rund 200.000 Jahre vor. Sie belegen planvolle Jagd auf Großwild.",
-    "seit": "2026-10-01"
-   },
-   {
-    "jahr": -300000,
     "titel": "Homo sapiens",
     "text": "Funde aus Jebel Irhoud in Marokko, 2017 neu datiert auf etwa 315.000 Jahre mit einer Spanne von rund 350.000 bis 280.000, verschieben die Entstehung unserer Art um über hunderttausend Jahre nach hinten – und weg von Ostafrika als einzigem Ursprungsort. Die Gesichter wirken modern, die Schädelform ist noch länglicher als heute. Viele Forscher deuten das so, dass Homo sapiens in vernetzten Gruppen über ganz Afrika entstand, nicht an einem Ort. Wie eng diese Gruppen verbunden waren, ist offen.",
     "seit": "2026-10-01"
@@ -3486,6 +3480,12 @@ const THEMEN = [
     "jahr": -250000,
     "titel": "Werkzeug nach Plan",
     "text": "Die Levallois-Technik bearbeitet einen Steinkern so vor, dass sich am Ende Klingen mit vorherbestimmter Form abschlagen lassen. Das setzt voraus, dass mehrere Schritte im Voraus gedacht werden, bevor der erste Schlag fällt. Archäologen sehen darin einen der greifbarsten Hinweise auf planendes Denken, weil sich das Ergebnis nicht durch Ausprobieren erreichen lässt."
+   },
+   {
+    "jahr": -200000,
+    "titel": "Die Speere von Schöningen",
+    "text": "Im Braunkohletagebau von Schöningen in Niedersachsen wurden zwischen 1994 und 1999 rund zehn hölzerne Waffen geborgen, darunter bis über zwei Meter lange Speere, meist aus Fichte, mit dem Schwerpunkt im vorderen Drittel wie bei modernen Wettkampfspeeren, dazu Pferdeknochen mit Schnittspuren. Ihr Alter ist umstritten: Lange galten rund 300.000 Jahre. Eine Studie von 2025 datiert die Fundschicht auf etwa 200.000 Jahre und sieht Neandertaler als Hersteller; das Niedersächsische Landesamt für Denkmalpflege hält an rund 300.000 Jahren fest.",
+    "seit": "2026-10-01"
    },
    {
     "jahr": -176000,
@@ -4990,7 +4990,7 @@ const THEMEN = [
    {
     "jahr": 2007,
     "titel": "Die Straße der Buchhändler",
-    "text": "Die al-Mutanabbi-Straße nahe dem alten Zentrum ist seit Generationen das Viertel der Buchhändler und Drucker; freitags trafen sich hier Schriftsteller und Leser. Im März 2007 tötet eine Autobombe dort Dutzende Menschen und zerstört Läden und das traditionsreiche Schahbandar-Café. Die Straße wurde wiederaufgebaut, 2008 neu eröffnet und gilt seitdem als Zeichen dafür, dass das kulturelle Leben der Stadt die Gewalt überdauert. Schriftsteller in vielen Ländern haben in Lesungen und Gedichtbänden an den Anschlag erinnert.",
+    "text": "Die al-Mutanabbi-Straße nahe dem alten Zentrum ist seit Generationen das Viertel der Buchhändler und Drucker; freitags trafen sich hier Schriftsteller und Leser. Im März 2007 tötet eine Autobombe dort mehr als zwanzig Menschen und zerstört Läden und das traditionsreiche Schahbandar-Café. Die Straße wurde wiederaufgebaut, 2008 neu eröffnet und gilt seitdem als Zeichen dafür, dass das kulturelle Leben der Stadt die Gewalt überdauert. Schriftsteller in vielen Ländern haben in Lesungen und Gedichtbänden an den Anschlag erinnert.",
     "herrschaft": "Republik Irak",
     "seit": "2026-10-01"
    },
@@ -8648,7 +8648,7 @@ const THEMEN = [
    {
     "jahr": 1923,
     "titel": "Das Große Kantō-Erdbeben",
-    "text": "Um 11:58 Uhr am 1. September 1923 bebt die Erde unter Tokio und Yokohama. Weil zur Mittagszeit in Holzhäusern gekocht wurde, entstehen zahllose Brände; allein auf einem Platz, auf den sich Zehntausende geflüchtet hatten, sterben in einem Feuersturm etwa 38.000 Menschen. Neuere Schätzungen nennen insgesamt rund 105.000 Tote. Nach Gerüchten, Koreaner vergifteten Brunnen, ermordeten Bürgerwehren, teils mit Beteiligung von Polizei und Militär, zahlreiche Koreaner. Amtliche Angaben nannten damals rund 230 Opfer, viele Historiker schätzen mehrere Tausend, häufig genannt werden etwa 6.000. Japan verschärfte 1924 seine Bauvorschriften um Erdbebenlasten; der 1. September ist bis heute Tag der Katastrophenvorsorge.",
+    "text": "Um 11:58 Uhr am 1. September 1923 bebt die Erde unter Tokio und Yokohama. Weil zur Mittagszeit in Holzhäusern gekocht wurde, entstehen zahllose Brände; allein auf einem Platz, auf den sich Zehntausende geflüchtet hatten, sterben in einem Feuersturm etwa 38.000 Menschen. Ältere Angaben lagen bei über 140.000 Toten, eine Neuberechnung der Seismologen Moroi und Takemura (2004) kommt auf rund 105.000. Nach Gerüchten, Koreaner vergifteten Brunnen, ermordeten Bürgerwehren, teils mit Beteiligung von Polizei und Militär, zahlreiche Koreaner. Amtliche Angaben nannten damals rund 230 Opfer, viele Historiker schätzen mehrere Tausend, häufig genannt werden etwa 6.000. Japan verschärfte 1924 seine Bauvorschriften um Erdbebenlasten; der 1. September ist bis heute Tag der Katastrophenvorsorge.",
     "seit": "2026-10-01"
    },
    {
@@ -8739,7 +8739,7 @@ const THEMEN = [
    {
     "jahr": 1984,
     "titel": "Bhopal",
-    "text": "In der Nacht zum 3. Dezember 1984 entweichen aus einem Tank der Pestizidfabrik von Union Carbide im indischen Bhopal rund 40 Tonnen Methylisocyanat. Die Regierung des Bundesstaats nannte 3.787 Tote, andere Schätzungen gehen von 8.000 bis 10.000 Toten in den ersten Tagen und deutlich mehr in den Folgejahren aus. Kühlung, Gaswäscher und Fackel, die das Gas hätten abfangen können, waren abgeschaltet oder unzureichend. Das Unternehmen sprach von Sabotage, die Betroffenen von systematischer Vernachlässigung. Der Vergleich von 1989 über 470 Millionen Dollar gilt vielen bis heute als unzureichend.",
+    "text": "In der Nacht zum 3. Dezember 1984 entweichen aus einem Tank der Pestizidfabrik von Union Carbide im indischen Bhopal rund 40 bis 45 Tonnen Methylisocyanat. Die Regierung des Bundesstaats nannte 3.787 Tote, andere Schätzungen gehen von 8.000 bis 10.000 Toten in den ersten Tagen und deutlich mehr in den Folgejahren aus. Kühlung, Gaswäscher und Fackel, die das Gas hätten abfangen können, waren abgeschaltet oder unzureichend. Das Unternehmen sprach von Sabotage, die Betroffenen von systematischer Vernachlässigung. Der Vergleich von 1989 über 470 Millionen Dollar gilt vielen bis heute als unzureichend.",
     "seit": "2026-10-01"
    },
    {
@@ -8812,7 +8812,7 @@ const THEMEN = [
    {
     "jahr": 2020,
     "titel": "Die Explosion im Hafen von Beirut",
-    "text": "Am 4. August 2020 explodieren im Hafen von Beirut etwa 2.750 Tonnen Ammoniumnitrat, die seit 2014 ungesichert in einer Lagerhalle gelegen hatten. Über 220 Menschen sterben, mehr als 6.500 werden verletzt, ganze Stadtviertel werden verwüstet. Behörden und Spitzenpolitiker waren mehrfach gewarnt worden. Die Ermittlungen wurden durch Klagen gegen die Untersuchungsrichter jahrelang blockiert. Richter Tarek Bitar schloss seine Ermittlungen im März 2026 ab, im September legte die Generalstaatsanwaltschaft ihre Stellungnahme vor. Stand: Oktober 2026 steht die Anklageschrift aus; Justizminister Adel Nassar erwartete sie im Oktober, andere Berichte nennen das Jahresende.",
+    "text": "Am 4. August 2020 explodieren im Hafen von Beirut etwa 2.750 Tonnen Ammoniumnitrat, die seit 2014 ungesichert in einer Lagerhalle gelegen hatten. Über 220 Menschen sterben, mehr als 6.500 werden verletzt, ganze Stadtviertel werden verwüstet. Behörden und Spitzenpolitiker waren mehrfach gewarnt worden. Die Ermittlungen wurden durch Klagen gegen die Untersuchungsrichter jahrelang blockiert. Richter Tarek Bitar schloss seine Ermittlungen im März 2026 ab, im September legte die Generalstaatsanwaltschaft ihre Stellungnahme vor. Stand: Oktober 2026 steht die Anklageschrift aus; Justizminister Adel Nassar hatte sie Anfang September für Oktober angekündigt, Ende September äußerte er nur noch die Hoffnung auf eine Anklage bis zum Jahresende.",
     "seit": "2026-10-01"
    },
    {
@@ -8843,7 +8843,7 @@ const THEMEN = [
    "IAEA, INSAG-1 (1986) und INSAG-4 (1991); WHO/IAEA/UNDP: Chernobyl's Legacy, 2005; UNSCEAR-Berichte 2008 und 2011",
    "The National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission, Report, 2012",
    "Estonian Safety Investigation Bureau u. a.: Final Report MV Estonia, Dezember 2025; ERR News, 16.12.2025",
-   "Naharnet, 7.9.2026 (Stand der Beirut-Ermittlungen); France 24, 28.7.2024 (Urteile Derna); beck-aktuell, 18.4.2024 (Einstellung des Verfahrens Ahrweiler); Arab News, 30.3.2026; Naharnet, 14.9.2026; Yeni Şafak, 21.9.2026; Libya Herald, 28.7.2024",
+   "Naharnet, 7.9.2026 (Stand der Beirut-Ermittlungen); LBCI, 30.9.2026 (Justizminister Nassar zur Anklage im Beirut-Verfahren); France 24, 28.7.2024 (Urteile Derna); beck-aktuell, 18.4.2024 (Einstellung des Verfahrens Ahrweiler); Arab News, 30.3.2026; Naharnet, 14.9.2026; Yeni Şafak, 21.9.2026; Libya Herald, 28.7.2024",
    "Amartya Sen: Poverty and Famines, 1981"
   ],
   "literatur": [
@@ -9218,7 +9218,7 @@ const THEMEN = [
    {
     "jahr": 1964,
     "titel": "Andy Warhol und die Brillo-Kiste",
-    "text": "1964 stellt Andy Warhol in New York Holzkisten aus, die mit Siebdruck genau wie Kartons der Seifenmarke Brillo bemalt sind. Wodurch, fragte der Philosoph Arthur Danto im selben Jahr, unterscheidet sich ein Kunstwerk von einem gleich aussehenden Ding? Seine Antwort – durch eine Kunstwelt aus Theorie und Institutionen – wurde zur einflussreichen Kunstdefinition. Warhols Werkstatt hieß Factory, seine Bilder entstanden in Serie. Den Künstler als Marke gibt es seither als Programm.",
+    "text": "1964 stellt Andy Warhol in New York Holzkisten aus, die mit Siebdruck genau wie Kartons der Seifenmarke Brillo bemalt sind. Wodurch, fragte der Philosoph Arthur Danto im selben Jahr, unterscheidet sich ein Kunstwerk von einem gleich aussehenden Ding? Seine Antwort – durch eine Kunstwelt aus Kunsttheorie und Kenntnis der Kunstgeschichte – wurde zur einflussreichen Kunstdefinition. Warhols Werkstatt hieß Factory, seine Bilder entstanden in Serie. Den Künstler als Marke gibt es seither als Programm.",
     "seit": "2026-10-01"
    },
    {
@@ -9629,7 +9629,7 @@ const THEMEN = [
    {
     "jahr": 2012,
     "titel": "CRISPR: Genschere und Patentkrieg",
-    "text": "Im Juni 2012 zeigten Emmanuelle Charpentier und Jennifer Doudna mit ihrem Team, dass sich das bakterielle Abwehrsystem CRISPR-Cas9 als programmierbare Genschere nutzen lässt. Der Litauer Virginijus Šikšnys hatte ähnliche Ergebnisse zuvor bei einer Zeitschrift eingereicht, die sie ablehnte. Feng Zhang am Broad Institute setzte die Methode Anfang 2013 in menschlichen Zellen ein. Im folgenden Patentstreit sprach das US-Patentamt 2022 dem Broad Institute die Priorität für höhere Zellen zu. Den Nobelpreis 2020 erhielten nur Charpentier und Doudna.",
+    "text": "Im Juni 2012 zeigten Emmanuelle Charpentier und Jennifer Doudna mit ihrem Team, dass sich das bakterielle Abwehrsystem CRISPR-Cas9 als programmierbare Genschere nutzen lässt. Ähnliche Ergebnisse des Litauers Virginijus Šikšnys hatte zuvor eine Zeitschrift abgelehnt. Feng Zhang am Broad Institute setzte die Methode Anfang 2013 in menschlichen Zellen ein. Im Patentstreit gab das US-Patentamt 2022 Broad die Priorität für höhere Zellen, 2026 nach Aufhebung durch ein Berufungsgericht erneut. Den Nobelpreis 2020 erhielten nur Charpentier und Doudna.",
     "seit": "2026-10-01"
    }
   ],
