@@ -368,6 +368,7 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
       key: "t" + i, titel: a.titel, text: a.text
     })),
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Folgen", text: eintrag.folgen }),
+    /* @__PURE__ */ React.createElement(DenkerKasten, { art: "vertiefung", id: eintrag.id }),
 
     /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Was strittig ist"),
@@ -549,6 +550,7 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
       ))
     ),
 
+    /* @__PURE__ */ React.createElement(DenkerKasten, { art: "thema", id: eintrag.id }),
     /* @__PURE__ */ React.createElement("div", { className: "mt-6 mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
       /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Was strittig ist"),
       /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, eintrag.strittig)
@@ -1636,6 +1638,7 @@ const MYSTERIEN_STATUS = {
 };
 
 function MysterienDetail({ eintrag, onBack }) {
+  const { istNeu, markiere } = useNeu();
   const st = MYSTERIEN_STATUS[eintrag.status] || MYSTERIEN_STATUS.ungeklaert;
   const Abschnitt = ({ titel, text }) => /* @__PURE__ */ React.createElement("div", { className: "mb-5" },
     /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, titel),
@@ -1653,6 +1656,9 @@ function MysterienDetail({ eintrag, onBack }) {
       /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: st.farbe, borderColor: st.farbe } }, st.label)
     ),
     /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-2" }, eintrag.titel),
+    istNeu("mysterium:" + eintrag.id, eintrag.seit) && /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-3 mb-2" },
+      /* @__PURE__ */ React.createElement(NeuMarke, null),
+      /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("mysterium:" + eintrag.id) })),
     /* @__PURE__ */ React.createElement("div", { className: "mb-4" },
       /* @__PURE__ */ React.createElement(AufDerKarte, { art: "mysterium", kennung: eintrag.id, herkunft: { reiter: "mysterien", eintrag: eintrag.id, label: "Mysterien" } })),
 
@@ -1686,6 +1692,7 @@ function MysterienDetail({ eintrag, onBack }) {
 }
 
 function MysterienTab({ ziel }) {
+  const { istNeu } = useNeu();
   const [offen, setOffen] = useState(null);
   React.useEffect(() => { if (ziel) setOffen(ziel); }, [ziel]);
   const [filter, setFilter] = useState("alle");
@@ -1721,7 +1728,8 @@ function MysterienTab({ ziel }) {
         },
           /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1 flex-wrap" },
             /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, m.zeitraum),
-            /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: st.farbe, borderColor: st.farbe } }, st.label)),
+            /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: st.farbe, borderColor: st.farbe } }, st.label),
+            istNeu("mysterium:" + m.id, m.seit) && /* @__PURE__ */ React.createElement(NeuMarke, null)),
           /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, m.titel),
           /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.raetsel),
           /* @__PURE__ */ React.createElement("span", { className: "mt-2 inline-flex items-center gap-1 text-xs text-[#bd9563]" }, "Ansehen ", /* @__PURE__ */ React.createElement(ChevronRight, { size: 12 }))
@@ -2501,6 +2509,7 @@ function EpochenTab({ ziel }) {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" }, "Sieben Epochen, von der Steinzeit bis zur Gegenwart. W\xE4hle eine Epoche f\xFCr Ereignisse, Pers\xF6nlichkeiten und Nationen im Detail."), /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#bd9563] mb-5 font-mono" }, totalEvents, " Ereignisse \xB7 ", totalFigures, " Pers\xF6nlichkeiten \xB7 ", totalNations, " Nationen & Reiche"), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-4" }, EPOCHS.map((ep2) => /* @__PURE__ */ React.createElement(EpochCard, { key: ep2.id, ep: ep2, onOpen: setOpenId }))));
 }
 function SchluesselmomenteTab({ ziel }) {
+  const { istNeu, markiere } = useNeu();
   const [cat, setCat] = useState("Alle");
   const [suche, setSuche] = useState("");
   useSprungziel(ziel);
@@ -2550,11 +2559,14 @@ function SchluesselmomenteTab({ ziel }) {
           jahr: formatYear(m.year),
           titel: m.title,
           marken: [m.category],
+          zusatz: istNeu("moment:" + ankerName(m.title), m.seit) && /* @__PURE__ */ React.createElement(NeuMarke, null),
           zeile: m.text,
           offenVorgabe: filtered.length === 1,
           kinder: /* @__PURE__ */ React.createElement("div", null,
             /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, m.text),
-            verweise(m))
+            verweise(m),
+            istNeu("moment:" + ankerName(m.title), m.seit) && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
+              /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("moment:" + ankerName(m.title)) })))
         })
       ))
     ),
@@ -2584,6 +2596,15 @@ function alleNeuerungen() {
   const liste = [];
   (typeof KRIEGE !== "undefined" ? KRIEGE : []).forEach((k) => {
     if (k.seit) liste.push({ schluessel: "krieg:" + k.id, art: "Krieg", titel: k.name, reiter: "kriege", ziel: k.id });
+  });
+  SCHLUESSELMOMENTE.forEach((m) => {
+    if (m.seit) liste.push({ schluessel: "moment:" + ankerName(m.title), art: "Schlüsselmoment", titel: m.title, reiter: "schluessel", ziel: ankerName(m.title) });
+  });
+  MYTHEN.forEach((m) => {
+    if (m.seit) liste.push({ schluessel: "mythos:" + ankerName(m.title), art: "Mythos", titel: m.title, reiter: "mythen", ziel: ankerName(m.title) });
+  });
+  MYSTERIEN.forEach((m) => {
+    if (m.seit) liste.push({ schluessel: "mysterium:" + m.id, art: "Mysterium", titel: m.titel, reiter: "mysterien", ziel: m.id });
   });
   THEMEN.forEach((t) => {
     if (t.seit) liste.push({ schluessel: "thema:" + t.id, art: "Querschnitt", titel: t.titel, reiter: "themen", ziel: t.id });
@@ -2633,7 +2654,10 @@ function NeuKasten() {
   const offen = alle.filter((n) => !(n.art === "Station" && neueThemen.has(n.thema)));
   const gruppen = {};
   offen.forEach((n) => {
-    const g = n.art === "Station" ? "Neue Stationen in Querschnitten" : n.art === "Krieg" ? "Neue Kriege" : "Neue Querschnitte";
+    const g = {
+      "Station": "Neue und ausgebaute Stationen in Querschnitten", "Krieg": "Neue Kriege", "Querschnitt": "Neue Querschnitte",
+      "Schlüsselmoment": "Neue Schlüsselmomente", "Mythos": "Neue Mythen und Kuriositäten", "Mysterium": "Neue Mysterien"
+    }[n.art] || "Weiteres";
     (gruppen[g] = gruppen[g] || []).push(n);
   });
   const springe = (n) => { if (SPRINGE) SPRINGE(n.reiter, n.ziel); };
@@ -2765,6 +2789,10 @@ function KriegeTab({ ziel }) {
           offenVorgabe: gefiltert.length === 1 || ziel === k.id,
           kinder: /* @__PURE__ */ React.createElement("div", null,
             /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[17px] text-[#e0b84a] italic leading-relaxed mb-3" }, k.kurz),
+            // Bilder gibt es bisher je Vertiefung; ein Krieg mit Vertiefung
+            // zeigt deren Bild - schon geprueft, mit Lizenz und Unterschrift.
+            (bildFuer("krieg-" + k.id) || (k.vertiefung && bildFuer(k.vertiefung))) && /* @__PURE__ */ React.createElement("div", { className: "mb-3" },
+              /* @__PURE__ */ React.createElement(Abbildung, { bild: bildFuer("krieg-" + k.id) || bildFuer(k.vertiefung) })),
             k.parteien && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-3" },
               k.parteien.map((p, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded border border-[#5c2018] bg-[#4a1015] p-3" },
                 /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[15px] text-[#e0b84a] leading-snug" }, p.seite),
@@ -2776,6 +2804,7 @@ function KriegeTab({ ziel }) {
             /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Folgen", text: k.folgen }),
             /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Opfer", text: k.opfer }),
             /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Was strittig ist", text: k.strittig, hervor: true }),
+            /* @__PURE__ */ React.createElement(DenkerKasten, { art: "krieg", id: k.id }),
             (k.schlachten || []).length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mb-3" },
               /* @__PURE__ */ React.createElement("h4", { className: "font-mono text-[10px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Schlachten in diesem Krieg"),
               /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
@@ -2801,6 +2830,37 @@ function KriegeTab({ ziel }) {
       })),
     mehr
   );
+}
+
+/* =========================================================
+   DENKER DAZU - Bruecke zu Philosophia
+
+   Zu Vertiefungen, Kriegen und Querschnitten die Denker, die das
+   Ereignis praegten, von ihm gepraegt wurden oder es miterlebten.
+   Der Link oeffnet den Denker direkt in Philosophia; dort fuehrt ein
+   Abschnitt "In der Geschichte" zurueck hierher.
+   ========================================================= */
+
+const BEZUG_TEXT = {
+  Wirkung: "prägte das Geschehen", Ausloeser: "wurde davon geprägt", Zeitzeuge: "Zeitzeuge",
+  Einordnung: "zur Einordnung", Gegenposition: "Gegenposition"
+};
+
+function DenkerKasten({ art, id }) {
+  if (typeof VERKNUEPFUNGEN === "undefined") return null;
+  const liste = VERKNUEPFUNGEN.filter((v) => v.art === art && v.id === id);
+  if (!liste.length) return null;
+  return /* @__PURE__ */ React.createElement("div", { "data-denker": "1", className: "mt-5 mb-5 rounded-lg border border-[#5c2018] bg-[#4a1015] p-4" },
+    /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-2" }, "Denker dazu – in Philosophia"),
+    liste.map((v, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: i ? "mt-3 pt-3 border-t border-[#5c2018]" : "" },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap" },
+        /* @__PURE__ */ React.createElement("a", {
+          href: PHILOSOPHIA_URL + "#denker=" + v.philosoph, target: "_blank", rel: "noopener",
+          className: "font-serif text-[17px] text-[#e0b84a] hover:text-[#f0d878] inline-flex items-center gap-1"
+        }, v.name, /* @__PURE__ */ React.createElement(ChevronRight, { size: 13 })),
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#bd9563]" }, v.jahre),
+        /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] border border-[#5c2018] rounded px-1.5 py-0.5" }, BEZUG_TEXT[v.bezug] || v.bezug)),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-1" }, v.satz))));
 }
 
 /* =========================================================
@@ -3028,6 +3088,7 @@ function LaenderTab({ ziel }) {
   );
 }
 function MythenTab({ ziel }) {
+  const { istNeu, markiere } = useNeu();
   const [cat, setCat] = useState("Alle");
   const [suche, setSuche] = useState("");
   useSprungziel(ziel);
@@ -3060,7 +3121,7 @@ function MythenTab({ ziel }) {
       className: `px-2.5 py-1.5 rounded text-xs font-medium border ${typeFilter === t ? "bg-[#5c1a1e] text-[#f0d878] border-[#e0b84a]" : "border-[#5c2018] text-[#c2a06a]"}`
     },
     t
-  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, filtered.slice(0, grenze).map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(m.title), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, m.category)), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#bd9563] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")), mehr);
+  ))), /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-3" }, filtered.slice(0, grenze).map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, "data-anker": ankerName(m.title), className: "rounded-md border border-[#5c2018] bg-[#5c1a1e] p-4" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" }, /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border rounded px-1.5 py-0.5", style: typeStyle(m.type) }, m.type), /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, m.category), istNeu("mythos:" + ankerName(m.title), m.seit) && /* @__PURE__ */ React.createElement(NeuMarke, null), istNeu("mythos:" + ankerName(m.title), m.seit) && /* @__PURE__ */ React.createElement(GelesenKnopf, { text: "als gelesen", onClick: () => markiere("mythos:" + ankerName(m.title)) })), /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1 leading-snug" }, m.title), /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, m.text), m.quelle && /* @__PURE__ */ React.createElement("p", { className: "mt-2 pt-2 border-t border-[#5c2018] text-[11px] text-[#bd9563] leading-snug" }, "Beleg: ", m.quelle))), filtered.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Treffer.")), mehr);
 }
 function PersonenTab() {
   const [query, setQuery] = useState("");
@@ -3516,6 +3577,18 @@ function Historia() {
   const tab = aktuellerBereich.unter.length
     ? (aktuellerBereich.unter.some((u) => u.id === unter) ? unter : aktuellerBereich.unter[0].id)
     : aktuellerBereich.id;
+  // Spruenge von aussen, etwa aus Philosophia: index.html#krieg=<id>.
+  React.useEffect(() => {
+    const lies = () => {
+      const m = /^#(vertiefung|krieg|thema|mysterium)=([a-z0-9-]+)$/.exec(window.location.hash || "");
+      if (!m || !SPRINGE) return;
+      const reiter = { vertiefung: "vertiefungen", krieg: "kriege", thema: "themen", mysterium: "mysterien" }[m[1]];
+      SPRINGE(reiter, m[2], { reiter: "start", label: "Start" });
+    };
+    setTimeout(lies, 0);
+    window.addEventListener("hashchange", lies);
+    return () => window.removeEventListener("hashchange", lies);
+  }, []);
   React.useEffect(() => {
     document.documentElement.style.colorScheme = "dark";
     let meta = document.querySelector('meta[name="color-scheme"]');

@@ -153,33 +153,6 @@ const MYSTERIEN = [
   ]
  },
  {
-  "id": "bernsteinzimmer",
-  "titel": "Das Bernsteinzimmer",
-  "zeitraum": "verschollen seit 1945",
-  "region": "Königsberg / Ostpreußen",
-  "kategorie": "Verschollen",
-  "status": "ungeklaert",
-  "gesichert": "Ein vollständig mit Bernsteinpaneelen ausgekleideter Raum, 1716 von Preußen an Russland geschenkt und im Katharinenpalast bei Sankt Petersburg eingebaut. 1941 von deutschen Truppen abgebaut und nach Königsberg gebracht, dort im Schloss ausgestellt. Ab 1944 verliert sich die Spur.",
-  "raetsel": "Ob das Zimmer bei der Zerstörung Königsbergs verbrannte oder ausgelagert wurde, ist ungeklärt.",
-  "erklaerungen": [
-   {
-    "these": "Es verbrannte 1944/45 in Königsberg",
-    "dafuer": "Bernstein ist leicht entzündlich; das Schloss brannte aus. Dies gilt vielen Fachleuten als die nüchternste Erklärung.",
-    "dagegen": "Eindeutige Reste wurden nie zugeordnet."
-   },
-   {
-    "these": "Es wurde ausgelagert und liegt bis heute verborgen",
-    "dafuer": "Andere Kunstgüter wurden nachweislich in Bergwerke und Bunker gebracht.",
-    "dagegen": "Jahrzehntelange Suchen an zahllosen Orten blieben ergebnislos."
-   }
-  ],
-  "forschungsstand": "Eine Rekonstruktion wurde 2003 im Katharinenpalast eingeweiht. Die Suche nach dem Original gilt vielen als aussichtslos, wird aber immer wieder aufgenommen.",
-  "abgrenzung": "Kaum ein Thema zieht so viele unbelegte Fundmeldungen an. Jede Meldung sollte man daran messen, ob geprüfte Belege vorliegen – bislang lag noch nie einer vor.",
-  "quellen": [
-   "Encyclopaedia Britannica: Amber Room"
-  ]
- },
- {
   "id": "neunte-legion",
   "titel": "Das Ende der Neunten Legion",
   "zeitraum": "2. Jahrhundert",
@@ -731,5 +704,275 @@ const MYSTERIEN = [
    "First Colony Foundation: Site X excavation reports",
    "British Museum: John White, Virginea Pars map, mit dem 2012 entdeckten Flicken"
   ]
+ },
+ {
+  "id": "djatlow-pass",
+  "titel": "Das Unglück am Djatlow-Pass",
+  "zeitraum": "1./2. Februar 1959",
+  "region": "Nördlicher Ural, Russland",
+  "kategorie": "Verschollene Expeditionen",
+  "status": "teilweise",
+  "gesichert": "Neun erfahrene Skiwanderer vom Polytechnischen Institut in Swerdlowsk, geführt vom 23-jährigen Igor Djatlow, schlugen am 1. Februar 1959 ihr Zelt am Osthang des Cholat Sjachl auf. Suchtrupps fanden am 26. Februar das Zelt, von innen aufgeschnitten, daneben Schuhe und Kleidung. Spuren führten anderthalb Kilometer hinab zum Waldrand. Sechs Wanderer waren erfroren, drei hatten schwere Verletzungen an Schädel und Brustkorb; die letzten vier fand man erst im Mai unter Schnee in einer Schlucht.",
+  "raetsel": "Warum verlässt eine geübte Gruppe bei etwa minus 25 bis 30 Grad und Sturm fluchtartig ihr Zelt, halb bekleidet und ohne Schuhe? Und woher stammen die Brüche, die nach Aussage der Gerichtsmediziner einem Autounfall glichen, aber kaum äußere Wunden zeigten? Die sowjetischen Ermittler schlossen den Fall 1959 mit der Formel ab, eine unwiderstehliche Naturgewalt habe die Gruppe getötet.",
+  "erklaerungen": [
+   {
+    "these": "Ein kleines Schneebrett löste sich über dem Zelt",
+    "dafuer": "Die Gruppe hatte das Zelt in einen Hang mit rund 28 Grad Neigung gegraben, Wind lud dort Schnee ab. Johan Gaume (EPFL) und Alexander Puzrin (ETH Zürich) zeigten 2021 in Communications Earth & Environment mit Modellen und Crashtest-Daten, dass schon eine kleine Schneeplatte das Zelt eindrücken und solche Verletzungen verursachen kann, auch mit Verzögerung nach dem Hangeinschnitt.",
+    "dagegen": "Die Suchtrupps berichteten 1959 von keinen Lawinenspuren, und der Hang gilt vielen Ortskundigen als zu flach. Die Verfasser erklären das mit Sturm und Neuschnee in den drei Wochen bis zur Entdeckung."
+   },
+   {
+    "these": "Ein katabatischer Fallwind oder Sturm vertrieb die Gruppe",
+    "dafuer": "Rekonstruktionen der Wetterlage ergeben für die Nacht Orkanböen. Eine schwedisch-russische Expedition verwies 2019 auf ein ähnliches Unglück 1978 am Anaris-Berg in Schweden.",
+    "dagegen": "Ein Wind, der Menschen vertreibt, hätte vermutlich auch das Zelt fortgerissen; die schweren Brüche erklärt er nur über Stürze in die Schlucht."
+   },
+   {
+    "these": "Militärische Tests, Geheimwaffen oder ein Überfall",
+    "dafuer": "Auf einigen Kleidungsstücken fanden sich Spuren von Radioaktivität, Zeugen berichteten von Leuchterscheinungen am Himmel, und Akten blieben jahrzehntelang unter Verschluss.",
+    "dagegen": "Die gemessene Strahlung war gering und betraf nur einzelne Kleidungsstücke; eine Strahlenwaffe hätte alle getroffen. Die Lichter sahen Wanderer rund 50 Kilometer entfernt, mit dem Zeltplatz lassen sie sich nicht verbinden. Fremde Spuren am Lagerplatz gab es nicht, und Geheimhaltung war in der UdSSR auch bei gewöhnlichen Unglücken üblich."
+   }
+  ],
+  "forschungsstand": "2019 rollte die russische Generalstaatsanwaltschaft den Fall neu auf und kam 2020 zu dem Ergebnis, ein Schneebrett habe die Gruppe in schlechter Sicht aus dem Zelt getrieben; gestorben seien die Wanderer an Unterkühlung. Die Studie von Gaume und Puzrin stützt diese Lesart physikalisch. Viele Fachleute halten das Unglück damit für weitgehend erklärt, Angehörige und manche Bergsteiger widersprechen bis heute.",
+  "abgrenzung": "Der Fall ist ein Lieblingsthema für Spekulationen über Ufos, Yetis und Geheimprojekte. Die Fakten verlangen nichts davon: Fehlende Augen und Zunge bei Toten, die monatelang in einem Bach lagen, sind die Folge natürlicher Verwesung, nicht eines Verbrechens.",
+  "quellen": [
+   "Johan Gaume, Alexander M. Puzrin: Mechanisms of slab avalanche release and impact in the Dyatlov Pass incident in 1959, Communications Earth & Environment (Januar 2021)",
+   "ETH Zürich und EPFL, Medienmitteilungen zur Studie, Januar 2021",
+   "BBC News: Bericht zur Wiederaufnahme der Ermittlungen (Februar 2019); Reuters: Bericht über das Ergebnis der russischen Staatsanwaltschaft (Juli 2020)"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "kaspar-hauser",
+  "titel": "Wer war Kaspar Hauser?",
+  "zeitraum": "1828–1833",
+  "region": "Nürnberg und Ansbach, Bayern",
+  "kategorie": "Verschollene Menschen",
+  "status": "ungeklaert",
+  "gesichert": "Am 26. Mai 1828 tauchte in Nürnberg ein etwa sechzehnjähriger Junge auf, der kaum sprechen konnte und zwei Briefe bei sich trug; später schrieb er seinen Namen: Kaspar Hauser. Er gab an, jahrelang in einem dunklen Verlies bei Wasser und Brot gelebt zu haben. Der Jurist Anselm von Feuerbach nahm sich seiner an, der britische Lord Stanhope übernahm 1831 die Pflegschaft. Am 14. Dezember 1833 kam Hauser in Ansbach mit einer Stichwunde in der Brust nach Hause und starb drei Tage später.",
+  "raetsel": "Woher kam der Findling, und wer hielt ihn gefangen – wenn überhaupt? Schon zu Lebzeiten hieß es, er sei der 1812 geborene Erbprinz von Baden, den man gegen ein sterbendes Kind vertauscht habe. Ebenso offen ist, ob er 1833 ermordet wurde oder sich die Wunde selbst beibrachte.",
+  "erklaerungen": [
+   {
+    "these": "Der vertauschte Erbprinz von Baden",
+    "dafuer": "Der badische Thronfolger starb 1812 nach wenigen Wochen, ohne dass die Mutter das tote Kind sah; das Haus Baden hatte danach ein Thronfolgeproblem. Anhänger der These sahen in Hausers Gesichtszügen Ähnlichkeiten mit der Familie.",
+    "dagegen": "Dokumente über Nottaufe, Obduktion und Bestattung des Prinzen belegen dessen Tod. Genanalysen von 1996 und eine umfassende Studie von 2024 zeigten, dass Hausers mitochondriale DNA nicht zur weiblichen Linie des Hauses Baden passt."
+   },
+   {
+    "these": "Ein Hochstapler, der seine Geschichte erfand",
+    "dafuer": "Mehrere Betreuer warfen ihm Lügen vor, der angebliche Anschlag von 1829 wirkt inszeniert, und das Ansbacher Gericht bezweifelte 1834, dass an ihm überhaupt ein Verbrechen begangen worden war; viele Forscher sehen in der Wunde von 1833 eine Selbstverletzung, die zu tief geriet. Impfnarben an seinem Arm deuten auf eine Pockenimpfung, die in Bayern seit 1807 Pflicht war und Kontakt zu anderen Menschen voraussetzt.",
+    "dagegen": "Seine Unbeholfenheit beim Gehen, Sprechen und Sehen beschrieben 1828 viele Beobachter unabhängig voneinander; sie ganz zu spielen, hätte ein erstaunliches Talent verlangt."
+   },
+   {
+    "these": "Ein vernachlässigtes oder verstecktes Kind aus einfachen Verhältnissen",
+    "dafuer": "Dialekt und Impfnarbe sprechen für eine Herkunft aus Bayern oder Österreich; ein uneheliches, versteckt gehaltenes Kind ist für die Zeit nicht ungewöhnlich.",
+    "dagegen": "Eine konkrete Familie ließ sich bisher nicht belegen; die Gleichsetzung mit einem Tiroler Findelkind gilt als nicht haltbar."
+   }
+  ],
+  "forschungsstand": "Die Prinzenlegende gilt seit der 2024 veröffentlichten Studie von Teams aus Innsbruck (Walther Parson), Münster, München, Freiburg und weiteren Instituten als widerlegt: Alle Hauser zugeschriebenen Proben zeigen denselben mitochondrialen Typ, der nicht zur badischen Linie passt. Wer Hauser tatsächlich war und wie er starb, bleibt offen.",
+  "abgrenzung": "Hauser wurde zum Symbol für das ausgesetzte, um seine Kindheit betrogene Kind und zum Stoff für Romane und Filme. Mit dem historischen Fall hat diese Deutung nur bedingt zu tun – sie sagt mehr über das 19. und 20. Jahrhundert als über den jungen Mann aus Nürnberg.",
+  "quellen": [
+   "Walther Parson u. a.: Studie zur mitochondrialen DNA der Kaspar Hauser zugeschriebenen Proben, iScience (2024)",
+   "Encyclopaedia Britannica: Kaspar Hauser",
+   "Der Spiegel: Bericht über die Genanalyse von LMU München und Forensic Science Service (November 1996)"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "sanxingdui",
+  "titel": "Die Bronzen von Sanxingdui",
+  "zeitraum": "ca. 12.–11. Jahrhundert v. Chr.",
+  "region": "Sichuan, Südwestchina",
+  "kategorie": "Kunst & Religion",
+  "status": "ungeklaert",
+  "gesichert": "1986 stießen Arbeiter bei Guanghan nahe Chengdu auf zwei Gruben voller Bronzen, Gold, Jade und Elfenbein; erste Funde aus der Gegend gab es schon 1927. Ausgrabungen zwischen 2020 und 2022 legten sechs weitere Gruben frei, darunter eine Goldmaske. Die Radiokarbondaten weisen auf das 12. bis 11. Jahrhundert v. Chr. Die Fundstelle gehört zu einer ummauerten Stadt von über drei Quadratkilometern, die um 1600 v. Chr. gegründet wurde.",
+  "raetsel": "Die Kunst ist ohne Vorbild: eine 2,60 Meter hohe Bronzefigur, ein fast vier Meter hoher Bronzebaum mit Vögeln, Köpfe mit Goldmasken und Masken mit weit vorstehenden Augen. Nichts davon gleicht der zeitgleichen Shang-Kultur am Gelben Fluss. Warum wurden die Gegenstände zerbrochen, verbrannt und vergraben? Wer waren die Menschen, die sie schufen? Schrift hinterließen sie nicht.",
+  "erklaerungen": [
+   {
+    "these": "Rituelle Opfergruben eines frühen Reiches Shu",
+    "dafuer": "Spätere chinesische Chroniken nennen ein Königreich Shu in Sichuan, dessen sagenhafter Gründer Cancong vorstehende Augen gehabt haben soll – wie die Masken. Die sorgfältige Schichtung der Funde spricht für eine Zeremonie.",
+    "dagegen": "Die Chroniken entstanden über tausend Jahre später; die Gleichsetzung mit Shu bleibt eine Deutung, nicht ein Beleg."
+   },
+   {
+    "these": "Bewusste Zerstörung bei einem Herrschafts- oder Religionswechsel",
+    "dafuer": "Die Objekte wurden vor dem Vergraben zerschlagen und verbrannt, als sollten sie außer Kraft gesetzt werden. Die Stadt verlor danach an Bedeutung; ein Nachfolgezentrum entstand im nahen Jinsha.",
+    "dagegen": "Gleiches Vorgehen kann auch zu regelmäßigen Opfern gehören; Belege für Krieg oder Umsturz fehlen."
+   },
+   {
+    "these": "Ein Ende durch Naturkatastrophen",
+    "dafuer": "Ausgräber fanden Hinweise auf Überschwemmungen; manche Forscher vermuten ein Erdbeben, das den Flusslauf veränderte.",
+    "dagegen": "Ob und wann ein solches Ereignis die Stadt traf, ist nicht genau datiert."
+   }
+  ],
+  "forschungsstand": "Die neuen Gruben haben das Material stark vermehrt, die Auswertung läuft. Bleiisotopen-Analysen fanden in vielen Bronzen ein ungewöhnliches, stark radiogenes Blei, wie es auch in Shang-Bronzen vorkommt. Woher es stammt, ist umstritten, doch es spricht dafür, dass Sanxingdui nicht isoliert, sondern in weiträumige Rohstoffnetze eingebunden war. Bedeutung und Ende der Kultur bleiben offen.",
+  "abgrenzung": "Die fremdartigen Gesichter werden in Internetvideos gern als Darstellung Außerirdischer oder als Beweis für Kontakte zu fernen Kontinenten gedeutet. Dafür gibt es keinen Anhaltspunkt: Material, Gusstechnik und Jadeformen stehen in chinesischen Traditionen, nur der Stil ist eigen.",
+  "quellen": [
+   "Encyclopaedia Britannica: Sanxingdui",
+   "Sanxingdui Museum, Guanghan; National Cultural Heritage Administration of China: Mitteilungen zu den Grabungen 2020–2022",
+   "Robert Bagley (Hg.): Ancient Sichuan. Treasures from a Lost Civilization, Seattle Art Museum / Princeton University Press 2001"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "wallenberg",
+  "titel": "Das Schicksal Raoul Wallenbergs",
+  "zeitraum": "verschwunden seit Januar 1945",
+  "region": "Budapest und Moskau",
+  "kategorie": "Verschollene Menschen",
+  "status": "ungeklaert",
+  "gesichert": "Der schwedische Diplomat Raoul Wallenberg kam im Juli 1944 nach Budapest, als die Deportationen ungarischer Juden nach Auschwitz gerade gestoppt worden waren. Mit Schutzpässen und mehr als 30 angemieteten, zu schwedischem Gebiet erklärten Häusern rettete er gemeinsam mit anderen Diplomaten Tausende Menschen. Am 17. Januar 1945 nahm ihn der sowjetische Militärgeheimdienst Smersch fest und brachte ihn nach Moskau in das Lubjanka-Gefängnis.",
+  "raetsel": "Was geschah danach? 1957 legte die Sowjetunion ein Schreiben vor, Wallenberg sei am 17. Juli 1947 in seiner Zelle an Herzversagen gestorben, die Leiche ohne Obduktion eingeäschert worden. Belege dafür fehlen, und die Familie hat diese Version nie akzeptiert. Warum er verhaftet wurde, ist ebenso unklar.",
+  "erklaerungen": [
+   {
+    "these": "Hinrichtung im Jahr 1947",
+    "dafuer": "Der sowjetische Ex-Politiker Alexander Jakowlew erklärte 2000, Wallenberg sei 1947 erschossen worden; die 2016 bekannt gewordenen Tagebücher des früheren KGB-Chefs Iwan Serow sprechen ebenfalls von einer Liquidierung 1947. Russland rehabilitierte ihn im Jahr 2000 als Opfer politischer Repression.",
+    "dagegen": "Beide Angaben sind Erinnerungen aus zweiter Hand; Akten, die Ablauf und Datum belegen, wurden nie vorgelegt."
+   },
+   {
+    "these": "Wallenberg lebte über den 17. Juli 1947 hinaus",
+    "dafuer": "Ehemalige Häftlinge berichteten bis in die 1980er Jahre, einem schwedischen Gefangenen begegnet zu sein. Russische Archivare teilten 2009 mit, dass am 23. Juli 1947, sechs Tage nach dem angeblichen Todestag, ein Gefangener Nr. 7 verhört wurde, der mit großer Wahrscheinlichkeit Wallenberg gewesen sei.",
+    "dagegen": "Keine dieser Aussagen ließ sich zweifelsfrei bestätigen; manche widersprechen einander."
+   }
+  ],
+  "forschungsstand": "Die schwedische Steuerbehörde erklärte Wallenberg 2016 auf Antrag der Familie formell für tot, mit dem fiktiven Todesdatum 31. Juli 1952. Historiker wie Johan Matz untersuchen die sowjetische Bürokratie hinter dem Fall; zentrale Bestände der Geheimdienstarchive bleiben für Forscher gesperrt. Die Frage nach dem Motiv – Spionageverdacht, Verbindungen zum US-Geheimdienst OSS, ein mögliches Austauschobjekt – ist offen.",
+  "abgrenzung": "Wallenberg ist vor allem als Retter bekannt, und das zu Recht. Die Zahlen, wie viele Menschen er rettete, werden in populären Darstellungen oft überhöht; Historiker betonen, dass er Teil einer größeren Hilfsaktion neutraler Diplomaten in Budapest war.",
+  "quellen": [
+   "Encyclopaedia Britannica: Raoul Wallenberg",
+   "Johan Matz: Stalin's Double-Edged Game. Soviet Bureaucracy and the Raoul Wallenberg Case, 1945–1952, Lanham 2019",
+   "BBC News: Bericht über die Todeserklärung Raoul Wallenbergs (Oktober 2016)",
+   "United States Holocaust Memorial Museum: Raoul Wallenberg"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "maya-kollaps",
+  "titel": "Warum verließen die Maya ihre Städte im Süden?",
+  "zeitraum": "ca. 750–950",
+  "region": "Südliches Maya-Tiefland (Guatemala, Belize, Südmexiko)",
+  "kategorie": "Untergang von Kulturen",
+  "status": "ungeklaert",
+  "gesichert": "Im 8. und 9. Jahrhundert brachen die großen Königsstädte des südlichen Tieflands zusammen: Tikal, Calakmul, Palenque, Copán. Die Zahl der datierten Steindenkmäler stieg bis um 750 auf rund vierzig pro Jahr und fiel bis 900 auf null; Königslisten brechen ab, Paläste verfallen. In Copán schrumpfte die Bevölkerung von schätzungsweise 28.000 auf etwa 15.000 um 900. Im Norden Yucatáns dagegen blühten Chichén Itzá und Uxmal.",
+  "raetsel": "Warum zerfiel ein System von Königreichen, das ein halbes Jahrtausend bestanden hatte, innerhalb weniger Generationen – und warum vor allem im Süden?",
+  "erklaerungen": [
+   {
+    "these": "Lang anhaltende Dürren",
+    "dafuer": "Seesedimente und Tropfsteine zeigen wiederholte schwere Trockenperioden im 9. und 10. Jahrhundert. Eine Studie in Science von 2018 schätzt den Rückgang der Niederschläge auf 41 bis 54 Prozent, in Spitzen bis 70 Prozent. Die Städte hingen von Regenwasser und Speicherbecken ab.",
+    "dagegen": "Viele Klimadaten stammen aus dem Norden, wo die Städte gerade nicht zusammenbrachen; manche Regionen verfielen schon vor den schlimmsten Dürren."
+   },
+   {
+    "these": "Kriege zwischen den Königreichen",
+    "dafuer": "Inschriften berichten im 8. Jahrhundert von zunehmenden Kriegen, etwa im Petexbatún-Gebiet, wo Städte befestigt und schließlich aufgegeben wurden. Die Rivalität zwischen Tikal und Calakmul zermürbte beide Lager.",
+    "dagegen": "Kriege gab es auch in Blütezeiten; sie erklären schwer, warum ganze Landstriche dauerhaft leer blieben."
+   },
+   {
+    "these": "Übernutzung und Vertrauensverlust in das Königtum",
+    "dafuer": "Rodungen, Bodenerosion und eine stark gewachsene Bevölkerung machten die Landwirtschaft anfällig. Konnten die göttlich legitimierten Könige Regen und Ernten nicht mehr sichern, verloren sie ihre Autorität.",
+    "dagegen": "Das Ausmaß der Entwaldung ist regional umstritten, und Glaubwürdigkeit lässt sich archäologisch kaum messen."
+   }
+  ],
+  "forschungsstand": "Die meisten Fachleute gehen heute von einem Zusammenspiel aus: Dürren trafen auf übervölkerte, durch Kriege geschwächte Königreiche, deren politisches System die Krise nicht auffangen konnte. Viele sprechen deshalb lieber von einem Umbruch als von einem Zusammenbruch. Laserscans (Lidar) der letzten Jahre zeigen, wie dicht besiedelt das Tiefland vorher war.",
+  "abgrenzung": "Die Maya verschwanden nicht. Ihre Kultur verlagerte sich nach Norden und ins Hochland, unabhängige Maya-Staaten bestanden bis 1697, und Millionen Menschen sprechen heute Maya-Sprachen. Untergegangen ist eine bestimmte politische Ordnung, nicht ein Volk.",
+  "quellen": [
+   "Nicholas P. Evans u. a.: Quantification of drought during the collapse of the classic Maya civilization, Science 361 (2018)",
+   "David A. Hodell, Jason H. Curtis, Mark Brenner: Possible role of climate in the collapse of Classic Maya civilization, Nature 375 (1995)",
+   "Encyclopaedia Britannica: Maya – The Classic period and its collapse",
+   "David Webster: The Fall of the Ancient Maya, London 2002"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "nebra-fundort",
+  "titel": "Woher stammt die Himmelsscheibe von Nebra?",
+  "zeitraum": "vergraben um 1600 v. Chr., gefunden 1999",
+  "region": "Mittelberg bei Nebra, Sachsen-Anhalt",
+  "kategorie": "Frühgeschichte",
+  "status": "teilweise",
+  "gesichert": "Die Bronzescheibe von rund 32 Zentimetern Durchmesser zeigt in Goldauflagen Sonne oder Vollmond, eine Mondsichel und 32 Sterne, darunter vermutlich die Plejaden. Raubgräber fanden sie 1999 mit einem Metalldetektor, beschädigten sie und verkauften sie samt Schwertern, Beilen und Armspiralen für 31.000 D-Mark. Im Februar 2002 stellte die Schweizer Polizei die Scheibe in Basel sicher, als Hehler sie dem Landesarchäologen Harald Meller für 700.000 D-Mark anboten.",
+  "raetsel": "Ein Fund aus einer Raubgrabung hat keinen dokumentierten Fundzusammenhang. Stammt die Scheibe wirklich vom Mittelberg, gehört sie zu den Schwertern, und ist sie überhaupt echt und bronzezeitlich? Erst davon hängt ab, ob sie als älteste konkrete Himmelsdarstellung der Welt gelten kann.",
+  "erklaerungen": [
+   {
+    "these": "Fundort und frühbronzezeitliches Alter sind gesichert",
+    "dafuer": "Die verurteilten Finder führten die Ermittler zum Fundplatz; dort fanden Archäologen Bronzespuren im Boden, und Erdproben vom Fundort passten zu Anhaftungen an den Objekten. Birkenrinde an den Schwertgriffen ist auf etwa 1600 bis 1560 v. Chr. datiert, Korrosion und Metallanalysen stützen das Alter der Scheibe. Gold und Zinn stammen nach neueren Analysen aus Cornwall.",
+    "dagegen": "Das Datum der Schwerter datiert streng genommen die Niederlegung, nicht die Herstellung der Scheibe; deren Gebrauchsdauer ist geschätzt."
+   },
+   {
+    "these": "Die Scheibe stammt aus der Eisenzeit und nicht aus dem Hortfund",
+    "dafuer": "Rupert Gebhard (Archäologische Staatssammlung München) und Rüdiger Krause (Universität Frankfurt) argumentierten 2020, die Fundgeschichte sei widersprüchlich und der Stil passe eher in die Eisenzeit, rund tausend Jahre später.",
+    "dagegen": "Ernst Pernicka und zwölf Kollegen wiesen das im selben Jahr mit naturwissenschaftlichen Daten zu Boden, Metall und Korrosion deutlich zurück und warfen den Kritikern unvollständige Daten vor. Der Vorwurf einer Fälschung war schon 2005 gescheitert; sein Urheber hatte die Scheibe nie selbst untersucht."
+   }
+  ],
+  "forschungsstand": "Die große Mehrheit der Fachleute sieht Fundort und Alter als belegt an, die Kritiker von 2020 haben ihre Position aber nicht zurückgezogen, und ein lückenloser Beweis ist nach einer Raubgrabung nicht mehr möglich; die Scheibe steht seit 2013 im UNESCO-Register Memory of the World. Offen und lebhaft diskutiert bleibt ihre Deutung – etwa ob sie eine Schaltregel für den Ausgleich von Mond- und Sonnenjahr verschlüsselt.",
+  "abgrenzung": "Dass es Zweifel an Fundumständen gibt, heißt nicht, dass die Scheibe gefälscht wäre. Der Fall zeigt, warum Raubgrabungen so schaden: Erst Jahre aufwendiger Analysen konnten den Zusammenhang rekonstruieren, den ein einziger Tag sorgfältiger Ausgrabung festgehalten hätte.",
+  "quellen": [
+   "Landesmuseum für Vorgeschichte Halle: Die Himmelsscheibe von Nebra",
+   "Ernst Pernicka u. a.: Why the Nebra Sky Disc Dates to the Early Bronze Age, Archaeologia Austriaca 104 (2020)",
+   "Rupert Gebhard, Rüdiger Krause: Kritische Anmerkungen zum Fundkomplex der sog. Himmelsscheibe von Nebra, Archäologische Informationen 43 (2020)",
+   "UNESCO Memory of the World: Nebra Sky Disc (2013)"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "prinzen-im-tower",
+  "titel": "Die Prinzen im Tower",
+  "zeitraum": "1483",
+  "region": "London, England",
+  "kategorie": "Verschollene Menschen",
+  "status": "ungeklaert",
+  "gesichert": "Nach dem Tod König Eduards IV. im April 1483 brachte sein Bruder Richard, Herzog von Gloucester, den zwölfjährigen Thronfolger Eduard V. und dessen neunjährigen Bruder Richard in den Tower von London, damals auch königliche Residenz. Im Juni wurde die Ehe ihrer Eltern für ungültig erklärt, die Kinder galten damit als illegitim, und der Onkel bestieg als Richard III. den Thron; das Parlament bestätigte dies 1484 im Titulus Regius. Nach dem Sommer 1483 sah man die Jungen nicht mehr.",
+  "raetsel": "Wurden die Prinzen ermordet – und wenn ja, wann und auf wessen Befehl? 1674 fanden Arbeiter unter einer Treppe im Tower eine Holzkiste mit den Skeletten zweier Kinder, die König Karl II. in Westminster Abbey beisetzen ließ. Eine Untersuchung 1933 hielt das Alter für passend, eine moderne Analyse wurde nie erlaubt.",
+  "erklaerungen": [
+   {
+    "these": "Richard III. ließ seine Neffen töten",
+    "dafuer": "Er hatte das stärkste Motiv. Der italienische Beobachter Dominic Mancini, 1483 in London, berichtet, die Jungen seien immer seltener gesehen worden und schon damals habe man ihren Tod vermutet. Mehrere Chroniken nennen Richard als Täter, Thomas More schilderte um 1513 einen Mord durch Gefolgsleute von James Tyrell.",
+    "dagegen": "Mancini wusste nach eigener Aussage nicht, was geschehen war. More und andere Autoren schrieben unter der Tudor-Dynastie, die Richard gestürzt hatte; Mores Darstellung ist literarisch ausgestaltet."
+   },
+   {
+    "these": "Ein anderer Täter: Buckingham oder Heinrich VII.",
+    "dafuer": "Henry Stafford, Herzog von Buckingham, hatte Zugang zum Tower und rebellierte im Herbst 1483 gegen Richard. Heinrich VII. hätte nach 1485 ebenfalls ein Motiv gehabt, da die Prinzen seinen Thronanspruch gefährdeten.",
+    "dagegen": "Beide Thesen stützen sich auf Motive, nicht auf Quellen. Die meisten Historiker halten sie für wenig wahrscheinlich."
+   },
+   {
+    "these": "Einer oder beide Prinzen überlebten",
+    "dafuer": "Perkin Warbeck trat 1491 als Prinz Richard auf und fand Unterstützung an europäischen Höfen. Das Missing Princes Project um Philippa Langley präsentierte 2023 Dokumente, die auf ein Überleben deuten sollen.",
+    "dagegen": "Warbeck gestand nach seiner Gefangennahme 1497, ein Hochstapler aus Tournai zu sein. Die neuen Dokumente sind in der Fachwelt umstritten, ihre Deutung hängt an einzelnen, mehrdeutigen Formulierungen."
+   }
+  ],
+  "forschungsstand": "Die Mehrheit der Historiker hält einen Tod der Prinzen 1483 unter Richard III. für am wahrscheinlichsten, beweisen lässt er sich nicht. Nach dem Fund von Richards Skelett 2012 in Leicester und seiner Identifizierung 2013 wurde gefordert, auch die Knochen in Westminster Abbey genetisch zu untersuchen; die Krone hat das bisher nicht genehmigt. Selbst ein Treffer würde den Täter nicht benennen.",
+  "abgrenzung": "Shakespeares Richard III. hat das Bild des buckligen Kindermörders geprägt. Gegen dieses Bild kämpfen seit Langem die Anhänger der Richard III Society. Zwischen Tudor-Propaganda und Ehrenrettung liegt die nüchterne Lage: ein starkes Motiv, eine dichte Indizienkette, kein Beweis.",
+  "quellen": [
+   "Encyclopaedia Britannica: Princes in the Tower; Edward V",
+   "Dominic Mancini: De occupatione regni Anglie (1483), hg. von C. A. J. Armstrong, Oxford 1969",
+   "A. J. Pollard: Richard III and the Princes in the Tower, Stroud 1991",
+   "Historic Royal Palaces: The Princes in the Tower"
+  ],
+  "seit": "2026-10-01"
+ },
+ {
+  "id": "db-cooper",
+  "titel": "Der Flugzeugentführer D. B. Cooper",
+  "zeitraum": "24. November 1971",
+  "region": "Bundesstaat Washington, USA",
+  "kategorie": "Verschollene Menschen",
+  "status": "ungeklaert",
+  "gesichert": "Ein Mann, der sein Ticket unter dem Namen Dan Cooper gekauft hatte, entführte am Nachmittag vor Thanksgiving 1971 einen Flug der Northwest Orient von Portland nach Seattle. Mit einer angeblichen Bombe erpresste er 200.000 Dollar und vier Fallschirme, ließ in Seattle die Passagiere frei und befahl den Weiterflug nach Mexiko. Bei Nacht, Regen und eisiger Kälte sprang er über dem Südwesten Washingtons aus der Hecktreppe der Boeing 727. Ein Reporter machte aus dem Namen D. B. Cooper.",
+  "raetsel": "Wer war der Mann, und überlebte er den Sprung? Trotz einer der größten Fahndungen der FBI-Geschichte fand man weder ihn noch Fallschirm oder Leiche.",
+  "erklaerungen": [
+   {
+    "these": "Cooper starb beim Sprung oder kurz danach",
+    "dafuer": "Er sprang aus etwa 3.000 Metern Höhe in Straßenschuhen und Anzug, nachts, über bewaldetem Gelände, mit einem nicht steuerbaren Fallschirm. 1980 fand ein achtjähriger Junge an einer Sandbank des Columbia River 5.800 Dollar in verrottenden Bündeln, deren Seriennummern zum Lösegeld passten. Der Großteil des Geldes tauchte nie auf.",
+    "dagegen": "Ohne Leiche bleibt der Tod eine Annahme; wie das Geld an den Fluss kam, ist ungeklärt."
+   },
+   {
+    "these": "Cooper überlebte und lebte unerkannt weiter",
+    "dafuer": "Er wirkte ruhig und kannte sich mit der Boeing 727 und Fallschirmen aus. Ermittler und Hobbyforscher haben zahlreiche Verdächtige benannt, etwa den Fallschirmspringer Richard McCoy, der 1972 eine fast identische Entführung beging.",
+    "dagegen": "Keiner der Verdächtigen ließ sich überführen; DNA-Spuren an Coopers zurückgelassener Krawatte führten bisher zu niemandem, und McCoy passte nach Aussagen der Zeugen nicht zur Beschreibung."
+   }
+  ],
+  "forschungsstand": "Das FBI stellte die aktiven Ermittlungen im Juli 2016 ein, ohne den Fall abzuschließen; Hinweise zu Fallschirm oder Geld werden weiter geprüft. Private Gruppen werten bis heute Partikel von der Krawatte aus, die auf ein Arbeitsumfeld mit Titan und seltenen Metallen deuten. Ein belastbarer Durchbruch ist nicht bekannt.",
+  "abgrenzung": "Cooper wurde in den USA zum Volkshelden, der eine Fluggesellschaft ausraubte und verschwand. Es war ein Verbrechen mit Bombendrohung gegen Passagiere und Besatzung, und sein scheinbarer Erfolg löste 1972 eine Welle von Nachahmungstaten aus. Sie führte unter anderem dazu, dass Hecktreppen an Verkehrsflugzeugen gesichert werden mussten.",
+  "quellen": [
+   "Federal Bureau of Investigation: D. B. Cooper Hijacking (fbi.gov, History – Famous Cases)",
+   "FBI Vault: D. B. Cooper (freigegebene Ermittlungsakten)",
+   "Encyclopaedia Britannica: D. B. Cooper",
+   "The Seattle Times: Bericht über das Ende der aktiven FBI-Ermittlungen (Juli 2016)"
+  ],
+  "seit": "2026-10-01"
  }
 ];

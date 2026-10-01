@@ -12,15 +12,15 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Suche | über alle rund 1.950 Einträge gleichzeitig |
 | Epochen | 7, mit 301 Ereignissen, 217 Persönlichkeiten, 109 Reichen |
 | Vertiefungen | 59 Langtexte mit Vorgeschichte, Verlauf, Folgen, Zahlen und Quellen |
-| Themengeschichte | 30 Querschnitte durch alle Epochen, darunter Kalter Krieg und Katastrophen |
+| Themengeschichte | 32 Querschnitte mit je mindestens 42 Stationen, darunter Kalter Krieg, Katastrophen, Künstler und Erfinder |
 | Länder-Zeitleisten | 30 Weltregionen |
 | Karte | 120 Orte: Schlachten, Stadtgeschichten, Mysterien – Koordinaten aus Wikidata, Küsten aus Natural Earth |
-| Mysterien | 20 ungeklärte und gelöste Fälle |
-| Schlüsselmomente | 101 |
+| Mysterien | 31 ungeklärte und gelöste Fälle |
+| Schlüsselmomente | 169 |
 | Schlachten | 101, jede einem Krieg zugeordnet |
 | Kriege | 158, von der Bronzezeit bis heute, mit Parteien, Ursachen, Verlauf, Folgen und Opferspannen |
 | Zitate | 104, jedes mit Belegstatus |
-| Mythen & Fun Facts | 165, alle Richtigstellungen mit Beleg |
+| Mythen & Fun Facts | 269, alle Richtigstellungen mit Beleg |
 | Verblüffende Fakten | 143 |
 
 ## Grundsätze für die Inhalte
@@ -29,6 +29,10 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 - **Zahlen bekommen Spannen, keine Scheingenauigkeit.** Opferzahlen historischer Ereignisse sind fast immer Schätzungen; das steht dann auch da.
 - **Was strittig ist, wird als strittig ausgewiesen.** Vertiefungen und Themen haben dafür einen eigenen Abschnitt.
 - **Zitate tragen einen Belegstatus.** 19 von 104 sind nachweislich falsch zugeschrieben – sie bleiben trotzdem drin, richtiggestellt, denn genau die werden weitererzählt.
+
+## Verbindung zu Philosophia
+
+`data-verknuepfungen.js` verknüpft Vertiefungen, Kriege und Querschnitte mit Denkern aus Philosophia (146 Verknüpfungen, 99 Denker). Historia verlinkt mit `Philosophia/#denker=<id>`, Philosophia zurück mit `Historia/#vertiefung=<id>`, `#krieg=<id>`, `#thema=<id>` oder `#mysterium=<id>`. Dieselbe Liste liegt als `wissensnetz.json` für Mentorium bereit. Quelle der Wahrheit ist `data-verknuepfungen.js`; Philosophias `daten-geschichte.js` wird daraus erzeugt.
 
 ## Neu-Markierung
 

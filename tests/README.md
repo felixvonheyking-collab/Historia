@@ -1,6 +1,6 @@
 # Tests
 
-Sieben Prüfungen, die `node pruefung.js` ergänzen. Das Prüfskript sieht die
+Acht Prüfungen, die `node pruefung.js` ergänzen. Das Prüfskript sieht die
 Daten, diese Tests sehen die laufende App.
 
     npm install jsdom          # einmalig, irgendwo im Pfad
@@ -16,6 +16,8 @@ Daten, diese Tests sehen die laufende App.
   der Weg Schlacht → Karte → Eintrag → zurück zur Karte die Auswahl hält.
 - `kriege-neu.js` — Startseite zeigt die Neuerungen, Schlacht und Krieg verweisen
   aufeinander, „als gelesen markieren“ nimmt das „neu“ weg (je Krieg, Station, Querschnitt).
+- `philosophia.js` — Sprung per Adresse (#krieg=…, #vertiefung=…, #thema=…) und der Kasten
+  „Denker dazu“ mit Links nach Philosophia.
 - `hakenreihenfolge.js` — klickt sich durch und meldet, wenn die App
   dabei leer wird. Findet React-Fehler 300: ein Haken, der nach einem
   vorzeitigen `return` steht und deshalb nicht bei jedem Durchlauf

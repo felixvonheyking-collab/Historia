@@ -35,7 +35,8 @@ const DATEN = [
   "data-grafiken.js",
   "data-bilder.js",
   "data-karte.js",
-  "data-kriege.js"
+  "data-kriege.js",
+  "data-verknuepfungen.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -59,7 +60,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN, BILDER, KARTE, KRIEGE })",
+      "   GRAFIKEN, BILDER, KARTE, KRIEGE, VERKNUEPFUNGEN })",
       kontext
     );
   } catch (e) {
@@ -124,6 +125,7 @@ function pruefeGleichesEreignis(name, liste, jahrFeld, titelFeld, textFeld) {
     for (let j = i + 1; j < liste.length; j++) {
       const a = liste[i], b = liste[j];
       if (Math.abs(a[jahrFeld] - b[jahrFeld]) > 3) continue;
+      if (istErlaubt(a[titelFeld], b[titelFeld])) continue;
       const q = Math.max(
         aehnlich(a[titelFeld], b[titelFeld]),
         aehnlich(a[textFeld], b[textFeld]),
@@ -252,6 +254,27 @@ function pruefeKlassen() {
    ========================================================================= */
 
 const ERLAUBTE_ABWEICHUNGEN = [
+  ["Antoninische Pest", "Die Antoninische Pest in Rom", "165 Ausbruch im Osten, 166 in Rom"],
+  ["Die Antoninische Pest", "Die Antoninische Pest in Rom", "165 Ausbruch im Osten, 166 in Rom"],
+  ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod in Wien", "1347 Europa, 1349 Wien"],
+  ["Der Schwarze Tod", "Der Schwarze Tod in Wien", "1347 Europa, 1349 Wien"],
+  ["Der Schwarze Tod erreicht Frankreich", "Der Schwarze Tod in Wien", "1348 Frankreich, 1349 Wien"],
+  ["Der Schwarze Tod erreicht England", "Der Schwarze Tod in Wien", "1348 England, 1349 Wien"],
+  ["Der Schwarze Tod erreicht Italien", "Der Schwarze Tod in Wien", "1348 Italien, 1349 Wien"],
+  ["Der Schwarze Tod trifft ein", "Der Schwarze Tod in Wien", "1347 Konstantinopel, 1349 Wien"],
+  // Runde 2026-10-01: verschiedene Ereignisse, die nur Wortschatz teilen,
+  // und regional verschiedene Jahre derselben Seuche.
+  ["Gründung der Vereinten Nationen", "Gründung Israels und Nakba", "verschiedene Ereignisse, 1945 und 1948"],
+  ["Gründung Israels und Nakba", "Gründung der Volksrepublik China", "verschiedene Ereignisse, 1948 und 1949"],
+  ["Ende der Apartheid", "Das Ende der Sowjetunion", "verschiedene Ereignisse"],
+  ["Die Wannsee-Konferenz", "Die Konferenz von Bretton Woods", "verschiedene Konferenzen"],
+  ["Antoninische Pest", "Die Antoninische Pest", "165 Ausbruch im Osten, 166 in Rom"],
+  ["Der Schwarze Tod erreicht Europa", "Der Schwarze Tod", "1347 Europa, 1349 Wien"],
+  ["Der Schwarze Tod", "Der Schwarze Tod trifft ein", "1347 Konstantinopel, 1349 Wien"],
+  ["Ashoka erobert Kalinga", "Ashoka und die Umkehr nach Kalinga", "Datierung um 261/260 v. Chr., beide gebräuchlich"],
+  ["Fall von Tenochtitlan", "Die Pocken in Tenochtitlan", "1520 Pockenepidemie, 1521 Eroberung – verschiedene Ereignisse"],
+  ["Tokugawa Ieyasu wird Shōgun", "Tokugawa Ieyasu und 250 Jahre Frieden", "1600 Sekigahara, 1603 Ernennung zum Shōgun"],
+  ["Aus Siam wird Thailand", "Die Thailand-Burma-Eisenbahn", "verschiedene Ereignisse, 1939 und 1943"],
   ["Beginn der Kreuzzüge", "Die Kreuzzüge", "1095 Aufruf von Clermont, 1096 Aufbruch"],
   ["Berliner Kongo-Konferenz", "Die Berliner Konferenz endet", "1884 Beginn, 1885 Schlussakte"],
   ["Berliner Konferenz", "Die Berliner Konferenz endet", "1884 Beginn, 1885 Schlussakte"],
@@ -366,7 +389,9 @@ function pruefeBilder(D) {
      "urheber", "lizenz", "herkunft"], "id");
   const ERLAUBT = ["public domain", "cc0", "cc by", "cc-by"];
   liste.forEach((b) => {
-    if (!vertIds.has(b.id)) meldeFehler("Bild '" + b.id + "': keine Vertiefung mit dieser Id");
+    // Bilder gehoeren zu einer Vertiefung oder, mit Praefix "krieg-", zu einem Krieg
+    const zuKrieg = /^krieg-/.test(b.id) && (D.KRIEGE || []).some((k) => "krieg-" + k.id === b.id);
+    if (!vertIds.has(b.id) && !zuKrieg) meldeFehler("Bild '" + b.id + "': keine Vertiefung und kein Krieg mit dieser Id");
     if (!fs.existsSync(path.join(WURZEL, b.datei))) {
       meldeFehler("Bild '" + b.id + "': Datei " + b.datei + " fehlt");
     }
@@ -536,10 +561,51 @@ function pruefeNeuerungen(D) {
   const pruefe = (o, wer) => { if (o.seit !== undefined) { n++; if (!datum.test(o.seit)) meldeFehler(wer + " – 'seit' ist kein Datum JJJJ-MM-TT"); } };
   D.KRIEGE.forEach((k) => pruefe(k, "Krieg " + k.name));
   D.THEMEN.forEach((t) => { pruefe(t, "Thema " + t.titel); t.stationen.forEach((s) => pruefe(s, "Station " + s.titel)); });
+  D.SCHLUESSELMOMENTE.forEach((m) => pruefe(m, "Schlüsselmoment " + m.title));
+  D.MYTHEN.forEach((m) => pruefe(m, "Mythos " + m.title));
+  D.MYSTERIEN.forEach((m) => pruefe(m, "Mysterium " + m.titel));
   console.log("  Als neu markiert: " + n + " Einträge");
 }
 
+/* ------------------------------------------------- Verweise und Philosophia */
+
+function pruefeVerweise(D) {
+  const vt = new Set(D.VERTIEFUNGEN.map((v) => v.id));
+  // Verweise aus Querschnitt-Stationen und Schluesselmomenten - ein toter
+  // Verweis fuehrt in der App ins Leere, ohne dass es jemand merkt.
+  D.THEMEN.forEach((t) => t.stationen.forEach((s) => {
+    if (s.vertiefung && !vt.has(s.vertiefung)) meldeFehler("Thema " + t.titel + ", Station " + s.titel + " – Vertiefung '" + s.vertiefung + "' gibt es nicht");
+  }));
+  const th = new Set(D.THEMEN.map((t) => t.id));
+  D.SCHLUESSELMOMENTE.forEach((m) => {
+    if (m.vertiefung && !vt.has(m.vertiefung)) meldeFehler("Schlüsselmoment " + m.title + " – Vertiefung '" + m.vertiefung + "' gibt es nicht");
+    if (m.thema && !th.has(m.thema)) meldeFehler("Schlüsselmoment " + m.title + " – Thema '" + m.thema + "' gibt es nicht");
+  });
+  const kr = new Set(D.KRIEGE.map((k) => k.id));
+  const BEZUG = ["Wirkung", "Ausloeser", "Zeitzeuge", "Einordnung", "Gegenposition"];
+  const paare = new Set();
+  D.VERKNUEPFUNGEN.forEach((v) => {
+    const wer = "Verknüpfung " + v.philosoph + " → " + v.art + ":" + v.id;
+    const ok = v.art === "vertiefung" ? vt.has(v.id) : v.art === "krieg" ? kr.has(v.id) : v.art === "thema" ? th.has(v.id) : false;
+    if (!ok) meldeFehler(wer + " – Ziel gibt es nicht");
+    if (!v.name || !v.satz) meldeFehler(wer + " – Name oder Satz fehlt");
+    if (!BEZUG.includes(v.bezug)) meldeFehler(wer + " – unbekannte Bezugsart " + v.bezug);
+    const k = v.philosoph + "|" + v.art + "|" + v.id;
+    if (paare.has(k)) meldeFehler(wer + " – doppelt");
+    paare.add(k);
+  });
+  // Philosophia liegt im Nachbarordner, wenn beide Repos nebeneinander liegen
+  const phil = path.join(WURZEL, "..", "Philosophia", "daten-philosophen.js");
+  if (fs.existsSync(phil)) {
+    const ids = new Set([...fs.readFileSync(phil, "utf8").matchAll(/["']?id["']?\s*:\s*['"]([a-z0-9-]+)['"]/g)].map((m) => m[1]));
+    D.VERKNUEPFUNGEN.forEach((v) => { if (!ids.has(v.philosoph)) meldeFehler("Verknüpfung: Denker '" + v.philosoph + "' gibt es in Philosophia nicht"); });
+  }
+  console.log("  Verknüpfungen mit Philosophia: " + D.VERKNUEPFUNGEN.length + " (" + new Set(D.VERKNUEPFUNGEN.map((v) => v.philosoph)).size + " Denker)" +
+    (fs.existsSync(phil) ? ", Denker-ids gegen Philosophia geprüft" : ""));
+}
+
 /* --------------------------------------------------------------- Inhalte */
+
 
 
 
@@ -750,6 +816,7 @@ function pruefeInhalte(D) {
   pruefeKarte(D);
   pruefeKriege(D);
   pruefeNeuerungen(D);
+  pruefeVerweise(D);
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
