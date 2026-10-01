@@ -6000,5 +6000,827 @@ const THEMEN = [
     "warum": "Über die Faszination selbst und darüber, wie Medien Täter groß und Opfer klein machen."
    }
   ]
- }
+ },
+{
+ "id": "kalter-krieg",
+ "titel": "Kalter Krieg – Blöcke, Putsche, verdeckte Operationen",
+ "kurz": "Vierzig Jahre Konfrontation ohne direkten Krieg der Supermächte — und mit umso mehr Umstürzen, Interventionen und Stellvertreterkriegen anderswo.",
+ "einleitung": "Kalt war der Kalte Krieg nur in Europa und nur zwischen den beiden Supermächten selbst. Dort sicherten Atomwaffen, Bündnisse und eine bewachte Grenze vier Jahrzehnte lang einen angespannten Frieden. Anderswo führten beide Seiten ihren Konflikt mit anderen Mitteln: Die Sowjetunion hielt ihr Imperium in Osteuropa mit Panzern zusammen, die USA stürzten oder stützten Regierungen in Iran, Lateinamerika, Afrika und Asien, beide finanzierten Parteien, Guerillas und Armeen. Vieles davon war jahrzehntelang geheim. Seit den 1970er Jahren haben Untersuchungsausschüsse, freigegebene amerikanische Akten und nach 1991 sowjetische und osteuropäische Archive einen großen Teil offengelegt. Dieser Querschnitt folgt beiden Linien – der großen Politik der Blöcke und den verdeckten Operationen – und nennt jeweils, worauf sich das Wissen stützt.",
+ "stationen": [
+  {
+   "jahr": 1945,
+   "titel": "Jalta: Absprachen statt Teilung",
+   "text": "Im Februar 1945 treffen sich Roosevelt, Churchill und Stalin auf der Krim. Vereinbart werden die Besatzung Deutschlands, die Westverschiebung Polens, der sowjetische Kriegseintritt gegen Japan und die Gründung der Vereinten Nationen; eine Erklärung verspricht den befreiten Ländern freie Wahlen. Die verbreitete Vorstellung, in Jalta sei Europa aufgeteilt worden, ist eine Legende: Die spätere Grenze folgte im Wesentlichen den Linien, an denen die Armeen standen, und Stalin hielt sich an das Wahlversprechen nicht.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1945,
+   "titel": "Potsdam und die Bombe",
+   "text": "In Potsdam regeln die Siegermächte im Sommer 1945 Besatzungszonen, Reparationen und die vorläufige Oder-Neiße-Grenze. Am Rand der Konferenz deutet Truman Stalin eine neue Waffe von ungewöhnlicher Zerstörungskraft an; Stalin war durch Spionage längst informiert. Wenige Tage später fallen die Bomben auf Hiroshima und Nagasaki. Ob die USA sie auch einsetzten, um Moskau zu beeindrucken, ist eine der ältesten Streitfragen der Forschung, seit Gar Alperovitz 1965 von Atomdiplomatie sprach.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1946,
+   "titel": "Langes Telegramm und Eiserner Vorhang",
+   "text": "Im Februar 1946 kabelt der US-Diplomat George F. Kennan aus Moskau eine Analyse, nach der die Sowjetunion aus innerer Unsicherheit expandiere und nur durch beharrliche Gegenwehr einzudämmen sei – der Ursprung der Containment-Politik. Wenige Wochen später spricht Churchill in Fulton, Missouri, vom Eisernen Vorhang von Stettin bis Triest. Das sowjetische Gegenstück ist ein Bericht des Botschafters Nikolai Nowikow vom September 1946, der den USA Streben nach Weltherrschaft unterstellt; er wurde erst 1990 veröffentlicht.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1947,
+   "titel": "Die Sowjetisierung Osteuropas",
+   "text": "Zwischen 1945 und 1948 übernehmen kommunistische Parteien unter dem Schutz der Roten Armee schrittweise die Macht. In Rumänien erzwingt der sowjetische Vizeaußenminister Wyschinski 1945 eine kommunistisch geführte Regierung; in Polen werden die Wahlen vom Januar 1947 gefälscht; in Ungarn verliert die Partei der Kleinlandwirte trotz absoluter Mehrheit von 1945 Stück für Stück ihre Führung, ihr Generalsekretär Béla Kovács wird 1947 vom sowjetischen Geheimdienst verhaftet. In Bulgarien wird der Oppositionsführer Nikola Petkow im September 1947 hingerichtet.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1947,
+   "titel": "Die Truman-Doktrin",
+   "text": "Als Großbritannien im Februar 1947 erklärt, Griechenland und die Türkei nicht länger stützen zu können, bittet Truman den Kongress um 400 Millionen Dollar und verkündet, die USA würden freie Völker gegen Unterwerfung durch bewaffnete Minderheiten oder äußeren Druck unterstützen. In Griechenland tobte ein Bürgerkrieg, den die Kommunisten 1949 verloren. Die später geöffneten Archive zeigen, dass Stalin die griechischen Kommunisten eher bremste; ihre Hilfe kam vor allem aus Jugoslawien. Die Doktrin machte aus einer regionalen Krise einen globalen Auftrag.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1947,
+   "titel": "Marshallplan und Kominform",
+   "text": "Im Juni 1947 bietet Außenminister George C. Marshall Europa Wiederaufbauhilfe an; bis 1952 fließen über 13 Milliarden Dollar, gekoppelt an Zusammenarbeit der Empfänger. Molotow verlässt die Pariser Verhandlungen, die Tschechoslowakei muss ihre bereits erklärte Teilnahme auf Druck Stalins zurückziehen. Im September gründet Moskau das Kominform, dessen Sprecher Andrei Schdanow die Welt in zwei Lager teilt. Wie viel die Hilfe wirtschaftlich bewirkte, ist umstritten; politisch band sie Westeuropa an die USA.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1948,
+   "titel": "Der Prager Februarumsturz",
+   "text": "Die Tschechoslowakei war das einzige Land Ostmitteleuropas, in dem die Kommunisten 1946 in freien Wahlen stärkste Partei wurden, mit rund 38 Prozent. Im Februar 1948 treten zwölf nichtkommunistische Minister zurück, um eine Regierungskrise zu erzwingen; die Kommunisten mobilisieren Aktionskomitees, Volksmilizen und Polizei, und Präsident Beneš ernennt am 25. Februar eine von ihnen beherrschte Regierung. Zwei Wochen später liegt Außenminister Jan Masaryk tot unter seinem Fenster; ob Selbstmord oder Mord, ist bis heute nicht geklärt.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1948,
+   "titel": "Die italienische Wahl und die erste CIA-Aktion",
+   "text": "Vor der Parlamentswahl im April 1948 fürchtet Washington einen Sieg der Volksfront aus Kommunisten und Sozialisten. Der Nationale Sicherheitsrat genehmigt im Dezember 1947 verdeckte psychologische Operationen; die gerade gegründete CIA finanziert Christdemokraten und Presse, nach dem Bericht des Church Committee eine der ersten großen verdeckten Aktionen. Die Democrazia Cristiana gewinnt rund 48 Prozent. Umgekehrt finanzierte Moskau die italienischen Kommunisten über Jahrzehnte; das belegen nach 1991 zugänglich gewordene Parteiakten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1948,
+   "titel": "Der Bruch zwischen Tito und Stalin",
+   "text": "Im Juni 1948 schließt das Kominform die jugoslawischen Kommunisten aus. Tito hatte eine eigenständige Politik auf dem Balkan betrieben und sich Moskaus Kontrolle entzogen. Es ist der erste Riss im Ostblock: Stalin erwägt Gegenmaßnahmen, doch Jugoslawien überlebt und erhält ab 1949 Wirtschafts- und ab 1951 auch Militärhilfe aus dem Westen. In Osteuropa folgt eine Jagd auf angebliche Titoisten, in Jugoslawien selbst werden vermutete Stalin-Anhänger im Lager auf der Insel Goli Otok interniert.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1948,
+   "titel": "Berlin-Blockade und Luftbrücke",
+   "text": "Nach der Währungsreform in den Westzonen sperrt die Sowjetunion ab dem 24. Juni 1948 alle Land- und Wasserwege nach West-Berlin. Die Westmächte versorgen die Stadt aus der Luft. Im Mai 1949 hebt Moskau die Blockade nach fast elf Monaten auf, ohne sein Ziel erreicht zu haben; die Luftbrücke läuft noch bis September weiter und bringt insgesamt rund 2,3 Millionen Tonnen Güter in die Stadt. Dutzende Flieger und Helfer kommen bei Unfällen ums Leben. Die Krise beschleunigt, was sie verhindern sollte: die Gründung eines westdeutschen Staates und eines westlichen Bündnisses.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1949,
+   "titel": "NATO und zwei deutsche Staaten",
+   "text": "Am 4. April 1949 gründen zwölf Staaten in Washington die NATO; Artikel 5 erklärt einen Angriff auf ein Mitglied zum Angriff auf alle. Für die USA ist es das erste Militärbündnis in Friedenszeiten seit dem Ende der Allianz mit Frankreich 1800. Im Mai tritt das Grundgesetz in Kraft, im Oktober wird die DDR gegründet. Die Teilung Deutschlands, die keine der Mächte 1945 offiziell geplant hatte, ist damit staatlich festgeschrieben – zunächst von beiden Seiten als Provisorium erklärt.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1949,
+   "titel": "Die sowjetische Bombe und Maos Sieg",
+   "text": "Am 29. August 1949 zündet die Sowjetunion in Semipalatinsk ihre erste Atombombe, Jahre früher als in Washington erwartet. Ihre Konstruktion folgte weitgehend der amerikanischen Plutoniumbombe, deren Pläne unter anderem Klaus Fuchs verraten hatte; wie viel Zeit die Spionage tatsächlich sparte, ist umstritten. Am 1. Oktober ruft Mao Zedong die Volksrepublik China aus. Binnen Wochen hat der Westen sein Atommonopol verloren und das bevölkerungsreichste Land der Welt ist kommunistisch geworden.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1950,
+   "titel": "McCarthy und die Angst vor dem inneren Feind",
+   "text": "Im Februar 1950 behauptet Senator Joseph McCarthy, er habe eine Liste von Kommunisten im Außenministerium. Es folgen Anhörungen, Loyalitätsprüfungen und schwarze Listen, die Tausende Karrieren beenden; 1954 rügt der Senat McCarthy. Die 1995 freigegebenen Venona-Entschlüsselungen zeigen, dass es in den 1940er Jahren tatsächlich ein umfangreiches sowjetisches Spionagenetz in den USA gab, unter anderem um Julius Rosenberg. McCarthys konkrete Anschuldigungen trafen aber überwiegend Unbeteiligte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1950,
+   "titel": "Koreakrieg und NSC-68",
+   "text": "Am 25. Juni 1950 greift Nordkorea den Süden an. Sowjetische Akten zeigen, dass Stalin dem Plan Kim Il-sungs im Frühjahr 1950 zugestimmt hatte. Die USA führen eine UN-Truppe an, nachdem die Sowjetunion den Sicherheitsrat boykottiert; im Herbst greift China ein. Das Strategiepapier NSC-68 hatte bereits eine massive Aufrüstung gefordert, nun wird sie bewilligt. Der Krieg endet 1953 mit einem Waffenstillstand nahe der Ausgangslinie. Die Encyclopaedia Britannica nennt mindestens 2,5 Millionen Tote, andere Schätzungen liegen deutlich höher; ein großer Teil davon waren Zivilisten.",
+   "vertiefung": "koreakrieg",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1952,
+   "titel": "Schauprozesse im Ostblock",
+   "text": "Nach dem Bruch mit Tito sucht Moskau Verräter in den eigenen Reihen. In Budapest wird 1949 der frühere Innenminister László Rajk nach erfolterten Geständnissen hingerichtet, in Sofia Traitscho Kostow. Im Prager Slánský-Prozess vom November 1952 werden elf von vierzehn Angeklagten zum Tod verurteilt; elf der Angeklagten waren jüdischer Herkunft, und die Anklage trug offen antisemitische Züge. Die meisten Verurteilten wurden nach Stalins Tod rehabilitiert, Rajk bereits 1956.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1953,
+   "titel": "Stalins Tod und der 17. Juni",
+   "text": "Stalin stirbt am 5. März 1953; die neue Führung lockert, ohne Kurs zu haben. In der DDR wird eine Erhöhung der Arbeitsnormen nicht zurückgenommen, am 16. Juni legen Bauarbeiter in Ost-Berlin die Arbeit nieder. Am 17. Juni kommt es nach Zählung der Bundeszentrale für politische Bildung in rund 700 Orten zu Streiks und Protesten. Sowjetische Panzer schlagen den Aufstand nieder; eine Studie von Edda Ahrberg, Hans-Hermann Hertle und Tobias Hollitzer (2004) zählt mindestens 55 Tote, ältere Angaben lagen deutlich höher. Der Westen greift nicht ein.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1953,
+   "titel": "Iran: Der Sturz Mossadeghs",
+   "text": "Ministerpräsident Mohammad Mossadegh hatte 1951 die britisch beherrschte Ölindustrie verstaatlicht. Großbritannien antwortet mit einem Boykott und gewinnt die USA für einen Umsturz. Nach einem gescheiterten ersten Versuch stürzen am 19. August 1953 Militär und bezahlte Demonstranten Mossadegh, der Schah kehrt zurück. Im August 2013 veröffentlichte das National Security Archive eine interne CIA-Geschichte, die den Putsch als unter Leitung der CIA durchgeführt bezeichnet; 2017 folgte ein ergänzender FRUS-Aktenband. Strittig bleibt das Gewicht iranischer Akteure wie Geistlichkeit und Armee.",
+   "vertiefung": "sturz-schah",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1954,
+   "titel": "Guatemala: Operation PBSUCCESS",
+   "text": "Präsident Jacobo Árbenz enteignete mit dem Dekret 900 von 1952 ungenutztes Großgrundeigentum, auch Land der United Fruit Company. Die Eisenhower-Regierung sah darin kommunistischen Einfluss und organisierte über die CIA einen Umsturz: eine kleine Exilarmee unter Carlos Castillo Armas, einen Propagandasender und Luftangriffe. Am 27. Juni 1954 tritt Árbenz zurück, weil die Armee nicht kämpft. Die CIA gab 1997 rund 1.400 Seiten dazu frei. Im späteren Bürgerkrieg wurden nach der Wahrheitskommission von 1999 über 200.000 Menschen getötet oder verschwanden, ganz überwiegend durch staatliche Kräfte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1955,
+   "titel": "Warschauer Pakt",
+   "text": "Am 9. Mai 1955 wird die Bundesrepublik Mitglied der NATO, am 14. Mai gründen die Sowjetunion und sieben osteuropäische Staaten in Warschau ihr Bündnis. Militärisch bestätigte es die ohnehin stationierten sowjetischen Truppen, politisch war es auch Verhandlungsmasse: Moskau bot wiederholt an, beide Blöcke aufzulösen. Einen Tag nach der Gründung wird der österreichische Staatsvertrag unterzeichnet, der Österreich gegen die Zusage der Neutralität die volle Souveränität zurückgibt.",
+   "vertiefung": "kalter-krieg-entsteht",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1955,
+   "titel": "Bandung und die Blockfreien",
+   "text": "Im April 1955 treffen sich in Bandung Vertreter von 29 asiatischen und afrikanischen Staaten, darunter Nehru, Nasser, Sukarno und Zhou Enlai. Sie verurteilen Kolonialismus und wollen sich keinem Block unterordnen. 1961 entsteht in Belgrad die Bewegung der Blockfreien. Für beide Supermächte wird die sogenannte Dritte Welt zum eigentlichen Schauplatz der Konkurrenz: Hier wird um Regierungen geworben, hier werden sie gestürzt, und hier sterben die meisten Opfer des Kalten Krieges.",
+   "vertiefung": "bandung",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1956,
+   "titel": "Die Geheimrede",
+   "text": "Am 25. Februar 1956 rechnet Nikita Chruschtschow auf dem XX. Parteitag der KPdSU in einer geschlossenen Sitzung mit Stalins Verbrechen an Parteimitgliedern ab; die Opfer anderer Gruppen bleiben weitgehend unerwähnt. Washington beschafft den Text, nach verbreiteter Darstellung über den israelischen Geheimdienst; Anfang Juni gibt das US-Außenministerium ihn frei, und die New York Times druckt ihn ab. Die Rede erschüttert die kommunistischen Parteien weltweit. In Polen führt der Aufstand von Posen im Juni zu Dutzenden Toten und im Oktober zur Rückkehr Władysław Gomułkas.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1956,
+   "titel": "Der Ungarische Volksaufstand",
+   "text": "Am 23. Oktober 1956 wird eine Studentendemonstration in Budapest zum Aufstand. Imre Nagy bildet eine Regierung, erklärt am 1. November den Austritt aus dem Warschauer Pakt und die Neutralität. Die Protokolle des sowjetischen Präsidiums zeigen, dass Moskau bereits am 31. Oktober die Niederschlagung beschlossen hatte; am 4. November rücken die Truppen ein. Etwa 2.500 Ungarn und rund 700 sowjetische Soldaten sterben, etwa 200.000 Menschen fliehen. Nagy wird 1958 hingerichtet. Radio Free Europe wurde vorgeworfen, Hoffnung auf westliche Hilfe geweckt zu haben, die nie kam.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1957,
+   "titel": "Sputnik",
+   "text": "Am 4. Oktober 1957 bringt die Sowjetunion den ersten künstlichen Satelliten in eine Umlaufbahn. Die Rakete, die ihn trägt, ist eine Interkontinentalrakete – die USA sind erstmals direkt erreichbar. In Washington folgen Bildungsprogramme, die Gründung der NASA und die Rede von einer Raketenlücke, mit der Kennedy 1960 Wahlkampf macht. Aufklärungsflüge und Satellitenbilder zeigten bald, dass die Lücke in Wirklichkeit zugunsten der USA bestand.",
+   "vertiefung": "mondlandung",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1960,
+   "titel": "Der Abschuss der U-2",
+   "text": "Seit 1956 überfliegen amerikanische U-2-Spionageflugzeuge die Sowjetunion. Am 1. Mai 1960 wird eine Maschine bei Swerdlowsk abgeschossen, der Pilot Francis Gary Powers überlebt. Washington behauptet zunächst, es handle sich um ein Wetterflugzeug, und wird von Chruschtschow bloßgestellt, der Wrack und Pilot präsentiert. Der Pariser Gipfel platzt. Zuvor hatte Chruschtschow mit seinem Berlin-Ultimatum vom November 1958 den Abzug der Westmächte gefordert. Powers wird 1962 auf der Glienicker Brücke gegen den Sowjetspion Rudolf Abel ausgetauscht.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1960,
+   "titel": "Kongo: Der Mord an Lumumba",
+   "text": "Der Kongo wird am 30. Juni 1960 von Belgien unabhängig, Patrice Lumumba Ministerpräsident. Katanga spaltet sich mit belgischer Unterstützung ab, Lumumba bittet die Sowjetunion um Hilfe. Nach dem Church Committee von 1975 bezeichnete CIA-Direktor Dulles seine Beseitigung als dringendes Ziel, und ein CIA-Chemiker brachte Gift in den Kongo, das nicht eingesetzt wurde. Im Januar 1961 wird Lumumba nach Katanga ausgeliefert und im Beisein belgischer Offiziere erschossen. Eine belgische Parlamentskommission stellte 2001 eine moralische Verantwortung der damaligen Regierung fest; Belgien entschuldigte sich 2002.",
+   "vertiefung": "dekolonisation",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1961,
+   "titel": "Die Schweinebucht",
+   "text": "Am 17. April 1961 landen rund 1.400 von der CIA ausgebildete Exilkubaner in der Schweinebucht. Die Operation war unter Eisenhower geplant und unter Kennedy genehmigt worden; der erwartete Volksaufstand bleibt aus, nach drei Tagen sind über tausend Mann gefangen. Ein interner Bericht des CIA-Generalinspekteurs, 1998 freigegeben, wirft dem Dienst Selbsttäuschung und schlechte Planung vor. Es folgt die Operation Mongoose; das Church Committee dokumentierte mindestens acht Mordpläne gegen Fidel Castro zwischen 1960 und 1965, teils unter Beteiligung der Mafia.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1961,
+   "titel": "Der Mauerbau",
+   "text": "Seit 1949 hatten rund 2,7 Millionen Menschen die DDR verlassen, die meisten über West-Berlin. In der Nacht zum 13. August 1961 riegeln Volkspolizei und Kampfgruppen die Sektorengrenze ab, mit Zustimmung Chruschtschows. Die Westmächte protestieren, greifen aber nicht ein, weil ihre eigenen Rechte in West-Berlin unangetastet bleiben. Im Oktober stehen sich am Checkpoint Charlie amerikanische und sowjetische Panzer gegenüber. Nach Forschungen des Zentrums für Zeithistorische Forschung und der Gedenkstätte Berliner Mauer starben an der Mauer mindestens 140 Menschen.",
+   "vertiefung": "mauerbau",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1962,
+   "titel": "Die Kubakrise",
+   "text": "Im Oktober 1962 entdecken amerikanische Aufklärungsflüge sowjetische Mittelstreckenraketen auf Kuba. Kennedy verhängt eine Seeblockade, dreizehn Tage lang steht die Welt näher am Atomkrieg als je zuvor. Die Lösung: Abzug der Raketen gegen die Zusage, Kuba nicht anzugreifen, und einen geheim gehaltenen Abzug amerikanischer Jupiter-Raketen aus der Türkei. Erst nach 1991 wurde bekannt, dass auf der Insel auch taktische Atomwaffen lagen, von denen Washington nichts wusste.",
+   "vertiefung": "kubakrise",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1963,
+   "titel": "Heißer Draht und Teststopp",
+   "text": "Die Kubakrise hatte gezeigt, wie langsam die Kommunikation zwischen Moskau und Washington war. Im Juni 1963 vereinbaren beide eine direkte Fernschreibverbindung, den sogenannten heißen Draht. Am 5. August unterzeichnen die USA, die Sowjetunion und Großbritannien in Moskau den Vertrag über das Verbot von Kernwaffenversuchen in der Atmosphäre, im Weltraum und unter Wasser. Unterirdische Tests bleiben erlaubt, Frankreich und China treten nicht bei. 1968 folgt der Atomwaffensperrvertrag.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1964,
+   "titel": "Brasilien: Der Putsch gegen Goulart",
+   "text": "Ende März 1964 stürzt das Militär den linksgerichteten Präsidenten João Goulart. Der Putsch war ein brasilianisches Unternehmen, doch Washington unterstützte ihn: Freigegebene Telegramme von Botschafter Lincoln Gordon und Unterlagen der Johnson-Bibliothek belegen die Operation Brother Sam, bei der ein Flottenverband und Treibstoff für die Putschisten bereitstanden, falls es zum Bürgerkrieg käme. Sie wurde nicht gebraucht. Die Militärdiktatur dauerte bis 1985; die Nationale Wahrheitskommission zählte 2014 434 Tote und Verschwundene.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1965,
+   "titel": "Vietnam wird ein amerikanischer Krieg",
+   "text": "Nach der Teilung Vietnams 1954 stützen die USA den Süden gegen einen von Hanoi unterstützten Aufstand. Im August 1964 dient ein Zwischenfall im Golf von Tonkin als Begründung für eine Ermächtigung durch den Kongress; eine 2005 freigegebene Studie des NSA-Historikers Robert Hanyok zeigt, dass der zweite gemeldete Angriff nicht stattfand. Ab 1965 kommen Bodentruppen, 1969 sind es über eine halbe Million. Die Sowjetunion und China liefern dem Norden Waffen. Über 58.000 US-Soldaten sterben; die Schätzungen der vietnamesischen Toten reichen von knapp einer Million (demografische Studie um Charles Hirschman, 1995, für 1965–1975) bis über drei Millionen (Angabe der vietnamesischen Regierung von 1995, für 1955–1975).",
+   "vertiefung": "tet-offensive",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1965,
+   "titel": "Indonesien: Die Massenmorde",
+   "text": "In der Nacht zum 1. Oktober 1965 ermorden Offiziere der Bewegung 30. September sechs Generäle. Die Armee unter Suharto macht die Kommunistische Partei verantwortlich und organisiert mit Milizen deren Vernichtung. Die meisten Schätzungen nennen 500.000 bis eine Million Tote, Hunderttausende werden ohne Prozess interniert. Freigegebene Akten, vor allem 2017 veröffentlichte Telegramme der US-Botschaft, belegen, dass Washington über die Morde unterrichtet war und die Armee politisch und materiell unterstützte; Botschaftsangehörige gaben Namenslisten von Kommunisten weiter.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1967,
+   "titel": "Griechenland: Die Obristen",
+   "text": "Am 21. April 1967, Wochen vor einer Wahl, putschen Obristen um Georgios Papadopoulos und nutzen dafür einen NATO-Notfallplan. Folter politischer Gefangener wurde von der Europäischen Menschenrechtskommission dokumentiert; Griechenland trat 1969 aus dem Europarat aus, um dem Ausschluss zuvorzukommen. Ob die USA den Putsch förderten, ist nicht belegt, sie arbeiteten aber mit der Junta zusammen. Diese stürzte 1974 nach dem gescheiterten Putsch auf Zypern. Präsident Clinton räumte 1999 in Athen ein, die USA hätten den Kalten Krieg über die Demokratie gestellt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1968,
+   "titel": "Der Prager Frühling",
+   "text": "Unter Alexander Dubček versucht die tschechoslowakische Partei 1968 einen Sozialismus mit menschlichem Antlitz: Zensur fällt, Reformen werden diskutiert. In der Nacht zum 21. August marschieren Truppen der Sowjetunion, Polens, Ungarns und Bulgariens ein; die beiden bereitgestellten Divisionen der Nationalen Volksarmee wurden, wie der Militärhistoriker Rüdiger Wenzke und Akten des Bundesarchivs zeigen, in Reserve gehalten und überschritten die Grenze nicht. Ein Einladungsbrief tschechoslowakischer Hardliner, 1992 von Russland übergeben, lieferte den Vorwand. Bis Jahresende kommen nach der Zählung der Historiker Prokop Tomek und Ivo Pejčoch (2017) 137 Tschechoslowaken durch die Besatzung ums Leben; frühere Angaben lagen bei 108. Die Breschnew-Doktrin erklärt die Souveränität sozialistischer Staaten für begrenzt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1970,
+   "titel": "Chile: Track II",
+   "text": "Am 4. September 1970 gewinnt Salvador Allende die Präsidentschaftswahl mit relativer Mehrheit. Elf Tage später weist Nixon CIA-Direktor Helms an, seine Amtsübernahme zu verhindern; Helms notierte, die Wirtschaft solle zum Schreien gebracht werden. Neben politischem Druck (Track I) sucht die CIA Offiziere für einen Putsch (Track II). Bei einem Entführungsversuch einer Gruppe, mit der die CIA in Kontakt stand, wird Armeechef René Schneider im Oktober tödlich verletzt. Belegt ist das durch das Church Committee 1975 und den Hinchey-Bericht der US-Geheimdienste von 2000.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1970,
+   "titel": "Neue Ostpolitik",
+   "text": "Die Regierung Brandt erkennt die Lage in Europa faktisch an, um sie zu verändern – Wandel durch Annäherung, wie Egon Bahr 1963 formuliert hatte. Im August 1970 folgt der Moskauer Vertrag, im Dezember der Warschauer Vertrag mit Brandts Kniefall am Ghettodenkmal, 1971 das Viermächteabkommen über Berlin, 1972 der Grundlagenvertrag mit der DDR. Brandt erhält 1971 den Friedensnobelpreis. Ob die Ostpolitik das SED-Regime stabilisierte oder seine Auflösung vorbereitete, ist bis heute umstritten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1972,
+   "titel": "Nixon in Peking, SALT in Moskau",
+   "text": "Seit den Grenzkämpfen am Ussuri 1969 sind China und die Sowjetunion offen verfeindet. Nixon nutzt das: Im Februar 1972 reist er nach Peking, im Mai unterzeichnet er in Moskau mit Breschnew den ersten Vertrag zur Begrenzung strategischer Waffen und den ABM-Vertrag gegen Raketenabwehr. Die Entspannung beruht auf dem Gedanken, dass gegenseitige Verwundbarkeit stabilisiert. Sie bleibt begrenzt: Die Rivalität verlagert sich in die Dritte Welt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1973,
+   "titel": "Chile: Der 11. September",
+   "text": "Zwischen 1970 und 1973 gab die CIA nach dem Church Committee rund acht Millionen Dollar gegen Allende aus, unter anderem für die Zeitung El Mercurio und Oppositionsparteien. Am 11. September 1973 putscht das Militär, die Moneda wird bombardiert, Allende nimmt sich das Leben. Der Hinchey-Bericht von 2000 kommt zu dem Schluss, die CIA habe den Putsch nicht angestiftet, die Junta danach aber aktiv unterstützt. Die chilenischen Wahrheitskommissionen erkennen über 3.000 Tote und Verschwundene und rund 38.000 Opfer politischer Haft und Folter an.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1975,
+   "titel": "Die Schlussakte von Helsinki",
+   "text": "Am 1. August 1975 unterzeichnen 35 Staaten, darunter die USA und Kanada, die Schlussakte der Konferenz über Sicherheit und Zusammenarbeit in Europa. Moskau erhält die Anerkennung der Unverletzlichkeit der Grenzen, der Westen eine Verpflichtung auf Menschenrechte und freien Informationsaustausch. Was Breschnew für ein Papier hielt, wird zur Berufungsgrundlage: 1976 entsteht in Moskau eine Helsinki-Gruppe, 1977 in Prag die Charta 77. Viele Historiker sehen darin einen Keim des späteren Zusammenbruchs.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1975,
+   "titel": "Angola und das Horn von Afrika",
+   "text": "Nach dem Ende der portugiesischen Herrschaft kämpfen in Angola drei Bewegungen um die Macht. Die USA unterstützen FNLA und UNITA verdeckt, Südafrika marschiert ein; Kuba schickt ab November 1975 Tausende Soldaten für die MPLA. Die Auswertung kubanischer Akten durch Piero Gleijeses zeigt, dass Havanna aus eigenem Antrieb handelte und Moskau erst nachzog. 1977/78 helfen sowjetische Luftbrücke und kubanische Truppen Äthiopien im Krieg gegen Somalia. In Washington gilt das als Beweis, dass Moskau die Entspannung ausnutzt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1975,
+   "titel": "Operation Condor",
+   "text": "Im November 1975 vereinbaren auf Einladung des chilenischen Geheimdienstchefs Manuel Contreras die Dienste Chiles, Argentiniens, Uruguays, Paraguays und Boliviens eine Zusammenarbeit; Brasilien und später Peru und Ecuador schließen sich an. Oppositionelle werden über Grenzen hinweg verfolgt, entführt und ermordet, 1976 sogar in Washington der chilenische Exilpolitiker Orlando Letelier. 1992 werden in Paraguay die Archive des Terrors gefunden. Freigegebene US-Akten zeigen, dass Washington früh über Condor informiert war. 2016 verurteilte ein Gericht in Buenos Aires Beteiligte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1976,
+   "titel": "Argentinien: Die Junta",
+   "text": "Am 24. März 1976 übernimmt das Militär unter Jorge Videla die Macht. In geheimen Lagern wie der Marineschule ESMA werden Gefangene gefoltert und ermordet, viele aus Flugzeugen ins Meer geworfen. Die Kommission CONADEP dokumentierte 1984 knapp 9.000 Verschwundene, Menschenrechtsorganisationen schätzen bis zu 30.000. Nach einem freigegebenen Gesprächsprotokoll riet Kissinger dem argentinischen Außenminister im Oktober 1976, das Nötige schnell zu tun. Die Sowjetunion wiederum, wichtiger Getreidekäufer, schonte die Junta in UN-Menschenrechtsgremien.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1979,
+   "titel": "Afghanistan",
+   "text": "Nach dem kommunistischen Umsturz von 1978 bittet die Regierung in Kabul mehrfach um sowjetische Truppen; die Politbüro-Protokolle vom März 1979 zeigen, dass Moskau zunächst ablehnte. Im Dezember marschiert die Armee doch ein und lässt Staatschef Amin töten. Carter hatte bereits im Juli 1979 verdeckte Hilfe für die Mudschahedin genehmigt; daraus wird über Pakistan eines der größten CIA-Programme. Etwa 15.000 sowjetische Soldaten sterben, wie viele Afghanen starben, ist sehr unsicher: Eine Übersicht der US-amerikanischen National Academies (2001) hält für die 1980er und 1990er Jahre zwischen 200.000 und zwei Millionen kriegsbedingte zusätzliche Todesfälle für möglich. Eine direkte CIA-Förderung Osama bin Ladens ist nicht belegt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1979,
+   "titel": "Der NATO-Doppelbeschluss",
+   "text": "Ab 1976 stationiert die Sowjetunion neue Mittelstreckenraketen vom Typ SS-20, die Westeuropa, aber nicht die USA erreichen. Helmut Schmidt warnt 1977 vor einer Abkopplung Europas. Im Dezember 1979 beschließt die NATO, ab 1983 eigene Pershing II und Marschflugkörper aufzustellen, falls Verhandlungen scheitern. In der Bundesrepublik entsteht eine der größten Protestbewegungen ihrer Geschichte, 1981 demonstrieren in Bonn rund 300.000 Menschen. Der Bundestag stimmt im November 1983 der Stationierung zu. Dass die SED Teile der Friedensbewegung förderte, ist belegt, das Ausmaß strittig.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1980,
+   "titel": "Solidarność",
+   "text": "Im August 1980 streiken die Arbeiter der Danziger Leninwerft und erzwingen die Zulassung einer freien Gewerkschaft; Solidarność hat bald rund zehn Millionen Mitglieder. Am 13. Dezember 1981 verhängt General Jaruzelski das Kriegsrecht, Tausende werden interniert. Jaruzelski rechtfertigte das später mit einer drohenden sowjetischen Invasion; Protokolle des Politbüros vom Dezember 1981 zeigen jedoch, dass Moskau einen Einmarsch ablehnte. Die Reagan-Regierung unterstützte die Untergrund-Solidarność verdeckt, unter anderem mit Geld und Druckausrüstung; der Politikwissenschaftler Seth G. Jones hat das 2018 anhand freigegebener CIA-Unterlagen beschrieben.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1981,
+   "titel": "Mittelamerika: Contras und Todesschwadronen",
+   "text": "Im Dezember 1981 genehmigt Reagan verdeckte Hilfe für die Contras gegen die sandinistische Regierung Nicaraguas, die von Kuba und der Sowjetunion unterstützt wird. Die CIA vermint 1984 nicaraguanische Häfen; der Internationale Gerichtshof stellt 1986 fest, dass die USA damit Völkerrecht verletzt haben. In El Salvador stützen die USA die Regierung gegen die Guerilla. Die UN-Wahrheitskommission von 1993 schreibt die große Mehrheit der Gewaltverbrechen im Bürgerkrieg mit rund 75.000 Toten staatlichen Kräften und Todesschwadronen zu, darunter das Massaker von El Mozote.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1983,
+   "titel": "Grenada",
+   "text": "Im Oktober 1983 wird Grenadas linker Regierungschef Maurice Bishop von einer rivalisierenden Fraktion seiner eigenen Partei ermordet. Sechs Tage später landen US-Truppen, gestützt auf ein Hilfeersuchen karibischer Nachbarstaaten; sie treffen auch auf kubanische Bauarbeiter und Soldaten. Die Regierung Reagan begründet den Einsatz mit der Sicherheit amerikanischer Medizinstudenten und der kubanischen Präsenz. Die UN-Generalversammlung bedauert die Intervention mit großer Mehrheit als Verletzung des Völkerrechts, und selbst Margaret Thatcher hatte widersprochen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1983,
+   "titel": "Able Archer",
+   "text": "1983 ist das gefährlichste Jahr seit Kuba: Reagan nennt die Sowjetunion ein Reich des Bösen und kündigt ein Raketenabwehrprogramm an, im September wird ein koreanisches Verkehrsflugzeug abgeschossen, 269 Menschen sterben. Wenig später meldet ein sowjetisches Frühwarnsystem fälschlich Raketenstarts; Oberstleutnant Stanislaw Petrow hält es für einen Fehlalarm. Im November übt die NATO mit Able Archer die Freigabe von Atomwaffen. Ein 2015 freigegebener Bericht eines Beratergremiums des US-Präsidenten von 1990 kommt zu dem Schluss, man habe die Beziehungen womöglich unbeabsichtigt in höchste Alarmbereitschaft versetzt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1985,
+   "titel": "Gorbatschow",
+   "text": "Im März 1985 wird Michail Gorbatschow Generalsekretär der KPdSU. Mit Glasnost und Perestroika will er das System retten, nicht abschaffen. Die Gipfel mit Reagan in Genf 1985 und Reykjavík 1986 scheitern zunächst an der Raketenabwehr, führen aber 1987 zum INF-Vertrag, der erstmals eine ganze Waffengattung abschafft. Vor den Vereinten Nationen kündigt Gorbatschow im Dezember 1988 einseitige Truppenreduzierungen an und erkennt die freie Wahl jedes Volkes an – das stillschweigende Ende der Breschnew-Doktrin.",
+   "vertiefung": "ende-kalter-krieg",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1985,
+   "titel": "Operation INFEKTION",
+   "text": "Ab 1983 verbreitet der KGB die Behauptung, das Aids-Virus sei in einem US-Militärlabor entwickelt worden. Ausgangspunkt war ein anonymer Brief in einer indischen Zeitung, 1985 griff eine sowjetische Literaturzeitung die Geschichte auf, die Auslandsaufklärung der Stasi half bei der Verbreitung. Die Behauptung erschien in Dutzenden Ländern und ist bis heute im Umlauf. 1992 räumte der russische Auslandsgeheimdienstchef Jewgeni Primakow die Beteiligung des KGB ein. Die Kampagne ist ein gut dokumentiertes Beispiel sowjetischer aktiver Maßnahmen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1986,
+   "titel": "Die Iran-Contra-Affäre",
+   "text": "Ab 1985 verkauft die Reagan-Regierung trotz Embargo Waffen an Iran, zunächst über Israel, um Geiseln im Libanon freizubekommen. Mitarbeiter des Nationalen Sicherheitsrats um Oliver North leiten Erlöse an die Contras weiter, obwohl der Kongress deren Unterstützung verboten hatte. Im November 1986 macht eine libanesische Zeitschrift die Waffenlieferungen öffentlich. Tower-Kommission, Kongress und ein Sonderermittler untersuchen die Affäre; elf Beteiligte werden verurteilt, zwei Urteile im Berufungsverfahren aufgehoben, Präsident Bush begnadigt 1992 sechs Personen, zwei davon noch vor ihrem Prozess.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1989,
+   "titel": "Das Jahr der Revolutionen",
+   "text": "In Polen führen Gespräche am Runden Tisch zu halbfreien Wahlen im Juni 1989, die Solidarność fast vollständig gewinnt; im August wird Tadeusz Mazowiecki Regierungschef. Ungarn baut ab Mai den Grenzzaun ab und öffnet im September die Grenze für DDR-Bürger. Am 9. Oktober demonstrieren in Leipzig rund 70.000 Menschen, ohne dass geschossen wird. Im November folgt die Samtene Revolution in Prag. Nur in Rumänien endet der Umsturz gewaltsam, mit über tausend Toten und der Hinrichtung Ceaușescus. Moskau greift nirgends ein.",
+   "vertiefung": "ende-kalter-krieg",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1989,
+   "titel": "Der Mauerfall",
+   "text": "Am Abend des 9. November 1989 verkündet SED-Funktionär Günter Schabowski auf einer Pressekonferenz eine neue Reiseregelung und antwortet auf die Frage nach dem Inkrafttreten: sofort, unverzüglich. Tausende ziehen zu den Grenzübergängen, an der Bornholmer Straße öffnet der diensthabende Offizier gegen 23.30 Uhr die Schlagbäume. Niemand hatte die Öffnung so geplant. Die sowjetischen Truppen in der DDR bleiben in den Kasernen.",
+   "vertiefung": "mauerfall",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1990,
+   "titel": "Die deutsche Einheit",
+   "text": "Nach der ersten freien Volkskammerwahl im März 1990 folgen Währungsunion und Einigungsvertrag. Im Zwei-plus-Vier-Vertrag vom 12. September verzichten die Siegermächte auf ihre Rechte, das vereinte Deutschland bleibt in der NATO und begrenzt die Bundeswehr auf 370.000 Mann. Am 3. Oktober tritt die DDR der Bundesrepublik bei. Ob westliche Politiker Gorbatschow mündlich zusagten, die NATO werde sich nicht nach Osten ausdehnen, ist bis heute einer der großen Streitpunkte; schriftlich festgehalten wurde eine solche Zusage nicht.",
+   "vertiefung": "wiedervereinigung",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1990,
+   "titel": "Gladio wird bekannt",
+   "text": "Im Oktober 1990 bestätigt Italiens Ministerpräsident Giulio Andreotti vor dem Parlament eine geheime Organisation namens Gladio, die seit 1956 auf Grundlage einer Absprache mit der CIA für den Fall einer sowjetischen Besetzung Waffenlager und Kämpfer bereithielt. Ähnliche Stay-behind-Netze der NATO-Staaten existierten in vielen Ländern, auch in der Bundesrepublik; Belgien und die Schweiz untersuchten sie parlamentarisch, das Europäische Parlament forderte Aufklärung. Ob Gladio-Strukturen an rechtsextremen Anschlägen beteiligt waren, ist nicht belegt und bleibt umstritten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1990,
+   "titel": "RAF-Aussteiger in der DDR",
+   "text": "Im Juni 1990 nimmt die Polizei in der noch bestehenden DDR zehn ehemalige Mitglieder der Roten Armee Fraktion fest, darunter Susanne Albrecht. Die meisten von ihnen hatten seit 1980 mit Hilfe der Staatssicherheit unter neuen Identitäten in der DDR gelebt. Die Aufnahme war ein Geschäft auf Gegenseitigkeit: Die Stasi bot Schutz, die Aussteiger blieben außer Reichweite der westdeutschen Justiz. Wie weit der Einfluss der Stasi auf die RAF insgesamt reichte, ist nach Darstellung der Bundeszentrale für politische Bildung bis heute nicht umfassend geklärt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1991,
+   "titel": "Das Ende der Sowjetunion",
+   "text": "Im Juli 1991 löst sich der Warschauer Pakt auf. Im August versuchen Hardliner in Moskau, Gorbatschow abzusetzen; der Putsch scheitert nach drei Tagen am Widerstand um Boris Jelzin. Im Dezember stimmt die Ukraine mit großer Mehrheit für die Unabhängigkeit, die Präsidenten Russlands, der Ukraine und Belarus erklären die Sowjetunion für aufgelöst. Am 25. Dezember tritt Gorbatschow zurück, die rote Fahne wird über dem Kreml eingeholt. Der Kalte Krieg endet ohne Krieg zwischen den Supermächten – in vielen anderen Ländern hatte er Millionen Tote gefordert.",
+   "vertiefung": "ende-kalter-krieg",
+   "seit": "2026-10-01"
+  }
+ ],
+ "strittig": "Wer den Kalten Krieg begann, ist die älteste Streitfrage. Die orthodoxe Schule der 1940er und 1950er Jahre sah die Ursache in sowjetischem Expansionsdrang und kommunistischer Ideologie, die USA hätten nur reagiert. Die revisionistische Schule – William Appleman Williams 1959, später Gabriel Kolko und Gar Alperovitz – kehrte das um: Das amerikanische Interesse an offenen Märkten und die Atomdiplomatie hätten Moskau in die Defensive gedrängt. Die postrevisionistische Schule um John Lewis Gaddis betonte seit den 1970er Jahren gegenseitige Fehlwahrnehmung und das Sicherheitsdilemma. Nach 1991 erlaubten sowjetische und osteuropäische Archive eine neue Bewertung: Gaddis selbst rückte Stalins Ideologie und Misstrauen wieder ins Zentrum, Vladislav Zubok beschreibt eine Mischung aus revolutionärem Anspruch und imperialem Sicherheitsdenken, Odd Arne Westad verlagert den Blick auf die Dritte Welt, in der die meisten Opfer starben. Umstritten ist auch die 1952 von Stalin angebotene Neutralisierung Deutschlands: ernstes Angebot oder Störmanöver gegen die Westbindung. Bei den verdeckten Operationen ist meist nicht mehr strittig, ob die USA beteiligt waren, sondern wie entscheidend sie waren. In Iran betonen Historiker wie Ray Takeyh die Rolle iranischer Akteure, andere sehen die CIA als treibende Kraft. In Chile kam der Hinchey-Bericht der US-Geheimdienste zu dem Ergebnis, die CIA habe den Putsch von 1973 nicht angestiftet; Kritiker wie Peter Kornbluh halten dagegen, dass die jahrelange Destabilisierung ihn erst möglich machte. Für Indonesien ist belegt, dass Washington die Armee unterstützte und Namenslisten weitergab; umstritten ist, wie weit das die Morde beeinflusste, die Forschung von John Roosa und Geoffrey Robinson sieht die Armeeführung als Planerin, und wer hinter der Bewegung 30. September stand, ist ebenfalls nicht abschließend geklärt. Auf sowjetischer Seite ist die Aktenlage lückenhafter: Viele KGB-Bestände sind bis heute gesperrt, und das Mitrokhin-Archiv, eine wichtige Quelle über Auslandsoperationen, beruht auf Abschriften eines Überläufers und lässt sich nur teilweise überprüfen. Offen sind ferner: wie nahe die Welt 1983 während Able Archer tatsächlich einem Atomkrieg kam, ob Jaruzelskis Kriegsrecht eine Invasion verhinderte, ob Zbigniew Brzezinski 1998 tatsächlich sagte, man habe Moskau bewusst in die afghanische Falle gelockt, ob Gladio mit Terroranschlägen in Italien verbunden war und ob dem Westen 1990 die NATO-Erweiterung verbindlich ausgeschlossen wurde. Schließlich das Ende: Ob Reagans Aufrüstung, Gorbatschows Entscheidungen, der wirtschaftliche Niedergang des Ostblocks oder die Bürgerbewegungen den Ausschlag gaben, wird je nach Schule unterschiedlich gewichtet.",
+ "quellen": [
+  "Foreign Relations of the United States (FRUS), Office of the Historian, US-Außenministerium: u. a. Iran 1951–1954 (Retrospektivband 2017), Guatemala (Retrospektivband 2003), 1964–1968 Bd. XXVI Indonesien, 1969–1976 Bd. XXI Chile",
+  "US-Senat, Church Committee: Alleged Assassination Plots Involving Foreign Leaders (1975); Covert Action in Chile 1963–1973 (1975)",
+  "CIA Activities in Chile (Hinchey-Bericht), vorgelegt von den US-Geheimdiensten unter dem Director of Central Intelligence, 18. September 2000",
+  "CIA/National Archives: Freigabe von rund 1.400 Seiten zu Guatemala, 23. Mai 1997; Inspector General Survey of the Cuban Operation (freigegeben 1998)",
+  "National Security Archive, George Washington University: Dossiers zu Iran 1953 (2013), Indonesien 1965–66 (2017), Able Archer 83 (2015), Operation Condor, Argentinien, Brasilien 1964",
+  "Wilson Center, Cold War International History Project: sowjetische und osteuropäische Archivdokumente (u. a. Präsidiumsprotokolle 1956, Politbüroprotokolle zu Afghanistan 1979 und Polen 1981)",
+  "Belgische Abgeordnetenkammer: Untersuchungskommission zur Ermordung Patrice Lumumbas, Abschlussbericht 2001",
+  "Comisión para el Esclarecimiento Histórico: Guatemala – Memoria del Silencio, 1999",
+  "CONADEP: Nunca Más, 1984; Comisión Rettig 1991 und Comisión Valech 2004/2011 (Chile); Comissão Nacional da Verdade, 2014 (Brasilien)",
+  "UN-Wahrheitskommission für El Salvador: De la locura a la esperanza, 1993; Internationaler Gerichtshof, Nicaragua gegen Vereinigte Staaten, Urteil 1986",
+  "Report of the President's Special Review Board (Tower-Kommission), 1987; Final Report of the Independent Counsel for Iran/Contra Matters (Walsh), 1993",
+  "Bundeszentrale für politische Bildung, Zentrum für Zeithistorische Forschung Potsdam und Stiftung Berliner Mauer: Dossiers zum 17. Juni 1953, zu den Todesopfern an der Berliner Mauer und zur Verhaftung der RAF-Aussteiger 1990",
+  "Encyclopaedia Britannica: Cold War; Yalta Conference; Marshall Plan; Hungarian Revolution; Cuban missile crisis; Iran-Contra Affair",
+  "Piero Gleijeses: Conflicting Missions. Havana, Washington, and Africa, 1959–1976, 2002; John Roosa: Pretext for Mass Murder, 2006",
+  "Thomas Boghardt: Soviet Bloc Intelligence and Its AIDS Disinformation Campaign, Studies in Intelligence 53/4, 2009",
+  "Prokop Tomek, Ivo Pejčoch: Okupace 1968 a její oběti, 2017; Rüdiger Wenzke: Wo stehen unsere Truppen? NVA und Bundeswehr in der ČSSR-Krise 1968, 2018; Bundesarchiv: 21. August 1968 – Einmarsch, kein Einmarsch",
+  "Charles Hirschman, Samuel Preston, Vu Manh Loi: Vietnamese Casualties During the American War, Population and Development Review 21/4, 1995; National Research Council: Forced Migration and Mortality, 2001",
+  "Seth G. Jones: A Covert Action. Reagan, the CIA, and the Cold War Struggle in Poland, 2018"
+ ],
+ "literatur": [
+  {
+   "titel": "The Global Cold War",
+   "autor": "Odd Arne Westad",
+   "jahr": "2005",
+   "warum": "Verlegt den Kalten Krieg dorthin, wo er heiß war: nach Afrika, Asien und Lateinamerika. Unverzichtbar für die Putsche und Interventionen dieses Querschnitts."
+  },
+  {
+   "titel": "Der Kalte Krieg. Eine neue Geschichte",
+   "autor": "John Lewis Gaddis",
+   "jahr": "2007",
+   "warum": "Knapp und gut lesbar, von einem der Begründer der postrevisionistischen Schule. Die Sicht ist amerikanisch geprägt – gerade das macht ihn als Gegenpol zu Westad nützlich."
+  },
+  {
+   "titel": "Der Kalte Krieg 1947–1991. Geschichte eines radikalen Zeitalters",
+   "autor": "Bernd Stöver",
+   "jahr": "2007",
+   "warum": "Die beste deutschsprachige Gesamtdarstellung, mit viel Raum für Alltag, Propaganda und die deutsche Teilung."
+  },
+  {
+   "titel": "A Failed Empire. The Soviet Union in the Cold War from Stalin to Gorbachev",
+   "autor": "Vladislav M. Zubok",
+   "jahr": "2007",
+   "warum": "Erklärt die sowjetische Seite aus den Moskauer Archiven heraus – ohne Rechtfertigung und ohne Dämonisierung."
+  },
+  {
+   "titel": "Der Eiserne Vorhang. Die Unterdrückung Osteuropas 1944–1956",
+   "autor": "Anne Applebaum",
+   "jahr": "2013",
+   "warum": "Zeigt Schritt für Schritt, wie die kommunistische Machtübernahme in Polen, Ungarn und der DDR organisiert wurde."
+  },
+  {
+   "titel": "CIA. Die ganze Geschichte",
+   "autor": "Tim Weiner",
+   "jahr": "2008",
+   "warum": "Erzählt die verdeckten Operationen von Italien 1948 bis Iran-Contra auf Grundlage freigegebener Akten. Journalistisch zugespitzt; Geheimdiensthistoriker kritisieren manche Wertungen, die Belege sind aber nachprüfbar angegeben."
+  }
+ ],
+ "seit": "2026-10-01"
+},
+{
+ "id": "katastrophen",
+ "titel": "Katastrophen – Natur, Technik, Versagen",
+ "kurz": "Vulkane, Beben, Fluten, Brände und Unglücke von Thera bis Derna — und was Menschen jeweils daraus gelernt oder versäumt haben.",
+ "einleitung": "Ein Erdbeben ist ein Naturereignis, eine Katastrophe wird es erst dort, wo Menschen leben, bauen und entscheiden. Dieser Querschnitt verfolgt beides: die Ereignisse selbst, von Vulkanausbrüchen der Bronzezeit bis zu den Fluten der Gegenwart, und die Frage, warum sie so viele Opfer forderten und was danach geändert wurde. Aus Bränden entstanden Bauordnungen, aus Schiffsunglücken Seerecht, aus Tsunamis Warnsysteme, aus Industrieunfällen der Begriff der Sicherheitskultur. Oft lernte man aber erst nach der zweiten oder dritten Katastrophe. Seuchen sind hier nur am Rand Thema; sie haben einen eigenen Querschnitt.",
+ "stationen": [
+  {
+   "jahr": -1600,
+   "titel": "Der Ausbruch von Thera",
+   "text": "Auf der Kykladeninsel Thera, dem heutigen Santorin, explodiert einer der größten Vulkane der Bronzezeit und begräbt die Stadt Akrotiri unter meterhoher Asche. Bemerkenswert ist, was fehlt: Die Ausgräber fanden kaum Tote und keine Wertsachen. Vorbeben hatten die Bewohner offenbar gewarnt, sie verließen die Stadt rechtzeitig. Die ältere These, der Ausbruch habe die minoische Kultur auf Kreta ausgelöscht, gilt als widerlegt – die kretischen Paläste bestanden noch Generationen weiter. Die Datierung ist eine der großen Streitfragen der Ägäis-Archäologie.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": -373,
+   "titel": "Helike versinkt",
+   "text": "In einer Winternacht zerstört ein Erdbeben die Stadt Helike an der Nordküste der Peloponnes, anschließend überflutet das Meer die Ebene. Antike Autoren wie Strabon und Pausanias berichten, die Ruinen seien noch Jahrhunderte später unter Wasser zu sehen gewesen, und deuteten den Untergang als Strafe Poseidons. Seit 1988 suchen die Archäologin Dora Katsonopoulou und der Physiker Steven Soter die Stadt und fanden Siedlungsreste nicht im Meer, sondern unter dem Schwemmland der Küstenebene. Nach ihrer Deutung versanken die Ruinen nach dem Beben in einer Lagune, die über die Jahrhunderte verlandete.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 64,
+   "titel": "Der Große Brand Roms",
+   "text": "Im Juli 64 brennt Rom etwa neun Tage lang. Nach Tacitus wurden von vierzehn Stadtbezirken drei völlig zerstört und sieben schwer beschädigt. Das Bild vom singenden Nero ist ein Gerücht, das Tacitus selbst als Gerücht kennzeichnet; der Kaiser war in Antium. Belegt ist dagegen, was danach kam: Nero erließ Bauvorschriften mit breiteren Straßen, begrenzten Höhen, Bauteilen aus feuerfestem Stein, Arkaden vor den Fassaden und griffbereitem Löschgerät in jedem Hof. Es ist eine der frühesten bekannten Brandschutzordnungen einer Großstadt.",
+   "vertiefung": "kaiser-nero",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 79,
+   "titel": "Vesuv: Pompeji und Herculaneum",
+   "text": "Der Vesuv begräbt Pompeji, Herculaneum, Stabiae und Oplontis. Die Menschen starben nicht in einem Lavastrom, sondern in Bimssteinregen, unter einstürzenden Dächern und vor allem in den Glutlawinen des zweiten Tages. In Pompeji wurden über tausend Opfer geborgen, in Herculaneum rund dreihundert Skelette in den Bootshäusern am Strand; die Gesamtzahl der Toten ist unbekannt. Plinius der Jüngere beschrieb den Ausbruch in zwei Briefen an Tacitus, sein Onkel, der Admiral Plinius der Ältere, kam bei einem Rettungsversuch ums Leben. Die Vulkanologie nennt diesen Ausbruchstyp bis heute plinianisch.",
+   "vertiefung": "vesuv",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 526,
+   "titel": "Das Erdbeben von Antiochia",
+   "text": "Im Mai 526 trifft ein Erdbeben Antiochia, eine der größten Städte des Oströmischen Reiches, während viele Pilger zu einem Kirchenfest in der Stadt sind. Auf die Erdstöße folgen Brände, die tagelang wüten. Der Chronist Johannes Malalas nennt 250.000 Tote – eine Zahl, die die Forschung für überhöht hält, die aber das Ausmaß ahnen lässt. Auch der Patriarch Euphrasios kam ums Leben. Nach einem weiteren Beben 528 wurde die Stadt in Theoupolis umbenannt, Stadt Gottes: Die Katastrophe wurde religiös gedeutet, nicht technisch.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 536,
+   "titel": "Das Jahr ohne Sonne",
+   "text": "Der byzantinische Historiker Prokop schreibt, die Sonne habe ein ganzes Jahr lang ohne Glanz geschienen, wie der Mond. Chinesische und irische Quellen berichten Ähnliches. Jahrringe und Eisbohrkerne aus Grönland und der Antarktis bestätigen heute, dass Vulkanausbrüche um 536 und 539/540 die Nordhalbkugel abkühlten; Forscher sprechen von einer spätantiken kleinen Eiszeit, die mehrere Jahrzehnte anhielt. Welcher Vulkan verantwortlich war, ist offen. Ob die Kälte über Missernten die Justinianische Pest ab 541 begünstigte, wird diskutiert, ist aber nicht belegt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1342,
+   "titel": "Das Magdalenenhochwasser",
+   "text": "Um den Tag der heiligen Maria Magdalena im Juli 1342 treten nach tagelangen Regenfällen Rhein, Main, Mosel, Donau und viele andere Flüsse Mitteleuropas über die Ufer. In Würzburg und Frankfurt stand das Wasser höher als bei jedem späteren Hochwasser, in Köln soll man mit Booten über die Stadtmauer gefahren sein. Wie viele Menschen starben, ist nicht überliefert. Bodenkundler um Hans-Rudolf Bork haben gezeigt, dass Starkregen auf frisch gerodeten Ackerflächen damals einen erheblichen Teil des Ackerbodens abschwemmte – eine Folge der mittelalterlichen Rodung, die die Landwirtschaft für Jahrzehnte schwächte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1362,
+   "titel": "Die Grote Mandrenke",
+   "text": "Am 16. Januar 1362 treibt ein Sturm das Wasser der Nordsee gegen die Küsten Frieslands, Nordfrieslands und Dänemarks. Die zweite Marcellusflut, später das große Ertrinken genannt, zerreißt die Küstenlinie und versenkt den Handelsort Rungholt. Die Opferzahlen der Chroniken gehen in die Zehntausende und sind nicht überprüfbar. Rungholt galt lange als Sage; 2023 lokalisierten Forscher im Wattenmeer bei der Hallig Südfall die Reste einer Kirchwarft. Zum Untergang trug nach Ansicht der beteiligten Forscher auch bei, dass Torfabbau zur Salzgewinnung und Entwässerung das Land über Jahrzehnte abgesenkt hatten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1556,
+   "titel": "Das Erdbeben von Shaanxi",
+   "text": "Am 23. Januar 1556, in der Regierungszeit des Ming-Kaisers Jiajing, erschüttert ein Erdbeben die Provinzen Shaanxi und Shanxi. Die amtlichen Aufzeichnungen nennen rund 830.000 Tote – es wäre das tödlichste Erdbeben der überlieferten Geschichte, auch wenn sich die Zahl nicht prüfen lässt. Die Ursache der hohen Opferzahl lag im Boden: Viele Menschen lebten in Wohnhöhlen, die in die weichen Lösswände gegraben waren, und diese stürzten großflächig ein. Das Beben zeigt früh, dass die Bauweise über die Zahl der Toten entscheidet, nicht die Stärke allein.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1666,
+   "titel": "Der Große Brand von London",
+   "text": "Am 2. September 1666 bricht in einer Bäckerei in der Pudding Lane Feuer aus. Vier Tage lang brennt die City, rund 13.000 Häuser, 87 Pfarrkirchen und die alte St Paul's Cathedral werden zerstört. Offiziell sind nur wenige Tote verzeichnet; Historiker halten die tatsächliche Zahl für höher, weil Arme und Unbekannte nicht erfasst wurden. Ein Franzose gestand die Brandstiftung und wurde gehängt, obwohl er nachweislich erst nach Ausbruch in London war. Das Wiederaufbaugesetz von 1667 schrieb Ziegel und Stein vor, in den folgenden Jahren entstanden die ersten Feuerversicherungen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1669,
+   "titel": "Der Ätna und der erste Versuch, Lava umzulenken",
+   "text": "Von März bis Juli 1669 fließt Lava aus einer Spalte am Südhang des Ätna, zerstört mehrere Dörfer und erreicht schließlich Catania, wo sie Teile der Stadtmauer überwindet. Ein Bürger namens Diego Pappalardo versuchte mit Männern in nassen Häuten, die erstarrte Flanke des Stroms aufzubrechen und die Lava abzulenken – der erste dokumentierte Versuch dieser Art. Bewaffnete aus dem Nachbarort Paternò, der nun bedroht war, vertrieben die Arbeiter. Der Konflikt, wessen Land geopfert wird, kehrt bei jeder späteren Lavaumleitung wieder.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1693,
+   "titel": "Das Erdbeben im Val di Noto",
+   "text": "Im Januar 1693 zerstört ein Erdbeben weite Teile Südostsiziliens, darunter Catania, Ragusa und Noto. Die Schätzungen der Toten liegen um 60.000. Bemerkenswert ist der Wiederaufbau: Noto wurde nicht an alter Stelle, sondern einige Kilometer entfernt auf einer neuen, planmäßig angelegten Fläche errichtet, andere Städte mit breiteren Straßen und Plätzen als Fluchträumen. Die spätbarocken Städte des Val di Noto, die so entstanden, gehören heute zum UNESCO-Welterbe – eine Katastrophe, die eine ganze Stadtlandschaft prägte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1755,
+   "titel": "Lissabon an Allerheiligen",
+   "text": "Am 1. November 1755, während die Kirchen voll sind, zerstört ein schweres Erdbeben Lissabon; ein Tsunami und tagelange Brände folgen. Schätzungen der Toten in der Stadt reichen von etwa 30.000 bis 60.000. Der leitende Minister, später Marquês de Pombal, ließ die Unterstadt nach einem Rasterplan wiederaufbauen und schrieb eine erdbebensichere Holzrahmenbauweise vor, die gaiola. Eine Umfrage an alle Pfarreien zu Dauer und Wirkung der Erdstöße gilt als Anfang der Seismologie. Voltaire stellte in einem Gedicht die Güte der Vorsehung in Frage, Rousseau widersprach ihm, Kant schrieb drei naturkundliche Abhandlungen über das Beben; der Glaube an eine gerechte Weltordnung bekam Risse.",
+   "vertiefung": "aufklaerung",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1783,
+   "titel": "Laki und der giftige Nebel",
+   "text": "Ab Juni 1783 reißt in Südisland eine über zwanzig Kilometer lange Spalte auf, aus der acht Monate lang Lava und Gase strömen. Fluorhaltige Asche vergiftet Weiden; ein großer Teil des Viehs verendet, und in der folgenden Hungersnot stirbt nach Schätzungen etwa ein Fünftel der Bevölkerung Islands. Über Europa liegt im Sommer ein trockener, schwefliger Nebel. Studien zu englischen Kirchenbüchern schätzen dort eine Übersterblichkeit von über 20.000 Menschen. Benjamin Franklin vermutete bereits damals einen Zusammenhang mit einem Vulkan.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1815,
+   "titel": "Tambora und das Jahr ohne Sommer",
+   "text": "Im April 1815 explodiert der Tambora auf der Insel Sumbawa, der stärkste Ausbruch der überlieferten Geschichte. Durch den Ausbruch selbst und den folgenden Hunger sterben auf Sumbawa und Lombok nach Schätzungen mindestens rund 70.000 Menschen. Im Jahr darauf bleibt in Europa und Nordamerika der Sommer aus, Ernten verfaulen, auch in Württemberg herrscht Hungersnot. König Wilhelm I. gründete daraufhin 1818 eine landwirtschaftliche Lehranstalt in Hohenheim und ein Landwirtschaftsfest auf dem Cannstatter Wasen, aus dem das Cannstatter Volksfest hervorging; Königin Katharina organisierte die Armenhilfe. Den Zusammenhang mit dem Vulkan stellte die Forschung erst viel später her.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1845,
+   "titel": "Die Große Hungersnot in Irland",
+   "text": "Ab 1845 vernichtet die Kartoffelfäule, ein aus Amerika eingeschleppter Erreger, mehrere Jahre hintereinander die Ernte, von der ein großer Teil der irischen Landbevölkerung lebte. Bis 1852 sterben schätzungsweise rund eine Million Menschen, über eine Million wandern aus. Die Krankheit war natürlich, das Ausmaß nicht: Die britische Regierung setzte nach anfänglichen Maisimporten auf Marktkräfte und Arbeitsprogramme, schloss die Suppenküchen nach kurzer Zeit und knüpfte Hilfe an harte Bedingungen, während Lebensmittel weiter ausgeführt wurden. Wie diese Politik zu bewerten ist, ist bis heute umstritten.",
+   "vertiefung": "irische-hungersnot",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1883,
+   "titel": "Krakatau",
+   "text": "Am 26. und 27. August 1883 zerreißt eine Folge von Explosionen die Vulkaninsel Krakatau in der Sundastraße. Die meisten der etwa 36.000 Toten, so die Angabe der niederländischen Kolonialverwaltung, sterben nicht durch den Vulkan, sondern durch Tsunamis an den Küsten Javas und Sumatras. Der Knall war noch auf der fast 5.000 Kilometer entfernten Insel Rodrigues zu hören. Durch das Telegrafennetz war Krakatau die erste Naturkatastrophe, von der die Welt binnen Stunden erfuhr; die Royal Society sammelte danach weltweit Beobachtungen der roten Sonnenuntergänge.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1889,
+   "titel": "Die Flut von Johnstown",
+   "text": "Am 31. Mai 1889 bricht nach Starkregen der South-Fork-Damm in Pennsylvania. Er staute einen See für einen exklusiven Jagd- und Angelclub wohlhabender Industrieller aus Pittsburgh, war schlecht unterhalten und an der Krone abgesenkt worden. Die Flutwelle zerstört Johnstown, über 2.200 Menschen sterben. Klagen gegen den Club scheiterten, was den Zorn auf die Reichen verstärkte; der Rechtshistoriker Jed Shugerman sieht darin einen Anstoß, dass US-Gerichte danach eher eine Haftung ohne nachgewiesenes Verschulden annahmen. Das Amerikanische Rote Kreuz unter Clara Barton bewährte sich hier erstmals in großem Maßstab.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1902,
+   "titel": "Saint-Pierre und die Glutwolke",
+   "text": "Am 8. Mai 1902 rast eine Glutwolke vom Mont Pelée auf Martinique in die Stadt Saint-Pierre und tötet binnen Minuten schätzungsweise 28.000 Menschen. Der Vulkan war seit Wochen aktiv gewesen, doch die Stadt wurde nicht geräumt; dass dabei die für den 11. Mai angesetzte Wahl eine Rolle spielte, vertreten manche Historiker, wie groß ihr Gewicht war, ist umstritten. Zu den sehr wenigen Überlebenden gehörte ein Häftling in einer dickwandigen Zelle. Der Geologe Alfred Lacroix untersuchte den Ausbruch und beschrieb erstmals wissenschaftlich die nuée ardente, die Glutwolke, die heute als pyroklastischer Strom gilt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1906,
+   "titel": "San Francisco und die gezählten Toten",
+   "text": "Am Morgen des 18. April 1906 erschüttert ein Erdbeben San Francisco, die anschließenden Brände zerstören große Teile der Stadt. Die Behörden meldeten damals einige hundert Tote – auch, um Investoren nicht abzuschrecken. Spätere Nachforschungen, vor allem der Archivarin Gladys Hansen, ergaben, dass die Zahl vermutlich über 3.000 lag; Chinesen und Arme waren kaum gezählt worden. Der Geologe Harry Fielding Reid entwickelte aus den Vermessungen nach dem Beben die Theorie des elastischen Rückpralls, die bis heute erklärt, wie Erdbeben an Verwerfungen entstehen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1908,
+   "titel": "Messina",
+   "text": "Am frühen Morgen des 28. Dezember 1908 trifft ein Erdbeben die Straße von Messina, ein Tsunami folgt. Messina und Reggio Calabria werden weitgehend zerstört. Die Schätzungen der Toten liegen zwischen etwa 60.000 und über 100.000; es ist das tödlichste Erdbeben der europäischen Geschichte im 20. Jahrhundert. Die Häuser aus Bruchstein ohne Verbund fielen in sich zusammen. Italien erließ 1909 erstmals verbindliche Bauvorschriften für Erdbebengebiete, mit Höhenbegrenzungen und Anforderungen an die Konstruktion – ein Anfang des modernen erdbebengerechten Bauens.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1912,
+   "titel": "Der Untergang der Titanic",
+   "text": "In der Nacht zum 15. April 1912 rammt die Titanic auf ihrer Jungfernfahrt einen Eisberg und sinkt in weniger als drei Stunden. Rund 1.500 Menschen sterben. Die Rettungsboote reichten für etwa die Hälfte der Menschen an Bord – legal, denn die britischen Vorschriften richteten sich nach der Tonnage, nicht nach der Zahl der Passagiere. Die Folge war das erste internationale Übereinkommen zum Schutz des menschlichen Lebens auf See, SOLAS, beschlossen 1914, wegen des Krieges aber erst in späteren Fassungen wirksam: Rettungsboote für alle, ständig besetzter Funk und eine internationale Eispatrouille im Nordatlantik.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1917,
+   "titel": "Die Explosion von Halifax",
+   "text": "Am 6. Dezember 1917 kollidiert im Hafen von Halifax in Kanada das französische Munitionsschiff Mont-Blanc mit einem anderen Schiff und fängt Feuer. Etwa zwanzig Minuten später explodieren mehrere tausend Tonnen Sprengstoff; die Explosion galt bis zur Atombombe als die stärkste von Menschen verursachte. Rund 2.000 Menschen sterben, etwa 9.000 werden verletzt, viele davon an den Augen, weil sie hinter Fenstern dem Feuer zugesehen hatten. Der Soziologe Samuel Prince schrieb 1920 die erste wissenschaftliche Studie darüber, wie Gesellschaften auf Katastrophen reagieren.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1923,
+   "titel": "Das Große Kantō-Erdbeben",
+   "text": "Um 11:58 Uhr am 1. September 1923 bebt die Erde unter Tokio und Yokohama. Weil zur Mittagszeit in Holzhäusern gekocht wurde, entstehen zahllose Brände; allein auf einem Platz, auf den sich Zehntausende geflüchtet hatten, sterben in einem Feuersturm etwa 38.000 Menschen. Neuere Schätzungen nennen insgesamt rund 105.000 Tote. Nach Gerüchten, Koreaner vergifteten Brunnen, ermordeten Bürgerwehren, teils mit Beteiligung von Polizei und Militär, zahlreiche Koreaner. Amtliche Angaben nannten damals rund 230 Opfer, viele Historiker schätzen mehrere Tausend, häufig genannt werden etwa 6.000. Japan verschärfte 1924 seine Bauvorschriften um Erdbebenlasten; der 1. September ist bis heute Tag der Katastrophenvorsorge.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1931,
+   "titel": "Die Fluten in Zentralchina",
+   "text": "Nach einem schneereichen Winter und außergewöhnlich starken Regenfällen treten im Sommer 1931 der Jangtse, der Huai und weitere Flüsse über die Ufer. Ein Gebiet von der Größe mehrerer europäischer Länder steht unter Wasser, Wuhan wochenlang. Die Zahl der Toten ist eine der unsichersten der Katastrophengeschichte: Eine Erhebung der Universität Nanking zählte rund 150.000 Ertrunkene, chinesische Historiker kamen aus zeitgenössischen Presseberichten auf gut 420.000 Tote, der amtliche Bericht von 1933 nannte einschließlich Hunger und Seuchen rund zwei Millionen; westliche Angaben von bis zu vier Millionen sind kaum belegbar. Vernachlässigte Deiche und der Bürgerkrieg verschärften die Lage.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1935,
+   "titel": "Der Dust Bowl",
+   "text": "Am 14. April 1935, dem Schwarzen Sonntag, verdunkelt ein gewaltiger Staubsturm die südlichen Great Plains der USA. Jahre der Dürre trafen auf Prärieboden, dessen Grasdecke in den Jahrzehnten zuvor für den Weizenanbau umgepflügt worden war; ohne Wurzeln trug der Wind die Krume davon. Hunderttausende verließen die Region. Noch im selben Monat schuf der Kongress den Soil Conservation Service. Windschutzstreifen, Konturpflügen und Fruchtwechsel wurden gefördert – eine Katastrophe, bei der Natur und landwirtschaftliche Praxis untrennbar zusammenwirkten.",
+   "vertiefung": "dust-bowl",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1937,
+   "titel": "Die Hindenburg",
+   "text": "Am 6. Mai 1937 fängt das deutsche Luftschiff LZ 129 Hindenburg bei der Landung in Lakehurst bei New York Feuer und brennt in weniger als einer Minute aus. 36 Menschen sterben, 62 überleben. Das Luftschiff war mit brennbarem Wasserstoff gefüllt, weil die USA die Ausfuhr von Helium untersagten. Als wahrscheinlichste Ursache gilt eine elektrostatische Entladung, die austretenden Wasserstoff entzündete; die These, die Außenhaut selbst sei der Brandbeschleuniger gewesen, ist umstritten. Die Filmbilder und die Radioreportage beendeten das Zeitalter der Passagierluftschiffe.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1938,
+   "titel": "Der Gelbe Fluss wird zur Waffe",
+   "text": "Im Juni 1938 lässt die chinesische Nationalregierung bei Huayuankou die Deiche des Gelben Flusses durchstechen, um den Vormarsch der japanischen Armee auf Zhengzhou aufzuhalten. Das Wasser überflutet weite Teile von Henan, Anhui und Jiangsu, der Fluss ändert für fast ein Jahrzehnt seinen Lauf. Die Schätzungen der Toten reichen von etwa 400.000 bis rund 900.000, Millionen wurden obdachlos. Militärisch verzögerte die Flut den japanischen Angriff auf Wuhan um Monate. Die Regierung schrieb die Flut zunächst japanischen Bomben zu; erst später wurde die Verantwortung eingeräumt.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1943,
+   "titel": "Die Hungersnot in Bengalen",
+   "text": "1943 sterben in der britisch-indischen Provinz Bengalen nach Schätzungen zwischen etwa zwei und drei Millionen Menschen an Hunger und Seuchen. Mehrere Ursachen trafen zusammen: der Ausfall der Reisimporte aus dem japanisch besetzten Birma, ein Zyklon und eine Pflanzenkrankheit 1942, die Beschlagnahme von Booten zur Abwehr einer japanischen Invasion, Kriegsinflation und Hortung. Die Provinzregierung reagierte spät, das britische Kriegskabinett lehnte umfangreiche Lieferungen lange ab. Wie stark die Ernte tatsächlich ausfiel und welches Gewicht Churchills Haltung hatte, ist umstritten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1953,
+   "titel": "Die Hollandflut",
+   "text": "In der Nacht zum 1. Februar 1953 treibt ein Sturm bei Springflut das Wasser der Nordsee gegen die Küsten. In den Niederlanden brechen Deiche an Hunderten Stellen, in Seeland und Südholland sterben 1.836 Menschen, in England über 300. Viele Opfer wurden im Schlaf überrascht, Warnungen erreichten sie nicht, weil der Rundfunk nachts nicht sendete. Die Niederlande beschlossen daraufhin den Deltaplan: ein jahrzehntelanges Bauprogramm aus Dämmen und Sturmflutwehren, das die Küstenlinie verkürzte und Schutz gegen Fluten bieten sollte, wie sie statistisch nur alle 10.000 Jahre auftreten.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1959,
+   "titel": "Die Große Chinesische Hungersnot",
+   "text": "In den Jahren 1959 bis 1961 sterben in China infolge des Großen Sprungs nach vorn nach den meisten Schätzungen zwischen 15 und 45 Millionen Menschen; viele Demografen kommen auf rund 30 Millionen. Ursachen waren die Kollektivierung in Volkskommunen, überhöhte Ernteberichte, auf deren Grundlage der Staat Getreide eintrieb und sogar exportierte, und der Abzug von Arbeitskräften in die Stahlkampagne. Als Peng Dehuai 1959 die Politik kritisierte, wurde er gestürzt, und Kritik verstummte. Die offizielle Bezeichnung als drei Jahre der Naturkatastrophen wird von der Forschung weitgehend zurückgewiesen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1960,
+   "titel": "Valdivia, das stärkste gemessene Beben",
+   "text": "Am 22. Mai 1960 ereignet sich vor der Küste Südchiles das stärkste je instrumentell gemessene Erdbeben, mit einer Momentmagnitude von etwa 9,5. In Chile sterben je nach Schätzung zwischen etwa 1.000 und 6.000 Menschen. Der Tsunami überquerte den Pazifik und tötete Stunden später noch Menschen auf Hawaii, wo viele die Warnsirenen nicht als Räumungssignal verstanden, und in Japan. In Chile drohte ein durch Erdrutsche gestauter See, das Tal zu fluten, Arbeiter senkten den Pegel in wochenlanger Arbeit kontrolliert ab. Die Katastrophe gab den Anstoß zum Ausbau eines internationalen Tsunami-Warnsystems im Pazifik.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1962,
+   "titel": "Die Hamburger Sturmflut",
+   "text": "In der Nacht zum 17. Februar 1962 brechen in Hamburg an zahlreichen Stellen die Deiche, in der Stadt sterben 315 Menschen, die meisten in Wilhelmsburg in Behelfsheimen und Kleingärten, in denen nach dem Krieg Ausgebombte lebten. Polizeisenator Helmut Schmidt holte Bundeswehr und Nato-Truppen zur Hilfe, wofür das Grundgesetz damals keine klare Grundlage bot. Die Deiche wurden danach erhöht und verstärkt, und die Erfahrung floss in die Notstandsgesetzgebung von 1968 ein, die den Einsatz der Streitkräfte bei Naturkatastrophen ausdrücklich regelte.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1963,
+   "titel": "Vajont",
+   "text": "Am Abend des 9. Oktober 1963 rutscht in den italienischen Alpen eine Bergflanke von mehr als 250 Millionen Kubikmetern in den Stausee hinter der Vajont-Staumauer. Die Flutwelle schlägt über die Mauer und zerstört im Piavetal den Ort Longarone und weitere Dörfer; fast 2.000 Menschen sterben. Die Mauer selbst blieb nahezu unbeschädigt. Die Betreibergesellschaft wusste seit Jahren von Rutschungen am Monte Toc; die Journalistin Tina Merlin hatte gewarnt und war dafür angeklagt, aber freigesprochen worden. Ein Gericht verurteilte später Verantwortliche wegen fahrlässiger Tötung.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1966,
+   "titel": "Aberfan",
+   "text": "Am 21. Oktober 1966 rutscht in dem walisischen Bergbauort Aberfan eine Abraumhalde des Steinkohlenbergbaus nach Regenfällen ab und begräbt die Pantglas-Grundschule. 144 Menschen sterben, 116 von ihnen Kinder. Die Untersuchungskommission machte die staatliche Kohlebehörde verantwortlich, die die Halde über einer Quelle aufgeschüttet und frühere Rutschungen ignoriert hatte. Niemand wurde bestraft. Großbritannien erließ 1969 erstmals ein Gesetz zur Sicherheit solcher Halden. Dass für deren Beseitigung Geld aus dem Spendenfonds für die Opfer verwendet wurde, empörte lange; es wurde erst Jahrzehnte später erstattet.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1970,
+   "titel": "Der Bhola-Zyklon",
+   "text": "Am 12. und 13. November 1970 trifft ein tropischer Wirbelsturm mit meterhoher Sturmflut die flachen Küsteninseln Ostpakistans. Die Schätzungen der Toten liegen zwischen 300.000 und 500.000; es ist einer der tödlichsten Wirbelstürme der Geschichte. Die zögerliche Hilfe der Zentralregierung in Westpakistan verschärfte die Spannungen, die 1971 in den Unabhängigkeitskrieg Bangladeschs mündeten. Bangladesch baute danach ein Netz von Schutzbauten und ein Freiwilligenprogramm zur Warnung auf. Spätere Zyklonen vergleichbarer Stärke forderten deutlich weniger Opfer.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1976,
+   "titel": "Tangshan",
+   "text": "Am 28. Juli 1976 um 3:42 Uhr zerstört ein Erdbeben die Industriestadt Tangshan östlich von Peking fast vollständig. Die chinesische Regierung nannte später 242.769 Tote; andere Schätzungen lagen deutlich höher. China lehnte internationale Hilfe ab. Ein Jahr zuvor war in Haicheng aufgrund von Vorbeben evakuiert worden, was als erste erfolgreiche Erdbebenvorhersage gefeiert wurde; in Tangshan gab es keine solchen Vorzeichen. Der Fall gilt bis heute als Beleg dafür, dass Erdbeben sich nicht zuverlässig vorhersagen lassen und nur Bauweise und Vorsorge helfen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1976,
+   "titel": "Seveso",
+   "text": "Am 10. Juli 1976 überhitzt in einer Chemiefabrik bei Seveso nördlich von Mailand ein Reaktor; eine Wolke mit dem hochgiftigen Dioxin TCDD geht über die umliegenden Gemeinden nieder. Tote gab es unmittelbar nicht, aber Kinder erkrankten an Chlorakne, Tausende Tiere verendeten, und die Evakuierung begann erst mehr als zwei Wochen später, weil das Unternehmen die Stoffe nur zögernd offenlegte. Die Europäische Gemeinschaft beschloss 1982 die Seveso-Richtlinie: Betriebe mit gefährlichen Stoffen müssen Risiken melden, Notfallpläne aufstellen und die Bevölkerung informieren.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1984,
+   "titel": "Bhopal",
+   "text": "In der Nacht zum 3. Dezember 1984 entweichen aus einem Tank der Pestizidfabrik von Union Carbide im indischen Bhopal rund 40 Tonnen Methylisocyanat. Die Regierung des Bundesstaats nannte 3.787 Tote, andere Schätzungen gehen von 8.000 bis 10.000 Toten in den ersten Tagen und deutlich mehr in den Folgejahren aus. Kühlung, Gaswäscher und Fackel, die das Gas hätten abfangen können, waren abgeschaltet oder unzureichend. Das Unternehmen sprach von Sabotage, die Betroffenen von systematischer Vernachlässigung. Der Vergleich von 1989 über 470 Millionen Dollar gilt vielen bis heute als unzureichend.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1985,
+   "titel": "Armero",
+   "text": "Am 13. November 1985 schmilzt ein kleiner Ausbruch des Nevado del Ruiz in Kolumbien Teile der Gletscherkappe. Schlammströme rasen die Flusstäler hinab und begraben Stunden später die Stadt Armero; rund 23.000 Menschen sterben. Eine Gefahrenkarte, die genau dieses Szenario zeigte, lag seit Wochen vor, doch eine Evakuierung wurde nicht angeordnet. Das Bild der im Schlamm eingeklemmten Omayra Sánchez ging um die Welt. Die USA gründeten danach ein Einsatzteam für Vulkankrisen, das Gefahrenstufen und die Verständigung mit Behörden in den Mittelpunkt stellt – Wissen allein hatte nicht gereicht.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1986,
+   "titel": "Challenger",
+   "text": "Am 28. Januar 1986 zerbricht die Raumfähre Challenger 73 Sekunden nach dem Start, alle sieben Besatzungsmitglieder sterben. Ein Dichtungsring an einer Feststoffrakete hatte in der ungewöhnlichen Kälte versagt. Ingenieure des Herstellers hatten am Vorabend vor dem Start gewarnt und waren überstimmt worden. Der Physiker Richard Feynman zeigte in der Untersuchungskommission mit einem Glas Eiswasser, wie das Material in der Kälte versteift. Die Soziologin Diane Vaughan prägte später den Begriff der Normalisierung von Abweichungen: Kleine Probleme, die gut gingen, galten irgendwann als akzeptabel.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1986,
+   "titel": "Tschernobyl",
+   "text": "In der Nacht zum 26. April 1986 gerät während eines Tests der Reaktor 4 des Kernkraftwerks Tschernobyl außer Kontrolle und explodiert. Zwei Arbeiter sterben in der Nacht, 28 Feuerwehrleute und Arbeiter in den folgenden Monaten an Strahlenkrankheit. Wie viele Krebstote langfristig hinzukommen, ist umstritten. Die Sowjetunion schwieg, bis in Schweden erhöhte Strahlung gemessen wurde. Die Untersuchung durch die Internationale Atomenergiebehörde machte einen Begriff bekannt, der bis heute weit über die Kerntechnik hinaus verwendet wird: Sicherheitskultur.",
+   "vertiefung": "tschernobyl",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1988,
+   "titel": "Piper Alpha",
+   "text": "Am 6. Juli 1988 explodiert die Ölplattform Piper Alpha in der Nordsee. Eine Pumpe, deren Sicherheitsventil zur Wartung ausgebaut war, wurde in Betrieb genommen; austretendes Gas entzündete sich. Benachbarte Plattformen förderten weiter und speisten das Feuer, 167 Menschen sterben. Der Untersuchungsbericht von Lord Cullen 1990 kritisierte mangelhafte Übergaben zwischen Schichten und ein Aufsichtssystem, das nur Vorschriften abhakte. Seine Folge war das Safety-Case-System: Betreiber müssen selbst nachweisen, dass sie ihre Risiken beherrschen, statt nur Regeln zu befolgen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1989,
+   "titel": "Exxon Valdez",
+   "text": "Am 24. März 1989 läuft der Tanker Exxon Valdez im Prince William Sound in Alaska auf ein Riff. Nach offizieller Angabe laufen rund 41.000 Kubikmeter Rohöl aus, Kritiker halten die Menge für höher; rund 2.000 Kilometer Küste werden verschmutzt, Seevögel und Meeressäuger sterben in großer Zahl. Der Kapitän hatte die Brücke verlassen, ein übermüdeter Offizier steuerte. Der Kongress verabschiedete 1990 den Oil Pollution Act, der für Tanker in US-Gewässern schrittweise eine Doppelhülle vorschrieb; die Internationale Seeschifffahrtsorganisation zog mit entsprechenden Regeln nach.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 1994,
+   "titel": "Der Untergang der Estonia",
+   "text": "In der Nacht zum 28. September 1994 sinkt die Fähre Estonia auf dem Weg von Tallinn nach Stockholm in schwerer See; 852 Menschen sterben, nur 137 überleben. Das Bugvisier riss ab, Wasser drang auf das Autodeck, und das Schiff kenterte binnen einer Stunde. Die Stabilitätsregeln für Fähren wurden danach verschärft. Weil 2020 ein Riss im Rumpf gefilmt wurde, blühten Theorien über eine Kollision oder Explosion. Die neue Untersuchung Estlands, Schwedens und Finnlands kam im Dezember 2025 zum Ergebnis, dass der Schaden durch den Meeresgrund entstand, und stellte fest, das Schiff sei wegen unentdeckter baulicher Mängel für diese Route technisch nie sicher gewesen.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2004,
+   "titel": "Der Tsunami im Indischen Ozean",
+   "text": "Am 26. Dezember 2004 löst ein Erdbeben der Magnitude 9,1 bis 9,3 vor Sumatra einen Tsunami aus, der Küsten von Indonesien bis Ostafrika trifft. Rund 230.000 Menschen sterben in vierzehn Ländern, die meisten in der Provinz Aceh. Im Indischen Ozean gab es kein Warnsystem; selbst Stunden nach dem Beben erreichte die Welle Sri Lanka und Indien unangekündigt. Auf der Insel Simeulue retteten sich die Bewohner dank mündlich überlieferter Erinnerung an einen früheren Tsunami fast alle. 2006 ging ein internationales Warnsystem für den Indischen Ozean in Betrieb.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2005,
+   "titel": "Hurrikan Katrina",
+   "text": "Am 29. August 2005 trifft Hurrikan Katrina die Golfküste der USA. In New Orleans brechen die Hochwasserschutzwände an mehreren Stellen, rund achtzig Prozent der Stadt stehen unter Wasser. Insgesamt sterben schätzungsweise 1.400 bis 1.800 Menschen. Untersuchungen ergaben, dass mehrere Wände nicht durch Überflutung versagten, sondern wegen Konstruktionsfehlern bei Wasserständen unterhalb der Auslegung. Die Katastrophenschutzbehörde FEMA reagierte schleppend, Tausende saßen tagelang ohne Versorgung fest. Der Schutzring um die Stadt wurde danach mit Milliardenaufwand neu gebaut.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2010,
+   "titel": "Haiti",
+   "text": "Am 12. Januar 2010 zerstört ein Erdbeben der Magnitude 7,0 große Teile von Port-au-Prince. Kaum eine Opferzahl ist so umstritten: Die haitianische Regierung nannte über 300.000 Tote, eine von der US-Entwicklungsbehörde beauftragte Studie kam auf etwa 46.000 bis 85.000. Unbewehrte Betonbauten ohne Bauaufsicht machten das Beben so tödlich. Im Oktober 2010 brach die Cholera aus, eingeschleppt durch Soldaten der UN-Friedenstruppe; Tausende starben. Die Vereinten Nationen räumten 2016 eine Mitverantwortung ein, eine rechtliche Haftung lehnten sie ab.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2011,
+   "titel": "Tōhoku und Fukushima",
+   "text": "Am 11. März 2011 löst ein Erdbeben der Magnitude 9,0 vor Japans Nordostküste einen Tsunami aus; rund 18.000 Menschen sterben oder bleiben vermisst. Im Kernkraftwerk Fukushima Daiichi fällt die Kühlung aus, in drei Reaktoren schmilzt der Brennstoff. Die Untersuchungskommission des japanischen Parlaments nannte den Unfall 2012 eine zutiefst menschengemachte Katastrophe: Der Betreiber hatte Berechnungen höherer Tsunamis gekannt und nicht gehandelt. Mehr als 2.000 Todesfälle in Fukushima werden auf Evakuierungsfolgen zurückgeführt. Deutschland beschloss im selben Jahr den Atomausstieg.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2013,
+   "titel": "Rana Plaza",
+   "text": "Am 24. April 2013 stürzt in Savar bei Dhaka das achtstöckige Gebäude Rana Plaza ein, in dem mehrere Textilfabriken für westliche Modemarken produzierten. Mehr als 1.100 Menschen sterben, etwa 2.500 werden verletzt. Am Vortag waren Risse entdeckt worden, eine Bank im Erdgeschoss schloss, die Näherinnen wurden dennoch zur Arbeit geschickt. Die oberen Etagen waren ohne Genehmigung aufgesetzt. Danach entstand ein verbindliches Abkommen über Brandschutz und Gebäudesicherheit in Bangladesch; die Debatte trug in Deutschland auch zum Lieferkettengesetz von 2021 bei.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2020,
+   "titel": "Die Explosion im Hafen von Beirut",
+   "text": "Am 4. August 2020 explodieren im Hafen von Beirut etwa 2.750 Tonnen Ammoniumnitrat, die seit 2014 ungesichert in einer Lagerhalle gelegen hatten. Über 220 Menschen sterben, mehr als 6.500 werden verletzt, ganze Stadtviertel werden verwüstet. Behörden und Spitzenpolitiker waren mehrfach gewarnt worden. Die Ermittlungen wurden durch Klagen gegen die Untersuchungsrichter jahrelang blockiert. Richter Tarek Bitar schloss seine Ermittlungen im März 2026 ab, im September legte die Generalstaatsanwaltschaft ihre Stellungnahme vor. Stand: Oktober 2026 steht die Anklageschrift aus; Justizminister Adel Nassar erwartete sie im Oktober, andere Berichte nennen das Jahresende.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2021,
+   "titel": "Die Flut im Ahrtal",
+   "text": "In der Nacht zum 15. Juli 2021 steigt die Ahr nach extremem Starkregen in kürzester Zeit auf Pegelstände, die alle Messungen übertreffen. Im Ahrtal sterben 135 Menschen, in Deutschland insgesamt über 180, auch in Belgien gibt es Dutzende Tote. Warnungen lagen vor, doch der Katastrophenalarm im Landkreis Ahrweiler kam spät, viele Menschen wussten nicht, was ihnen bevorstand. Die Staatsanwaltschaft Koblenz stellte das Verfahren gegen den damaligen Landrat 2024 ein. Ähnliche Fluten hatte es 1804 und 1910 gegeben. Deutschland führte danach die Warnung per Cell Broadcast auf alle Mobiltelefone ein.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2023,
+   "titel": "Das Erdbeben in der Türkei und Syrien",
+   "text": "Am 6. Februar 2023 erschüttern zwei Erdbeben der Magnitude 7,8 und 7,5 im Abstand weniger Stunden den Südosten der Türkei und den Norden Syriens. In der Türkei sterben über 50.000 Menschen, in Syrien nach Angaben der Vereinten Nationen mehrere Tausend; im Bürgerkriegsgebiet ist die Zahl besonders unsicher. Viele Gebäude stürzten ein, die nach geltenden Vorschriften hätten stehen bleiben müssen; Bauamnestien hatten zuvor nicht genehmigte Bauten legalisiert. Gegen Hunderte Bauunternehmer und Verantwortliche wurde ermittelt. Die Frage, ob ein Beben tötet oder die Bauaufsicht, stellte sich hier mit großer Schärfe.",
+   "seit": "2026-10-01"
+  },
+  {
+   "jahr": 2023,
+   "titel": "Derna",
+   "text": "In der Nacht zum 11. September 2023 bringt Sturmtief Daniel extreme Regenmengen über den Osten Libyens. Oberhalb der Stadt Derna brechen zwei Staudämme, die seit Jahrzehnten nicht ausreichend gewartet worden waren; eine Flutwelle reißt ganze Stadtteile ins Meer. Die Vereinten Nationen nannten mindestens 4.352 Tote, frühe Angaben des Libyschen Roten Halbmonds lagen bei über 11.000, Tausende gelten als vermisst. Ein libyscher Wissenschaftler hatte 2022 vor genau diesem Szenario gewarnt. Die politische Spaltung des Landes erschwerte Wartung wie Hilfe. Im Juli 2024 verurteilte ein Gericht in Derna zwölf von sechzehn angeklagten Beamten zu Haftstrafen zwischen neun und 27 Jahren.",
+   "seit": "2026-10-01"
+  }
+ ],
+ "strittig": "Fast jede Opferzahl in diesem Querschnitt ist eine Schätzung, und viele schwanken um ein Vielfaches: Für Antiochia 526 und Shaanxi 1556 gibt es nur die Zahlen der Chronisten, für die Fluten in China 1931 liegen die Angaben zwischen etwa 400.000 und vier Millionen, für Haiti 2010 zwischen rund 46.000 und über 300.000. Zahlen wurden aus politischen Gründen klein gehalten, wie in San Francisco 1906 oder bei der lange verschwiegenen Zahl von Tangshan, oder sie wurden in der ersten Erschütterung zu hoch gegriffen. Bei Tschernobyl reichen die Schätzungen späterer Krebstote je nach Methode und betrachteter Bevölkerung von einigen Tausend bis zu Zehntausenden. Auch Datierungen sind umstritten: Der Ausbruch von Thera wird nach Radiokarbonmessungen um 1600 v. Chr. angesetzt, nach der ägyptischen Chronologie und dem archäologischen Befund eher um 1500 v. Chr. Beim Vesuv galt der 24. August 79 als gesichert, weil ihn die Handschriften der Pliniusbriefe überliefern; Herbstfrüchte, warme Kleidung der Opfer und eine 2018 gefundene Kohleinschrift, die auf Mitte Oktober datiert ist, sprechen für einen Ausbruch im Oktober oder später. Die Handschriften selbst sind nicht einheitlich. Welcher Vulkan 536 die Abkühlung auslöste, ist offen. Am grundsätzlichsten ist der Streit über den Begriff Naturkatastrophe selbst. Die Katastrophenforschung betont seit Jahrzehnten, dass Erdbeben, Stürme und Dürren Gefahren sind, die Katastrophe aber aus Verwundbarkeit entsteht – aus Armut, Bauweise, Warnung, Regierungshandeln. Bei den Hungersnöten in Irland, Bengalen und China ist das politische Gewicht so groß, dass die Bewertung selbst umkämpft ist: Für Irland lehnen die meisten Historiker den Begriff Völkermord ab, sehen aber schwere politische Versäumnisse; für Bengalen ist strittig, ob eine echte Ernteknappheit bestand und wie viel Verantwortung beim britischen Kriegskabinett und bei Churchill persönlich lag; für China weist die Forschung die offizielle Rede von Naturkatastrophen weitgehend zurück, über die Opferzahl besteht aber keine Einigkeit. Bei technischen Unglücken wie Estonia oder Hindenburg hielten sich alternative Erklärungen lange, auch nachdem Untersuchungen sie widerlegt oder für unwahrscheinlich erklärt hatten.",
+ "quellen": [
+  "Encyclopaedia Britannica: Thera; Pompeii; Lisbon earthquake of 1755; Tambora; Krakatoa; Johnstown Flood; Messina earthquake of 1908; Titanic; Halifax Explosion; Kanto earthquake of 1923; Bengal famine of 1943; Great Leap Forward; Chile earthquake of 1960; Vajont Dam disaster; Aberfan disaster; Bhola cyclone; Tangshan earthquake of 1976; Bhopal disaster; Chernobyl disaster; Indian Ocean tsunami of 2004; Hurricane Katrina; Haiti earthquake of 2010; Fukushima accident; Rana Plaza collapse; Beirut explosion of 2020",
+  "Tacitus, Annalen 15,38–44; Plinius der Jüngere, Briefe 6,16 und 6,20; Prokop, Vandalenkriege 2,14; Johannes Malalas, Chronik 17",
+  "M. Sigl u. a.: Timing and climate forcing of volcanic eruptions for the past 2,500 years, Nature 523, 2015; U. Büntgen u. a.: Cooling and societal change during the Late Antique Little Ice Age, Nature Geoscience 9, 2016",
+  "Report of the Presidential Commission on the Space Shuttle Challenger Accident (Rogers-Kommission), 1986; The Public Inquiry into the Piper Alpha Disaster (Cullen-Bericht), 1990",
+  "IAEA, INSAG-1 (1986) und INSAG-4 (1991); WHO/IAEA/UNDP: Chernobyl's Legacy, 2005; UNSCEAR-Berichte 2008 und 2011",
+  "The National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission, Report, 2012",
+  "Estonian Safety Investigation Bureau u. a.: Final Report MV Estonia, Dezember 2025; ERR News, 16.12.2025",
+  "Naharnet, 7.9.2026 (Stand der Beirut-Ermittlungen); France 24, 28.7.2024 (Urteile Derna); beck-aktuell, 18.4.2024 (Einstellung des Verfahrens Ahrweiler); Arab News, 30.3.2026; Naharnet, 14.9.2026; Yeni Şafak, 21.9.2026; Libya Herald, 28.7.2024",
+  "Amartya Sen: Poverty and Famines, 1981"
+ ],
+ "literatur": [
+  {
+   "titel": "Poverty and Famines",
+   "autor": "Amartya Sen",
+   "jahr": "1981",
+   "warum": "Zeigt am Beispiel Bengalens und anderer Fälle, dass Hungersnöte selten an fehlender Nahrung, sondern an fehlendem Zugang scheitern — der Schlüssel zur Frage, was an einer Naturkatastrophe natürlich ist."
+  },
+  {
+   "titel": "Tambora: The Eruption That Changed the World",
+   "autor": "Gillen D'Arcy Wood",
+   "jahr": "2014",
+   "warum": "Verfolgt die Folgen eines einzigen Ausbruchs rund um die Welt, von Hungersnöten in Yunnan bis zur Cholera in Bengalen. Vorbildlich, wie Klimadaten und Geschichte zusammengebracht werden."
+  },
+  {
+   "titel": "The Last Day: Wrath, Ruin, and Reason in the Great Lisbon Earthquake of 1755",
+   "autor": "Nicholas Shrady",
+   "jahr": "2008",
+   "warum": "Lissabon 1755 als Ereignis, Wiederaufbau und Denkanstoß der Aufklärung — knapp und gut lesbar."
+  },
+  {
+   "titel": "The Challenger Launch Decision",
+   "autor": "Diane Vaughan",
+   "jahr": "1996",
+   "warum": "Die gründlichste Studie darüber, wie Organisationen sich an Risiken gewöhnen. Wer verstehen will, warum Warnungen überhört werden, beginnt hier."
+  },
+  {
+   "titel": "Tombstone: The Great Chinese Famine, 1958–1962",
+   "autor": "Yang Jisheng",
+   "jahr": "2008 (engl. 2012)",
+   "warum": "Ein chinesischer Journalist, dessen Vater in der Hungersnot starb, rekonstruiert sie aus Parteiarchiven der Provinzen."
+  },
+  {
+   "titel": "Midnight in Chernobyl",
+   "autor": "Adam Higginbotham",
+   "jahr": "2019",
+   "warum": "Auf sowjetischen Akten und Interviews beruhende Darstellung, die Technik, Bürokratie und Vertuschung zusammen erklärt."
+  }
+ ],
+ "seit": "2026-10-01"
+}
 ];

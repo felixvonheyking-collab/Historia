@@ -1,6 +1,6 @@
 # Tests
 
-Sechs Prüfungen, die `node pruefung.js` ergänzen. Das Prüfskript sieht die
+Sieben Prüfungen, die `node pruefung.js` ergänzen. Das Prüfskript sieht die
 Daten, diese Tests sehen die laufende App.
 
     npm install jsdom          # einmalig, irgendwo im Pfad
@@ -14,6 +14,8 @@ Daten, diese Tests sehen die laufende App.
 - `grafiken.js` — prüft, dass alle SVG-Grafiken als Elemente ankommen.
 - `karte.js` — prüft, dass jeder Ort der Karte als Punkt erscheint und dass
   der Weg Schlacht → Karte → Eintrag → zurück zur Karte die Auswahl hält.
+- `kriege-neu.js` — Startseite zeigt die Neuerungen, Schlacht und Krieg verweisen
+  aufeinander, „als gelesen markieren“ nimmt das „neu“ weg (je Krieg, Station, Querschnitt).
 - `hakenreihenfolge.js` — klickt sich durch und meldet, wenn die App
   dabei leer wird. Findet React-Fehler 300: ein Haken, der nach einem
   vorzeitigen `return` steht und deshalb nicht bei jedem Durchlauf

@@ -12,12 +12,13 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Suche | über alle rund 1.950 Einträge gleichzeitig |
 | Epochen | 7, mit 301 Ereignissen, 217 Persönlichkeiten, 109 Reichen |
 | Vertiefungen | 59 Langtexte mit Vorgeschichte, Verlauf, Folgen, Zahlen und Quellen |
-| Themengeschichte | 9 Querschnitte durch alle Epochen, 143 Stationen |
+| Themengeschichte | 30 Querschnitte durch alle Epochen, darunter Kalter Krieg und Katastrophen |
 | Länder-Zeitleisten | 30 Weltregionen |
 | Karte | 120 Orte: Schlachten, Stadtgeschichten, Mysterien – Koordinaten aus Wikidata, Küsten aus Natural Earth |
 | Mysterien | 20 ungeklärte und gelöste Fälle |
 | Schlüsselmomente | 101 |
-| Schlachten | 75 |
+| Schlachten | 101, jede einem Krieg zugeordnet |
+| Kriege | 158, von der Bronzezeit bis heute, mit Parteien, Ursachen, Verlauf, Folgen und Opferspannen |
 | Zitate | 104, jedes mit Belegstatus |
 | Mythen & Fun Facts | 165, alle Richtigstellungen mit Beleg |
 | Verblüffende Fakten | 143 |
@@ -29,6 +30,10 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 - **Was strittig ist, wird als strittig ausgewiesen.** Vertiefungen und Themen haben dafür einen eigenen Abschnitt.
 - **Zitate tragen einen Belegstatus.** 19 von 104 sind nachweislich falsch zugeschrieben – sie bleiben trotzdem drin, richtiggestellt, denn genau die werden weitererzählt.
 
+## Neu-Markierung
+
+Neue oder ausgebaute Einträge tragen in den Daten `seit: "JJJJ-MM-TT"`. Die App zeigt sie als „neu“, bis sie als gelesen markiert sind (gespeichert unter `historia.neu.gelesen`, in der Sicherung enthalten). Bei jedem künftigen Ausbau das Feld setzen – mehr ist nicht nötig.
+
 ## Aufbau
 
 Kein Build-Schritt, keine Abhängigkeiten. Die Dateien lassen sich direkt ausliefern.
@@ -36,7 +41,7 @@ Kein Build-Schritt, keine Abhängigkeiten. Die Dateien lassen sich direkt auslie
 ```
 index.html            Einstieg, lädt alle Skripte in fester Reihenfolge
 app.js                nur Code, keine Inhalte
-data-*.js             nur Inhalte, kein Code (data-karte.js: Küsten und Orte der Karte)
+data-*.js             nur Inhalte, kein Code (data-karte.js: Küsten und Orte der Karte, data-kriege.js: Kriege)
 sw.js                 Service Worker für den Offline-Betrieb
 pruefung.js           Prüfskript (siehe unten)
 react.js, react-dom.js, tailwind.css, Schriften, Symbole

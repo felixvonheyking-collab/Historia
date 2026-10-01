@@ -20,9 +20,9 @@
     <!-- Alles liegt im Repo: kein fremder CDN, offline lauffaehig.
          Tailwind wird nicht mehr im Browser erzeugt, sondern liegt als
          fertige Datei vor; JSX ist vorab uebersetzt, Babel entfaellt. -->
-    <link rel="stylesheet" href="tailwind.css?v=2026-10-01-1" />
-    <script src="react.js?v=2026-10-01-1"></script>
-    <script src="react-dom.js?v=2026-10-01-1"></script>
+    <link rel="stylesheet" href="tailwind.css?v=2026-10-01-2" />
+    <script src="react.js?v=2026-10-01-2"></script>
+    <script src="react-dom.js?v=2026-10-01-2"></script>
 
     <style>
       html, body, #root { height: 100%; }
@@ -46,7 +46,7 @@
         var text = "Ladefehler: " + roh + "\n" + (e.filename || "") + ":" + (e.lineno || "");
         // Fehlt eine Datendatei, ist der technische Wortlaut unbrauchbar.
         // Dann lieber sagen, was zu tun ist.
-        if (/EPOCHS|VERTIEFUNGEN|THEMEN|COUNTRY_TIMELINES|MYTHEN|MYSTERIEN|QUOTES|BATTLES|SCHLUESSELMOMENTE|SURPRISING_FACTS|KARTE/.test(roh)) {
+        if (/EPOCHS|VERTIEFUNGEN|THEMEN|COUNTRY_TIMELINES|MYTHEN|MYSTERIEN|QUOTES|BATTLES|SCHLUESSELMOMENTE|SURPRISING_FACTS|KARTE|KRIEGE/.test(roh)) {
           text = "Historia konnte die Inhalte nicht laden.\n\n" +
                  "Wahrscheinlich liegt noch eine alte Fassung im Zwischenspeicher.\n" +
                  "Bitte die Seite einmal vollstaendig neu laden.\n\n" +
@@ -62,18 +62,19 @@
       });
     </script>
 
-    <script src="data-epochen.js?v=2026-10-01-1"></script>
-    <script src="data-sammlungen.js?v=2026-10-01-1"></script>
-    <script src="data-laender.js?v=2026-10-01-1"></script>
-    <script src="data-mythen.js?v=2026-10-01-1"></script>
-    <script src="data-vertiefungen.js?v=2026-10-01-1"></script>
-    <script src="data-themen.js?v=2026-10-01-1"></script>
-    <script src="data-mysterien.js?v=2026-10-01-1"></script>
-    <script src="data-dynastien.js?v=2026-10-01-1"></script>
-    <script src="data-grafiken.js?v=2026-10-01-1"></script>
-    <script src="data-bilder.js?v=2026-10-01-1"></script>
-    <script src="data-karte.js?v=2026-10-01-1"></script>
-    <script src="app.js?v=2026-10-01-1"></script>
+    <script src="data-epochen.js?v=2026-10-01-2"></script>
+    <script src="data-sammlungen.js?v=2026-10-01-2"></script>
+    <script src="data-laender.js?v=2026-10-01-2"></script>
+    <script src="data-mythen.js?v=2026-10-01-2"></script>
+    <script src="data-vertiefungen.js?v=2026-10-01-2"></script>
+    <script src="data-themen.js?v=2026-10-01-2"></script>
+    <script src="data-mysterien.js?v=2026-10-01-2"></script>
+    <script src="data-dynastien.js?v=2026-10-01-2"></script>
+    <script src="data-grafiken.js?v=2026-10-01-2"></script>
+    <script src="data-bilder.js?v=2026-10-01-2"></script>
+    <script src="data-karte.js?v=2026-10-01-2"></script>
+    <script src="data-kriege.js?v=2026-10-01-2"></script>
+    <script src="app.js?v=2026-10-01-2"></script>
 
     <script>
       (function () {

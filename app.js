@@ -127,7 +127,7 @@ function passt(eintrag, felder, suche) {
 /* Aufklappbare Karte. Zugeklappt stehen Jahr, Titel und eine Zeile
    Zusammenfassung, offen der ganze Inhalt. Der Kopf ist ein Knopf,
    damit Tastatur und Vorleseprogramm damit umgehen koennen. */
-function AufklappKarte({ jahr, titel, zeile, marken, akzent, anker, kinder, offenVorgabe }) {
+function AufklappKarte({ jahr, titel, zeile, marken, akzent, anker, kinder, offenVorgabe, zusatz }) {
   const [offen, setOffen] = useState(!!offenVorgabe);
   return /* @__PURE__ */ React.createElement("div", {
     "data-anker": anker,
@@ -144,7 +144,8 @@ function AufklappKarte({ jahr, titel, zeile, marken, akzent, anker, kinder, offe
           (marken || []).map((m, i) => /* @__PURE__ */ React.createElement("span", {
             key: i,
             className: "text-[10px] uppercase tracking-wide text-[#bd9563] border border-[#5c2018] rounded px-1.5 py-0.5"
-          }, m))
+          }, m)),
+          zusatz
         ),
         /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[17px] text-[#e0b84a] leading-snug" }, titel),
         zeile && !offen && /* @__PURE__ */ React.createElement("p", {
@@ -487,6 +488,10 @@ function VertiefungenTab({ ziel }) {
    ========================================================= */
 
 function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
+  const { istNeu, markiere } = useNeu();
+  const neueStationen = eintrag.stationen.filter((s) => istNeu(stationSchluessel(eintrag.id, s), s.seit));
+  const themaNeu = istNeu("thema:" + eintrag.id, eintrag.seit);
+  const alleNeuen = () => ["thema:" + eintrag.id].concat(eintrag.stationen.filter((s) => s.seit).map((s) => stationSchluessel(eintrag.id, s)));
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("button", {
       onClick: onBack,
@@ -494,6 +499,10 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu allen Themen"),
 
     /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-2" }, eintrag.titel),
+    (themaNeu || neueStationen.length > 0) && /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-3 flex-wrap mb-3 text-xs text-[#c2a06a]" },
+      /* @__PURE__ */ React.createElement(NeuMarke, null),
+      themaNeu ? "Neuer Querschnitt" : neueStationen.length + (neueStationen.length === 1 ? " neue Station" : " neue Stationen"),
+      /* @__PURE__ */ React.createElement(GelesenKnopf, { text: "alles als gelesen markieren", onClick: () => markiere(alleNeuen()) })),
     ortFuer("stadt", eintrag.id) && /* @__PURE__ */ React.createElement("div", { className: "mb-3" },
       /* @__PURE__ */ React.createElement(AufDerKarte, { art: "stadt", kennung: eintrag.id, herkunft: { reiter: "themen", eintrag: eintrag.id, label: "Querschnitte" } })),
     /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic leading-relaxed border-l-2 border-[#d4af37] pl-4 mb-5" }, eintrag.kurz),
@@ -521,11 +530,13 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     /* @__PURE__ */ React.createElement("div", { className: "relative pl-5 border-l border-[#5c2018]" },
       eintrag.stationen.map((s, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "relative mb-5" },
         /* @__PURE__ */ React.createElement("span", { className: "absolute -left-[23px] top-1.5 w-2 h-2 rounded-full bg-[#d4af37]" }),
-        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap mb-0.5" },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-2 flex-wrap mb-0.5", "data-anker": ankerName(s.titel) },
           /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, formatYear(s.jahr)),
           s.herrschaft && /* @__PURE__ */ React.createElement("span", {
             className: "text-[10px] uppercase tracking-wide text-[#bd9563] border border-[#5c2018] rounded px-1.5 py-0.5"
-          }, s.herrschaft)),
+          }, s.herrschaft),
+          istNeu(stationSchluessel(eintrag.id, s), s.seit) && /* @__PURE__ */ React.createElement(NeuMarke, null),
+          istNeu(stationSchluessel(eintrag.id, s), s.seit) && /* @__PURE__ */ React.createElement(GelesenKnopf, { text: "als gelesen", onClick: () => markiere(stationSchluessel(eintrag.id, s)) })),
         /* @__PURE__ */ React.createElement("div", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, s.titel),
         /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, s.text),
         (() => {
@@ -553,7 +564,7 @@ function ThemaDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
     ),
 
     /* @__PURE__ */ React.createElement("button", {
-      onClick: () => toggleGelesen(eintrag.id),
+      onClick: () => { if (!gelesen) markiere(alleNeuen()); toggleGelesen(eintrag.id); },
       className: `mt-5 flex items-center gap-2 px-3 py-2 rounded text-sm border ${gelesen ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a] hover:text-[#e0b84a]"}`
     }, /* @__PURE__ */ React.createElement(Check, { size: 15 }), gelesen ? "Gelesen" : "Als gelesen merken")
   );
@@ -564,6 +575,7 @@ function ThemenTab({ ziel }) {
   React.useEffect(() => { if (ziel) setOffen(ziel); }, [ziel]);
   const [gelesen, setGelesen] = useGespeichert("themen.gelesen", []);
   const toggleGelesen = (id) => setGelesen((bisher) => bisher.includes(id) ? bisher.filter((x) => x !== id) : [...bisher, id]);
+  const { istNeu } = useNeu();
 
   if (offen) {
     const eintrag = THEMEN.find((t) => t.id === offen);
@@ -595,7 +607,12 @@ function ThemenTab({ ziel }) {
             /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]" }, t.stationen.length, " Stationen"),
             /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] border border-[#5c2018] rounded px-1.5 py-0.5" },
               formatYear(t.stationen[0].jahr), " – ", formatYear(t.stationen[t.stationen.length - 1].jahr)),
-            istGelesen && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#f0d878] border border-[#d4af37] rounded px-1.5 py-0.5" }, "gelesen")
+            istGelesen && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#f0d878] border border-[#d4af37] rounded px-1.5 py-0.5" }, "gelesen"),
+            (() => {
+              if (istNeu("thema:" + t.id, t.seit)) return /* @__PURE__ */ React.createElement(NeuMarke, null);
+              const n = t.stationen.filter((s) => istNeu(stationSchluessel(t.id, s), s.seit)).length;
+              return n > 0 && /* @__PURE__ */ React.createElement("span", { className: "inline-flex items-center gap-1 text-[11px]", style: { color: "#a8d47a" } }, /* @__PURE__ */ React.createElement(NeuMarke, null), n);
+            })()
           ),
           /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] mb-1" }, t.titel),
           /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, t.kurz),
@@ -1781,6 +1798,11 @@ function sucheIndex() {
     kontext: formatYear(s.year) + " · " + s.category, jahr: s.year, reiter: "schluessel", ziel: ankerName(s.title)
   }));
 
+  KRIEGE.forEach((k) => rein({
+    art: "Krieg", titel: k.name, text: k.kurz + " " + k.ursachen + " " + k.verlauf + " " + (k.parteien || []).map((p) => p.wer + " " + p.fuehrer).join(" "),
+    kontext: kriegZeitraum(k) + " · " + k.region, jahr: k.von, reiter: "kriege", ziel: k.id
+  }));
+
   BATTLES.forEach((b) => rein({
     art: "Schlacht", titel: b.name, text: b.text,
     kontext: formatYear(b.year) + " · " + b.war, jahr: b.year, reiter: "schlachten", ziel: ankerName(b.name)
@@ -1812,7 +1834,7 @@ const ART_FARBE = {
   "Epoche": "#8c6a2e", "Ereignis": "#a01f1f", "Persönlichkeit": "#2a5b8a", "Reich": "#7d5b1f",
   "Zeitleiste": "#1f8a7d", "Vertiefung": "#d4af37", "Themengeschichte": "#6b4f9a", "Themen-Station": "#6b4f9a",
   "Herrscher": "#c9a05a", "Dynastie": "#8c6a2e",
-  "Schlüsselmoment": "#c9701c", "Schlacht": "#8a3020", "Zitat": "#3f7d3f", "Mythos": "#a03a20",
+  "Schlüsselmoment": "#c9701c", "Schlacht": "#8a3020", "Krieg": "#b0442c", "Zitat": "#3f7d3f", "Mythos": "#a03a20",
   "Nuance": "#bd9563", "Kuriosum": "#c2a06a", "Mysterium": "#5b7d1f", "Verblüffender Fakt": "#8a5b7d"
 };
 
@@ -1962,6 +1984,7 @@ function StartTab() {
     { wert: EPOCHS.reduce((a, e) => a + e.events.length, 0), was: "Ereignisse", reiter: "epochen" },
     { wert: VERTIEFUNGEN.length, was: "Vertiefungen", reiter: "vertiefungen" },
     { wert: THEMEN.length, was: "Querschnitte", reiter: "themen" },
+    { wert: KRIEGE.length, was: "Kriege", reiter: "kriege" },
     { wert: Object.keys(COUNTRY_TIMELINES).length, was: "Weltregionen", reiter: "laender" },
     { wert: EPOCHS.reduce((a, e) => a + e.figures.length, 0), was: "Persönlichkeiten", reiter: "personen" },
     { wert: MYTHEN.length, was: "Mythen", reiter: "mythen" },
@@ -1975,6 +1998,8 @@ function StartTab() {
     /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#e0b84a] mb-1" }, "Von der Steinzeit bis zur Gegenwart."),
     /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-6 max-w-2xl" },
       "Zum Nachschlagen, zum Vertiefen und zum Behalten. Wo etwas strittig ist, steht es dabei."),
+
+    /* @__PURE__ */ React.createElement(NeuKasten, null),
 
     weiter && /* @__PURE__ */ React.createElement("button", {
       onClick: () => springe("vertiefungen", weiter.id),
@@ -2082,6 +2107,7 @@ function LesbarerName(schluessel) {
     "unterreiter": "zuletzt geöffneter Unterreiter",
     "vertiefungen.gelesen": "gelesene Vertiefungen",
     "themen.gelesen": "gelesene Themen",
+    "neu.gelesen": "gelesene Neuerungen",
     "zuletzt.gelesen": "Weiterlesen-Merker",
     "lernen.bilanz": "Lernbilanz",
     "fragen": "Forschungsfragen"
@@ -2362,6 +2388,7 @@ const BEREICHE = [
   { id: "momente", label: "Momente", icon: Zap, akzent: "#e8706a", unter: [
       { id: "schluessel", label: "Schl\xFCsselmomente" },
       { id: "schlachten", label: "Schlachten" },
+      { id: "kriege", label: "Kriege" },
       { id: "zitate", label: "Zitate" }
   ] },
   { id: "raetsel", label: "Mythen & R\xE4tsel", icon: HelpCircle, akzent: "#d9b56a", unter: [
@@ -2535,6 +2562,248 @@ function SchluesselmomenteTab({ ziel }) {
   );
 }
 /* =========================================================
+   NEU-MARKIERUNG
+
+   Was in einer Runde neu dazukam oder ausgebaut wurde, traegt in den
+   Daten ein Feld 'seit' (Datum). Solange es nicht als gelesen markiert
+   ist, zeigt die App ein "neu". Gemerkt wird nur, was gelesen ist -
+   nicht, was neu ist. So wird alles Kuenftige von selbst neu, ohne
+   dass die App wissen muss, wann sie zuletzt geoeffnet wurde.
+
+   Schluessel: "krieg:<id>", "thema:<id>", "station:<thema>:<titel>".
+   Die gelesenen Schluessel stehen unter historia.neu.gelesen und
+   werden von der Sicherung mitgenommen.
+   ========================================================= */
+
+function stationSchluessel(themaId, s) {
+  return "station:" + themaId + ":" + ankerName(s.titel);
+}
+
+// Alle Eintraege, die ein 'seit' tragen - einmal je Aufruf berechnet.
+function alleNeuerungen() {
+  const liste = [];
+  (typeof KRIEGE !== "undefined" ? KRIEGE : []).forEach((k) => {
+    if (k.seit) liste.push({ schluessel: "krieg:" + k.id, art: "Krieg", titel: k.name, reiter: "kriege", ziel: k.id });
+  });
+  THEMEN.forEach((t) => {
+    if (t.seit) liste.push({ schluessel: "thema:" + t.id, art: "Querschnitt", titel: t.titel, reiter: "themen", ziel: t.id });
+    t.stationen.forEach((s) => {
+      if (s.seit) liste.push({ schluessel: stationSchluessel(t.id, s), art: "Station", titel: s.titel, kontext: t.titel, reiter: "themen", ziel: t.id, thema: t.id });
+    });
+  });
+  return liste;
+}
+
+function useNeu() {
+  const [gelesen, setGelesen] = useGespeichert("neu.gelesen", []);
+  const menge = useMemo(() => new Set(gelesen), [gelesen]);
+  const istNeu = (schluessel, seit) => !!seit && !menge.has(schluessel);
+  const markiere = (schluessel) => setGelesen((bisher) => {
+    const neu = new Set(bisher);
+    [].concat(schluessel).forEach((s) => neu.add(s));
+    return [...neu];
+  });
+  return { istNeu, markiere, gelesen: menge };
+}
+
+function NeuMarke() {
+  return /* @__PURE__ */ React.createElement("span", {
+    "data-neu": "1",
+    style: { fontSize: "10px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em",
+      color: "#1d2b12", backgroundColor: "#a8d47a", borderRadius: "4px", padding: "1px 6px", lineHeight: "16px" }
+  }, "neu");
+}
+
+function GelesenKnopf({ onClick, text }) {
+  return /* @__PURE__ */ React.createElement("button", {
+    onClick: (e) => { e.stopPropagation(); onClick(); },
+    className: "inline-flex items-center gap-1 text-xs",
+    style: { color: "#a8d47a" }
+  }, /* @__PURE__ */ React.createElement(Check, { size: 12 }), text || "Als gelesen markieren");
+}
+
+// Kasten fuer die Startseite: was ist neu, und wohin.
+function NeuKasten() {
+  const { istNeu, markiere } = useNeu();
+  const alle = alleNeuerungen().filter((n) => istNeu(n.schluessel, true));
+  if (!alle.length) return null;
+  // Stationen eines ganz neuen Querschnitts nicht noch einmal einzeln
+  // aufzaehlen - der Querschnitt steht schon da.
+  const neueThemen = new Set(alle.filter((n) => n.art === "Querschnitt").map((n) => n.ziel));
+  const offen = alle.filter((n) => !(n.art === "Station" && neueThemen.has(n.thema)));
+  const gruppen = {};
+  offen.forEach((n) => {
+    const g = n.art === "Station" ? "Neue Stationen in Querschnitten" : n.art === "Krieg" ? "Neue Kriege" : "Neue Querschnitte";
+    (gruppen[g] = gruppen[g] || []).push(n);
+  });
+  const springe = (n) => { if (SPRINGE) SPRINGE(n.reiter, n.ziel); };
+  return /* @__PURE__ */ React.createElement("div", { "data-neukasten": "1", className: "rounded-lg border bg-[#5c1a1e] p-4 mb-6", style: { borderColor: "#a8d47a" } },
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline justify-between gap-2 flex-wrap mb-2" },
+      /* @__PURE__ */ React.createElement("span", { className: "inline-flex items-center gap-2" },
+        /* @__PURE__ */ React.createElement(NeuMarke, null),
+        /* @__PURE__ */ React.createElement("span", { className: "font-serif text-lg text-[#f0d878]" }, alle.length, " Neuerungen")),
+      /* @__PURE__ */ React.createElement(GelesenKnopf, { text: "Alles als gelesen markieren", onClick: () => markiere(alle.map((n) => n.schluessel)) })),
+    Object.entries(gruppen).map(([g, liste]) => {
+      // Stationen nach Thema buendeln, sonst stehen hier 100 Einzelzeilen
+      const ziele = [];
+      liste.forEach((n) => {
+        const k = n.art === "Station" ? n.thema : n.schluessel;
+        const da = ziele.find((z) => z.k === k);
+        if (da) da.n++; else ziele.push({ k, n: 1, eintrag: n });
+      });
+      return /* @__PURE__ */ React.createElement("div", { key: g, className: "mb-2" },
+        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[11px] uppercase tracking-widest text-[#bd9563] mb-1" }, g, " (", liste.length, ")"),
+        /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
+          ziele.slice(0, 8).map((z) => /* @__PURE__ */ React.createElement("button", {
+            key: z.k,
+            onClick: () => springe(z.eintrag),
+            className: "px-2 py-1 rounded text-xs border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]"
+          }, z.eintrag.art === "Station" ? z.eintrag.kontext + " · " + z.n : z.eintrag.titel)),
+          // Mehr als acht Kacheln machen den Kasten laenger als die Seite.
+          // Dann lieber in den Reiter, wo sie ohnehin markiert stehen.
+          ziele.length > 8 && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { if (SPRINGE) SPRINGE(liste[0].reiter, null); },
+            className: "px-2 py-1 rounded text-xs border text-[#f0d878]", style: { borderColor: "#a8d47a" }
+          }, "alle ", ziele.length, " ansehen ›")));
+    }));
+}
+
+/* =========================================================
+   KRIEGE
+
+   Die Schlachten zeigen einen Tag, die Kriege den Zusammenhang:
+   wer gegen wen, warum, wie es ausging und was blieb. Jede Schlacht
+   gehoert genau einem Krieg; in beide Richtungen wird verlinkt.
+   ========================================================= */
+
+const KRIEG_ZEITRAEUME = [
+  { id: "Alle", von: -99999, bis: 99999 },
+  { id: "Antike", von: -99999, bis: 500 },
+  { id: "Mittelalter", von: 500, bis: 1500 },
+  { id: "1500–1800", von: 1500, bis: 1800 },
+  { id: "19. Jh.", von: 1800, bis: 1914 },
+  { id: "Weltkriege", von: 1914, bis: 1945 },
+  { id: "Kalter Krieg", von: 1945, bis: 1991 },
+  { id: "Seit 1991", von: 1991, bis: 99999 },
+  { id: "Andauernd", laufend: true }
+];
+
+// Zu welchem Krieg gehoert eine Schlacht?
+function kriegFuerSchlacht(name) {
+  if (typeof KRIEGE === "undefined") return null;
+  return KRIEGE.find((k) => (k.schlachten || []).includes(name)) || null;
+}
+
+function kriegZeitraum(k) {
+  if (k.bis === null || k.bis === undefined) return jahrText(k.von) + " – heute";
+  if (k.bis === k.von) return jahrText(k.von);
+  return jahrText(k.von) + " – " + jahrText(k.bis);
+}
+
+function KriegAbschnitt({ titel, text, hervor }) {
+  if (!text) return null;
+  return /* @__PURE__ */ React.createElement("div", {
+    className: hervor ? "mb-3 rounded border border-[#7a3020] bg-[#4a1015] p-3" : "mb-3"
+  },
+    /* @__PURE__ */ React.createElement("h4", { className: "font-mono text-[10px] uppercase tracking-widest text-[#d4af37] mb-1" }, titel),
+    /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#e8d5b0] leading-relaxed" }, text));
+}
+
+function KriegeTab({ ziel }) {
+  useSprungziel(ziel);
+  const [suche, setSuche] = useState("");
+  const [zeit, setZeit] = useState("Alle");
+  const { istNeu, markiere } = useNeu();
+  const spanne = KRIEG_ZEITRAEUME.find((z) => z.id === zeit) || KRIEG_ZEITRAEUME[0];
+
+  const gefiltert = KRIEGE
+    .filter((k) => spanne.laufend ? k.bis === null : (k.von >= spanne.von && k.von < spanne.bis))
+    .filter((k) => passt({ ...k, p: (k.parteien || []).map((p) => p.wer + " " + p.fuehrer + " " + p.seite).join(" ") },
+      ["name", "region", "einordnung", "kurz", "p", "ursachen", "verlauf"], suche));
+  const [grenze, mehr] = useNachladen(gefiltert.length, 30, !!ziel);
+  const neuZahl = gefiltert.filter((k) => istNeu("krieg:" + k.id, k.seit)).length;
+  const zurueck = (k) => ({ reiter: "kriege", eintrag: k.id, label: "Kriege" });
+
+  return /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
+      KRIEGE.length, " Kriege von der Bronzezeit bis heute — wer gegen wen, warum, wie es ausging und was blieb."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-4 max-w-2xl leading-relaxed" },
+      "Opferzahlen sind fast immer Schätzungen; deshalb stehen Spannen da und wer schätzt. Bei andauernden Kriegen gilt der genannte Stand."),
+
+    /* @__PURE__ */ React.createElement("div", { className: "flex gap-1.5 mb-3 overflow-x-auto no-scrollbar" },
+      KRIEG_ZEITRAEUME.map((z) => /* @__PURE__ */ React.createElement("button", {
+        key: z.id,
+        onClick: () => setZeit(z.id),
+        className: `whitespace-nowrap px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border ${
+          zeit === z.id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
+      }, z.id))),
+
+    /* @__PURE__ */ React.createElement(Suchfeld, {
+      wert: suche, setWert: setSuche, platzhalter: "Krieg, Land oder Person suchen …",
+      anzahl: KRIEGE.length, gefunden: gefiltert.length
+    }),
+
+    neuZahl > 0 && /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-3 flex-wrap mb-3 text-xs text-[#c2a06a]" },
+      /* @__PURE__ */ React.createElement(NeuMarke, null), neuZahl, " in dieser Auswahl noch ungelesen",
+      /* @__PURE__ */ React.createElement(GelesenKnopf, { text: "alle als gelesen markieren", onClick: () => markiere(gefiltert.map((k) => "krieg:" + k.id)) })),
+
+    gefiltert.length === 0 && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Nichts gefunden."),
+
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "12px" } },
+      gefiltert.slice(0, grenze).map((k) => {
+        const neu = istNeu("krieg:" + k.id, k.seit);
+        const v = k.vertiefung ? VERTIEFUNGEN.find((x) => x.id === k.vertiefung) : null;
+        return /* @__PURE__ */ React.createElement(AufklappKarte, {
+          key: k.id,
+          anker: k.id,
+          jahr: kriegZeitraum(k),
+          titel: k.name,
+          marken: [k.einordnung, k.region].filter(Boolean),
+          zusatz: [neu && /* @__PURE__ */ React.createElement(NeuMarke, { key: "n" }),
+            k.bis === null && /* @__PURE__ */ React.createElement("span", { key: "l", className: "text-[10px] uppercase tracking-wide rounded px-1.5 py-0.5 border", style: { color: "#e8706a", borderColor: "#e8706a" } }, "andauernd")],
+          zeile: k.kurz,
+          offenVorgabe: gefiltert.length === 1 || ziel === k.id,
+          kinder: /* @__PURE__ */ React.createElement("div", null,
+            /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[17px] text-[#e0b84a] italic leading-relaxed mb-3" }, k.kurz),
+            k.parteien && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2 mb-3" },
+              k.parteien.map((p, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded border border-[#5c2018] bg-[#4a1015] p-3" },
+                /* @__PURE__ */ React.createElement("p", { className: "font-serif text-[15px] text-[#e0b84a] leading-snug" }, p.seite),
+                p.wer && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#d8c690] mt-0.5" }, p.wer),
+                p.fuehrer && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#c2a06a] mt-1" }, "Führung: ", p.fuehrer)))),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Ursachen", text: k.ursachen }),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Verlauf", text: k.verlauf }),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Ausgang", text: k.ausgang }),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Folgen", text: k.folgen }),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Opfer", text: k.opfer }),
+            /* @__PURE__ */ React.createElement(KriegAbschnitt, { titel: "Was strittig ist", text: k.strittig, hervor: true }),
+            (k.schlachten || []).length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mb-3" },
+              /* @__PURE__ */ React.createElement("h4", { className: "font-mono text-[10px] uppercase tracking-widest text-[#d4af37] mb-1.5" }, "Schlachten in diesem Krieg"),
+              /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
+                k.schlachten.map((s) => {
+                  const b = BATTLES.find((x) => x.name === s);
+                  return /* @__PURE__ */ React.createElement("button", {
+                    key: s,
+                    onClick: () => { if (SPRINGE) SPRINGE("schlachten", ankerName(s), zurueck(k)); },
+                    className: "inline-flex items-center gap-1 text-xs px-2 py-1 rounded border border-[#5c2018] text-[#c9a877] hover:text-[#f0d878] hover:border-[#d4af37]"
+                  }, b ? formatYear(b.year) + " · " : "", s, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+                }))),
+            v && /* @__PURE__ */ React.createElement("button", {
+              onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, zurueck(k)); },
+              className: "mb-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+            }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })),
+            (k.quellen || []).length > 0 && /* @__PURE__ */ React.createElement("div", { className: "pt-2 border-t border-[#5c2018]" },
+              /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[10px] uppercase tracking-widest text-[#bd9563] mb-1" }, "Quellen"),
+              /* @__PURE__ */ React.createElement("ul", { className: "text-[11px] text-[#bd9563] leading-relaxed" },
+                k.quellen.map((q, i) => /* @__PURE__ */ React.createElement("li", { key: i }, "· ", q)))),
+            neu && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
+              /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("krieg:" + k.id) })))
+        });
+      })),
+    mehr
+  );
+}
+
+/* =========================================================
    SCHLACHTEN
 
    Jede Schlacht mit beiden Seiten nebeneinander: Anfuehrer,
@@ -2653,6 +2922,13 @@ function SchlachtenTab({ ziel }) {
             onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, { reiter: "schlachten", label: "Schlachten" }); },
             className: "mt-2 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
           }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+        })(),
+        (() => {
+          const k = kriegFuerSchlacht(b.name);
+          return k && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => { if (SPRINGE) SPRINGE("kriege", k.id, { reiter: "schlachten", eintrag: ankerName(b.name), label: "Schlachten" }); },
+            className: "mt-2 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]", style: { marginRight: "12px" }
+          }, "Krieg: ", k.name, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
         })(),
         /* @__PURE__ */ React.createElement("div", null,
           /* @__PURE__ */ React.createElement(AufDerKarte, { art: "schlacht", kennung: b.name, herkunft: { reiter: "schlachten", eintrag: ankerName(b.name), label: "Schlachten" } }))
@@ -3271,5 +3547,5 @@ function Historia() {
       `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich: wechsleBereich, unter, setUnter: wechsleUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, herkunft && /* @__PURE__ */ React.createElement("button", {
         onClick: geheZurueck,
         className: "inline-flex items-center gap-1.5 mb-4 text-sm text-[#c9a877] hover:text-[#f0d878]"
-      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
+      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "kriege" && /* @__PURE__ */ React.createElement(KriegeTab, { ziel: zielFuer("kriege"), key: "kr" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
 }

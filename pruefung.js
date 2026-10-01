@@ -34,7 +34,8 @@ const DATEN = [
   "data-dynastien.js",
   "data-grafiken.js",
   "data-bilder.js",
-  "data-karte.js"
+  "data-karte.js",
+  "data-kriege.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -58,7 +59,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN, BILDER, KARTE })",
+      "   GRAFIKEN, BILDER, KARTE, KRIEGE })",
       kontext
     );
   } catch (e) {
@@ -494,7 +495,52 @@ function pruefeKarte(D) {
     ", Mysterien " + zaehl("mysterium") + ") · " + K.ohneOrt.length + " bewusst ohne Ort");
 }
 
+/* ----------------------------------------------------------------- Kriege */
+
+function pruefeKriege(D) {
+  const K = D.KRIEGE;
+  pruefeDubletten("Kriege", K, "id");
+  pruefeDubletten("Kriege", K, "name");
+  pruefeFelder("Kriege", K, ["id", "name", "von", "region", "einordnung", "kurz", "parteien",
+    "ursachen", "verlauf", "ausgang", "folgen", "opfer", "strittig", "quellen"], "name");
+  const zugeordnet = {};
+  K.forEach((k) => {
+    const wer = "Krieg " + k.name;
+    if (!/^[a-z0-9-]+$/.test(k.id)) meldeFehler(wer + " – id nur aus a-z, 0-9 und Bindestrich");
+    if (k.bis !== null && typeof k.bis !== "number") meldeFehler(wer + " – 'bis' muss Zahl oder null sein");
+    if (typeof k.bis === "number" && k.bis < k.von) meldeFehler(wer + " – endet vor seinem Beginn");
+    if (!Array.isArray(k.parteien) || k.parteien.length < 2) meldeFehler(wer + " – braucht mindestens zwei Parteien");
+    if (k.vertiefung && !D.VERTIEFUNGEN.some((v) => v.id === k.vertiefung)) meldeFehler(wer + " – Vertiefung '" + k.vertiefung + "' gibt es nicht");
+    if (k.bis === null && !/Stand/.test(k.ausgang + k.verlauf + k.folgen + k.opfer)) meldeHinweis(wer + " – andauernd, aber ohne Stand-Angabe im Text");
+    (k.schlachten || []).forEach((s) => {
+      const b = D.BATTLES.find((x) => x.name === s);
+      if (!b) meldeFehler(wer + " – Schlacht '" + s + "' gibt es nicht");
+      else if (b.year < k.von - 1 || (typeof k.bis === "number" && b.year > k.bis + 1)) meldeHinweis(wer + " – Schlacht " + s + " (" + b.year + ") liegt außerhalb des Zeitraums");
+      (zugeordnet[s] = zugeordnet[s] || []).push(k.name);
+    });
+  });
+  D.BATTLES.forEach((b) => {
+    const z = zugeordnet[b.name] || [];
+    if (z.length === 0) meldeFehler("Schlacht " + b.name + " gehört zu keinem Krieg");
+    if (z.length > 1) meldeFehler("Schlacht " + b.name + " gehört zu mehreren Kriegen: " + z.join(", "));
+  });
+  const laufend = K.filter((k) => k.bis === null).length;
+  console.log("  Kriege: " + K.length + " (davon " + laufend + " andauernd) · alle " + D.BATTLES.length + " Schlachten zugeordnet");
+}
+
+/* ------------------------------------------------------------- Neuerungen */
+
+function pruefeNeuerungen(D) {
+  const datum = /^\d{4}-\d{2}-\d{2}$/;
+  let n = 0;
+  const pruefe = (o, wer) => { if (o.seit !== undefined) { n++; if (!datum.test(o.seit)) meldeFehler(wer + " – 'seit' ist kein Datum JJJJ-MM-TT"); } };
+  D.KRIEGE.forEach((k) => pruefe(k, "Krieg " + k.name));
+  D.THEMEN.forEach((t) => { pruefe(t, "Thema " + t.titel); t.stationen.forEach((s) => pruefe(s, "Station " + s.titel)); });
+  console.log("  Als neu markiert: " + n + " Einträge");
+}
+
 /* --------------------------------------------------------------- Inhalte */
+
 
 
 function pruefeInhalte(D) {
@@ -702,6 +748,8 @@ function pruefeInhalte(D) {
   pruefeGrafiken(D);
   pruefeBilder(D);
   pruefeKarte(D);
+  pruefeKriege(D);
+  pruefeNeuerungen(D);
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;
