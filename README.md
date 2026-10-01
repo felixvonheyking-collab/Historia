@@ -14,6 +14,7 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Vertiefungen | 59 Langtexte mit Vorgeschichte, Verlauf, Folgen, Zahlen und Quellen |
 | Themengeschichte | 9 Querschnitte durch alle Epochen, 143 Stationen |
 | Länder-Zeitleisten | 30 Weltregionen |
+| Karte | 120 Orte: Schlachten, Stadtgeschichten, Mysterien – Koordinaten aus Wikidata, Küsten aus Natural Earth |
 | Mysterien | 20 ungeklärte und gelöste Fälle |
 | Schlüsselmomente | 101 |
 | Schlachten | 75 |
@@ -35,7 +36,7 @@ Kein Build-Schritt, keine Abhängigkeiten. Die Dateien lassen sich direkt auslie
 ```
 index.html            Einstieg, lädt alle Skripte in fester Reihenfolge
 app.js                nur Code, keine Inhalte
-data-*.js             nur Inhalte, kein Code
+data-*.js             nur Inhalte, kein Code (data-karte.js: Küsten und Orte der Karte)
 sw.js                 Service Worker für den Offline-Betrieb
 pruefung.js           Prüfskript (siehe unten)
 react.js, react-dom.js, tailwind.css, Schriften, Symbole

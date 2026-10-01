@@ -33,7 +33,8 @@ const DATEN = [
   "data-mysterien.js",
   "data-dynastien.js",
   "data-grafiken.js",
-  "data-bilder.js"
+  "data-bilder.js",
+  "data-karte.js"
 ];
 
 /* ---------------------------------------------------------------- Einlesen */
@@ -57,7 +58,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN, BILDER })",
+      "   GRAFIKEN, BILDER, KARTE })",
       kontext
     );
   } catch (e) {
@@ -430,7 +431,71 @@ function pruefeGrafiken(D) {
   console.log("  Grafiken: " + bilder + " zu " + eintraege.length + " Vertiefungen");
 }
 
+/* ------------------------------------------------------------------ Karte */
+
+// Natural Earth I, dieselbe Projektion wie in data-karte.js (d3-geo,
+// geoNaturalEarth1().fitWidth(1000, Sphere)): Massstab und Verschiebung
+// von dort uebernommen. Damit faellt auf, wenn jemand x/y von Hand
+// setzt oder lat/lon aendert, ohne neu zu rechnen.
+const KARTE_MASSSTAB = 182.78964407016804;
+const KARTE_MITTE = [500, 259.9982544540716];
+const KARTE_OBEN = 7.320199196468565;
+function karteProjektion(lon, lat) {
+  const l = lon * Math.PI / 180, p = lat * Math.PI / 180;
+  const p2 = p * p, p4 = p2 * p2;
+  const x = l * (0.8707 - 0.131979 * p2 + p4 * (-0.013791 + p4 * (0.003971 * p2 - 0.001529 * p4)));
+  const y = p * (1.007226 + p2 * (0.015085 + p4 * (-0.044475 + 0.028874 * p2 - 0.005916 * p4)));
+  return [KARTE_MITTE[0] + x * KARTE_MASSSTAB, KARTE_MITTE[1] - y * KARTE_MASSSTAB - KARTE_OBEN];
+}
+
+function pruefeKarte(D) {
+  const K = D.KARTE;
+  if (!K) { meldeFehler("data-karte.js: KARTE fehlt"); return; }
+  const ARTEN = ["schlacht", "stadt", "mysterium"];
+  const GENAU = ["ort", "gebiet", "ungefaehr"];
+  const schluessel = new Set();
+  K.orte.forEach((o) => {
+    const wer = "Karte: " + (o.titel || "(ohne Titel)");
+    if (!ARTEN.includes(o.art)) meldeFehler(wer + " – unbekannte Art " + o.art);
+    if (!GENAU.includes(o.genau)) meldeFehler(wer + " – unbekannte Genauigkeit " + o.genau);
+    if (typeof o.jahr !== "number") meldeFehler(wer + " – Jahr fehlt");
+    if (o.bis !== undefined && o.bis < o.jahr) meldeFehler(wer + " – 'bis' liegt vor 'jahr'");
+    if (!/^Q\d+$/.test(o.wikidata || "")) meldeFehler(wer + " – Wikidata-Kennung fehlt; jede Koordinate braucht ihre Herkunft");
+    if (o.genau === "ungefaehr" && !o.hinweis) meldeFehler(wer + " – 'ungefaehr' ohne Hinweis, was offen ist");
+    const k = o.art + ":" + o.titel;
+    if (schluessel.has(k)) meldeFehler(wer + " – doppelt");
+    schluessel.add(k);
+    const [x, y] = karteProjektion(o.lon, o.lat);
+    if (Math.abs(x - o.x) > 0.2 || Math.abs(y - o.y) > 0.2) {
+      meldeFehler(wer + " – x/y passen nicht zu lat/lon (erwartet " + x.toFixed(1) + "/" + y.toFixed(1) + ")");
+    }
+    if (o.y < 0 || o.y > K.hoehe) meldeFehler(wer + " – liegt außerhalb des Kartenausschnitts");
+    if (o.art === "schlacht" && !D.BATTLES.some((b) => b.name === o.schlacht)) meldeFehler(wer + " – Schlacht '" + o.schlacht + "' gibt es nicht");
+    if (o.art === "stadt" && !D.THEMEN.some((t) => t.id === o.thema)) meldeFehler(wer + " – Thema '" + o.thema + "' gibt es nicht");
+    if (o.art === "mysterium" && !D.MYSTERIEN.some((m) => m.id === o.mysterium)) meldeFehler(wer + " – Mysterium '" + o.mysterium + "' gibt es nicht");
+    if (o.vertiefung && !D.VERTIEFUNGEN.some((v) => v.id === o.vertiefung)) meldeFehler(wer + " – Vertiefung '" + o.vertiefung + "' gibt es nicht");
+    if (o.art === "schlacht") {
+      const b = D.BATTLES.find((x) => x.name === o.schlacht);
+      if (b && b.year !== o.jahr) meldeFehler(wer + " – Jahr " + o.jahr + " weicht von der Schlacht ab (" + b.year + ")");
+      if (b && (b.vertiefung || null) !== (o.vertiefung || null)) meldeFehler(wer + " – Vertiefungsverweis weicht von der Schlacht ab");
+    }
+  });
+  K.ohneOrt.forEach((o) => {
+    if (!D.BATTLES.some((b) => b.name === o.titel)) meldeFehler("Karte, ohne Ort: Schlacht '" + o.titel + "' gibt es nicht");
+    if (!o.grund) meldeFehler("Karte, ohne Ort: " + o.titel + " – Grund fehlt");
+  });
+  const verortet = new Set(K.orte.filter((o) => o.art === "schlacht").map((o) => o.schlacht));
+  const ohne = new Set(K.ohneOrt.map((o) => o.titel));
+  const offen = D.BATTLES.filter((b) => !verortet.has(b.name) && !ohne.has(b.name));
+  if (offen.length) meldeHinweis(offen.length + " Schlachten weder auf der Karte noch als 'ohne Ort' vermerkt: " +
+    offen.map((b) => b.name).join(", "));
+  const zaehl = (a) => K.orte.filter((o) => o.art === a).length;
+  console.log("  Karte: " + K.orte.length + " Orte (Schlachten " + zaehl("schlacht") + ", Städte " + zaehl("stadt") +
+    ", Mysterien " + zaehl("mysterium") + ") · " + K.ohneOrt.length + " bewusst ohne Ort");
+}
+
 /* --------------------------------------------------------------- Inhalte */
+
 
 function pruefeInhalte(D) {
   // Wird von mehreren Pruefungen gebraucht: Themen, Dynastien,
@@ -636,6 +701,7 @@ function pruefeInhalte(D) {
       b + p.dynastien.reduce((c, d) => c + d.herrscher.length, 0), 0), 0) + " Herrscher");
   pruefeGrafiken(D);
   pruefeBilder(D);
+  pruefeKarte(D);
   pruefeWiderspruecheZwischenSammlungen(D);
 
   const verknuepft = D.SCHLUESSELMOMENTE.filter((s) => s.vertiefung).length;

@@ -27,7 +27,9 @@ const B=W.eval("BEREICHE.map(b=>({label:b.label,unter:b.unter.map(u=>u.label)}))
     for(const u of (b.unter.length?b.unter:[null])){
       if(u){ const uk=nachText(u); if(!uk){ fehler.push('Unterreiter fehlt: '+b.label+' / '+u); continue; } uk.click(); await warte(220); }
       const wo=b.label+(u?" / "+u:"");
-      const karten=knoepfe().filter(x=>x.textContent.trim().length>40);
+      // Auswahlknoepfe (aria-pressed, z. B. die Ortsliste der Karte) sind
+      // keine Karten: sie waehlen aus, statt zu oeffnen.
+      const karten=knoepfe().filter(x=>x.textContent.trim().length>40&&!x.hasAttribute("aria-pressed"));
       notiz.push(wo.padEnd(34)+" Karten: "+String(karten.length).padStart(4)+
                  " | Suchfeld: "+(d.querySelector("input[placeholder]")?"ja":"nein")+
                  " | Filterknöpfe: "+knoepfe().filter(x=>x.textContent.trim().length<22&&x.textContent.trim().length>1).length);
@@ -37,7 +39,7 @@ const B=W.eval("BEREICHE.map(b=>({label:b.label,unter:b.unter.map(u=>u.label)}))
         const klappt=karten[0].getAttribute("aria-expanded")!==null;
         if(!z && !klappt) fehler.push("Kein Zurück-Knopf und kein Aufklappen in: "+wo);
         else if (z) { z.click(); await warte(200);
-          if(!knoepfe().filter(x=>x.textContent.trim().length>40).length) fehler.push("Nach Zurück keine Liste: "+wo); }
+          if(!knoepfe().filter(x=>x.textContent.trim().length>40&&!x.hasAttribute("aria-pressed")).length) fehler.push("Nach Zurück keine Liste: "+wo); }
       }
     }
   }
