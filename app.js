@@ -1225,6 +1225,26 @@ function ortGenauigkeit(o) {
   return null;
 }
 
+// Routenmarken: liegt eine Station (fast) auf einer frueheren, wird ihre Marke
+// versetzt und mit einem feinen Strich an den echten Ort gebunden.
+function routenMarken(stationen, px) {
+  const platz = [], abstand = 15 * px;
+  const winkel = [-90, -30, 30, 90, 150, 210];
+  return stationen.map((st, i) => {
+    const frei = (x, y) => platz.every((q) => Math.hypot(q[0] - x, q[1] - y) >= abstand);
+    let mx = st.x, my = st.y, versetzt = false;
+    if (!frei(mx, my)) {
+      for (let ring = 1; ring <= 3 && !versetzt; ring++) {
+        for (const w of winkel) {
+          const x = st.x + Math.cos(w * Math.PI / 180) * abstand * 1.15 * ring, y = st.y + Math.sin(w * Math.PI / 180) * abstand * 1.15 * ring;
+          if (frei(x, y)) { mx = x; my = y; versetzt = true; break; }
+        }
+      }
+    }
+    platz.push([mx, my]);
+    return { st, i, mx, my, versetzt };
+  });
+}
 function KarteTab({ ziel }) {
   const [fensterId, setFensterId] = useGespeichert("karte.fenster", "Alle");
   const [ausschnittId, setAusschnittId] = useGespeichert("karte.ausschnitt", "europa");
@@ -1530,13 +1550,13 @@ function KarteTab({ ziel }) {
     /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mb-2" },
       /* @__PURE__ */ React.createElement("select", {
         value: kriegId, onChange: (e) => (e.target.value ? waehleKrieg(e.target.value) : setKriegId("")), "aria-label": "Krieg hervorheben",
-        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { maxWidth: "100%" }
+        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { width: "100%" }
       },
         /* @__PURE__ */ React.createElement("option", { value: "" }, "Krieg hervorheben …"),
         kriegeMitOrt.map((k) => /* @__PURE__ */ React.createElement("option", { key: k.id, value: k.id }, jahrText(k.von) + " · " + k.name))),
       (KARTE.routen || []).length > 0 && /* @__PURE__ */ React.createElement("select", {
         value: routeId, onChange: (e) => (e.target.value ? waehleRoute(e.target.value) : setRouteId("")), "aria-label": "Route zeigen",
-        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { maxWidth: "100%" }
+        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { width: "100%" }
       },
         /* @__PURE__ */ React.createElement("option", { value: "" }, "Route zeigen …"),
         KARTE.routen.map((r) => /* @__PURE__ */ React.createElement("option", { key: r.id, value: r.id }, r.titel)))),
@@ -1580,13 +1600,15 @@ function KarteTab({ ziel }) {
           key: "rl" + i, points: l.map((p) => p.join(",")).join(" "), fill: "none",
           stroke: "#f0d878", strokeWidth: 2.2 * px, strokeDasharray: (6 * px) + " " + (4 * px), strokeLinejoin: "round", opacity: 0.9
         })),
-        route && route.stationen.map((st, i) => /* @__PURE__ */ React.createElement("g", { key: "rs" + i, "data-station": i + 1 },
-          /* @__PURE__ */ React.createElement("circle", { cx: st.x, cy: st.y, r: 7.5 * px,
+        route && routenMarken(route.stationen, px).filter((m) => m.versetzt).map(({ st, i, mx, my }) => /* @__PURE__ */ React.createElement("line", {
+          key: "rv" + i, x1: st.x, y1: st.y, x2: mx, y2: my, stroke: "#f0d878", strokeWidth: 1 * px, opacity: 0.8 })),
+        route && routenMarken(route.stationen, px).map(({ st, i, mx, my }) => /* @__PURE__ */ React.createElement("g", { key: "rs" + i, "data-station": i + 1 },
+          /* @__PURE__ */ React.createElement("circle", { cx: mx, cy: my, r: 7.5 * px,
             fill: st.genau === "ungefaehr" ? "#24394a" : "#f0d878", stroke: "#f0d878", strokeWidth: 1.6 * px }),
-          /* @__PURE__ */ React.createElement("text", { x: st.x, y: st.y + 3.6 * px, textAnchor: "middle", fontSize: 9.5 * px,
+          /* @__PURE__ */ React.createElement("text", { x: mx, y: my + 3.6 * px, textAnchor: "middle", fontSize: 9.5 * px,
             fill: st.genau === "ungefaehr" ? "#f0d878" : "#1b2a36", fontWeight: 700, fontFamily: "ui-sans-serif, system-ui, sans-serif",
             style: { pointerEvents: "none" } }, i + 1))),
-        zeigeStaedteNamen && sichtbar.filter((o) => o.art === "stadt" && o !== auswahl).map((o) => beschriftung(o, false)),
+        zeigeStaedteNamen && !route && sichtbar.filter((o) => o.art === "stadt" && o !== auswahl).map((o) => beschriftung(o, false)),
         ring,
         auswahl && sichtbar.includes(auswahl) && beschriftung(auswahl, true)
       ),

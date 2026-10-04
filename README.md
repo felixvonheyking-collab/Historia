@@ -19,7 +19,7 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Mysterien | 31 ungeklärte und gelöste Fälle |
 | Schlüsselmomente | 169 |
 | Schlachten | 101, jede einem Krieg zugeordnet |
-| Kriege | 158, von der Bronzezeit bis heute, mit Parteien, Ursachen, Verlauf, Folgen und Opferspannen |
+| Kriege | 158, von der Bronzezeit bis heute, mit Parteien, Ursachen, Verlauf, Folgen und Opferspannen; 144 mit Bild (eigenes oder über die Vertiefung), nur frei lizenzierte Aufnahmen |
 | Zitate | 104, jedes mit Belegstatus |
 | Mythen & Fun Facts | 269, alle Richtigstellungen mit Beleg |
 | Verblüffende Fakten | 143 |
