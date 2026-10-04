@@ -13,7 +13,8 @@ Daten, diese Tests sehen die laufende App.
   dass Suchsprünge ihren Anker finden und hervorheben.
 - `grafiken.js` — prüft, dass alle SVG-Grafiken als Elemente ankommen.
 - `karte.js` — prüft, dass jeder Ort der Karte als Punkt erscheint und dass
-  der Weg Schlacht → Karte → Eintrag → zurück zur Karte die Auswahl hält.
+  der Weg Schlacht → Karte → Eintrag → zurück zur Karte die Auswahl hält;
+  außerdem Krieg-Filter, Routen-Panel mit allen Stationen und die Moment-Orte.
 - `kriege-neu.js` — Startseite zeigt die Neuerungen, Schlacht und Krieg verweisen
   aufeinander, „als gelesen markieren“ nimmt das „neu“ weg (je Krieg, Station, Querschnitt).
 - `philosophia.js` — Sprung per Adresse (#krieg=…, #vertiefung=…, #thema=…) und der Kasten

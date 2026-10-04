@@ -14,7 +14,8 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Vertiefungen | 59 Langtexte mit Vorgeschichte, Verlauf, Folgen, Zahlen und Quellen |
 | Themengeschichte | 32 Querschnitte mit je mindestens 42 Stationen, darunter Kalter Krieg, Katastrophen, Künstler und Erfinder |
 | Länder-Zeitleisten | 30 Weltregionen |
-| Karte | 120 Orte: Schlachten, Stadtgeschichten, Mysterien – Koordinaten aus Wikidata, Küsten aus Natural Earth |
+| Karte | 189 Orte: Schlachten, Stadtgeschichten, Mysterien, 69 Schlüsselmomente – Koordinaten aus Wikidata bzw. Wikipedia, Küsten aus Natural Earth; Kriege hervorheben; 7 Routen (Alexanderzug, Hannibal, Kolumbus 1492, Magellan/Elcano, Russlandfeldzug 1812, Langer Marsch, Ibn Battuta) |
+| Lernen | rund 2.850 Karteikarten und Quizfragen, auch zu Kriegen, Querschnitt-Stationen und "Welcher Krieg gehört zu dieser Schlacht?"; Filter für Neues, Kriege und einzelne Querschnitte |
 | Mysterien | 31 ungeklärte und gelöste Fälle |
 | Schlüsselmomente | 169 |
 | Schlachten | 101, jede einem Krieg zugeordnet |
@@ -45,7 +46,7 @@ Kein Build-Schritt, keine Abhängigkeiten. Die Dateien lassen sich direkt auslie
 ```
 index.html            Einstieg, lädt alle Skripte in fester Reihenfolge
 app.js                nur Code, keine Inhalte
-data-*.js             nur Inhalte, kein Code (data-karte.js: Küsten und Orte der Karte, data-kriege.js: Kriege)
+data-*.js             nur Inhalte, kein Code (data-karte.js: Küsten, Orte und Routen der Karte, data-kriege.js: Kriege)
 sw.js                 Service Worker für den Offline-Betrieb
 pruefung.js           Prüfskript (siehe unten)
 react.js, react-dom.js, tailwind.css, Schriften, Symbole

@@ -49,6 +49,18 @@ const pruefe=(bed,text)=>{ if(!bed) fehler.push(text); };
   const nazca=knopfMit("Die Nazca-Linien"); if(nazca){ nazca.click(); await warte(200); }
   pruefe(!!knopf("Auf der Karte zeigen"),"Mysterium Nazca ohne Kartenknopf");
 
+  // 5. Krieg hervorheben: aus der Kriegsliste auf die Karte
+  W.eval('SPRINGE("karte","krieg:koalitionskriege",null)'); await warte(300);
+  const nPkt=d.querySelectorAll("[data-ort]").length;
+  pruefe(nPkt>0 && nPkt<W.eval("KARTE.orte.length"),"Krieg-Filter zeigt "+nPkt+" Punkte");
+  // 6. Route
+  W.eval('SPRINGE("karte","route:alexanderzug",null)'); await warte(300);
+  const r=d.querySelector("[data-route]");
+  pruefe(r && r.textContent.includes("Schematisch"),"Routen-Panel fehlt");
+  pruefe(d.querySelectorAll("[data-routenstation]").length===W.eval('KARTE.routen.find(r=>r.id==="alexanderzug").stationen.length'),"Routenstationen unvollständig");
+  // 7. Momente als Art
+  pruefe(W.eval('KARTE.orte.filter(o=>o.art==="moment").length')>=60,"Zu wenige Moment-Orte");
+
   console.log("Punkte: "+d.querySelectorAll("[data-ort]").length);
   console.log("Fehler: "+fehler.length); fehler.forEach(f=>console.log("  · "+f));
   process.exit(fehler.length?1:0);

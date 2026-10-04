@@ -368,6 +368,10 @@ function VertiefungDetail({ eintrag, onBack, gelesen, toggleGelesen }) {
       key: "t" + i, titel: a.titel, text: a.text
     })),
     /* @__PURE__ */ React.createElement(VertiefungAbschnitt, { titel: "Folgen", text: eintrag.folgen }),
+    (KARTE.routen || []).filter((r) => r.vertiefung === eintrag.id).map((r) => /* @__PURE__ */ React.createElement("button", {
+      key: r.id, onClick: () => { if (SPRINGE) SPRINGE("karte", "route:" + r.id, { reiter: "vertiefungen", eintrag: eintrag.id, label: eintrag.titel }); },
+      className: "mb-4 inline-flex items-center gap-1 text-sm text-[#c9a877] hover:text-[#f0d878]", style: { marginRight: "12px" }
+    }, /* @__PURE__ */ React.createElement(Globe, { size: 14 }), "Route auf der Karte: ", r.titel)),
     /* @__PURE__ */ React.createElement(DenkerKasten, { art: "vertiefung", id: eintrag.id }),
 
     /* @__PURE__ */ React.createElement("div", { className: "mb-5 rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-4" },
@@ -1169,7 +1173,8 @@ function ZeitschnittTab() {
 const KARTE_ARTEN = {
   schlacht: { label: "Schlachten", farbe: "#e8706a", reiter: "Schlacht" },
   stadt: { label: "Städte", farbe: "#7aa8cc", reiter: "Stadtgeschichte" },
-  mysterium: { label: "Mysterien", farbe: "#d9b56a", reiter: "Mysterium" }
+  mysterium: { label: "Mysterien", farbe: "#d9b56a", reiter: "Mysterium" },
+  moment: { label: "Momente", farbe: "#c39bd3", reiter: "Schlüsselmoment" }
 };
 
 // Ausschnitte als Rechteck im Kartenraum (x, y, Breite b, Hoehe h).
@@ -1196,7 +1201,7 @@ function ortSchluessel(o) {
 function ortFuer(art, kennung) {
   if (typeof KARTE === "undefined") return null;
   return KARTE.orte.find((o) => o.art === art &&
-    (art === "schlacht" ? o.schlacht === kennung : art === "stadt" ? o.thema === kennung : o.mysterium === kennung)) || null;
+    (art === "schlacht" ? o.schlacht === kennung : art === "stadt" ? o.thema === kennung : art === "moment" ? o.moment === kennung : o.mysterium === kennung)) || null;
 }
 
 function AufDerKarte({ art, kennung, herkunft }) {
@@ -1223,7 +1228,10 @@ function ortGenauigkeit(o) {
 function KarteTab({ ziel }) {
   const [fensterId, setFensterId] = useGespeichert("karte.fenster", "Alle");
   const [ausschnittId, setAusschnittId] = useGespeichert("karte.ausschnitt", "europa");
-  const [arten, setArten] = useState({ schlacht: true, stadt: true, mysterium: true });
+  const [arten, setArten] = useState({ schlacht: true, stadt: true, mysterium: true, moment: true });
+  // Ein Krieg hebt seine Schlachten hervor, eine Route zeigt ihre Stationen
+  const [kriegId, setKriegId] = useState("");
+  const [routeId, setRouteId] = useState("");
   const [gewaehlt, setGewaehlt] = useState(null);
   const [stufe, setStufe] = useState(null); // Index im Jahresregler; null = bis zum Ende
   const [groesse, setGroesse] = useState({ w: 360, h: 320 });
@@ -1286,7 +1294,12 @@ function KarteTab({ ziel }) {
     return ende >= fenster.von && o.jahr < fenster.bis;
   };
 
-  const kandidaten = useMemo(() => KARTE.orte.filter((o) => arten[o.art] && imFenster(o)), [fensterId, arten]);
+  const krieg = kriegId ? KRIEGE.find((k) => k.id === kriegId) : null;
+  const route = routeId ? (KARTE.routen || []).find((r) => r.id === routeId) : null;
+  const kandidaten = useMemo(() => krieg
+    ? KARTE.orte.filter((o) => o.art === "schlacht" && krieg.schlachten.includes(o.schlacht))
+    : KARTE.orte.filter((o) => arten[o.art] && imFenster(o)), [fensterId, arten, kriegId]);
+  const kriegeMitOrt = useMemo(() => KRIEGE.filter((k) => KARTE.orte.some((o) => o.art === "schlacht" && k.schlachten.includes(o.schlacht))), []);
   // Der Regler laeuft nicht ueber Jahre, sondern ueber die Eintraege:
   // jeder Schritt bringt den naechsten Punkt. Ein Regler ueber die
   // Jahre haette in der Ansicht "Alle" fast nur Steinzeit.
@@ -1297,12 +1310,33 @@ function KarteTab({ ziel }) {
   const sichtbar = kandidaten.filter((o) => o.jahr <= bisJahr).sort((a, b) => a.jahr - b.jahr);
 
   // Sprung von aussen: Punkt waehlen und hinfahren
+  // Ausschnitt so waehlen, dass alle Punkte hineinpassen
+  const passeAufPunkte = (pts) => {
+    if (!pts.length) return;
+    const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
+    const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+    const b = Math.max(60, (x1 - x0) * 1.3, ((y1 - y0) * 1.3) / verhaeltnis);
+    setAnsicht(begrenze({ x: (x0 + x1) / 2 - b / 2, y: (y0 + y1) / 2 - (b * verhaeltnis) / 2, b }));
+  };
+  const waehleKrieg = (id) => {
+    setKriegId(id); setRouteId(""); setStufe(null); setGewaehlt(null);
+    const k = KRIEGE.find((x) => x.id === id);
+    if (k) passeAufPunkte(KARTE.orte.filter((o) => o.art === "schlacht" && k.schlachten.includes(o.schlacht)));
+  };
+  const waehleRoute = (id) => {
+    setRouteId(id); setKriegId(""); setGewaehlt(null);
+    const r = (KARTE.routen || []).find((x) => x.id === id);
+    if (r) passeAufPunkte(r.stationen);
+  };
   React.useEffect(() => {
     if (!ziel) return;
+    if (/^krieg:/.test(ziel)) { setFensterId("Alle"); waehleKrieg(ziel.slice(6)); return; }
+    if (/^route:/.test(ziel)) { waehleRoute(ziel.slice(6)); return; }
     const o = KARTE.orte.find((x) => ortSchluessel(x) === ziel);
     if (!o) return;
     setFensterId("Alle");
-    setArten({ schlacht: true, stadt: true, mysterium: true });
+    setArten({ schlacht: true, stadt: true, mysterium: true, moment: true });
+    setKriegId(""); setRouteId("");
     setStufe(null);
     setGewaehlt(ortSchluessel(o));
     setAnsicht(begrenze({ x: o.x - 90, y: o.y - 90 * verhaeltnis, b: 180 }));
@@ -1373,6 +1407,11 @@ function KarteTab({ ziel }) {
     const war = z.punkte.size;
     z.punkte.delete(e.pointerId);
     if (war === 1 && z.bewegt < 8) {
+      if (route) {
+        const k = zuKarte(e.clientX, e.clientY);
+        const i = route.stationen.findIndex((st) => Math.hypot(st.x - k.x, st.y - k.y) <= 14 * einheitProPixel);
+        if (i >= 0) { const el = document.querySelector('[data-routenstation="' + (i + 1) + '"]'); if (el && el.scrollIntoView) el.scrollIntoView({ block: "center", behavior: "smooth" }); return; }
+      }
       const o = naechsterPunkt(zuKarte(e.clientX, e.clientY));
       setGewaehlt(o ? ortSchluessel(o) : null);
     }
@@ -1419,7 +1458,7 @@ function KarteTab({ ziel }) {
       strokeWidth: (o.genau === "ungefaehr" ? 1.8 : 1) * px,
       strokeDasharray: o.genau === "ungefaehr" ? (2.2 * px) + " " + (1.6 * px) : undefined
     }));
-    return /* @__PURE__ */ React.createElement("g", { key: ortSchluessel(o), "data-ort": ortSchluessel(o) }, teile);
+    return /* @__PURE__ */ React.createElement("g", { key: ortSchluessel(o), "data-ort": ortSchluessel(o), opacity: route ? 0.25 : 1 }, teile);
   });
   const ring = auswahl && sichtbar.includes(auswahl) && /* @__PURE__ */ React.createElement("circle", {
     cx: auswahl.x, cy: auswahl.y, r: 9.5 * px, fill: "none", stroke: "#f0d878", strokeWidth: 2.2 * px });
@@ -1438,7 +1477,7 @@ function KarteTab({ ziel }) {
 
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
-      "Wo es geschah — ", KARTE.orte.length, " Orte aus Schlachten, Stadtgeschichten und Mysterien."),
+      "Wo es geschah — ", KARTE.orte.length, " Orte aus Schlachten, Stadtgeschichten, Mysterien und Schlüsselmomenten – dazu Kriege und Routen."),
     /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-4 max-w-2xl leading-relaxed" },
       "Punkt antippen für Details. Der Regler baut die Geschichte Schritt für Schritt auf."),
 
@@ -1487,6 +1526,29 @@ function KarteTab({ ziel }) {
           style: { width: "36px", height: "32px", fontSize: "20px", lineHeight: "1", flexShrink: 0 }
         }, "›"))),
 
+    // Krieg hervorheben, Route zeigen
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mb-2" },
+      /* @__PURE__ */ React.createElement("select", {
+        value: kriegId, onChange: (e) => (e.target.value ? waehleKrieg(e.target.value) : setKriegId("")), "aria-label": "Krieg hervorheben",
+        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { maxWidth: "100%" }
+      },
+        /* @__PURE__ */ React.createElement("option", { value: "" }, "Krieg hervorheben …"),
+        kriegeMitOrt.map((k) => /* @__PURE__ */ React.createElement("option", { key: k.id, value: k.id }, jahrText(k.von) + " · " + k.name))),
+      (KARTE.routen || []).length > 0 && /* @__PURE__ */ React.createElement("select", {
+        value: routeId, onChange: (e) => (e.target.value ? waehleRoute(e.target.value) : setRouteId("")), "aria-label": "Route zeigen",
+        className: "rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { maxWidth: "100%" }
+      },
+        /* @__PURE__ */ React.createElement("option", { value: "" }, "Route zeigen …"),
+        KARTE.routen.map((r) => /* @__PURE__ */ React.createElement("option", { key: r.id, value: r.id }, r.titel)))),
+    (krieg || route) && /* @__PURE__ */ React.createElement("div", { className: "flex items-baseline gap-3 flex-wrap mb-2 text-sm" },
+      /* @__PURE__ */ React.createElement("span", { className: "text-[#f0d878] font-serif" }, krieg ? krieg.name : route.titel),
+      /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#bd9563]" },
+        krieg ? kandidaten.length + " von " + krieg.schlachten.length + " Schlachten verortet" : route.stationen.length + " Stationen"),
+      /* @__PURE__ */ React.createElement("button", {
+        onClick: () => { setKriegId(""); setRouteId(""); setAnsicht(null); },
+        className: "text-xs text-[#c9a877] hover:text-[#f0d878] underline"
+      }, "zurück zur ganzen Karte")),
+
     // Ausschnitte
     /* @__PURE__ */ React.createElement("div", { className: "flex gap-1.5 mb-2 overflow-x-auto no-scrollbar" },
       KARTE_AUSSCHNITTE.map((a) => /* @__PURE__ */ React.createElement("button", {
@@ -1514,6 +1576,16 @@ function KarteTab({ ziel }) {
           fill: "#6a5434", stroke: "#a48a5c", strokeWidth: 0.7 * px, strokeLinejoin: "round"
         }),
         punkte,
+        route && route.linien.map((l, i) => /* @__PURE__ */ React.createElement("polyline", {
+          key: "rl" + i, points: l.map((p) => p.join(",")).join(" "), fill: "none",
+          stroke: "#f0d878", strokeWidth: 2.2 * px, strokeDasharray: (6 * px) + " " + (4 * px), strokeLinejoin: "round", opacity: 0.9
+        })),
+        route && route.stationen.map((st, i) => /* @__PURE__ */ React.createElement("g", { key: "rs" + i, "data-station": i + 1 },
+          /* @__PURE__ */ React.createElement("circle", { cx: st.x, cy: st.y, r: 7.5 * px,
+            fill: st.genau === "ungefaehr" ? "#24394a" : "#f0d878", stroke: "#f0d878", strokeWidth: 1.6 * px }),
+          /* @__PURE__ */ React.createElement("text", { x: st.x, y: st.y + 3.6 * px, textAnchor: "middle", fontSize: 9.5 * px,
+            fill: st.genau === "ungefaehr" ? "#f0d878" : "#1b2a36", fontWeight: 700, fontFamily: "ui-sans-serif, system-ui, sans-serif",
+            style: { pointerEvents: "none" } }, i + 1))),
         zeigeStaedteNamen && sichtbar.filter((o) => o.art === "stadt" && o !== auswahl).map((o) => beschriftung(o, false)),
         ring,
         auswahl && sichtbar.includes(auswahl) && beschriftung(auswahl, true)
@@ -1528,14 +1600,38 @@ function KarteTab({ ziel }) {
         }, z)))
     ),
 
+    // Gewaehlte Route: Stationen in Reihenfolge
+    route && /* @__PURE__ */ React.createElement("div", { "data-route": route.id, className: "rounded-lg border border-[#d4af37] bg-[#5c1a1e] p-4 mt-2 max-w-3xl" },
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#f0d878] leading-snug" }, route.titel),
+      /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#d4af37] mb-1" }, jahrText(route.von), " – ", jahrText(route.bis)),
+      /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-2" }, route.beschreibung),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[11px] text-[#bd9563] mb-3" },
+        "Schematisch: Die Linie verbindet belegte Stationen, sie zeigt nicht den genauen Weg. Hohle Kreise: Ort ungefähr oder umstritten."),
+      /* @__PURE__ */ React.createElement("ol", { className: "flex flex-col gap-2" },
+        route.stationen.map((st, i) => /* @__PURE__ */ React.createElement("li", { key: i, "data-routenstation": i + 1, className: "flex gap-3 items-baseline" },
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#f0d878]", style: { width: "22px", flexShrink: 0 } }, i + 1),
+          /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]", style: { minWidth: "96px", whiteSpace: "nowrap", flexShrink: 0 } }, jahrText(st.jahr)),
+          /* @__PURE__ */ React.createElement("span", { className: "text-sm text-[#e8d5b0] leading-snug" },
+            /* @__PURE__ */ React.createElement("span", { className: "text-[#e0b84a]" }, st.ort), st.was ? " – " + st.was : "",
+            st.hinweis && /* @__PURE__ */ React.createElement("span", { className: "block text-[11px] text-[#bd9563]" }, st.hinweis))))),
+      (() => {
+        const v = route.vertiefung ? VERTIEFUNGEN.find((x) => x.id === route.vertiefung) : null;
+        return v && /* @__PURE__ */ React.createElement("button", {
+          onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, { reiter: "karte", eintrag: "route:" + route.id, label: "Karte" }); },
+          className: "mt-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+        }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 }));
+      })(),
+      /* @__PURE__ */ React.createElement("p", { className: "mt-2 text-[10px] text-[#bd9563]" }, "Reihenfolge nach: ", route.quelle)),
+
     // Gewaehlter Ort
     auswahl && (() => {
       const art = KARTE_ARTEN[auswahl.art];
       const b = auswahl.art === "schlacht" ? BATTLES.find((x) => x.name === auswahl.schlacht) : null;
       const t = auswahl.art === "stadt" ? THEMEN.find((x) => x.id === auswahl.thema) : null;
       const m = auswahl.art === "mysterium" ? MYSTERIEN.find((x) => x.id === auswahl.mysterium) : null;
-      const text = b ? b.text : t ? t.kurz : m ? m.raetsel : "";
-      const ortZeile = b ? b.ort : m ? m.region : null;
+      const sm = auswahl.art === "moment" ? SCHLUESSELMOMENTE.find((x) => x.title === auswahl.moment) : null;
+      const text = b ? b.text : t ? t.kurz : m ? m.raetsel : sm ? sm.text : "";
+      const ortZeile = b ? b.ort : m ? m.region : sm ? auswahl.ort : null;
       const genauigkeit = ortGenauigkeit(auswahl);
       const v = auswahl.vertiefung ? VERTIEFUNGEN.find((x) => x.id === auswahl.vertiefung) : null;
       const zurueck = { reiter: "karte", eintrag: ortSchluessel(auswahl), label: "Karte" };
@@ -1559,6 +1655,7 @@ function KarteTab({ ziel }) {
               if (b) SPRINGE("schlachten", ankerName(b.name), zurueck);
               else if (t) SPRINGE("themen", t.id, zurueck);
               else if (m) SPRINGE("mysterien", m.id, zurueck);
+              else if (sm) SPRINGE("schluessel", ankerName(sm.title), zurueck);
             },
             className: "inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
           }, "Zum Eintrag", /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })),
@@ -1567,7 +1664,7 @@ function KarteTab({ ziel }) {
             className: "inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
           }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })),
           /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[10px] text-[#bd9563]" },
-            "Koordinate: Wikidata ", auswahl.wikidata))
+            auswahl.wikidata ? "Koordinate: Wikidata " + auswahl.wikidata : "Koordinate: Wikipedia"))
       );
     })(),
 
@@ -2565,6 +2662,7 @@ function SchluesselmomenteTab({ ziel }) {
           kinder: /* @__PURE__ */ React.createElement("div", null,
             /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, m.text),
             verweise(m),
+            /* @__PURE__ */ React.createElement(AufDerKarte, { art: "moment", kennung: m.title, herkunft: { reiter: "schluessel", eintrag: ankerName(m.title), label: "Schlüsselmomente" } }),
             istNeu("moment:" + ankerName(m.title), m.seit) && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
               /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("moment:" + ankerName(m.title)) })))
         })
@@ -2818,8 +2916,12 @@ function KriegeTab({ ziel }) {
                 }))),
             v && /* @__PURE__ */ React.createElement("button", {
               onClick: () => { if (SPRINGE) SPRINGE("vertiefungen", v.id, zurueck(k)); },
-              className: "mb-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+              className: "mb-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]", style: { marginRight: "12px" }
             }, "Vertiefung: ", v.titel, /* @__PURE__ */ React.createElement(ChevronRight, { size: 11 })),
+            KARTE.orte.some((o) => o.art === "schlacht" && (k.schlachten || []).includes(o.schlacht)) && /* @__PURE__ */ React.createElement("button", {
+              onClick: () => { if (SPRINGE) SPRINGE("karte", "krieg:" + k.id, zurueck(k)); },
+              className: "mb-3 inline-flex items-center gap-1 text-xs text-[#c9a877] hover:text-[#f0d878]"
+            }, /* @__PURE__ */ React.createElement(Globe, { size: 12 }), "Schlachten auf der Karte"),
             (k.quellen || []).length > 0 && /* @__PURE__ */ React.createElement("div", { className: "pt-2 border-t border-[#5c2018]" },
               /* @__PURE__ */ React.createElement("p", { className: "font-mono text-[10px] uppercase tracking-widest text-[#bd9563] mb-1" }, "Quellen"),
               /* @__PURE__ */ React.createElement("ul", { className: "text-[11px] text-[#bd9563] leading-relaxed" },
@@ -3229,12 +3331,34 @@ function baueKarten() {
   })));
   SCHLUESSELMOMENTE.forEach((s) => rein({
     id: "jahr:" + s.title, art: "Jahreszahl", frage: s.title, jahr: s.year,
-    antwort: formatYear(s.year), kontext: "Schlüsselmoment · " + s.category, erklaerung: s.text
+    antwort: formatYear(s.year), kontext: "Schlüsselmoment · " + s.category, erklaerung: s.text, neu: !!s.seit
   }));
   BATTLES.forEach((b) => rein({
     id: "jahr:" + b.name, art: "Jahreszahl", frage: b.name, jahr: b.year,
     antwort: formatYear(b.year), kontext: b.war, erklaerung: b.text
   }));
+  // Kriege: gefragt wird der Beginn, die Antwort nennt den ganzen Zeitraum
+  (typeof KRIEGE !== "undefined" ? KRIEGE : []).forEach((k) => rein({
+    id: "krieg:" + k.id, art: "Jahreszahl", frage: "Beginn: " + k.name, jahr: k.von,
+    antwort: kriegZeitraum(k), kontext: "Krieg · " + k.region, erklaerung: k.kurz,
+    quelle: "krieg", neu: !!k.seit
+  }));
+  // Zuordnung: Welche Schlacht gehoert zu welchem Krieg?
+  BATTLES.forEach((b) => {
+    const k = kriegFuerSchlacht(b.name);
+    if (k) rein({
+      id: "zuordnung:" + b.name, art: "Zuordnung", frage: b.name + " (" + formatYear(b.year) + ")",
+      richtig: k.name, jahr: k.von, antwort: k.name, kontext: "Schlacht → Krieg",
+      erklaerung: k.kurz, quelle: "krieg", neu: !!k.seit
+    });
+  });
+  // Alle Stationen der Querschnitte, auch Kuenstler, Erfinder, Kalter Krieg
+  THEMEN.forEach((t) => t.stationen.forEach((st) => rein({
+    id: "station:" + t.id + ":" + ankerName(st.titel), art: "Jahreszahl", frage: st.titel, jahr: st.jahr,
+    antwort: formatYear(st.jahr), kontext: t.titel, erklaerung: st.text,
+    quelle: "querschnitt", thema: t.id, neu: !!(st.seit || t.seit)
+  })));
+
   VERTIEFUNGEN.forEach((v) => rein({
     id: "jahr:" + v.titel, art: "Jahreszahl", frage: v.titel, jahr: v.jahr,
     // Die Antwort muss zur Frage passen: gefragt ist ein Jahr, nicht ein Zeitraum.
@@ -3260,7 +3384,7 @@ function baueKarten() {
   // Wahr oder falsch: Mythen sind falsch, verblüffende Fakten sind wahr
   MYTHEN.filter((m) => m.type === "Mythos").forEach((m) => rein({
     id: "aussage:m:" + m.title, art: "Aussage", frage: m.title, kontext: m.category,
-    stimmt: false, antwort: "Stimmt nicht.", erklaerung: m.text + (m.quelle ? "  (" + m.quelle + ")" : "")
+    stimmt: false, antwort: "Stimmt nicht.", erklaerung: m.text + (m.quelle ? "  (" + m.quelle + ")" : ""), neu: !!m.seit
   }));
   SURPRISING_FACTS.forEach((f, i) => rein({
     id: "aussage:f:" + i, art: "Aussage", frage: f, kontext: "",
@@ -3291,10 +3415,17 @@ function LernenTab() {
   const alle = useMemo(baueKarten, []);
   const heute = heuteTag();
 
-  const arten = ["Alle", "Jahreszahl", "Zuschreibung", "Aussage"];
+  const arten = ["Alle", "Jahreszahl", "Zuordnung", "Zuschreibung", "Aussage"];
+  // Zweiter Filter: woher die Karten kommen. "Neu" zeigt nur, was in der
+  // letzten Runde dazukam - zum gezielten Nachlernen.
+  const [bereich, setBereich] = useGespeichert("lernen.bereich", "alle");
+  const [thema, setThema] = useGespeichert("lernen.thema", "");
+  const BEREICHE_LERNEN = [["alle", "Alle Quellen"], ["neu", "Nur Neues"], ["krieg", "Kriege & Schlachten"], ["querschnitt", "Querschnitte"]];
   const auswahl = useMemo(
-    () => (art === "Alle" ? alle : alle.filter((k) => k.art === art)),
-    [art, alle]
+    () => alle.filter((k) => (art === "Alle" || k.art === art) &&
+      (bereich === "alle" || (bereich === "neu" ? k.neu : k.quelle === bereich)) &&
+      (bereich !== "querschnitt" || !thema || k.thema === thema)),
+    [art, alle, bereich, thema]
   );
 
   const faellig = auswahl.filter((k) => faelligkeit(stand, k.id) <= heute);
@@ -3304,6 +3435,14 @@ function LernenTab() {
   );
 
   function optionenFuer(k) {
+    if (k.art === "Zuordnung") {
+      // Ablenker: andere Kriege aus derselben Zeit, sonst wird es zu leicht
+      const namen = [];
+      const nah = mischen(KRIEGE.filter((x) => x.name !== k.richtig)).sort((a, b) => Math.abs(a.von - k.jahr) - Math.abs(b.von - k.jahr));
+      for (const x of nah.slice(0, 8)) { if (namen.length < 3 && Math.random() < 0.8) namen.push(x.name); }
+      for (const x of nah) { if (namen.length >= 3) break; if (namen.indexOf(x.name) === -1) namen.push(x.name); }
+      return mischen([k.richtig, ...namen]);
+    }
     if (k.art !== "Jahreszahl") return [];
     // Ablenker aus der zeitlichen Nachbarschaft: Ein Vorschlag, der tausend Jahre
     // danebenliegt, macht die Frage wertlos. Der Abstand waechst mit dem Alter,
@@ -3332,7 +3471,7 @@ function LernenTab() {
     setUmgedreht(false);
   }
 
-  React.useEffect(() => { naechste(); }, [art, modus]);
+  React.useEffect(() => { naechste(); }, [art, modus, bereich, thema]);
 
   function werten(richtig) {
     if (!karte) return;
@@ -3352,7 +3491,7 @@ function LernenTab() {
 
   function antworten(wert) {
     setGewaehlt(wert);
-    const richtig = karte.art === "Jahreszahl" ? wert === karte.jahr : wert === karte.stimmt;
+    const richtig = karte.art === "Jahreszahl" ? wert === karte.jahr : karte.art === "Zuordnung" ? wert === karte.richtig : wert === karte.stimmt;
     werten(richtig);
     setTimeout(naechste, 1400);
   }
@@ -3361,7 +3500,7 @@ function LernenTab() {
 
   return /* @__PURE__ */ React.createElement("div", null,
     /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
-      alle.length, " Karten aus allen Sammlungen — Jahreszahlen, Zitat-Zuschreibungen und Aussagen, die stimmen oder nicht."),
+      alle.length.toLocaleString("de-DE"), " Karten aus allen Sammlungen — Jahreszahlen, Schlachten und ihre Kriege, Zitat-Zuschreibungen und Aussagen, die stimmen oder nicht."),
     /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-4 max-w-2xl" },
       "Karteikasten mit fünf Fächern: Richtig beantwortet wandert eine Karte ein Fach höher und kommt später wieder, falsch fällt sie zurück. Der Stand bleibt in diesem Browser — sichern lässt er sich unter Sicherung."),
 
@@ -3371,6 +3510,19 @@ function LernenTab() {
         className: `${knopf} ${art === a ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
       }, a, a === "Alle" ? "" : " (" + alle.filter((k) => k.art === a).length + ")"))
     ),
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-2" },
+      BEREICHE_LERNEN.map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
+        key: id, onClick: () => setBereich(id),
+        className: `${knopf} ${bereich === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
+      }, label, " (", (id === "alle" ? alle.length : alle.filter((k) => id === "neu" ? k.neu : k.quelle === id).length).toLocaleString("de-DE"), ")"))
+    ),
+    bereich === "querschnitt" && /* @__PURE__ */ React.createElement("select", {
+      value: thema, onChange: (e) => setThema(e.target.value), "aria-label": "Querschnitt wählen",
+      className: "mb-2 rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]",
+      style: { maxWidth: "100%" }
+    },
+      /* @__PURE__ */ React.createElement("option", { value: "" }, "Alle Querschnitte"),
+      THEMEN.map((t) => /* @__PURE__ */ React.createElement("option", { key: t.id, value: t.id }, t.titel + " (" + t.stationen.length + ")"))),
     /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-5" },
       [["quiz", "Quiz"], ["karten", "Karteikarten"]].map(([id, label]) =>
         /* @__PURE__ */ React.createElement("button", {
@@ -3399,7 +3551,7 @@ function LernenTab() {
       ),
 
       /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] leading-snug mb-4" },
-        karte.art === "Jahreszahl" ? "Wann?" : karte.art === "Zuschreibung" ? "Stimmt die Zuschreibung?" : "Stimmt diese Aussage?"),
+        karte.art === "Jahreszahl" ? "Wann?" : karte.art === "Zuordnung" ? "Zu welchem Krieg gehört diese Schlacht?" : karte.art === "Zuschreibung" ? "Stimmt die Zuschreibung?" : "Stimmt diese Aussage?"),
       /* @__PURE__ */ React.createElement("p", { className: "text-[17px] text-[#e8d5b0] leading-relaxed mb-5" }, karte.frage),
 
       // --- Quiz: automatisch bewertet ---
@@ -3420,7 +3572,21 @@ function LernenTab() {
         })
       ),
 
-      modus === "quiz" && karte.art !== "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
+      modus === "quiz" && karte.art === "Zuordnung" && /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        optionen.map((n) => {
+          const zeigen = gewaehlt !== null;
+          const istRichtig = n === karte.richtig;
+          return /* @__PURE__ */ React.createElement("button", {
+            key: n, disabled: zeigen, onClick: () => antworten(n),
+            className: `px-3 py-2 rounded border text-left text-sm ${
+              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
+              : zeigen && gewaehlt === n ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
+              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
+          }, n);
+        })
+      ),
+
+      modus === "quiz" && (karte.art === "Zuschreibung" || karte.art === "Aussage") && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
         [[true, "Stimmt"], [false, "Stimmt nicht"]].map(([wert, label]) => {
           const zeigen = gewaehlt !== null;
           const istRichtig = wert === karte.stimmt;

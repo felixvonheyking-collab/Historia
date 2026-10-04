@@ -477,7 +477,7 @@ function karteProjektion(lon, lat) {
 function pruefeKarte(D) {
   const K = D.KARTE;
   if (!K) { meldeFehler("data-karte.js: KARTE fehlt"); return; }
-  const ARTEN = ["schlacht", "stadt", "mysterium"];
+  const ARTEN = ["schlacht", "stadt", "mysterium", "moment"];
   const GENAU = ["ort", "gebiet", "ungefaehr"];
   const schluessel = new Set();
   K.orte.forEach((o) => {
@@ -486,7 +486,8 @@ function pruefeKarte(D) {
     if (!GENAU.includes(o.genau)) meldeFehler(wer + " – unbekannte Genauigkeit " + o.genau);
     if (typeof o.jahr !== "number") meldeFehler(wer + " – Jahr fehlt");
     if (o.bis !== undefined && o.bis < o.jahr) meldeFehler(wer + " – 'bis' liegt vor 'jahr'");
-    if (!/^Q\d+$/.test(o.wikidata || "")) meldeFehler(wer + " – Wikidata-Kennung fehlt; jede Koordinate braucht ihre Herkunft");
+    if (!/^Q\d+$/.test(o.wikidata || "") && !/^https:\/\/(en|de)\.wikipedia\.org\//.test(o.quelle || ""))
+      meldeFehler(wer + " – Herkunft fehlt (Wikidata-Kennung oder Wikipedia-Artikel); jede Koordinate braucht ihre Herkunft");
     if (o.genau === "ungefaehr" && !o.hinweis) meldeFehler(wer + " – 'ungefaehr' ohne Hinweis, was offen ist");
     const k = o.art + ":" + o.titel;
     if (schluessel.has(k)) meldeFehler(wer + " – doppelt");
@@ -499,12 +500,28 @@ function pruefeKarte(D) {
     if (o.art === "schlacht" && !D.BATTLES.some((b) => b.name === o.schlacht)) meldeFehler(wer + " – Schlacht '" + o.schlacht + "' gibt es nicht");
     if (o.art === "stadt" && !D.THEMEN.some((t) => t.id === o.thema)) meldeFehler(wer + " – Thema '" + o.thema + "' gibt es nicht");
     if (o.art === "mysterium" && !D.MYSTERIEN.some((m) => m.id === o.mysterium)) meldeFehler(wer + " – Mysterium '" + o.mysterium + "' gibt es nicht");
+    if (o.art === "moment" && !D.SCHLUESSELMOMENTE.some((m) => m.title === o.moment)) meldeFehler(wer + " – Schlüsselmoment '" + o.moment + "' gibt es nicht");
+    if (o.art === "moment") { const m = D.SCHLUESSELMOMENTE.find((x) => x.title === o.moment); if (m && m.year !== o.jahr) meldeFehler(wer + " – Jahr weicht vom Schlüsselmoment ab"); }
     if (o.vertiefung && !D.VERTIEFUNGEN.some((v) => v.id === o.vertiefung)) meldeFehler(wer + " – Vertiefung '" + o.vertiefung + "' gibt es nicht");
     if (o.art === "schlacht") {
       const b = D.BATTLES.find((x) => x.name === o.schlacht);
       if (b && b.year !== o.jahr) meldeFehler(wer + " – Jahr " + o.jahr + " weicht von der Schlacht ab (" + b.year + ")");
       if (b && (b.vertiefung || null) !== (o.vertiefung || null)) meldeFehler(wer + " – Vertiefungsverweis weicht von der Schlacht ab");
     }
+  });
+  (K.routen || []).forEach((r) => {
+    const wer = "Route " + r.titel;
+    if (!r.stationen || r.stationen.length < 5) meldeFehler(wer + " – zu wenige Stationen");
+    if (r.vertiefung && !D.VERTIEFUNGEN.some((v) => v.id === r.vertiefung)) meldeFehler(wer + " – Vertiefung '" + r.vertiefung + "' gibt es nicht");
+    if (!r.quelle) meldeFehler(wer + " – Quelle für die Reihenfolge fehlt");
+    let vorher = -Infinity;
+    r.stationen.forEach((st) => {
+      const [x, y] = karteProjektion(st.lon, st.lat);
+      if (Math.abs(x - st.x) > 0.2 || Math.abs(y - st.y) > 0.2) meldeFehler(wer + ", " + st.ort + " – x/y passen nicht zu lat/lon");
+      if (!/^https:\/\//.test(st.quelle || "")) meldeFehler(wer + ", " + st.ort + " – Herkunft der Koordinate fehlt");
+      if (st.jahr < vorher) meldeFehler(wer + ", " + st.ort + " – Stationen nicht in zeitlicher Folge");
+      vorher = st.jahr;
+    });
   });
   K.ohneOrt.forEach((o) => {
     if (!D.BATTLES.some((b) => b.name === o.titel)) meldeFehler("Karte, ohne Ort: Schlacht '" + o.titel + "' gibt es nicht");
@@ -517,7 +534,7 @@ function pruefeKarte(D) {
     offen.map((b) => b.name).join(", "));
   const zaehl = (a) => K.orte.filter((o) => o.art === a).length;
   console.log("  Karte: " + K.orte.length + " Orte (Schlachten " + zaehl("schlacht") + ", Städte " + zaehl("stadt") +
-    ", Mysterien " + zaehl("mysterium") + ") · " + K.ohneOrt.length + " bewusst ohne Ort");
+    ", Mysterien " + zaehl("mysterium") + ", Momente " + zaehl("moment") + ") · " + (K.routen || []).length + " Routen · " + K.ohneOrt.length + " bewusst ohne Ort");
 }
 
 /* ----------------------------------------------------------------- Kriege */
