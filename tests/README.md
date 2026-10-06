@@ -33,3 +33,5 @@ Second Brain.
   verraten und Personenfragen den Namen verschweigen.
 - `heute.js` — Startseite: Kachel „Heute“ startet eine Runde mit 5 Fragen, Lernserie wird
   gezählt, „Heute vor …“ nennt nur runde Abstände.
+- `dark.js` — Dark History: dunkles Aussehen, Akten und Geheimbünde öffnen sich mit allen Abschnitten,
+  umgezogene Querschnitte und Mysterien stehen nur noch dort, alte Sprungziele landen am neuen Ort.

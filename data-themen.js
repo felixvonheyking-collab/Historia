@@ -7639,7 +7639,7 @@ const THEMEN = [
    {
     "jahr": 1776,
     "titel": "Die Illuminaten",
-    "text": "Adam Weishaupt gründet in Ingolstadt einen Geheimbund aufklärerischer Beamter und Gelehrter; 1785 wird er in Bayern verboten und löst sich auf. Die Akten sind gut erhalten, der Bund hatte wenige hundert Mitglieder und keine erkennbare Wirkung. Seine zweite, viel größere Karriere führt er als Erklärung für alles Weitere – die Illuminaten sind das Muster der modernen Verschwörungserzählung."
+    "text": "Adam Weishaupt gründet in Ingolstadt einen Geheimbund aufklärerischer Beamter und Gelehrter; 1785 wird er in Bayern verboten und löst sich auf. Die Akten sind gut erhalten: Namentlich bekannt sind knapp 1.400 Mitglieder über die ganze Bestandszeit, eine erkennbare politische Wirkung hatte der Bund nicht. Seine zweite, viel größere Karriere führt er als Erklärung für alles Weitere – die Illuminaten sind das Muster der modernen Verschwörungserzählung."
    },
    {
     "jahr": 1796,

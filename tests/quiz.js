@@ -41,9 +41,9 @@ const klick=(el)=>el.dispatchEvent(new W.MouseEvent("click",{bubbles:true}));
   W.eval('SPRINGE("lernen",null,null)'); await warte(250);
   const start=d.querySelector("[data-rundenstart]"); pruefe(!!start,"Kein Startknopf");
   if(start){ klick(start); await warte(200); }
-  let fragen=0, typen=new Set();
+  let fragen=0, karteifragen=0, typen=new Set();
   for(let q=0;q<25 && d.querySelector("[data-quizfrage]");q++){
-    const box=d.querySelector("[data-quizfrage]"); const typ=box.getAttribute("data-quizfrage"); typen.add(typ);
+    const box=d.querySelector("[data-quizfrage]"); const typ=box.getAttribute("data-quizfrage"); typen.add(typ); if(typ!=="Reihenfolge") karteifragen++;
     if(typ==="Reihenfolge"){ for(let i=0;i<4;i++){ const b=[...box.querySelectorAll("button")].find(x=>!x.disabled && /^\s*·/.test(x.textContent)); if(b){ klick(b); await warte(40);} } }
     else { const b=[...box.querySelectorAll("button")].find(x=>!x.disabled); klick(b); }
     await warte(1700);   // frueher sprang die App nach 1,4 s weiter
@@ -55,7 +55,8 @@ const klick=(el)=>el.dispatchEvent(new W.MouseEvent("click",{bubbles:true}));
   pruefe(typen.size>=3,"Gemischte Runde zu einseitig: "+[...typen].join(","));
   const erg=d.querySelector("[data-ergebnis]"); pruefe(!!erg,"Kein Ergebnis am Ende");
   const stand=JSON.parse(W.localStorage.getItem("historia.lernen.stand")||"{}");
-  pruefe(Object.keys(stand).length>=7,"Lernstand nicht gespeichert ("+Object.keys(stand).length+")");
+  // Reihenfolge-Fragen werden bewusst nicht im Karteikasten gespeichert
+  pruefe(Object.keys(stand).length>=karteifragen,"Lernstand nicht gespeichert ("+Object.keys(stand).length+" statt "+karteifragen+")");
   const fw=[...d.querySelectorAll("button")].find(b=>b.textContent.includes("Fehler wiederholen"));
   if(fw){ const n=+fw.textContent.match(/\((\d+)\)/)[1]; klick(fw); await warte(200);
     pruefe((d.querySelector("[data-fortschritt]")||{}).textContent==="Frage 1 von "+n,"Fehlerrunde hat falsche Länge"); }
