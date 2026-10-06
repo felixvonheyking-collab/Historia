@@ -382,13 +382,9 @@ const EPOCHS = [
    {
     "year": -1274,
     "title": "Schlacht bei Kadesch",
-    "text": "Ägypter unter Ramses II. und Hethiter liefern sich eine der größten Streitwagenschlachten der Geschichte; es folgt der älteste erhaltene Friedensvertrag."
+    "text": "Ägypter unter Ramses II. und Hethiter unter Muwatalli II. liefern sich eine der größten Streitwagenschlachten der Geschichte; sie endet ohne klaren Sieger. Rund fünfzehn Jahre später schließen beide Reiche den ältesten erhaltenen Friedensvertrag."
    },
-   {
-    "year": -1274,
-    "title": "Schlacht von Kadesch",
-    "text": "Ägypter und Hethiter kämpfen unentschieden; sechzehn Jahre später schließen sie den ältesten erhaltenen Friedensvertrag der Geschichte."
-   },
+   
    {
     "year": -1200,
     "title": "Bronzezeitlicher Kollaps",
@@ -631,15 +627,11 @@ const EPOCHS = [
     "title": "Demokratie in Athen",
     "text": "Kleisthenes reformiert die athenische Verfassung und legt den Grundstein für die erste Demokratie der Geschichte."
    },
+   
    {
     "year": -490,
     "title": "Schlacht bei Marathon",
-    "text": "Athen wehrt einen persischen Invasionsversuch ab – prägendes Ereignis des griechischen Selbstverständnisses."
-   },
-   {
-    "year": -490,
-    "title": "Marathon",
-    "text": "Athen schlägt ein persisches Landungsheer. Die Geschichte vom Läufer, der die Nachricht überbrachte und starb, entstand erst Jahrhunderte später."
+    "text": "Athen schlägt ein persisches Landungsheer zurück – ein prägendes Ereignis für das griechische Selbstverständnis. Die Geschichte vom Läufer, der die Nachricht überbrachte und starb, entstand erst Jahrhunderte später."
    },
    {
     "year": -480,
@@ -709,13 +701,9 @@ const EPOCHS = [
    {
     "year": -31,
     "title": "Schlacht bei Actium",
-    "text": "Octavian besiegt Marcus Antonius und Kleopatra – Ägypten wird römische Provinz."
+    "text": "Octavian besiegt Marcus Antonius und Kleopatra. Der Sieg beendet die römischen Bürgerkriege, Ägypten wird römische Provinz, und die Kaiserzeit beginnt."
    },
-   {
-    "year": -31,
-    "title": "Actium",
-    "text": "Octavians Sieg über Antonius und Kleopatra beendet die römischen Bürgerkriege und leitet die Kaiserzeit ein."
-   },
+   
    {
     "year": -27,
     "title": "Beginn des Prinzipats",
@@ -1298,15 +1286,11 @@ const EPOCHS = [
     "title": "Plünderung Konstantinopels (Vierter Kreuzzug)",
     "text": "Kreuzfahrer richten sich gegen die christliche Schwesterstadt Byzanz statt gegen Muslime – schwächt Byzanz dauerhaft und vertieft die Kluft zwischen West- und Ostkirche."
    },
-   {
-    "year": 1206,
-    "title": "Dschingis Khan wird Großkhan",
-    "text": "Die mongolischen Stämme werden geeint; Beginn der größten Landeroberung der Geschichte."
-   },
+   
    {
     "year": 1206,
     "title": "Temüdschin wird Dschingis Khan",
-    "text": "Die Einigung der Steppenvölker begründet das größte zusammenhängende Landreich der Geschichte."
+    "text": "Eine Reichsversammlung der mongolischen Stämme erhebt Temüdschin zum Dschingis Khan. Die Einigung der Steppenvölker begründet das größte zusammenhängende Landreich der Geschichte."
    },
    {
     "year": 1212,
@@ -1819,13 +1803,9 @@ const EPOCHS = [
    {
     "year": 1517,
     "title": "Luthers 95 Thesen",
-    "text": "Martin Luther veröffentlicht seine Thesen gegen den Ablasshandel – Beginn der Reformation und Kirchenspaltung."
+    "text": "Martin Luther veröffentlicht seine Thesen gegen den Ablasshandel. Ob er sie tatsächlich an die Wittenberger Schlosskirche schlug, ist unsicher – sicher ist, dass der Buchdruck sie binnen Wochen in ganz Deutschland verbreitete. Beginn der Reformation."
    },
-   {
-    "year": 1517,
-    "title": "Luthers Thesen",
-    "text": "Ob sie angeschlagen wurden, ist unsicher – sicher ist, dass der Buchdruck sie binnen Wochen in ganz Deutschland verbreitete."
-   },
+   
    {
     "year": 1519,
     "title": "Beginn der Eroberung Mexikos",
@@ -1886,15 +1866,11 @@ const EPOCHS = [
     "title": "Untergang der Spanischen Armada",
     "text": "England besiegt die spanische Flotte und etabliert sich als aufstrebende Seemacht."
    },
-   {
-    "year": 1600,
-    "title": "Gründung der britischen Ostindien-Kompanie",
-    "text": "Eine private Handelsgesellschaft erhält weitreichende Vollmachten und wird später faktischer Herrscher über weite Teile Indiens."
-   },
+   
    {
     "year": 1600,
     "title": "Gründung der Englischen Ostindien-Kompanie",
-    "text": "Ein Handelsunternehmen erhält Hoheitsrechte und wird über zwei Jahrhunderte zum faktischen Herrscher Indiens."
+    "text": "Königin Elisabeth I. verleiht einer Londoner Handelsgesellschaft das Monopol für den Asienhandel. Das Unternehmen erhält später Hoheitsrechte und wird über zwei Jahrhunderte zum faktischen Herrscher über weite Teile Indiens."
    },
    {
     "year": 1602,
@@ -1932,15 +1908,11 @@ const EPOCHS = [
     "text": "Eine der letzten großen Pestepidemien Europas fordert in London zehntausende Todesopfer.",
     "quelle": "Encyclopaedia Britannica: Great Plague of London; zeitgenössische Bills of Mortality mit bekannter Untererfassung"
    },
-   {
-    "year": 1687,
-    "title": "Newtons Principia Mathematica",
-    "text": "Isaac Newton formuliert die Gravitationsgesetze und legt die Grundlage der klassischen Physik."
-   },
+   
    {
     "year": 1687,
     "title": "Newtons Principia",
-    "text": "Ein einziges Gesetz erklärt fallende Äpfel und kreisende Planeten. Die Vorstellung einer berechenbaren Natur setzt sich durch."
+    "text": "Isaac Newton formuliert die Bewegungsgesetze und das Gravitationsgesetz: Ein einziges Gesetz erklärt fallende Äpfel und kreisende Planeten. Die Vorstellung einer berechenbaren Natur setzt sich durch."
    },
    {
     "year": 1688,
@@ -2016,11 +1988,6 @@ const EPOCHS = [
     "year": 1787,
     "title": "Verfassung der Vereinigten Staaten",
     "text": "Die älteste noch geltende geschriebene Staatsverfassung der Welt, gebaut auf Gewaltenteilung nach Montesquieu."
-   },
-   {
-    "year": 1789,
-    "title": "Beginn der Französischen Revolution",
-    "text": "Der Sturm auf die Bastille markiert den Beginn eines Umbruchs, der die politische Ordnung Europas verändert."
    }
   ],
   "figures": [
@@ -2321,7 +2288,7 @@ const EPOCHS = [
    {
     "year": 1789,
     "title": "Französische Revolution",
-    "text": "Sturz der absoluten Monarchie in Frankreich, Erklärung der Menschen- und Bürgerrechte."
+    "text": "Mit dem Sturm auf die Bastille beginnt der Sturz der absoluten Monarchie in Frankreich; die Erklärung der Menschen- und Bürgerrechte verändert die politische Ordnung Europas."
    },
    {
     "year": 1793,
@@ -2398,15 +2365,11 @@ const EPOCHS = [
     "title": "Beginn des Krimkriegs",
     "text": "Ein Konflikt zwischen Russland und einer europäischen Koalition zeigt früh moderne, verlustreiche Kriegsführung."
    },
-   {
-    "year": 1859,
-    "title": "Darwins 'Entstehung der Arten'",
-    "text": "Charles Darwins Evolutionstheorie verändert das biologische und philosophische Weltbild grundlegend."
-   },
+   
    {
     "year": 1859,
     "title": "Darwins Über die Entstehung der Arten",
-    "text": "Die erste Auflage war am Erscheinungstag ausverkauft. Der Mensch verliert seine Sonderstellung in der Natur."
+    "text": "Charles Darwin begründet die Evolution durch natürliche Selektion. Die erste Auflage war am Erscheinungstag an den Buchhandel verkauft; der Mensch verliert seine Sonderstellung in der Natur."
    },
    {
     "year": 1861,

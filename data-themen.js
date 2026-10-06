@@ -950,7 +950,7 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": 1500,
+    "jahr": 1492,
     "titel": "Der Kolumbianische Austausch",
     "text": "Kartoffel, Mais und Tomate kommen nach Europa, Afrika und Asien; Weizen, Rind und Zuckerrohr nach Amerika. Die Kartoffel allein hat das Bevölkerungswachstum Europas maßgeblich getragen – und Irland in eine gefährliche Abhängigkeit geführt.",
     "vertiefung": "columbian-exchange"
@@ -1041,16 +1041,16 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": 1930,
-    "titel": "Der Dust Bowl",
-    "text": "In den 1930er Jahren verwandeln Dürre und die Folgen jahrzehntelangen Pflügens die südlichen Great Plains der USA in Staubstürme. Hohe Weizenpreise und Traktoren hatten den Umbruch der Grasprärie beschleunigt; ohne die tief wurzelnden Gräser trug der Wind den Boden davon. Hunderttausende verlieren ihre Existenz, viele ziehen nach Kalifornien. Die Regierung reagierte mit einem Bodenschutzdienst, Windschutzstreifen und neuen Pflugmethoden – die erste große Erfahrung, dass moderne Landwirtschaft ihre eigene Grundlage zerstören kann.",
-    "vertiefung": "dust-bowl",
-    "seit": "2026-10-01"
-   },
-   {
     "jahr": 1932,
     "titel": "Die Hungersnot in der Sowjetunion",
     "text": "Zwangskollektivierung, überhöhte Getreideabgaben und Strafmaßnahmen gegen Dörfer führen 1932/33 zu einer Hungersnot mit Millionen Toten, besonders in der Ukraine und in Kasachstan; für die Ukraine liegen die Schätzungen meist zwischen 3,5 und 5 Millionen. Während Menschen verhungerten, exportierte die Sowjetunion Getreide und sperrte Bauern in den Hungergebieten ein. Ob der Holodomor als Völkermord einzustufen ist, wird in der Forschung unterschiedlich beurteilt; mehrere Staaten, darunter Deutschland, haben ihn so anerkannt.",
+    "seit": "2026-10-01"
+   },
+   {
+    "jahr": 1935,
+    "titel": "Der Dust Bowl",
+    "text": "In den 1930er Jahren verwandeln Dürre und die Folgen jahrzehntelangen Pflügens die südlichen Great Plains der USA in Staubstürme. Hohe Weizenpreise und Traktoren hatten den Umbruch der Grasprärie beschleunigt; ohne die tief wurzelnden Gräser trug der Wind den Boden davon. Hunderttausende verlieren ihre Existenz, viele ziehen nach Kalifornien. Die Regierung reagierte mit einem Bodenschutzdienst, Windschutzstreifen und neuen Pflugmethoden – die erste große Erfahrung, dass moderne Landwirtschaft ihre eigene Grundlage zerstören kann.",
+    "vertiefung": "dust-bowl",
     "seit": "2026-10-01"
    },
    {
@@ -1685,7 +1685,7 @@ const THEMEN = [
    },
    {
     "jahr": 1991,
-    "titel": "Das World Wide Web",
+    "titel": "Das World Wide Web geht online",
     "text": "Tim Berners-Lee entwickelt am Forschungszentrum CERN bei Genf ein System verknüpfter Dokumente, die über Links verbunden und mit einem Browser abrufbar sind; im August 1991 macht er es öffentlich zugänglich. 1993 gibt das CERN die Technik ausdrücklich ohne Lizenzgebühren frei. Diese Entscheidung – nicht die Erfindung selbst – ist der Grund, warum das Web allen offensteht und sich gegen konkurrierende Systeme durchsetzte. Mit grafischen Browsern wie Mosaic wurde das Internet ab 1993 auch für Laien nutzbar.",
     "vertiefung": "internet",
     "seit": "2026-10-01"
@@ -2053,7 +2053,7 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": -300,
+    "jahr": -331,
     "titel": "Alexandria",
     "text": "Eine Gründung auf dem Reißbrett wird zur größten Stadt der Mittelmeerwelt: Leuchtturm, Bibliothek, Museion. Sie zeigte, dass eine Stadt durch bewusste Ansiedlung von Gelehrten zum Wissenszentrum werden kann."
    },
@@ -2093,7 +2093,7 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": 1150,
+    "jahr": 1113,
     "titel": "Angkor",
     "text": "Unter Suryavarman II. entsteht Angkor Wat, Zentrum einer Stadtlandschaft, die sich nach Satelliten- und Laserscans über mindestens tausend Quadratkilometer erstreckte. Angkor war keine dichte Stadt hinter Mauern, sondern ein Netz aus Reisfeldern, Wohnhügeln, Kanälen und riesigen Wasserbecken. Wie viele Menschen dort lebten, ist umstritten; Schätzungen reichen bis zu einer Dreiviertelmillion und mehr. Als das Wassersystem im 14. und 15. Jahrhundert durch Dürren und Starkregen überfordert wurde, verlor die Stadt ihre Grundlage.",
     "vertiefung": "angkor",
@@ -2350,9 +2350,9 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": 900,
+    "jahr": 869,
     "titel": "Der Zandsch-Aufstand",
-    "text": "Ostafrikanische Zwangsarbeiter in den Salzsümpfen des Irak erheben sich und halten fünfzehn Jahre lang ein eigenes Gebiet. Der Aufstand erschütterte das Abbasidenkalifat und führte dazu, dass Massenzwangsarbeit dort weitgehend aufgegeben wurde."
+    "text": "Ostafrikanische Zwangsarbeiter in den Salzsümpfen des Irak erheben sich und halten vierzehn Jahre lang ein eigenes Gebiet. Der Aufstand erschütterte das Abbasidenkalifat und führte dazu, dass Massenzwangsarbeit dort weitgehend aufgegeben wurde."
    },
    {
     "jahr": 1000,
@@ -3571,13 +3571,6 @@ const THEMEN = [
     "seit": "2026-10-01"
    },
    {
-    "jahr": -11500,
-    "titel": "Göbekli Tepe",
-    "text": "Auf einem Hügel in Südostanatolien errichten Menschen etwa zwischen 9500 und 8000 v. Chr. Kreisanlagen aus bis zu mehrere Meter hohen T-förmigen Pfeilern mit Reliefs von Füchsen, Schlangen und Geiern. Die Erbauer lebten noch nicht vom Ackerbau. Der Ausgräber Klaus Schmidt deutete den Ort als Heiligtum, zu dem Gruppen von weither kamen. Neuere Grabungen fanden Häuser und Zisternen, sodass heute auch eine Siedlung angenommen wird. Sicher ist: Großer gemeinsamer Bau stand hier vor dem Ackerbau, nicht danach.",
-    "vertiefung": "goebekli-tepe",
-    "seit": "2026-10-01"
-   },
-   {
     "jahr": -11000,
     "titel": "Die ersten Amerikaner",
     "text": "Lange galt die Clovis-Kultur, benannt nach Funden bei Clovis in New Mexico und datiert auf etwa 13.050 bis 12.750 Jahre vor heute, als erste Besiedlung Amerikas. Diese Annahme gilt heute als widerlegt: Fundplätze wie Paisley Caves in Oregon und Cooper's Ferry in Idaho sind mehr als tausend Jahre älter. Monte Verde in Chile, lange der wichtigste Beleg, ist seit einer Studie von 2026, die das Lager für viel jünger hält, wieder umstritten; die Ausgräber widersprechen. Wie früh genau Menschen kamen und auf welchem Weg, ist offen.",
@@ -3587,6 +3580,13 @@ const THEMEN = [
     "jahr": -10500,
     "titel": "Pfeil und Bogen",
     "text": "In Stellmoor bei Hamburg liegen über hundert Kiefernschäfte mit Nocken und Spitzenansatz – die ältesten sicher als Pfeile bestimmbaren Funde. Der Bogen speichert Muskelkraft und gibt sie schnell frei; damit wird auf Distanz jagbar, was vorher nur im Nahkampf erreichbar war. Er ist außerdem die erste Waffe, mit der ein Mensch einen anderen töten kann, ohne ihn zu berühren."
+   },
+   {
+    "jahr": -9500,
+    "titel": "Göbekli Tepe",
+    "text": "Auf einem Hügel in Südostanatolien errichten Menschen etwa zwischen 9500 und 8000 v. Chr. Kreisanlagen aus bis zu mehrere Meter hohen T-förmigen Pfeilern mit Reliefs von Füchsen, Schlangen und Geiern. Die Erbauer lebten noch nicht vom Ackerbau. Der Ausgräber Klaus Schmidt deutete den Ort als Heiligtum, zu dem Gruppen von weither kamen. Neuere Grabungen fanden Häuser und Zisternen, sodass heute auch eine Siedlung angenommen wird. Sicher ist: Großer gemeinsamer Bau stand hier vor dem Ackerbau, nicht danach.",
+    "vertiefung": "goebekli-tepe",
+    "seit": "2026-10-01"
    },
    {
     "jahr": -9500,
@@ -5627,7 +5627,7 @@ const THEMEN = [
    },
    {
     "jahr": 1539,
-    "titel": "Die Reformation",
+    "titel": "Die Reformation in Brandenburg",
     "text": "Kurfürst Joachim II. führt die Reformation in Brandenburg ein, behutsam und mit vielen beibehaltenen Bräuchen. Kirchengut geht an den Landesherrn und finanziert Verwaltung und Schulen. Für Berlin bedeutet es eine Landesherrschaft, die auch über die Kirche verfügt – ein Merkmal des preußischen Staates bis 1918.",
     "herrschaft": "Hohenzollern",
     "vertiefung": "reformation"

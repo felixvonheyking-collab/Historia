@@ -31,3 +31,5 @@ Second Brain.
 - `quiz.js` — spielt eine gemischte Quizrunde durch: Erklärung bleibt bis „Weiter“ stehen,
   Ergebnis und Fehlerrunde; prüft außerdem, dass weder Hinweis noch Titel die Jahreszahl
   verraten und Personenfragen den Namen verschweigen.
+- `heute.js` — Startseite: Kachel „Heute“ startet eine Runde mit 5 Fragen, Lernserie wird
+  gezählt, „Heute vor …“ nennt nur runde Abstände.

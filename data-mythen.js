@@ -56,12 +56,7 @@ const MYTHEN = [
   "title": "Der Läufer Pheidippides rannte 42 km und starb",
   "text": "Herodot berichtet nur von einem Botenlauf nach Sparta, nicht von einem tödlichen Lauf über die Marathon-Distanz. Die moderne Marathondistanz von 42,195 km wurde erst 1908 bei den Olympischen Spielen in London festgelegt."
  },
- {
-  "category": "Antike",
-  "type": "Nuance",
-  "title": "Gladiatoren kämpften immer bis zum Tod",
-  "text": "Gladiatoren waren teure Investitionen ihrer Besitzer. Die meisten Kämpfe endeten ohne tödlichen Ausgang, und die genaue Bedeutung der berühmten Daumengeste ist unter Historikern bis heute umstritten."
- },
+ 
  {
   "category": "Mittelalter",
   "type": "Mythos",

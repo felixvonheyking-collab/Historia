@@ -850,6 +850,66 @@ function pruefeInhalte(D) {
   console.log("  Schlüsselmomente mit Verweis auf eine Vertiefung: " + verknuepft);
 }
 
+/* ------------------------------------------------------- Widersprueche
+
+   Am 2026-10-06 eingefuehrt, nachdem ein Abgleich gezeigt hatte: Dasselbe
+   Ereignis stand in verschiedenen Bereichen mit verschiedenen Jahren
+   (Brand Roms 54/64, Zandsch-Aufstand 869/900), und sieben Ereignisse
+   standen doppelt in den Epochen. Das Quiz uebt solche Fehler aktiv ein. */
+
+function wvWoerter(titel) {
+  const STOP = new Set(["schlacht", "beginn", "erste", "ersten", "großen", "große", "der", "die", "das", "von", "bei", "und", "des", "den", "dem", "ein", "eine"]);
+  return String(titel).toLowerCase().replace(/[^a-zäöüß0-9\s]/g, " ").split(/\s+/)
+    .filter((w) => (w.length > 3 || /^\d+$/.test(w)) && !STOP.has(w)).map((w) => w.replace(/(es|s|n|en|e)$/, ""));
+}
+function wvAehnlich(a, b) {
+  const A = new Set(wvWoerter(a)), B = new Set(wvWoerter(b));
+  if (!A.size || !B.size) return 0;
+  const gemeinsam = [...A].filter((w) => B.has(w)).length;
+  return gemeinsam / new Set([...A, ...B]).size;
+}
+
+function pruefeWidersprueche(D) {
+  const kern = [];
+  (D.EPOCHS || []).forEach((ep) => ep.events.forEach((e) => kern.push({ q: "Epoche", t: e.title, j: e.year })));
+  (D.SCHLUESSELMOMENTE || []).forEach((s) => kern.push({ q: "Schlüsselmoment", t: s.title, j: s.year }));
+  (D.BATTLES || []).forEach((b) => kern.push({ q: "Schlacht", t: b.name, j: b.year }));
+  (D.VERTIEFUNGEN || []).forEach((v) => kern.push({ q: "Vertiefung", t: v.titel, j: v.jahr }));
+  (D.THEMEN || []).forEach((t) => t.stationen.forEach((s) => kern.push({ q: "Querschnitt", t: s.titel, j: s.jahr })));
+  // 1. Dubletten innerhalb von Epochen und Schluesselmomenten
+  ["Epoche", "Schlüsselmoment"].forEach((q) => {
+    const L = kern.filter((x) => x.q === q);
+    for (let i = 0; i < L.length; i++) for (let k = i + 1; k < L.length; k++) {
+      if (Math.abs(L[i].j - L[k].j) <= 5 && wvAehnlich(L[i].t, L[k].t) >= 0.6)
+        meldeFehler(q + " doppelt: „" + L[i].t + "“ und „" + L[k].t + "“");
+    }
+  });
+  // 2. Gleicher Titel, anderes Jahr (ueber alle Bereiche)
+  const norm = (t) => wvWoerter(t).sort().join(" ");
+  const nachTitel = {};
+  kern.forEach((x) => { const n = norm(x.t); if (n) (nachTitel[n] = nachTitel[n] || []).push(x); });
+  const ohneArtikel = (t) => String(t).toLowerCase().replace(/^(der|die|das)\s+/, "");
+  Object.entries(nachTitel).forEach(([schluessel, liste]) => {
+    for (let i = 0; i < liste.length; i++) for (let k = i + 1; k < liste.length; k++) {
+      const a = liste[i], b = liste[k];
+      if (a.q === "Querschnitt" && b.q === "Querschnitt") continue;   // gleiche Station in Stadt- und Sachthemen
+      if (schluessel.split(" ").length < 2 && ohneArtikel(a.t) !== ohneArtikel(b.t)) continue;
+      const abstand = Math.abs(a.j - b.j);
+      // Vor- und Fruehgeschichte: Datierungen sind Spannen, dort 15 % statt 3 %
+      const alter = Math.abs(2030 - Math.min(a.j, b.j));
+      const toleranz = Math.max(1, alter * (Math.min(a.j, b.j) < -10000 ? 0.15 : 0.03));
+      // Sehr grosse Abstaende: gleichnamige, aber verschiedene Ereignisse (Olympia -776 / 1936)
+      if (abstand > toleranz && abstand < Math.abs(2030 - Math.min(a.j, b.j)) * 0.5)
+        meldeFehler("Gleiches Ereignis, verschiedene Jahre: " + a.q + " „" + a.t + "“ " + a.j + " / " + b.q + " „" + b.t + "“ " + b.j);
+    }
+  });
+  // 3. Mythen doppelt
+  const M = D.MYTHEN || [];
+  for (let i = 0; i < M.length; i++) for (let k = i + 1; k < M.length; k++)
+    if (wvAehnlich(M[i].title, M[k].title) >= 0.8) meldeFehler("Mythos doppelt: „" + M[i].title + "“");
+  console.log("  Widersprüche: " + kern.length + " Ereignisse abgeglichen");
+}
+
 /* ------------------------------------------------------------------ Lauf */
 
 console.log("Historia – Prüfung\n");
@@ -864,6 +924,7 @@ const D = lade();
 if (D) {
   console.log("\nInhalte:");
   pruefeInhalte(D);
+  pruefeWidersprueche(D);
 }
 
 console.log("");

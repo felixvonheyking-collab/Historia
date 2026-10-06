@@ -2075,6 +2075,73 @@ function zufall(liste) {
   return liste[Math.floor(Math.random() * liste.length)];
 }
 
+// --- Startseite: "Heute" -------------------------------------------------
+// Ein Einstieg fuer jeden Tag: was im Karteikasten faellig ist, eine kurze
+// Runde mit einem Tipp, und was vor runden 100, 200, 500 ... Jahren geschah.
+
+function lernserie(tage, heute) {
+  const set = new Set(tage || []);
+  let tag = set.has(heute) ? heute : heute - 1, n = 0;
+  while (set.has(tag)) { n++; tag--; }
+  return n;
+}
+
+const JAHRESTAGE = [10, 25, 50, 75, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500, 600, 700, 750, 800, 900, 1000, 1100, 1200, 1250, 1300, 1400, 1500, 1600, 1700, 1750, 1800, 1900, 2000, 2250, 2500];
+
+function heuteVorJahren(index, jahr, heute) {
+  const vorrang = { "Schlüsselmoment": 0, "Schlacht": 1, "Ereignis": 1, "Krieg": 2, "Zeitleiste": 3, "Themen-Station": 4 };
+  const gesehen = new Set(), treffer = [];
+  index.filter((e) => typeof e.jahr === "number" && JAHRESTAGE.includes(jahr - e.jahr))
+    .sort((a, b) => (vorrang[a.art] ?? 9) - (vorrang[b.art] ?? 9))
+    .forEach((e) => { const k = e.titel.toLowerCase(); if (!gesehen.has(k)) { gesehen.add(k); treffer.push(e); } });
+  // Taeglich wechselnde, aber am selben Tag stabile Auswahl; moeglichst verschiedene Abstaende
+  // Bekannte Ereignisse (Schluesselmomente, Schlachten) bevorzugt, aber nicht ausschliesslich
+  const gemischt = treffer.map((e, i) => ({ e, r: (vorrang[e.art] ?? 9) * 0.6 + (Math.sin(heute * 97 + i * 13.7) + 1) * 1.5 }))
+    .sort((a, b) => a.r - b.r).map((x) => x.e);
+  const wahl = [], abstaende = new Set();
+  for (const e of gemischt) { if (wahl.length >= 3) break; if (!abstaende.has(jahr - e.jahr)) { abstaende.add(jahr - e.jahr); wahl.push(e); } }
+  return wahl.sort((a, b) => b.jahr - a.jahr);
+}
+
+function HeuteKachel() {
+  const [stand] = useGespeichert("lernen.stand", {});
+  const [tage] = useGespeichert("lernen.tage", []);
+  const heute = heuteTag();
+  const jahr = new Date().getFullYear();
+  const karten = useMemo(baueKarten, []);
+  const index = useMemo(sucheIndex, []);
+  const faellig = karten.filter((k) => stand[k.id] && stand[k.id].faellig <= heute).length;
+  const serie = lernserie(tage, heute);
+  const heuteGelernt = (tage || []).includes(heute);
+  const jubilaeen = useMemo(() => heuteVorJahren(index, jahr, heute), [index, jahr, heute]);
+  const springe = (reiter, ziel) => { if (SPRINGE) SPRINGE(reiter, ziel, { reiter: "start", eintrag: null, label: "Start" }); };
+
+  return /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#d4af37] bg-[#5c1a1e] p-4 mb-6", "data-heute": true },
+    /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-2 mb-2" },
+      /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-widest text-[#d4af37]" }, "Heute"),
+      serie > 0 && /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#f0d878]", "data-serie": true },
+        serie === 1 ? "1 Lerntag" : serie + " Lerntage in Folge")),
+    /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#f0d878] leading-snug mb-1" },
+      heuteGelernt ? "Heute schon gelernt – noch eine Runde?" : faellig > 0 ? faellig + (faellig === 1 ? " Karte wartet" : " Karten warten") + " auf Wiederholung" : "Fünf Minuten für die Geschichte"),
+    /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] mb-3" },
+      faellig > 0 ? "Eine kurze Runde nimmt zuerst das Fällige, dann Neues." : "Eine kurze, gemischte Runde mit fünf Fragen."),
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: () => springe("lernen", "runde:5"), "data-heute-runde": true,
+      className: "w-full rounded border border-[#d4af37] text-[#f0d878] bg-[#4a1015] hover:bg-[#6b2024]",
+      style: { padding: "12px 18px", fontSize: "15px", minHeight: "46px" }
+    }, "Runde starten · 5 Fragen"),
+    jubilaeen.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "mt-4 pt-3 border-t border-[#5c2018]" },
+      /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-widest text-[#bd9563] mb-2" }, "Heute vor …"),
+      jubilaeen.map((e, i) => /* @__PURE__ */ React.createElement("button", {
+        key: i, onClick: () => springe(e.reiter, e.ziel), "data-jubilaeum": true,
+        className: "w-full text-left py-1.5 hover:text-[#f0d878]", style: { display: "flex", gap: "10px", alignItems: "baseline" }
+      },
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-xs text-[#d4af37]", style: { minWidth: "92px", flexShrink: 0 } }, (jahr - e.jahr).toLocaleString("de-DE") + " Jahren"),
+        /* @__PURE__ */ React.createElement("span", { className: "text-sm text-[#e8d5b0]" }, e.titel,
+          /* @__PURE__ */ React.createElement("span", { className: "block text-[11px] text-[#bd9563]" }, e.kontext || formatYear(e.jahr))))))
+  );
+}
+
 function StartTab() {
   const [wurf, setWurf] = useState(0);
   const [zuletzt] = useGespeichert("zuletzt.gelesen", null);
@@ -2126,6 +2193,7 @@ function StartTab() {
     /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-6 max-w-2xl" },
       "Zum Nachschlagen, zum Vertiefen und zum Behalten. Wo etwas strittig ist, steht es dabei."),
 
+    /* @__PURE__ */ React.createElement(HeuteKachel, null),
     /* @__PURE__ */ React.createElement(NeuKasten, null),
 
     weiter && /* @__PURE__ */ React.createElement("button", {
@@ -3601,8 +3669,9 @@ function WoKarte({ optionen, richtig, gewaehlt, onWahl }) {
 
 // --- Lernen: Quiz in Runden und Karteikarten ---------------------------------
 
-function LernenTab() {
+function LernenTab({ ziel }) {
   const [stand, setStand] = useGespeichert("lernen.stand", {});
+  const [lerntage, setLerntage] = useGespeichert("lernen.tage", []);
   const [artRoh, setArt] = useGespeichert("lernen.art", "Alle");
   const art = ["Alle", "Jahreszahl", "Reihenfolge", "Person", "Wo", "Zuordnung", "Zuschreibung", "Aussage"].includes(artRoh) ? artRoh : "Alle";
   const [modus, setModus] = useState("quiz");
@@ -3678,9 +3747,9 @@ function LernenTab() {
     return mischen([k.richtig, ...namen]);
   }
 
-  function baueRunde(n, nurDiese) {
+  function baueRunde(n, nurDiese, gemischt) {
     const fragen = [], drin = new Set();
-    const typen = art === "Alle" ? Object.keys(QUIZ_GEWICHTE) : [art];
+    const typen = art === "Alle" || gemischt ? Object.keys(QUIZ_GEWICHTE) : [art];
     const verfuegbar = typen.filter((t) => anzahlArt(t) > 0);
     if (!verfuegbar.length) return [];
     let schutz = 0;
@@ -3704,14 +3773,21 @@ function LernenTab() {
     return fragen;
   }
 
-  function starteRunde(nurDiese) {
-    const r = baueRunde(nurDiese ? nurDiese.length : laenge, nurDiese);
+  function starteRunde(nurDiese, anzahl, gemischt) {
+    const r = baueRunde(nurDiese ? nurDiese.length : (anzahl || laenge), nurDiese, gemischt);
     setRunde(r); setPos(0); setAntwortenListe([]); setGewaehlt(null); setReihe([]);
     window.scrollTo && window.scrollTo(0, 0);
   }
 
+  // Sprung von der Startseite: "Heute"-Runde sofort starten
+  React.useEffect(() => {
+    const m = /^runde:(\d+)$/.exec(ziel || "");
+    if (m) { setModus("quiz"); starteRunde(null, +m[1], true); }
+  }, []);
+
   function werten(k, richtig) {
     if (!k) return;
+    if (!lerntage.includes(heute)) setLerntage([...lerntage.filter((t) => t > heute - 400), heute]);
     setStand((alt) => {
       const bisher = alt[k.id] || { fach: 1, r: 0, f: 0 };
       const fach = richtig ? Math.min(5, bisher.fach + 1) : 1;
@@ -4117,5 +4193,5 @@ function Historia() {
       `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich: wechsleBereich, unter, setUnter: wechsleUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, herkunft && /* @__PURE__ */ React.createElement("button", {
         onClick: geheZurueck,
         className: "inline-flex items-center gap-1.5 mb-4 text-sm text-[#c9a877] hover:text-[#f0d878]"
-      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "kriege" && /* @__PURE__ */ React.createElement(KriegeTab, { ziel: zielFuer("kriege"), key: "kr" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, null), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
+      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "kriege" && /* @__PURE__ */ React.createElement(KriegeTab, { ziel: zielFuer("kriege"), key: "kr" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, { ziel: zielFuer("lernen"), key: "le" + (ziel ? ziel.n : 0) }), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
 }

@@ -177,18 +177,12 @@ const SCHLUESSELMOMENTE = [
   "title": "Kaiserkrönung Karls des Großen",
   "text": "Mit der Krönung an Weihnachten 800 wird der Anspruch erneuert, das weströmische Kaisertum fortzusetzen – gegen den Widerspruch von Byzanz."
  },
- {
-  "year": 868,
-  "title": "Ältestes datiertes gedrucktes Buch",
-  "category": "Erfindung",
-  "text": "Das chinesische Diamant-Sutra entsteht im Holzdruckverfahren – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern.",
-  "thema": "kommunikation"
- },
+ 
  {
   "year": 868,
   "title": "Das älteste datierte gedruckte Buch",
   "category": "Erfindung",
-  "text": "Das chinesische Diamant-Sutra trägt ein Datum und den Vermerk, es sei zur freien Verteilung bestimmt – Druck und Wissensfreiheit treten gemeinsam auf.",
+  "text": "Das chinesische Diamant-Sutra, im Holzdruck hergestellt, trägt ein Datum und den Vermerk, es sei zur freien Verteilung bestimmt – Jahrhunderte vor Gutenberg, wenn auch ohne bewegliche Lettern.",
   "thema": "kommunikation"
  },
  {
@@ -290,7 +284,7 @@ const SCHLUESSELMOMENTE = [
   "text": "Spanien und Portugal teilen mit päpstlichem Segen die außereuropäische Welt entlang einer imaginären Linie unter sich auf – ohne jede Rücksicht auf die dort lebenden Bevölkerungen."
  },
  {
-  "year": 1500,
+  "year": 1492,
   "title": "Der Kolumbianische Austausch",
   "category": "Wendepunkt",
   "text": "Pflanzen, Tiere, Menschen und Krankheiten zirkulieren erstmals massenhaft zwischen der Alten und der Neuen Welt – mit enormen, teils verheerenden ökologischen und demografischen Folgen.",
@@ -649,19 +643,12 @@ const SCHLUESSELMOMENTE = [
   "text": "Ein Regime, dessen Ende fast alle für nur gewaltsam möglich hielten, endet am Wahltag.",
   "vertiefung": "ende-apartheid"
  },
- {
-  "year": 2001,
-  "title": "Das menschliche Genom",
-  "category": "Wissenschaft",
-  "text": "Die erste Rohfassung wird veröffentlicht. Sie zeigt weniger Gene als erwartet – und dass genetische Unterschiede zwischen Menschengruppen geringer sind als innerhalb von ihnen.",
-  "vertiefung": "doppelhelix",
-  "thema": "medizin"
- },
+ 
  {
   "year": 2003,
   "title": "Entschlüsselung des menschlichen Genoms",
   "category": "Wissenschaft",
-  "text": "Ein internationales Forschungsprojekt kartiert erstmals vollständig die genetische Bauanleitung des Menschen – mit weitreichenden Folgen für Medizin und Biotechnologie.",
+  "text": "Das internationale Humangenomprojekt erklärt die Sequenzierung für abgeschlossen; erste Rohfassungen waren 2001 erschienen. Sie zeigten weniger Gene als erwartet – und dass die genetischen Unterschiede innerhalb von Menschengruppen größer sind als zwischen ihnen. Die letzten Lücken im Erbgut wurden erst 2022 geschlossen.",
   "vertiefung": "doppelhelix",
   "thema": "medizin"
  },

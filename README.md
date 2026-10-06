@@ -16,6 +16,7 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Länder-Zeitleisten | 30 Weltregionen |
 | Karte | 189 Orte: Schlachten, Stadtgeschichten, Mysterien, 69 Schlüsselmomente – Koordinaten aus Wikidata bzw. Wikipedia, Küsten aus Natural Earth; Kriege hervorheben; 7 Routen (Alexanderzug, Hannibal, Kolumbus 1492, Magellan/Elcano, Russlandfeldzug 1812, Langer Marsch, Ibn Battuta) |
 | Lernen | rund 3.250 Karten im Karteikasten. Quiz in Runden (5/10/20) mit Ergebnis und Fehlerwiederholung; sieben Fragetypen: Jahreszahl (mit Hinweis, Jahr im Titel ausgeblendet), Reihenfolge, Wer war's?, Wo? (Minikarte), Schlacht → Krieg, Zitat-Zuschreibung, Aussage |
+| Startseite | Kachel „Heute“: fällige Karten, Runde mit 5 Fragen, Lernserie, „Heute vor 100/250/500 … Jahren“ |
 | Mysterien | 31 ungeklärte und gelöste Fälle |
 | Schlüsselmomente | 169 |
 | Schlachten | 101, jede einem Krieg zugeordnet |
