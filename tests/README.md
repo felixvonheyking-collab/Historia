@@ -28,3 +28,6 @@ Warum jsdom und nicht der Browser: Die Tests sollen ohne Veröffentlichung
 laufen. Was jsdom nicht kann — Layout, Seitenlängen, Farben —, wird im
 Browser gemessen; das steht in `konzepte/app-qualitaetssicherung.md` im
 Second Brain.
+- `quiz.js` — spielt eine gemischte Quizrunde durch: Erklärung bleibt bis „Weiter“ stehen,
+  Ergebnis und Fehlerrunde; prüft außerdem, dass weder Hinweis noch Titel die Jahreszahl
+  verraten und Personenfragen den Namen verschweigen.

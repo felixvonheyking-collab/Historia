@@ -3384,7 +3384,7 @@ function baueKarten() {
   VERTIEFUNGEN.forEach((v) => rein({
     id: "jahr:" + v.titel, art: "Jahreszahl", frage: v.titel, jahr: v.jahr,
     // Die Antwort muss zur Frage passen: gefragt ist ein Jahr, nicht ein Zeitraum.
-    antwort: formatYear(v.jahr), kontext: v.region,
+    antwort: formatYear(v.jahr), kontext: v.region, hinweisText: v.leitsatz,
     erklaerung: (v.zeitraum ? "Zeitraum: " + v.zeitraum + ". " : "") + v.leitsatz
   }));
 
@@ -3395,8 +3395,8 @@ function baueKarten() {
     if (!echt && !falsch) return;
     rein({
       id: "zitat:" + i, art: "Zuschreibung",
-      frage: "„" + q.text + "\"",
-      kontext: "zugeschrieben: " + q.author,
+      frage: "„" + q.text + "“ – stammt das von " + q.author + "?",
+      kontext: "Zitat",
       stimmt: echt,
       antwort: echt ? "Die Zuschreibung stimmt." : "Die Zuschreibung stimmt nicht.",
       erklaerung: q.note || ""
@@ -3413,6 +3413,36 @@ function baueKarten() {
     stimmt: true, antwort: "Stimmt.", erklaerung: ""
   }));
 
+  // Wer war's? Die 217 Persoenlichkeiten der Epochen, Name im Text ausgeblendet
+  EPOCHS.forEach((ep) => (ep.figures || []).forEach((f) => rein({
+    id: "person:" + f.name, art: "Person",
+    frage: maskiereName(f.text, f.name) + (f.years ? " (" + f.years + ")" : ""),
+    richtig: f.name, antwort: f.name + (f.years ? " (" + f.years + ")" : ""),
+    kontext: ep.name, epoche: ep.id, erklaerung: ""
+  })));
+
+  // Wo war das? Alle Orte der Karte
+  (typeof KARTE !== "undefined" ? KARTE.orte : []).forEach((o) => {
+    if (typeof o.lat !== "number") return;
+    const kurz = o.titel.replace(/^(See)?[Ss]chlacht (bei|von|um|am|an der|an den|auf dem|im|in der|in den)\s+/, "").replace(/^(Belagerung von|Landung bei|Landung in der|Landung in)\s+/, "").replace(/\s*\([^)]*\)$/, "").replace(/^(den|der|dem|die)\s+/, "");
+    o.kurz = o.art === "moment" ? (o.ort || "").split(/[,(]/)[0].trim() || kurz : kurz;
+    rein({
+      id: "wo:" + o.art + ":" + o.titel, art: "Wo",
+      frage: o.titel + (o.art === "stadt" || o.art === "mysterium" ? "" : " (" + formatYear(o.jahr) + ")"),
+      ort: o, antwort: o.ort || o.kurz,
+      kontext: o.art === "schlacht" ? "Schlacht" : o.art === "stadt" ? "Stadt" : o.art === "moment" ? "Schlüsselmoment" : "Mysterium",
+      erklaerung: o.hinweis || "", quelle: o.art === "schlacht" ? "krieg" : undefined, neu: !!o.seit
+    });
+  });
+
+  // Jahreszahl-Fragen bekommen einen Hinweis, damit sie eindeutig sind
+  karten.forEach((k) => {
+    if (k.art !== "Jahreszahl") return;
+    k.hinweis = hinweisAus(k.hinweisText || k.erklaerung, k.frage, k.jahr);
+    // Titel wie "Revolutionen von 1848" oder "Gotenkrieg (376–382)" verraten die Antwort
+    k.frage = maskiereJahr(maskiereJahre(k.frage), k.jahr).replace(/\s*\(…\)/g, "").replace(/…\/\d{1,2}\b/g, "…");
+  });
+
   return karten;
 }
 
@@ -3424,238 +3454,517 @@ function faelligkeit(stand, id) {
   return s.faellig;
 }
 
+// --- Hinweise und Hilfen fuer das Quiz -------------------------------------
+
+// Eine Jahreszahl-Frage nur mit dem Titel ("Der erste kontrollierte Versuch")
+// ist oft nicht eindeutig. Der Hinweis nimmt den ersten Satz der Erklaerung und
+// blendet darin alle Jahresangaben aus, damit die Antwort nicht drinsteht.
+function maskiereJahre(t) {
+  return String(t)
+    .replace(/\b\d{1,2}\.\s*(Jahrhunderts?|Jahrtausends?|Jh\.)/g, "…")
+    .replace(/(?<![\d.,])\d{1,4}(\s*[–-]\s*\d{1,4})?\s*(v\.|n\.)\s*Chr\./g, "…")
+    .replace(/(?<![\d.,])\d{3,4}(er|ern|ers)?(?![\d.,]?\d)/g, "…")
+    .replace(/…(\s*[–\/-]\s*…)+/g, "…");
+}
+
+// Erster Satz - ohne an "20. Jahrhundert", "v. Chr." oder "z. B." zu zerbrechen
+function ersterSatz(t, ab) {
+  const re = /[.!?](?=\s+[A-ZÄÖÜ„"(])/g;
+  let m;
+  while ((m = re.exec(t))) {
+    if (m.index < (ab || 0)) continue;
+    const davor = t.slice(Math.max(0, m.index - 6), m.index);
+    if (/\d$/.test(davor) || /(^|\s)[A-ZÄÖÜ]$/.test(davor) || /(^|[\s(])(v|n|Chr|ca|bzw|z|B|u|a|d|h|St|Nr|Jh|Dr|vgl|engl|lat|griech|Mio|Mrd)$/.test(davor)) continue;
+    return t.slice(0, m.index + 1);
+  }
+  return t;
+}
+
+function hinweisAus(text, titel, jahr) {
+  if (!text) return "";
+  let t = String(text).trim();
+  // "Zeitraum: ab 508/507 v. Chr.. Eine Demokratie ..." - den Zeitraum-Satz abtrennen
+  if (/^Zeitraum:/.test(t)) t = t.slice(ersterSatz(t).length).trim();
+  if (!t) return "";
+  let h = ersterSatz(t);
+  // Kurze erste Saetze ("Kaiserkroenung in Rom.") um den naechsten ergaenzen
+  if (h.length < 70 && h.length < t.length) h = ersterSatz(t, h.length + 1);
+  h = maskiereJahre(h);
+  h = maskiereJahr(h, jahr);
+  if (h.length > 230) h = h.slice(0, h.lastIndexOf(" ", 220)) + " …";
+  // Wiederholt der Hinweis nur den Titel, bringt er nichts
+  const norm = (s) => s.toLowerCase().replace(/[^a-zäöüß]/g, "");
+  if (norm(h).length < 25 || norm(h) === norm(titel || "")) return "";
+  return h;
+}
+
+// Kleine Jahreszahlen ("von 79", "im Juli 64", "Vierkaiserjahr 69") gezielt ausblenden
+function maskiereJahr(t, jahr) {
+  if (typeof jahr !== "number" || Math.abs(jahr) >= 1000) return t;
+  return t.replace(new RegExp("(?<![\\d.,])" + Math.abs(jahr) + "(?![\\d]|\\.\\d)", "g"), "…");
+}
+
+// Namen einer Person im Beschreibungstext ausblenden ("Wer war's?")
+function maskiereName(text, name) {
+  let t = String(text);
+  name.replace(/[()]/g, " ").split(/[\s,]+/).filter((w) => w.length > 3 && !/^(der|die|das|von|van|und|ibn)$/i.test(w))
+    .forEach((w) => { t = t.split(w).join("…"); });
+  return t;
+}
+
+// Entfernung zweier Orte in km (Haversine)
+function abstandKm(a, b) {
+  const r = Math.PI / 180, dLat = (b.lat - a.lat) * r, dLon = (b.lon - a.lon) * r;
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLon / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(s));
+}
+
+// Ablenker fuer "Wo?": andere Orte, weit genug weg, dass die Frage eindeutig
+// ist, aber nah genug, dass man den Ort wirklich kennen muss.
+function woOptionen(ort) {
+  const alle = KARTE.orte.filter((o) => o !== ort && typeof o.lat === "number");
+  const gewaehlt = [];
+  for (const [min, max] of [[500, 3500], [300, 6000], [200, 20000]]) {
+    for (const o of mischen(alle)) {
+      if (gewaehlt.length >= 3) break;
+      const d = abstandKm(ort, o);
+      if (d < min || d > max) continue;
+      if (gewaehlt.some((g) => abstandKm(g, o) < 350)) continue;
+      gewaehlt.push(o);
+    }
+    if (gewaehlt.length >= 3) break;
+  }
+  return mischen([ort, ...gewaehlt]);
+}
+
+// Reihenfolge: vier Ereignisse aus derselben Groessenordnung von Zeit,
+// mit genug Abstand, dass die Reihenfolge eindeutig ist.
+function reihenfolgeAus(pool) {
+  const alleMitJahr = pool.filter((k) => k.art === "Jahreszahl" && typeof k.jahr === "number");
+  // Querschnitt-Stationen ("Der Raga") sind ohne Thema schwer einzuordnen -
+  // sie kommen nur, wenn ausdruecklich Querschnitte gewaehlt sind.
+  const eigenstaendig = alleMitJahr.filter((k) => k.quelle !== "querschnitt");
+  const mitJahr = eigenstaendig.length >= 20 ? eigenstaendig : alleMitJahr;
+  if (mitJahr.length < 4) return null;
+  for (let versuch = 0; versuch < 40; versuch++) {
+    const anker = mitJahr[Math.floor(Math.random() * mitJahr.length)];
+    const alter = Math.max(30, 2030 - anker.jahr);
+    const fenster = Math.max(40, alter * 0.35), luecke = Math.max(3, alter * 0.03);
+    const wahl = [anker];
+    for (const k of mischen(mitJahr)) {
+      if (wahl.length >= 4) break;
+      if (Math.abs(k.jahr - anker.jahr) > fenster) continue;
+      if (wahl.some((w) => Math.abs(w.jahr - k.jahr) < luecke || w.frage === k.frage)) continue;
+      wahl.push(k);
+    }
+    if (wahl.length === 4) return mischen(wahl);
+  }
+  return null;
+}
+
+// Gewichte fuer gemischte Runden: Jahreszahlen bleiben der Kern, aber nicht mehr 80 %.
+const QUIZ_GEWICHTE = { Jahreszahl: 3, Reihenfolge: 1.5, Person: 1.5, Wo: 1.5, Zuordnung: 1, Zuschreibung: 0.7, Aussage: 1.3 };
+const QUIZ_FRAGE = {
+  Jahreszahl: "Wann war das?", Reihenfolge: "Was kam zuerst?", Person: "Wer war's?", Wo: "Wo war das?",
+  Zuordnung: "Zu welchem Krieg gehört diese Schlacht?", Zuschreibung: "Stimmt die Zuschreibung?", Aussage: "Stimmt diese Aussage?"
+};
+const QUIZ_ARTNAME = { Jahreszahl: "Jahreszahl", Reihenfolge: "Reihenfolge", Person: "Wer war's?", Wo: "Wo?", Zuordnung: "Zuordnung", Zuschreibung: "Zuschreibung", Aussage: "Aussage" };
+
+// Kleine Karte fuer "Wo?": vier Punkte A-D, nach der Antwort mit Namen
+function WoKarte({ optionen, richtig, gewaehlt, onWahl }) {
+  const xs = optionen.map((o) => o.x), ys = optionen.map((o) => o.y);
+  let x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const rand = Math.max(18, (x1 - x0) * 0.18, (y1 - y0) * 0.18);
+  x0 -= rand; x1 += rand; y0 -= rand; y1 += rand;
+  // Seitenverhaeltnis 16:10 erzwingen
+  let b = x1 - x0, h = y1 - y0;
+  if (b / h < 1.6) { const nb = h * 1.6; x0 -= (nb - b) / 2; b = nb; } else { const nh = b / 1.6; y0 -= (nh - h) / 2; h = nh; }
+  const px = b / 340;
+  const zeigen = gewaehlt !== null;
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "rounded-lg border border-[#5c2018] overflow-hidden mb-3", style: { backgroundColor: "#24394a" }
+  },
+    /* @__PURE__ */ React.createElement("svg", { width: "100%", viewBox: [x0, y0, b, h].map((n) => Math.round(n * 100) / 100).join(" "), style: { display: "block" }, role: "img", "aria-label": "Karte mit vier möglichen Orten" },
+      /* @__PURE__ */ React.createElement("path", { d: KARTE.landGrob, fill: "#6a5434", stroke: "#a48a5c", strokeWidth: 0.7 * px, strokeLinejoin: "round" }),
+      optionen.map((o, i) => {
+        const istRichtig = o === richtig, istGewaehlt = o === gewaehlt;
+        const farbe = zeigen && istRichtig ? "#5fbf7a" : zeigen && istGewaehlt ? "#e06a4a" : "#f0d878";
+        return /* @__PURE__ */ React.createElement("g", { key: i, "data-wo-punkt": "ABCD"[i], style: { cursor: zeigen ? "default" : "pointer" }, onClick: () => { if (!zeigen) onWahl(o); } },
+          /* @__PURE__ */ React.createElement("circle", { cx: o.x, cy: o.y, r: 22 * px, fill: "transparent" }),
+          /* @__PURE__ */ React.createElement("circle", { cx: o.x, cy: o.y, r: 10 * px, fill: farbe, stroke: "#1b2a36", strokeWidth: 1.5 * px }),
+          /* @__PURE__ */ React.createElement("text", { x: o.x, y: o.y + 4 * px, textAnchor: "middle", fontSize: 12 * px, fontWeight: 700, fill: "#1b2a36", fontFamily: "ui-sans-serif, system-ui, sans-serif", style: { pointerEvents: "none" } }, "ABCD"[i]),
+          zeigen && /* @__PURE__ */ React.createElement("text", { x: o.x > x0 + b * 0.55 ? o.x - 13 * px : o.x + 13 * px, textAnchor: o.x > x0 + b * 0.55 ? "end" : "start", y: o.y + 4 * px, fontSize: 11 * px, fill: "#f3e6c8", stroke: "#1b2a36", strokeWidth: 3 * px, paintOrder: "stroke", fontFamily: "ui-sans-serif, system-ui, sans-serif", style: { pointerEvents: "none" } }, o.kurz || o.titel));
+      })
+    )
+  );
+}
+
+// --- Lernen: Quiz in Runden und Karteikarten ---------------------------------
+
 function LernenTab() {
   const [stand, setStand] = useGespeichert("lernen.stand", {});
-  const [art, setArt] = useState("Alle");
+  const [artRoh, setArt] = useGespeichert("lernen.art", "Alle");
+  const art = ["Alle", "Jahreszahl", "Reihenfolge", "Person", "Wo", "Zuordnung", "Zuschreibung", "Aussage"].includes(artRoh) ? artRoh : "Alle";
   const [modus, setModus] = useState("quiz");
-  const [karte, setKarte] = useState(null);
-  const [optionen, setOptionen] = useState([]);
+  const [bereich, setBereich] = useGespeichert("lernen.bereich", "alle");
+  const [thema, setThema] = useGespeichert("lernen.thema", "");
+  const [laengeRoh, setLaenge] = useGespeichert("lernen.laenge", 10);
+  const laenge = [5, 10, 20].includes(laengeRoh) ? laengeRoh : 10;
+  const [auswahlOffen, setAuswahlOffen] = useState(false);
+
+  // Runde: Liste von Fragen, aktuelle Position, Antworten
+  const [runde, setRunde] = useState(null);
+  const [pos, setPos] = useState(0);
+  const [antwortenListe, setAntwortenListe] = useState([]);
   const [gewaehlt, setGewaehlt] = useState(null);
+  const [reihe, setReihe] = useState([]);
+  // Karteikarten
+  const [karte, setKarte] = useState(null);
   const [umgedreht, setUmgedreht] = useState(false);
-  const [sitzung, setSitzung] = useState({ richtig: 0, gesamt: 0 });
 
   const alle = useMemo(baueKarten, []);
   const heute = heuteTag();
 
-  const arten = ["Alle", "Jahreszahl", "Zuordnung", "Zuschreibung", "Aussage"];
-  // Zweiter Filter: woher die Karten kommen. "Neu" zeigt nur, was in der
-  // letzten Runde dazukam - zum gezielten Nachlernen.
-  const [bereich, setBereich] = useGespeichert("lernen.bereich", "alle");
-  const [thema, setThema] = useGespeichert("lernen.thema", "");
+  const ARTEN = ["Alle", "Jahreszahl", "Reihenfolge", "Person", "Wo", "Zuordnung", "Zuschreibung", "Aussage"];
   const BEREICHE_LERNEN = [["alle", "Alle Quellen"], ["neu", "Nur Neues"], ["krieg", "Kriege & Schlachten"], ["querschnitt", "Querschnitte"]];
-  const auswahl = useMemo(
-    () => alle.filter((k) => (art === "Alle" || k.art === art) &&
-      (bereich === "alle" || (bereich === "neu" ? k.neu : k.quelle === bereich)) &&
-      (bereich !== "querschnitt" || !thema || k.thema === thema)),
-    [art, alle, bereich, thema]
-  );
 
-  const faellig = auswahl.filter((k) => faelligkeit(stand, k.id) <= heute);
-  const neu = auswahl.filter((k) => !stand[k.id]).length;
-  const verteilung = [1, 2, 3, 4, 5].map(
-    (f) => auswahl.filter((k) => stand[k.id] && stand[k.id].fach === f).length
-  );
+  const imBereich = (k) => (bereich === "alle" || (bereich === "neu" ? k.neu : k.quelle === bereich)) &&
+    (bereich !== "querschnitt" || !thema || k.thema === thema);
+  const pool = useMemo(() => alle.filter(imBereich), [alle, bereich, thema]);
+  const anzahlArt = (a) => a === "Reihenfolge" ? pool.filter((k) => k.art === "Jahreszahl").length : pool.filter((k) => k.art === a).length;
 
-  function optionenFuer(k) {
-    if (k.art === "Zuordnung") {
-      // Ablenker: andere Kriege aus derselben Zeit, sonst wird es zu leicht
-      const namen = [];
-      const nah = mischen(KRIEGE.filter((x) => x.name !== k.richtig)).sort((a, b) => Math.abs(a.von - k.jahr) - Math.abs(b.von - k.jahr));
-      for (const x of nah.slice(0, 8)) { if (namen.length < 3 && Math.random() < 0.8) namen.push(x.name); }
-      for (const x of nah) { if (namen.length >= 3) break; if (namen.indexOf(x.name) === -1) namen.push(x.name); }
-      return mischen([k.richtig, ...namen]);
-    }
-    if (k.art !== "Jahreszahl") return [];
-    // Ablenker aus der zeitlichen Nachbarschaft: Ein Vorschlag, der tausend Jahre
-    // danebenliegt, macht die Frage wertlos. Der Abstand waechst mit dem Alter,
-    // weil "1848 oder 1849" eine andere Frage ist als "3200 oder 3210 v. Chr.".
-    const spanne = Math.min(120, Math.max(25, Math.abs(k.jahr) * 0.04));
-    const nah = alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr &&
-      Math.abs(x.jahr - k.jahr) <= spanne);
-    const quelle = nah.length >= 3 ? nah : alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr);
+  const faelligZahl = pool.filter((k) => stand[k.id] && stand[k.id].faellig <= heute).length;
+  const neuZahl = pool.filter((k) => !stand[k.id]).length;
+
+  // Welche Karte als naechstes? Erst Faelliges, dann Neues, dann der Rest.
+  function waehleKarte(kandidaten, schonDrin) {
+    const frei = kandidaten.filter((k) => !schonDrin.has(k.id));
+    if (!frei.length) return null;
+    const faellig = frei.filter((k) => stand[k.id] && stand[k.id].faellig <= heute).sort((a, b) => stand[a.id].faellig - stand[b.id].faellig);
+    if (faellig.length && Math.random() < 0.7) return faellig[0];
+    const neu = frei.filter((k) => !stand[k.id]);
+    if (neu.length) return neu[Math.floor(Math.random() * neu.length)];
+    return frei[Math.floor(Math.random() * frei.length)];
+  }
+
+  function frageAus(k) {
+    if (k.art === "Jahreszahl") return { art: k.art, karte: k, optionen: jahresOptionen(k) };
+    if (k.art === "Zuordnung") return { art: k.art, karte: k, optionen: kriegsOptionen(k) };
+    if (k.art === "Person") return { art: k.art, karte: k, optionen: personenOptionen(k) };
+    if (k.art === "Wo") return { art: k.art, karte: k, optionen: woOptionen(k.ort) };
+    return { art: k.art, karte: k, optionen: [true, false] };
+  }
+
+  function jahresOptionen(k) {
+    // Ablenker aus der zeitlichen Nachbarschaft; der Abstand waechst mit dem Alter.
+    const spanne = Math.min(120, Math.max(25, Math.abs(2030 - k.jahr) * 0.06));
+    const jahre = alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr);
+    const nah = jahre.filter((x) => Math.abs(x.jahr - k.jahr) <= spanne);
     const andere = [];
-    for (const x of mischen(quelle)) {
-      if (andere.indexOf(x.jahr) === -1) andere.push(x.jahr);
+    for (const x of mischen(nah.length >= 3 ? nah : jahre)) {
+      if (andere.indexOf(x.jahr) === -1 && Math.abs(x.jahr - k.jahr) >= 2) andere.push(x.jahr);
       if (andere.length === 3) break;
     }
     return mischen([k.jahr, ...andere]);
   }
-
-  function naechste() {
-    const kandidaten = auswahl.filter((k) => faelligkeit(stand, k.id) <= heute);
-    const quelle = kandidaten.length ? kandidaten : auswahl;
-    // Erst das Fälligste, dann Neues, sonst zufällig
-    const sortiert = mischen(quelle).sort((a, b) => faelligkeit(stand, a.id) - faelligkeit(stand, b.id));
-    const k = sortiert[0];
-    setKarte(k);
-    setOptionen(k ? optionenFuer(k) : []);
-    setGewaehlt(null);
-    setUmgedreht(false);
+  function kriegsOptionen(k) {
+    const nah = mischen(KRIEGE.filter((x) => x.name !== k.richtig)).sort((a, b) => Math.abs(a.von - k.jahr) - Math.abs(b.von - k.jahr));
+    return mischen([k.richtig, ...nah.slice(0, 3).map((x) => x.name)]);
+  }
+  function personenOptionen(k) {
+    const gleich = alle.filter((x) => x.art === "Person" && x.richtig !== k.richtig && x.epoche === k.epoche);
+    const rest = alle.filter((x) => x.art === "Person" && x.richtig !== k.richtig && x.epoche !== k.epoche);
+    const namen = mischen(gleich).concat(mischen(rest)).slice(0, 3).map((x) => x.richtig);
+    return mischen([k.richtig, ...namen]);
   }
 
-  React.useEffect(() => { naechste(); }, [art, modus, bereich, thema]);
-
-  function werten(richtig) {
-    if (!karte) return;
-    const bisher = stand[karte.id] || { fach: 1, r: 0, f: 0 };
-    const fach = richtig ? Math.min(5, bisher.fach + 1) : 1;
-    setStand({
-      ...stand,
-      [karte.id]: {
-        fach,
-        faellig: heute + FAECHER[fach],
-        r: bisher.r + (richtig ? 1 : 0),
-        f: bisher.f + (richtig ? 0 : 1)
+  function baueRunde(n, nurDiese) {
+    const fragen = [], drin = new Set();
+    const typen = art === "Alle" ? Object.keys(QUIZ_GEWICHTE) : [art];
+    const verfuegbar = typen.filter((t) => anzahlArt(t) > 0);
+    if (!verfuegbar.length) return [];
+    let schutz = 0;
+    while (fragen.length < n && schutz++ < n * 10) {
+      if (nurDiese) { // "Fehler nochmal": genau diese Karten
+        const k = nurDiese[fragen.length]; if (!k) break;
+        fragen.push(k.art === "Reihenfolge" ? { art: "Reihenfolge", ereignisse: mischen(k.ereignisse) } : frageAus(k.karte));
+        continue;
       }
-    });
-    setSitzung((s) => ({ richtig: s.richtig + (richtig ? 1 : 0), gesamt: s.gesamt + 1 }));
+      const summe = verfuegbar.reduce((s, t) => s + QUIZ_GEWICHTE[t], 0);
+      let r = Math.random() * summe, typ = verfuegbar[0];
+      for (const t of verfuegbar) { r -= QUIZ_GEWICHTE[t]; if (r <= 0) { typ = t; break; } }
+      if (typ === "Reihenfolge") {
+        const e = reihenfolgeAus(pool); if (e) fragen.push({ art: "Reihenfolge", ereignisse: e });
+        continue;
+      }
+      const k = waehleKarte(pool.filter((x) => x.art === typ), drin);
+      if (!k) continue;
+      drin.add(k.id); fragen.push(frageAus(k));
+    }
+    return fragen;
   }
+
+  function starteRunde(nurDiese) {
+    const r = baueRunde(nurDiese ? nurDiese.length : laenge, nurDiese);
+    setRunde(r); setPos(0); setAntwortenListe([]); setGewaehlt(null); setReihe([]);
+    window.scrollTo && window.scrollTo(0, 0);
+  }
+
+  function werten(k, richtig) {
+    if (!k) return;
+    setStand((alt) => {
+      const bisher = alt[k.id] || { fach: 1, r: 0, f: 0 };
+      const fach = richtig ? Math.min(5, bisher.fach + 1) : 1;
+      return { ...alt, [k.id]: { fach, faellig: heute + FAECHER[fach], r: bisher.r + (richtig ? 1 : 0), f: bisher.f + (richtig ? 0 : 1) } };
+    });
+  }
+
+  const frage = runde && runde[pos];
 
   function antworten(wert) {
+    if (gewaehlt !== null || !frage) return;
+    const k = frage.karte;
+    const richtig = frage.art === "Jahreszahl" ? wert === k.jahr
+      : frage.art === "Zuordnung" || frage.art === "Person" ? wert === k.richtig
+      : frage.art === "Wo" ? wert === k.ort
+      : wert === k.stimmt;
     setGewaehlt(wert);
-    const richtig = karte.art === "Jahreszahl" ? wert === karte.jahr : karte.art === "Zuordnung" ? wert === karte.richtig : wert === karte.stimmt;
-    werten(richtig);
-    setTimeout(naechste, 1400);
+    werten(k, richtig);
+    setAntwortenListe((l) => [...l, { frage, richtig, wert }]);
   }
 
+  function reiheTippen(e) {
+    if (gewaehlt !== null || reihe.includes(e)) return;
+    const neu = [...reihe, e];
+    setReihe(neu);
+    if (neu.length === frage.ereignisse.length) {
+      const soll = [...frage.ereignisse].sort((a, b) => a.jahr - b.jahr);
+      const richtig = neu.every((x, i) => x.jahr === soll[i].jahr);
+      setGewaehlt(neu);
+      setAntwortenListe((l) => [...l, { frage, richtig, wert: neu }]);
+    }
+  }
+
+  function weiter() {
+    setGewaehlt(null); setReihe([]);
+    setPos((p) => p + 1);
+    window.scrollTo && window.scrollTo(0, 0);
+  }
+
+  // Karteikarten (selbst bewerten) - ohne Reihenfolge und Wo
+  function naechsteKarte() {
+    const kandidaten = pool.filter((k) => (art === "Alle" || k.art === art) && k.art !== "Wo");
+    setKarte(waehleKarte(kandidaten, new Set(karte ? [karte.id] : [])));
+    setUmgedreht(false);
+  }
+  React.useEffect(() => { if (modus === "karten") naechsteKarte(); }, [modus, art, bereich, thema]);
+
   const knopf = "px-2.5 py-1.5 rounded text-xs font-mono uppercase tracking-wide border";
+  const an = "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]", aus = "border-[#5c2018] text-[#c2a06a]";
+  const optKnopf = (zustand) => "px-3 py-2 rounded border text-left text-sm " + (
+    zustand === "richtig" ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
+    : zustand === "falsch" ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
+    : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]");
+  const grossKnopf = { padding: "12px 18px", fontSize: "15px", minHeight: "46px" };
+
+  // ---------- Auswahl (eingeklappt) ----------
+  const auswahlPanel = /* @__PURE__ */ React.createElement("div", { className: "mb-4" },
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: () => setAuswahlOffen(!auswahlOffen), "aria-expanded": auswahlOffen,
+      className: "inline-flex items-center gap-1.5 text-sm text-[#c9a877] hover:text-[#f0d878]"
+    }, auswahlOffen ? "▾ " : "▸ ", "Auswahl: ",
+      /* @__PURE__ */ React.createElement("span", { className: "text-[#f0d878]" },
+        art === "Alle" ? "gemischt" : QUIZ_ARTNAME[art], " · ", (BEREICHE_LERNEN.find((b) => b[0] === bereich) || [, ""])[1],
+        bereich === "querschnitt" && thema ? " · " + ((THEMEN.find((t) => t.id === thema) || {}).titel || "") : "")),
+    auswahlOffen && /* @__PURE__ */ React.createElement("div", { className: "mt-3 rounded-lg border border-[#5c2018] p-3" },
+      /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-1.5" }, "Fragetyp"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-3" },
+        ARTEN.map((a) => /* @__PURE__ */ React.createElement("button", { key: a, onClick: () => setArt(a), className: knopf + " " + (art === a ? an : aus) },
+          a === "Alle" ? "Gemischt" : QUIZ_ARTNAME[a], a === "Alle" ? "" : " (" + anzahlArt(a).toLocaleString("de-DE") + ")"))),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-1.5" }, "Woher"),
+      /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-2" },
+        BEREICHE_LERNEN.map(([id, label]) => /* @__PURE__ */ React.createElement("button", { key: id, onClick: () => setBereich(id), className: knopf + " " + (bereich === id ? an : aus) },
+          label, " (", (id === "alle" ? alle.length : alle.filter((k) => id === "neu" ? k.neu : k.quelle === id).length).toLocaleString("de-DE"), ")"))),
+      bereich === "querschnitt" && /* @__PURE__ */ React.createElement("select", {
+        value: thema, onChange: (e) => setThema(e.target.value), "aria-label": "Querschnitt wählen",
+        className: "mb-2 rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]", style: { width: "100%" }
+      },
+        /* @__PURE__ */ React.createElement("option", { value: "" }, "Alle Querschnitte"),
+        THEMEN.map((t) => /* @__PURE__ */ React.createElement("option", { key: t.id, value: t.id }, t.titel + " (" + t.stationen.length + ")"))),
+      modus === "quiz" && /* @__PURE__ */ React.createElement("div", null,
+        /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-1.5 mt-2" }, "Fragen pro Runde"),
+        /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5" },
+          [5, 10, 20].map((n) => /* @__PURE__ */ React.createElement("button", { key: n, onClick: () => setLaenge(n), className: knopf + " " + (laenge === n ? an : aus) }, n))))
+    )
+  );
+
+  const kopf = /* @__PURE__ */ React.createElement("div", null,
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-3" },
+      [["quiz", "Quiz"], ["karten", "Karteikarten"]].map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
+        key: id, onClick: () => { setModus(id); setRunde(null); }, className: knopf + " " + (modus === id ? an : aus)
+      }, label))),
+    auswahlPanel
+  );
+
+  // ---------- Erklaerung nach der Antwort ----------
+  const aufloesung = (f, richtig) => {
+    const k = f.karte;
+    return /* @__PURE__ */ React.createElement("div", { className: "mt-4 pt-3 border-t border-[#5c2018]", "data-aufloesung": true },
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg mb-1", style: { color: richtig ? "#9fd8ac" : "#f0a878" } },
+        richtig ? "Richtig." : "Leider nicht."),
+      f.art === "Reihenfolge"
+        ? /* @__PURE__ */ React.createElement("ol", { className: "text-sm text-[#e8d5b0] leading-relaxed", style: { paddingLeft: "20px", listStyle: "decimal" } },
+            [...f.ereignisse].sort((a, b) => a.jahr - b.jahr).map((e) => /* @__PURE__ */ React.createElement("li", { key: e.id, className: "mb-1" },
+              /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[#f0d878]" }, formatYear(e.jahr)), " – ", e.frage)))
+        : /* @__PURE__ */ React.createElement(React.Fragment, null,
+            /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878] mb-1" }, k.antwort),
+            k.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, k.erklaerung))
+    );
+  };
+
+  // ---------- Eine Frage darstellen ----------
+  function frageBlock(f) {
+    const k = f.karte, zeigen = gewaehlt !== null;
+    const zustand = (wert, istRichtig) => !zeigen ? "" : istRichtig ? "richtig" : gewaehlt === wert ? "falsch" : "";
+    const letzte = antwortenListe[antwortenListe.length - 1];
+    return /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 max-w-2xl", "data-quizfrage": f.art },
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" },
+        /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border border-[#5c2018] rounded px-1.5 py-0.5 text-[#d4af37]" }, QUIZ_ARTNAME[f.art]),
+        k && k.kontext && f.art !== "Zuschreibung" && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, k.kontext),
+        k && stand[k.id] && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, "Fach ", stand[k.id].fach)),
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] leading-snug mb-3" }, QUIZ_FRAGE[f.art]),
+      f.art === "Reihenfolge"
+        ? /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] mb-4" }, "Tippe die Ereignisse in zeitlicher Reihenfolge an – das früheste zuerst.")
+        : /* @__PURE__ */ React.createElement("p", { className: "text-[17px] text-[#e8d5b0] leading-relaxed mb-2" }, k.frage),
+      k && k.hinweis && !zeigen && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4", style: { fontStyle: "italic" }, "data-hinweis": true }, k.hinweis),
+      k && !k.hinweis && /* @__PURE__ */ React.createElement("div", { style: { height: "8px" } }),
+
+      f.art === "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
+        f.optionen.map((j) => /* @__PURE__ */ React.createElement("button", { key: j, disabled: zeigen, onClick: () => antworten(j), className: optKnopf(zustand(j, j === k.jahr)) + " font-mono", style: { minHeight: "44px" } }, formatYear(j)))),
+
+      (f.art === "Zuordnung" || f.art === "Person") && /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        f.optionen.map((n) => /* @__PURE__ */ React.createElement("button", { key: n, disabled: zeigen, onClick: () => antworten(n), className: optKnopf(zustand(n, n === k.richtig)), style: { minHeight: "44px" } }, n))),
+
+      f.art === "Wo" && /* @__PURE__ */ React.createElement("div", null,
+        /* @__PURE__ */ React.createElement(WoKarte, { optionen: f.optionen, richtig: k.ort, gewaehlt, onWahl: antworten }),
+        /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
+          f.optionen.map((o, i) => /* @__PURE__ */ React.createElement("button", {
+            key: i, disabled: zeigen, onClick: () => antworten(o), className: optKnopf(zustand(o, o === k.ort)), style: { minHeight: "44px" }
+          }, /* @__PURE__ */ React.createElement("b", null, "ABCD"[i]), zeigen ? " · " + (o.kurz || o.titel) : "")))),
+
+      f.art === "Reihenfolge" && /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
+        f.ereignisse.map((e) => {
+          const nr = reihe.indexOf(e);
+          let z = "";
+          if (zeigen) { const soll = [...f.ereignisse].sort((a, b) => a.jahr - b.jahr).indexOf(e); z = soll === nr ? "richtig" : "falsch"; }
+          return /* @__PURE__ */ React.createElement("button", {
+            key: e.id, disabled: zeigen || nr >= 0, onClick: () => reiheTippen(e), className: optKnopf(z), style: { minHeight: "44px", display: "flex", gap: "10px", alignItems: "baseline" }
+          },
+            /* @__PURE__ */ React.createElement("span", { className: "font-mono", style: { minWidth: "18px", color: "#f0d878" } }, nr >= 0 ? nr + 1 + "." : "·"),
+            /* @__PURE__ */ React.createElement("span", null, e.frage, zeigen ? " (" + formatYear(e.jahr) + ")" : "",
+              e.kontext && /* @__PURE__ */ React.createElement("span", { className: "block text-[10px] uppercase tracking-wide text-[#bd9563]", style: { marginTop: "2px" } }, e.kontext)));
+        }),
+        !zeigen && reihe.length > 0 && /* @__PURE__ */ React.createElement("button", { onClick: () => setReihe([]), className: "text-xs text-[#bd9563] hover:text-[#e0b84a]", style: { alignSelf: "flex-start" } }, "Zurücksetzen")),
+
+      (f.art === "Zuschreibung" || f.art === "Aussage") && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
+        [[true, "Stimmt"], [false, "Stimmt nicht"]].map(([wert, label]) => /* @__PURE__ */ React.createElement("button", {
+          key: label, disabled: zeigen, onClick: () => antworten(wert), className: optKnopf(zustand(wert, wert === k.stimmt)), style: { minHeight: "44px", textAlign: "center" }
+        }, label))),
+
+      zeigen && letzte && aufloesung(f, letzte.richtig),
+      zeigen && /* @__PURE__ */ React.createElement("button", {
+        onClick: weiter, autoFocus: true, "data-weiter": true,
+        className: "mt-5 w-full rounded border border-[#d4af37] text-[#f0d878] bg-[#4a1015] hover:bg-[#6b2024]", style: grossKnopf
+      }, pos + 1 < runde.length ? "Weiter →" : "Ergebnis ansehen")
+    );
+  }
+
+  // ---------- Ergebnis ----------
+  function ergebnis() {
+    const richtig = antwortenListe.filter((a) => a.richtig).length;
+    const fehler = antwortenListe.filter((a) => !a.richtig);
+    const quote = antwortenListe.length ? richtig / antwortenListe.length : 0;
+    return /* @__PURE__ */ React.createElement("div", { className: "max-w-2xl", "data-ergebnis": true },
+      /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 mb-4" },
+        /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-1" }, "Ergebnis"),
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-3xl text-[#f0d878] mb-1" }, richtig, " von ", antwortenListe.length),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a]" },
+          quote === 1 ? "Fehlerfrei. Die Karten wandern ein Fach weiter und kommen später wieder."
+          : quote >= 0.7 ? "Gut. Was falsch war, kommt morgen wieder dran."
+          : "Was falsch war, kommt morgen wieder dran – Wiederholung ist der eigentliche Lerneffekt."),
+        /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mt-4" },
+          /* @__PURE__ */ React.createElement("button", { onClick: () => starteRunde(), className: "rounded border border-[#d4af37] text-[#f0d878] bg-[#4a1015] hover:bg-[#6b2024]", style: grossKnopf }, "Neue Runde"),
+          fehler.length > 0 && /* @__PURE__ */ React.createElement("button", {
+            onClick: () => starteRunde(fehler.map((a) => a.frage)), className: "rounded border border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]", style: grossKnopf
+          }, "Fehler wiederholen (", fehler.length, ")"))),
+      fehler.length > 0 && /* @__PURE__ */ React.createElement("div", null,
+        /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-2" }, "Das war falsch"),
+        fehler.map((a, i) => {
+          const f = a.frage, k = f.karte;
+          return /* @__PURE__ */ React.createElement("div", { key: i, className: "rounded-lg border border-[#5c2018] p-4 mb-2" },
+            /* @__PURE__ */ React.createElement("p", { className: "text-[10px] uppercase tracking-wide text-[#bd9563] mb-1" }, QUIZ_ARTNAME[f.art], k && k.kontext && f.art !== "Zuschreibung" ? " · " + k.kontext : ""),
+            /* @__PURE__ */ React.createElement("p", { className: "text-[#e8d5b0] mb-1" }, f.art === "Reihenfolge" ? "Richtige Reihenfolge:" : k.frage),
+            f.art === "Reihenfolge"
+              ? /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a]" }, [...f.ereignisse].sort((x, y) => x.jahr - y.jahr).map((e) => formatYear(e.jahr) + " " + e.frage).join(" → "))
+              : /* @__PURE__ */ React.createElement(React.Fragment, null,
+                  /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878]" }, k.antwort),
+                  k.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-1" }, k.erklaerung)));
+        }))
+    );
+  }
+
+  // ---------- Startseite des Quiz ----------
+  const start = /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 max-w-2xl", "data-quizstart": true },
+    /* @__PURE__ */ React.createElement("p", { className: "font-serif text-2xl text-[#f0d878] mb-2" }, "Quiz"),
+    /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-1" },
+      art === "Alle" ? "Gemischte Runde: Jahreszahlen, Reihenfolgen, Personen, Orte, Kriege und Aussagen." : "Nur " + QUIZ_ARTNAME[art] + "-Fragen."),
+    /* @__PURE__ */ React.createElement("p", { className: "text-xs font-mono text-[#bd9563] mb-4" },
+      faelligZahl, " zur Wiederholung fällig · ", neuZahl.toLocaleString("de-DE"), " noch nie gesehen"),
+    /* @__PURE__ */ React.createElement("button", {
+      onClick: () => starteRunde(), "data-rundenstart": true,
+      className: "w-full rounded border border-[#d4af37] text-[#f0d878] bg-[#4a1015] hover:bg-[#6b2024]", style: grossKnopf
+    }, "Runde starten · ", laenge, " Fragen")
+  );
+
+  // ---------- Karteikarten ----------
+  const kartenAnsicht = !karte
+    ? /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Karten in dieser Auswahl.")
+    : /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 max-w-2xl" },
+        /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-2 flex-wrap" },
+          /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border border-[#5c2018] rounded px-1.5 py-0.5 text-[#d4af37]" }, QUIZ_ARTNAME[karte.art]),
+          karte.kontext && karte.art !== "Zuschreibung" && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, karte.kontext),
+          stand[karte.id] && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, "Fach ", stand[karte.id].fach)),
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] leading-snug mb-3" }, QUIZ_FRAGE[karte.art]),
+        /* @__PURE__ */ React.createElement("p", { className: "text-[17px] text-[#e8d5b0] leading-relaxed mb-2" }, karte.frage),
+        karte.hinweis && !umgedreht && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4", style: { fontStyle: "italic" } }, karte.hinweis),
+        !umgedreht
+          ? /* @__PURE__ */ React.createElement("button", { onClick: () => setUmgedreht(true), className: "w-full rounded border border-[#d4af37] text-[#f0d878]", style: grossKnopf }, "Umdrehen")
+          : /* @__PURE__ */ React.createElement("div", null,
+              /* @__PURE__ */ React.createElement("p", { className: "font-mono text-lg text-[#f0d878] mb-2 mt-2" }, karte.antwort),
+              karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4" }, karte.erklaerung),
+              /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
+                /* @__PURE__ */ React.createElement("button", { onClick: () => { werten(karte, true); naechsteKarte(); }, className: "rounded border border-[#3f6b4a] text-[#9fd8ac]", style: grossKnopf }, "Gewusst"),
+                /* @__PURE__ */ React.createElement("button", { onClick: () => { werten(karte, false); naechsteKarte(); }, className: "rounded border border-[#a03a20] text-[#f0a878]", style: grossKnopf }, "Nicht gewusst"))));
+
+  // ---------- Zusammensetzen ----------
+  if (modus === "quiz" && runde && runde.length) {
+    const fertig = pos >= runde.length;
+    return /* @__PURE__ */ React.createElement("div", null,
+      /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-3 mb-2 max-w-2xl" },
+        /* @__PURE__ */ React.createElement("span", { className: "text-xs font-mono text-[#bd9563]", "data-fortschritt": true },
+          fertig ? "Runde beendet" : "Frage " + (pos + 1) + " von " + runde.length),
+        /* @__PURE__ */ React.createElement("button", { onClick: () => setRunde(null), className: "text-xs text-[#bd9563] hover:text-[#e0b84a]" }, fertig ? "Zur Auswahl" : "Runde abbrechen")),
+      /* @__PURE__ */ React.createElement("div", { className: "max-w-2xl mb-4", style: { height: "3px", background: "#3a1014", borderRadius: "2px", overflow: "hidden" } },
+        /* @__PURE__ */ React.createElement("div", { style: { height: "100%", width: (Math.min(pos + (gewaehlt !== null ? 1 : 0), runde.length) / runde.length * 100) + "%", background: "#d4af37", transition: "width .25s ease" } })),
+      fertig ? ergebnis() : frageBlock(frage)
+    );
+  }
 
   return /* @__PURE__ */ React.createElement("div", null,
-    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] mb-1 max-w-2xl" },
-      alle.length.toLocaleString("de-DE"), " Karten aus allen Sammlungen — Jahreszahlen, Schlachten und ihre Kriege, Zitat-Zuschreibungen und Aussagen, die stimmen oder nicht."),
-    /* @__PURE__ */ React.createElement("p", { className: "text-[#bd9563] text-sm mb-4 max-w-2xl" },
-      "Karteikasten mit fünf Fächern: Richtig beantwortet wandert eine Karte ein Fach höher und kommt später wieder, falsch fällt sie zurück. Der Stand bleibt in diesem Browser — sichern lässt er sich unter Sicherung."),
-
-    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-2" },
-      arten.map((a) => /* @__PURE__ */ React.createElement("button", {
-        key: a, onClick: () => setArt(a),
-        className: `${knopf} ${art === a ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
-      }, a, a === "Alle" ? "" : " (" + alle.filter((k) => k.art === a).length + ")"))
-    ),
-    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-2" },
-      BEREICHE_LERNEN.map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
-        key: id, onClick: () => setBereich(id),
-        className: `${knopf} ${bereich === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
-      }, label, " (", (id === "alle" ? alle.length : alle.filter((k) => id === "neu" ? k.neu : k.quelle === id).length).toLocaleString("de-DE"), ")"))
-    ),
-    bereich === "querschnitt" && /* @__PURE__ */ React.createElement("select", {
-      value: thema, onChange: (e) => setThema(e.target.value), "aria-label": "Querschnitt wählen",
-      className: "mb-2 rounded border border-[#5c2018] bg-[#4a1015] px-2 py-1.5 text-sm text-[#e8d5b0]",
-      style: { maxWidth: "100%" }
-    },
-      /* @__PURE__ */ React.createElement("option", { value: "" }, "Alle Querschnitte"),
-      THEMEN.map((t) => /* @__PURE__ */ React.createElement("option", { key: t.id, value: t.id }, t.titel + " (" + t.stationen.length + ")"))),
-    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-1.5 mb-5" },
-      [["quiz", "Quiz"], ["karten", "Karteikarten"]].map(([id, label]) =>
-        /* @__PURE__ */ React.createElement("button", {
-          key: id, onClick: () => setModus(id),
-          className: `${knopf} ${modus === id ? "bg-[#5c1a1e] text-[#f0d878] border-[#d4af37]" : "border-[#5c2018] text-[#c2a06a]"}`
-        }, label))
-    ),
-
-    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-3 mb-5 text-xs font-mono text-[#bd9563]" },
-      /* @__PURE__ */ React.createElement("span", null, faellig.length, " fällig"),
-      /* @__PURE__ */ React.createElement("span", null, neu, " noch nie gesehen"),
-      verteilung.map((n, i) => /* @__PURE__ */ React.createElement("span", { key: i, className: n ? "text-[#c9a877]" : "" },
-        "Fach ", i + 1, ": ", n)),
-      sitzung.gesamt > 0 && /* @__PURE__ */ React.createElement("span", { className: "text-[#f0d878]" },
-        "diese Sitzung: ", sitzung.richtig, "/", sitzung.gesamt)
-    ),
-
-    !karte && /* @__PURE__ */ React.createElement("p", { className: "text-[#c2a06a] text-sm" }, "Keine Karten in dieser Auswahl."),
-
-    karte && /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 max-w-2xl" },
-      /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-3 flex-wrap" },
-        /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide border border-[#5c2018] rounded px-1.5 py-0.5 text-[#d4af37]" }, karte.art),
-        karte.kontext && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" }, karte.kontext),
-        stand[karte.id] && /* @__PURE__ */ React.createElement("span", { className: "text-[10px] uppercase tracking-wide text-[#bd9563]" },
-          "Fach ", stand[karte.id].fach)
-      ),
-
-      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] leading-snug mb-4" },
-        karte.art === "Jahreszahl" ? "Wann?" : karte.art === "Zuordnung" ? "Zu welchem Krieg gehört diese Schlacht?" : karte.art === "Zuschreibung" ? "Stimmt die Zuschreibung?" : "Stimmt diese Aussage?"),
-      /* @__PURE__ */ React.createElement("p", { className: "text-[17px] text-[#e8d5b0] leading-relaxed mb-5" }, karte.frage),
-
-      // --- Quiz: automatisch bewertet ---
-      modus === "quiz" && karte.art === "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-2" },
-        optionen.map((j) => {
-          const gewaehltDies = gewaehlt === j;
-          const istRichtig = j === karte.jahr;
-          const zeigen = gewaehlt !== null;
-          return /* @__PURE__ */ React.createElement("button", {
-            key: j,
-            disabled: zeigen,
-            onClick: () => antworten(j),
-            className: `px-3 py-2 rounded border text-left font-mono text-sm ${
-              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
-              : zeigen && gewaehltDies ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
-              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
-          }, formatYear(j));
-        })
-      ),
-
-      modus === "quiz" && karte.art === "Zuordnung" && /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
-        optionen.map((n) => {
-          const zeigen = gewaehlt !== null;
-          const istRichtig = n === karte.richtig;
-          return /* @__PURE__ */ React.createElement("button", {
-            key: n, disabled: zeigen, onClick: () => antworten(n),
-            className: `px-3 py-2 rounded border text-left text-sm ${
-              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
-              : zeigen && gewaehlt === n ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
-              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
-          }, n);
-        })
-      ),
-
-      modus === "quiz" && (karte.art === "Zuschreibung" || karte.art === "Aussage") && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
-        [[true, "Stimmt"], [false, "Stimmt nicht"]].map(([wert, label]) => {
-          const zeigen = gewaehlt !== null;
-          const istRichtig = wert === karte.stimmt;
-          return /* @__PURE__ */ React.createElement("button", {
-            key: label,
-            disabled: zeigen,
-            onClick: () => antworten(wert),
-            className: `px-4 py-2 rounded border text-sm ${
-              zeigen && istRichtig ? "border-[#3f6b4a] bg-[#1f3a24] text-[#9fd8ac]"
-              : zeigen && gewaehlt === wert ? "border-[#a03a20] bg-[#6b2024] text-[#f0a878]"
-              : "border-[#5c2018] text-[#e0b84a] hover:border-[#d4af37]"}`
-          }, label);
-        })
-      ),
-
-      // --- Karteikarten: selbst bewerten ---
-      modus === "karten" && !umgedreht && /* @__PURE__ */ React.createElement("button", {
-        onClick: () => setUmgedreht(true),
-        className: "px-4 py-2 rounded border border-[#d4af37] text-[#f0d878] text-sm"
-      }, "Umdrehen"),
-
-      modus === "karten" && umgedreht && /* @__PURE__ */ React.createElement("div", null,
-        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-lg text-[#f0d878] mb-2" }, karte.antwort),
-        karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4" }, karte.erklaerung),
-        /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" },
-          /* @__PURE__ */ React.createElement("button", {
-            onClick: () => { werten(true); naechste(); },
-            className: "px-4 py-2 rounded border border-[#3f6b4a] text-[#9fd8ac] text-sm"
-          }, "Gewusst"),
-          /* @__PURE__ */ React.createElement("button", {
-            onClick: () => { werten(false); naechste(); },
-            className: "px-4 py-2 rounded border border-[#a03a20] text-[#f0a878] text-sm"
-          }, "Nicht gewusst")
-        )
-      ),
-
-      // Auflösung im Quiz
-      modus === "quiz" && gewaehlt !== null && /* @__PURE__ */ React.createElement("div", { className: "mt-4 pt-3 border-t border-[#5c2018]" },
-        /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878] mb-1" }, karte.antwort),
-        karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, karte.erklaerung)
-      )
-    ),
-
-    /* @__PURE__ */ React.createElement("button", {
-      onClick: naechste,
-      className: "mt-4 inline-flex items-center gap-1.5 text-xs text-[#bd9563] hover:text-[#e0b84a]"
-    }, /* @__PURE__ */ React.createElement(RotateCcw, { size: 12 }), "Andere Karte")
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] text-sm mb-3 max-w-2xl" },
+      alle.length.toLocaleString("de-DE"), " Karten mit Karteikasten-Prinzip: Was sitzt, kommt seltener, was falsch war, kommt bald wieder. Der Stand bleibt in diesem Browser (sichern unter „Sicherung“)."),
+    kopf,
+    modus === "quiz" ? start : kartenAnsicht
   );
 }
 function VerblueffendTab({ ziel }) {
