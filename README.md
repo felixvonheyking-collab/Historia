@@ -15,7 +15,7 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Themengeschichte | 32 Querschnitte mit je mindestens 42 Stationen, darunter Kalter Krieg, Katastrophen, Künstler und Erfinder |
 | Länder-Zeitleisten | 30 Weltregionen |
 | Karte | 189 Orte: Schlachten, Stadtgeschichten, Mysterien, 69 Schlüsselmomente – Koordinaten aus Wikidata bzw. Wikipedia, Küsten aus Natural Earth; Kriege hervorheben; 7 Routen (Alexanderzug, Hannibal, Kolumbus 1492, Magellan/Elcano, Russlandfeldzug 1812, Langer Marsch, Ibn Battuta) |
-| Lernen | rund 3.250 Karten im Karteikasten. Quiz in Runden (5/10/20) mit Ergebnis und Fehlerwiederholung; sieben Fragetypen: Jahreszahl (mit Hinweis, Jahr im Titel ausgeblendet), Reihenfolge, Wer war's?, Wo? (Minikarte), Schlacht → Krieg, Zitat-Zuschreibung, Aussage |
+| Lernen | rund 3.250 Karten im Karteikasten. Quiz in Runden (5/10/20) mit Ergebnis und Fehlerwiederholung; sieben Fragetypen: Zeitraum (Jahrzehnt ab 1800, halbes Jahrhundert ab 1000, Jahrhundert, früher Jahrtausend – das genaue Jahr steht nur in der Auflösung; mit Hinweis, Jahr im Titel ausgeblendet), Reihenfolge, Wer war's?, Wo? (Minikarte), Schlacht → Krieg, Zitat-Zuschreibung, Aussage |
 | Startseite | Kachel „Heute“: fällige Karten, Runde mit 5 Fragen, Lernserie, „Heute vor 100/250/500 … Jahren“ |
 | Mysterien | 31 ungeklärte und gelöste Fälle; die zehn dunklen (Somerton, Djatlow, Prinzen im Tower …) stehen unter Dark History |
 | Dark History | eigener Bereich mit schwarzem Grund: 30 Fallakten (1440 bis heute; Tat, Opfer, Ermittlung, Täter, Prozess, Legende, Chronologie, Quellen, Dokumente) und 15 Geheimbünde, dazu die Querschnitte Verbrechen, Gift, Folter, Kulte; 84 frei lizenzierte Bilder, unabhängig faktengeprüft |

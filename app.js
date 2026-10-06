@@ -3875,12 +3875,12 @@ function reihenfolgeAus(pool) {
 }
 
 // Gewichte fuer gemischte Runden: Jahreszahlen bleiben der Kern, aber nicht mehr 80 %.
-const QUIZ_GEWICHTE = { Jahreszahl: 3, Reihenfolge: 1.5, Person: 1.5, Wo: 1.5, Zuordnung: 1, Zuschreibung: 0.7, Aussage: 1.3 };
+const QUIZ_GEWICHTE = { Jahreszahl: 2, Reihenfolge: 1.7, Person: 1.5, Wo: 1.5, Zuordnung: 1, Zuschreibung: 0.7, Aussage: 1.3 };
 const QUIZ_FRAGE = {
   Jahreszahl: "Wann war das?", Reihenfolge: "Was kam zuerst?", Person: "Wer war's?", Wo: "Wo war das?",
   Zuordnung: "Zu welchem Krieg gehört diese Schlacht?", Zuschreibung: "Stimmt die Zuschreibung?", Aussage: "Stimmt diese Aussage?"
 };
-const QUIZ_ARTNAME = { Jahreszahl: "Jahreszahl", Reihenfolge: "Reihenfolge", Person: "Wer war's?", Wo: "Wo?", Zuordnung: "Zuordnung", Zuschreibung: "Zuschreibung", Aussage: "Aussage" };
+const QUIZ_ARTNAME = { Jahreszahl: "Zeitraum", Reihenfolge: "Reihenfolge", Person: "Wer war's?", Wo: "Wo?", Zuordnung: "Zuordnung", Zuschreibung: "Zuschreibung", Aussage: "Aussage" };
 
 // Kleine Karte fuer "Wo?": vier Punkte A-D, nach der Antwort mit Namen
 function WoKarte({ optionen, richtig, gewaehlt, onWahl }) {
@@ -3909,6 +3909,48 @@ function WoKarte({ optionen, richtig, gewaehlt, onWahl }) {
       })
     )
   );
+}
+
+// Zeitraeume statt exakter Jahre. Ob etwas 1962 oder 1964 war, ist
+// Zufallswissen; ob es in die 1960er gehoert oder ins 5. Jahrhundert v. Chr.,
+// ist Einordnung. Je aelter, desto groeber.
+function zeitraumVon(j) {
+  const tsd = (n) => n.toLocaleString("de-DE");
+  if (j >= 1800) { const d = Math.floor(j / 10) * 10; return { k: "d" + d, l: d + "er Jahre", schritt: 10, w: d + 5 }; }
+  if (j >= 1000) {
+    const c = Math.floor((j - 1) / 100) + 1, zweite = ((j - 1) % 100) >= 50;
+    return { k: "h" + c + (zweite ? "b" : "a"), l: (zweite ? "Zweite" : "Erste") + " Hälfte " + c + ". Jh.", schritt: 50, w: (c - 1) * 100 + (zweite ? 75 : 25) };
+  }
+  if (j >= 1) { const c = Math.floor((j - 1) / 100) + 1; return { k: "c" + c, l: c + ". Jahrhundert", schritt: 100, w: (c - 1) * 100 + 50 }; }
+  if (j > -1000) { const c = Math.floor((-j - 1) / 100) + 1; return { k: "v" + c, l: c + ". Jh. v. Chr.", schritt: 100, w: -(c - 1) * 100 - 50 }; }
+  if (j > -3000) {
+    const m = Math.floor((-j - 1) / 1000) + 1, frueh = ((-j - 1) % 1000) >= 500;
+    return { k: "hm" + m + (frueh ? "a" : "b"), l: (frueh ? "Frühes " : "Spätes ") + m + ". Jahrtausend v. Chr.", schritt: 500, w: -(m - 1) * 1000 - (frueh ? 750 : 250) };
+  }
+  if (j > -10000) { const m = Math.floor((-j - 1) / 1000) + 1; return { k: "m" + m, l: m + ". Jahrtausend v. Chr.", schritt: 1000, w: -(m - 1) * 1000 - 500 }; }
+  if (j > -100000) { const z = Math.floor(-j / 10000) * 10000; return { k: "z" + z, l: tsd(z + 10000) + "–" + tsd(z) + " v. Chr.", schritt: 10000, w: -z - 5000 }; }
+  const g = Math.pow(10, Math.floor(Math.log10(-j))), r = Math.round(-j / g) * g;
+  return { k: "g" + r, l: "vor rund " + tsd(r) + " Jahren", schritt: g, w: -r };
+}
+
+function zeitraumOptionen(jahr) {
+  const ziel = zeitraumVon(jahr), heute = new Date().getFullYear();
+  const optionen = [ziel], keys = new Set([ziel.k]);
+  // Ein Nachbar, zwei weiter entfernt – schwer genug, aber eindeutig
+  const art = (z) => z.k.match(/^[a-z]+/)[0];
+  // Erst nur Spannen derselben Einteilung (Jahrzehnt neben Jahrzehnt), notfalls weiter weg
+  for (const gleich of [true, false]) {
+    for (const n of mischen([-1, 1]).concat(mischen([-3, -2, 2, 3, 4, -4, 5, -5, 6, -6]))) {
+      if (optionen.length >= 4) break;
+      const y = jahr + n * ziel.schritt;
+      if (y > heute) continue;
+      const z = zeitraumVon(y);
+      if (gleich && art(z) !== art(ziel)) continue;
+      if (!keys.has(z.k)) { keys.add(z.k); optionen.push(z); }
+    }
+  }
+  // Chronologisch, damit man die Spannen auf einen Blick vergleicht
+  return optionen.sort((a, b) => a.w - b.w);
 }
 
 // --- Lernen: Quiz in Runden und Karteikarten ---------------------------------
@@ -3961,25 +4003,13 @@ function LernenTab({ ziel }) {
   }
 
   function frageAus(k) {
-    if (k.art === "Jahreszahl") return { art: k.art, karte: k, optionen: jahresOptionen(k) };
+    if (k.art === "Jahreszahl") return { art: k.art, karte: k, optionen: zeitraumOptionen(k.jahr) };
     if (k.art === "Zuordnung") return { art: k.art, karte: k, optionen: kriegsOptionen(k) };
     if (k.art === "Person") return { art: k.art, karte: k, optionen: personenOptionen(k) };
     if (k.art === "Wo") return { art: k.art, karte: k, optionen: woOptionen(k.ort) };
     return { art: k.art, karte: k, optionen: [true, false] };
   }
 
-  function jahresOptionen(k) {
-    // Ablenker aus der zeitlichen Nachbarschaft; der Abstand waechst mit dem Alter.
-    const spanne = Math.min(120, Math.max(25, Math.abs(2030 - k.jahr) * 0.06));
-    const jahre = alle.filter((x) => x.art === "Jahreszahl" && x.jahr !== k.jahr);
-    const nah = jahre.filter((x) => Math.abs(x.jahr - k.jahr) <= spanne);
-    const andere = [];
-    for (const x of mischen(nah.length >= 3 ? nah : jahre)) {
-      if (andere.indexOf(x.jahr) === -1 && Math.abs(x.jahr - k.jahr) >= 2) andere.push(x.jahr);
-      if (andere.length === 3) break;
-    }
-    return mischen([k.jahr, ...andere]);
-  }
   function kriegsOptionen(k) {
     const nah = mischen(KRIEGE.filter((x) => x.name !== k.richtig)).sort((a, b) => Math.abs(a.von - k.jahr) - Math.abs(b.von - k.jahr));
     return mischen([k.richtig, ...nah.slice(0, 3).map((x) => x.name)]);
@@ -4044,7 +4074,7 @@ function LernenTab({ ziel }) {
   function antworten(wert) {
     if (gewaehlt !== null || !frage) return;
     const k = frage.karte;
-    const richtig = frage.art === "Jahreszahl" ? wert === k.jahr
+    const richtig = frage.art === "Jahreszahl" ? wert === zeitraumVon(k.jahr).k
       : frage.art === "Zuordnung" || frage.art === "Person" ? wert === k.richtig
       : frage.art === "Wo" ? wert === k.ort
       : wert === k.stimmt;
@@ -4138,7 +4168,8 @@ function LernenTab({ ziel }) {
             [...f.ereignisse].sort((a, b) => a.jahr - b.jahr).map((e) => /* @__PURE__ */ React.createElement("li", { key: e.id, className: "mb-1" },
               /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[#f0d878]" }, formatYear(e.jahr)), " – ", e.frage)))
         : /* @__PURE__ */ React.createElement(React.Fragment, null,
-            /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878] mb-1" }, k.antwort),
+            /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878] mb-1" },
+              f.art === "Jahreszahl" ? zeitraumVon(k.jahr).l + " · genau: " + k.antwort : k.antwort),
             k.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed" }, k.erklaerung))
     );
   };
@@ -4161,7 +4192,7 @@ function LernenTab({ ziel }) {
       k && !k.hinweis && /* @__PURE__ */ React.createElement("div", { style: { height: "8px" } }),
 
       f.art === "Jahreszahl" && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
-        f.optionen.map((j) => /* @__PURE__ */ React.createElement("button", { key: j, disabled: zeigen, onClick: () => antworten(j), className: optKnopf(zustand(j, j === k.jahr)) + " font-mono", style: { minHeight: "44px" } }, formatYear(j)))),
+        f.optionen.map((z) => /* @__PURE__ */ React.createElement("button", { key: z.k, disabled: zeigen, onClick: () => antworten(z.k), className: optKnopf(zustand(z.k, z.k === zeitraumVon(k.jahr).k)), style: { minHeight: "44px" } }, z.l))),
 
       (f.art === "Zuordnung" || f.art === "Person") && /* @__PURE__ */ React.createElement("div", { className: "flex flex-col gap-2" },
         f.optionen.map((n) => /* @__PURE__ */ React.createElement("button", { key: n, disabled: zeigen, onClick: () => antworten(n), className: optKnopf(zustand(n, n === k.richtig)), style: { minHeight: "44px" } }, n))),
@@ -4228,7 +4259,7 @@ function LernenTab({ ziel }) {
             f.art === "Reihenfolge"
               ? /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a]" }, [...f.ereignisse].sort((x, y) => x.jahr - y.jahr).map((e) => formatYear(e.jahr) + " " + e.frage).join(" → "))
               : /* @__PURE__ */ React.createElement(React.Fragment, null,
-                  /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878]" }, k.antwort),
+                  /* @__PURE__ */ React.createElement("p", { className: "font-mono text-sm text-[#f0d878]" }, f.art === "Jahreszahl" ? zeitraumVon(k.jahr).l + " · genau: " + k.antwort : k.antwort),
                   k.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mt-1" }, k.erklaerung)));
         }))
     );
@@ -4261,7 +4292,8 @@ function LernenTab({ ziel }) {
         !umgedreht
           ? /* @__PURE__ */ React.createElement("button", { onClick: () => setUmgedreht(true), className: "w-full rounded border border-[#d4af37] text-[#f0d878]", style: grossKnopf }, "Umdrehen")
           : /* @__PURE__ */ React.createElement("div", null,
-              /* @__PURE__ */ React.createElement("p", { className: "font-mono text-lg text-[#f0d878] mb-2 mt-2" }, karte.antwort),
+              /* @__PURE__ */ React.createElement("p", { className: "font-mono text-lg text-[#f0d878] mb-2 mt-2" }, karte.art === "Jahreszahl" ? zeitraumVon(karte.jahr).l : karte.antwort),
+              karte.art === "Jahreszahl" && /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-[#bd9563] mb-2" }, "genau: ", karte.antwort),
               karte.erklaerung && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-relaxed mb-4" }, karte.erklaerung),
               /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-2" },
                 /* @__PURE__ */ React.createElement("button", { onClick: () => { werten(karte, true); naechsteKarte(); }, className: "rounded border border-[#3f6b4a] text-[#9fd8ac]", style: grossKnopf }, "Gewusst"),
