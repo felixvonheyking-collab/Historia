@@ -61,7 +61,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN, BILDER, KARTE, KRIEGE, VERKNUEPFUNGEN, AKTEN, GEHEIMBUENDE, DARK_THEMEN, DARK_MYSTERIEN })",
+      "   GRAFIKEN, BILDER, KARTE, KRIEGE, VERKNUEPFUNGEN, AKTEN, GEHEIMBUENDE, DOSSIERS, DARK_RUBRIKEN, DARK_THEMEN, DARK_MYSTERIEN })",
       kontext
     );
   } catch (e) {
@@ -487,7 +487,7 @@ function pruefeKarte(D) {
     if (!GENAU.includes(o.genau)) meldeFehler(wer + " – unbekannte Genauigkeit " + o.genau);
     if (typeof o.jahr !== "number") meldeFehler(wer + " – Jahr fehlt");
     if (o.bis !== undefined && o.bis < o.jahr) meldeFehler(wer + " – 'bis' liegt vor 'jahr'");
-    if (!/^Q\d+$/.test(o.wikidata || "") && !/^https:\/\/((en|de|no|sv)\.wikipedia\.org|commons\.wikimedia\.org)\//.test(o.quelle || ""))
+    if (!/^Q\d+$/.test(o.wikidata || "") && !/^https:\/\/([a-z]{2,3}\.wikipedia\.org|commons\.wikimedia\.org)\//.test(o.quelle || ""))
       meldeFehler(wer + " – Herkunft fehlt (Wikidata-Kennung oder Wikipedia-Artikel); jede Koordinate braucht ihre Herkunft");
     if (o.genau === "ungefaehr" && !o.hinweis) meldeFehler(wer + " – 'ungefaehr' ohne Hinweis, was offen ist");
     const k = o.art + ":" + o.titel;
@@ -503,7 +503,7 @@ function pruefeKarte(D) {
     if (o.art === "mysterium" && !D.MYSTERIEN.some((m) => m.id === o.mysterium)) meldeFehler(wer + " – Mysterium '" + o.mysterium + "' gibt es nicht");
     if (o.art === "moment" && !D.SCHLUESSELMOMENTE.some((m) => m.title === o.moment)) meldeFehler(wer + " – Schlüsselmoment '" + o.moment + "' gibt es nicht");
     if (o.art === "moment") { const m = D.SCHLUESSELMOMENTE.find((x) => x.title === o.moment); if (m && m.year !== o.jahr) meldeFehler(wer + " – Jahr weicht vom Schlüsselmoment ab"); }
-    if (o.art === "akte") { const a = (D.AKTEN || []).find((x) => x.id === o.akte); if (!a) meldeFehler(wer + " – Akte '" + o.akte + "' gibt es nicht"); else if (a.jahr !== o.jahr) meldeFehler(wer + " – Jahr weicht von der Akte ab"); }
+    if (o.art === "akte") { const a = [...(D.AKTEN || []), ...(D.DOSSIERS || [])].find((x) => x.id === o.akte); if (!a) meldeFehler(wer + " – Akte '" + o.akte + "' gibt es nicht"); else if (a.jahr !== o.jahr) meldeFehler(wer + " – Jahr weicht von der Akte ab"); }
     if (o.vertiefung && !D.VERTIEFUNGEN.some((v) => v.id === o.vertiefung)) meldeFehler(wer + " – Vertiefung '" + o.vertiefung + "' gibt es nicht");
     if (o.art === "schlacht") {
       const b = D.BATTLES.find((x) => x.name === o.schlacht);
@@ -948,10 +948,24 @@ function pruefeDark(D) {
     if (!g.quellen || g.quellen.length < 2) meldeFehler(wer + " – weniger als zwei Quellen");
     bilder(wer, g.bilder);
   });
+  const RUBRIKEN = (D.DARK_RUBRIKEN || []).map((r) => r.id);
+  (D.DOSSIERS || []).forEach((d) => {
+    const wer = "Dossier " + d.id;
+    if (ids.has(d.id)) meldeFehler(wer + " – doppelt"); ids.add(d.id);
+    if (!RUBRIKEN.includes(d.rubrik)) meldeFehler(wer + " – unbekannte Rubrik " + d.rubrik);
+    ["titel", "untertitel", "zeitraum", "ort", "kurz", "legende", "bedeutung"].forEach((f) => {
+      if (!d[f] || String(d[f]).length < (["titel", "untertitel", "zeitraum", "ort"].includes(f) ? 3 : 80)) meldeFehler(wer + " – Feld '" + f + "' fehlt oder ist zu kurz");
+    });
+    if (typeof d.jahr !== "number") meldeFehler(wer + " – Jahr fehlt");
+    if (d.status !== null && d.status !== undefined && !STATUS.includes(d.status)) meldeFehler(wer + " – unbekannter Status " + d.status);
+    if (!d.abschnitte || d.abschnitte.length < 3 || d.abschnitte.some((a) => !a.titel || !a.text || a.text.length < 150)) meldeFehler(wer + " – Abschnitte fehlen oder sind zu kurz");
+    if (!d.quellen || d.quellen.length < 2) meldeFehler(wer + " – weniger als zwei Quellen");
+    bilder(wer, d.bilder);
+  });
   (D.DARK_THEMEN || []).forEach((id) => { if (!D.THEMEN.some((t) => t.id === id)) meldeFehler("Dark History: Querschnitt '" + id + "' gibt es nicht"); });
   (D.DARK_MYSTERIEN || []).forEach((id) => { if (!D.MYSTERIEN.some((m) => m.id === id)) meldeFehler("Dark History: Mysterium '" + id + "' gibt es nicht"); });
-  console.log("  Dark History: " + A.length + " Akten, " + G.length + " Geheimbünde, " +
-    [...A, ...G].reduce((n, x) => n + (x.bilder || []).length, 0) + " Bilder");
+  console.log("  Dark History: " + A.length + " Akten, " + G.length + " Geheimbünde, " + (D.DOSSIERS || []).length + " Dossiers, " +
+    [...A, ...G, ...(D.DOSSIERS || [])].reduce((n, x) => n + (x.bilder || []).length, 0) + " Bilder");
 }
 
 /* ------------------------------------------------------------------ Lauf */

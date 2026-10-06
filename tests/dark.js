@@ -41,7 +41,21 @@ const root=()=>d.getElementById("historia-root");
   pruefe(!d.getElementById("app").textContent.includes("Der Mann von Somerton"),"Somerton steht noch unter den normalen Mysterien");
   W.eval('SPRINGE("darkmysterien",null,null)'); await warte(250);
   pruefe(d.getElementById("app").textContent.includes("Der Mann von Somerton"),"Somerton fehlt in den dunklen Mysterien");
-  console.log("Akten: "+n+" · Geheimbünde: "+W.eval("GEHEIMBUENDE.length"));
+  // Rubriken: je Liste alle Dossiers, ein Dossier oeffnet mit Abschnitten
+  for(const r of ["spionage","attentate","hexen","piraten"]){
+    const ids=W.eval('DOSSIERS.filter(x=>x.rubrik==="'+r+'").map(x=>x.id)');
+    pruefe(ids.length>=12,"Rubrik "+r+" hat nur "+ids.length+" Dossiers");
+    W.eval('SPRINGE("'+r+'",null,null)'); await warte(250);
+    pruefe(root().className.includes("dunkel"),"Rubrik "+r+" nicht dunkel");
+    const ks=[...d.querySelectorAll("button[data-anker]")].map(b=>b.getAttribute("data-anker"));
+    pruefe(ids.every(i=>ks.includes(i)),"Rubrik "+r+" zeigt nicht alle Dossiers");
+    W.eval('SPRINGE("'+r+'","'+ids[0]+'",null)'); await warte(250);
+    const ds=d.querySelector('[data-dossier="'+ids[0]+'"]');
+    pruefe(!!ds,"Dossier "+ids[0]+" öffnet nicht");
+    if(ds){ pruefe(ds.textContent.includes("Quellen"),"Dossier ohne Quellen: "+ids[0]);
+      pruefe(ds.querySelectorAll("img").length>=1,"Dossier ohne Bild: "+ids[0]); }
+  }
+  console.log("Akten: "+n+" · Geheimbünde: "+W.eval("GEHEIMBUENDE.length")+" · Dossiers: "+W.eval("DOSSIERS.length"));
   console.log("Fehler: "+fehler.length); fehler.forEach(f=>console.log("  · "+f));
   process.exit(fehler.length?1:0);
 })();

@@ -18,7 +18,7 @@ Läuft als Website und als installierbare App, vollständig offline, ohne fremde
 | Lernen | rund 3.250 Karten im Karteikasten. Quiz in Runden (5/10/20) mit Ergebnis und Fehlerwiederholung; sieben Fragetypen: Zeitraum (Jahrzehnt ab 1800, halbes Jahrhundert ab 1000, Jahrhundert, früher Jahrtausend – das genaue Jahr steht nur in der Auflösung; mit Hinweis, Jahr im Titel ausgeblendet), Reihenfolge, Wer war's?, Wo? (Minikarte), Schlacht → Krieg, Zitat-Zuschreibung, Aussage |
 | Startseite | Kachel „Heute“: fällige Karten, Runde mit 5 Fragen, Lernserie, „Heute vor 100/250/500 … Jahren“ |
 | Mysterien | 31 ungeklärte und gelöste Fälle; die zehn dunklen (Somerton, Djatlow, Prinzen im Tower …) stehen unter Dark History |
-| Dark History | eigener Bereich mit schwarzem Grund: 30 Fallakten (1440 bis heute; Tat, Opfer, Ermittlung, Täter, Prozess, Legende, Chronologie, Quellen, Dokumente) und 15 Geheimbünde, dazu die Querschnitte Verbrechen, Gift, Folter, Kulte; 84 frei lizenzierte Bilder, unabhängig faktengeprüft |
+| Dark History | eigener Bereich mit schwarzem Grund: 50 Fallakten (1440 bis heute; Tat, Opfer, Ermittlung, Täter, Prozess, Legende, Chronologie, Quellen, Dokumente), 15 Geheimbünde und 48 Dossiers in vier Rubriken (Spionage & Geheimdienste, Attentate, Hexen & Inquisition, Piraten & Fälscher inkl. Ausbrüche), dazu die Querschnitte Verbrechen, Gift, Folter, Kulte; 217 frei lizenzierte Bilder, alles unabhängig faktengeprüft (148 Korrekturen) |
 | Schlüsselmomente | 169 |
 | Schlachten | 101, jede einem Krieg zugeordnet |
 | Kriege | 158, von der Bronzezeit bis heute, mit Parteien, Ursachen, Verlauf, Folgen und Opferspannen; 144 mit Bild (eigenes oder über die Vertiefung), nur frei lizenzierte Aufnahmen |
