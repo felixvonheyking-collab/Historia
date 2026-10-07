@@ -1955,12 +1955,16 @@ function sucheIndex() {
     kontext: m.zeitraum || "", reiter: "mysterien", ziel: m.id
   }));
   (typeof AKTEN !== "undefined" ? AKTEN : []).forEach((a) => rein({
-    art: "Akte", titel: a.titel, text: [a.untertitel, a.kurz, a.tat, a.taeter, a.ermittlung].join(" "),
+    art: "Akte", titel: a.titel, text: [a.untertitel, a.kurz, a.hintergrund, a.tat, a.taeter, a.ermittlung].join(" "),
     kontext: a.zeitraum + " · " + a.ort, jahr: a.jahr, reiter: "akten", ziel: a.id
   }));
   (typeof DOSSIERS !== "undefined" ? DOSSIERS : []).forEach((d) => rein({
     art: rubrikVon(d.rubrik).titel, titel: d.titel, text: [d.untertitel, d.kurz, ...(d.abschnitte || []).map((a) => a.text)].join(" "),
     kontext: d.zeitraum + " · " + d.ort, jahr: d.jahr, reiter: d.rubrik, ziel: d.id
+  }));
+  GRUSEL_LISTE.forEach((f) => rein({
+    art: "Gruselmärchen", titel: f.titel, text: [f.originalname, f.untertitel, f.kurz, f.geschichte, ...(f.abschnitte || []).map((a) => a.text)].join(" "),
+    kontext: f.art + " · " + f.land, reiter: "grusel", ziel: f.id
   }));
   (typeof GEHEIMBUENDE !== "undefined" ? GEHEIMBUENDE : []).forEach((b) => rein({
     art: "Geheimbund", titel: b.titel, text: [b.untertitel, b.kurz, b.entstehung, b.mythos].join(" "),
@@ -2672,6 +2676,7 @@ function AkteDetail({ akte, onBack }) {
       istNeu("akte:" + akte.id, akte.seit) && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
         /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("akte:" + akte.id), text: "Als gelesen markieren" }))),
     akte.bilder[0] && /* @__PURE__ */ React.createElement(AktenBild, { bild: akte.bilder[0] }),
+    /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: "Zeit und Ort", text: akte.hintergrund }),
     /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: "Die Tat", text: akte.tat }),
     /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: "Die Opfer", text: akte.opfer }),
     /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: "Die Ermittlung", text: akte.ermittlung }),
@@ -2859,6 +2864,78 @@ function DarkMysterienTab({ ziel }) {
   return /* @__PURE__ */ React.createElement(MysterienTab, { ziel, nur: DARK_MYSTERIEN });
 }
 
+// Gruselmaerchen: klassische Horrorfiguren aus Asien und Europa mit ihrer
+// Geschichte (nacherzaehlt) und dem, was Forschung darueber weiss.
+const GRUSEL_LISTE = typeof GRUSELMAERCHEN !== "undefined" ? GRUSELMAERCHEN : [];
+const GRUSEL_REGIONEN = [["alle", "Alle"], ["asien", "Asien"], ["europa", "Europa"]];
+
+function GruselDetail({ figur, onBack }) {
+  const { istNeu, markiere } = useNeu();
+  React.useEffect(() => { window.scrollTo && window.scrollTo(0, 0); }, [figur.id]);
+  const bilder = figur.bilder || [];
+  const absaetze = String(figur.geschichte || "").split(/\n+/).filter(Boolean);
+  return /* @__PURE__ */ React.createElement("article", { className: "max-w-3xl", "data-grusel": figur.id },
+    /* @__PURE__ */ React.createElement("button", { onClick: onBack, className: "flex items-center gap-1.5 text-[#c9a877] hover:text-[#f0d878] mb-4 text-sm" },
+      /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu allen Gruselmärchen"),
+    /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#7a3020] bg-[#5c1a1e] p-5 mb-5" },
+      /* @__PURE__ */ React.createElement("div", { className: "font-mono text-xs text-[#bd9563] leading-relaxed mb-2" },
+        figur.art.toUpperCase(), " · ", figur.land, /* @__PURE__ */ React.createElement("br", null), figur.zeitraum),
+      /* @__PURE__ */ React.createElement("h2", { className: "font-serif text-2xl md:text-3xl text-[#f0d878] mb-1", style: { lineHeight: 1.2 } }, figur.titel),
+      figur.originalname && /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#bd9563] mb-1" }, figur.originalname),
+      /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] italic mb-3" }, figur.untertitel),
+      /* @__PURE__ */ React.createElement("p", { className: "text-[15px] text-[#e8d5b0] leading-relaxed" }, figur.kurz),
+      istNeu("grusel:" + figur.id, figur.seit) && /* @__PURE__ */ React.createElement("div", { className: "mt-3" },
+        /* @__PURE__ */ React.createElement(GelesenKnopf, { onClick: () => markiere("grusel:" + figur.id), text: "Als gelesen markieren" }))),
+    bilder[0] && /* @__PURE__ */ React.createElement(AktenBild, { bild: bilder[0] }),
+    /* @__PURE__ */ React.createElement("section", { className: "mb-6", "data-geschichte": "1",
+      style: { border: "1px solid #5c2018", borderRadius: "8px", padding: "20px 18px", background: "rgba(0,0,0,0.25)" } },
+      /* @__PURE__ */ React.createElement("h3", { className: "font-mono text-[11px] uppercase tracking-widest text-[#d4af37] mb-3" }, "Die Geschichte"),
+      absaetze.map((t, i) => /* @__PURE__ */ React.createElement("p", { key: i, className: "font-serif text-[#e8d5b0]",
+        style: { fontSize: "17px", lineHeight: 1.75, marginBottom: "12px" } },
+        i === 0 ? [/* @__PURE__ */ React.createElement("span", { key: "i", style: { float: "left", fontSize: "52px", lineHeight: "44px", paddingRight: "8px", paddingTop: "4px", color: DARK_ROT } }, t.charAt(0)), t.slice(1)] : t)),
+      figur.fassung && /* @__PURE__ */ React.createElement("p", { className: "text-xs text-[#bd9563] italic", style: { marginTop: "8px", clear: "both" } }, figur.fassung)),
+    (figur.abschnitte || []).map((a, i) => /* @__PURE__ */ React.createElement(React.Fragment, { key: i },
+      /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: a.titel, text: a.text }),
+      i === 0 && bilder[1] && /* @__PURE__ */ React.createElement(AktenBild, { bild: bilder[1] }))),
+    bilder.slice(2).map((b, i) => /* @__PURE__ */ React.createElement(AktenBild, { key: i, bild: b })),
+    figur.verwandt && /* @__PURE__ */ React.createElement("div", { className: "rounded-lg border border-[#5c2018] p-4 mb-5", style: { borderLeft: "3px solid " + DARK_ROT } },
+      /* @__PURE__ */ React.createElement(AktenAbschnitt, { titel: "Verwandte Gestalten", text: figur.verwandt })),
+    /* @__PURE__ */ React.createElement(Quellenliste, { quellen: figur.quellen })
+  );
+}
+
+function GruselTab({ ziel }) {
+  const { istNeu } = useNeu();
+  const [offen, setOffen] = useState(null);
+  React.useEffect(() => { if (ziel) setOffen(ziel); }, [ziel]);
+  const [region, setRegion] = useState("alle");
+  const [suche, setSuche] = useState("");
+  if (offen) {
+    const f = GRUSEL_LISTE.find((x) => x.id === offen);
+    if (f) return /* @__PURE__ */ React.createElement(GruselDetail, { figur: f, onBack: () => setOffen(null) });
+  }
+  const liste = GRUSEL_LISTE.filter((f) => (region === "alle" || f.region === region) && passt(f, ["titel", "untertitel", "land", "kurz", "art", "originalname"], suche));
+  return /* @__PURE__ */ React.createElement("div", { "data-gruseltab": "1" },
+    /* @__PURE__ */ React.createElement("p", { className: "font-serif text-xl text-[#f0d878] mb-1" }, "Gruselmärchen"),
+    /* @__PURE__ */ React.createElement("p", { className: "text-[#c9a877] text-sm mb-4 max-w-2xl" }, GRUSEL_LISTE.length,
+      " klassische Horrorfiguren aus Asien und Europa: jeweils die Geschichte, nacherzählt nach einer überlieferten Fassung, dazu Herkunft, Deutungen und Nachleben."),
+    /* @__PURE__ */ React.createElement("div", { className: "flex flex-wrap gap-2 mb-3" },
+      GRUSEL_REGIONEN.map(([id, label]) => /* @__PURE__ */ React.createElement("button", {
+        key: id, onClick: () => setRegion(id), "data-region": id,
+        className: "text-sm rounded-full border px-3 py-1 " + (region === id ? "border-[#d4af37] text-[#f0d878]" : "border-[#5c2018] text-[#c9a877]")
+      }, label, " (", id === "alle" ? GRUSEL_LISTE.length : GRUSEL_LISTE.filter((f) => f.region === id).length, ")"))),
+    /* @__PURE__ */ React.createElement(Suchfeld, { wert: suche, setWert: setSuche, platzhalter: "Gestalt, Land …", anzahl: GRUSEL_LISTE.length, gefunden: liste.length }),
+    /* @__PURE__ */ React.createElement("div", { className: "grid sm:grid-cols-2 gap-3" },
+      liste.map((f) => /* @__PURE__ */ React.createElement("button", {
+        key: f.id, onClick: () => setOffen(f.id), "data-anker": f.id,
+        className: "text-left rounded-lg border border-[#5c2018] bg-[#5c1a1e] p-4 hover:border-[#d4af37] transition-colors"
+      },
+        /* @__PURE__ */ React.createElement("span", { className: "font-mono text-[11px] text-[#bd9563]" }, f.art, " · ", f.land),
+        /* @__PURE__ */ React.createElement("p", { className: "font-serif text-lg text-[#e0b84a] leading-snug" }, f.titel, istNeu("grusel:" + f.id, f.seit) && /* @__PURE__ */ React.createElement("span", { style: { marginLeft: "8px" } }, /* @__PURE__ */ React.createElement(NeuMarke, null))),
+        /* @__PURE__ */ React.createElement("p", { className: "text-sm text-[#c2a06a] leading-snug" }, f.untertitel))))
+  );
+}
+
 
 const BEREICHE = [
   { id: "start", label: "Start", icon: Sparkles, akzent: "#e8c14a", unter: [] },
@@ -2897,6 +2974,7 @@ const BEREICHE = [
       { id: "attentate", label: "Attentate" },
       { id: "hexen", label: "Hexen & Inquisition" },
       { id: "piraten", label: "Piraten & F\xE4lscher" },
+      { id: "grusel", label: "Gruselm\xE4rchen" },
       { id: "darkthemen", label: "Verbrechen, Gift & Folter" },
       { id: "darkmysterien", label: "Dunkle Mysterien" }
   ] },
@@ -3102,6 +3180,10 @@ function alleNeuerungen() {
   });
   (typeof AKTEN !== "undefined" ? AKTEN : []).forEach((a) => {
     if (a.seit) liste.push({ schluessel: "akte:" + a.id, art: "Akte", titel: a.titel, reiter: "akten", ziel: a.id });
+    if (a.erweitert) liste.push({ schluessel: "akte+:" + a.id, art: "Akte, erweitert", titel: a.titel, reiter: "akten", ziel: a.id });
+  });
+  GRUSEL_LISTE.forEach((f) => {
+    if (f.seit) liste.push({ schluessel: "grusel:" + f.id, art: "Gruselmärchen", titel: f.titel, reiter: "grusel", ziel: f.id });
   });
   (typeof DOSSIERS !== "undefined" ? DOSSIERS : []).forEach((d) => {
     if (d.seit) liste.push({ schluessel: "dossier:" + d.id, art: rubrikVon(d.rubrik).titel, titel: d.titel, reiter: d.rubrik, ziel: d.id });
@@ -3811,6 +3893,14 @@ function baueKarten() {
     antwort: formatYear(d.jahr) + " · " + d.zeitraum, kontext: rubrikVon(d.rubrik).titel, erklaerung: d.kurz,
     quelle: "dark", neu: !!d.seit
   }));
+
+  // Gruselmaerchen: Welche Gestalt ist gemeint? Ablenker aus derselben Region
+  GRUSEL_LISTE.forEach((f) => {
+    const frage = maskiereName(f.kurz, f.titel) + " (" + f.land + ")";
+    if (f.titel.split(/[\s,()–-]+/).filter((w) => w.length > 3).some((w) => frage.includes(w))) return;
+    rein({ id: "grusel:" + f.id, art: "Person", frage, richtig: f.titel, antwort: f.titel + " – " + f.untertitel,
+      kontext: "Gruselmärchen · " + f.land, epoche: "grusel-" + f.region, erklaerung: f.kurz, quelle: "dark", neu: !!f.seit });
+  });
 
   // Wer war's? Die 217 Persoenlichkeiten der Epochen, Name im Text ausgeblendet
   EPOCHS.forEach((ep) => (ep.figures || []).forEach((f) => rein({
@@ -4577,5 +4667,5 @@ function Historia() {
       `), /* @__PURE__ */ React.createElement(Header, { bereich, setBereich: wechsleBereich, unter, setUnter: wechsleUnter }), /* @__PURE__ */ React.createElement("main", { className: "max-w-6xl mx-auto px-4 py-6" }, herkunft && /* @__PURE__ */ React.createElement("button", {
         onClick: geheZurueck,
         className: "inline-flex items-center gap-1.5 mb-4 text-sm text-[#c9a877] hover:text-[#f0d878]"
-      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "kriege" && /* @__PURE__ */ React.createElement(KriegeTab, { ziel: zielFuer("kriege"), key: "kr" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "akten" && /* @__PURE__ */ React.createElement(AktenTab, { ziel: zielFuer("akten"), key: "ak" + (ziel ? ziel.n : 0) }), tab === "geheimbuende" && /* @__PURE__ */ React.createElement(GeheimbuendeTab, { ziel: zielFuer("geheimbuende"), key: "gb" + (ziel ? ziel.n : 0) }), ["spionage", "attentate", "hexen", "piraten"].includes(tab) && /* @__PURE__ */ React.createElement(RubrikTab, { rubrik: tab, ziel: zielFuer(tab), key: tab + (ziel ? ziel.n : 0) }), tab === "darkthemen" && /* @__PURE__ */ React.createElement(DarkThemenTab, { ziel: zielFuer("darkthemen"), key: "dt" + (ziel ? ziel.n : 0) }), tab === "darkmysterien" && /* @__PURE__ */ React.createElement(DarkMysterienTab, { ziel: zielFuer("darkmysterien"), key: "dm" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, { ziel: zielFuer("lernen"), key: "le" + (ziel ? ziel.n : 0) }), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
+      }, /* @__PURE__ */ React.createElement(ArrowLeft, { size: 15 }), "Zurück zu ", herkunft.label), tab === "start" && /* @__PURE__ */ React.createElement(StartTab, { key: "st" + (ziel ? ziel.n : 0) }), tab === "suche" && /* @__PURE__ */ React.createElement(SucheTab, null), tab === "epochen" && /* @__PURE__ */ React.createElement(EpochenTab, { ziel: zielFuer("epochen"), key: "ep" + (ziel ? ziel.n : 0) }), tab === "vertiefungen" && /* @__PURE__ */ React.createElement(VertiefungenTab, { ziel: zielFuer("vertiefungen"), key: "vt" + (ziel ? ziel.n : 0) }), tab === "themen" && /* @__PURE__ */ React.createElement(ThemenTab, { ziel: zielFuer("themen"), key: "th" + (ziel ? ziel.n : 0) }), tab === "schluessel" && /* @__PURE__ */ React.createElement(SchluesselmomenteTab, { ziel: zielFuer("schluessel"), key: "sm" + (ziel ? ziel.n : 0) }), tab === "laender" && /* @__PURE__ */ React.createElement(LaenderTab, { ziel: zielFuer("laender"), key: "la" + (ziel ? ziel.n : 0) }), tab === "schlachten" && /* @__PURE__ */ React.createElement(SchlachtenTab, { ziel: zielFuer("schlachten"), key: "sl" + (ziel ? ziel.n : 0) }), tab === "zitate" && /* @__PURE__ */ React.createElement(ZitateTab, { ziel: zielFuer("zitate"), key: "zi" + (ziel ? ziel.n : 0) }), tab === "mythen" && /* @__PURE__ */ React.createElement(MythenTab, { ziel: zielFuer("mythen"), key: "mt" + (ziel ? ziel.n : 0) }), tab === "mysterien" && /* @__PURE__ */ React.createElement(MysterienTab, { ziel: zielFuer("mysterien"), key: "my" + (ziel ? ziel.n : 0) }), tab === "zeitstrahl" && /* @__PURE__ */ React.createElement(ZeitstrahlTab, null), tab === "zeitschnitt" && /* @__PURE__ */ React.createElement(ZeitschnittTab, null), tab === "karte" && /* @__PURE__ */ React.createElement(KarteTab, { ziel: zielFuer("karte"), key: "ka" + (ziel ? ziel.n : 0) }), tab === "kriege" && /* @__PURE__ */ React.createElement(KriegeTab, { ziel: zielFuer("kriege"), key: "kr" + (ziel ? ziel.n : 0) }), tab === "personen" && /* @__PURE__ */ React.createElement(PersonenTab, null), tab === "nationen" && /* @__PURE__ */ React.createElement(NationenTab, null), tab === "dynastien" && /* @__PURE__ */ React.createElement(DynastienTab, { ziel: zielFuer("dynastien"), key: "dy" + (ziel ? ziel.n : 0) }), tab === "akten" && /* @__PURE__ */ React.createElement(AktenTab, { ziel: zielFuer("akten"), key: "ak" + (ziel ? ziel.n : 0) }), tab === "geheimbuende" && /* @__PURE__ */ React.createElement(GeheimbuendeTab, { ziel: zielFuer("geheimbuende"), key: "gb" + (ziel ? ziel.n : 0) }), ["spionage", "attentate", "hexen", "piraten"].includes(tab) && /* @__PURE__ */ React.createElement(RubrikTab, { rubrik: tab, ziel: zielFuer(tab), key: tab + (ziel ? ziel.n : 0) }), tab === "grusel" && /* @__PURE__ */ React.createElement(GruselTab, { ziel: zielFuer("grusel"), key: "gr" + (ziel ? ziel.n : 0) }), tab === "darkthemen" && /* @__PURE__ */ React.createElement(DarkThemenTab, { ziel: zielFuer("darkthemen"), key: "dt" + (ziel ? ziel.n : 0) }), tab === "darkmysterien" && /* @__PURE__ */ React.createElement(DarkMysterienTab, { ziel: zielFuer("darkmysterien"), key: "dm" + (ziel ? ziel.n : 0) }), tab === "lernen" && /* @__PURE__ */ React.createElement(LernenTab, { ziel: zielFuer("lernen"), key: "le" + (ziel ? ziel.n : 0) }), tab === "fragen" && /* @__PURE__ */ React.createElement(FragenTab, null), tab === "sicherung" && /* @__PURE__ */ React.createElement(SicherungTab, null), tab === "verblueffend" && /* @__PURE__ */ React.createElement(VerblueffendTab, { ziel: zielFuer("verblueffend"), key: "vf" + (ziel ? ziel.n : 0) })));
 }

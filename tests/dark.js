@@ -27,7 +27,7 @@ const root=()=>d.getElementById("historia-root");
   klick([...karten].find(b=>b.getAttribute("data-anker")==="jack-the-ripper")); await warte(250);
   const akte=d.querySelector('[data-akte="jack-the-ripper"]');
   pruefe(!!akte,"Akte öffnet nicht");
-  if(akte){ ["Die Tat","Die Opfer","Die Ermittlung","Legende und Wirklichkeit","Chronologie","Quellen"].forEach(t=>pruefe(akte.textContent.includes(t),"Abschnitt fehlt: "+t));
+  if(akte){ ["Zeit und Ort","Die Tat","Die Opfer","Die Ermittlung","Legende und Wirklichkeit","Chronologie","Quellen"].forEach(t=>pruefe(akte.textContent.includes(t),"Abschnitt fehlt: "+t));
     pruefe(!!akte.querySelector("[data-stempel]"),"Kein Stempel"); pruefe(akte.querySelectorAll("img").length>=1,"Akte ohne Bild"); }
   W.eval('SPRINGE("geheimbuende","protokolle-der-weisen-von-zion",null)'); await warte(250);
   const bund=d.querySelector('[data-bund="protokolle-der-weisen-von-zion"]');
@@ -55,7 +55,21 @@ const root=()=>d.getElementById("historia-root");
     if(ds){ pruefe(ds.textContent.includes("Quellen"),"Dossier ohne Quellen: "+ids[0]);
       pruefe(ds.querySelectorAll("img").length>=1,"Dossier ohne Bild: "+ids[0]); }
   }
-  console.log("Akten: "+n+" · Geheimbünde: "+W.eval("GEHEIMBUENDE.length")+" · Dossiers: "+W.eval("DOSSIERS.length"));
+  // Gruselmaerchen: Liste, Regionenfilter, Detail mit Geschichte
+  const gn=W.eval("GRUSELMAERCHEN.length"), ga=W.eval('GRUSELMAERCHEN.filter(g=>g.region==="asien").length');
+  pruefe(gn>=30,"Zu wenige Gruselmärchen: "+gn);
+  W.eval('SPRINGE("grusel",null,null)'); await warte(250);
+  pruefe(root().className.includes("dunkel"),"Gruselmärchen nicht dunkel");
+  pruefe(d.querySelectorAll("button[data-anker]").length===gn,"Gruselliste unvollständig");
+  klick(d.querySelector('[data-region="asien"]')); await warte(150);
+  pruefe(d.querySelectorAll("button[data-anker]").length===ga,"Regionenfilter Asien greift nicht");
+  klick(d.querySelector('button[data-anker="yuki-onna"]')); await warte(250);
+  const gd=d.querySelector('[data-grusel="yuki-onna"]');
+  pruefe(gd && gd.querySelector("[data-geschichte]") && gd.querySelector("[data-geschichte]").textContent.length>900,"Gruselmärchen ohne Geschichte");
+  pruefe(gd && gd.textContent.includes("Herkunft"),"Gruselmärchen ohne Herkunft-Abschnitt");
+  const gk=W.eval('baueKarten().filter(k=>k.id.startsWith("grusel:")).length');
+  pruefe(gk>=gn*0.7,"Zu wenige Quizfragen zu Gruselmärchen: "+gk);
+  console.log("Akten: "+n+" · Geheimbünde: "+W.eval("GEHEIMBUENDE.length")+" · Dossiers: "+W.eval("DOSSIERS.length")+" · Gruselmärchen: "+W.eval("GRUSELMAERCHEN.length"));
   console.log("Fehler: "+fehler.length); fehler.forEach(f=>console.log("  · "+f));
   process.exit(fehler.length?1:0);
 })();

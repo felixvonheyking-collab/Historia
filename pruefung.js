@@ -61,7 +61,7 @@ function lade() {
     return vm.runInContext(
       "({ EPOCHS, SCHLUESSELMOMENTE, SURPRISING_FACTS, QUOTES, BATTLES," +
       "   COUNTRY_TIMELINES, MYTHEN, VERTIEFUNGEN, THEMEN, MYSTERIEN, DYNASTIEN," +
-      "   GRAFIKEN, BILDER, KARTE, KRIEGE, VERKNUEPFUNGEN, AKTEN, GEHEIMBUENDE, DOSSIERS, DARK_RUBRIKEN, DARK_THEMEN, DARK_MYSTERIEN })",
+      "   GRAFIKEN, BILDER, KARTE, KRIEGE, VERKNUEPFUNGEN, AKTEN, GEHEIMBUENDE, DOSSIERS, GRUSELMAERCHEN, DARK_RUBRIKEN, DARK_THEMEN, DARK_MYSTERIEN })",
       kontext
     );
   } catch (e) {
@@ -937,6 +937,7 @@ function pruefeDark(D) {
     if (!STATUS.includes(a.status)) meldeFehler(wer + " – unbekannter Status " + a.status);
     if (!a.quellen || a.quellen.length < 2) meldeFehler(wer + " – weniger als zwei Quellen");
     if (!a.zeitleiste || a.zeitleiste.length < 3) meldeFehler(wer + " – Zeitleiste zu kurz");
+    if (a.hintergrund !== undefined && String(a.hintergrund).length < 300) meldeFehler(wer + " – Hintergrund zu kurz");
     bilder(wer, a.bilder);
   });
   G.forEach((g) => {
@@ -962,10 +963,24 @@ function pruefeDark(D) {
     if (!d.quellen || d.quellen.length < 2) meldeFehler(wer + " – weniger als zwei Quellen");
     bilder(wer, d.bilder);
   });
+  const GR = D.GRUSELMAERCHEN || [];
+  const ARTEN = ["Geist", "Dämon", "Untoter", "Gestaltwandler", "Kunstgeschöpf", "Naturwesen", "Sagengestalt"];
+  GR.forEach((g) => {
+    const wer = "Gruselmärchen " + g.id;
+    if (ids.has(g.id)) meldeFehler(wer + " – doppelt"); ids.add(g.id);
+    if (!["asien", "europa"].includes(g.region)) meldeFehler(wer + " – unbekannte Region " + g.region);
+    if (!ARTEN.includes(g.art)) meldeFehler(wer + " – unbekannte Art " + g.art);
+    ["titel", "untertitel", "land", "zeitraum", "kurz", "fassung"].forEach((f) => { if (!g[f] || String(g[f]).length < 3) meldeFehler(wer + " – Feld '" + f + "' fehlt"); });
+    if (!g.geschichte || g.geschichte.length < 900) meldeFehler(wer + " – Geschichte fehlt oder ist zu kurz");
+    if (typeof g.jahr !== "number") meldeFehler(wer + " – Jahr fehlt");
+    if (!g.abschnitte || g.abschnitte.length < 3 || g.abschnitte.some((a) => !a.titel || !a.text || a.text.length < 150)) meldeFehler(wer + " – Abschnitte fehlen oder sind zu kurz");
+    if (!g.quellen || g.quellen.length < 2) meldeFehler(wer + " – weniger als zwei Quellen");
+    bilder(wer, g.bilder);
+  });
   (D.DARK_THEMEN || []).forEach((id) => { if (!D.THEMEN.some((t) => t.id === id)) meldeFehler("Dark History: Querschnitt '" + id + "' gibt es nicht"); });
   (D.DARK_MYSTERIEN || []).forEach((id) => { if (!D.MYSTERIEN.some((m) => m.id === id)) meldeFehler("Dark History: Mysterium '" + id + "' gibt es nicht"); });
-  console.log("  Dark History: " + A.length + " Akten, " + G.length + " Geheimbünde, " + (D.DOSSIERS || []).length + " Dossiers, " +
-    [...A, ...G, ...(D.DOSSIERS || [])].reduce((n, x) => n + (x.bilder || []).length, 0) + " Bilder");
+  console.log("  Dark History: " + A.length + " Akten, " + G.length + " Geheimbünde, " + (D.DOSSIERS || []).length + " Dossiers, " + GR.length + " Gruselmärchen, " +
+    [...A, ...G, ...(D.DOSSIERS || []), ...GR].reduce((n, x) => n + (x.bilder || []).length, 0) + " Bilder");
 }
 
 /* ------------------------------------------------------------------ Lauf */
