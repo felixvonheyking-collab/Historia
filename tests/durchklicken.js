@@ -10,7 +10,7 @@ const d=dom.window.document;
 dom.window.HTMLElement.prototype.scrollIntoView=function(){};
 const lade=(f)=>{const s=d.createElement("script"); s.textContent=fs.readFileSync(path.join(dir,f),"utf8"); d.body.appendChild(s);};
 ["vendor/react.production.min.js","vendor/react-dom.production.min.js"].forEach(f=>{ if(fs.existsSync(path.join(dir,f))) lade(f); });
-[...fs.readFileSync(path.join(dir,"index.html"),"utf8").matchAll(/<script[^>]+src="([^"?]+)/g)].map(m=>m[1]).forEach(lade);
+[...fs.readFileSync(path.join(dir,"index.html"),"utf8").matchAll(/<script[^>]+src="([^"?]+)/g)].map(m=>m[1]).flatMap(f=>f==="app.js"?["data-dark.js",f]:[f]).forEach(lade);
 const W=dom.window, R=W.React;
 W.localStorage.clear();
 const root=W.ReactDOM.createRoot(d.getElementById("app"));

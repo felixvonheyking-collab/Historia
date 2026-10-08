@@ -31,6 +31,7 @@ const DATEN = [
   "data-vertiefungen.js",
   "data-themen.js",
   "data-mysterien.js",
+  "data-dark-kern.js",
   "data-dark.js",
   "data-dynastien.js",
   "data-grafiken.js",
@@ -186,8 +187,12 @@ function pruefeVersionen() {
     }
   });
 
+  // Nachgeladen statt beim Start: app.js holt diese Dateien selbst
+  const NACHGELADEN = ["data-dark.js"];
+  const appText = fs.readFileSync(path.join(WURZEL, "app.js"), "utf8");
+  NACHGELADEN.forEach((d) => { if (!appText.includes('"' + d + '"')) meldeFehler(d + ": soll nachgeladen werden, app.js lädt sie aber nicht"); });
   swListe.forEach((d) => {
-    if (!geladen.some((g) => g.datei === d)) {
+    if (!geladen.some((g) => g.datei === d) && !NACHGELADEN.includes(d)) {
       meldeFehler(d + ": in sw.js gelistet, wird von index.html aber nicht geladen");
     }
   });
@@ -195,7 +200,7 @@ function pruefeVersionen() {
   // Alle Datendateien müssen vor app.js stehen, sonst fehlen beim Start die Daten.
   const reihenfolge = geladen.map((g) => g.datei);
   const appIndex = reihenfolge.indexOf("app.js");
-  DATEN.forEach((d) => {
+  DATEN.filter((d) => !NACHGELADEN.includes(d)).forEach((d) => {
     const i = reihenfolge.indexOf(d);
     if (i === -1) meldeFehler(d + ": wird von index.html gar nicht geladen");
     else if (appIndex !== -1 && i > appIndex) meldeFehler(d + ": wird nach app.js geladen – app.js braucht die Daten aber beim Start");

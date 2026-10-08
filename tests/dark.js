@@ -9,7 +9,7 @@ const dom=new JSDOM("<!doctype html><html><body><div id='app'></div></body></htm
 const d=dom.window.document, W=dom.window;
 W.HTMLElement.prototype.scrollIntoView=function(){}; W.scrollTo=function(){};
 const lade=(f)=>{const s=d.createElement("script"); s.textContent=fs.readFileSync(path.join(dir,f),"utf8"); d.body.appendChild(s);};
-[...fs.readFileSync(path.join(dir,"index.html"),"utf8").matchAll(/<script[^>]+src="([^"?]+)/g)].map(m=>m[1]).forEach(lade);
+[...fs.readFileSync(path.join(dir,"index.html"),"utf8").matchAll(/<script[^>]+src="([^"?]+)/g)].map(m=>m[1]).flatMap(f=>f==="app.js"?["data-dark.js",f]:[f]).forEach(lade);
 W.localStorage.clear();
 W.ReactDOM.createRoot(d.getElementById("app")).render(W.React.createElement(W.Historia));
 const warte=(ms)=>new Promise(r=>setTimeout(r,ms));

@@ -14,7 +14,7 @@
  * verweist eine neue index.html zwangsläufig auf neue Dateien.
  */
 
-const VERSION = '2026-10-08-1';
+const VERSION = '2026-10-08-2';
 const CACHE = 'historia-' + VERSION;
 
 // Dateien ohne Versionsmarke (Bilder, Schriften, Manifest ändern sich selten)
@@ -30,7 +30,9 @@ const UNVERSIONIERT = [
   './font-jetbrains.woff2'
 ];
 
-// Dateien mit Versionsmarke – exakt so, wie index.html sie anfordert
+// Dateien mit Versionsmarke – exakt so, wie index.html sie anfordert.
+// Ausnahme: data-dark.js laedt app.js erst nach dem Start nach (gleiche Marke);
+// sie liegt trotzdem hier, damit die App auch offline vollstaendig ist.
 const VERSIONIERT = [
   './tailwind.css',
   './react.js',
@@ -48,6 +50,7 @@ const VERSIONIERT = [
   './data-karte.js',
   './data-kriege.js',
   './data-verknuepfungen.js',
+  './data-dark-kern.js',
   './data-dark.js',
   './app.js'
 ].map((p) => p + '?v=' + VERSION);

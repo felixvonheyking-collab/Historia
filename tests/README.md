@@ -37,3 +37,5 @@ Second Brain.
   der Abschnitt „Zeit und Ort“ erscheint, die Gruselmärchen filtern nach Region und zeigen ihre Geschichte,
   die fünf Rubriken zeigen alle Dossiers und öffnen sie mit Bild und Quellen, umgezogene Querschnitte
   und Mysterien stehen nur noch dort, alte Sprungziele landen am neuen Ort.
+- `dark-laden.js` — Dark History wird nachgeladen: Start ohne data-dark.js, Platzhalter im Bereich, nach dem Laden
+  erscheinen Akten, Suche und Quizkarten; die Übersicht zeigt alle Kacheln, „Zufälliger Fall“ öffnet einen Eintrag.
