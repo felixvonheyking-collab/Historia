@@ -42,7 +42,7 @@ const root=()=>d.getElementById("historia-root");
   W.eval('SPRINGE("darkmysterien",null,null)'); await warte(250);
   pruefe(d.getElementById("app").textContent.includes("Der Mann von Somerton"),"Somerton fehlt in den dunklen Mysterien");
   // Rubriken: je Liste alle Dossiers, ein Dossier oeffnet mit Abschnitten
-  for(const r of ["spionage","attentate","hexen","piraten"]){
+  for(const r of ["spionage","attentate","hexen","piraten","horror"]){
     const ids=W.eval('DOSSIERS.filter(x=>x.rubrik==="'+r+'").map(x=>x.id)');
     pruefe(ids.length>=12,"Rubrik "+r+" hat nur "+ids.length+" Dossiers");
     W.eval('SPRINGE("'+r+'",null,null)'); await warte(250);

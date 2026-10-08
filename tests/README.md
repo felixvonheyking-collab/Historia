@@ -35,5 +35,5 @@ Second Brain.
   gezählt, „Heute vor …“ nennt nur runde Abstände.
 - `dark.js` — Dark History: dunkles Aussehen, Akten und Geheimbünde öffnen sich mit allen Abschnitten,
   der Abschnitt „Zeit und Ort“ erscheint, die Gruselmärchen filtern nach Region und zeigen ihre Geschichte,
-  die vier Rubriken zeigen alle Dossiers und öffnen sie mit Bild und Quellen, umgezogene Querschnitte
+  die fünf Rubriken zeigen alle Dossiers und öffnen sie mit Bild und Quellen, umgezogene Querschnitte
   und Mysterien stehen nur noch dort, alte Sprungziele landen am neuen Ort.

@@ -4,11 +4,12 @@
    AKTEN: ausführliche Fallakten (Verbrechen, Serienmorde, Justizirrtümer,
    Raubzüge), GEHEIMBUENDE: Bünde, Orden, kriminelle Organisationen und
    eine erfundene Verschwörung. DOSSIERS: Einträge der Rubriken Spionage,
-   Attentate, Hexenverfolgung, Piraten/Fälscher/Ausbrüche (DARK_RUBRIKEN).
+   Attentate, Hexenverfolgung, Piraten/Fälscher/Ausbrüche und Wahre
+   Horrorgeschichten (DARK_RUBRIKEN).
    GRUSELMAERCHEN: klassische Horrorfiguren aus Asien und Europa, mit
    nacherzählter Geschichte (eigene Worte, Fassung angegeben).
 
-   Recherchiert 2026-10-06/07 in drei Runden, jede Runde von unabhängigen
+   Recherchiert 2026-10-06 bis 08 in vier Runden, jede Runde von unabhängigen
    Prüfern gegen Quellen gegengecheckt. Runde 3 hat die älteren Akten um
    "hintergrund" und längere Abschnitte erweitert (Feld "erweitert").
 
@@ -12749,6 +12750,2019 @@ const DOSSIERS = [
   "seit": "2026-10-06"
  },
  {
+  "id": "tanzwut-1518",
+  "rubrik": "horror",
+  "unterart": "Massenhysterie",
+  "titel": "Die Tanzwut von Straßburg",
+  "untertitel": "Ein Sommer, in dem eine Stadt nicht aufhören konnte zu tanzen – 1518",
+  "jahr": 1518,
+  "zeitraum": "Mitte Juli bis Anfang September 1518",
+  "ort": "Straßburg",
+  "land": "Frankreich (damals Heiliges Römisches Reich)",
+  "lat": 48.5839,
+  "lon": 7.7455,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Strasbourg",
+  "status": "umstritten",
+  "kurz": "Im Sommer 1518 tanzten in Straßburg Dutzende, später wohl Hunderte Menschen tagelang gegen ihren Willen. Der Rat verordnete zuerst Musik, dann ein Tanzverbot und schließlich eine Wallfahrt.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Nach der Überlieferung begann es Mitte Juli 1518, als eine Frau namens Troffea in einer Gasse der Reichsstadt Straßburg zu tanzen anfing, ohne Musik und ohne erkennbaren Anlass. Sie tanzte tagelang, brach zwischendurch erschöpft zusammen und machte weiter. Innerhalb einer Woche hatten sich über dreißig Menschen angeschlossen, darunter Handwerker, Bettler, Pilger und Geistliche. Die Bewegung breitete sich über Wochen aus; die Familienchronik der Straßburger Familie Imlin spricht von rund 400 Betroffenen innerhalb eines Monats. Die Tanzenden wirkten nicht fröhlich, sondern getrieben, viele klagten über Schmerzen und baten um Hilfe. Ende August, Anfang September ließ der Ausbruch nach. Es war nicht der erste dieser Art: Seit 1374 sind entlang von Rhein und Mosel mehr als zehn ähnliche Ausbrüche überliefert, der Straßburger ist jedoch der am besten dokumentierte."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Über die Tanzenden selbst weiß man wenig. Frau Troffea ist nur mit diesem Namen überliefert, die übrigen bleiben fast alle namenlos. Sicher ist, dass sie aus allen Schichten kamen, besonders aber aus der ärmeren Stadtbevölkerung. Straßburg hatte harte Jahre hinter sich: Missernten und Teuerung, Hunger, Pocken und die neu aufgetretene Syphilis, dazu Spannungen zwischen Stadtbürgern und Obrigkeit. Ob und wie viele Menschen starben, ist unklar. Spätere Chroniken, etwa eine von 1636, sprechen allgemein von Todesfällen; die in modernen Darstellungen verbreitete Zahl von bis zu fünfzehn Toten am Tag ist in keiner zeitgenössischen Quelle belegt. Die Straßburger Ratsakten erwähnen keine Toten. Die Zahl ist deshalb nicht belegt, und manche Historiker halten sie für eine spätere Ausschmückung."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Die Geistlichen sahen den heiligen Veit am Werk: Wer ihn erzürnt habe, werde mit Tanzzwang gestraft, so ein verbreiteter Glaube am Oberrhein. Die Ärzte der Stadt dagegen erklärten die Krankheit für natürlich, verursacht durch überhitztes Blut, und rieten, die Kranken sich austanzen zu lassen. Der Rat folgte ihnen. Die Zunftstuben der Zimmerleute und Gerber wurden zu Tanzböden, auf dem Pferde- und dem Kornmarkt entstanden Bühnen, die Stadt bezahlte Musiker und gesunde Tänzer, die die Kranken in Bewegung halten sollten. Das öffentliche Spektakel verschlimmerte die Lage offenbar. Der Rat ließ die Bühnen wieder abbauen und verbot bis September fast jede Musik und jeden Tanz in der Stadt. Der Stadtschreiber Sebastian Brant, Verfasser des Narrenschiffs, hielt die Ausnahmen fest: Ehrbare Leute durften bei Hochzeiten tanzen, aber nur zu Saiteninstrumenten, ohne Trommeln."
+   },
+   {
+    "titel": "Die Wallfahrt nach Zabern",
+    "text": "Als Musik nicht half, griff der Rat auf die religiöse Deutung zurück. Die am schwersten Betroffenen wurden auf Wagen zur Kapelle des heiligen Veit bei Zabern, dem heutigen Saverne, gebracht, gut 40 Kilometer nordwestlich der Stadt. Dort, so berichtet die Überlieferung, stellten Priester sie vor ein hölzernes Bild des Heiligen, gaben ihnen kleine Kreuze in die Hand und zogen ihnen rote Schuhe an, die mit Weihwasser besprengt und mit geweihtem Öl gezeichnet waren. Danach ebbte die Epidemie ab. Ob die Wallfahrt wirkte, weil die Betroffenen an die Heilung durch den Heiligen glaubten, oder ob der Ausbruch ohnehin zu Ende ging, lässt sich nicht entscheiden. Der Arzt Paracelsus, der 1526 nach Straßburg kam, schrieb später, Frau Troffea habe nur ihren Mann ärgern wollen, und unterschied mehrere Arten des Veitstanzes."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Im 20. Jahrhundert wurde oft eine Vergiftung durch Mutterkorn vermutet, einen Pilz im Roggen, der Krämpfe und Halluzinationen auslöst. Der Medizinhistoriker John Waller hat das zurückgewiesen: Mutterkorn verengt die Blutgefäße in Armen und Beinen und macht tagelanges, koordiniertes Tanzen eher unmöglich. Waller deutet die Tanzwut als psychogene Massenerkrankung. Menschen unter extremem Druck durch Hunger, Krankheit und Angst gerieten in einen dissoziativen Trancezustand, und der feste Glaube an den Fluch des heiligen Veit gab vor, welche Form dieser Zustand annahm. Die öffentlichen Tanzbühnen hätten die Ansteckung über das Sehen und Glauben noch verstärkt. Diese Deutung ist heute die am weitesten akzeptierte. Andere Forscher, etwa Robert Bartholomew, sahen in früheren Tanzwellen eher bewusste religiöse Rituale. Einen eindeutigen Beweis gibt es für keine Erklärung."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Tanzwut von 1518 blieb in Straßburger Chroniken lebendig, etwa bei dem Baumeister Daniel Specklin im 16. Jahrhundert, und wurde im 19. Jahrhundert ein Lieblingsthema der Medizingeschichte, die sie als Beispiel für seelische Ansteckung las. Das Wort Veitstanz wanderte in die Medizin, wo es bis ins 20. Jahrhundert eine neurologische Bewegungsstörung bezeichnete, die heute Chorea heißt und mit den Ereignissen von 1518 nichts zu tun hat. Zum 500. Jahrestag 2018 griffen Ausstellungen, Theater und Romane das Thema auf. Für die Forschung über Massenhysterie ist Straßburg ein Bezugsfall geblieben, der neben jüngere Ereignisse wie die Lachepidemie von 1962 im heutigen Tansania gestellt wird."
+   }
+  ],
+  "legende": "Die Erzählung, dass in Straßburg täglich bis zu fünfzehn Menschen tot umfielen und die Toten in die Hunderte gingen, lässt sich auf keine zeitgenössische Quelle zurückführen; spätere Chroniken sprechen nur allgemein von Toten, und die Ratsakten nennen keine Todesfälle; gesichert ist nur, dass der Tanz die Menschen schwer erschöpfte. Ebenso wenig belegt ist die moderne Vorstellung, die Tanzenden hätten fröhlich gefeiert oder seien Opfer einer Drogenvergiftung gewesen. Gesichert sind dagegen die Ratsmaßnahmen: Tanzböden, bezahlte Musiker, das Tanzverbot und die Wallfahrt nach Zabern, festgehalten unter anderem von Sebastian Brant.",
+  "bedeutung": "Der Fall zeigt, wie eine Stadtobrigkeit um 1500 mit einer rätselhaften Massenerkrankung umging: Sie hörte zuerst auf die Ärzte, dann auf die Geistlichen, und beide Antworten folgten der Logik ihrer Zeit. Für die heutige Medizin ist die Tanzwut ein frühes, gut dokumentiertes Beispiel dafür, dass seelische Not sich körperlich und ansteckend äußern kann und dass die Form solcher Ausbrüche von den Überzeugungen einer Gesellschaft abhängt.",
+  "zeitleiste": [
+   {
+    "datum": "1374",
+    "jahr": 1374,
+    "text": "Eine große Tanzwut zieht durch Städte entlang des Rheins; in den folgenden 150 Jahren gibt es weitere Ausbrüche."
+   },
+   {
+    "datum": "14. Juli 1518",
+    "jahr": 1518,
+    "text": "Nach der Überlieferung beginnt Frau Troffea in Straßburg zu tanzen."
+   },
+   {
+    "datum": "Ende Juli 1518",
+    "jahr": 1518,
+    "text": "Über dreißig Menschen tanzen; der Rat lässt Zunftstuben und Bühnen auf Pferde- und Kornmarkt herrichten und bezahlt Musiker."
+   },
+   {
+    "datum": "August 1518",
+    "jahr": 1518,
+    "text": "Der Rat verbietet öffentliches Tanzen und Musik; Schwerkranke werden zur Veitskapelle bei Zabern gebracht."
+   },
+   {
+    "datum": "Anfang September 1518",
+    "jahr": 1518,
+    "text": "Die Tanzwut klingt ab."
+   },
+   {
+    "datum": "1526",
+    "jahr": 1526,
+    "text": "Paracelsus kommt nach Straßburg; später beschreibt er die Tanzwut und teilt den Veitstanz in Arten ein."
+   },
+   {
+    "datum": "2008",
+    "jahr": 2008,
+    "text": "John Waller veröffentlicht „A Time to Dance, a Time to Die“ und deutet die Tanzwut als psychogene Massenerkrankung."
+   }
+  ],
+  "quellen": [
+   "John Waller: A Time to Dance, a Time to Die. The Extraordinary Story of the Dancing Plague of 1518, Icon Books 2008",
+   "John Waller: A forgotten plague: making sense of dancing mania, The Lancet 373 (2009), S. 624–625",
+   "Encyclopaedia Britannica: Dancing plague of 1518",
+   "Ned Pennant-Rea: The Dancing Plague of 1518, The Public Domain Review, 2018"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/tanzwut-1518-0.jpg",
+    "breite": 834,
+    "hoehe": 1100,
+    "zeigt": "Tanzwütige auf der Wallfahrt nach Molenbeek, Kupferstich von Hendrick Hondius nach Pieter Bruegel d. Ä. (1642) – ein ähnlicher Fall in Flandern, nicht Straßburg",
+    "urheber": "unbekannt",
+    "lizenz": "CC BY 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:The_dancing_mania%2C_by_Hondius_Wellcome_M0013485.jpg"
+   },
+   {
+    "datei": "bilder/dark/tanzwut-1518-1.jpg",
+    "breite": 900,
+    "hoehe": 705,
+    "zeigt": "Ansicht Straßburgs in der Schedelschen Weltchronik von 1493, eine Generation vor der Tanzwut",
+    "urheber": "Hartmann Schedel (1440–1514)",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Nuremberg-Chronicles-1493-Strasburg-Argentina.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "bhangarh-fort",
+  "rubrik": "horror",
+  "unterart": "Spukort",
+  "titel": "Das Fort von Bhangarh",
+  "untertitel": "Indiens „verfluchte Stadt“ und ein amtliches Schild – Rajasthan",
+  "jahr": 1573,
+  "zeitraum": "gegründet um 1573; Spukruf vor allem in jüngerer Zeit",
+  "ort": "Bhangarh, Bezirk Alwar, Rajasthan",
+  "land": "Indien",
+  "lat": 27.0958,
+  "lon": 76.2875,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Bhangarh_Fort",
+  "status": null,
+  "kurz": "Die Ruinenstadt Bhangarh gilt als meistgefürchteter Ort Indiens. Ein Schild der Archäologiebehörde verbietet den Zutritt nach Sonnenuntergang – was viele als Beweis für Spuk lesen, ist eine gewöhnliche Schutzregel.",
+  "abschnitte": [
+   {
+    "titel": "Der Ort",
+    "text": "Bhangarh liegt am Rand der Aravalli-Hügel im Bezirk Alwar, zwischen Jaipur und Alwar, nahe dem Tigerreservat Sariska. Nach der Tafel des Archaeological Survey of India (ASI) wurde die Stadt in der zweiten Hälfte des 16. Jahrhunderts von Raja Bhagwant Das gegründet, dem Herrscher von Amber aus dem Haus der Kachhwaha; verbreitet ist das Jahr 1573. Später wurde sie Residenz seines Sohnes Madho Singh, eines Bruders des Feldherrn Man Singh; die Tafel nennt Madho Singh einen Diwan am Hof des Mogulkaisers Akbar. Erhalten sind Mauern, Tore, eine Basarstraße, Havelis, Tempel, Chhatris und ein Palast. Drei Mauerringe schützten die Stadt, der äußere mit fünf Toren: Ajmeri, Lahori, Hanuman, Phool Bari und Delhi-Tor. Wann und warum die Stadt verlassen wurde, ist nicht genau belegt."
+   },
+   {
+    "titel": "Die Legenden",
+    "text": "Zwei Erzählungen erklären den Verfall. Nach der ersten lebte an diesem Ort ein Asket, oft Guru Balu Nath genannt, der der Gründung nur unter einer Bedingung zustimmte: Kein Haus dürfe so hoch werden, dass sein Schatten seine Klause berühre. Als ein späterer Herrscher den Palast aufstockte, sei der Fluch eingetreten und die Stadt zerstört worden. Die zweite Erzählung handelt von der schönen Prinzessin Ratnavati und einem Zauberer, oft Singhia genannt, der sie begehrte. Er habe ein Duftöl verzaubert, das sie willenlos machen sollte; sie durchschaute die List und goss es auf einen Felsen, der daraufhin den Zauberer zermalmte. Sterbend habe er Bhangarh verflucht. Kurz darauf sei die Stadt im Krieg mit dem benachbarten Ajabgarh untergegangen, und seither könne dort niemand wiedergeboren werden; Dächer, die man baue, stürzten ein."
+   },
+   {
+    "titel": "Das Schild",
+    "text": "Am Eingang steht ein Schild des ASI in Hindi. Sinngemäß heißt es darauf, das Betreten des Geländes vor Sonnenaufgang und nach Sonnenuntergang sei streng verboten, Zuwiderhandlungen würden rechtlich verfolgt. In Reiseberichten und Internetforen wird dieses Schild oft als amtliche Bestätigung des Spuks gedeutet, als habe der Staat selbst Angst vor den Geistern. Tatsächlich sind zahlreiche vom ASI geschützte Denkmäler in Indien nur von Sonnenaufgang bis Sonnenuntergang zugänglich. Bhangarh liegt abgelegen, ist nachts unbeleuchtet und grenzt an ein Waldgebiet mit Wildtieren; die Ruinen sind teils baufällig. Eine zweite Tafel des ASI aus dem Jahr 2009 erklärt die Geschichte des Ortes, ohne Geister zu erwähnen. Das Verbot sagt also etwas über Denkmalschutz und Sicherheit aus, nicht über Übernatürliches."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Historisch ist Bhangarh eine Gründung der Kachhwaha-Fürsten aus der Blütezeit des Mogulreichs. Nach den Darstellungen, die die Historikerin Rana Safvi wiedergibt, folgte auf Madho Singh dessen Sohn Chhatr Singh; dessen Sohn Ajab Singh gründete das nahe Fort Ajabgarh. Dass die Stadt später an Bedeutung verlor, als sich Macht und Handel verlagerten, ist für Rajasthan nicht ungewöhnlich; viele Orte wurden nach Kriegen, Dürren und politischen Umbrüchen aufgegeben. Für einen Zauberer Singhia oder eine Prinzessin Ratnavati gibt es keine zeitgenössischen Belege. Die Legenden sind Wandererzählungen, die Ruinen einen Sinn geben: Ein verlassener Ort braucht eine Schuld. Berichte über Erscheinungen, Stimmen oder ein Gefühl des Beobachtetwerdens stammen von Besuchern und aus Medien und sind nicht überprüfbar."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Seit etwa den 2000er-Jahren gilt Bhangarh in Fernsehsendungen, Reiseführern und im Internet als „meistgefürchteter Ort Indiens“. Das hat aus der abgelegenen Ruine ein Ausflugsziel gemacht, vor allem für junge Leute aus Delhi und Jaipur, die tagsüber kommen und nach Sonnenuntergang hinausgeschickt werden. Daneben ist Bhangarh ein lebendiger religiöser Ort: Der Hanuman-Tempel am Eingang und andere Heiligtümer werden besucht. Die Tempel Gopinath, Someshvara, Keshav Rai und Mangla Devi im Nagara-Stil gehören zu den eindrucksvollsten Bauten. Für den Denkmalschutz ist der Ruhm zwiespältig: Er bringt Besucher und Aufmerksamkeit, lässt die Geschichte des Ortes aber leicht hinter Gespenstergeschichten verschwinden."
+   }
+  ],
+  "legende": "Gesichert ist, dass Bhangarh im 16. Jahrhundert von Bhagwant Das von Amber gegründet wurde, dass Madho Singh dort residierte und dass die Stadt später verlassen wurde. Ebenso gesichert ist das ASI-Schild, das den Zutritt nur zwischen Sonnenaufgang und Sonnenuntergang erlaubt. Die Geschichten vom Fluch des Asketen und vom Zauberer, der Prinzessin Ratnavati begehrte, sind Legenden ohne historische Grundlage. Die oft wiederholte Behauptung, die Regierung selbst habe den Ort für verflucht erklärt, ist falsch: Das Schild ist eine übliche Besuchsregel für ein ungesichertes, abgelegenes Denkmal. Berichte über Spukerscheinungen sind nicht überprüfbar.",
+  "bedeutung": "Bhangarh zeigt, wie ein amtliches Schild, eine alte Ruine und mündliche Legenden im Zeitalter von Fernsehen und Internet zu einem Spukmythos verschmelzen. Der Fall ist ein Beispiel dafür, wie Erzählungen die Wahrnehmung eines Kulturerbes überlagern, und zugleich dafür, wie solche Mythen Besucher an Orte führen, deren eigentliche Geschichte sonst kaum jemand kennen würde.",
+  "zeitleiste": [
+   {
+    "datum": "um 1573",
+    "jahr": 1573,
+    "text": "Raja Bhagwant Das von Amber gründet Bhangarh (verbreitete Jahresangabe)."
+   },
+   {
+    "datum": "spätes 16. Jahrhundert",
+    "jahr": 1590,
+    "text": "Madho Singh, Diwan am Hof Akbars, residiert in Bhangarh."
+   },
+   {
+    "datum": "17. Jahrhundert (nach lokaler Überlieferung)",
+    "jahr": 1650,
+    "text": "Ajab Singh, Enkel Madho Singhs, gründet das nahe Fort Ajabgarh."
+   },
+   {
+    "datum": "später, nicht genau datiert",
+    "jahr": 1750,
+    "text": "Die Stadt verliert an Bedeutung und wird verlassen; die Umstände sind nicht belegt."
+   },
+   {
+    "datum": "seit den 2000er-Jahren",
+    "jahr": 2005,
+    "text": "Medien machen Bhangarh als „meistgefürchteten Ort Indiens“ bekannt."
+   },
+   {
+    "datum": "2009",
+    "jahr": 2009,
+    "text": "Der ASI, Jaipur Circle, stellt eine Informationstafel zur Geschichte des Ortes auf."
+   }
+  ],
+  "quellen": [
+   "Archaeological Survey of India, Jaipur Circle: Informationstafel „Ancient Site, Bhangarh“, 2009",
+   "Archaeological Survey of India: Hinweisschild am Eingang zu Bhangarh (Zutrittsverbot vor Sonnenaufgang und nach Sonnenuntergang)",
+   "Rana Safvi: Bhangarh Fort (Essay der Historikerin)",
+   "Atlas Obscura: Bhangarh Fort"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/bhangarh-fort-0.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Innere Mauer und Palastruine von Bhangarh (2012)",
+    "urheber": "Vivek Moyal",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Bhangarh_Fort.jpg"
+   },
+   {
+    "datei": "bilder/dark/bhangarh-fort-1.jpg",
+    "breite": 825,
+    "hoehe": 1100,
+    "zeigt": "Informationstafel des Archaeological Survey of India am Eingang von Bhangarh (2009 aufgestellt)",
+    "urheber": "Manan2707",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Notice_board_at_Bhangarh_Fort.jpg"
+   },
+   {
+    "datei": "bilder/dark/bhangarh-fort-2.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Der Gopinath-Tempel in Bhangarh",
+    "urheber": "Vivek Moyal",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Gopinath_Temple_at_Bhangarh_Fort_2012.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "pest-in-eyam",
+  "rubrik": "horror",
+  "unterart": "Seuche",
+  "titel": "Die Pest in Eyam",
+  "untertitel": "Ein Dorf schließt sich mit der Seuche ein – Derbyshire 1665/66",
+  "jahr": 1665,
+  "zeitraum": "September 1665 bis Herbst 1666",
+  "ort": "Eyam, Derbyshire",
+  "land": "England",
+  "lat": 53.284,
+  "lon": -1.673,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Eyam",
+  "status": null,
+  "kurz": "1666 riegelte sich das Dorf Eyam freiwillig ab, um die Pest nicht in die Umgebung zu tragen. Mehr als 250 Menschen starben. Die Geschichte gilt als Heldenepos – und ist zugleich eine spätere Erzählung.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "1665 wütete in London die Große Pest. Im Spätsommer traf in Eyam, einem Bleibergbaudorf in den Hügeln von Derbyshire, eine Sendung Stoff aus London für den Schneider Alexander Hadfield ein. Sein Gehilfe George Viccars öffnete das feuchte Bündel und hängte den Stoff zum Trocknen auf; nach heutiger Deutung brachte er damit infizierte Flöhe ins Haus. Viccars erkrankte und starb Anfang September 1665, kurz darauf folgten Nachbarn. Über den Winter ging die Seuche zurück, im Frühjahr 1666 nahm sie wieder zu. Im Juni 1666 beschloss das Dorf auf Drängen seiner Pfarrer, sich abzuriegeln: Niemand sollte Eyam verlassen, niemand hineinkommen. Die Pest wütete im Sommer 1666 am schlimmsten und erlosch im Spätherbst. Nach der traditionellen Zählung starben 260 Menschen; die Kirchengemeinde führt heute 273 Namen."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Wie viele Menschen damals in Eyam lebten, ist umstritten. Ältere Darstellungen nennen etwa 350 Einwohner, von denen nur 83 überlebt hätten; andere Schätzungen gehen von rund 800 Einwohnern aus, von denen gut die Hälfte überlebte. Fast jede Familie verlor Angehörige. Am bekanntesten ist Elizabeth Hancock, die im August 1666 innerhalb von acht Tagen ihren Mann und sechs Kinder verlor und sie selbst neben dem Hof bei Riley begrub; die Grabsteine stehen noch heute. Auch Catherine Mompesson, die Frau des Pfarrers, starb im August 1666. Ihre beiden Kinder hatte das Paar vor Beginn der Abriegelung zu Verwandten nach Yorkshire geschickt. Weil Beerdigungen auf dem Kirchhof eingestellt wurden, bestatteten viele Familien ihre Toten in Gärten und Feldern nahe den Häusern."
+   },
+   {
+    "titel": "Die Abriegelung",
+    "text": "Treibende Kraft war der junge Pfarrer William Mompesson. Unterstützt wurde er von seinem Vorgänger Thomas Stanley, einem puritanischen Geistlichen, der 1662 sein Amt hatte aufgeben müssen, im Dorf aber hohes Ansehen genoss. Gemeinsam überzeugten sie die Bewohner, eine Grenze um das Dorf zu ziehen. Lebensmittel und andere Güter wurden an Stellen außerhalb abgelegt, etwa an einer Quelle, die heute Mompesson’s Well heißt, oder an einem Grenzstein; die Dorfbewohner hinterließen ihr Geld dort in Wasser oder Essig, das als reinigend galt. Der Earl of Devonshire auf dem nahen Chatsworth soll die Versorgung unterstützt haben. Die Kirche wurde geschlossen, Gottesdienste fanden im Freien in einer kleinen Schlucht namens Cucklet Delf statt, wo die Menschen Abstand halten konnten."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Die Menschen des 17. Jahrhunderts deuteten die Pest zugleich religiös und natürlich. Mompesson und Stanley sahen in ihr eine Prüfung Gottes, der man mit Gebet, Buße und Standhaftigkeit begegnen müsse. Zugleich war die Vorstellung verbreitet, dass die Krankheit über verdorbene Luft, Gegenstände und den Kontakt mit Kranken weitergegeben werde. Darauf beruhten die Maßnahmen: das Meiden von Versammlungen in der Kirche, das Abhalten von Begräbnissen ohne Trauerzüge und die Reinigung von Münzen. Von Ratten, Flöhen und Bakterien wusste man nichts; der Erreger, Yersinia pestis, wurde erst 1894 entdeckt. Erhalten sind Briefe, die Mompesson ab Ende August 1666 nach dem Tod seiner Frau und im November nach dem Erlöschen der Seuche schrieb. Er beschreibt darin die Not des Dorfes und seinen Verlust."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Der Historiker Patrick Wallis hat 2006 gezeigt, dass die bekannte Heldengeschichte zu großen Teilen später entstand. Zeitgenössische Berichte sind spärlich; ausgeschmückt wurde die Erzählung im 18. und 19. Jahrhundert von Dichtern, Pfarrern und Lokalhistorikern, und die Zweihundertjahrfeier 1866 begründete eine Gedenktradition. Ob die Abriegelung die Umgebung wirklich schützte und ob sie die Dorfbewohner nicht selbst einem höheren Risiko aussetzte, ist umstritten. Eine mathematische Auswertung des Kirchenbuchs durch Lilith Whittles und Xavier Didelot ergab 2016, dass ein erheblicher Teil der Ansteckungen direkt von Mensch zu Mensch erfolgte und nicht nur über Ratten. Die um 2000 von Stephen O’Brien und Kollegen geäußerte Vermutung, eine Genvariante namens CCR5-Δ32 habe Überlebende geschützt, ist durch spätere Studien fraglich geworden."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Eyam wurde zum Inbegriff gemeinschaftlicher Selbstaufopferung. Seit dem 19. Jahrhundert begeht das Dorf jedes Jahr am letzten Sonntag im August den Plague Sunday mit einem Gottesdienst in Cucklet Delf. An vielen Häusern erinnern Tafeln an die Familien, die dort starben, das Dorfmuseum erzählt die Geschichte ausführlich. In der Coronapandemie 2020 wurde Eyam in Großbritannien und weit darüber hinaus wieder zitiert, als Beispiel für freiwillige Quarantäne. Historiker wie Wallis mahnen dabei zur Vorsicht: Die Geschichte ist ein Stück Erinnerungskultur, in der Tatsachen, Verklärung und Tourismus ineinandergreifen. Unbestritten bleibt, dass ein kleines Dorf in einem Jahr einen großen Teil seiner Bewohner verlor."
+   }
+  ],
+  "legende": "Gesichert sind die Pesttoten von 1665/66, die Rolle der Pfarrer Mompesson und Stanley, die Gottesdienste unter freiem Himmel und die Versorgung über Ablagestellen an der Dorfgrenze. Vieles andere ist später gewachsen. Die Behauptung, Eyam habe ganz Nordengland gerettet, lässt sich nicht beweisen. Auch das Kinderlied Ring a Ring o’ Roses wird oft mit der Pest in Verbindung gebracht, ist aber erst im 19. Jahrhundert belegt; Volkskundler halten den Bezug für eine moderne Deutung. Die genaue Zahl der Einwohner und damit der Anteil der Toten bleibt unsicher, je nach Annahme zwischen etwa einem Drittel und drei Vierteln.",
+  "bedeutung": "Eyam ist das bekannteste Beispiel einer freiwilligen Quarantäne in der europäischen Geschichte. Es zeigt, wie eine kleine Gemeinschaft unter geistlicher Führung zu einer kollektiven Entscheidung kam, die viele das Leben kostete. Zugleich ist der Fall ein Lehrstück dafür, wie Erinnerung entsteht: Aus spärlichen Quellen wurde im 19. Jahrhundert ein Mythos, der bis heute Gemeinschaftssinn und Opferbereitschaft verkörpert.",
+  "zeitleiste": [
+   {
+    "datum": "1665",
+    "jahr": 1665,
+    "text": "Die Große Pest erreicht London."
+   },
+   {
+    "datum": "Anfang September 1665",
+    "jahr": 1665,
+    "text": "Der Schneidergehilfe George Viccars stirbt in Eyam als erstes Opfer."
+   },
+   {
+    "datum": "Frühjahr 1666",
+    "jahr": 1666,
+    "text": "Nach einem ruhigeren Winter breitet sich die Pest erneut aus."
+   },
+   {
+    "datum": "Juni 1666",
+    "jahr": 1666,
+    "text": "Das Dorf beschließt auf Drängen von Mompesson und Stanley, sich abzuriegeln."
+   },
+   {
+    "datum": "August 1666",
+    "jahr": 1666,
+    "text": "Höhepunkt der Seuche; Elizabeth Hancock verliert ihre Familie, Catherine Mompesson stirbt."
+   },
+   {
+    "datum": "Herbst 1666",
+    "jahr": 1666,
+    "text": "Die Pest erlischt; Mompesson berichtet in Briefen über die Katastrophe."
+   },
+   {
+    "datum": "1866",
+    "jahr": 1866,
+    "text": "Die Zweihundertjahrfeier begründet die Gedenktradition des Plague Sunday."
+   },
+   {
+    "datum": "2016",
+    "jahr": 2016,
+    "text": "Whittles und Didelot werten das Kirchenbuch epidemiologisch aus."
+   }
+  ],
+  "quellen": [
+   "Patrick Wallis: A Dreadful Heritage. Interpreting Epidemic Disease at Eyam, 1666–2000, History Workshop Journal 61 (2006)",
+   "Lilith K. Whittles, Xavier Didelot: Epidemiological analysis of the Eyam plague outbreak of 1665–1666, Proceedings of the Royal Society B 283 (2016)",
+   "John Clifford: Eyam Plague 1665–1666, Eyam 1989",
+   "Eyam Museum und Pfarrkirche St. Lawrence, Eyam: Darstellungen zur Pestgeschichte"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/pest-in-eyam-0.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Die Plague Cottages in Eyam, in denen die Seuche 1665 ausbrach",
+    "urheber": "STEVEK59",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Plague_Cottages%2C_Eyam%2C_Derbyshire_13_September_2018.jpg"
+   },
+   {
+    "datei": "bilder/dark/pest-in-eyam-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Mompesson’s Well oberhalb von Eyam, eine der Ablagestellen für Lebensmittel während der Abriegelung",
+    "urheber": "Dave.Dunford",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Mompesson%27s_Well%2C_Eyam_01.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "bestie-des-gevaudan",
+  "rubrik": "horror",
+  "unterart": "Bestie",
+  "titel": "Die Bestie des Gévaudan",
+  "untertitel": "Drei Jahre Angst im Süden Frankreichs – 1764 bis 1767",
+  "jahr": 1764,
+  "zeitraum": "Juni 1764 bis Juni 1767",
+  "ort": "Gévaudan (Margeride), heute Lozère und Haute-Loire",
+  "land": "Frankreich",
+  "lat": 44.5181,
+  "lon": 3.5006,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Mende,_Loz%C3%A8re",
+  "status": "umstritten",
+  "kurz": "Zwischen 1764 und 1767 töteten Tiere im Gévaudan rund hundert Menschen, meist Kinder und Frauen beim Hüten. Die Presse machte daraus ein Ungeheuer, der König schickte seine besten Jäger.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Am 30. Juni 1764 wurde in der Nähe von Langogne die vierzehnjährige Jeanne Boulet beim Hüten getötet; sie gilt als erstes Opfer. In den folgenden Monaten häuften sich die Angriffe im Hochland des Gévaudan, einer armen Landschaft mit Weiden, Wäldern und verstreuten Weilern im heutigen Département Lozère und im angrenzenden Haute-Loire. Die Angriffe trafen fast immer Menschen, die allein oder zu wenigen im Freien arbeiteten. Wer überlebte, berichtete von einem Tier, größer als ein Wolf, mit rötlichem Fell und dunklem Streifen auf dem Rücken. Je nach Zählung starben bis 1767 zwischen etwa 60 und über 100 Menschen; viele neuere Darstellungen nennen rund 100 Tote, dazu zahlreiche Verletzte. Nach einer Pause von wenigen Monaten Ende 1765 setzten die Angriffe 1766 wieder ein und hörten erst im Juni 1767 auf."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die Opfer waren überwiegend Mädchen, Jungen und junge Frauen, denen in den bäuerlichen Familien das Hüten von Kühen und Schafen zufiel. Sie trugen allenfalls einen Stock oder eine Pike. Manche wehrten sich mit Erfolg: Am 12. Januar 1765 vertrieben der zwölfjährige Jacques Portefaix und einige andere Kinder das Tier mit Stöcken und Messern und retteten einen Jungen; Ludwig XV. belohnte sie und ließ Portefaix auf seine Kosten ausbilden. Am 11. August 1765 verletzte die junge Marie-Jeanne Valet das Tier mit einem Spieß, als es sie und ihre Schwester angriff; in Auvers erinnert heute eine Statue an sie. Für die Dörfer bedeutete die Angst, dass Kinder nicht mehr allein auf die Weiden geschickt werden konnten, ohne die die Familien aber kaum überleben konnten."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Für viele Zeitgenossen war die Bestie mehr als ein Tier. Der Bischof von Mende ließ am 31. Dezember 1764 einen Hirtenbrief verlesen, der sie als Geißel Gottes für die Sünden der Bevölkerung deutete, und ordnete Gebete an. Augenzeugen schrieben dem Tier übernatürliche Züge zu: Es gehe auf den Hinterbeinen, Kugeln prallten an ihm ab. Beamte und Offiziere vermuteten eine Hyäne oder einen Mischling mit einem Löwen. Die überregionale Presse, allen voran der Courrier d’Avignon, machte aus den Angriffen eine Fortsetzungsgeschichte, die bis nach Versailles drang. Im Herbst 1764 kam Hauptmann Jean-Baptiste Duhamel mit Dragonern und organisierte große Treibjagden, ab Februar 1765 versuchten es die normannischen Wolfsjäger d’Enneval, Vater und Sohn. Beide scheiterten."
+   },
+   {
+    "titel": "Die Jagd des Königs",
+    "text": "Im Sommer 1765 schickte Ludwig XV. seinen Büchsenspanner François Antoine. Am 20. September 1765, nach anderen Angaben am 21., erlegte Antoine in einem Wald bei der Abtei von Chazes einen ungewöhnlich großen Wolf. Zeugen, darunter Marie-Jeanne Valet, erkannten darin die Bestie; der Kadaver wurde ausgestopft nach Versailles gebracht, und der Hof erklärte die Sache für erledigt. Doch ab Ende 1765 gab es erneut Tote, und in den folgenden anderthalb Jahren wurden 30 bis 35 weitere Opfer gezählt. Die Krone schickte niemanden mehr. Erst am 19. Juni 1767 erschoss Jean Chastel, ein Bauer aus der Gegend, bei einer Jagd der örtlichen Gemeinden am Mont Mouchet ein großes, wolfsähnliches Tier. Danach endeten die Angriffe."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Die meisten Historiker gehen heute davon aus, dass nicht ein einzelnes Ungeheuer, sondern mehrere Wölfe die Angriffe verübten. Der Historiker Jean-Marc Moriceau hat in Archiven Tausende Fälle von Wolfsangriffen auf Menschen in Frankreich zwischen dem 16. und 19. Jahrhundert belegt und zeigt, dass der Gévaudan zwar ungewöhnlich schwer, aber nicht einzigartig betroffen war. Die widersprüchlichen Beschreibungen erklärt er mit Angst, Gerüchten und der Neigung, jede Sichtung derselben Bestie zuzuschreiben. Der amerikanische Historiker Jay M. Smith hat untersucht, wie Presse, Hof und Offiziere nach dem verlorenen Siebenjährigen Krieg das Ungeheuer erst schufen. Theorien über einen dressierten Hund, einen entlaufenen Löwen oder einen menschlichen Täter in Tierverkleidung finden in den Quellen keine tragfähige Grundlage."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Bestie wurde früh zum Stoff für Flugblätter, Kupferstiche und Lieder. Im 19. Jahrhundert verbreitete der Geistliche Pierre Pourcher die Erzählung, Chastel habe mit geweihten Kugeln geschossen, und machte die Geschichte zu einer frommen Legende. Spätere Autoren knüpften daran Verschwörungstheorien, etwa über die Familie Chastel als Halter eines abgerichteten Tieres. Der Spielfilm Le Pacte des loups von 2001 brachte das Thema einem internationalen Publikum nahe. Im Gévaudan selbst ist die Bestie heute allgegenwärtig, mit Denkmälern, Museen, Wanderwegen und Statuen für Marie-Jeanne Valet und Jean Chastel. Für die Geschichte des Verhältnisses von Mensch und Wolf in Europa ist sie ein Schlüsselfall geblieben."
+   }
+  ],
+  "legende": "Gesichert ist, dass zwischen 1764 und 1767 im Gévaudan zahlreiche Menschen, überwiegend Kinder und junge Frauen, bei Angriffen von Tieren starben, dass der Hof Jäger schickte und Antoine 1765 und Chastel 1767 große Wölfe erlegten. Legende ist das einzelne, kugelfeste Ungeheuer, das auf zwei Beinen ging, ebenso Chastels geweihte Kugeln, von denen erst über hundert Jahre später berichtet wurde. Auch die Vorstellung eines Werwolfs stammt aus späteren Bearbeitungen. Die Opferzahlen schwanken stark, weil nicht alle Todesfälle eindeutig der Bestie zugeordnet werden können; Schätzungen reichen von etwa 60 bis über 100 Toten.",
+  "bedeutung": "Der Fall gilt als eine der ersten großen Mediengeschichten Frankreichs: Zeitungen machten aus einer regionalen Not ein nationales Ereignis und setzten Hof und Armee unter Druck. Er zeigt zugleich, wie gefährlich Wölfe für die arme Landbevölkerung, besonders für hütende Kinder, im 18. Jahrhundert tatsächlich waren, und wie ein Staat versuchte, mit Prestige-Jagden eine Krise zu beenden.",
+  "zeitleiste": [
+   {
+    "datum": "30. Juni 1764",
+    "jahr": 1764,
+    "text": "Jeanne Boulet, 14 Jahre alt, wird bei Langogne getötet; sie gilt als erstes Opfer."
+   },
+   {
+    "datum": "Herbst 1764",
+    "jahr": 1764,
+    "text": "Hauptmann Duhamel beginnt mit Dragonern große Treibjagden."
+   },
+   {
+    "datum": "31. Dezember 1764",
+    "jahr": 1764,
+    "text": "Der Bischof von Mende deutet die Bestie in einem Hirtenbrief als Strafe Gottes."
+   },
+   {
+    "datum": "12. Januar 1765",
+    "jahr": 1765,
+    "text": "Jacques Portefaix und andere Kinder schlagen das Tier in die Flucht."
+   },
+   {
+    "datum": "Februar 1765",
+    "jahr": 1765,
+    "text": "Die Wolfsjäger d’Enneval aus der Normandie übernehmen die Jagd."
+   },
+   {
+    "datum": "11. August 1765",
+    "jahr": 1765,
+    "text": "Marie-Jeanne Valet verletzt das angreifende Tier mit einem Spieß."
+   },
+   {
+    "datum": "20./21. September 1765",
+    "jahr": 1765,
+    "text": "François Antoine erlegt bei Chazes einen großen Wolf, der nach Versailles gebracht wird."
+   },
+   {
+    "datum": "19. Juni 1767",
+    "jahr": 1767,
+    "text": "Jean Chastel erschießt am Mont Mouchet ein großes Tier; die Angriffe enden."
+   }
+  ],
+  "quellen": [
+   "Jay M. Smith: Monsters of the Gévaudan. The Making of a Beast, Harvard University Press 2011",
+   "Jean-Marc Moriceau: La Bête du Gévaudan, 1764–1767, Larousse 2008",
+   "Jean-Marc Moriceau: Histoire du méchant loup. 3 000 attaques sur l’homme en France, XVe–XXe siècle, Fayard 2007",
+   "Lorraine Boissoneault: When the Beast of Gévaudan Terrorized France, Smithsonian Magazine, 2017",
+   "Encyclopaedia Britannica: Beast of Gévaudan"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/bestie-des-gevaudan-0.jpg",
+    "breite": 900,
+    "hoehe": 455,
+    "zeigt": "Die Bestie des Gévaudan in einer zeitgenössischen Radierung von 1764 (Bibliothèque nationale de France, Gallica)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:B%C3%AAte_du_G%C3%A9vaudan_%281764%29.jpg"
+   },
+   {
+    "datei": "bilder/dark/bestie-des-gevaudan-1.jpg",
+    "breite": 900,
+    "hoehe": 613,
+    "zeigt": "Zeitgenössischer Druck: François Antoine erlegt im September 1765 den großen Wolf bei Chazes",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Recueil_Magn%C3%A9_de_Marolles_-_V%C3%A9ritable_figure_de_la_b%C3%AAte_f%C3%A9roce_qui_a_tant_ravag%C3%A9_le_G%C3%A9vaudan.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "sokushinbutsu",
+  "rubrik": "horror",
+  "unterart": "Selbstmumifizierung",
+  "titel": "Sokushinbutsu",
+  "untertitel": "Mönche, die zu „Buddhas im eigenen Leib“ werden wollten – Yamagata",
+  "jahr": 1783,
+  "zeitraum": "17. bis frühes 20. Jahrhundert",
+  "ort": "Berg Yudono und Tempel der Region Shōnai, Präfektur Yamagata",
+  "land": "Japan",
+  "lat": 38.5308,
+  "lon": 139.9847,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Mount_Yudono",
+  "status": null,
+  "kurz": "Asketen des Bergkults am Yudono hungerten jahrelang, um nach dem Tod als „Buddha im eigenen Leib“ verehrt zu werden. Nach gängiger Zählung sind in Japan 18 solcher Mumien erhalten, acht davon in Yamagata.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Sokushinbutsu (即身仏) bedeutet etwa „Buddha in diesem Leib“. So heißen in Japan die mumifizierten Körper von Asketen, die durch extreme Enthaltsamkeit erreichen wollten, dass ihr Leib nach dem Tod nicht verwest. Ein Zentrum dieser Praxis war der Berg Yudono in der heutigen Präfektur Yamagata, einer der drei heiligen Berge von Dewa, wo sich Shingon-Buddhismus und Shugendō, die Religion der Bergasketen, verbanden. In der Region Shōnai werden sechs solcher Mumien in fünf Tempeln bewahrt, darunter Dainichibō mit Shinnyokai (Datierung 1783), Chūrenji mit Tetsumonkai (1829), Kaikōji in Sakata mit Chūkai (1755) und Nangakuji in Tsuruoka. Zwei weitere liegen in der Region Okitama. Insgesamt werden in Japan nach gängiger Zählung 18 Sokushinbutsu verehrt, je nach Abgrenzung auch etwas mehr oder weniger; die übrigen liegen vor allem in Niigata (vier) und einzeln in sechs weiteren Präfekturen."
+   },
+   {
+    "titel": "Die Asketen",
+    "text": "Die Männer, die diesen Weg gingen, waren meist keine hochgestellten Priester, sondern sogenannte Issei-gyōnin, Asketen ohne festen Platz in der Tempelhierarchie, oft aus einfachen Verhältnissen. Manche hatten eine bewegte Vergangenheit: Über Tetsumonkai erzählt man, er habe als junger Mann im Streit einen Samurai getötet und sei dann in den Tempel Chūrenji geflüchtet; zur Buße habe er Wege gebaut und Reisfelder angelegt. Viele dieser Asketen wirkten als Heiler, Wohltäter und Prediger in den Dörfern. Ihr Ziel war nicht der Tod an sich, sondern die Erlösung anderer: Wer als lebender Buddha verehrt wurde, sollte nach dem Glauben der Zeit Menschen in Not, bei Hungersnöten und Krankheiten beistehen. Ihre Anhänger brachten ihnen Opfergaben und pflegten ihr Andenken."
+   },
+   {
+    "titel": "Die Praxis",
+    "text": "Nach der Überlieferung dauerte der Weg viele Jahre. In der Mokujiki-gyō, der „Askese des Baum-Essens“, verzichteten die Asketen auf Getreide und Hülsenfrüchte und lebten nur von Nüssen, Wurzeln, Rinde und Wildpflanzen; eine Inschrift spricht von tausend Tagen am Berg, am Bach Senninzawa. Dadurch schwand das Körperfett, und der Körper sollte austrocknen. Meist wurde der Tote danach bestattet; nach manchen Überlieferungen ließen sich Asketen auch lebend in einer Grabkammer einschließen, mit einem Bambusrohr zum Atmen und einer Glocke, deren Läuten zeigte, dass sie noch lebten. Nach etwa drei Jahren, oft heißt es drei Jahre und drei Monate, öffnete man das Grab. War der Körper erhalten, wurde er als Sokushinbutsu im Tempel aufgestellt. Wie viele Asketen diesen Weg versuchten und nicht erhalten blieben, weiß niemand. Wie viel an dieser Schilderung im Einzelfall stimmt, ist in der Forschung umstritten."
+   },
+   {
+    "titel": "Das Verbot",
+    "text": "Mit der Meiji-Restauration von 1868 geriet die Praxis in Konflikt mit dem neuen Staat, der die Religion neu ordnete und Graböffnungen untersagte. In westlicher Literatur werden für ein ausdrückliches Verbot unterschiedliche Jahre genannt, meist 1877 oder 1879. Japanische Darstellungen verweisen auf das Verbot, Gräber zu öffnen, das schon 1868 erlassen wurde, und auf das neue Strafrecht, nach dem die Lebendbestattung als Beihilfe zur Selbsttötung und das Ausgraben als Grabschändung galt. Die Folgen sind belegt: Beim Asketen Tetsuryūkai, der 1878 starb, behalf man sich nach japanischen Quellen damit, den Leichnam heimlich zu bergen und zu konservieren; der Gedenkstein in Nangakuji ist auf 1881 datiert. Der Asket Bukkai starb 1903 in Murakami (Niigata) an einer Krankheit und wurde in einer vorbereiteten Grabkammer beigesetzt, durfte aber nicht ausgegraben werden. Erst am 7. Juli 1961 öffneten Forscher sein Grab. Der Tempel Kannonji bezeichnet ihn als letzten Sokushinbutsu Japans."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Ab 1959 untersuchten der Kunsthistoriker Andō Kōsei von der Waseda-Universität und der Anatom Ogata Tamotsu von der Universität Niigata die Mumien; 1960 entstand daraus eine Forschungsgruppe, die spätere Japanische Mumienforschungsgruppe. Ihr wichtigstes Ergebnis: Mehrere Körper wurden nach dem Tod künstlich haltbar gemacht, etwa durch Räuchern, Aufhängen zum Trocknen oder das Entfernen der inneren Organe; aus Gräbern ohne solche Nachbehandlung kamen meist nur Knochen zutage. Die Vorstellung, die Asketen hätten sich allein durch Fasten zu Lebzeiten selbst mumifiziert, trifft also so nicht zu. Die strenge Diät mag die Erhaltung erleichtert haben. Manche Überlieferungen nennen zudem Tee aus dem Saft des Lackbaums oder arsenhaltiges Quellwasser des Yudono; ob das eine Rolle spielte, ist nicht belegt."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Sokushinbutsu werden bis heute in ihren Tempeln verehrt; Dainichibō und Chūrenji am Yudono empfangen Pilger und Reisende, und die Gewänder der Mumien werden in regelmäßigen Abständen erneuert. Für die Region Shōnai sind sie ein Teil der religiösen Geschichte der Dewa-Sanzan-Berge. In der Literatur fand das Thema Widerhall: Mori Atsushi verbrachte 1951 fast ein Jahr im Chūrenji und verarbeitete die Erfahrung im Roman „Gassan“, der 1974 den Akutagawa-Preis erhielt. Für Außenstehende wirkt die Praxis verstörend. In ihrer eigenen Logik war sie jedoch ein Akt der Hingabe, der den Asketen als Dienst an anderen galt, und die Tempel zeigen die Mumien als Heilige, nicht als Kuriosität."
+   }
+  ],
+  "legende": "Gesichert ist, dass es in Japan, vor allem in Yamagata und Niigata, mumifizierte Körper buddhistischer Asketen gibt, die als Sokushinbutsu verehrt werden, und dass sie mit einer Tradition extremer Askese am Yudono verbunden sind. Die verbreitete Vorstellung, die Mönche hätten sich allein durch eine Diät aus Rinde und Wurzeln und giftigen Tee zu Lebzeiten selbst mumifiziert und seien lebend in der Erde mit einer Glocke gestorben, beruht auf Tempelüberlieferung. Die Untersuchungen ab 1959 zeigen, dass mehrere Körper nach dem Tod künstlich behandelt wurden und viele Asketen nicht lebend im Grab, sondern an Entkräftung oder Krankheit starben. Die Zahl der erhaltenen Sokushinbutsu schwankt je nach Zählung. Auch das Jahr des Verbots wird unterschiedlich angegeben.",
+  "bedeutung": "Die Sokushinbutsu zeigen, wie weit religiöse Hingabe in der Volksfrömmigkeit der Edo-Zeit gehen konnte, und wie der moderne Meiji-Staat solche Praktiken verdrängte. Die Untersuchungen der 1960er-Jahre gehören zu den frühen Beispielen, in denen Medizin, Kunstgeschichte und Religionswissenschaft gemeinsam eine religiöse Überlieferung überprüften, ohne ihre Bedeutung für die Gläubigen zu bestreiten.",
+  "zeitleiste": [
+   {
+    "datum": "1683",
+    "jahr": 1683,
+    "text": "Honmyōkai wird als Sokushinbutsu im Tempel Honmyōji verehrt, einer der frühesten in Shōnai."
+   },
+   {
+    "datum": "1783",
+    "jahr": 1783,
+    "text": "Shinnyokai, verehrt im Dainichibō am Yudono."
+   },
+   {
+    "datum": "1829",
+    "jahr": 1829,
+    "text": "Tetsumonkai, verehrt im Chūrenji."
+   },
+   {
+    "datum": "1868",
+    "jahr": 1868,
+    "text": "Meiji-Restauration; ein Verbot der Graböffnung erschwert die Praxis."
+   },
+   {
+    "datum": "1879",
+    "jahr": 1879,
+    "text": "In westlicher Literatur oft genanntes Jahr eines Verbots der Selbstbestattung (andere Angaben: 1877); in japanischen Darstellungen nicht so belegt."
+   },
+   {
+    "datum": "1903",
+    "jahr": 1903,
+    "text": "Bukkai stirbt in Murakami und wird in einer Grabkammer beigesetzt; ausgegraben werden darf er nicht."
+   },
+   {
+    "datum": "1960",
+    "jahr": 1960,
+    "text": "Gründung einer Forschungsgruppe um Andō Kōsei, die die Mumien wissenschaftlich untersucht."
+   },
+   {
+    "datum": "1961",
+    "jahr": 1961,
+    "text": "Forscher öffnen Bukkais Grab."
+   }
+  ],
+  "quellen": [
+   "Andō Kōsei: Nihon no miira, Mainichi Shinbunsha, Tokio 1961",
+   "Nihon Miira Kenkyū Gurūpu (Hg.): Nihon miira no kenkyū, Heibonsha, Tokio 1969",
+   "Naitō Masatoshi: Nihon no miira shinkō, Hōzōkan, Kyōto 1999",
+   "nippon.com: Sokushinbutsu – Darstellung zu den Mumien von Yamagata und Niigata",
+   "Japan Tourism Agency, Mehrsprachige Erläuterungstexte: Daihizan Kannonji Temple and Bukkai Shonin"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/sokushinbutsu-0.jpg",
+    "breite": 900,
+    "hoehe": 654,
+    "zeigt": "Haupthalle des Tempels Chūrenji am Berg Yudono (2009)",
+    "urheber": "（Funioti-taro）",
+    "lizenz": "CC BY 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Churenji.jpg"
+   },
+   {
+    "datei": "bilder/dark/sokushinbutsu-1.jpg",
+    "breite": 900,
+    "hoehe": 506,
+    "zeigt": "Haupthalle des Tempels Dainichibō in Tsuruoka (2019)",
+    "urheber": "東京都下のおじさん",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Dainichibo_Honden.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "lebendig-begraben",
+  "rubrik": "horror",
+  "unterart": "Lebendig begraben",
+  "titel": "Die Angst vor dem Scheintod",
+  "untertitel": "Leichenhäuser, Rettungssärge und Patente – 18. und 19. Jahrhundert",
+  "jahr": 1792,
+  "zeitraum": "um 1740 bis um 1900",
+  "ort": "Weimar und viele Orte Europas und Nordamerikas",
+  "land": "Deutschland",
+  "lat": 50.9795,
+  "lon": 11.3235,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Weimar",
+  "status": null,
+  "kurz": "Im 18. und 19. Jahrhundert fürchteten viele Menschen, lebendig begraben zu werden. Ärzte stritten über sichere Todeszeichen, Städte bauten Leichenhäuser, Erfinder ließen Särge mit Glocke und Luftrohr patentieren.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Um 1740 begann in Europa eine Debatte, die über ein Jahrhundert andauern sollte. Der Anatom Jacques-Bénigne Winslow veröffentlichte 1740 in Paris eine Schrift über die Unsicherheit der Todeszeichen, der Arzt Jean-Jacques Bruhier übersetzte sie 1742 ins Französische und erweiterte sie in den folgenden Jahren um eine Sammlung von Berichten über angeblich lebendig Begrabene. Seine Bücher wurden in ganz Europa gelesen, besonders in Deutschland. Bis dahin galt ein Mensch als tot, wenn Atmung und Herzschlag ausblieben. Nun hieß es, beides könne nur scheinbar fehlen, etwa bei Ohnmacht, Kälte oder Vergiftung. Bruhier hielt allein die einsetzende Verwesung für ein sicheres Zeichen des Todes. Damit begann eine Angst, die Mediziner, Behörden, Erfinder und Schriftsteller bis ins späte 19. Jahrhundert beschäftigte."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die Angst traf vor allem das gebildete Bürgertum, das die neuen Schriften las. Viele Menschen verfügten in ihren Testamenten, man solle sie erst nach mehreren Tagen begraben, ihnen vorher die Adern öffnen oder mit einem Herzstich den Tod sicherstellen; die Ärzte hielten dafür eigene Messer bereit. Um Scheintote zu erkennen, legte man ihnen eine Feder vor den Mund oder ein Wasserglas auf die Brust, man reizte sie mit Brechmitteln, Senfpflastern, Tabakrauch und später mit Elektrizität. Belegte Fälle, in denen Menschen tatsächlich lebendig begraben wurden, sind dagegen sehr selten. Bruhier nannte Dutzende Fälle, doch die meisten beruhten auf Hörensagen, und Funde verdrehter Leichen bei Umbettungen lassen sich durch natürliche Vorgänge der Verwesung erklären."
+   },
+   {
+    "titel": "Leichenhäuser",
+    "text": "Der Arzt Christoph Wilhelm Hufeland, später Direktor der Berliner Charité, forderte 1791 in einer Schrift über die Ungewissheit des Todes Häuser, in denen Verstorbene bis zum Einsetzen der Verwesung aufbewahrt und beobachtet werden sollten. Auf sein Drängen entstand 1792 auf dem Jacobsfriedhof in Weimar das erste deutsche Leichenhaus mit der Inschrift „Vitae dubiae asylum“, Zufluchtsort des zweifelhaften Lebens. Berlin folgte ab 1794, später viele andere Städte. In diesen Häusern lagen die Toten oft mit Schnüren an Fingern oder Zehen, die bei der kleinsten Bewegung eine Glocke beim Wärter läuten ließen. In keinem dieser Leichenhäuser ist ein Scheintoter nachweislich wieder erwacht. Gegen Ende des 19. Jahrhunderts wurden die Weckvorrichtungen deshalb nach und nach abgebaut."
+   },
+   {
+    "titel": "Sicherheitssärge und Patente",
+    "text": "Parallel entwarfen Erfinder Särge, aus denen ein Scheintoter sich bemerkbar machen oder befreien sollte. Der Arzt Adolf Gutsmuth ließ sich zur Vorführung selbst in seinem Rettungssarg mit Luftrohr begraben. In Deutschland wurden im 19. Jahrhundert nach verbreiteten Angaben mehr als dreißig solcher Konstruktionen patentiert, mit Glocken, Fahnen, Lampen, Luftfiltern und sogar Signalraketen. In den USA erhielt Franz Vester aus Newark am 25. August 1868 das Patent Nr. 81.437 für einen Sarg mit einem Schacht über dem Gesicht, der eine Leiter, eine Glocke an einer Schnur und ein Sichtfenster enthielt; nach Feststellung des Todes sollte der Schacht entfernt werden. Viele Entwürfe hatten Schwächen: In einem dicht verschlossenen Sarg wäre die Luft binnen weniger Stunden verbraucht gewesen, und Verwesungsvorgänge konnten Fehlalarme auslösen."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Medizinhistoriker wie Jan Bondeson sehen in der Scheintod-Angst ein Phänomen der Aufklärung: Die neue Wissenschaft vom Körper zweifelte an alten Gewissheiten, ohne schon bessere Methoden zu besitzen. Dass einzelne Menschen tatsächlich lebendig begraben wurden, ist nicht auszuschließen, die Zahl lässt sich aber nicht bestimmen. Die Behauptung von Aktivisten des 19. Jahrhunderts, bis zu jeder Zehnte sei betroffen, ist sicher stark übertrieben. Die Angst verebbte ab der Mitte des 19. Jahrhunderts, als das Stethoskop das sichere Abhören des Herzens erlaubte und die Medizin zuverlässige Todeszeichen beschrieb, darunter Totenflecken und Leichenstarre. Geblieben sind die ärztliche Leichenschau und Wartefristen: In Deutschland darf ein Mensch in der Regel frühestens 48 Stunden nach dem Tod bestattet werden."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Angst fand ihren dauerhaftesten Ausdruck in der Literatur. Edgar Allan Poe veröffentlichte 1844 die Erzählung The Premature Burial und griff das Motiv auch in anderen Geschichten auf. In Großbritannien warben der Aktivist William Tebb und der Arzt Edward Perry Vollum 1896 in ihrem Buch Premature Burial and How It May Be Prevented für Wartehäuser und strengere Leichenschau; im selben Jahr entstand in London eine Gesellschaft zur Verhinderung vorzeitiger Bestattung. Die Ausstellung „Scheintot“ im Museum für Sepulkralkultur in Kassel 2016/17 und im Berliner Medizinhistorischen Museum der Charité 2018 hat das Thema einem breiten Publikum vorgestellt. Erhaltene Leichenhäuser und Rettungssärge sind heute Museumsstücke."
+   }
+  ],
+  "legende": "Viele Geschichten über verzweifelte Kratzspuren in Sargdeckeln stammen aus Sammlungen wie der Bruhiers oder aus Zeitungsmeldungen, die nie überprüft wurden. Ebenso populär wie falsch ist die Erklärung, die englischen Redensarten „saved by the bell“ und „graveyard shift“ stammten von Glocken an Sicherheitssärgen und Wächtern auf Friedhöfen; beide sind erst später und in anderem Zusammenhang belegt, die erste etwa im Boxsport. Gesichert ist dagegen die breite Angst selbst, belegt durch Testamente, Leichenhäuser, Fachschriften und Patente. Ob ein Rettungssarg je einem Menschen das Leben gerettet hat, ist nicht belegt.",
+  "bedeutung": "Die Scheintod-Debatte zwang die Medizin, den Tod genauer zu bestimmen, und trug dazu bei, dass die ärztliche Leichenschau und gesetzliche Wartefristen vor der Bestattung eingeführt wurden. Die Leichenhäuser sind die Vorläufer der heutigen Friedhofshallen. Zugleich zeigt die Episode, wie wissenschaftlicher Zweifel ohne gesichertes Wissen eine gesellschaftliche Angst erzeugen kann, die erst mit besseren Methoden wieder verschwand.",
+  "zeitleiste": [
+   {
+    "datum": "1740",
+    "jahr": 1740,
+    "text": "Jacques-Bénigne Winslow veröffentlicht in Paris seine Schrift über die Unsicherheit der Todeszeichen."
+   },
+   {
+    "datum": "1742",
+    "jahr": 1742,
+    "text": "Jean-Jacques Bruhier übersetzt und erweitert sie; die Scheintod-Debatte erfasst Europa."
+   },
+   {
+    "datum": "1791",
+    "jahr": 1791,
+    "text": "Christoph Wilhelm Hufeland fordert Leichenhäuser zur Beobachtung der Verstorbenen."
+   },
+   {
+    "datum": "1792",
+    "jahr": 1792,
+    "text": "In Weimar entsteht das erste deutsche Leichenhaus, „Vitae dubiae asylum“."
+   },
+   {
+    "datum": "ab 1794",
+    "jahr": 1794,
+    "text": "Auch Berlin richtet Leichenhäuser ein."
+   },
+   {
+    "datum": "1844",
+    "jahr": 1844,
+    "text": "Edgar Allan Poe veröffentlicht The Premature Burial."
+   },
+   {
+    "datum": "25. August 1868",
+    "jahr": 1868,
+    "text": "Franz Vester erhält das US-Patent 81.437 für einen Sicherheitssarg."
+   },
+   {
+    "datum": "1896",
+    "jahr": 1896,
+    "text": "Tebb und Vollum veröffentlichen Premature Burial; in London entsteht eine Gesellschaft gegen vorzeitige Bestattung."
+   }
+  ],
+  "quellen": [
+   "Jan Bondeson: Buried Alive. The Terrifying History of Our Most Primal Fear, W. W. Norton 2001",
+   "Christoph Wilhelm Hufeland: Über die Ungewißheit des Todes und das einzige untrügliche Mittel, sich von seiner Wirklichkeit zu überzeugen, Weimar 1791",
+   "United States Patent Office: Patent No. 81,437, Franz Vester, Improved Burial-Case, 25. August 1868",
+   "Berliner Medizinhistorisches Museum der Charité: Scheintot. Über die Ungewissheit des Todes und die Angst, lebendig begraben zu werden, Ausstellung 2018",
+   "William Tebb, Edward Perry Vollum: Premature Burial and How It May Be Prevented, London 1896"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/lebendig-begraben-0.jpg",
+    "breite": 155,
+    "hoehe": 250,
+    "zeigt": "Zeichnung aus Franz Vesters Patent für einen Sicherheitssarg mit Schacht, Leiter und Glocke (1868)",
+    "urheber": "Franz Vester",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Vester.jpg"
+   },
+   {
+    "datei": "bilder/dark/lebendig-begraben-1.jpg",
+    "breite": 900,
+    "hoehe": 1044,
+    "zeigt": "Christoph Wilhelm Hufeland, Punktierstich von A. Tardieu",
+    "urheber": "unbekannt",
+    "lizenz": "CC BY 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Christoph_Wilhelm_Hufeland._Stipple_engraving_by_A._Tardieu._Wellcome_V0002911.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "donner-party",
+  "rubrik": "horror",
+  "unterart": "Überleben",
+  "titel": "Die Donner Party",
+  "untertitel": "Ein Siedlertreck im Schnee der Sierra Nevada, Winter 1846/47",
+  "jahr": 1846,
+  "zeitraum": "April 1846 bis April 1847",
+  "ort": "Truckee Lake (heute Donner Lake) und Alder Creek, Sierra Nevada",
+  "land": "USA",
+  "lat": 39.32,
+  "lon": -120.2417,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Donner_Memorial_State_Park",
+  "status": null,
+  "kurz": "Ein Treck nach Kalifornien wählt eine ungeprüfte Abkürzung und bleibt im Schnee stecken. Fast die Hälfte der Auswanderer stirbt; manche überleben nur, indem sie von den Toten essen.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Im April 1846 brachen die Familien der Brüder George und Jacob Donner und des Möbelfabrikanten James F. Reed in Springfield, Illinois, nach Kalifornien auf. Am 12. Mai verließen sie Independence, Missouri. Im Juli entschied sich ein Teil des Trecks für den Hastings Cutoff, eine Abkürzung, die der Werber Lansford Hastings in einem Reiseführer angepriesen hatte, ohne sie je mit Wagen befahren zu haben. Die Gruppe wählte George Donner zum Kapitän. Statt Zeit zu sparen, verlor sie nach heutiger Schätzung rund einen Monat: Durch die Wasatch-Berge mussten die Männer selbst einen Weg schlagen, die Durchquerung der Großen Salzwüste dauerte sechs statt zwei Tage, Zugtiere verdursteten oder liefen davon. Als die erschöpften Wagen Ende Oktober den Fuß des Passes in der Sierra Nevada erreichten, fiel bereits Schnee. Nach einem tagelangen Sturm Anfang November war der Weg versperrt."
+   },
+   {
+    "titel": "Der Winter in den Lagern",
+    "text": "Die meisten Eingeschlossenen überwinterten in Hütten und Unterständen am Truckee Lake, die Familien Donner rund acht Kilometer entfernt am Alder Creek. Die Vorräte reichten nicht lange. Man schlachtete die restlichen Rinder, kochte Häute und Knochen aus und aß, was sich fand. Ein Teilnehmer, Patrick Breen, führte vom 20. November 1846 an ein knappes Tagebuch, das vor allem Wetter und Schneefall verzeichnet und immer häufiger Gebete; es liegt heute in der Bancroft Library in Berkeley. Am 16. Dezember versuchten 17 Menschen auf selbstgebauten Schneeschuhen über den Pass zu kommen. Diese Gruppe, später Forlorn Hope genannt, irrte wochenlang durch das Gebirge. Als die Nahrung fehlte, aßen die Überlebenden von den Toten. Zwei kehrten früh um; von den übrigen fünfzehn erreichten nur sieben Mitte Januar 1847 eine Ranch am Rand des Sacramento-Tals, darunter alle fünf Frauen."
+   },
+   {
+    "titel": "Rettung in vier Anläufen",
+    "text": "Die Nachricht der Schneeschuhgruppe setzte in Kalifornien Hilfsaktionen in Gang. Die erste Rettungsmannschaft erreichte die Hütten am See am 18. Februar 1847 und führte eine erste Gruppe Überlebender hinaus. Am 1. März traf eine zweite Mannschaft unter James Reed ein, der im Oktober nach einem tödlichen Streit mit dem Fuhrmann John Snyder aus dem Treck verbannt worden war und sich nach Kalifornien durchgeschlagen hatte. Eine dritte Mannschaft holte Mitte März weitere Überlebende, darunter die jüngsten Töchter von George und Tamsen Donner. Tamsen Donner blieb bei ihrem sterbenden Mann George zurück und starb selbst in den Bergen. Mitte April fand eine Bergungsmannschaft nur noch Lewis Keseberg lebend am See; er erreichte Sutters Fort Ende April als Letzter. In den Lagern hatten Eingeschlossene im Februar und März ebenfalls begonnen, sich von Verstorbenen zu ernähren. Belegt ist das durch Breens Tagebuch und Aussagen der Retter."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die Zahl der Teilnehmer wird unterschiedlich angegeben, weil Personen zu verschiedenen Zeiten hinzukamen oder ausschieden. Die meisten Historiker zählen 87 Emigranten; hinzu kamen zwei Miwok-Männer, Luis und Salvador, die mit einem Vorratszug aus Sutters Fort gekommen waren. Fünf Menschen starben schon vor der Sierra, 34 weitere zwischen Dezember 1846 und April 1847 in den Lagern oder beim Versuch, die Berge zu verlassen. Von den 87 überlebten 48. Zählt man Luis und Salvador mit, die während der Schneeschuhwanderung von einem Mitglied der Gruppe erschossen wurden, kommt man auf 89 Teilnehmer und 41 Tote. Unter den Toten waren weit mehr Männer als Frauen: In der Schneeschuhgruppe starben acht der zehn Männer, alle fünf Frauen überlebten."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Der Anthropologe Donald K. Grayson wertete 1990 die Sterbedaten statistisch aus. Die Überlebenden waren im Mittel deutlich jünger als die Toten; Kleinkinder unter sechs Jahren traf es besonders hart, kein Erwachsener über 49 überlebte, Männer zwischen 20 und 39 starben weit häufiger als Frauen. Grayson erklärt das mit der Physiologie, denn Frauen haben mehr Körperfett und einen geringeren Grundumsatz, aber auch mit der Arbeit, die Männer beim Holzschlagen und Spuren im Schnee leisteten. Zugleich überlebten Menschen, die mit ihrer Familie reisten, besser als allein reisende junge Männer. Ein archäologisches Projekt grub 2003 und 2004 am Alder Creek. Es fand Reste einer Feuerstelle und Tierknochen; menschliche Knochen ließen sich darin nicht sicher nachweisen. Die Berichte über Kannibalismus stützen sich daher auf Augenzeugen und Tagebücher, nicht auf Funde."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Schon 1847 berichteten Zeitungen in Kalifornien und im Osten über das Unglück, oft mit ausgeschmückten Einzelheiten. Die Überlebende Virginia Reed schrieb im Mai 1847 einen Brief an eine Cousine, der im Dezember im Illinois Journal erschien; ihr Rat, nie eine Abkürzung zu nehmen und sich zu beeilen, wurde zum geflügelten Wort. 1879 sammelte der Journalist Charles McGlashan Erinnerungen der Überlebenden für das erste Buch über das Unglück, 1936 legte George R. Stewart mit Ordeal by Hunger eine bis heute viel gelesene Darstellung vor. Lewis Keseberg wurde vorgeworfen, Tamsen Donner getötet zu haben; er verklagte einen Ankläger wegen Verleumdung und erhielt einen Dollar Schadensersatz. McGlashan hielt den Mordvorwurf für unbegründet. Am Donner Lake erinnert seit 1918 ein Pioniermonument an die Auswanderer; das Gelände ist heute der Donner Memorial State Park."
+   }
+  ],
+  "legende": "Gesichert ist, dass Eingeschlossene am See, am Alder Creek und in der Schneeschuhgruppe von Verstorbenen aßen, um zu überleben. Das bezeugen Breens Tagebuch, Briefe und Aussagen von Rettern und Überlebenden. Von Anfang an kursierten aber auch Übertreibungen: Zeitungen von 1847 schmückten Szenen aus, und Lewis Keseberg wurde zur Schreckfigur eines Mörders, ohne dass ein Mord je bewiesen wurde. Unbelegt ist auch das Bild einer Gruppe, die durchweg zu Kannibalen wurde; viele, vor allem Kinder, überlebten dank der ersten Rettungsmannschaften. Die Archäologie hat am Alder Creek keine Knochenfunde gemacht, die das bestätigen oder widerlegen.",
+  "bedeutung": "Die Donner Party wurde zum bekanntesten Unglück der Westwanderung und zur Warnung vor ungeprüften Abkürzungen. Sie ist zugleich eine der am besten dokumentierten Hungerkatastrophen des 19. Jahrhunderts. Graysons Auswertung gilt als Lehrbeispiel dafür, wie Alter, Geschlecht und Familienbindung über das Überleben in Extremlagen entscheiden. Der Pass, der See und ein Gipfel der Sierra tragen heute den Namen Donner.",
+  "zeitleiste": [
+   {
+    "datum": "April 1846",
+    "jahr": 1846,
+    "text": "Die Familien Donner und Reed brechen in Springfield, Illinois, nach Kalifornien auf."
+   },
+   {
+    "datum": "Ende Juli 1846",
+    "jahr": 1846,
+    "text": "Der Treck biegt auf den Hastings Cutoff ab und verliert durch Berge und Salzwüste rund einen Monat."
+   },
+   {
+    "datum": "Oktober 1846",
+    "jahr": 1846,
+    "text": "Nach einem tödlichen Streit mit John Snyder wird James Reed aus dem Treck verbannt."
+   },
+   {
+    "datum": "Anfang November 1846",
+    "jahr": 1846,
+    "text": "Ein Schneesturm schließt die Gruppe am Truckee Lake und am Alder Creek ein."
+   },
+   {
+    "datum": "16. Dezember 1846",
+    "jahr": 1846,
+    "text": "17 Menschen brechen zu Fuß und auf Schneeschuhen auf; sieben erreichen im Januar die Siedlungen."
+   },
+   {
+    "datum": "18. Februar 1847",
+    "jahr": 1847,
+    "text": "Die erste Rettungsmannschaft erreicht die Hütten am See."
+   },
+   {
+    "datum": "1. März 1847",
+    "jahr": 1847,
+    "text": "James Reed trifft mit der zweiten Rettungsmannschaft ein."
+   },
+   {
+    "datum": "Ende April 1847",
+    "jahr": 1847,
+    "text": "Lewis Keseberg erreicht als letzter Überlebender Sutters Fort."
+   }
+  ],
+  "quellen": [
+   "George R. Stewart: Ordeal by Hunger. The Story of the Donner Party, 1936",
+   "Kristin Johnson (Hg.): \"Unfortunate Emigrants\". Narratives of the Donner Party, Utah State University Press 1996; dies.: New Light on the Donner Party (Online-Teilnehmerliste)",
+   "Ethan Rarick: Desperate Passage. The Donner Party's Perilous Journey West, Oxford University Press 2008",
+   "Donald K. Grayson: Donner Party Deaths. A Demographic Assessment, in: Journal of Anthropological Research 46 (1990)",
+   "California State Parks: Donner Memorial State Park"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/donner-party-0.jpg",
+    "breite": 631,
+    "hoehe": 1100,
+    "zeigt": "Seite aus dem Tagebuch von Patrick Breen, Einträge vom 25. und 26. Februar 1847 (Bancroft Library, Berkeley)",
+    "urheber": "Patrick Breen wrote the page",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:PatrickBreenDiaryPage28.jpg"
+   },
+   {
+    "datei": "bilder/dark/donner-party-1.jpg",
+    "breite": 806,
+    "hoehe": 1100,
+    "zeigt": "Albert Bierstadt: Blick auf den Donner Lake, Ölskizze 1871/72 (de Young Museum, San Francisco)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_View_of_Donner_Lake%2C_California_%281871-72%29.jpg"
+   },
+   {
+    "datei": "bilder/dark/donner-party-2.jpg",
+    "breite": 900,
+    "hoehe": 475,
+    "zeigt": "Stereofoto um 1870: Baumstümpfe im Summit Valley, die auf die Donner Party zurückgeführt wurden (New York Public Library)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:%22Starvation_Camp.%22_Stumps_of_trees_cut_by_the_Donner_Party_in_Summit_Valley%2C_Placer_Co.%2C_1846%2C_by_Thomas_Houseworth_%26_Co..jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "teufelsspuren-devon",
+  "rubrik": "horror",
+  "unterart": "Rätselhafter Fund",
+  "titel": "Die Teufelsspuren von Devon",
+  "untertitel": "Hufabdrücke im Schnee über Dächer und Mauern – Februar 1855",
+  "jahr": 1855,
+  "zeitraum": "Nacht vom 8. auf den 9. Februar 1855",
+  "ort": "Exe-Mündung um Topsham, Exmouth und Dawlish, Devon",
+  "land": "England",
+  "lat": 50.683,
+  "lon": -3.465,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Topsham",
+  "status": "ungeklärt",
+  "kurz": "An einem Februarmorgen 1855 fanden Menschen in Süddevon hufähnliche Spuren im Schnee, die scheinbar über Dächer, Mauern und Flüsse führten. Mancher sprach vom Teufel, Gelehrte von Dachsen und Mäusen.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "In der Nacht vom 8. auf den 9. Februar 1855 fiel in Süddevon Schnee. Am Morgen entdeckten Bewohner zahlreicher Orte um die Mündung des Flusses Exe merkwürdige Abdrücke: hufförmige Spuren, meist etwa zehn Zentimeter lang, in einer einzigen Reihe hintereinander, mit Abständen von zwanzig bis vierzig Zentimetern. Sie liefen, so die Berichte, über Felder und Gärten, über Hausdächer und hohe Mauern, über Heuschober und durch Abflussrohre und schienen an Ufern zu enden und am anderen Ufer weiterzugehen. Gemeldet wurden sie aus über dreißig Orten, darunter Topsham, Lympstone, Exmouth, Dawlish und Teignmouth, einzelne auch aus Dorset. Die geschätzte Gesamtlänge der Spuren reichte in den Berichten von 60 bis 160 Kilometern. In ein, zwei folgenden Nächten sollen nach weiterem Schneefall neue Spuren aufgetaucht sein."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Verletzt wurde niemand, doch in den Dörfern war die Unruhe groß. Manche Menschen trauten sich nach Einbruch der Dunkelheit nicht mehr aus dem Haus, andere zogen mit Knüppeln und Gewehren los, um den Spuren zu folgen. Wichtigste Zeugen sind Geistliche der Gegend, die die Abdrücke vermaßen, abzeichneten und miteinander Briefe wechselten, darunter Henry Thomas Ellacombe, Pfarrer von Clyst St George, und George Musgrove, Pfarrer von Withycombe Raleigh. Ellacombe sammelte Berichte, Briefe und Pausen der Spuren und bereitete einen Bericht für die Illustrated London News vor. Seine Unterlagen gelten heute als wichtigste Quelle, weil sie näher an den Ereignissen sind als die späteren Zeitungsberichte, die vieles zuspitzten."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "In den Dörfern sprach man bald vom Teufel, der in der Nacht umgegangen sei; ein Londoner Wochenblatt schrieb von den Spuren Satans. Die Times meldete den Fall am 16. Februar, die Illustrated London News brachte am 24. Februar einen Bericht mit Zeichnungen der Abdrücke. Danach meldeten sich Gelehrte. Der Naturforscher Richard Owen vermutete am 3. März in derselben Zeitung Dachse, die bei Nacht auf Nahrungssuche gewesen seien. Pfarrer Musgrove verbreitete das Gerücht, aus einer Menagerie in Sidmouth seien Kängurus entlaufen; in seinem Brief an die Illustrated London News vom 3. März räumte er ein, selbst nicht daran zu glauben; er habe damit vor allem die Angst seiner Gemeinde dämpfen wollen. Am 10. März wies der Brauer Thomas Fox aus Ballingdon mit Zeichnungen auf die Spuren springender Nagetiere hin. Andere dachten an Otter, Vögel oder Kröten."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Die Volkskundlerin Theo Brown entdeckte um 1950 Ellacombes Unterlagen und veröffentlichte sie 1950 und 1952 in den Schriften der Devonshire Association. 1994 trug der Historiker Mike Dash in der Zeitschrift Fortean Studies alle erreichbaren Quellen zusammen. Sein Ergebnis: Die Abdrücke sahen keineswegs überall gleich aus, und die Zeitungen fassten sehr verschiedene Spuren zu einer einzigen zusammen. Manche dürften von Eseln oder Ponys stammen, manche von Waldmäusen, deren Sprungspuren hufartig wirken können, andere waren wohl Scherze. Dass jemand den Spuren über die volle Länge an einem Tag gefolgt wäre, gilt als unwahrscheinlich. Eine einzige Erklärung für alle Spuren gibt es nicht. Der Schriftsteller Geoffrey Household brachte 1985 einen Versuchsballon mit schleifenden Ketten ins Spiel, wofür es keinen Beleg gibt."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Teufelsspuren wurden zu einem Klassiker der viktorianischen Rätselgeschichten. Schon 1855 meldeten Leser der Illustrated London News ähnliche Abdrücke aus anderen Gegenden, etwa aus Polen; 1890 erinnerte die Volkskundlerin R. H. Busk in der Zeitschrift Notes and Queries an den Fall und nannte weitere Fundorte bis nach Dorset. Im 20. Jahrhundert griffen Bücher über ungeklärte Phänomene, Fernsehsendungen und Romane den Fall immer wieder auf, oft mit der Angabe einer durchgehenden Spur von hundert Meilen. In der skeptischen Literatur dient er heute als Lehrbeispiel dafür, wie aus vielen kleinen Beobachtungen eine einzige große Geschichte entsteht, wenn Angst, Zeitungsberichte und Weitererzählen zusammenkommen."
+   }
+  ],
+  "legende": "Die Vorstellung einer einzigen, ununterbrochenen Spur von hundert Meilen Länge, die in einer Nacht über Dächer, Mauern und Flüsse lief, ist ein Produkt der Berichterstattung. Niemand hat sie vollständig verfolgt, und die gemeldeten Abdrücke unterscheiden sich in Größe und Form. Gesichert ist, dass nach dem Schneefall vom 8. auf den 9. Februar 1855 an vielen Orten ungewöhnliche Spuren gefunden, vermessen und gezeichnet wurden und dass sie in Teilen der Bevölkerung große Angst auslösten. Die Kängurus aus Sidmouth hat es nach allem, was bekannt ist, nie gegeben.",
+  "bedeutung": "Der Fall zeigt, wie im 19. Jahrhundert die neue illustrierte Presse aus örtlichen Beobachtungen ein landesweites Rätsel machte und wie Wissenschaftler, Geistliche und Leser darüber öffentlich stritten. Für die Volkskunde ist er ein Beispiel für das Fortleben des Teufelsglaubens auf dem Land, für die Quellenkritik ein Lehrstück, warum man Originalberichte von späteren Nacherzählungen unterscheiden muss.",
+  "zeitleiste": [
+   {
+    "datum": "8./9. Februar 1855",
+    "jahr": 1855,
+    "text": "Nach Schneefall finden Bewohner um die Exe-Mündung hufartige Spuren."
+   },
+   {
+    "datum": "16. Februar 1855",
+    "jahr": 1855,
+    "text": "Die Times berichtet über die Spuren."
+   },
+   {
+    "datum": "24. Februar 1855",
+    "jahr": 1855,
+    "text": "Die Illustrated London News veröffentlicht „Foot-Marks on the Snow, in Devon“ mit Zeichnungen."
+   },
+   {
+    "datum": "3. März 1855",
+    "jahr": 1855,
+    "text": "Richard Owen schlägt Dachse als Urheber vor; Pfarrer Musgrove erwähnt das Gerücht entlaufener Kängurus."
+   },
+   {
+    "datum": "10. März 1855",
+    "jahr": 1855,
+    "text": "Thomas Fox verweist auf die Sprungspuren von Nagetieren."
+   },
+   {
+    "datum": "1890",
+    "jahr": 1890,
+    "text": "R. H. Busk erinnert in Notes and Queries an den Fall und nennt weitere Fundorte."
+   },
+   {
+    "datum": "1950",
+    "jahr": 1950,
+    "text": "Theo Brown veröffentlicht die wiederentdeckten Unterlagen von Pfarrer Ellacombe."
+   },
+   {
+    "datum": "1994",
+    "jahr": 1994,
+    "text": "Mike Dash legt in Fortean Studies eine umfassende Quellensammlung vor."
+   }
+  ],
+  "quellen": [
+   "Mike Dash: The Devil’s Hoofmarks. Source Material on the Great Devon Mystery of 1855, Fortean Studies 1 (1994)",
+   "Theo Brown: The Great Devon Mystery of 1855, Report and Transactions of the Devonshire Association 82 (1950), S. 107–112; dies.: A Further Note on the Great Devon Mystery, ebd. 84 (1952), S. 163–171",
+   "Illustrated London News, 24. Februar 1855 und 3. März 1855 (mit dem Beitrag von Richard Owen)",
+   "The Times, 16. Februar 1855"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/teufelsspuren-devon-0.jpg",
+    "breite": 900,
+    "hoehe": 856,
+    "zeigt": "Zeichnungen der Spuren aus der Illustrated London News vom 24. Februar und 3. März 1855",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:The_%22Devil%27s_footprints%22_-_Devon_1855.jpg"
+   },
+   {
+    "datei": "bilder/dark/teufelsspuren-devon-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Die Exe-Mündung bei Topsham im Winter, eines der Gebiete, in denen die Spuren gefunden wurden",
+    "urheber": "Jan Baker",
+    "lizenz": "CC BY-SA 2.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:The_Exe_estuary_at_Topsham_-_geograph.org.uk_-_1113443.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "mignonette-fall",
+  "rubrik": "horror",
+  "unterart": "Überleben",
+  "titel": "Der Fall Mignonette",
+  "untertitel": "R v Dudley and Stephens – Schiffbruch, Kannibalismus und Notstand vor Gericht, 1884",
+  "jahr": 1884,
+  "zeitraum": "Mai bis Dezember 1884",
+  "ort": "Südatlantik; Falmouth, Exeter und London",
+  "land": "Großbritannien",
+  "lat": 50.1558,
+  "lon": -5.0694,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Falmouth,_Cornwall",
+  "status": "aufgeklärt",
+  "kurz": "Nach 19 Tagen im Rettungsboot töten zwei Seeleute den 17-jährigen Schiffsjungen Richard Parker und essen von ihm. Das Urteil von 1884 stellt klar: Not rechtfertigt keinen Mord.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Die Mignonette war eine kleine Jacht von rund 16 Metern Länge, gebaut für Küstenfahrten. Der australische Anwalt John Henry Want hatte sie gekauft und ließ sie von England nach Sydney überführen. Am 19. Mai 1884 lief sie aus Southampton aus, mit vier Mann Besatzung: Kapitän Tom Dudley, dem Steuermann Edwin Stephens, dem Matrosen Edmund Brooks und dem 17-jährigen Schiffsjungen Richard Parker, der zum ersten Mal zur See fuhr. Am 5. Juli brach im Südatlantik, etwa 1600 Meilen nordwestlich des Kaps der Guten Hoffnung, eine schwere See die Bordwand auf. Die Jacht sank binnen Minuten. Den vier Männern blieb ein schmales Beiboot mit einigen Instrumenten und zwei Dosen Rüben, aber ohne Trinkwasser. Eine Schildkröte, die sie um den 9. Juli fingen, reichte für etwa eine Woche. Danach hatten sie nichts mehr zu essen."
+   },
+   {
+    "titel": "Die Tat",
+    "text": "Um den 20. Juli trank Richard Parker Meerwasser und wurde schwer krank. In den folgenden Tagen sprach Dudley davon, dass einer für die anderen sterben müsse, und brachte nach späteren Aussagen das Losen ins Gespräch, wie es der Brauch der See unter Schiffbrüchigen kannte. Ein Los wurde nicht gezogen. Am 25. Juli tötete Dudley den geschwächten Jungen mit einem Messer, Stephens stand bereit. Brooks sagte später, er habe weder zugestimmt noch widersprochen. Die drei Männer ernährten sich in den folgenden Tagen vom Körper des Jungen. Am 29. Juli entdeckte die deutsche Bark Moctezuma das Boot und nahm sie an Bord. Erst am 6. September landeten sie in Falmouth in Cornwall. Dort berichteten Dudley und Stephens den Behörden offen, was geschehen war; sie hielten ihr Handeln für gerechtfertigt und rechneten nicht mit einer Anklage."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Richard Parker stammte aus Itchen Ferry bei Southampton. Er hatte seine Eltern früh verloren und war unerfahren; die Fahrt sollte der Anfang einer Seemannslaufbahn sein. In der Öffentlichkeit stand er im Schatten der Überlebenden: Viele Seeleute und Bürger in Falmouth zeigten Mitgefühl mit Dudley und Stephens, für ihre Verteidigung wurde Geld gesammelt. Auf dem Friedhof der Jesus Chapel in Peartree Green, Southampton, erinnert ein Gedenkstein an Parker, der nach dem Wortlaut der Inschrift nach 19 Tagen Leiden im offenen Boot auf See starb. Dudley wanderte nach der Haft nach Australien aus und starb 1900 in Sydney. Stephens starb 1914, Brooks 1919. Keiner der drei sprach öffentlich von Schuld; Dudley soll die Verurteilung bis zuletzt für ungerecht gehalten haben."
+   },
+   {
+    "titel": "Notstand vor Gericht",
+    "text": "Die Behörden machten aus dem Fall bewusst einen Grundsatzprozess. Die Anklage gegen Brooks wurde fallen gelassen, damit er als Zeuge aussagen konnte. Am 3. November 1884 begann vor Baron Huddleston in Exeter der Prozess gegen Dudley und Stephens wegen Mordes. Der Richter ließ die Geschworenen nur die Tatsachen feststellen: Ohne Nahrung wären die Männer vermutlich binnen vier Tagen gestorben, der Junge vermutlich zuerst. Ob das eine Tötung rechtfertige, solle das Gericht entscheiden. So kam der Fall vor fünf Richter der Queen's Bench Division in London unter Lord Chief Justice Lord Coleridge. Am 9. Dezember 1884 entschieden sie, dass Notstand keine Verteidigung gegen eine Mordanklage sei. Niemand habe das Recht zu bestimmen, wessen Leben weniger wert sei; ein solcher Grundsatz könne zum Deckmantel für Verbrechen werden."
+   },
+   {
+    "titel": "Urteil und Gnade",
+    "text": "Das Gericht verhängte die damals für Mord vorgeschriebene Todesstrafe, verband sie aber mit einer Empfehlung zur Gnade. Schon am 12. Dezember 1884 wandelte Innenminister William Harcourt die Strafe in sechs Monate Haft um. Dudley und Stephens kamen im Mai 1885 frei. Die Lösung zeigt das Spannungsfeld, in dem sich die Richter bewegten: Sie wollten das Prinzip retten, dass kein Mensch ein anderes unschuldiges Leben für das eigene opfern darf, ohne zwei Männer, deren Lage jeder nachvollziehen konnte, wirklich hinrichten zu lassen. Der Rechtshistoriker A. W. Brian Simpson hat 1984 in Cannibalism and the Common Law gezeigt, dass Kannibalismus nach Schiffbrüchen im 19. Jahrhundert keineswegs selten war und meist ungestraft blieb. Neu war, dass ein Gericht ihn ausdrücklich als Mord wertete."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "R v Dudley and Stephens gehört bis heute zum Grundstoff des Strafrechtsstudiums in England und Wales, vielen Commonwealth-Staaten und den USA. Der Fall dient als Ausgangspunkt für die Frage, ob und wann Notstand eine Tötung entschuldigen kann. Ein früheres amerikanisches Urteil, United States v. Holmes von 1842, betraf einen Seemann, der Passagiere aus einem überfüllten Rettungsboot gestoßen hatte; er wurde wegen Totschlags zu sechs Monaten verurteilt. In der Literatur lebt der Name des Schiffsjungen weiter: Schon 1838 hatte Edgar Allan Poe in seinem Roman Arthur Gordon Pym einen Schiffbrüchigen namens Richard Parker durch das Los sterben und verzehren lassen, ein vielzitierter Zufall. Yann Martel nannte in Schiffbruch mit Tiger (2001) den Tiger Richard Parker. In Falmouth erinnert eine Tafel an den Fall."
+   }
+  ],
+  "legende": "Gesichert sind der Ablauf, die Namen und das Urteil; Dudley und Stephens haben die Tat selbst geschildert. Oft wird behauptet, die Männer hätten gelost und Parker habe das Los gezogen. Das ist falsch: Es gab kein Los, der Junge wurde ausgewählt, weil er am schwächsten war und keine Familie zu versorgen hatte. Das Losen kommt in Poes Roman vor, nicht im wirklichen Fall. Ebenso ungenau ist die Vorstellung, der Brauch der See sei rechtlich anerkannt gewesen. Er war unter Seeleuten verbreitet, aber nie Gesetz, und das Urteil von 1884 hat ihm jede rechtliche Wirkung abgesprochen.",
+  "bedeutung": "Das Urteil legte für das Common Law fest, dass Notstand eine vorsätzliche Tötung eines Unschuldigen nicht rechtfertigt. Diese Linie hat das House of Lords 1987 in R v Howe bestätigt, als es auch die Nötigung als Verteidigung gegen Mord ausschloss. Zugleich zeigt der Fall, wie Rechtsprechung und Gnadenrecht zusammenwirken: harte Regel, milde Strafe. In der Rechtsphilosophie ist er ein Standardbeispiel für Dilemmata, in denen Leben gegen Leben steht.",
+  "zeitleiste": [
+   {
+    "datum": "19. Mai 1884",
+    "jahr": 1884,
+    "text": "Die Mignonette verlässt Southampton mit Kurs auf Sydney."
+   },
+   {
+    "datum": "5. Juli 1884",
+    "jahr": 1884,
+    "text": "Die Jacht sinkt im Südatlantik, die vier Männer retten sich ins Beiboot."
+   },
+   {
+    "datum": "25. Juli 1884",
+    "jahr": 1884,
+    "text": "Dudley tötet den Schiffsjungen Richard Parker."
+   },
+   {
+    "datum": "29. Juli 1884",
+    "jahr": 1884,
+    "text": "Die deutsche Bark Moctezuma nimmt die drei Überlebenden auf."
+   },
+   {
+    "datum": "6. September 1884",
+    "jahr": 1884,
+    "text": "Ankunft in Falmouth; Dudley und Stephens schildern die Tat den Behörden."
+   },
+   {
+    "datum": "3. November 1884",
+    "jahr": 1884,
+    "text": "Prozess in Exeter; die Geschworenen stellen nur die Tatsachen fest."
+   },
+   {
+    "datum": "9. Dezember 1884",
+    "jahr": 1884,
+    "text": "Die Queen's Bench Division entscheidet: Notstand ist keine Verteidigung gegen Mord."
+   },
+   {
+    "datum": "12. Dezember 1884",
+    "jahr": 1884,
+    "text": "Die Todesstrafe wird in sechs Monate Haft umgewandelt."
+   }
+  ],
+  "quellen": [
+   "R v Dudley and Stephens (1884) 14 QBD 273",
+   "A. W. Brian Simpson: Cannibalism and the Common Law. The Story of the Tragic Last Voyage of the Mignonette and the Strange Legal Proceedings to Which It Gave Rise, University of Chicago Press 1984",
+   "United States v. Holmes, 26 F. Cas. 360 (C.C.E.D. Pa. 1842)",
+   "R v Howe [1987] AC 417 (House of Lords)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/mignonette-fall-0.jpg",
+    "breite": 900,
+    "hoehe": 968,
+    "zeigt": "Die Mignonette, Skizze von Tom Dudley",
+    "urheber": "Simpson, A. W. B. | publisher=University of Chicago Press | location=Chicago | year=1984 | id= }}",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Mignonette.jpg"
+   },
+   {
+    "datei": "bilder/dark/mignonette-fall-1.jpg",
+    "breite": 825,
+    "hoehe": 1100,
+    "zeigt": "Gedenkstein für Richard Parker an der Jesus Chapel in Peartree Green, Southampton",
+    "urheber": "Hethurs (talk) 18:11, 22 May 2008 (UTC)",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:RichardParkerTombstone.jpg"
+   },
+   {
+    "datei": "bilder/dark/mignonette-fall-2.jpg",
+    "breite": 619,
+    "hoehe": 1100,
+    "zeigt": "Gedenktafel zum Fall in Falmouth, Cornwall",
+    "urheber": "Dcs57",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:R_v_Dudley_and_Stephens_20210908_124715.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "tsavo-loewen",
+  "rubrik": "horror",
+  "unterart": "Bestie",
+  "titel": "Die Löwen von Tsavo",
+  "untertitel": "Zwei Menschenfresser stoppen den Bau der Uganda-Bahn – Kenia 1898",
+  "jahr": 1898,
+  "zeitraum": "März bis Dezember 1898",
+  "ort": "Brückenbaustelle am Tsavo-Fluss, Britisch-Ostafrika",
+  "land": "Kenia",
+  "lat": -2.9775,
+  "lon": 38.5206,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Tsavo_River",
+  "status": "aufgeklärt",
+  "kurz": "Neun Monate lang holten zwei mähnenlose Löwen Arbeiter aus dem Lager an der Tsavo-Brücke. Patterson sprach später von 135 Toten; Isotopenanalysen von 2009 kommen auf rund 35 gefressene Menschen.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "1896 begann Großbritannien den Bau der Uganda-Bahn von Mombasa an der Küste zum Victoriasee. Für die Arbeit wurden Tausende Vertragsarbeiter aus Britisch-Indien angeworben. Am 1. März 1898 traf der Ingenieur und Offizier John Henry Patterson in Mombasa ein; er sollte am Tsavo-Fluss eine dauerhafte Eisenbahnbrücke bauen. Kurz nach seiner Ankunft begannen zwei Löwen, nachts Männer aus den Zelten und Hütten der Lager zu holen. Dornenzäune, Feuer und Wachen halfen wenig. Im Dezember 1898 erreichte die Angst ihren Höhepunkt: Am 1. Dezember legten die Arbeiter die Arbeit nieder, mehrere Hundert hielten einen Zug an und flohen. Rund drei Wochen lang ruhte der Bau, während die Gebliebenen Schlafplätze auf Wassertanks, Dächern und Bäumen einrichteten. Am 9. Dezember erschoss Patterson den ersten Löwen, am 29. Dezember den zweiten."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die meisten Opfer waren indische Arbeiter, die unter harten Bedingungen schufteten, oft fern von jeder Hilfe und in schlecht geschützten Lagern. Patterson nennt als einen der Ersten den Aufseher Ungan Singh, der kurz nach seiner Ankunft aus seinem Zelt gezerrt wurde. Getroffen wurden auch Afrikaner aus der Umgebung, Träger und Reisende entlang der Bahnlinie; über sie führte niemand Buch. Patterson selbst schrieb 1907, die Löwen hätten 28 indische Arbeiter getötet, dazu zahlreiche Afrikaner, deren Tod nirgends verzeichnet sei. Diese Lücke ist bis heute der Kern des Streits um die Zahlen. Für die Arbeiter bedeutete die Lage ein Dilemma: Wer ging, brach seinen Vertrag; wer blieb, verbrachte jede Nacht in Angst. Die Flucht im Dezember war deshalb auch ein Protest gegen eine Leitung, die sie nicht schützen konnte."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Unter den Arbeitern verbreitete sich der Glaube, es handle sich nicht um gewöhnliche Tiere. Patterson berichtet, viele seien überzeugt gewesen, die zornigen Geister zweier verstorbener einheimischer Häuptlinge hätten Löwengestalt angenommen, um gegen die Bahn durch ihr Land zu protestieren; Schießen sei deshalb zwecklos. Dass die Tiere Fallen und vergiftete Köder mieden, Feuer nicht scheuten und ihre Angriffe scheinbar planvoll wechselten, bestärkte diese Deutung. Patterson selbst sah in ihnen außergewöhnlich schlaue Raubtiere und setzte auf Ansitze, Fallen und Geduld. In London erwähnte Premierminister Lord Salisbury die Löwen im Oberhaus als Grund für eine Bauunterbrechung, und die Zeitschrift The Spectator widmete ihnen im März 1900 einen Artikel über „die Löwen, die die Eisenbahn aufhielten“."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Patterson verkaufte die Felle 1924 an das Field Museum in Chicago, wo die präparierten Löwen bis heute ausgestellt sind. Ihre Schädel und Haare wurden zur Quelle neuer Erkenntnisse. 2009 veröffentlichten Justin Yeakel, Nathaniel Dominy, der Zoologe Bruce Patterson und weitere Forscher in den Proceedings of the National Academy of Sciences eine Analyse stabiler Isotope aus Knochenkollagen und Haarkeratin. Danach fraß der eine Löwe in seinen letzten neun Monaten etwa 11, der andere etwa 24 Menschen, zusammen rund 35; die Autoren hielten im äußersten Fall bis zu 72 für möglich. Die Methode erfasst nur Gefressene, nicht alle Getöteten. Einer der Löwen hatte einen abgebrochenen Eckzahn mit Wurzelabszess, der ihn bei der Jagd auf große Beute behindert haben dürften. 2024 identifizierte ein Team um Alida de Flamingh in Haaren aus den abgebrochenen Zähnen der Löwen per DNA auch Giraffe, Zebra, Oryx, Wasserbock, Gnu und Mensch."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Pattersons Buch „The Man-Eaters of Tsavo“ erschien 1907 und wurde ein Bestseller, der bis heute nachgedruckt wird. Spätere Darstellungen, auch von Patterson selbst, nannten 135 Tote, eine Zahl, die sich weit von der Bahnstatistik entfernte. Hollywood griff den Stoff mehrfach auf, 1952 in „Bwana Devil“ und 1996 in „Der Geist und die Dunkelheit“ mit Val Kilmer und Michael Douglas. Die Brücke wurde fertiggestellt, die Bahn erreichte 1901 den Victoriasee und prägte die Entstehung Nairobis und des kolonialen Kenia. Für Kenia sind die Löwen ein Stück Nationalgeschichte geworden; seit Jahren gibt es Forderungen, die Tiere aus Chicago zurückzuholen. Tsavo ist heute einer der größten Nationalparks des Landes."
+   }
+  ],
+  "legende": "Gesichert ist, dass zwei männliche Löwen 1898 an der Tsavo-Baustelle über Monate Menschen töteten, dass der Bau im Dezember für etwa drei Wochen stillstand und dass Patterson die Tiere am 9. und 29. Dezember erschoss. Die Zahl von 135 Toten ist dagegen nicht belegt. Patterson selbst schrieb 1907 von 28 getöteten indischen Arbeitern und zahlreichen Afrikanern ohne amtliche Aufzeichnung; eine Auswertung seines Tagebuchs kam 2001 auf 28 bis 31 Opfer. Die Isotopenstudie von 2009 spricht für rund 35 gefressene Menschen, schließt aber weitere Getötete nicht aus. Dass Geister in den Löwen steckten, war die Deutung verängstigter Arbeiter, die Patterson überliefert. Mähnenlos waren die Tiere nicht aus mysteriösen Gründen: Bei Männchen in der Tsavo-Region ist das häufig.",
+  "bedeutung": "Die Tsavo-Löwen gehören zu den am besten untersuchten Menschenfressern der Welt. Die Museumsstücke erlaubten, mit neuen Methoden alte Erzählungen nachzuprüfen, und machten den Fall zu einem Lehrstück darüber, wie eine Heldengeschichte Opferzahlen aufblähen kann. Zugleich erinnert er an die indischen Vertragsarbeiter, ohne die die Uganda-Bahn nicht gebaut worden wäre und deren Leben in der kolonialen Erzählung oft nur als Zahl vorkam.",
+  "zeitleiste": [
+   {
+    "datum": "1896",
+    "jahr": 1896,
+    "text": "In Mombasa beginnt der Bau der Uganda-Bahn."
+   },
+   {
+    "datum": "1. März 1898",
+    "jahr": 1898,
+    "text": "John Henry Patterson trifft in Mombasa ein und übernimmt den Brückenbau am Tsavo."
+   },
+   {
+    "datum": "Frühjahr 1898",
+    "jahr": 1898,
+    "text": "Erste nächtliche Angriffe auf die Lager; der Aufseher Ungan Singh wird getötet."
+   },
+   {
+    "datum": "1. Dezember 1898",
+    "jahr": 1898,
+    "text": "Die Arbeiter streiken, Hunderte fliehen mit einem Zug; der Bau ruht etwa drei Wochen."
+   },
+   {
+    "datum": "9. Dezember 1898",
+    "jahr": 1898,
+    "text": "Patterson erschießt den ersten Löwen."
+   },
+   {
+    "datum": "29. Dezember 1898",
+    "jahr": 1898,
+    "text": "Patterson erschießt den zweiten Löwen."
+   },
+   {
+    "datum": "1924",
+    "jahr": 1924,
+    "text": "Patterson verkauft die Felle an das Field Museum in Chicago."
+   },
+   {
+    "datum": "November 2009",
+    "jahr": 2009,
+    "text": "Die Isotopenstudie von Yeakel u. a. schätzt rund 35 gefressene Menschen."
+   }
+  ],
+  "quellen": [
+   "John Henry Patterson: The Man-Eaters of Tsavo and Other East African Adventures, Macmillan, London 1907",
+   "Justin D. Yeakel, Bruce D. Patterson, Kena Fox-Dobbs, Mercedes M. Okumura, Thure E. Cerling, Jonathan W. Moore, Paul L. Koch, Nathaniel J. Dominy: Cooperation and individuality among man-eating lions, Proceedings of the National Academy of Sciences 106 (2009)",
+   "Bruce D. Patterson: The Lions of Tsavo. Exploring the Legacy of Africa’s Notorious Man-Eaters, McGraw-Hill 2004",
+   "Field Museum, Chicago: Pressemitteilung zur Isotopenstudie über die Tsavo-Löwen, 2009",
+   "Alida de Flamingh, Thomas P. Gnoske, Julian C. Kerbis Peterhans u. a.: Compacted hair in broken teeth reveals dietary prey of historic lions, Current Biology 34 (2024), doi:10.1016/j.cub.2024.09.029"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/tsavo-loewen-0.jpg",
+    "breite": 900,
+    "hoehe": 612,
+    "zeigt": "John Henry Patterson mit dem ersten der beiden erlegten Löwen, Dezember 1898",
+    "urheber": "Field Museum",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Colonel_Patterson_with_Tsavo-Lion.jpg"
+   },
+   {
+    "datei": "bilder/dark/tsavo-loewen-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Die präparierten Tsavo-Löwen im Field Museum in Chicago",
+    "urheber": "Allison Meier from Brooklyn, United States",
+    "lizenz": "CC BY 2.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Field_Museum_Tsavo_Man-Eaters_%285923982722%29.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "champawat-tigerin",
+  "rubrik": "horror",
+  "unterart": "Bestie",
+  "titel": "Die Tigerin von Champawat",
+  "untertitel": "Jahre der Angst in Nepal und Kumaon – bis Jim Corbett sie 1907 erlegte",
+  "jahr": 1907,
+  "zeitraum": "um 1900 bis 1907",
+  "ort": "Champawat, Kumaon (heute Uttarakhand), zuvor Westnepal",
+  "land": "Indien / Nepal",
+  "lat": 29.33,
+  "lon": 80.1,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Champawat",
+  "status": "aufgeklärt",
+  "kurz": "Eine Bengaltigerin tötete erst in Westnepal, dann im indischen Kumaon zahlreiche Menschen. Überliefert sind 436 Opfer – eine Zahl, die nie unabhängig geprüft wurde. 1907 erlegte sie Jim Corbett.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Um die Wende zum 20. Jahrhundert begann in Westnepal eine Tigerin, Menschen anzugreifen. Nach Jim Corbetts Darstellung hatte sie dort bereits 200 Menschen getötet, als bewaffnete Nepalesen sie über den Grenzfluss Sarda (Sharda) nach Kumaon trieben, das damals zu den britisch-indischen Vereinigten Provinzen gehörte. In den Bergwäldern um Champawat setzte sie die Angriffe vier Jahre lang fort; Corbett nennt für diese Zeit weitere 234 Tote. Die Regierung setzte Prämien aus, schickte bezahlte Jäger und Gurkha-Soldaten aus Almora – ohne Erfolg. Auf Bitten des Deputy Commissioner von Naini Tal, Berthoud, übernahm schließlich Corbett, ein in Naini Tal aufgewachsener Eisenbahnangestellter und erfahrener Jäger. Er stellte zwei Bedingungen: Die Prämien sollten gestrichen und die übrigen Jäger abgezogen werden."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die Opfer waren Dorfbewohner, die ihr Leben im Wald verdienen mussten: Frauen und Mädchen, die Laub und Gras als Viehfutter schnitten oder Brennholz sammelten, Hirten, Männer auf dem Weg zwischen den Dörfern. Corbett beschreibt Siedlungen, in denen sich tagsüber niemand mehr hinauswagte und Menschen hinter verschlossenen Türen ausharrten, während Felder und Wege verödeten. Namen sind kaum überliefert; Corbett nennt die Toten meist nur nach Dorf und Tätigkeit, etwa eine Frau aus Pali zwischen Dabidhura und Dhunaghat und als letztes Opfer ein Mädchen von sechzehn oder siebzehn Jahren nahe Champawat, das mit anderen Dorfbewohnern trockenes Holz sammelte. Wie viele Opfer tatsächlich auf diese eine Tigerin zurückgingen, lässt sich nicht mehr feststellen, denn eine geordnete Zählung gab es weder in Nepal noch in Kumaon."
+   },
+   {
+    "titel": "Die Jagd",
+    "text": "Corbett folgte der Spur des letzten Opfers in eine Schlucht und begegnete der Tigerin am Abend erstmals, konnte sie aber nicht stellen. Am nächsten Tag organisierte der Tahsildar von Champawat, der örtliche Steuerbeamte, ein Treiben. Nach Corbetts Bericht kamen bis Mittag 298 Männer zusammen; der Tahsildar duldete ausnahmsweise auch Waffen ohne Lizenz. Die Treiber drängten das Tier durch eine enge Schlucht auf Corbett zu. Mit seinem Gewehr traf er sie, ohne sie zu töten, und als ihm die Patronen ausgingen, holte er sich die alte Flinte des Tahsildars und gab damit den letzten Schuss ab. Das genaue Datum nennt Corbett nicht; in der späteren Literatur wird meist der 12. Mai 1907 angegeben. Die Männer baten darum, die Tigerin durch ihre Dörfer tragen zu dürfen, damit Frauen und Kinder ihren Tod mit eigenen Augen sähen."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Für viele Menschen in den Bergdörfern war ein Tier, das jahrelang Soldaten, Prämienjägern und Treibjagden entging, kaum ein gewöhnliches Raubtier. Corbett schildert in seinen Büchern, wie verbreitet in Kumaon und Garhwal die Vorstellung war, hinter einem Menschenfresser könne ein böser Geist stecken, und wie tief die Angst das Leben ganzer Täler veränderte. Die Kolonialverwaltung sah ein Sicherheitsproblem und setzte auf Geld und Waffen: Prämien, eigens beauftragte Jäger, Soldaten aus Almora. Corbett hielt gerade das für hinderlich. Er wollte nicht als Prämienjäger gelten, und er fürchtete, von anderen Schützen versehentlich getroffen zu werden, die gleichzeitig im Wald unterwegs waren. Deshalb bestand er darauf, allein zu jagen. Die eigentliche Ursache des Verhaltens fand er erst, als er die tote Tigerin untersuchte: in ihrem Maul."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Corbett stellte fest, dass der obere rechte Eckzahn der Tigerin zur Hälfte und der untere bis auf den Knochen abgebrochen war, nach seiner Deutung Folge einer alten Schussverletzung. Damit konnte sie größere Beutetiere kaum noch reißen. Diese Erklärung entspricht dem, was Wildbiologen heute über Menschenfresser unter Großkatzen sagen: Meist sind es verletzte, alte oder geschwächte Tiere, oft in Gegenden, in denen Menschen tief in ihren Lebensraum vordringen und natürliche Beute knapp geworden ist. Die Opferzahl ist dagegen nicht überprüfbar. Corbetts 200 und 234 Tote beruhen auf amtlichen Schätzungen und Erzählungen, nicht auf Einzelnachweisen. Die verbreitete Zahl 436 führt das Guinness-Buch der Rekorde als Rekord für die meisten Todesopfer eines einzelnen Tigers; sie ist als überlieferte Angabe zu lesen, nicht als gesicherte Zählung."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Für Corbett war die Tigerin von Champawat der Anfang einer Reihe: In den folgenden drei Jahrzehnten erlegte er in Kumaon und Garhwal zahlreiche weitere Tiger und Leoparden, die Menschen angegriffen hatten, darunter den Leoparden von Rudraprayag. Seine Erinnerungen „Man-Eaters of Kumaon“ erschienen 1944 bei Oxford University Press in Bombay und wurden ein Welterfolg; die Champawat-Geschichte bildet das erste Kapitel. Später wandelte sich Corbett zum Fürsprecher des Tigerschutzes und warb für ein Schutzgebiet in Kumaon. Der 1936 gegründete Hailey National Park, Indiens erster Nationalpark, trägt seit Mitte der 1950er-Jahre seinen Namen. Corbett selbst war 1947 nach Kenia übergesiedelt und starb 1955 in Nyeri."
+   }
+  ],
+  "legende": "Gesichert ist, dass eine Tigerin über mehrere Jahre in Westnepal und in Kumaon viele Menschen tötete, dass die Behörden sie nicht stoppen konnten und dass Jim Corbett sie 1907 bei Champawat nach einem großen Treiben erschoss. Ihre beschädigten Eckzähne hat Corbett selbst beschrieben. Die Zahl von 436 Toten ist dagegen eine überlieferte Angabe. Corbett nennt 200 Opfer in Nepal und 234 in Kumaon; die gängige Zahl 436 kommt wohl durch die beiden letzten Opfer hinzu. Sie stammt aus Schätzungen ohne Einzelnachweise und lässt sich nicht nachprüfen. Corbetts Bericht ist zudem die einzige ausführliche Quelle zur Jagd selbst; spätere Darstellungen bauen auf ihm auf. Vorstellungen von einem übernatürlichen Wesen gehören zum Volksglauben der Region, nicht zu Corbetts eigener Deutung.",
+  "bedeutung": "Der Fall machte Jim Corbett bekannt und wurde durch sein Buch zum Muster der Menschenfresser-Erzählung. Zugleich zeigt er, wie verwundbar die bäuerliche Bevölkerung im Himalaya-Vorland war, deren Alltag vom Wald abhing. Corbetts spätere Einsicht, dass Menschenfresser meist verletzte Tiere sind und Tiger Schutz brauchen, trug zur Gründung des ersten Nationalparks Indiens bei, der heute seinen Namen trägt und ein Kernstück des Tigerschutzes ist.",
+  "zeitleiste": [
+   {
+    "datum": "um 1900",
+    "jahr": 1900,
+    "text": "In Westnepal beginnen Angriffe einer Tigerin auf Menschen."
+   },
+   {
+    "datum": "um 1903",
+    "jahr": 1903,
+    "text": "Bewaffnete Nepalesen treiben das Tier über den Grenzfluss Sarda nach Kumaon."
+   },
+   {
+    "datum": "1903–1907",
+    "jahr": 1903,
+    "text": "Prämien, Berufsjäger und Gurkha-Soldaten aus Almora bleiben erfolglos."
+   },
+   {
+    "datum": "Frühjahr 1907",
+    "jahr": 1907,
+    "text": "Deputy Commissioner Berthoud bittet Jim Corbett, die Jagd zu übernehmen."
+   },
+   {
+    "datum": "Mai 1907",
+    "jahr": 1907,
+    "text": "Corbett erschießt die Tigerin nach einem Treiben mit 298 Männern in einer Schlucht bei Champawat (meist genannt: 12. Mai)."
+   },
+   {
+    "datum": "1944",
+    "jahr": 1944,
+    "text": "„Man-Eaters of Kumaon“ erscheint; die Champawat-Geschichte ist das erste Kapitel."
+   },
+   {
+    "datum": "1955",
+    "jahr": 1955,
+    "text": "Corbett stirbt in Nyeri in Kenia."
+   },
+   {
+    "datum": "Mitte der 1950er-Jahre",
+    "jahr": 1956,
+    "text": "Der Nationalpark in Kumaon wird nach Corbett benannt."
+   }
+  ],
+  "quellen": [
+   "Jim Corbett: Man-Eaters of Kumaon, Oxford University Press, Bombay 1944, Kapitel „The Champawat Man-Eater“",
+   "Dane Huckelbridge: No Beast So Fierce. The Terrifying True Story of the Champawat Tiger, the Deadliest Animal in History, William Morrow 2019",
+   "Martin Booth: Carpet Sahib. A Life of Jim Corbett, Constable, London 1986",
+   "Guinness Book of Records 1997, Bantam, S. 354 (Rekordeintrag zum Champawat-Tiger)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/champawat-tigerin-0.jpg",
+    "breite": 852,
+    "hoehe": 1100,
+    "zeigt": "Jim Corbett, Porträt aus der Erstausgabe von „Man-Eaters of Kumaon“ (1944)",
+    "urheber": "Jim Corbett",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Jim_Corbett.jpg"
+   },
+   {
+    "datei": "bilder/dark/champawat-tigerin-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Bergland um Champawat in Uttarakhand, das Gebiet der letzten Angriffe",
+    "urheber": "ArmouredCyborg",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Champawat_view.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "radium-girls",
+  "rubrik": "horror",
+  "unterart": "Berufskrankheit",
+  "titel": "Die Radium Girls",
+  "untertitel": "Leuchtende Zifferblätter, tödliche Arbeit und ein Kampf vor Gericht – USA 1917 bis 1939",
+  "jahr": 1917,
+  "zeitraum": "1917 bis 1939",
+  "ort": "Orange (New Jersey) und Ottawa (Illinois)",
+  "land": "USA",
+  "lat": 40.7707,
+  "lon": -74.2326,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Orange,_New_Jersey",
+  "status": "aufgeklärt",
+  "kurz": "Junge Arbeiterinnen bemalten Zifferblätter mit Radiumfarbe und spitzten die Pinsel mit den Lippen. Viele erkrankten schwer und starben. Ihre Klagen veränderten das Arbeitsschutzrecht in den USA.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Radium, 1898 von Marie und Pierre Curie entdeckt, galt um 1915 als Wunderstoff. Mit Zinksulfid vermischt ergab es eine Farbe, die im Dunkeln leuchtete; die Firma in Orange, New Jersey, die sich später United States Radium Corporation nannte, vertrieb sie unter dem Namen Undark. Ab 1917, mit dem Kriegseintritt der USA, bemalten dort Hunderte junge Frauen die Zifferblätter von Uhren und militärischen Instrumenten. Damit die Pinselspitze fein blieb, wurde ihnen beigebracht, sie mit den Lippen zu formen, nach dem Prinzip Lippe, Farbe, malen. Mit jedem Strich schluckten sie etwas Radium. Ende 1922 eröffnete die Radium Dial Company ein weiteres Werk in Ottawa, Illinois, mit denselben Arbeitsmethoden. Vor Gefahren wurden die Frauen nicht gewarnt; auf Nachfragen hieß es, die Farbe sei harmlos."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Die Malerinnen waren meist zwischen fünfzehn und Mitte zwanzig, die Arbeit galt als gut bezahlt und patriotisch. Nach einigen Jahren erkrankten viele: Zähne lockerten sich, der Kiefer begann zu zerfallen, es folgten Blutarmut, Knochenbrüche und Knochenkrebs. Amelia Maggia, genannt Mollie, starb am 12. September 1922; die Ärzte hielten ihre Krankheit zunächst für Syphilis. Zu den Frauen, die später klagten, gehörten Grace Fryer und Katherine Schaub aus Orange sowie Catherine Wolfe Donohue aus Ottawa, die 1938 schwer krank vor der Kommission aussagte und am 27. Juli 1938 starb. Wie viele Malerinnen insgesamt an den Folgen starben, lässt sich nicht genau sagen; viele Fälle wurden nie als Radiumvergiftung erkannt."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Die Unternehmen bestritten lange jeden Zusammenhang. Radium wurde damals in der Medizin gegen Krebs eingesetzt und als Zusatz in Getränken, Cremes und Zahnpasta beworben; dass es im Körper schaden könne, passte nicht zum Bild. Eine Untersuchung des Harvard-Physiologen Cecil Drinker stellte 1924 im Auftrag der United States Radium Corporation einen Zusammenhang fest, das Unternehmen gab den Behörden jedoch eine geschönte Fassung weiter. Die Krankheiten der Frauen wurden Infektionen, Syphilis oder schlechter Zahnpflege zugeschrieben. Erst 1925 wies der Gerichtsmediziner von Newark, Harrison Martland, nach, dass die Frauen durch Radium und das verwandte Mesothorium vergiftet worden waren, die sich in den Knochen ablagerten und dort dauerhaft strahlten. Die Unternehmen in Illinois behaupteten später, nur das Mesothorium sei schädlich gewesen."
+   },
+   {
+    "titel": "Der Weg vor Gericht",
+    "text": "1927 verklagten fünf Frauen aus Orange, darunter Grace Fryer, mit dem Anwalt Raymond Berry die United States Radium Corporation. Größtes Hindernis war die Verjährungsfrist von zwei Jahren, die bei einer Krankheit, die erst Jahre nach der Arbeit ausbrach, kaum einzuhalten war. Die Zeitungen berichteten ausführlich über die „fünf todgeweihten Frauen“, und als das Gericht die Verhandlung auf den Herbst vertagte, wuchs der öffentliche Druck. Am 4. Juni 1928 nahmen die Frauen einen Vergleich an, nach übereinstimmenden Darstellungen 10.000 Dollar für jede, eine jährliche Rente von 600 Dollar und die Übernahme der Behandlungskosten. In Ottawa übernahm 1937 der Anwalt Leonard Grossman die Fälle. 1938 entschied die Illinois Industrial Commission für Catherine Donohue und ihre Kolleginnen. Am 23. Oktober 1939 lehnte der Oberste Gerichtshof der USA die letzte Berufung des Unternehmens ab."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Die Wirkung des Radiums ist heute gut verstanden. Es verhält sich im Körper ähnlich wie Calcium und wird in die Knochen eingebaut, wo seine Alphastrahlung über Jahrzehnte Knochenmark und Knochengewebe schädigt. Die Leuchtfarbenmalerinnen wurden ab den 1930er-Jahren zu einer der wichtigsten Gruppen der Strahlenforschung. Der Physiker Robley Evans am MIT und später das Argonne National Laboratory untersuchten Hunderte ehemalige Arbeiterinnen über Jahrzehnte. Aus diesen Daten wurden erste Grenzwerte abgeleitet: 1941 legte das National Bureau of Standards eine höchstzulässige Radiummenge im Körper fest, die auch beim Bau der Atombombe im Manhattan-Projekt als Richtschnur diente. Die Historikerin Claudia Clark und die Autorin Kate Moore haben die Geschichte der Frauen ausführlich dokumentiert."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Fälle gehören zu den ersten in den USA, in denen ein Unternehmen für die Gesundheit seiner Beschäftigten haftbar gemacht wurde. Sie schärften das Bewusstsein dafür, dass Berufskrankheiten oft erst lange nach der Arbeit ausbrechen und Verjährungsfristen entsprechend gestaltet sein müssen, und gelten als ein Schritt auf dem langen Weg zu einem staatlichen Arbeitsschutz, der 1970 in der Bundesbehörde OSHA mündete. Leuchtfarben mit Radium wurden erst in den 1960er-Jahren durch weniger gefährliche Stoffe ersetzt. In Ottawa erinnert seit 2011 eine Statue an die Leuchtfarbenmalerinnen. Kate Moores Buch The Radium Girls von 2016 und ein gleichnamiger Film von 2018 machten die Geschichte weltweit bekannt."
+   }
+  ],
+  "legende": "Der Name „Radium Girls“ stammt aus der Presse; die Frauen selbst nannten sich nicht so. Verbreitet ist die Vorstellung, sie hätten wie Gespenster geleuchtet; tatsächlich glänzten Haare, Haut und Kleidung durch Farbstaub schwach im Dunkeln, manche bemalten sich zum Spaß Zähne oder Nägel. Gesichert sind die Arbeitsmethode mit den Lippen, die schweren Erkrankungen, Martlands Nachweis von 1925, der Vergleich von 1928 und das Urteil zugunsten Catherine Donohues. Dass die Prozesse direkt zur Gründung der OSHA führten, ist eine Vereinfachung: Sie waren ein wichtiger Anstoß unter vielen.",
+  "bedeutung": "Die Radium Girls stehen für den Kampf von Arbeiterinnen um Anerkennung einer Berufskrankheit gegen Unternehmen, Ärzte im Firmendienst und ein Recht, das auf schleichende Vergiftungen nicht eingestellt war. Ihre Fälle trugen dazu bei, dass Arbeitgeber für Gesundheitsschäden haften, und ihre Körper lieferten, unfreiwillig, die Grundlage für die ersten Strahlenschutzgrenzwerte, die bis in das Atomzeitalter wirkten.",
+  "zeitleiste": [
+   {
+    "datum": "1917",
+    "jahr": 1917,
+    "text": "In Orange, New Jersey, beginnen junge Frauen in großer Zahl, Zifferblätter mit Radiumfarbe zu bemalen."
+   },
+   {
+    "datum": "12. September 1922",
+    "jahr": 1922,
+    "text": "Amelia Maggia stirbt; ihre Krankheit wird zunächst als Syphilis gedeutet."
+   },
+   {
+    "datum": "Ende 1922",
+    "jahr": 1922,
+    "text": "Die Radium Dial Company eröffnet ein Werk in Ottawa, Illinois."
+   },
+   {
+    "datum": "1925",
+    "jahr": 1925,
+    "text": "Harrison Martland weist Radiumvergiftung bei den Malerinnen nach."
+   },
+   {
+    "datum": "1927",
+    "jahr": 1927,
+    "text": "Fünf Frauen verklagen mit Anwalt Raymond Berry die United States Radium Corporation."
+   },
+   {
+    "datum": "4. Juni 1928",
+    "jahr": 1928,
+    "text": "Die Klägerinnen aus New Jersey nehmen einen außergerichtlichen Vergleich an."
+   },
+   {
+    "datum": "1938",
+    "jahr": 1938,
+    "text": "Die Illinois Industrial Commission entscheidet für Catherine Donohue; sie stirbt am 27. Juli."
+   },
+   {
+    "datum": "23. Oktober 1939",
+    "jahr": 1939,
+    "text": "Der Oberste Gerichtshof der USA lehnt die letzte Berufung der Radium Dial Company ab."
+   }
+  ],
+  "quellen": [
+   "Claudia Clark: Radium Girls. Women and Industrial Health Reform, 1910–1935, University of North Carolina Press 1997",
+   "Ross Mullner: Deadly Glow. The Radium Dial Worker Tragedy, American Public Health Association 1999",
+   "Kate Moore: The Radium Girls, Simon & Schuster 2016",
+   "Arlene Balkansky: Radium Girls: Living Dead Women, Library of Congress, Blog Headlines and Heroes, März 2019",
+   "Encyclopaedia Britannica: Radium Girls. The Women Who Fought for Their Lives in a Killer Workplace"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/radium-girls-0.jpg",
+    "breite": 821,
+    "hoehe": 650,
+    "zeigt": "Arbeiterinnen in einem Werk der United States Radium Corporation, um 1922",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:All_women_or_girls_using_radium_paint_with_no_protection_or_warnings_in_1922%2C_from-_USRadiumGirls-Argonne1%2Cca1922-23-150dpi_%28cropped%29.jpg"
+   },
+   {
+    "datei": "bilder/dark/radium-girls-1.jpg",
+    "breite": 755,
+    "hoehe": 1100,
+    "zeigt": "Zeitschriftenanzeige für die Leuchtfarbe Undark, 1921",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Undark_%28Radium_Girls%29_advertisement%2C_1921.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "okiku-puppe",
+  "rubrik": "horror",
+  "unterart": "Spukobjekt",
+  "titel": "Die Okiku-Puppe",
+  "untertitel": "Eine Puppe, deren Haar wachsen soll – Mannenji, Hokkaidō",
+  "jahr": 1918,
+  "zeitraum": "Kauf 1918, im Tempel seit 1938, bekannt seit den 1960er-Jahren",
+  "ort": "Tempel Mannenji, Kurisawa-chō Manji, Iwamizawa, Hokkaidō",
+  "land": "Japan",
+  "lat": 43.1479,
+  "lon": 141.9827,
+  "ortQuelle": "https://ja.wikipedia.org/wiki/%E8%90%AC%E5%BF%B5%E5%AF%BA",
+  "status": "umstritten",
+  "kurz": "In einem Tempel auf Hokkaidō wird eine Puppe aufbewahrt, deren Haar angeblich wächst – beseelt vom Geist eines früh verstorbenen Mädchens. Das Objekt ist real, die Geschichte eine moderne Legende.",
+  "abschnitte": [
+   {
+    "titel": "Was erzählt wird",
+    "text": "Die bekannteste Fassung geht so: 1918 kaufte der damals siebzehnjährige Suzuki Eikichi auf dem Rückweg von einer Ausstellung in Sapporo eine Puppe mit Pagenkopf, wie sie damals als Ichimatsu-Puppe beliebt war, und schenkte sie seiner kleinen Schwester, die Okiku oder Kikuko genannt wird. Das Mädchen liebte die Puppe und spielte täglich mit ihr. Im Januar des folgenden Jahres starb es an einer Krankheit; beim Kauf war es nach dieser Fassung drei Jahre alt. Die Familie stellte die Puppe zur Urne auf den Hausaltar und betete vor ihr. Mit der Zeit, so heißt es, sei das Haar der Puppe gewachsen. 1938 zog Eikichi nach Karafuto, in den japanischen Süden Sachalins, und vertraute Urne und Puppe dem Tempel Mannenji an. Als er nach dem Krieg zurückkehrte, sei das Haar noch länger gewesen; in der Annahme, die Seele des Mädchens sei in die Puppe gefahren, habe man sie in die Haupthalle gebracht."
+   },
+   {
+    "titel": "Ort und Objekt",
+    "text": "Der Mannenji ist ein kleiner Tempel der Jōdo-Schule (Zweig Nishiyama Zenrinji) in Manji, einem ehemaligen Kohlebergbauort im Gemeindeteil Kurisawa, der 2006 nach Iwamizawa eingemeindet wurde. Die Puppe existiert und wurde dort über Jahrzehnte Besuchern gezeigt; der Tempel hielt Gedenkfeiern für sie ab. Nach den Berichten soll das Haar, ursprünglich ein kurzer Pagenschnitt, bis auf Schulterlänge gewachsen sein. Laut einem Zeitschriftenbericht von 2015, den die Volkskundlerin Narumi Akari auswertet, wird die Puppe wegen ihres verschlechterten Zustands nicht mehr öffentlich gezeigt. Eine unabhängige wissenschaftliche Untersuchung des Haars ist nicht veröffentlicht. Mit der Sage von der Tellerzählerin Okiku aus dem Banchō Sarayashiki hat die Puppe nichts zu tun; die Namensgleichheit ist Zufall."
+   },
+   {
+    "titel": "Wie die Legende entstand",
+    "text": "Die Geschichte ist jünger, als sie klingt. Narumi Akari, die 2021 die modernen japanischen Puppengeschichten untersucht hat, folgt dem Autor Koike Takehiko: Danach stammt die älteste bekannte gedruckte Fassung aus der Frauenzeitschrift Josei Jishin vom 6. August 1962. Es folgten Berichte etwa in der Zeitschrift Young Lady 1968 und in der Zeitung Hokkaidō Shinbun am 15. August 1970. Diese Fassungen weichen in wichtigen Punkten voneinander ab: im Namen des Mädchens und des Vaters, im Kaufjahr, im Todesdatum und im Herkunftsort der Puppe; die Fassung von 1962 nennt sogar ein Mädchen namens Kiyoko und spielt in den 1950er-Jahren. Ab den 1970er-Jahren griffen Fernsehen und Zeitungen den Stoff immer wieder auf, in den Jahrzehnten danach Rätsel- und Okkultismusmagazine. Mit jeder Wiederholung kamen neue Einzelheiten hinzu, etwa ein angeblich reifer wirkendes Gesicht oder ein sich öffnender Mund."
+   },
+   {
+    "titel": "Erklärungsversuche",
+    "text": "Für Gläubige ist die Puppe ein Beispiel dafür, dass Seelen in Gegenständen Wohnung nehmen können, eine Vorstellung, die in Japan tief verwurzelt ist: Puppen gelten als Abbilder von Menschen, und alte Puppen werden nicht einfach weggeworfen, sondern in Tempeln und Schreinen bei eigenen Zeremonien verabschiedet. Skeptiker verweisen darauf, dass die Haare solcher Puppen oft aus Echthaar bestanden, das tief in den Kopf eingeklebt wurde; lockert sich der Leim oder rutschen die Haare nach, erscheint die Frisur länger. Belegt ist keine der beiden Deutungen, denn das Haar wurde nie öffentlich und überprüfbar gemessen. Narumi ordnet die Okiku-Puppe dem Typ der Besessenheitsgeschichte zu, in der der Geist eines Menschen in eine gewöhnliche Puppe fährt, und betont, dass gerade die Existenz eines realen, besuchbaren Objekts die Glaubwürdigkeit steigert."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Okiku-Puppe wurde zum Urbild der „Puppe mit wachsendem Haar“, einem eigenen Motiv der japanischen Spukgeschichte, das es vorher kaum gab. Narumi sieht in ihr den wichtigsten Anstoß für die vielen ähnlichen Erzählungen, die seit den 1970er-Jahren und verstärkt in der Heisei-Zeit nach 1989 auftauchten. Nach einer Untersuchung des Volkskundlers Tanaka (2005), die Narumi zitiert, trug die Geschichte auch dazu bei, dass Gedenkfeiern für ausgediente Puppen in Tempeln in den 1970er- und 1980er-Jahren stark zunahmen. International gilt die Okiku-Puppe heute als eine der bekanntesten angeblich verfluchten Puppen, neben amerikanischen Beispielen wie Annabelle oder Robert. Für die Familie Suzuki war sie vor allem ein Andenken an ein früh verstorbenes Kind."
+   }
+  ],
+  "legende": "Gesichert ist, dass im Tempel Mannenji in Iwamizawa eine Puppe aufbewahrt wird, die mit dem Andenken an ein früh verstorbenes Mädchen verbunden ist, und dass sie seit den 1960er-Jahren als Puppe mit wachsendem Haar berühmt ist. Die Familiengeschichte um Kauf, Tod und Übergabe an den Tempel ist nur in Presseberichten überliefert, die sich in Namen, Alter und Daten widersprechen; Urkunden dazu sind nicht veröffentlicht. Dass das Haar tatsächlich wächst, ist nicht belegt. Eine wissenschaftliche Untersuchung liegt nicht öffentlich vor. Spätere Ausschmückungen wie ein sich veränderndes Gesicht stammen aus Okkultismusmagazinen.",
+  "bedeutung": "Die Okiku-Puppe ist ein Lehrbeispiel dafür, wie eine moderne Legende entsteht: aus einem realen Objekt, einer traurigen Familiengeschichte und Zeitschriften, die sie weitererzählen und dabei verändern. Sie prägte ein ganzes Erzählmotiv und beeinflusste nach Einschätzung der Volkskunde sogar religiöse Praxis, die Gedenkfeiern für Puppen in japanischen Tempeln.",
+  "zeitleiste": [
+   {
+    "datum": "1918",
+    "jahr": 1918,
+    "text": "Suzuki Eikichi kauft nach der bekanntesten Fassung in Sapporo eine Puppe für seine kleine Schwester."
+   },
+   {
+    "datum": "1919",
+    "jahr": 1919,
+    "text": "Das Mädchen stirbt im Januar an einer Krankheit; die Puppe kommt auf den Hausaltar."
+   },
+   {
+    "datum": "1938",
+    "jahr": 1938,
+    "text": "Eikichi zieht nach Karafuto und lässt Urne und Puppe im Tempel Mannenji."
+   },
+   {
+    "datum": "nach 1945",
+    "jahr": 1946,
+    "text": "Nach Suzukis Rückkehr kommt die Puppe der Überlieferung nach in die Haupthalle des Tempels."
+   },
+   {
+    "datum": "6. August 1962",
+    "jahr": 1962,
+    "text": "Die Zeitschrift Josei Jishin bringt nach Koike Takehiko die älteste bekannte gedruckte Fassung."
+   },
+   {
+    "datum": "15. August 1970",
+    "jahr": 1970,
+    "text": "Die Hokkaidō Shinbun berichtet; danach folgen zahlreiche Fernseh- und Zeitungsberichte."
+   },
+   {
+    "datum": "2006",
+    "jahr": 2006,
+    "text": "Kurisawa mit dem Ortsteil Manji wird nach Iwamizawa eingemeindet."
+   },
+   {
+    "datum": "2015",
+    "jahr": 2015,
+    "text": "Nach Presseberichten wird die Puppe wegen ihres Zustands nicht mehr öffentlich gezeigt."
+   }
+  ],
+  "quellen": [
+   "Narumi Akari: Gendai ni okeru ningyō no kai’i denshō no kenkyū (Studie zu modernen Spuküberlieferungen um Puppen), Kōshō Bungei Kenkyū 44 (2021)",
+   "Josei Jishin, 6. August 1962 (älteste bekannte Pressefassung, nach Koike Takehiko, zitiert bei Narumi 2021)",
+   "Hokkaidō Shinbun, 15. August 1970 (nach Narumi 2021)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/okiku-puppe-0.jpg",
+    "breite": 900,
+    "hoehe": 638,
+    "zeigt": "Ichimatsu-Puppen mit Pagenkopf, ein Puppentyp wie der der Okiku-Puppe (nicht die Okiku-Puppe selbst)",
+    "urheber": "Ellie from Tokyo, Japan",
+    "lizenz": "CC BY 2.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Ichimatsu_ningy%C5%8D.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "fluch-des-tutanchamun",
+  "rubrik": "horror",
+  "unterart": "Fluch",
+  "titel": "Der Fluch des Tutanchamun",
+  "untertitel": "Lord Carnarvons Tod, die Presse und was die Statistik sagt, 1922/23",
+  "jahr": 1923,
+  "zeitraum": "November 1922 bis heute",
+  "ort": "Tal der Könige bei Luxor; Kairo",
+  "land": "Ägypten",
+  "lat": 25.7402,
+  "lon": 32.6014,
+  "ortQuelle": "https://en.wikipedia.org/wiki/KV62",
+  "status": "aufgeklärt",
+  "kurz": "Wenige Monate nach der Öffnung des Pharaonengrabs stirbt Lord Carnarvon, und die Presse erfindet einen Fluch. Eine Studie von 2002 zeigt: Wer im Grab war, lebte nicht kürzer.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Am 4. November 1922 stießen die Arbeiter des britischen Archäologen Howard Carter im Tal der Könige auf eine Stufe, die zu einem verschlossenen Grab führte. Carter ließ den Zugang wieder zuschütten und telegrafierte seinem Geldgeber George Herbert, dem fünften Earl of Carnarvon, der seit Jahren die Grabungen finanzierte. Am 26. November blickten beide mit Carnarvons Tochter Lady Evelyn Herbert erstmals in die Vorkammer, die voller vergoldeter Möbel, Wagen und Statuen stand. Es war das weitgehend unberaubte Grab des jung verstorbenen Königs Tutanchamun aus dem 14. Jahrhundert v. Chr. Die Funde lösten eine weltweite Begeisterung aus. Im Februar 1923 wurde die versiegelte Wand zur Grabkammer geöffnet. Wenige Wochen später erkrankte Carnarvon. Er starb am 5. April 1923 in Kairo."
+   },
+   {
+    "titel": "Der Tod des Lord Carnarvon",
+    "text": "Carnarvon war gesundheitlich seit einem schweren Autounfall 1901 angeschlagen und hielt sich wegen seiner empfindlichen Lunge regelmäßig im Winter in Ägypten auf. Im März 1923 schnitt er sich nach zeitgenössischen Berichten beim Rasieren einen Mückenstich auf, der sich entzündete. Es folgten eine Blutvergiftung und eine Lungenentzündung, an der er im Alter von 56 Jahren starb. Für die Medizin war das kein Rätsel: Ohne Antibiotika, die es damals noch nicht gab, verliefen solche Infektionen häufig tödlich. In einem Leserbrief an die Fachzeitschrift The Lancet wies Ann M. Cox 2003 die Vermutung zurück, Schimmelsporen aus dem Grab hätten ihn getötet, und sah keinen Zusammenhang zwischen dem Grab und seinem Tod; zudem hatten viele andere Besucher dieselbe Kammer betreten, ohne zu erkranken."
+   },
+   {
+    "titel": "Wie der Fluch entstand",
+    "text": "Den Boden bereitete die Presse. Carnarvon hatte im Januar 1923 der Londoner Times die Exklusivrechte an Berichten und Fotos verkauft. Andere Zeitungen, die leer ausgingen, suchten eigene Geschichten. Kurz vor Carnarvons Tod veröffentlichte die Romanautorin Marie Corelli in der New Yorker Zeitung World einen Brief, der unter Berufung auf ein angeblich altes Buch vor schwerer Strafe für jeden warnte, der ein versiegeltes Grab öffne. Nach Carnarvons Tod verbreitete sich die Geschichte, über dem Grab stehe eine Inschrift, die den Tod jedem androhe, der die Ruhe des Königs störe. Arthur Conan Doyle, damals ein überzeugter Spiritist, meinte, Elementargeister, die Priester zum Schutz des Grabes geschaffen hätten, könnten Carnarvon getötet haben. Jeder spätere Todesfall unter Beteiligten oder Besuchern wurde nun dem Fluch zugeschlagen."
+   },
+   {
+    "titel": "Was die Statistik sagt",
+    "text": "Der australische Epidemiologe Mark R. Nelson von der Monash University prüfte den Fluch 2002 im British Medical Journal mit den Methoden einer Kohortenstudie. Er stützte sich auf eine Liste von 44 Westlern, die nach Carters Unterlagen an vier Schlüsseldaten zwischen Februar 1923 und November 1925 in Ägypten waren. 25 von ihnen waren bei mindestens einem der kritischen Ereignisse dabei, etwa der Öffnung der Grabkammer, des Sarkophags oder der Särge, und damit dem Fluch ausgesetzt. Diese Gruppe starb im Mittel mit 70 Jahren, die nicht exponierte mit 75; der Unterschied war statistisch nicht bedeutsam. Nelson fand keinen Beleg für einen Fluch. Howard Carter selbst, der wie kein anderer im Grab gearbeitet hatte, starb 1939 mit 64 Jahren in London an Lymphdrüsenkrebs, siebzehn Jahre nach der Entdeckung."
+   },
+   {
+    "titel": "Schimmel und andere Erklärungen",
+    "text": "Seit Jahrzehnten wird gelegentlich vermutet, Schimmelpilze wie Aspergillus flavus oder Bakterien in versiegelten Gräbern könnten Besucher krank gemacht haben. In einzelnen Gräbern wurden solche Keime tatsächlich nachgewiesen, und für Menschen mit geschwächter Abwehr können Pilzsporen gefährlich sein. Für Carnarvon passt die Erklärung aber schlecht: Er starb an einer bakteriellen Infektion nach einer Hautverletzung, und viele andere, die länger im Grab arbeiteten, blieben gesund. Fachleute halten die Schimmeltheorie deshalb höchstens für eine Möglichkeit im Einzelfall, nicht für die Erklärung einer Serie. Eine Serie gab es nach den Zahlen ohnehin nicht. Was wie eine Häufung wirkt, entsteht durch Auswahl: Erzählt werden die Todesfälle, nicht die vielen langen Leben."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Der Fluch der Mumie wurde zu einem festen Motiv der Populärkultur. Hollywood griff es 1932 mit Die Mumie auf, zahllose Romane, Filme und Fernsehsendungen folgten. Der Tutanchamun-Kult der 1920er-Jahre prägte Mode, Architektur und Design des Art déco, und der Fluch trug seinen Teil zur Faszination bei. Die Funde blieben vollständig in Ägypten und sind heute großenteils im Grand Egyptian Museum bei Gizeh ausgestellt. Der Fall gilt in der Wissenschaftsvermittlung als Musterbeispiel für Bestätigungsfehler und für die Macht einer Zeitungskampagne. Die Mumie des Königs liegt bis heute im Grab im Tal der Könige."
+   }
+  ],
+  "legende": "Eine Fluchinschrift über oder in dem Grab gibt es nicht; sie wurde nach Carnarvons Tod von der Presse erfunden oder aus anderen Quellen zusammengesetzt. Erfunden oder unbelegt sind auch viele Begleitgeschichten, etwa dass im Augenblick von Carnarvons Tod in ganz Kairo das Licht ausging und zugleich sein Hund in England tot umfiel; sie gehen auf spätere Erzählungen der Familie und der Presse zurück. Belegt ist, dass Carnarvon an einer Infektion starb, dass Carter noch siebzehn Jahre lebte und dass Menschen, die im Grab waren, laut der Kohortenstudie von 2002 nicht früher starben als andere.",
+  "bedeutung": "Der Fluch des Tutanchamun zeigt, wie eine Zeitungskonkurrenz, ein prominenter Todesfall und Erwartungen an das alte Ägypten eine Legende erzeugen, die ein Jahrhundert überdauert. Zugleich ist er ein Paradebeispiel dafür, dass sich auch scheinbar übernatürliche Behauptungen mit einfachen statistischen Mitteln prüfen lassen. Die BMJ-Studie erschien in der traditionell augenzwinkernden Weihnachtsausgabe der Zeitschrift, ist aber methodisch ernst gemeint und wird bis heute gern als Beispiel zitiert.",
+  "zeitleiste": [
+   {
+    "datum": "4. November 1922",
+    "jahr": 1922,
+    "text": "Carters Arbeiter finden die erste Stufe zum Grab des Tutanchamun."
+   },
+   {
+    "datum": "26. November 1922",
+    "jahr": 1922,
+    "text": "Carter, Carnarvon und Lady Evelyn blicken erstmals in die Vorkammer."
+   },
+   {
+    "datum": "Januar 1923",
+    "jahr": 1923,
+    "text": "Carnarvon verkauft der Times die Exklusivrechte an der Berichterstattung."
+   },
+   {
+    "datum": "Februar 1923",
+    "jahr": 1923,
+    "text": "Die versiegelte Wand zur Grabkammer wird geöffnet."
+   },
+   {
+    "datum": "März 1923",
+    "jahr": 1923,
+    "text": "Marie Corelli warnt öffentlich vor einer Strafe für Grabräuber."
+   },
+   {
+    "datum": "5. April 1923",
+    "jahr": 1923,
+    "text": "Lord Carnarvon stirbt in Kairo an den Folgen einer Infektion."
+   },
+   {
+    "datum": "2. März 1939",
+    "jahr": 1939,
+    "text": "Howard Carter stirbt mit 64 Jahren in London."
+   },
+   {
+    "datum": "Dezember 2002",
+    "jahr": 2002,
+    "text": "Mark R. Nelson veröffentlicht im British Medical Journal seine Kohortenstudie zum Fluch."
+   }
+  ],
+  "quellen": [
+   "Mark R. Nelson: The mummy's curse. Historical cohort study, in: British Medical Journal 325 (2002), S. 1482",
+   "Ann M. Cox: The death of Lord Carnarvon (Leserbrief), in: The Lancet 361 (2003), S. 1994",
+   "Howard Carter, A. C. Mace: The Tomb of Tut.ankh.Amen, Bd. 1, 1923",
+   "Griffith Institute, University of Oxford: Tutankhamun. Anatomy of an Excavation (Grabungsarchiv Howard Carters)",
+   "Encyclopaedia Britannica: Tutankhamun; Howard Carter"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/fluch-des-tutanchamun-0.jpg",
+    "breite": 900,
+    "hoehe": 630,
+    "zeigt": "Howard Carter, Lord Carnarvon und Lady Evelyn Herbert an der Treppe zum Grab, November 1922, Aufnahme von Harry Burton",
+    "urheber": "Harry Burton (Photographer)",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Howard_Carter%2C_Lord_Carnarvon_and_Lady_Evelyn_Herbert_at_Tutankhamen%27s_tomb.jpg"
+   },
+   {
+    "datei": "bilder/dark/fluch-des-tutanchamun-1.jpg",
+    "breite": 736,
+    "hoehe": 1100,
+    "zeigt": "George Herbert, fünfter Earl of Carnarvon, Bildnis aus der polnischen Zeitschrift Nowości Illustrowane, 1923",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:George_Herbert%2C_5th_Earl_of_Carnarvon_%28-1923%29.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "borley-rectory",
+  "rubrik": "horror",
+  "unterart": "Spuk und Schwindel",
+  "titel": "Borley Rectory",
+  "untertitel": "Das „spukigste Haus Englands“ und der Geisterjäger Harry Price, 1929–1956",
+  "jahr": 1929,
+  "zeitraum": "1862 bis 1956",
+  "ort": "Borley, Essex",
+  "land": "Großbritannien",
+  "lat": 52.0547,
+  "lon": 0.6942,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Borley_Rectory",
+  "status": "aufgeklärt",
+  "kurz": "Ein abgelegenes Pfarrhaus in Essex wird durch Zeitungsberichte und die Bücher des Geisterjägers Harry Price weltberühmt. 1956 zeigt eine Untersuchung, wie viel davon Täuschung und Selbsttäuschung war.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Das Pfarrhaus von Borley, einem Dorf an der Grenze zwischen Essex und Suffolk, ließ Reverend Henry Dawson Ellis Bull 1862 errichten, ein großes, düsteres Backsteinhaus für eine kinderreiche Familie. Nach seinem Tod 1892 übernahm sein Sohn Harry Bull die Pfarrei bis 1927. In der Familie erzählte man sich von einer Nonne, die im Garten umgehe; später hieß es, sie sei im Mittelalter mit einem Mönch geflohen und zur Strafe eingemauert worden. Einen geschichtlichen Kern hat diese Sage nicht, in Borley gab es nie ein Kloster. Bekannt wurde das Haus erst 1929: Der neue Pfarrer Guy Eric Smith und seine Frau wandten sich an den Daily Mirror, der im Juni einen Reporter schickte und über unerklärliche Geräusche und Erscheinungen berichtete. Die Zeitung holte den Londoner Geisterforscher Harry Price hinzu, der am 12. Juni 1929 zum ersten Mal kam. Die Smiths zogen im Juli aus."
+   },
+   {
+    "titel": "Die Jahre der Foysters",
+    "text": "Von Oktober 1930 bis Oktober 1935 bewohnten Reverend Lionel Foyster, ein Verwandter der Bulls, und seine viel jüngere Frau Marianne das Haus. In diese Zeit fallen die meisten der später berühmten Erscheinungen: fliegende Gegenstände, zerbrochenes Geschirr, Glockenläuten und Bleistiftkritzeleien an den Wänden, die sich an Marianne zu richten schienen und um Hilfe baten. Foyster führte über die Vorfälle Buch. Schon damals hielten Besucher Marianne für die Urheberin vieler Vorfälle. Sie selbst erklärte Jahrzehnte später in Gesprächen mit Forschern (1958 und 1977), manches habe ihr Mann selbst inszeniert, manches habe keiner von beiden verursacht, und Price habe gewusst, dass das Tagebuch der Vorfälle nicht stimmte. Sie gab auch an, die angeblichen Spukerscheinungen hätten ihr geholfen, eine Beziehung zu einem Untermieter zu verdecken. Ihre späten Aussagen sind selbst nicht frei von Widersprüchen."
+   },
+   {
+    "titel": "Harry Price und seine Beobachter",
+    "text": "Harry Price war in den 1920er-Jahren der bekannteste Geisterforscher Großbritanniens. Er hatte selbst Schwindelmedien entlarvt, verstand sich aber auch glänzend auf Öffentlichkeitsarbeit. Im Mai 1937 mietete er das leerstehende Pfarrhaus für ein Jahr und suchte per Anzeige in der Times Freiwillige; 48 offizielle Beobachter, überwiegend Studenten, verbrachten Nächte im Haus und notierten alles Auffällige nach einem gedruckten Leitfaden. Bei Séancen mit dem Hexenbrett, die 1938 außerhalb Borleys stattfanden, meldeten sich angeblich die Nonne, die nun Marie Lairre hieß, und ein Geist, der den Brand des Hauses ankündigte. Am 27. Februar 1939 brannte das Haus tatsächlich ab, nachdem der neue Besitzer Captain W. H. Gregson eine Öllampe umgestoßen hatte; die Versicherung hielt Brandstiftung für wahrscheinlich. Price veröffentlichte 1940 The Most Haunted House in England und 1946 The End of Borley Rectory."
+   },
+   {
+    "titel": "Die Entlarvung 1956",
+    "text": "Price starb 1948. Kurz darauf erhob der Journalist Charles Sutton den Vorwurf, Price habe schon 1929 geschummelt: Als ihn ein Kiesel am Kopf traf, habe er Price' Taschen voller Steine gefunden. Die Society for Psychical Research, die 1882 gegründete und älteste Vereinigung zur Prüfung solcher Behauptungen, beauftragte drei ihrer Mitglieder mit einer Gesamtprüfung: Eric J. Dingwall, Kathleen M. Goldney und Trevor H. Hall. Sie werteten Price' Nachlass, Briefe und Protokolle aus und befragten Zeugen. Ihr Bericht The Haunting of Borley Rectory erschien 1956. Er kam zu dem Ergebnis, dass sich viele Erscheinungen natürlich erklären lassen, durch Geräusche des alten, abgelegenen Hauses und durch Erwartung, dass Marianne Foyster vieles selbst verursacht hatte und dass Price Berichte geschönt und einige Phänomene vermutlich selbst erzeugt hatte. Je genauer man hinsehe, desto weniger bleibe vom Spuk."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Der Bericht von 1956 gilt bis heute als maßgebliche Untersuchung, aber nicht als letztes Wort über Price. Der Forscher Robert J. Hastings veröffentlichte 1969 in den Proceedings der Society for Psychical Research eine Gegenprüfung und wies den Autoren einzelne Fehler und einseitige Deutungen nach; der Vorwurf, Price habe in Borley gezielt betrogen, sei nicht in jedem Punkt belegt. Trevor Hall legte 1978 eine scharf kritische Biografie von Price vor. Weitgehend einig ist sich die Forschung darin, dass es keinen belastbaren Beleg für übernatürliche Vorgänge in Borley gibt. Umstritten bleibt, wie viel Price bewusst inszeniert und wie viel er nur leichtgläubig übernommen und wirkungsvoll erzählt hat. Borley gilt als Lehrstück dafür, wie Erwartungen, Medienberichte und ein charismatischer Ermittler einander verstärken."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Ruine des Pfarrhauses wurde 1944 abgerissen, auf dem Gelände stehen heute Wohnhäuser. Dennoch zieht der Ort bis heute Besucher an, vor allem die Kirche gegenüber, um die sich neue Spukgeschichten rankten. Die Kirchengemeinde bittet Besucher, die Ruhe des Ortes zu achten. Price' Bücher prägten das Bild der modernen Geisterjagd mit Beobachterteams, Messgeräten und Protokollen, das Fernsehsendungen bis heute nachahmen. Sein Nachlass mit Büchern, Akten und Fotos liegt in der Senate House Library der University of London. Für die Society for Psychical Research markierte der Bericht von 1956 einen Wendepunkt: Die eigene Vereinigung hatte ihr prominentestes Spukhaus selbst kritisch zerlegt."
+   }
+  ],
+  "legende": "Die Geschichte von der Nonne, die mit einem Mönch floh und eingemauert wurde, ist eine Familiensage ohne historischen Kern; in Borley gab es kein Kloster, und spätere Autoren vermuteten Anleihen bei Romanstoffen des 19. Jahrhunderts. Auch die Séance-Botschaften über Marie Lairre sind nicht belegt. Gesichert ist dagegen, dass zahlreiche Zeugen Geräusche und Vorfälle meldeten, dass ein Teil davon nach dem Bericht von 1956 und späteren Aussagen der Beteiligten auf die Bewohner selbst zurückging und dass Price Berichte zugespitzt hat. Der Brand von 1939 hat nichts Übernatürliches: Er ging von einer umgestoßenen Lampe aus. Der Titel des spukigsten Hauses Englands stammt von Price selbst, aus dem Titel seines Buchs.",
+  "bedeutung": "Borley Rectory ist der klassische Fall eines medial erzeugten Spukhauses. Die Untersuchung von 1956 setzte Maßstäbe für die kritische Prüfung paranormaler Berichte: Rückgriff auf Originalakten, Zeugenbefragung und die Frage, wie sich Erzählungen mit jeder Wiederholung verändern. Zugleich zeigt der Fall die Grenzen der Entlarvung, denn nicht jede Erscheinung lässt sich im Nachhinein eindeutig einer Ursache zuordnen.",
+  "zeitleiste": [
+   {
+    "datum": "1862",
+    "jahr": 1862,
+    "text": "Reverend Henry D. E. Bull lässt das Pfarrhaus von Borley bauen."
+   },
+   {
+    "datum": "Juni 1929",
+    "jahr": 1929,
+    "text": "Der Daily Mirror berichtet über Spuk; Harry Price besucht das Haus am 12. Juni zum ersten Mal."
+   },
+   {
+    "datum": "1930–1935",
+    "jahr": 1930,
+    "text": "Unter den Foysters häufen sich Vorfälle, darunter Kritzeleien an Marianne."
+   },
+   {
+    "datum": "Mai 1937",
+    "jahr": 1937,
+    "text": "Price mietet das Haus und setzt 48 Beobachter ein."
+   },
+   {
+    "datum": "27. Februar 1939",
+    "jahr": 1939,
+    "text": "Das Pfarrhaus brennt nach einem Unfall mit einer Öllampe ab."
+   },
+   {
+    "datum": "1940",
+    "jahr": 1940,
+    "text": "Price veröffentlicht The Most Haunted House in England."
+   },
+   {
+    "datum": "1944",
+    "jahr": 1944,
+    "text": "Die Ruine wird abgerissen."
+   },
+   {
+    "datum": "1956",
+    "jahr": 1956,
+    "text": "Dingwall, Goldney und Hall legen für die Society for Psychical Research ihren kritischen Bericht vor."
+   }
+  ],
+  "quellen": [
+   "Eric J. Dingwall, Kathleen M. Goldney, Trevor H. Hall: The Haunting of Borley Rectory. A Critical Survey of the Evidence, Duckworth 1956 (zugleich Proceedings of the Society for Psychical Research 51, 1956)",
+   "Harry Price: The Most Haunted House in England. Ten Years' Investigation of Borley Rectory, 1940",
+   "Harry Price: The End of Borley Rectory, 1946",
+   "Robert J. Hastings: An Examination of the \"Borley Report\", Proceedings of the Society for Psychical Research 55 (1969), S. 66–175",
+   "Trevor H. Hall: Search for Harry Price, Duckworth 1978"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/borley-rectory-0.jpg",
+    "breite": 900,
+    "hoehe": 672,
+    "zeigt": "Das Pfarrhaus von Borley im Jahr 1892",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:BorleyRectory1892.jpg"
+   },
+   {
+    "datei": "bilder/dark/borley-rectory-1.jpg",
+    "breite": 900,
+    "hoehe": 1049,
+    "zeigt": "Harry Price, Aufnahme aus Life, 1947",
+    "urheber": "Noel F. Busch",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Harry_Price_ghost_hunter.png"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "roopkund-skelettsee",
+  "rubrik": "horror",
+  "unterart": "Rätselhafter Fund",
+  "titel": "Der Skelettsee von Roopkund",
+  "untertitel": "Hunderte Tote in 5000 Metern Höhe – und tausend Jahre zwischen ihnen",
+  "jahr": 1942,
+  "zeitraum": "Todesfälle um 800 und um 1800; Wiederentdeckung 1942",
+  "ort": "Roopkund, Bezirk Chamoli, Uttarakhand (Garhwal-Himalaya)",
+  "land": "Indien",
+  "lat": 30.2622,
+  "lon": 79.7317,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Roopkund",
+  "status": "ungeklärt",
+  "kurz": "Im Gletschersee Roopkund liegen Überreste von mehreren Hundert Menschen. Eine DNA-Studie von 2019 zeigte: Sie starben nicht gemeinsam, sondern in mindestens zwei Ereignissen, rund tausend Jahre auseinander.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Roopkund ist ein kleiner See in rund 5000 Metern Höhe im Garhwal-Himalaya, am Fuß des Trishul-Massivs im heutigen Bundesstaat Uttarakhand. Er misst kaum 40 Meter im Durchmesser und ist den größten Teil des Jahres zugefroren. 1942 stieß der Wildhüter Hari Kishan Madhwal dort auf zahlreiche menschliche Knochen, im Wasser und am Ufer, wenn der Schnee schmolz. Mitten im Zweiten Weltkrieg fürchteten die britischen Behörden zunächst, es handle sich um japanische Soldaten, die auf dem Weg nach Indien umgekommen seien. Schnell zeigte sich, dass die Überreste viel älter waren. Insgesamt wurden im Lauf der Jahrzehnte Gebeine von mehreren Hundert Menschen gefunden, dazu Reste von Kleidung, Schuhen und Gegenständen. Wer diese Menschen waren und warum sie an diesem abgelegenen Ort starben, wurde zu einem der großen Rätsel der indischen Archäologie."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Lange galten die Toten als eine einzige Gruppe, die gemeinsam ums Leben gekommen sei. Die Studie von 2019 ergab ein anderes Bild. Von 38 untersuchten Individuen hatten 23 eine Abstammung, wie sie im heutigen Südasien verbreitet ist, allerdings nicht aus einer einzigen Bevölkerungsgruppe. Insgesamt waren unter den 38 Untersuchten 23 Männer und 15 Frauen. Vierzehn Menschen hatten eine Abstammung, die typisch für den östlichen Mittelmeerraum ist und der heutiger Bewohner Kretas und des griechischen Festlands am nächsten kommt. Ein Mensch schließlich hatte eine Herkunft aus Südostasien. Die Isotopenwerte zeigen, dass sich die Gruppen unterschiedlich ernährten: Die Mittelmeergruppe aß vor allem Weizen, Gerste oder Reis, unter den Südasiaten aßen manche auch Hirse. Über ihr Leben, ihre Namen und ihre Ziele ist nichts bekannt."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "In der Region erzählt man seit Langem eine Legende, die mit der Nanda Devi Raj Jat verbunden ist, einer Wallfahrt zu Ehren der Göttin Nanda Devi, die etwa alle zwölf Jahre stattfindet und an Roopkund vorbeiführt. Danach zog König Jasdhaval von Kannauj mit seiner schwangeren Frau Balampa, Dienern und einer Tänzerinnentruppe auf diesen Pilgerweg. Weil der König den heiligen Berg durch Prunk und Ausgelassenheit entweihte, habe die Göttin einen gewaltigen Hagelsturm geschickt, der alle tötete. Andere Deutungen sprachen von einem Heer, einer Handelskarawane oder einer Seuche. Der Anthropological Survey of India untersuchte die Skelette bereits in den 1950er-Jahren. Ein späterer anthropologischer Bericht, den die Studie von 2019 abdruckt, beschreibt drei Individuen mit unverheilten Stauchungsbrüchen und hält einen heftigen Hagelsturm als Ursache für möglich, ohne andere Erklärungen auszuschließen."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "2019 veröffentlichte ein internationales Team um Éadaoin Harney, David Reich und Niraj Rai in Nature Communications die erste große genetische Untersuchung. Neben dem Erbgut von 38 Individuen werteten die Forscher Radiokarbondaten und stabile Isotope aus. Die südasiatische Gruppe starb danach etwa zwischen dem 7. und 10. Jahrhundert, möglicherweise nicht alle zur selben Zeit. Die östlich-mediterrane Gruppe und der Mensch aus Südostasien kamen dagegen erst um 1800 ums Leben, zwischen dem 17. und dem 20. Jahrhundert. Damit ist die Vorstellung eines einzigen Unglücks widerlegt. Für die ältere Gruppe halten die Autoren einen Massentod während einer Wallfahrt für denkbar. Warum aber Menschen mit Mittelmeer-Abstammung um 1800 an diesen entlegenen Ort im Himalaya gelangten, ist völlig offen."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Seit seiner Wiederentdeckung ist Roopkund als „Skelettsee“ bekannt und Ziel von Trekkingtouren über die Almwiesen von Ali und Bedni Bugyal. Der Andrang hat Folgen: Wanderer, Pilger und auch Forscher haben über Jahrzehnte Knochen und Gegenstände bewegt oder mitgenommen, Steinschläge haben die Fundlage zusätzlich gestört. Das erschwert jede Untersuchung, denn die ursprüngliche Lage der Toten lässt sich kaum noch rekonstruieren. Behörden des Bezirks Chamoli haben deshalb Schutzmaßnahmen gefordert. Für die Menschen der Region bleibt Roopkund vor allem ein heiliger Ort auf dem Weg der Nanda-Devi-Wallfahrt. Die Studie von 2019 hat das Rätsel nicht gelöst, sondern verschoben: An die Stelle eines Unglücks sind mehrere getreten, deren Geschichte noch niemand kennt."
+   }
+  ],
+  "legende": "Gesichert ist, dass in und an dem See Überreste von mehreren Hundert Menschen liegen, dass sie 1942 wiederentdeckt wurden und dass sie nach den Daten von 2019 aus mindestens zwei weit auseinanderliegenden Zeiträumen stammen. Die Legende vom König Jasdhaval und dem strafenden Hagel der Göttin ist eine religiöse Erzählung; historisch belegt ist dieser König nicht. Auch die Hagelsturm-These einer einzigen Katastrophe im 9. Jahrhundert, die lange in Reiseführern und Dokumentationen stand, ist durch die neuen Daten überholt, selbst wenn Unwetter für einzelne Todesfälle in Frage kommen. Die Vermutung, es handle sich um japanische Soldaten aus dem Zweiten Weltkrieg, hat sich bereits in den 1940er-Jahren erledigt. Wer die Menschen um 1800 waren, ist ungeklärt.",
+  "bedeutung": "Roopkund zeigt exemplarisch, wie alte DNA ein vermeintlich gelöstes Rätsel neu öffnet. Was als ein einziges Unglück galt, erwies sich als Überlagerung mehrerer Geschichten aus verschiedenen Jahrhunderten. Der Fall mahnt zudem, Fundstätten in entlegenen Gebieten besser zu schützen: Viele Spuren, die heute Antworten liefern könnten, sind durch Andenkenjäger verloren gegangen.",
+  "zeitleiste": [
+   {
+    "datum": "7.–10. Jahrhundert",
+    "jahr": 800,
+    "text": "Menschen südasiatischer Herkunft sterben am See, vermutlich in mehreren Ereignissen."
+   },
+   {
+    "datum": "17.–20. Jahrhundert, um 1800",
+    "jahr": 1800,
+    "text": "Eine Gruppe mit östlich-mediterraner Abstammung und ein Mensch aus Südostasien kommen am See ums Leben."
+   },
+   {
+    "datum": "1942",
+    "jahr": 1942,
+    "text": "Wildhüter Hari Kishan Madhwal entdeckt die Überreste; die Briten fürchten zunächst tote japanische Soldaten."
+   },
+   {
+    "datum": "1950er-Jahre",
+    "jahr": 1955,
+    "text": "Der Anthropological Survey of India untersucht die Skelette."
+   },
+   {
+    "datum": "2003/2004",
+    "jahr": 2004,
+    "text": "Neue Expeditionen und Datierungen bestärken die Vorstellung eines einzigen Unglücks im 9. Jahrhundert."
+   },
+   {
+    "datum": "2014",
+    "jahr": 2014,
+    "text": "Die Nanda Devi Raj Jat führt Tausende Pilger an Roopkund vorbei."
+   },
+   {
+    "datum": "20. August 2019",
+    "jahr": 2019,
+    "text": "Harney u. a. weisen in Nature Communications mindestens zwei Todesereignisse im Abstand von rund tausend Jahren nach."
+   }
+  ],
+  "quellen": [
+   "Éadaoin Harney, Ayushi Nayak, Nick Patterson, Pramod Joglekar, Veena Mushrif-Tripathy, Swapan Mallick u. a., David Reich, Niraj Rai: Ancient DNA from the skeletons of Roopkund Lake reveals Mediterranean migrants in India, Nature Communications 10 (2019), Artikel 3670",
+   "William S. Sax: Mountain Goddess. Gender and Politics in a Himalayan Pilgrimage, Oxford University Press, New York 1991",
+   "Anthropological Survey of India: Untersuchungen zu den Funden von Roopkund, 1950er-Jahre (zitiert nach Harney u. a. 2019)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/roopkund-skelettsee-0.jpg",
+    "breite": 900,
+    "hoehe": 603,
+    "zeigt": "Der Roopkund-See im August 2014, umgeben von Geröll und Schneefeldern",
+    "urheber": "Schwiki",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Roopkund_Lake.jpg"
+   },
+   {
+    "datei": "bilder/dark/roopkund-skelettsee-1.jpg",
+    "breite": 900,
+    "hoehe": 599,
+    "zeigt": "Wanderer im Schnee bei Bedni Bugyal am Weg nach Roopkund",
+    "urheber": "Djds4rce",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Bedni_Bugal_on_way_to_roopkund.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "mattoon-gasmann",
+  "rubrik": "horror",
+  "unterart": "Massenhysterie",
+  "titel": "Der Gasmann von Mattoon",
+  "untertitel": "Ein unsichtbarer Angreifer und eine Kleinstadt in Angst, Illinois 1944",
+  "jahr": 1944,
+  "zeitraum": "31. August bis Mitte September 1944",
+  "ort": "Mattoon, Illinois",
+  "land": "USA",
+  "lat": 39.4775,
+  "lon": -88.3622,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Mattoon,_Illinois",
+  "status": "umstritten",
+  "kurz": "Zwei Wochen lang meldet eine Kleinstadt in Illinois nächtliche Gasangriffe eines Unbekannten. Gefunden wird niemand. Der Psychologe Donald M. Johnson macht den Fall 1945 zum Lehrbeispiel für Massenhysterie.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Mattoon war 1944 eine Eisenbahn- und Industriestadt mit gut 15.000 Einwohnern im Osten von Illinois. In der Nacht vom 31. August klagte ein Ehepaar, ein süßlicher Geruch habe es aus dem Schlaf gerissen, ihm sei übel geworden. Kurz darauf meldete Aline Kearney, eine Hausfrau aus der Marshall Avenue, sie habe in der Nacht einen süßlichen Geruch bemerkt, danach hätten ihre Beine wie gelähmt gewirkt; auch ihrer Tochter sei übel geworden. Als ihr Mann gegen halb eins nach Hause kam, wollte er einen Mann am Fenster gesehen haben, der flüchtete. Am 2. September berichtete das Daily Journal-Gazette auf der Titelseite von einem Herumtreiber, der seine Opfer betäube. In den folgenden Tagen gingen bei der Polizei Meldung um Meldung ein, über Gasgeruch, Übelkeit, Lähmungsgefühle, brennende Kehlen und Gestalten in dunkler Kleidung."
+   },
+   {
+    "titel": "Die Betroffenen",
+    "text": "Insgesamt wurden der Polizei in knapp zwei Wochen gut zwei Dutzend Fälle angeblicher Gasangriffe gemeldet, nach einer Nachzählung 25 in 13 Tagen,, dazu zahlreiche Sichtungen von Verdächtigen. Niemand starb, niemand trug bleibende Schäden davon, und in keinem Fall fanden Ärzte oder Polizisten Spuren eines Gases. Nach Johnson wurden nur vier Betroffene ärztlich untersucht. Bewohner bewaffneten sich, bildeten nächtliche Streifen, und mehrmals rückte die Polizei zu Häusern aus, deren Bewohner einen Angriff zu bemerken glaubten. Auch das FBI wurde eingeschaltet. Die Angst traf eine Stadt, die im Krieg ohnehin unter Anspannung stand: Viele Männer waren eingezogen, viele Frauen lebten allein mit ihren Kindern, und in den Zeitungen war von Giftgas an den Fronten die Rede."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Anfangs nahmen Polizei und Behörden die Meldungen ernst. Chemiker äußerten sich dagegen skeptisch: Ein Gas, das Menschen durch das Fenster betäubt und keine Spuren hinterlässt, sei kaum herzustellen. Als die Ermittlungen nichts ergaben, kippte die Deutung. Der städtische Gesundheitsbeauftragte Thomas V. Wright sprach von Hysterie, die die ganze Stadt erfasst habe. Am 12. September erklärte Polizeichef C. E. Cole, es habe vermutlich keine Gasangriffe gegeben; einzelne Beschwerden könnten auf Dämpfe aus Fabriken zurückgehen. Auch die Zeitung schlug um und meldete viele Hinweise, aber wenig Echtes. Mitte September verebbten die Meldungen fast so schnell, wie sie gekommen waren."
+   },
+   {
+    "titel": "Die Studie von Donald M. Johnson",
+    "text": "Der Psychologe Donald M. Johnson von der University of Illinois besuchte Mattoon in den Wochen nach den Ereignissen, wertete Polizeiakten und Zeitungsberichte aus und befragte Betroffene. 1945 veröffentlichte er im Journal of Abnormal and Social Psychology seine Feldstudie über den Phantom-Betäuber von Mattoon. Er kam zu dem Schluss, dass die Hypothese der Hysterie alle Befunde ohne Rest erkläre. Den Auslöser sah er in der Titelseite vom 2. September: Das Daily Journal-Gazette sei ein seriöses Blatt, das nach seinen Angaben in nahezu allen Haushalten gelesen wurde, und gerade deshalb hätten die Leser den Bericht ernst genommen. Die Zahl der Meldungen folgte eng der Berichterstattung. Die meisten Betroffenen waren nach seiner Auswertung Frauen mit geringer Schulbildung und bescheidenem Einkommen; in den wohlhabenden Vierteln gab es keine Meldungen."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Johnsons Arbeit wurde zum Lehrbuchklassiker der Sozialpsychologie, ist aber nicht unwidersprochen geblieben. Der Soziologe Robert E. Bartholomew und Jeffrey S. Victor schlugen 2004 vor, statt von Hysterie von kollektiven Angstanfällen zu sprechen, also einer verbreiteten sozialen Reaktion auf eine glaubhaft scheinende Bedrohung, und wandten sich gegen das Bild der überspannten Frauen, das der alte Hysteriebegriff nahelegt. Andere Autoren halten die ersten Fälle vom 31. August und 1. September für echte Vorfälle, etwa durch einen Einbrecher, einen Streich oder Industriedämpfe, an die sich dann die Welle der Einbildung anschloss. Einen Täter hat niemand nachgewiesen. Die meisten Fachleute sehen in Mattoon eine Welle sozialer Ansteckung, deren erster Funke offen bleibt."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Mattoon wurde zum Standardfall in Lehrbüchern über kollektives Verhalten und Medienwirkung. Er zeigt, wie eine einzige glaubwürdige Zeitungsmeldung genügen kann, um eine ganze Stadt Symptome erleben zu lassen, die keiner äußeren Ursache folgen, und wie schnell die Welle abklingt, wenn Behörden und Presse umschwenken. Forscher verglichen den Fall mit einer ähnlichen Angstwelle um einen Gasangreifer in Botetourt County, Virginia, 1933/34. In der populären Literatur über das Unheimliche lebt der Mad Gasser als ungelöstes Rätsel fort, inklusive Spekulationen über Außerirdische oder verrückte Chemiker, die sich auf keine Belege stützen. In Mattoon selbst ist die Geschichte Teil der lokalen Folklore."
+   }
+  ],
+  "legende": "Gesichert ist, dass in Mattoon innerhalb von gut zwei Wochen mehrere Dutzend Meldungen über Gasangriffe eingingen, dass niemand ernsthaft zu Schaden kam und dass Polizei, Ärzte und Chemiker keinen Beleg für ein Gas und keinen Täter fanden. Legende sind der verrückte Wissenschaftler, der Außerirdische oder der unsichtbare Mann, die in Büchern über das Paranormale auftauchen. Ein Amateurforscher hat 2003 einen namentlich genannten Einwohner als Täter vorgeschlagen; dafür gibt es keine Beweise. Offen ist, ob am Anfang ein wirklicher Vorfall stand.",
+  "bedeutung": "Der Fall Mattoon gilt als eines der am besten untersuchten Beispiele für Massenhysterie im 20. Jahrhundert und als frühe Felduntersuchung zur Wirkung von Medienberichten auf Gesundheitsbeschwerden. Zugleich zeigt die spätere Kritik an Johnsons Bild von den hysterischen Frauen, wie sich auch wissenschaftliche Deutungen solcher Fälle mit der Zeit ändern.",
+  "zeitleiste": [
+   {
+    "datum": "31. August 1944",
+    "jahr": 1944,
+    "text": "Ein Ehepaar in Mattoon meldet nächtlichen Gasgeruch und Übelkeit."
+   },
+   {
+    "datum": "1. September 1944",
+    "jahr": 1944,
+    "text": "Aline Kearney meldet einen süßlichen Geruch und Lähmungsgefühle in den Beinen."
+   },
+   {
+    "datum": "2. September 1944",
+    "jahr": 1944,
+    "text": "Das Daily Journal-Gazette berichtet auf der Titelseite vom Betäubungs-Angreifer."
+   },
+   {
+    "datum": "5.–10. September 1944",
+    "jahr": 1944,
+    "text": "Die Meldungen häufen sich; Einwohner gehen nachts auf Streife."
+   },
+   {
+    "datum": "12. September 1944",
+    "jahr": 1944,
+    "text": "Polizeichef C. E. Cole erklärt, es habe vermutlich keine Gasangriffe gegeben."
+   },
+   {
+    "datum": "Mitte September 1944",
+    "jahr": 1944,
+    "text": "Die Meldungen brechen ab, die Presse beendet die Berichterstattung."
+   },
+   {
+    "datum": "1945",
+    "jahr": 1945,
+    "text": "Donald M. Johnson veröffentlicht seine Feldstudie zur Massenhysterie."
+   },
+   {
+    "datum": "2004",
+    "jahr": 2004,
+    "text": "Bartholomew und Victor deuten den Fall in The Sociological Quarterly neu."
+   }
+  ],
+  "quellen": [
+   "Donald M. Johnson: The \"Phantom Anesthetist\" of Mattoon. A Field Study of Mass Hysteria, in: Journal of Abnormal and Social Psychology 40 (1945), S. 175–186",
+   "Robert E. Bartholomew, Jeffrey S. Victor: A Social-Psychological Theory of Collective Anxiety Attacks. The \"Mad Gasser\" Reexamined, in: The Sociological Quarterly 45 (2004)",
+   "Eastern Illinois University, Localité-Projekt: The Mad Gasser of Mattoon (Zeitungsberichte und Opferliste)",
+   "Robert E. Bartholomew: Little Green Men, Meowing Nuns and Head-Hunting Panics. A Study of Mass Psychogenic Illness and Social Delusion, McFarland 2001"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/mattoon-gasmann-0.jpg",
+    "breite": 900,
+    "hoehe": 574,
+    "zeigt": "Ansichtskarte „Greetings from Mattoon“ von 1945, kurz nach den Ereignissen",
+    "urheber": "Steve Shook from Moscow, Idaho, USA",
+    "lizenz": "CC BY 2.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Greetings_from_Mattoon%2C_Illinois_-_Large_Letter_Postcard_%287850195510%29.jpg"
+   },
+   {
+    "datei": "bilder/dark/mattoon-gasmann-1.jpg",
+    "breite": 900,
+    "hoehe": 614,
+    "zeigt": "Vogelschauplan von Mattoon, 1884 (Library of Congress)",
+    "urheber": "Smith, J. W.; Shober & Carqueville",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Birds_eye_view_of_Mattoon%2C_Illinois_1884._LOC_73693208.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "tanganjika-lachepidemie",
+  "rubrik": "horror",
+  "unterart": "Massenhysterie",
+  "titel": "Die Lachepidemie von Tanganjika",
+  "untertitel": "Wie sich in Kashasha 1962 ein Lachen von Schule zu Schule ausbreitete",
+  "jahr": 1962,
+  "zeitraum": "30. Januar 1962 bis etwa Mitte 1963",
+  "ort": "Kashasha, Bezirk Bukoba, am Westufer des Victoriasees",
+  "land": "Tansania (damals Tanganjika)",
+  "lat": -2.0,
+  "lon": 31.5,
+  "ortQuelle": "https://en.wikipedia.org/wiki/Muleba_District",
+  "status": "aufgeklärt",
+  "kurz": "In einem Mädcheninternat in Tanganjika beginnen Schülerinnen unkontrollierbar zu lachen und zu weinen. Die Anfälle springen auf Dörfer und Schulen über; rund tausend Menschen sind betroffen, 14 Schulen schließen.",
+  "abschnitte": [
+   {
+    "titel": "Was geschah",
+    "text": "Am 30. Januar 1962 begannen in einem von einer Mission geführten Mädcheninternat in Kashasha, nahe dem Westufer des Victoriasees, einige Schülerinnen zu lachen und konnten nicht mehr aufhören. Die Anfälle griffen auf andere Mädchen über. Tanganjika war erst seit dem 9. Dezember 1961 von Großbritannien unabhängig. Bis Mitte März waren 95 der 159 Schülerinnen im Alter von etwa 12 bis 18 Jahren betroffen. Unterricht war kaum mehr möglich, am 18. März 1962 wurde die Schule geschlossen und die Mädchen nach Hause geschickt. Als sie am 21. Mai wieder öffnete, erkrankten weitere 57 Schülerinnen, Ende Juni musste sie erneut schließen. Inzwischen hatten die Anfälle die Dörfer der Umgebung erreicht."
+   },
+   {
+    "titel": "Die Anfälle",
+    "text": "Das Lachen war kein Lachen über etwas Komisches. Beschrieben wurden plötzliche Ausbrüche von Lachen und Weinen, Unruhe, dazu Schmerzen, Ohnmachten, Atemprobleme und Hautausschläge. Die einzelnen Episoden dauerten von wenigen Minuten bis zu Stunden, und die Beschwerden hielten bei einem Kranken im Schnitt etwa eine Woche an, im längsten Fall 16 Tage. Wer versuchte, die Betroffenen festzuhalten, stieß auf heftige Abwehr. Lebensgefährlich war die Krankheit nicht, Todesfälle wurden nicht berichtet. Für Familien und Gemeinden war sie dennoch eine schwere Belastung, weil Schulen schlossen und Kinder monatelang nicht lernen konnten, gerade in einer Zeit, in der Bildung als Schlüssel zur neuen Unabhängigkeit galt."
+   },
+   {
+    "titel": "Die Ausbreitung",
+    "text": "Die heimgeschickten Schülerinnen trugen die Anfälle in ihre Dörfer. In Nshamba, einem Dorf rund 90 Kilometer westlich von Bukoba, aus dem Schülerinnen stammten, erkrankten im April und Mai 1962 innerhalb von 34 Tagen 217 Menschen, überwiegend junge Leute. Im Juni erfasste die Welle die Mädchen-Mittelschule von Ramashenye mit 48 Betroffenen, später weitere Schulen und das Dorf Kanyangereka. Alle Herde lagen in einem Umkreis von etwa 160 Kilometern um Bukoba. Insgesamt wurden nach den verbreiteten Angaben rund tausend Menschen erfasst, 14 Schulen mussten zeitweise schließen. Erst etwa achtzehn Monate nach dem Beginn klang die Epidemie ab. Betroffen waren vor allem Schulkinder und junge Leute."
+   },
+   {
+    "titel": "Erklärungsversuche damals",
+    "text": "Die Ärzte A. M. Rankin und P. J. Philip untersuchten den Ausbruch und veröffentlichten 1963 im Central African Journal of Medicine einen Bericht über eine Lachepidemie im Bezirk Bukoba. Sie fanden keine organische Ursache, weder eine Infektion noch eine Vergiftung, und die Art der Ausbreitung entlang persönlicher Beziehungen passte nicht zu einem Erreger. Sie deuteten den Ausbruch als epidemische Hysterie und stellten fest, dass die Ausbildung der Kinder schwer beeinträchtigt wurde. Als Gegenmaßnahme blieb vor allem, Schulen zu schließen; damit wanderte die Welle allerdings mit den heimgeschickten Kindern weiter."
+   },
+   {
+    "titel": "Was die Forschung heute weiß",
+    "text": "Die Fachliteratur ordnet den Ausbruch heute der massenpsychogenen Erkrankung zu, einer Ausbreitung körperlicher Beschwerden ohne organische Ursache durch soziale Ansteckung. Der Sprachwissenschaftler und Humorforscher Christian F. Hempelmann sah 2007 die Ursache in Stress: Nach der Unabhängigkeit erwarteten Lehrer und Eltern mehr von den Schülerinnen, während Missionsschulen Werte vermittelten, die mit dem Familienleben oft in Konflikt standen. Robert Bartholomew und Simon Wessely beschrieben solche Ausbrüche als Reaktion von Menschen ohne andere Ausdrucksmöglichkeit, häufig junger Frauen in strengen Institutionen. Andere Forscher wiesen darauf hin, dass die Epidemie den Grenzen von Volksgruppen und Verwandtschaftsnetzen folgte. Gemeinsam ist den Deutungen, dass das Lachen kein Spaß war, sondern ein Ventil."
+   },
+   {
+    "titel": "Nachwirkung",
+    "text": "Die Lachepidemie von Tanganjika ist bis heute eines der meistzitierten Beispiele massenpsychogener Erkrankung und taucht in Lehrbüchern der Psychiatrie, der Soziologie und der Humorforschung auf. Journalisten und Wissenschaftler suchten Jahrzehnte später die Orte auf, befragten ehemalige Schülerinnen und Lehrer und fanden an mehreren Stätten ähnliche Bedingungen wie überfüllte Schlafsäle und knappe Verpflegung. Ähnliche Ausbrüche von Lach-, Schrei- oder Ohnmachtsanfällen wurden später an Schulen in anderen Teilen Afrikas und weltweit beschrieben. Der Fall erinnert daran, dass Ansteckung nicht nur über Erreger geschieht, sondern auch über Angst, Nachahmung und den Druck, unter dem eine Gemeinschaft steht."
+   }
+  ],
+  "legende": "Populäre Darstellungen behaupten mitunter, Menschen seien am Lachen gestorben oder die Epidemie habe ganz Ostafrika erfasst. Belegt ist beides nicht: Todesfälle wurden nicht berichtet, und alle Ausbrüche lagen im Raum um Bukoba. Auch die Vorstellung von fröhlichem, ansteckendem Gelächter führt in die Irre, denn die Anfälle bestanden aus Lachen und Weinen, Angst und körperlichen Beschwerden. Gesichert sind die Zahlen aus dem ärztlichen Bericht von Rankin und Philip für Kashasha und Nshamba; die Gesamtzahl von rund tausend Betroffenen und 14 geschlossenen Schulen ist eine verbreitete, aber weniger genau belegte Angabe.",
+  "bedeutung": "Der Ausbruch wurde zum Lehrbeispiel dafür, dass seelische Belastung sich in Gruppen körperlich äußern und epidemieartig verbreiten kann. Er hat die Forschung zu massenpsychogenen Erkrankungen an Schulen geprägt und gezeigt, wie wichtig es ist, nach einer erfolglosen Suche nach Erregern auch die Lebensumstände der Betroffenen in den Blick zu nehmen. Zugleich lenkt er den Blick auf die Lebenswelt junger Frauen in einem Land im Umbruch.",
+  "zeitleiste": [
+   {
+    "datum": "9. Dezember 1961",
+    "jahr": 1961,
+    "text": "Tanganjika wird von Großbritannien unabhängig."
+   },
+   {
+    "datum": "30. Januar 1962",
+    "jahr": 1962,
+    "text": "Im Mädcheninternat von Kashasha beginnen die ersten Lachanfälle."
+   },
+   {
+    "datum": "18. März 1962",
+    "jahr": 1962,
+    "text": "Nach 95 Erkrankungen unter 159 Schülerinnen wird die Schule geschlossen."
+   },
+   {
+    "datum": "April–Mai 1962",
+    "jahr": 1962,
+    "text": "In Nshamba erkranken innerhalb von 34 Tagen 217 Menschen."
+   },
+   {
+    "datum": "21. Mai 1962",
+    "jahr": 1962,
+    "text": "Die Schule in Kashasha öffnet wieder; 57 weitere Schülerinnen erkranken."
+   },
+   {
+    "datum": "Juni 1962",
+    "jahr": 1962,
+    "text": "Die Mittelschule von Ramashenye ist betroffen; Kashasha schließt erneut."
+   },
+   {
+    "datum": "1963",
+    "jahr": 1963,
+    "text": "Rankin und Philip veröffentlichen ihren Bericht; die Epidemie klingt ab."
+   }
+  ],
+  "quellen": [
+   "A. M. Rankin, P. J. Philip: An epidemic of laughing in the Bukoba district of Tanganyika, in: Central African Journal of Medicine 9 (Mai 1963), S. 167–170",
+   "Christian F. Hempelmann: The laughter of the 1962 Tanganyika \"laughter epidemic\", in: Humor. International Journal of Humor Research 20 (2007), S. 49–71",
+   "Robert E. Bartholomew, Simon Wessely: Protean nature of mass sociogenic illness, in: British Journal of Psychiatry 180 (2002), S. 300–306",
+   "Peter McGraw, Joel Warner: The Humor Code, Simon & Schuster 2014 (Recherche vor Ort)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/tanganjika-lachepidemie-0.jpg",
+    "breite": 900,
+    "hoehe": 600,
+    "zeigt": "Blick auf Bukoba am Victoriasee, die Bezirkshauptstadt der Region, 2002",
+    "urheber": "Anders S",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Bukoba_View.JPG"
+   },
+   {
+    "datei": "bilder/dark/tanganjika-lachepidemie-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Ufer des Victoriasees bei Bukoba",
+    "urheber": "Bugsinmyfood",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Bukoba_beach.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "wokou",
   "rubrik": "piraten",
   "unterart": "Piraten",
@@ -15543,6 +17557,62 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "rakshasa",
+  "titel": "Rakshasa",
+  "originalname": "राक्षस Rākṣasa, weiblich Rākṣasī; im Rāmāyaṇa auch niśācara – „Nachtwandler“",
+  "untertitel": "Kumbhakarna, der Riese, den niemand wecken konnte",
+  "region": "asien",
+  "land": "Indien",
+  "art": "Dämon",
+  "jahr": -300,
+  "zeitraum": "Als Unholde schon im Rigveda (2. Jahrtausend v. Chr.) genannt; Vālmīkis Rāmāyaṇa entstand etwa zwischen dem 5./4. Jahrhundert v. Chr. und dem 2./3. Jahrhundert n. Chr.",
+  "kurz": "Menschenfressende Riesen, die nachts umgehen und jede Gestalt annehmen können: Die Rakshasas sind Indiens große Unholde, und ihr gewaltigster ist Kumbhakarna, der Bruder Ravanas.",
+  "geschichte": "Auf der Insel Lanka herrschte Rāvaṇa, König der Rakshasas, der Rāmas Frau Sītā geraubt hatte. Nun stand Rāma mit einem Heer von Affen und Bären vor den Mauern, und Rāvaṇa hatte seine ersten Schlachten verloren. In seiner Not dachte er an seinen Bruder Kumbhakarṇa.\n\nKumbhakarṇa war schon als Kind so ungeheuer gewesen, heißt es, dass er gleich nach seiner Geburt tausend Menschen verschlang. Die Götter klagten bei Brahmā, und der verfluchte den Riesen, wie ein Toter dazuliegen. Rāvaṇa aber bat für seinen Bruder, und Brahmā milderte den Fluch: Sechs Monate sollte Kumbhakarṇa schlafen und dann für einen Tag erwachen.\n\nNun aber war die Zeit nicht um. Rāvaṇas Leute zogen zu der Höhle, in der der Riese auf einem goldenen Lager schlief. Sein Atem ging so gewaltig, dass sie sich kaum auf den Beinen halten konnten. Sie türmten Berge von Speisen neben ihm auf, Büffel, Eber und Hirsche, und begannen zu lärmen. Sie bliesen Muscheln, schlugen Trommeln und Becken, schrien Kriegsrufe, bis die Vögel vom Himmel fielen. Er schlief. Sie schlugen ihm mit Keulen und Felsbrocken auf die Brust. Er schlief. Sie gossen hundert Eimer Wasser über ihn, ließen Pferde wiehern und Elefanten über ihn hinwegstampfen. Da endlich regte er sich, gähnte mit einem Rachen wie die Unterwelt und fragte, wer es wage, ihn zu wecken.\n\nAls er satt war, ging er zu Rāvaṇa, und zur Überraschung aller hielt er dem König eine Strafpredigt. Wir haben dich gewarnt, sagte er, gib Sītā zurück. Rāvaṇa wurde zornig, und Kumbhakarṇa lenkte ein: Was geschehen sei, sei geschehen, er werde für seinen Bruder kämpfen.\n\nAls er durch die Straßen Lankas schritt, überragte er die Mauern, und die Affen, die ihn sahen, flohen. Er fegte Krieger beiseite wie Laub und verschlang, wen er packen konnte. Erst Rāmas Pfeile brachten den Riesen zu Fall, und Rāvaṇa, als man ihm die Nachricht brachte, brach in Klagen aus.",
+  "fassung": "Nacherzählt nach Vālmīki, Rāmāyaṇa, Yuddhakāṇḍa (Kanto 60–67 der Zählung bei Griffith), in der englischen Versübersetzung von Ralph T. H. Griffith (1870–1874)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Schon der Rigveda kennt die rakṣas als feindliche Wesen der Nacht, gegen die Agni, das Feuer, als „Dämonentöter“ angerufen wird. In den Epen Rāmāyaṇa und Mahābhārata sind die Rakshasas ein ganzes Volk: Sie stammen von dem Weisen Pulastya ab, leben in Lanka und in den Wäldern, wandern nachts, essen Menschenfleisch und können ihre Gestalt wechseln. So erscheint der Rakshasa Mārīca als goldener Hirsch, um Rāma fortzulocken, und Rāvaṇa als Asket, um Sītā zu rauben. Doch nicht alle sind böse: Kumbhakarṇas jüngerer Bruder Vibhīṣaṇa läuft zu Rāma über, und Kumbhakarṇa selbst rät zur Vernunft. Die Erzählungen von Kumbhakarṇas Schlaf weichen in den späteren Fassungen ab; volkstümlich verbreitet ist die Version, er habe sich bei Brahmā versprochen und statt Herrschaft Schlaf erbeten."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Rakshasas verkörpern im indischen Denken die Gegenkräfte der Ordnung (dharma): Gier, Gewalt, Maßlosigkeit. Im 19. Jahrhundert deuteten europäische und indische Gelehrte sie als Erinnerung an die Ureinwohner Südindiens und Sri Lankas, die von nordindischen Eroberern dämonisiert worden seien; diese Lesart wird heute als zu einfach und von Rassentheorien ihrer Zeit geprägt kritisiert, wirkt aber in der politischen Debatte Südindiens fort. Literaturwissenschaftler betonen eher, dass das Epos seine Rakshasas vielschichtig zeichnet: Kumbhakarṇa ist ein Ungeheuer und zugleich ein loyaler Bruder, der sehenden Auges für eine falsche Sache stirbt."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Zum Fest Dussehra werden in Nordindien riesige Figuren Rāvaṇas, Kumbhakarṇas und Meghanādas verbrannt; die Rāmlīlā-Spiele, die die Geschichte aufführen, wurden 2005 von der UNESCO zum Meisterwerk des immateriellen Erbes erklärt und stehen seit 2008 auf ihrer Repräsentativen Liste. Kumbhakarṇas Schlaf ist sprichwörtlich, wer lange schläft, schläft „wie Kumbhakarna“. Mit dem Buddhismus wanderten die Rakshasas als Rasetsu nach Japan, im javanischen und balinesischen Schattenspiel gilt Kumbakarna als tragischer Held, der sein Land verteidigt."
+   }
+  ],
+  "verwandt": "Die japanischen Oni, die europäischen Oger und die Riesen der germanischen Sage teilen mit den Rakshasas die Verbindung von gewaltiger Kraft, Menschenfresserei und einer eigenen, feindlichen Welt.",
+  "quellen": [
+   "Vālmīki: The Rámáyan of Válmíki, übers. von Ralph T. H. Griffith, 5 Bde., London und Benares 1870–1874",
+   "Robert P. Goldman, Sally J. Sutherland Goldman (Hg., Übers.): The Rāmāyaṇa of Vālmīki, Bd. 6: Yuddhakāṇḍa, Princeton 2009",
+   "Encyclopaedia Britannica: Rakshasa; Ramayana",
+   "UNESCO: Ramlila, the traditional performance of the Ramayana (2008)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/rakshasa-0.jpg",
+    "breite": 640,
+    "hoehe": 1100,
+    "zeigt": "Kumbhakarna gähnt, als man ihn aus dem Schlaf reißt; Blatt aus dem Freer-Rāmāyaṇa, Mogulmalerei von Nadir, um 1597–1605 (Smithsonian, Washington)",
+    "urheber": "Nadir (Bihhud) , (Indian",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Kumbhakarna_yawns_as_he_is_roused_from_sleep%3B.jpg"
+   },
+   {
+    "datei": "bilder/dark/rakshasa-1.jpg",
+    "breite": 900,
+    "hoehe": 517,
+    "zeigt": "Rakshasas versuchen Kumbhakarna mit Waffen und Lärm zu wecken, indische Buchmalerei des 17. Jahrhunderts (British Library)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Waking_up_Kumbhakarna.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "tengu",
   "titel": "Tengu",
   "originalname": "天狗 – „Himmelshund“",
@@ -15609,6 +17679,62 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "hungrige-geister",
+  "titel": "Die hungrigen Geister",
+  "originalname": "餓鬼 egui – „hungriger Geist“ (Sanskrit preta); Fest: 盂蘭盆 Yulanpen bzw. 中元 Zhongyuan",
+  "untertitel": "Mulian und die Mutter im Reich der Hungernden",
+  "region": "asien",
+  "land": "China",
+  "art": "Geist",
+  "jahr": 800,
+  "zeitraum": "Yulanpen-Sutra in China seit dem 5./6. Jahrhundert verbreitet; Fest belegt seit dem 6. Jahrhundert; Dunhuang-Erzähltext um 800",
+  "kurz": "Ein Mönch steigt in die Hölle, um seine Mutter zu retten, und findet sie als Geist, dem jede Speise im Mund zu Feuer wird: die Legende hinter dem Geisterfest im siebten Monat.",
+  "geschichte": "Es war einmal ein frommer junger Mann namens Luobu. Bevor er auf eine lange Handelsreise ging, ließ er seiner Mutter Qingti Geld zurück, damit sie in seiner Abwesenheit Mönche und Bettler speise. Sie aber behielt das Geld für sich, und als der Sohn heimkehrte, versicherte sie ihm, sie habe alles getan, was er wünschte. Bald darauf starb sie.\n\nLuobu wurde Mönch und erhielt den Namen Mulian. Durch Meditation gewann er übernatürliche Kräfte, und das Erste, was er mit ihnen tat, war, nach seinen Eltern zu sehen. Den Vater fand er im Himmel, die Mutter nicht. So stieg er hinab in die Unterwelt, trat vor König Yama und wanderte von Gericht zu Gericht, vorbei an Flüssen, über die die Verdammten getrieben wurden, und an Wächtern mit Ochsenköpfen. Überall fragte er nach Qingti, und überall schickte man ihn tiefer. Zuletzt fand er sie in Avīci, der untersten aller Höllen.\n\nMulian kehrte zu Buddha zurück und erhielt von ihm einen Pilgerstab. Mit ihm sprengte er die Tore der Hölle. Doch die Mutter war damit nicht erlöst. Sie wurde als hungriger Geist wiedergeboren, mit einem Hals so dünn wie eine Nadel. Mulian brachte ihr eine Schale Reis. Sie riss sie an sich, verdeckte sie mit der Hand, damit kein anderer Geist davon nehme, und führte den Reis zum Mund. In diesem Augenblick wurde er zu glühender Kohle.\n\nWeinend fragte Mulian den Buddha um Rat. Die Schuld deiner Mutter, sagte dieser, ist zu schwer für die Kraft eines Einzelnen. Am fünfzehnten Tag des siebten Monats aber, wenn die Mönche ihre Regenzeit-Klausur beenden, sollst du ihnen Schalen mit Speisen, Früchten, Weihrauch und Lampen darbringen. Die vereinte Tugend der Gemeinde wird ihr helfen. Mulian tat es. Seine Mutter wurde frei von ihrem Hunger, kam aber noch einmal als schwarze Hündin in der Stadt Rājagṛha zur Welt. Mulian fand sie dort, las sieben Tage und Nächte die heiligen Schriften, und sie erhielt ihre menschliche Gestalt zurück und stieg schließlich in den Himmel auf.",
+  "fassung": "Nacherzählt nach dem Dunhuang-Erzähltext Da Mujianlian mingjian jiu mu bianwen („Wie der große Maudgalyāyana seine Mutter aus der Unterwelt rettete“, Handschrift Pelliot chinois 2319, um 800), in der englischen Übersetzung von Victor H. Mair (1983), mit der Opferszene nach dem Yulanpen-Sutra",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Vorstellung vom preta, einem Toten, der in einem Zwischenreich Hunger und Durst leidet, stammt aus Indien; schon die Pali-Sammlung Petavatthu erzählt, wie Śāriputra seiner zum Geist gewordenen Mutter durch Gaben an die Mönchsgemeinde Speise und Kleidung verschaffte. In China wurde daraus die Geschichte von Mulian, dem chinesischen Namen des Buddha-Schülers Maudgalyāyana. Ihre knappe Urform steht im Yulanpen-Sutra, das traditionell dem Übersetzer Dharmarakṣa (um 300) zugeschrieben wird; Herkunft und Datierung sind in der Forschung umstritten. Das Jingchu suishi ji, eine Festbeschreibung aus Mittelchina, belegt die Speiseopfer zum 15. Tag des siebten Monats für das 6. Jahrhundert. Die ausgemalte Unterweltreise mit der Mutter Qingti überliefern volkssprachliche Erzähltexte aus der Höhle von Dunhuang."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Der Religionswissenschaftler Stephen F. Teiser hat gezeigt, wie das Geisterfest buddhistische, daoistische und ältere chinesische Ahnenbräuche verband. Daoisten feiern denselben Tag als Zhongyuan, das mittlere der drei Jahresfeste, an dem der Beamte der Erde die Schuld der Toten vergibt. Für den Buddhismus war die Legende ein Weg, sich in China zu verankern: Sie machte das Mönchtum, das Konfuzianer als Bruch der Kindespflicht kritisierten, zum wirksamsten Mittel kindlicher Pietät. Alan Cole hat darauf hingewiesen, dass die Erzählungen die Mutter als schuldbeladen darstellen und so den Sohn, der Mönch wird, zum Retter machen. Die hungrigen Geister selbst gelten als die Vergessenen: Tote ohne Nachkommen, die ihnen opfern."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Im siebten Mondmonat, dem „Geistermonat“, öffnen sich nach dem Volksglauben die Tore der Unterwelt. In China, Taiwan, Hongkong, Singapur und Malaysia werden Speisen auf die Straße gestellt, Papiergeld verbrannt, Laternen auf Flüsse gesetzt und Bühnen für Oper und Gesang aufgebaut, deren vorderste Reihe für die unsichtbaren Gäste frei bleibt. Die Mulian-Oper war jahrhundertelang fester Teil des Festes. In Japan wurde aus Ullambana das Obon-Fest, in Vietnam das Fest Vu Lan."
+   }
+  ],
+  "verwandt": "Das japanische Obon, die Pret der thailändischen und laotischen Überlieferung und die Seelentage Allerseelen und Halloween teilen den Gedanken, dass die Toten zu einer bestimmten Zeit zurückkehren und versorgt werden wollen.",
+  "quellen": [
+   "Stephen F. Teiser: The Ghost Festival in Medieval China, Princeton 1988",
+   "Victor H. Mair (Übers.): Tun-huang Popular Narratives, Cambridge 1983",
+   "Alan Cole: Mothers and Sons in Chinese Buddhism, Stanford 1998",
+   "Encyclopaedia Britannica: Ghost Festival"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/hungrige-geister-0.jpg",
+    "breite": 900,
+    "hoehe": 653,
+    "zeigt": "Mokuren (Mulian) begegnet seiner Mutter im Reich der hungrigen Geister, Ausschnitt aus der japanischen Querrolle der Hungrigen Geister (Gaki zōshi), spätes 12. Jahrhundert, Nationalmuseum Kyōto",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Hungry_Ghosts_Scroll_Kyoto_cropped_Mokuren_or_Maudgalyayana_meets_his_hungry_mother_in_the_realm_of_hungry_ghosts.jpg"
+   },
+   {
+    "datei": "bilder/dark/hungrige-geister-1.jpg",
+    "breite": 900,
+    "hoehe": 506,
+    "zeigt": "Opfergaben für die hungrigen Geister im siebten Monat, Singapur 2014",
+    "urheber": "ProjectManhattan",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:7th_Month_Hungry_Ghost_Festival_Offerings_in_Singapore.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "vetala",
   "titel": "Vetala",
   "originalname": "वेताल Vetāla; Sammlung: Vetālapañcaviṃśati – „Fünfundzwanzig Erzählungen des Vetāla“, Hindi: Baital Pachisi",
@@ -15661,6 +17787,212 @@ const GRUSELMAERCHEN = [
     "urheber": "Jagadanandan Bajracharya",
     "lizenz": "Public domain",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Newar_manuscript_of_Vetala_Panchavimshati%2C_1695_CE.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "hannya",
+  "titel": "Hannya",
+  "originalname": "般若 – Name der Nō-Maske der eifersüchtigen Dämonin",
+  "untertitel": "Die Frau, die zur Schlange wurde, und die Glocke von Dōjōji",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Dämon",
+  "jahr": 1040,
+  "zeitraum": "Dōjōji-Legende seit dem Hokke genki (um 1040–1044); Hannya-Maske im Nō seit dem 15./16. Jahrhundert",
+  "kurz": "Ein junger Mönch bricht sein Versprechen, und die verschmähte Frau wird vor Zorn zur Riesenschlange. Im Nō trägt die Verwandelte die Hannya-Maske, das Gesicht der Eifersucht.",
+  "geschichte": "Zwei Mönche wanderten auf Pilgerfahrt nach Kumano, ein alter und ein junger, auffallend schöner. Im Bezirk Muro in der Provinz Kii kehrten sie im Haus einer jungen Witwe ein, die mit zwei, drei Dienerinnen lebte. Die Frau verliebte sich auf den ersten Blick in den jungen Mönch. Um Mitternacht schlich sie zu ihm und bat ihn, bei ihr zu bleiben. Der Mönch erschrak. Er sei auf heiliger Pilgerfahrt, sagte er, doch auf dem Rückweg werde er wiederkommen und ihr den Wunsch erfüllen. Die Frau glaubte ihm und zählte die Tage.\n\nDer Mönch aber kehrte auf einem anderen Weg zurück. Als die Witwe von einem Reisenden erfuhr, dass die beiden längst vorübergezogen waren, schloss sie sich in ihr Zimmer ein und kam nicht wieder heraus. Während die Dienerinnen um sie weinten, glitt aus dem Zimmer eine giftige Schlange, fünf Klafter lang, und nahm die Spur der Mönche auf.\n\nDie Fliehenden erreichten den Tempel Dōjōji. Die Mönche dort hörten ihren Bericht, ließen die große Tempelglocke herab, versteckten den jungen Mann darunter und schlossen das Tor. Bald darauf kam die Schlange, durchbrach das Tor, wand sich um die Glocke und schlug stundenlang mit dem Schwanz dagegen. Dann zog sie davon. Die Glocke aber war glühend heiß. Als man sie mit Wasser gekühlt und gehoben hatte, war von dem Mönch nichts geblieben als ein wenig Asche.\n\nBald darauf träumte einem alten Mönch des Tempels, eine noch größere Schlange erscheine vor ihm. Sie sei der junge Mönch, sagte sie; die Frau habe ihn zu ihrem Gatten gemacht, und nun lebten beide in Schlangenleibern. Er bat, für sie beide ein Kapitel des Lotos-Sutra abzuschreiben. Der alte Mönch tat es und hielt eine Gedenkfeier. In einem zweiten Traum erschienen ihm die beiden lächelnd in Menschengestalt: Sie hätten die Schlangenleiber abgelegt und seien in die Himmel aufgestiegen.",
+  "fassung": "Nacherzählt nach: Konjaku monogatari-shū, Buch 14, Erzählung 3 (um 1120), die auf das Dainihonkoku Hokekyō kenki (um 1040–1044) zurückgeht",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Legende vom Tempel Dōjōji in der heutigen Präfektur Wakayama erzählt erstmals der Mönch Chingen in seiner Sammlung von Wundern des Lotos-Sutra (Hokke genki, um 1040–1044); das Konjaku monogatari-shū übernahm sie um 1120. Im 16. Jahrhundert entstand die Bildrolle Dōjōji engi emaki, die der Tempel bis heute besitzt; in ihr verfolgt die Frau den Mönch bis an den Fluss Hidaka und verwandelt sich beim Durchschwimmen in die Schlange. Die Namen Anchin für den Mönch und Kiyohime für die Frau setzten sich erst in späteren Fassungen durch. Das Nō-Spiel „Dōjōji“, das auf ein älteres Stück zurückgeht, erzählt die Fortsetzung: Bei der Weihe einer neuen Glocke tanzt eine Tänzerin, springt unter die herabfallende Glocke und kommt als Schlangendämonin wieder hervor, mit der Hannya-Maske vor dem Gesicht."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Hannya-Maske zeigt eine Frau, die aus Eifersucht und Kränkung zur Dämonin geworden ist: mit zwei Hörnern, goldenen Augen und einem bis zu den Ohren aufgerissenen Mund. Im Nō wird sie außer in „Dōjōji“ etwa in „Aoi no ue“ für den rachsüchtigen Geist der Dame Rokujō getragen. Woher der Name stammt, ist ungeklärt; erzählt wird von einem Maskenschnitzer namens Hannyabō, andere verbinden ihn mit dem Hannya-Sutra, mit dem in „Aoi no ue“ der Geist gebannt wird. Die Moral der Legende ist buddhistisch: Leidenschaftliche Anhänglichkeit führt zu Wiedergeburt in niedriger Gestalt, und nur das Sutra erlöst. Das Konjaku zieht daraus die Lehre, Männer sollten sich vor Frauen hüten; die Forschung liest dies heute als Ausdruck einer frauenfeindlichen Mönchsperspektive."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Das Kabuki machte den Stoff mit dem Tanzstück „Kyōganoko musume Dōjōji“ (1753) zu einem der berühmtesten Rollenfächer für Frauendarsteller. Am Dōjōji erklären Mönche Besuchern bis heute die Legende anhand der Bildrolle. Tsukioka Yoshitoshi zeigte 1890 Kiyohime bei der Verwandlung im Fluss, und die Hannya-Maske wurde zu einem der bekanntesten Motive japanischer Kunst und Tätowierung."
+   }
+  ],
+  "verwandt": "Die Melusinensage und die Lamia der Antike verbinden wie Dōjōji die Frau mit der Schlange, freilich mit anderen Vorzeichen.",
+  "quellen": [
+   "Konjaku monogatari-shū, Buch 14, Erzählung 3: „Kii no kuni Dōjōji no sō Hokke o kakite hebi o sukuu koto“ (um 1120)",
+   "Yoshiko K. Dykstra (Übers.): Miraculous Tales of the Lotus Sutra from Ancient Japan. The Dainihonkoku Hokekyōkenki of Priest Chingen, Osaka: Kansai University of Foreign Studies 1983 (Vertrieb: University of Hawai‘i Press)",
+   "Susan Blakeley Klein: When the Moon Strikes the Bell. Desire and Enlightenment in the Noh Play Dōjōji, in: Journal of Japanese Studies 17/2 (1991)",
+   "Tokyo National Museum / ColBase: Nō-Maske „Hannya“, Edo-Zeit, Inv.-Nr. C-1554"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/hannya-0.jpg",
+    "breite": 606,
+    "hoehe": 686,
+    "zeigt": "Nō-Maske „Hannya“, Edo-Zeit (17.–18. Jahrhundert), Wichtiges Kulturgut, Nationalmuseum Tokio",
+    "urheber": "国立文化財機構",
+    "lizenz": "CC BY 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Hannya_%28Noh_mask%29%2C_Tokyo_National_Museum_C-1554.jpg"
+   },
+   {
+    "datei": "bilder/dark/hannya-1.jpg",
+    "breite": 765,
+    "hoehe": 1100,
+    "zeigt": "Tsukioka Yoshitoshi: Kiyohime verwandelt sich im Fluss Hidaka in eine Schlange, aus der Serie „Neue Formen der sechsunddreißig Geister“ (1890)",
+    "urheber": "Tsukioka Yoshitoshi (1839-1892), made in 1890",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Kiyohime-Serpent-1890-Tsukioka-Yoshitoshi.png"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "ubume",
+  "titel": "Ubume",
+  "originalname": "産女 bzw. 姑獲鳥 – „Gebärende“",
+  "untertitel": "Die Frau am Fluss, die ihr Kind in fremde Arme legt",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Geist",
+  "jahr": 1120,
+  "zeitraum": "Belegt im Konjaku monogatari-shū (um 1120), verbreitet in der Edo-Zeit",
+  "kurz": "Nachts an einer Furt hält eine Frau Reisenden ein weinendes Kind hin – der Geist einer Mutter, die im Kindbett starb. Ein Krieger nimmt die Wette an, ihr zu begegnen.",
+  "geschichte": "Als Minamoto no Yorimitsu Statthalter der Provinz Mino war, saßen eines Nachts seine Krieger im Wachhaus beisammen und erzählten sich Geschichten. Einer sprach von einer Furt, an der in der Dunkelheit eine Ubume erscheine. Wer den Fluss durchquere, dem halte sie ein weinendes Kind entgegen und bitte ihn, es zu tragen.\n\nDa erklärte Taira no Suetake, einer der Gefolgsleute, er werde noch in dieser Nacht durch die Furt reiten. Die anderen wetteten dagegen und setzten Rüstungen, Pferde und Schwerter. Zum Beweis, so vereinbarten sie, solle er am anderen Ufer einen Pfeil in den Boden stecken. Suetake legte die Rüstung an, nahm Bogen und Köcher und ritt los. Drei der Männer folgten ihm heimlich, um zu sehen, was geschehen würde.\n\nSuetake ritt durch das schwarze Wasser, steckte drüben seinen Pfeil in die Erde und kehrte um. Mitten im Fluss hörten die Lauscher eine Frauenstimme: „Nimm es, nimm es doch.“ Dazu das Wimmern eines Säuglings, und ein fauliger Geruch zog über das Wasser. Den drei Männern sträubten sich die Haare. Suetake aber sagte nur: „Gib her.“ Er nahm das Kind in seinen Ärmel und ritt weiter. Da folgte ihm die Frau und rief, er solle ihr das Kind zurückgeben. „Das gebe ich nicht mehr her“, antwortete er und stieg ans Ufer.\n\nIm Wachhaus warf er den Wettgegnern ihre Prahlerei vor und öffnete seinen rechten Ärmel, um ihnen das Kind zu zeigen. Darin lagen nur ein paar Blätter. Die drei Männer berichteten, was sie am Fluss gehört hatten, und alle lobten seinen Mut. Die gewonnenen Pfänder aber nahm Suetake nicht an, sondern gab sie zurück.\n\nManche, so schließt der Erzähler, sagen, die Ubume sei ein Fuchs, der Menschen täusche. Andere sagen, es sei der Geist einer Frau, die bei der Geburt gestorben ist.",
+  "fassung": "Nacherzählt nach: Konjaku monogatari-shū, Buch 27, Erzählung 43 (um 1120)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Erzählung von Taira no Suetake, einem der vier legendären Gefolgsleute des Minamoto no Yorimitsu, ist einer der ältesten Belege für die Ubume. Schon hier lässt der Erzähler offen, ob ein Fuchs oder der Geist einer im Kindbett Verstorbenen dahintersteckt. In der Edo-Zeit setzte sich die zweite Deutung durch: Die Ubume erscheint als Frau mit blutbeflecktem Unterkleid, die am Wasser oder an Wegkreuzungen steht und Vorübergehenden ihr Kind reicht; das Kind wird immer schwerer, und wer es bis zum Ende hält, erhält nach manchen Fassungen übermenschliche Kraft. Gelehrte der Edo-Zeit schrieben ihren Namen mit den Zeichen für den chinesischen Guhuo-Vogel, einen Dämon, der nachts Kinder raubt, und so verschmolzen japanische und chinesische Überlieferung; auch Toriyama Sekien beschriftete sein Bild von 1776 auf diese Weise."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Ubume steht für eine Wirklichkeit, die in vormodernen Gesellschaften allgegenwärtig war: den Tod von Müttern bei der Geburt. Nach buddhistischen Vorstellungen, die sich im späten Mittelalter verbreiteten, fielen solche Frauen in eine eigene Hölle, den Blutteich, aus dem sie nur mit besonderen Riten gerettet werden konnten. Bekannt ist das Nagare-kanjō: Am Bach wurde ein Tuch aufgespannt, und Vorübergehende schöpften Wasser darüber, bis die Schrift darauf verblasst war. Deutungen sehen in der Ubume deshalb weniger eine Bedrohung als einen Ruf nach Hilfe und Gedenken. Dass sie ihr Kind fremden Menschen anvertraut, spiegelt die Sorge um Säuglinge, die ohne Mutter zurückblieben."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Eng verwandt ist die Erzählung vom Geist der Mutter, der nachts Malzsirup kauft, um ihr im Grab geborenes Kind zu nähren. Lafcadio Hearn hörte sie in Matsue, wo sie am Friedhof des Tempels Daiōji spielt, und veröffentlichte sie 1894 in „Glimpses of Unfamiliar Japan“. Kyōgoku Natsuhikos Kriminalroman „Ubume no natsu“ (1994) machte den Namen einem großen Lesepublikum bekannt."
+   }
+  ],
+  "verwandt": "Mae Nak in Thailand sowie Pontianak und Langsuir in der malaiischen Welt sind ebenfalls Geister von Frauen, die mit ihrem Kind starben und nicht zur Ruhe kommen.",
+  "quellen": [
+   "Konjaku monogatari-shū, Buch 27, Erzählung 43: „Raikō no rōdō Taira no Suetake ubume ni au koto“ (um 1120)",
+   "Lafcadio Hearn: Glimpses of Unfamiliar Japan, Bd. 1, Boston/New York: Houghton Mifflin 1894 (Projekt Gutenberg, Nr. 8130)",
+   "Michael Dylan Foster: The Book of Yōkai. Mysterious Creatures of Japanese Folklore, Berkeley: University of California Press 2015",
+   "Hank Glassman: At the Crossroads of Birth and Death. The Blood Pool Hell and Postmortem Fetal Extraction, in: Jacqueline I. Stone, Mariko Namba Walter (Hg.): Death and the Afterlife in Japanese Buddhism, Honolulu: University of Hawai‘i Press 2008"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/ubume-0.jpg",
+    "breite": 839,
+    "hoehe": 1100,
+    "zeigt": "Ubume mit ihrem Kind aus Toriyama Sekiens Gazu hyakki yagyō (1776)",
+    "urheber": "Toriyama Sekien",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:SekienUbume.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "bakeneko",
+  "titel": "Bakeneko",
+  "originalname": "化け猫 – „Verwandelte Katze“",
+  "untertitel": "Die Katze, die die Gestalt der Geliebten annahm",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Gestaltwandler",
+  "jahr": 1233,
+  "zeitraum": "Katzendämonen (Nekomata) seit dem 13. Jahrhundert belegt; Nabeshima-Sage seit dem 19. Jahrhundert, englisch bei Mitford 1871",
+  "kurz": "Eine riesige Katze tötet die Lieblingsdame des Fürsten von Hizen, nimmt ihre Gestalt an und raubt ihm Nacht für Nacht die Kraft – bis ein einfacher Soldat wach bleibt.",
+  "geschichte": "Der Fürst von Hizen aus dem Haus Nabeshima liebte unter allen Frauen seines Hofes die schöne O-Toyo am meisten. Eines Abends gingen die beiden im Garten spazieren, bis die Sonne unterging, und keiner bemerkte die große Katze, die ihnen folgte. In der Nacht erwachte O-Toyo und sah das Tier neben ihrem Lager kauern. Ehe sie um Hilfe rufen konnte, war es über ihr. Die Katze verscharrte die Tote unter der Veranda, nahm ihre Gestalt an und ging zum Fürsten.\n\nVon nun an siechte der Fürst dahin. Er wurde bleich, keine Arznei half, und nachts quälten ihn furchtbare Träume. Die Räte stellten hundert Mann als Nachtwache an sein Lager, doch jede Nacht gegen zehn Uhr sank einer nach dem anderen in einen bleiernen Schlaf, und dann kam die falsche O-Toyo. Selbst drei Räte, die es selbst versuchten, schliefen ein.\n\nDa betete ein junger Fußsoldat namens Itō Sōda nachts an einem Tempelbrunnen für die Genesung seines Herrn. Der Oberpriester Ruiten bewunderte seine Treue und verschaffte ihm beim ersten Rat Isahaya Buzen die Erlaubnis, mitzuwachen. Als in der Nacht die Müdigkeit kam, breitete Sōda ein Ölpapier unter sich aus und stach sich sein kleines Messer in den Oberschenkel; der Schmerz hielt ihn wach. Da glitt die Schiebetür auf, und eine wunderschöne Frau trat ein. Sie lächelte, als sie die schlafenden Wachen sah, bis sie Sōda in der Ecke bemerkte. Sie fragte ihn aus, trat dann an das Lager des Fürsten, doch sooft sie sich über ihn beugen wollte, sah sie über die Schulter Sōdas Blick und musste unverrichteter Dinge gehen.\n\nSo ging es Nacht für Nacht, und der Fürst erholte sich. Nun war Sōda sicher, dass O-Toyo ein Spukwesen war. Er ging zu ihren Gemächern, als bringe er eine Botschaft, und zog plötzlich den Dolch. Sie griff nach einer Hellebarde und drohte ihm, dann verwandelte sie sich in eine Katze, sprang die Wand hinauf und entkam über das Dach. Erst eine große Jagd in den Bergen machte ihr ein Ende. Der Fürst genas, und Sōda wurde reich belohnt.",
+  "fassung": "Nacherzählt nach: Algernon Bertram Mitford, „The Vampire Cat of Nabéshima“, in: Tales of Old Japan (1871)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Glaube, dass Katzen im Alter zu Dämonen werden, ist alt. Im 13. Jahrhundert berichtet das Tagebuch Meigetsuki des Dichters Fujiwara no Teika von einer „Nekomata“ bei Nara, und um 1330 spielt Yoshida Kenkō im Tsurezuregusa mit dem Gerücht, in den Bergen hause eine Nekomata, die Menschen anfalle. Nach späterem Volksglauben wird eine Katze, die sehr alt wird oder deren Schwanz zu lang wächst, zur Nekomata mit gespaltenem Schwanz oder zur Bakeneko, die sprechen, tanzen, Lampenöl lecken und Menschengestalt annehmen kann. Die Sage von der Katze im Haus Nabeshima entstand im Umfeld der Fürstenfamilie von Saga in der Provinz Hizen und wurde im 19. Jahrhundert in Erzählkunst (Kōdan) und Theater verbreitet. Mitford veröffentlichte sie 1871 auf Englisch."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Hinter der Sage steht ein historischer Machtwechsel, die sogenannte Nabeshima-Unruhe. Nach dem Tod des Fürsten Ryūzōji Takanobu 1584 ging die tatsächliche Herrschaft in Saga an seinen Gefolgsmann Nabeshima Naoshige über. Der Ryūzōji-Erbe Takafusa starb 1607 nach einem Selbsttötungsversuch, und Versuche, das alte Haus wiederherzustellen, scheiterten. Nach Darstellung japanischer Nachschlagewerke formten spätere Erzähler daraus eine Rachegeschichte, in der eine Katze den Groll der Ryūzōji an den Nabeshima rächt; Mitfords Fassung lässt diesen Hintergrund weg. Die Katze als Gestaltwandlerin verbindet zudem zwei Ängste: die vor Tieren, die zu nah an den Menschen leben, und die vor Frauen im Inneren des Hofes, deren Einfluss man nicht kontrollieren konnte."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Ein Kabukistück von Segawa Jokō III., „Hana no Saga nekomata zōshi“, sollte den Stoff 1853 im Nakamura-za in Edo auf die Bühne bringen; nach Angaben japanischer Lexika wurde es auf Protest des Fürstenhauses von Saga abgesetzt. Holzschnittkünstler wie Utagawa Kuniyoshi zeigten Katzenhexen, und im 20. Jahrhundert entstand eine ganze Reihe japanischer Katzengeisterfilme. Shindō Kanetos „Yabu no naka no kuroneko“ (1968) gilt als einer der künstlerisch bedeutendsten."
+   }
+  ],
+  "verwandt": "In Europa galten Katzen als Begleiterinnen oder Verwandlungsgestalten von Hexen, und auch dort erkannte man die Hexe an der Wunde, die man der Katze zugefügt hatte.",
+  "quellen": [
+   "Algernon Bertram Mitford: Tales of Old Japan, London: Macmillan 1871 (Projekt Gutenberg, Nr. 13015)",
+   "Yoshida Kenkō: Tsurezuregusa (um 1330), Abschnitt 89",
+   "Kotobank: Artikel „Nabeshima sōdō“ in: Sekai daihyakka jiten (Heibonsha) und Nihon daihyakka zensho (Shōgakukan)",
+   "Michael Dylan Foster: The Book of Yōkai. Mysterious Creatures of Japanese Folklore, Berkeley: University of California Press 2015"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/bakeneko-0.jpg",
+    "breite": 811,
+    "hoehe": 1100,
+    "zeigt": "Utagawa Kuniyoshi: Die Katzenhexe von Okabe, aus der Serie „53 Parallelen für die Tōkaidō-Straße“ (1844–1847); dargestellt ist eine Szene aus einem Stück von Tsuruya Nanboku IV.",
+    "urheber": "Utagawa Kuniyoshi",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Okabe_-_The_cat_witch.jpg"
+   },
+   {
+    "datei": "bilder/dark/bakeneko-1.jpg",
+    "breite": 370,
+    "hoehe": 493,
+    "zeigt": "Nekomata mit gespaltenem Schwanz aus Toriyama Sekiens Gazu hyakki yagyō (1776)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:SekienNekomata.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "dokkaebi",
+  "titel": "Dokkaebi",
+  "originalname": "도깨비 Dokkaebi, Mittelkoreanisch 돗가비; im Samguk yusa 鬼衆 – „die Schar der Geister“",
+  "untertitel": "Bihyeong und die Geister, die in einer Nacht eine Brücke bauten",
+  "region": "asien",
+  "land": "Korea",
+  "art": "Naturwesen",
+  "jahr": 1281,
+  "zeitraum": "Erzählung im Samguk yusa (um 1281–1289), Wort „돗가비“ erstmals im Seokbo sangjeol (1447); lebendiger Volksglaube bis ins 20. Jahrhundert",
+  "kurz": "Ein Prinz, Sohn eines toten Königs, spielt nachts mit den Geistern und lässt sie eine Brücke bauen: die älteste koreanische Erzählung von den Wesen, die man heute Dokkaebi nennt.",
+  "geschichte": "König Jinji von Silla hörte von einer schönen Frau aus dem Bezirk Saryang, die man Dohwa nannte, die Pfirsichblüte. Er ließ sie in den Palast holen, doch sie wies ihn ab, denn sie hatte einen Mann. Und wenn dein Mann nicht mehr lebte, fragte der König. Dann vielleicht, sagte sie. Im selben Jahr wurde der König gestürzt und starb. Zwei Jahre später starb auch Dohwas Mann.\n\nZehn Tage danach stand um Mitternacht der tote König in ihrem Zimmer, so wie er im Leben ausgesehen hatte, und erinnerte sie an ihr Wort. Sieben Tage blieb er, und solange er da war, lagen fünffarbige Wolken über dem Haus und ein Duft erfüllte die Räume. Dann war er verschwunden. Dohwa aber war schwanger und gebar einen Sohn, den sie Bihyeong nannte.\n\nKönig Jinpyeong nahm den Knaben in den Palast auf und gab ihm mit fünfzehn Jahren ein Amt. Doch jede Nacht verschwand Bihyeong. Der König ließ ihm Soldaten nachsetzen, und sie sahen, wie er über die Mauern der Mondburg Wolseong flog und westlich davon am Ufer des Hwangcheon mit einer Schar von Geistern spielte, bis die Glocken der Tempel im Morgengrauen läuteten und die Geister auseinanderstoben.\n\nDer König stellte Bihyeong zur Rede und gab ihm eine Aufgabe: Seine Geister sollten über den Bach nördlich des Tempels Sinwonsa eine Brücke bauen. In einer einzigen Nacht stand sie da, und man nannte sie die Geisterbrücke. Ob unter den Geistern einer sei, der beim Regieren helfen könne, fragte der König weiter. Bihyeong nannte einen namens Gildal. Gildal diente treu, ein hoher Würdenträger nahm ihn als Sohn an, und er baute ein Tor, auf dem er nachts schlief. Eines Tages aber verwandelte er sich in einen Fuchs und floh. Bihyeong ließ ihn von den anderen Geistern fangen und töten.\n\nSeitdem fliehen die Geister, sobald sie Bihyeongs Namen hören. Und die Leute in Silla klebten Verse an ihre Türen, die verkündeten, hier wohne der Sohn des heiligen Königs, und kein Geist solle verweilen.",
+  "fassung": "Nacherzählt nach Iryeon, Samguk yusa (um 1281–1289), Buch 1, Erzählung „Dohwanyeo und Bihyeongnang“, englisch von Ha Tae-hung und Grafton K. Mintz (1972)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Mönch Iryeon sammelte im 13. Jahrhundert Überlieferungen aus der Zeit der Drei Reiche; die Bihyeong-Erzählung spielt im späten 6. Jahrhundert und gilt als ältester Beleg für Wesen, die die koreanische Forschung als Vorläufer des Dokkaebi ansieht. Das Wort selbst erscheint in der Form „돗가비“ erstmals 1447 im Seokbo sangjeol, einer Buddha-Biografie in koreanischer Schrift, wo von Menschen die Rede ist, die Dokkaebi um Glück und langes Leben bitten. In Joseon-zeitlichen Anekdotensammlungen und in der mündlichen Überlieferung bis ins 20. Jahrhundert ist der Dokkaebi allgegenwärtig: Er ringt nachts mit Wanderern, verwandelt sich in Besen oder Stöcke, besitzt eine Wunderkeule, die alles herbeischafft, und kauft in der bekannten Geschichte vom alten Mann mit dem Kropf dessen Geschwulst, weil er sie für die Quelle seines Gesangs hält."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Anders als ein Gwishin ist der Dokkaebi kein Totengeist, sondern ein Wesen, das aus Dingen und aus der Natur entsteht; man fürchtete ihn, betete aber auch zu ihm um Reichtum und Fischfang. Der Volkskundler Kim Jong-dae, der Dokkaebi-Überlieferungen bei älteren Menschen auf dem Land gesammelt hat, beschreibt ihn als eher verspielten, gefährlichen, aber oft gutmütigen Gefährten ohne feste Gestalt. Die heute verbreitete Darstellung mit Hörnern, Tigerfell-Lendenschurz und Stachelkeule geht nach seiner Deutung auf den japanischen Oni zurück: Das koreanische Schullesebuch der Kolonialverwaltung bebilderte die Geschichte vom alten Mann mit dem Kropf ab der Ausgabe von 1923 mit einem gehörnten Oni. Die Bihyeong-Erzählung ähnelt der von Cheoyong, dessen Bild man im alten Silla ebenfalls zum Schutz vor Krankheitsgeistern an die Türen heftete."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Das Nationale Volkskundemuseum Korea zeigt im Kindermuseum die Dauerausstellung „Mein Freund Dokkaebi“ mit dem älteren, freundlicheren Bild der Figur. In der Popkultur ist der Dokkaebi allgegenwärtig: Die Fernsehserie Dokkaebi (international Goblin, tvN 2016–2017) machte ihn zu einer tragisch-romantischen Figur, er erscheint in Musikvideos, Comics und Computerspielen. Der Dokkaebi-Markt (dokkaebi sijang) ist in Korea ein gängiger Name für Flohmärkte, die plötzlich auftauchen und wieder verschwinden."
+   }
+  ],
+  "verwandt": "Europäische Kobolde, Wichtel und der irische Púca teilen mit dem Dokkaebi die Mischung aus Schabernack, Gefahr und Hilfsbereitschaft; der japanische Oni, mit dem er heute oft verwechselt wird, ist dagegen ein eindeutig bedrohlicher Dämon.",
+  "quellen": [
+   "Iryeon: Samguk yusa. Legends and History of the Three Kingdoms of Ancient Korea, übers. von Ha Tae-hung und Grafton K. Mintz, Seoul 1972",
+   "Encyclopedia of Korean Culture (Academy of Korean Studies): Bihyeongnang (비형랑), Artikel von Yi Do-hak",
+   "National Folk Museum of Korea: Encyclopedia of Korean Folk Literature, Seoul 2014",
+   "Newsis: „뿔 달린 도깨비는 일본의 문화 침략“, Bericht mit Kim Jong-dae, 4. Juli 2026"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/dokkaebi-0.jpg",
+    "breite": 900,
+    "hoehe": 865,
+    "zeigt": "Firstziegel mit Dämonengesicht aus dem früheren Tempel Gapsansa bei Gyeongju, Vereinigtes Silla, 7.–8. Jahrhundert (Nationalmuseum Tokio); solche Ziegel werden in Korea volkstümlich Dokkaebi-Ziegel genannt",
+    "urheber": "Daderot",
+    "lizenz": "CC0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Ridge-end_tile_with_demon_face_design%2C_excavated_from_former_temple_site_of_Gapsansa_temple%2C_Gyeongju%2C_Korea%2C_Unified_Silla_dynasty%2C_600s-700s_AD%2C_clay_-_Tokyo_National_Museum_-_Tokyo%2C_Japan_-_DSC08268.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -15722,6 +18054,62 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "yamauba",
+  "titel": "Yamauba",
+  "originalname": "山姥 – „Alte vom Berg“ (auch Yamanba)",
+  "untertitel": "Die Berghexe, die den Packpferdtreiber verfolgt",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Dämon",
+  "jahr": 1400,
+  "zeitraum": "Seit dem frühen 15. Jahrhundert belegt (Nō-Spiel „Yamanba“), Volksmärchen bis in die Neuzeit",
+  "kurz": "Eine hagere Alte mit wirrem Haar haust in den Bergen, frisst, was ihr in die Hände fällt, und verfolgt Reisende bis in ihr eigenes Haus – und kann doch auch Mutter und Glücksbringerin sein.",
+  "geschichte": "Es war ein kurzer Wintertag, und der Packpferdtreiber Umakichi hatte sich in der Stadt verspätet. Sein Pferd trug über hundert Rettiche, und bis zu seinem Dorf musste er noch über einen Berg. Als er den Pass erreichte, ging die Sonne unter, und ein kalter Wind fuhr durch die Bäume. Seit jeher hieß es, auf diesem Berg wohne eine Yamauba.\n\n„Umakichi, Umakichi“, rief es hinter ihm. Er tat, als höre er nichts, und trieb das Pferd an. Doch die Stimme kam näher, und beim dritten Mal rief sie ihm direkt ins Ohr. Er fuhr herum: Da stand eine dürre Alte in grauen Lumpen und winkte ihn heran. „Gib mir einen Rettich“, sagte sie. Er gab ihr einen, und sie verschlang ihn mit einem Maul, das bis zu den Ohren zu reichen schien; bei jedem Bissen sträubte sich ihr rotes Haar. Sie wollte noch einen und noch einen, bis die ganze Ladung fort war. Dann verlangte sie das Pferd. Umakichi ließ es ihr und rannte um sein Leben.\n\nIn der Dunkelheit verlor er den Weg. Tief im Tal fand er ein verlassenes Haus voller Spinnweben und versteckte sich auf dem Dachboden. Um Mitternacht glitt die Tür von selbst auf. Im Mondlicht sah er die Alte am Herd sitzen: Rettiche und Pferd seien ein guter Schmaus gewesen, murmelte sie, schade nur, dass ihr der Treiber entwischt sei. Er war in ihr eigenes Haus geraten.\n\nDie Yamauba gähnte und überlegte, wo sie schlafen solle, und kroch schließlich in den großen Reiskessel, weil es darin warm sei. Bald schnarchte sie. Leise stieg Umakichi hinab, wälzte den schwersten Stein aus dem Garten auf den Deckel und schichtete Reisig unter den Kessel. Das Knacken der Zweige hielt die Alte im Halbschlaf für Regen und sang dazu ein Lied. Als es unter ihr heiß wurde, wollte sie heraus, doch der Stein hielt den Deckel fest. Umakichi schürte das Feuer, bis der Kessel glühte, und die Yamauba kam nie wieder auf den Berg.",
+  "fassung": "Nacherzählt nach: Kusuyama Masao, „Yamauba no hanashi“, Teil „Yamauba to mago“ (Die Yamauba und der Packpferdtreiber); Fassung des Märchentyps Ushikata yamauba",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Yamauba oder Yamanba bedeutet „Alte vom Berg“. Literarisch fassbar wird die Gestalt im Nō-Spiel „Yamanba“ aus dem frühen 15. Jahrhundert, das dem Kreis um Zeami zugeschrieben wird: Eine Tänzerin, die mit einem Yamanba-Tanz berühmt geworden ist, begegnet im Gebirge der wirklichen Yamanba. In der Edo-Zeit machte Chikamatsu Monzaemons Puppenspiel „Komochi Yamanba“ (1712) sie zur Mutter des starken Knaben Kintarō, und Kitagawa Utamaro malte die beiden seit den 1790er-Jahren immer wieder. Im Volksmärchen dagegen ist sie meist die menschenfressende Alte: Im Typ „Ushikata yamauba“ verfolgt sie einen Treiber, in „Sanmai no ofuda“ (Die drei Amulette) einen Tempeljungen, in „Kuwazu nyōbō“ tarnt sie sich als Ehefrau, die angeblich nichts isst. Die Volkskundler Yanagita Kunio und Seki Keigo haben solche Fassungen aus ganz Japan gesammelt."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Forschung betont die Doppelnatur der Figur. Die Volkskundlerin Noriko T. Reider beschreibt die Yamauba als Gestalt, die zugleich Dämonin, Göttin, Mutter, Unterhalterin und Helferin sein kann. Yanagita Kunio deutete sie als herabgesunkene Berggottheit oder als Dienerin einer solchen; Spuren davon sieht man in Erzählungen, in denen eine Yamauba Glück und Reichtum bringt. Andere Deutungen verweisen auf reale Lebenswelten: Frauen, die aus der Dorfgemeinschaft ausgestoßen wurden oder in die Berge flohen, alte Frauen, die nicht mehr versorgt wurden, und die Berge selbst als gefährlichen, fremden Raum jenseits der Felder. Dass die Yamauba im Märchen so oft ans Essen denkt und alles verschlingt, lesen manche als Spiegel von Hungererfahrungen in armen Bergdörfern. Gesichert ist keine dieser Erklärungen; sie ergänzen einander."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Das Nō-Stück „Yamanba“ wird bis heute gespielt, und die Mutter des Kintarō blieb eine beliebte Figur von Holzschnitten und Kinderbüchern. In der Gegenwart griff die Jugendmode den Namen auf: Die grell geschminkten „Yamanba“-Girls der Gyaru-Szene um 2000 wurden nach der wilden Berghexe benannt. Die Märchen von den drei Amuletten und vom Packpferdtreiber gehören zum festen Bestand japanischer Bilderbücher."
+   }
+  ],
+  "verwandt": "Die russische Baba Jaga und die Hexe aus „Hänsel und Gretel“ teilen mit der Yamauba das Bild der menschenfressenden Alten im Wald, die am Ende im eigenen Ofen umkommt.",
+  "quellen": [
+   "Kusuyama Masao: Yamauba no hanashi, in: Nihon no shokoku monogatari, Tokio: Kōdansha Gakujutsu Bunko 1983 (Volltext bei Aozora Bunko, Nr. 43462)",
+   "Noriko T. Reider: Mountain Witches. Yamauba, Logan: Utah State University Press 2021",
+   "Keigo Seki (Hg.): Folktales of Japan, übers. von Robert J. Adams, Chicago: University of Chicago Press 1963",
+   "Michael Dylan Foster: The Book of Yōkai. Mysterious Creatures of Japanese Folklore, Berkeley: University of California Press 2015"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/yamauba-0.jpg",
+    "breite": 831,
+    "hoehe": 1100,
+    "zeigt": "Yamauba aus Toriyama Sekiens Bildkompendium Gazu hyakki yagyō (1776)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:SekienYamauba.jpg"
+   },
+   {
+    "datei": "bilder/dark/yamauba-1.jpg",
+    "breite": 756,
+    "hoehe": 1100,
+    "zeigt": "Kitagawa Utamaro: Yamauba mit dem Knaben Kintarō (Kintoki), Farbholzschnitt um 1795, Metropolitan Museum of Art",
+    "urheber": "unbekannt",
+    "lizenz": "CC0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E5%A7%A5%E3%81%A8%E9%87%91%E5%A4%AA%E9%83%8E-Yamauba_and_Kintoki_MET_DP135601.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "aswang",
   "titel": "Aswang",
   "originalname": "Aswang / Asuwang (Tagalog und Visaya), bei Plasencia 1589 „osuang“",
@@ -15774,6 +18162,72 @@ const GRUSELMAERCHEN = [
     "urheber": "Gian Bernal",
     "lizenz": "CC0",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Manananggal.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "tikbalang",
+  "titel": "Tikbalang",
+  "originalname": "Tikbalang, ältere Schreibungen Tigbalang, Tigbalaang (Plasencia 1589), Tigbalag (Ortiz um 1731)",
+  "untertitel": "Der Pferdekopf am Waldrand, der Wanderer im Kreis führt",
+  "region": "asien",
+  "land": "Philippinen",
+  "art": "Naturwesen",
+  "jahr": 1589,
+  "zeitraum": "Erster Beleg bei Juan de Plasencia 1589, Pferdegestalt seit dem 18. Jahrhundert bezeugt; lebendiger Volksglaube bis heute, besonders bei den Tagalen",
+  "kurz": "Ein riesiges Wesen mit Pferdekopf und überlangen Gliedern, das im Wald Reisende in die Irre führt: Wer ihm drei Haare aus der Mähne reißt, macht es sich zum Diener.",
+  "geschichte": "Unter den Geistern, an die die Tagalen glaubten, nannte der Franziskaner Juan de Plasencia 1589 nur kurz die tigbalaang, Erscheinungen, die man fürchtete. Ein Augustiner, Tomás Ortiz, schrieb um 1731 genauer: Der tigbalag zeige sich als schwarzer Mann, als winziger Greis, als Pferd oder als Ungeheuer. Viele hätten solche Angst vor ihm, dass sie Freundschaft mit ihm schlössen, ihm ihren Rosenkranz gäben und von ihm Haare, Kräuter oder Steine annähmen, die ihnen Wunderbares verschaffen sollten.\n\nIn den Dörfern Luzons erzählt man bis heute Geschichten, die so gehen: Ein Mann ist abends auf dem Heimweg durch den Wald. Der Pfad ist ihm vertraut, er ist ihn hundertmal gegangen. Doch nach einer Weile steht er wieder an derselben Biegung, vor demselben Baum, einem riesigen Balete, dessen Luftwurzeln wie Vorhänge herabhängen. Er geht weiter und kommt wieder an. Dann sieht er es: eine Gestalt, so groß, dass ihre Knie über den Kopf ragen, wenn sie hockt, mit Hufen statt Füßen und dem langen Kopf eines Pferdes.\n\nDer Mann weiß, was zu tun ist. Er zieht sein Hemd aus, wendet es auf links und zieht es wieder an. Er bittet laut um Verzeihung, dass er gestört habe, und um Erlaubnis, vorbeizugehen. Da liegt der Weg wieder vor ihm, wie er sein soll.\n\nNur wenige wagen das andere. In der Mähne des Tikbalang, sagen die Alten, wachsen drei Haare, die stärker sind als die übrigen, manche sagen golden. Wer ihm auf den Rücken springt und sich festhält, so wild es auch tobt, bis es erschöpft ist, und ihm dann die drei Haare ausreißt, dem muss es dienen. Und wenn die Sonne scheint und es zugleich regnet, dann, sagen die Kinder, heiratet gerade ein Tikbalang.",
+  "fassung": "Erster Teil nach Juan de Plasencia, Customs of the Tagalogs (1589), und Tomás Ortiz, Práctica del ministerio (um 1731), beide englisch in Blair/Robertson, Bd. 7 und 43; zweiter Teil nach dem tagalischen Volksglauben, wie ihn Maximo D. Ramos (1971) und Damiana L. Eugenio beschreiben, keine feste Textfassung",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Plasencia nennt die tigbalaang 1589 nur dem Namen nach, neben den Gespenstern vibit und der patianac. Ortiz beschreibt um 1731 schon wechselnde Gestalten, darunter das Pferd, und der Augustiner Joaquín Martínez de Zúñiga zählt den tigbalang um 1803 zu den Wesen, die die Menschen am meisten fürchten. Der Folklorist Isabelo de los Reyes nahm den Volksglauben um solche Wesen 1889 in sein Werk „El Folk-Lore Filipino“ auf. Im 20. Jahrhundert hat Maximo D. Ramos die regionalen Vorstellungen geordnet: Der Tikbalang lebt in Balete-Bäumen, Bambusdickichten und unter Brücken, führt Reisende in die Irre und kann sich unsichtbar machen oder in Menschengestalt erscheinen. "
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Balete-Bäume, eine Feigenart, waren in vorkolonialer Zeit Orte, an denen man den Ahnengeistern opferte; die Missionare deuteten die Wesen, die man dort vermutete, als Teufel. Pferde gab es auf den Philippinen vor der spanischen Zeit nicht, und die frühesten Belege sprechen noch nicht von einem Pferdekopf. Die Forschung nimmt deshalb an, dass die Pferdegestalt erst in der Kolonialzeit hinzukam, als Pferde ins Land gebracht wurden. Ob indische Vorbilder wie die pferdeköpfige Gottheit Hayagrīva eine Rolle spielten, ist eine Vermutung ohne sicheren Beleg. Das Verirren im Wald, das man dem Tikbalang zuschreibt, ist eine verbreitete Erfahrung, für die die Erzählung eine Ursache und ein Gegenmittel anbietet."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Der Tikbalang ist eine der bekanntesten Gestalten der philippinischen Volkskunde und erscheint in Kinderbüchern, Comics, Filmen und in der Netflix-Animationsserie Trese (2021). Der Freiheitskämpfer Mariano Ponce schrieb ab 1889 für die in Spanien erscheinende Zeitung La Solidaridad und benutzte unter anderem den Decknamen Tikbalang. Die Redensart vom Sonnenregen als Hochzeit eines Tikbalang ist bis heute allgemein bekannt."
+   }
+  ],
+  "verwandt": "Der irische Púca und der schottische Kelpie erscheinen ebenfalls als Pferd und locken Menschen in die Irre; Waldgeister, die Wanderer im Kreis führen, kennt auch die europäische Sage, etwa im Irrlicht.",
+  "quellen": [
+   "Juan de Plasencia: Customs of the Tagalogs (1589), in: Emma H. Blair, James A. Robertson (Hg.): The Philippine Islands 1493–1898, Bd. 7, Cleveland 1903",
+   "Tomás Ortiz: Superstitions and Beliefs of the Filipinos (um 1731), in: Blair/Robertson, Bd. 43, Cleveland 1906",
+   "Isabelo de los Reyes: El Folk-Lore Filipino, Manila 1889",
+   "Maximo D. Ramos: Creatures of Philippine Lower Mythology, Quezon City 1971",
+   "Damiana L. Eugenio (Hg.): Philippine Folk Literature: The Legends, Quezon City 2001"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/tikbalang-0.jpg",
+    "breite": 840,
+    "hoehe": 1100,
+    "zeigt": "Moderne Zeichnung eines Tikbalang (2007)",
+    "urheber": "unbekannt",
+    "lizenz": "CC BY 2.5",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Tikbalang_The_Philippine_Demon_Horse_Commons.jpg"
+   },
+   {
+    "datei": "bilder/dark/tikbalang-1.jpg",
+    "breite": 709,
+    "hoehe": 1100,
+    "zeigt": "Balete-Baum im Wald der Philippinen, Aufnahme aus Harry N. Whitfords Forstbericht von 1911",
+    "urheber": "Harry Nichols Whitford",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Balete_from_Forest_of_the_Philippines_plate8_part2.jpg"
+   },
+   {
+    "datei": "bilder/dark/tikbalang-2.jpg",
+    "breite": 865,
+    "hoehe": 1100,
+    "zeigt": "Mariano Ponce, der unter dem Decknamen Tikbalang schrieb, Porträt von 1912",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Mariano_Ponce.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -15839,6 +18293,53 @@ const GRUSELMAERCHEN = [
     "urheber": "Unlisted author",
     "lizenz": "Public domain",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Leifeng_Pagode_-_Lei_Fang_Pagoda_%281910%29.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "cheonyeo-gwishin",
+  "titel": "Cheonyeo gwishin",
+  "originalname": "처녀귀신 – „Jungfrauengeist“; Erzählung: 薔花紅蓮傳 Janghwa Hongryeon jeon – „Die Geschichte von Rose und Roter Lotus“",
+  "untertitel": "Janghwa und Hongryeon, die Schwestern aus dem Teich",
+  "region": "asien",
+  "land": "Korea",
+  "art": "Geist",
+  "jahr": 1656,
+  "zeitraum": "Erzählung nach einem Fall von 1656 in Cheolsan, als Roman im späten Joseon-Reich (18./19. Jahrhundert) verbreitet, Drucke bis ins 20. Jahrhundert",
+  "kurz": "Zwei Schwestern sterben durch die Intrige ihrer Stiefmutter im Teich, und jeder Magistrat, dem ihre Geister erscheinen, stirbt vor Schreck, bis einer zuhört: Koreas bekannteste Geistergeschichte.",
+  "geschichte": "In Cheolsan in der Provinz Pyeongan lebte ein angesehener Mann namens Bae Mu-ryong mit seiner Frau. Lange blieben sie kinderlos, bis die Frau träumte, eine Blume, vom Himmel gefallen, verwandle sich in eine Fee und lege sich in ihren Schoß. Sie gebar eine Tochter, Janghwa, die Rosenblüte, und danach eine zweite, Hongryeon, die Rote Lotusblume. Als die Mutter starb, heiratete der Vater wieder. Die neue Frau, Heo, gebar ihm drei Söhne, und je größer ihre eigenen Kinder wurden, desto mehr hasste sie die Töchter der Toten.\n\nAls Janghwa heiraten sollte, wollte die Stiefmutter keine Mitgift zahlen. Sie ließ ihren ältesten Sohn Jang-soe eine große Ratte häuten und heimlich in Janghwas Bett legen. Am Morgen zeigte sie dem Vater das blutige Bettzeug: Seine Tochter habe heimlich ein Kind verloren und Schande über das Haus gebracht. Der Vater glaubte ihr. In der Nacht musste Jang-soe Janghwa angeblich zum Haus ihres Onkels bringen, führte sie aber in die Berge an einen tiefen Teich und drängte sie so lange, bis sie sich hineinstürzte. Auf dem Heimweg sprang ihn ein Tiger an, und er verlor Arm und Bein.\n\nHongryeon erfuhr von Jang-soe, was geschehen war. Ein blauer Vogel führte sie zu dem Teich, und sie folgte ihrer Schwester ins Wasser.\n\nDie Geister der Schwestern wollten Gerechtigkeit und erschienen dem Magistrat von Cheolsan. Doch der Mann starb vor Schreck, ebenso sein Nachfolger und der nächste, bis niemand mehr das Amt wollte. Schließlich meldete sich ein furchtloser Beamter, Jeong Dong-u. In seiner ersten Nacht erlosch die Lampe, ein kalter Wind ging durch den Raum, und Hongryeon in grüner Jacke und rotem Rock verneigte sich vor ihm. Er blieb sitzen und hörte sie an. Am nächsten Tag ließ er die Familie vorladen und schnitt das angebliche Kind auf, das die Stiefmutter als Beweis aufbewahrt hatte: Es war eine Ratte. Die Stiefmutter und Jang-soe wurden hingerichtet, die Leichen der Schwestern aus dem Teich geborgen und würdig bestattet. Der Vater heiratete ein drittes Mal, und seine Frau brachte Zwillingsmädchen zur Welt, die er wieder Janghwa und Hongryeon nannte.",
+  "fassung": "Nacherzählt nach dem koreanischen Roman Janghwa Hongryeon jeon in der verbreiteten Hangeul-Fassung, wie sie u. a. der Druck des Verlags Dongmyeong seogwan (Seoul 1915) bietet; Namen und Einzelheiten weichen zwischen den Fassungen ab",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Nach koreanischer Überlieferung beruht die Geschichte auf einem Mordfall, den der Beamte Jeon Dong-heul 1656 als Magistrat von Cheolsan aufgeklärt haben soll; im Roman heißt der Magistrat je nach Fassung anders, in der hier erzählten Jeong Dong-u. Der Stoff wurde zunächst mündlich weitergegeben und dann in mehreren Fassungen in Hanmun und Hangeul aufgeschrieben, als Holzdruck und später als billiges Druckbuch verbreitet. Er gehört zu den Stiefmutter-Erzählungen der späten Joseon-Zeit wie Kongjwi Patjwi. Der Cheonyeo gwishin, der Geist einer unverheiratet verstorbenen jungen Frau, ist dagegen eine allgemeine Figur des Volksglaubens: Wer ohne Ehe und Nachkommen starb, hatte keinen Platz in der Ahnenverehrung und galt als besonders ruhelos. Man suchte solche Seelen etwa durch Totenhochzeiten zu besänftigen."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Literaturwissenschaftlerin Choi Ki-sook deutet die weiblichen Rachegeister der Joseon-Erzählungen als Stimme derer, die im Leben nicht gehört wurden: Der Geist kann sein Unrecht nicht selbst richten, er braucht einen unerschrockenen Beamten, der zuhört. So bestätigen die Geschichten zugleich die konfuzianische Ordnung und klagen ihre Opfer ein. Das heute bekannte Bild des Cheonyeo gwishin mit weißem Trauergewand und offenem langem Haar ist jünger, als man meist annimmt. Im Roman trägt der Geist grüne Jacke und roten Rock, die Kleidung einer jungen Frau; das weiße Gewand mit offenem Haar ist nach Recherchen der Zeitschrift Weekly Kyunghyang erst im Horrorfilm Wolha-ui gongdong myoji (1967) eindeutig belegt, japanische Geisterbilder könnten es beeinflusst haben."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Janghwa Hongryeon jeon wurde 1924 erstmals verfilmt, weitere Fassungen folgten unter anderem 1936, 1956, 1962 und 1972. Die Fernsehreihe Jeonseol-ui gohyang (KBS, ab 1977) prägte mit ihren Frauengeistern in Weiß Generationen von Zuschauern. Kim Jee-woons Film Janghwa, Hongryeon (international A Tale of Two Sisters, 2003) verlegte den Stoff in die Gegenwart und wurde einer der international erfolgreichsten koreanischen Horrorfilme; 2009 entstand das amerikanische Remake The Uninvited."
+   }
+  ],
+  "verwandt": "Die japanischen Geisterfrauen Okiku und Oiwa, die thailändische Mae Nak und die europäische Weiße Frau sind ebenfalls Frauen, deren erlittenes Unrecht sie nicht ruhen lässt.",
+  "quellen": [
+   "Janghwa Hongryeon jeon, Dongmyeong seogwan, Seoul 1915 (Nationalbibliothek Korea)",
+   "Choi Ki-sook: Cheonyeo gwishin (처녀귀신). Joseon sidae yeoin-ui han-gwa boksu, Seoul: Munhakdongne 2010",
+   "Weekly Kyunghyang: „한국 처녀귀신은 언제부터 흰 소복을 입었을까“, 27. September 2026, und „‘소복에 긴 머리’ 어디서 유래했나“, 4. August 2015",
+   "Alison Peirse, Daniel Martin (Hg.): Korean Horror Cinema, Edinburgh 2013"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/cheonyeo-gwishin-0.jpg",
+    "breite": 900,
+    "hoehe": 433,
+    "zeigt": "Szenenbild aus einer frühen koreanischen Verfilmung von Janghwa Hongryeon jeon aus der Kolonialzeit (vermutlich 1936; Datierung unsicher)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:%E8%94%B7%E8%8A%B1%E7%BA%A2%E8%8E%B2%E4%BC%A0.PNG"
    }
   ],
   "seit": "2026-10-07"
@@ -16151,6 +18652,52 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "churel",
+  "titel": "Churel",
+  "originalname": "चुड़ैल / چڑیل Churail, Chudail; in englischen Quellen meist Churel",
+  "untertitel": "Die schöne Frau mit den verkehrten Füßen",
+  "region": "asien",
+  "land": "Indien und Pakistan",
+  "art": "Geist",
+  "jahr": 1896,
+  "zeitraum": "Volksglaube in Nordindien und Pakistan, ausführlich beschrieben von William Crooke 1896; bis heute lebendig",
+  "kurz": "Der Geist einer Frau, die in Schwangerschaft oder Wochenbett starb, lockt nachts junge Männer in ihr Reich und schickt sie als Greise zurück. Erkennen kann man sie nur an ihren Füßen.",
+  "geschichte": "In den Dörfern Nordindiens erzählte man sich, dass eine Frau, die schwanger oder im Kindbett stirbt, nicht zur Ruhe kommt. Sie wird zur Churel. Am gefährlichsten ist sie für die eigene Familie, doch sie lauert auch an Wegen, an Friedhöfen und in den großen Pipal-Bäumen am Dorfrand.\n\nMeist erscheint sie in der Dämmerung als junge, schöne Frau. Sie spricht junge Männer an, am liebsten die gut aussehenden, und führt sie mit sich in ein Reich, das nur ihr gehört. Dort bietet sie ihnen zu essen an. Wer die Speise annimmt, ist verloren: Er bleibt bei ihr, bis seine Jugend und Schönheit aufgezehrt sind, und wenn sie ihn endlich gehen lässt, kehrt er als grauhaariger alter Mann in sein Dorf zurück, wo alle, die er kannte, längst gestorben sind.\n\nEs gibt nur ein sicheres Zeichen, an dem man sie erkennt. Ihre Füße sind verkehrt herum angewachsen, die Fersen vorn, die Zehen hinten. Der englische Beamte William Crooke berichtet von einem jungen Diener in Etah, der ihm erzählte, wie er einmal in der Abenddämmerung eine Frau auf einer Mauer beim Friedhof sitzen sah, unter einem Pipal-Baum. Er kam mit ihr ins Gespräch, und erst im letzten Augenblick fiel sein Blick auf ihre Füße. Er rannte davon. Den Weg ging er danach nie wieder allein.\n\nUm zu verhindern, dass eine Verstorbene zur Churel wird, taten die Familien einiges. In den Bergen streute man Senfkörner auf den Weg vom Sterbehaus zum Grab. Steigt die Churel nachts aus dem Grab und will nach Hause, so muss sie, heißt es, jedes einzelne Korn aufsammeln. Darüber kräht der Hahn, und sie muss zurück in ihr Grab, ohne ihr Haus erreicht zu haben. Andere sagten, der Senf blühe im Reich der Toten und sein Duft stimme sie so zufrieden, dass sie sich gar nicht erst nach ihrem alten Zuhause sehne.",
+  "fassung": "Nacherzählt nach William Crooke, The Popular Religion and Folk-lore of Northern India, Bd. 1 (1896), Kapitel „The Worship of the Malevolent Dead“, S. 269–275, mit Crookes eigenem Bericht aus Etah",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Churel-Glaube ist im ganzen Norden des indischen Subkontinents verbreitet, in Hindi und Urdu als Chudail oder Churail, und hat Entsprechungen in anderen Regionen: Crooke nennt für die Präsidentschaft Bombay Namen wie Jakhai und Mukai, in Bengalen kennt man ähnliche Frauengeister. Kolonialbeamte wie Crooke, der als Verwaltungsbeamter in den Nordwestprovinzen diente, sammelten im 19. Jahrhundert Berichte aus vielen Gemeinschaften. Sie zeigen große Unterschiede: Manche Gruppen in Mirzapur glaubten, schon ein kleines Mädchen, das vor dem zwanzigsten Lebenstag sterbe, könne zur Churel werden, andere nahmen sie als Ortsgottheit in den Dorfschrein auf und brachten ihr Opfer. Eine Rajputen-Familie in Oudh führte ihre Abstammung sogar auf eine Churel zurück."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Figur verbindet zwei Ängste: die vor dem Tod im Kindbett, der bis ins 20. Jahrhundert alltäglich war, und die vor der rituellen Unreinheit, die Geburt und Menstruation nach verbreiteten Regeln mit sich brachten. Eine Frau, die in diesem Zustand starb, galt als unvollendet und gefährlich. Crooke selbst deutete das im Geist seiner Zeit mit herablassenden Urteilen über die „Primitiven“; heutige Forschung liest die Churel eher als Ausdruck von Schuld und Sorge um die Mütter sowie als Spiegel der Kontrolle weiblicher Körper. Die verkehrten Füße sind ein weit verbreitetes Merkmal übernatürlicher Wesen in Südasien, das sie als Gegenbild des Menschen kennzeichnet."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Die Churel ist eine feste Figur indischer und pakistanischer Horrorfilme und Fernsehserien und ein geläufiges Schimpfwort für eine als bösartig geltende Frau. Die pakistanische Serie Churails (2020) von Asim Abbasi kehrte das Bild um: Ihre Heldinnen machen sich den Schimpfnamen zu eigen und decken als Detektivinnen Verbrechen an Frauen auf."
+   }
+  ],
+  "verwandt": "Die malaiische Pontianak, die philippinische Patianak und die mexikanische Llorona sind ebenfalls Geister von Frauen, deren Tod mit Schwangerschaft oder einem Kind verbunden ist.",
+  "quellen": [
+   "William Crooke: The Popular Religion and Folk-lore of Northern India, Bd. 1, Westminster 1896",
+   "James M. Campbell: Notes on the Spirit Basis of Belief and Custom, Bombay 1885",
+   "R. E. Enthoven: The Folklore of Bombay, Oxford 1924"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/churel-0.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Alter Pipal-Baum (Ficus religiosa) in Andhra Pradesh; solche Bäume gelten in Nordindien als Sitz von Geistern wie der Churel",
+    "urheber": "Adityamadhav83",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Old_Peepal_tree_%28Ficus_religiosa%29_at_Kummaripalem_01.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "mae-nak",
   "titel": "Mae Nak Phra Khanong",
   "originalname": "แม่นาก พระโขนง – „Mutter Nak von Phra Khanong“",
@@ -16393,6 +18940,60 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "noppera-bo",
+  "titel": "Noppera-bō",
+  "originalname": "のっぺらぼう – „Glattgesicht“",
+  "untertitel": "Das Gesicht ohne Augen, Nase und Mund",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Gestaltwandler",
+  "jahr": 1904,
+  "zeitraum": "Edo-zeitliche Spukerzählungen und Bilder, maßgeblich durch Lafcadio Hearns „Mujina“ (1904)",
+  "kurz": "Ein Mann will in der Nacht eine weinende Frau trösten – doch als sie sich umdreht, ist ihr Gesicht glatt wie ein Ei. Und der Schreck ist noch nicht vorbei.",
+  "geschichte": "In Tokio führt an der Akasaka-Straße ein Hang bergauf, der Kii-no-kuni-zaka. Auf der einen Seite liegt ein alter, tiefer Wassergraben mit hohen grünen Böschungen, auf der anderen ziehen sich die Mauern eines Palastes entlang. Bevor es Straßenlaternen gab, war es hier nach Einbruch der Dunkelheit sehr einsam, und wer spät unterwegs war, nahm lieber einen weiten Umweg, als allein diesen Hang hinaufzugehen. Schuld daran war eine Mujina, ein Dachs, der dort umging.\n\nEin alter Kaufmann aus dem Viertel Kyōbashi war der Letzte, der ihr begegnete. Spät in der Nacht eilte er den Hang hinauf, da sah er am Graben eine junge Frau kauern, ganz allein, und bitterlich weinen. Sie war fein gekleidet, das Haar trug sie wie ein Mädchen aus gutem Haus. Er fürchtete, sie wolle sich ins Wasser stürzen, und sprach sie freundlich an: Sie solle nicht weinen, er wolle ihr helfen, wenn er könne. Doch sie schluchzte weiter und verbarg das Gesicht hinter ihrem langen Ärmel. Er bat sie wieder und wieder und legte ihr schließlich sacht die Hand auf die Schulter.\n\nDa drehte sie sich um, ließ den Ärmel sinken und strich sich mit der Hand über das Gesicht. Sie hatte keine Augen, keine Nase, keinen Mund.\n\nSchreiend rannte der Mann davon, den dunklen Hang hinauf, ohne sich umzusehen. Endlich sah er in der Ferne ein Licht, klein wie ein Glühwürmchen. Es war die Laterne eines Straßenhändlers, der Buchweizennudeln verkaufte. Der Kaufmann warf sich vor ihm zu Boden und brachte kaum ein Wort heraus. Ob man ihn überfallen habe, fragte der Händler barsch. Nein, keuchte der Kaufmann, er habe am Graben eine Frau gesehen, und was sie ihm gezeigt habe, könne er gar nicht sagen.\n\n„So etwa?“, fragte der Nudelhändler und strich sich über das eigene Gesicht. Es wurde glatt wie ein Ei. Im selben Augenblick erlosch das Licht.",
+  "fassung": "Nacherzählt nach: Lafcadio Hearn, „Mujina“, in: Kwaidan. Stories and Studies of Strange Things (1904)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Noppera-bō ist eigentlich ein Wort für etwas Glattes, Ausdrucksloses; als Spukgestalt bezeichnet es eine Erscheinung mit völlig leerem Gesicht. Solche Figuren tauchen in Bildrollen und illustrierten Büchern der Edo-Zeit auf, etwa im Kyōka hyaku monogatari von 1853. Verwandt ist die Nuppeppō, ein gesichtsloser Fleischklumpen, den Toriyama Sekien 1776 zeichnete. Weltweit bekannt wurde die Noppera-bō durch Lafcadio Hearn, der die Geschichte 1904 in „Kwaidan“ veröffentlichte; das Wort Noppera-bō selbst gebraucht er dort nicht, er spricht nur von der Mujina. Den Schrecken verursacht bei Hearn eine Mujina, ein Dachs; in Japan galten neben Füchsen auch Dachse und Marderhunde (Tanuki) als Tiere, die Gestalt wechseln und Menschen narren können. Woher Hearn die Erzählung hatte, ist nicht bekannt."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Der Schauplatz ist real: Der Kii-no-kuni-zaka in Akasaka verdankt seinen Namen der Edoer Residenz der Tokugawa-Linie von Kii, deren Gelände später kaiserlicher Besitz wurde; daneben liegt der Wassergraben Benkei-bori. Hearn betont, dass die Gegend vor den Straßenlaternen nachts menschenleer war, und viele Spukgeschichten der Edo-Zeit hängen an solchen dunklen Wegen. Die Erzählung arbeitet mit dem Muster des doppelten Schreckens: Der Gerettete glaubt sich in Sicherheit, und gerade der Helfer entpuppt sich als dasselbe Wesen. Deutungen sehen im leeren Gesicht die Angst vor dem Unbekannten im anonymen Gegenüber und vor dem Verlust dessen, woran man Menschen erkennt. Dass ein hilfsbereiter Mann zum Opfer wird, gehört zu den Zügen der Tiergeister, die Menschen eher verspotten als ihnen schaden."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "„Mujina“ zählt zu Hearns meistgelesenen Erzählungen und ist in viele Sprachen übersetzt worden. In Japan gehört die Noppera-bō zu den bekanntesten Gestalten der Yōkai-Bilderbücher, etwa bei Mizuki Shigeru, und erscheint in Manga, Anime und Spukhäusern auf Volksfesten. Die Pointe mit dem Nudelhändler wurde zum Vorbild zahlreicher moderner Gruselgeschichten mit doppelter Wendung."
+   }
+  ],
+  "verwandt": "Gesichtslose Erscheinungen kennt auch die moderne Sage des Westens; das Muster des doppelten Schreckens findet sich etwa in Wandersagen vom Anhalter, der sich als Toter erweist.",
+  "quellen": [
+   "Lafcadio Hearn: Kwaidan. Stories and Studies of Strange Things, Boston/New York: Houghton Mifflin 1904 (Projekt Gutenberg, Nr. 1210)",
+   "Michael Dylan Foster: The Book of Yōkai. Mysterious Creatures of Japanese Folklore, Berkeley: University of California Press 2015"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/noppera-bo-0.jpg",
+    "breite": 420,
+    "hoehe": 376,
+    "zeigt": "Eine Noppera-bō im illustrierten Gedichtband Kyōka hyaku monogatari (1853)",
+    "urheber": "竜斎閑人正澄 (Japanese)",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Masasumi_Noppera-bo.jpg"
+   },
+   {
+    "datei": "bilder/dark/noppera-bo-1.jpg",
+    "breite": 837,
+    "hoehe": 1100,
+    "zeigt": "Eine Mujina, ein gestaltwandelnder Dachs, aus Toriyama Sekiens Konjaku gazu zoku hyakki (1779)",
+    "urheber": "Toriyama Sekien (鳥山石燕, Japanese, *1712, †1788)",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:SekienMujina.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "nian",
   "titel": "Nian",
   "originalname": "年 / 年兽 – „Jahr“ / „Jahresungeheuer“",
@@ -16445,6 +19046,53 @@ const GRUSELMAERCHEN = [
     "urheber": "unbekannt",
     "lizenz": "Public domain",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Two_girls_putting_fuses_into_firecrackers%2C_Changde%2C_Hunan%2C_China%2C_ca.1900-1919_%28IMP-YDS-RG008-358-0008-0063%29.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "hanako-san",
+  "titel": "Hanako-san",
+  "originalname": "トイレの花子さん – „Hanako-san auf der Toilette“",
+  "untertitel": "Großstadtlegende: Das Mädchen in der dritten Kabine",
+  "region": "asien",
+  "land": "Japan",
+  "art": "Geist",
+  "jahr": 1948,
+  "zeitraum": "Moderne Schulsage (Großstadtlegende): Vorform nach späterer Datierung um 1948, landesweit verbreitet seit den 1980er-Jahren, Höhepunkt in den 1990er-Jahren",
+  "kurz": "Wer im dritten Stock an die dritte Mädchentoilettenkabine klopft und nach Hanako-san fragt, bekommt Antwort – so erzählen es sich japanische Grundschulkinder seit Jahrzehnten.",
+  "geschichte": "Nach dem Unterricht wird es still im Schulhaus. Die Schritte hallen im langen Flur, die Sonne fällt schräg durch die Fenster, und irgendwo tropft ein Wasserhahn. Drei Mädchen haben sich verabredet. Sie wissen, was man tun muss, denn alle wissen es: Man geht in den dritten Stock, in die Mädchentoilette, bis zur dritten Kabine. Dort klopft man dreimal an die Tür und fragt: „Hanako-san, bist du da?“\n\nDie Älteste klopft. Einmal, zweimal, dreimal. Niemand atmet. „Hanako-san, bist du da?“ Erst ist nur das Tropfen zu hören. Dann antwortet hinter der verschlossenen Tür eine dünne Kinderstimme: „Ja, ich bin da.“\n\nWas dann geschieht, erzählt jede Schule anders. In manchen Fassungen öffnet sich die Tür, und dahinter steht ein kleines Mädchen mit Pagenkopf und rotem Rock, das man nie zuvor gesehen hat. In anderen greift eine weiße Hand unter der Tür hervor. Wieder andere sagen, wer die Kabine betrete, werde hineingezogen und komme nie wieder heraus, oder es lauere dort eine Echse mit drei Köpfen, die Hanakos Stimme nachahme. Wer sie aber in Ruhe lasse, dem tue sie nichts.\n\nWer Hanako-san war, weiß niemand genau. Manche sagen, sie sei im Krieg bei einem Luftangriff ums Leben gekommen, als sie sich auf der Schultoilette versteckte. Andere erzählen von einem Unglück auf dem Schulgelände oder vom großen Erdbeben. Sicher ist nur, dass es in jeder Schule eine dritte Kabine gibt. Und dass man, wenn man spät allein durch den Flur geht, besser nicht nachsieht, ob sie verschlossen ist.",
+  "fassung": "Nacherzählt nach den verbreiteten Schulhoffassungen, wie sie der Volkskundler Tsunemitsu Tōru und andere Sammler moderner Sagen dokumentiert haben",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Hanako-san ist keine alte Sagengestalt, sondern eine moderne Großstadtlegende, die von Kind zu Kind weitergegeben wird. Als ältester bekannter Beleg gilt eine Schulgeschichte aus Kurosawajiri im Kreis Waga in der Präfektur Iwate (heute Stadt Kitakami), die die Schriftstellerin und Sammlerin Matsutani Miyoko in ihrem Werk „Gendai minwa kō“ (Untersuchungen zu modernen Volkserzählungen) aufzeichnete: Wer die dritte Toilettenkabine betrat, hörte eine Stimme „die dritte Hanako-san“ sagen, und aus dem Loch im Boden kam eine große weiße Hand. Spätere Nachschlagewerke datieren diese Erzählung auf etwa 1948. Wann die heutige Form mit Klopfen und Antwort entstand, ist nicht genau bekannt; spätestens in den 1980er-Jahren war sie an Grundschulen im ganzen Land verbreitet. Die Nummer der Kabine, das Stockwerk und die Kleidung schwanken je nach Ort."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Der Volkskundler Tsunemitsu Tōru machte mit seinem Buch „Gakkō no kaidan“ (1990) die Schulgespenstergeschichten zum Forschungsgegenstand. Er und andere betonen den Ort: Toiletten sind in Schulen Räume, in denen Kinder allein und unbeaufsichtigt sind, oft abgelegen, in älteren Gebäuden dunkel und kalt. Dort sammeln sich Ängste. Die Erzählungen über Hanakos Tod bei Luftangriffen oder Erdbeben verankern die Figur in der Geschichte der Elterngeneration, sind aber durch nichts belegt. Volkskundler weisen auch auf ältere Vorstellungen von Toilettengottheiten und von Geistern an Wasserstellen hin; ein direkter Zusammenhang ist nicht nachgewiesen. Wie die Kuchisake-onna zeigt Hanako-san, dass Sagen in der Gegenwart weiterhin neu entstehen, sich verändern und über Medien verstärkt werden."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Mit dem Boom der Schulgespenstergeschichten in den 1990er-Jahren wurde Hanako-san landesweit zur Berühmtheit. 1995 kam der Spielfilm „Toire no Hanako-san“ von Matsuoka Jōji in die Kinos, im selben Jahr der erste Teil der Filmreihe „Gakkō no kaidan“. Der Manga „Jibaku shōnen Hanako-kun“ von AidaIro (seit 2014) deutet die Figur zu einem Jungen um und wurde als Anime verfilmt."
+   }
+  ],
+  "verwandt": "Westliche Schul- und Spiegelrituale wie „Bloody Mary“, bei der man im Badezimmer einen Namen ruft, folgen demselben Muster von Mutprobe und Beschwörung.",
+  "quellen": [
+   "Tsunemitsu Tōru: Gakkō no kaidan, Tokio: Kōdansha (KK Bunko) 1990",
+   "Matsutani Miyoko: Gendai minwa kō, Bd. 7: Gakkō, Tokio: Chikuma Bunko 2003 (zuerst als Gendai minwa kō, 2. Folge, Bd. 2, Tokio: Rippū Shobō 1987)",
+   "Asazato Itsuki: Nihon gendai kaii jiten, Tokio: Kasama Shoin 2018",
+   "Michael Dylan Foster: The Book of Yōkai. Mysterious Creatures of Japanese Folklore, Berkeley: University of California Press 2015"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/hanako-san-0.jpg",
+    "breite": 729,
+    "hoehe": 1100,
+    "zeigt": "Langer Flur im hölzernen Altbau der früheren Mittelschule Awano, wie er für ältere japanische Schulgebäude typisch ist (Foto 2016)",
+    "urheber": "Shikanuma",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E7%B2%9F%E9%87%8E%E4%B8%AD%E5%AD%A6%E6%A0%A1%E5%BB%8A%E4%B8%8B.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -16751,6 +19399,127 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "melusine",
+  "titel": "Melusine",
+  "originalname": "Mélusine / Melusina",
+  "untertitel": "Die Schlangenfrau von Lusignan",
+  "region": "europa",
+  "land": "Frankreich (Poitou)",
+  "art": "Gestaltwandler",
+  "jahr": 1393,
+  "zeitraum": "Roman von Jean d'Arras 1393; deutsche Fassung von Thüring von Ringoltingen 1456",
+  "kurz": "Eine Fee heiratet einen Ritter unter einer Bedingung: Samstags darf er sie nie sehen. Als er sie im Bad belauscht, entdeckt er ihren Schlangenleib, und das Glück des Hauses Lusignan zerbricht.",
+  "geschichte": "Raimund, ein armer Grafensohn, lebte bei seinem Oheim, dem Grafen von Poitiers. Auf einer nächtlichen Eberjagd verloren die beiden ihr Gefolge. Der Graf, der sich auf die Sterne verstand, las aus dem Himmel, wer in dieser Stunde seinen Herrn töte, werde reich und mächtig werden. Im selben Augenblick brach der Eber hervor; Raimund stach zu, doch die Klinge glitt ab und traf den Grafen tödlich.\n\nVerzweifelt ritt Raimund durch den Wald, bis er an eine Quelle kam, an der drei schöne Frauen standen. Die vornehmste, Melusine, rief ihn beim Namen, wusste von seinem Unglück und versprach ihm Hilfe und Reichtum, wenn er sie heirate. Er müsse nur schwören, sie an keinem Samstag zu suchen oder zu sehen. Raimund schwor. Auf ihren Rat bat er den neuen Grafen um so viel Land, wie eine Hirschhaut umspanne, und ließ die Haut in einen dünnen Riemen schneiden, der ein weites Gebiet um die Quelle einschloss. Dort baute Melusine die Burg Lusignan und viele Städte und Klöster. Sie gebar zehn Söhne, kühne Ritter, doch fast jeder trug ein seltsames Mal; Geoffroy hatte einen großen Zahn, der ihm aus dem Mund ragte.\n\nNach vielen glücklichen Jahren streute Raimunds Bruder das Gerücht aus, Melusine treibe samstags Ehebruch oder sei ein Gespenst. Im Zorn bohrte Raimund mit dem Schwert ein Loch in die eiserne Tür ihres Gemachs und sah hinein. Melusine saß in einem Bad; bis zum Nabel war sie eine schöne Frau, darunter aber hatte sie einen gewaltigen Schlangenschwanz, der das Wasser aufschlug. Raimund bereute sofort und schwieg, und Melusine ließ sich nichts anmerken.\n\nDann aber steckte Geoffroy in seiner Wut das Kloster Maillezais in Brand, in dem sein Bruder Fromund Mönch war, und Fromund kam mit allen Mönchen um. Als Melusine den Gatten trösten wollte, schrie er vor dem ganzen Hof: „Weg von mir, du falsche Schlange!“ Sie fiel in Ohnmacht, klagte, sprang dann auf das Fenstersims und flog als geflügelter Lindwurm davon, dreimal mit einem jammervollen Schrei um die Burg. Nur nachts kehrte sie heimlich zurück, um ihre beiden jüngsten Söhne zu säugen. Und immer, wenn ein Herr von Lusignan sterben oder die Burg ihren Besitzer wechseln sollte, sah man sie klagend über dem Turm.",
+  "fassung": "Nacherzählt nach: Thüring von Ringoltingen, Melusine (1456), nach dem französischen Versroman von Coudrette; erzählerisch übereinstimmend mit Jean d'Arras, La Noble Histoire de Lusignan (1393)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Erzählungen von einer übernatürlichen Frau, die einen Mann heiratet, solange er ein Verbot achtet, finden sich schon im 12. Jahrhundert bei Walter Map und Gervasius von Tilbury. Den Namen Melusine und die Verbindung mit dem Haus Lusignan im Poitou machte Jean d'Arras berühmt: Er schrieb seinen Prosaroman 1392/93 im Auftrag des Herzogs Johann von Berry, der die Burg Lusignan erobert hatte. Kurz nach 1400 verfasste Coudrette für den Herrn von Parthenay eine Versfassung. Diese übertrug der Berner Patrizier Thüring von Ringoltingen 1456 ins Deutsche und widmete sie dem Markgrafen Rudolf von Hochberg. Seine „Melusine“ wurde um 1473/74 in Basel mit Holzschnitten gedruckt und blieb als Volksbuch bis ins 19. Jahrhundert eines der meistgelesenen deutschen Bücher."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Der Roman ist zugleich Märchen und Familiengeschichte: Er führt mächtige Häuser, die Lusignan, die auch Könige von Zypern und Jerusalem stellten, und durch Anspielungen die Luxemburger, auf eine Fee als Stammmutter zurück und verleiht ihnen damit Glanz und Geheimnis. Der Historiker Jacques Le Goff deutete Melusine als Gestalt des hochmittelalterlichen Aufschwungs, die Wälder rodet, Burgen und Städte baut. Andere Deutungen betonen das Tabu: Die Frau bleibt Mensch, solange ihre andere Natur verborgen bleibt; die öffentliche Beschimpfung, nicht der heimliche Blick, zerstört die Ehe. In der Erzählforschung bildet die Melusinensage einen eigenen Typus der „gestörten Mahrtenehe“."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Goethe erzählte in „Wilhelm Meisters Wanderjahren“ eine „Neue Melusine“, Franz Grillparzer schrieb 1823 ein Libretto für Beethoven, das Conradin Kreutzer vertonte, Felix Mendelssohn Bartholdy komponierte 1833 seine Ouvertüre „Zum Märchen von der schönen Melusine“. Moritz von Schwind malte einen Melusinen-Zyklus. In Lusignan und in Luxemburg wird die Sage bis heute gepflegt."
+   }
+  ],
+  "verwandt": "Undine, die Wasserfrau Fouqués, die chinesische Weiße Schlange und die griechische Lamia erzählen ebenfalls von Frauen zwischen Menschen- und Schlangen- oder Wasserwelt.",
+  "quellen": [
+   "Thüring von Ringoltingen: Melusine (1456), nach dem Druck von 1474 hrsg. von Hans-Gert Roloff, Reclam, Stuttgart 1969",
+   "Jean d'Arras: Mélusine ou la Noble Histoire de Lusignan, hrsg. und übers. von Jean-Jacques Vincensini, Le Livre de Poche, Paris 2003",
+   "Jacques Le Goff, Emmanuel Le Roy Ladurie: Mélusine maternelle et défricheuse, in: Annales. Économies, Sociétés, Civilisations 26 (1971)",
+   "Lydia Zeldenrust: The Mélusine Romance in Medieval Europe, D. S. Brewer, Cambridge 2020"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/melusine-0.jpg",
+    "breite": 900,
+    "hoehe": 453,
+    "zeigt": "Raimund entdeckt Melusine im Bad, Buchmalerei aus einer Handschrift von Coudrettes Melusinenroman, 15. Jahrhundert (Bibliothèque nationale de France, Français 24383, fol. 19)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Melusinediscovered.jpg"
+   },
+   {
+    "datei": "bilder/dark/melusine-1.jpg",
+    "breite": 500,
+    "hoehe": 692,
+    "zeigt": "Melusines Geheimnis wird entdeckt, Holzschnitt aus Jean d'Arras' Melusine, gedruckt von Adam Steinschaber, Genf 1478",
+    "urheber": "Anonymous engraver working for the workshop of the printer Adam Steinschaber",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Bookofmelusine.jpg"
+   },
+   {
+    "datei": "bilder/dark/melusine-2.jpg",
+    "breite": 900,
+    "hoehe": 1095,
+    "zeigt": "Melusine kehrt nachts zurück, um ihre jüngsten Söhne zu säugen, Buchmalerei, 15. Jahrhundert (BnF, Français 24383, fol. 30)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:M%C3%A9lusine_allaitant_BnF_Fran%C3%A7ais_24383_fol._30.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "basilisk",
+  "titel": "Der Basilisk von Wien",
+  "originalname": "Basilisk – von griechisch basilískos, „kleiner König“",
+  "untertitel": "Das Untier im Brunnen der Schönlaterngasse",
+  "region": "europa",
+  "land": "Österreich (Wien)",
+  "art": "Sagengestalt",
+  "jahr": 1546,
+  "zeitraum": "Sage datiert das Geschehen auf den 26. Juni 1212; erstmals erwähnt 1546 bei Wolfgang Lazius; das Fabeltier selbst seit Plinius (1. Jahrhundert)",
+  "kurz": "Im Brunnen eines Wiener Bäckerhauses soll 1212 ein Wesen aus Hahn und Kröte gehaust haben, dessen Blick tötete. Ein Spiegel bezwang es – so erzählt die bekannteste Sage der Wiener Innenstadt.",
+  "geschichte": "In der Schönlaterngasse lebte im Jahr 1212 der Bäckermeister Garhibl, ein harter, launischer Mann. Sein Geselle Hans ertrug ihn nur, weil er Garhibls Tochter Apollonia liebte. Als er um ihre Hand anhielt, spottete der Meister: Heiraten dürfe er sie, wenn der Hahn ein Ei lege. Als der Meister den Spott wieder einmal wiederholte, gackerte der Hahn laut und flog über das Dach davon.\n\nIm selben Augenblick, an einem Junitag, kam eine Magd vom Hausbrunnen zurückgelaufen. Aus der Tiefe, sagte sie, glitzere es seltsam, und ein unerträglicher Gestank steige herauf. Man ließ einen Lehrbuben an einem Seil hinab, um nachzusehen. Als man ihn wieder heraufzog, war er ohnmächtig. Wieder bei sich, stammelte er von einem Untier dort unten, halb Hahn, halb Kröte, mit dem Schwanz einer Schlange. Ein gelehrter Mann wurde geholt, und er wusste sofort, was im Brunnen saß: ein Basilisk, ausgebrütet aus dem Ei eines Hahns. Sein Atem vergifte das Wasser, und wer ihm in die Augen sehe, sei des Todes. Nur eines könne ihn bezwingen: sein eigener Anblick.\n\nDa meldete sich Hans. Mit einem großen Spiegel ließ er sich in den Schacht hinab und hielt dem Untier das Glas entgegen. Der Basilisk erblickte sich selbst, erschrak über seine eigene Hässlichkeit und zerbarst; nach einer anderen Fassung erstarrte er zu Stein. Hans kam unversehrt wieder herauf, und der Meister musste sein Wort halten: Hans bekam Apollonia zur Frau.\n\nAn der Fassade des Hauses aber sitzt bis heute ein steinerner Basilisk in seiner Nische, und das Haus heißt „Zum Basilisken“. Darunter erzählen ein Wandbild und eine Inschrift die Sage.",
+  "fassung": "Nacherzählt nach der Wiener Sagenüberlieferung in der Fassung, die J. Georg Friebe (2007) zusammenfasst (Bäcker Garhibl, Geselle Hans, Tochter Apollonia); ausführlich gesammelt bei Gustav Gugitz, Die Sagen und Legenden der Stadt Wien (1952), S. 24 ff.; erstmals erwähnt bei Wolfgang Lazius, Vienna Austriae (1546)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Den Basilisken beschrieb schon Plinius der Ältere im achten Buch seiner Naturalis historia: eine kleine Schlange aus der Cyrenaika mit einem hellen, kronenartigen Fleck auf dem Kopf, deren Zischen andere Schlangen vertreibt und deren Atem Sträucher verdorren lässt; nur das Wiesel könne sie töten. Das Mittelalter machte daraus ein Mischwesen aus Hahn und Schlange oder Kröte, geschlüpft aus dem Ei eines alten Hahns, das eine Kröte ausgebrütet habe. Wie ernst man das nahm, zeigt Basel: Dort wurde 1474 ein Hahn, der angeblich ein Ei gelegt hatte, öffentlich verbrannt. Die Wiener Sage erwähnt erstmals der Humanist Wolfgang Lazius 1546 in seiner Stadtbeschreibung „Vienna Austriae“. Die überlieferte Fassung datiert das Geschehen auf den 26. Juni 1212; der Name des Bäckers erscheint auch als Martin Garhiebl."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Einer Erklärung des Geologen Eduard Suess folgend nimmt man an, dass sich im Brunnen giftige Gase gesammelt hatten. Faulgase in alten Brunnenschächten waren eine reale Gefahr; wer hinabstieg, konnte ohnmächtig werden oder ersticken. Die Figur in der Nische geht nach Darstellung des Geologen Georg Friebe auf eine natürlich geformte, plattige Sandsteinkonkretion zurück, die beim Haus gefunden worden sein soll; ihre Ähnlichkeit mit einem Tier wurde durch ergänzten Kamm, Schnabel und Schwanz verstärkt. An der Fassade sitzt nach Friebe heute eine Kopie, das Original verwahrt das Wien Museum. Dass das Haus 1212 seinen Namen erhielt und zuvor „Zum roten Kreuz“ hieß, ist nicht belegt; seine Kellermauern reichen aber teilweise ins 13. Jahrhundert zurück. 1577 ließ der Hausbesitzer, der Buchhändler Hans Spannring, eine Gedenktafel anbringen, die 1740 bei einem Umbau verschwand."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Das Basiliskenhaus in der Schönlaterngasse 7 gehört zu den bekanntesten Sagenorten Wiens und ist Station vieler Altstadtführungen. Steinfigur, Wandmalerei und Inschrift erinnern an die Geschichte; das Haus wurde 1944 bei Luftangriffen beschädigt und nach dem Krieg wiederhergestellt. Einem jungen Publikum ist der Basilisk heute vor allem aus J. K. Rowlings „Harry Potter und die Kammer des Schreckens“ (1998) vertraut, wo er ebenfalls tötet, wer ihm in die Augen sieht."
+   }
+  ],
+  "verwandt": "Die Medusa der griechischen Sage, deren tödlicher Blick ebenfalls mit Hilfe eines spiegelnden Schildes gebrochen wurde, und der englische Cockatrice sind seine nächsten Verwandten.",
+  "quellen": [
+   "Plinius der Ältere: Naturalis historia, Buch 8 (Abschnitt über den Basilisken)",
+   "Gustav Gugitz: Die Sagen und Legenden der Stadt Wien, Wien 1952, S. 24 ff.",
+   "J. Georg Friebe: Von Drachen und Riesen. Erdwissenschaftliche Motive in Österreichs Sagenwelt, in: Abhandlungen der Geologischen Bundesanstalt 60, Wien 2007, S. 41–46",
+   "Wien Geschichte Wiki (Stadt Wien): Basiliskenhaus, mit Literatur nach Felix Czeike"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/basilisk-0.jpg",
+    "breite": 730,
+    "hoehe": 1100,
+    "zeigt": "Fassade des Basiliskenhauses, Schönlaterngasse 7 in Wien: die steinerne Basiliskenfigur in der Nische, darunter Wandmalerei mit dem Spiegelträger und die Inschrifttafel",
+    "urheber": "Admin1",
+    "lizenz": "CC BY-SA 3.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Basilisk_und_Beschriftung_Wien_1010.JPG"
+   },
+   {
+    "datei": "bilder/dark/basilisk-1.jpg",
+    "breite": 900,
+    "hoehe": 387,
+    "zeigt": "Basilisk als Mischwesen aus Hahn und Schlange, Holzschnitt aus Ulisse Aldrovandis „Serpentum et draconum historiae“, 1640",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Basilisk_%281640%29.png"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "weisse-frau",
   "titel": "Die Weiße Frau",
   "originalname": null,
@@ -16793,6 +19562,109 @@ const GRUSELMAERCHEN = [
     "urheber": "El Grafo",
     "lizenz": "CC BY-SA 4.0",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Plassenburg%2C_Kulmbach_from_Rehturm.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "ruebezahl",
+  "titel": "Rübezahl",
+  "originalname": "Tschechisch Krakonoš, polnisch Liczyrzepa („Rübenzähler“)",
+  "untertitel": "Der Berggeist, der seinen Namen hasst",
+  "region": "europa",
+  "land": "Riesengebirge (heute Polen und Tschechien)",
+  "art": "Naturwesen",
+  "jahr": 1561,
+  "zeitraum": "Erste Darstellung auf Martin Helwigs Schlesienkarte 1561; Erzählung nach Musäus 1783",
+  "kurz": "Der launische Herr des Riesengebirges hilft Armen und straft Spötter. Wie er zu seinem verhassten Spottnamen kam, erzählte Johann Karl August Musäus 1783.",
+  "geschichte": "Tief unter dem Riesengebirge herrscht ein Gnomenfürst. Als er einmal an die Oberfläche stieg, sah er an einem Wasserfall die Tochter des Königs, der damals über Schlesien herrschte, mit ihren Gespielinnen baden und plaudern. Um sie richtig betrachten zu können, nahm er Menschengestalt an, und sofort verliebte er sich. Er verwandelte den Ort in eine Grotte aus Marmor und Kristall. Als die Prinzessin Emma eine Woche später dort badete, sank sie in die Tiefe und fand sich in seinem unterirdischen Palast wieder.\n\nEmma aber war mit dem jungen Prinzen Ratibor verlobt und blieb traurig. Um sie aufzuheitern, brachte ihr der Geist einen Korb Rüben und einen Zauberstab: Jede Rübe, die sie berührte, verwandelte sich in einen Menschen oder ein Tier nach ihrem Wunsch. Doch sobald die Rüben welkten, schrumpften auch die Gestalten, und der Geist musste ein ganzes Feld anlegen, damit sie nie mehr fehlten.\n\nIm Frühjahr verwandelte Emma heimlich eine Rübe in eine Biene und schickte sie zu Ratibor; eine Schwalbe fraß sie. Die Grille, die sie danach losschickte, verschlang ein Storch. Erst die Elster erreichte den Prinzen und bestellte ihm, er solle in drei Tagen mit Pferden an der Grenze des Gebirges warten. Nun zeigte sich Emma dem Geist freundlich und versprach ihm die Ehe. Nur eine Bitte habe sie: Er solle alle Rüben auf dem Feld zählen, damit sie wisse, wie viele Hochzeitsgäste sie daraus machen könne; aber er dürfe sich um keine einzige verzählen.\n\nDer Verliebte lief zum Feld und zählte. Um sicherzugehen, zählte er ein zweites Mal und kam auf eine andere Zahl, dann ein drittes Mal und wieder auf eine andere. Unterdessen verwandelte Emma eine große Rübe in ein gesatteltes Pferd und ritt davon. Als der Geist endlich fertig war und sie nicht fand, fuhr er hoch in die Luft, sah sie fern an der Grenze seines Reiches und schleuderte einen Blitz nach ihr, der nur eine tausendjährige Eiche spaltete. Emma war schon in Ratibors Armen. Der Geist aber stürzte sich vor Gram in die Tiefe der Erde, und die Leute im Gebirge nennen ihn seitdem spöttisch Rübezahl. Wer diesen Namen in seinem Reich ausspricht, muss mit seinem Zorn rechnen.",
+  "fassung": "Nacherzählt nach: Johann Karl August Musäus, Legenden von Rübezahl, Erste Legende, in: Volksmährchen der Deutschen, Zweiter Theil (Gotha: Ettinger 1783)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Rübezahl war ursprünglich wohl ein Berg- und Bergwerksgeist der Bergleute, Edelsteinsucher und Waldarbeiter im Riesengebirge. Die erste Darstellung zeigt ihn 1561 als geschwänzten Dämon mit der Beischrift „Rübenczal“ auf der ersten gedruckten Karte Schlesiens von Martin Helwig. In Berichten und Gedichten des späten 16. und 17. Jahrhunderts tritt er in wechselnden Gestalten auf, oft als Spukgeist, der Wanderer in die Irre führt. Der Leipziger Gelehrte Johannes Praetorius sammelte ab 1662 in seiner „Daemonologia Rubinzalii Silesii“ eine Fülle von Geschichten und Namensformen. Johann Karl August Musäus formte daraus 1783 in seinen „Volksmährchen der Deutschen“ kunstvolle Legenden; durch ihn wurde die Geschichte von der Rübenzählerei als Erklärung des Namens allgemein bekannt."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die tatsächliche Herkunft des Namens ist ungeklärt. Der Sprachforscher Friedrich Kluge erklärte ihn als Zusammenziehung von mittelhochdeutsch „Ruobezagel“, Rübenschwanz; das Wort „zagel“, Schwanz, würde zum geschwänzten Dämon auf Helwigs Karte passen. Die Forschung sieht in Rübezahl eine Verdichtung verschiedener Vorstellungen: des Wettergeists eines rauen Gebirges, in dem Nebel und Gewitter schnell aufziehen, des Hüters von Bodenschätzen, der Bergleuten gefährlich werden konnte, und des Spötters, der Hochmütige bestraft. Bei Musäus wird er zum launischen „Kraftgenie“ der Aufklärungszeit, das Arme beschenkt, Betrüger narrt und selbst an der Liebe scheitert."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Ludwig Richter illustrierte die Rübezahl-Geschichten, Moritz von Schwind malte den Berggeist als wandernden Alten. Nach 1945 wurde er für vertriebene Schlesier zur Erinnerungsfigur. In Tschechien ist er als Krakonoš eine beliebte Märchengestalt, etwa in der Fernsehreihe „Krkonošské pohádky“, in Polen als Liczyrzepa oder Duch Gór; Statuen, Brunnen und Bergbauden tragen bis heute seinen Namen."
+   }
+  ],
+  "verwandt": "Wie Rübezahl sind die Bergmännlein und Kobolde der Bergwerke Herren der Bodenschätze; der Wilde Jäger der deutschen Sage gebietet wie er über Sturm und Wetter.",
+  "quellen": [
+   "Johann Karl August Musäus: Volksmährchen der Deutschen, Zweiter Theil (Legenden von Rübezahl), Gotha 1783",
+   "Johannes Praetorius: Daemonologia Rubinzalii Silesii, Leipzig 1662–1665",
+   "Martin Helwig: Silesiae typus, Karte Schlesiens, 1561",
+   "Legends of Rubezahl, and Other Tales, from the German of Musäus, Hrsg. William Hazlitt, London 1845"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/ruebezahl-0.jpg",
+    "breite": 655,
+    "hoehe": 1100,
+    "zeigt": "„Rübezahl“, Gemälde von Moritz von Schwind, um 1845 (Sammlung Schack, München)",
+    "urheber": "Moritz von Schwind",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Moritz_von_Schwind_-_R%C3%BCbezahl_-_Sammlung_Schack_-_11583.jpg"
+   },
+   {
+    "datei": "bilder/dark/ruebezahl-1.jpg",
+    "breite": 900,
+    "hoehe": 932,
+    "zeigt": "Die älteste Darstellung Rübezahls als geschwänzter Dämon auf Martin Helwigs Schlesienkarte von 1561",
+    "urheber": "Martin Helwig",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Ruebezahl1561.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "black-shuck",
+  "titel": "Black Shuck",
+  "originalname": "Shuck, Old Shuck – von altenglisch scucca, „Teufel, Unhold“",
+  "untertitel": "Der schwarze Hund im Gewitter",
+  "region": "europa",
+  "land": "England",
+  "art": "Dämon",
+  "jahr": 1577,
+  "zeitraum": "Flugschrift von Abraham Fleming 1577; der Name Shuck erst 1850 gedruckt",
+  "kurz": "Am 4. August 1577 soll während eines schweren Gewitters ein schwarzer Hund durch zwei Kirchen in Suffolk gerast sein. Abraham Flemings Flugschrift machte daraus ein Strafgericht Gottes.",
+  "geschichte": "Es war Sonntag, der 4. August 1577, und in der Pfarrkirche von Bungay hatte sich die Gemeinde zum Morgengottesdienst versammelt. Zwischen neun und zehn Uhr brach ein Unwetter los, wie es die Leute noch nie erlebt hatten. Der Regen stürzte mit solcher Gewalt herab, die Blitze zuckten so grell und der Donner krachte so laut, dass die Kirche zu schwanken schien. Dann wurde es im Schiff so finster, dass niemand mehr seinen Nachbarn erkennen konnte; nur wenn es blitzte, sah man etwas.\n\nIm Licht der Blitze erblickte die Gemeinde einen Hund von schwarzer Farbe, oder den Teufel in dieser Gestalt, wie der Berichterstatter vorsichtig hinzufügt. Mit unglaublicher Geschwindigkeit lief er das Kirchenschiff hinab mitten durch die Menschen. Zwischen zwei Leuten, die auf den Knien lagen und beteten, fuhr er hindurch, und beide waren im selben Augenblick tot. Einen anderen Mann packte er im Vorbeilaufen am Rücken; der krümmte sich zusammen wie ein Stück Leder, das zu nah ans Feuer gekommen ist, und blieb doch am Leben. Der Küster, der gerade die Dachrinne reinigte, wurde von einem Donnerschlag zu Boden geworfen, sah die Gestalt vor sich und kam unversehrt davon. Der Pfarrer ermahnte die Verstörten zum Gebet. Als es wieder hell wurde, fand man das Räderwerk der Kirchenuhr zerrissen, und in den Steinen und in der Kirchentür steckten Spuren wie von Klauen.\n\nAm selben Tag, so heißt es weiter, kam das Ding in derselben Gestalt in die Kirche von Blythburgh, sieben Meilen entfernt. Dort setzte es sich auf den Balken, auf dem früher das große Kruzifix gestanden hatte, schwang sich hinab durch die Kirche, tötete zwei Männer und einen Knaben und verbrannte einem weiteren die Hand. Dann flog es mit gewaltiger Kraft zur Kirche hinaus, in grässlicher, höllischer Gestalt.\n\nNoch heute zeigt man an der Nordtür der Kirche von Blythburgh dunkle Brandspuren, die man die Fingerabdrücke des Teufels nennt.",
+  "fassung": "Nacherzählt nach: Abraham Fleming, A straunge and terrible Wunder wrought very late in the parish Church of Bongay (London: Frauncis Godly 1577)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Geschichte beruht auf einem echten Ereignis: einem schweren Gewitter über dem Grenzgebiet von Norfolk und Suffolk am 4. August 1577, bei dem in Bungay und Blythburgh Menschen ums Leben kamen und in Blythburgh der Kirchturm durch das Dach stürzte. Der Londoner Theologe und Übersetzer Abraham Fleming veröffentlichte noch im selben Jahr eine kleine Flugschrift darüber, beruft sich auf „die geschriebene Abschrift“ und auf Augenzeugen, war selbst aber nicht vor Ort. Den Namen Black Shuck kennt Fleming nicht. Gedruckt erscheint „Shuck the Dog-fiend“ erst 1850, als der Geistliche E. S. Taylor in der Zeitschrift Notes and Queries von einem großen schwarzen Hund mit feurigen Augen berichtete, den Leute in Ostnorfolk gesehen haben wollten. Seitdem sind beide Überlieferungen zu einer verschmolzen."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Fleming deutet das Geschehen nicht als Spukgeschichte, sondern als Warnzeichen: Seine Vorrede reiht das Unwetter ein in Himmelszeichen, Überschwemmungen und Morde, mit denen Gott ein sündiges Volk zur Umkehr rufen wolle, und schließt mit einem Bußgebet. Solche „Wunderzeichen“-Drucke waren im elisabethanischen England eine verbreitete Gattung protestantischer Erbauungsliteratur. Moderne Deutungen sehen hinter den Berichten Blitzschläge, vielleicht Kugelblitze, in vollen Kirchen, die Verbrennungen, Tote und Schäden an Turm und Uhr erklären würden; der schwarze Hund wäre dann die Gestalt, in der verängstigte Zeugen das Unbegreifliche fassten. Schwarze Gespensterhunde als Todesboten gehören zudem zu einem in ganz Britannien verbreiteten Sagentyp, der in Ostengland besonders dicht belegt ist."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "In Bungay ist der schwarze Hund mit dem Blitz heute ein Wahrzeichen der Stadt; in Blythburgh gehören die „Fingerabdrücke des Teufels“ zu jeder Kirchenführung. Schwarze Höllenhunde der englischen Volkssage stehen auch im Hintergrund von Arthur Conan Doyles Roman Der Hund der Baskervilles (1902), dessen Vorbild allerdings in Devon gesucht wird. In Liedern, Romanen und Fernsehserien taucht Black Shuck bis heute als Bote des Unheils auf."
+   }
+  ],
+  "verwandt": "Der Church Grim, der Wächterhund englischer Friedhöfe, der Barghest Nordenglands und die schwarzen Hunde der Wilden Jagd gehören zur selben Familie gespenstischer Hunde.",
+  "quellen": [
+   "Abraham Fleming: A straunge and terrible Wunder wrought very late in the parish Church of Bongay, London 1577 (Text Creation Partnership, EEBO A00943)",
+   "E. S. Taylor: Shuck the Dog-fiend, in: Notes and Queries, Bd. 1, 1850",
+   "Jennifer Westwood, Jacqueline Simpson: The Lore of the Land. A Guide to England's Legends, Penguin, London 2005",
+   "Mark Norman: Black Dog Folklore, Troy Books 2015"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/black-shuck-0.jpg",
+    "breite": 581,
+    "hoehe": 1100,
+    "zeigt": "Titelblatt von Abraham Flemings Flugschrift über das Wunder in Bungay, London 1577, mit Holzschnitt des schwarzen Hundes",
+    "urheber": "Abraham Fleming",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:A_Staunge_and_terrible_Wunder.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -17016,6 +19888,62 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "kraken",
+  "titel": "Der Kraken",
+  "originalname": "Kraken (norwegisch; Pontoppidan nennt auch Krabben, Horven, Søe-horven)",
+  "untertitel": "Das Meerestier, das man für Inseln hielt",
+  "region": "europa",
+  "land": "Norwegen",
+  "art": "Sagengestalt",
+  "jahr": 1752,
+  "zeitraum": "Seemannsüberlieferung der norwegischen Küste, ausführlich beschrieben von Erik Pontoppidan 1752/53; ältere Vorläufer wie die Hafgufa im Königsspiegel (um 1250)",
+  "kurz": "Ein Meerestier, so groß, dass Fischer es für Inseln hielten: Bischof Erik Pontoppidan beschrieb 1752/53 den Kraken nach den Berichten norwegischer Fischer – und lag damit gar nicht so weit daneben.",
+  "geschichte": "An heißen Sommertagen, so erzählten die Fischer an der norwegischen Küste, rudern sie mehrere Meilen aufs Meer hinaus, zu Stellen, die sie an Landmarken wiedererkennen und wo sie achtzig bis hundert Faden Wasser erwarten. Doch das Lot findet nur zwanzig oder dreißig Faden, manchmal weniger. Dann wissen sie, dass der Kraken auf dem Grund liegt. Kaum sind die Leinen im Wasser, hängen an jedem Haken Dorsch und Leng, und zwanzig Boote und mehr sammeln sich an solchen Stellen. Nur eines müssen sie im Auge behalten: ob die Tiefe gleich bleibt. Wird das Wasser flacher, steigt das Tier auf. Dann holen sie die Leinen ein und rudern davon, so schnell sie können.\n\nErst über der gewohnten Tiefe ruhen sie sich auf den Riemen aus und warten. Nach wenigen Minuten taucht der Rücken des Ungeheuers auf, anderthalb englische Meilen im Umfang; manche nannten mehr, Pontoppidan wählte nach eigenen Worten das kleinste Maß. Zuerst sieht es aus wie viele kleine Inseln, umgeben von etwas, das wie Tang auf den Wellen treibt. Hier und da erheben sich Buckel wie Sandbänke, auf denen Fische zappeln, bis sie ins Meer zurückgleiten. Schließlich ragen glänzende Spitzen oder Hörner auf, die immer dicker werden und zuweilen so hoch stehen wie die Masten mittelgroßer Schiffe. Das, meinte man, seien die Arme, und packten sie das größte Kriegsschiff, zögen sie es auf den Grund. Nach kurzer Zeit sinkt der Kraken langsam zurück, und nun droht die zweite Gefahr: Sein Abtauchen erzeugt einen Strudel, der alles mit hinabreißt.\n\nGroßen Schaden, schrieb Pontoppidan, habe das Tier nie angerichtet, es sei denn an denen, die keine Nachricht mehr bringen konnten. Er kannte nur einen Fall: Bei Fredrikstad seien zwei Fischer in einen Fleck zähen Schleims geraten, ein Horn des Kraken habe ihr Boot zerschmettert, und sie hätten sich auf dem Wrack gerettet. Ein Pfarrer aus Bodø erzählte ihm außerdem, 1680 habe sich ein junger, unvorsichtiger Krake in den Felsspalten bei Alstahaug verfangen und sei dort verendet; der Gestank habe den Sund lange fast unpassierbar gemacht.",
+  "fassung": "Nacherzählt nach: Erik Pontoppidan, Det første Forsøg paa Norges naturlige Historie, Teil 2, Kopenhagen 1753, Kap. 8, §§ 11–13; benutzt in der englischen Übersetzung The Natural History of Norway, London 1755, Teil 2, S. 210–214",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Erik Pontoppidan (1698–1764), lutherischer Bischof von Bergen, veröffentlichte 1752 und 1753 in Kopenhagen seinen „Ersten Versuch einer natürlichen Geschichte Norwegens“; die englische Übersetzung von 1755 machte den Kraken in ganz Europa bekannt. Er berief sich ausdrücklich auf Briefe seiner Korrespondenten und auf die Aussagen von Fischern. Ältere Vorstellungen gab es: Der altnorwegische Königsspiegel (Konungs skuggsjá, um 1250) beschreibt die Hafgufa, ein riesiges Meerestier, und Olaus Magnus zeichnete 1539 auf seiner Carta marina Seeungeheuer vor Norwegens Küste. Dessen Bericht über Wale, die Seeleute für Inseln hielten und auf denen sie Feuer anzündeten, wies Pontoppidan als Märchen zurück. Die verschwindenden „schwimmenden Inseln“, von denen Seefahrer erzählten, erklärte er stattdessen mit dem Kraken."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Pontoppidan hielt den Kraken für eine riesige Art von Polyp oder Seestern, also für ein wirbelloses Tier mit Fangarmen. Damit war er der Wirklichkeit näher, als seine Spötter glaubten. Im 19. Jahrhundert strandeten an den Küsten Dänemarks, Neufundlands und Neuseelands wiederholt Riesenkalmare, und 1857 gab der dänische Zoologe Japetus Steenstrup ihnen den Gattungsnamen Architeuthis. Lebend fotografierten japanische Forscher um Tsunemi Kubodera einen Riesenkalmar erst 2004 bei den Ogasawara-Inseln; 2012 gelangen Filmaufnahmen in der Tiefsee. Mit ihren beiden langen Tentakeln erreichen die Tiere über zehn Meter Länge – gewaltig, aber weit entfernt von einer Insel mit anderthalb Meilen Umfang. Wie viel in den Fischerberichten auf solche Tiere zurückgeht und wie viel auf Fischschwärme, Strömungen und Seemannsgarn, lässt sich nicht mehr klären."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Alfred Tennyson widmete dem schlafenden Ungeheuer der Tiefe 1830 sein Gedicht „The Kraken“. Pierre Denys de Montfort ließ um 1801 einen „Poulpe colossal“ ein Segelschiff umschlingen, Jules Verne 1869/70 die Nautilus in „Zwanzigtausend Meilen unter dem Meer“ gegen Riesenkalmare kämpfen. Seither ist der Kraken eine feste Figur von Film und Popkultur, vom Ruf „Release the Kraken!“ in „Kampf der Titanen“ (1981) bis zu den „Fluch der Karibik“-Filmen."
+   }
+  ],
+  "verwandt": "Die griechische Skylla, der biblische Leviathan und die isländische Hafgufa gehören zur selben Familie der Meeresungeheuer.",
+  "quellen": [
+   "Erik Pontoppidan: Det første Forsøg paa Norges naturlige Historie, 2 Teile, Kopenhagen 1752–1753",
+   "Erik Pontoppidan: The Natural History of Norway, 2 Teile, London 1755 (Teil 2, Kap. 8, §§ 11–13)",
+   "Tsunemi Kubodera, Kyoichi Mori: First-ever observations of a live giant squid in the wild, in: Proceedings of the Royal Society B 272 (2005)",
+   "Richard Ellis: The Search for the Giant Squid, Lyons Press, New York 1998"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/kraken-0.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Der „Poulpe colossal“ greift ein Segelschiff an, Kupferstich nach Pierre Denys de Montfort, Histoire naturelle des mollusques (um 1801)",
+    "urheber": "Pierre Denys de Montfort († 1820)",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Denys_de_Montfort_Poulpe_Colossal.jpg"
+   },
+   {
+    "datei": "bilder/dark/kraken-1.jpg",
+    "breite": 900,
+    "hoehe": 658,
+    "zeigt": "Seeungeheuer vor der norwegischen Küste, Ausschnitt aus der Carta marina des Olaus Magnus, 1539",
+    "urheber": "Olaus Magnus",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Carta_Marina_detail.jpeg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "baba-jaga",
   "titel": "Baba Jaga",
   "originalname": "Баба-яга – „Großmutter Jaga“ bzw. „alte Frau Jaga“",
@@ -17114,6 +20042,54 @@ const GRUSELMAERCHEN = [
     "urheber": "unbekannt",
     "lizenz": "Public domain",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Moritz_von_Schwind_-_Der_Erlk%C3%B6nig_-_615_-_%C3%96sterreichische_Galerie_Belvedere.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "fliegender-hollaender",
+  "titel": "Der Fliegende Holländer",
+  "originalname": "The Flying Dutchman / De Vliegende Hollander",
+  "untertitel": "Das Schiff, das nie den Hafen erreicht",
+  "region": "europa",
+  "land": "Niederlande / Seemannssage",
+  "art": "Sagengestalt",
+  "jahr": 1790,
+  "zeitraum": "Seemannssage, gedruckt seit 1790; Erlösungsmotiv bei Heinrich Heine 1834, Oper von Richard Wagner 1843",
+  "kurz": "Ein holländischer Kapitän schwört, das Kap zu umsegeln, und wenn es bis zum Jüngsten Tag dauern sollte. Der Teufel nimmt ihn beim Wort – erlösen kann ihn nur die Treue einer Frau.",
+  "geschichte": "Auf allen Meeren erzählen die Seeleute von einem verwünschten Schiff, das nie in einen Hafen gelangen kann und seit undenklicher Zeit über das Wasser irrt. Begegnet es einem anderen Fahrzeug, so kommen einige von der unheimlichen Mannschaft in einem Boot herüber und bitten, ein Paket Briefe mitzunehmen. Man muss die Briefe an den Mast nageln, sonst geschieht ein Unglück. Sie sind stets an Menschen gerichtet, die niemand kennt oder die längst gestorben sind.\n\nSeinen Namen hat das Schiff von seinem Kapitän, einem Holländer. Der hatte einst bei allen Teufeln geschworen, er werde ein bestimmtes Vorgebirge trotz des Sturms umsegeln, und sollte er bis zum Jüngsten Tag segeln müssen. Der Teufel nahm ihn beim Wort. Erlöst werden kann der Holländer nur durch die Treue einer Frau. Weil der Teufel nicht an Frauentreue glaubt, erlaubt er ihm, alle sieben Jahre an Land zu gehen und zu heiraten.\n\nWieder sind sieben Jahre um. Der Holländer geht in Schottland an Land, schließt Freundschaft mit einem Kaufmann, verkauft ihm Diamanten zu Spottpreisen und verlangt, als er von dessen schöner Tochter hört, sie zur Frau. Das Mädchen, Katharina, hat von Kind auf ein altes, nachgedunkeltes Bild in der Stube betrachtet: einen schönen Mann in spanisch-niederländischer Tracht. Die Großmutter sagt, es sei der Fliegende Holländer, wie man ihn vor hundert Jahren in Schottland gesehen habe, und die Frauen der Familie sollten sich vor dem Original hüten. Als der Bräutigam eintritt, erschrickt sie, aber nicht aus Furcht. Er lacht über den Aberglauben, doch dann spricht er wehmütig davon, wie der arme Holländer zwischen Tod und Leben hin- und hergeworfen werde wie eine leere Tonne zwischen den Wellen. Er fragt: „Katharina, willst du mir treu sein?“ Sie antwortet: „Treu bis in den Tod.“\n\nIn der letzten Szene steht sie auf einer hohen Klippe. Unten auf dem Deck seines Schiffes gesteht ihr der Holländer sein Schicksal und will sie verlassen, um sie nicht mit ins Verderben zu ziehen. Sie aber ruft, sie wisse ein sicheres Mittel, ihm treu zu bleiben bis in den Tod, und stürzt sich ins Meer. Damit ist der Fluch gebrochen, der Holländer ist erlöst, und das Gespensterschiff versinkt in der Tiefe.",
+  "fassung": "Nacherzählt nach: Heinrich Heine, Aus den Memoiren des Herren von Schnabelewopski, Kapitel 7, in: Der Salon, Erster Band (Hamburg: Hoffmann und Campe 1834)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Sage entstand unter Seeleuten auf den Routen um das Kap der Guten Hoffnung, wo Stürme viele Schiffe kosteten. Gedruckt erscheint sie erstmals 1790 in den Reiseerinnerungen des schottischen Dieners John MacDonald: Bei schwerem Wetter hätten die Matrosen den Fliegenden Holländer gesehen, ein Schiff, das am Kap verloren ging und seither im Sturm erscheine. 1795 folgt ein ähnlicher Bericht in einem George Barrington zugeschriebenen Reisebuch. Seit Anfang des 19. Jahrhunderts tritt das Motiv der Strafe für einen Frevel hinzu; die Erzählung „Vanderdecken's Message Home“ in Blackwood's Edinburgh Magazine (1821) gab dem Kapitän den Namen Vanderdecken und schilderte die Briefe an längst Verstorbene. Heine erwähnt sie schon 1827 in seinen „Nordsee“-Bildern; das Theaterstück, das er in Amsterdam gesehen haben will, ist nicht nachgewiesen."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Literaturwissenschaft liest den Holländer als Seefahrer-Gegenstück zum Ewigen Juden Ahasver, der ebenfalls für einen Frevel ruhelos bis zum Jüngsten Tag wandern muss; Wagner nannte ihn selbst den „Ahasverus des Ozeans“. Das Erlösungsmotiv durch weibliche Treue gilt in der Forschung überwiegend als Heines eigene Zutat; Heine erzählt es allerdings ironisch und schließt mit der spöttischen Moral, Frauen sollten sich hüten, einen Fliegenden Holländer zu heiraten. Für die Sichtungen, von denen Seeleute bis ins 20. Jahrhundert berichteten, werden Luftspiegelungen wie die Fata Morgana über kaltem Wasser als Erklärung angeführt. Berühmt ist der Eintrag vom 11. Juli 1881 im Bericht über die Reise der HMS Bacchante, an deren Bord der spätere König Georg V. diente: Vor der australischen Küste sei ein rot leuchtendes Phantomschiff gesehen worden."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Richard Wagner erlebte 1839 auf der Flucht von Riga nach London schwere Stürme und einen Nothafen in Norwegen; er griff Heines Fassung auf, wie er 1843 in seiner autobiographischen Skizze schrieb. Seine Oper Der fliegende Holländer wurde am 2. Januar 1843 in Dresden uraufgeführt. Frederick Marryat machte den Stoff 1839 zum Roman The Phantom Ship; Albert Pinkham Ryder malte das Geisterschiff. Bis heute leben Name und Bild in Filmen, Comics und Piratengeschichten weiter."
+   }
+  ],
+  "verwandt": "Der Klabautermann ist der gute Geist der Schiffe derselben Meere; Ahasver, der Ewige Jude, teilt mit dem Holländer die Strafe der Ruhelosigkeit.",
+  "quellen": [
+   "Heinrich Heine: Aus den Memoiren des Herren von Schnabelewopski, in: Der Salon, Erster Band, Hoffmann und Campe, Hamburg 1834",
+   "Heinrich Heine: Die Nordsee. Dritte Abteilung, in: Reisebilder, Zweiter Teil, Hamburg 1827",
+   "John MacDonald: Travels in Various Parts of Europe, Asia and Africa, London 1790",
+   "Richard Wagner: Autobiographische Skizze, in: Zeitung für die elegante Welt, 1843",
+   "John N. Dalton (Hrsg.): The Cruise of Her Majesty's Ship Bacchante 1879–1882, London 1886"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/fliegender-hollaender-0.jpg",
+    "breite": 900,
+    "hoehe": 745,
+    "zeigt": "„The Flying Dutchman“, Gemälde von Albert Pinkham Ryder, um 1887–1896 (Smithsonian American Art Museum)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Flying_Dutchman%2C_the.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -17401,6 +20377,62 @@ const GRUSELMAERCHEN = [
   "seit": "2026-10-07"
  },
  {
+  "id": "rusalka",
+  "titel": "Rusalka",
+  "originalname": "русалка (Mehrzahl русалки)",
+  "untertitel": "Die Ertrunkene im Teich",
+  "region": "europa",
+  "land": "Ukraine, Russland, Belarus (ostslawischer Raum)",
+  "art": "Geist",
+  "jahr": 1831,
+  "zeitraum": "Volksglaube, im 19. und frühen 20. Jahrhundert von Volkskundlern aufgezeichnet; literarisch u. a. bei Gogol 1831 und Puschkin (1829–1832)",
+  "kurz": "Mädchen, die ertrunken oder vor der Zeit gestorben sind, sitzen in den Frühsommernächten am Ufer, kämmen ihr Haar und locken Lebende ins Wasser: die Rusalki der Ukraine, Russlands und Belarus.",
+  "geschichte": "An einem Teich in einem ukrainischen Dorf steht ein altes, verlassenes Herrenhaus. In einer Mainacht erzählt der junge Kosak Lewko seiner Liebsten Hanna, warum niemand dort wohnen will. Einst lebte darin ein Sotnik, ein Kosakenhauptmann, mit seiner Tochter, einem hellen, schönen Mädchen. Der Witwer nahm eine zweite Frau, und von da an war es mit dem Glück der Tochter vorbei, denn die Stiefmutter war eine Hexe. Eines Nachts schlich eine schwarze Katze mit eisernen Krallen auf das Mädchen zu und sprang ihm an die Kehle. Die Tochter griff nach dem Säbel des Vaters und hieb ihr eine Pfote ab. Am nächsten Tag kam die Stiefmutter nicht aus ihrer Kammer, und als sie sich am dritten Tag zeigte, war ihre Hand verbunden. Bald musste die Tochter auf Geheiß des Vaters Mägdearbeit tun, und am fünften Tag jagte er sie barfuß aus dem Haus. Sie lief zum Teich und stürzte sich hinein.\n\nSeitdem führt sie die Ertrunkenen an. Einmal zog sie die Stiefmutter zu sich in die Tiefe, doch die Hexe verwandelte sich selbst in eine Ertrunkene und versteckt sich seither unter ihnen.\n\nNoch in derselben Nacht, nach allerlei Streichen im Dorf, setzt sich Lewko ans Ufer und singt. Im Haus öffnet sich ein Fenster, und die bleiche junge Herrin schaut heraus. Am Ufer tanzen die Ertrunkenen im Reigen, in weißen Hemden, und ihre Körper schimmern im Mondlicht, als wären sie aus durchsichtigen Wolken geformt. Die Herrin bittet Lewko, die Hexe unter ihnen zu finden. Die Ertrunkenen spielen „Rabe und Küken“, und Lewko beobachtet die Spielerin, die den Raben gibt. Er sieht, dass ihr Körper nicht leuchtet wie der der anderen: In ihrem Innern ist etwas Schwarzes. „Die da!“, ruft er, und die anderen führen sie mit Geschrei fort. Zum Dank reicht ihm die Herrin einen Zettel für seinen Vater, den Dorfschulzen. Als Lewko am Ufer erwacht, hält er ihn wirklich in der Hand: einen Befehl des Kommissars, Lewko und Hanna ohne Aufschub zu verheiraten.",
+  "fassung": "Nacherzählt nach: Nikolai Gogol, „Die Mainacht oder Die Ertrunkene“ (Майская ночь, или Утопленница), in: Abende auf dem Weiler bei Dikanka, Bd. 1, St. Petersburg 1831",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Das Wort rusalka hängt mit den rusalii zusammen, einem Frühsommer- und Totenfest, dessen Name auf die römisch-byzantinischen rosalia zurückgeführt wird, ein Rosenfest des Totengedenkens. Volkskundler des 19. und frühen 20. Jahrhunderts zeichneten den Glauben von der Ukraine bis Nordrussland auf. In der Rusalienwoche um das orthodoxe Pfingst- und Dreifaltigkeitsfest, so hieß es, verließen die Rusalki das Wasser, schaukelten in Birken, liefen durch das blühende Korn und konnten Menschen zu Tode kitzeln. Im Süden stellte man sie sich als blasse, schöne Mädchen mit offenem, oft grünem Haar vor, im Norden eher als zottige, hässliche Weiber. Wermut galt als Schutz. Mancherorts beendete ein Brauch die gefährliche Zeit: Eine Strohpuppe oder ein verkleidetes Mädchen wurde als Rusalka aus dem Dorf hinausgeleitet."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die mythologische Schule des 19. Jahrhunderts, etwa Alexander Afanasjew, sah in den Rusalki Verkörperungen von Wasser, Wolken und Fruchtbarkeit. Dmitri Selenin stellte dem 1916 eine bis heute einflussreiche Deutung entgegen: Rusalki seien die Seelen „unreiner Toter“, die vor ihrer Zeit oder eines unnatürlichen Todes gestorben waren, also ertrunkene oder selbstgetötete junge Frauen, ungetauft gestorbene Kinder, Bräute, die vor der Hochzeit starben. Weil sie ihr Leben nicht zu Ende gelebt hatten, blieben sie nach dieser Lesart zwischen den Welten und mussten durch Gaben und Riten besänftigt werden. Neuere Darstellungen wie die von Linda Ivanits betonen, dass beide Schichten nebeneinander bestehen: die Totenseele und die Geisterin der Felder, deren Zeit mit der Roggenblüte zusammenfällt. Gogol verbindet das Motiv der unglücklichen Toten mit dem Märchen von der bösen Stiefmutter."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Alexander Puschkin arbeitete von 1829 bis 1832 an einem unvollendeten Versdrama „Rusalka“ über eine verlassene Müllerstochter, die sich ertränkt; Alexander Dargomyschski machte daraus 1856 eine Oper. Iwan Kramskoi malte 1871 nach Gogols Erzählung „Die Mainacht“, Konstantin Makowski 1879 seine „Rusalki“. Antonín Dvořáks Oper „Rusalka“ (Prag 1901) verbindet den Namen mit der Undinen-Überlieferung und Andersens kleiner Meerjungfrau; ihr „Lied an den Mond“ gehört zu den bekanntesten Opernarien."
+   }
+  ],
+  "verwandt": "Die südslawischen Vilen, die deutschen Nixen und die Wilis, die Heinrich Heine als Geister verstorbener Bräute beschrieb, sind ihre nächsten Verwandten.",
+  "quellen": [
+   "Nikolai Gogol: Večera na chutore bliz Dikan'ki (Abende auf dem Weiler bei Dikanka), Bd. 1, St. Petersburg 1831",
+   "Dmitrij K. Zelenin: Očerki russkoj mifologii, Bd. 1: Umeršie neestestvennoju smert'ju i rusalki, Petrograd 1916",
+   "Linda J. Ivanits: Russian Folk Belief, M. E. Sharpe, Armonk/London 1989",
+   "Alexander N. Afanasjew: Poėtičeskie vozzrenija slavjan na prirodu, 3 Bde., Moskau 1865–1869"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/rusalka-0.jpg",
+    "breite": 900,
+    "hoehe": 600,
+    "zeigt": "Iwan Kramskoi, „Rusalki“ („Die Mainacht“), 1871, nach Gogols Erzählung; Tretjakow-Galerie, Moskau",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Iwan_Nikolajewitsch_Kramskoj_002.jpg"
+   },
+   {
+    "datei": "bilder/dark/rusalka-1.jpg",
+    "breite": 900,
+    "hoehe": 690,
+    "zeigt": "Konstantin Makowski, „Rusalki“, 1879; Russisches Museum, Sankt Petersburg",
+    "urheber": "Konstantin Makovsky",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Rusalki.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
   "id": "golem",
   "titel": "Der Golem von Prag",
   "originalname": "גולם – „formlose Masse, Unfertiges“",
@@ -17453,6 +20485,279 @@ const GRUSELMAERCHEN = [
     "urheber": "Photo: Andreas Praefcke",
     "lizenz": "CC BY 3.0",
     "herkunft": "https://commons.wikimedia.org/wiki/File:Praha_Staronova_Synagoga.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "klabautermann",
+  "titel": "Der Klabautermann",
+  "originalname": "Klabatermann, Kalfater – wohl von „kalfatern“, Schiffsfugen abdichten",
+  "untertitel": "Der unsichtbare Helfer im Schiffsrumpf",
+  "region": "europa",
+  "land": "Deutschland / Niederlande (Nord- und Ostseeküste)",
+  "art": "Geist",
+  "jahr": 1840,
+  "zeitraum": "Seemannsglaube, von Heine 1827 und Temme 1840 aufgezeichnet",
+  "kurz": "Ein kleiner Geist zieht mit dem Holz in jedes gute Schiff, klopft im Rumpf, weckt den Schiffer bei Gefahr und quält die Faulen. Wer ihn zu Gesicht bekommt, hat nicht mehr lange zu leben.",
+  "geschichte": "Sobald ein neues Schiff fertig ist und die Mannschaft an Bord geht, zieht, so erzählen die Schiffer in Pommern, auch ein kleiner Geist mit ein. Sie nennen ihn den Kalfater oder Klabatermann. Er ist ein guter Geist, für das Schiff wie für die Leute. Kaum zwei Fuß groß soll er sein, mit roter Jacke, weiten Schifferhosen und rundem Hut; andere sagen, er gehe ganz nackt. Genau weiß es kaum jemand, denn wer ihn sieht, dem bringt es Unglück.\n\nHören aber kann man ihn oft. Unten im Raum staut er die Ballen nach, und an Stellen, an die kein Mensch herankommt, dichtet er die Fugen ab. Wenn das Schiff in Gefahr gerät und der Schiffer in der Kajüte schläft, stößt ihn der Kleine an, bis er auffährt und tut, was nötig ist. „Hörst du, da ist er wieder!“, sagen die Matrosen, wenn es nachts in den Planken klopft. Den flinken Burschen hilft er: Die Taue schlagen beim Reffen nicht, und der Anker kommt leichter herauf. Wechselt ein guter Matrose auf ein anderes Schiff, gibt ihm der Klabatermann ein Zeichen mit, an dem ihn der Geist dort erkennt. Die Faulen und Trotzigen aber zwickt und plagt er, bis sie fleißig werden. Hilft das alles nicht, zeigt er sich ihnen zuletzt und schneidet Fratzen, und dann hat ihr letztes Stündlein geschlagen. Deshalb stellen ihm die Matrosen nachts gern etwas von ihrem Lieblingsessen hin.\n\nIm Sturm ist er besonders laut, man hört ihn an allen Ecken. Er hält beim Schiff aus bis zum letzten Augenblick. Hat er es aber verlassen, weiß das Schiffsvolk, dass es verloren ist, und jeder sucht nur noch sich selbst zu retten.\n\nManche sagen, nicht jedes Schiff habe einen Klabatermann. Er sei die Seele eines Kindes, das vor der Taufe starb und in der Heide unter einem Baum begraben wurde; wird aus diesem Baum Holz für ein Schiff geschnitten, so geht die Seele mit hinein, und ein solches Schiff kann nicht untergehen. Wer ihn gefahrlos sehen will, muss nachts zwischen zwölf und eins allein zum Spillloch gehen und durch die eigenen Beine hindurchschauen. Sieht er ihn nackt, so darf er ihm aus Mitleid keine Kleider zuwerfen, denn das nimmt der Klabatermann übel.",
+  "fassung": "Nacherzählt nach: Jodocus Donatus Hubertus Temme, Die Volkssagen von Pommern und Rügen (Berlin 1840), Nr. 253 „Der Kalfater oder Klabatermann“",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Klabautermann gehört zum Glauben der Seeleute an der deutschen und niederländischen Nordseeküste und an der Ostsee. Eine frühe literarische Aufzeichnung stammt von Heinrich Heine, der 1827 in seinen „Nordsee“-Bildern berichtet, was ihm ein Steuermann erzählte: Der Klabotermann sei der unsichtbare Schutzpatron der Schiffe, man höre ihn im Raum die Waren nachstauen und außen am Rumpf hämmern, gesehen werde er erst, wenn keine Rettung mehr sei. Der Kapitän fügte hinzu, vor fünfzig oder hundert Jahren habe man ihm bei Tisch ein eigenes Gedeck aufgelegt. Der Jurist und Sagensammler Temme zeichnete 1840 die ausführlichste pommersche Fassung auf; weitere Belege sammelten Adalbert Kuhn und Wilhelm Schwartz, Karl Müllenhoff und Ludwig Bechstein. Die Schreibweisen schwanken zwischen Klabatermann, Klabotermann und Kalfatermann."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Der Sprachforscher Friedrich Kluge leitete den Namen vom Verb „kalfatern“ ab, dem Abdichten der Schiffsfugen mit Werg und Pech; diese Erklärung gilt heute als die wahrscheinlichste. Das Grimmsche Wörterbuch dachte dagegen an niederdeutsch „klabastern“, poltern. Inhaltlich ist der Klabautermann ein Schiffskobold, verwandt mit den Hausgeistern wie dem norddeutschen Puk oder dem dänischen Nisse, die Fleißigen helfen, Faule strafen und Speisen erhalten. Seine Geräusche haben eine handfeste Grundlage: Ein hölzerner Rumpf knarrt und arbeitet ständig, und ein Matrose, der darauf achtete, merkte, wenn etwas nicht stimmte. Die Vorstellung, er stamme von ungetauften Kindern, verbindet ihn mit dem Glauben an ruhelose Kinderseelen, der in ganz Europa verbreitet war."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Friedrich Gerstäcker erzählte in seinem Seefahrerbuch „Blau Wasser“ von ihm, Christian Morgenstern widmete ihm ein Gedicht. Der Dichter Alfred Henschke nannte sich Klabund, zusammengezogen aus Klabautermann und Vagabund. Geschnitzte Klabautermänner hängen bis heute als Glücksbringer in Kajüten und Seemannskneipen."
+   }
+  ],
+  "verwandt": "Sein nächster Verwandter ist der dänische Skibsnisse; an Land entsprechen ihm Kobold, Puk und Heinzelmännchen.",
+  "quellen": [
+   "Jodocus Donatus Hubertus Temme: Die Volkssagen von Pommern und Rügen, Berlin 1840, Nr. 253 (Deutsches Textarchiv)",
+   "Heinrich Heine: Die Nordsee. Dritte Abteilung, in: Reisebilder, Zweiter Teil, Hamburg 1827",
+   "Adalbert Kuhn, Wilhelm Schwartz: Norddeutsche Sagen, Märchen und Gebräuche, Leipzig 1848",
+   "Friedrich Kluge: Seemannssprache. Wortgeschichtliches Handbuch deutscher Schifferausdrücke älterer und neuerer Zeit, Halle 1911",
+   "David Kirby, Merja-Liisa Hinkkanen: The Baltic and the North Seas, Routledge, London 2000"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/klabautermann-0.jpg",
+    "breite": 863,
+    "hoehe": 1100,
+    "zeigt": "Der Klabautermann an der Ankerwinde, Illustration von Anton von Werner aus Ludwig von Henks Buch „Zur See“, 1885",
+    "urheber": "Anton von Werner",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Klabautermann_on_ship.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "strzyga",
+  "titel": "Strzyga",
+  "originalname": "strzyga (Mehrzahl strzygi; männlich strzygoń) – von lateinisch strix, „Nachtvogel, Hexe“",
+  "untertitel": "Die verfluchte Königstochter in der Gruft",
+  "region": "europa",
+  "land": "Polen",
+  "art": "Untoter",
+  "jahr": 1852,
+  "zeitraum": "Name seit dem Frühmittelalter (lat. striga), polnischer Volksglaube im 19. Jahrhundert aufgezeichnet; Märchenfassung Roman Zmorski 1852",
+  "kurz": "Ein Mensch mit zwei Seelen, der nach dem Tod nicht zur Ruhe kommt: Die polnische Strzyga steigt nachts aus dem Grab, und im Märchen braucht es drei Nächte und viel List, um sie zu erlösen.",
+  "geschichte": "Der Waisenjunge Marcin zieht allein in die Welt. Im Wald rettet er einen alten Bettler vor einem Wegelagerer, und von da an wandern die beiden zusammen. In der nächsten Stadt hören sie einen königlichen Ausrufer: Wer die verwunschene Königstochter in der Pfarrkirche erlöst, dem verspricht König Gwoździk jeden Lohn, und sei es das halbe Reich. Der Wirt erklärt den Fremden, was dahintersteckt. Der König hatte seine eigene Schwester geheiratet. Das Kind dieser Ehe kam schwarz, mit Krallen und Reißzähnen zur Welt, sprach sofort, nannte sich verflucht für die Sünde des Vaters und ließ ihn schwören, dass von ihrem Begräbnis an jede Nacht ein lebender Mensch in der Kirche wache. Dann starb es. Seither verschwinden die Wächter, Nacht für Nacht, seit vierzehn Jahren.\n\nDer Bettler rät Marcin, sich zu melden, und sagt ihm jeden Abend, was er tun soll. In der ersten Nacht verkriecht sich der Junge im dunklen Winkel hinter dem Hochaltar, unter den Gebeinen der Verschwundenen. Um Mitternacht springt der Stein der Königsgruft zur Seite. Die Strzyga ruft nach dem Menschen, tobt durch die Kirche, wittert ihn und wühlt die Knochen auseinander, doch da schlägt es zwei, und sie muss zurück ins Grab. In der zweiten Nacht wartet Marcin auf der Empore hinter der Orgel, die Tür mit geweihter Kreide bezeichnet. Die Tür hält, aber die Strzyga schleppt Sarg um Sarg aus der Gruft und türmt sie zur Treppe. Als sie mit dem elften hinaufsteigt, stößt Marcin mit einer Orgelpfeife den Stapel um, und wieder rettet ihn der Glockenschlag.\n\nIn der dritten Nacht steigt er selbst in die offene Gruft, legt sich in ihren leeren Sarg und zeichnet ein Kreuz aus geweihter Kreide auf den Deckel. Die Strzyga findet ihren Platz verschlossen, zählt die Särge, droht, fleht und verspricht Schätze. Marcin hält sich die Ohren zu und betet für sich und für sie. Da kräht im Pfarrhof der Hahn. Ein letztes Stöhnen, dann sinkt neben dem Sarg ein Mädchen von vierzehn Jahren ohnmächtig zu Boden. Am Morgen trägt Marcin die Erlöste ans Licht. Der Bettler ist spurlos verschwunden, der König gibt Marcin seine Tochter zur Frau, und später wird der Waisenjunge selbst ein gerechter König.",
+  "fassung": "Nacherzählt nach: Roman Zmorski, „Strzyga“, in: Podania i baśni ludu w Mazowszu (z dodatkiem kilku szlązkich i wielkopolskich), Breslau (Wrocław) 1852",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Name geht auf lateinisch strix zurück, bei römischen Dichtern wie Ovid ein Nachtvogel, der Kindern das Blut aussaugt. Im Frühmittelalter bezeichnete striga eine Menschen fressende Hexe; die Capitulatio de partibus Saxoniae Karls des Großen bedrohte jeden mit dem Tod, der eine vermeintliche striga verbrannte. In Polen meinte strzyga oder strzygoń einen Menschen, der mit zwei Seelen, zwei Herzen oder schon mit Zähnen geboren wurde; stirbt er, lebt eine Seele weiter und treibt den Leichnam nachts umher. Seweryn Goszczyński hörte 1832 im Podhale von einer alten Frau, eine Strzyga habe sie im Schlaf gebissen, und meinte, von den Upiory, den Wiedergängern, lasse sie sich kaum unterscheiden. Zmorskis Märchen gehört zum Erzähltyp der Prinzessin im Sarg; er selbst verwies auf eine tschechische Fassung bei J. B. Malý."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die Volkskunde zählt die Strzyga zu den „unreinen“ Toten, deren Schicksal schon bei der Geburt als gezeichnet galt. Der Glaube erklärte plötzliche Todesfälle und Seuchen und gab Dorfgemeinschaften ein Mittel in die Hand: Verdächtige wurden mit dem Gesicht nach unten, mit einer Sichel über dem Hals oder mit einem Stein unter dem Kinn begraben. Archäologen haben solche Gräber gefunden. In Drawsko in Westpommern lagen unter mehreren hundert Bestattungen des 17. und 18. Jahrhunderts einige Tote mit Sicheln oder Steinen; Isotopenanalysen eines Teams um Lesley Gregoricka zeigten 2014, dass es Einheimische waren, und die Forscher erwogen Choleraepidemien als Anlass. 2022 legte ein Team um Dariusz Poliński in Pień bei Bydgoszcz das Grab einer Frau mit Sichel über dem Hals und Vorhängeschloss am Fuß frei. Ob die Bestatteten als Strzygi galten, sagen die Funde nicht."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "In der polnischen Romantik tauchten Strzygi und Upiory in Balladen und Sagensammlungen auf. Andrzej Sapkowski griff das Motiv der verfluchten Königstochter 1986 in seiner ersten Erzählung über den Hexer Geralt auf: Dort ist die Strzyga die Tochter eines Königs und seiner Schwester, und der Fluch bricht, wenn jemand die Nacht in ihrer Gruft bis zum Morgen übersteht. Über die Bücher, die Computerspiele seit 2007 und die Netflix-Serie seit 2019 kennt heute ein weltweites Publikum die Gestalt."
+   }
+  ],
+  "verwandt": "Der deutsche Nachzehrer, der serbische Vampir und der rumänische Strigoi, dessen Name ebenfalls auf lateinisch strix zurückgeht, gehören zur selben Familie unruhiger Toter.",
+  "quellen": [
+   "Roman Zmorski: Podania i baśni ludu w Mazowszu (z dodatkiem kilku szlązkich i wielkopolskich), Breslau 1852, „Strzyga“ mit Anmerkung",
+   "Seweryn Goszczyński: Dziennik podróży do Tatrów, 1853, Abschnitt „Świat duchowy Podhalan. Strzygi, Upiory, Wiłkołaki, Bogińki, Dziwożony“",
+   "Capitulatio de partibus Saxoniae, c. 6, in: Alfred Boretius (Hrsg.), MGH Capitularia regum Francorum, Bd. 1, Hannover 1883",
+   "Lesley A. Gregoricka, Tracy K. Betsinger, Amy B. Scott, Marek Polcyn: Apotropaic Practices and the Undead. A Biogeochemical Assessment of Deviant Burials in Post-Medieval Poland, in: PLOS ONE 9 (2014)"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/strzyga-0.jpg",
+    "breite": 778,
+    "hoehe": 1100,
+    "zeigt": "Titelblatt von Roman Zmorskis Sammlung „Podania i baśni ludu w Mazowszu“, Breslau 1852, in der das Märchen von der Strzyga steht",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:PL_Roman_Zmorski_-_Podania_i_ba%C5%9Bni_ludu_w_Mazowszu_z_dodatkiem_kilku_szl%C4%85zkich_i_wielkopolskich_-_strona_tytulowa.jpg"
+   },
+   {
+    "datei": "bilder/dark/strzyga-1.jpg",
+    "breite": 900,
+    "hoehe": 848,
+    "zeigt": "Heutige künstlerische Darstellung einer Strzyga von Filip Gutowski, 2019",
+    "urheber": "Filip Gutowski",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Strzyga_Strix.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "nachzehrer",
+  "titel": "Der Nachzehrer",
+  "originalname": null,
+  "untertitel": "Der Tote, der seine Familie nach sich zieht",
+  "region": "europa",
+  "land": "Deutschland (vor allem Norddeutschland)",
+  "art": "Untoter",
+  "jahr": 1859,
+  "zeitraum": "Glaube an im Grab kauende Tote seit dem 16./17. Jahrhundert belegt, Begriff und Sagen im 19. Jahrhundert aufgezeichnet (Kuhn 1843–1859)",
+  "kurz": "Ein Toter, der im Grab an seinem Leichentuch kaut und dabei seine Angehörigen nach sich zieht: Der Nachzehrer erklärte in Norddeutschland, warum der Tod oft mehrere Menschen einer Familie kurz hintereinander traf.",
+  "geschichte": "Der alte Schulmeister von Saßenhausen war zweiundneunzig Jahre alt, als er diese Geschichte erzählte, und er begann mit einer Warnung. Früher, sagte er, habe man beim Ankleiden eines Toten, beim Einbetten in den Sarg und beim Zunageln des Deckels peinlich darauf geachtet, dass ihm kein Stück Stoff an den Mund oder ins Gesicht geriet. Sonst begann das Nachzehren: Einer der Hinterbliebenen nach dem anderen siechte dahin, bis die ganze Familie ausgestorben war.\n\nDann erzählte er von einem jungen Adligen, der bei einer reichen Tante wohnte. Die Tante hatte sich in den Kopf gesetzt, ihn mit einer ihrer Verwandten zu verheiraten, und ließ nicht davon ab, so wenig er davon wissen wollte. Einmal lag er unpässlich in seinem Zimmer, und der Arzt hatte ihm eine Ader am Fuß geöffnet. Gerade da bedrängte ihn die Tante wieder. Er wurde unwillig und stampfte mit dem Fuß auf, der Verband löste sich, und das Blut spritzte auf den Boden. Der Arzt wurde gerufen, legte einen neuen Verband an, und der Neffe war bald wieder gesund. Den blutigen Pantoffel aber nahm die Tante an sich, und niemand dachte mehr daran.\n\nHeimlich verfügte sie, dass dieser Pantoffel nach ihrem Tod zu ihr in den Sarg gelegt werde, ohne dass jemand aus der Familie davon erfuhr. So geschah es auch. Von da an wurde der Neffe von Tag zu Tag elender, und kein Arzt wusste Rat. Endlich kam einer auf den Gedanken, die Tante ausgraben zu lassen. Man öffnete Grab und Sarg, und da lag der lange vermisste Pantoffel auf dem Mund der Toten, ganz mit Schleim überzogen. Der Arzt beizte und ätzte den Schleim fort. Von dieser Stunde an erholte sich der junge Mann, und bald war er wieder frisch und gesund.\n\nMehr sagte der Schulmeister nicht. Wer zuhörte, verstand ihn auch so: Solange die Tote am Blut ihres Neffen sog, zehrte sie ihn langsam nach sich ins Grab.",
+  "fassung": "Nacherzählt nach: Adalbert Kuhn, Sagen, Gebräuche und Märchen aus Westfalen und einigen andern, besonders den angrenzenden Gegenden Norddeutschlands, Bd. 1, Leipzig 1859, Nr. 183 „Das Nachzehren“ (Erzählung des Lehrers von Saßenhausen)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Das Wort Nachzehrer setzte sich erst im 19. Jahrhundert durch, als Sammler wie Adalbert Kuhn in der Altmark, in Pommern und in Westfalen Sagen aufzeichneten. Der Glaube dahinter ist älter. Im 17. und frühen 18. Jahrhundert stritten Gelehrte über Tote, die man im Grab „schmatzen“ gehört haben wollte oder die an ihrem Leichentuch gekaut haben sollten: Philipp Rohr widmete dem Thema 1679 in Leipzig eine Dissertation, der Diakon Michael Ranft aus Nebra 1728 eine lateinische und 1734 eine deutsche Abhandlung. Kuhn und die von ihm angeführten Sammler nannten die Ursachen genau: ein vergessener Zehrpfennig, der nicht aus dem Totenhemd getrennte Name, ein Zipfel Stoff im Mund, offene Augen oder ein weich bleibendes Gesicht. Als Gegenmittel nennt eine Sage aus der Gegend von Diesdorf in der Altmark, den Toten auszugraben und ihm mit dem Spaten das Genick zu durchstechen."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Schon Kuhns Gewährsleute verbanden den Nachzehrer mit der Erfahrung, dass in einer Familie oft mehrere Menschen kurz nacheinander starben. Bei ansteckenden Krankheiten wie Pest, Pocken oder Tuberkulose war das die Regel; die Ansteckung kannte man nicht, den ersten Toten aber schon. Was man beim Öffnen von Gräbern sah, etwa zerrissene Tücher oder Flüssigkeit am Mund, erklärt die Forschung mit gewöhnlicher Verwesung. Ob der Glaube aus dem Slawischen stamme, wie man im 19. Jahrhundert oft meinte, bezweifelte Kuhn mit Verweis auf Saxo Grammaticus und Burchard von Worms, die ältere Bräuche des Pfählens schildern. Archäologen finden in Mittel- und Osteuropa Sonderbestattungen mit Steinen im Mund oder in Bauchlage; 2006 etwa auf der venezianischen Insel Lazzaretto Nuovo eine Pesttote des 16. Jahrhunderts mit einem Ziegel zwischen den Kiefern. Solche Zuordnungen bleiben Deutungen."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Mit den Berichten über serbische Vampire von 1725 und 1732 verschmolz der Nachzehrer in der gelehrten Debatte mit dem „Vampyr“; Ranfts Tractat behandelt beide in einem Buch. Im Volksglauben lebte er fort und erhielt in den 1930er-Jahren im Handwörterbuch des deutschen Aberglaubens einen eigenen Artikel. Heute begegnet er in Vampirlexika, Rollenspielen und Fantasy-Romanen, meist als deutsche Spielart des Vampirs, und in Presseberichten, wenn Archäologen wieder ein sogenanntes Vampirgrab freilegen."
+   }
+  ],
+  "verwandt": "Der serbische Vampir der Berichte von 1725 und 1732, der isländische Draugr und die polnische Strzyga teilen mit ihm den Toten, der aus dem Grab heraus den Lebenden schadet.",
+  "quellen": [
+   "Adalbert Kuhn: Sagen, Gebräuche und Märchen aus Westfalen, Bd. 1, Leipzig 1859, Nr. 183 „Das Nachzehren“ (mit Anmerkungen zu Saxo Grammaticus und Burchard von Worms)",
+   "Adalbert Kuhn: Märkische Sagen und Märchen, Berlin 1843, Nr. 30 „Die Nachzehrer“",
+   "Michael Ranft: Tractat von dem Kauen und Schmatzen der Todten in Gräbern, Leipzig 1734",
+   "Paul Geiger: Art. „Nachzehrer“, in: Hanns Bächtold-Stäubli (Hrsg.), Handwörterbuch des deutschen Aberglaubens, Bd. 6, Berlin/Leipzig 1934/35",
+   "Paul Barber: Vampires, Burial, and Death. Folklore and Reality, Yale University Press, New Haven 1988"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/nachzehrer-0.jpg",
+    "breite": 733,
+    "hoehe": 1100,
+    "zeigt": "Titelblatt von Michael Ranfts „Tractat von dem Kauen und Schmatzen der Todten in Gräbern“, Leipzig 1734",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Tractat_von_dem_Kauen_und_Schmatzen_der_Todten_in_Gr%C3%A4bern_002.jpg"
+   },
+   {
+    "datei": "bilder/dark/nachzehrer-1.jpg",
+    "breite": 740,
+    "hoehe": 1100,
+    "zeigt": "Frontispiz desselben Buches: ein Friedhof, eine Teufelsgestalt und eine Frau mit einer Schlange, die sich in den Schwanz beißt; auf dem Spruchband „Mortuus non mordet“ (Der Tote beißt nicht)",
+    "urheber": "unbekannt",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Tractat_von_dem_Kauen_und_Schmatzen_der_Todten_in_Gr%C3%A4bern_001.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "leschi",
+  "titel": "Leschi",
+  "originalname": "леший – „der aus dem Wald“ (von лес, Wald)",
+  "untertitel": "Der Herr des Waldes",
+  "region": "europa",
+  "land": "Russland (ostslawischer Raum)",
+  "art": "Naturwesen",
+  "jahr": 1872,
+  "zeitraum": "Bäuerlicher Volksglaube bis ins 20. Jahrhundert, im 19. Jahrhundert von Afanasjew, Ralston, Maximow und anderen aufgezeichnet",
+  "kurz": "Der Herr des Waldes kann größer werden als die Bäume und kleiner als das Gras. Wer ihn kränkt, findet nicht mehr heim; wer ihm hilft, hat einen mächtigen Freund.",
+  "geschichte": "Im Gouvernement Archangelsk, so erzählte man im 19. Jahrhundert, gerieten einmal drei Leschije über ein Waldstück in Streit. Jeder beanspruchte die Rechte daran, keiner gab nach. Wenn Waldgeister kämpfen, schlagen sie mit ausgerissenen Bäumen und Felsbrocken aufeinander ein, und was die Leute danach für die Spur eines Sturms halten, ist in Wahrheit ihr Schlachtfeld. Zwei von ihnen behielten die Oberhand. Sie banden dem dritten die Hände so fest zusammen, dass er sich nicht mehr rühren konnte, und ließen ihn liegen.\n\nBald darauf kam ein reisender Kaufmann an der Stelle vorbei. Zeigte sich ein Leschi in Menschengestalt, so beschrieben ihn die Bauern als Mann im Schafpelz, ohne Gürtel, den linken Schoß über den rechten geschlagen, ohne Brauen und Wimpern. Der Kaufmann löste die Fesseln, ohne lange zu fragen. Der Befreite war so dankbar, dass er seinen Retter in einem Wirbelwind nach Hause trug, und auch später half er ihm noch oft.\n\nAndere hatten weniger Glück. Denn der Leschi verwischt seine Spur mit Sand, Laub oder Schnee, und wer zufällig auf eine frische Fährte tritt, verliert die Richtung. Gern verrückt er Wegmarken oder nimmt die Gestalt eines Baumes an, nach dem sich die Leute richten. Manchmal gesellt er sich als Wanderer zu einem Reisenden und plaudert mit ihm, bis der Mann plötzlich im Sumpf oder in einer Schlucht steht und hinter sich lautes Gelächter hört. Nachts lockt er Waldhüter mit dem Weinen eines Kindes oder mit dem Stöhnen eines Sterbenden; wer klug ist, geht geradeaus weiter und hört nicht hin. Wer sich dennoch verirrt hat, zieht die Schuhe aus, wendet ihr Futter und dreht Hemd oder Pelz auf links. So, rieten die Alten, findet man wieder hinaus. Und wer krank aus dem Wald heimkam, trug Brot und Salz in einem sauberen Tuch zurück, legte die Gabe für den Leschi hin und ließ die Krankheit dort.",
+  "fassung": "Nacherzählt nach: William Ralston Shedden-Ralston, The Songs of the Russian People, London 1872, Kapitel „Mythology“, Abschnitt „Demigods and Fairies“, S. 153–160 (die Erzählung aus dem Gouvernement Archangelsk vom gefesselten Leschi und dem Kaufmann sowie die dort geschilderten Irreführungen); Ralston stützt sich vor allem auf Alexander Afanasjew",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Der Name kommt von les, dem Wald; daneben sind Lesowik, Lesnoi oder die vertrauliche Anrede „Großväterchen“ überliefert. Der Leschi gehört zu den Geistern des ostslawischen Bauernglaubens, die bis ins 20. Jahrhundert lebendig blieben und die Volkskundler wie Alexander Afanasjew und Sergei Maximow ausführlich beschrieben. Er kann seine Größe nach Belieben ändern, hat manchmal nur ein Auge oder grünes Haar wie die Rusalki und trägt die Kleidung verkehrt geschlossen. Ihm gehören die Tiere des Waldes; der Bär gilt als sein Diener. Hirten im Gouvernement Olonez schuldeten ihm nach Ralston jeden Sommer eine Kuh, Jäger legten ihm Brot mit Salz auf einen Baumstumpf, Bauern im Gouvernement Perm brachten ihm Tabak. Eine große Wanderung von Eichhörnchen erklärte man 1843 damit, ein Leschi aus Wjatka habe seine Tiere an einen Nachbarn in Wologda verspielt."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Die mythologische Schule des 19. Jahrhunderts, der auch Ralston folgte, deutete den Leschi als Sturm- und Wolkengeist, weil er seine Gestalt wechselt, heult und Bäume knickt. Spätere Forschung, etwa Linda Ivanits, sieht in ihm eher die Verkörperung des Waldes selbst, der für die Bauern Nahrungsquelle, Weide und Gefahr zugleich war. Wer sich verirrte, im Sumpf versank oder krank heimkam, konnte das als Strafe des Leschi verstehen; wer mit Gaben und Respekt kam, durfte auf Jagdglück und gesunde Herden hoffen. Viele Regeln im Umgang mit ihm, etwa im Wald nicht zu pfeifen, nicht zu fluchen und Kinder nicht zu verwünschen, lassen sich zugleich als Verhaltensregeln für einen Raum lesen, in dem Unachtsamkeit tödlich sein konnte. Die Hörner und Bocksfüße, mit denen er in manchen Beschreibungen erscheint, gelten als Angleichung an das christliche Bild des Teufels."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Alexander Ostrowski ließ den Leschi 1873 in seinem Märchenspiel „Snegurotschka“ auftreten, Nikolai Rimski-Korsakow übernahm die Figur in seine gleichnamige Oper (Uraufführung 1882). Für die Moskauer Privatoper Sawwa Mamontows entwarf Viktor Wasnezow 1885 das Kostüm, Maria Jakuntschikowa gestaltete 1899 ein textiles Wandbild mit einem Mädchen und dem Waldgeist. Heute begegnet der Leschi in Märchenfilmen, Fantasy und Computerspielen."
+   }
+  ],
+  "verwandt": "Der polnische Leszy, der finnische Metsänhaltija und die deutschen Holz- und Moosleute sind ähnliche Herren und Bewohner des Waldes.",
+  "quellen": [
+   "William Ralston Shedden-Ralston: The Songs of the Russian People, as Illustrative of Slavonic Mythology and Russian Social Life, London 1872",
+   "Alexander N. Afanasjew: Poėtičeskie vozzrenija slavjan na prirodu, 3 Bde., Moskau 1865–1869",
+   "Sergej V. Maksimov: Nečistaja, nevedomaja i krestnaja sila, St. Petersburg 1903",
+   "Linda J. Ivanits: Russian Folk Belief, M. E. Sharpe, Armonk/London 1989"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/leschi-0.jpg",
+    "breite": 663,
+    "hoehe": 1100,
+    "zeigt": "Viktor Wasnezow, Kostümentwurf für den Leschi in Rimski-Korsakows Oper „Snegurotschka“, Aquarell, 1885",
+    "urheber": "Viktor Vasnetsov",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Leshiy_by_Vasnetsov.jpg"
+   },
+   {
+    "datei": "bilder/dark/leschi-1.jpg",
+    "breite": 900,
+    "hoehe": 695,
+    "zeigt": "Maria Jakuntschikowa, „Mädchen und Leschi“, textiles Wandbild nach ihrem Entwurf, 1899",
+    "urheber": "Maria Yakunchikova",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Girl_and_Leshy_%28Yakunchikova%29.jpg"
+   }
+  ],
+  "seit": "2026-10-07"
+ },
+ {
+  "id": "kelpie",
+  "titel": "Kelpie",
+  "originalname": "Water-kelpie; verwandt: schottisch-gälisch each-uisge – „Wasserpferd“",
+  "untertitel": "Das schwarze Pferd an der Furt",
+  "region": "europa",
+  "land": "Schottland",
+  "art": "Gestaltwandler",
+  "jahr": 1881,
+  "zeitraum": "Wort seit 1674 als Ortsname, als Sagenwesen seit dem 18. Jahrhundert belegt; Volksüberlieferung, aufgezeichnet u. a. von Walter Gregor 1881",
+  "kurz": "Ein schönes schwarzes Pferd steht gesattelt am Wasser und wartet auf müde Wanderer. Wer aufsteigt, wird in die Tiefe getragen: Der Kelpie ist Schottlands gefährlichster Wassergeist.",
+  "geschichte": "In den Highlands, an einer viel begangenen Straße, zeigte sich bei Nacht ein schönes schwarzes Pferd, prächtig gesattelt und gezäumt. Es kam freundlich auf die Reisenden zu, als wollte es sie tragen, und mancher müde Wanderer ließ sich überreden. Kaum aber saß einer im Sattel, schoss das Pferd davon, schneller als ein Sturmwind, und sprang mit seinem Reiter in den tiefsten Teil von Loch Ness. Von dem Reiter sah man nie wieder etwas. So trieb es der Kelpie lange Zeit, und in vielen Häusern weinte man um einen, der nicht heimkam.\n\nEines Nachts aber war ein beherzter Mann aus den Highlands auf dem Heimweg, als er hinter sich Hufschläge hörte. Bald ging ein wunderschönes Pferd neben ihm her. Der Mann wusste sofort, wer das war und was es getan hatte. Das Pferd versuchte es mit all seinen Künsten, schmiegte sich an ihn und lockte ihn, doch er stieg nicht auf. Da wurde das Tier rasend, schnappte nach ihm und wollte ihn unter die Hufe treten. Der Mann sprang zur Seite, zog sein Schwert und schlug im Namen des Vaters, des Sohnes und des Heiligen Geistes nach dem Kopf des Pferdes. Der Hieb traf, und ein kleiner Messinghaken des Zaumzeugs fiel auf den Weg. Obwohl es dunkel war, sah der Mann ihn blinken, hob ihn blitzschnell auf und rannte um sein Leben.\n\nDer Kelpie jagte ihm nach, doch er war seltsam langsam geworden. Trotzdem wurde es ein schreckliches Rennen. Der Mann erreichte sein Haus, riss die Tür auf, warf den Haken hinein, rief den Seinen zu, sie sollten ihn gut verwahren, und brach auf der Schwelle zusammen. Für den Kelpie war es zu spät. Er verschwand und kam nie wieder. Der Haken aber blieb in der Familie, und wer Wasser mit ihm segnete, konnte damit Menschen und Vieh von Krankheiten heilen.",
+  "fassung": "Nacherzählt nach: Walter Gregor, Notes on the Folk-Lore of the North-East of Scotland (London: Folk-Lore Society 1881), Kapitel „Leechcraft“ (Willox Ball and Bridle)",
+  "abschnitte": [
+   {
+    "titel": "Herkunft und Überlieferung",
+    "text": "Die Herkunft des schottischen Wortes ist unsicher; erwogen wird eine Ableitung von gälisch calpa oder cailpeach, „Färse, Fohlen“. Als Ortsname taucht „Kelpie hoall“ schon 1674 in Stadtakten von Kirkcudbright auf. Als Sagenwesen erscheint der Kelpie zuerst in einer Ode von William Collins über den Volksglauben der Highlands, vor 1759 geschrieben und 1788 gedruckt; Robert Burns lässt 1786 in seiner „Address to the Deil“ die Wasser-Kelpies an den Furten spuken. Im 19. Jahrhundert sammelten Volkskundler zahllose Varianten. Walter Gregor beschreibt den Kelpie als schwarzes Pferd, das in tiefen Flussgumpen lebt und nachts an Furten und alten Brücken plätschert. Man konnte ihn mit einem Zaum fangen, auf den ein Kreuz gezeichnet war, und Steine schleppen lassen; Robert Chambers überliefert, ein Laird von Morphie habe so seine Burg bauen lassen."
+   },
+   {
+    "titel": "Was dahintersteckt",
+    "text": "Fachleute unterscheiden oft den Kelpie der Flüsse vom each-uisge, dem Wasserpferd der Seen und Meeresarme, doch die Grenzen verschwimmen in den Aufzeichnungen. Verbreitet ist die Deutung als Warnsage: Furten und angeschwollene Flüsse waren in Schottland tatsächlich lebensgefährlich, und die Geschichten hielten Kinder vom Wasser fern. Eine häufige Variante erzählt, wie mehrere Kinder auf den Rücken des Pferdes klettern, der immer länger wird; nur einer, der es bloß berührt, rettet sich, indem er den angeklebten Finger opfert. Der Geistliche John Gregorson Campbell hielt eine solche Fassung für eine fromme Erfindung, die Kinder vom sonntäglichen Herumstreifen abhalten sollte. Dass das Kreuzzeichen und die Dreifaltigkeitsformel den Kelpie bezwingen, zeigt, wie christliche und ältere Vorstellungen ineinandergriffen."
+   },
+   {
+    "titel": "Nachleben",
+    "text": "Maler wie Thomas Millie Dow (1895) und Herbert James Draper (1913) stellten den Kelpie als Wasserwesen in Frauengestalt dar. Seit 2013 stehen bei Falkirk am Forth-and-Clyde-Kanal „The Kelpies“, zwei rund 30 Meter hohe Pferdeköpfe aus Stahl des Bildhauers Andy Scott; sie erinnern auch an die Arbeitspferde, die einst Kähne auf den Kanälen zogen."
+   }
+  ],
+  "verwandt": "Der skandinavische Bäckahäst, der isländische Nykur und die deutschen Nixen locken ebenfalls Menschen ins Wasser.",
+  "quellen": [
+   "Walter Gregor: Notes on the Folk-Lore of the North-East of Scotland, Folk-Lore Society, London 1881",
+   "Robert Chambers: Popular Rhymes of Scotland, neue Ausgabe, W. & R. Chambers, Edinburgh 1870",
+   "John Gregorson Campbell: Superstitions of the Highlands and Islands of Scotland, Glasgow 1900",
+   "Jennifer Westwood, Sophia Kingshill: The Lore of Scotland. A Guide to Scottish Legends, London 2009"
+  ],
+  "bilder": [
+   {
+    "datei": "bilder/dark/kelpie-0.jpg",
+    "breite": 748,
+    "hoehe": 1100,
+    "zeigt": "„The Kelpie“, Gemälde von Thomas Millie Dow, 1895",
+    "urheber": "Thomas Millie Dow",
+    "lizenz": "Public domain",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:Thomas_Millie_Dow_-_The_Kelpie_1895.jpg"
+   },
+   {
+    "datei": "bilder/dark/kelpie-1.jpg",
+    "breite": 900,
+    "hoehe": 675,
+    "zeigt": "Die Stahlskulpturen „The Kelpies“ von Andy Scott im Helix Park bei Falkirk (Foto: Bewahrerderwerte, 2018)",
+    "urheber": "Bewahrerderwerte",
+    "lizenz": "CC BY-SA 4.0",
+    "herkunft": "https://commons.wikimedia.org/wiki/File:2018_07_07_Schottland_%2859%29_The_Kelpies.jpg"
    }
   ],
   "seit": "2026-10-07"
@@ -17535,6 +20840,11 @@ const DARK_RUBRIKEN = [
   "id": "piraten",
   "titel": "Piraten, Fälscher & Ausbrüche",
   "kurz": "Seeräuber zwischen Mythos und Galgen, Fälschungen, die Jahrhunderte hielten, und Fluchten aus dem Unentrinnbaren."
+ },
+ {
+  "id": "horror",
+  "titel": "Wahre Horrorgeschichten",
+  "kurz": "Echte, belegte Ereignisse, die wie Horror klingen – Bestien, Massenhysterien, Seuchen, Spukschwindel und rätselhafte Funde, und was die Forschung darüber weiß."
  }
 ];
 
