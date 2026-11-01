@@ -14,7 +14,7 @@
  * verweist eine neue index.html zwangsläufig auf neue Dateien.
  */
 
-const VERSION = '2026-10-08-2';
+const VERSION = '2026-11-01-1';
 const CACHE = 'historia-' + VERSION;
 
 // Dateien ohne Versionsmarke (Bilder, Schriften, Manifest ändern sich selten)
